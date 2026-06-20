@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { getLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
+import { Analytics } from '@vercel/analytics/next';
 import { UserProvider } from '@/components/providers/UserProvider';
 import { SoundProvider } from '@/components/providers/SoundProvider';
 import './globals.css';
@@ -38,6 +39,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <SoundProvider>{children}</SoundProvider>
           </UserProvider>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
