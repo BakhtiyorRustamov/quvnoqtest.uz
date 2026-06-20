@@ -1,0 +1,101 @@
+{
+  "topicId": "g1-math-24",
+  "subjectKey": "g1-math",
+  "emojis": "9️⃣🔢🍎",
+  "title": { "uz": "Toʻqqiz soni va raqami", "ru": "Число девять", "en": "The number nine" },
+  "recall": {
+    "uz": "Toʻqqiz sonini oʻrganamiz. Toʻqqizta narsani sanaymiz. Toʻqqiz sakkizdan kattaroq. Besh va toʻrt qoʻshilsa, toʻqqiz boʻladi. Toʻqqiz sonining raqamini yozamiz.",
+    "ru": "Учим число девять. Считаем девять предметов. Девять больше восьми. Пять и четыре вместе — это девять. Пишем цифру девять.",
+    "en": "We learn the number nine. We count nine things. Nine is bigger than eight. Five and four make nine. We write the numeral nine."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["8", "5", "10"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 6, 7, ?, 9", "ru": "Найди недостающее число: 6, 7, ?, 9", "en": "Find the missing number: 6, 7, ?, 9" },
+      "hint": { "uz": "Yetti bilan toʻqqiz orasida qaysi son turadi?", "ru": "Какое число между семью и девятью?", "en": "Which number is between seven and nine?" },
+      "explanation": { "uz": "Yetti bilan toʻqqiz orasida sakkiz turadi.", "ru": "Между семью и девятью стоит восемь.", "en": "Between seven and nine stands eight." } },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 5, "b": 4, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: besh va toʻrt!", "ru": "Сложи на числовой прямой: пять и четыре!", "en": "Add on the number line: five and four!" },
+      "hint": { "uz": "Beshdan boshla, toʻrt qadam oldinga sakra.", "ru": "Встань на пять, прыгни на четыре вперёд.", "en": "Start at five, hop four forward." },
+      "explanation": { "uz": "Besh va toʻrt qoʻshilib, toʻqqiz boʻldi.", "ru": "Пять и четыре дали девять.", "en": "Five and four made nine." }
+    },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["9", "8", "10"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 5 + 4 = ?", "ru": "Найди сумму: 5 + 4 = ?", "en": "Find the sum: 5 + 4 = ?" },
+      "hint": { "uz": "Beshtaga toʻrtta qoʻsh.", "ru": "К пяти прибавь четыре.", "en": "Add four to five." },
+      "explanation": { "uz": "Besh qoʻshish toʻrt — toʻqqiz.", "ru": "Пять плюс четыре — девять.", "en": "Five plus four is nine." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["1", "2", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 9 = 8 + ?", "ru": "Найди недостающее число: 9 = 8 + ?", "en": "Find the missing number: 9 = 8 + ?" },
+      "hint": { "uz": "Sakkizga nechta qoʻshsak, toʻqqiz boʻladi?", "ru": "Сколько добавить к восьми, чтобы вышло девять?", "en": "How much to add to eight to make nine?" },
+      "explanation": { "uz": "Sakkiz qoʻshish bir — toʻqqiz. Yetishmagan son — bir.", "ru": "Восемь плюс один — девять. Недостающее число — один.", "en": "Eight plus one is nine. The missing number is one." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["8", "9", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 9 - 1 = ?", "ru": "Найди разность: 9 - 1 = ?", "en": "Find the difference: 9 - 1 = ?" },
+      "hint": { "uz": "Toʻqqiztadan bittasini olib tashla.", "ru": "Убери от девяти один.", "en": "Take one away from nine." },
+      "explanation": { "uz": "Toʻqqiz ayirish bir — sakkiz qoladi.", "ru": "Девять минус один — восемь.", "en": "Nine minus one is eight." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 9, "y": 6 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Toʻqqiz oltidan katta.", "ru": "Девять больше шести.", "en": "Nine is bigger than six." } },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma yulduzlarni sanab belgila!", "ru": "Сосчитай и отметь все звёзды!", "en": "Count and tap all the stars!" },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "s3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } }
+      ],
+      "answer": ["s1", "s2", "s3"],
+      "hint": { "uz": "Faqat yulduzlarni sana.", "ru": "Считай только звёзды.", "en": "Count only the stars." },
+      "explanation": { "uz": "Uchta yulduz bor edi.", "ru": "Было три звезды.", "en": "There were three stars." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "circle", "color": "blue" },
+        { "kind": "square", "color": "orange" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "square", "color": "orange" },
+        { "kind": "circle", "color": "blue" }
+      ],
+      "options": [
+        { "id": "sq", "art": { "kind": "square", "color": "orange" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["sq"],
+      "hint": { "uz": "Doira, kvadrat, doira, kvadrat… navbat bilan keladi!", "ru": "Круг, квадрат, круг, квадрат… по очереди!", "en": "Circle, square, circle, square… they take turns!" },
+      "explanation": { "uz": "Doiradan keyin doim kvadrat keladi. Keyingisi — kvadrat.", "ru": "После круга всегда идёт квадрат. Следующий — квадрат.", "en": "After a circle there is always a square. The next one is a square." }
+    },
+    {
+      "id": "q9",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Koptoklarni rangi boʻyicha guruhla!", "ru": "Сгруппируй мячи по цвету!", "en": "Group the balls by color!" },
+      "items": [
+        { "id": "r1", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "g1", "art": { "kind": "ball", "color": "green", "scale": 0.8 }, "bin": "green" },
+        { "id": "r2", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "g2", "art": { "kind": "ball", "color": "green", "scale": 0.8 }, "bin": "green" }
+      ],
+      "bins": [
+        { "id": "red", "label": { "uz": "Qizil", "ru": "Красные", "en": "Red" }, "color": "red" },
+        { "id": "green", "label": { "uz": "Yashil", "ru": "Зелёные", "en": "Green" }, "color": "green" }
+      ],
+      "hint": { "uz": "Bir xil rangdagilarni bitta guruhga yigʻ.", "ru": "Собирай одинаковые по цвету.", "en": "Put the same colors together." },
+      "explanation": { "uz": "Koptoklarni rangiga qarab guruhladik.", "ru": "Сгруппировали мячи по цвету.", "en": "We grouped the balls by color." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["3", "4", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 9 - 6 = ?", "ru": "Найди разность: 9 - 6 = ?", "en": "Find the difference: 9 - 6 = ?" },
+      "hint": { "uz": "Toʻqqiztadan oltitasini olib tashla.", "ru": "Убери от девяти шесть.", "en": "Take six away from nine." },
+      "explanation": { "uz": "Toʻqqiz ayirish olti — uch qoladi.", "ru": "Девять минус шесть — три.", "en": "Nine minus six is three." } }
+  ]
+}

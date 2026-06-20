@@ -1,0 +1,113 @@
+{
+  "topicId": "g1-math-16",
+  "subjectKey": "g1-math",
+  "emojis": "3️⃣⭐🍎",
+  "title": { "uz": "Uch soni va raqami", "ru": "Число три", "en": "The number three" },
+  "recall": {
+    "uz": "Uch sonini oʻrganamiz. Uchta narsani sanaymiz. Uch ikkidan kattaroq. Ikki va bir qoʻshilsa, uch boʻladi. Uch sonining raqamini yozishni mashq qilamiz.",
+    "ru": "Учим число три. Считаем три предмета. Три больше двух. Два и один вместе — это три. Тренируемся писать цифру три.",
+    "en": "We learn the number three. We count three things. Three is bigger than two. Two and one make three. We practice writing the numeral three."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Uchta olmani sanab belgila!", "ru": "Сосчитай и отметь три яблока!", "en": "Count and tap the three apples!" },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "a3", "art": { "kind": "apple", "color": "yellow" } },
+        { "id": "s1", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["a1", "a2", "a3"],
+      "hint": { "uz": "Olmalarni sana: bir, ikki, uch.", "ru": "Считай яблоки: один, два, три.", "en": "Count the apples: one, two, three." },
+      "explanation": { "uz": "Uchta olma bor edi. Uch — ikkidan bitta koʻp.", "ru": "Было три яблока. Три — на один больше двух.", "en": "There were three apples. Three is one more than two." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 2, "b": 1, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: ikki va bir!", "ru": "Сложи на числовой прямой: два и один!", "en": "Add on the number line: two and one!" },
+      "hint": { "uz": "Ikkidan boshla, bitta qadam oldinga sakra.", "ru": "Встань на два, прыгни на один вперёд.", "en": "Start at two, hop one step forward." },
+      "explanation": { "uz": "Ikki va bir qoʻshilib, uch boʻldi.", "ru": "Два и один дали три.", "en": "Two and one made three." }
+    },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["3", "2", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 2 + 1 = ?", "ru": "Найди сумму: 2 + 1 = ?", "en": "Find the sum: 2 + 1 = ?" },
+      "hint": { "uz": "Ikkitaga bitta qoʻsh.", "ru": "К двум прибавь один.", "en": "Add one to two." },
+      "explanation": { "uz": "Ikki qoʻshish bir — uch.", "ru": "Два плюс один — три.", "en": "Two plus one is three." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2", "3", "1"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 3 - 1 = ?", "ru": "Найди разность: 3 - 1 = ?", "en": "Find the difference: 3 - 1 = ?" },
+      "hint": { "uz": "Uchtadan bittasini olib tashla.", "ru": "Убери от трёх один.", "en": "Take one away from three." },
+      "explanation": { "uz": "Uch ayirish bir — ikki qoladi.", "ru": "Три минус один — остаётся два.", "en": "Three minus one leaves two." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["1", "2", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 3 = 2 + ?", "ru": "Найди недостающее число: 3 = 2 + ?", "en": "Find the missing number: 3 = 2 + ?" },
+      "hint": { "uz": "Ikkiga nechta qoʻshsak, uch boʻladi?", "ru": "Сколько прибавить к двум, чтобы вышло три?", "en": "How much to add to two to make three?" },
+      "explanation": { "uz": "Ikki qoʻshish bir — uch. Yetishmagan son — bir.", "ru": "Два плюс один — три. Недостающее число — один.", "en": "Two plus one is three. The missing number is one." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 3, "y": 5 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Besh uchdan katta. Tarozi katta son tomonga ogʻdi.", "ru": "Пять больше трёх. Весы наклонились к большему.", "en": "Five is bigger than three. The scale tipped to the bigger number." } },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Uchta yulduzni sanab belgila!", "ru": "Сосчитай и отметь три звезды!", "en": "Count and tap the three stars!" },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "s3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } }
+      ],
+      "answer": ["s1", "s2", "s3"],
+      "hint": { "uz": "Yulduzlarni sana: bir, ikki, uch.", "ru": "Считай звёзды: один, два, три.", "en": "Count the stars: one, two, three." },
+      "explanation": { "uz": "Uchta yulduz bor edi.", "ru": "Было три звезды.", "en": "There were three stars." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "star", "color": "magenta" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "magenta" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "sq", "art": { "kind": "square", "color": "green" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Yulduz, doira, yulduz, doira… navbat bilan keladi!", "ru": "Звезда, круг, звезда, круг… по очереди!", "en": "Star, circle, star, circle… they take turns!" },
+      "explanation": { "uz": "Yulduzdan keyin doim doira keladi. Keyingisi — doira.", "ru": "После звезды всегда идёт круг. Следующий — круг.", "en": "After a star there is always a circle. The next one is a circle." }
+    },
+    { "id": "q9", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["1", "2", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 3 - 2 = ?", "ru": "Найди разность: 3 - 2 = ?", "en": "Find the difference: 3 - 2 = ?" },
+      "hint": { "uz": "Uchta bor edi, ikkitasi ketdi.", "ru": "Было три, два ушли.", "en": "There were three, two went away." },
+      "explanation": { "uz": "Uch ayirish ikki — bir qoladi.", "ru": "Три минус два — остаётся один.", "en": "Three minus two leaves one." } },
+    {
+      "id": "q10",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Yulduzlarni kichikdan kattaga tartibla!", "ru": "Расставь звёзды от маленькой к большой!", "en": "Order the stars from small to big!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "star", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "star", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "star", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "birinchi", "ru": "первая", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "ikkinchi", "ru": "вторая", "en": "second" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "uchinchi", "ru": "третья", "en": "third" } }
+      ],
+      "hint": { "uz": "Eng kichkinasi birinchi, eng kattasi uchinchi.", "ru": "Самая маленькая первая, самая большая третья.", "en": "The smallest is first, the biggest is third." },
+      "explanation": { "uz": "Uchta yulduzni tartibga qoʻydik: birinchi, ikkinchi, uchinchi.", "ru": "Расставили три звезды по порядку: первая, вторая, третья.", "en": "We ordered three stars: first, second, third." }
+    }
+  ]
+}

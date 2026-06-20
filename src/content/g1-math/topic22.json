@@ -1,0 +1,118 @@
+{
+  "topicId": "g1-math-22",
+  "subjectKey": "g1-math",
+  "emojis": "7️⃣⭐🐟",
+  "title": { "uz": "Yetti soni va raqami", "ru": "Число семь", "en": "The number seven" },
+  "recall": {
+    "uz": "Yetti sonini oʻrganamiz. Yettita narsani sanaymiz. Yetti oltidan kattaroq. Toʻrt va uch qoʻshilsa, yetti boʻladi. Yetti sonining raqamini yozamiz.",
+    "ru": "Учим число семь. Считаем семь предметов. Семь больше шести. Четыре и три вместе — это семь. Пишем цифру семь.",
+    "en": "We learn the number seven. We count seven things. Seven is bigger than six. Four and three make seven. We write the numeral seven."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Yettita yulduzni sanab belgila!", "ru": "Сосчитай и отметь семь звёзд!", "en": "Count and tap the seven stars!" },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "s3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "s4", "art": { "kind": "star", "color": "red" } },
+        { "id": "s5", "art": { "kind": "star", "color": "green" } },
+        { "id": "s6", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "s7", "art": { "kind": "star", "color": "orange" } }
+      ],
+      "answer": ["s1", "s2", "s3", "s4", "s5", "s6", "s7"],
+      "hint": { "uz": "Yulduzlarni sana: bir… yetti.", "ru": "Считай звёзды: один… семь.", "en": "Count the stars: one… seven." },
+      "explanation": { "uz": "Yettita yulduz bor edi. Yetti — oltidan bitta koʻp.", "ru": "Было семь звёзд. Семь — на один больше шести.", "en": "There were seven stars. Seven is one more than six." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 4, "b": 3, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: toʻrt va uch!", "ru": "Сложи на числовой прямой: четыре и три!", "en": "Add on the number line: four and three!" },
+      "hint": { "uz": "Toʻrtdan boshla, uch qadam oldinga sakra.", "ru": "Встань на четыре, прыгни на три вперёд.", "en": "Start at four, hop three forward." },
+      "explanation": { "uz": "Toʻrt va uch qoʻshilib, yetti boʻldi.", "ru": "Четыре и три дали семь.", "en": "Four and three made seven." }
+    },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["7", "6", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 4 + 3 = ?", "ru": "Найди сумму: 4 + 3 = ?", "en": "Find the sum: 4 + 3 = ?" },
+      "hint": { "uz": "Toʻrttaga uchta qoʻsh.", "ru": "К четырём прибавь три.", "en": "Add three to four." },
+      "explanation": { "uz": "Toʻrt qoʻshish uch — yetti.", "ru": "Четыре плюс три — семь.", "en": "Four plus three is seven." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["7", "8", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 3 + 4 = ?", "ru": "Найди сумму: 3 + 4 = ?", "en": "Find the sum: 3 + 4 = ?" },
+      "hint": { "uz": "Tartibni almashtirsa ham yigʻindi bir xil.", "ru": "От перестановки сумма не меняется.", "en": "Swapping the order keeps the sum the same." },
+      "explanation": { "uz": "Uch qoʻshish toʻrt — yetti. Toʻrt qoʻshish uch bilan teng.", "ru": "Три плюс четыре — семь. То же, что четыре плюс три.", "en": "Three plus four is seven — the same as four plus three." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["4+3=11", "7-1=6", "1+6=7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi misol notoʻgʻri?", "ru": "Какой пример неверный?", "en": "Which equation is wrong?" },
+      "hint": { "uz": "Yigʻindi oʻndan oshmasligi kerak.", "ru": "Сумма не должна превышать десяти.", "en": "The sum should not go past ten." },
+      "explanation": { "uz": "Toʻrt qoʻshish uch — yetti, oʻn bir emas. Bu misol notoʻgʻri.", "ru": "Четыре плюс три — семь, а не одиннадцать. Этот пример неверный.", "en": "Four plus three is seven, not eleven. That equation is wrong." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 7, "y": 4 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Yetti toʻrtdan katta.", "ru": "Семь больше четырёх.", "en": "Seven is bigger than four." } },
+    {
+      "id": "q7",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Shakllarni doiralar va kvadratlarga ajrat!", "ru": "Раздели фигуры: круги и квадраты!", "en": "Sort the shapes into circles and squares!" },
+      "items": [
+        { "id": "c1", "art": { "kind": "circle", "color": "red" }, "bin": "circ" },
+        { "id": "s1", "art": { "kind": "square", "color": "blue" }, "bin": "squ" },
+        { "id": "c2", "art": { "kind": "circle", "color": "orange" }, "bin": "circ" },
+        { "id": "s2", "art": { "kind": "square", "color": "green" }, "bin": "squ" }
+      ],
+      "bins": [
+        { "id": "circ", "label": { "uz": "Doiralar", "ru": "Круги", "en": "Circles" }, "color": "orange" },
+        { "id": "squ", "label": { "uz": "Kvadratlar", "ru": "Квадраты", "en": "Squares" }, "color": "blue" }
+      ],
+      "hint": { "uz": "Dumaloqlari — doiralar qutiga, burchaklilari — kvadratlar qutiga.", "ru": "Круглые — в круги, угловатые — в квадраты.", "en": "Round ones to circles, cornered ones to squares." },
+      "explanation": { "uz": "Shaklga qarab ikki guruhga ajratdik.", "ru": "Разделили на две группы по форме.", "en": "We sorted them into two groups by shape." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "fish", "color": "orange" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "fish", "color": "orange" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "fish", "color": "orange" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "fi", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Baliq, doira, baliq, doira… navbat bilan keladi!", "ru": "Рыбка, круг, рыбка, круг… по очереди!", "en": "Fish, circle, fish, circle… they take turns!" },
+      "explanation": { "uz": "Baliqdan keyin doim doira keladi. Keyingisi — doira.", "ru": "После рыбки всегда идёт круг. Следующий — круг.", "en": "After a fish there is always a circle. The next one is a circle." }
+    },
+    { "id": "q9", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["5", "6", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 7 - 2 = ?", "ru": "Найди разность: 7 - 2 = ?", "en": "Find the difference: 7 - 2 = ?" },
+      "hint": { "uz": "Yettitadan ikkitasini olib tashla.", "ru": "Убери от семи два.", "en": "Take two away from seven." },
+      "explanation": { "uz": "Yetti ayirish ikki — besh qoladi.", "ru": "Семь минус два — пять.", "en": "Seven minus two is five." } },
+    {
+      "id": "q10",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir narsani xuddi oʻshanga ula!", "ru": "Соедини каждый предмет с таким же!", "en": "Connect each thing to the same one!" },
+      "left": [
+        { "id": "fi", "art": { "kind": "fish", "color": "blue" }, "match": "m-fi" },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" }, "match": "m-st" },
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" }
+      ],
+      "right": [
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } },
+        { "id": "m-fi", "art": { "kind": "fish", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } }
+      ],
+      "hint": { "uz": "Avval rangli narsani bos, keyin xuddi oʻshanday narsani bos.", "ru": "Сначала нажми на цветной предмет, потом на такой же.", "en": "First tap a colored thing, then tap the same one." },
+      "explanation": { "uz": "Har bir narsani oʻziga oʻxshashiga uladik.", "ru": "Мы соединили каждый предмет с таким же.", "en": "We matched each thing to the same one." }
+    }
+  ]
+}

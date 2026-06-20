@@ -1,0 +1,131 @@
+{
+  "topicId": "g1-math-13",
+  "subjectKey": "g1-math",
+  "emojis": "🔢⚖️🟰",
+  "title": { "uz": "Sonlarni solishtirish", "ru": "Сравниваем числа", "en": "Bigger, smaller, equal" },
+  "recall": {
+    "uz": "Sonlarni solishtiramiz. Qaysi son katta, qaysi biri kichik, qachon teng. Koʻp boʻlsa katta, kam boʻlsa kichik. Belgilar yordamida sonlarni bir biriga solishtiramiz.",
+    "ru": "Сравниваем числа. Какое число больше, какое меньше, когда равны. Больше — значит больше, меньше — значит меньше. Сравниваем числа с помощью знаков.",
+    "en": "We compare numbers. Which number is bigger, which is smaller, when they are equal. More means bigger, fewer means smaller. We compare numbers using signs."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 4, "y": 5 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Tarozi koʻp boʻlgan, katta son tomonga ogʻadi.", "ru": "Весы наклоняются к большему числу.", "en": "The scale tips toward the bigger number." },
+      "explanation": { "uz": "Besh toʻrtdan katta. Belgining keng tomoni katta songa qaraydi.", "ru": "Пять больше четырёх. Открытая сторона знака смотрит на большее число.", "en": "Five is bigger than four. The open side of the sign faces the bigger number." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 6, "y": 6 } },
+      "prompt": { "uz": "Tarozini koʻr: sonlar tengmi?", "ru": "Посмотри на весы: числа равны?", "en": "Look at the scale: are the numbers equal?" },
+      "hint": { "uz": "Son bir xil boʻlsa, tarozi tekis turadi.", "ru": "Если числа одинаковые, весы стоят ровно.", "en": "If the numbers are the same, the scale stays level." },
+      "explanation": { "uz": "Ikki tomonda bir xil son edi — ular teng. Belgisi tenglik belgisi.", "ru": "На обеих сторонах одинаковое число — они равны. Знак равенства.", "en": "Both sides had the same number — they are equal. The sign is the equals sign." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 7, "y": 3 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается вниз.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Yetti uchdan katta. Tarozi katta son tomonga ogʻdi.", "ru": "Семь больше трёх. Весы наклонились к большему числу.", "en": "Seven is bigger than three. The scale tipped toward the bigger number." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["8", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son katta: 8 yoki 5?", "ru": "Какое число больше: 8 или 5?", "en": "Which number is bigger: 8 or 5?" },
+      "hint": { "uz": "Sanaganda kechroq aytiladigan son kattaroq.", "ru": "Число, которое называют позже при счёте, больше.", "en": "The number said later when counting is the bigger one." },
+      "explanation": { "uz": "Sakkiz beshdan katta — uni sanaganda kechroq aytamiz.", "ru": "Восемь больше пяти — при счёте его называют позже.", "en": "Eight is bigger than five — we say it later when counting." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["3", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son kichik: 3 yoki 6?", "ru": "Какое число меньше: 3 или 6?", "en": "Which number is smaller: 3 or 6?" },
+      "hint": { "uz": "Sanaganda oldinroq aytiladigan son kichikroq.", "ru": "Число, которое называют раньше при счёте, меньше.", "en": "The number said earlier when counting is the smaller one." },
+      "explanation": { "uz": "Uch oltidan kichik — uni sanaganda oldinroq aytamiz.", "ru": "Три меньше шести — при счёте его называют раньше.", "en": "Three is smaller than six — we say it earlier when counting." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["9", "3", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Eng katta son qaysi: 3, 9, 5?", "ru": "Какое число самое большое: 3, 9, 5?", "en": "Which number is the biggest: 3, 9, 5?" },
+      "hint": { "uz": "Sanab chiqqanda eng oxirida keladigan sonni top.", "ru": "Найди число, которое при счёте идёт самым последним.", "en": "Find the number that comes last when counting." },
+      "explanation": { "uz": "Toʻqqiz eng katta son — u uchdan ham, beshdan ham katta.", "ru": "Девять — самое большое: больше и трёх, и пяти.", "en": "Nine is the biggest — bigger than both three and five." }
+    },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma katta yulduzlarni sanab belgila!", "ru": "Сосчитай и отметь все большие звёзды!", "en": "Count and tap all the big stars!" },
+      "options": [
+        { "id": "b1", "art": { "kind": "star", "color": "yellow", "scale": 1.2 } },
+        { "id": "s1", "art": { "kind": "star", "color": "orange", "scale": 0.55 } },
+        { "id": "b2", "art": { "kind": "star", "color": "magenta", "scale": 1.2 } },
+        { "id": "s2", "art": { "kind": "star", "color": "blue", "scale": 0.55 } },
+        { "id": "b3", "art": { "kind": "star", "color": "red", "scale": 1.2 } }
+      ],
+      "answer": ["b1", "b2", "b3"],
+      "hint": { "uz": "Avval kattalarini ajrat, keyin sana.", "ru": "Сначала найди большие, потом сосчитай.", "en": "First find the big ones, then count them." },
+      "explanation": { "uz": "Uchta katta yulduz bor edi. Kichiklari kamroq edi.", "ru": "Было три больших звезды. Маленьких было меньше.", "en": "There were three big stars. The small ones were fewer." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "orange" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "orange" },
+        { "kind": "circle", "color": "blue" }
+      ],
+      "options": [
+        { "id": "st", "art": { "kind": "star", "color": "orange" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "sq", "art": { "kind": "square", "color": "green" } }
+      ],
+      "answer": ["st"],
+      "hint": { "uz": "Doira, yulduz, doira, yulduz… navbat bilan keladi!", "ru": "Круг, звезда, круг, звезда… по очереди!", "en": "Circle, star, circle, star… they take turns!" },
+      "explanation": { "uz": "Doiradan keyin doim yulduz keladi. Keyingisi — yulduz.", "ru": "После круга всегда идёт звезда. Следующая — звезда.", "en": "After a circle there is always a star. The next one is a star." }
+    },
+    {
+      "id": "q9",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Yulduzlarni kichikdan kattaga tartibla!", "ru": "Расставь звёзды от маленькой к большой!", "en": "Order the stars from small to big!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "star", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "star", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "star", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "kichik", "ru": "малая", "en": "small" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "oʻrta", "ru": "средняя", "en": "medium" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "katta", "ru": "большая", "en": "big" } }
+      ],
+      "hint": { "uz": "Eng kichkinasi birinchi, eng kattasi oxirida.", "ru": "Самая маленькая первая, самая большая последняя.", "en": "The smallest first, the biggest last." },
+      "explanation": { "uz": "Kichikdan kattaga tartibladik. Oʻlchamni solishtirib joyladik.", "ru": "Расставили от маленькой к большой. Сравнили по размеру.", "en": "We ordered them small to big, comparing their size." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["10", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son katta: 10 yoki 7?", "ru": "Какое число больше: 10 или 7?", "en": "Which number is bigger: 10 or 7?" },
+      "hint": { "uz": "Oʻn — sanoqning eng oxirgi soni.", "ru": "Десять — последнее число в счёте.", "en": "Ten is the last number in the count." },
+      "explanation": { "uz": "Oʻn yettidan katta — u sanoqda kechroq keladi.", "ru": "Десять больше семи — оно идёт позже в счёте.", "en": "Ten is bigger than seven — it comes later in counting." }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "topicId": "g1-math-25",
+  "subjectKey": "g1-math",
+  "emojis": "0️⃣🫙🍎",
+  "title": { "uz": "Nol soni va raqami", "ru": "Число ноль", "en": "The number zero" },
+  "recall": {
+    "uz": "Nol sonini oʻrganamiz. Nol — hech narsa degani. Bir songa nol qoʻshilsa, son oʻzgarmaydi. Sondan oʻzini ayirsak, nol qoladi. Boʻsh guruhda nol narsa boʻladi.",
+    "ru": "Учим число ноль. Ноль — это ничего. Если к числу прибавить ноль, оно не меняется. Если из числа вычесть само себя, останется ноль. В пустой группе ноль предметов.",
+    "en": "We learn the number zero. Zero means nothing. Adding zero to a number does not change it. Subtracting a number from itself leaves zero. An empty group has zero things."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["5", "0", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 5 + 0 = ?", "ru": "Найди сумму: 5 + 0 = ?", "en": "Find the sum: 5 + 0 = ?" },
+      "hint": { "uz": "Nol hech narsa qoʻshmaydi.", "ru": "Ноль ничего не добавляет.", "en": "Zero adds nothing." },
+      "explanation": { "uz": "Besh qoʻshish nol — besh. Nol sonni oʻzgartirmaydi.", "ru": "Пять плюс ноль — пять. Ноль не меняет число.", "en": "Five plus zero is five. Zero does not change the number." } },
+    { "id": "q2", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["0", "1", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 4 - 4 = ?", "ru": "Найди разность: 4 - 4 = ?", "en": "Find the difference: 4 - 4 = ?" },
+      "hint": { "uz": "Hammasini olib tashlasang, nima qoladi?", "ru": "Если убрать всё, что останется?", "en": "If you take all away, what is left?" },
+      "explanation": { "uz": "Toʻrt ayirish toʻrt — nol qoladi. Hech narsa qolmadi.", "ru": "Четыре минус четыре — ноль. Ничего не осталось.", "en": "Four minus four is zero. Nothing is left." } },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["6", "0", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 0 + 6 = ?", "ru": "Найди сумму: 0 + 6 = ?", "en": "Find the sum: 0 + 6 = ?" },
+      "hint": { "uz": "Nolga olti qoʻshsak, olti boʻladi.", "ru": "К нулю прибавить шесть — будет шесть.", "en": "Zero plus six is six." },
+      "explanation": { "uz": "Nol qoʻshish olti — olti. Nol sonni oʻzgartirmaydi.", "ru": "Ноль плюс шесть — шесть. Ноль не меняет число.", "en": "Zero plus six is six. Zero does not change the number." } },
+    {
+      "id": "q4",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma olmalarni sanab belgila!", "ru": "Сосчитай и отметь все яблоки!", "en": "Count and tap all the apples!" },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "a3", "art": { "kind": "apple", "color": "yellow" } }
+      ],
+      "answer": ["a1", "a2", "a3"],
+      "hint": { "uz": "Faqat olmalarni sana.", "ru": "Считай только яблоки.", "en": "Count only the apples." },
+      "explanation": { "uz": "Uchta olma bor edi. Yulduzlar guruhida nol olma bor.", "ru": "Было три яблока. В группе звёзд ноль яблок.", "en": "There were three apples. The star group has zero apples." }
+    },
+    {
+      "id": "q5",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladiganini bos!", "ru": "Нажми на ту, что отличается!", "en": "Tap the one that is different!" },
+      "options": [
+        { "id": "c1", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "df", "art": { "kind": "circle", "color": "magenta" } },
+        { "id": "c2", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["df"],
+      "hint": { "uz": "Ikkitasi yulduz. Bittasi shakli bilan farqli.", "ru": "Две — звёзды. Одна отличается формой.", "en": "Two are stars. One differs by shape." },
+      "explanation": { "uz": "Doira shakli bilan farq qildi.", "ru": "Круг отличался формой.", "en": "The circle differed by shape." }
+    },
+    {
+      "id": "q6",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Koptoklarni rangi boʻyicha guruhla!", "ru": "Сгруппируй мячи по цвету!", "en": "Group the balls by color!" },
+      "items": [
+        { "id": "r1", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "y1", "art": { "kind": "ball", "color": "yellow", "scale": 0.8 }, "bin": "yellow" },
+        { "id": "r2", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "y2", "art": { "kind": "ball", "color": "yellow", "scale": 0.8 }, "bin": "yellow" }
+      ],
+      "bins": [
+        { "id": "red", "label": { "uz": "Qizil", "ru": "Красные", "en": "Red" }, "color": "red" },
+        { "id": "yellow", "label": { "uz": "Sariq", "ru": "Жёлтые", "en": "Yellow" }, "color": "yellow" }
+      ],
+      "hint": { "uz": "Bir xil rangdagilarni bitta guruhga yigʻ.", "ru": "Собирай одинаковые по цвету.", "en": "Put the same colors together." },
+      "explanation": { "uz": "Koptoklarni rangiga qarab guruhladik.", "ru": "Сгруппировали мячи по цвету.", "en": "We grouped the balls by color." }
+    },
+    {
+      "id": "q7",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "orange" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "orange" },
+        { "kind": "circle", "color": "blue" }
+      ],
+      "options": [
+        { "id": "st", "art": { "kind": "star", "color": "orange" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "sq", "art": { "kind": "square", "color": "green" } }
+      ],
+      "answer": ["st"],
+      "hint": { "uz": "Doira, yulduz, doira, yulduz… navbat bilan keladi!", "ru": "Круг, звезда, круг, звезда… по очереди!", "en": "Circle, star, circle, star… they take turns!" },
+      "explanation": { "uz": "Doiradan keyin doim yulduz keladi. Keyingisi — yulduz.", "ru": "После круга всегда идёт звезда. Следующая — звезда.", "en": "After a circle there is always a star. The next one is a star." }
+    },
+    { "id": "q8", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 3, "y": 6 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Olti uchdan katta.", "ru": "Шесть больше трёх.", "en": "Six is bigger than three." } },
+    {
+      "id": "q9",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir narsani xuddi oʻshanga ula!", "ru": "Соедини каждый предмет с таким же!", "en": "Connect each thing to the same one!" },
+      "left": [
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" }, "match": "m-st" },
+        { "id": "ba", "art": { "kind": "ball", "color": "blue" }, "match": "m-ba" }
+      ],
+      "right": [
+        { "id": "m-ba", "art": { "kind": "ball", "color": "gray" } },
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } }
+      ],
+      "hint": { "uz": "Avval rangli narsani bos, keyin xuddi oʻshanday narsani bos.", "ru": "Сначала нажми на цветной предмет, потом на такой же.", "en": "First tap a colored thing, then tap the same one." },
+      "explanation": { "uz": "Har bir narsani oʻziga oʻxshashiga uladik.", "ru": "Мы соединили каждый предмет с таким же.", "en": "We matched each thing to the same one." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["0", "1", "9"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 9 - 9 = ?", "ru": "Найди разность: 9 - 9 = ?", "en": "Find the difference: 9 - 9 = ?" },
+      "hint": { "uz": "Toʻqqizta bor edi, toʻqqiztasi ketdi.", "ru": "Было девять, девять ушли.", "en": "There were nine, nine went away." },
+      "explanation": { "uz": "Toʻqqiz ayirish toʻqqiz — nol qoladi. Hech narsa qolmadi.", "ru": "Девять минус девять — ноль. Ничего не осталось.", "en": "Nine minus nine is zero. Nothing is left." } }
+  ]
+}

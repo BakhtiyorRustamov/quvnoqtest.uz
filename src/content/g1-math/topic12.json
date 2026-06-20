@@ -1,0 +1,131 @@
+{
+  "topicId": "g1-math-12",
+  "subjectKey": "g1-math",
+  "emojis": "➖🍏🔽",
+  "title": {
+    "uz": "Sonlarni ayiramiz",
+    "ru": "Вычитаем числа",
+    "en": "Subtracting numbers"
+  },
+  "recall": {
+    "uz": "Ayiramiz. Butundan bir qismini olib tashlaymiz. Qolgani ayirma boʻladi. Bir nechta narsa ketsa, son kamayadi. Ayirganda son kichrayadi.",
+    "ru": "Вычитаем: убираем часть от целого. То, что осталось, — это разность. Когда несколько предметов уходят, число уменьшается.",
+    "en": "We subtract: we take a part away from the whole. What is left is the difference. When some things leave, the number gets smaller."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["3", "4", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 5 - 2 = ?", "ru": "Найди разность: 5 - 2 = ?", "en": "Find the difference: 5 - 2 = ?" },
+      "hint": { "uz": "Beshtadan ikkitasini olib tashla, qolganini sana.", "ru": "Убери от пяти два и сосчитай остаток.", "en": "Take two away from five and count what is left." },
+      "explanation": { "uz": "Beshdan ikkini ayirsak, uch qoladi. Ayirma — uch.", "ru": "Пять минус два — остаётся три. Разность — три.", "en": "Five minus two leaves three. The difference is three." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["3", "2", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 4 - 1 = ?", "ru": "Найди разность: 4 - 1 = ?", "en": "Find the difference: 4 - 1 = ?" },
+      "hint": { "uz": "Toʻrttadan bittasini olib tashla.", "ru": "Убери от четырёх один.", "en": "Take one away from four." },
+      "explanation": { "uz": "Toʻrtdan birni ayirsak, uch qoladi.", "ru": "Четыре минус один — остаётся три.", "en": "Four minus one leaves three." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["3", "4", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 6 - 3 = ?", "ru": "Найди разность: 6 - 3 = ?", "en": "Find the difference: 6 - 3 = ?" },
+      "hint": { "uz": "Oltitadan uchtasini olib tashla, qolganini sana.", "ru": "Убери от шести три и сосчитай остаток.", "en": "Take three away from six and count the rest." },
+      "explanation": { "uz": "Oltidan uchni ayirsak, uch qoladi.", "ru": "Шесть минус три — остаётся три.", "en": "Six minus three leaves three." }
+    },
+    {
+      "id": "q4",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qolgan olmalarni sanab belgila!", "ru": "Сосчитай и отметь оставшиеся яблоки!", "en": "Count and tap the apples that are left!" },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "ba", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "a3", "art": { "kind": "apple", "color": "yellow" } },
+        { "id": "fi", "art": { "kind": "fish", "color": "orange" } }
+      ],
+      "answer": ["a1", "a2", "a3"],
+      "hint": { "uz": "Faqat olmalarni belgila va sana.", "ru": "Отмечай только яблоки и считай.", "en": "Tap only the apples and count them." },
+      "explanation": { "uz": "Uchta olma qoldi. Boshqa narsalar olma emas.", "ru": "Осталось три яблока. Другие предметы — не яблоки.", "en": "Three apples are left. The other things are not apples." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["3", "5", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 7 - 4 = ?", "ru": "Найди разность: 7 - 4 = ?", "en": "Find the difference: 7 - 4 = ?" },
+      "hint": { "uz": "Yettitadan toʻrttasini olib tashla.", "ru": "Убери от семи четыре.", "en": "Take four away from seven." },
+      "explanation": { "uz": "Yettidan toʻrtni ayirsak, uch qoladi.", "ru": "Семь минус четыре — остаётся три.", "en": "Seven minus four leaves three." }
+    },
+    {
+      "id": "q6",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladigan shaklni bos!", "ru": "Нажми на фигуру, которая отличается!", "en": "Tap the shape that is different!" },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "red" } },
+        { "id": "fi", "art": { "kind": "fish", "color": "red" } }
+      ],
+      "answer": ["fi"],
+      "hint": { "uz": "Ikkitasi bir xil. Bittasini olib tashlasak boʻladi.", "ru": "Две одинаковые. Одну можно убрать.", "en": "Two are the same. One can be taken away." },
+      "explanation": { "uz": "Ikki olma bir xil edi, baliq esa farq qildi — uni olib tashladik.", "ru": "Два яблока одинаковые, рыбка отличалась — её убрали.", "en": "Two apples were the same, the fish differed — we took it away." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["0", "1", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 5 - 5 = ?", "ru": "Найди разность: 5 - 5 = ?", "en": "Find the difference: 5 - 5 = ?" },
+      "hint": { "uz": "Hammasini olib tashlasang, nima qoladi?", "ru": "Если убрать всё, что останется?", "en": "If you take all of them away, what is left?" },
+      "explanation": { "uz": "Beshdan beshni ayirsak, hech narsa qolmaydi — nol.", "ru": "Пять минус пять — не остаётся ничего, ноль.", "en": "Five minus five leaves nothing — zero." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "triangle", "color": "green" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "green" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "green" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Uchburchak, doira, uchburchak, doira… navbat bilan keladi!", "ru": "Треугольник, круг, треугольник, круг… по очереди!", "en": "Triangle, circle, triangle, circle… they take turns!" },
+      "explanation": { "uz": "Uchburchakdan keyin doim doira keladi. Keyingisi — doira.", "ru": "После треугольника всегда идёт круг. Следующий — круг.", "en": "After a triangle there is always a circle. The next one is a circle." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 6, "y": 2 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi tomonda koʻp qoldi?", "ru": "Посмотри на весы: где осталось больше?", "en": "Look at the scale: which side has more left?" },
+      "hint": { "uz": "Har tomonni sana. Koʻp qolgan tomon pastga ogʻadi.", "ru": "Сосчитай каждую сторону. Где больше осталось — та опускается.", "en": "Count each side. The side with more left goes down." },
+      "explanation": { "uz": "Bir tomonda koʻp qoldi — tarozi oʻsha tomonga ogʻdi. Qolgan sonni taqqosladik.", "ru": "С одной стороны осталось больше — весы наклонились туда. Мы сравнили остатки.", "en": "One side had more left — the scale tipped there. We compared what remained." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["2", "3", "1"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 8 - 6 = ?", "ru": "Найди разность: 8 - 6 = ?", "en": "Find the difference: 8 - 6 = ?" },
+      "hint": { "uz": "Sakkiztadan oltitasini olib tashla.", "ru": "Убери от восьми шесть.", "en": "Take six away from eight." },
+      "explanation": { "uz": "Sakkizdan oltini ayirsak, ikki qoladi. Ayirma — ikki.", "ru": "Восемь минус шесть — остаётся два. Разность — два.", "en": "Eight minus six leaves two. The difference is two." }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+import { NextRequest, NextResponse } from 'next/server';
+import { getStore } from '@/lib/store';
+import { getLesson } from '@/content';
+
+export async function GET() {
+  const store = getStore();
+  const progress = await store.listProgress();
+  return NextResponse.json({ progress });
+}
+
+/** Marks a topic completed with a score (FR-QZ-10). */
+export async function POST(req: NextRequest) {
+  const body = await req.json().catch(() => ({}));
+  const topicKey = String(body.topicKey ?? '');
+  const lesson = getLesson(topicKey);
+  if (!lesson) return NextResponse.json({ error: 'unknown_topic' }, { status: 400 });
+
+  const total = lesson.items.length;
+  const score = Math.min(total, Math.max(0, Number(body.score) || 0));
+  const answers: boolean[] = Array.isArray(body.answers)
+    ? body.answers.slice(0, total).map(Boolean)
+    : [];
+
+  const store = getStore();
+  const user = await store.getCurrent();
+  if (!user) return NextResponse.json({ error: 'no_user' }, { status: 401 });
+
+  await store.saveProgress({ subjectKey: lesson.subjectKey, topicKey, score, answers });
+  return NextResponse.json({ ok: true });
+}

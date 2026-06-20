@@ -1,0 +1,626 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Brand palette (SRS §5.2) */
+  --brand-orange: #f39a1f;
+  --brand-blue: #1fa7e0;
+  --brand-green: #8dc63f;
+  --brand-magenta: #c2298a;
+  --brand-purple: #5a2d82;
+  --ink: #1e3a5f;
+  --bg: #fcfcf8;
+  --error: #e14b4b;
+
+  --font-round: 'Nunito';
+  --line-h: 34px; /* notebook ruled line height */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-round), system-ui, sans-serif;
+  /* soft playful confetti-dot background */
+  background-image:
+    radial-gradient(rgba(31, 167, 224, 0.07) 2.5px, transparent 2.5px),
+    radial-gradient(rgba(243, 154, 31, 0.06) 2.5px, transparent 2.5px);
+  background-size: 64px 64px, 64px 64px;
+  background-position: 0 0, 32px 32px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--brand-blue);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* ---------- Buttons ---------- */
+@layer components {
+  .btn-primary,
+  .btn-blue,
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-extrabold select-none cursor-pointer transition-transform duration-100;
+  }
+  .btn-primary {
+    @apply text-white px-7 py-3.5 text-lg;
+    background: linear-gradient(180deg, #ffb347, var(--brand-orange));
+    box-shadow:
+      0 5px 0 #c97c12,
+      0 10px 18px rgba(243, 154, 31, 0.35);
+  }
+  .btn-blue {
+    @apply text-white px-6 py-3;
+    background: linear-gradient(180deg, #4cc3f0, var(--brand-blue));
+    box-shadow:
+      0 4px 0 #1379a5,
+      0 8px 14px rgba(31, 167, 224, 0.3);
+  }
+  .btn-ghost {
+    @apply px-5 py-2.5 bg-white/90 border-2;
+    border-color: rgba(30, 58, 95, 0.15);
+    color: var(--ink);
+    box-shadow: 0 3px 0 rgba(30, 58, 95, 0.12);
+  }
+  .card {
+    @apply rounded-3xl bg-white shadow-card border;
+    border-color: rgba(30, 58, 95, 0.08);
+  }
+}
+
+.btn-primary:active,
+.btn-blue:active,
+.btn-ghost:active {
+  transform: translateY(2px) scale(0.99);
+}
+.btn-primary:active {
+  box-shadow:
+    0 2px 0 #c97c12,
+    0 5px 9px rgba(243, 154, 31, 0.35);
+}
+
+/* ---------- Notebook (dashboard subject view) ---------- */
+.notebook {
+  background-color: #fffef7;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent calc(var(--line-h) - 1px),
+      #c9e2f2 calc(var(--line-h) - 1px),
+      #c9e2f2 var(--line-h)
+    ),
+    linear-gradient(
+      to right,
+      transparent 56px,
+      rgba(225, 75, 75, 0.35) 56px,
+      rgba(225, 75, 75, 0.35) 58px,
+      transparent 58px
+    );
+  background-size:
+    100% var(--line-h),
+    100% 100%;
+}
+
+/* squared math-notebook paper (daftar katagi) */
+.grid-paper {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(to right, rgba(31, 167, 224, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(31, 167, 224, 0.18) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+/* ---------- Drag & drop ---------- */
+.dragging {
+  touch-action: none;
+  z-index: 60;
+  cursor: grabbing;
+}
+.draggable {
+  touch-action: none;
+  cursor: grab;
+}
+.dropzone-hot {
+  outline: 3px dashed var(--brand-blue);
+  outline-offset: 4px;
+}
+
+/* pencil cursor for the notebook pen tool */
+.cursor-pencil {
+  cursor:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='26' height='26'><path d='M4 22l2.2-6.2L19.5 2.5a2.1 2.1 0 0 1 3 3L9.2 18.8 4 22z' fill='%23F39A1F' stroke='%231E3A5F' stroke-width='1.6' stroke-linejoin='round'/><path d='M4 22l2.2-6.2 4 4z' fill='%231E3A5F'/></svg>")
+      3 23,
+    crosshair;
+}
+
+/* hint visual cues */
+@keyframes qt-pulsehint {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.07);
+    opacity: 0.85;
+  }
+}
+.cue-pulse {
+  animation: qt-pulsehint 1.1s ease-in-out infinite;
+}
+
+@keyframes dashmove {
+  to {
+    stroke-dashoffset: -14;
+  }
+}
+.cue-arrow {
+  stroke-dasharray: 8 8;
+  animation: dashmove 0.8s linear infinite;
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* thin pretty scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(30, 58, 95, 0.18);
+  border-radius: 8px;
+}
+
+/* =========================================================================
+   QuvnoqTest — animated landing (MindMarket-style scroll system)
+   Layer 1: Lenis smooth scroll · Layer 2: --progress vars · Layer 3: CSS/SVG
+   ========================================================================= */
+:root {
+  --color-glass: rgba(255, 255, 255, 0.08);
+  --color-accent-orange: #f39a1f;
+  --color-accent-purple: #7c3aed;
+  --color-accent-cyan: #06b6d4;
+  --color-accent-green: #10b981;
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ---- Lenis ---- */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* ---- Hero first-hit reveal ---- */
+@keyframes anim-first-hit {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.anim-first-hit {
+  animation: anim-first-hit 0.7s var(--ease-out-expo) both;
+}
+.anim-first-hit.-delay-1 {
+  animation-delay: 0.12s;
+}
+.anim-first-hit.-delay-2 {
+  animation-delay: 0.24s;
+}
+.anim-first-hit.-delay-3 {
+  animation-delay: 0.38s;
+}
+
+/* ---- Scroll-down chevron ---- */
+@keyframes chevBob {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(9px);
+    opacity: 0.35;
+  }
+}
+.scroll-chevron {
+  animation: chevBob 1.6s ease-in-out infinite;
+}
+
+/* ---- Floating particle layer ---- */
+@keyframes particleFloat {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(var(--pdx, 10px), var(--pdy, -22px), 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.qt-particle {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+  animation: particleFloat var(--pdur, 9s) ease-in-out infinite both;
+  animation-delay: var(--pdelay, 0s);
+}
+
+/* ---- Glass grade cards (Task 2) ---- */
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.card-reveal {
+  animation: cardReveal 0.6s var(--ease-spring) both;
+}
+.grade-card {
+  --rx: 0deg;
+  --ry: 0deg;
+  will-change: transform;
+  transform: perspective(700px) rotateX(var(--rx)) rotateY(var(--ry));
+  transition:
+    transform 0.5s var(--ease-spring),
+    box-shadow 0.3s ease; /* spring-back when not hovered */
+  box-shadow:
+    0 8px 32px rgba(31, 38, 135, 0.37),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.grade-card:hover {
+  transform: perspective(700px) rotateX(var(--rx)) rotateY(var(--ry)) scale(1.06);
+  transition:
+    transform 0.12s ease-out,
+    box-shadow 0.3s ease;
+  box-shadow:
+    0 0 34px var(--card-accent, #06b6d4),
+    0 14px 40px rgba(31, 38, 135, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+.grade-card:active {
+  transform: perspective(700px) scale(0.95) !important;
+  transition: transform 0.1s ease !important;
+}
+
+/* card science-icon hover behaviours */
+.gc-icon {
+  will-change: transform;
+  transform-origin: center;
+  transition: transform 0.3s var(--ease-spring);
+}
+@keyframes gcSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes gcWobble {
+  0%,
+  100% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+}
+@keyframes gcBob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+.grade-card:hover .gc-icon[data-anim='spin'] {
+  animation: gcSpin 3.5s linear infinite;
+}
+.grade-card:hover .gc-icon[data-anim='wobble'] {
+  animation: gcWobble 0.5s ease-in-out infinite;
+}
+.grade-card:hover .gc-icon[data-anim='bob'] {
+  animation: gcBob 1.1s ease-in-out infinite;
+}
+.grade-card:hover .gc-icon[data-anim='rocket'] {
+  transform: translateY(-12px);
+}
+.grade-card:hover .gc-icon[data-anim='orbit'] .gc-orbit {
+  animation: gcSpin 2.2s linear infinite;
+  transform-origin: center;
+}
+
+/* coming-soon corner ribbon */
+.gc-ribbon {
+  position: absolute;
+  top: 14px;
+  right: -36px;
+  width: 132px;
+  transform: rotate(45deg);
+  background: linear-gradient(180deg, #ffb347, var(--color-accent-orange));
+  color: #fff;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding: 4px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.28);
+  pointer-events: none;
+}
+
+/* ---- Toast snackbar ---- */
+@keyframes toastBounce {
+  0% {
+    transform: translateY(100px) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-8px) scale(1.02);
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(4px) scale(0.99);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+.toast-bounce {
+  animation: toastBounce 0.5s var(--ease-spring) both;
+}
+
+/* ---- Sticky scroll scene (Task 3) ---- */
+.scene-bg {
+  position: absolute;
+  inset: -25%;
+  background:
+    radial-gradient(38% 48% at 22% 28%, rgba(124, 58, 237, 0.55), transparent 60%),
+    radial-gradient(44% 54% at 80% 24%, rgba(6, 182, 212, 0.45), transparent 60%),
+    radial-gradient(48% 58% at 62% 82%, rgba(16, 185, 129, 0.42), transparent 60%),
+    radial-gradient(40% 50% at 28% 76%, rgba(243, 154, 31, 0.34), transparent 60%);
+  filter: hue-rotate(calc(var(--progress, 0) * 300deg)) saturate(1.15);
+  will-change: filter;
+}
+.transform-element {
+  position: absolute;
+  will-change: transform;
+}
+.scene-card {
+  opacity: 0;
+  transform: translateY(60px) scale(0.9);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s var(--ease-spring);
+  will-change: transform, opacity;
+}
+.scene-card.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+@keyframes spinLoop {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin-slow {
+  animation: spinLoop 8s linear infinite;
+  transform-origin: center;
+}
+
+/* ---- Scroll-reveal sections (Task 4) ---- */
+[data-scroll-offset] {
+  opacity: 0;
+  transform: translateY(50px);
+}
+[data-scroll-offset].is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s var(--ease-out-expo);
+}
+[data-scroll-offset].is-inview > * {
+  transition-delay: calc(var(--index, 0) * 120ms);
+}
+/* directional reveal variants */
+[data-scroll-offset].from-left {
+  transform: translateX(-60px);
+}
+[data-scroll-offset].from-right {
+  transform: translateX(60px);
+}
+[data-scroll-offset].from-left.is-inview,
+[data-scroll-offset].from-right.is-inview {
+  transform: translateX(0);
+}
+/* subject tile lift */
+.c-tile-animated {
+  transition:
+    transform 0.3s var(--ease-spring),
+    box-shadow 0.3s ease;
+}
+.c-tile-animated:hover {
+  transform: translateY(-6px);
+}
+.score-bar {
+  width: 0;
+  transition: width 1s var(--ease-out-expo) 0.25s;
+}
+.is-inview .score-bar {
+  width: var(--bar, 60%);
+}
+.timeline-path {
+  stroke-dasharray: 640;
+  stroke-dashoffset: 640;
+  transition: stroke-dashoffset 1.2s ease 0.3s;
+}
+.is-inview .timeline-path {
+  stroke-dashoffset: 0;
+}
+.wavy-underline path {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  transition: stroke-dashoffset 1s ease 0.2s;
+}
+.is-inview .wavy-underline path {
+  stroke-dashoffset: 0;
+}
+@keyframes ctaPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(243, 154, 31, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 16px rgba(243, 154, 31, 0);
+  }
+}
+.cta-pulse {
+  animation: ctaPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ---- Marquee strip (Task 5) ---- */
+@keyframes marquee-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+.marquee-left {
+  animation: marquee-left 30s linear infinite;
+}
+.marquee-right {
+  animation: marquee-right 30s linear infinite;
+}
+.marquee-mask:hover .marquee-left,
+.marquee-mask:hover .marquee-right {
+  animation-play-state: paused;
+}
+
+/* ---- glass utility ---- */
+.glass {
+  background: var(--color-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* ---- Flashlight discovery section ---- */
+.flashlight-section {
+  position: relative;
+  /* illumination radii — desktop (2x the original 230/280) */
+  --fl-mask: 460px;
+  --fl-glow: 560px;
+}
+@media (max-width: 767px) {
+  /* mobile — 1.5x the original */
+  .flashlight-section {
+    --fl-mask: 345px;
+    --fl-glow: 420px;
+  }
+}
+.flashlight-section.is-lit,
+.flashlight-section.is-lit * {
+  cursor: none;
+}
+/* hidden science layer — only visible inside the flashlight circle */
+.discovery-hidden {
+  -webkit-mask-image: radial-gradient(circle var(--fl-mask, 460px) at var(--mx, -1000px) var(--my, -1000px), #000 0%, #000 42%, transparent 78%);
+  mask-image: radial-gradient(circle var(--fl-mask, 460px) at var(--mx, -1000px) var(--my, -1000px), #000 0%, #000 42%, transparent 78%);
+}
+/* reduced-motion / no-pointer fallback: reveal faintly, always */
+.discovery-hidden.always-on {
+  -webkit-mask-image: none;
+  mask-image: none;
+  opacity: 0.12;
+}
+/* warm light that brightens whatever it passes over */
+.discovery-glow {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle var(--fl-glow, 560px) at var(--mx, -1000px) var(--my, -1000px), rgba(255, 246, 210, 0.22), rgba(255, 246, 210, 0.07) 42%, transparent 72%);
+  mix-blend-mode: screen;
+  transition: opacity 0.25s ease;
+}
+.flashlight-section.is-lit .discovery-glow {
+  opacity: 1;
+}
+/* the branded flashlight that replaces the cursor */
+.flashlight-cursor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 40;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(calc(var(--mx, -9999px) - 34px), calc(var(--my, -9999px) - 34px), 0);
+  transition: opacity 0.2s ease;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.5));
+}
+.flashlight-section.is-lit .flashlight-cursor {
+  opacity: 1;
+}
+.sci-item {
+  position: absolute;
+  color: rgba(165, 212, 255, 0.92);
+  text-shadow: 0 0 12px rgba(120, 180, 255, 0.5);
+  white-space: nowrap;
+  user-select: none;
+}

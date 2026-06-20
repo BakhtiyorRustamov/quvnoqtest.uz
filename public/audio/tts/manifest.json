@@ -1,0 +1,330 @@
+{
+  "g1-math-01.uz.wav": {
+    "hash": "c1c54af841d216a0c09732150f963040ae20e50c179b882cc23263d30a43c2a1",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1403564,
+    "at": "2026-06-18T15:23:46.078Z"
+  },
+  "g1-math-02.uz.wav": {
+    "hash": "2b3450eab43fee4be3c159fcf95ed0ea1489bb62c39141b3def0c0c4856be0e7",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1451564,
+    "at": "2026-06-18T15:24:00.621Z"
+  },
+  "g1-math-03.uz.wav": {
+    "hash": "036f38c548da326763ab13ceef718aa28585b442f45f4203f3fe23c06d0062a7",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1355564,
+    "at": "2026-06-18T16:28:59.044Z"
+  },
+  "g1-math-04.uz.wav": {
+    "hash": "7d8c6c318f52ca60931b2e6d2b9bf0d3fb190ee2247113d6a9493804033f838e",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1597484,
+    "at": "2026-06-18T16:29:16.827Z"
+  },
+  "g1-math-05.uz.wav": {
+    "hash": "f05eecee860752e203ba556f779063d3b2d0152c915e234e8f56d3485401ea64",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1516844,
+    "at": "2026-06-18T16:29:29.395Z"
+  },
+  "g1-math-06.uz.wav": {
+    "hash": "c5695561377c43c066233889499c6917393f793881a339db88a1992fe877abfa",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1186604,
+    "at": "2026-06-18T16:29:42.045Z"
+  },
+  "g1-math-07.uz.wav": {
+    "hash": "bc0dd4996a34d06840b0d8f48c3b0390c96b1bcc53c6552bc34769aa83b1c636",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1065644,
+    "at": "2026-06-18T16:29:52.152Z"
+  },
+  "g1-math-08.uz.wav": {
+    "hash": "6f18b80271d89c62ddd213d6e17815851aa86b7604e35ba66e6de5d4d2d09893",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1297964,
+    "at": "2026-06-18T17:51:33.459Z"
+  },
+  "g1-math-09.uz.wav": {
+    "hash": "1bcc90f1471de96391b5933f6e74a92d9862531bc648bc9d6064b64225614d29",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1136684,
+    "at": "2026-06-18T17:51:48.719Z"
+  },
+  "g1-math-10.uz.wav": {
+    "hash": "57ce91eecd63729a90f26804df4b7081d5a48db6f97c6c3e4c2657df12345e99",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1161644,
+    "at": "2026-06-18T17:52:01.251Z"
+  },
+  "g1-math-11.uz.wav": {
+    "hash": "1c4408c6ab739b0bca95b10823ea77003ec3a90a1591e564d686aae2a41a122b",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 889004,
+    "at": "2026-06-18T17:52:09.223Z"
+  },
+  "g1-math-12.uz.wav": {
+    "hash": "fdc4cd06093ce9318929affef53f55b826388c762172a9a5daf6af923742de08",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 910124,
+    "at": "2026-06-18T17:52:18.684Z"
+  },
+  "g1-math-13.uz.wav": {
+    "hash": "37fda87bfdea5c5ed771c20e1e758347b92ad685291b9e0c91d918242f3be332",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1155884,
+    "at": "2026-06-19T10:27:38.512Z"
+  },
+  "g1-math-14.uz.wav": {
+    "hash": "e2cd778536381d8acd75ca6e88aa79f0f787758267dc979914265e6afa122865",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1075244,
+    "at": "2026-06-19T10:27:47.909Z"
+  },
+  "g1-math-15.uz.wav": {
+    "hash": "b6b6fce600683c5235b5b7333a1e785be9c18bab519b2d1e07c0120ff2eed3c6",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1309484,
+    "at": "2026-06-19T10:28:02.207Z"
+  },
+  "g1-math-16.uz.wav": {
+    "hash": "86e3ed08da90d0bafc8eb288781a458e095767faa65e9aad87b8a6d089fd057d",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1228844,
+    "at": "2026-06-19T10:28:14.185Z"
+  },
+  "g1-math-17.uz.wav": {
+    "hash": "41b39734ed345b365cd7f0aa9557284beb9744fa1550df6150b6407f130f4772",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1059884,
+    "at": "2026-06-19T10:28:24.621Z"
+  },
+  "g1-math-18.uz.wav": {
+    "hash": "3ff4b3d0350c7cc806eb2a3958c9d4f6b051b6cb04960c8c32e77dd48be25a63",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1056044,
+    "at": "2026-06-19T10:28:36.404Z"
+  },
+  "g1-math-19.uz.wav": {
+    "hash": "73ed7564e829553cd550e0c37ca14925f3d3a8bbd1d87cc2cb0b2fe3b0d99000",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 910124,
+    "at": "2026-06-19T10:57:37.166Z"
+  },
+  "g1-math-20.uz.wav": {
+    "hash": "1a2b66ed17ec6e3c92e2b9f9224bd22bee299b101e91412b616b5ea2c3235549",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1059884,
+    "at": "2026-06-19T10:57:46.954Z"
+  },
+  "g1-math-21.uz.wav": {
+    "hash": "0709db856c0119f747df31021de8c3bc6b0745fc281a1c363edccaa2100200ac",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1140524,
+    "at": "2026-06-19T10:57:57.217Z"
+  },
+  "g1-math-22.uz.wav": {
+    "hash": "aa3fc00b82574441d793b3e282710dfbade64a5aea4134acb7b1ee1e69c05eba",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1271084,
+    "at": "2026-06-19T10:58:07.925Z"
+  },
+  "g1-math-23.uz.wav": {
+    "hash": "5b4254dbe35ad3a6c3832d860cfc7f795388d08171b29a33c433e20dc28a7216",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1192364,
+    "at": "2026-06-19T10:58:18.970Z"
+  },
+  "g1-math-24.uz.wav": {
+    "hash": "ec02de507fb2392572a474a6d65e31563aca8609fec90ba4230ea4cc7ebea686",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 946604,
+    "at": "2026-06-19T10:58:28.043Z"
+  },
+  "g1-math-25.uz.wav": {
+    "hash": "76e5b181d9523be30e87e83569f4522b828018cedf7c774209f54877d634dc4a",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1067564,
+    "at": "2026-06-19T17:49:49.848Z"
+  },
+  "g1-math-26.uz.wav": {
+    "hash": "7fe2f53bea4c654268770b5562f715087ba2921b7d399ce37f03ab4e6e72608c",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1221164,
+    "at": "2026-06-19T17:50:01.118Z"
+  },
+  "g1-math-27.uz.wav": {
+    "hash": "69139e63a66a6e24845dd9bc61d4e9b0801e6b5840680904775a038abc8b1a9c",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1163564,
+    "at": "2026-06-19T17:50:12.996Z"
+  },
+  "g1-math-28.uz.wav": {
+    "hash": "1bc134b1a7e2eadba310414f3396434180c9ca0504c8c7f7c043c959ca22994a",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 960044,
+    "at": "2026-06-19T17:50:22.746Z"
+  },
+  "g1-math-29.uz.wav": {
+    "hash": "493c82261f76cd5683a2ed22fcf53f5ba7e9bda0b381fe5b474d8c5435841b54",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1797164,
+    "at": "2026-06-19T17:50:38.212Z"
+  },
+  "g1-math-30.uz.wav": {
+    "hash": "50b80b872547782c89d9c45b47d1398d5550b9c5eaa03e198be47df9c9538151",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1526444,
+    "at": "2026-06-19T17:50:53.511Z"
+  },
+  "g1-math-31.uz.wav": {
+    "hash": "7929d5cdd0d1deb923dd8acbbf854ec1c8112707105a9f559f50f541f0ec2d95",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1054124,
+    "at": "2026-06-19T17:51:02.665Z"
+  },
+  "g1-math-32.uz.wav": {
+    "hash": "d4585f392b8c1536e413c25488c7296720a77bf42081bee6de0ae8c0df1c77b5",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1290284,
+    "at": "2026-06-19T17:51:14.606Z"
+  },
+  "g1-math-33.uz.wav": {
+    "hash": "b3c2f6e3e250a36666b92f646708aa5505d34c4aea8fec3058a0a34d2b1de1af",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 940844,
+    "at": "2026-06-19T17:51:22.712Z"
+  },
+  "g1-math-34.uz.wav": {
+    "hash": "ac71550804164be6528f62e12f4f0ab2477118ac000e5de1d4a92f1724588a26",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 985004,
+    "at": "2026-06-19T17:51:33.370Z"
+  },
+  "g1-math-35.uz.wav": {
+    "hash": "14e16b60911f2c818ea1199fb2f90e1a59a64697d432838def019052cd495740",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 856364,
+    "at": "2026-06-19T17:51:42.457Z"
+  },
+  "g1-math-36.uz.wav": {
+    "hash": "2b921973062b8c71412dfa59f22eb3585f4e403223bd3d4cc482761cbe86a198",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 969644,
+    "at": "2026-06-19T18:08:40.124Z"
+  },
+  "g1-math-37.uz.wav": {
+    "hash": "d2716b41796e8f896b0e76071fa583cb03af78cbdd1fd2b38339c33bdb301e52",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 1267244,
+    "at": "2026-06-19T18:08:51.135Z"
+  },
+  "g1-math-38.uz.wav": {
+    "hash": "35d56c70d48d3cbf2761c3072845cd304119a194f3eb518fc715245b7028648d",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 915884,
+    "at": "2026-06-19T18:09:02.088Z"
+  },
+  "g1-math-39.uz.wav": {
+    "hash": "2c844cf1651eee855af80d4f77849280054c849a4a3067bb688260f9329cec21",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 769964,
+    "at": "2026-06-19T18:09:11.510Z"
+  },
+  "g1-math-40.uz.wav": {
+    "hash": "fa47a81a01ab2652ebec020c0e2b77634cd288163885dd886cf7cedfff674399",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 898604,
+    "at": "2026-06-19T18:09:19.410Z"
+  },
+  "g1-math-41.uz.wav": {
+    "hash": "f2f89fcbba16d59357c1fbde4342cd0d57e6933373762e70a6510692f0ae31cf",
+    "model": "gemini-3.1-flash-tts-preview",
+    "voice": "Charon",
+    "lang": "en-US",
+    "bytes": 842924,
+    "at": "2026-06-19T18:09:29.062Z"
+  }
+}

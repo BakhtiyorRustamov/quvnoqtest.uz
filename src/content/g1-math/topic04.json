@@ -1,0 +1,287 @@
+{
+  "topicId": "g1-math-04",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🍎🐟",
+  "title": {
+    "uz": "Buyumlarni sanaymiz",
+    "ru": "Считаем предметы",
+    "en": "Counting things"
+  },
+  "recall": {
+    "uz": "Narsalarni sanaymiz. Bir, ikki, uch, toʻrt, besh, olti, yetti, sakkiz, toʻqqiz. Nechta borligini bilamiz. Birinchi, ikkinchi, uchinchi deb tartibini ham aytamiz.",
+    "ru": "Мы считаем предметы: один, два, три, четыре, пять, шесть, семь, восемь, девять. Узнаём, сколько их. Называем порядок: первый, второй, третий.",
+    "en": "We count things: one, two, three, four, five, six, seven, eight, nine. We learn how many there are. We also name the order: first, second, third."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma olmalarni sanab belgila, soʻng «Tekshirish»ni bos!",
+        "ru": "Сосчитай и отметь все яблоки, потом нажми «Проверить»!",
+        "en": "Count and tap all the apples, then press “Check”!"
+      },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "a3", "art": { "kind": "apple", "color": "red" } }
+      ],
+      "answer": ["a1", "a2", "a3"],
+      "hint": {
+        "uz": "Faqat olmalarni qidiri. Ularni birma-bir sana: bir, ikki, uch.",
+        "ru": "Ищи только яблоки. Считай их по одному: один, два, три.",
+        "en": "Look only for apples. Count them one by one: one, two, three."
+      },
+      "explanation": {
+        "uz": "Uchta olma bor edi. Boshqa narsalarni emas, faqat olmalarni sanadik.",
+        "ru": "Было три яблока. Мы сосчитали только яблоки, а не другие предметы.",
+        "en": "There were three apples. We counted only the apples, not the other things."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma baliqlarni sanab belgila, soʻng «Tekshirish»ni bos!",
+        "ru": "Сосчитай и отметь всех рыбок, потом нажми «Проверить»!",
+        "en": "Count and tap all the fish, then press “Check”!"
+      },
+      "options": [
+        { "id": "f1", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "f2", "art": { "kind": "fish", "color": "blue" } },
+        { "id": "c1", "art": { "kind": "circle", "color": "red" } },
+        { "id": "f3", "art": { "kind": "fish", "color": "magenta" } },
+        { "id": "f4", "art": { "kind": "fish", "color": "green" } }
+      ],
+      "answer": ["f1", "f2", "f3", "f4"],
+      "hint": {
+        "uz": "Faqat baliqlarni belgila va sana: bir, ikki, uch, toʻrt.",
+        "ru": "Отмечай только рыбок и считай: один, два, три, четыре.",
+        "en": "Tap only the fish and count: one, two, three, four."
+      },
+      "explanation": {
+        "uz": "Toʻrtta baliq bor edi. Doirani sanaganimiz yoʻq — u baliq emas.",
+        "ru": "Было четыре рыбки. Круг мы не считали — это не рыбка.",
+        "en": "There were four fish. We did not count the circle — it is not a fish."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma katta koptoklarni sanab belgila!",
+        "ru": "Сосчитай и отметь все большие мячи!",
+        "en": "Count and tap all the big balls!"
+      },
+      "options": [
+        { "id": "big1", "art": { "kind": "ball", "color": "red", "scale": 1.2 } },
+        { "id": "sm1", "art": { "kind": "ball", "color": "blue", "scale": 0.55 } },
+        { "id": "big2", "art": { "kind": "ball", "color": "green", "scale": 1.2 } },
+        { "id": "sm2", "art": { "kind": "ball", "color": "orange", "scale": 0.55 } },
+        { "id": "big3", "art": { "kind": "ball", "color": "magenta", "scale": 1.2 } }
+      ],
+      "answer": ["big1", "big2", "big3"],
+      "hint": {
+        "uz": "Avval kattalarini ajrat, keyin ularni sana: bir, ikki, uch.",
+        "ru": "Сначала найди большие, потом сосчитай их: один, два, три.",
+        "en": "First find the big ones, then count them: one, two, three."
+      },
+      "explanation": {
+        "uz": "Uchta katta koptok bor edi. Kichiklarini sanamadik.",
+        "ru": "Было три больших мяча. Маленькие мы не считали.",
+        "en": "There were three big balls. We did not count the small ones."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 2, "y": 5 } },
+      "prompt": {
+        "uz": "Tarozini koʻr: qaysi tomonda koʻproq?",
+        "ru": "Посмотри на весы: где больше?",
+        "en": "Look at the scale: which side has more?"
+      },
+      "hint": {
+        "uz": "Har tomonni sana. Tarozi koʻp tomonga ogʻadi.",
+        "ru": "Сосчитай каждую сторону. Весы наклоняются к большему.",
+        "en": "Count each side. The scale tips toward the side with more."
+      },
+      "explanation": {
+        "uz": "Bir tomonda kam, boshqasida koʻp edi. Sanab, qaysi koʻp ekanini topdik.",
+        "ru": "С одной стороны меньше, с другой больше. Сосчитав, мы нашли, где больше.",
+        "en": "One side had fewer, the other had more. By counting we found which side has more."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 4, "y": 4 } },
+      "prompt": {
+        "uz": "Tarozini koʻr: tomonlar tengmi?",
+        "ru": "Посмотри на весы: стороны равны?",
+        "en": "Look at the scale: are the sides equal?"
+      },
+      "hint": {
+        "uz": "Ikkala tomonni sana. Agar son bir xil boʻlsa, tarozi tekis turadi.",
+        "ru": "Сосчитай обе стороны. Если числа одинаковые, весы стоят ровно.",
+        "en": "Count both sides. If the numbers are the same, the scale stays level."
+      },
+      "explanation": {
+        "uz": "Ikkala tomonda bir xil son edi — shuning uchun ular teng. Tarozi tekis turadi.",
+        "ru": "На обеих сторонах было одинаковое число — поэтому они равны. Весы стоят ровно.",
+        "en": "Both sides had the same number — so they are equal. The scale stays level."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": {
+        "uz": "Koptoklarni tartibla: birinchi eng kichik, oxiri eng katta!",
+        "ru": "Расставь мячи: первый самый маленький, последний самый большой!",
+        "en": "Order the balls: first the smallest, last the biggest!"
+      },
+      "items": [
+        { "id": "mid", "art": { "kind": "ball", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "ball", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "ball", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "ball", "color": "gray", "scale": 0.5 }, "label": { "uz": "birinchi", "ru": "первый", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "ball", "color": "gray", "scale": 0.85 }, "label": { "uz": "ikkinchi", "ru": "второй", "en": "second" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "ball", "color": "gray", "scale": 1.25 }, "label": { "uz": "uchinchi", "ru": "третий", "en": "third" } }
+      ],
+      "hint": {
+        "uz": "Eng kichkinasi — birinchi, oʻrtachasi — ikkinchi, eng kattasi — uchinchi.",
+        "ru": "Самый маленький — первый, средний — второй, самый большой — третий.",
+        "en": "The smallest is first, the middle one is second, the biggest is third."
+      },
+      "explanation": {
+        "uz": "Tartib: birinchi, ikkinchi, uchinchi. Narsalarni tartib raqami bilan ataymiz.",
+        "ru": "Порядок: первый, второй, третий. Мы называем предметы порядковым числом.",
+        "en": "Order: first, second, third. We name things by their ordinal place."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorni davom ettir: keyin nima keladi?",
+        "ru": "Продолжи ряд: что идёт дальше?",
+        "en": "Continue the row: what comes next?"
+      },
+      "sequence": [
+        { "kind": "apple", "color": "red" },
+        { "kind": "apple", "color": "red" },
+        { "kind": "fish", "color": "blue" },
+        { "kind": "apple", "color": "red" },
+        { "kind": "apple", "color": "red" }
+      ],
+      "options": [
+        { "id": "fi", "art": { "kind": "fish", "color": "blue" } },
+        { "id": "ap", "art": { "kind": "apple", "color": "red" } },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" } }
+      ],
+      "answer": ["fi"],
+      "hint": {
+        "uz": "Ikki olma, bir baliq, ikki olma… qatorni sanab, takrorni topi.",
+        "ru": "Два яблока, одна рыбка, два яблока… сосчитай и найди повтор.",
+        "en": "Two apples, one fish, two apples… count and find the repeat."
+      },
+      "explanation": {
+        "uz": "Har ikki olmadan keyin bitta baliq keladi. Keyingisi — baliq.",
+        "ru": "После каждых двух яблок идёт одна рыбка. Следующая — рыбка.",
+        "en": "After every two apples comes one fish. The next one is a fish."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "race_to_answer", "props": { "steps": 4, "maxSum": 5 } },
+      "prompt": {
+        "uz": "Sanash poygasi: toʻgʻri sonni tanlab, oldinga yur!",
+        "ru": "Гонка со счётом: выбирай верное число и двигайся вперёд!",
+        "en": "Counting race: pick the right number and move forward!"
+      },
+      "hint": {
+        "uz": "Har qadamda diqqat bilan sana, soʻng toʻgʻri sonni tanla.",
+        "ru": "На каждом шаге внимательно считай, потом выбирай верное число.",
+        "en": "Count carefully at each step, then choose the right number."
+      },
+      "explanation": {
+        "uz": "Har gal toʻgʻri sanaganda oldinga yurdik. Sanash bizni gʻolib qildi!",
+        "ru": "Каждый раз при верном счёте мы двигались вперёд. Счёт привёл к победе!",
+        "en": "Each correct count moved us forward. Counting carried us to the finish!"
+      }
+    },
+    {
+      "id": "q9",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma yulduzlarni sanab belgila!",
+        "ru": "Сосчитай и отметь все звёзды!",
+        "en": "Count and tap all the stars!"
+      },
+      "options": [
+        { "id": "st1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "ap", "art": { "kind": "apple", "color": "green" } },
+        { "id": "st2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "st3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "ba", "art": { "kind": "ball", "color": "blue" } }
+      ],
+      "answer": ["st1", "st2", "st3"],
+      "hint": {
+        "uz": "Faqat yulduzlarni belgila va sana: bir, ikki, uch.",
+        "ru": "Отмечай только звёзды и считай: один, два, три.",
+        "en": "Tap only the stars and count: one, two, three."
+      },
+      "explanation": {
+        "uz": "Uchta yulduz bor edi. Olma va koptokni sanamadik.",
+        "ru": "Было три звезды. Яблоко и мяч мы не считали.",
+        "en": "There were three stars. We did not count the apple or the ball."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": {
+        "uz": "Har bir narsani xuddi oʻshanga oʻxshaganiga ula!",
+        "ru": "Соедини каждый предмет с таким же!",
+        "en": "Connect each thing to the one that is the same!"
+      },
+      "left": [
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" },
+        { "id": "fi", "art": { "kind": "fish", "color": "blue" }, "match": "m-fi" },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" }, "match": "m-st" },
+        { "id": "ba", "art": { "kind": "ball", "color": "green" }, "match": "m-ba" }
+      ],
+      "right": [
+        { "id": "m-fi", "art": { "kind": "fish", "color": "gray" } },
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } },
+        { "id": "m-ba", "art": { "kind": "ball", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } }
+      ],
+      "hint": {
+        "uz": "Avval rangli narsani bos, keyin xuddi oʻshanday narsani bos.",
+        "ru": "Сначала нажми на цветной предмет, потом на такой же.",
+        "en": "First tap a colored thing, then tap the same kind of thing."
+      },
+      "explanation": {
+        "uz": "Har bir narsani oʻziga oʻxshaganiga uladik: olma — olmaga, baliq — baliqqa.",
+        "ru": "Мы соединили каждый предмет с таким же: яблоко с яблоком, рыбку с рыбкой.",
+        "en": "We matched each thing to the same one: apple to apple, fish to fish."
+      }
+    }
+  ]
+}

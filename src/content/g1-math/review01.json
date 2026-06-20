@@ -1,0 +1,39 @@
+{
+  "topicId": "g1-math-review-1",
+  "subjectKey": "g1-math",
+  "skipRecall": true,
+  "emojis": "🏁➕🏎️",
+  "title": {
+    "uz": "Takrorlash oʻyini: Qoʻshish poygasi",
+    "ru": "Игра-повторение: Гонка сложения",
+    "en": "Review game: Addition Grand Prix"
+  },
+  "recall": {
+    "uz": "Takrorlash oʻyini. Qoʻshishni oʻynab mashq qilamiz. Sonlarni qoʻshib, poygada oldinga intilamiz. Diqqat, tayyor, boshladik.",
+    "ru": "Игра-повторение. Тренируем сложение в игре. Складываем числа и мчимся вперёд в гонке. Внимание, приготовились, поехали.",
+    "en": "A review game. We practice adding through play. Add the numbers and race ahead. Ready, set, go."
+  },
+  "items": [
+    {
+      "id": "g1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "grand_prix_addition", "completeOn": "finish" },
+      "prompt": {
+        "uz": "Qoʻshish poygasi: toʻgʻri javobni tanlab, mashinangni gʻolib qil!",
+        "ru": "Гонка сложения: выбирай верный ответ и приведи машину к победе!",
+        "en": "Addition Grand Prix: pick the right answer and race your car to the finish!"
+      },
+      "hint": {
+        "uz": "Har bir misolni diqqat bilan qoʻshib, toʻgʻri sonni tanla.",
+        "ru": "Внимательно складывай каждый пример и выбирай верное число.",
+        "en": "Add each problem carefully and choose the correct number."
+      },
+      "explanation": {
+        "uz": "Qoʻshishni oʻyin orqali mashq qildik. Tez va toʻgʻri sanaganing uchun barakalla!",
+        "ru": "Мы потренировали сложение в игре. Молодец за быстрый и верный счёт!",
+        "en": "We practiced addition through a game. Well done for adding quickly and correctly!"
+      }
+    }
+  ]
+}

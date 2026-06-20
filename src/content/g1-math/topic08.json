@@ -1,0 +1,165 @@
+{
+  "topicId": "g1-math-08",
+  "subjectKey": "g1-math",
+  "emojis": "⚖️🍎🎈",
+  "title": {
+    "uz": "Toʻplamlarni solishtirish",
+    "ru": "Сравниваем наборы",
+    "en": "Comparing sets"
+  },
+  "recall": {
+    "uz": "Guruhlarni taqqoslaymiz. Qaysi biri koʻp, qaysi biri kam. Har bir narsani juftiga ulaymiz. Ortiqcha qolsa koʻp, yetmasa kam. Soni bir xil boʻlsa, teng deymiz.",
+    "ru": "Мы сравниваем группы. Какая больше, какая меньше. Соединяем каждый предмет в пару. Если остаётся лишнее — больше, не хватает — меньше. Поровну — значит равны.",
+    "en": "We compare groups. Which has more, which has fewer. We pair each thing with another. Extra left over means more, not enough means fewer. The same number means equal."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 5, "y": 2 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi tomon koʻp?", "ru": "Посмотри на весы: где больше?", "en": "Look at the scale: which side has more?" },
+      "hint": { "uz": "Har tomonni sana. Tarozi koʻp tomonga ogʻadi.", "ru": "Сосчитай каждую сторону. Весы наклоняются к большему.", "en": "Count each side. The scale tips toward the side with more." },
+      "explanation": { "uz": "Bir tomonda koʻp, boshqasida kam edi. Tarozi koʻp tomonga ogʻdi.", "ru": "С одной стороны больше, с другой меньше. Весы наклонились к большему.", "en": "One side had more, the other had fewer. The scale tipped toward the larger side." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 2, "y": 6 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi tomon kam?", "ru": "Посмотри на весы: где меньше?", "en": "Look at the scale: which side has fewer?" },
+      "hint": { "uz": "Kam tomon yengil boʻladi, u yuqoriga koʻtariladi.", "ru": "Меньшая сторона легче и поднимается вверх.", "en": "The side with fewer is lighter and rises up." },
+      "explanation": { "uz": "Chap tomonda kam edi, shuning uchun u yuqorida. Kam — ozroq degani.", "ru": "Слева было меньше, поэтому она вверху. Меньше — значит немного.", "en": "The left side had fewer, so it rose up. Fewer means a smaller amount." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 4, "y": 4 } },
+      "prompt": { "uz": "Tarozini koʻr: tomonlar tengmi?", "ru": "Посмотри на весы: стороны равны?", "en": "Look at the scale: are the sides equal?" },
+      "hint": { "uz": "Son bir xil boʻlsa, tarozi tekis turadi.", "ru": "Если число одинаковое, весы стоят ровно.", "en": "If the number is the same, the scale stays level." },
+      "explanation": { "uz": "Ikkala tomonda bir xil son edi — ular teng. Tarozi tekis turadi.", "ru": "На обеих сторонах одинаковое число — они равны. Весы ровные.", "en": "Both sides had the same number — they are equal. The scale stays level." }
+    },
+    {
+      "id": "q4",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir narsani oʻz juftiga ula!", "ru": "Соедини каждый предмет с его парой!", "en": "Connect each thing to its pair!" },
+      "left": [
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" },
+        { "id": "fi", "art": { "kind": "fish", "color": "blue" }, "match": "m-fi" },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" }, "match": "m-st" }
+      ],
+      "right": [
+        { "id": "m-fi", "art": { "kind": "fish", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } },
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } }
+      ],
+      "hint": { "uz": "Avval rangli narsani bos, keyin xuddi oʻshanday shaklni bos.", "ru": "Сначала нажми на цветной предмет, потом на такую же фигуру.", "en": "First tap a colored thing, then tap the same shape." },
+      "explanation": { "uz": "Har bir narsa oʻz juftini topdi: olma — olmaga, baliq — baliqqa. Hammasiga juft yetdi.", "ru": "Каждый предмет нашёл свою пару: яблоко к яблоку, рыбка к рыбке. Всем хватило пары.", "en": "Each thing found its pair: apple to apple, fish to fish. Everyone got a pair." }
+    },
+    {
+      "id": "q5",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma yulduzlarni sanab belgila!", "ru": "Сосчитай и отметь все звёзды!", "en": "Count and tap all the stars!" },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "s3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "b2", "art": { "kind": "ball", "color": "red" } }
+      ],
+      "answer": ["s1", "s2", "s3"],
+      "hint": { "uz": "Faqat yulduzlarni belgila va sana.", "ru": "Отмечай только звёзды и считай.", "en": "Tap only the stars and count them." },
+      "explanation": { "uz": "Uchta yulduz bor edi. Koptoklarni sanamadik.", "ru": "Было три звезды. Мячи мы не считали.", "en": "There were three stars. We did not count the balls." }
+    },
+    {
+      "id": "q6",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Narsalarni guruhlarga ajrat: olmalar va koptoklar!", "ru": "Раздели на группы: яблоки и мячи!", "en": "Sort into groups: apples and balls!" },
+      "items": [
+        { "id": "ap1", "art": { "kind": "apple", "color": "red" }, "bin": "apple" },
+        { "id": "ba1", "art": { "kind": "ball", "color": "blue" }, "bin": "ball" },
+        { "id": "ap2", "art": { "kind": "apple", "color": "green" }, "bin": "apple" },
+        { "id": "ba2", "art": { "kind": "ball", "color": "orange" }, "bin": "ball" }
+      ],
+      "bins": [
+        { "id": "apple", "label": { "uz": "Olmalar", "ru": "Яблоки", "en": "Apples" }, "color": "red" },
+        { "id": "ball", "label": { "uz": "Koptoklar", "ru": "Мячи", "en": "Balls" }, "color": "blue" }
+      ],
+      "hint": { "uz": "Olmalarni bir guruhga, koptoklarni boshqasiga ajrat.", "ru": "Яблоки в одну группу, мячи в другую.", "en": "Apples in one group, balls in the other." },
+      "explanation": { "uz": "Ikki guruh tuzdik. Endi ularni taqqoslash mumkin.", "ru": "Мы составили две группы. Теперь их можно сравнить.", "en": "We made two groups. Now they can be compared." }
+    },
+    {
+      "id": "q7",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Guruhga mos kelmaydigan narsani bos!", "ru": "Нажми лишний предмет!", "en": "Tap the thing that does not belong!" },
+      "options": [
+        { "id": "ap1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "fish", "art": { "kind": "fish", "color": "blue" } },
+        { "id": "ap2", "art": { "kind": "apple", "color": "green" } }
+      ],
+      "answer": ["fish"],
+      "hint": { "uz": "Ikkitasi bir guruh. Bittasi ularga mos emas.", "ru": "Две — одна группа. Одна лишняя.", "en": "Two are one group. One does not belong." },
+      "explanation": { "uz": "Ikki olma bitta guruh edi. Baliq meva emas — u ortiqcha.", "ru": "Два яблока — одна группа. Рыбка не фрукт — лишняя.", "en": "Two apples were one group. The fish is not a fruit — it is the odd one." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "ball", "color": "red" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "ball", "color": "red" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "ball", "color": "red" }
+      ],
+      "options": [
+        { "id": "blue", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "red", "art": { "kind": "ball", "color": "red" } },
+        { "id": "green", "art": { "kind": "ball", "color": "green" } }
+      ],
+      "answer": ["blue"],
+      "hint": { "uz": "Qizil, koʻk, qizil, koʻk… ranglar navbatlashadi!", "ru": "Красный, синий, красный, синий… цвета чередуются!", "en": "Red, blue, red, blue… the colors take turns!" },
+      "explanation": { "uz": "Qizildan keyin doim koʻk keladi. Keyingisi — koʻk.", "ru": "После красного всегда идёт синий. Следующий — синий.", "en": "After red there is always blue. The next one is blue." }
+    },
+    {
+      "id": "q9",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma katta koptoklarni belgila!", "ru": "Отметь все большие мячи!", "en": "Tap all the big balls!" },
+      "options": [
+        { "id": "big1", "art": { "kind": "ball", "color": "red", "scale": 1.2 } },
+        { "id": "sm1", "art": { "kind": "ball", "color": "blue", "scale": 0.55 } },
+        { "id": "big2", "art": { "kind": "ball", "color": "green", "scale": 1.2 } },
+        { "id": "sm2", "art": { "kind": "ball", "color": "orange", "scale": 0.55 } },
+        { "id": "big3", "art": { "kind": "ball", "color": "magenta", "scale": 1.2 } }
+      ],
+      "answer": ["big1", "big2", "big3"],
+      "hint": { "uz": "Avval kattalarini ajrat, keyin ularni sana.", "ru": "Сначала найди большие, потом сосчитай.", "en": "First find the big ones, then count them." },
+      "explanation": { "uz": "Uchta katta koptok bor edi. Kichiklarini sanamadik.", "ru": "Было три больших мяча. Маленькие мы не считали.", "en": "There were three big balls. We did not count the small ones." }
+    },
+    {
+      "id": "q10",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Narsalarni katta va kichik guruhlarga ajrat!", "ru": "Раздели на группы: большие и маленькие!", "en": "Sort into big and small groups!" },
+      "items": [
+        { "id": "big1", "art": { "kind": "star", "color": "yellow", "scale": 1.2 }, "bin": "big" },
+        { "id": "small1", "art": { "kind": "star", "color": "orange", "scale": 0.55 }, "bin": "small" },
+        { "id": "big2", "art": { "kind": "apple", "color": "red", "scale": 1.2 }, "bin": "big" },
+        { "id": "small2", "art": { "kind": "apple", "color": "green", "scale": 0.55 }, "bin": "small" }
+      ],
+      "bins": [
+        { "id": "big", "label": { "uz": "Katta", "ru": "Большие", "en": "Big" }, "color": "magenta" },
+        { "id": "small", "label": { "uz": "Kichik", "ru": "Маленькие", "en": "Small" }, "color": "blue" }
+      ],
+      "hint": { "uz": "Kattalarni bir guruhga, kichiklarini boshqasiga sudra.", "ru": "Большие в одну группу, маленькие в другую.", "en": "Drag the big ones to one group, the small ones to the other." },
+      "explanation": { "uz": "Katta va kichik guruhlarni tuzdik. Soni boʻyicha taqqoslash mumkin.", "ru": "Мы составили группы больших и маленьких. Их можно сравнить по числу.", "en": "We made big and small groups. They can be compared by number." }
+    }
+  ]
+}

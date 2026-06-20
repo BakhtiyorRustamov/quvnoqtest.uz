@@ -1,0 +1,95 @@
+{
+  "topicId": "g1-math-31",
+  "subjectKey": "g1-math",
+  "emojis": "📏📐〽️",
+  "title": { "uz": "Kesma va siniq chiziq", "ru": "Отрезок и ломаная линия", "en": "Segment and broken line" },
+  "recall": {
+    "uz": "Kesma va siniq chiziqni oʻrganamiz. Toʻgʻri chiziqning ikki nuqta orasidagi qismi kesma deyiladi. Kesmaning ikkita uchi bor. Ketma-ket ulangan kesmalar siniq chiziq hosil qiladi.",
+    "ru": "Учим отрезок и ломаную линию. Часть прямой между двумя точками называется отрезком. У отрезка два конца. Соединённые подряд отрезки образуют ломаную линию.",
+    "en": "We learn the segment and the broken line. The part of a line between two points is a segment. A segment has two ends. Segments joined in a row make a broken line."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "straight_curved", "props": { "target": "straight", "lines": [
+        { "id": "l1", "kind": "straight" }, { "id": "l2", "kind": "curved" }, { "id": "l3", "kind": "straight" }, { "id": "l4", "kind": "curved" }
+      ] } },
+      "prompt": { "uz": "Kesmalarni (toʻgʻri chiziqlarni) belgila!", "ru": "Отметь отрезки (прямые линии)!", "en": "Tap the segments (straight lines)!" },
+      "hint": { "uz": "Kesma toʻgʻri va egilmaydi, ikkita uchi bor.", "ru": "Отрезок прямой, не изгибается, у него два конца.", "en": "A segment is straight, does not bend, and has two ends." },
+      "explanation": { "uz": "Kesma — toʻgʻri chiziqning bir qismi. Egri chiziqlar kesma emas.", "ru": "Отрезок — часть прямой. Кривые линии не отрезки.", "en": "A segment is part of a straight line. Curved lines are not segments." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "straight_curved", "props": { "target": "curved", "lines": [
+        { "id": "l1", "kind": "curved" }, { "id": "l2", "kind": "straight" }, { "id": "l3", "kind": "curved" }, { "id": "l4", "kind": "straight" }
+      ] } },
+      "prompt": { "uz": "Egri chiziqlarni belgila!", "ru": "Отметь кривые линии!", "en": "Tap the curved lines!" },
+      "hint": { "uz": "Egri chiziq bukiladi, u kesma emas.", "ru": "Кривая линия изгибается, это не отрезок.", "en": "A curved line bends — it is not a segment." },
+      "explanation": { "uz": "Egri chiziqlar bukiladi. Toʻgʻri kesmalar esa tekis.", "ru": "Кривые изгибаются. Прямые отрезки ровные.", "en": "Curved lines bend. Straight segments are flat." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "straight_curved", "props": { "target": "broken", "lines": [
+        { "id": "l1", "kind": "broken" }, { "id": "l2", "kind": "straight" }, { "id": "l3", "kind": "broken" }, { "id": "l4", "kind": "straight" }
+      ] } },
+      "prompt": { "uz": "Siniq chiziqlarni belgila!", "ru": "Отметь ломаные линии!", "en": "Tap the broken lines!" },
+      "hint": { "uz": "Siniq chiziq bir nechta kesmadan tuzilgan, sinadi.", "ru": "Ломаная состоит из нескольких отрезков, с изломами.", "en": "A broken line is made of several segments with bends." },
+      "explanation": { "uz": "Siniq chiziq ketma-ket ulangan kesmalardan iborat.", "ru": "Ломаная состоит из соединённых подряд отрезков.", "en": "A broken line is made of segments joined in a row." }
+    },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Kesmaning nechta uchi bor?", "ru": "Сколько концов у отрезка?", "en": "How many ends does a segment have?" },
+      "hint": { "uz": "Kesma ikki nuqta orasida boʻladi.", "ru": "Отрезок лежит между двумя точками.", "en": "A segment lies between two points." },
+      "explanation": { "uz": "Kesmaning ikkita uchi bor — boshi va oxiri.", "ru": "У отрезка два конца — начало и конец.", "en": "A segment has two ends — a start and a finish." } },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "straight_curved", "props": { "target": "broken", "lines": [
+        { "id": "l1", "kind": "broken" }, { "id": "l2", "kind": "curved" }, { "id": "l3", "kind": "curved" }, { "id": "l4", "kind": "broken" }
+      ] } },
+      "prompt": { "uz": "Siniq chiziqlarni belgila!", "ru": "Отметь ломаные линии!", "en": "Tap the broken lines!" },
+      "hint": { "uz": "Siniq chiziqning burchaklari (sinishlari) bor; egri chiziq silliq bukiladi.", "ru": "У ломаной есть изломы; кривая гнётся плавно.", "en": "A broken line has sharp bends; a curved line bends smoothly." },
+      "explanation": { "uz": "Siniq chiziq toʻgʻri kesmalardan tuzilgan, egri chiziq esa silliq.", "ru": "Ломаная из прямых отрезков, а кривая — плавная.", "en": "A broken line is made of straight segments; a curved line is smooth." }
+    },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2", "1", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Siniq chiziq kamida nechta kesmadan tuziladi?", "ru": "Из скольких отрезков минимум состоит ломаная?", "en": "A broken line is made of at least how many segments?" },
+      "hint": { "uz": "Bitta kesma siniq chiziq boʻla olmaydi.", "ru": "Один отрезок не может быть ломаной.", "en": "A single segment cannot be a broken line." },
+      "explanation": { "uz": "Siniq chiziq kamida ikkita kesmadan tuziladi.", "ru": "Ломаная состоит минимум из двух отрезков.", "en": "A broken line is made of at least two segments." } },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "straight_curved", "props": { "target": "straight", "lines": [
+        { "id": "l1", "kind": "straight" }, { "id": "l2", "kind": "broken" }, { "id": "l3", "kind": "broken" }, { "id": "l4", "kind": "straight" }
+      ] } },
+      "prompt": { "uz": "Bitta kesmadan iborat chiziqlarni belgila!", "ru": "Отметь линии из одного отрезка!", "en": "Tap the single-segment lines!" },
+      "hint": { "uz": "Bitta toʻgʻri kesma sinmaydi.", "ru": "Один прямой отрезок без изломов.", "en": "A single straight segment has no bends." },
+      "explanation": { "uz": "Toʻgʻri chiziqlar bitta kesma; siniq chiziqlar koʻp kesmadan iborat.", "ru": "Прямые — это один отрезок; ломаные — из многих отрезков.", "en": "Straight lines are one segment; broken lines have many segments." }
+    },
+    { "id": "q8", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["1", "2", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ikki nuqta orasida nechta kesma chizish mumkin?", "ru": "Сколько отрезков можно провести между двумя точками?", "en": "How many segments can you draw between two points?" },
+      "hint": { "uz": "Ikki nuqtani toʻgʻri yoʻl bilan bittagina kesma bogʻlaydi.", "ru": "Две точки соединяет только один прямой отрезок.", "en": "Only one straight segment joins two points." },
+      "explanation": { "uz": "Ikki nuqta orasida bitta kesma chiziladi.", "ru": "Между двумя точками — один отрезок.", "en": "Between two points there is one segment." } },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "straight_curved", "props": { "target": "broken", "lines": [
+        { "id": "l1", "kind": "straight" }, { "id": "l2", "kind": "curved" }, { "id": "l3", "kind": "broken" }, { "id": "l4", "kind": "broken" }
+      ] } },
+      "prompt": { "uz": "Siniq chiziqlarni belgila!", "ru": "Отметь ломаные линии!", "en": "Tap the broken lines!" },
+      "hint": { "uz": "Siniq chiziqda burchaklar (sinishlar) bor.", "ru": "У ломаной есть изломы.", "en": "A broken line has bends." },
+      "explanation": { "uz": "Siniq chiziqlar kesmalardan tuzilgan; toʻgʻri va egrilari boshqacha.", "ru": "Ломаные из отрезков; прямые и кривые — другие.", "en": "Broken lines are made of segments; straight and curved are different." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["3", "4", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Uchburchak nechta kesmadan tuziladi?", "ru": "Из скольких отрезков состоит треугольник?", "en": "How many segments make a triangle?" },
+      "hint": { "uz": "Uchburchakning tomonlarini sana — har biri kesma.", "ru": "Сосчитай стороны треугольника — каждая отрезок.", "en": "Count the triangle's sides — each is a segment." },
+      "explanation": { "uz": "Uchburchak uchta kesmadan tuzilgan — bu yopiq siniq chiziq.", "ru": "Треугольник из трёх отрезков — это замкнутая ломаная.", "en": "A triangle is three segments — a closed broken line." } }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "topicId": "g1-math-18",
+  "subjectKey": "g1-math",
+  "emojis": "5️⃣⭐🍎",
+  "title": { "uz": "Besh soni va raqami", "ru": "Число пять", "en": "The number five" },
+  "recall": {
+    "uz": "Besh sonini oʻrganamiz. Beshta narsani sanaymiz. Besh toʻrtdan kattaroq. Toʻrt va bir qoʻshilsa, besh boʻladi. Besh sonining raqamini yozamiz.",
+    "ru": "Учим число пять. Считаем пять предметов. Пять больше четырёх. Четыре и один вместе — это пять. Пишем цифру пять.",
+    "en": "We learn the number five. We count five things. Five is bigger than four. Four and one make five. We write the numeral five."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Beshta olmani sanab belgila!", "ru": "Сосчитай и отметь пять яблок!", "en": "Count and tap the five apples!" },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "a3", "art": { "kind": "apple", "color": "yellow" } },
+        { "id": "a4", "art": { "kind": "apple", "color": "red" } },
+        { "id": "s1", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "a5", "art": { "kind": "apple", "color": "green" } }
+      ],
+      "answer": ["a1", "a2", "a3", "a4", "a5"],
+      "hint": { "uz": "Olmalarni sana: bir, ikki, uch, toʻrt, besh.", "ru": "Считай яблоки: один, два, три, четыре, пять.", "en": "Count the apples: one, two, three, four, five." },
+      "explanation": { "uz": "Beshta olma bor edi. Besh — toʻrtdan bitta koʻp.", "ru": "Было пять яблок. Пять — на один больше четырёх.", "en": "There were five apples. Five is one more than four." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 3, "b": 2, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: uch va ikki!", "ru": "Сложи на числовой прямой: три и два!", "en": "Add on the number line: three and two!" },
+      "hint": { "uz": "Uchdan boshla, ikki qadam oldinga sakra.", "ru": "Встань на три, прыгни на два вперёд.", "en": "Start at three, hop two steps forward." },
+      "explanation": { "uz": "Uch va ikki qoʻshilib, besh boʻldi.", "ru": "Три и два дали пять.", "en": "Three and two made five." }
+    },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["5", "4", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 4 + 1 = ?", "ru": "Найди сумму: 4 + 1 = ?", "en": "Find the sum: 4 + 1 = ?" },
+      "hint": { "uz": "Toʻrttaga bitta qoʻsh.", "ru": "К четырём прибавь один.", "en": "Add one to four." },
+      "explanation": { "uz": "Toʻrt qoʻshish bir — besh.", "ru": "Четыре плюс один — пять.", "en": "Four plus one is five." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["5", "6", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 3 + 2 = ?", "ru": "Найди сумму: 3 + 2 = ?", "en": "Find the sum: 3 + 2 = ?" },
+      "hint": { "uz": "Uchtaga ikkita qoʻsh.", "ru": "К трём прибавь два.", "en": "Add two to three." },
+      "explanation": { "uz": "Uch qoʻshish ikki — besh.", "ru": "Три плюс два — пять.", "en": "Three plus two is five." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["4", "5", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 5 - 1 = ?", "ru": "Найди разность: 5 - 1 = ?", "en": "Find the difference: 5 - 1 = ?" },
+      "hint": { "uz": "Beshtadan bittasini olib tashla.", "ru": "Убери от пяти один.", "en": "Take one away from five." },
+      "explanation": { "uz": "Besh ayirish bir — toʻrt qoladi.", "ru": "Пять минус один — остаётся четыре.", "en": "Five minus one leaves four." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 5, "y": 3 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Besh uchdan katta.", "ru": "Пять больше трёх.", "en": "Five is bigger than three." } },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Beshta yulduzni sanab belgila!", "ru": "Сосчитай и отметь пять звёзд!", "en": "Count and tap the five stars!" },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "s3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "s4", "art": { "kind": "star", "color": "red" } },
+        { "id": "s5", "art": { "kind": "star", "color": "green" } }
+      ],
+      "answer": ["s1", "s2", "s3", "s4", "s5"],
+      "hint": { "uz": "Yulduzlarni sana: bir, ikki, uch, toʻrt, besh.", "ru": "Считай звёзды: один, два, три, четыре, пять.", "en": "Count the stars: one, two, three, four, five." },
+      "explanation": { "uz": "Beshta yulduz bor edi.", "ru": "Было пять звёзд.", "en": "There were five stars." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "square", "color": "blue" },
+        { "kind": "star", "color": "orange" },
+        { "kind": "square", "color": "blue" },
+        { "kind": "star", "color": "orange" },
+        { "kind": "square", "color": "blue" }
+      ],
+      "options": [
+        { "id": "st", "art": { "kind": "star", "color": "orange" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "green" } }
+      ],
+      "answer": ["st"],
+      "hint": { "uz": "Kvadrat, yulduz, kvadrat, yulduz… navbat bilan keladi!", "ru": "Квадрат, звезда, квадрат, звезда… по очереди!", "en": "Square, star, square, star… they take turns!" },
+      "explanation": { "uz": "Kvadratdan keyin doim yulduz keladi. Keyingisi — yulduz.", "ru": "После квадрата всегда идёт звезда. Следующая — звезда.", "en": "After a square there is always a star. The next one is a star." }
+    },
+    { "id": "q9", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["1", "2", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 5 = 4 + ?", "ru": "Найди недостающее число: 5 = 4 + ?", "en": "Find the missing number: 5 = 4 + ?" },
+      "hint": { "uz": "Toʻrtga nechta qoʻshsak, besh boʻladi?", "ru": "Сколько прибавить к четырём, чтобы вышло пять?", "en": "How much to add to four to make five?" },
+      "explanation": { "uz": "Toʻrt qoʻshish bir — besh. Yetishmagan son — bir.", "ru": "Четыре плюс один — пять. Недостающее число — один.", "en": "Four plus one is five. The missing number is one." } },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["5", "2", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Eng katta son qaysi: 5, 2, 4?", "ru": "Какое число самое большое: 5, 2, 4?", "en": "Which number is the biggest: 5, 2, 4?" },
+      "hint": { "uz": "Sanaganda eng oxirida keladigan sonni top.", "ru": "Найди число, которое идёт последним при счёте.", "en": "Find the number that comes last when counting." },
+      "explanation": { "uz": "Besh eng katta — u toʻrtdan ham, ikkidan ham katta.", "ru": "Пять самое большое — больше и четырёх, и двух.", "en": "Five is the biggest — bigger than four and two." } }
+  ]
+}
