@@ -63,14 +63,27 @@ Verify on GitHub that `gcloud-tts.json` and `.env` are **NOT** present.
 | `SUPABASE_SERVICE_ROLE_KEY` | yes | Supabase service_role key (secret) |
 | `SESSION_SECRET` | yes | long random string (one is generated for you below) |
 | `NEXT_PUBLIC_APP_URL` | yes | your Vercel URL, e.g. `https://quvnoqtest.vercel.app` |
-| `ANTHROPIC_API_KEY` | optional | enables the AI tutor (omit → tutor shows "not configured") |
-| `ANTHROPIC_MODEL` | optional | `claude-haiku-4-5-20251001` |
-| `RESEND_API_KEY` | optional | magic-link email delivery |
+| `GEMINI_API_KEY` | optional | enables the AI tutor (Gemini Flash Lite); omit → tutor shows "not configured" |
+| `GEMINI_MODEL` | optional | defaults to `gemini-2.0-flash-lite` |
+| `RESEND_API_KEY` | optional | enables email registration / magic-link delivery |
 | `MAGIC_LINK_FROM` | optional | `"QuvnoqTest <login@yourdomain>"` |
 
-Do **not** set the `GEMINI_*` / `GCLOUD_TTS_*` vars in production — TTS is a
-local, one-time `npm run seed:tts` step; the deployed app only serves the cached
-`.wav` files.
+Do **not** set the `GCLOUD_TTS_*` service-account vars in production — read-aloud
+TTS is a local, one-time `npm run seed:tts` step; the deployed app only serves
+the cached `.wav` files. (`GEMINI_API_KEY` above is a *separate* key, used at
+runtime for the chat tutor — that one does belong in production.)
+
+> **Important — Supabase table grants:** tables created from raw `schema.sql`
+> can leave `service_role` without INSERT/SELECT/UPDATE/DELETE, making every API
+> call fail with `permission denied for table users`. Run once in the SQL editor:
+>
+> ```sql
+> grant all on all tables in schema public to anon, authenticated, service_role;
+> grant all on all sequences in schema public to anon, authenticated, service_role;
+> alter default privileges in schema public grant all on tables to anon, authenticated, service_role;
+> ```
+> RLS stays on, so the public `anon` key is still blocked — only the server's
+> service_role can read/write.
 
 ---
 

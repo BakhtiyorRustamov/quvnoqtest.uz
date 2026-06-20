@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStore, isPaid } from '@/lib/store';
 import { tashkentToday } from '@/lib/tashkent';
-import { AI_LIMITS, FREE_AI_KEY, aiConfigured, callClaude, estimateTokens, systemPrompt, type AiTurn } from '@/lib/ai';
+import { AI_LIMITS, FREE_AI_KEY, aiConfigured, callAi, estimateTokens, systemPrompt, type AiTurn } from '@/lib/ai';
 
 export async function GET() {
   const store = getStore();
@@ -60,7 +60,7 @@ export async function POST(req: NextRequest) {
   const maxTokens = Math.max(MIN_REPLY, Math.min(300, remaining - estIn));
 
   try {
-    const { reply, inputTokens, outputTokens } = await callClaude({ system, turns, maxTokens });
+    const { reply, inputTokens, outputTokens } = await callAi({ system, turns, maxTokens });
     const used = inputTokens + outputTokens;
     await store.addAiUsage(date, 1, used);
     // NFR-9 observability: token usage log line for cost monitoring

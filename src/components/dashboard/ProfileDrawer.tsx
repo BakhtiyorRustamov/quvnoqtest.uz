@@ -71,7 +71,7 @@ export default function ProfileDrawer({ open, onClose }: { open: boolean; onClos
             transition={{ type: 'spring', stiffness: 260, damping: 28 }}
           >
             <div className="flex items-center justify-between mb-5">
-              <h2 className="font-black text-ink text-2xl">👤 {t('title')}</h2>
+              <h2 className="font-black text-ink text-2xl">{t('title')}</h2>
               <button onClick={onClose} aria-label={tc('close')} className="w-11 h-11 rounded-full bg-white border border-ink/10 shadow-card font-black">
                 ✕
               </button>
@@ -148,7 +148,7 @@ export default function ProfileDrawer({ open, onClose }: { open: boolean; onClos
 
             {/* upgrade entry (FR-PRF-5) */}
             <Link href="/upgrade" onClick={onClose} className="btn-primary w-full mt-6">
-              🚀 {t('upgradeEntry')}
+              {t('upgradeEntry')}
             </Link>
             {user?.isPaid && user.paidUntil && (
               <p className="text-center text-sm font-bold text-brand-green mt-3">

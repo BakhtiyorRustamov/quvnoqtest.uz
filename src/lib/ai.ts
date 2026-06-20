@@ -16,7 +16,7 @@ const LANG_NAME: Record<string, string> = {
 };
 
 export function aiConfigured(): boolean {
-  return !!process.env.ANTHROPIC_API_KEY;
+  return !!process.env.GEMINI_API_KEY;
 }
 
 export function systemPrompt(grade: number, locale: string): string {
@@ -35,37 +35,44 @@ export function estimateTokens(text: string): number {
   return Math.ceil(text.length / 3);
 }
 
-export async function callClaude(opts: {
+/**
+ * AI tutor backed by Google Gemini Flash Lite (Generative Language API).
+ * Model is configurable via GEMINI_MODEL; defaults to gemini-2.0-flash-lite.
+ */
+export async function callAi(opts: {
   system: string;
   turns: AiTurn[];
   maxTokens: number;
 }): Promise<{ reply: string; inputTokens: number; outputTokens: number }> {
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
+  const model = process.env.GEMINI_MODEL || 'gemini-2.0-flash-lite';
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
+  const contents = opts.turns.map((t) => ({
+    role: t.role === 'assistant' ? 'model' : 'user',
+    parts: [{ text: t.content }]
+  }));
+  const res = await fetch(url, {
     method: 'POST',
     headers: {
-      'x-api-key': process.env.ANTHROPIC_API_KEY!,
-      'anthropic-version': '2023-06-01',
+      'x-goog-api-key': process.env.GEMINI_API_KEY!,
       'content-type': 'application/json'
     },
     body: JSON.stringify({
-      model: process.env.ANTHROPIC_MODEL || 'claude-haiku-4-5-20251001',
-      max_tokens: opts.maxTokens,
-      system: opts.system,
-      messages: opts.turns
+      system_instruction: { parts: [{ text: opts.system }] },
+      contents,
+      generationConfig: { maxOutputTokens: opts.maxTokens, temperature: 0.7 }
     })
   });
   if (!res.ok) {
     const body = await res.text().catch(() => '');
-    throw new Error(`anthropic ${res.status}: ${body.slice(0, 300)}`);
+    throw new Error(`gemini ${res.status}: ${body.slice(0, 300)}`);
   }
   const data = await res.json();
-  const reply = (data.content ?? [])
-    .filter((b: any) => b.type === 'text')
-    .map((b: any) => b.text)
+  const reply = (data.candidates?.[0]?.content?.parts ?? [])
+    .map((p: any) => p.text ?? '')
     .join('');
   return {
     reply,
-    inputTokens: data.usage?.input_tokens ?? 0,
-    outputTokens: data.usage?.output_tokens ?? 0
+    inputTokens: data.usageMetadata?.promptTokenCount ?? 0,
+    outputTokens: data.usageMetadata?.candidatesTokenCount ?? 0
   };
 }
