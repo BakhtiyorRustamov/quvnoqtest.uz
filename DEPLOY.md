@@ -63,15 +63,25 @@ Verify on GitHub that `gcloud-tts.json` and `.env` are **NOT** present.
 | `SUPABASE_SERVICE_ROLE_KEY` | yes | Supabase service_role key (secret) |
 | `SESSION_SECRET` | yes | long random string (one is generated for you below) |
 | `NEXT_PUBLIC_APP_URL` | yes | your Vercel URL, e.g. `https://quvnoqtest.vercel.app` |
-| `GEMINI_API_KEY` | optional | enables the AI tutor (Gemini Flash Lite); omit → tutor shows "not configured" |
-| `GEMINI_MODEL` | optional | defaults to `gemini-2.0-flash-lite` |
 | `RESEND_API_KEY` | optional | enables email registration / magic-link delivery |
 | `MAGIC_LINK_FROM` | optional | `"QuvnoqTest <login@yourdomain>"` |
 
+#### AI tutor — pick ONE provider (all OpenAI-compatible)
+
+The tutor turns on as soon as a provider is configured; otherwise it shows
+"not configured." Set **either** the `AI_*` group **or** the `AZURE_OPENAI_*`
+group (if both are set, Azure wins).
+
+| Provider | Variables |
+|---|---|
+| **Groq** (free, hosted — recommended) | `AI_BASE_URL=https://api.groq.com/openai/v1`, `AI_MODEL=llama-3.3-70b-versatile`, `AI_API_KEY=gsk_…` |
+| **OpenAI** | `AI_BASE_URL=https://api.openai.com/v1`, `AI_MODEL=gpt-4o-mini`, `AI_API_KEY=sk-…` |
+| **Ollama** (local dev only) | `AI_BASE_URL=http://localhost:11434/v1`, `AI_MODEL=llama3.2` (no key). Does **not** work on Vercel — the cloud can't reach your localhost. |
+| **Azure OpenAI** | `AZURE_OPENAI_ENDPOINT`, `AZURE_OPENAI_DEPLOYMENT`, `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_API_VERSION` (optional, default `2024-10-21`) |
+
 Do **not** set the `GCLOUD_TTS_*` service-account vars in production — read-aloud
 TTS is a local, one-time `npm run seed:tts` step; the deployed app only serves
-the cached `.wav` files. (`GEMINI_API_KEY` above is a *separate* key, used at
-runtime for the chat tutor — that one does belong in production.)
+the cached `.wav` files.
 
 > **Important — Supabase table grants:** tables created from raw `schema.sql`
 > can leave `service_role` without INSERT/SELECT/UPDATE/DELETE, making every API
