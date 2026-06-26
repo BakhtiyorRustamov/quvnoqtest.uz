@@ -1,0 +1,336 @@
+{
+  "topicId": "g1-math-51",
+  "subjectKey": "g1-math",
+  "emojis": "🔢➕✨",
+  "title": {
+    "uz": "Qavslar bilan ishlaymiz",
+    "ru": "Работаем со скобками",
+    "en": "Working with brackets"
+  },
+  "recall": {
+    "uz": "Amallar tartibi: avval qavs ichidagi amallar bajariladi. Qavslar bir nechta boʻlsa, har birini chapdan oʻngga hisoblaymiz, soʻng qolgan amallarni. Masalan, (3 + 7) + (2 + 4) = 10 + 6 = 16.",
+    "ru": "Порядок действий: сначала в скобках. Если скобок несколько, считаем их слева направо, потом остальное. Например, (3 + 7) + (2 + 4) = 10 + 6 = 16.",
+    "en": "Order of operations: brackets first. With several brackets, do them left to right, then the rest. For example (3 + 7) + (2 + 4) = 10 + 6 = 16."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "10",
+            "9",
+            "11"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qavsni avval hisobla: (2 + 3) + (4 + 1) = ?",
+        "ru": "Сначала вычисли в скобках: (2 + 3) + (4 + 1) = ?",
+        "en": "Do the brackets first: (2 + 3) + (4 + 1) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichidagi amalni bajar, soʻng qolganini.",
+        "ru": "Сначала выполни действие в скобках, потом остальное.",
+        "en": "Do the operation in brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Avval qavs ichini hisobladik. (2 + 3) + (4 + 1) = 10.",
+        "ru": "Сначала вычислили в скобках. (2 + 3) + (4 + 1) = 10.",
+        "en": "We did the brackets first. (2 + 3) + (4 + 1) = 10."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "14",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qavsni avval hisobla: (6 + 4) + (2 + 3) = ?",
+        "ru": "Сначала вычисли в скобках: (6 + 4) + (2 + 3) = ?",
+        "en": "Do the brackets first: (6 + 4) + (2 + 3) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichidagi amalni bajar, soʻng qolganini.",
+        "ru": "Сначала выполни действие в скобках, потом остальное.",
+        "en": "Do the operation in brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Avval qavs ichini hisobladik. (6 + 4) + (2 + 3) = 15.",
+        "ru": "Сначала вычислили в скобках. (6 + 4) + (2 + 3) = 15.",
+        "en": "We did the brackets first. (6 + 4) + (2 + 3) = 15."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qavsni avval hisobla: (10 - 2) + (3 + 1) = ?",
+        "ru": "Сначала вычисли в скобках: (10 - 2) + (3 + 1) = ?",
+        "en": "Do the brackets first: (10 - 2) + (3 + 1) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichidagi amalni bajar, soʻng qolganini.",
+        "ru": "Сначала выполни действие в скобках, потом остальное.",
+        "en": "Do the operation in brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Avval qavs ichini hisobladik. (10 - 2) + (3 + 1) = 12.",
+        "ru": "Сначала вычислили в скобках. (10 - 2) + (3 + 1) = 12.",
+        "en": "We did the brackets first. (10 - 2) + (3 + 1) = 12."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "16",
+            "15",
+            "17"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Avval 3 katta va 7 bola kirdi, keyin 2 katta va 4 bola kirdi. Jami nechta kishi kirdi?",
+        "ru": "Сначала вошли 3 взрослых и 7 детей, потом 2 взрослых и 4 ребёнка. Сколько всего человек?",
+        "en": "First 3 adults and 7 children entered, then 2 adults and 4 children. How many people in all?"
+      },
+      "hint": {
+        "uz": "(3 + 7) + (2 + 4).",
+        "ru": "(3 + 7) + (2 + 4).",
+        "en": "(3 + 7) + (2 + 4)."
+      },
+      "explanation": {
+        "uz": "(3 + 7) + (2 + 4) = 10 + 6 = 16.",
+        "ru": "(3 + 7) + (2 + 4) = 10 + 6 = 16.",
+        "en": "(3 + 7) + (2 + 4) = 10 + 6 = 16."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "20",
+            "18",
+            "19"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qavsni avval hisobla: (5 + 5) + (5 + 5) = ?",
+        "ru": "Сначала вычисли в скобках: (5 + 5) + (5 + 5) = ?",
+        "en": "Do the brackets first: (5 + 5) + (5 + 5) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichidagi amalni bajar, soʻng qolganini.",
+        "ru": "Сначала выполни действие в скобках, потом остальное.",
+        "en": "Do the operation in brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Avval qavs ichini hisobladik. (5 + 5) + (5 + 5) = 20.",
+        "ru": "Сначала вычислили в скобках. (5 + 5) + (5 + 5) = 20.",
+        "en": "We did the brackets first. (5 + 5) + (5 + 5) = 20."
+      },
+      "media": {
+        "gif": "/quiz-media/celebrate.gif",
+        "alt": {
+          "uz": "Yigirma — bayram!",
+          "ru": "Двадцать — праздник!",
+          "en": "Twenty — celebration!"
+        },
+        "maxWidth": 170
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "14",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qavsni avval hisobla: (8 + 2) + (1 + 4) = ?",
+        "ru": "Сначала вычисли в скобках: (8 + 2) + (1 + 4) = ?",
+        "en": "Do the brackets first: (8 + 2) + (1 + 4) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichidagi amalni bajar, soʻng qolganini.",
+        "ru": "Сначала выполни действие в скобках, потом остальное.",
+        "en": "Do the operation in brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Avval qavs ichini hisobladik. (8 + 2) + (1 + 4) = 15.",
+        "ru": "Сначала вычислили в скобках. (8 + 2) + (1 + 4) = 15.",
+        "en": "We did the brackets first. (8 + 2) + (1 + 4) = 15."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "14",
+            "13",
+            "15"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Xaltada 8 ta meva va 4 ta sabzavot bor. Yana 2 ta meva qoʻshildi. Jami nechta?",
+        "ru": "В сумке 8 фруктов и 4 овоща. Добавили 2 фрукта. Сколько всего?",
+        "en": "A bag has 8 fruits and 4 vegetables. 2 more fruits were added. How many in all?"
+      },
+      "hint": {
+        "uz": "(8 + 4) + 2.",
+        "ru": "(8 + 4) + 2.",
+        "en": "(8 + 4) + 2."
+      },
+      "explanation": {
+        "uz": "(8 + 4) + 2 = 12 + 2 = 14.",
+        "ru": "(8 + 4) + 2 = 12 + 2 = 14.",
+        "en": "(8 + 4) + 2 = 12 + 2 = 14."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "10",
+            "11",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qavsni avval hisobla: 20 - (5 + 5) = ?",
+        "ru": "Сначала вычисли в скобках: 20 - (5 + 5) = ?",
+        "en": "Do the brackets first: 20 - (5 + 5) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichidagi amalni bajar, soʻng qolganini.",
+        "ru": "Сначала выполни действие в скобках, потом остальное.",
+        "en": "Do the operation in brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Avval qavs ichini hisobladik. 20 - (5 + 5) = 10.",
+        "ru": "Сначала вычислили в скобках. 20 - (5 + 5) = 10.",
+        "en": "We did the brackets first. 20 - (5 + 5) = 10."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "17",
+            "16",
+            "18"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qavsni avval hisobla: (7 + 3) + 7 = ?",
+        "ru": "Сначала вычисли в скобках: (7 + 3) + 7 = ?",
+        "en": "Do the brackets first: (7 + 3) + 7 = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichidagi amalni bajar, soʻng qolganini.",
+        "ru": "Сначала выполни действие в скобках, потом остальное.",
+        "en": "Do the operation in brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Avval qavs ichini hisobladik. (7 + 3) + 7 = 17.",
+        "ru": "Сначала вычислили в скобках. (7 + 3) + 7 = 17.",
+        "en": "We did the brackets first. (7 + 3) + 7 = 17."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "18",
+            "17",
+            "19"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qavsni avval hisobla: (9 + 1) + (6 + 2) = ?",
+        "ru": "Сначала вычисли в скобках: (9 + 1) + (6 + 2) = ?",
+        "en": "Do the brackets first: (9 + 1) + (6 + 2) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichidagi amalni bajar, soʻng qolganini.",
+        "ru": "Сначала выполни действие в скобках, потом остальное.",
+        "en": "Do the operation in brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Avval qavs ichini hisobladik. (9 + 1) + (6 + 2) = 18.",
+        "ru": "Сначала вычислили в скобках. (9 + 1) + (6 + 2) = 18.",
+        "en": "We did the brackets first. (9 + 1) + (6 + 2) = 18."
+      }
+    }
+  ]
+}

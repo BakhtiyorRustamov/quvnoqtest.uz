@@ -1,0 +1,391 @@
+{
+  "topicId": "g1-math-69",
+  "subjectKey": "g1-math",
+  "emojis": "🔁➕➖",
+  "title": {
+    "uz": "Qoʻshish va ayirish bogʻlanishi",
+    "ru": "Связь сложения и вычитания",
+    "en": "Addition and subtraction together"
+  },
+  "recall": {
+    "uz": "Qoʻshish va ayirish bir-biriga teskari amallardir. Agar 5 + 3 = 8 boʻlsa, unda 8 - 3 = 5 va 8 - 5 = 3. Bitta qoʻshishdan ikkita ayirish hosil qilamiz. Bu javobni tekshirishga yordam beradi!",
+    "ru": "Сложение и вычитание — обратные действия. Если 5 + 3 = 8, то 8 - 3 = 5 и 8 - 5 = 3. Из одного сложения получаем два вычитания. Это помогает проверять ответ!",
+    "en": "Addition and subtraction are inverse operations. If 5 + 3 = 8, then 8 - 3 = 5 and 8 - 5 = 3. One addition gives two subtractions. This helps us check answers!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "23",
+            "22",
+            "24"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Alifboda 29 ta harf bor, 6 tasi unli. Nechta undosh harf bor?",
+        "ru": "В алфавите 29 букв, 6 гласных. Сколько согласных?",
+        "en": "An alphabet has 29 letters, 6 vowels. How many consonants?"
+      },
+      "hint": {
+        "uz": "29 dan 6 ni ayir.",
+        "ru": "Вычти из 29 число 6.",
+        "en": "Take 6 from 29."
+      },
+      "explanation": {
+        "uz": "29 - 6 = 23.",
+        "ru": "29 - 6 = 23.",
+        "en": "29 - 6 = 23."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/inverse-ops.gif",
+        "alt": {
+          "uz": "Qoʻshish va ayirish — teskari amallar",
+          "ru": "Сложение и вычитание — обратные действия",
+          "en": "Addition and subtraction are inverse"
+        },
+        "maxWidth": 230
+      },
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "5 + 3",
+              "right": "8"
+            },
+            {
+              "left": "9 - 4",
+              "right": "5"
+            },
+            {
+              "left": "6 + 7",
+              "right": "13"
+            },
+            {
+              "left": "20 - 8",
+              "right": "12"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 87,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 23 + 64 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 23 + 64 = ?",
+        "en": "Work it out and build the answer with blocks: 23 + 64 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "23 + 64 = 87.",
+        "ru": "23 + 64 = 87.",
+        "en": "23 + 64 = 87."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 23,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 87 - 64 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 87 - 64 = ?",
+        "en": "Work it out and build the answer with blocks: 87 - 64 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "87 - 64 = 23.",
+        "ru": "87 - 64 = 23.",
+        "en": "87 - 64 = 23."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Shakllarni ajrat: uchburchaklar va toʻrtburchaklar",
+        "ru": "Раздели фигуры: треугольники и квадраты",
+        "en": "Sort the shapes: triangles and squares"
+      },
+      "items": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          },
+          "bin": "tri"
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          },
+          "bin": "sq"
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "orange"
+          },
+          "bin": "tri"
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "square",
+            "color": "magenta"
+          },
+          "bin": "sq"
+        }
+      ],
+      "bins": [
+        {
+          "id": "tri",
+          "label": {
+            "uz": "Uchburchaklar",
+            "ru": "Треугольники",
+            "en": "Triangles"
+          },
+          "color": "green"
+        },
+        {
+          "id": "sq",
+          "label": {
+            "uz": "Toʻrtburchaklar",
+            "ru": "Квадраты",
+            "en": "Squares"
+          },
+          "color": "blue"
+        }
+      ],
+      "hint": {
+        "uz": "Uchburchakda 3 ta, toʻrtburchakda 4 ta tomon.",
+        "ru": "У треугольника 3 стороны, у квадрата 4.",
+        "en": "A triangle has 3 sides, a square 4."
+      },
+      "explanation": {
+        "uz": "Shakllarni tomonlari soni boʻyicha ajratdik.",
+        "ru": "Разделили фигуры по числу сторон.",
+        "en": "We sorted shapes by their number of sides."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "56 - 34",
+              "right": "22"
+            },
+            {
+              "left": "44 + 45",
+              "right": "89"
+            },
+            {
+              "left": "17 + 52",
+              "right": "69"
+            },
+            {
+              "left": "98 - 73",
+              "right": "25"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "14",
+            "17",
+            "20"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Eng kichik son qaysi: 25, 14, 20, 17?",
+        "ru": "Какое число наименьшее: 25, 14, 20, 17?",
+        "en": "Which is the smallest: 25, 14, 20, 17?"
+      },
+      "hint": {
+        "uz": "Oʻnliklar va birliklarni taqqosla.",
+        "ru": "Сравни десятки и единицы.",
+        "en": "Compare tens and ones."
+      },
+      "explanation": {
+        "uz": "14 < 17 < 20 < 25.",
+        "ru": "14 < 17 < 20 < 25.",
+        "en": "14 < 17 < 20 < 25."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 64 - 52 = ?",
+        "ru": "Вычисли: 64 - 52 = ?",
+        "en": "Work it out: 64 - 52 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "64 - 52 = 12.",
+        "ru": "64 - 52 = 12.",
+        "en": "64 - 52 = 12."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 81,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 36 + 45 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 36 + 45 = ?",
+        "en": "Work it out and build the answer with blocks: 36 + 45 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "36 + 45 = 81.",
+        "ru": "36 + 45 = 81.",
+        "en": "36 + 45 = 81."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 1
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 35 ... 53",
+        "ru": "Выбери знак: 35 ... 53",
+        "en": "Choose the sign: 35 ... 53"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means bigger."
+      },
+      "explanation": {
+        "uz": "35 < 53.",
+        "ru": "35 < 53.",
+        "en": "35 < 53."
+      }
+    }
+  ]
+}

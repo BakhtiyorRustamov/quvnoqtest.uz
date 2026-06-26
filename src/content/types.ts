@@ -68,6 +68,10 @@ export type Bin = { id: string; label: L10n; color?: ArtColor };
 export type Slot = { id: string; accept: string; ghost: Art; label?: L10n };
 export type MatchSide = { id: string; art: Art; match?: string };
 
+/** Optional decorative animated GIF shown under the prompt to add delight
+ *  (e.g. a "tens & ones" or celebratory clip). Purely cosmetic — never graded. */
+export type ItemMedia = { gif: string; alt?: L10n; maxWidth?: number };
+
 export type LessonItem = {
   id: string;
   type: ItemType;
@@ -75,6 +79,8 @@ export type LessonItem = {
   hint: L10n;
   explanation: L10n;
   visualHint: VisualHint;
+  /** optional decorative GIF shown under the prompt */
+  media?: ItemMedia;
   /** click_correct / multi_select / sequence answer options */
   options?: Option[];
   /** ids of correct option(s) */

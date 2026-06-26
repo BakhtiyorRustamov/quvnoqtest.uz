@@ -1,0 +1,299 @@
+{
+  "topicId": "g1-math-64",
+  "subjectKey": "g1-math",
+  "emojis": "➕🔢✨",
+  "title": {
+    "uz": "Ikki xonali sonlarni qoʻshish — mashq",
+    "ru": "Сложение двузначных — практика",
+    "en": "Adding two-digit numbers — practice"
+  },
+  "recall": {
+    "uz": "Ikki xonali sonlarni qoʻshishda davom etamiz. Avval birliklarni, soʻng oʻnliklarni qoʻshamiz. Masalan, 45 + 12 = 57. Yigʻindi — qoʻshishning natijasi. Mashq qancha koʻp, hisob shuncha tez!",
+    "ru": "Продолжаем складывать двузначные числа. Сначала единицы, потом десятки. Например, 45 + 12 = 57. Сумма — результат сложения. Чем больше практики, тем быстрее счёт!",
+    "en": "We keep adding two-digit numbers. Ones first, then tens. For example 45 + 12 = 57. The sum is the result of adding. The more practice, the faster the count!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 57,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 45 + 12 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 45 + 12 = ?",
+        "en": "Work it out and build the answer with blocks: 45 + 12 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "45 + 12 = 57.",
+        "ru": "45 + 12 = 57.",
+        "en": "45 + 12 = 57."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 68,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 16 + 52 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 16 + 52 = ?",
+        "en": "Work it out and build the answer with blocks: 16 + 52 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "16 + 52 = 68.",
+        "ru": "16 + 52 = 68.",
+        "en": "16 + 52 = 68."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 95,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 81 + 14 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 81 + 14 = ?",
+        "en": "Work it out and build the answer with blocks: 81 + 14 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "81 + 14 = 95.",
+        "ru": "81 + 14 = 95.",
+        "en": "81 + 14 = 95."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 39,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 28 + 11 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 28 + 11 = ?",
+        "en": "Work it out and build the answer with blocks: 28 + 11 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "28 + 11 = 39.",
+        "ru": "28 + 11 = 39.",
+        "en": "28 + 11 = 39."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "33",
+            "32",
+            "34"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 21 + 12 = ?",
+        "ru": "Вычисли: 21 + 12 = ?",
+        "en": "Work it out: 21 + 12 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Складывай десятки с десятками, единицы с единицами.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "21 + 12 = 33.",
+        "ru": "21 + 12 = 33.",
+        "en": "21 + 12 = 33."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "39",
+            "38",
+            "40"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 13 + 26 = ?",
+        "ru": "Вычисли: 13 + 26 = ?",
+        "en": "Work it out: 13 + 26 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Складывай десятки с десятками, единицы с единицами.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "13 + 26 = 39.",
+        "ru": "13 + 26 = 39.",
+        "en": "13 + 26 = 39."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "52",
+            "51",
+            "53"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Ikki xonali javob qaysi: 46 + 6 = ?",
+        "ru": "Какой двузначный ответ: 46 + 6 = ?",
+        "en": "Which two-digit answer: 46 + 6 = ?"
+      },
+      "hint": {
+        "uz": "Birliklar 10 dan oshsa, oʻnlikka oʻtadi.",
+        "ru": "Если единиц больше 10, переходим в десяток.",
+        "en": "If the ones pass 10, carry to the tens."
+      },
+      "explanation": {
+        "uz": "46 + 6 = 52.",
+        "ru": "46 + 6 = 52.",
+        "en": "46 + 6 = 52."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 57,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 32 + 25 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 32 + 25 = ?",
+        "en": "Work it out and build the answer with blocks: 32 + 25 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "32 + 25 = 57.",
+        "ru": "32 + 25 = 57.",
+        "en": "32 + 25 = 57."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 67,
+          "y": 76
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 67 va 76 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 67 и 76 — какой знак верный?",
+        "en": "Look at the scale: 67 and 76 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla. Oʻnliklar teng boʻlsa, birliklarni.",
+        "ru": "Сначала сравни десятки. Если равны — сравни единицы.",
+        "en": "Compare the tens first. If equal, compare the ones."
+      },
+      "explanation": {
+        "uz": "67 < 76.",
+        "ru": "67 < 76.",
+        "en": "67 < 76."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 67,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 54 + 13 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 54 + 13 = ?",
+        "en": "Work it out and build the answer with blocks: 54 + 13 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "54 + 13 = 67.",
+        "ru": "54 + 13 = 67.",
+        "en": "54 + 13 = 67."
+      }
+    }
+  ]
+}

@@ -6,9 +6,11 @@ import { motion } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import AIMascotButton from '@/components/ui/AIMascotButton';
+import TopicRecommendation from './TopicRecommendation';
 import { useUser } from '@/components/providers/UserProvider';
 import { api } from '@/lib/client';
 import { G1_MATH_TOPICS, G1_MATH_REVIEWS, isBuiltTopic } from '@/content';
+import { G1_MATH_PART2_START, G1_MATH_PART3_START } from '@/content/g1-math/topics';
 import { pick } from '@/lib/i18n-config';
 import type { ProgressRow } from '@/lib/store/types';
 
@@ -86,7 +88,7 @@ export default function SubjectView() {
 
   return (
     <main className="min-h-screen pb-16">
-      <BackBar backHref="/dashboard" />
+      <BackBar backHref="/dashboard" showLang />
 
       <div className="max-w-3xl mx-auto px-3">
         <div className="flex items-center gap-3 mt-4">
@@ -186,94 +188,123 @@ export default function SubjectView() {
           </div>
         </section>
 
-        {/* ------- Mavzular (lessons not opened yet) ------- */}
+        {/* ------- Mavzular (lessons not opened yet) — split into Part 1 & Part 2 ------- */}
         <section className="mt-8">
           <h2 className="font-black text-ink/70 text-lg mb-3">📚 {t('dashboard.topicsTitle')}</h2>
-          {/* 2 columns on mobile, 4 on desktop */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">
-            {(() => {
-              // Interleave lessons (which leave this list once learned) with the
-              // review "game" lessons, which sit at fixed positions and never move
-              // to "Hozircha oʻrganganlarim" — they always stay here in Mavzular.
-              const reviewsByAfter = new Map(G1_MATH_REVIEWS.map((r) => [r.after, r]));
-              type Entry =
-                | { kind: 'lesson'; tp: (typeof G1_MATH_TOPICS)[number] }
-                | { kind: 'review'; r: (typeof G1_MATH_REVIEWS)[number] };
+
+          {(() => {
+            // Interleave lessons (which leave this list once learned) with the
+            // review "game" lessons, which sit at fixed positions and never move
+            // to "Hozircha oʻrganganlarim" — they always stay here in Mavzular.
+            const reviewsByAfter = new Map(G1_MATH_REVIEWS.map((r) => [r.after, r]));
+            type Entry =
+              | { kind: 'lesson'; tp: (typeof G1_MATH_TOPICS)[number] }
+              | { kind: 'review'; r: (typeof G1_MATH_REVIEWS)[number] };
+
+            // Build the interleaved entry list for a slice of topics.
+            const buildEntries = (topics: typeof G1_MATH_TOPICS, withReviews: boolean): Entry[] => {
               const entries: Entry[] = [];
-              for (const tp of G1_MATH_TOPICS) {
+              for (const tp of topics) {
                 if (!completedKeys.has(tp.key)) entries.push({ kind: 'lesson', tp });
-                const r = reviewsByAfter.get(tp.n);
+                const r = withReviews ? reviewsByAfter.get(tp.n) : undefined;
                 if (r) entries.push({ kind: 'review', r });
               }
-              return entries.map((e, i) => {
-                const delay = Math.min(i * 0.02, 0.4);
-                if (e.kind === 'lesson') {
-                  const tp = e.tp;
-                  const isBuilt = isBuiltTopic(tp.key);
-                  const openable = isBuilt || isPaid;
-                  const href = isBuilt ? `/lesson/${tp.key}` : isPaid ? `/topic/${tp.key}` : '/upgrade';
-                  return (
-                    <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
-                      <Link
-                        href={href}
-                        title={openable ? undefined : t('dashboard.lockedHint')}
-                        className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform ${openable ? '' : 'opacity-75'}`}
-                      >
-                        <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm ${openable ? 'bg-brand-blue' : 'bg-ink/30'}`}>
-                          {tp.n}
-                        </span>
-                        <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
-                        <span className={`shrink-0 ${openable ? 'text-brand-orange font-black' : 'text-base'}`} aria-hidden>
-                          {openable ? '▶' : '🔒'}
-                        </span>
-                      </Link>
-                    </motion.div>
-                  );
-                }
-                const r = e.r;
-                if (r.built) {
-                  return (
-                    <motion.div key={r.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
-                      <Link
-                        href={`/lesson/${r.key}`}
-                        className="h-full flex items-center gap-2 px-3 py-2.5 rounded-2xl border-2 border-brand-purple/60 bg-gradient-to-br from-brand-purple/15 to-brand-magenta/15 hover:-translate-y-0.5 transition-transform"
-                      >
-                        <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center text-base bg-brand-purple/20" aria-hidden>
-                          🏁
-                        </span>
-                        <span className="flex-1 leading-snug">
-                          <span className="block font-black text-brand-purple text-[12.5px]">{pick(r.title, locale)}</span>
-                          <span className="block font-bold text-ink/45 text-[10.5px]">{t('dashboard.review')}</span>
-                        </span>
-                        <span className="shrink-0 text-brand-orange font-black" aria-hidden>
-                          ▶
-                        </span>
-                      </Link>
-                    </motion.div>
-                  );
-                }
+              return entries;
+            };
+
+            const renderEntry = (e: Entry, i: number) => {
+              const delay = Math.min(i * 0.02, 0.4);
+              if (e.kind === 'lesson') {
+                const tp = e.tp;
+                const isBuilt = isBuiltTopic(tp.key);
+                const openable = isBuilt || isPaid;
+                const href = isBuilt ? `/lesson/${tp.key}` : isPaid ? `/topic/${tp.key}` : '/upgrade';
                 return (
-                  <motion.div
-                    key={r.key}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay }}
-                    aria-label={t('dashboard.review')}
-                    className="h-full flex items-center gap-2 px-3 py-2.5 rounded-2xl border-2 border-dashed border-brand-purple/50 bg-gradient-to-br from-brand-purple/10 to-brand-magenta/10 cursor-default"
-                  >
-                    <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center text-base bg-brand-purple/15" aria-hidden>
-                      🔁
-                    </span>
-                    <span className="flex-1 leading-snug">
-                      <span className="block font-black text-brand-purple text-[12.5px]">{t('dashboard.review')}</span>
-                      <span className="block font-bold text-ink/45 text-[10.5px]">{t('common.comingSoon')}</span>
-                    </span>
+                  <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
+                    <Link
+                      href={href}
+                      title={openable ? undefined : t('dashboard.lockedHint')}
+                      className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform ${openable ? '' : 'opacity-75'}`}
+                    >
+                      <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm ${openable ? 'bg-brand-blue' : 'bg-ink/30'}`}>
+                        {tp.n}
+                      </span>
+                      <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
+                      <span className={`shrink-0 ${openable ? 'text-brand-orange font-black' : 'text-base'}`} aria-hidden>
+                        {openable ? '▶' : '🔒'}
+                      </span>
+                    </Link>
                   </motion.div>
                 );
-              });
-            })()}
-          </div>
+              }
+              const r = e.r;
+              if (r.built) {
+                return (
+                  <motion.div key={r.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
+                    <Link
+                      href={`/lesson/${r.key}`}
+                      className="h-full flex items-center gap-2 px-3 py-2.5 rounded-2xl border-2 border-brand-purple/60 bg-gradient-to-br from-brand-purple/15 to-brand-magenta/15 hover:-translate-y-0.5 transition-transform"
+                    >
+                      <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center text-base bg-brand-purple/20" aria-hidden>
+                        🏁
+                      </span>
+                      <span className="flex-1 leading-snug">
+                        <span className="block font-black text-brand-purple text-[12.5px]">{pick(r.title, locale)}</span>
+                        <span className="block font-bold text-ink/45 text-[10.5px]">{t('dashboard.review')}</span>
+                      </span>
+                      <span className="shrink-0 text-brand-orange font-black" aria-hidden>
+                        ▶
+                      </span>
+                    </Link>
+                  </motion.div>
+                );
+              }
+              return (
+                <motion.div
+                  key={r.key}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay }}
+                  aria-label={t('dashboard.review')}
+                  className="h-full flex items-center gap-2 px-3 py-2.5 rounded-2xl border-2 border-dashed border-brand-purple/50 bg-gradient-to-br from-brand-purple/10 to-brand-magenta/10 cursor-default"
+                >
+                  <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center text-base bg-brand-purple/15" aria-hidden>
+                    🔁
+                  </span>
+                  <span className="flex-1 leading-snug">
+                    <span className="block font-black text-brand-purple text-[12.5px]">{t('dashboard.review')}</span>
+                    <span className="block font-bold text-ink/45 text-[10.5px]">{t('common.comingSoon')}</span>
+                  </span>
+                </motion.div>
+              );
+            };
+
+            const part1 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n < G1_MATH_PART2_START), true);
+            const part2 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART2_START && tp.n < G1_MATH_PART3_START), false);
+            const part3 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART3_START), false);
+
+            return (
+              <>
+                <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide mb-2">{t('dashboard.part1')}</h3>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part1.map(renderEntry)}</div>
+
+                <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide mt-6 mb-2">{t('dashboard.part2')}</h3>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part2.map(renderEntry)}</div>
+
+                <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide mt-6 mb-2">{t('dashboard.part3')}</h3>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part3.map(renderEntry)}</div>
+              </>
+            );
+          })()}
         </section>
+
+        {/* personalized "focused review" — practise low-score topics + subscribe */}
+        <TopicRecommendation
+          progress={progress}
+          name={user?.name ?? null}
+          isPaid={user?.isPaid ?? false}
+          locale={locale}
+        />
       </div>
 
       {/* subject mascot doubles as the AI assistant entry (FR-MAS-1) */}

@@ -112,6 +112,8 @@
     "profile": "Profile",
     "learnedTitle": "What I've found out so far",
     "topicsTitle": "Lessons",
+    "part1": "Part 1",
+    "part2": "Part 2",
     "review": "Review",
     "emptyLearned": "Nothing yet — let's do the first lesson!",
     "pen": "Pen",
@@ -137,7 +139,20 @@
       "recoAllGood": "Great going, {name}! Keep it up 🌟",
       "friend": "friend",
       "soon": "Soon"
-    }
+    },
+    "topicReco": {
+      "friend": "friend",
+      "title": "Your learning pathway",
+      "greetStart": "{name}, shall we start with the first lesson? Practice is waiting for you! 🚀",
+      "greetLow": "{name}, these topics were a little tricky. Practising them again will boost your score:",
+      "greetAllGood": "{name}, all your lessons are going great! Keep it up 🌟",
+      "reviewCta": "Practice again",
+      "startReview": "Start review",
+      "startCta": "Start the first lesson",
+      "subscribeCta": "Subscribe and practice more",
+      "subscribeNotePaid": "Replay any topic as much as you like to strengthen your results."
+    },
+    "part3": "Part 3"
   },
   "lesson": {
     "letsStart": "Let's start!",

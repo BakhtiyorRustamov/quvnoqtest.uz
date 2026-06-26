@@ -55,7 +55,7 @@ function gen() {
   return 11 + Math.floor(Math.random() * 89); // 11..99
 }
 
-export default function PlaceValueBlocks({ target: tIn, lang = "uz", embedded = false, onAttempt, onCorrect, onNext }) {
+export default function PlaceValueBlocks({ target: tIn, lang = "uz", embedded = false, hideTarget = false, onAttempt, onCorrect, onNext }) {
   const t = STRINGS[lang] || STRINGS.uz;
   const [target, setTarget] = useState(() => (typeof tIn === "number" ? tIn : gen()));
   const [tens, setTens] = useState(0);
@@ -94,7 +94,9 @@ export default function PlaceValueBlocks({ target: tIn, lang = "uz", embedded = 
         {!embedded ? <span style={S.pill}>{t.grade}</span> : <span />}
         <span style={{ ...S.now, ...(solved ? S.nowOk : {}) }}>{t.now}: {value}</span>
       </div>
-      <h2 style={S.title}>{t.title(target)}</h2>
+      {/* hideTarget: don't reveal the number — used when the lesson asks the
+         child to COMPUTE a result (sum/difference) and build it themselves. */}
+      {!hideTarget && <h2 style={S.title}>{t.title(target)}</h2>}
       <p style={S.instr}>{t.instr}</p>
 
       <div style={S.stage}>

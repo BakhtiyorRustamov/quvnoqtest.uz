@@ -1,0 +1,351 @@
+[
+  {
+    "id": "q1",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 5,
+        "b": 7,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Ikki kesma: 5 cm va 7 cm. Ularni ulasak, umumiy uzunlik necha cm? Sonlar chizigʻida hisobla.",
+      "ru": "Два отрезка: 5 см и 7 см. Какова общая длина? Посчитай на числовой прямой.",
+      "en": "Two segments: 5 cm and 7 cm. What is the total length? Use the number line."
+    },
+    "hint": {
+      "uz": "5 dan boshla va 7 cm oldinga sur.",
+      "ru": "Встань на 5 и продвинься на 7 см вперёд.",
+      "en": "Start at 5 and move 7 cm forward."
+    },
+    "explanation": {
+      "uz": "5 + 7 = 12 cm.",
+      "ru": "5 + 7 = 12 см.",
+      "en": "5 + 7 = 12 cm."
+    }
+  },
+  {
+    "id": "q2",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 7,
+        "y": 12
+      }
+    },
+    "prompt": {
+      "uz": "Qaysi kesma uzunroq: 7 cm yoki 12 cm? Toʻgʻri belgini tanla.",
+      "ru": "Какой отрезок длиннее: 7 см или 12 см? Выбери знак.",
+      "en": "Which segment is longer: 7 cm or 12 cm? Choose the sign."
+    },
+    "hint": {
+      "uz": "Soni katta boʻlgan kesma uzunroq.",
+      "ru": "Отрезок с большим числом длиннее.",
+      "en": "The segment with the bigger number is longer."
+    },
+    "explanation": {
+      "uz": "7 < 12.",
+      "ru": "7 < 12.",
+      "en": "7 < 12."
+    }
+  },
+  {
+    "id": "q3",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 24
+      }
+    },
+    "prompt": {
+      "uz": "Qalamning uzunligi 24 cm. Shu uzunlikni bloklardan yasa.",
+      "ru": "Длина карандаша 24 см. Собери эту длину из блоков.",
+      "en": "A pencil is 24 cm long. Build that length from blocks."
+    },
+    "hint": {
+      "uz": "2 ta oʻnlik (+10) va 4 ta birlik (+1).",
+      "ru": "2 десятков (+10) и 4 единиц (+1).",
+      "en": "2 tens (+10) and 4 ones (+1)."
+    },
+    "explanation": {
+      "uz": "24 = 20 + 4 cm.",
+      "ru": "24 = 20 + 4 см.",
+      "en": "24 = 20 + 4 cm."
+    }
+  },
+  {
+    "id": "q4",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "8 + 5",
+            "right": "13"
+          },
+          {
+            "left": "20 - 6",
+            "right": "14"
+          },
+          {
+            "left": "9 + 7",
+            "right": "16"
+          },
+          {
+            "left": "18 - 6",
+            "right": "12"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir kesmalar yigʻindisini uzunligi (cm) bilan ulang!",
+      "ru": "Соедини каждую сумму отрезков с её длиной (см)!",
+      "en": "Match each sum of segments with its length (cm)!"
+    },
+    "hint": {
+      "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+      "ru": "Вычисли слева, потом найди равное справа.",
+      "en": "Work out the left side, then find its equal on the right."
+    },
+    "explanation": {
+      "uz": "Har bir uzunlik oʻz qiymati bilan ulandi.",
+      "ru": "Каждая длина соединена со своим значением.",
+      "en": "Each length is matched with its value."
+    }
+  },
+  {
+    "id": "q5",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 9,
+        "b": 4,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Ikki kesma: 9 cm va 4 cm. Ularni ulasak, umumiy uzunlik necha cm? Sonlar chizigʻida hisobla.",
+      "ru": "Два отрезка: 9 см и 4 см. Какова общая длина? Посчитай на числовой прямой.",
+      "en": "Two segments: 9 cm and 4 cm. What is the total length? Use the number line."
+    },
+    "hint": {
+      "uz": "9 dan boshla va 4 cm oldinga sur.",
+      "ru": "Встань на 9 и продвинься на 4 см вперёд.",
+      "en": "Start at 9 and move 4 cm forward."
+    },
+    "explanation": {
+      "uz": "9 + 4 = 13 cm.",
+      "ru": "9 + 4 = 13 см.",
+      "en": "9 + 4 = 13 cm."
+    }
+  },
+  {
+    "id": "q6",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 15,
+        "y": 9
+      }
+    },
+    "prompt": {
+      "uz": "Qaysi kesma uzunroq: 15 cm yoki 9 cm? Toʻgʻri belgini tanla.",
+      "ru": "Какой отрезок длиннее: 15 см или 9 см? Выбери знак.",
+      "en": "Which segment is longer: 15 cm or 9 cm? Choose the sign."
+    },
+    "hint": {
+      "uz": "Soni katta boʻlgan kesma uzunroq.",
+      "ru": "Отрезок с большим числом длиннее.",
+      "en": "The segment with the bigger number is longer."
+    },
+    "explanation": {
+      "uz": "15 > 9.",
+      "ru": "15 > 9.",
+      "en": "15 > 9."
+    }
+  },
+  {
+    "id": "q7",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 33,
+        "hideTarget": true
+      }
+    },
+    "prompt": {
+      "uz": "Lenta 45 cm edi, 12 cm kesildi. Qancha qoldi? Javobni bloklardan yasa.",
+      "ru": "Лента была 45 см, отрезали 12 см. Сколько осталось? Собери из блоков.",
+      "en": "A ribbon was 45 cm; 12 cm was cut off. How much is left? Build the answer."
+    },
+    "hint": {
+      "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+      "ru": "Сначала вычисли, потом собери ответ из блоков.",
+      "en": "Work it out first, then build the answer from blocks."
+    },
+    "explanation": {
+      "uz": "45 - 12 = 33 cm.",
+      "ru": "45 - 12 = 33 см.",
+      "en": "45 - 12 = 33 cm."
+    }
+  },
+  {
+    "id": "q8",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "drag_buckets",
+      "props": {
+        "tiles": [
+          {
+            "id": "a",
+            "label": "4 + 6",
+            "bin": "v10"
+          },
+          {
+            "id": "b",
+            "label": "7 + 3",
+            "bin": "v10"
+          },
+          {
+            "id": "c",
+            "label": "2 + 8",
+            "bin": "v10"
+          },
+          {
+            "id": "d",
+            "label": "9 + 6",
+            "bin": "v15"
+          },
+          {
+            "id": "e",
+            "label": "8 + 7",
+            "bin": "v15"
+          },
+          {
+            "id": "f",
+            "label": "10 + 5",
+            "bin": "v15"
+          }
+        ],
+        "bins": [
+          {
+            "id": "v10",
+            "label": "10"
+          },
+          {
+            "id": "v15",
+            "label": "15"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Oʻlchangan kesmalarni uzunligi (cm) boʻyicha toʻgʻri qutiga sudra!",
+      "ru": "Перетащи измеренные отрезки в ящик их длины (см)!",
+      "en": "Drag each measured segment into the bucket of its length (cm)!"
+    },
+    "hint": {
+      "uz": "Avval uzunlikni hisobla, soʻng shu sonli qutiga tashla.",
+      "ru": "Сначала вычисли длину, потом перетащи в ящик с этим числом.",
+      "en": "Work out the length, then drag it into that number's bucket."
+    },
+    "explanation": {
+      "uz": "Har bir kesma oʻz uzunligi qutisida.",
+      "ru": "Каждый отрезок в ящике своей длины.",
+      "en": "Each segment is in the bucket of its length."
+    }
+  },
+  {
+    "id": "q9",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "4",
+          "8",
+          "2"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "Chizgʻichda 1 cm = 2 katak. Kesma 8 katak uzunlikda. U necha cm?",
+      "ru": "На линейке 1 см = 2 клетки. Отрезок длиной 8 клеток. Сколько это см?",
+      "en": "On the ruler 1 cm = 2 cells. A segment is 8 cells long. How many cm is it?"
+    },
+    "hint": {
+      "uz": "Katakni 2 ga boʻl: 8 katak = 4 cm.",
+      "ru": "Раздели клетки на 2: 8 клеток = 4 см.",
+      "en": "Divide cells by 2: 8 cells = 4 cm."
+    },
+    "explanation": {
+      "uz": "8 katak = 4 cm (1 cm = 2 katak).",
+      "ru": "8 клеток = 4 см (1 см = 2 клетки).",
+      "en": "8 cells = 4 cm (1 cm = 2 cells)."
+    },
+    "componentProposal": {
+      "suggestedType": "ruler_measure",
+      "concept": "reading a length off a ruler (cells/cm), incl. 1 cm = 2 cells",
+      "interaction": "drag a ruler/marker along an object and read the centimetre value",
+      "props": "{ lengthCm, unit: 'cm'|'cell', maxCm }",
+      "why": "no current component renders a ruler or models cell↔cm reading — the core skill of this lesson"
+    }
+  },
+  {
+    "id": "q10",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "7",
+          "8",
+          "6"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "Kesma 14 katak uzunlikda. 1 cm = 2 katak. U necha cm?",
+      "ru": "Отрезок длиной 14 клеток. 1 см = 2 клетки. Сколько это см?",
+      "en": "A segment is 14 cells long. 1 cm = 2 cells. How many cm is it?"
+    },
+    "hint": {
+      "uz": "14 katakni 2 ga boʻl.",
+      "ru": "Раздели 14 клеток на 2.",
+      "en": "Divide 14 cells by 2."
+    },
+    "explanation": {
+      "uz": "14 katak = 7 cm.",
+      "ru": "14 клеток = 7 см.",
+      "en": "14 cells = 7 cm."
+    },
+    "componentProposal": {
+      "suggestedType": "ruler_measure",
+      "concept": "reading a length off a ruler (cells/cm), incl. 1 cm = 2 cells",
+      "interaction": "drag a ruler/marker along an object and read the centimetre value",
+      "props": "{ lengthCm, unit: 'cm'|'cell', maxCm }",
+      "why": "no current component renders a ruler or models cell↔cm reading — the core skill of this lesson"
+    }
+  }
+]

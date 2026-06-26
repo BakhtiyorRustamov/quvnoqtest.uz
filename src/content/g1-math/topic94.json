@@ -1,0 +1,343 @@
+{
+  "topicId": "g1-math-94",
+  "subjectKey": "g1-math",
+  "emojis": "🧠➕✨",
+  "title": {
+    "uz": "Murakkab masalalarni yechamiz",
+    "ru": "Решаем сложные задачи",
+    "en": "Solving complex problems"
+  },
+  "recall": {
+    "uz": "Murakkab ifodada bir nechta amal boʻladi. Ularni qulay tartibda guruhlab hisoblash mumkin. Masalan, 6 + 7 + 6 da avval 6 + 6 = 12, soʻng 12 + 7 = 19. Amallar tartibiga rioya qilamiz!",
+    "ru": "В сложном выражении несколько действий. Их удобно сгруппировать. Например, в 6 + 7 + 6 сначала 6 + 6 = 12, потом 12 + 7 = 19. Соблюдаем порядок действий!",
+    "en": "A complex expression has several operations. Group them conveniently. For example in 6 + 7 + 6 do 6 + 6 = 12, then 12 + 7 = 19. Follow the order of operations!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "19",
+            "18",
+            "20"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qulay hisobla: 6 + 7 + 6 = ?",
+        "ru": "Удобно вычисли: 6 + 7 + 6 = ?",
+        "en": "Compute conveniently: 6 + 7 + 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval 6 + 6, soʻng 7 ni qoʻsh.",
+        "ru": "Сначала 6 + 6, потом 7.",
+        "en": "First 6 + 6, then add 7."
+      },
+      "explanation": {
+        "uz": "6 + 6 + 7 = 19.",
+        "ru": "6 + 6 + 7 = 19.",
+        "en": "6 + 6 + 7 = 19."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "23",
+            "22",
+            "24"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "5 + 13 + 5 = ?",
+        "ru": "5 + 13 + 5 = ?",
+        "en": "5 + 13 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval 5 + 5, soʻng 13.",
+        "ru": "Сначала 5 + 5, потом 13.",
+        "en": "First 5 + 5, then 13."
+      },
+      "explanation": {
+        "uz": "5 + 5 + 13 = 23.",
+        "ru": "5 + 5 + 13 = 23.",
+        "en": "5 + 5 + 13 = 23."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "78",
+            "77",
+            "79"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "72 + 3 + 3 = ?",
+        "ru": "72 + 3 + 3 = ?",
+        "en": "72 + 3 + 3 = ?"
+      },
+      "hint": {
+        "uz": "Ketma-ket qoʻsh.",
+        "ru": "Складывай по порядку.",
+        "en": "Add in order."
+      },
+      "explanation": {
+        "uz": "72 + 3 + 3 = 78.",
+        "ru": "72 + 3 + 3 = 78.",
+        "en": "72 + 3 + 3 = 78."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "3 oʻquvchi sheʼrni 3, 2 va 4 minut oʻqidi. Jami necha minut?",
+        "ru": "Три ученика читали стих 3, 2 и 4 минуты. Сколько всего минут?",
+        "en": "Three pupils read for 3, 2 and 4 minutes. How many minutes in all?"
+      },
+      "hint": {
+        "uz": "3 + 2 + 4 ni qoʻsh.",
+        "ru": "Сложи 3 + 2 + 4.",
+        "en": "Add 3 + 2 + 4."
+      },
+      "explanation": {
+        "uz": "3 + 2 + 4 = 9.",
+        "ru": "3 + 2 + 4 = 9.",
+        "en": "3 + 2 + 4 = 9."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 19,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 6 + 7 + 6 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 6 + 7 + 6 = ?",
+        "en": "Work it out and build the answer with blocks: 6 + 7 + 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "6 + 7 + 6 = 19.",
+        "ru": "6 + 7 + 6 = 19.",
+        "en": "6 + 7 + 6 = 19."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "6 + 7 + 6",
+              "right": "19"
+            },
+            {
+              "left": "5 + 13 + 5",
+              "right": "23"
+            },
+            {
+              "left": "9 + 1 + 6",
+              "right": "16"
+            },
+            {
+              "left": "5 + 7 + 6",
+              "right": "18"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "16",
+            "15",
+            "17"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "(9 + 1) + 6 = ?",
+        "ru": "(9 + 1) + 6 = ?",
+        "en": "(9 + 1) + 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs: 9 + 1.",
+        "ru": "Сначала скобки: 9 + 1.",
+        "en": "Brackets first: 9 + 1."
+      },
+      "explanation": {
+        "uz": "(9 + 1) + 6 = 10 + 6 = 16.",
+        "ru": "(9 + 1) + 6 = 10 + 6 = 16.",
+        "en": "(9 + 1) + 6 = 10 + 6 = 16."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 78,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 72 + 3 + 3 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 72 + 3 + 3 = ?",
+        "en": "Work it out and build the answer with blocks: 72 + 3 + 3 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "72 + 3 + 3 = 78.",
+        "ru": "72 + 3 + 3 = 78.",
+        "en": "72 + 3 + 3 = 78."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "10 + 20 + 5",
+              "right": "35"
+            },
+            {
+              "left": "40 + 40 + 1",
+              "right": "81"
+            },
+            {
+              "left": "30 + 30 + 30",
+              "right": "90"
+            },
+            {
+              "left": "8 + 2 + 7",
+              "right": "17"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "14",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "7 + 5 + 3 = ?",
+        "ru": "7 + 5 + 3 = ?",
+        "en": "7 + 5 + 3 = ?"
+      },
+      "hint": {
+        "uz": "Avval 7 + 3, soʻng 5.",
+        "ru": "Сначала 7 + 3, потом 5.",
+        "en": "First 7 + 3, then 5."
+      },
+      "explanation": {
+        "uz": "7 + 3 + 5 = 15.",
+        "ru": "7 + 3 + 5 = 15.",
+        "en": "7 + 3 + 5 = 15."
+      }
+    }
+  ]
+}

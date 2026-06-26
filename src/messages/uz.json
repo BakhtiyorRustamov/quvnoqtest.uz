@@ -112,6 +112,8 @@
     "profile": "Profil",
     "learnedTitle": "Hozirgacha oʻrganganlarim",
     "topicsTitle": "Mavzular",
+    "part1": "1-qism",
+    "part2": "2-qism",
     "review": "Takrorlash",
     "emptyLearned": "Hali boshlanmadi — birinchi darsni oʻtaylik!",
     "pen": "Qalam",
@@ -137,7 +139,20 @@
       "recoAllGood": "Zoʻr ketyapsan, {name}! Shu zaylda davom et 🌟",
       "friend": "doʻstim",
       "soon": "Tez kunda"
-    }
+    },
+    "topicReco": {
+      "friend": "doʻstim",
+      "title": "Shaxsiy mashq yoʻnalishing",
+      "greetStart": "{name}, birinchi darsdan boshlaymizmi? Mashqlar seni kutmoqda! 🚀",
+      "greetLow": "{name}, quyidagi mavzularda biroz qiynalding. Ularni qaytadan mashq qilsang, natijang yanada yaxshilanadi:",
+      "greetAllGood": "{name}, barcha darslaring aʼlo ketyapti! Shu zaylda davom et 🌟",
+      "reviewCta": "Qaytadan mashq qilish",
+      "startReview": "Mashqni boshlash",
+      "startCta": "Birinchi darsni boshlash",
+      "subscribeCta": "Obuna boʻlib, koʻproq mashq qil",
+      "subscribeNotePaid": "Mavzularni xohlagancha qayta oʻtab, natijangni mustahkamla."
+    },
+    "part3": "3-qism"
   },
   "lesson": {
     "letsStart": "Boshlaymiz!",

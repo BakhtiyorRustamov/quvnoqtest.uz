@@ -1,0 +1,325 @@
+{
+  "topicId": "g1-math-48",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🔟✨",
+  "title": {
+    "uz": "19, 20 va juft-toq sonlar",
+    "ru": "Числа 19, 20 и чёт-нечет",
+    "en": "19, 20 and even & odd"
+  },
+  "recall": {
+    "uz": "19 va 20 sonlarini tuzamiz: 19 — bu 10 + 9, 20 — bu 10 + 10. 0, 2, 4, 6, 8 bilan tugaydigan sonlar juft, 1, 3, 5, 7, 9 bilan tugaydiganlari toq sonlardir!",
+    "ru": "Составляем 19 и 20: 19 — это 10 + 9, 20 — это 10 + 10. Числа, оканчивающиеся на 0, 2, 4, 6, 8 — чётные, а на 1, 3, 5, 7, 9 — нечётные!",
+    "en": "We build 19 and 20: 19 is 10 + 9, 20 is 10 + 10. Numbers ending in 0, 2, 4, 6, 8 are even; those ending in 1, 3, 5, 7, 9 are odd!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "19 ni hosil qil: 10 + ? = 19",
+        "ru": "Составь 19: 10 + ? = 19",
+        "en": "Make 19: 10 + ? = 19"
+      },
+      "hint": {
+        "uz": "10 dan 19 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 10 до 19?",
+        "en": "How many more from 10 up to 19?"
+      },
+      "explanation": {
+        "uz": "10 + 9 = 19. 19 ning tarkibi — 10 va 9.",
+        "ru": "10 + 9 = 19. Состав числа 19 — это 10 и 9.",
+        "en": "10 + 9 = 19. 19 is made of 10 and 9."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "10",
+            "9",
+            "11"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "20 ni hosil qil: 10 + ? = 20",
+        "ru": "Составь 20: 10 + ? = 20",
+        "en": "Make 20: 10 + ? = 20"
+      },
+      "hint": {
+        "uz": "10 dan 20 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 10 до 20?",
+        "en": "How many more from 10 up to 20?"
+      },
+      "explanation": {
+        "uz": "10 + 10 = 20. 20 ning tarkibi — 10 va 10.",
+        "ru": "10 + 10 = 20. Состав числа 20 — это 10 и 10.",
+        "en": "10 + 10 = 20. 20 is made of 10 and 10."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "19 ni hosil qil: 11 + ? = 19",
+        "ru": "Составь 19: 11 + ? = 19",
+        "en": "Make 19: 11 + ? = 19"
+      },
+      "hint": {
+        "uz": "11 dan 19 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 11 до 19?",
+        "en": "How many more from 11 up to 19?"
+      },
+      "explanation": {
+        "uz": "11 + 8 = 19. 19 ning tarkibi — 11 va 8.",
+        "ru": "11 + 8 = 19. Состав числа 19 — это 11 и 8.",
+        "en": "11 + 8 = 19. 19 is made of 11 and 8."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 10,
+          "b": 9,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 10 + 9!",
+        "ru": "Вычисли на числовой прямой: 10 + 9!",
+        "en": "Work it out on the number line: 10 + 9!"
+      },
+      "hint": {
+        "uz": "10 dan boshla va oldinga 9 qadam sakra.",
+        "ru": "Встань на 10 и прыгни на 9 шагов вперёд.",
+        "en": "Start at 10 and hop 9 steps forward."
+      },
+      "explanation": {
+        "uz": "10 + 9 = 19.",
+        "ru": "10 + 9 = 19.",
+        "en": "10 + 9 = 19."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/celebrate.gif",
+        "alt": {
+          "uz": "Yigirma — bayram!",
+          "ru": "Двадцать — праздник!",
+          "en": "Twenty — celebration!"
+        },
+        "maxWidth": 170
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "20",
+            "19",
+            "18"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bogʻbon 10 ta oq va 10 ta qizil atirgul kesdi. Hammasi boʻlib nechta atirgul?",
+        "ru": "Садовник срезал 10 белых и 10 красных роз. Сколько всего роз?",
+        "en": "A gardener cut 10 white and 10 red roses. How many roses in all?"
+      },
+      "hint": {
+        "uz": "10 ga 10 ni qoʻsh.",
+        "ru": "Прибавь к 10 число 10.",
+        "en": "Add 10 to 10."
+      },
+      "explanation": {
+        "uz": "10 + 10 = 20.",
+        "ru": "10 + 10 = 20.",
+        "en": "10 + 10 = 20."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son juft?",
+        "ru": "Какое число чётное?",
+        "en": "Which number is even?"
+      },
+      "hint": {
+        "uz": "Juft sonlar 0, 2, 4, 6, 8 bilan tugaydi.",
+        "ru": "Чётные оканчиваются на 0, 2, 4, 6, 8.",
+        "en": "Even numbers end in 0, 2, 4, 6, 8."
+      },
+      "explanation": {
+        "uz": "12 soni 2 bilan tugaydi — juft son.",
+        "ru": "12 оканчивается на 2 — чётное.",
+        "en": "12 ends in 2 — it is even."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "12",
+            "20"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son toq?",
+        "ru": "Какое число нечётное?",
+        "en": "Which number is odd?"
+      },
+      "hint": {
+        "uz": "Toq sonlar 1, 3, 5, 7, 9 bilan tugaydi.",
+        "ru": "Нечётные оканчиваются на 1, 3, 5, 7, 9.",
+        "en": "Odd numbers end in 1, 3, 5, 7, 9."
+      },
+      "explanation": {
+        "uz": "15 soni 5 bilan tugaydi — toq son.",
+        "ru": "15 оканчивается на 5 — нечётное.",
+        "en": "15 ends in 5 — it is odd."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "20 + 1 = 12",
+            "8 + 10 = 18",
+            "10 + 9 = 19"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi tenglik notoʻgʻri?",
+        "ru": "Какое равенство неверно?",
+        "en": "Which equation is wrong?"
+      },
+      "hint": {
+        "uz": "Har birini hisoblab tekshir.",
+        "ru": "Проверь каждое вычислением.",
+        "en": "Check each one by computing."
+      },
+      "explanation": {
+        "uz": "20 + 1 = 21, 12 emas. Demak, bu tenglik notoʻgʻri.",
+        "ru": "20 + 1 = 21, а не 12. Значит, оно неверно.",
+        "en": "20 + 1 = 21, not 12. So that equation is wrong."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 20
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 20 sonini yasa!",
+        "ru": "Собери число 20 из блоков!",
+        "en": "Build the number 20 from blocks!"
+      },
+      "hint": {
+        "uz": "Bitta oʻnlik (+10) va 0 ta birlik (+1).",
+        "ru": "Один десяток (+10) и 0 единиц (+1).",
+        "en": "One ten (+10) and 0 ones (+1)."
+      },
+      "explanation": {
+        "uz": "20 = 10 + 0: 2 oʻnlik va 0 birlik.",
+        "ru": "20 = 10 + 0: 2 десяток и 0 единиц.",
+        "en": "20 = 10 + 0: 2 ten and 0 ones."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 12,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 12 + 8!",
+        "ru": "Вычисли на числовой прямой: 12 + 8!",
+        "en": "Work it out on the number line: 12 + 8!"
+      },
+      "hint": {
+        "uz": "12 dan boshla va oldinga 8 qadam sakra.",
+        "ru": "Встань на 12 и прыгни на 8 шагов вперёд.",
+        "en": "Start at 12 and hop 8 steps forward."
+      },
+      "explanation": {
+        "uz": "12 + 8 = 20.",
+        "ru": "12 + 8 = 20.",
+        "en": "12 + 8 = 20."
+      }
+    }
+  ]
+}

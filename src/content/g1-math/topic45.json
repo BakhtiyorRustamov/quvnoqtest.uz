@@ -1,0 +1,325 @@
+{
+  "topicId": "g1-math-45",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🧩✨",
+  "title": {
+    "uz": "13 va 14 sonlarining tarkibi",
+    "ru": "Состав чисел 13 и 14",
+    "en": "Making 13 and 14"
+  },
+  "recall": {
+    "uz": "Har bir sonni ikkita kichik sondan tuzish mumkin — bu sonning tarkibi. 13 ni 10 + 3, 9 + 4 yoki 7 + 6 qilib, 14 ni esa 7 + 7 yoki 8 + 6 qilib tuzamiz. Keling, mashq qilamiz!",
+    "ru": "Каждое число можно составить из двух меньших — это состав числа. 13 это 10 + 3, 9 + 4 или 7 + 6, а 14 это 7 + 7 или 8 + 6. Давай потренируемся!",
+    "en": "Every number can be made from two smaller ones. 13 is 10 + 3, 9 + 4 or 7 + 6, and 14 is 7 + 7 or 8 + 6. Let's practise!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "13 ni hosil qil: 9 + ? = 13",
+        "ru": "Составь 13: 9 + ? = 13",
+        "en": "Make 13: 9 + ? = 13"
+      },
+      "hint": {
+        "uz": "9 dan 13 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 9 до 13?",
+        "en": "How many more from 9 up to 13?"
+      },
+      "explanation": {
+        "uz": "9 + 4 = 13. 13 ning tarkibi — 9 va 4.",
+        "ru": "9 + 4 = 13. Состав числа 13 — это 9 и 4.",
+        "en": "9 + 4 = 13. 13 is made of 9 and 4."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "6",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "13 ni hosil qil: 8 + ? = 13",
+        "ru": "Составь 13: 8 + ? = 13",
+        "en": "Make 13: 8 + ? = 13"
+      },
+      "hint": {
+        "uz": "8 dan 13 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 8 до 13?",
+        "en": "How many more from 8 up to 13?"
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13. 13 ning tarkibi — 8 va 5.",
+        "ru": "8 + 5 = 13. Состав числа 13 — это 8 и 5.",
+        "en": "8 + 5 = 13. 13 is made of 8 and 5."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "6",
+            "8"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "14 ni hosil qil: 7 + ? = 14",
+        "ru": "Составь 14: 7 + ? = 14",
+        "en": "Make 14: 7 + ? = 14"
+      },
+      "hint": {
+        "uz": "7 dan 14 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 7 до 14?",
+        "en": "How many more from 7 up to 14?"
+      },
+      "explanation": {
+        "uz": "7 + 7 = 14. 14 ning tarkibi — 7 va 7.",
+        "ru": "7 + 7 = 14. Состав числа 14 — это 7 и 7.",
+        "en": "7 + 7 = 14. 14 is made of 7 and 7."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/tens-ones.gif",
+        "alt": {
+          "uz": "Oʻnlik va birliklar",
+          "ru": "Десяток и единицы",
+          "en": "A ten and ones"
+        },
+        "maxWidth": 200
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "5",
+            "3"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "14 ni hosil qil: 10 + ? = 14",
+        "ru": "Составь 14: 10 + ? = 14",
+        "en": "Make 14: 10 + ? = 14"
+      },
+      "hint": {
+        "uz": "10 dan 14 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 10 до 14?",
+        "en": "How many more from 10 up to 14?"
+      },
+      "explanation": {
+        "uz": "10 + 4 = 14. 14 ning tarkibi — 10 va 4.",
+        "ru": "10 + 4 = 14. Состав числа 14 — это 10 и 4.",
+        "en": "10 + 4 = 14. 14 is made of 10 and 4."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 4,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 9 + 4!",
+        "ru": "Вычисли на числовой прямой: 9 + 4!",
+        "en": "Work it out on the number line: 9 + 4!"
+      },
+      "hint": {
+        "uz": "9 dan boshla va oldinga 4 qadam sakra.",
+        "ru": "Встань на 9 и прыгни на 4 шагов вперёд.",
+        "en": "Start at 9 and hop 4 steps forward."
+      },
+      "explanation": {
+        "uz": "9 + 4 = 13.",
+        "ru": "9 + 4 = 13.",
+        "en": "9 + 4 = 13."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 8 + 6!",
+        "ru": "Вычисли на числовой прямой: 8 + 6!",
+        "en": "Work it out on the number line: 8 + 6!"
+      },
+      "hint": {
+        "uz": "8 dan boshla va oldinga 6 qadam sakra.",
+        "ru": "Встань на 8 и прыгни на 6 шагов вперёд.",
+        "en": "Start at 8 and hop 6 steps forward."
+      },
+      "explanation": {
+        "uz": "8 + 6 = 14.",
+        "ru": "8 + 6 = 14.",
+        "en": "8 + 6 = 14."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 13
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 13 sonini yasa!",
+        "ru": "Собери число 13 из блоков!",
+        "en": "Build the number 13 from blocks!"
+      },
+      "hint": {
+        "uz": "Bitta oʻnlik (+10) va 3 ta birlik (+1).",
+        "ru": "Один десяток (+10) и 3 единиц (+1).",
+        "en": "One ten (+10) and 3 ones (+1)."
+      },
+      "explanation": {
+        "uz": "13 = 10 + 3: 1 oʻnlik va 3 birlik.",
+        "ru": "13 = 10 + 3: 1 десяток и 3 единиц.",
+        "en": "13 = 10 + 3: 1 ten and 3 ones."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "6",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "14 kundan 9 kuni yomgʻirli, qolgani quyoshli. Quyosh batareyasi necha kun ishladi?",
+        "ru": "Из 14 дней 9 дождливых, остальные солнечные. Сколько дней работала солнечная батарея?",
+        "en": "Of 14 days, 9 were rainy and the rest sunny. How many days did the solar panel work?"
+      },
+      "hint": {
+        "uz": "14 dan 9 ni ayir.",
+        "ru": "Вычти из 14 число 9.",
+        "en": "Take 9 from 14."
+      },
+      "explanation": {
+        "uz": "14 - 9 = 5. Besh kun quyoshli boʻlgan.",
+        "ru": "14 - 9 = 5. Пять солнечных дней.",
+        "en": "14 - 9 = 5. Five sunny days."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "1",
+            "2",
+            "3"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Aziz, Lola va Said jami 6 ta bulut chizdi. Aziz 2 ta, Lola 3 ta chizdi. Said nechta chizdi?",
+        "ru": "Азиз, Лола и Саид нарисовали 6 облаков. Азиз — 2, Лола — 3. Сколько нарисовал Саид?",
+        "en": "Aziz, Lola and Said drew 6 clouds in all. Aziz drew 2, Lola 3. How many did Said draw?"
+      },
+      "hint": {
+        "uz": "6 dan 2 va 3 ni ayir.",
+        "ru": "Вычти из 6 числа 2 и 3.",
+        "en": "Take 2 and 3 from 6."
+      },
+      "explanation": {
+        "uz": "6 - 2 - 3 = 1. Said 1 ta chizgan.",
+        "ru": "6 - 2 - 3 = 1. Саид нарисовал 1.",
+        "en": "6 - 2 - 3 = 1. Said drew 1."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "14",
+            "16",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son tushib qolgan: 11, 12, 13, ?, 15",
+        "ru": "Какое число пропущено: 11, 12, 13, ?, 15",
+        "en": "Which number is missing: 11, 12, 13, ?, 15"
+      },
+      "hint": {
+        "uz": "Sonlar birma-bir oʻsadi.",
+        "ru": "Числа растут по одному.",
+        "en": "The numbers grow by one."
+      },
+      "explanation": {
+        "uz": "13 dan keyin 14 keladi.",
+        "ru": "После 13 идёт 14.",
+        "en": "After 13 comes 14."
+      }
+    }
+  ]
+}

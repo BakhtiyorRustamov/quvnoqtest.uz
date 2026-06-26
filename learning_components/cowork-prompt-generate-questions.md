@@ -66,13 +66,3 @@ questions, which `type`s you used and how many of each, and list any that fell b
 `mcq` with their notes.
 
 ---
-
-## TASK  ← change ONLY this block
-Generate **15 questions on single-digit addition and basic fractions for grade 3**.
-
-<!-- Other ways to use the TASK block:
-  • "Generate 20 questions covering place value and comparison for grade 2."
-  • Paste a chunk of an Uzbek textbook below and write:
-      "Generate questions covering the material below; choose the best-fit component for each."
-      <textbook text here>
--->

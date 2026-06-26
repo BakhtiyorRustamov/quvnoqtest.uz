@@ -41,6 +41,63 @@ import topic38Json from '@/content/g1-math/topic38.json';
 import topic39Json from '@/content/g1-math/topic39.json';
 import topic40Json from '@/content/g1-math/topic40.json';
 import topic41Json from '@/content/g1-math/topic41.json';
+import topic42Json from '@/content/g1-math/topic42.json';
+import topic43Json from '@/content/g1-math/topic43.json';
+import topic44Json from '@/content/g1-math/topic44.json';
+import topic45Json from '@/content/g1-math/topic45.json';
+import topic46Json from '@/content/g1-math/topic46.json';
+import topic47Json from '@/content/g1-math/topic47.json';
+import topic48Json from '@/content/g1-math/topic48.json';
+import topic49Json from '@/content/g1-math/topic49.json';
+import topic50Json from '@/content/g1-math/topic50.json';
+import topic51Json from '@/content/g1-math/topic51.json';
+import topic52Json from '@/content/g1-math/topic52.json';
+import topic53Json from '@/content/g1-math/topic53.json';
+import topic54Json from '@/content/g1-math/topic54.json';
+import topic55Json from '@/content/g1-math/topic55.json';
+import topic56Json from '@/content/g1-math/topic56.json';
+import topic57Json from '@/content/g1-math/topic57.json';
+import topic58Json from '@/content/g1-math/topic58.json';
+import topic59Json from '@/content/g1-math/topic59.json';
+import topic60Json from '@/content/g1-math/topic60.json';
+import topic61Json from '@/content/g1-math/topic61.json';
+import topic62Json from '@/content/g1-math/topic62.json';
+import topic63Json from '@/content/g1-math/topic63.json';
+import topic64Json from '@/content/g1-math/topic64.json';
+import topic65Json from '@/content/g1-math/topic65.json';
+import topic66Json from '@/content/g1-math/topic66.json';
+import topic67Json from '@/content/g1-math/topic67.json';
+import topic68Json from '@/content/g1-math/topic68.json';
+import topic69Json from '@/content/g1-math/topic69.json';
+import topic70Json from '@/content/g1-math/topic70.json';
+import topic71Json from '@/content/g1-math/topic71.json';
+import topic72Json from '@/content/g1-math/topic72.json';
+import topic73Json from '@/content/g1-math/topic73.json';
+import topic75Json from '@/content/g1-math/topic75.json';
+import topic76Json from '@/content/g1-math/topic76.json';
+import topic77Json from '@/content/g1-math/topic77.json';
+import topic78Json from '@/content/g1-math/topic78.json';
+import topic79Json from '@/content/g1-math/topic79.json';
+import topic80Json from '@/content/g1-math/topic80.json';
+import topic81Json from '@/content/g1-math/topic81.json';
+import topic82Json from '@/content/g1-math/topic82.json';
+import topic83Json from '@/content/g1-math/topic83.json';
+import topic84Json from '@/content/g1-math/topic84.json';
+import topic85Json from '@/content/g1-math/topic85.json';
+import topic86Json from '@/content/g1-math/topic86.json';
+import topic87Json from '@/content/g1-math/topic87.json';
+import topic88Json from '@/content/g1-math/topic88.json';
+import topic89Json from '@/content/g1-math/topic89.json';
+import topic90Json from '@/content/g1-math/topic90.json';
+import topic91Json from '@/content/g1-math/topic91.json';
+import topic92Json from '@/content/g1-math/topic92.json';
+import topic93Json from '@/content/g1-math/topic93.json';
+import topic94Json from '@/content/g1-math/topic94.json';
+import topic95Json from '@/content/g1-math/topic95.json';
+import topic96Json from '@/content/g1-math/topic96.json';
+import topic97Json from '@/content/g1-math/topic97.json';
+import topic98Json from '@/content/g1-math/topic98.json';
+import topic99Json from '@/content/g1-math/topic99.json';
 import review01Json from '@/content/g1-math/review01.json';
 import { G1_MATH_TOPICS, getTopic } from '@/content/g1-math/topics';
 
@@ -89,6 +146,63 @@ export const LESSONS: Record<string, Lesson> = {
   'g1-math-39': topic39Json as unknown as Lesson,
   'g1-math-40': topic40Json as unknown as Lesson,
   'g1-math-41': topic41Json as unknown as Lesson,
+  'g1-math-42': topic42Json as unknown as Lesson,
+  'g1-math-43': topic43Json as unknown as Lesson,
+  'g1-math-44': topic44Json as unknown as Lesson,
+  'g1-math-45': topic45Json as unknown as Lesson,
+  'g1-math-46': topic46Json as unknown as Lesson,
+  'g1-math-47': topic47Json as unknown as Lesson,
+  'g1-math-48': topic48Json as unknown as Lesson,
+  'g1-math-49': topic49Json as unknown as Lesson,
+  'g1-math-50': topic50Json as unknown as Lesson,
+  'g1-math-51': topic51Json as unknown as Lesson,
+  'g1-math-52': topic52Json as unknown as Lesson,
+  'g1-math-53': topic53Json as unknown as Lesson,
+  'g1-math-54': topic54Json as unknown as Lesson,
+  'g1-math-55': topic55Json as unknown as Lesson,
+  'g1-math-56': topic56Json as unknown as Lesson,
+  'g1-math-57': topic57Json as unknown as Lesson,
+  'g1-math-58': topic58Json as unknown as Lesson,
+  'g1-math-59': topic59Json as unknown as Lesson,
+  'g1-math-60': topic60Json as unknown as Lesson,
+  'g1-math-61': topic61Json as unknown as Lesson,
+  'g1-math-62': topic62Json as unknown as Lesson,
+  'g1-math-63': topic63Json as unknown as Lesson,
+  'g1-math-64': topic64Json as unknown as Lesson,
+  'g1-math-65': topic65Json as unknown as Lesson,
+  'g1-math-66': topic66Json as unknown as Lesson,
+  'g1-math-67': topic67Json as unknown as Lesson,
+  'g1-math-68': topic68Json as unknown as Lesson,
+  'g1-math-69': topic69Json as unknown as Lesson,
+  'g1-math-70': topic70Json as unknown as Lesson,
+  'g1-math-71': topic71Json as unknown as Lesson,
+  'g1-math-72': topic72Json as unknown as Lesson,
+  'g1-math-73': topic73Json as unknown as Lesson,
+  'g1-math-75': topic75Json as unknown as Lesson,
+  'g1-math-76': topic76Json as unknown as Lesson,
+  'g1-math-77': topic77Json as unknown as Lesson,
+  'g1-math-78': topic78Json as unknown as Lesson,
+  'g1-math-79': topic79Json as unknown as Lesson,
+  'g1-math-80': topic80Json as unknown as Lesson,
+  'g1-math-81': topic81Json as unknown as Lesson,
+  'g1-math-82': topic82Json as unknown as Lesson,
+  'g1-math-83': topic83Json as unknown as Lesson,
+  'g1-math-84': topic84Json as unknown as Lesson,
+  'g1-math-85': topic85Json as unknown as Lesson,
+  'g1-math-86': topic86Json as unknown as Lesson,
+  'g1-math-87': topic87Json as unknown as Lesson,
+  'g1-math-88': topic88Json as unknown as Lesson,
+  'g1-math-89': topic89Json as unknown as Lesson,
+  'g1-math-90': topic90Json as unknown as Lesson,
+  'g1-math-91': topic91Json as unknown as Lesson,
+  'g1-math-92': topic92Json as unknown as Lesson,
+  'g1-math-93': topic93Json as unknown as Lesson,
+  'g1-math-94': topic94Json as unknown as Lesson,
+  'g1-math-95': topic95Json as unknown as Lesson,
+  'g1-math-96': topic96Json as unknown as Lesson,
+  'g1-math-97': topic97Json as unknown as Lesson,
+  'g1-math-98': topic98Json as unknown as Lesson,
+  'g1-math-99': topic99Json as unknown as Lesson,
   'g1-math-review-1': review01Json as unknown as Lesson
 };
 

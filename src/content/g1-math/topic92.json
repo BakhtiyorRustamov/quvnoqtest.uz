@@ -1,0 +1,336 @@
+{
+  "topicId": "g1-math-92",
+  "subjectKey": "g1-math",
+  "emojis": "🔢⚖️✨",
+  "title": {
+    "uz": "Taqqoslash: kerakli sonni topamiz",
+    "ru": "Сравнение: находим нужное число",
+    "en": "Comparison: finding the number"
+  },
+  "recall": {
+    "uz": "«...dan ... ta ortiq» son — qoʻshish bilan, «...dan ... ta kam» son — ayirish bilan topiladi. Masalan, 7 dan 8 ta ortiq son 7 + 8 = 15. 16 dan 9 ta kam son 16 - 9 = 7.",
+    "ru": "Число «на ... больше» находим сложением, «на ... меньше» — вычитанием. Например, на 8 больше 7 — это 7 + 8 = 15. На 9 меньше 16 — это 16 - 9 = 7.",
+    "en": "A number «... more than ...» is found by adding, «... fewer than ...» by subtracting. For example 8 more than 7 is 7 + 8 = 15. 9 fewer than 16 is 16 - 9 = 7."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "14",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "7 sonidan 8 ta ortiq son qaysi?",
+        "ru": "Какое число на 8 больше 7?",
+        "en": "Which number is 8 more than 7?"
+      },
+      "hint": {
+        "uz": "7 ga 8 ni qoʻsh.",
+        "ru": "Прибавь к 7 число 8.",
+        "en": "Add 8 to 7."
+      },
+      "explanation": {
+        "uz": "7 + 8 = 15.",
+        "ru": "7 + 8 = 15.",
+        "en": "7 + 8 = 15."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "6",
+            "8"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "16 sonidan 9 ta kam son qaysi?",
+        "ru": "Какое число на 9 меньше 16?",
+        "en": "Which number is 9 fewer than 16?"
+      },
+      "hint": {
+        "uz": "16 dan 9 ni ayir.",
+        "ru": "Вычти из 16 число 9.",
+        "en": "Take 9 from 16."
+      },
+      "explanation": {
+        "uz": "16 - 9 = 7.",
+        "ru": "16 - 9 = 7.",
+        "en": "16 - 9 = 7."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "14",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "70 soni 85 dan qancha kam?",
+        "ru": "На сколько 70 меньше 85?",
+        "en": "How much less is 70 than 85?"
+      },
+      "hint": {
+        "uz": "85 dan 70 ni ayir.",
+        "ru": "Вычти из 85 число 70.",
+        "en": "Take 70 from 85."
+      },
+      "explanation": {
+        "uz": "85 - 70 = 15.",
+        "ru": "85 - 70 = 15.",
+        "en": "85 - 70 = 15."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 15,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 7 + 8 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 7 + 8 = ?",
+        "en": "Work it out and build the answer with blocks: 7 + 8 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "7 + 8 = 15.",
+        "ru": "7 + 8 = 15.",
+        "en": "7 + 8 = 15."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 7,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 16 - 9 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 16 - 9 = ?",
+        "en": "Work it out and build the answer with blocks: 16 - 9 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "16 - 9 = 7.",
+        "ru": "16 - 9 = 7.",
+        "en": "16 - 9 = 7."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "7 + 8",
+              "right": "15"
+            },
+            {
+              "left": "16 - 9",
+              "right": "7"
+            },
+            {
+              "left": "12 + 6",
+              "right": "18"
+            },
+            {
+              "left": "20 - 8",
+              "right": "12"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "5",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "6 va 12 sonlari oʻrtasida qaysi son yotadi?",
+        "ru": "Какое число лежит между 6 и 12?",
+        "en": "Which number lies between 6 and 12?"
+      },
+      "hint": {
+        "uz": "6 dan katta, 12 dan kichik.",
+        "ru": "Больше 6 и меньше 12.",
+        "en": "More than 6 and less than 12."
+      },
+      "explanation": {
+        "uz": "9 soni 6 va 12 oʻrtasida.",
+        "ru": "9 между 6 и 12.",
+        "en": "9 is between 6 and 12."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 15,
+          "y": 7
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 15 va 7 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 15 и 7 — какой знак верный?",
+        "en": "Look at the scale: 15 and 7 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "15 > 7.",
+        "ru": "15 > 7.",
+        "en": "15 > 7."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 5,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 8 + 5!",
+        "ru": "Вычисли на числовой прямой: 8 + 5!",
+        "en": "Work it out on the number line: 8 + 5!"
+      },
+      "hint": {
+        "uz": "8 dan boshla va 5 qadam oldinga sakra.",
+        "ru": "Встань на 8 и прыгни на 5 вперёд.",
+        "en": "Start at 8 and hop 5 forward."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13.",
+        "ru": "8 + 5 = 13.",
+        "en": "8 + 5 = 13."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "9 + 6",
+              "right": "15"
+            },
+            {
+              "left": "18 - 9",
+              "right": "9"
+            },
+            {
+              "left": "40 + 5",
+              "right": "45"
+            },
+            {
+              "left": "33 - 11",
+              "right": "22"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    }
+  ]
+}

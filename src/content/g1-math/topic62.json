@@ -1,0 +1,311 @@
+{
+  "topicId": "g1-math-62",
+  "subjectKey": "g1-math",
+  "emojis": "⚖️🔢✨",
+  "title": {
+    "uz": "Ikki xonali sonlarni taqqoslaymiz",
+    "ru": "Сравниваем двузначные числа",
+    "en": "Comparing two-digit numbers"
+  },
+  "recall": {
+    "uz": "Ikki xonali sonlarni taqqoslashda avval oʻnliklarni solishtiramiz. Oʻnliklari koʻp boʻlgan son katta. Agar oʻnliklar teng boʻlsa, birliklarni solishtiramiz. «>» katta, «<» kichik, «=» teng.",
+    "ru": "Сравнивая двузначные числа, сначала смотрим на десятки. Где десятков больше, то число больше. Если десятки равны, сравниваем единицы. «>» больше, «<» меньше, «=» равно.",
+    "en": "To compare two-digit numbers, look at the tens first. More tens means a bigger number. If the tens are equal, compare the ones. «>» greater, «<» less, «=» equal."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 37,
+          "y": 42
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 37 va 42 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 37 и 42 — какой знак верный?",
+        "en": "Look at the scale: 37 and 42 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla. Oʻnliklar teng boʻlsa, birliklarni.",
+        "ru": "Сначала сравни десятки. Если равны — сравни единицы.",
+        "en": "Compare the tens first. If equal, compare the ones."
+      },
+      "explanation": {
+        "uz": "37 < 42.",
+        "ru": "37 < 42.",
+        "en": "37 < 42."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 58,
+          "y": 53
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 58 va 53 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 58 и 53 — какой знак верный?",
+        "en": "Look at the scale: 58 and 53 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla. Oʻnliklar teng boʻlsa, birliklarni.",
+        "ru": "Сначала сравни десятки. Если равны — сравни единицы.",
+        "en": "Compare the tens first. If equal, compare the ones."
+      },
+      "explanation": {
+        "uz": "58 > 53.",
+        "ru": "58 > 53.",
+        "en": "58 > 53."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 64,
+          "y": 64
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 64 va 64 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 64 и 64 — какой знак верный?",
+        "en": "Look at the scale: 64 and 64 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla. Oʻnliklar teng boʻlsa, birliklarni.",
+        "ru": "Сначала сравни десятки. Если равны — сравни единицы.",
+        "en": "Compare the tens first. If equal, compare the ones."
+      },
+      "explanation": {
+        "uz": "64 = 64.",
+        "ru": "64 = 64.",
+        "en": "64 = 64."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 71 ... 69",
+        "ru": "Выбери знак: 71 ... 69",
+        "en": "Choose the sign: 71 ... 69"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means a bigger number."
+      },
+      "explanation": {
+        "uz": "71 > 69.",
+        "ru": "71 > 69.",
+        "en": "71 > 69."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 1
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 45 ... 54",
+        "ru": "Выбери знак: 45 ... 54",
+        "en": "Choose the sign: 45 ... 54"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means a bigger number."
+      },
+      "explanation": {
+        "uz": "45 < 54.",
+        "ru": "45 < 54.",
+        "en": "45 < 54."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "87",
+            "78",
+            "68"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son eng katta?",
+        "ru": "Какое число наибольшее?",
+        "en": "Which number is the biggest?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni taqqosla.",
+        "ru": "Сравни десятки.",
+        "en": "Compare the tens."
+      },
+      "explanation": {
+        "uz": "87 > 78 > 68.",
+        "ru": "87 > 78 > 68.",
+        "en": "87 > 78 > 68."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "29",
+            "31",
+            "30"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son eng kichik?",
+        "ru": "Какое число наименьшее?",
+        "en": "Which number is the smallest?"
+      },
+      "hint": {
+        "uz": "Eng kam oʻnlik va birlik.",
+        "ru": "Меньше всего десятков и единиц.",
+        "en": "The fewest tens and ones."
+      },
+      "explanation": {
+        "uz": "29 < 30 < 31.",
+        "ru": "29 < 30 < 31.",
+        "en": "29 < 30 < 31."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 90,
+          "y": 89
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 90 va 89 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 90 и 89 — какой знак верный?",
+        "en": "Look at the scale: 90 and 89 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla. Oʻnliklar teng boʻlsa, birliklarni.",
+        "ru": "Сначала сравни десятки. Если равны — сравни единицы.",
+        "en": "Compare the tens first. If equal, compare the ones."
+      },
+      "explanation": {
+        "uz": "90 > 89.",
+        "ru": "90 > 89.",
+        "en": "90 > 89."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "17",
+            "25",
+            "30"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Shifokor tartib raqami boʻyicha qabul qiladi. 17-bemor 25-bemordan oldin kiradimi?",
+        "ru": "Врач принимает по номеру. Пациент №17 войдёт раньше №25?",
+        "en": "The doctor sees patients by number. Does patient 17 go before 25?"
+      },
+      "hint": {
+        "uz": "Kichik raqam oldin keladi.",
+        "ru": "Меньший номер идёт раньше.",
+        "en": "The smaller number goes first."
+      },
+      "explanation": {
+        "uz": "17 < 25, demak 17-bemor oldin kiradi.",
+        "ru": "17 < 25, значит №17 раньше.",
+        "en": "17 < 25, so patient 17 goes first."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 63 ... 36",
+        "ru": "Выбери знак: 63 ... 36",
+        "en": "Choose the sign: 63 ... 36"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means a bigger number."
+      },
+      "explanation": {
+        "uz": "63 > 36.",
+        "ru": "63 > 36.",
+        "en": "63 > 36."
+      }
+    }
+  ]
+}

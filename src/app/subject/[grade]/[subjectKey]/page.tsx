@@ -20,7 +20,7 @@ export default async function StubSubjectPage({
 
   return (
     <main className="min-h-screen flex flex-col">
-      <BackBar />
+      <BackBar showLang />
       <div className="flex-1 grid place-items-center px-4 pb-16">
         <div className="text-center max-w-md">
           <img

@@ -1,0 +1,303 @@
+{
+  "topicId": "g1-math-59",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🔟✨",
+  "title": {
+    "uz": "21 dan 100 gacha sonlar",
+    "ru": "Числа от 21 до 100",
+    "en": "Numbers from 21 to 100"
+  },
+  "recall": {
+    "uz": "21 dan 100 gacha sonlarni sanaymiz. Har bir ikki xonali sonda oʻnliklar va birliklar bor. Sanashni osonlashtirish uchun ikkitalab, beshtalab yoki oʻntalab sanash mumkin. Keling, mashq qilamiz!",
+    "ru": "Считаем числа от 21 до 100. В каждом двузначном числе есть десятки и единицы. Чтобы было легче, можно считать по два, по пять или по десять. Потренируемся!",
+    "en": "We count numbers from 21 to 100. Every two-digit number has tens and ones. To count faster you can count by twos, fives or tens. Let's practise!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 34
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 34 sonini yasa!",
+        "ru": "Собери число 34 из блоков!",
+        "en": "Build the number 34 from blocks!"
+      },
+      "hint": {
+        "uz": "3 ta oʻnlik (+10) va 4 ta birlik (+1).",
+        "ru": "3 десятков (+10) и 4 единиц (+1).",
+        "en": "3 tens (+10) and 4 ones (+1)."
+      },
+      "explanation": {
+        "uz": "34 = 30 + 4: 3 oʻnlik va 4 birlik.",
+        "ru": "34 = 30 + 4: 3 десятков и 4 единиц.",
+        "en": "34 = 30 + 4: 3 tens and 4 ones."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 58
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 58 sonini yasa!",
+        "ru": "Собери число 58 из блоков!",
+        "en": "Build the number 58 from blocks!"
+      },
+      "hint": {
+        "uz": "5 ta oʻnlik (+10) va 8 ta birlik (+1).",
+        "ru": "5 десятков (+10) и 8 единиц (+1).",
+        "en": "5 tens (+10) and 8 ones (+1)."
+      },
+      "explanation": {
+        "uz": "58 = 50 + 8: 5 oʻnlik va 8 birlik.",
+        "ru": "58 = 50 + 8: 5 десятков и 8 единиц.",
+        "en": "58 = 50 + 8: 5 tens and 8 ones."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 76
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 76 sonini yasa!",
+        "ru": "Собери число 76 из блоков!",
+        "en": "Build the number 76 from blocks!"
+      },
+      "hint": {
+        "uz": "7 ta oʻnlik (+10) va 6 ta birlik (+1).",
+        "ru": "7 десятков (+10) и 6 единиц (+1).",
+        "en": "7 tens (+10) and 6 ones (+1)."
+      },
+      "explanation": {
+        "uz": "76 = 70 + 6: 7 oʻnlik va 6 birlik.",
+        "ru": "76 = 70 + 6: 7 десятков и 6 единиц.",
+        "en": "76 = 70 + 6: 7 tens and 6 ones."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "41",
+            "43",
+            "40"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qatorni davom ettir: 38, 39, 40, ?, 42",
+        "ru": "Продолжи ряд: 38, 39, 40, ?, 42",
+        "en": "Continue: 38, 39, 40, ?, 42"
+      },
+      "hint": {
+        "uz": "Sonlar birma-bir oʻsadi.",
+        "ru": "Числа растут по одному.",
+        "en": "Numbers grow by one."
+      },
+      "explanation": {
+        "uz": "40 dan keyin 41 keladi.",
+        "ru": "После 40 идёт 41.",
+        "en": "After 40 comes 41."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "26",
+            "25",
+            "28"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Ikkitalab sana: 20, 22, 24, ?",
+        "ru": "Считай по два: 20, 22, 24, ?",
+        "en": "Count by twos: 20, 22, 24, ?"
+      },
+      "hint": {
+        "uz": "Har safar 2 ta qoʻsh.",
+        "ru": "Каждый раз прибавляй 2.",
+        "en": "Add 2 each time."
+      },
+      "explanation": {
+        "uz": "24 + 2 = 26.",
+        "ru": "24 + 2 = 26.",
+        "en": "24 + 2 = 26."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "45",
+            "50",
+            "42"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Beshtalab sana: 30, 35, 40, ?",
+        "ru": "Считай по пять: 30, 35, 40, ?",
+        "en": "Count by fives: 30, 35, 40, ?"
+      },
+      "hint": {
+        "uz": "Har safar 5 ta qoʻsh.",
+        "ru": "Каждый раз прибавляй 5.",
+        "en": "Add 5 each time."
+      },
+      "explanation": {
+        "uz": "40 + 5 = 45.",
+        "ru": "40 + 5 = 45.",
+        "en": "40 + 5 = 45."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "7",
+            "67"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "67 sonida nechta oʻnlik bor?",
+        "ru": "Сколько десятков в 67?",
+        "en": "How many tens are in 67?"
+      },
+      "hint": {
+        "uz": "Chapdagi raqam — oʻnliklar.",
+        "ru": "Левая цифра — десятки.",
+        "en": "The left digit is the tens."
+      },
+      "explanation": {
+        "uz": "67 da 6 ta oʻnlik bor.",
+        "ru": "В 67 шесть десятков.",
+        "en": "67 has 6 tens."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "6",
+            "67"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "67 sonida nechta birlik bor?",
+        "ru": "Сколько единиц в 67?",
+        "en": "How many ones are in 67?"
+      },
+      "hint": {
+        "uz": "Oʻngdagi raqam — birliklar.",
+        "ru": "Правая цифра — единицы.",
+        "en": "The right digit is the ones."
+      },
+      "explanation": {
+        "uz": "67 da 7 ta birlik bor.",
+        "ru": "В 67 семь единиц.",
+        "en": "67 has 7 ones."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 82
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 82 sonini yasa!",
+        "ru": "Собери число 82 из блоков!",
+        "en": "Build the number 82 from blocks!"
+      },
+      "hint": {
+        "uz": "8 ta oʻnlik (+10) va 2 ta birlik (+1).",
+        "ru": "8 десятков (+10) и 2 единиц (+1).",
+        "en": "8 tens (+10) and 2 ones (+1)."
+      },
+      "explanation": {
+        "uz": "82 = 80 + 2: 8 oʻnlik va 2 birlik.",
+        "ru": "82 = 80 + 2: 8 десятков и 2 единиц.",
+        "en": "82 = 80 + 2: 8 tens and 2 ones."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 45,
+          "y": 54
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 45 va 54 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 45 и 54 — какой знак верный?",
+        "en": "Look at the scale: 45 and 54 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla. Oʻnliklar teng boʻlsa, birliklarni.",
+        "ru": "Сначала сравни десятки. Если равны — сравни единицы.",
+        "en": "Compare the tens first. If equal, compare the ones."
+      },
+      "explanation": {
+        "uz": "45 < 54.",
+        "ru": "45 < 54.",
+        "en": "45 < 54."
+      }
+    }
+  ]
+}

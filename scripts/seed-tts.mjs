@@ -68,11 +68,80 @@ function voiceLocale(voice) {
 const XML_LANG = voiceLocale(VOICE);
 
 // ---- helpers ------------------------------------------------------------
-/** Strip digits/symbols that make TTS stumble. Keep letters (incl. oʻ/gʻ), space, . and , */
-function ttsSafe(s) {
+// The TTS voices read letters, not digits or math symbols. Instead of STRIPPING
+// "10 + 3 = 13" (which makes the voice skip it), we VERBALIZE it into spoken
+// words — "oʻn qoʻshish uch teng oʻn uch" — so the audio speaks the numbers and
+// operators while the on-screen text keeps its clean digit form.
+
+// Number → words (0–999) for each lesson locale.
+const NUM = {
+  uz: {
+    ones: ['nol', 'bir', 'ikki', 'uch', 'toʻrt', 'besh', 'olti', 'yetti', 'sakkiz', 'toʻqqiz'],
+    tens: ['', 'oʻn', 'yigirma', 'oʻttiz', 'qirq', 'ellik', 'oltmish', 'yetmish', 'sakson', 'toʻqson']
+  },
+  ru: {
+    ones: ['ноль', 'один', 'два', 'три', 'четыре', 'пять', 'шесть', 'семь', 'восемь', 'девять'],
+    teens: ['десять', 'одиннадцать', 'двенадцать', 'тринадцать', 'четырнадцать', 'пятнадцать', 'шестнадцать', 'семнадцать', 'восемнадцать', 'девятнадцать'],
+    tens: ['', '', 'двадцать', 'тридцать', 'сорок', 'пятьдесят', 'шестьдесят', 'семьдесят', 'восемьдесят', 'девяносто'],
+    hundreds: ['', 'сто', 'двести', 'триста', 'четыреста', 'пятьсот', 'шестьсот', 'семьсот', 'восемьсот', 'девятьсот']
+  },
+  en: {
+    ones: ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'],
+    teens: ['ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'],
+    tens: ['', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety']
+  }
+};
+
+function numToWords(n, lang) {
+  const T = NUM[lang] || NUM.uz;
+  if (n < 0) return String(n);
+  if (n < 10) return T.ones[n];
+  if (n < 20) {
+    if (lang === 'uz') return n === 10 ? 'oʻn' : `oʻn ${T.ones[n - 10]}`;
+    return T.teens[n - 10];
+  }
+  if (n < 100) {
+    const t = Math.floor(n / 10), u = n % 10;
+    return T.tens[t] + (u ? ' ' + T.ones[u] : '');
+  }
+  if (n < 1000) {
+    const h = Math.floor(n / 100), rem = n % 100;
+    let head;
+    if (lang === 'uz') head = (h > 1 ? T.ones[h] + ' ' : '') + 'yuz';
+    else if (lang === 'ru') head = T.hundreds[h];
+    else head = T.ones[h] + ' hundred';
+    return head + (rem ? ' ' + numToWords(rem, lang) : '');
+  }
+  return String(n);
+}
+
+// Math operators → spoken words, per locale.
+const OPS = {
+  uz: { '+': 'qoʻshish', '−': 'ayirish', '=': 'teng', '×': 'koʻpaytirish', '÷': 'boʻlish', '<': 'kichik', '>': 'katta', '%': 'foiz' },
+  ru: { '+': 'плюс', '−': 'минус', '=': 'равно', '×': 'умножить', '÷': 'разделить', '<': 'меньше', '>': 'больше', '%': 'процент' },
+  en: { '+': 'plus', '−': 'minus', '=': 'equals', '×': 'times', '÷': 'divided by', '<': 'less than', '>': 'greater than', '%': 'percent' }
+};
+
+/** Convert digits + math symbols to spoken words, then keep only speakable text. */
+function verbalize(s, lang) {
+  const op = OPS[lang] || OPS.uz;
   return s
-    .replace(/[‒–—―-]/g, ' ')
-    .replace(/[0-9]/g, ' ')
+    // minus / multiplication / division only when written between numbers
+    // (so a hyphenated word or the Uzbek letter "x" is never mistaken for an operator)
+    .replace(/(\d)\s*[-–−]\s*(\d)/g, `$1 ${op['−']} $2`)
+    .replace(/(\d)\s*÷\s*(\d)/g, `$1 ${op['÷']} $2`)
+    .replace(/(\d)\s*[*×]\s*(\d)/g, `$1 ${op['×']} $2`)
+    // standalone operators
+    .replace(/\s*\+\s*/g, ` ${op['+']} `)
+    .replace(/\s*=\s*/g, ` ${op['=']} `)
+    .replace(/\s*<\s*/g, ` ${op['<']} `)
+    .replace(/\s*>\s*/g, ` ${op['>']} `)
+    .replace(/\s*%\s*/g, ` ${op['%']} `)
+    // remaining dashes and colons are prose pauses, not math
+    .replace(/[‒–—―:-]/g, ' , ')
+    // every remaining run of digits → words
+    .replace(/\d+/g, (m) => numToWords(parseInt(m, 10), lang))
+    // drop anything that still isn't a letter / space / . , — keep oʻ gʻ (Lm letters)
     .replace(/[^\p{L}\s.,]/gu, ' ')
     .replace(/\s+([.,])/g, '$1')
     .replace(/\s+/g, ' ')
@@ -152,10 +221,12 @@ console.log(`🔊 Azure TTS seed · ${lessonPaths.length} lesson(s) · voice ${V
 for (const lpath of lessonPaths) {
   const lesson = JSON.parse(readFileSync(lpath, 'utf8'));
   if (!lesson?.topicId || !lesson?.recall?.[ONLY_LOCALE]) continue; // skip non-lesson json
-  const raw = `${lesson.title[ONLY_LOCALE]}. ${lesson.recall[ONLY_LOCALE]}`;
-  const text = ttsSafe(raw);
-  if (text.length > 300) {
-    console.warn(`⚠️  ${lesson.topicId}: explanation is ${text.length} chars (>300) — consider shortening.`);
+  // Optional per-lesson override: lesson.ttsText[locale] is read verbatim
+  // (still verbalized) when the auto-conversion needs a manual tweak.
+  const raw = lesson.ttsText?.[ONLY_LOCALE] || `${lesson.title[ONLY_LOCALE]}. ${lesson.recall[ONLY_LOCALE]}`;
+  const text = verbalize(raw, ONLY_LOCALE);
+  if (raw.length > 300) {
+    console.warn(`⚠️  ${lesson.topicId}: explanation is ${raw.length} chars (>300) — consider shortening.`);
   }
   const file = `${lesson.topicId}.${ONLY_LOCALE}.wav`;
   const hash = createHash('sha256').update(`${ONLY_LOCALE}|azure|${VOICE}|${text}`).digest('hex');

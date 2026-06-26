@@ -1,0 +1,348 @@
+{
+  "topicId": "g1-math-89",
+  "subjectKey": "g1-math",
+  "emojis": "📏➖✨",
+  "title": {
+    "uz": "Qancha ortiq, qancha kam?",
+    "ru": "Насколько больше, насколько меньше?",
+    "en": "How much more, how much fewer?"
+  },
+  "recall": {
+    "uz": "«Qancha ortiq?» yoki «qancha kam?» degan savolga javob berish uchun katta sondan kichik sonni ayiramiz — bu ularning farqi. Masalan, 10 soni 7 dan 10 - 7 = 3 ta ortiq.",
+    "ru": "Чтобы ответить «насколько больше?» или «насколько меньше?», из большего числа вычитаем меньшее — это их разность. Например, 10 больше 7 на 10 - 7 = 3.",
+    "en": "To answer «how much more?» or «how much fewer?» we subtract the smaller from the bigger — that is their difference. For example 10 is 10 - 7 = 3 more than 7."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/compare-diff.gif",
+        "alt": {
+          "uz": "Qancha koʻp? Farqni topamiz",
+          "ru": "Насколько больше? Находим разность",
+          "en": "How many more? We find the difference"
+        },
+        "maxWidth": 230
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bir qatorda 10 ta, boshqasida 7 ta mashina. Birinchisida qancha koʻp?",
+        "ru": "В одном ряду 10 машин, в другом 7. Насколько в первом больше?",
+        "en": "One row has 10 cars, another 7. How many more in the first?"
+      },
+      "hint": {
+        "uz": "10 dan 7 ni ayir.",
+        "ru": "Вычти из 10 число 7.",
+        "en": "Take 7 from 10."
+      },
+      "explanation": {
+        "uz": "10 - 7 = 3.",
+        "ru": "10 - 7 = 3.",
+        "en": "10 - 7 = 3."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "9 soni 14 dan qancha kam?",
+        "ru": "На сколько 9 меньше 14?",
+        "en": "How much less is 9 than 14?"
+      },
+      "hint": {
+        "uz": "14 dan 9 ni ayir.",
+        "ru": "Вычти из 14 число 9.",
+        "en": "Take 9 from 14."
+      },
+      "explanation": {
+        "uz": "14 - 9 = 5.",
+        "ru": "14 - 9 = 5.",
+        "en": "14 - 9 = 5."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 12,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 18 - 6 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 18 - 6 = ?",
+        "en": "Work it out and build the answer with blocks: 18 - 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "18 - 6 = 12.",
+        "ru": "18 - 6 = 12.",
+        "en": "18 - 6 = 12."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "12 - 7",
+              "right": "5"
+            },
+            {
+              "left": "15 - 8",
+              "right": "7"
+            },
+            {
+              "left": "20 - 6",
+              "right": "14"
+            },
+            {
+              "left": "19 - 10",
+              "right": "9"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 18,
+          "y": 12
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 18 va 12 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 18 и 12 — какой знак верный?",
+        "en": "Look at the scale: 18 and 12 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "18 > 12.",
+        "ru": "18 > 12.",
+        "en": "18 > 12."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "17 soni 9 dan qancha katta?",
+        "ru": "На сколько 17 больше 9?",
+        "en": "How much bigger is 17 than 9?"
+      },
+      "hint": {
+        "uz": "17 dan 9 ni ayir.",
+        "ru": "Вычти из 17 число 9.",
+        "en": "Take 9 from 17."
+      },
+      "explanation": {
+        "uz": "17 - 9 = 8.",
+        "ru": "17 - 9 = 8.",
+        "en": "17 - 9 = 8."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 7,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 16 - 9 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 16 - 9 = ?",
+        "en": "Work it out and build the answer with blocks: 16 - 9 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "16 - 9 = 7.",
+        "ru": "16 - 9 = 7.",
+        "en": "16 - 9 = 7."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "13 - 5",
+              "right": "8"
+            },
+            {
+              "left": "16 - 6",
+              "right": "10"
+            },
+            {
+              "left": "18 - 12",
+              "right": "6"
+            },
+            {
+              "left": "14 - 11",
+              "right": "3"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 1
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 12 ... 15",
+        "ru": "Выбери знак: 12 ... 15",
+        "en": "Choose the sign: 12 ... 15"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means bigger."
+      },
+      "explanation": {
+        "uz": "12 < 15.",
+        "ru": "12 < 15.",
+        "en": "12 < 15."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "1-qatorda 14, 2-qatorda 9 yulduzcha. 1-qatorda qancha koʻp?",
+        "ru": "В 1 ряду 14 звёзд, во 2 — 9. Насколько в первом больше?",
+        "en": "Row 1 has 14 stars, row 2 has 9. How many more in row 1?"
+      },
+      "hint": {
+        "uz": "14 dan 9 ni ayir.",
+        "ru": "Вычти из 14 число 9.",
+        "en": "Take 9 from 14."
+      },
+      "explanation": {
+        "uz": "14 - 9 = 5.",
+        "ru": "14 - 9 = 5.",
+        "en": "14 - 9 = 5."
+      }
+    }
+  ]
+}

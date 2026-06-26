@@ -92,6 +92,22 @@ export default function ItemShell({
       {/* prompt */}
       <h2 className="text-center font-black text-ink text-xl sm:text-2xl mt-4 text-balance">{pick(item.prompt, locale)}</h2>
 
+      {/* optional decorative GIF (cosmetic only) */}
+      {item.media?.gif && (
+        <div className="flex justify-center mt-3">
+          <motion.img
+            src={item.media.gif}
+            alt={item.media.alt ? pick(item.media.alt, locale) : ''}
+            aria-hidden={item.media.alt ? undefined : true}
+            draggable={false}
+            initial={{ opacity: 0, scale: 0.92 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="rounded-2xl shadow-card border border-ink/10 select-none"
+            style={{ maxWidth: item.media.maxWidth ?? 220, width: '100%' }}
+          />
+        </div>
+      )}
+
       {/* Help / Yordam (FR-QZ-5) */}
       <div className="flex justify-center mt-3">
         <button

@@ -26,7 +26,7 @@ export default async function DummyTopicPage({ params }: { params: Promise<{ top
 
   return (
     <main className="min-h-screen flex flex-col">
-      <BackBar backHref="/dashboard/g1-math" />
+      <BackBar backHref="/dashboard/g1-math" showLang />
       <div className="flex-1 grid place-items-center px-4 pb-16">
         <div className="card max-w-lg w-full p-7 text-center relative overflow-hidden">
           <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-brand-orange via-brand-magenta to-brand-blue" />

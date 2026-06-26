@@ -82,8 +82,8 @@ export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
         </div>
       )}
 
-      {/* Back + To Dashboard on every step (FR-QZ-12 / FR-NAV-1) */}
-      <BackBar onBack={onBack} />
+      {/* Back + Sound + Dashboard + Language on every step (FR-QZ-12 / FR-NAV-1) */}
+      <BackBar onBack={onBack} showLang />
 
       <div className="flex-1 relative mt-2">
         <AnimatePresence mode="wait">

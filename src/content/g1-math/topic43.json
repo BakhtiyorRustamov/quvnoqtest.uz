@@ -1,0 +1,245 @@
+{
+  "topicId": "g1-math-43",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🧱✨",
+  "title": {
+    "uz": "Sonlarni xona boʻyicha yozamiz",
+    "ru": "Записываем числа по разрядам",
+    "en": "Writing numbers by place value"
+  },
+  "recall": {
+    "uz": "Ikki xonali son ikkita raqam bilan yoziladi. Birinchi raqam — oʻnliklar soni, ikkinchisi — birliklar soni. Raqamning oʻrni xona deyiladi. Masalan, 13 = 10 + 3: 1 — oʻnlar xonasida, 3 — birlar xonasida. Sonlarni xonalarga ajratamiz!",
+    "ru": "Двузначное число записывается двумя цифрами. Первая цифра — число десятков, вторая — число единиц. Место цифры называется разрядом. Например, 13 = 10 + 3: 1 в разряде десятков, 3 в разряде единиц. Разложим числа по разрядам!",
+    "en": "A two-digit number is written with two digits. The first digit is the number of tens, the second is the ones. A digit's spot is its place. For example, 13 = 10 + 3: the 1 is in the tens place, the 3 in the ones. Let's split numbers by place!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "13 soni nechta raqam bilan yoziladi?",
+        "ru": "Сколькими цифрами записывается число 13?",
+        "en": "How many digits is the number 13 written with?"
+      },
+      "hint": {
+        "uz": "11 dan 20 gacha sonlar ikki xonali — ularda bitta oʻnlik va birliklar bor.",
+        "ru": "Числа от 11 до 20 двузначные — в них есть десяток и единицы.",
+        "en": "Numbers from 11 to 20 are two-digit — they have a ten and ones."
+      },
+      "explanation": {
+        "uz": "13 — ikki xonali son: 1 (oʻnlik) va 3 (birlik). Demak, 2 ta raqam.",
+        "ru": "13 — двузначное число: 1 (десяток) и 3 (единицы). Значит, 2 цифры.",
+        "en": "13 is a two-digit number: 1 (ten) and 3 (ones). So it has 2 digits."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/tens-ones.gif",
+        "alt": {
+          "uz": "Oʻnlik va birliklar yigʻindisi 14 ni beradi",
+          "ru": "Сумма десятка и единиц даёт 14",
+          "en": "A ten plus ones makes 14"
+        },
+        "maxWidth": 200
+      },
+      "widget": { "type": "mcq", "props": { "choices": ["14", "104", "40"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Rasmga qara: 10 + 4 yigʻindisi qaysi son?",
+        "ru": "Посмотри на картинку: какое число даёт сумма 10 + 4?",
+        "en": "Look at the picture: which number is the sum 10 + 4?"
+      },
+      "hint": {
+        "uz": "Oʻnlik (10) yoniga birliklar (4) yoziladi: 1 va 4.",
+        "ru": "Рядом с десятком (10) пишем единицы (4): 1 и 4.",
+        "en": "Write the ones (4) next to the ten (10): 1 then 4."
+      },
+      "explanation": {
+        "uz": "10 + 4 = 14. Bir oʻnlik va toʻrt birlik — oʻn toʻrt.",
+        "ru": "10 + 4 = 14. Один десяток и четыре единицы — четырнадцать.",
+        "en": "10 + 4 = 14. One ten and four ones make fourteen."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "place_value_blocks", "props": { "target": 13 } },
+      "prompt": {
+        "uz": "Bloklardan 13 sonini yasa: 1 oʻnlik va 3 birlik!",
+        "ru": "Собери число 13 из блоков: 1 десяток и 3 единицы!",
+        "en": "Build the number 13 from blocks: 1 ten and 3 ones!"
+      },
+      "hint": {
+        "uz": "Avval bitta oʻnlik blok (+10), soʻng uchta birlik (+1) qoʻsh.",
+        "ru": "Сначала один блок-десяток (+10), потом три единицы (+1).",
+        "en": "First one ten-block (+10), then three ones (+1)."
+      },
+      "explanation": {
+        "uz": "13 = 10 + 3: oʻnlar xonasida 1, birlar xonasida 3.",
+        "ru": "13 = 10 + 3: в разряде десятков 1, в разряде единиц 3.",
+        "en": "13 = 10 + 3: a 1 in the tens place, a 3 in the ones place."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["1", "3", "13"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "13 sonida nechta oʻnlik bor?",
+        "ru": "Сколько десятков в числе 13?",
+        "en": "How many tens are in the number 13?"
+      },
+      "hint": {
+        "uz": "Oʻnlar xonasidagi raqam — chapdagi raqam.",
+        "ru": "Цифра разряда десятков — это левая цифра.",
+        "en": "The tens-place digit is the left-hand digit."
+      },
+      "explanation": {
+        "uz": "13 da oʻnlar xonasida 1 turibdi — demak, 1 ta oʻnlik.",
+        "ru": "В 13 в разряде десятков стоит 1 — значит, 1 десяток.",
+        "en": "In 13 the tens place holds 1 — so there is 1 ten."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["3", "1", "2"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "13 sonida nechta birlik bor?",
+        "ru": "Сколько единиц в числе 13?",
+        "en": "How many ones are in the number 13?"
+      },
+      "hint": {
+        "uz": "Birlar xonasidagi raqam — oʻngdagi raqam.",
+        "ru": "Цифра разряда единиц — это правая цифра.",
+        "en": "The ones-place digit is the right-hand digit."
+      },
+      "explanation": {
+        "uz": "13 da birlar xonasida 3 turibdi — demak, 3 ta birlik.",
+        "ru": "В 13 в разряде единиц стоит 3 — значит, 3 единицы.",
+        "en": "In 13 the ones place holds 3 — so there are 3 ones."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["6", "16", "1"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Boʻsh joyni toʻldir: 16 = 10 + ?",
+        "ru": "Заполни пропуск: 16 = 10 + ?",
+        "en": "Fill the gap: 16 = 10 + ?"
+      },
+      "hint": {
+        "uz": "Oʻnlikdan keyin nechta birlik qoladi? 16 dan 10 ni ayir.",
+        "ru": "Сколько единиц остаётся после десятка? Вычти из 16 число 10.",
+        "en": "How many ones are left after the ten? Take 10 from 16."
+      },
+      "explanation": {
+        "uz": "16 = 10 + 6. Bir oʻnlik va olti birlik.",
+        "ru": "16 = 10 + 6. Один десяток и шесть единиц.",
+        "en": "16 = 10 + 6. One ten and six ones."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 10, "b": 8, "maxSum": 20 } },
+      "prompt": {
+        "uz": "Alisher uydan 10 minut, soʻng yana 8 minut yurdi. Hammasi necha minut?",
+        "ru": "Алишер шёл 10 минут, потом ещё 8 минут. Сколько всего минут?",
+        "en": "Alisher walked 10 minutes, then 8 more. How many minutes in all?"
+      },
+      "hint": {
+        "uz": "10 dan boshla va oldinga 8 qadam sakra.",
+        "ru": "Встань на 10 и прыгни на 8 шагов вперёд.",
+        "en": "Start at 10 and hop 8 steps forward."
+      },
+      "explanation": {
+        "uz": "10 + 8 = 18. Alisher 18 minut yoʻl yurgan.",
+        "ru": "10 + 8 = 18. Алишер шёл 18 минут.",
+        "en": "10 + 8 = 18. Alisher walked for 18 minutes."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "place_value_blocks", "props": { "target": 19 } },
+      "prompt": {
+        "uz": "Bloklardan 19 sonini yasa!",
+        "ru": "Собери число 19 из блоков!",
+        "en": "Build the number 19 from blocks!"
+      },
+      "hint": {
+        "uz": "Bitta oʻnlik (+10) va toʻqqizta birlik (+1).",
+        "ru": "Один десяток (+10) и девять единиц (+1).",
+        "en": "One ten (+10) and nine ones (+1)."
+      },
+      "explanation": {
+        "uz": "19 = 10 + 9: oʻnlar xonasida 1, birlar xonasida 9.",
+        "ru": "19 = 10 + 9: в разряде десятков 1, в разряде единиц 9.",
+        "en": "19 = 10 + 9: a 1 in the tens place, a 9 in the ones place."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["10 + 7", "1 + 7", "17 + 0"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "17 sonini xona qoʻshiluvchilari yigʻindisi shaklida qaysi yozuv toʻgʻri koʻrsatadi?",
+        "ru": "Какая запись верно показывает 17 в виде суммы разрядных слагаемых?",
+        "en": "Which expression correctly shows 17 as a sum of place values?"
+      },
+      "hint": {
+        "uz": "Oʻnliklar (10) va birliklar (7) ni qoʻsh.",
+        "ru": "Сложи десятки (10) и единицы (7).",
+        "en": "Add the tens (10) and the ones (7)."
+      },
+      "explanation": {
+        "uz": "17 = 10 + 7: bir oʻnlik va yetti birlik.",
+        "ru": "17 = 10 + 7: один десяток и семь единиц.",
+        "en": "17 = 10 + 7: one ten and seven ones."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/celebrate.gif",
+        "alt": {
+          "uz": "Yigirma soni — bayram!",
+          "ru": "Число двадцать — праздник!",
+          "en": "The number twenty — celebration!"
+        },
+        "maxWidth": 170
+      },
+      "widget": { "type": "mcq", "props": { "choices": ["20", "21", "18"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "19 dan keyin qaysi son keladi?",
+        "ru": "Какое число идёт после 19?",
+        "en": "Which number comes after 19?"
+      },
+      "hint": {
+        "uz": "19 ga yana bitta birlik qoʻshsang, toʻliq ikkita oʻnlik hosil boʻladi.",
+        "ru": "Прибавь к 19 ещё одну единицу — получится два полных десятка.",
+        "en": "Add one more one to 19 and you get two full tens."
+      },
+      "explanation": {
+        "uz": "19 + 1 = 20. Yigirma — ikkita toʻliq oʻnlik.",
+        "ru": "19 + 1 = 20. Двадцать — это два полных десятка.",
+        "en": "19 + 1 = 20. Twenty is two full tens."
+      }
+    }
+  ]
+}

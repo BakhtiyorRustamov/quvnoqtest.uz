@@ -1,0 +1,319 @@
+{
+  "topicId": "g1-math-49",
+  "subjectKey": "g1-math",
+  "emojis": "⚖️🔢✨",
+  "title": {
+    "uz": "Sonlarni taqqoslaymiz",
+    "ru": "Сравниваем числа",
+    "en": "Comparing numbers"
+  },
+  "recall": {
+    "uz": "Sonlarni taqqoslaymiz. Sonlar chizigʻida oʻngdagi son kattaroq. «>» — katta, «<» — kichik, «=» — teng. Masalan, 16 > 13, 13 < 14, 13 = 13. Keling, taqqoslaymiz!",
+    "ru": "Сравниваем числа. На числовой прямой число справа больше. «>» — больше, «<» — меньше, «=» — равно. Например, 16 > 13, 13 < 14, 13 = 13. Давай сравнивать!",
+    "en": "We compare numbers. On the number line the right one is bigger. «>» is greater, «<» is less, «=» is equal. For example 16 > 13, 13 < 14, 13 = 13. Let's compare!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 16,
+          "y": 13
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 16 va 13 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 16 и 13 — какой знак верный?",
+        "en": "Look at the scale: 16 and 13 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi. Birliklarni solishtir.",
+        "ru": "Весы наклоняются к большему числу. Сравни единицы.",
+        "en": "The scale tips to the bigger number. Compare the ones."
+      },
+      "explanation": {
+        "uz": "16 > 13.",
+        "ru": "16 > 13.",
+        "en": "16 > 13."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 13,
+          "y": 17
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 13 va 17 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 13 и 17 — какой знак верный?",
+        "en": "Look at the scale: 13 and 17 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi. Birliklarni solishtir.",
+        "ru": "Весы наклоняются к большему числу. Сравни единицы.",
+        "en": "The scale tips to the bigger number. Compare the ones."
+      },
+      "explanation": {
+        "uz": "13 < 17.",
+        "ru": "13 < 17.",
+        "en": "13 < 17."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 2
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 14 ... 14",
+        "ru": "Выбери знак: 14 ... 14",
+        "en": "Choose the sign: 14 ... 14"
+      },
+      "hint": {
+        "uz": "Sonlar chizigʻida oʻngdagi son kattaroq.",
+        "ru": "На числовой прямой число справа больше.",
+        "en": "On the number line the number on the right is bigger."
+      },
+      "explanation": {
+        "uz": "14 = 14.",
+        "ru": "14 = 14.",
+        "en": "14 = 14."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 15 ... 12",
+        "ru": "Выбери знак: 15 ... 12",
+        "en": "Choose the sign: 15 ... 12"
+      },
+      "hint": {
+        "uz": "Sonlar chizigʻida oʻngdagi son kattaroq.",
+        "ru": "На числовой прямой число справа больше.",
+        "en": "On the number line the number on the right is bigger."
+      },
+      "explanation": {
+        "uz": "15 > 12.",
+        "ru": "15 > 12.",
+        "en": "15 > 12."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 1
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 11 ... 19",
+        "ru": "Выбери знак: 11 ... 19",
+        "en": "Choose the sign: 11 ... 19"
+      },
+      "hint": {
+        "uz": "Sonlar chizigʻida oʻngdagi son kattaroq.",
+        "ru": "На числовой прямой число справа больше.",
+        "en": "On the number line the number on the right is bigger."
+      },
+      "explanation": {
+        "uz": "11 < 19.",
+        "ru": "11 < 19.",
+        "en": "11 < 19."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "18",
+            "15",
+            "12"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son eng katta?",
+        "ru": "Какое число наибольшее?",
+        "en": "Which number is the biggest?"
+      },
+      "hint": {
+        "uz": "Eng koʻp birlikka ega son.",
+        "ru": "Число с наибольшим значением.",
+        "en": "The number with the most."
+      },
+      "explanation": {
+        "uz": "18 > 15 > 12, demak 18 eng katta.",
+        "ru": "18 > 15 > 12, значит 18 наибольшее.",
+        "en": "18 > 15 > 12, so 18 is biggest."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "11",
+            "14",
+            "19"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son eng kichik?",
+        "ru": "Какое число наименьшее?",
+        "en": "Which number is the smallest?"
+      },
+      "hint": {
+        "uz": "Eng kam birlikka ega son.",
+        "ru": "Число с наименьшим значением.",
+        "en": "The number with the least."
+      },
+      "explanation": {
+        "uz": "11 < 14 < 19, demak 11 eng kichik.",
+        "ru": "11 < 14 < 19, значит 11 наименьшее.",
+        "en": "11 < 14 < 19, so 11 is smallest."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "17",
+            "13",
+            "15"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Oq tovuq oyiga 17 ta, kokilli tovuq 13 ta tuxum qoʻyadi. Qaysi tovuq koʻproq tuxum beradi?",
+        "ru": "Белая курица несёт 17 яиц в месяц, хохлатая — 13. Какая даёт больше?",
+        "en": "A white hen lays 17 eggs a month, a crested one 13. Which lays more?"
+      },
+      "hint": {
+        "uz": "17 va 13 ni taqqosla.",
+        "ru": "Сравни 17 и 13.",
+        "en": "Compare 17 and 13."
+      },
+      "explanation": {
+        "uz": "17 > 13 — oq tovuq koʻproq beradi.",
+        "ru": "17 > 13 — белая несёт больше.",
+        "en": "17 > 13 — the white hen lays more."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "19",
+            "20",
+            "18"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Fermer 1 xoʻroz, 9 olachipor, 1 qora va 8 oq tovuq oldi. Jami nechta parranda?",
+        "ru": "Фермер купил 1 петуха, 9 пёстрых, 1 чёрную и 8 белых кур. Сколько всего птиц?",
+        "en": "A farmer bought 1 rooster, 9 speckled, 1 black and 8 white hens. How many birds in all?"
+      },
+      "hint": {
+        "uz": "Hammasini qoʻsh: 1 + 9 + 1 + 8.",
+        "ru": "Сложи всё: 1 + 9 + 1 + 8.",
+        "en": "Add them all: 1 + 9 + 1 + 8."
+      },
+      "explanation": {
+        "uz": "1 + 9 + 1 + 8 = 19 ta parranda.",
+        "ru": "1 + 9 + 1 + 8 = 19 птиц.",
+        "en": "1 + 9 + 1 + 8 = 19 birds."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 1
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 18 ... 20",
+        "ru": "Выбери знак: 18 ... 20",
+        "en": "Choose the sign: 18 ... 20"
+      },
+      "hint": {
+        "uz": "Sonlar chizigʻida oʻngdagi son kattaroq.",
+        "ru": "На числовой прямой число справа больше.",
+        "en": "On the number line the number on the right is bigger."
+      },
+      "explanation": {
+        "uz": "18 < 20.",
+        "ru": "18 < 20.",
+        "en": "18 < 20."
+      }
+    }
+  ]
+}

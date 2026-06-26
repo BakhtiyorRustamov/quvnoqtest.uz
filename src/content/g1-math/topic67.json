@@ -1,0 +1,331 @@
+{
+  "topicId": "g1-math-67",
+  "subjectKey": "g1-math",
+  "emojis": "➖🔟✨",
+  "title": {
+    "uz": "Ikki xonali ayirish: xona birliklari",
+    "ru": "Вычитание двузначных по разрядам",
+    "en": "Two-digit subtraction by place value"
+  },
+  "recall": {
+    "uz": "Ikkita sonni xona birliklari boʻyicha ayiramiz: birliklardan birliklarni, oʻnliklardan oʻnliklarni. Masalan, 6 oʻnlik 5 birlikdan 5 oʻnlik 3 birlikni ayirsak, 1 oʻnlik 2 birlik — yaʼni 12 hosil boʻladi.",
+    "ru": "Вычитаем два числа по разрядам: единицы из единиц, десятки из десятков. Например, из 6 десятков 5 единиц вычесть 5 десятков 3 единицы — получится 1 десяток 2 единицы, то есть 12.",
+    "en": "We subtract two numbers by place value: ones from ones, tens from tens. For example, 6 tens 5 ones minus 5 tens 3 ones gives 1 ten 2 ones — that is 12."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "51",
+            "50",
+            "52"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Minora uchun 97 dona gʻisht kerak. 46 tasi keltirildi. Yana nechta gʻisht yetishmayapti?",
+        "ru": "Для башни нужно 97 кирпичей. Привезли 46. Сколько ещё не хватает?",
+        "en": "A tower needs 97 bricks. 46 were brought. How many more are missing?"
+      },
+      "hint": {
+        "uz": "97 dan 46 ni ayir.",
+        "ru": "Вычти из 97 число 46.",
+        "en": "Take 46 from 97."
+      },
+      "explanation": {
+        "uz": "97 - 46 = 51.",
+        "ru": "97 - 46 = 51.",
+        "en": "97 - 46 = 51."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 14,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 56 - 42 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 56 - 42 = ?",
+        "en": "Work it out and build the answer with blocks: 56 - 42 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "56 - 42 = 14.",
+        "ru": "56 - 42 = 14.",
+        "en": "56 - 42 = 14."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 81,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 91 - 10 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 91 - 10 = ?",
+        "en": "Work it out and build the answer with blocks: 91 - 10 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "91 - 10 = 81.",
+        "ru": "91 - 10 = 81.",
+        "en": "91 - 10 = 81."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "45 - 23",
+              "right": "22"
+            },
+            {
+              "left": "60 - 40",
+              "right": "20"
+            },
+            {
+              "left": "88 - 16",
+              "right": "72"
+            },
+            {
+              "left": "39 - 18",
+              "right": "21"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 50,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 95 - 45 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 95 - 45 = ?",
+        "en": "Work it out and build the answer with blocks: 95 - 45 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "95 - 45 = 50.",
+        "ru": "95 - 45 = 50.",
+        "en": "95 - 45 = 50."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "51",
+            "50",
+            "52"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 56 - 5 = ?",
+        "ru": "Вычисли: 56 - 5 = ?",
+        "en": "Work it out: 56 - 5 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "56 - 5 = 51.",
+        "ru": "56 - 5 = 51.",
+        "en": "56 - 5 = 51."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "31",
+            "30",
+            "32"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 45 - 14 = ?",
+        "ru": "Вычисли: 45 - 14 = ?",
+        "en": "Work it out: 45 - 14 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "45 - 14 = 31.",
+        "ru": "45 - 14 = 31.",
+        "en": "45 - 14 = 31."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 44,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 68 - 24 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 68 - 24 = ?",
+        "en": "Work it out and build the answer with blocks: 68 - 24 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "68 - 24 = 44.",
+        "ru": "68 - 24 = 44.",
+        "en": "68 - 24 = 44."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 51,
+          "y": 15
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 51 va 15 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 51 и 15 — какой знак верный?",
+        "en": "Look at the scale: 51 and 15 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "51 > 15.",
+        "ru": "51 > 15.",
+        "en": "51 > 15."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "37 - 3",
+              "right": "34"
+            },
+            {
+              "left": "58 - 6",
+              "right": "52"
+            },
+            {
+              "left": "49 - 18",
+              "right": "31"
+            },
+            {
+              "left": "76 - 35",
+              "right": "41"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    }
+  ]
+}

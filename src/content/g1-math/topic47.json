@@ -1,0 +1,316 @@
+{
+  "topicId": "g1-math-47",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🧩✨",
+  "title": {
+    "uz": "17 va 18 sonlarining tarkibi",
+    "ru": "Состав чисел 17 и 18",
+    "en": "Making 17 and 18"
+  },
+  "recall": {
+    "uz": "17 va 18 sonlarining tarkibini oʻrganamiz. 17 — bu 10 + 7, 9 + 8. 18 — bu 9 + 9 yoki 10 + 8. Bir xil ikkita son qoʻshilganda juft son chiqadi. Keling, yigʻamiz!",
+    "ru": "Изучаем состав чисел 17 и 18. 17 — это 10 + 7, 9 + 8. 18 — это 9 + 9 или 10 + 8. Два одинаковых числа дают чётное число. Давай собирать!",
+    "en": "We learn how 17 and 18 are made. 17 is 10 + 7, 9 + 8. 18 is 9 + 9 or 10 + 8. Two equal numbers make an even number. Let's build!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "8",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "17 ni hosil qil: 10 + ? = 17",
+        "ru": "Составь 17: 10 + ? = 17",
+        "en": "Make 17: 10 + ? = 17"
+      },
+      "hint": {
+        "uz": "10 dan 17 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 10 до 17?",
+        "en": "How many more from 10 up to 17?"
+      },
+      "explanation": {
+        "uz": "10 + 7 = 17. 17 ning tarkibi — 10 va 7.",
+        "ru": "10 + 7 = 17. Состав числа 17 — это 10 и 7.",
+        "en": "10 + 7 = 17. 17 is made of 10 and 7."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "17 ni hosil qil: 9 + ? = 17",
+        "ru": "Составь 17: 9 + ? = 17",
+        "en": "Make 17: 9 + ? = 17"
+      },
+      "hint": {
+        "uz": "9 dan 17 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 9 до 17?",
+        "en": "How many more from 9 up to 17?"
+      },
+      "explanation": {
+        "uz": "9 + 8 = 17. 17 ning tarkibi — 9 va 8.",
+        "ru": "9 + 8 = 17. Состав числа 17 — это 9 и 8.",
+        "en": "9 + 8 = 17. 17 is made of 9 and 8."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "18 ni hosil qil: 9 + ? = 18",
+        "ru": "Составь 18: 9 + ? = 18",
+        "en": "Make 18: 9 + ? = 18"
+      },
+      "hint": {
+        "uz": "9 dan 18 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 9 до 18?",
+        "en": "How many more from 9 up to 18?"
+      },
+      "explanation": {
+        "uz": "9 + 9 = 18. 18 ning tarkibi — 9 va 9.",
+        "ru": "9 + 9 = 18. Состав числа 18 — это 9 и 9.",
+        "en": "9 + 9 = 18. 18 is made of 9 and 9."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "18 ni hosil qil: 10 + ? = 18",
+        "ru": "Составь 18: 10 + ? = 18",
+        "en": "Make 18: 10 + ? = 18"
+      },
+      "hint": {
+        "uz": "10 dan 18 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 10 до 18?",
+        "en": "How many more from 10 up to 18?"
+      },
+      "explanation": {
+        "uz": "10 + 8 = 18. 18 ning tarkibi — 10 va 8.",
+        "ru": "10 + 8 = 18. Состав числа 18 — это 10 и 8.",
+        "en": "10 + 8 = 18. 18 is made of 10 and 8."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 9 + 8!",
+        "ru": "Вычисли на числовой прямой: 9 + 8!",
+        "en": "Work it out on the number line: 9 + 8!"
+      },
+      "hint": {
+        "uz": "9 dan boshla va oldinga 8 qadam sakra.",
+        "ru": "Встань на 9 и прыгни на 8 шагов вперёд.",
+        "en": "Start at 9 and hop 8 steps forward."
+      },
+      "explanation": {
+        "uz": "9 + 8 = 17.",
+        "ru": "9 + 8 = 17.",
+        "en": "9 + 8 = 17."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 10,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 10 + 8!",
+        "ru": "Вычисли на числовой прямой: 10 + 8!",
+        "en": "Work it out on the number line: 10 + 8!"
+      },
+      "hint": {
+        "uz": "10 dan boshla va oldinga 8 qadam sakra.",
+        "ru": "Встань на 10 и прыгни на 8 шагов вперёд.",
+        "en": "Start at 10 and hop 8 steps forward."
+      },
+      "explanation": {
+        "uz": "10 + 8 = 18.",
+        "ru": "10 + 8 = 18.",
+        "en": "10 + 8 = 18."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 17
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 17 sonini yasa!",
+        "ru": "Собери число 17 из блоков!",
+        "en": "Build the number 17 from blocks!"
+      },
+      "hint": {
+        "uz": "Bitta oʻnlik (+10) va 7 ta birlik (+1).",
+        "ru": "Один десяток (+10) и 7 единиц (+1).",
+        "en": "One ten (+10) and 7 ones (+1)."
+      },
+      "explanation": {
+        "uz": "17 = 10 + 7: 1 oʻnlik va 7 birlik.",
+        "ru": "17 = 10 + 7: 1 десяток и 7 единиц.",
+        "en": "17 = 10 + 7: 1 ten and 7 ones."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "9",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Yoʻl boʻyida 9 ta zarang bor. Har ikki zarang orasiga 1 tadan archa ekiladi. Nechta archa kerak?",
+        "ru": "Вдоль дороги 9 клёнов. Между каждой парой сажают 1 ёлку. Сколько ёлок нужно?",
+        "en": "There are 9 maples along a road. One fir is planted between each pair. How many firs are needed?"
+      },
+      "hint": {
+        "uz": "9 ta daraxt orasida nechta oraliq bor?",
+        "ru": "Сколько промежутков между 9 деревьями?",
+        "en": "How many gaps are there between 9 trees?"
+      },
+      "explanation": {
+        "uz": "9 ta daraxt orasida 8 ta oraliq bor — 8 ta archa.",
+        "ru": "Между 9 деревьями 8 промежутков — 8 ёлок.",
+        "en": "9 trees have 8 gaps — 8 firs."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "17",
+            "18",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Yoʻl boʻyida 9 ta zarang va 8 ta archa bor. Jami nechta daraxt?",
+        "ru": "Вдоль дороги 9 клёнов и 8 ёлок. Сколько всего деревьев?",
+        "en": "Along the road there are 9 maples and 8 firs. How many trees in all?"
+      },
+      "hint": {
+        "uz": "9 ga 8 ni qoʻsh.",
+        "ru": "Прибавь к 9 число 8.",
+        "en": "Add 8 to 9."
+      },
+      "explanation": {
+        "uz": "9 + 8 = 17.",
+        "ru": "9 + 8 = 17.",
+        "en": "9 + 8 = 17."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "18",
+            "17",
+            "20"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Terakning boʻyi 16 m edi. Bir yilda 2 m oʻsdi. Hozir boʻyi qancha?",
+        "ru": "Тополь был 16 м. За год вырос на 2 м. Какой он сейчас?",
+        "en": "The poplar was 16 m tall. It grew 2 m in a year. How tall is it now?"
+      },
+      "hint": {
+        "uz": "16 ga 2 ni qoʻsh.",
+        "ru": "Прибавь к 16 число 2.",
+        "en": "Add 2 to 16."
+      },
+      "explanation": {
+        "uz": "16 + 2 = 18 m.",
+        "ru": "16 + 2 = 18 м.",
+        "en": "16 + 2 = 18 m."
+      }
+    }
+  ]
+}

@@ -13,3 +13,6 @@ out/
 gcloud-tts.json
 gcloud-tts.json.json
 *-service-account*.json
+
+.vercel
+.env*

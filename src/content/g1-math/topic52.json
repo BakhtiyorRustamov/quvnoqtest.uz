@@ -1,0 +1,316 @@
+{
+  "topicId": "g1-math-52",
+  "subjectKey": "g1-math",
+  "emojis": "🔟➕✨",
+  "title": {
+    "uz": "Oʻnlikdan oʻtib qoʻshish",
+    "ru": "Сложение с переходом через десяток",
+    "en": "Adding across the ten"
+  },
+  "recall": {
+    "uz": "Bir xonali sonlarni oʻnlikdan oʻtib qoʻshamiz. Avval bittasini 10 gacha toʻldiramiz, soʻng qolganini qoʻshamiz. Masalan, 8 + 5 = (8 + 2) + 3 = 10 + 3 = 13. Keling, mashq qilamiz!",
+    "ru": "Складываем однозначные числа с переходом через десяток. Сначала дополняем до 10, потом прибавляем остаток. Например, 8 + 5 = (8 + 2) + 3 = 10 + 3 = 13. Потренируемся!",
+    "en": "We add single digits crossing the ten. First fill up to 10, then add the rest. For example 8 + 5 = (8 + 2) + 3 = 10 + 3 = 13. Let's practise!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "13",
+            "12",
+            "14"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 8 + 5 = ?",
+        "ru": "Вычисли: 8 + 5 = ?",
+        "en": "Work it out: 8 + 5 = ?"
+      },
+      "hint": {
+        "uz": "8 ni 10 gacha toʻldir: 8 + 2 = 10, soʻng + 3.",
+        "ru": "Дополни 8 до 10: 8 + 2 = 10, потом + 3.",
+        "en": "Fill 8 up to 10: 8 + 2 = 10, then + 3."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13. Avval 10 ga toʻldiramiz, keyin qolganini qoʻshamiz.",
+        "ru": "8 + 5 = 13. Сначала дополняем до 10, потом прибавляем остаток.",
+        "en": "8 + 5 = 13. Fill to 10 first, then add the rest."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 9 + 3 = ?",
+        "ru": "Вычисли: 9 + 3 = ?",
+        "en": "Work it out: 9 + 3 = ?"
+      },
+      "hint": {
+        "uz": "9 ni 10 gacha toʻldir: 9 + 1 = 10, soʻng + 2.",
+        "ru": "Дополни 9 до 10: 9 + 1 = 10, потом + 2.",
+        "en": "Fill 9 up to 10: 9 + 1 = 10, then + 2."
+      },
+      "explanation": {
+        "uz": "9 + 3 = 12. Avval 10 ga toʻldiramiz, keyin qolganini qoʻshamiz.",
+        "ru": "9 + 3 = 12. Сначала дополняем до 10, потом прибавляем остаток.",
+        "en": "9 + 3 = 12. Fill to 10 first, then add the rest."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 7 + 5 = ?",
+        "ru": "Вычисли: 7 + 5 = ?",
+        "en": "Work it out: 7 + 5 = ?"
+      },
+      "hint": {
+        "uz": "7 ni 10 gacha toʻldir: 7 + 3 = 10, soʻng + 2.",
+        "ru": "Дополни 7 до 10: 7 + 3 = 10, потом + 2.",
+        "en": "Fill 7 up to 10: 7 + 3 = 10, then + 2."
+      },
+      "explanation": {
+        "uz": "7 + 5 = 12. Avval 10 ga toʻldiramiz, keyin qolganini qoʻshamiz.",
+        "ru": "7 + 5 = 12. Сначала дополняем до 10, потом прибавляем остаток.",
+        "en": "7 + 5 = 12. Fill to 10 first, then add the rest."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "14",
+            "13",
+            "15"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 8 + 6 = ?",
+        "ru": "Вычисли: 8 + 6 = ?",
+        "en": "Work it out: 8 + 6 = ?"
+      },
+      "hint": {
+        "uz": "8 ni 10 gacha toʻldir: 8 + 2 = 10, soʻng + 4.",
+        "ru": "Дополни 8 до 10: 8 + 2 = 10, потом + 4.",
+        "en": "Fill 8 up to 10: 8 + 2 = 10, then + 4."
+      },
+      "explanation": {
+        "uz": "8 + 6 = 14. Avval 10 ga toʻldiramiz, keyin qolganini qoʻshamiz.",
+        "ru": "8 + 6 = 14. Сначала дополняем до 10, потом прибавляем остаток.",
+        "en": "8 + 6 = 14. Fill to 10 first, then add the rest."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 5,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 8 + 5!",
+        "ru": "Вычисли на числовой прямой: 8 + 5!",
+        "en": "Work it out on the number line: 8 + 5!"
+      },
+      "hint": {
+        "uz": "8 dan boshla va oldinga 5 qadam sakra.",
+        "ru": "Встань на 8 и прыгни на 5 шагов вперёд.",
+        "en": "Start at 8 and hop 5 steps forward."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13.",
+        "ru": "8 + 5 = 13.",
+        "en": "8 + 5 = 13."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 9 + 6!",
+        "ru": "Вычисли на числовой прямой: 9 + 6!",
+        "en": "Work it out on the number line: 9 + 6!"
+      },
+      "hint": {
+        "uz": "9 dan boshla va oldinga 6 qadam sakra.",
+        "ru": "Встань на 9 и прыгни на 6 шагов вперёд.",
+        "en": "Start at 9 and hop 6 steps forward."
+      },
+      "explanation": {
+        "uz": "9 + 6 = 15.",
+        "ru": "9 + 6 = 15.",
+        "en": "9 + 6 = 15."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "13",
+            "12",
+            "14"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Avtobus yonida 8 ta oʻquvchi bor. Yana 2 ta oʻquvchi va 3 ta ota-ona qoʻshildi. Jami nechta odam?",
+        "ru": "У автобуса 8 учеников. Подошли ещё 2 ученика и 3 родителя. Сколько всего человек?",
+        "en": "8 pupils stand by the bus. 2 more pupils and 3 parents joined. How many people in all?"
+      },
+      "hint": {
+        "uz": "8 ni 10 gacha toʻldir: 8 + 2 = 10, soʻng + 3.",
+        "ru": "Дополни 8 до 10: 8 + 2 = 10, потом + 3.",
+        "en": "Fill 8 to 10: 8 + 2 = 10, then + 3."
+      },
+      "explanation": {
+        "uz": "8 + 2 + 3 = 13 odam.",
+        "ru": "8 + 2 + 3 = 13 человек.",
+        "en": "8 + 2 + 3 = 13 people."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "13",
+            "12",
+            "14"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 6 + 7 = ?",
+        "ru": "Вычисли: 6 + 7 = ?",
+        "en": "Work it out: 6 + 7 = ?"
+      },
+      "hint": {
+        "uz": "6 ni 10 gacha toʻldir: 6 + 4 = 10, soʻng + 3.",
+        "ru": "Дополни 6 до 10: 6 + 4 = 10, потом + 3.",
+        "en": "Fill 6 up to 10: 6 + 4 = 10, then + 3."
+      },
+      "explanation": {
+        "uz": "6 + 7 = 13. Avval 10 ga toʻldiramiz, keyin qolganini qoʻshamiz.",
+        "ru": "6 + 7 = 13. Сначала дополняем до 10, потом прибавляем остаток.",
+        "en": "6 + 7 = 13. Fill to 10 first, then add the rest."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 13
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 13 sonini yasa!",
+        "ru": "Собери число 13 из блоков!",
+        "en": "Build the number 13 from blocks!"
+      },
+      "hint": {
+        "uz": "Bitta oʻnlik (+10) va 3 ta birlik (+1).",
+        "ru": "Один десяток (+10) и 3 единиц (+1).",
+        "en": "One ten (+10) and 3 ones (+1)."
+      },
+      "explanation": {
+        "uz": "13 = 10 + 3: 1 oʻnlik va 3 birlik.",
+        "ru": "13 = 10 + 3: 1 десяток и 3 единиц.",
+        "en": "13 = 10 + 3: 1 ten and 3 ones."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "14",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 7 + 8 = ?",
+        "ru": "Вычисли: 7 + 8 = ?",
+        "en": "Work it out: 7 + 8 = ?"
+      },
+      "hint": {
+        "uz": "7 ni 10 gacha toʻldir: 7 + 3 = 10, soʻng + 5.",
+        "ru": "Дополни 7 до 10: 7 + 3 = 10, потом + 5.",
+        "en": "Fill 7 up to 10: 7 + 3 = 10, then + 5."
+      },
+      "explanation": {
+        "uz": "7 + 8 = 15. Avval 10 ga toʻldiramiz, keyin qolganini qoʻshamiz.",
+        "ru": "7 + 8 = 15. Сначала дополняем до 10, потом прибавляем остаток.",
+        "en": "7 + 8 = 15. Fill to 10 first, then add the rest."
+      }
+    }
+  ]
+}

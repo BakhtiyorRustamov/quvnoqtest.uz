@@ -15,6 +15,8 @@ import BalanceScale from './BalanceScale';
 import RaceToAnswer from './RaceToAnswer';
 import PositionGrid from './PositionGrid';
 import StraightCurved from './StraightCurved';
+import MatchPairs from './MatchPairs';
+import DragBuckets from './DragBuckets';
 import Mcq from './Mcq';
 
 // Large interactive game — loaded client-only (uses AudioContext / window).
@@ -38,6 +40,8 @@ export const WIDGETS: Record<string, ComponentType<any>> = {
   position_grid: PositionGrid,
   straight_curved: StraightCurved,
   grand_prix_addition: GrandPrixAddition,
+  match_pairs: MatchPairs,
+  drag_buckets: DragBuckets,
   mcq: Mcq
 };
 
@@ -65,5 +69,7 @@ export const WIDGET_LABELS: Record<string, L10n> = {
   position_grid: { uz: 'Joylashish — toʻr', ru: 'Расположение — сетка', en: 'Position — grid' },
   straight_curved: { uz: 'Toʻgʻri va egri chiziqlar', ru: 'Прямые и кривые линии', en: 'Straight & curved lines' },
   grand_prix_addition: { uz: 'Qoʻshish poygasi', ru: 'Гонка сложения', en: 'Addition Grand Prix' },
+  match_pairs: { uz: 'Juftlarni ulash', ru: 'Соедини пары', en: 'Match the pairs' },
+  drag_buckets: { uz: 'Qutilarga sudrab tashlash', ru: 'Перетащи в ящики', en: 'Drag into buckets' },
   mcq: { uz: 'Test savoli (zaxira)', ru: 'Тестовый вопрос (резерв)', en: 'Multiple choice (fallback)' }
 };
