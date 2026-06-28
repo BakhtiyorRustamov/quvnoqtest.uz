@@ -21,7 +21,6 @@ const STRINGS = {
 };
 const BIN_COLORS = ["#1fa7e0", "#f39a1f", "#46c06a", "#d63384"];
 
-<<<<<<< HEAD
 function shuffle(arr) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -31,21 +30,15 @@ function shuffle(arr) {
   return a;
 }
 
-=======
->>>>>>> origin/main
 export default function DragBuckets({ tiles = [], bins = [], lang = "uz", embedded = false, onAttempt, onCorrect, onNext }) {
   const t = STRINGS[lang] || STRINGS.uz;
   const [placed, setPlaced] = useState({}); // tileId -> binId (correct only)
   const [shake, setShake] = useState(null);
   const finished = useRef(false);
-<<<<<<< HEAD
   // Shuffle once on mount so tiles never appear pre-grouped by bucket
   // (otherwise an authored "first 3 → left, last 3 → right" order gives the answer away).
   const [shuffledTiles] = useState(() => shuffle(tiles));
   const tray = shuffledTiles.filter((x) => !placed[x.id]);
-=======
-  const tray = tiles.filter((x) => !placed[x.id]);
->>>>>>> origin/main
   const solved = tiles.length > 0 && Object.keys(placed).length === tiles.length;
 
   const { drag, hot, bind } = useDrag((id, zone) => {
