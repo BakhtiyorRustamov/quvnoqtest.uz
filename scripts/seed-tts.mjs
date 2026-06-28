@@ -122,6 +122,7 @@ const OPS = {
   en: { '+': 'plus', '−': 'minus', '=': 'equals', '×': 'times', '÷': 'divided by', '<': 'less than', '>': 'greater than', '%': 'percent' }
 };
 
+<<<<<<< HEAD
 // Measurement-unit abbreviations → full spoken words, per locale. The neural
 // voice reads bare "cm"/"dm"/"kg" letter-by-letter (a garbled sound after the
 // word), so we speak the whole unit instead. "sm" is the Uzbek spelling.
@@ -142,6 +143,12 @@ function verbalize(s, lang) {
     .replace(/\(\s*(?:cm|sm|dm|mm|km|kg)\s*\)/gi, ' ')
     // remaining unit abbreviations (e.g. "10 cm") → the full spoken word.
     .replace(UNIT_RE, (m) => ` ${unit[m.toLowerCase()]} `)
+=======
+/** Convert digits + math symbols to spoken words, then keep only speakable text. */
+function verbalize(s, lang) {
+  const op = OPS[lang] || OPS.uz;
+  return s
+>>>>>>> origin/main
     // minus / multiplication / division only when written between numbers
     // (so a hyphenated word or the Uzbek letter "x" is never mistaken for an operator)
     .replace(/(\d)\s*[-–−]\s*(\d)/g, `$1 ${op['−']} $2`)
