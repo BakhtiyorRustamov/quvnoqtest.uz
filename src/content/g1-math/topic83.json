@@ -1,0 +1,352 @@
+{
+  "topicId": "g1-math-83",
+  "subjectKey": "g1-math",
+  "emojis": "🔍➖✨",
+  "title": {
+    "uz": "Qismni topamiz",
+    "ru": "Находим часть",
+    "en": "Finding the parts"
+  },
+  "recall": {
+    "uz": "Butun - qism = qism. Agar butun va bitta qism maʼlum boʻlsa, ikkinchi qismni topish uchun butundan qismni ayiramiz. Masalan, butun 20, qism 13 — ikkinchi qism 20 - 13 = 7.",
+    "ru": "Целое - часть = часть. Если известны целое и одна часть, вторую находим вычитанием. Например, целое 20, часть 13 — вторая часть 20 - 13 = 7.",
+    "en": "Whole - part = part. If the whole and one part are known, find the other by subtracting. For example whole 20, part 13 — the other part is 20 - 13 = 7."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Yigʻindi 13, ikkinchi qoʻshiluvchi 4. Birinchi qoʻshiluvchi nechа?",
+        "ru": "Сумма 13, второе слагаемое 4. Чему равно первое?",
+        "en": "Sum 13, second addend 4. What is the first addend?"
+      },
+      "hint": {
+        "uz": "13 dan 4 ni ayir.",
+        "ru": "Вычти из 13 число 4.",
+        "en": "Take 4 from 13."
+      },
+      "explanation": {
+        "uz": "13 - 4 = 9.",
+        "ru": "13 - 4 = 9.",
+        "en": "13 - 4 = 9."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "6",
+            "8"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Butun 17, ikkinchi qism 10. Birinchi qism nechа?",
+        "ru": "Целое 17, вторая часть 10. Чему равна первая?",
+        "en": "Whole 17, second part 10. What is the first part?"
+      },
+      "hint": {
+        "uz": "17 dan 10 ni ayir.",
+        "ru": "Вычти из 17 число 10.",
+        "en": "Take 10 from 17."
+      },
+      "explanation": {
+        "uz": "17 - 10 = 7.",
+        "ru": "17 - 10 = 7.",
+        "en": "17 - 10 = 7."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/inverse-ops.gif",
+        "alt": {
+          "uz": "Qoʻshish va ayirish — teskari amallar",
+          "ru": "Сложение и вычитание — обратные",
+          "en": "Addition and subtraction are inverse"
+        },
+        "maxWidth": 230
+      },
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "7 + 13",
+              "right": "20"
+            },
+            {
+              "left": "20 - 13",
+              "right": "7"
+            },
+            {
+              "left": "6 + 12",
+              "right": "18"
+            },
+            {
+              "left": "18 - 12",
+              "right": "6"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "20 hosil qilish uchun 17 ga qancha qoʻshish kerak?",
+        "ru": "Сколько прибавить к 17, чтобы получить 20?",
+        "en": "How much to add to 17 to make 20?"
+      },
+      "hint": {
+        "uz": "20 dan 17 ni ayir.",
+        "ru": "Вычти из 20 число 17.",
+        "en": "Take 17 from 20."
+      },
+      "explanation": {
+        "uz": "20 - 17 = 3.",
+        "ru": "20 - 17 = 3.",
+        "en": "20 - 17 = 3."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 7,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 20 - 13 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 20 - 13 = ?",
+        "en": "Work it out and build the answer with blocks: 20 - 13 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "20 - 13 = 7.",
+        "ru": "20 - 13 = 7.",
+        "en": "20 - 13 = 7."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "18",
+            "17",
+            "19"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qismlari 6 va 12 boʻlgan butunni top.",
+        "ru": "Найди целое из частей 6 и 12.",
+        "en": "Find the whole made of 6 and 12."
+      },
+      "hint": {
+        "uz": "6 ga 12 ni qoʻsh.",
+        "ru": "Прибавь к 6 число 12.",
+        "en": "Add 12 to 6."
+      },
+      "explanation": {
+        "uz": "6 + 12 = 18.",
+        "ru": "6 + 12 = 18.",
+        "en": "6 + 12 = 18."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "19 - 10",
+              "right": "9"
+            },
+            {
+              "left": "15 - 7",
+              "right": "8"
+            },
+            {
+              "left": "13 - 6",
+              "right": "7"
+            },
+            {
+              "left": "16 - 10",
+              "right": "6"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 18 - 12 = ?",
+        "ru": "Вычисли: 18 - 12 = ?",
+        "en": "Work it out: 18 - 12 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "18 - 12 = 6.",
+        "ru": "18 - 12 = 6.",
+        "en": "18 - 12 = 6."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 18,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 6 + 12 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 6 + 12 = ?",
+        "en": "Work it out and build the answer with blocks: 6 + 12 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "6 + 12 = 18.",
+        "ru": "6 + 12 = 18.",
+        "en": "6 + 12 = 18."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Butun 14, bir qism 9. Ikkinchi qism nechа?",
+        "ru": "Целое 14, одна часть 9. Чему равна вторая?",
+        "en": "Whole 14, one part 9. What is the other part?"
+      },
+      "hint": {
+        "uz": "14 dan 9 ni ayir.",
+        "ru": "Вычти из 14 число 9.",
+        "en": "Take 9 from 14."
+      },
+      "explanation": {
+        "uz": "14 - 9 = 5.",
+        "ru": "14 - 9 = 5.",
+        "en": "14 - 9 = 5."
+      }
+    }
+  ]
+}

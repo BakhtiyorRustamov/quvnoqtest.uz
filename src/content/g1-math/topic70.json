@@ -1,0 +1,335 @@
+{
+  "topicId": "g1-math-70",
+  "subjectKey": "g1-math",
+  "emojis": "➕➕✨",
+  "title": {
+    "uz": "Koʻp komponentli qoʻshish",
+    "ru": "Сложение нескольких чисел",
+    "en": "Adding several numbers"
+  },
+  "recall": {
+    "uz": "Koʻp komponentli qoʻshish — uch va undan koʻp sonni qoʻshishdir. Sonlarni chapdan oʻngga, ketma-ket qoʻshamiz. Masalan, 24 + 13 + 22: avval 24 + 13 = 37, soʻng 37 + 22 = 59.",
+    "ru": "Сложение нескольких чисел — это сумма трёх и более чисел. Складываем по порядку, слева направо. Например, 24 + 13 + 22: сначала 24 + 13 = 37, потом 37 + 22 = 59.",
+    "en": "Adding several numbers means a sum of three or more. We add in order, left to right. For example 24 + 13 + 22: first 24 + 13 = 37, then 37 + 22 = 59."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "59",
+            "58",
+            "60"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Oʻquvchilar 24 koʻl, 13 dengiz va 22 daryo bilan tanishdi. Jami nechta suv havzasi?",
+        "ru": "Ученики узнали 24 озера, 13 морей и 22 реки. Сколько всего водоёмов?",
+        "en": "Pupils learned about 24 lakes, 13 seas and 22 rivers. How many water bodies in all?"
+      },
+      "hint": {
+        "uz": "24 + 13 + 22 ni ketma-ket qoʻsh.",
+        "ru": "Сложи 24 + 13 + 22 по порядку.",
+        "en": "Add 24 + 13 + 22 in order."
+      },
+      "explanation": {
+        "uz": "24 + 13 + 22 = 59.",
+        "ru": "24 + 13 + 22 = 59.",
+        "en": "24 + 13 + 22 = 59."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "10 + 4 + 5",
+              "right": "19"
+            },
+            {
+              "left": "2 + 4 + 6",
+              "right": "12"
+            },
+            {
+              "left": "5 + 5 + 5",
+              "right": "15"
+            },
+            {
+              "left": "3 + 7 + 10",
+              "right": "20"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 39,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 22 + 5 + 12 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 22 + 5 + 12 = ?",
+        "en": "Work it out and build the answer with blocks: 22 + 5 + 12 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "22 + 5 + 12 = 39.",
+        "ru": "22 + 5 + 12 = 39.",
+        "en": "22 + 5 + 12 = 39."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 30,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 13 + 7 + 10 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 13 + 7 + 10 = ?",
+        "en": "Work it out and build the answer with blocks: 13 + 7 + 10 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "13 + 7 + 10 = 30.",
+        "ru": "13 + 7 + 10 = 30.",
+        "en": "13 + 7 + 10 = 30."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "54",
+            "53",
+            "55"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Jadval: a = 24, b = 21, a + b + c = 99. c nechа?",
+        "ru": "Таблица: a = 24, b = 21, a + b + c = 99. Чему равно c?",
+        "en": "Table: a = 24, b = 21, a + b + c = 99. What is c?"
+      },
+      "hint": {
+        "uz": "99 dan 24 va 21 ni ayir.",
+        "ru": "Вычти из 99 числа 24 и 21.",
+        "en": "Take 24 and 21 from 99."
+      },
+      "explanation": {
+        "uz": "99 - 24 - 21 = 54.",
+        "ru": "99 - 24 - 21 = 54.",
+        "en": "99 - 24 - 21 = 54."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "76",
+            "75",
+            "77"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 45 + 31 = ?",
+        "ru": "Вычисли: 45 + 31 = ?",
+        "en": "Work it out: 45 + 31 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Десятки к десяткам, единицы к единицам.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "45 + 31 = 76.",
+        "ru": "45 + 31 = 76.",
+        "en": "45 + 31 = 76."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "20 + 30 + 40",
+              "right": "90"
+            },
+            {
+              "left": "10 + 20 + 5",
+              "right": "35"
+            },
+            {
+              "left": "25 + 25 + 25",
+              "right": "75"
+            },
+            {
+              "left": "40 + 8 + 1",
+              "right": "49"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 46,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 16 + 22 + 8 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 16 + 22 + 8 = ?",
+        "en": "Work it out and build the answer with blocks: 16 + 22 + 8 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "16 + 22 + 8 = 46.",
+        "ru": "16 + 22 + 8 = 46.",
+        "en": "16 + 22 + 8 = 46."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "85",
+            "84",
+            "86"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Yevropada 43, Osiyoda 42 davlat bor. Ikki qitʼada jami nechta davlat?",
+        "ru": "В Европе 43, в Азии 42 страны. Сколько всего на двух континентах?",
+        "en": "Europe has 43, Asia 42 countries. How many on the two continents?"
+      },
+      "hint": {
+        "uz": "43 ga 42 ni qoʻsh.",
+        "ru": "Прибавь к 43 число 42.",
+        "en": "Add 42 to 43."
+      },
+      "explanation": {
+        "uz": "43 + 42 = 85.",
+        "ru": "43 + 42 = 85.",
+        "en": "43 + 42 = 85."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 47,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 30 + 12 + 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 30 + 12 + 5 = ?",
+        "en": "Work it out and build the answer with blocks: 30 + 12 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "30 + 12 + 5 = 47.",
+        "ru": "30 + 12 + 5 = 47.",
+        "en": "30 + 12 + 5 = 47."
+      }
+    }
+  ]
+}

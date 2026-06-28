@@ -1,0 +1,96 @@
+{
+  "topicId": "g1-math-28",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🧮✏️",
+  "title": { "uz": "Natural sonlar olami", "ru": "Натуральные числа", "en": "Natural (counting) numbers" },
+  "recall": {
+    "uz": "Natural sonlarni oʻrganamiz. Bir dan boshlab sanaladigan sonlar natural sonlardir. Nol natural son emas. Bir xonali va ikki xonali sonlarni ajratamiz.",
+    "ru": "Учим натуральные числа. Это числа, которыми считают, начиная с одного. Ноль не натуральное число. Различаем однозначные и двузначные числа.",
+    "en": "We learn the natural numbers. These are the numbers we count with, starting from one. Zero is not a natural number. We tell one-digit numbers from two-digit ones."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["0", "3", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son natural emas: 0, 3, 5?", "ru": "Какое число не натуральное: 0, 3, 5?", "en": "Which number is not natural: 0, 3, 5?" },
+      "hint": { "uz": "Sanashni qaysi sondan boshlaymiz? Undan oldingisi natural emas.", "ru": "С какого числа начинаем счёт? Предыдущее не натуральное.", "en": "Which number do we start counting from? The one before it is not natural." },
+      "explanation": { "uz": "Nol natural son emas — sanash birdan boshlanadi.", "ru": "Ноль не натуральное число — счёт начинается с одного.", "en": "Zero is not natural — counting starts from one." } },
+    { "id": "q2", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["7", "12", "10"], "answerIndex": 0 } },
+      "prompt": { "uz": "Bir xonali son qaysi: 12, 7, 10?", "ru": "Какое число однозначное: 12, 7, 10?", "en": "Which number has one digit: 12, 7, 10?" },
+      "hint": { "uz": "Bir xonali son bitta raqamdan iborat.", "ru": "Однозначное число состоит из одной цифры.", "en": "A one-digit number has a single digit." },
+      "explanation": { "uz": "Yetti bitta raqamdan iborat — u bir xonali.", "ru": "Семь состоит из одной цифры — оно однозначное.", "en": "Seven has one digit — it is a one-digit number." } },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["13", "4", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ikki xonali son qaysi: 4, 13, 6?", "ru": "Какое число двузначное: 4, 13, 6?", "en": "Which number has two digits: 4, 13, 6?" },
+      "hint": { "uz": "Ikki xonali son ikkita raqamdan iborat.", "ru": "Двузначное число состоит из двух цифр.", "en": "A two-digit number has two digits." },
+      "explanation": { "uz": "Oʻn uch ikkita raqamdan iborat — u ikki xonali.", "ru": "Тринадцать состоит из двух цифр — оно двузначное.", "en": "Thirteen has two digits — it is a two-digit number." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "number_line_addition", "props": { "a": 6, "b": 3, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: olti va uch!", "ru": "Сложи на числовой прямой: шесть и три!", "en": "Add on the number line: six and three!" },
+      "hint": { "uz": "Oltidan boshla, uch qadam oldinga sakra.", "ru": "Встань на шесть, прыгни на три вперёд.", "en": "Start at six, hop three forward." },
+      "explanation": { "uz": "Olti va uch qoʻshilib, toʻqqiz boʻldi.", "ru": "Шесть и три дали девять.", "en": "Six and three made nine." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["9", "8", "10"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 5 + 4 = ?", "ru": "Найди сумму: 5 + 4 = ?", "en": "Find the sum: 5 + 4 = ?" },
+      "hint": { "uz": "Beshtaga toʻrtta qoʻsh.", "ru": "К пяти прибавь четыре.", "en": "Add four to five." },
+      "explanation": { "uz": "Besh qoʻshish toʻrt — toʻqqiz.", "ru": "Пять плюс четыре — девять.", "en": "Five plus four is nine." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 7, "y": 2 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Yetti ikkidan katta.", "ru": "Семь больше двух.", "en": "Seven is bigger than two." } },
+    {
+      "id": "q7",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Shakllarni doiralar va kvadratlarga ajrat!", "ru": "Раздели фигуры: круги и квадраты!", "en": "Sort the shapes into circles and squares!" },
+      "items": [
+        { "id": "c1", "art": { "kind": "circle", "color": "red" }, "bin": "circ" },
+        { "id": "s1", "art": { "kind": "square", "color": "blue" }, "bin": "squ" },
+        { "id": "c2", "art": { "kind": "circle", "color": "orange" }, "bin": "circ" },
+        { "id": "s2", "art": { "kind": "square", "color": "green" }, "bin": "squ" }
+      ],
+      "bins": [
+        { "id": "circ", "label": { "uz": "Doiralar", "ru": "Круги", "en": "Circles" }, "color": "orange" },
+        { "id": "squ", "label": { "uz": "Kvadratlar", "ru": "Квадраты", "en": "Squares" }, "color": "blue" }
+      ],
+      "hint": { "uz": "Dumaloqlari — doiralar, burchaklilari — kvadratlar.", "ru": "Круглые — круги, угловатые — квадраты.", "en": "Round ones are circles, cornered ones are squares." },
+      "explanation": { "uz": "Shaklga qarab ikki guruhga ajratdik.", "ru": "Разделили на две группы по форме.", "en": "We sorted them into two groups by shape." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "triangle", "color": "green" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "triangle", "color": "green" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "triangle", "color": "green" }
+      ],
+      "options": [
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["st"],
+      "hint": { "uz": "Uchburchak, yulduz, uchburchak, yulduz… navbat bilan keladi!", "ru": "Треугольник, звезда, треугольник, звезда… по очереди!", "en": "Triangle, star, triangle, star… they take turns!" },
+      "explanation": { "uz": "Uchburchakdan keyin doim yulduz keladi. Keyingisi — yulduz.", "ru": "После треугольника всегда идёт звезда. Следующая — звезда.", "en": "After a triangle there is always a star. The next one is a star." }
+    },
+    {
+      "id": "q9",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma yulduzlarni sanab belgila!", "ru": "Сосчитай и отметь все звёзды!", "en": "Count and tap all the stars!" },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "s3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } }
+      ],
+      "answer": ["s1", "s2", "s3"],
+      "hint": { "uz": "Faqat yulduzlarni sana.", "ru": "Считай только звёзды.", "en": "Count only the stars." },
+      "explanation": { "uz": "Uchta yulduz bor edi.", "ru": "Было три звезды.", "en": "There were three stars." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["10", "11", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Toʻqqizdan keyingi natural son qaysi?", "ru": "Какое натуральное число идёт после девяти?", "en": "Which natural number comes after nine?" },
+      "hint": { "uz": "Toʻqqizdan keyin nechta keladi?", "ru": "Что идёт после девяти?", "en": "What comes after nine?" },
+      "explanation": { "uz": "Toʻqqizdan keyin oʻn keladi — u ham natural son.", "ru": "После девяти идёт десять — оно тоже натуральное.", "en": "After nine comes ten — also a natural number." } }
+  ]
+}

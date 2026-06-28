@@ -1,0 +1,328 @@
+{
+  "topicId": "g1-math-88",
+  "subjectKey": "g1-math",
+  "emojis": "🎨🔟✨",
+  "title": {
+    "uz": "Shart boʻyicha sonni yasaymiz",
+    "ru": "Собираем число по условию",
+    "en": "Building a number from the condition"
+  },
+  "recall": {
+    "uz": "Shartni oʻqib, ifoda tuzamiz va javobni bloklardan yasaymiz. «...ta ortiq» qoʻshish, «...ta kam» ayirishdir. Masalan, 30 dan 10 ta ortiq — 30 + 10 = 40.",
+    "ru": "Читаем условие, составляем выражение и собираем ответ из блоков. «...больше» — сложение, «...меньше» — вычитание. Например, на 10 больше 30 — 30 + 10 = 40.",
+    "en": "We read the condition, write an expression and build the answer from blocks. «...more» is addition, «...fewer» subtraction. For example 10 more than 30 is 30 + 10 = 40."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 40,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 30 + 10 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 30 + 10 = ?",
+        "en": "Work it out and build the answer with blocks: 30 + 10 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "30 + 10 = 40.",
+        "ru": "30 + 10 = 40.",
+        "en": "30 + 10 = 40."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 40,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 20 + 20 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 20 + 20 = ?",
+        "en": "Work it out and build the answer with blocks: 20 + 20 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "20 + 20 = 40.",
+        "ru": "20 + 20 = 40.",
+        "en": "20 + 20 = 40."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 70,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 40 + 30 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 40 + 30 = ?",
+        "en": "Work it out and build the answer with blocks: 40 + 30 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "40 + 30 = 70.",
+        "ru": "40 + 30 = 70.",
+        "en": "40 + 30 = 70."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 40,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 50 - 10 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 50 - 10 = ?",
+        "en": "Work it out and build the answer with blocks: 50 - 10 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "50 - 10 = 40.",
+        "ru": "50 - 10 = 40.",
+        "en": "50 - 10 = 40."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "30 + 10",
+              "right": "40"
+            },
+            {
+              "left": "60 + 20",
+              "right": "80"
+            },
+            {
+              "left": "90 - 30",
+              "right": "60"
+            },
+            {
+              "left": "25 + 5",
+              "right": "30"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "30",
+            "29",
+            "31"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "12 dan 18 ta ortiq son qaysi?",
+        "ru": "Какое число на 18 больше 12?",
+        "en": "Which number is 18 more than 12?"
+      },
+      "hint": {
+        "uz": "12 ga 18 ni qoʻsh.",
+        "ru": "Прибавь к 12 число 18.",
+        "en": "Add 18 to 12."
+      },
+      "explanation": {
+        "uz": "12 + 18 = 30.",
+        "ru": "12 + 18 = 30.",
+        "en": "12 + 18 = 30."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 6,
+          "b": 7,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 6 + 7!",
+        "ru": "Вычисли на числовой прямой: 6 + 7!",
+        "en": "Work it out on the number line: 6 + 7!"
+      },
+      "hint": {
+        "uz": "6 dan boshla va 7 qadam oldinga sakra.",
+        "ru": "Встань на 6 и прыгни на 7 вперёд.",
+        "en": "Start at 6 and hop 7 forward."
+      },
+      "explanation": {
+        "uz": "6 + 7 = 13.",
+        "ru": "6 + 7 = 13.",
+        "en": "6 + 7 = 13."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "13 + 5",
+              "right": "18"
+            },
+            {
+              "left": "20 - 8",
+              "right": "12"
+            },
+            {
+              "left": "44 + 6",
+              "right": "50"
+            },
+            {
+              "left": "70 + 7",
+              "right": "77"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 70,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 30 + 40 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 30 + 40 = ?",
+        "en": "Work it out and build the answer with blocks: 30 + 40 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "30 + 40 = 70.",
+        "ru": "30 + 40 = 70.",
+        "en": "30 + 40 = 70."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "62",
+            "61",
+            "63"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 80 - 18 = ?",
+        "ru": "Вычисли: 80 - 18 = ?",
+        "en": "Work it out: 80 - 18 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "80 - 18 = 62.",
+        "ru": "80 - 18 = 62.",
+        "en": "80 - 18 = 62."
+      }
+    }
+  ]
+}

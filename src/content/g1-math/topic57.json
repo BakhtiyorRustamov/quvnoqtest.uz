@@ -1,0 +1,303 @@
+{
+  "topicId": "g1-math-57",
+  "subjectKey": "g1-math",
+  "emojis": "➖🔟✨",
+  "title": {
+    "uz": "Oʻnlikdan ayirish usuli",
+    "ru": "Способ вычитания из десятка",
+    "en": "Subtracting through the ten"
+  },
+  "recall": {
+    "uz": "Birliklar yetmasa, oʻnlikdan ayiramiz. Sonni 10 va birliklarga ajratamiz, 10 dan ayiramiz, soʻng birliklarni qoʻshamiz. Masalan, 13 - 5: 10 - 5 = 5, 5 + 3 = 8. Demak, 13 - 5 = 8.",
+    "ru": "Если единиц не хватает, вычитаем из десятка. Раскладываем число на 10 и единицы, вычитаем из 10, потом прибавляем единицы. Например, 13 - 5: 10 - 5 = 5, 5 + 3 = 8. Значит, 13 - 5 = 8.",
+    "en": "If there aren't enough ones, we subtract from the ten. Split into 10 and ones, subtract from 10, then add the ones. For example 13 - 5: 10 - 5 = 5, 5 + 3 = 8. So 13 - 5 = 8."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 8,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 13 - 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 13 - 5 = ?",
+        "en": "Work it out and build the answer with blocks: 13 - 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "13 - 5 = 8.",
+        "ru": "13 - 5 = 8.",
+        "en": "13 - 5 = 8."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 5,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 12 - 7 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 12 - 7 = ?",
+        "en": "Work it out and build the answer with blocks: 12 - 7 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "12 - 7 = 5.",
+        "ru": "12 - 7 = 5.",
+        "en": "12 - 7 = 5."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 7,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 15 - 8 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 15 - 8 = ?",
+        "en": "Work it out and build the answer with blocks: 15 - 8 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "15 - 8 = 7.",
+        "ru": "15 - 8 = 7.",
+        "en": "15 - 8 = 7."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 5,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 14 - 9 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 14 - 9 = ?",
+        "en": "Work it out and build the answer with blocks: 14 - 9 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "14 - 9 = 5.",
+        "ru": "14 - 9 = 5.",
+        "en": "14 - 9 = 5."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 11 - 6 = ?",
+        "ru": "Вычисли: 11 - 6 = ?",
+        "en": "Work it out: 11 - 6 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Вычитай единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "11 - 6 = 5.",
+        "ru": "11 - 6 = 5.",
+        "en": "11 - 6 = 5."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 16 - 8 = ?",
+        "ru": "Вычисли: 16 - 8 = ?",
+        "en": "Work it out: 16 - 8 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Вычитай единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "16 - 8 = 8.",
+        "ru": "16 - 8 = 8.",
+        "en": "16 - 8 = 8."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Idishda 14 ta muz boʻlakchasi bor edi. 6 tasi erib ketdi. Nechta qoldi?",
+        "ru": "В миске было 14 кубиков льда. 6 растаяли. Сколько осталось?",
+        "en": "A bowl had 14 ice cubes. 6 melted. How many are left?"
+      },
+      "hint": {
+        "uz": "14 dan 6 ni ayir.",
+        "ru": "Вычти из 14 число 6.",
+        "en": "Take 6 from 14."
+      },
+      "explanation": {
+        "uz": "14 - 6 = 8.",
+        "ru": "14 - 6 = 8.",
+        "en": "14 - 6 = 8."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 8,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 17 - 9 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 17 - 9 = ?",
+        "en": "Work it out and build the answer with blocks: 17 - 9 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "17 - 9 = 8.",
+        "ru": "17 - 9 = 8.",
+        "en": "17 - 9 = 8."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 4,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 12 - 8 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 12 - 8 = ?",
+        "en": "Work it out and build the answer with blocks: 12 - 8 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "12 - 8 = 4.",
+        "ru": "12 - 8 = 4.",
+        "en": "12 - 8 = 4."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 13 - 7 = ?",
+        "ru": "Вычисли: 13 - 7 = ?",
+        "en": "Work it out: 13 - 7 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Вычитай единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "13 - 7 = 6.",
+        "ru": "13 - 7 = 6.",
+        "en": "13 - 7 = 6."
+      }
+    }
+  ]
+}

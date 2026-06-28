@@ -1,0 +1,135 @@
+{
+  "topicId": "g1-math-10",
+  "subjectKey": "g1-math",
+  "emojis": "🔢👈👉",
+  "title": {
+    "uz": "Sonning qoʻshnilari",
+    "ru": "Соседи числа",
+    "en": "Number neighbors"
+  },
+  "recall": {
+    "uz": "Har sonning qoʻshnilari bor. Undan oldin kelgani kichik, keyin kelgani katta. Beshdan oldin toʻrt, beshdan keyin olti keladi. Qoʻshni sonlarni topamiz.",
+    "ru": "У каждого числа есть соседи. Предыдущее меньше, следующее больше. Перед пятью — четыре, после пяти — шесть. Находим соседей числа.",
+    "en": "Every number has neighbors. The one before is smaller, the one after is bigger. Before five comes four, after five comes six. We find a number's neighbors."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["5", "3", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Keyingi son qaysi? 3, 4, ?", "ru": "Какое число следующее? 3, 4, ?", "en": "Which number comes next? 3, 4, ?" },
+      "hint": { "uz": "Keyingi son bittaga katta boʻladi.", "ru": "Следующее число на один больше.", "en": "The next number is one bigger." },
+      "explanation": { "uz": "Toʻrtdan keyin besh keladi. Bu — toʻrtning katta qoʻshnisi.", "ru": "После четырёх идёт пять. Это больший сосед четырёх.", "en": "After four comes five. It is four's bigger neighbor." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["6", "8", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oldingi son qaysi? ?, 7, 8", "ru": "Какое число предыдущее? ?, 7, 8", "en": "Which number comes before? ?, 7, 8" },
+      "hint": { "uz": "Oldingi son bittaga kichik boʻladi.", "ru": "Предыдущее число на один меньше.", "en": "The number before is one smaller." },
+      "explanation": { "uz": "Yettidan oldin olti keladi. Bu — yettining kichik qoʻshnisi.", "ru": "Перед семью идёт шесть. Это меньший сосед семи.", "en": "Before seven comes six. It is seven's smaller neighbor." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["5", "3", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Toʻrt bilan olti orasidagi son qaysi?", "ru": "Какое число между четырьмя и шестью?", "en": "Which number is between four and six?" },
+      "hint": { "uz": "Toʻrtning ham, oltining ham qoʻshnisini izla.", "ru": "Ищи общего соседа четырёх и шести.", "en": "Look for the shared neighbor of four and six." },
+      "explanation": { "uz": "Toʻrt bilan olti orasida besh turadi — ikkalasining qoʻshnisi.", "ru": "Между четырьмя и шестью стоит пять — сосед обоих.", "en": "Between four and six stands five — the neighbor of both." }
+    },
+    {
+      "id": "q4",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma baliqlarni sanab belgila!", "ru": "Сосчитай и отметь всех рыбок!", "en": "Count and tap all the fish!" },
+      "options": [
+        { "id": "f1", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "f2", "art": { "kind": "fish", "color": "blue" } },
+        { "id": "f3", "art": { "kind": "fish", "color": "green" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "magenta" } }
+      ],
+      "answer": ["f1", "f2", "f3"],
+      "hint": { "uz": "Faqat baliqlarni sana: bir, ikki, uch.", "ru": "Считай только рыбок: один, два, три.", "en": "Count only the fish: one, two, three." },
+      "explanation": { "uz": "Uchta baliq bor edi. Olma va koptokni sanamadik.", "ru": "Было три рыбки. Яблоко и мяч не считали.", "en": "There were three fish. We did not count the apple or the ball." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 3, "y": 7 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Tarozi koʻp boʻlgan, katta son tomonga ogʻadi.", "ru": "Весы наклоняются к большему числу.", "en": "The scale tips toward the bigger number." },
+      "explanation": { "uz": "Yetti uchdan katta. Katta son qoʻshnisidan oldinroqda boʻladi.", "ru": "Семь больше трёх. Большее число стоит дальше в счёте.", "en": "Seven is bigger than three. The bigger number comes later in counting." }
+    },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "sun", "color": "yellow" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "sun", "color": "yellow" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "sun", "color": "yellow" }
+      ],
+      "options": [
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "su", "art": { "kind": "sun", "color": "yellow" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["st"],
+      "hint": { "uz": "Quyosh, yulduz, quyosh, yulduz… navbat bilan keladi!", "ru": "Солнце, звезда, солнце, звезда… по очереди!", "en": "Sun, star, sun, star… they take turns!" },
+      "explanation": { "uz": "Quyoshdan keyin doim yulduz keladi. Keyingisi — yulduz.", "ru": "После солнца всегда идёт звезда. Следующая — звезда.", "en": "After the sun there is always a star. The next one is a star." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["9", "11", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻndan oldingi son qaysi?", "ru": "Какое число перед десятью?", "en": "Which number comes before ten?" },
+      "hint": { "uz": "Oʻndan bittaga kichik son qaysi?", "ru": "Какое число на один меньше десяти?", "en": "Which number is one less than ten?" },
+      "explanation": { "uz": "Oʻndan oldin toʻqqiz keladi. Bu — oʻnning kichik qoʻshnisi.", "ru": "Перед десятью идёт девять. Это меньший сосед десяти.", "en": "Before ten comes nine. It is ten's smaller neighbor." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "race_to_answer", "props": { "steps": 4, "maxSum": 6 } },
+      "prompt": { "uz": "Sanash poygasi: toʻgʻri sonni tanlab, oldinga yur!", "ru": "Гонка со счётом: выбирай верное число и двигайся вперёд!", "en": "Counting race: pick the right number and move forward!" },
+      "hint": { "uz": "Diqqat bilan sana, soʻng toʻgʻri sonni tanla.", "ru": "Внимательно считай и выбирай верное число.", "en": "Count carefully, then choose the right number." },
+      "explanation": { "uz": "Toʻgʻri sanaganda oldinga yurdik. Sonlar ketma-ketligini bilamiz!", "ru": "При верном счёте мы шли вперёд. Знаем порядок чисел!", "en": "Correct counting moved us forward. We know the order of numbers!" }
+    },
+    {
+      "id": "q9",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Baliqlarni kichikdan kattaga tartibla!", "ru": "Расставь рыбок от маленькой к большой!", "en": "Order the fish from small to big!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "fish", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "fish", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "fish", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "fish", "color": "gray", "scale": 0.5 }, "label": { "uz": "birinchi", "ru": "первая", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "fish", "color": "gray", "scale": 0.85 }, "label": { "uz": "ikkinchi", "ru": "вторая", "en": "second" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "fish", "color": "gray", "scale": 1.25 }, "label": { "uz": "uchinchi", "ru": "третья", "en": "third" } }
+      ],
+      "hint": { "uz": "Eng kichik baliq birinchi, eng katta uchinchi.", "ru": "Самая маленькая рыбка первая, самая большая третья.", "en": "The smallest fish is first, the biggest is third." },
+      "explanation": { "uz": "Tartib: birinchi, ikkinchi, uchinchi. Oʻrinlarni tartibladik.", "ru": "Порядок: первая, вторая, третья. Мы упорядочили места.", "en": "Order: first, second, third. We arranged the places." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["8", "6", "9"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetti dan keyingi son qaysi?", "ru": "Какое число после семи?", "en": "Which number comes after seven?" },
+      "hint": { "uz": "Yettidan bittaga katta son qaysi?", "ru": "Какое число на один больше семи?", "en": "Which number is one more than seven?" },
+      "explanation": { "uz": "Yettidan keyin sakkiz keladi. Bu — yettining katta qoʻshnisi.", "ru": "После семи идёт восемь. Это больший сосед семи.", "en": "After seven comes eight. It is seven's bigger neighbor." }
+    }
+  ]
+}

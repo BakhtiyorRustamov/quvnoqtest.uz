@@ -1,0 +1,335 @@
+{
+  "topicId": "g1-math-80",
+  "subjectKey": "g1-math",
+  "emojis": "🚁🧩✨",
+  "title": {
+    "uz": "Butunni topamiz",
+    "ru": "Находим целое",
+    "en": "Finding the whole"
+  },
+  "recall": {
+    "uz": "Qism + qism = butun. Butunni topish uchun qismlarni qoʻshamiz. Masalan, 24 ta fuqarolik va 13 ta harbiy dron — jami 24 + 13 = 37 ta dron.",
+    "ru": "Часть + часть = целое. Чтобы найти целое, складываем части. Например, 24 гражданских и 13 военных дронов — всего 24 + 13 = 37.",
+    "en": "Part + part = whole. To find the whole, add the parts. For example 24 civilian and 13 military drones — 24 + 13 = 37 in all."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "37",
+            "36",
+            "38"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "24 ta fuqarolik va 13 ta harbiy dron bor. Jami nechta dron?",
+        "ru": "24 гражданских и 13 военных дронов. Сколько всего?",
+        "en": "There are 24 civilian and 13 military drones. How many in all?"
+      },
+      "hint": {
+        "uz": "24 ga 13 ni qoʻsh.",
+        "ru": "Прибавь к 24 число 13.",
+        "en": "Add 13 to 24."
+      },
+      "explanation": {
+        "uz": "24 + 13 = 37.",
+        "ru": "24 + 13 = 37.",
+        "en": "24 + 13 = 37."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 37,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 24 + 13 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 24 + 13 = ?",
+        "en": "Work it out and build the answer with blocks: 24 + 13 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "24 + 13 = 37.",
+        "ru": "24 + 13 = 37.",
+        "en": "24 + 13 = 37."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "24 + 13",
+              "right": "37"
+            },
+            {
+              "left": "34 + 11",
+              "right": "45"
+            },
+            {
+              "left": "23 + 33",
+              "right": "56"
+            },
+            {
+              "left": "30 + 9",
+              "right": "39"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "39",
+            "38",
+            "40"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Katta dron 30 kg, kichik dron 9 kg koʻtaradi. Ikkalasi jami nechta kg?",
+        "ru": "Большой дрон поднимает 30 кг, малый 9 кг. Сколько вместе?",
+        "en": "A big drone lifts 30 kg, a small one 9 kg. How many kg together?"
+      },
+      "hint": {
+        "uz": "30 ga 9 ni qoʻsh.",
+        "ru": "Прибавь к 30 число 9.",
+        "en": "Add 9 to 30."
+      },
+      "explanation": {
+        "uz": "30 + 9 = 39.",
+        "ru": "30 + 9 = 39.",
+        "en": "30 + 9 = 39."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 45,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 34 + 11 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 34 + 11 = ?",
+        "en": "Work it out and build the answer with blocks: 34 + 11 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "34 + 11 = 45.",
+        "ru": "34 + 11 = 45.",
+        "en": "34 + 11 = 45."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "16",
+            "15",
+            "17"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Oʻrdakcha 9 kg, polapon 7 kg. Ikkalasining ogʻirligi nechа?",
+        "ru": "Утёнок 9 кг, птенец 7 кг. Сколько вместе?",
+        "en": "A duckling is 9 kg, a chick 7 kg. How much together?"
+      },
+      "hint": {
+        "uz": "9 ga 7 ni qoʻsh.",
+        "ru": "Прибавь к 9 число 7.",
+        "en": "Add 7 to 9."
+      },
+      "explanation": {
+        "uz": "9 + 7 = 16.",
+        "ru": "9 + 7 = 16.",
+        "en": "9 + 7 = 16."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "9 + 7",
+              "right": "16"
+            },
+            {
+              "left": "20 + 30",
+              "right": "50"
+            },
+            {
+              "left": "44 + 5",
+              "right": "49"
+            },
+            {
+              "left": "60 + 12",
+              "right": "72"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "78",
+            "77",
+            "79"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 45 + 33 = ?",
+        "ru": "Вычисли: 45 + 33 = ?",
+        "en": "Work it out: 45 + 33 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Десятки к десяткам, единицы к единицам.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "45 + 33 = 78.",
+        "ru": "45 + 33 = 78.",
+        "en": "45 + 33 = 78."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 56,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 23 + 33 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 23 + 33 = ?",
+        "en": "Work it out and build the answer with blocks: 23 + 33 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "23 + 33 = 56.",
+        "ru": "23 + 33 = 56.",
+        "en": "23 + 33 = 56."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 37,
+          "y": 39
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 37 va 39 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 37 и 39 — какой знак верный?",
+        "en": "Look at the scale: 37 and 39 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "37 < 39.",
+        "ru": "37 < 39.",
+        "en": "37 < 39."
+      }
+    }
+  ]
+}

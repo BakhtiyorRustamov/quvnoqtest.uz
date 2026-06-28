@@ -1,0 +1,299 @@
+{
+  "topicId": "g1-math-07",
+  "subjectKey": "g1-math",
+  "emojis": "🍎🟰🎈",
+  "title": {
+    "uz": "Buyumlar toʻplami",
+    "ru": "Наборы предметов",
+    "en": "Sets of objects"
+  },
+  "recall": {
+    "uz": "Narsalarni umumiy belgisiga qarab guruhlarga ajratamiz. Bir guruhda olmalar, boshqasida koptoklar. Guruhlarni taqqoslaymiz. Teng yoki teng emas. Sonini sanab koʻramiz.",
+    "ru": "Мы делим предметы на группы по общему признаку. В одной группе яблоки, в другой мячи. Сравниваем группы: равны или не равны. Считаем, сколько в каждой.",
+    "en": "We sort things into groups by a shared feature. One group has apples, another has balls. We compare groups: equal or not equal. We count how many are in each."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Narsalarni guruhlarga ajrat: olmalar va koptoklar!",
+        "ru": "Раздели предметы на группы: яблоки и мячи!",
+        "en": "Sort the things into groups: apples and balls!"
+      },
+      "items": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" }, "bin": "apple" },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" }, "bin": "ball" },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" }, "bin": "apple" },
+        { "id": "b2", "art": { "kind": "ball", "color": "orange" }, "bin": "ball" }
+      ],
+      "bins": [
+        { "id": "apple", "label": { "uz": "Olmalar", "ru": "Яблоки", "en": "Apples" }, "color": "red" },
+        { "id": "ball", "label": { "uz": "Koptoklar", "ru": "Мячи", "en": "Balls" }, "color": "blue" }
+      ],
+      "hint": {
+        "uz": "Olmalarni bir guruhga, koptoklarni boshqa guruhga sudra.",
+        "ru": "Перетащи яблоки в одну группу, мячи — в другую.",
+        "en": "Drag the apples into one group and the balls into the other."
+      },
+      "explanation": {
+        "uz": "Olmalarni bir guruhga, koptoklarni boshqasiga ajratdik. Umumiy belgisi — turi.",
+        "ru": "Яблоки в одну группу, мячи в другую. Общий признак — вид предмета.",
+        "en": "Apples in one group, balls in the other. The shared feature is the kind of object."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Koptoklarni rangi boʻyicha guruhla!",
+        "ru": "Сгруппируй мячи по цвету!",
+        "en": "Group the balls by color!"
+      },
+      "items": [
+        { "id": "r1", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue", "scale": 0.8 }, "bin": "blue" },
+        { "id": "y1", "art": { "kind": "ball", "color": "yellow", "scale": 0.8 }, "bin": "yellow" },
+        { "id": "r2", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "b2", "art": { "kind": "ball", "color": "blue", "scale": 0.8 }, "bin": "blue" },
+        { "id": "y2", "art": { "kind": "ball", "color": "yellow", "scale": 0.8 }, "bin": "yellow" }
+      ],
+      "bins": [
+        { "id": "red", "label": { "uz": "Qizil", "ru": "Красные", "en": "Red" }, "color": "red" },
+        { "id": "blue", "label": { "uz": "Koʻk", "ru": "Синие", "en": "Blue" }, "color": "blue" },
+        { "id": "yellow", "label": { "uz": "Sariq", "ru": "Жёлтые", "en": "Yellow" }, "color": "yellow" }
+      ],
+      "hint": {
+        "uz": "Bir xil rangdagilarni bitta guruhga yigʻ: qizil qizilga, koʻk koʻkka.",
+        "ru": "Собирай одинаковые по цвету в одну группу: красные к красным.",
+        "en": "Put the same color together in one group: red with red, blue with blue."
+      },
+      "explanation": {
+        "uz": "Koptoklarni rangiga qarab uch guruhga ajratdik. Umumiy belgisi — rang.",
+        "ru": "Мы разделили мячи на три группы по цвету. Общий признак — цвет.",
+        "en": "We split the balls into three groups by color. The shared feature is color."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 3, "y": 3 } },
+      "prompt": {
+        "uz": "Tarozini koʻr: guruhlar tengmi?",
+        "ru": "Посмотри на весы: группы равны?",
+        "en": "Look at the scale: are the groups equal?"
+      },
+      "hint": {
+        "uz": "Ikkala guruhni sana. Son bir xil boʻlsa, ular teng — tarozi tekis turadi.",
+        "ru": "Сосчитай обе группы. Если число одинаковое, они равны — весы ровные.",
+        "en": "Count both groups. If the number is the same, they are equal — the scale stays level."
+      },
+      "explanation": {
+        "uz": "Ikki guruhda bir xil son edi — demak, ular teng. Tarozi tekis turadi.",
+        "ru": "В двух группах было одинаковое число — значит, они равны. Весы ровные.",
+        "en": "Both groups had the same number — so they are equal. The scale stays level."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 5, "y": 2 } },
+      "prompt": {
+        "uz": "Tarozini koʻr: qaysi guruh kattaroq?",
+        "ru": "Посмотри на весы: какая группа больше?",
+        "en": "Look at the scale: which group is bigger?"
+      },
+      "hint": {
+        "uz": "Ikkala guruhni sana. Tarozi koʻp boʻlgan guruh tomonga ogʻadi.",
+        "ru": "Сосчитай обе группы. Весы наклоняются к группе, где больше.",
+        "en": "Count both groups. The scale tips toward the group that has more."
+      },
+      "explanation": {
+        "uz": "Guruhlarda son har xil edi — ular teng emas. Tarozi katta guruh tomonga ogʻdi.",
+        "ru": "В группах было разное число — они не равны. Весы наклонились к большей группе.",
+        "en": "The groups had different numbers — they are not equal. The scale tipped toward the bigger group."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Olmalar guruhini belgila, soʻng «Tekshirish»ni bos!",
+        "ru": "Отметь группу яблок и нажми «Проверить»!",
+        "en": "Tap the group of apples, then press “Check”!"
+      },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "f1", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "a3", "art": { "kind": "apple", "color": "yellow" } }
+      ],
+      "answer": ["a1", "a2", "a3"],
+      "hint": {
+        "uz": "Faqat olmalarni belgila — ular bitta guruhga tegishli.",
+        "ru": "Отмечай только яблоки — они относятся к одной группе.",
+        "en": "Tap only the apples — they belong to one group."
+      },
+      "explanation": {
+        "uz": "Olmalar guruhi uchta edi. Koptok va baliq boshqa guruhlarga tegishli.",
+        "ru": "В группе яблок было три. Мяч и рыбка относятся к другим группам.",
+        "en": "The apple group had three. The ball and the fish belong to other groups."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Guruhga mos kelmaydigan narsani bos!",
+        "ru": "Нажми на предмет, который не подходит к группе!",
+        "en": "Tap the thing that does not belong to the group!"
+      },
+      "options": [
+        { "id": "ap1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "ball", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "ap2", "art": { "kind": "apple", "color": "green" } }
+      ],
+      "answer": ["ball"],
+      "hint": {
+        "uz": "Ikkitasi bir guruh (olmalar). Bittasi ularga mos kelmaydi.",
+        "ru": "Две — одна группа (яблоки). Одна к ним не подходит.",
+        "en": "Two are one group (apples). One does not belong with them."
+      },
+      "explanation": {
+        "uz": "Ikki olma bitta guruh edi. Koptok meva emas — u guruhga mos kelmadi.",
+        "ru": "Два яблока — одна группа. Мяч не фрукт — он не подходит к группе.",
+        "en": "Two apples were one group. The ball is not a fruit — it does not belong."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorni davom ettir: keyin nima keladi?",
+        "ru": "Продолжи ряд: что идёт дальше?",
+        "en": "Continue the row: what comes next?"
+      },
+      "sequence": [
+        { "kind": "apple", "color": "red" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "apple", "color": "red" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "apple", "color": "red" }
+      ],
+      "options": [
+        { "id": "ba", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "ap", "art": { "kind": "apple", "color": "red" } },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" } }
+      ],
+      "answer": ["ba"],
+      "hint": {
+        "uz": "Olma, koptok, olma, koptok… ular navbat bilan keladi!",
+        "ru": "Яблоко, мяч, яблоко, мяч… они идут по очереди!",
+        "en": "Apple, ball, apple, ball… they take turns!"
+      },
+      "explanation": {
+        "uz": "Olmadan keyin doim koptok keladi. Keyingisi — koptok.",
+        "ru": "После яблока всегда идёт мяч. Следующий — мяч.",
+        "en": "After an apple there is always a ball. The next one is a ball."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": {
+        "uz": "Har bir narsani oʻz guruhidagi (xuddi oʻshanday) narsaga ula!",
+        "ru": "Соедини каждый предмет с предметом из его группы (таким же)!",
+        "en": "Connect each thing to one from its group (the same kind)!"
+      },
+      "left": [
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" },
+        { "id": "ba", "art": { "kind": "ball", "color": "blue" }, "match": "m-ba" },
+        { "id": "fi", "art": { "kind": "fish", "color": "orange" }, "match": "m-fi" },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" }, "match": "m-st" }
+      ],
+      "right": [
+        { "id": "m-ba", "art": { "kind": "ball", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } },
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } },
+        { "id": "m-fi", "art": { "kind": "fish", "color": "gray" } }
+      ],
+      "hint": {
+        "uz": "Avval rangli narsani bos, keyin xuddi oʻshanday narsani bos.",
+        "ru": "Сначала нажми на цветной предмет, потом на такой же.",
+        "en": "First tap a colored thing, then tap the same kind of thing."
+      },
+      "explanation": {
+        "uz": "Har bir narsani oʻz guruhidagi narsaga uladik: olma — olmaga, koptok — koptokka.",
+        "ru": "Мы соединили каждый предмет с предметом его группы: яблоко с яблоком, мяч с мячом.",
+        "en": "We matched each thing to one from its group: apple to apple, ball to ball."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Dumaloq narsalar guruhini belgila!",
+        "ru": "Отметь группу круглых предметов!",
+        "en": "Tap the group of round things!"
+      },
+      "options": [
+        { "id": "c1", "art": { "kind": "circle", "color": "red" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "ba", "art": { "kind": "ball", "color": "orange" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "su", "art": { "kind": "sun", "color": "yellow" } }
+      ],
+      "answer": ["c1", "ba", "su"],
+      "hint": {
+        "uz": "Dumaloq narsalar — burchaksiz. Doira, koptok, quyoshcha shunday.",
+        "ru": "Круглые предметы — без углов. Круг, мяч, солнышко такие.",
+        "en": "Round things have no corners. The circle, the ball and the sun are round."
+      },
+      "explanation": {
+        "uz": "Dumaloqlar guruhi uchta edi: doira, koptok, quyoshcha. Kvadrat va uchburchakning burchagi bor.",
+        "ru": "Группа круглых была из трёх: круг, мяч, солнышко. У квадрата и треугольника есть углы.",
+        "en": "The round group had three: circle, ball, sun. The square and triangle have corners."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Narsalarni katta va kichik guruhlarga ajrat!",
+        "ru": "Раздели предметы на группы: большие и маленькие!",
+        "en": "Sort the things into big and small groups!"
+      },
+      "items": [
+        { "id": "big1", "art": { "kind": "star", "color": "yellow", "scale": 1.2 }, "bin": "big" },
+        { "id": "small1", "art": { "kind": "star", "color": "orange", "scale": 0.55 }, "bin": "small" },
+        { "id": "big2", "art": { "kind": "ball", "color": "red", "scale": 1.2 }, "bin": "big" },
+        { "id": "small2", "art": { "kind": "ball", "color": "blue", "scale": 0.55 }, "bin": "small" }
+      ],
+      "bins": [
+        { "id": "big", "label": { "uz": "Katta", "ru": "Большие", "en": "Big" }, "color": "magenta" },
+        { "id": "small", "label": { "uz": "Kichik", "ru": "Маленькие", "en": "Small" }, "color": "blue" }
+      ],
+      "hint": {
+        "uz": "Kattalarni bir guruhga, kichiklarini boshqa guruhga sudra.",
+        "ru": "Большие в одну группу, маленькие в другую.",
+        "en": "Drag the big ones into one group and the small ones into the other."
+      },
+      "explanation": {
+        "uz": "Katta narsalarni bir guruhga, kichiklarini boshqasiga ajratdik. Umumiy belgisi — oʻlcham.",
+        "ru": "Большие в одну группу, маленькие в другую. Общий признак — размер.",
+        "en": "Big things in one group, small ones in the other. The shared feature is size."
+      }
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "topicId": "g1-math-06",
+  "subjectKey": "g1-math",
+  "emojis": "⏳🚦📅",
+  "title": {
+    "uz": "Voqealar tartibi",
+    "ru": "Порядок событий",
+    "en": "Order of events"
+  },
+  "recall": {
+    "uz": "Voqealar tartibini aytamiz. Nima oldin, nima keyin boʻldi. Birinchi va oxirgini topamiz. Qatorni davom ettiramiz. Svetofor ranglari va hafta kunlari ham tartib bilan keladi.",
+    "ru": "Мы называем порядок событий: что было раньше, что потом. Находим первое и последнее. Продолжаем ряд. Цвета светофора и дни недели тоже идут по порядку.",
+    "en": "We tell the order of events: what came before and what came after. We find the first and the last. We continue the row. Traffic light colors and the days of the week also come in order."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?",
+        "ru": "Продолжи ряд: какая фигура будет следующей?",
+        "en": "Continue the row: which shape comes next?"
+      },
+      "sequence": [
+        { "kind": "sun", "color": "yellow" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "sun", "color": "yellow" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "sun", "color": "yellow" }
+      ],
+      "options": [
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "su", "art": { "kind": "sun", "color": "yellow" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["st"],
+      "hint": {
+        "uz": "Quyosh, yulduz, quyosh, yulduz… ular navbat bilan keladi!",
+        "ru": "Солнце, звезда, солнце, звезда… они идут по очереди!",
+        "en": "Sun, star, sun, star… they take turns!"
+      },
+      "explanation": {
+        "uz": "Quyoshdan keyin doim yulduz keladi. Keyingisi — yulduz.",
+        "ru": "После солнца всегда идёт звезда. Следующая — звезда.",
+        "en": "After the sun there is always a star. The next one is a star."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Svetoforda keyin qaysi rang yonadi?",
+        "ru": "Какой цвет светофора загорится следующим?",
+        "en": "Which traffic light color comes on next?"
+      },
+      "sequence": [
+        { "kind": "circle", "color": "red" },
+        { "kind": "circle", "color": "yellow" },
+        { "kind": "circle", "color": "green" },
+        { "kind": "circle", "color": "red" },
+        { "kind": "circle", "color": "yellow" }
+      ],
+      "options": [
+        { "id": "green", "art": { "kind": "circle", "color": "green" } },
+        { "id": "red", "art": { "kind": "circle", "color": "red" } },
+        { "id": "blue", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["green"],
+      "hint": {
+        "uz": "Qizil, sariq, yashil… ranglar shu tartibda takrorlanadi.",
+        "ru": "Красный, жёлтый, зелёный… цвета повторяются в этом порядке.",
+        "en": "Red, yellow, green… the colors repeat in that order."
+      },
+      "explanation": {
+        "uz": "Sariqdan keyin yashil yonadi. Svetofor ranglari tartib bilan keladi.",
+        "ru": "После жёлтого загорается зелёный. Цвета светофора идут по порядку.",
+        "en": "After yellow comes green. Traffic light colors come in order."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": {
+        "uz": "Voqealarni tartibla: oldin kichik, keyin kattaroq, oxiri eng katta!",
+        "ru": "Расставь по порядку: сначала маленькое, потом больше, в конце самое большое!",
+        "en": "Put them in order: first small, then bigger, last the biggest!"
+      },
+      "items": [
+        { "id": "mid", "art": { "kind": "star", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "star", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "star", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "oldin", "ru": "сначала", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "keyin", "ru": "потом", "en": "then" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "oxiri", "ru": "в конце", "en": "last" } }
+      ],
+      "hint": {
+        "uz": "Eng kichkinasi oldin, oʻrtachasi keyin, eng kattasi oxirida.",
+        "ru": "Самое маленькое сначала, среднее потом, самое большое в конце.",
+        "en": "The smallest first, the middle one then, the biggest last."
+      },
+      "explanation": {
+        "uz": "Tartib: oldin, keyin, oxiri. Voqealar shunday ketma-ket boʻladi.",
+        "ru": "Порядок: сначала, потом, в конце. Так события идут друг за другом.",
+        "en": "Order: first, then, last. That is how events follow one another."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorda birinchi turgan shaklni bos!",
+        "ru": "Нажми на фигуру, которая стоит первой!",
+        "en": "Tap the shape that is first in the row!"
+      },
+      "options": [
+        { "id": "first", "art": { "kind": "apple", "color": "red" } },
+        { "id": "mid", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "last", "art": { "kind": "fish", "color": "green" } }
+      ],
+      "answer": ["first"],
+      "hint": {
+        "uz": "Birinchi — qatorning eng boshidagi shakl.",
+        "ru": "Первая — фигура в самом начале ряда.",
+        "en": "First is the shape at the very start of the row."
+      },
+      "explanation": {
+        "uz": "Birinchi boʻlib olma turardi — qatorning boshida, oldinda.",
+        "ru": "Первым стояло яблоко — в начале ряда, раньше всех.",
+        "en": "The apple was first — at the start of the row, before the others."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorda oxirgi turgan shaklni bos!",
+        "ru": "Нажми на фигуру, которая стоит последней!",
+        "en": "Tap the shape that is last in the row!"
+      },
+      "options": [
+        { "id": "first", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "mid", "art": { "kind": "sun", "color": "orange" } },
+        { "id": "last", "art": { "kind": "kite", "color": "magenta" } }
+      ],
+      "answer": ["last"],
+      "hint": {
+        "uz": "Oxirgi — qatorning eng oxiridagi shakl.",
+        "ru": "Последняя — фигура в самом конце ряда.",
+        "en": "Last is the shape at the very end of the row."
+      },
+      "explanation": {
+        "uz": "Oxirgi boʻlib varrak turardi — qatorning oxirida, hammadan keyin.",
+        "ru": "Последним стоял змей — в конце ряда, после всех.",
+        "en": "The kite was last — at the end of the row, after the others."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?",
+        "ru": "Продолжи ряд: какая фигура будет следующей?",
+        "en": "Continue the row: which shape comes next?"
+      },
+      "sequence": [
+        { "kind": "triangle", "color": "green" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "green" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "green" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "sq", "art": { "kind": "square", "color": "orange" } }
+      ],
+      "answer": ["ci"],
+      "hint": {
+        "uz": "Uchburchak, doira, uchburchak, doira… ular navbat bilan keladi!",
+        "ru": "Треугольник, круг, треугольник, круг… они идут по очереди!",
+        "en": "Triangle, circle, triangle, circle… they take turns!"
+      },
+      "explanation": {
+        "uz": "Uchburchakdan keyin doim doira keladi. Keyingisi — doira.",
+        "ru": "После треугольника всегда идёт круг. Следующий — круг.",
+        "en": "After a triangle there is always a circle. The next one is a circle."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma quyoshchalarni belgila, soʻng «Tekshirish»ni bos!",
+        "ru": "Отметь все солнышки и нажми «Проверить»!",
+        "en": "Tap all the suns, then press “Check”!"
+      },
+      "options": [
+        { "id": "su1", "art": { "kind": "sun", "color": "yellow" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "su2", "art": { "kind": "sun", "color": "orange" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "su3", "art": { "kind": "sun", "color": "yellow" } }
+      ],
+      "answer": ["su1", "su2", "su3"],
+      "hint": {
+        "uz": "Faqat quyoshchalarni belgila. Yulduz va doirani qoldir.",
+        "ru": "Отмечай только солнышки. Звезду и круг не трогай.",
+        "en": "Tap only the suns. Leave the star and the circle."
+      },
+      "explanation": {
+        "uz": "Uchta quyoshcha bor edi. Yulduz va doira quyosh emas.",
+        "ru": "Было три солнышка. Звезда и круг — не солнце.",
+        "en": "There were three suns. The star and the circle are not suns."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": {
+        "uz": "Baliqlarni tartibla: birinchi eng kichik, oxiri eng katta!",
+        "ru": "Расставь рыбок: первая самая маленькая, последняя самая большая!",
+        "en": "Order the fish: first the smallest, last the biggest!"
+      },
+      "items": [
+        { "id": "mid", "art": { "kind": "fish", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "fish", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "fish", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "fish", "color": "gray", "scale": 0.5 }, "label": { "uz": "birinchi", "ru": "первая", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "fish", "color": "gray", "scale": 0.85 }, "label": { "uz": "ikkinchi", "ru": "вторая", "en": "second" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "fish", "color": "gray", "scale": 1.25 }, "label": { "uz": "uchinchi", "ru": "третья", "en": "third" } }
+      ],
+      "hint": {
+        "uz": "Eng kichik baliq — birinchi, eng katta — oxirgi.",
+        "ru": "Самая маленькая рыбка — первая, самая большая — последняя.",
+        "en": "The smallest fish is first, the biggest one is last."
+      },
+      "explanation": {
+        "uz": "Tartib: birinchi, ikkinchi, uchinchi. Baliqlarni ketma-ket tartibladik.",
+        "ru": "Порядок: первая, вторая, третья. Мы расставили рыбок по очереди.",
+        "en": "Order: first, second, third. We arranged the fish one after another."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": {
+        "uz": "Har bir shaklni xuddi oʻshanga oʻxshaganiga ula!",
+        "ru": "Соедини каждую фигуру с такой же!",
+        "en": "Connect each shape to the one that is the same!"
+      },
+      "left": [
+        { "id": "su", "art": { "kind": "sun", "color": "yellow" }, "match": "m-su" },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" }, "match": "m-st" },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" }, "match": "m-ci" },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" }, "match": "m-tr" }
+      ],
+      "right": [
+        { "id": "m-ci", "art": { "kind": "circle", "color": "gray" } },
+        { "id": "m-su", "art": { "kind": "sun", "color": "gray" } },
+        { "id": "m-tr", "art": { "kind": "triangle", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } }
+      ],
+      "hint": {
+        "uz": "Avval rangli shaklni bos, keyin xuddi oʻshanday shaklni bos.",
+        "ru": "Сначала нажми на цветную фигуру, потом на такую же.",
+        "en": "First tap a colored shape, then tap the same shape."
+      },
+      "explanation": {
+        "uz": "Har bir shaklni oʻziga oʻxshaganiga uladik: quyosh — quyoshga, yulduz — yulduzga.",
+        "ru": "Мы соединили каждую фигуру с такой же: солнце с солнцем, звезду со звездой.",
+        "en": "We matched each shape to the same one: sun to sun, star to star."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Boshqalardan farq qiladigan shaklni bos!",
+        "ru": "Нажми на фигуру, которая отличается!",
+        "en": "Tap the shape that is different!"
+      },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "orange" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "su", "art": { "kind": "sun", "color": "orange" } }
+      ],
+      "answer": ["su"],
+      "hint": {
+        "uz": "Ikkitasi bir xil. Bittasi shakli bilan farq qiladi.",
+        "ru": "Две одинаковые. Одна отличается формой.",
+        "en": "Two are the same. One differs by shape."
+      },
+      "explanation": {
+        "uz": "Ikki yulduz bir xil edi, quyoshcha esa shakli bilan farq qildi.",
+        "ru": "Две звезды были одинаковыми, а солнышко отличалось формой.",
+        "en": "Two stars were the same, but the little sun differed by shape."
+      }
+    }
+  ]
+}

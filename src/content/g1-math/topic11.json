@@ -1,0 +1,113 @@
+{
+  "topicId": "g1-math-11",
+  "subjectKey": "g1-math",
+  "emojis": "➕🍎🟰",
+  "title": {
+    "uz": "Sonlarni qoʻshamiz",
+    "ru": "Складываем числа",
+    "en": "Adding numbers"
+  },
+  "recall": {
+    "uz": "Qoʻshamiz. Ikki guruhni birlashtiramiz. Hammasini sanasak, yigʻindi chiqadi. Qizlar va oʻgʻil bolalar birga bolalar boʻladi. Qoʻshganda son kattalashadi.",
+    "ru": "Складываем: соединяем две группы вместе. Сосчитаем всё — получим сумму. Девочки и мальчики вместе — это дети. При сложении число становится больше.",
+    "en": "We add: we join two groups together. Count them all and we get the sum. Girls and boys together make children. When we add, the number grows bigger."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition" },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr!", "ru": "Сложи на числовой прямой!", "en": "Add on the number line!" },
+      "hint": { "uz": "Birinchi songa yet, soʻng kerakli qadar oldinga sakra.", "ru": "Встань на первое число, потом прыгай вперёд нужное число шагов.", "en": "Land on the first number, then hop forward that many steps." },
+      "explanation": { "uz": "Oldinga sakraganimizda son ortdi. Bu — qoʻshish.", "ru": "Когда мы прыгали вперёд, число росло. Это сложение.", "en": "Hopping forward made the number grow. That is addition." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["5", "4", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 2 + 3 = ?", "ru": "Найди сумму: 2 + 3 = ?", "en": "Find the sum: 2 + 3 = ?" },
+      "hint": { "uz": "Ikkitaga yana uchta qoʻsh: ikki, uch, toʻrt, besh.", "ru": "К двум прибавь три: два, три, четыре, пять.", "en": "Add three to two: two, three, four, five." },
+      "explanation": { "uz": "Ikki qoʻshish uch — besh. Ikki guruhni birlashtirdik.", "ru": "Два плюс три — пять. Мы объединили две группы.", "en": "Two plus three is five. We joined two groups." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["7", "6", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 3 + 4 = ?", "ru": "Найди сумму: 3 + 4 = ?", "en": "Find the sum: 3 + 4 = ?" },
+      "hint": { "uz": "Uchtaga toʻrtta qoʻsh va sanab chiq.", "ru": "К трём прибавь четыре и сосчитай.", "en": "Add four to three and count up." },
+      "explanation": { "uz": "Uch qoʻshish toʻrt — yetti. Yigʻindi kattaroq son boʻldi.", "ru": "Три плюс четыре — семь. Сумма получилась больше.", "en": "Three plus four is seven. The sum is a bigger number." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition" },
+      "prompt": { "uz": "Sonlar chizigʻida yana qoʻshib koʻr!", "ru": "Снова сложи на числовой прямой!", "en": "Add again on the number line!" },
+      "hint": { "uz": "Boshlangʻich songa yet, soʻng oldinga sakra.", "ru": "Встань на начальное число, потом прыгай вперёд.", "en": "Land on the start number, then hop forward." },
+      "explanation": { "uz": "Oldinga sakrash — qoʻshish. Tushgan joyimiz yigʻindi.", "ru": "Прыжки вперёд — это сложение. Где остановились — сумма.", "en": "Hopping forward is adding. Where we land is the sum." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["6", "5", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 1 + 5 = ?", "ru": "Найди сумму: 1 + 5 = ?", "en": "Find the sum: 1 + 5 = ?" },
+      "hint": { "uz": "Bittaga beshta qoʻsh.", "ru": "К одному прибавь пять.", "en": "Add five to one." },
+      "explanation": { "uz": "Bir qoʻshish besh — olti. Tartibni almashtirsa ham yigʻindi bir xil.", "ru": "Один плюс пять — шесть. От перестановки сумма не меняется.", "en": "One plus five is six. Swapping the order keeps the sum the same." }
+    },
+    {
+      "id": "q6",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Ikkala guruhdagi hamma koptoklarni sanab belgila!", "ru": "Сосчитай и отметь все мячи в обеих группах!", "en": "Count and tap all the balls in both groups!" },
+      "options": [
+        { "id": "b1", "art": { "kind": "ball", "color": "red" } },
+        { "id": "b2", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "b3", "art": { "kind": "ball", "color": "green" } },
+        { "id": "b4", "art": { "kind": "ball", "color": "orange" } }
+      ],
+      "answer": ["b1", "b2", "b3", "b4"],
+      "hint": { "uz": "Ikki guruhni birga sana: bir, ikki, uch, toʻrt.", "ru": "Считай обе группы вместе: один, два, три, четыре.", "en": "Count both groups together: one, two, three, four." },
+      "explanation": { "uz": "Ikki guruhni qoʻshganda jami toʻrt koptok boʻldi.", "ru": "Сложив две группы, получили всего четыре мяча.", "en": "Joining the two groups gave four balls in total." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "race_to_answer", "props": { "steps": 4, "maxSum": 6 } },
+      "prompt": { "uz": "Qoʻshish poygasi: toʻgʻri yigʻindini tanlab, oldinga yur!", "ru": "Гонка сложения: выбирай верную сумму и двигайся вперёд!", "en": "Addition race: pick the right sum and move forward!" },
+      "hint": { "uz": "Har qadamda yigʻindini sanab, toʻgʻri sonni tanla.", "ru": "На каждом шаге считай сумму и выбирай верное число.", "en": "Add up at each step and choose the right number." },
+      "explanation": { "uz": "Toʻgʻri qoʻshganimizda oldinga yurdik. Qoʻshishni mashq qildik!", "ru": "При верном сложении мы шли вперёд. Мы потренировали сложение!", "en": "Correct sums moved us forward. We practiced adding!" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["4", "3", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 2 + 2 = ?", "ru": "Найди сумму: 2 + 2 = ?", "en": "Find the sum: 2 + 2 = ?" },
+      "hint": { "uz": "Ikkitaga yana ikkita qoʻsh.", "ru": "К двум прибавь ещё два.", "en": "Add two more to two." },
+      "explanation": { "uz": "Ikki qoʻshish ikki — toʻrt. Bir xil sonlarni qoʻshdik.", "ru": "Два плюс два — четыре. Мы сложили одинаковые числа.", "en": "Two plus two is four. We added equal numbers." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 4, "y": 4 } },
+      "prompt": { "uz": "Tarozini koʻr: ikki guruh tengmi?", "ru": "Посмотри на весы: две группы равны?", "en": "Look at the scale: are the two groups equal?" },
+      "hint": { "uz": "Ikkala tomonni sana. Bir xil boʻlsa, qoʻshish toʻgʻri.", "ru": "Сосчитай обе стороны. Если одинаково, сложение верное.", "en": "Count both sides. If they match, the addition is right." },
+      "explanation": { "uz": "Ikki tomonda bir xil son chiqdi — guruhlar teng. Tarozi tekis.", "ru": "На обеих сторонах вышло одинаковое число — группы равны. Весы ровные.", "en": "Both sides came out the same — the groups are equal. The scale is level." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["6", "5", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 4 + 2 = ?", "ru": "Найди сумму: 4 + 2 = ?", "en": "Find the sum: 4 + 2 = ?" },
+      "hint": { "uz": "Toʻrttaga ikkita qoʻsh: toʻrt, besh, olti.", "ru": "К четырём прибавь два: четыре, пять, шесть.", "en": "Add two to four: four, five, six." },
+      "explanation": { "uz": "Toʻrt qoʻshish ikki — olti. Qoʻshganda son kattalashdi.", "ru": "Четыре плюс два — шесть. При сложении число выросло.", "en": "Four plus two is six. Adding made the number grow." }
+    }
+  ]
+}

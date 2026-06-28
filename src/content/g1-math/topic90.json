@@ -1,0 +1,362 @@
+{
+  "topicId": "g1-math-90",
+  "subjectKey": "g1-math",
+  "emojis": "⚖️🔢✨",
+  "title": {
+    "uz": "Taqqoslashga doir masalalar",
+    "ru": "Задачи на сравнение",
+    "en": "Comparison problems"
+  },
+  "recall": {
+    "uz": "Taqqoslashda qaysi son katta ekanini topamiz va ular qancha farq qilishini ayirish bilan aniqlaymiz. Masalan, 10 ta mashina va 7 ta tank — mashina 10 - 7 = 3 ta koʻp.",
+    "ru": "При сравнении находим, какое число больше, и насколько — с помощью вычитания. Например, 10 машин и 7 танков — машин на 10 - 7 = 3 больше.",
+    "en": "When comparing we find which is bigger and by how much, using subtraction. For example 10 vehicles and 7 tanks — vehicles are 10 - 7 = 3 more."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/compare-diff.gif",
+        "alt": {
+          "uz": "Qancha koʻp? Farqni topamiz",
+          "ru": "Насколько больше? Находим разность",
+          "en": "How many more? We find the difference"
+        },
+        "maxWidth": 230
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Namoyishda 7 ta tank va 10 ta harbiy mashina. Mashina qancha koʻp?",
+        "ru": "На параде 7 танков и 10 машин. Насколько машин больше?",
+        "en": "A parade had 7 tanks and 10 vehicles. How many more vehicles?"
+      },
+      "hint": {
+        "uz": "10 dan 7 ni ayir.",
+        "ru": "Вычти из 10 число 7.",
+        "en": "Take 7 from 10."
+      },
+      "explanation": {
+        "uz": "10 - 7 = 3.",
+        "ru": "10 - 7 = 3.",
+        "en": "10 - 7 = 3."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 7,
+          "y": 10
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 7 va 10 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 7 и 10 — какой знак верный?",
+        "en": "Look at the scale: 7 and 10 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "7 < 10.",
+        "ru": "7 < 10.",
+        "en": "7 < 10."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 45,
+          "y": 38
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 45 va 38 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 45 и 38 — какой знак верный?",
+        "en": "Look at the scale: 45 and 38 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "45 > 38.",
+        "ru": "45 > 38.",
+        "en": "45 > 38."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 2
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 63 ... 63",
+        "ru": "Выбери знак: 63 ... 63",
+        "en": "Choose the sign: 63 ... 63"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means bigger."
+      },
+      "explanation": {
+        "uz": "63 = 63.",
+        "ru": "63 = 63.",
+        "en": "63 = 63."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 3,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 10 - 7 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 10 - 7 = ?",
+        "en": "Work it out and build the answer with blocks: 10 - 7 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "10 - 7 = 3.",
+        "ru": "10 - 7 = 3.",
+        "en": "10 - 7 = 3."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "10 - 7",
+              "right": "3"
+            },
+            {
+              "left": "8 + 8",
+              "right": "16"
+            },
+            {
+              "left": "50 - 20",
+              "right": "30"
+            },
+            {
+              "left": "33 + 12",
+              "right": "45"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta uchburchakni bos!",
+        "ru": "Нажми на самый большой треугольник!",
+        "en": "Tap the biggest triangle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green",
+            "scale": 0.7
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "orange",
+            "scale": 1.3
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "blue",
+            "scale": 0.95
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Eng koʻp joy egallaganini tanla.",
+        "ru": "Выбери занимающий больше места.",
+        "en": "Pick the one taking the most space."
+      },
+      "explanation": {
+        "uz": "Eng katta uchburchakni topdik.",
+        "ru": "Нашли самый большой треугольник.",
+        "en": "We found the biggest triangle."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 56,
+          "y": 65
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 56 va 65 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 56 и 65 — какой знак верный?",
+        "en": "Look at the scale: 56 and 65 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "56 < 65.",
+        "ru": "56 < 65.",
+        "en": "56 < 65."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "82",
+            "79",
+            "27"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son eng katta?",
+        "ru": "Какое число наибольшее?",
+        "en": "Which number is the biggest?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni taqqosla.",
+        "ru": "Сравни десятки.",
+        "en": "Compare the tens."
+      },
+      "explanation": {
+        "uz": "82 > 79 > 27.",
+        "ru": "82 > 79 > 27.",
+        "en": "82 > 79 > 27."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "20 - 5",
+              "right": "15"
+            },
+            {
+              "left": "40 + 9",
+              "right": "49"
+            },
+            {
+              "left": "70 - 30",
+              "right": "40"
+            },
+            {
+              "left": "12 + 12",
+              "right": "24"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    }
+  ]
+}

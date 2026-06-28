@@ -1,0 +1,105 @@
+{
+  "topicId": "g1-math-29",
+  "subjectKey": "g1-math",
+  "emojis": "🔢👫🧦",
+  "title": { "uz": "Juft va toq sonlar", "ru": "Чётные и нечётные числа", "en": "Even and odd numbers" },
+  "recall": {
+    "uz": "Juft va toq sonlarni oʻrganamiz. Ikki, toʻrt, olti, sakkiz, oʻn — juft sonlar. Bir, uch, besh, yetti, toʻqqiz — toq sonlar. Juft sonlar juftlanadi, toq sonlar juftsiz qoladi.",
+    "ru": "Учим чётные и нечётные числа. Два, четыре, шесть, восемь, десять — чётные. Один, три, пять, семь, девять — нечётные. Чётные делятся на пары, нечётные остаются без пары.",
+    "en": "We learn even and odd numbers. Two, four, six, eight, ten are even. One, three, five, seven, nine are odd. Even numbers split into pairs, odd numbers have one left over."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["4", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son juft: 3 yoki 4?", "ru": "Какое число чётное: 3 или 4?", "en": "Which number is even: 3 or 4?" },
+      "hint": { "uz": "Juft son juftlarga boʻlinadi, juftsiz qolmaydi.", "ru": "Чётное делится на пары без остатка.", "en": "An even number splits into pairs with none left over." },
+      "explanation": { "uz": "Toʻrt — juft son: ikki juftga boʻlinadi.", "ru": "Четыре — чётное: делится на две пары.", "en": "Four is even: it makes two pairs." } },
+    { "id": "q2", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["5", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son toq: 5 yoki 6?", "ru": "Какое число нечётное: 5 или 6?", "en": "Which number is odd: 5 or 6?" },
+      "hint": { "uz": "Toq sonni juftlasak, bittasi juftsiz qoladi.", "ru": "У нечётного числа один остаётся без пары.", "en": "An odd number has one left without a pair." },
+      "explanation": { "uz": "Besh — toq son: juftlaganda bittasi ortib qoladi.", "ru": "Пять — нечётное: при разбивке на пары один лишний.", "en": "Five is odd: pairing leaves one over." } },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["8", "7", "9"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son juft: 7, 8, 9?", "ru": "Какое число чётное: 7, 8, 9?", "en": "Which number is even: 7, 8, 9?" },
+      "hint": { "uz": "Juft sonlar: ikki, toʻrt, olti, sakkiz, oʻn.", "ru": "Чётные: два, четыре, шесть, восемь, десять.", "en": "Even: two, four, six, eight, ten." },
+      "explanation": { "uz": "Sakkiz — juft son. Yetti va toʻqqiz toq.", "ru": "Восемь — чётное. Семь и девять нечётные.", "en": "Eight is even. Seven and nine are odd." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["3", "2", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son toq: 2, 3, 4?", "ru": "Какое число нечётное: 2, 3, 4?", "en": "Which number is odd: 2, 3, 4?" },
+      "hint": { "uz": "Toq sonlar: bir, uch, besh, yetti, toʻqqiz.", "ru": "Нечётные: один, три, пять, семь, девять.", "en": "Odd: one, three, five, seven, nine." },
+      "explanation": { "uz": "Uch — toq son. Ikki va toʻrt juft.", "ru": "Три — нечётное. Два и четыре чётные.", "en": "Three is odd. Two and four are even." } },
+    {
+      "id": "q5",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir narsani juftiga ula!", "ru": "Соедини каждый предмет с его парой!", "en": "Connect each thing to its pair!" },
+      "left": [
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" }, "match": "m-st" },
+        { "id": "fi", "art": { "kind": "fish", "color": "blue" }, "match": "m-fi" }
+      ],
+      "right": [
+        { "id": "m-fi", "art": { "kind": "fish", "color": "gray" } },
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } }
+      ],
+      "hint": { "uz": "Har bir narsaga bitta juft top.", "ru": "Найди каждому предмету пару.", "en": "Find a pair for each thing." },
+      "explanation": { "uz": "Hammasiga juft yetdi — juftlash juft sonni bildiradi.", "ru": "Всем нашлась пара — это про чётность.", "en": "Everyone got a pair — that is what even means." }
+    },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 6, "y": 4 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Olti toʻrtdan katta. Ikkalasi ham juft son.", "ru": "Шесть больше четырёх. Оба чётные.", "en": "Six is bigger than four. Both are even." } },
+    {
+      "id": "q7",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "star", "color": "magenta" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "star", "color": "magenta" }
+      ],
+      "options": [
+        { "id": "ba", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "green" } }
+      ],
+      "answer": ["ba"],
+      "hint": { "uz": "Yulduz, koptok, yulduz, koptok… navbat bilan keladi!", "ru": "Звезда, мяч, звезда, мяч… по очереди!", "en": "Star, ball, star, ball… they take turns!" },
+      "explanation": { "uz": "Yulduzdan keyin doim koptok keladi. Keyingisi — koptok.", "ru": "После звезды всегда идёт мяч. Следующий — мяч.", "en": "After a star there is always a ball. The next one is a ball." }
+    },
+    {
+      "id": "q8",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma katta koptoklarni belgila!", "ru": "Отметь все большие мячи!", "en": "Tap all the big balls!" },
+      "options": [
+        { "id": "b1", "art": { "kind": "ball", "color": "red", "scale": 1.2 } },
+        { "id": "s1", "art": { "kind": "ball", "color": "blue", "scale": 0.55 } },
+        { "id": "b2", "art": { "kind": "ball", "color": "green", "scale": 1.2 } },
+        { "id": "s2", "art": { "kind": "ball", "color": "orange", "scale": 0.55 } }
+      ],
+      "answer": ["b1", "b2"],
+      "hint": { "uz": "Avval kattalarini ajrat, keyin sana.", "ru": "Сначала найди большие, потом сосчитай.", "en": "First find the big ones, then count." },
+      "explanation": { "uz": "Ikkita katta koptok bor edi — juft son.", "ru": "Было два больших мяча — чётное число.", "en": "There were two big balls — an even number." }
+    },
+    {
+      "id": "q9",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladiganini bos!", "ru": "Нажми на ту, что отличается!", "en": "Tap the one that is different!" },
+      "options": [
+        { "id": "c1", "art": { "kind": "ball", "color": "green" } },
+        { "id": "c2", "art": { "kind": "ball", "color": "green" } },
+        { "id": "df", "art": { "kind": "ball", "color": "red" } }
+      ],
+      "answer": ["df"],
+      "hint": { "uz": "Ikkitasi yashil. Bittasi rangi bilan farqli.", "ru": "Два зелёных. Один отличается цветом.", "en": "Two are green. One differs by color." },
+      "explanation": { "uz": "Qizil koptok rangi bilan farq qildi.", "ru": "Красный мяч отличался цветом.", "en": "The red ball differed by color." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["10", "9"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son juft: 9 yoki 10?", "ru": "Какое число чётное: 9 или 10?", "en": "Which number is even: 9 or 10?" },
+      "hint": { "uz": "Juft son juftsiz qolmaydi.", "ru": "У чётного нет лишнего без пары.", "en": "An even number has none left over." },
+      "explanation": { "uz": "Oʻn — juft son. Toʻqqiz — toq son.", "ru": "Десять — чётное. Девять — нечётное.", "en": "Ten is even. Nine is odd." } }
+  ]
+}

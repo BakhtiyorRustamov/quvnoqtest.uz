@@ -1,0 +1,304 @@
+{
+  "topicId": "g1-math-61",
+  "subjectKey": "g1-math",
+  "emojis": "🧮🔢✨",
+  "title": {
+    "uz": "21–100: oʻnlik va birliklar",
+    "ru": "21–100: десятки и единицы",
+    "en": "21–100: tens and ones"
+  },
+  "recall": {
+    "uz": "Ikki xonali sonni oʻnlik va birliklarga ajratamiz. Choʻt va bloklar bunda yordam beradi. Masalan, 63 — bu 6 oʻnlik va 3 birlik. Oʻnliklar va birliklar sonini bilsak, har qanday sonni yasaymiz!",
+    "ru": "Раскладываем двузначное число на десятки и единицы. В этом помогают счёты и блоки. Например, 63 — это 6 десятков и 3 единицы. Зная десятки и единицы, соберём любое число!",
+    "en": "We split a two-digit number into tens and ones. An abacus and blocks help. For example 63 is 6 tens and 3 ones. Knowing the tens and ones, we can build any number!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "63",
+            "36",
+            "60"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Aziz ikki xonali son oʻyladi: oʻnliklar 6 ta, birliklar undan 3 ta kam. Qaysi son?",
+        "ru": "Азиз задумал двузначное число: десятков 6, а единиц на 3 меньше. Какое число?",
+        "en": "Aziz thought of a two-digit number: 6 tens, and 3 fewer ones. Which number?"
+      },
+      "hint": {
+        "uz": "Birliklar = 6 - 3 = 3.",
+        "ru": "Единицы = 6 - 3 = 3.",
+        "en": "Ones = 6 - 3 = 3."
+      },
+      "explanation": {
+        "uz": "6 oʻnlik va 3 birlik = 63.",
+        "ru": "6 десятков и 3 единицы = 63.",
+        "en": "6 tens and 3 ones = 63."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 63
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 63 sonini yasa!",
+        "ru": "Собери число 63 из блоков!",
+        "en": "Build the number 63 from blocks!"
+      },
+      "hint": {
+        "uz": "6 ta oʻnlik (+10) va 3 ta birlik (+1).",
+        "ru": "6 десятков (+10) и 3 единиц (+1).",
+        "en": "6 tens (+10) and 3 ones (+1)."
+      },
+      "explanation": {
+        "uz": "63 = 60 + 3: 6 oʻnlik va 3 birlik.",
+        "ru": "63 = 60 + 3: 6 десятков и 3 единиц.",
+        "en": "63 = 60 + 3: 6 tens and 3 ones."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "23",
+            "24",
+            "26"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sonning raqamlari yigʻindisi 5 ga teng. Qaysi son shunday?",
+        "ru": "Сумма цифр числа равна 5. Какое это число?",
+        "en": "The digits of the number add up to 5. Which number is it?"
+      },
+      "hint": {
+        "uz": "Raqamlarni qoʻsh: masalan, 2 + 3.",
+        "ru": "Сложи цифры: например, 2 + 3.",
+        "en": "Add the digits: for example 2 + 3."
+      },
+      "explanation": {
+        "uz": "2 + 3 = 5, demak 23.",
+        "ru": "2 + 3 = 5, значит 23.",
+        "en": "2 + 3 = 5, so 23."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 60,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 20 + 40 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 20 + 40 = ?",
+        "en": "Work it out and build the answer with blocks: 20 + 40 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "20 + 40 = 60.",
+        "ru": "20 + 40 = 60.",
+        "en": "20 + 40 = 60."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 35,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 30 + 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 30 + 5 = ?",
+        "en": "Work it out and build the answer with blocks: 30 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "30 + 5 = 35.",
+        "ru": "30 + 5 = 35.",
+        "en": "30 + 5 = 35."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "19",
+            "18",
+            "20"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 12 + 7 = ?",
+        "ru": "Вычисли: 12 + 7 = ?",
+        "en": "Work it out: 12 + 7 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Складывай десятки с десятками, единицы с единицами.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "12 + 7 = 19.",
+        "ru": "12 + 7 = 19.",
+        "en": "12 + 7 = 19."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "58",
+            "48",
+            "50"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "50 + 8 = ?",
+        "ru": "50 + 8 = ?",
+        "en": "50 + 8 = ?"
+      },
+      "hint": {
+        "uz": "8 ta birlikni qoʻsh.",
+        "ru": "Прибавь 8 единиц.",
+        "en": "Add 8 ones."
+      },
+      "explanation": {
+        "uz": "50 + 8 = 58.",
+        "ru": "50 + 8 = 58.",
+        "en": "50 + 8 = 58."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 71
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 71 sonini yasa!",
+        "ru": "Собери число 71 из блоков!",
+        "en": "Build the number 71 from blocks!"
+      },
+      "hint": {
+        "uz": "7 ta oʻnlik (+10) va 1 ta birlik (+1).",
+        "ru": "7 десятков (+10) и 1 единиц (+1).",
+        "en": "7 tens (+10) and 1 ones (+1)."
+      },
+      "explanation": {
+        "uz": "71 = 70 + 1: 7 oʻnlik va 1 birlik.",
+        "ru": "71 = 70 + 1: 7 десятков и 1 единиц.",
+        "en": "71 = 70 + 1: 7 tens and 1 ones."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "40",
+            "30",
+            "14"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Har dastada 10 ta likopcha bor. Tokchada 4 ta dasta bor. Nechta likopcha?",
+        "ru": "В каждой стопке 10 тарелок. На полке 4 стопки. Сколько тарелок?",
+        "en": "Each stack has 10 plates. A shelf has 4 stacks. How many plates?"
+      },
+      "hint": {
+        "uz": "4 ta oʻnlik — bu nechа?",
+        "ru": "4 десятка — это сколько?",
+        "en": "4 tens — how many?"
+      },
+      "explanation": {
+        "uz": "4 oʻnlik = 40 ta likopcha.",
+        "ru": "4 десятка = 40 тарелок.",
+        "en": "4 tens = 40 plates."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 48
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 48 sonini yasa!",
+        "ru": "Собери число 48 из блоков!",
+        "en": "Build the number 48 from blocks!"
+      },
+      "hint": {
+        "uz": "4 ta oʻnlik (+10) va 8 ta birlik (+1).",
+        "ru": "4 десятков (+10) и 8 единиц (+1).",
+        "en": "4 tens (+10) and 8 ones (+1)."
+      },
+      "explanation": {
+        "uz": "48 = 40 + 8: 4 oʻnlik va 8 birlik.",
+        "ru": "48 = 40 + 8: 4 десятков и 8 единиц.",
+        "en": "48 = 40 + 8: 4 tens and 8 ones."
+      }
+    }
+  ]
+}

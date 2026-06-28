@@ -1,0 +1,335 @@
+{
+  "topicId": "g1-math-85",
+  "subjectKey": "g1-math",
+  "emojis": "🏆➕➖",
+  "title": {
+    "uz": "Masalalarni yechamiz — takrorlash",
+    "ru": "Решаем задачи — повторение",
+    "en": "Solving problems — review"
+  },
+  "recall": {
+    "uz": "Hamma bilimni ishlatamiz: shartni oʻqiymiz, savolni topamiz, ifoda tuzamiz, hisoblaymiz va javobini yozamiz. Butunni topish uchun qoʻshamiz, qismni topish uchun ayiramiz!",
+    "ru": "Используем все знания: читаем условие, находим вопрос, составляем выражение, вычисляем и пишем ответ. Целое находим сложением, часть — вычитанием!",
+    "en": "We use everything we learned: read the condition, find the question, write an expression, compute and write the answer. Add to find a whole, subtract to find a part!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "10",
+            "9",
+            "11"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Joʻnatma 5 kun samolyotda va 5 kun poyezdda keldi. Necha kunda kelgan?",
+        "ru": "Посылку везли 5 дней самолётом и 5 дней поездом. За сколько дней?",
+        "en": "A parcel travelled 5 days by plane and 5 by train. In how many days?"
+      },
+      "hint": {
+        "uz": "5 ga 5 ni qoʻsh.",
+        "ru": "Прибавь к 5 число 5.",
+        "en": "Add 5 to 5."
+      },
+      "explanation": {
+        "uz": "5 + 5 = 10.",
+        "ru": "5 + 5 = 10.",
+        "en": "5 + 5 = 10."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "46",
+            "45",
+            "47"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Pochtachi 78 xonadondan 32 tasiga xat yetkazdi. Yana nechta qoldi?",
+        "ru": "Почтальон доставил письма в 32 из 78 квартир. Сколько осталось?",
+        "en": "A postman delivered to 32 of 78 homes. How many are left?"
+      },
+      "hint": {
+        "uz": "78 dan 32 ni ayir.",
+        "ru": "Вычти из 78 число 32.",
+        "en": "Take 32 from 78."
+      },
+      "explanation": {
+        "uz": "78 - 32 = 46.",
+        "ru": "78 - 32 = 46.",
+        "en": "78 - 32 = 46."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 46,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 78 - 32 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 78 - 32 = ?",
+        "en": "Work it out and build the answer with blocks: 78 - 32 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "78 - 32 = 46.",
+        "ru": "78 - 32 = 46.",
+        "en": "78 - 32 = 46."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "5 + 5",
+              "right": "10"
+            },
+            {
+              "left": "78 - 32",
+              "right": "46"
+            },
+            {
+              "left": "23 + 40",
+              "right": "63"
+            },
+            {
+              "left": "90 - 25",
+              "right": "65"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 63,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 23 + 40 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 23 + 40 = ?",
+        "en": "Work it out and build the answer with blocks: 23 + 40 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "23 + 40 = 63.",
+        "ru": "23 + 40 = 63.",
+        "en": "23 + 40 = 63."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 46,
+          "y": 63
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 46 va 63 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 46 и 63 — какой знак верный?",
+        "en": "Look at the scale: 46 and 63 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "46 < 63.",
+        "ru": "46 < 63.",
+        "en": "46 < 63."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "56",
+            "55",
+            "57"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "(20 + 30) + 6 = ?",
+        "ru": "(20 + 30) + 6 = ?",
+        "en": "(20 + 30) + 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs: 20 + 30.",
+        "ru": "Сначала скобки: 20 + 30.",
+        "en": "Brackets first: 20 + 30."
+      },
+      "explanation": {
+        "uz": "(20 + 30) + 6 = 50 + 6 = 56.",
+        "ru": "(20 + 30) + 6 = 50 + 6 = 56.",
+        "en": "(20 + 30) + 6 = 50 + 6 = 56."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "12 + 12",
+              "right": "24"
+            },
+            {
+              "left": "50 - 20",
+              "right": "30"
+            },
+            {
+              "left": "44 + 33",
+              "right": "77"
+            },
+            {
+              "left": "80 - 19",
+              "right": "61"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "75",
+            "74",
+            "76"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Yoʻlda 40 m va 35 m bosib oʻtildi. Jami necha metr?",
+        "ru": "Прошли 40 м и 35 м. Сколько всего метров?",
+        "en": "40 m and 35 m were covered. How many metres in all?"
+      },
+      "hint": {
+        "uz": "40 ga 35 ni qoʻsh.",
+        "ru": "Прибавь к 40 число 35.",
+        "en": "Add 35 to 40."
+      },
+      "explanation": {
+        "uz": "40 + 35 = 75.",
+        "ru": "40 + 35 = 75.",
+        "en": "40 + 35 = 75."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 75,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 40 + 35 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 40 + 35 = ?",
+        "en": "Work it out and build the answer with blocks: 40 + 35 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "40 + 35 = 75.",
+        "ru": "40 + 35 = 75.",
+        "en": "40 + 35 = 75."
+      }
+    }
+  ]
+}

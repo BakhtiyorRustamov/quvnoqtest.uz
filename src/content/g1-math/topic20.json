@@ -1,0 +1,111 @@
+{
+  "topicId": "g1-math-20",
+  "subjectKey": "g1-math",
+  "emojis": "➕➖🔢",
+  "title": { "uz": "Beshgacha qoʻshish va ayirish", "ru": "Сложение и вычитание до пяти", "en": "Adding and subtracting to five" },
+  "recall": {
+    "uz": "Bir dan besh gacha sonlar bilan amal qilamiz. Sonlarni qoʻshamiz va ayiramiz. Sonlar chizigʻida oldinga va orqaga yuramiz. Javoblarni solishtiramiz.",
+    "ru": "Действуем с числами от одного до пяти. Складываем и вычитаем. Идём вперёд и назад по числовой прямой. Сравниваем ответы.",
+    "en": "We work with numbers one to five. We add and subtract. We move forward and back on the number line. We compare the answers."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 2, "b": 3, "maxSum": 5 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: ikki va uch!", "ru": "Сложи на числовой прямой: два и три!", "en": "Add on the number line: two and three!" },
+      "hint": { "uz": "Ikkidan boshla, uch qadam oldinga sakra.", "ru": "Встань на два, прыгни на три вперёд.", "en": "Start at two, hop three forward." },
+      "explanation": { "uz": "Ikki va uch qoʻshilib, besh boʻldi.", "ru": "Два и три дали пять.", "en": "Two and three made five." }
+    },
+    { "id": "q2", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["5", "4", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 2 + 3 = ?", "ru": "Найди сумму: 2 + 3 = ?", "en": "Find the sum: 2 + 3 = ?" },
+      "hint": { "uz": "Ikkitaga uchta qoʻsh.", "ru": "К двум прибавь три.", "en": "Add three to two." },
+      "explanation": { "uz": "Ikki qoʻshish uch — besh.", "ru": "Два плюс три — пять.", "en": "Two plus three is five." } },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["3", "2", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 5 - 2 = ?", "ru": "Найди разность: 5 - 2 = ?", "en": "Find the difference: 5 - 2 = ?" },
+      "hint": { "uz": "Beshtadan ikkitasini olib tashla.", "ru": "Убери от пяти два.", "en": "Take two away from five." },
+      "explanation": { "uz": "Besh ayirish ikki — uch qoladi.", "ru": "Пять минус два — три.", "en": "Five minus two is three." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2+1=4", "3+1=4", "5-1=4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi misol notoʻgʻri?", "ru": "Какой пример неверный?", "en": "Which equation is wrong?" },
+      "hint": { "uz": "Har bir misolni sanab tekshir.", "ru": "Проверь каждый пример счётом.", "en": "Check each equation by counting." },
+      "explanation": { "uz": "Ikki qoʻshish bir — uch, toʻrt emas. Demak, bu misol notoʻgʻri.", "ru": "Два плюс один — три, а не четыре. Значит, этот пример неверный.", "en": "Two plus one is three, not four. So that equation is wrong." } },
+    {
+      "id": "q5",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Narsalarni katta va kichik guruhlarga ajrat!", "ru": "Раздели предметы на большие и маленькие!", "en": "Sort the things into big and small!" },
+      "items": [
+        { "id": "big1", "art": { "kind": "ball", "color": "red", "scale": 1.2 }, "bin": "big" },
+        { "id": "sm1", "art": { "kind": "ball", "color": "blue", "scale": 0.55 }, "bin": "small" },
+        { "id": "big2", "art": { "kind": "star", "color": "yellow", "scale": 1.2 }, "bin": "big" },
+        { "id": "sm2", "art": { "kind": "star", "color": "magenta", "scale": 0.55 }, "bin": "small" }
+      ],
+      "bins": [
+        { "id": "big", "label": { "uz": "Katta", "ru": "Большие", "en": "Big" }, "color": "magenta" },
+        { "id": "small", "label": { "uz": "Kichik", "ru": "Маленькие", "en": "Small" }, "color": "blue" }
+      ],
+      "hint": { "uz": "Kattalarni bir guruhga, kichiklarini boshqasiga sudra.", "ru": "Большие в одну группу, маленькие в другую.", "en": "Drag the big ones to one group, the small ones to the other." },
+      "explanation": { "uz": "Narsalarni oʻlchami boʻyicha ikki guruhga ajratdik.", "ru": "Разделили предметы на две группы по размеру.", "en": "We split the things into two groups by size." }
+    },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "ball", "color": "red" },
+        { "kind": "ball", "color": "yellow" },
+        { "kind": "ball", "color": "red" },
+        { "kind": "ball", "color": "yellow" },
+        { "kind": "ball", "color": "red" }
+      ],
+      "options": [
+        { "id": "yl", "art": { "kind": "ball", "color": "yellow" } },
+        { "id": "rd", "art": { "kind": "ball", "color": "red" } },
+        { "id": "bl", "art": { "kind": "ball", "color": "blue" } }
+      ],
+      "answer": ["yl"],
+      "hint": { "uz": "Qizil, sariq, qizil, sariq… ranglar navbatlashadi!", "ru": "Красный, жёлтый, красный, жёлтый… по очереди!", "en": "Red, yellow, red, yellow… they take turns!" },
+      "explanation": { "uz": "Qizildan keyin doim sariq keladi. Keyingisi — sariq.", "ru": "После красного всегда идёт жёлтый. Следующий — жёлтый.", "en": "After red there is always yellow. The next one is yellow." }
+    },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma baliqlarni sanab belgila!", "ru": "Сосчитай и отметь всех рыбок!", "en": "Count and tap all the fish!" },
+      "options": [
+        { "id": "f1", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "f2", "art": { "kind": "fish", "color": "blue" } },
+        { "id": "f3", "art": { "kind": "fish", "color": "green" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "magenta" } }
+      ],
+      "answer": ["f1", "f2", "f3"],
+      "hint": { "uz": "Faqat baliqlarni sana.", "ru": "Считай только рыбок.", "en": "Count only the fish." },
+      "explanation": { "uz": "Uchta baliq bor edi.", "ru": "Было три рыбки.", "en": "There were three fish." }
+    },
+    { "id": "q8", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 3, "y": 5 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Besh uchdan katta.", "ru": "Пять больше трёх.", "en": "Five is bigger than three." } },
+    {
+      "id": "q9",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladigan shaklni bos!", "ru": "Нажми на фигуру, которая отличается!", "en": "Tap the shape that is different!" },
+      "options": [
+        { "id": "c1", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "df", "art": { "kind": "square", "color": "blue" } },
+        { "id": "c2", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["df"],
+      "hint": { "uz": "Ikkitasi doira. Bittasi shakli bilan farq qiladi.", "ru": "Две — круги. Одна отличается формой.", "en": "Two are circles. One differs by shape." },
+      "explanation": { "uz": "Kvadrat shakli bilan farq qildi.", "ru": "Квадрат отличался формой.", "en": "The square differed by shape." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 4 = 2 + ?", "ru": "Найди недостающее число: 4 = 2 + ?", "en": "Find the missing number: 4 = 2 + ?" },
+      "hint": { "uz": "Ikkiga nechta qoʻshsak, toʻrt boʻladi?", "ru": "Сколько добавить к двум, чтобы вышло четыре?", "en": "How much to add to two to make four?" },
+      "explanation": { "uz": "Ikki qoʻshish ikki — toʻrt. Yetishmagan son — ikki.", "ru": "Два плюс два — четыре. Недостающее число — два.", "en": "Two plus two is four. The missing number is two." } }
+  ]
+}

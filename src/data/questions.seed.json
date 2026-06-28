@@ -1,0 +1,2147 @@
+[
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 6,
+        "b": 8,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "AB kesma 6 cm, BC kesma 8 cm. Ularni ulasak, AC necha cm? Sonlar chizigʻida hisobla.",
+      "ru": "Отрезок AB = 6 см, BC = 8 см. Какова длина AC, если их соединить? Посчитай на числовой прямой.",
+      "en": "Segment AB is 6 cm, BC is 8 cm. Joined together, how long is AC? Use the number line."
+    },
+    "hint": {
+      "uz": "6 dan boshla va 8 cm oldinga sur.",
+      "ru": "Встань на 6 и продвинься на 8 см.",
+      "en": "Start at 6 and move 8 cm forward."
+    },
+    "explanation": {
+      "uz": "6 + 8 = 14 cm.",
+      "ru": "6 + 8 = 14 см.",
+      "en": "6 + 8 = 14 cm."
+    },
+    "id": "q1"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 11,
+        "y": 8
+      }
+    },
+    "prompt": {
+      "uz": "Qaysi kesma uzunroq: 11 cm yoki 8 cm? Toʻgʻri belgini tanla.",
+      "ru": "Какой отрезок длиннее: 11 см или 8 см? Выбери знак.",
+      "en": "Which segment is longer: 11 cm or 8 cm? Choose the sign."
+    },
+    "hint": {
+      "uz": "Soni katta boʻlgan kesma uzunroq.",
+      "ru": "Длиннее отрезок с большим числом.",
+      "en": "The segment with the bigger number is longer."
+    },
+    "explanation": {
+      "uz": "11 > 8.",
+      "ru": "11 > 8.",
+      "en": "11 > 8."
+    },
+    "id": "q2"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 17
+      }
+    },
+    "prompt": {
+      "uz": "Kesmaning uzunligi 17 cm. Shu uzunlikni oʻnlik va birlik bloklaridan yasa.",
+      "ru": "Длина отрезка 17 см. Собери эту длину из блоков десятков и единиц.",
+      "en": "A segment is 17 cm long. Build that length from tens and ones blocks."
+    },
+    "hint": {
+      "uz": "1 ta oʻnlik (+10) va 7 ta birlik (+1).",
+      "ru": "1 десяток (+10) и 7 единиц (+1).",
+      "en": "1 ten (+10) and 7 ones (+1)."
+    },
+    "explanation": {
+      "uz": "17 = 10 + 7 cm.",
+      "ru": "17 = 10 + 7 см.",
+      "en": "17 = 10 + 7 cm."
+    },
+    "id": "q3"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "6 + 7",
+            "right": "13"
+          },
+          {
+            "left": "15 - 4",
+            "right": "11"
+          },
+          {
+            "left": "8 + 9",
+            "right": "17"
+          },
+          {
+            "left": "19 - 5",
+            "right": "14"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir kesmalar amalini uning uzunligi (cm) bilan ulang!",
+      "ru": "Соедини каждое действие с длиной отрезка (см)!",
+      "en": "Match each segment expression with its length (cm)!"
+    },
+    "hint": {
+      "uz": "Chapdagi ifodani hisobla, tengini oʻngdan top.",
+      "ru": "Вычисли слева, найди равное справа.",
+      "en": "Work out the left side, find its equal on the right."
+    },
+    "explanation": {
+      "uz": "13, 11, 17, 14 cm.",
+      "ru": "13, 11, 17, 14 см.",
+      "en": "13, 11, 17, 14 cm."
+    },
+    "id": "q4"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 7,
+        "b": 9,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "AB kesma 7 cm edi, uni 9 cm ga uzaytirdik. Endi necha cm? Sonlar chizigʻida hisobla.",
+      "ru": "Отрезок AB был 7 см, его удлинили на 9 см. Сколько теперь? Посчитай на числовой прямой.",
+      "en": "Segment AB was 7 cm; we extended it by 9 cm. How long now? Use the number line."
+    },
+    "hint": {
+      "uz": "7 dan boshla va 9 cm oldinga sur.",
+      "ru": "Встань на 7 и продвинься на 9 см.",
+      "en": "Start at 7 and move 9 cm forward."
+    },
+    "explanation": {
+      "uz": "7 + 9 = 16 cm.",
+      "ru": "7 + 9 = 16 см.",
+      "en": "7 + 9 = 16 cm."
+    },
+    "id": "q5"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "6",
+          "12",
+          "3"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "Chizgʻichda 1 cm = 2 katak. Kesma 12 katak uzunlikda. U necha cm?",
+      "ru": "На линейке 1 см = 2 клетки. Отрезок длиной 12 клеток. Сколько это см?",
+      "en": "On the ruler 1 cm = 2 cells. A segment is 12 cells long. How many cm is it?"
+    },
+    "hint": {
+      "uz": "12 katakni 2 ga boʻl.",
+      "ru": "Раздели 12 клеток на 2.",
+      "en": "Divide 12 cells by 2."
+    },
+    "explanation": {
+      "uz": "12 katak = 6 cm.",
+      "ru": "12 клеток = 6 см.",
+      "en": "12 cells = 6 cm."
+    },
+    "componentProposal": {
+      "suggestedType": "ruler_measure",
+      "concept": "reading a length off a ruler (cells/cm), incl. 1 cm = 2 cells",
+      "interaction": "drag a ruler/marker along an object and read the centimetre value",
+      "props": "{ lengthCm, unit: 'cm'|'cell', maxCm }",
+      "why": "no current component renders a ruler or models cell<->cm reading"
+    },
+    "id": "q6"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "drag_buckets",
+      "props": {
+        "tiles": [
+          {
+            "id": "a",
+            "label": "5 + 7",
+            "bin": "v12"
+          },
+          {
+            "id": "b",
+            "label": "9 + 3",
+            "bin": "v12"
+          },
+          {
+            "id": "c",
+            "label": "8 + 4",
+            "bin": "v12"
+          },
+          {
+            "id": "d",
+            "label": "9 + 7",
+            "bin": "v16"
+          },
+          {
+            "id": "e",
+            "label": "8 + 8",
+            "bin": "v16"
+          },
+          {
+            "id": "f",
+            "label": "10 + 6",
+            "bin": "v16"
+          }
+        ],
+        "bins": [
+          {
+            "id": "v12",
+            "label": "12"
+          },
+          {
+            "id": "v16",
+            "label": "16"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Oʻlchangan kesmalarni uzunligi (cm) boʻyicha toʻgʻri qutiga sudra!",
+      "ru": "Перетащи измеренные отрезки в ящик их длины (см)!",
+      "en": "Drag each measured segment into the bucket of its length (cm)!"
+    },
+    "hint": {
+      "uz": "Avval uzunlikni hisobla, soʻng shu sonli qutiga tashla.",
+      "ru": "Сначала вычисли длину, потом перетащи в нужный ящик.",
+      "en": "Work out the length, then drag into that bucket."
+    },
+    "explanation": {
+      "uz": "12: 5+7, 9+3, 8+4. 16: 9+7, 8+8, 10+6.",
+      "ru": "12: 5+7, 9+3, 8+4. 16: 9+7, 8+8, 10+6.",
+      "en": "12: 5+7, 9+3, 8+4. 16: 9+7, 8+8, 10+6."
+    },
+    "id": "q7"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 9,
+        "y": 14
+      }
+    },
+    "prompt": {
+      "uz": "Qaysi kesma uzunroq: 9 cm yoki 14 cm? Toʻgʻri belgini tanla.",
+      "ru": "Какой отрезок длиннее: 9 см или 14 см? Выбери знак.",
+      "en": "Which segment is longer: 9 cm or 14 cm? Choose the sign."
+    },
+    "hint": {
+      "uz": "Soni katta boʻlgan kesma uzunroq.",
+      "ru": "Длиннее отрезок с большим числом.",
+      "en": "The segment with the bigger number is longer."
+    },
+    "explanation": {
+      "uz": "9 < 14.",
+      "ru": "9 < 14.",
+      "en": "9 < 14."
+    },
+    "id": "q8"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 28,
+        "hideTarget": true
+      }
+    },
+    "prompt": {
+      "uz": "Kesma 40 cm edi, 12 cm kesib olindi. Qancha qoldi? Javobni bloklardan yasa.",
+      "ru": "Отрезок был 40 см, отрезали 12 см. Сколько осталось? Собери ответ из блоков.",
+      "en": "A segment was 40 cm; 12 cm was cut off. How much is left? Build the answer."
+    },
+    "hint": {
+      "uz": "Avval 40 - 12 ni hisobla, soʻng yasa.",
+      "ru": "Сначала вычисли 40 - 12, потом собери.",
+      "en": "Work out 40 - 12 first, then build it."
+    },
+    "explanation": {
+      "uz": "40 - 12 = 28 cm.",
+      "ru": "40 - 12 = 28 см.",
+      "en": "40 - 12 = 28 cm."
+    },
+    "id": "q9"
+  },
+  {
+    "lesson": "g1-math-100",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "9",
+          "12",
+          "15"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "Kesma chizgʻichda 3-belgidan 12-belgigacha choʻzilgan. Uning uzunligi necha cm?",
+      "ru": "Отрезок на линейке тянется от метки 3 до метки 12. Какова его длина в см?",
+      "en": "A segment runs from mark 3 to mark 12 on a ruler. How long is it in cm?"
+    },
+    "hint": {
+      "uz": "Katta sondan kichigini ayir: 12 - 3.",
+      "ru": "Из большего вычти меньшее: 12 - 3.",
+      "en": "Subtract: 12 - 3."
+    },
+    "explanation": {
+      "uz": "12 - 3 = 9 cm.",
+      "ru": "12 - 3 = 9 см.",
+      "en": "12 - 3 = 9 cm."
+    },
+    "componentProposal": {
+      "suggestedType": "ruler_measure",
+      "concept": "reading a length off a ruler (cells/cm), incl. 1 cm = 2 cells",
+      "interaction": "drag a ruler/marker along an object and read the centimetre value",
+      "props": "{ lengthCm, unit: 'cm'|'cell', maxCm }",
+      "why": "no current component renders a ruler or models cell<->cm reading"
+    },
+    "id": "q10"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 40
+      }
+    },
+    "prompt": {
+      "uz": "4 dm necha cm boʻladi? Javobni bloklardan yasa (har oʻnlik = 1 dm).",
+      "ru": "Сколько см в 4 дм? Собери ответ из блоков (каждый десяток = 1 дм).",
+      "en": "How many cm are in 4 dm? Build the answer from blocks (each ten = 1 dm)."
+    },
+    "hint": {
+      "uz": "4 ta oʻnlik (dm) — har biri 10 cm.",
+      "ru": "4 десятка (дм) — по 10 см.",
+      "en": "4 tens (dm), each 10 cm."
+    },
+    "explanation": {
+      "uz": "4 dm = 40 cm.",
+      "ru": "4 дм = 40 см.",
+      "en": "4 dm = 40 cm."
+    },
+    "id": "q1"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "1 dm",
+            "right": "10 cm"
+          },
+          {
+            "left": "3 dm",
+            "right": "30 cm"
+          },
+          {
+            "left": "5 dm",
+            "right": "50 cm"
+          },
+          {
+            "left": "2 dm",
+            "right": "20 cm"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir detsimetrni unga teng santimetr bilan ulang!",
+      "ru": "Соедини каждый дециметр с равным числом сантиметров!",
+      "en": "Match each decimetre with its equal in centimetres!"
+    },
+    "hint": {
+      "uz": "1 dm = 10 cm, demak ko'paytir.",
+      "ru": "1 дм = 10 см, значит умножь.",
+      "en": "1 dm = 10 cm, so multiply."
+    },
+    "explanation": {
+      "uz": "1 dm=10, 3 dm=30, 5 dm=50, 2 dm=20 cm.",
+      "ru": "1 дм=10, 3 дм=30, 5 дм=50, 2 дм=20 см.",
+      "en": "1 dm=10, 3 dm=30, 5 dm=50, 2 dm=20 cm."
+    },
+    "id": "q2"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 10,
+        "y": 7
+      }
+    },
+    "prompt": {
+      "uz": "Qaysi uzunroq: 1 dm yoki 7 cm? (1 dm = 10 cm.) Toʻgʻri belgini tanla.",
+      "ru": "Что длиннее: 1 дм или 7 см? (1 дм = 10 см.) Выбери знак.",
+      "en": "Which is longer: 1 dm or 7 cm? (1 dm = 10 cm.) Choose the sign."
+    },
+    "hint": {
+      "uz": "1 dm ni cm ga aylantir: 10 cm.",
+      "ru": "Переведи 1 дм в см: 10 см.",
+      "en": "Convert 1 dm to cm: 10 cm."
+    },
+    "explanation": {
+      "uz": "10 > 7, demak 1 dm > 7 cm.",
+      "ru": "10 > 7, значит 1 дм > 7 см.",
+      "en": "10 > 7, so 1 dm > 7 cm."
+    },
+    "id": "q3"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 8,
+        "b": 6,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "AB kesma 8 cm, BC kesma 6 cm. AC = AB + BC necha cm? Sonlar chizigʻida hisobla.",
+      "ru": "Отрезок AB = 8 см, BC = 6 см. Сколько AC = AB + BC см? Посчитай на числовой прямой.",
+      "en": "Segment AB is 8 cm, BC is 6 cm. How long is AC = AB + BC? Use the number line."
+    },
+    "hint": {
+      "uz": "8 dan boshla va 6 cm oldinga sur.",
+      "ru": "Встань на 8 и продвинься на 6 см.",
+      "en": "Start at 8 and move 6 cm forward."
+    },
+    "explanation": {
+      "uz": "8 + 6 = 14 cm.",
+      "ru": "8 + 6 = 14 см.",
+      "en": "8 + 6 = 14 cm."
+    },
+    "id": "q4"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 60
+      }
+    },
+    "prompt": {
+      "uz": "6 dm necha cm? Javobni bloklardan yasa (har oʻnlik = 1 dm).",
+      "ru": "Сколько см в 6 дм? Собери ответ из блоков (каждый десяток = 1 дм).",
+      "en": "How many cm in 6 dm? Build the answer (each ten = 1 dm)."
+    },
+    "hint": {
+      "uz": "6 ta oʻnlik — har biri 10 cm.",
+      "ru": "6 десятков по 10 см.",
+      "en": "6 tens, each 10 cm."
+    },
+    "explanation": {
+      "uz": "6 dm = 60 cm.",
+      "ru": "6 дм = 60 см.",
+      "en": "6 dm = 60 cm."
+    },
+    "id": "q5"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "drag_buckets",
+      "props": {
+        "tiles": [
+          {
+            "id": "a",
+            "label": "6 + 4",
+            "bin": "d1"
+          },
+          {
+            "id": "b",
+            "label": "8 + 2",
+            "bin": "d1"
+          },
+          {
+            "id": "c",
+            "label": "5 + 5",
+            "bin": "d1"
+          },
+          {
+            "id": "d",
+            "label": "11 + 9",
+            "bin": "d2"
+          },
+          {
+            "id": "e",
+            "label": "13 + 7",
+            "bin": "d2"
+          },
+          {
+            "id": "f",
+            "label": "14 + 6",
+            "bin": "d2"
+          }
+        ],
+        "bins": [
+          {
+            "id": "d1",
+            "label": "1 dm"
+          },
+          {
+            "id": "d2",
+            "label": "2 dm"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Yigʻindisini hisobla va kesmani toʻgʻri detsimetr qutisiga sudra (1 dm=10 cm, 2 dm=20 cm)!",
+      "ru": "Вычисли сумму и перетащи отрезок в нужный ящик-дециметр (1 дм=10 см, 2 дм=20 см)!",
+      "en": "Add up and drag each segment into the right decimetre bucket (1 dm=10 cm, 2 dm=20 cm)!"
+    },
+    "hint": {
+      "uz": "Yigʻindi 10 — 1 dm; 20 — 2 dm.",
+      "ru": "Сумма 10 — 1 дм; 20 — 2 дм.",
+      "en": "Sum 10 -> 1 dm; 20 -> 2 dm."
+    },
+    "explanation": {
+      "uz": "1 dm: 6+4, 8+2, 5+5. 2 dm: 11+9, 13+7, 14+6.",
+      "ru": "1 дм: 6+4, 8+2, 5+5. 2 дм: 11+9, 13+7, 14+6.",
+      "en": "1 dm: 6+4, 8+2, 5+5. 2 dm: 11+9, 13+7, 14+6."
+    },
+    "id": "q6"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 20,
+        "y": 15
+      }
+    },
+    "prompt": {
+      "uz": "Qaysi uzunroq: 2 dm yoki 15 cm? (2 dm = 20 cm.) Toʻgʻri belgini tanla.",
+      "ru": "Что длиннее: 2 дм или 15 см? (2 дм = 20 см.) Выбери знак.",
+      "en": "Which is longer: 2 dm or 15 cm? (2 dm = 20 cm.) Choose the sign."
+    },
+    "hint": {
+      "uz": "2 dm = 20 cm.",
+      "ru": "2 дм = 20 см.",
+      "en": "2 dm = 20 cm."
+    },
+    "explanation": {
+      "uz": "20 > 15, demak 2 dm > 15 cm.",
+      "ru": "20 > 15, значит 2 дм > 15 см.",
+      "en": "20 > 15, so 2 dm > 15 cm."
+    },
+    "id": "q7"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 9,
+        "b": 9,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Bir xil 9 cm li ikki kesmani ulasak, umumiy uzunlik necha cm? Sonlar chizigʻida hisobla.",
+      "ru": "Соединили два одинаковых отрезка по 9 см. Какова общая длина? Посчитай на числовой прямой.",
+      "en": "Two equal 9 cm segments are joined. What is the total length? Use the number line."
+    },
+    "hint": {
+      "uz": "9 ga yana 9 ni qoʻsh.",
+      "ru": "К 9 прибавь ещё 9.",
+      "en": "Add 9 to 9."
+    },
+    "explanation": {
+      "uz": "9 + 9 = 18 cm.",
+      "ru": "9 + 9 = 18 см.",
+      "en": "9 + 9 = 18 cm."
+    },
+    "id": "q8"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "20 cm",
+            "right": "2 dm"
+          },
+          {
+            "left": "40 cm",
+            "right": "4 dm"
+          },
+          {
+            "left": "50 cm",
+            "right": "5 dm"
+          },
+          {
+            "left": "30 cm",
+            "right": "3 dm"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir santimetrni unga teng detsimetr bilan ulang!",
+      "ru": "Соедини каждое число сантиметров с равным дециметром!",
+      "en": "Match each centimetre value with its equal in decimetres!"
+    },
+    "hint": {
+      "uz": "Oxiridagi 0 ni olib tashla: 20 cm = 2 dm.",
+      "ru": "Убери ноль в конце: 20 см = 2 дм.",
+      "en": "Drop the trailing 0: 20 cm = 2 dm."
+    },
+    "explanation": {
+      "uz": "20=2, 40=4, 50=5, 30=3 dm.",
+      "ru": "20=2, 40=4, 50=5, 30=3 дм.",
+      "en": "20=2, 40=4, 50=5, 30=3 dm."
+    },
+    "id": "q9"
+  },
+  {
+    "lesson": "g1-math-101",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "80",
+          "18",
+          "8"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "8 dm necha cm boʻladi?",
+      "ru": "Сколько см в 8 дм?",
+      "en": "How many cm are in 8 dm?"
+    },
+    "hint": {
+      "uz": "Har dm 10 cm: 8 ni 10 ga ko'paytir.",
+      "ru": "Каждый дм — 10 см: умножь 8 на 10.",
+      "en": "Each dm is 10 cm: multiply 8 by 10."
+    },
+    "explanation": {
+      "uz": "8 dm = 80 cm.",
+      "ru": "8 дм = 80 см.",
+      "en": "8 dm = 80 cm."
+    },
+    "componentProposal": {
+      "suggestedType": "unit_convert",
+      "concept": "converting between dm and cm (1 dm = 10 cm)",
+      "interaction": "slide tens-rods (dm) and ones (cm) to assemble a length",
+      "props": "{ dm, cm }",
+      "why": "no current component models dm<->cm unit conversion explicitly"
+    },
+    "id": "q10"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 34
+      }
+    },
+    "prompt": {
+      "uz": "34 cm = 3 dm 4 cm. Shu uzunlikni bloklardan yasa (oʻnlik = dm, birlik = cm).",
+      "ru": "34 см = 3 дм 4 см. Собери эту длину из блоков (десяток = дм, единица = см).",
+      "en": "34 cm = 3 dm 4 cm. Build this length from blocks (ten = dm, one = cm)."
+    },
+    "hint": {
+      "uz": "3 ta oʻnlik (dm) va 4 ta birlik (cm).",
+      "ru": "3 десятка (дм) и 4 единицы (см).",
+      "en": "3 tens (dm) and 4 ones (cm)."
+    },
+    "explanation": {
+      "uz": "34 = 30 + 4 = 3 dm 4 cm.",
+      "ru": "34 = 30 + 4 = 3 дм 4 см.",
+      "en": "34 = 30 + 4 = 3 dm 4 cm."
+    },
+    "id": "q1"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "1 dm 2 cm",
+            "right": "12 cm"
+          },
+          {
+            "left": "2 dm 5 cm",
+            "right": "25 cm"
+          },
+          {
+            "left": "3 dm",
+            "right": "30 cm"
+          },
+          {
+            "left": "1 dm 8 cm",
+            "right": "18 cm"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir uzunlikni unga teng santimetr bilan ulang!",
+      "ru": "Соедини каждую длину с равным числом сантиметров!",
+      "en": "Match each length with its value in centimetres!"
+    },
+    "hint": {
+      "uz": "1 dm = 10 cm, qolganini qoʻsh.",
+      "ru": "1 дм = 10 см, прибавь остальное.",
+      "en": "1 dm = 10 cm, then add the rest."
+    },
+    "explanation": {
+      "uz": "12, 25, 30, 18 cm.",
+      "ru": "12, 25, 30, 18 см.",
+      "en": "12, 25, 30, 18 cm."
+    },
+    "id": "q2"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 18,
+        "y": 12
+      }
+    },
+    "prompt": {
+      "uz": "Qaysi uzunroq: 18 cm yoki 1 dm 2 cm? Toʻgʻri belgini tanla.",
+      "ru": "Что длиннее: 18 см или 1 дм 2 см? Выбери знак.",
+      "en": "Which is longer: 18 cm or 1 dm 2 cm? Choose the sign."
+    },
+    "hint": {
+      "uz": "1 dm 2 cm = 12 cm.",
+      "ru": "1 дм 2 см = 12 см.",
+      "en": "1 dm 2 cm = 12 cm."
+    },
+    "explanation": {
+      "uz": "18 > 12.",
+      "ru": "18 > 12.",
+      "en": "18 > 12."
+    },
+    "id": "q3"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 10,
+        "b": 6,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "1 dm va 6 cm kesmalarni ulasak, necha cm boʻladi? (1 dm = 10 cm.) Sonlar chizigʻida hisobla.",
+      "ru": "Соедини 1 дм и 6 см. Сколько см получится? (1 дм = 10 см.) Посчитай на числовой прямой.",
+      "en": "Join 1 dm and 6 cm. How many cm is that? (1 dm = 10 cm.) Use the number line."
+    },
+    "hint": {
+      "uz": "10 dan boshla va 6 cm oldinga sur.",
+      "ru": "Встань на 10 и продвинься на 6 см.",
+      "en": "Start at 10 and move 6 cm forward."
+    },
+    "explanation": {
+      "uz": "10 + 6 = 16 cm = 1 dm 6 cm.",
+      "ru": "10 + 6 = 16 см = 1 дм 6 см.",
+      "en": "10 + 6 = 16 cm = 1 dm 6 cm."
+    },
+    "id": "q4"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 57
+      }
+    },
+    "prompt": {
+      "uz": "5 dm 7 cm necha cm? Javobni bloklardan yasa.",
+      "ru": "Сколько см в 5 дм 7 см? Собери ответ из блоков.",
+      "en": "How many cm in 5 dm 7 cm? Build the answer from blocks."
+    },
+    "hint": {
+      "uz": "5 ta oʻnlik (dm) va 7 ta birlik (cm).",
+      "ru": "5 десятков (дм) и 7 единиц (см).",
+      "en": "5 tens (dm) and 7 ones (cm)."
+    },
+    "explanation": {
+      "uz": "5 dm 7 cm = 57 cm.",
+      "ru": "5 дм 7 см = 57 см.",
+      "en": "5 dm 7 cm = 57 cm."
+    },
+    "id": "q5"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "drag_buckets",
+      "props": {
+        "tiles": [
+          {
+            "id": "a",
+            "label": "13",
+            "bin": "b1"
+          },
+          {
+            "id": "b",
+            "label": "17",
+            "bin": "b1"
+          },
+          {
+            "id": "c",
+            "label": "11",
+            "bin": "b1"
+          },
+          {
+            "id": "d",
+            "label": "24",
+            "bin": "b2"
+          },
+          {
+            "id": "e",
+            "label": "22",
+            "bin": "b2"
+          },
+          {
+            "id": "f",
+            "label": "28",
+            "bin": "b2"
+          }
+        ],
+        "bins": [
+          {
+            "id": "b1",
+            "label": "1 dm bor"
+          },
+          {
+            "id": "b2",
+            "label": "2 dm bor"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir sonda nechta dm (oʻnlik) borligini aniqlab, toʻgʻri qutiga sudra!",
+      "ru": "Определи, сколько дм (десятков) в каждом числе, и перетащи в нужный ящик!",
+      "en": "Decide how many dm (tens) each number has and drag it to the right bucket!"
+    },
+    "hint": {
+      "uz": "Chapdagi raqam — oʻnliklar (dm) soni.",
+      "ru": "Левая цифра — число десятков (дм).",
+      "en": "The left digit is the number of tens (dm)."
+    },
+    "explanation": {
+      "uz": "1 dm: 13, 17, 11. 2 dm: 24, 22, 28.",
+      "ru": "1 дм: 13, 17, 11. 2 дм: 24, 22, 28.",
+      "en": "1 dm: 13, 17, 11. 2 dm: 24, 22, 28."
+    },
+    "id": "q6"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "40",
+          "35",
+          "50"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "Qonuniyatni aniqla va davom ettir: 10, 20, 30, ?",
+      "ru": "Найди закономерность и продолжи: 10, 20, 30, ?",
+      "en": "Find the pattern and continue: 10, 20, 30, ?"
+    },
+    "hint": {
+      "uz": "Har safar 10 ortib boryapti.",
+      "ru": "Каждый раз прибавляется 10.",
+      "en": "It increases by 10 each time."
+    },
+    "explanation": {
+      "uz": "30 + 10 = 40.",
+      "ru": "30 + 10 = 40.",
+      "en": "30 + 10 = 40."
+    },
+    "componentProposal": {
+      "suggestedType": "pattern_sequence",
+      "concept": "finding the next term in a number pattern",
+      "interaction": "tap/drag the tile that continues the sequence",
+      "props": "{ sequence:number[], answer }",
+      "why": "no current component renders an ordered number-pattern strip"
+    },
+    "id": "q7"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 13,
+        "y": 13
+      }
+    },
+    "prompt": {
+      "uz": "1 dm 3 cm va 13 cm — qaysi belgi toʻgʻri? Tanla.",
+      "ru": "1 дм 3 см и 13 см — какой знак верный? Выбери.",
+      "en": "1 dm 3 cm and 13 cm — which sign is correct? Choose."
+    },
+    "hint": {
+      "uz": "1 dm 3 cm = 13 cm.",
+      "ru": "1 дм 3 см = 13 см.",
+      "en": "1 dm 3 cm = 13 cm."
+    },
+    "explanation": {
+      "uz": "13 = 13, ular teng.",
+      "ru": "13 = 13, они равны.",
+      "en": "13 = 13, they are equal."
+    },
+    "id": "q8"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "45 cm",
+            "right": "4 dm 5 cm"
+          },
+          {
+            "left": "60 cm",
+            "right": "6 dm"
+          },
+          {
+            "left": "29 cm",
+            "right": "2 dm 9 cm"
+          },
+          {
+            "left": "31 cm",
+            "right": "3 dm 1 cm"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir santimetrni 'necha dm necha cm' koʻrinishi bilan ulang!",
+      "ru": "Соедини каждое число см с записью 'столько-то дм и см'!",
+      "en": "Match each cm value with its 'so many dm and cm' form!"
+    },
+    "hint": {
+      "uz": "Chap raqam — dm, oʻng raqam — cm.",
+      "ru": "Левая цифра — дм, правая — см.",
+      "en": "Left digit is dm, right digit is cm."
+    },
+    "explanation": {
+      "uz": "45=4dm5cm, 60=6dm, 29=2dm9cm, 31=3dm1cm.",
+      "ru": "45=4дм5см, 60=6дм, 29=2дм9см, 31=3дм1см.",
+      "en": "45=4dm5cm, 60=6dm, 29=2dm9cm, 31=3dm1cm."
+    },
+    "id": "q9"
+  },
+  {
+    "lesson": "g1-math-102",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 10,
+        "b": 10,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "1 dm va 1 dm kesmalarni ulasak, necha cm boʻladi? Sonlar chizigʻida hisobla.",
+      "ru": "Соедини 1 дм и 1 дм. Сколько см получится? Посчитай на числовой прямой.",
+      "en": "Join 1 dm and 1 dm. How many cm is that? Use the number line."
+    },
+    "hint": {
+      "uz": "Har biri 10 cm: 10 + 10.",
+      "ru": "Каждый по 10 см: 10 + 10.",
+      "en": "Each is 10 cm: 10 + 10."
+    },
+    "explanation": {
+      "uz": "10 + 10 = 20 cm = 2 dm.",
+      "ru": "10 + 10 = 20 см = 2 дм.",
+      "en": "10 + 10 = 20 cm = 2 dm."
+    },
+    "id": "q10"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 18,
+        "hideTarget": true
+      }
+    },
+    "prompt": {
+      "uz": "Uchburchak tomonlari 5 cm, 6 cm va 7 cm. Perimetri (tomonlar yigʻindisi) necha cm? Javobni bloklardan yasa.",
+      "ru": "Стороны треугольника 5 см, 6 см и 7 см. Чему равен периметр (сумма сторон)? Собери ответ из блоков.",
+      "en": "A triangle's sides are 5 cm, 6 cm and 7 cm. What is the perimeter (sum of sides)? Build the answer."
+    },
+    "hint": {
+      "uz": "Uch tomonni qoʻsh: 5 + 6 + 7.",
+      "ru": "Сложи три стороны: 5 + 6 + 7.",
+      "en": "Add the three sides: 5 + 6 + 7."
+    },
+    "explanation": {
+      "uz": "5 + 6 + 7 = 18 cm.",
+      "ru": "5 + 6 + 7 = 18 см.",
+      "en": "5 + 6 + 7 = 18 cm."
+    },
+    "id": "q1"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 6,
+        "b": 9,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Uchburchakning ikki tomoni 6 cm va 9 cm. Ularning yigʻindisi necha cm? Sonlar chizigʻida hisobla.",
+      "ru": "Две стороны треугольника 6 см и 9 см. Какова их сумма? Посчитай на числовой прямой.",
+      "en": "Two sides of a triangle are 6 cm and 9 cm. What is their sum? Use the number line."
+    },
+    "hint": {
+      "uz": "6 dan boshla va 9 oldinga sur.",
+      "ru": "Встань на 6 и продвинься на 9.",
+      "en": "Start at 6 and move 9 forward."
+    },
+    "explanation": {
+      "uz": "6 + 9 = 15 cm.",
+      "ru": "6 + 9 = 15 см.",
+      "en": "6 + 9 = 15 cm."
+    },
+    "id": "q2"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "drag_buckets",
+      "props": {
+        "tiles": [
+          {
+            "id": "a",
+            "label": "24",
+            "bin": "juft"
+          },
+          {
+            "id": "b",
+            "label": "16",
+            "bin": "juft"
+          },
+          {
+            "id": "c",
+            "label": "30",
+            "bin": "juft"
+          },
+          {
+            "id": "d",
+            "label": "13",
+            "bin": "toq"
+          },
+          {
+            "id": "e",
+            "label": "27",
+            "bin": "toq"
+          },
+          {
+            "id": "f",
+            "label": "19",
+            "bin": "toq"
+          }
+        ],
+        "bins": [
+          {
+            "id": "juft",
+            "label": "Juft"
+          },
+          {
+            "id": "toq",
+            "label": "Toq"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Sonlarni juft va toq guruhlarga ajratib sudra!",
+      "ru": "Перетащи числа в группы чётных и нечётных!",
+      "en": "Drag the numbers into even and odd groups!"
+    },
+    "hint": {
+      "uz": "Oxiri 0,2,4,6,8 — juft; 1,3,5,7,9 — toq.",
+      "ru": "Оканчивается на 0,2,4,6,8 — чётное; 1,3,5,7,9 — нечётное.",
+      "en": "Ends in 0,2,4,6,8 -> even; 1,3,5,7,9 -> odd."
+    },
+    "explanation": {
+      "uz": "Juft: 24, 16, 30. Toq: 13, 27, 19.",
+      "ru": "Чётные: 24, 16, 30. Нечётные: 13, 27, 19.",
+      "en": "Even: 24, 16, 30. Odd: 13, 27, 19."
+    },
+    "id": "q3"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "5",
+          "4",
+          "6"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "Rasmda bir-birini kesib oʻtgan ikki uchburchak chizilgan. Ularda jami nechta kesma bor?",
+      "ru": "На рисунке два пересекающихся треугольника. Сколько всего отрезков?",
+      "en": "The picture shows two crossing triangles. How many segments are there in total?"
+    },
+    "hint": {
+      "uz": "Har bir tomon — bitta kesma, sanab chiq.",
+      "ru": "Каждая сторона — отрезок, посчитай.",
+      "en": "Each side is one segment; count them."
+    },
+    "explanation": {
+      "uz": "Jami 5 ta kesma bor.",
+      "ru": "Всего 5 отрезков.",
+      "en": "There are 5 segments."
+    },
+    "componentProposal": {
+      "suggestedType": "count_shapes",
+      "concept": "counting segments/shapes inside a composite figure",
+      "interaction": "tap each distinct segment; counter validates the total",
+      "props": "{ figure, answer }",
+      "why": "no current component lets a child enumerate sub-shapes in a drawing"
+    },
+    "id": "q4"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 19,
+        "y": 14
+      }
+    },
+    "prompt": {
+      "uz": "Ikki masala javobi: 19 va 14. Qaysi belgi toʻgʻri? Tanla.",
+      "ru": "Ответы двух задач: 19 и 14. Какой знак верный? Выбери.",
+      "en": "Two answers: 19 and 14. Which sign is correct? Choose."
+    },
+    "hint": {
+      "uz": "Katta sonni belgila.",
+      "ru": "Определи большее число.",
+      "en": "Find the bigger number."
+    },
+    "explanation": {
+      "uz": "19 > 14.",
+      "ru": "19 > 14.",
+      "en": "19 > 14."
+    },
+    "id": "q5"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "49 - 15",
+            "right": "34"
+          },
+          {
+            "left": "15 + 14",
+            "right": "29"
+          },
+          {
+            "left": "40 - 8",
+            "right": "32"
+          },
+          {
+            "left": "13 + 18",
+            "right": "31"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir masala ifodasini uning javobi bilan ulang!",
+      "ru": "Соедини каждое выражение задачи с его ответом!",
+      "en": "Match each problem expression with its answer!"
+    },
+    "hint": {
+      "uz": "Har ifodani diqqat bilan hisobla.",
+      "ru": "Аккуратно вычисли каждое выражение.",
+      "en": "Carefully work out each expression."
+    },
+    "explanation": {
+      "uz": "34, 29, 32, 31.",
+      "ru": "34, 29, 32, 31.",
+      "en": "34, 29, 32, 31."
+    },
+    "id": "q6"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 20
+      }
+    },
+    "prompt": {
+      "uz": "Kvadratning tomoni 5 cm. Uning perimetri (4 tomon) necha cm? Javobni bloklardan yasa.",
+      "ru": "Сторона квадрата 5 см. Чему равен периметр (4 стороны)? Собери ответ из блоков.",
+      "en": "A square's side is 5 cm. What is its perimeter (4 sides)? Build the answer."
+    },
+    "hint": {
+      "uz": "4 ta 5 ni qoʻsh: 5+5+5+5.",
+      "ru": "Сложи четыре пятёрки: 5+5+5+5.",
+      "en": "Add four fives: 5+5+5+5."
+    },
+    "explanation": {
+      "uz": "5 + 5 + 5 + 5 = 20 cm.",
+      "ru": "5 + 5 + 5 + 5 = 20 см.",
+      "en": "5 + 5 + 5 + 5 = 20 cm."
+    },
+    "id": "q7"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "race_to_answer",
+      "props": {
+        "steps": 6,
+        "maxSum": 10
+      }
+    },
+    "prompt": {
+      "uz": "Hisob poygasi! Har bir toʻgʻri javob seni marraga bir qadam yaqinlashtiradi.",
+      "ru": "Гонка вычислений! Каждый верный ответ — шаг к финишу.",
+      "en": "Race to the answer! Each correct answer moves you one step to the finish."
+    },
+    "hint": {
+      "uz": "Tez va aniq hisobla.",
+      "ru": "Считай быстро и точно.",
+      "en": "Add quickly and accurately."
+    },
+    "explanation": {
+      "uz": "6 ta toʻgʻri javob — marra!",
+      "ru": "6 верных ответов — финиш!",
+      "en": "6 correct answers reach the finish!"
+    },
+    "id": "q8"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 8,
+        "b": 9,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Doʻkonchi 8 ta va 9 ta olma sotdi. Jami nechta? Sonlar chizigʻida hisobla.",
+      "ru": "Продавец продал 8 и 9 яблок. Сколько всего? Посчитай на числовой прямой.",
+      "en": "A seller sold 8 and 9 apples. How many in total? Use the number line."
+    },
+    "hint": {
+      "uz": "8 dan boshla va 9 oldinga sur.",
+      "ru": "Встань на 8 и продвинься на 9.",
+      "en": "Start at 8 and move 9 forward."
+    },
+    "explanation": {
+      "uz": "8 + 9 = 17.",
+      "ru": "8 + 9 = 17.",
+      "en": "8 + 9 = 17."
+    },
+    "id": "q9"
+  },
+  {
+    "lesson": "g1-math-103",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 16,
+        "y": 16
+      }
+    },
+    "prompt": {
+      "uz": "Bir masalada 7 + 9, boshqasida 20 - 4. Qaysi belgi toʻgʻri? Tanla.",
+      "ru": "В одной задаче 7 + 9, в другой 20 - 4. Какой знак верный? Выбери.",
+      "en": "One problem is 7 + 9, the other 20 - 4. Which sign is correct? Choose."
+    },
+    "hint": {
+      "uz": "Ikkala ifodani hisobla.",
+      "ru": "Вычисли оба выражения.",
+      "en": "Work out both expressions."
+    },
+    "explanation": {
+      "uz": "7 + 9 = 16 va 20 - 4 = 16, ular teng.",
+      "ru": "7 + 9 = 16 и 20 - 4 = 16, они равны.",
+      "en": "7 + 9 = 16 and 20 - 4 = 16, they are equal."
+    },
+    "id": "q10"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 5,
+        "b": 6,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Qopda 5 kg shakar va 6 kg un bor. Jami necha kg? Sonlar chizigʻida hisobla.",
+      "ru": "В мешке 5 кг сахара и 6 кг муки. Сколько всего кг? Посчитай на числовой прямой.",
+      "en": "A sack has 5 kg of sugar and 6 kg of flour. How many kg in total? Use the number line."
+    },
+    "hint": {
+      "uz": "5 dan boshla va 6 oldinga sur.",
+      "ru": "Встань на 5 и продвинься на 6.",
+      "en": "Start at 5 and move 6 forward."
+    },
+    "explanation": {
+      "uz": "5 + 6 = 11 kg.",
+      "ru": "5 + 6 = 11 кг.",
+      "en": "5 + 6 = 11 kg."
+    },
+    "id": "q1"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 6,
+        "y": 4
+      }
+    },
+    "prompt": {
+      "uz": "6 kg tarvuz va 4 kg qovun. Qaysi ogʻirroq? Toʻgʻri belgini tanla.",
+      "ru": "6 кг арбуз и 4 кг дыня. Что тяжелее? Выбери знак.",
+      "en": "A 6 kg watermelon and a 4 kg melon. Which is heavier? Choose the sign."
+    },
+    "hint": {
+      "uz": "Soni katta boʻlgan narsa ogʻirroq.",
+      "ru": "Тяжелее предмет с большим числом.",
+      "en": "The one with the bigger number is heavier."
+    },
+    "explanation": {
+      "uz": "6 > 4.",
+      "ru": "6 > 4.",
+      "en": "6 > 4."
+    },
+    "id": "q2"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 16,
+        "hideTarget": true
+      }
+    },
+    "prompt": {
+      "uz": "Qopda 9 kg kartoshka bor edi, yana 7 kg qoʻshildi. Endi necha kg? Javobni bloklardan yasa.",
+      "ru": "В мешке было 9 кг картофеля, добавили ещё 7 кг. Сколько теперь кг? Собери ответ из блоков.",
+      "en": "A sack had 9 kg of potatoes; 7 kg more was added. How many kg now? Build the answer."
+    },
+    "hint": {
+      "uz": "Avval 9 + 7 ni hisobla.",
+      "ru": "Сначала вычисли 9 + 7.",
+      "en": "First work out 9 + 7."
+    },
+    "explanation": {
+      "uz": "9 + 7 = 16 kg.",
+      "ru": "9 + 7 = 16 кг.",
+      "en": "9 + 7 = 16 kg."
+    },
+    "id": "q3"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "5 + 6",
+            "right": "11"
+          },
+          {
+            "left": "14 - 6",
+            "right": "8"
+          },
+          {
+            "left": "9 + 7",
+            "right": "16"
+          },
+          {
+            "left": "20 - 8",
+            "right": "12"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir massa amalini (kg) javobi bilan ulang!",
+      "ru": "Соедини каждое действие с массой (кг) с её ответом!",
+      "en": "Match each mass expression (kg) with its answer!"
+    },
+    "hint": {
+      "uz": "Har ifodani hisoblab, tengini top.",
+      "ru": "Вычисли каждое выражение и найди равное.",
+      "en": "Work out each expression and find its match."
+    },
+    "explanation": {
+      "uz": "11, 8, 16, 12 kg.",
+      "ru": "11, 8, 16, 12 кг.",
+      "en": "11, 8, 16, 12 kg."
+    },
+    "id": "q4"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "5",
+          "6",
+          "1"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "Tarozining bir pallasida narsa, ikkinchisida 2 kg va 3 kg girlar — tarozi muvozanatda. Narsa necha kg?",
+      "ru": "На одной чаше весов предмет, на другой гири 2 кг и 3 кг — весы в равновесии. Сколько кг предмет?",
+      "en": "On one pan is an object, on the other 2 kg and 3 kg weights — the balance is level. What is the object's mass?"
+    },
+    "hint": {
+      "uz": "Girlarni qoʻsh: 2 + 3.",
+      "ru": "Сложи гири: 2 + 3.",
+      "en": "Add the weights: 2 + 3."
+    },
+    "explanation": {
+      "uz": "2 + 3 = 5 kg.",
+      "ru": "2 + 3 = 5 кг.",
+      "en": "2 + 3 = 5 kg."
+    },
+    "componentProposal": {
+      "suggestedType": "scale_reader",
+      "concept": "reading a mass off a pan balance with known weights",
+      "interaction": "place gram/kg weights until the pans balance, read the value",
+      "props": "{ weights:number[], target }",
+      "why": "no current component renders a readable weighing scale"
+    },
+    "id": "q5"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "drag_buckets",
+      "props": {
+        "tiles": [
+          {
+            "id": "a",
+            "label": "5 + 5",
+            "bin": "v10"
+          },
+          {
+            "id": "b",
+            "label": "6 + 4",
+            "bin": "v10"
+          },
+          {
+            "id": "c",
+            "label": "7 + 3",
+            "bin": "v10"
+          },
+          {
+            "id": "d",
+            "label": "5 + 3",
+            "bin": "v8"
+          },
+          {
+            "id": "e",
+            "label": "6 + 2",
+            "bin": "v8"
+          },
+          {
+            "id": "f",
+            "label": "4 + 4",
+            "bin": "v8"
+          }
+        ],
+        "bins": [
+          {
+            "id": "v10",
+            "label": "10 kg"
+          },
+          {
+            "id": "v8",
+            "label": "8 kg"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir qopni massasi (kg) boʻyicha toʻgʻri tarozi qutisiga sudra!",
+      "ru": "Перетащи каждый мешок в нужный ящик по его массе (кг)!",
+      "en": "Drag each sack into the right bucket by its mass (kg)!"
+    },
+    "hint": {
+      "uz": "Yigʻindini hisobla, soʻng joyiga tashla.",
+      "ru": "Вычисли сумму, потом перетащи.",
+      "en": "Work out the sum, then drag it."
+    },
+    "explanation": {
+      "uz": "10 kg: 5+5, 6+4, 7+3. 8 kg: 5+3, 6+2, 4+4.",
+      "ru": "10 кг: 5+5, 6+4, 7+3. 8 кг: 5+3, 6+2, 4+4.",
+      "en": "10 kg: 5+5, 6+4, 7+3. 8 kg: 5+3, 6+2, 4+4."
+    },
+    "id": "q6"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 12,
+        "y": 9
+      }
+    },
+    "prompt": {
+      "uz": "12 kg qop va 9 kg qop. Qaysi ogʻirroq? Toʻgʻri belgini tanla.",
+      "ru": "Мешок 12 кг и мешок 9 кг. Какой тяжелее? Выбери знак.",
+      "en": "A 12 kg sack and a 9 kg sack. Which is heavier? Choose the sign."
+    },
+    "hint": {
+      "uz": "Soni katta boʻlgani ogʻirroq.",
+      "ru": "Тяжелее с большим числом.",
+      "en": "The bigger number is heavier."
+    },
+    "explanation": {
+      "uz": "12 > 9.",
+      "ru": "12 > 9.",
+      "en": "12 > 9."
+    },
+    "id": "q7"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 7,
+        "b": 8,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Bir savatda 7 kg, ikkinchisida 8 kg meva bor. Jami necha kg? Sonlar chizigʻida hisobla.",
+      "ru": "В одной корзине 7 кг, в другой 8 кг фруктов. Сколько всего кг? Посчитай на числовой прямой.",
+      "en": "One basket has 7 kg, another 8 kg of fruit. How many kg in total? Use the number line."
+    },
+    "hint": {
+      "uz": "7 dan boshla va 8 oldinga sur.",
+      "ru": "Встань на 7 и продвинься на 8.",
+      "en": "Start at 7 and move 8 forward."
+    },
+    "explanation": {
+      "uz": "7 + 8 = 15 kg.",
+      "ru": "7 + 8 = 15 кг.",
+      "en": "7 + 8 = 15 kg."
+    },
+    "id": "q8"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 30
+      }
+    },
+    "prompt": {
+      "uz": "Uchta qopning har birida 10 kg dan guruch bor. Jami necha kg? Javobni bloklardan yasa.",
+      "ru": "В каждом из трёх мешков по 10 кг риса. Сколько всего кг? Собери ответ из блоков.",
+      "en": "Each of three sacks holds 10 kg of rice. How many kg in total? Build the answer."
+    },
+    "hint": {
+      "uz": "10 + 10 + 10 — uchta oʻnlik.",
+      "ru": "10 + 10 + 10 — три десятка.",
+      "en": "10 + 10 + 10 — three tens."
+    },
+    "explanation": {
+      "uz": "10 + 10 + 10 = 30 kg.",
+      "ru": "10 + 10 + 10 = 30 кг.",
+      "en": "10 + 10 + 10 = 30 kg."
+    },
+    "id": "q9"
+  },
+  {
+    "lesson": "g1-math-104",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 10,
+        "y": 10
+      }
+    },
+    "prompt": {
+      "uz": "Ikki qopning har birida 10 kg. Qaysi belgi toʻgʻri? Tanla.",
+      "ru": "В каждом из двух мешков по 10 кг. Какой знак верный? Выбери.",
+      "en": "Each of two sacks has 10 kg. Which sign is correct? Choose."
+    },
+    "hint": {
+      "uz": "Ogʻirliklar bir xil.",
+      "ru": "Массы одинаковые.",
+      "en": "The masses are the same."
+    },
+    "explanation": {
+      "uz": "10 = 10, ular teng.",
+      "ru": "10 = 10, они равны.",
+      "en": "10 = 10, they are equal."
+    },
+    "id": "q10"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 8,
+        "b": 10,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Bir qopda 8 kg, ikkinchisida undan 2 kg ortiq bugʻdoy (10 kg) bor. Jami necha kg? Sonlar chizigʻida hisobla.",
+      "ru": "В одном мешке 8 кг, в другом на 2 кг больше пшеницы (10 кг). Сколько всего кг? Посчитай на числовой прямой.",
+      "en": "One sack has 8 kg, the other 2 kg more wheat (10 kg). How many kg in total? Use the number line."
+    },
+    "hint": {
+      "uz": "8 va 10 ni qoʻsh.",
+      "ru": "Сложи 8 и 10.",
+      "en": "Add 8 and 10."
+    },
+    "explanation": {
+      "uz": "8 + 10 = 18 kg.",
+      "ru": "8 + 10 = 18 кг.",
+      "en": "8 + 10 = 18 kg."
+    },
+    "id": "q1"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 14,
+        "hideTarget": true
+      }
+    },
+    "prompt": {
+      "uz": "Qopdan 8 kg un olingach, unda 6 kg qoldi. Dastlab necha kg edi? Javobni bloklardan yasa.",
+      "ru": "Из мешка взяли 8 кг муки, осталось 6 кг. Сколько было сначала? Собери ответ из блоков.",
+      "en": "After 8 kg of flour was taken, 6 kg was left. How much was there at first? Build the answer."
+    },
+    "hint": {
+      "uz": "Olingan va qolganni qoʻsh: 8 + 6.",
+      "ru": "Сложи взятое и остаток: 8 + 6.",
+      "en": "Add taken and left: 8 + 6."
+    },
+    "explanation": {
+      "uz": "8 + 6 = 14 kg.",
+      "ru": "8 + 6 = 14 кг.",
+      "en": "8 + 6 = 14 kg."
+    },
+    "id": "q2"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 13,
+        "y": 11
+      }
+    },
+    "prompt": {
+      "uz": "13 kg qop va 11 kg qop. Qaysi ogʻirroq? Toʻgʻri belgini tanla.",
+      "ru": "Мешок 13 кг и мешок 11 кг. Какой тяжелее? Выбери знак.",
+      "en": "A 13 kg sack and an 11 kg sack. Which is heavier? Choose the sign."
+    },
+    "hint": {
+      "uz": "Soni katta boʻlgani ogʻirroq.",
+      "ru": "Тяжелее с большим числом.",
+      "en": "The bigger number is heavier."
+    },
+    "explanation": {
+      "uz": "13 > 11.",
+      "ru": "13 > 11.",
+      "en": "13 > 11."
+    },
+    "id": "q3"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "12 + 6",
+            "right": "18"
+          },
+          {
+            "left": "24 - 4",
+            "right": "20"
+          },
+          {
+            "left": "7 + 8",
+            "right": "15"
+          },
+          {
+            "left": "19 - 6",
+            "right": "13"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir massa ifodasini (kg) javobi bilan ulang!",
+      "ru": "Соедини каждое выражение массы (кг) с его ответом!",
+      "en": "Match each mass expression (kg) with its answer!"
+    },
+    "hint": {
+      "uz": "Har ifodani hisoblab, tengini top.",
+      "ru": "Вычисли каждое и найди равное.",
+      "en": "Work each out and find its match."
+    },
+    "explanation": {
+      "uz": "18, 20, 15, 13 kg.",
+      "ru": "18, 20, 15, 13 кг.",
+      "en": "18, 20, 15, 13 kg."
+    },
+    "id": "q4"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "mcq",
+      "props": {
+        "choices": [
+          "3",
+          "4",
+          "2"
+        ],
+        "answerIndex": 0
+      }
+    },
+    "prompt": {
+      "uz": "Uchburchakning ikki tomoni 4 cm va 4 cm. Tomonlari yigʻindisi 11 cm. Uchinchi tomoni necha cm?",
+      "ru": "Две стороны треугольника 4 см и 4 см. Сумма сторон 11 см. Чему равна третья сторона?",
+      "en": "A triangle has two sides of 4 cm and 4 cm. The sides sum to 11 cm. How long is the third side?"
+    },
+    "hint": {
+      "uz": "Yigʻindidan ma'lum ikki tomonni ayir: 11 - 4 - 4.",
+      "ru": "Из суммы вычти известные стороны: 11 - 4 - 4.",
+      "en": "Subtract the known sides from the sum: 11 - 4 - 4."
+    },
+    "explanation": {
+      "uz": "11 - 8 = 3 cm.",
+      "ru": "11 - 8 = 3 см.",
+      "en": "11 - 8 = 3 cm."
+    },
+    "componentProposal": {
+      "suggestedType": "perimeter_solver",
+      "concept": "finding a missing side given the perimeter and other sides",
+      "interaction": "drag to set the missing side until the perimeter matches",
+      "props": "{ sides:(number|null)[], perimeter }",
+      "why": "no current component models a polygon perimeter with an unknown side"
+    },
+    "id": "q5"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "drag_buckets",
+      "props": {
+        "tiles": [
+          {
+            "id": "a",
+            "label": "12 + 8",
+            "bin": "v20"
+          },
+          {
+            "id": "b",
+            "label": "15 + 5",
+            "bin": "v20"
+          },
+          {
+            "id": "c",
+            "label": "11 + 9",
+            "bin": "v20"
+          },
+          {
+            "id": "d",
+            "label": "12 + 10",
+            "bin": "v22"
+          },
+          {
+            "id": "e",
+            "label": "14 + 8",
+            "bin": "v22"
+          },
+          {
+            "id": "f",
+            "label": "16 + 6",
+            "bin": "v22"
+          }
+        ],
+        "bins": [
+          {
+            "id": "v20",
+            "label": "20 kg"
+          },
+          {
+            "id": "v22",
+            "label": "22 kg"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir yukni umumiy massasi (kg) boʻyicha toʻgʻri qutiga sudra!",
+      "ru": "Перетащи каждый груз в нужный ящик по общей массе (кг)!",
+      "en": "Drag each load into the right bucket by its total mass (kg)!"
+    },
+    "hint": {
+      "uz": "Yigʻindini hisobla: 20 yoki 22.",
+      "ru": "Вычисли сумму: 20 или 22.",
+      "en": "Work out the sum: 20 or 22."
+    },
+    "explanation": {
+      "uz": "20 kg: 12+8, 15+5, 11+9. 22 kg: 12+10, 14+8, 16+6.",
+      "ru": "20 кг: 12+8, 15+5, 11+9. 22 кг: 12+10, 14+8, 16+6.",
+      "en": "20 kg: 12+8, 15+5, 11+9. 22 kg: 12+10, 14+8, 16+6."
+    },
+    "id": "q6"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "number_line_addition",
+      "props": {
+        "a": 9,
+        "b": 6,
+        "maxSum": 20
+      }
+    },
+    "prompt": {
+      "uz": "Mashinaga 9 kg va 6 kg yuk ortildi. Jami necha kg? Sonlar chizigʻida hisobla.",
+      "ru": "В машину погрузили 9 кг и 6 кг. Сколько всего кг? Посчитай на числовой прямой.",
+      "en": "A car was loaded with 9 kg and 6 kg. How many kg in total? Use the number line."
+    },
+    "hint": {
+      "uz": "9 dan boshla va 6 oldinga sur.",
+      "ru": "Встань на 9 и продвинься на 6.",
+      "en": "Start at 9 and move 6 forward."
+    },
+    "explanation": {
+      "uz": "9 + 6 = 15 kg.",
+      "ru": "9 + 6 = 15 кг.",
+      "en": "9 + 6 = 15 kg."
+    },
+    "id": "q7"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "balance_scale",
+      "props": {
+        "x": 20,
+        "y": 18
+      }
+    },
+    "prompt": {
+      "uz": "Bir yuk 20 kg, boshqasi 18 kg. Qaysi ogʻirroq? Toʻgʻri belgini tanla.",
+      "ru": "Один груз 20 кг, другой 18 кг. Какой тяжелее? Выбери знак.",
+      "en": "One load is 20 kg, another 18 kg. Which is heavier? Choose the sign."
+    },
+    "hint": {
+      "uz": "Soni katta boʻlgani ogʻirroq.",
+      "ru": "Тяжелее с большим числом.",
+      "en": "The bigger number is heavier."
+    },
+    "explanation": {
+      "uz": "20 > 18.",
+      "ru": "20 > 18.",
+      "en": "20 > 18."
+    },
+    "id": "q8"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "place_value_blocks",
+      "props": {
+        "target": 22
+      }
+    },
+    "prompt": {
+      "uz": "Ikki quti birga 22 kg keladi. Shu massani bloklardan yasa.",
+      "ru": "Две коробки вместе весят 22 кг. Собери эту массу из блоков.",
+      "en": "Two boxes together weigh 22 kg. Build that mass from blocks."
+    },
+    "hint": {
+      "uz": "2 ta oʻnlik (+10) va 2 ta birlik (+1).",
+      "ru": "2 десятка (+10) и 2 единицы (+1).",
+      "en": "2 tens (+10) and 2 ones (+1)."
+    },
+    "explanation": {
+      "uz": "22 = 20 + 2 kg.",
+      "ru": "22 = 20 + 2 кг.",
+      "en": "22 = 20 + 2 kg."
+    },
+    "id": "q9"
+  },
+  {
+    "lesson": "g1-math-105",
+    "type": "widget",
+    "visualHint": "none",
+    "widget": {
+      "type": "match_pairs",
+      "props": {
+        "pairs": [
+          {
+            "left": "18 - 9",
+            "right": "9"
+          },
+          {
+            "left": "6 + 8",
+            "right": "14"
+          },
+          {
+            "left": "20 - 7",
+            "right": "13"
+          },
+          {
+            "left": "11 + 5",
+            "right": "16"
+          }
+        ]
+      }
+    },
+    "prompt": {
+      "uz": "Har bir 'qancha ortiq/kam' amalini (kg) javobi bilan ulang!",
+      "ru": "Соедини каждое действие 'насколько больше/меньше' (кг) с ответом!",
+      "en": "Match each 'how much more/fewer' expression (kg) with its answer!"
+    },
+    "hint": {
+      "uz": "Ayirish va qoʻshishni diqqat bilan bajar.",
+      "ru": "Аккуратно выполни вычитание и сложение.",
+      "en": "Carefully do the subtraction and addition."
+    },
+    "explanation": {
+      "uz": "9, 14, 13, 16 kg.",
+      "ru": "9, 14, 13, 16 кг.",
+      "en": "9, 14, 13, 16 kg."
+    },
+    "id": "q10"
+  }
+]

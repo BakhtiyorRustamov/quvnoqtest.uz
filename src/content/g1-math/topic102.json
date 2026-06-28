@@ -1,0 +1,370 @@
+{
+  "topicId": "g1-math-102",
+  "subjectKey": "g1-math",
+  "emojis": "🔟📊📏",
+  "title": {
+    "uz": "Detsimetrni santimetrga aylantiramiz",
+    "ru": "Переводим дециметры в сантиметры",
+    "en": "Turning decimetres into centimetres"
+  },
+  "recall": {
+    "uz": "10 santimetr 1 detsimetrga teng: 10 cm = 1 dm. Xuddi shunday, 10 ta birlik 1 ta oʻnlikni hosil qiladi. Ikki xonali sonda chap raqam — oʻnliklar (dm), oʻng raqam — birliklar (cm).",
+    "ru": "10 сантиметров равны 1 дециметру: 10 см = 1 дм. Так же 10 единиц образуют 1 десяток. В двузначном числе левая цифра — десятки (дм), правая — единицы (см).",
+    "en": "10 centimetres equal 1 decimetre: 10 cm = 1 dm. In the same way 10 ones make 1 ten. In a two-digit number the left digit is tens (dm), the right is ones (cm)."
+  },
+  "items": [
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 34
+        }
+      },
+      "prompt": {
+        "uz": "34 cm = 3 dm 4 cm. Shu uzunlikni bloklardan yasa (oʻnlik = dm, birlik = cm).",
+        "ru": "34 см = 3 дм 4 см. Собери эту длину из блоков (десяток = дм, единица = см).",
+        "en": "34 cm = 3 dm 4 cm. Build this length from blocks (ten = dm, one = cm)."
+      },
+      "hint": {
+        "uz": "3 ta oʻnlik (dm) va 4 ta birlik (cm).",
+        "ru": "3 десятка (дм) и 4 единицы (см).",
+        "en": "3 tens (dm) and 4 ones (cm)."
+      },
+      "explanation": {
+        "uz": "34 = 30 + 4 = 3 dm 4 cm.",
+        "ru": "34 = 30 + 4 = 3 дм 4 см.",
+        "en": "34 = 30 + 4 = 3 dm 4 cm."
+      },
+      "id": "q1"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "1 dm 2 cm",
+              "right": "12 cm"
+            },
+            {
+              "left": "2 dm 5 cm",
+              "right": "25 cm"
+            },
+            {
+              "left": "3 dm",
+              "right": "30 cm"
+            },
+            {
+              "left": "1 dm 8 cm",
+              "right": "18 cm"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir uzunlikni unga teng santimetr bilan ulang!",
+        "ru": "Соедини каждую длину с равным числом сантиметров!",
+        "en": "Match each length with its value in centimetres!"
+      },
+      "hint": {
+        "uz": "1 dm = 10 cm, qolganini qoʻsh.",
+        "ru": "1 дм = 10 см, прибавь остальное.",
+        "en": "1 dm = 10 cm, then add the rest."
+      },
+      "explanation": {
+        "uz": "12, 25, 30, 18 cm.",
+        "ru": "12, 25, 30, 18 см.",
+        "en": "12, 25, 30, 18 cm."
+      },
+      "id": "q2"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 18,
+          "y": 12
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi uzunroq: 18 cm yoki 1 dm 2 cm? Toʻgʻri belgini tanla.",
+        "ru": "Что длиннее: 18 см или 1 дм 2 см? Выбери знак.",
+        "en": "Which is longer: 18 cm or 1 dm 2 cm? Choose the sign."
+      },
+      "hint": {
+        "uz": "1 dm 2 cm = 12 cm.",
+        "ru": "1 дм 2 см = 12 см.",
+        "en": "1 dm 2 cm = 12 cm."
+      },
+      "explanation": {
+        "uz": "18 > 12.",
+        "ru": "18 > 12.",
+        "en": "18 > 12."
+      },
+      "id": "q3"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 10,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "1 dm va 6 cm kesmalarni ulasak, necha cm boʻladi? (1 dm = 10 cm.) Sonlar chizigʻida hisobla.",
+        "ru": "Соедини 1 дм и 6 см. Сколько см получится? (1 дм = 10 см.) Посчитай на числовой прямой.",
+        "en": "Join 1 dm and 6 cm. How many cm is that? (1 dm = 10 cm.) Use the number line."
+      },
+      "hint": {
+        "uz": "10 dan boshla va 6 cm oldinga sur.",
+        "ru": "Встань на 10 и продвинься на 6 см.",
+        "en": "Start at 10 and move 6 cm forward."
+      },
+      "explanation": {
+        "uz": "10 + 6 = 16 cm = 1 dm 6 cm.",
+        "ru": "10 + 6 = 16 см = 1 дм 6 см.",
+        "en": "10 + 6 = 16 cm = 1 dm 6 cm."
+      },
+      "id": "q4"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 57
+        }
+      },
+      "prompt": {
+        "uz": "5 dm 7 cm necha cm? Javobni bloklardan yasa.",
+        "ru": "Сколько см в 5 дм 7 см? Собери ответ из блоков.",
+        "en": "How many cm in 5 dm 7 cm? Build the answer from blocks."
+      },
+      "hint": {
+        "uz": "5 ta oʻnlik (dm) va 7 ta birlik (cm).",
+        "ru": "5 десятков (дм) и 7 единиц (см).",
+        "en": "5 tens (dm) and 7 ones (cm)."
+      },
+      "explanation": {
+        "uz": "5 dm 7 cm = 57 cm.",
+        "ru": "5 дм 7 см = 57 см.",
+        "en": "5 dm 7 cm = 57 cm."
+      },
+      "id": "q5"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "13",
+              "bin": "b1"
+            },
+            {
+              "id": "b",
+              "label": "17",
+              "bin": "b1"
+            },
+            {
+              "id": "c",
+              "label": "11",
+              "bin": "b1"
+            },
+            {
+              "id": "d",
+              "label": "24",
+              "bin": "b2"
+            },
+            {
+              "id": "e",
+              "label": "22",
+              "bin": "b2"
+            },
+            {
+              "id": "f",
+              "label": "28",
+              "bin": "b2"
+            }
+          ],
+          "bins": [
+            {
+              "id": "b1",
+              "label": "1 dm bor"
+            },
+            {
+              "id": "b2",
+              "label": "2 dm bor"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir sonda nechta dm (oʻnlik) borligini aniqlab, toʻgʻri qutiga sudra!",
+        "ru": "Определи, сколько дм (десятков) в каждом числе, и перетащи в нужный ящик!",
+        "en": "Decide how many dm (tens) each number has and drag it to the right bucket!"
+      },
+      "hint": {
+        "uz": "Chapdagi raqam — oʻnliklar (dm) soni.",
+        "ru": "Левая цифра — число десятков (дм).",
+        "en": "The left digit is the number of tens (dm)."
+      },
+      "explanation": {
+        "uz": "1 dm: 13, 17, 11. 2 dm: 24, 22, 28.",
+        "ru": "1 дм: 13, 17, 11. 2 дм: 24, 22, 28.",
+        "en": "1 dm: 13, 17, 11. 2 dm: 24, 22, 28."
+      },
+      "id": "q6"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "40",
+            "35",
+            "50"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qonuniyatni aniqla va davom ettir: 10, 20, 30, ?",
+        "ru": "Найди закономерность и продолжи: 10, 20, 30, ?",
+        "en": "Find the pattern and continue: 10, 20, 30, ?"
+      },
+      "hint": {
+        "uz": "Har safar 10 ortib boryapti.",
+        "ru": "Каждый раз прибавляется 10.",
+        "en": "It increases by 10 each time."
+      },
+      "explanation": {
+        "uz": "30 + 10 = 40.",
+        "ru": "30 + 10 = 40.",
+        "en": "30 + 10 = 40."
+      },
+      "componentProposal": {
+        "suggestedType": "pattern_sequence",
+        "concept": "finding the next term in a number pattern",
+        "interaction": "tap/drag the tile that continues the sequence",
+        "props": "{ sequence:number[], answer }",
+        "why": "no current component renders an ordered number-pattern strip"
+      },
+      "id": "q7"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 13,
+          "y": 13
+        }
+      },
+      "prompt": {
+        "uz": "1 dm 3 cm va 13 cm — qaysi belgi toʻgʻri? Tanla.",
+        "ru": "1 дм 3 см и 13 см — какой знак верный? Выбери.",
+        "en": "1 dm 3 cm and 13 cm — which sign is correct? Choose."
+      },
+      "hint": {
+        "uz": "1 dm 3 cm = 13 cm.",
+        "ru": "1 дм 3 см = 13 см.",
+        "en": "1 dm 3 cm = 13 cm."
+      },
+      "explanation": {
+        "uz": "13 = 13, ular teng.",
+        "ru": "13 = 13, они равны.",
+        "en": "13 = 13, they are equal."
+      },
+      "id": "q8"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "45 cm",
+              "right": "4 dm 5 cm"
+            },
+            {
+              "left": "60 cm",
+              "right": "6 dm"
+            },
+            {
+              "left": "29 cm",
+              "right": "2 dm 9 cm"
+            },
+            {
+              "left": "31 cm",
+              "right": "3 dm 1 cm"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir santimetrni 'necha dm necha cm' koʻrinishi bilan ulang!",
+        "ru": "Соедини каждое число см с записью 'столько-то дм и см'!",
+        "en": "Match each cm value with its 'so many dm and cm' form!"
+      },
+      "hint": {
+        "uz": "Chap raqam — dm, oʻng raqam — cm.",
+        "ru": "Левая цифра — дм, правая — см.",
+        "en": "Left digit is dm, right digit is cm."
+      },
+      "explanation": {
+        "uz": "45=4dm5cm, 60=6dm, 29=2dm9cm, 31=3dm1cm.",
+        "ru": "45=4дм5см, 60=6дм, 29=2дм9см, 31=3дм1см.",
+        "en": "45=4dm5cm, 60=6dm, 29=2dm9cm, 31=3dm1cm."
+      },
+      "id": "q9"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 10,
+          "b": 10,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "1 dm va 1 dm kesmalarni ulasak, necha cm boʻladi? Sonlar chizigʻida hisobla.",
+        "ru": "Соедини 1 дм и 1 дм. Сколько см получится? Посчитай на числовой прямой.",
+        "en": "Join 1 dm and 1 dm. How many cm is that? Use the number line."
+      },
+      "hint": {
+        "uz": "Har biri 10 cm: 10 + 10.",
+        "ru": "Каждый по 10 см: 10 + 10.",
+        "en": "Each is 10 cm: 10 + 10."
+      },
+      "explanation": {
+        "uz": "10 + 10 = 20 cm = 2 dm.",
+        "ru": "10 + 10 = 20 см = 2 дм.",
+        "en": "10 + 10 = 20 cm = 2 dm."
+      },
+      "id": "q10"
+    }
+  ]
+}

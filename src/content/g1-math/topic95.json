@@ -1,0 +1,384 @@
+{
+  "topicId": "g1-math-95",
+  "subjectKey": "g1-math",
+  "emojis": "🧩⏰✨",
+  "title": {
+    "uz": "Yetishmayotgan maʼlumotni toʻldiramiz",
+    "ru": "Дополняем недостающие данные",
+    "en": "Completing missing data"
+  },
+  "recall": {
+    "uz": "Masalada shart va savol boʻladi. Baʼzan shartda maʼlumot yetishmaydi — uni qoʻshib, masalani yechamiz. Vaqt birliklarini ham eslaymiz: 1 hafta — 7 kun, 1 sutka — 24 soat, 1 yil — 12 oy.",
+    "ru": "В задаче есть условие и вопрос. Иногда данных не хватает — добавляем их и решаем. Вспомним и единицы времени: 1 неделя — 7 дней, 1 сутки — 24 часа, 1 год — 12 месяцев.",
+    "en": "A problem has a condition and a question. Sometimes data is missing — we add it and solve. We also recall time units: 1 week — 7 days, 1 day — 24 hours, 1 year — 12 months."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "6",
+            "30"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "1 haftada necha kun bor?",
+        "ru": "Сколько дней в неделе?",
+        "en": "How many days are in a week?"
+      },
+      "hint": {
+        "uz": "Haftaning kunlarini sana.",
+        "ru": "Посчитай дни недели.",
+        "en": "Count the days of the week."
+      },
+      "explanation": {
+        "uz": "1 haftada 7 kun bor.",
+        "ru": "В неделе 7 дней.",
+        "en": "A week has 7 days."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "24",
+            "12",
+            "60"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "1 sutkada necha soat bor?",
+        "ru": "Сколько часов в сутках?",
+        "en": "How many hours are in a day?"
+      },
+      "hint": {
+        "uz": "Kun va tunni qoʻsh.",
+        "ru": "Сложи день и ночь.",
+        "en": "Add day and night."
+      },
+      "explanation": {
+        "uz": "1 sutkada 24 soat bor.",
+        "ru": "В сутках 24 часа.",
+        "en": "A day has 24 hours."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "60",
+            "30",
+            "24"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "1 soatda necha minut bor?",
+        "ru": "Сколько минут в часе?",
+        "en": "How many minutes are in an hour?"
+      },
+      "hint": {
+        "uz": "Soat strelkasi necha boʻlimdan oʻtadi?",
+        "ru": "Сколько делений проходит минутная стрелка?",
+        "en": "How many marks does the minute hand pass?"
+      },
+      "explanation": {
+        "uz": "1 soatda 60 minut bor.",
+        "ru": "В часе 60 минут.",
+        "en": "An hour has 60 minutes."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "10",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "1 yilda necha oy bor?",
+        "ru": "Сколько месяцев в году?",
+        "en": "How many months are in a year?"
+      },
+      "hint": {
+        "uz": "Yanvardan dekabrgacha sana.",
+        "ru": "Считай с января по декабрь.",
+        "en": "Count from January to December."
+      },
+      "explanation": {
+        "uz": "1 yilda 12 oy bor.",
+        "ru": "В году 12 месяцев.",
+        "en": "A year has 12 months."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "3 + 4",
+              "right": "7"
+            },
+            {
+              "left": "20 + 4",
+              "right": "24"
+            },
+            {
+              "left": "30 + 30",
+              "right": "60"
+            },
+            {
+              "left": "6 + 6",
+              "right": "12"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "13",
+            "12",
+            "14"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Masalada 8 ta olma va yana nok bor. Agar 5 ta nok boʻlsa, jami nechta meva?",
+        "ru": "В задаче 8 яблок и груши. Если груш 5, сколько всего фруктов?",
+        "en": "A problem has 8 apples and some pears. If there are 5 pears, how many fruits in all?"
+      },
+      "hint": {
+        "uz": "8 ga 5 ni qoʻsh.",
+        "ru": "Прибавь к 8 число 5.",
+        "en": "Add 5 to 8."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13.",
+        "ru": "8 + 5 = 13.",
+        "en": "8 + 5 = 13."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 13,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 8 + 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 8 + 5 = ?",
+        "en": "Work it out and build the answer with blocks: 8 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13.",
+        "ru": "8 + 5 = 13.",
+        "en": "8 + 5 = 13."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Naqshni davom ettir!",
+        "ru": "Продолжи узор!",
+        "en": "Continue the pattern!"
+      },
+      "sequence": [
+        {
+          "kind": "square",
+          "color": "orange"
+        },
+        {
+          "kind": "star",
+          "color": "magenta"
+        },
+        {
+          "kind": "square",
+          "color": "orange"
+        },
+        {
+          "kind": "star",
+          "color": "magenta"
+        },
+        {
+          "kind": "square",
+          "color": "orange"
+        }
+      ],
+      "options": [
+        {
+          "id": "st",
+          "art": {
+            "kind": "star",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "sq",
+          "art": {
+            "kind": "square",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "ci",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        }
+      ],
+      "answer": [
+        "st"
+      ],
+      "hint": {
+        "uz": "Kvadrat va yulduz navbatlashadi.",
+        "ru": "Квадрат и звезда чередуются.",
+        "en": "Square and star take turns."
+      },
+      "explanation": {
+        "uz": "Kvadratdan keyin yulduz keladi.",
+        "ru": "После квадрата идёт звезда.",
+        "en": "After a square comes a star."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "7 + 5",
+              "right": "12"
+            },
+            {
+              "left": "24 - 4",
+              "right": "20"
+            },
+            {
+              "left": "60 - 20",
+              "right": "40"
+            },
+            {
+              "left": "13 + 6",
+              "right": "19"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "10",
+            "9",
+            "11"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bir hafta (7 kun) oʻtdi, yana 3 kun oʻtdi. Jami necha kun?",
+        "ru": "Прошла неделя (7 дней) и ещё 3 дня. Сколько всего дней?",
+        "en": "A week (7 days) passed, then 3 more days. How many days in all?"
+      },
+      "hint": {
+        "uz": "7 ga 3 ni qoʻsh.",
+        "ru": "Прибавь к 7 число 3.",
+        "en": "Add 3 to 7."
+      },
+      "explanation": {
+        "uz": "7 + 3 = 10.",
+        "ru": "7 + 3 = 10.",
+        "en": "7 + 3 = 10."
+      }
+    }
+  ]
+}

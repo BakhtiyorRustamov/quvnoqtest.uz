@@ -1,0 +1,316 @@
+{
+  "topicId": "g1-math-46",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🧩✨",
+  "title": {
+    "uz": "15 va 16 sonlarining tarkibi",
+    "ru": "Состав чисел 15 и 16",
+    "en": "Making 15 and 16"
+  },
+  "recall": {
+    "uz": "15 va 16 sonlarini ikkita kichik songa ajratamiz. 15 — bu 10 + 5, 9 + 6 yoki 8 + 7. 16 — bu 8 + 8 yoki 10 + 6. Sonlar tarkibini bilsak, qoʻshish va ayirish oson boʻladi!",
+    "ru": "Раскладываем 15 и 16 на два меньших числа. 15 — это 10 + 5, 9 + 6 или 8 + 7. 16 — это 8 + 8 или 10 + 6. Зная состав, легко складывать и вычитать!",
+    "en": "We split 15 and 16 into two smaller numbers. 15 is 10 + 5, 9 + 6 or 8 + 7. 16 is 8 + 8 or 10 + 6. Knowing this makes adding and subtracting easy!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "6",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "15 ni hosil qil: 10 + ? = 15",
+        "ru": "Составь 15: 10 + ? = 15",
+        "en": "Make 15: 10 + ? = 15"
+      },
+      "hint": {
+        "uz": "10 dan 15 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 10 до 15?",
+        "en": "How many more from 10 up to 15?"
+      },
+      "explanation": {
+        "uz": "10 + 5 = 15. 15 ning tarkibi — 10 va 5.",
+        "ru": "10 + 5 = 15. Состав числа 15 — это 10 и 5.",
+        "en": "10 + 5 = 15. 15 is made of 10 and 5."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "6",
+            "8"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "15 ni hosil qil: 8 + ? = 15",
+        "ru": "Составь 15: 8 + ? = 15",
+        "en": "Make 15: 8 + ? = 15"
+      },
+      "hint": {
+        "uz": "8 dan 15 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 8 до 15?",
+        "en": "How many more from 8 up to 15?"
+      },
+      "explanation": {
+        "uz": "8 + 7 = 15. 15 ning tarkibi — 8 va 7.",
+        "ru": "8 + 7 = 15. Состав числа 15 — это 8 и 7.",
+        "en": "8 + 7 = 15. 15 is made of 8 and 7."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "15 ni hosil qil: 9 + ? = 15",
+        "ru": "Составь 15: 9 + ? = 15",
+        "en": "Make 15: 9 + ? = 15"
+      },
+      "hint": {
+        "uz": "9 dan 15 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 9 до 15?",
+        "en": "How many more from 9 up to 15?"
+      },
+      "explanation": {
+        "uz": "9 + 6 = 15. 15 ning tarkibi — 9 va 6.",
+        "ru": "9 + 6 = 15. Состав числа 15 — это 9 и 6.",
+        "en": "9 + 6 = 15. 15 is made of 9 and 6."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "16 ni hosil qil: 8 + ? = 16",
+        "ru": "Составь 16: 8 + ? = 16",
+        "en": "Make 16: 8 + ? = 16"
+      },
+      "hint": {
+        "uz": "8 dan 16 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 8 до 16?",
+        "en": "How many more from 8 up to 16?"
+      },
+      "explanation": {
+        "uz": "8 + 8 = 16. 16 ning tarkibi — 8 va 8.",
+        "ru": "8 + 8 = 16. Состав числа 16 — это 8 и 8.",
+        "en": "8 + 8 = 16. 16 is made of 8 and 8."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "16 ni hosil qil: 10 + ? = 16",
+        "ru": "Составь 16: 10 + ? = 16",
+        "en": "Make 16: 10 + ? = 16"
+      },
+      "hint": {
+        "uz": "10 dan 16 gacha yana nechta sanaymiz?",
+        "ru": "Сколько ещё досчитать от 10 до 16?",
+        "en": "How many more from 10 up to 16?"
+      },
+      "explanation": {
+        "uz": "10 + 6 = 16. 16 ning tarkibi — 10 va 6.",
+        "ru": "10 + 6 = 16. Состав числа 16 — это 10 и 6.",
+        "en": "10 + 6 = 16. 16 is made of 10 and 6."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 9 + 6!",
+        "ru": "Вычисли на числовой прямой: 9 + 6!",
+        "en": "Work it out on the number line: 9 + 6!"
+      },
+      "hint": {
+        "uz": "9 dan boshla va oldinga 6 qadam sakra.",
+        "ru": "Встань на 9 и прыгни на 6 шагов вперёд.",
+        "en": "Start at 9 and hop 6 steps forward."
+      },
+      "explanation": {
+        "uz": "9 + 6 = 15.",
+        "ru": "9 + 6 = 15.",
+        "en": "9 + 6 = 15."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 8 + 8!",
+        "ru": "Вычисли на числовой прямой: 8 + 8!",
+        "en": "Work it out on the number line: 8 + 8!"
+      },
+      "hint": {
+        "uz": "8 dan boshla va oldinga 8 qadam sakra.",
+        "ru": "Встань на 8 и прыгни на 8 шагов вперёд.",
+        "en": "Start at 8 and hop 8 steps forward."
+      },
+      "explanation": {
+        "uz": "8 + 8 = 16.",
+        "ru": "8 + 8 = 16.",
+        "en": "8 + 8 = 16."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 15
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 15 sonini yasa!",
+        "ru": "Собери число 15 из блоков!",
+        "en": "Build the number 15 from blocks!"
+      },
+      "hint": {
+        "uz": "Bitta oʻnlik (+10) va 5 ta birlik (+1).",
+        "ru": "Один десяток (+10) и 5 единиц (+1).",
+        "en": "One ten (+10) and 5 ones (+1)."
+      },
+      "explanation": {
+        "uz": "15 = 10 + 5: 1 oʻnlik va 5 birlik.",
+        "ru": "15 = 10 + 5: 1 десяток и 5 единиц.",
+        "en": "15 = 10 + 5: 1 ten and 5 ones."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "16",
+            "15",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Maktab hovlisiga 10 yil avval terak ekishgan, undan 6 yil oldin chinor ekishgan. Chinorning yoshi nechada?",
+        "ru": "Тополь посадили 10 лет назад, а чинару — на 6 лет раньше. Сколько лет чинаре?",
+        "en": "A poplar was planted 10 years ago, and a sycamore 6 years before that. How old is the sycamore?"
+      },
+      "hint": {
+        "uz": "10 ga 6 ni qoʻsh.",
+        "ru": "Прибавь к 10 число 6.",
+        "en": "Add 6 to 10."
+      },
+      "explanation": {
+        "uz": "10 + 6 = 16. Chinor 16 yoshda.",
+        "ru": "10 + 6 = 16. Чинаре 16 лет.",
+        "en": "10 + 6 = 16. The sycamore is 16."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "16",
+            "15",
+            "17"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Ilhom bir qutiga 9 ta, boshqasiga 7 ta barg soldi. Jami nechta barg?",
+        "ru": "Ильхом положил в одну коробку 9 листьев, в другую 7. Сколько всего листьев?",
+        "en": "Ilhom put 9 leaves in one box and 7 in another. How many leaves in all?"
+      },
+      "hint": {
+        "uz": "9 ga 7 ni qoʻsh.",
+        "ru": "Прибавь к 9 число 7.",
+        "en": "Add 7 to 9."
+      },
+      "explanation": {
+        "uz": "9 + 7 = 16.",
+        "ru": "9 + 7 = 16.",
+        "en": "9 + 7 = 16."
+      }
+    }
+  ]
+}

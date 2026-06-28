@@ -1,0 +1,101 @@
+{
+  "topicId": "g1-math-23",
+  "subjectKey": "g1-math",
+  "emojis": "8️⃣🔢⭐",
+  "title": { "uz": "Sakkiz soni va raqami", "ru": "Число восемь", "en": "The number eight" },
+  "recall": {
+    "uz": "Sakkiz sonini oʻrganamiz. Sakkizta narsani sanaymiz. Sakkiz yettidan kattaroq. Besh va uch qoʻshilsa, sakkiz boʻladi. Sakkiz sonining raqamini yozamiz.",
+    "ru": "Учим число восемь. Считаем восемь предметов. Восемь больше семи. Пять и три вместе — это восемь. Пишем цифру восемь.",
+    "en": "We learn the number eight. We count eight things. Eight is bigger than seven. Five and three make eight. We write the numeral eight."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["8", "9", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 5, 6, 7, ?", "ru": "Найди недостающее число: 5, 6, 7, ?", "en": "Find the missing number: 5, 6, 7, ?" },
+      "hint": { "uz": "Yettidan keyin qaysi son keladi?", "ru": "Какое число идёт после семи?", "en": "Which number comes after seven?" },
+      "explanation": { "uz": "Yettidan keyin sakkiz keladi.", "ru": "После семи идёт восемь.", "en": "After seven comes eight." } },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 5, "b": 3, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: besh va uch!", "ru": "Сложи на числовой прямой: пять и три!", "en": "Add on the number line: five and three!" },
+      "hint": { "uz": "Beshdan boshla, uch qadam oldinga sakra.", "ru": "Встань на пять, прыгни на три вперёд.", "en": "Start at five, hop three forward." },
+      "explanation": { "uz": "Besh va uch qoʻshilib, sakkiz boʻldi.", "ru": "Пять и три дали восемь.", "en": "Five and three made eight." }
+    },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["8", "7", "9"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 5 + 3 = ?", "ru": "Найди сумму: 5 + 3 = ?", "en": "Find the sum: 5 + 3 = ?" },
+      "hint": { "uz": "Beshtaga uchta qoʻsh.", "ru": "К пяти прибавь три.", "en": "Add three to five." },
+      "explanation": { "uz": "Besh qoʻshish uch — sakkiz.", "ru": "Пять плюс три — восемь.", "en": "Five plus three is eight." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["4", "3", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 8 = 4 + ?", "ru": "Найди недостающее число: 8 = 4 + ?", "en": "Find the missing number: 8 = 4 + ?" },
+      "hint": { "uz": "Toʻrtga nechta qoʻshsak, sakkiz boʻladi?", "ru": "Сколько добавить к четырём, чтобы вышло восемь?", "en": "How much to add to four to make eight?" },
+      "explanation": { "uz": "Toʻrt qoʻshish toʻrt — sakkiz. Yetishmagan son — toʻrt.", "ru": "Четыре плюс четыре — восемь. Недостающее число — четыре.", "en": "Four plus four is eight. The missing number is four." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["7", "8", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 8 - 1 = ?", "ru": "Найди разность: 8 - 1 = ?", "en": "Find the difference: 8 - 1 = ?" },
+      "hint": { "uz": "Sakkiztadan bittasini olib tashla.", "ru": "Убери от восьми один.", "en": "Take one away from eight." },
+      "explanation": { "uz": "Sakkiz ayirish bir — yetti qoladi.", "ru": "Восемь минус один — семь.", "en": "Eight minus one is seven." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 8, "y": 5 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Sakkiz beshdan katta.", "ru": "Восемь больше пяти.", "en": "Eight is bigger than five." } },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma katta koptoklarni sanab belgila!", "ru": "Сосчитай и отметь все большие мячи!", "en": "Count and tap all the big balls!" },
+      "options": [
+        { "id": "b1", "art": { "kind": "ball", "color": "red", "scale": 1.2 } },
+        { "id": "s1", "art": { "kind": "ball", "color": "blue", "scale": 0.55 } },
+        { "id": "b2", "art": { "kind": "ball", "color": "green", "scale": 1.2 } },
+        { "id": "s2", "art": { "kind": "ball", "color": "orange", "scale": 0.55 } },
+        { "id": "b3", "art": { "kind": "ball", "color": "magenta", "scale": 1.2 } }
+      ],
+      "answer": ["b1", "b2", "b3"],
+      "hint": { "uz": "Avval kattalarini ajrat, keyin sana.", "ru": "Сначала найди большие, потом сосчитай.", "en": "First find the big ones, then count." },
+      "explanation": { "uz": "Uchta katta koptok bor edi.", "ru": "Было три больших мяча.", "en": "There were three big balls." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "triangle", "color": "red" },
+        { "kind": "star", "color": "yellow" },
+        { "kind": "triangle", "color": "red" },
+        { "kind": "star", "color": "yellow" },
+        { "kind": "triangle", "color": "red" }
+      ],
+      "options": [
+        { "id": "st", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "red" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["st"],
+      "hint": { "uz": "Uchburchak, yulduz, uchburchak, yulduz… navbat bilan keladi!", "ru": "Треугольник, звезда, треугольник, звезда… по очереди!", "en": "Triangle, star, triangle, star… they take turns!" },
+      "explanation": { "uz": "Uchburchakdan keyin doim yulduz keladi. Keyingisi — yulduz.", "ru": "После треугольника всегда идёт звезда. Следующая — звезда.", "en": "After a triangle there is always a star. The next one is a star." }
+    },
+    {
+      "id": "q9",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Koptoklarni kichikdan kattaga tartibla!", "ru": "Расставь мячи от маленького к большому!", "en": "Order the balls from small to big!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "ball", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "ball", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "ball", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "ball", "color": "gray", "scale": 0.5 }, "label": { "uz": "birinchi", "ru": "первый", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "ball", "color": "gray", "scale": 0.85 }, "label": { "uz": "ikkinchi", "ru": "второй", "en": "second" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "ball", "color": "gray", "scale": 1.25 }, "label": { "uz": "uchinchi", "ru": "третий", "en": "third" } }
+      ],
+      "hint": { "uz": "Eng kichkinasi birinchi, eng kattasi uchinchi.", "ru": "Самый маленький первый, самый большой третий.", "en": "The smallest first, the biggest third." },
+      "explanation": { "uz": "Koptoklarni oʻlchami boʻyicha tartibladik.", "ru": "Расставили мячи по размеру.", "en": "We ordered the balls by size." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["8", "3", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Eng katta son qaysi: 8, 3, 6?", "ru": "Какое число самое большое: 8, 3, 6?", "en": "Which number is the biggest: 8, 3, 6?" },
+      "hint": { "uz": "Sanaganda eng oxirida keladigan sonni top.", "ru": "Найди число, которое идёт последним при счёте.", "en": "Find the number that comes last when counting." },
+      "explanation": { "uz": "Sakkiz eng katta — u uchdan ham, oltidan ham katta.", "ru": "Восемь самое большое — больше и трёх, и шести.", "en": "Eight is the biggest — bigger than three and six." } }
+  ]
+}

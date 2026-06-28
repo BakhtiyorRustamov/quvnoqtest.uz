@@ -1,0 +1,455 @@
+{
+  "topicId": "g1-math-98",
+  "subjectKey": "g1-math",
+  "emojis": "🧩🔍✨",
+  "title": {
+    "uz": "Murakkab va mantiqiy masalalar",
+    "ru": "Сложные и логические задачи",
+    "en": "Complex and logic problems"
+  },
+  "recall": {
+    "uz": "Murakkab masalalar hisoblash bilan emas, fikrlash orqali yechiladi. Ketma-ketlikni davom ettirish uchun uning qonuniyatini topamiz. Masalan, 1, 2, 3, 4, 5, 6 — har safar 1 ta ortadi, demak keyingi son 7.",
+    "ru": "Сложные задачи решаются рассуждением, а не только вычислением. Чтобы продолжить ряд, находим закономерность. Например, 1, 2, 3, 4, 5, 6 — каждый раз на 1 больше, значит дальше 7.",
+    "en": "Complex problems are solved by reasoning, not just computing. To continue a sequence we find its rule. For example 1, 2, 3, 4, 5, 6 — each time one more, so next is 7."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": {
+        "uz": "Yulduzlarni kichikdan kattaga qarab tartibla!",
+        "ru": "Расставь звёзды от меньшей к большей!",
+        "en": "Put the stars in order from small to big!"
+      },
+      "items": [
+        {
+          "id": "mid",
+          "art": {
+            "kind": "star",
+            "color": "orange",
+            "scale": 0.85
+          }
+        },
+        {
+          "id": "small",
+          "art": {
+            "kind": "star",
+            "color": "blue",
+            "scale": 0.5
+          }
+        },
+        {
+          "id": "big",
+          "art": {
+            "kind": "star",
+            "color": "magenta",
+            "scale": 1.25
+          }
+        }
+      ],
+      "slots": [
+        {
+          "id": "s1",
+          "accept": "small",
+          "ghost": {
+            "kind": "star",
+            "color": "gray"
+          },
+          "label": {
+            "uz": "1",
+            "ru": "1",
+            "en": "1"
+          }
+        },
+        {
+          "id": "s2",
+          "accept": "mid",
+          "ghost": {
+            "kind": "star",
+            "color": "gray"
+          },
+          "label": {
+            "uz": "2",
+            "ru": "2",
+            "en": "2"
+          }
+        },
+        {
+          "id": "s3",
+          "accept": "big",
+          "ghost": {
+            "kind": "star",
+            "color": "gray"
+          },
+          "label": {
+            "uz": "3",
+            "ru": "3",
+            "en": "3"
+          }
+        }
+      ],
+      "hint": {
+        "uz": "Eng kichigini birinchi, eng kattasini oxirgi qil.",
+        "ru": "Самую маленькую — первой, самую большую — последней.",
+        "en": "Smallest first, biggest last."
+      },
+      "explanation": {
+        "uz": "Yulduzlar oʻlchami boʻyicha tartiblandi.",
+        "ru": "Звёзды расставлены по размеру.",
+        "en": "The stars are ordered by size."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "8",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qatorni davom ettir: 1, 2, 3, 4, 5, 6, ? — keyingi son?",
+        "ru": "Продолжи ряд: 1, 2, 3, 4, 5, 6, ? — следующее число?",
+        "en": "Continue: 1, 2, 3, 4, 5, 6, ? — the next number?"
+      },
+      "hint": {
+        "uz": "Har safar 1 ta ortyapti.",
+        "ru": "Каждый раз на 1 больше.",
+        "en": "One more each time."
+      },
+      "explanation": {
+        "uz": "6 + 1 = 7.",
+        "ru": "6 + 1 = 7.",
+        "en": "6 + 1 = 7."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "7",
+            "8"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qatorni davom ettir: 2, 4, 3, 5, 4, 6, ? — keyingi son?",
+        "ru": "Продолжи ряд: 2, 4, 3, 5, 4, 6, ? — следующее число?",
+        "en": "Continue: 2, 4, 3, 5, 4, 6, ? — the next number?"
+      },
+      "hint": {
+        "uz": "Bitta oshib, soʻng kamayib boradi: 2, 3, 4, 5...",
+        "ru": "Растёт через один: 2, 3, 4, 5...",
+        "en": "Every other term grows: 2, 3, 4, 5..."
+      },
+      "explanation": {
+        "uz": "Toq oʻrinlardagi sonlar: 2, 3, 4, 5 — keyingisi 5.",
+        "ru": "На нечётных местах: 2, 3, 4, 5 — далее 5.",
+        "en": "Odd positions go 2, 3, 4, 5 — next is 5."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "7",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qatorni davom ettir: 1, 4, 2, 5, 3, 6, ? — keyingi son?",
+        "ru": "Продолжи ряд: 1, 4, 2, 5, 3, 6, ? — следующее число?",
+        "en": "Continue: 1, 4, 2, 5, 3, 6, ? — the next number?"
+      },
+      "hint": {
+        "uz": "Ikkita qator aralashgan: 1, 2, 3, 4 va 4, 5, 6.",
+        "ru": "Два ряда вперемешку: 1, 2, 3, 4 и 4, 5, 6.",
+        "en": "Two rows mixed: 1, 2, 3, 4 and 4, 5, 6."
+      },
+      "explanation": {
+        "uz": "Birinchi qator davomi: 1, 2, 3, 4 — keyingisi 4.",
+        "ru": "Первый ряд: 1, 2, 3, 4 — далее 4.",
+        "en": "First row: 1, 2, 3, 4 — next is 4."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qonuniyatni davom ettir!",
+        "ru": "Продолжи закономерность!",
+        "en": "Continue the pattern!"
+      },
+      "sequence": [
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "square",
+          "color": "orange"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        }
+      ],
+      "options": [
+        {
+          "id": "sq",
+          "art": {
+            "kind": "square",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "ci",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "tr",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        }
+      ],
+      "answer": [
+        "sq"
+      ],
+      "hint": {
+        "uz": "Har ikki doiradan keyin kvadrat keladi.",
+        "ru": "После каждых двух кругов идёт квадрат.",
+        "en": "After every two circles comes a square."
+      },
+      "explanation": {
+        "uz": "Doira, doira, kvadrat — keyingisi kvadrat.",
+        "ru": "Круг, круг, квадрат — далее квадрат.",
+        "en": "Circle, circle, square — next is a square."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "10",
+            "5",
+            "12"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Muzqaymoq, shokolad, somsa narxi 5, 10, 12 ming. Shokolad muzqaymoqdan qimmat, somsadan arzon. Shokolad necha ming?",
+        "ru": "Цены 5, 10, 12 тыс. Шоколад дороже мороженого, но дешевле самсы. Сколько стоит шоколад?",
+        "en": "Prices are 5, 10, 12. Chocolate costs more than ice cream but less than somsa. How much is the chocolate?"
+      },
+      "hint": {
+        "uz": "Tartibga sol: muzqaymoq < shokolad < somsa.",
+        "ru": "Расставь: мороженое < шоколад < самса.",
+        "en": "Order them: ice cream < chocolate < somsa."
+      },
+      "explanation": {
+        "uz": "5 < 10 < 12, demak shokolad — 10 ming.",
+        "ru": "5 < 10 < 12, значит шоколад — 10.",
+        "en": "5 < 10 < 12, so the chocolate is 10."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "+",
+            "-"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga qaysi belgi mos: 8 _ 5 = 13?",
+        "ru": "Какой знак подходит: 8 _ 5 = 13?",
+        "en": "Which sign fits: 8 _ 5 = 13?"
+      },
+      "hint": {
+        "uz": "8 va 5 dan 13 hosil boʻlsin.",
+        "ru": "Чтобы из 8 и 5 получилось 13.",
+        "en": "To make 13 from 8 and 5."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13, demak belgi «+».",
+        "ru": "8 + 5 = 13, значит знак «+».",
+        "en": "8 + 5 = 13, so the sign is «+»."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "1",
+            "2",
+            "3"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Aziz har kuni 1 bet koʻp oʻqidi. 4 kunda jami 10 bet. Birinchi kuni nechta bet oʻqigan?",
+        "ru": "Азиз каждый день читал на 1 страницу больше. За 4 дня 10 страниц. Сколько в первый день?",
+        "en": "Aziz read 1 page more each day. In 4 days, 10 pages. How many on the first day?"
+      },
+      "hint": {
+        "uz": "1 + 2 + 3 + 4 = 10. Birinchi kun eng kami.",
+        "ru": "1 + 2 + 3 + 4 = 10. В первый день меньше всего.",
+        "en": "1 + 2 + 3 + 4 = 10. The first day is the fewest."
+      },
+      "explanation": {
+        "uz": "1, 2, 3, 4 bet — birinchi kuni 1 bet.",
+        "ru": "1, 2, 3, 4 страницы — в первый день 1.",
+        "en": "1, 2, 3, 4 pages — 1 page on the first day."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "3 + 4",
+              "bin": "v7"
+            },
+            {
+              "id": "b",
+              "label": "5 + 2",
+              "bin": "v7"
+            },
+            {
+              "id": "c",
+              "label": "4 + 5",
+              "bin": "v9"
+            },
+            {
+              "id": "d",
+              "label": "6 + 3",
+              "bin": "v9"
+            },
+            {
+              "id": "e",
+              "label": "1 + 6",
+              "bin": "v7"
+            },
+            {
+              "id": "f",
+              "label": "8 + 1",
+              "bin": "v9"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v7",
+              "label": "7"
+            },
+            {
+              "id": "v9",
+              "label": "9"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha toʻgʻri qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик с его значением!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval ifodani hisobla, soʻng shu sonli qutiga sudrab tashla.",
+        "ru": "Сначала вычисли выражение, потом перетащи в ящик с этим числом.",
+        "en": "Work out the expression, then drag it into the bucket with that number."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida turibdi.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "5",
+            "3"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Komilada 8, Nigorada 5, Saidada 3 kitob bor. Eng koʻp kitob soni nechа?",
+        "ru": "У Камилы 8, у Нигоры 5, у Саиды 3 книги. Сколько книг у того, у кого больше всех?",
+        "en": "Komila has 8, Nigora 5, Saida 3 books. How many does the one with the most have?"
+      },
+      "hint": {
+        "uz": "Eng katta sonni tanla: 8, 5, 3.",
+        "ru": "Выбери наибольшее: 8, 5, 3.",
+        "en": "Pick the biggest: 8, 5, 3."
+      },
+      "explanation": {
+        "uz": "8 > 5 > 3 — eng koʻpi 8 ta.",
+        "ru": "8 > 5 > 3 — больше всего 8.",
+        "en": "8 > 5 > 3 — the most is 8."
+      }
+    }
+  ]
+}

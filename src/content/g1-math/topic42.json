@@ -1,0 +1,254 @@
+{
+  "topicId": "g1-math-42",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🔟✨",
+  "title": {
+    "uz": "Oʻn birdan yigirmagacha sonlar",
+    "ru": "Числа от 11 до 20",
+    "en": "Numbers from 11 to 20"
+  },
+  "recall": {
+    "uz": "11 dan 20 gacha boʻlgan sonlar ikki xonali sonlardir. Har birida bitta toʻliq oʻnlik va bir nechta birlik bor. Masalan, 14 — bu 1 oʻnlik va 4 birlik, yaʼni 10 + 4. Keling, bu sonlarni sanaymiz, yozamiz va qoʻshamiz!",
+    "ru": "Числа от 11 до 20 — двузначные. В каждом есть один полный десяток и несколько единиц. Например, 14 — это 1 десяток и 4 единицы, то есть 10 + 4. Давай считать, записывать и складывать эти числа!",
+    "en": "The numbers from 11 to 20 are two-digit numbers. Each one has a full ten and a few ones. For example, 14 is 1 ten and 4 ones — that is 10 + 4. Let's count, write and add these numbers!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["15", "51", "16"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "«Oʻn besh» soni qanday yoziladi?",
+        "ru": "Как записывается число «пятнадцать»?",
+        "en": "How is the number “fifteen” written?"
+      },
+      "hint": {
+        "uz": "Avval oʻnlik (1), keyin birlik (5) yoziladi: oldin 1, soʻng 5.",
+        "ru": "Сначала пишем десяток (1), потом единицы (5): сперва 1, затем 5.",
+        "en": "Write the ten first (1), then the ones (5): 1 then 5."
+      },
+      "explanation": {
+        "uz": "Oʻn besh — 1 oʻnlik va 5 birlik, shuning uchun 15 deb yoziladi.",
+        "ru": "Пятнадцать — это 1 десяток и 5 единиц, поэтому пишется 15.",
+        "en": "Fifteen is 1 ten and 5 ones, so it is written 15."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/tens-ones.gif",
+        "alt": {
+          "uz": "Oʻnlik va birliklar 14 sonini hosil qiladi",
+          "ru": "Десяток и единицы образуют число 14",
+          "en": "A ten and ones make the number 14"
+        },
+        "maxWidth": 200
+      },
+      "widget": { "type": "mcq", "props": { "choices": ["14", "41", "10"] , "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Rasmga qara: 1 oʻnlik va 4 birlik — bu qaysi son?",
+        "ru": "Посмотри на картинку: 1 десяток и 4 единицы — какое это число?",
+        "en": "Look at the picture: 1 ten and 4 ones — which number is it?"
+      },
+      "hint": {
+        "uz": "1 oʻnlik — bu 10. Unga 4 birlikni qoʻsh: 10 + 4.",
+        "ru": "1 десяток — это 10. Прибавь 4 единицы: 10 + 4.",
+        "en": "1 ten is 10. Add 4 ones to it: 10 + 4."
+      },
+      "explanation": {
+        "uz": "10 + 4 = 14. Bitta oʻnlik va toʻrtta birlik — oʻn toʻrt.",
+        "ru": "10 + 4 = 14. Один десяток и четыре единицы — четырнадцать.",
+        "en": "10 + 4 = 14. One ten and four ones make fourteen."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "place_value_blocks", "props": { "target": 16 } },
+      "prompt": {
+        "uz": "Bloklardan 16 sonini yasa: oʻnlik va birliklarni qoʻsh!",
+        "ru": "Собери число 16 из блоков: добавь десятки и единицы!",
+        "en": "Build the number 16 from blocks: add tens and ones!"
+      },
+      "hint": {
+        "uz": "Bitta oʻnlik blok (+10) ol, soʻng oltita birlik (+1) qoʻsh.",
+        "ru": "Возьми один блок-десяток (+10), затем добавь шесть единиц (+1).",
+        "en": "Take one ten-block (+10), then add six ones (+1)."
+      },
+      "explanation": {
+        "uz": "16 — bu 1 oʻnlik va 6 birlik: 10 + 6 = 16.",
+        "ru": "16 — это 1 десяток и 6 единиц: 10 + 6 = 16.",
+        "en": "16 is 1 ten and 6 ones: 10 + 6 = 16."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["1", "8", "18"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "18 sonida nechta oʻnlik bor?",
+        "ru": "Сколько десятков в числе 18?",
+        "en": "How many tens are in the number 18?"
+      },
+      "hint": {
+        "uz": "11 dan 19 gacha boʻlgan har bir sonda faqat bitta toʻliq oʻnlik bor.",
+        "ru": "В каждом числе от 11 до 19 есть только один полный десяток.",
+        "en": "Every number from 11 to 19 has just one full ten."
+      },
+      "explanation": {
+        "uz": "18 = 1 oʻnlik va 8 birlik. Demak, oʻnliklar soni — 1.",
+        "ru": "18 = 1 десяток и 8 единиц. Значит, десятков — 1.",
+        "en": "18 = 1 ten and 8 ones. So the number of tens is 1."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 11, "b": 4, "maxSum": 20 } },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 11 + 4!",
+        "ru": "Вычисли на числовой прямой: 11 + 4!",
+        "en": "Work it out on the number line: 11 + 4!"
+      },
+      "hint": {
+        "uz": "11 dan boshla va oldinga 4 qadam sakra: 12, 13, 14, 15.",
+        "ru": "Встань на 11 и прыгни на 4 шага вперёд: 12, 13, 14, 15.",
+        "en": "Start at 11 and hop 4 steps forward: 12, 13, 14, 15."
+      },
+      "explanation": {
+        "uz": "11 + 4 = 15. Oʻnlik oʻzgarmadi, faqat birliklar koʻpaydi.",
+        "ru": "11 + 4 = 15. Десяток не изменился, увеличились только единицы.",
+        "en": "11 + 4 = 15. The ten stays the same; only the ones grow."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/numberline-hop.gif",
+        "alt": {
+          "uz": "Sonlar chizigʻida 12 dan 3 qadam oldinga",
+          "ru": "На числовой прямой от 12 на 3 шага вперёд",
+          "en": "On the number line, three steps forward from 12"
+        },
+        "maxWidth": 240
+      },
+      "widget": { "type": "mcq", "props": { "choices": ["15", "14", "16"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Chizgʻich boʻylab sakra: 12 + 3 nechа boʻladi?",
+        "ru": "Прыгай по линейке: сколько будет 12 + 3?",
+        "en": "Hop along the ruler: what is 12 + 3?"
+      },
+      "hint": {
+        "uz": "12 dan keyin uchta sonni ayt: 13, 14, 15.",
+        "ru": "Назови три числа после 12: 13, 14, 15.",
+        "en": "Say the three numbers after 12: 13, 14, 15."
+      },
+      "explanation": {
+        "uz": "12 + 3 = 15. Uchta qadam bizni 15 ga olib keldi.",
+        "ru": "12 + 3 = 15. Три шага привели нас к 15.",
+        "en": "12 + 3 = 15. Three steps brought us to 15."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 15, "b": 3, "maxSum": 20 } },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 15 + 3!",
+        "ru": "Вычисли на числовой прямой: 15 + 3!",
+        "en": "Work it out on the number line: 15 + 3!"
+      },
+      "hint": {
+        "uz": "15 dan oldinga uch qadam: 16, 17, 18.",
+        "ru": "От 15 три шага вперёд: 16, 17, 18.",
+        "en": "Three steps forward from 15: 16, 17, 18."
+      },
+      "explanation": {
+        "uz": "15 + 3 = 18. Birliklar oltidan toʻqqizgacha emas — sakkizga yetdi.",
+        "ru": "15 + 3 = 18. Единицы дошли до восьми.",
+        "en": "15 + 3 = 18. The ones reach eight."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 13, "y": 17 } },
+      "prompt": {
+        "uz": "Tarozini koʻr: 13 va 17 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 13 и 17 — какой знак верный?",
+        "en": "Look at the scale: 13 and 17 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Ikkala sonda ham 1 oʻnlik bor — birliklarini solishtir: 3 va 7.",
+        "ru": "В обоих числах по 1 десятку — сравни единицы: 3 и 7.",
+        "en": "Both numbers have 1 ten — compare the ones: 3 and 7."
+      },
+      "explanation": {
+        "uz": "13 soni 17 dan kichik, chunki 3 < 7. Toʻgʻri belgi — «<».",
+        "ru": "Число 13 меньше 17, ведь 3 < 7. Верный знак — «<».",
+        "en": "13 is smaller than 17 because 3 < 7. The correct sign is “<”."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["19", "20", "17"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Qatorni davom ettir: 16, 17, 18, … keyin qaysi son keladi?",
+        "ru": "Продолжи ряд: 16, 17, 18, … какое число следующее?",
+        "en": "Continue the row: 16, 17, 18, … which number comes next?"
+      },
+      "hint": {
+        "uz": "Sonlar birma-bir oʻsib boradi. 18 dan keyin qaysi son keladi?",
+        "ru": "Числа растут по одному. Какое число идёт после 18?",
+        "en": "The numbers grow by one. Which number comes after 18?"
+      },
+      "explanation": {
+        "uz": "16, 17, 18, 19 — har safar bittaga koʻpaydi. Javob — 19.",
+        "ru": "16, 17, 18, 19 — каждый раз на один больше. Ответ — 19.",
+        "en": "16, 17, 18, 19 — one more each time. The answer is 19."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/celebrate.gif",
+        "alt": {
+          "uz": "Yigirma soni — bayram!",
+          "ru": "Число двадцать — праздник!",
+          "en": "The number twenty — celebration!"
+        },
+        "maxWidth": 170
+      },
+      "widget": { "type": "mcq", "props": { "choices": ["20", "18", "19"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Bogʻbon 12 ta olma uydi, yana 8 ta uydi. Hammasi nechta?",
+        "ru": "Садовник собрал 12 яблок и ещё 8 яблок. Сколько всего?",
+        "en": "A gardener picked 12 apples and 8 more. How many in all?"
+      },
+      "hint": {
+        "uz": "12 ga 8 ni qoʻsh. 12 + 8 — birliklar toʻliq oʻnlik hosil qiladi.",
+        "ru": "Прибавь к 12 число 8. 12 + 8 — единицы образуют полный десяток.",
+        "en": "Add 8 to 12. In 12 + 8 the ones make a full ten."
+      },
+      "explanation": {
+        "uz": "12 + 8 = 20. Ikkita toʻliq oʻnlik — yigirma!",
+        "ru": "12 + 8 = 20. Два полных десятка — двадцать!",
+        "en": "12 + 8 = 20. Two full tens make twenty!"
+      }
+    }
+  ]
+}

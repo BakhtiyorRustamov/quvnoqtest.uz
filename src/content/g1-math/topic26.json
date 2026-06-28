@@ -1,0 +1,96 @@
+{
+  "topicId": "g1-math-26",
+  "subjectKey": "g1-math",
+  "emojis": "🔟🍎⭐",
+  "title": { "uz": "Oʻn soni va raqami", "ru": "Число десять", "en": "The number ten" },
+  "recall": {
+    "uz": "Oʻn sonini oʻrganamiz. Oʻn ikkita raqam bilan yoziladi. Toʻqqizdan keyin oʻn keladi. Besh va besh qoʻshilsa, oʻn boʻladi. Oʻn — biz sanaydigan eng katta son.",
+    "ru": "Учим число десять. Десять пишется двумя цифрами. После девяти идёт десять. Пять и пять вместе — это десять. Десять — самое большое число в нашем счёте.",
+    "en": "We learn the number ten. Ten is written with two digits. After nine comes ten. Five and five make ten. Ten is the biggest number in our count."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none", "widget": { "type": "number_line_addition", "props": { "a": 5, "b": 5, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: besh va besh!", "ru": "Сложи на числовой прямой: пять и пять!", "en": "Add on the number line: five and five!" },
+      "hint": { "uz": "Beshdan boshla, besh qadam oldinga sakra.", "ru": "Встань на пять, прыгни на пять вперёд.", "en": "Start at five, hop five forward." },
+      "explanation": { "uz": "Besh va besh qoʻshilib, oʻn boʻldi.", "ru": "Пять и пять дали десять.", "en": "Five and five made ten." } },
+    { "id": "q2", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["10", "9", "11"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 5 + 5 = ?", "ru": "Найди сумму: 5 + 5 = ?", "en": "Find the sum: 5 + 5 = ?" },
+      "hint": { "uz": "Beshtaga beshta qoʻsh.", "ru": "К пяти прибавь пять.", "en": "Add five to five." },
+      "explanation": { "uz": "Besh qoʻshish besh — oʻn.", "ru": "Пять плюс пять — десять.", "en": "Five plus five is ten." } },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["10", "9", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 6 + 4 = ?", "ru": "Найди сумму: 6 + 4 = ?", "en": "Find the sum: 6 + 4 = ?" },
+      "hint": { "uz": "Oltitaga toʻrtta qoʻsh.", "ru": "К шести прибавь четыре.", "en": "Add four to six." },
+      "explanation": { "uz": "Olti qoʻshish toʻrt — oʻn.", "ru": "Шесть плюс четыре — десять.", "en": "Six plus four is ten." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2", "3", "1"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 10 = 8 + ?", "ru": "Найди недостающее число: 10 = 8 + ?", "en": "Find the missing number: 10 = 8 + ?" },
+      "hint": { "uz": "Sakkizga nechta qoʻshsak, oʻn boʻladi?", "ru": "Сколько добавить к восьми, чтобы вышло десять?", "en": "How much to add to eight to make ten?" },
+      "explanation": { "uz": "Sakkiz qoʻshish ikki — oʻn. Yetishmagan son — ikki.", "ru": "Восемь плюс два — десять. Недостающее число — два.", "en": "Eight plus two is ten. The missing number is two." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["9", "10", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 10 - 1 = ?", "ru": "Найди разность: 10 - 1 = ?", "en": "Find the difference: 10 - 1 = ?" },
+      "hint": { "uz": "Oʻndan bittasini olib tashla.", "ru": "Убери от десяти один.", "en": "Take one away from ten." },
+      "explanation": { "uz": "Oʻn ayirish bir — toʻqqiz qoladi.", "ru": "Десять минус один — девять.", "en": "Ten minus one is nine." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 10, "y": 6 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Oʻn oltidan katta — u eng katta son.", "ru": "Десять больше шести — это самое большое число.", "en": "Ten is bigger than six — it is the biggest number." } },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma katta yulduzlarni belgila!", "ru": "Отметь все большие звёзды!", "en": "Tap all the big stars!" },
+      "options": [
+        { "id": "b1", "art": { "kind": "star", "color": "yellow", "scale": 1.2 } },
+        { "id": "s1", "art": { "kind": "star", "color": "orange", "scale": 0.55 } },
+        { "id": "b2", "art": { "kind": "star", "color": "magenta", "scale": 1.2 } },
+        { "id": "s2", "art": { "kind": "star", "color": "blue", "scale": 0.55 } },
+        { "id": "b3", "art": { "kind": "star", "color": "red", "scale": 1.2 } }
+      ],
+      "answer": ["b1", "b2", "b3"],
+      "hint": { "uz": "Avval kattalarini ajrat, keyin sana.", "ru": "Сначала найди большие, потом сосчитай.", "en": "First find the big ones, then count." },
+      "explanation": { "uz": "Uchta katta yulduz bor edi.", "ru": "Было три больших звезды.", "en": "There were three big stars." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "square", "color": "blue" },
+        { "kind": "circle", "color": "orange" },
+        { "kind": "square", "color": "blue" },
+        { "kind": "circle", "color": "orange" },
+        { "kind": "square", "color": "blue" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "orange" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Kvadrat, doira, kvadrat, doira… navbat bilan keladi!", "ru": "Квадрат, круг, квадрат, круг… по очереди!", "en": "Square, circle, square, circle… they take turns!" },
+      "explanation": { "uz": "Kvadratdan keyin doim doira keladi. Keyingisi — doira.", "ru": "После квадрата всегда идёт круг. Следующий — круг.", "en": "After a square there is always a circle. The next one is a circle." }
+    },
+    {
+      "id": "q9",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Yulduzlarni kichikdan kattaga tartibla!", "ru": "Расставь звёзды от маленькой к большой!", "en": "Order the stars from small to big!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "star", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "star", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "star", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "birinchi", "ru": "первая", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "ikkinchi", "ru": "вторая", "en": "second" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "uchinchi", "ru": "третья", "en": "third" } }
+      ],
+      "hint": { "uz": "Eng kichkinasi birinchi, eng kattasi uchinchi.", "ru": "Самая маленькая первая, самая большая третья.", "en": "The smallest first, the biggest third." },
+      "explanation": { "uz": "Yulduzlarni oʻlchami boʻyicha tartibladik.", "ru": "Расставили звёзды по размеру.", "en": "We ordered the stars by size." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["10", "7", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Eng katta son qaysi: 10, 7, 4?", "ru": "Какое число самое большое: 10, 7, 4?", "en": "Which number is the biggest: 10, 7, 4?" },
+      "hint": { "uz": "Sanaganda eng oxirida keladigan sonni top.", "ru": "Найди число, которое идёт последним при счёте.", "en": "Find the number that comes last when counting." },
+      "explanation": { "uz": "Oʻn eng katta son — sanoq oʻn bilan tugaydi.", "ru": "Десять самое большое — счёт заканчивается десятью.", "en": "Ten is the biggest — counting ends at ten." } }
+  ]
+}

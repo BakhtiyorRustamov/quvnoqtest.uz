@@ -1,0 +1,356 @@
+{
+  "topicId": "g1-math-71",
+  "subjectKey": "g1-math",
+  "emojis": "🔗➕✨",
+  "title": {
+    "uz": "Qoʻshishning guruhlash xossasi",
+    "ru": "Сочетательное свойство сложения",
+    "en": "The grouping property of addition"
+  },
+  "recall": {
+    "uz": "Qoʻshishda qoʻshiluvchilarni xohlagancha guruhlash mumkin — yigʻindi oʻzgarmaydi: (a + b) + c = a + (b + c). Masalan, (2 + 3) + 4 = 2 + (3 + 4) = 9. Bu hisobni osonlashtiradi!",
+    "ru": "При сложении слагаемые можно группировать как угодно — сумма не меняется: (a + b) + c = a + (b + c). Например, (2 + 3) + 4 = 2 + (3 + 4) = 9. Это упрощает счёт!",
+    "en": "When adding, you can group the addends any way — the sum stays the same: (a + b) + c = a + (b + c). For example (2 + 3) + 4 = 2 + (3 + 4) = 9. It makes counting easier!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/grouping.gif",
+        "alt": {
+          "uz": "Guruhlash xossasi",
+          "ru": "Свойство группировки",
+          "en": "The grouping property"
+        },
+        "maxWidth": 240
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "(2 + 3) + 4 = ?",
+        "ru": "(2 + 3) + 4 = ?",
+        "en": "(2 + 3) + 4 = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichini hisobla.",
+        "ru": "Сначала вычисли в скобках.",
+        "en": "Do the brackets first."
+      },
+      "explanation": {
+        "uz": "(2 + 3) + 4 = 5 + 4 = 9.",
+        "ru": "(2 + 3) + 4 = 5 + 4 = 9.",
+        "en": "(2 + 3) + 4 = 5 + 4 = 9."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "2 + (3 + 4) = ? Natija oʻzgaradimi?",
+        "ru": "2 + (3 + 4) = ? Изменится ли результат?",
+        "en": "2 + (3 + 4) = ? Does the result change?"
+      },
+      "hint": {
+        "uz": "Guruhlash xossasi: yigʻindi oʻzgarmaydi.",
+        "ru": "Свойство группировки: сумма не меняется.",
+        "en": "Grouping property: the sum stays the same."
+      },
+      "explanation": {
+        "uz": "2 + (3 + 4) = 2 + 7 = 9. Bir xil natija!",
+        "ru": "2 + (3 + 4) = 2 + 7 = 9. Тот же результат!",
+        "en": "2 + (3 + 4) = 2 + 7 = 9. Same result!"
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "(1 + 2) + 3",
+              "right": "6"
+            },
+            {
+              "left": "(2 + 2) + 4",
+              "right": "8"
+            },
+            {
+              "left": "(5 + 1) + 3",
+              "right": "9"
+            },
+            {
+              "left": "(4 + 3) + 5",
+              "right": "12"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "9",
+            "39"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "39 sonida nechta oʻnlik bor?",
+        "ru": "Сколько десятков в числе 39?",
+        "en": "How many tens are in 39?"
+      },
+      "hint": {
+        "uz": "Chapdagi raqam — oʻnliklar.",
+        "ru": "Левая цифра — десятки.",
+        "en": "The left digit is the tens."
+      },
+      "explanation": {
+        "uz": "39 da 3 ta oʻnlik bor.",
+        "ru": "В 39 три десятка.",
+        "en": "39 has 3 tens."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "57",
+            "56",
+            "58"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Kamayuvchi 97, ayriluvchi 40. Ayirma nechа?",
+        "ru": "Уменьшаемое 97, вычитаемое 40. Чему равна разность?",
+        "en": "Minuend 97, subtrahend 40. What is the difference?"
+      },
+      "hint": {
+        "uz": "97 dan 40 ni ayir.",
+        "ru": "Вычти из 97 число 40.",
+        "en": "Take 40 from 97."
+      },
+      "explanation": {
+        "uz": "97 - 40 = 57.",
+        "ru": "97 - 40 = 57.",
+        "en": "97 - 40 = 57."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "36",
+            "35",
+            "37"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "(24 + 1) + 11 = ?",
+        "ru": "(24 + 1) + 11 = ?",
+        "en": "(24 + 1) + 11 = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs: 24 + 1.",
+        "ru": "Сначала скобки: 24 + 1.",
+        "en": "Brackets first: 24 + 1."
+      },
+      "explanation": {
+        "uz": "(24 + 1) + 11 = 25 + 11 = 36.",
+        "ru": "(24 + 1) + 11 = 25 + 11 = 36.",
+        "en": "(24 + 1) + 11 = 25 + 11 = 36."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "25",
+            "24",
+            "26"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "17 + (5 + 3) = ?",
+        "ru": "17 + (5 + 3) = ?",
+        "en": "17 + (5 + 3) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs: 5 + 3.",
+        "ru": "Сначала скобки: 5 + 3.",
+        "en": "Brackets first: 5 + 3."
+      },
+      "explanation": {
+        "uz": "17 + (5 + 3) = 17 + 8 = 25.",
+        "ru": "17 + (5 + 3) = 17 + 8 = 25.",
+        "en": "17 + (5 + 3) = 17 + 8 = 25."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "(6 + 4) + 5",
+              "right": "15"
+            },
+            {
+              "left": "(7 + 3) + 10",
+              "right": "20"
+            },
+            {
+              "left": "(8 + 2) + 15",
+              "right": "25"
+            },
+            {
+              "left": "(9 + 1) + 30",
+              "right": "40"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 55,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 20 + 30 + 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 20 + 30 + 5 = ?",
+        "en": "Work it out and build the answer with blocks: 20 + 30 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "20 + 30 + 5 = 55.",
+        "ru": "20 + 30 + 5 = 55.",
+        "en": "20 + 30 + 5 = 55."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "(2 + 3) + 4 = 2 + (3 + 4)",
+            "2 + 3 = 3 + 2",
+            "2 + 0 = 2"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi yozuv guruhlash xossasini koʻrsatadi?",
+        "ru": "Какая запись показывает свойство группировки?",
+        "en": "Which shows the grouping property?"
+      },
+      "hint": {
+        "uz": "Qavslar oʻrni oʻzgaradi, yigʻindi oʻzgarmaydi.",
+        "ru": "Скобки меняются, сумма — нет.",
+        "en": "Brackets move, the sum stays."
+      },
+      "explanation": {
+        "uz": "(2 + 3) + 4 = 2 + (3 + 4) — guruhlash xossasi.",
+        "ru": "(2 + 3) + 4 = 2 + (3 + 4) — свойство группировки.",
+        "en": "(2 + 3) + 4 = 2 + (3 + 4) — the grouping property."
+      }
+    }
+  ]
+}

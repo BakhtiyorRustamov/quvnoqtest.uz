@@ -1,0 +1,355 @@
+{
+  "topicId": "g1-math-104",
+  "subjectKey": "g1-math",
+  "emojis": "⚖️🍎🥔",
+  "title": {
+    "uz": "Massa va kilogramm",
+    "ru": "Масса и килограмм",
+    "en": "Mass and the kilogram"
+  },
+  "recall": {
+    "uz": "Narsalarning massasi (ogʻirligi) kilogrammda oʻlchanadi. Bir kilogramm — 1 kg. Massani tarozida oʻlchaymiz: tarozi qaysi tomonga ogʻsa, oʻsha narsa ogʻirroq.",
+    "ru": "Массу (вес) предметов измеряют в килограммах. Один килограмм — 1 кг. Массу измеряют на весах: в какую сторону наклонились весы, тот предмет тяжелее.",
+    "en": "The mass (weight) of things is measured in kilograms. One kilogram is 1 kg. We measure mass on a balance: whichever side tips down is heavier."
+  },
+  "items": [
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 5,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Qopda 5 kg shakar va 6 kg un bor. Jami necha kg? Sonlar chizigʻida hisobla.",
+        "ru": "В мешке 5 кг сахара и 6 кг муки. Сколько всего кг? Посчитай на числовой прямой.",
+        "en": "A sack has 5 kg of sugar and 6 kg of flour. How many kg in total? Use the number line."
+      },
+      "hint": {
+        "uz": "5 dan boshla va 6 oldinga sur.",
+        "ru": "Встань на 5 и продвинься на 6.",
+        "en": "Start at 5 and move 6 forward."
+      },
+      "explanation": {
+        "uz": "5 + 6 = 11 kg.",
+        "ru": "5 + 6 = 11 кг.",
+        "en": "5 + 6 = 11 kg."
+      },
+      "id": "q1"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 6,
+          "y": 4
+        }
+      },
+      "prompt": {
+        "uz": "6 kg tarvuz va 4 kg qovun. Qaysi ogʻirroq? Toʻgʻri belgini tanla.",
+        "ru": "6 кг арбуз и 4 кг дыня. Что тяжелее? Выбери знак.",
+        "en": "A 6 kg watermelon and a 4 kg melon. Which is heavier? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgan narsa ogʻirroq.",
+        "ru": "Тяжелее предмет с большим числом.",
+        "en": "The one with the bigger number is heavier."
+      },
+      "explanation": {
+        "uz": "6 > 4.",
+        "ru": "6 > 4.",
+        "en": "6 > 4."
+      },
+      "id": "q2"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 16,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Qopda 9 kg kartoshka bor edi, yana 7 kg qoʻshildi. Endi necha kg? Javobni bloklardan yasa.",
+        "ru": "В мешке было 9 кг картофеля, добавили ещё 7 кг. Сколько теперь кг? Собери ответ из блоков.",
+        "en": "A sack had 9 kg of potatoes; 7 kg more was added. How many kg now? Build the answer."
+      },
+      "hint": {
+        "uz": "Avval 9 + 7 ni hisobla.",
+        "ru": "Сначала вычисли 9 + 7.",
+        "en": "First work out 9 + 7."
+      },
+      "explanation": {
+        "uz": "9 + 7 = 16 kg.",
+        "ru": "9 + 7 = 16 кг.",
+        "en": "9 + 7 = 16 kg."
+      },
+      "id": "q3"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "5 + 6",
+              "right": "11"
+            },
+            {
+              "left": "14 - 6",
+              "right": "8"
+            },
+            {
+              "left": "9 + 7",
+              "right": "16"
+            },
+            {
+              "left": "20 - 8",
+              "right": "12"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir massa amalini (kg) javobi bilan ulang!",
+        "ru": "Соедини каждое действие с массой (кг) с её ответом!",
+        "en": "Match each mass expression (kg) with its answer!"
+      },
+      "hint": {
+        "uz": "Har ifodani hisoblab, tengini top.",
+        "ru": "Вычисли каждое выражение и найди равное.",
+        "en": "Work out each expression and find its match."
+      },
+      "explanation": {
+        "uz": "11, 8, 16, 12 kg.",
+        "ru": "11, 8, 16, 12 кг.",
+        "en": "11, 8, 16, 12 kg."
+      },
+      "id": "q4"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "6",
+            "1"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Tarozining bir pallasida narsa, ikkinchisida 2 kg va 3 kg girlar — tarozi muvozanatda. Narsa necha kg?",
+        "ru": "На одной чаше весов предмет, на другой гири 2 кг и 3 кг — весы в равновесии. Сколько кг предмет?",
+        "en": "On one pan is an object, on the other 2 kg and 3 kg weights — the balance is level. What is the object's mass?"
+      },
+      "hint": {
+        "uz": "Girlarni qoʻsh: 2 + 3.",
+        "ru": "Сложи гири: 2 + 3.",
+        "en": "Add the weights: 2 + 3."
+      },
+      "explanation": {
+        "uz": "2 + 3 = 5 kg.",
+        "ru": "2 + 3 = 5 кг.",
+        "en": "2 + 3 = 5 kg."
+      },
+      "componentProposal": {
+        "suggestedType": "scale_reader",
+        "concept": "reading a mass off a pan balance with known weights",
+        "interaction": "place gram/kg weights until the pans balance, read the value",
+        "props": "{ weights:number[], target }",
+        "why": "no current component renders a readable weighing scale"
+      },
+      "id": "q5"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "5 + 5",
+              "bin": "v10"
+            },
+            {
+              "id": "b",
+              "label": "6 + 4",
+              "bin": "v10"
+            },
+            {
+              "id": "c",
+              "label": "7 + 3",
+              "bin": "v10"
+            },
+            {
+              "id": "d",
+              "label": "5 + 3",
+              "bin": "v8"
+            },
+            {
+              "id": "e",
+              "label": "6 + 2",
+              "bin": "v8"
+            },
+            {
+              "id": "f",
+              "label": "4 + 4",
+              "bin": "v8"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v10",
+              "label": "10 kg"
+            },
+            {
+              "id": "v8",
+              "label": "8 kg"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir qopni massasi (kg) boʻyicha toʻgʻri tarozi qutisiga sudra!",
+        "ru": "Перетащи каждый мешок в нужный ящик по его массе (кг)!",
+        "en": "Drag each sack into the right bucket by its mass (kg)!"
+      },
+      "hint": {
+        "uz": "Yigʻindini hisobla, soʻng joyiga tashla.",
+        "ru": "Вычисли сумму, потом перетащи.",
+        "en": "Work out the sum, then drag it."
+      },
+      "explanation": {
+        "uz": "10 kg: 5+5, 6+4, 7+3. 8 kg: 5+3, 6+2, 4+4.",
+        "ru": "10 кг: 5+5, 6+4, 7+3. 8 кг: 5+3, 6+2, 4+4.",
+        "en": "10 kg: 5+5, 6+4, 7+3. 8 kg: 5+3, 6+2, 4+4."
+      },
+      "id": "q6"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 12,
+          "y": 9
+        }
+      },
+      "prompt": {
+        "uz": "12 kg qop va 9 kg qop. Qaysi ogʻirroq? Toʻgʻri belgini tanla.",
+        "ru": "Мешок 12 кг и мешок 9 кг. Какой тяжелее? Выбери знак.",
+        "en": "A 12 kg sack and a 9 kg sack. Which is heavier? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgani ogʻirroq.",
+        "ru": "Тяжелее с большим числом.",
+        "en": "The bigger number is heavier."
+      },
+      "explanation": {
+        "uz": "12 > 9.",
+        "ru": "12 > 9.",
+        "en": "12 > 9."
+      },
+      "id": "q7"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Bir savatda 7 kg, ikkinchisida 8 kg meva bor. Jami necha kg? Sonlar chizigʻida hisobla.",
+        "ru": "В одной корзине 7 кг, в другой 8 кг фруктов. Сколько всего кг? Посчитай на числовой прямой.",
+        "en": "One basket has 7 kg, another 8 kg of fruit. How many kg in total? Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla va 8 oldinga sur.",
+        "ru": "Встань на 7 и продвинься на 8.",
+        "en": "Start at 7 and move 8 forward."
+      },
+      "explanation": {
+        "uz": "7 + 8 = 15 kg.",
+        "ru": "7 + 8 = 15 кг.",
+        "en": "7 + 8 = 15 kg."
+      },
+      "id": "q8"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 30
+        }
+      },
+      "prompt": {
+        "uz": "Uchta qopning har birida 10 kg dan guruch bor. Jami necha kg? Javobni bloklardan yasa.",
+        "ru": "В каждом из трёх мешков по 10 кг риса. Сколько всего кг? Собери ответ из блоков.",
+        "en": "Each of three sacks holds 10 kg of rice. How many kg in total? Build the answer."
+      },
+      "hint": {
+        "uz": "10 + 10 + 10 — uchta oʻnlik.",
+        "ru": "10 + 10 + 10 — три десятка.",
+        "en": "10 + 10 + 10 — three tens."
+      },
+      "explanation": {
+        "uz": "10 + 10 + 10 = 30 kg.",
+        "ru": "10 + 10 + 10 = 30 кг.",
+        "en": "10 + 10 + 10 = 30 kg."
+      },
+      "id": "q9"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 10,
+          "y": 10
+        }
+      },
+      "prompt": {
+        "uz": "Ikki qopning har birida 10 kg. Qaysi belgi toʻgʻri? Tanla.",
+        "ru": "В каждом из двух мешков по 10 кг. Какой знак верный? Выбери.",
+        "en": "Each of two sacks has 10 kg. Which sign is correct? Choose."
+      },
+      "hint": {
+        "uz": "Ogʻirliklar bir xil.",
+        "ru": "Массы одинаковые.",
+        "en": "The masses are the same."
+      },
+      "explanation": {
+        "uz": "10 = 10, ular teng.",
+        "ru": "10 = 10, они равны.",
+        "en": "10 = 10, they are equal."
+      },
+      "id": "q10"
+    }
+  ]
+}

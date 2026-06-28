@@ -1,0 +1,365 @@
+{
+  "topicId": "g1-math-73",
+  "subjectKey": "g1-math",
+  "emojis": "🦁➕✨",
+  "title": {
+    "uz": "Qavsli tarkibli ifodalar",
+    "ru": "Составные выражения со скобками",
+    "en": "Compound expressions with brackets"
+  },
+  "recall": {
+    "uz": "Agar ifodada qavslar boʻlsa, avval qavs ichidagi amal bajariladi, soʻng qolgan amallar chapdan oʻngga. Masalan, (2 + 5) + 8 da avval 2 + 5 = 7, soʻng 7 + 8 = 15. Qavs — har doim birinchi!",
+    "ru": "Если в выражении есть скобки, сначала выполняем действие в скобках, потом остальные слева направо. Например, в (2 + 5) + 8 сначала 2 + 5 = 7, потом 7 + 8 = 15. Скобки — всегда первыми!",
+    "en": "If an expression has brackets, do the brackets first, then the rest left to right. For example in (2 + 5) + 8 do 2 + 5 = 7, then 7 + 8 = 15. Brackets always first!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "14",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qafaslarda 2 yoʻlbars, 5 arslon va 8 qoplon bor. Jami nechta yirtqich?",
+        "ru": "В клетках 2 тигра, 5 львов и 8 леопардов. Сколько всего хищников?",
+        "en": "The cages have 2 tigers, 5 lions and 8 leopards. How many predators in all?"
+      },
+      "hint": {
+        "uz": "2 + 5 + 8 ni qoʻsh.",
+        "ru": "Сложи 2 + 5 + 8.",
+        "en": "Add 2 + 5 + 8."
+      },
+      "explanation": {
+        "uz": "2 + 5 + 8 = 15.",
+        "ru": "2 + 5 + 8 = 15.",
+        "en": "2 + 5 + 8 = 15."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "29",
+            "28",
+            "30"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sherzod 12, Aziza 11, Ulugʻbek 6 ta chigirtka sanadi. Jami nechta?",
+        "ru": "Шерзод насчитал 12, Азиза 11, Улугбек 6 кузнечиков. Сколько всего?",
+        "en": "Sherzod counted 12, Aziza 11, Ulugbek 6 grasshoppers. How many in all?"
+      },
+      "hint": {
+        "uz": "12 + 11 + 6 ni qoʻsh.",
+        "ru": "Сложи 12 + 11 + 6.",
+        "en": "Add 12 + 11 + 6."
+      },
+      "explanation": {
+        "uz": "12 + 11 + 6 = 29.",
+        "ru": "12 + 11 + 6 = 29.",
+        "en": "12 + 11 + 6 = 29."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "15",
+            "14",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "(2 + 5) + 8 = ?",
+        "ru": "(2 + 5) + 8 = ?",
+        "en": "(2 + 5) + 8 = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs: 2 + 5.",
+        "ru": "Сначала скобки: 2 + 5.",
+        "en": "Brackets first: 2 + 5."
+      },
+      "explanation": {
+        "uz": "(2 + 5) + 8 = 7 + 8 = 15.",
+        "ru": "(2 + 5) + 8 = 7 + 8 = 15.",
+        "en": "(2 + 5) + 8 = 7 + 8 = 15."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "29",
+            "28",
+            "30"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "12 + (11 + 6) = ?",
+        "ru": "12 + (11 + 6) = ?",
+        "en": "12 + (11 + 6) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs: 11 + 6.",
+        "ru": "Сначала скобки: 11 + 6.",
+        "en": "Brackets first: 11 + 6."
+      },
+      "explanation": {
+        "uz": "12 + (11 + 6) = 12 + 17 = 29.",
+        "ru": "12 + (11 + 6) = 12 + 17 = 29.",
+        "en": "12 + (11 + 6) = 12 + 17 = 29."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "10",
+            "5",
+            "15"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Odam 20 marta, kaptar 30 marta nafas oladi. Kaptar qancha koʻp nafas oladi?",
+        "ru": "Человек дышит 20 раз, голубь 30. На сколько больше дышит голубь?",
+        "en": "A person breathes 20 times, a pigeon 30. How many more does the pigeon breathe?"
+      },
+      "hint": {
+        "uz": "30 dan 20 ni ayir.",
+        "ru": "Вычти из 30 число 20.",
+        "en": "Take 20 from 30."
+      },
+      "explanation": {
+        "uz": "30 - 20 = 10.",
+        "ru": "30 - 20 = 10.",
+        "en": "30 - 20 = 10."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "(3 + 4) + 5",
+              "right": "12"
+            },
+            {
+              "left": "(10 - 2) + 6",
+              "right": "14"
+            },
+            {
+              "left": "20 - (5 + 5)",
+              "right": "10"
+            },
+            {
+              "left": "(8 + 8) + 1",
+              "right": "17"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta uchburchakni bos!",
+        "ru": "Нажми на самый большой треугольник!",
+        "en": "Tap the biggest triangle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green",
+            "scale": 0.7
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "orange",
+            "scale": 1.3
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "blue",
+            "scale": 0.95
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Eng koʻp joy egallagan shaklni tanla.",
+        "ru": "Выбери фигуру, занимающую больше места.",
+        "en": "Pick the shape that takes the most space."
+      },
+      "explanation": {
+        "uz": "Eng katta uchburchakni topdik.",
+        "ru": "Нашли самый большой треугольник.",
+        "en": "We found the biggest triangle."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "18",
+            "17",
+            "19"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "(6 + 6) + 6 = ?",
+        "ru": "(6 + 6) + 6 = ?",
+        "en": "(6 + 6) + 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs: 6 + 6.",
+        "ru": "Сначала скобки: 6 + 6.",
+        "en": "Brackets first: 6 + 6."
+      },
+      "explanation": {
+        "uz": "(6 + 6) + 6 = 12 + 6 = 18.",
+        "ru": "(6 + 6) + 6 = 12 + 6 = 18.",
+        "en": "(6 + 6) + 6 = 12 + 6 = 18."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 65,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: (20 + 30) + 15 = ?",
+        "ru": "Вычисли и собери ответ из блоков: (20 + 30) + 15 = ?",
+        "en": "Work it out and build the answer with blocks: (20 + 30) + 15 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "(20 + 30) + 15 = 65.",
+        "ru": "(20 + 30) + 15 = 65.",
+        "en": "(20 + 30) + 15 = 65."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "(2 + 3) + 4",
+              "right": "9"
+            },
+            {
+              "left": "(5 + 5) + 5",
+              "right": "15"
+            },
+            {
+              "left": "(10 + 10) + 1",
+              "right": "21"
+            },
+            {
+              "left": "(7 + 2) + 8",
+              "right": "17"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "topicId": "g1-math-72",
+  "subjectKey": "g1-math",
+  "emojis": "🧩➕✨",
+  "title": {
+    "uz": "Tarkibli ifodalar",
+    "ru": "Составные выражения",
+    "en": "Compound expressions"
+  },
+  "recall": {
+    "uz": "Tarkibli ifoda — bir nechta amaldan iborat yozuv. Amallarni chapdan oʻngga, navbat bilan bajaramiz. «Koʻp» — qoʻshamiz, «kam» — ayiramiz. Masalan, 7 dan 5 ta koʻp — bu 7 + 5 = 12.",
+    "ru": "Составное выражение — запись из нескольких действий. Выполняем их по порядку, слева направо. «Больше» — прибавляем, «меньше» — вычитаем. Например, на 5 больше 7 — это 7 + 5 = 12.",
+    "en": "A compound expression has several operations. We do them in order, left to right. «More» means add, «fewer» means subtract. For example 5 more than 7 is 7 + 5 = 12."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "37",
+            "36",
+            "38"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Planetariyga 4 teleskop, 12 xarita va 21 disk keltirildi. Jami nechta oʻquv quroli?",
+        "ru": "В планетарий привезли 4 телескопа, 12 карт и 21 диск. Сколько всего пособий?",
+        "en": "A planetarium got 4 telescopes, 12 maps and 21 discs. How many aids in all?"
+      },
+      "hint": {
+        "uz": "4 + 12 + 21 ni qoʻsh.",
+        "ru": "Сложи 4 + 12 + 21.",
+        "en": "Add 4 + 12 + 21."
+      },
+      "explanation": {
+        "uz": "4 + 12 + 21 = 37.",
+        "ru": "4 + 12 + 21 = 37.",
+        "en": "4 + 12 + 21 = 37."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "4 + 12 + 21",
+              "right": "37"
+            },
+            {
+              "left": "7 + 5",
+              "right": "12"
+            },
+            {
+              "left": "16 - 7",
+              "right": "9"
+            },
+            {
+              "left": "28 + 11",
+              "right": "39"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "2",
+            "11"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "7 dan 5 ta koʻp boʻlgan son qaysi?",
+        "ru": "Число на 5 больше 7 — какое?",
+        "en": "The number 5 more than 7 is?"
+      },
+      "hint": {
+        "uz": "«Koʻp» — qoʻshamiz.",
+        "ru": "«Больше» — прибавляем.",
+        "en": "«More» means add."
+      },
+      "explanation": {
+        "uz": "7 + 5 = 12.",
+        "ru": "7 + 5 = 12.",
+        "en": "7 + 5 = 12."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "16 dan 7 ta kam boʻlgan son qaysi?",
+        "ru": "Число на 7 меньше 16 — какое?",
+        "en": "The number 7 fewer than 16 is?"
+      },
+      "hint": {
+        "uz": "«Kam» — ayiramiz.",
+        "ru": "«Меньше» — вычитаем.",
+        "en": "«Fewer» means subtract."
+      },
+      "explanation": {
+        "uz": "16 - 7 = 9.",
+        "ru": "16 - 7 = 9.",
+        "en": "16 - 7 = 9."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "39",
+            "38",
+            "40"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "28 dan 11 ta koʻp boʻlgan son qaysi?",
+        "ru": "Число на 11 больше 28 — какое?",
+        "en": "The number 11 more than 28 is?"
+      },
+      "hint": {
+        "uz": "«Koʻp» — qoʻshamiz.",
+        "ru": "«Больше» — прибавляем.",
+        "en": "«More» means add."
+      },
+      "explanation": {
+        "uz": "28 + 11 = 39.",
+        "ru": "28 + 11 = 39.",
+        "en": "28 + 11 = 39."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 58,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 35 + 12 + 11 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 35 + 12 + 11 = ?",
+        "en": "Work it out and build the answer with blocks: 35 + 12 + 11 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "35 + 12 + 11 = 58.",
+        "ru": "35 + 12 + 11 = 58.",
+        "en": "35 + 12 + 11 = 58."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "12 + 11",
+              "right": "23"
+            },
+            {
+              "left": "48 - 16",
+              "right": "32"
+            },
+            {
+              "left": "84 - 35",
+              "right": "49"
+            },
+            {
+              "left": "98 - 12",
+              "right": "86"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 51,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 23 + 12 + 16 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 23 + 12 + 16 = ?",
+        "en": "Work it out and build the answer with blocks: 23 + 12 + 16 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "23 + 12 + 16 = 51.",
+        "ru": "23 + 12 + 16 = 51.",
+        "en": "23 + 12 + 16 = 51."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "14 dan 2 ta kam boʻlgan son qaysi?",
+        "ru": "Число на 2 меньше 14 — какое?",
+        "en": "The number 2 fewer than 14 is?"
+      },
+      "hint": {
+        "uz": "«Kam» — ayiramiz.",
+        "ru": "«Меньше» — вычитаем.",
+        "en": "«Fewer» means subtract."
+      },
+      "explanation": {
+        "uz": "14 - 2 = 12.",
+        "ru": "14 - 2 = 12.",
+        "en": "14 - 2 = 12."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "27",
+            "38",
+            "11"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Gagarin 27 yosh, Shepard 38 yosh edi. Kim yoshroq boʻlgan?",
+        "ru": "Гагарину было 27, Шепарду 38. Кто был младше?",
+        "en": "Gagarin was 27, Shepard 38. Who was younger?"
+      },
+      "hint": {
+        "uz": "Kichik son — yoshroq.",
+        "ru": "Меньшее число — младше.",
+        "en": "The smaller number is younger."
+      },
+      "explanation": {
+        "uz": "27 < 38, demak Gagarin yoshroq.",
+        "ru": "27 < 38, значит Гагарин младше.",
+        "en": "27 < 38, so Gagarin was younger."
+      }
+    }
+  ]
+}

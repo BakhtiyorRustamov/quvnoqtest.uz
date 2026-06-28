@@ -1,0 +1,355 @@
+{
+  "topicId": "g1-math-103",
+  "subjectKey": "g1-math",
+  "emojis": "🧩📐➕",
+  "title": {
+    "uz": "Masalalarni birga yechamiz",
+    "ru": "Решаем задачи вместе",
+    "en": "Solving problems together"
+  },
+  "recall": {
+    "uz": "Masala yechishda shartni oʻqib, kerakli amalni tanlaymiz. Koʻpburchak tomonlari uzunliklari yigʻindisi — uning perimetri. Kvadratning 4 tomoni teng, uchburchakning 3 tomoni bor. Qoʻshishni qulay tartibda guruhlab bajaramiz.",
+    "ru": "Решая задачу, читаем условие и выбираем нужное действие. Сумма длин сторон многоугольника — его периметр. У квадрата 4 равные стороны, у треугольника — 3. Складываем удобным способом, группируя числа.",
+    "en": "To solve a problem we read the condition and pick the right operation. The sum of a polygon's side lengths is its perimeter. A square has 4 equal sides, a triangle has 3. We add in a convenient order by grouping."
+  },
+  "items": [
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 18,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Uchburchak tomonlari 5 cm, 6 cm va 7 cm. Perimetri (tomonlar yigʻindisi) necha cm? Javobni bloklardan yasa.",
+        "ru": "Стороны треугольника 5 см, 6 см и 7 см. Чему равен периметр (сумма сторон)? Собери ответ из блоков.",
+        "en": "A triangle's sides are 5 cm, 6 cm and 7 cm. What is the perimeter (sum of sides)? Build the answer."
+      },
+      "hint": {
+        "uz": "Uch tomonni qoʻsh: 5 + 6 + 7.",
+        "ru": "Сложи три стороны: 5 + 6 + 7.",
+        "en": "Add the three sides: 5 + 6 + 7."
+      },
+      "explanation": {
+        "uz": "5 + 6 + 7 = 18 cm.",
+        "ru": "5 + 6 + 7 = 18 см.",
+        "en": "5 + 6 + 7 = 18 cm."
+      },
+      "id": "q1"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 6,
+          "b": 9,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Uchburchakning ikki tomoni 6 cm va 9 cm. Ularning yigʻindisi necha cm? Sonlar chizigʻida hisobla.",
+        "ru": "Две стороны треугольника 6 см и 9 см. Какова их сумма? Посчитай на числовой прямой.",
+        "en": "Two sides of a triangle are 6 cm and 9 cm. What is their sum? Use the number line."
+      },
+      "hint": {
+        "uz": "6 dan boshla va 9 oldinga sur.",
+        "ru": "Встань на 6 и продвинься на 9.",
+        "en": "Start at 6 and move 9 forward."
+      },
+      "explanation": {
+        "uz": "6 + 9 = 15 cm.",
+        "ru": "6 + 9 = 15 см.",
+        "en": "6 + 9 = 15 cm."
+      },
+      "id": "q2"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "24",
+              "bin": "juft"
+            },
+            {
+              "id": "b",
+              "label": "16",
+              "bin": "juft"
+            },
+            {
+              "id": "c",
+              "label": "30",
+              "bin": "juft"
+            },
+            {
+              "id": "d",
+              "label": "13",
+              "bin": "toq"
+            },
+            {
+              "id": "e",
+              "label": "27",
+              "bin": "toq"
+            },
+            {
+              "id": "f",
+              "label": "19",
+              "bin": "toq"
+            }
+          ],
+          "bins": [
+            {
+              "id": "juft",
+              "label": "Juft"
+            },
+            {
+              "id": "toq",
+              "label": "Toq"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sonlarni juft va toq guruhlarga ajratib sudra!",
+        "ru": "Перетащи числа в группы чётных и нечётных!",
+        "en": "Drag the numbers into even and odd groups!"
+      },
+      "hint": {
+        "uz": "Oxiri 0,2,4,6,8 — juft; 1,3,5,7,9 — toq.",
+        "ru": "Оканчивается на 0,2,4,6,8 — чётное; 1,3,5,7,9 — нечётное.",
+        "en": "Ends in 0,2,4,6,8 -> even; 1,3,5,7,9 -> odd."
+      },
+      "explanation": {
+        "uz": "Juft: 24, 16, 30. Toq: 13, 27, 19.",
+        "ru": "Чётные: 24, 16, 30. Нечётные: 13, 27, 19.",
+        "en": "Even: 24, 16, 30. Odd: 13, 27, 19."
+      },
+      "id": "q3"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Rasmda bir-birini kesib oʻtgan ikki uchburchak chizilgan. Ularda jami nechta kesma bor?",
+        "ru": "На рисунке два пересекающихся треугольника. Сколько всего отрезков?",
+        "en": "The picture shows two crossing triangles. How many segments are there in total?"
+      },
+      "hint": {
+        "uz": "Har bir tomon — bitta kesma, sanab chiq.",
+        "ru": "Каждая сторона — отрезок, посчитай.",
+        "en": "Each side is one segment; count them."
+      },
+      "explanation": {
+        "uz": "Jami 5 ta kesma bor.",
+        "ru": "Всего 5 отрезков.",
+        "en": "There are 5 segments."
+      },
+      "componentProposal": {
+        "suggestedType": "count_shapes",
+        "concept": "counting segments/shapes inside a composite figure",
+        "interaction": "tap each distinct segment; counter validates the total",
+        "props": "{ figure, answer }",
+        "why": "no current component lets a child enumerate sub-shapes in a drawing"
+      },
+      "id": "q4"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 19,
+          "y": 14
+        }
+      },
+      "prompt": {
+        "uz": "Ikki masala javobi: 19 va 14. Qaysi belgi toʻgʻri? Tanla.",
+        "ru": "Ответы двух задач: 19 и 14. Какой знак верный? Выбери.",
+        "en": "Two answers: 19 and 14. Which sign is correct? Choose."
+      },
+      "hint": {
+        "uz": "Katta sonni belgila.",
+        "ru": "Определи большее число.",
+        "en": "Find the bigger number."
+      },
+      "explanation": {
+        "uz": "19 > 14.",
+        "ru": "19 > 14.",
+        "en": "19 > 14."
+      },
+      "id": "q5"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "49 - 15",
+              "right": "34"
+            },
+            {
+              "left": "15 + 14",
+              "right": "29"
+            },
+            {
+              "left": "40 - 8",
+              "right": "32"
+            },
+            {
+              "left": "13 + 18",
+              "right": "31"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir masala ifodasini uning javobi bilan ulang!",
+        "ru": "Соедини каждое выражение задачи с его ответом!",
+        "en": "Match each problem expression with its answer!"
+      },
+      "hint": {
+        "uz": "Har ifodani diqqat bilan hisobla.",
+        "ru": "Аккуратно вычисли каждое выражение.",
+        "en": "Carefully work out each expression."
+      },
+      "explanation": {
+        "uz": "34, 29, 32, 31.",
+        "ru": "34, 29, 32, 31.",
+        "en": "34, 29, 32, 31."
+      },
+      "id": "q6"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 20
+        }
+      },
+      "prompt": {
+        "uz": "Kvadratning tomoni 5 cm. Uning perimetri (4 tomon) necha cm? Javobni bloklardan yasa.",
+        "ru": "Сторона квадрата 5 см. Чему равен периметр (4 стороны)? Собери ответ из блоков.",
+        "en": "A square's side is 5 cm. What is its perimeter (4 sides)? Build the answer."
+      },
+      "hint": {
+        "uz": "4 ta 5 ni qoʻsh: 5+5+5+5.",
+        "ru": "Сложи четыре пятёрки: 5+5+5+5.",
+        "en": "Add four fives: 5+5+5+5."
+      },
+      "explanation": {
+        "uz": "5 + 5 + 5 + 5 = 20 cm.",
+        "ru": "5 + 5 + 5 + 5 = 20 см.",
+        "en": "5 + 5 + 5 + 5 = 20 cm."
+      },
+      "id": "q7"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "race_to_answer",
+        "props": {
+          "steps": 6,
+          "maxSum": 10
+        }
+      },
+      "prompt": {
+        "uz": "Hisob poygasi! Har bir toʻgʻri javob seni marraga bir qadam yaqinlashtiradi.",
+        "ru": "Гонка вычислений! Каждый верный ответ — шаг к финишу.",
+        "en": "Race to the answer! Each correct answer moves you one step to the finish."
+      },
+      "hint": {
+        "uz": "Tez va aniq hisobla.",
+        "ru": "Считай быстро и точно.",
+        "en": "Add quickly and accurately."
+      },
+      "explanation": {
+        "uz": "6 ta toʻgʻri javob — marra!",
+        "ru": "6 верных ответов — финиш!",
+        "en": "6 correct answers reach the finish!"
+      },
+      "id": "q8"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 9,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Doʻkonchi 8 ta va 9 ta olma sotdi. Jami nechta? Sonlar chizigʻida hisobla.",
+        "ru": "Продавец продал 8 и 9 яблок. Сколько всего? Посчитай на числовой прямой.",
+        "en": "A seller sold 8 and 9 apples. How many in total? Use the number line."
+      },
+      "hint": {
+        "uz": "8 dan boshla va 9 oldinga sur.",
+        "ru": "Встань на 8 и продвинься на 9.",
+        "en": "Start at 8 and move 9 forward."
+      },
+      "explanation": {
+        "uz": "8 + 9 = 17.",
+        "ru": "8 + 9 = 17.",
+        "en": "8 + 9 = 17."
+      },
+      "id": "q9"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 16,
+          "y": 16
+        }
+      },
+      "prompt": {
+        "uz": "Bir masalada 7 + 9, boshqasida 20 - 4. Qaysi belgi toʻgʻri? Tanla.",
+        "ru": "В одной задаче 7 + 9, в другой 20 - 4. Какой знак верный? Выбери.",
+        "en": "One problem is 7 + 9, the other 20 - 4. Which sign is correct? Choose."
+      },
+      "hint": {
+        "uz": "Ikkala ifodani hisobla.",
+        "ru": "Вычисли оба выражения.",
+        "en": "Work out both expressions."
+      },
+      "explanation": {
+        "uz": "7 + 9 = 16 va 20 - 4 = 16, ular teng.",
+        "ru": "7 + 9 = 16 и 20 - 4 = 16, они равны.",
+        "en": "7 + 9 = 16 and 20 - 4 = 16, they are equal."
+      },
+      "id": "q10"
+    }
+  ]
+}

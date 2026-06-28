@@ -1,0 +1,303 @@
+{
+  "topicId": "g1-math-58",
+  "subjectKey": "g1-math",
+  "emojis": "🔟🔢✨",
+  "title": {
+    "uz": "Yaxlit sonlar",
+    "ru": "Круглые числа",
+    "en": "Round numbers"
+  },
+  "recall": {
+    "uz": "Nol bilan tugaydigan sonlar yaxlit sonlar deyiladi: 10, 20, 30, ... 100. Ularda faqat oʻnliklar bor, birliklar yoʻq. Masalan, 30 — bu 3 ta oʻnlik. Yaxlit sonlar bilan ishlash oson!",
+    "ru": "Числа, оканчивающиеся на ноль, называются круглыми: 10, 20, 30, ... 100. В них только десятки, без единиц. Например, 30 — это 3 десятка. С круглыми числами легко!",
+    "en": "Numbers ending in zero are round numbers: 10, 20, 30, ... 100. They have only tens, no ones. For example 30 is 3 tens. Round numbers are easy to work with!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 30
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 30 sonini yasa!",
+        "ru": "Собери число 30 из блоков!",
+        "en": "Build the number 30 from blocks!"
+      },
+      "hint": {
+        "uz": "3 ta oʻnlik (+10) va 0 ta birlik (+1).",
+        "ru": "3 десятков (+10) и 0 единиц (+1).",
+        "en": "3 tens (+10) and 0 ones (+1)."
+      },
+      "explanation": {
+        "uz": "30 = 30 + 0: 3 oʻnlik va 0 birlik.",
+        "ru": "30 = 30 + 0: 3 десятков и 0 единиц.",
+        "en": "30 = 30 + 0: 3 tens and 0 ones."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 50
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 50 sonini yasa!",
+        "ru": "Собери число 50 из блоков!",
+        "en": "Build the number 50 from blocks!"
+      },
+      "hint": {
+        "uz": "5 ta oʻnlik (+10) va 0 ta birlik (+1).",
+        "ru": "5 десятков (+10) и 0 единиц (+1).",
+        "en": "5 tens (+10) and 0 ones (+1)."
+      },
+      "explanation": {
+        "uz": "50 = 50 + 0: 5 oʻnlik va 0 birlik.",
+        "ru": "50 = 50 + 0: 5 десятков и 0 единиц.",
+        "en": "50 = 50 + 0: 5 tens and 0 ones."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 70
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 70 sonini yasa!",
+        "ru": "Собери число 70 из блоков!",
+        "en": "Build the number 70 from blocks!"
+      },
+      "hint": {
+        "uz": "7 ta oʻnlik (+10) va 0 ta birlik (+1).",
+        "ru": "7 десятков (+10) и 0 единиц (+1).",
+        "en": "7 tens (+10) and 0 ones (+1)."
+      },
+      "explanation": {
+        "uz": "70 = 70 + 0: 7 oʻnlik va 0 birlik.",
+        "ru": "70 = 70 + 0: 7 десятков и 0 единиц.",
+        "en": "70 = 70 + 0: 7 tens and 0 ones."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "30",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "30 sonida nechta oʻnlik bor?",
+        "ru": "Сколько десятков в числе 30?",
+        "en": "How many tens are in 30?"
+      },
+      "hint": {
+        "uz": "Har oʻnlik — 10.",
+        "ru": "Каждый десяток — это 10.",
+        "en": "Each ten is 10."
+      },
+      "explanation": {
+        "uz": "30 = 3 oʻnlik.",
+        "ru": "30 = 3 десятка.",
+        "en": "30 = 3 tens."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "80",
+            "8",
+            "18"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "8 ta oʻnlik — bu qaysi son?",
+        "ru": "8 десятков — это какое число?",
+        "en": "8 tens make which number?"
+      },
+      "hint": {
+        "uz": "8 ni 10 ga koʻpaytirgandek.",
+        "ru": "Это 8 раз по 10.",
+        "en": "It is 8 tens of 10."
+      },
+      "explanation": {
+        "uz": "8 oʻnlik = 80.",
+        "ru": "8 десятков = 80.",
+        "en": "8 tens = 80."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 40,
+          "y": 60
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 40 va 60 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 40 и 60 — какой знак верный?",
+        "en": "Look at the scale: 40 and 60 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla. Oʻnliklar teng boʻlsa, birliklarni.",
+        "ru": "Сначала сравни десятки. Если равны — сравни единицы.",
+        "en": "Compare the tens first. If equal, compare the ones."
+      },
+      "explanation": {
+        "uz": "40 < 60.",
+        "ru": "40 < 60.",
+        "en": "40 < 60."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "60",
+            "50",
+            "70"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda hisobla: 30 + 30 = ?",
+        "ru": "Вычисли по линейке: 30 + 30 = ?",
+        "en": "Work it out on the ruler: 30 + 30 = ?"
+      },
+      "hint": {
+        "uz": "3 oʻnlik va yana 3 oʻnlik.",
+        "ru": "3 десятка и ещё 3 десятка.",
+        "en": "3 tens and 3 more tens."
+      },
+      "explanation": {
+        "uz": "30 + 30 = 60.",
+        "ru": "30 + 30 = 60.",
+        "en": "30 + 30 = 60."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "50",
+            "40",
+            "60"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "40 + 10 = ?",
+        "ru": "40 + 10 = ?",
+        "en": "40 + 10 = ?"
+      },
+      "hint": {
+        "uz": "Yana bitta oʻnlik qoʻsh.",
+        "ru": "Прибавь ещё один десяток.",
+        "en": "Add one more ten."
+      },
+      "explanation": {
+        "uz": "40 + 10 = 50.",
+        "ru": "40 + 10 = 50.",
+        "en": "40 + 10 = 50."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 90
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 90 sonini yasa!",
+        "ru": "Собери число 90 из блоков!",
+        "en": "Build the number 90 from blocks!"
+      },
+      "hint": {
+        "uz": "9 ta oʻnlik (+10) va 0 ta birlik (+1).",
+        "ru": "9 десятков (+10) и 0 единиц (+1).",
+        "en": "9 tens (+10) and 0 ones (+1)."
+      },
+      "explanation": {
+        "uz": "90 = 90 + 0: 9 oʻnlik va 0 birlik.",
+        "ru": "90 = 90 + 0: 9 десятков и 0 единиц.",
+        "en": "90 = 90 + 0: 9 tens and 0 ones."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "60",
+            "65",
+            "16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son yaxlit (nol bilan tugaydi)?",
+        "ru": "Какое число круглое (оканчивается на ноль)?",
+        "en": "Which number is round (ends in zero)?"
+      },
+      "hint": {
+        "uz": "Yaxlit son 0 bilan tugaydi.",
+        "ru": "Круглое оканчивается на 0.",
+        "en": "A round number ends in 0."
+      },
+      "explanation": {
+        "uz": "60 nol bilan tugaydi — yaxlit son.",
+        "ru": "60 оканчивается на 0 — круглое.",
+        "en": "60 ends in 0 — it is round."
+      }
+    }
+  ]
+}

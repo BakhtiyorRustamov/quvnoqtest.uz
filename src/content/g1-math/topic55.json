@@ -1,0 +1,327 @@
+{
+  "topicId": "g1-math-55",
+  "subjectKey": "g1-math",
+  "emojis": "➖🔢✨",
+  "title": {
+    "uz": "Sonlarni ayiramiz",
+    "ru": "Вычитаем числа",
+    "en": "Subtracting numbers"
+  },
+  "recall": {
+    "uz": "Sonlarni ayiramiz. Kamayuvchining birliklari ayriluvchidan katta boʻlsa, birliklardan ayiramiz. Masalan, 18 - 2 = 10 + (8 - 2) = 10 + 6 = 16. Kamayuvchi, ayriluvchi va ayirma — ayirishning qismlari.",
+    "ru": "Вычитаем числа. Если единиц в уменьшаемом больше, вычитаем из единиц. Например, 18 - 2 = 10 + (8 - 2) = 10 + 6 = 16. Уменьшаемое, вычитаемое и разность — части вычитания.",
+    "en": "We subtract numbers. If the minuend has more ones, subtract from the ones. For example 18 - 2 = 10 + (8 - 2) = 10 + 6 = 16. Minuend, subtrahend and difference are the parts of subtraction."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "16",
+            "15",
+            "17"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 18 - 2 = ?",
+        "ru": "Вычисли: 18 - 2 = ?",
+        "en": "Work it out: 18 - 2 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan ayir: 8 - 2 = 6, soʻng 10 ni qoʻsh.",
+        "ru": "Вычти из единиц: 8 - 2 = 6, потом прибавь 10.",
+        "en": "Subtract from the ones: 8 - 2 = 6, then add 10."
+      },
+      "explanation": {
+        "uz": "18 - 2 = 16. 10 + (8 - 2) = 16.",
+        "ru": "18 - 2 = 16. 10 + (8 - 2) = 16.",
+        "en": "18 - 2 = 16. 10 + (8 - 2) = 16."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bolalar 16 ta qor toʻpi yasashdi. 4 tasini otishdi. Nechta qor toʻpi qoldi?",
+        "ru": "Дети слепили 16 снежков. 4 бросили. Сколько снежков осталось?",
+        "en": "Children made 16 snowballs. They threw 4. How many snowballs are left?"
+      },
+      "hint": {
+        "uz": "16 dan 4 ni ayir.",
+        "ru": "Вычти из 16 число 4.",
+        "en": "Take 4 from 16."
+      },
+      "explanation": {
+        "uz": "16 - 4 = 12 ta qor toʻpi.",
+        "ru": "16 - 4 = 12 снежков.",
+        "en": "16 - 4 = 12 snowballs."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 15 - 3 = ?",
+        "ru": "Вычисли: 15 - 3 = ?",
+        "en": "Work it out: 15 - 3 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan ayir: 5 - 3 = 2, soʻng 10 ni qoʻsh.",
+        "ru": "Вычти из единиц: 5 - 3 = 2, потом прибавь 10.",
+        "en": "Subtract from the ones: 5 - 3 = 2, then add 10."
+      },
+      "explanation": {
+        "uz": "15 - 3 = 12. 10 + (5 - 3) = 12.",
+        "ru": "15 - 3 = 12. 10 + (5 - 3) = 12.",
+        "en": "15 - 3 = 12. 10 + (5 - 3) = 12."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 17 - 5 = ?",
+        "ru": "Вычисли: 17 - 5 = ?",
+        "en": "Work it out: 17 - 5 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan ayir: 7 - 5 = 2, soʻng 10 ni qoʻsh.",
+        "ru": "Вычти из единиц: 7 - 5 = 2, потом прибавь 10.",
+        "en": "Subtract from the ones: 7 - 5 = 2, then add 10."
+      },
+      "explanation": {
+        "uz": "17 - 5 = 12. 10 + (7 - 5) = 12.",
+        "ru": "17 - 5 = 12. 10 + (7 - 5) = 12.",
+        "en": "17 - 5 = 12. 10 + (7 - 5) = 12."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "18 ta bola tepalikda edi. 6 tasi uyga ketdi. Nechta bola qoldi?",
+        "ru": "18 детей были на горке. 6 ушли домой. Сколько детей осталось?",
+        "en": "18 children were on the hill. 6 went home. How many are left?"
+      },
+      "hint": {
+        "uz": "18 dan 6 ni ayir.",
+        "ru": "Вычти из 18 число 6.",
+        "en": "Take 6 from 18."
+      },
+      "explanation": {
+        "uz": "18 - 6 = 12 ta bola.",
+        "ru": "18 - 6 = 12 детей.",
+        "en": "18 - 6 = 12 children."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "11",
+            "10",
+            "12"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bolalar 14 ta donxoʻrak yasashdi. 3 tasini osishdi. Yana nechta osish kerak?",
+        "ru": "Дети сделали 14 кормушек. 3 повесили. Сколько ещё повесить?",
+        "en": "Children made 14 bird feeders. They hung 3. How many more to hang?"
+      },
+      "hint": {
+        "uz": "14 dan 3 ni ayir.",
+        "ru": "Вычти из 14 число 3.",
+        "en": "Take 3 from 14."
+      },
+      "explanation": {
+        "uz": "14 - 3 = 11 ta donxoʻrak.",
+        "ru": "14 - 3 = 11 кормушек.",
+        "en": "14 - 3 = 11 feeders."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Anjuman 11-dekabrda boʻladi. Akmal 2-dekabrda bildi. Tayyorlanishga necha kun qoldi?",
+        "ru": "Конференция 11 декабря. Акмаль узнал 2 декабря. Сколько дней на подготовку?",
+        "en": "The conference is on December 11. Akmal found out on December 2. How many days to prepare?"
+      },
+      "hint": {
+        "uz": "11 dan 2 ni ayir.",
+        "ru": "Вычти из 11 число 2.",
+        "en": "Take 2 from 11."
+      },
+      "explanation": {
+        "uz": "11 - 2 = 9 kun.",
+        "ru": "11 - 2 = 9 дней.",
+        "en": "11 - 2 = 9 days."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 19 - 7 = ?",
+        "ru": "Вычисли: 19 - 7 = ?",
+        "en": "Work it out: 19 - 7 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan ayir: 9 - 7 = 2, soʻng 10 ni qoʻsh.",
+        "ru": "Вычти из единиц: 9 - 7 = 2, потом прибавь 10.",
+        "en": "Subtract from the ones: 9 - 7 = 2, then add 10."
+      },
+      "explanation": {
+        "uz": "19 - 7 = 12. 10 + (9 - 7) = 12.",
+        "ru": "19 - 7 = 12. 10 + (9 - 7) = 12.",
+        "en": "19 - 7 = 12. 10 + (9 - 7) = 12."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "11",
+            "10",
+            "12"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 14 - 3 = ?",
+        "ru": "Вычисли: 14 - 3 = ?",
+        "en": "Work it out: 14 - 3 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan ayir: 4 - 3 = 1, soʻng 10 ni qoʻsh.",
+        "ru": "Вычти из единиц: 4 - 3 = 1, потом прибавь 10.",
+        "en": "Subtract from the ones: 4 - 3 = 1, then add 10."
+      },
+      "explanation": {
+        "uz": "14 - 3 = 11. 10 + (4 - 3) = 11.",
+        "ru": "14 - 3 = 11. 10 + (4 - 3) = 11.",
+        "en": "14 - 3 = 11. 10 + (4 - 3) = 11."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 18 - 6 = ?",
+        "ru": "Вычисли: 18 - 6 = ?",
+        "en": "Work it out: 18 - 6 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan ayir: 8 - 6 = 2, soʻng 10 ni qoʻsh.",
+        "ru": "Вычти из единиц: 8 - 6 = 2, потом прибавь 10.",
+        "en": "Subtract from the ones: 8 - 6 = 2, then add 10."
+      },
+      "explanation": {
+        "uz": "18 - 6 = 12. 10 + (8 - 6) = 12.",
+        "ru": "18 - 6 = 12. 10 + (8 - 6) = 12.",
+        "en": "18 - 6 = 12. 10 + (8 - 6) = 12."
+      }
+    }
+  ]
+}
