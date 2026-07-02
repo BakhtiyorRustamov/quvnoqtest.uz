@@ -17,6 +17,12 @@ import PositionGrid from './PositionGrid';
 import StraightCurved from './StraightCurved';
 import MatchPairs from './MatchPairs';
 import DragBuckets from './DragBuckets';
+import RulerMeasure from './RulerMeasure';
+import PolygonPerimeter from './PolygonPerimeter';
+import AngleFind from './AngleFind';
+import SymmetryGrid from './SymmetryGrid';
+import EquationSolve from './EquationSolve';
+import NumberOrder from './NumberOrder';
 import Mcq from './Mcq';
 
 // Large interactive game — loaded client-only (uses AudioContext / window).
@@ -42,6 +48,12 @@ export const WIDGETS: Record<string, ComponentType<any>> = {
   grand_prix_addition: GrandPrixAddition,
   match_pairs: MatchPairs,
   drag_buckets: DragBuckets,
+  ruler_measure: RulerMeasure,
+  polygon_perimeter: PolygonPerimeter,
+  angle_find: AngleFind,
+  symmetry_grid: SymmetryGrid,
+  equation_solve: EquationSolve,
+  number_order: NumberOrder,
   mcq: Mcq
 };
 
@@ -71,5 +83,11 @@ export const WIDGET_LABELS: Record<string, L10n> = {
   grand_prix_addition: { uz: 'Qoʻshish poygasi', ru: 'Гонка сложения', en: 'Addition Grand Prix' },
   match_pairs: { uz: 'Juftlarni ulash', ru: 'Соедини пары', en: 'Match the pairs' },
   drag_buckets: { uz: 'Qutilarga sudrab tashlash', ru: 'Перетащи в ящики', en: 'Drag into buckets' },
+  ruler_measure: { uz: 'Chizgʻichda oʻlchash', ru: 'Измерение линейкой', en: 'Measure with a ruler' },
+  polygon_perimeter: { uz: 'Perimetr — tomonlarni bosish', ru: 'Периметр — нажми стороны', en: 'Perimeter — tap the sides' },
+  angle_find: { uz: 'Burchaklarni topish', ru: 'Найди углы', en: 'Find the angles' },
+  symmetry_grid: { uz: 'Simmetriyani toʻldirish', ru: 'Дополни симметрию', en: 'Complete the symmetry' },
+  equation_solve: { uz: 'Tenglamani yechish', ru: 'Реши уравнение', en: 'Solve the equation' },
+  number_order: { uz: 'Sonlarni tartiblash', ru: 'Расставь числа по порядку', en: 'Order the numbers' },
   mcq: { uz: 'Test savoli (zaxira)', ru: 'Тестовый вопрос (резерв)', en: 'Multiple choice (fallback)' }
 };

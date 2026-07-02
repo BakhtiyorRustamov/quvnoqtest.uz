@@ -1,0 +1,361 @@
+{
+  "topicId": "g1-math-138",
+  "subjectKey": "g1-math",
+  "emojis": "🟰🔍✨",
+  "title": {
+    "uz": "Tenglamalarni yechamiz",
+    "ru": "Решаем уравнения",
+    "en": "Solving equations"
+  },
+  "recall": {
+    "uz": "Tenglamani yechish algoritmi: tenglamani yoz, nomaʼlum qism butunmi yoki qismimi aniqla, uni topish qoidasini esla, hisobla va tekshir. Nomaʼlum qoʻshiluvchini topish uchun yigʻindidan maʼlum qoʻshiluvchini ayiramiz.",
+    "ru": "Алгоритм решения уравнения: запиши уравнение, определи, целое неизвестно или часть, вспомни правило, вычисли и проверь. Чтобы найти неизвестное слагаемое, из суммы вычитаем известное слагаемое.",
+    "en": "Algorithm to solve an equation: write it, decide whether the whole or a part is unknown, recall the rule, compute and check. To find an unknown addend, subtract the known addend from the sum."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "70 + x = 75",
+          "answer": 5,
+          "choices": [
+            5,
+            6,
+            4
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Tenglamani yech: 70 + x = 75.",
+        "ru": "Реши уравнение: 70 + x = 75.",
+        "en": "Solve the equation: 70 + x = 75."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 5 ga teng.",
+        "ru": "Неизвестное равно 5.",
+        "en": "The unknown equals 5."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "x + 5 = 12",
+          "answer": 7,
+          "choices": [
+            7,
+            8,
+            6
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Tenglamani yech: x + 5 = 12.",
+        "ru": "Реши уравнение: x + 5 = 12.",
+        "en": "Solve the equation: x + 5 = 12."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 7 ga teng.",
+        "ru": "Неизвестное равно 7.",
+        "en": "The unknown equals 7."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "20 - x = 8",
+          "answer": 12,
+          "choices": [
+            12,
+            11,
+            13
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Tenglamani yech: 20 - x = 8.",
+        "ru": "Реши уравнение: 20 - x = 8.",
+        "en": "Solve the equation: 20 - x = 8."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 12 ga teng.",
+        "ru": "Неизвестное равно 12.",
+        "en": "The unknown equals 12."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 40,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Oshpaz 10 + 10 + 20 bogʻlam koʻkat ishlatdi. Jami nechta? Bloklardan yasa.",
+        "ru": "Повар использовал 10 + 10 + 20 пучков зелени. Сколько всего? Собери из блоков.",
+        "en": "The cook used 10 + 10 + 20 bunches of herbs. How many in all? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "10 + 10 + 20 = 40.",
+        "ru": "10 + 10 + 20 = 40.",
+        "en": "10 + 10 + 20 = 40."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 70,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Koʻkat: 40 ishlatildi, 30 qoldi. Avval nechta edi? 40 + 30 ni bloklardan yasa.",
+        "ru": "Зелени: 40 использовали, 30 осталось. Сколько было? Собери 40 + 30.",
+        "en": "Herbs: 40 used, 30 left. How many at first? Build 40 + 30."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "40 + 30 = 70.",
+        "ru": "40 + 30 = 70.",
+        "en": "40 + 30 = 70."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "70 + 5",
+              "right": "75"
+            },
+            {
+              "left": "12 - 5",
+              "right": "7"
+            },
+            {
+              "left": "40 + 30",
+              "right": "70"
+            },
+            {
+              "left": "88 - 8",
+              "right": "80"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagini hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 40,
+          "y": 30
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 40 va 30. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 40 и 30. Какой знак верный?",
+        "en": "Compare: 40 and 30. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "40 > 30.",
+        "ru": "40 > 30.",
+        "en": "40 > 30."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 7 + 6. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 7 + 6. Используй числовую прямую.",
+        "en": "Work it out: 7 + 6. Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla, 6 oldinga sur.",
+        "ru": "Встань на 7, продвинься на 6.",
+        "en": "Start at 7, move 6 forward."
+      },
+      "explanation": {
+        "uz": "7 + 6 = 13.",
+        "ru": "7 + 6 = 13.",
+        "en": "7 + 6 = 13."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 75
+        }
+      },
+      "prompt": {
+        "uz": "Sonni bloklardan yasa: 75.",
+        "ru": "Собери число 75.",
+        "en": "Build the number 75."
+      },
+      "hint": {
+        "uz": "7 ta oʻnlik (+10) va 5 ta birlik (+1).",
+        "ru": "7 десятков (+10) и 5 единиц (+1).",
+        "en": "7 tens (+10) and 5 ones (+1)."
+      },
+      "explanation": {
+        "uz": "75 = 70 + 5.",
+        "ru": "75 = 70 + 5.",
+        "en": "75 = 70 + 5."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "70 + 5",
+              "bin": "v75"
+            },
+            {
+              "id": "b",
+              "label": "80 - 5",
+              "bin": "v75"
+            },
+            {
+              "id": "c",
+              "label": "60 + 15",
+              "bin": "v75"
+            },
+            {
+              "id": "d",
+              "label": "40 + 30",
+              "bin": "v70"
+            },
+            {
+              "id": "e",
+              "label": "80 - 10",
+              "bin": "v70"
+            },
+            {
+              "id": "f",
+              "label": "65 + 5",
+              "bin": "v70"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v75",
+              "label": "75"
+            },
+            {
+              "id": "v70",
+              "label": "70"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик его значения!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в нужный ящик.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    }
+  ]
+}

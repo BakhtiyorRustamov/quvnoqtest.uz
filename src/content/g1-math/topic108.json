@@ -1,0 +1,308 @@
+{
+  "topicId": "g1-math-108",
+  "subjectKey": "g1-math",
+  "emojis": "📐⚖️💧",
+  "title": {
+    "uz": "Kattaliklar: uzunlik, massa, hajm",
+    "ru": "Величины: длина, масса, объём",
+    "en": "Quantities: length, mass, volume"
+  },
+  "recall": {
+    "uz": "Atrofimizda har xil kattaliklar bor: uzunlik (cm), massa (kg) va hajm (litr). Har birini oʻz birligida oʻlchaymiz. Masalan, goʻsht massasini kilogrammda, suvni litrda, lentani santimetrda oʻlchaymiz.",
+    "ru": "Вокруг нас разные величины: длина (см), масса (кг) и объём (литр). Каждую измеряем своей единицей. Например, мясо — в килограммах, воду — в литрах, ленту — в сантиметрах.",
+    "en": "Around us are different quantities: length (cm), mass (kg) and volume (litres). We measure each in its own unit. For example meat in kilograms, water in litres, ribbon in centimetres."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "multiplication_array",
+        "props": {
+          "a": 3,
+          "b": 2
+        }
+      },
+      "prompt": {
+        "uz": "Oshpaz 3 xil masalliqdan har biridan 2 kg oldi. Jami necha kg?",
+        "ru": "Повар взял 3 продукта по 2 кг. Сколько всего кг?",
+        "en": "A cook took 3 items, 2 kg each. How many kg in all?"
+      },
+      "hint": {
+        "uz": "Qatorlardagi sonlarni qoʻshib sana.",
+        "ru": "Сложи числа по рядам.",
+        "en": "Add up the rows."
+      },
+      "explanation": {
+        "uz": "3 ta 2 kg = 6 kg.",
+        "ru": "3 раза по 2 кг = 6 кг.",
+        "en": "3 twos of kg = 6 kg."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 9,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda lentaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: лента. Сколько см?",
+        "en": "Measure the ribbon on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
+      },
+      "explanation": {
+        "uz": "Lentaning uzunligi 9 cm.",
+        "ru": "Длина: 9 см.",
+        "en": "The ribbon is 9 cm long."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 11,
+          "y": 7
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 11 kg va 7 kg. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 11 кг и 7 кг. Какой знак верный?",
+        "en": "Compare: 11 kg and 7 kg. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Soni katta boʻlsa, ogʻir.",
+        "ru": "Больше число — тяжелее.",
+        "en": "A bigger number is heavier."
+      },
+      "explanation": {
+        "uz": "11 > 7.",
+        "ru": "11 > 7.",
+        "en": "11 > 7."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 11,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Sxema: goʻsht 6 kg, piyoz 3 kg, sabzi 2 kg. Jami necha kg? Bloklardan yasa.",
+        "ru": "Схема: мясо 6 кг, лук 3 кг, морковь 2 кг. Сколько всего? Собери из блоков.",
+        "en": "Scheme: meat 6 kg, onion 3 kg, carrot 2 kg. How many kg in all? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "6 + 3 + 2 = 11.",
+        "ru": "6 + 3 + 2 = 11.",
+        "en": "6 + 3 + 2 = 11."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 5,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "8 litr va 5 litr — birga necha litr? Sonlar chizigʻida hisobla.",
+        "ru": "8 л и 5 л — сколько вместе? Посчитай на числовой прямой.",
+        "en": "8 L and 5 L — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "8 dan boshla, 5 qadam oldinga sur.",
+        "ru": "Встань на 8, продвинься на 5.",
+        "en": "Start at 8, move 5 forward."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13 litr.",
+        "ru": "8 + 5 = 13 л.",
+        "en": "8 + 5 = 13 L."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "6 + 3 + 2",
+              "right": "11"
+            },
+            {
+              "left": "20 - 8",
+              "right": "12"
+            },
+            {
+              "left": "9 + 4",
+              "right": "13"
+            },
+            {
+              "left": "18 - 4",
+              "right": "14"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 24
+        }
+      },
+      "prompt": {
+        "uz": "Qopda 24 kg guruch bor. Shu miqdorni bloklardan yasa.",
+        "ru": "В мешке 24 кг риса. Собери это число.",
+        "en": "A sack has 24 kg of rice. Build that number."
+      },
+      "hint": {
+        "uz": "2 ta oʻnlik (+10) va 4 ta birlik (+1).",
+        "ru": "2 десятков (+10) и 4 единиц (+1).",
+        "en": "2 tens (+10) and 4 ones (+1)."
+      },
+      "explanation": {
+        "uz": "24 = 20 + 4.",
+        "ru": "24 = 20 + 4.",
+        "en": "24 = 20 + 4."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 10,
+          "y": 16
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 10 litr va 16 litr. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 10 л и 16 л. Какой знак верный?",
+        "en": "Compare: 10 L and 16 L. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Soni katta boʻlsa, koʻproq.",
+        "ru": "Больше число — больше.",
+        "en": "A bigger number is more."
+      },
+      "explanation": {
+        "uz": "10 < 16.",
+        "ru": "10 < 16.",
+        "en": "10 < 16."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "7 kg va 6 kg — birga necha kg? Sonlar chizigʻida hisobla.",
+        "ru": "7 кг и 6 кг — сколько вместе? Посчитай на числовой прямой.",
+        "en": "7 kg and 6 kg — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla, 6 qadam oldinga sur.",
+        "ru": "Встань на 7, продвинься на 6.",
+        "en": "Start at 7, move 6 forward."
+      },
+      "explanation": {
+        "uz": "7 + 6 = 13 kg.",
+        "ru": "7 + 6 = 13 кг.",
+        "en": "7 + 6 = 13 kg."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "2",
+            "3",
+            "1"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Yigʻindi 11 kg. Biri 6 kg, ikkinchisi 3 kg. Uchinchisi necha kg?",
+        "ru": "Сумма 11 кг. Одно 6 кг, другое 3 кг. Сколько третье?",
+        "en": "The total is 11 kg. One is 6 kg, another 3 kg. How many kg is the third?"
+      },
+      "hint": {
+        "uz": "11 dan 6 va 3 ni ayir.",
+        "ru": "Вычти из 11 числа 6 и 3.",
+        "en": "Take 6 and 3 from 11."
+      },
+      "explanation": {
+        "uz": "11 - 6 - 3 = 2 kg.",
+        "ru": "11 - 6 - 3 = 2 кг.",
+        "en": "11 - 6 - 3 = 2 kg."
+      }
+    }
+  ]
+}

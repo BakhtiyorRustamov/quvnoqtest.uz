@@ -1,0 +1,329 @@
+{
+  "topicId": "g1-math-139",
+  "subjectKey": "g1-math",
+  "emojis": "🟰🌳✨",
+  "title": {
+    "uz": "Tenglamalar — mashq",
+    "ru": "Уравнения — практика",
+    "en": "Equations — practice"
+  },
+  "recall": {
+    "uz": "Harf bilan belgilangan nomaʼlum songa oʻzgaruvchi deyiladi. Tenglikni toʻgʻri qiladigan son tenglamaning ildizi deyiladi. Tenglamani yechib, ildizini topamiz va uni jadval yoki masala bilan tekshiramiz.",
+    "ru": "Неизвестное число, обозначенное буквой, называют переменной. Число, при котором равенство верно, называют корнем уравнения. Решая уравнение, находим корень и проверяем его таблицей или задачей.",
+    "en": "An unknown shown by a letter is called a variable. The number that makes the equality true is the root of the equation. Solving the equation, we find the root and check it with a table or a problem."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "49 + x = 79",
+          "answer": 30,
+          "choices": [
+            30,
+            28,
+            32
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Bogʻda 79 daraxt: 49 tasi boshqa, qolgani qaragʻay. Nechta qaragʻay? 49 + x = 79.",
+        "ru": "В парке 79 деревьев: 49 других, остальные сосны. Сколько сосен? 49 + x = 79.",
+        "en": "A park has 79 trees: 49 others, the rest pines. How many pines? 49 + x = 79."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 30 ga teng.",
+        "ru": "Неизвестное равно 30.",
+        "en": "The unknown equals 30."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 49,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Chinor 23, zarang 21, eman 5 ta. Jami nechta (qaragʻaydan boshqa)? Bloklardan yasa.",
+        "ru": "Чинар 23, клён 21, дуб 5. Сколько всего (кроме сосен)? Собери из блоков.",
+        "en": "23 planes, 21 maples, 5 oaks. How many in all (besides pines)? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "23 + 21 + 5 = 49.",
+        "ru": "23 + 21 + 5 = 49.",
+        "en": "23 + 21 + 5 = 49."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "x + 12 = 26",
+          "answer": 14,
+          "choices": [
+            14,
+            13,
+            15
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Tenglamani yech: x + 12 = 26.",
+        "ru": "Реши уравнение: x + 12 = 26.",
+        "en": "Solve the equation: x + 12 = 26."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 14 ga teng.",
+        "ru": "Неизвестное равно 14.",
+        "en": "The unknown equals 14."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "23",
+            "22",
+            "24"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Jadval: x = 11 boʻlsa, x + 12 nechа?",
+        "ru": "Таблица: если x = 11, чему равно x + 12?",
+        "en": "Table: if x = 11, what is x + 12?"
+      },
+      "hint": {
+        "uz": "11 + 12 ni hisobla.",
+        "ru": "Вычисли 11 + 12.",
+        "en": "Work out 11 + 12."
+      },
+      "explanation": {
+        "uz": "11 + 12 = 23.",
+        "ru": "11 + 12 = 23.",
+        "en": "11 + 12 = 23."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "17",
+            "16",
+            "18"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Jadval: x = 22 boʻlsa, x - 5 nechа?",
+        "ru": "Таблица: если x = 22, чему равно x - 5?",
+        "en": "Table: if x = 22, what is x - 5?"
+      },
+      "hint": {
+        "uz": "22 - 5 ni hisobla.",
+        "ru": "Вычисли 22 - 5.",
+        "en": "Work out 22 - 5."
+      },
+      "explanation": {
+        "uz": "22 - 5 = 17.",
+        "ru": "22 - 5 = 17.",
+        "en": "22 - 5 = 17."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "23 + 21 + 5 + x = 79",
+          "answer": 30,
+          "choices": [
+            30,
+            29,
+            31
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Ildizini top: 23 + 21 + 5 + x = 79.",
+        "ru": "Найди корень: 23 + 21 + 5 + x = 79.",
+        "en": "Find the root: 23 + 21 + 5 + x = 79."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 30 ga teng.",
+        "ru": "Неизвестное равно 30.",
+        "en": "The unknown equals 30."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "11 + 12",
+              "right": "23"
+            },
+            {
+              "left": "22 - 5",
+              "right": "17"
+            },
+            {
+              "left": "45 + 12",
+              "right": "57"
+            },
+            {
+              "left": "76 - 5",
+              "right": "71"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagini hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 23,
+          "y": 17
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 23 va 17. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 23 и 17. Какой знак верный?",
+        "en": "Compare: 23 and 17. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "23 > 17.",
+        "ru": "23 > 17.",
+        "en": "23 > 17."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 4,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 9 + 4. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 9 + 4. Используй числовую прямую.",
+        "en": "Work it out: 9 + 4. Use the number line."
+      },
+      "hint": {
+        "uz": "9 dan boshla, 4 oldinga sur.",
+        "ru": "Встань на 9, продвинься на 4.",
+        "en": "Start at 9, move 4 forward."
+      },
+      "explanation": {
+        "uz": "9 + 4 = 13.",
+        "ru": "9 + 4 = 13.",
+        "en": "9 + 4 = 13."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 79
+        }
+      },
+      "prompt": {
+        "uz": "Sonni bloklardan yasa: 79.",
+        "ru": "Собери число 79.",
+        "en": "Build the number 79."
+      },
+      "hint": {
+        "uz": "7 ta oʻnlik (+10) va 9 ta birlik (+1).",
+        "ru": "7 десятков (+10) и 9 единиц (+1).",
+        "en": "7 tens (+10) and 9 ones (+1)."
+      },
+      "explanation": {
+        "uz": "79 = 70 + 9.",
+        "ru": "79 = 70 + 9.",
+        "en": "79 = 70 + 9."
+      }
+    }
+  ]
+}

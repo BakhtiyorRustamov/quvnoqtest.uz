@@ -1,0 +1,457 @@
+{
+  "topicId": "g1-math-128",
+  "subjectKey": "g1-math",
+  "emojis": "🧊⚽✨",
+  "title": {
+    "uz": "Hajmli shakllar",
+    "ru": "Объёмные фигуры",
+    "en": "3D shapes"
+  },
+  "recall": {
+    "uz": "Hajmli shakllar fazoda joy egallaydi: shar, kub, piramida, konus, silindr va kuboid. Yassi shakllar esa tekis: doira, kvadrat, uchburchak. Atrofimizdagi narsalarni shu shakllarga oʻxshatamiz.",
+    "ru": "Объёмные фигуры занимают место в пространстве: шар, куб, пирамида, конус, цилиндр, кубоид. Плоские фигуры плоские: круг, квадрат, треугольник. Сравниваем предметы вокруг с этими фигурами.",
+    "en": "3D shapes take up space: sphere, cube, pyramid, cone, cylinder and cuboid. Flat shapes are flat: circle, square, triangle. We match objects around us to these shapes."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma kublarni belgila!",
+        "ru": "Отметь все кубы!",
+        "en": "Tap all the cubes!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "cube",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "sphere",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "cube",
+            "color": "green"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "cylinder",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "cube",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "e"
+      ],
+      "hint": {
+        "uz": "Kubning hamma tomoni kvadrat.",
+        "ru": "У куба все грани — квадраты.",
+        "en": "A cube's faces are all squares."
+      },
+      "explanation": {
+        "uz": "Uchta kubni topdik.",
+        "ru": "Нашли три куба.",
+        "en": "We found three cubes."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Sharni bos!",
+        "ru": "Нажми на шар!",
+        "en": "Tap the sphere!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "cube",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "sphere",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "cone",
+            "color": "green"
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Shar — toʻp kabi yumaloq.",
+        "ru": "Шар — круглый, как мяч.",
+        "en": "A sphere is round like a ball."
+      },
+      "explanation": {
+        "uz": "Sharni topdik.",
+        "ru": "Нашли шар.",
+        "en": "We found the sphere."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Yassi va hajmli shakllarni ajrat!",
+        "ru": "Раздели плоские и объёмные фигуры!",
+        "en": "Sort flat and 3D shapes!"
+      },
+      "items": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          },
+          "bin": "flat"
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "cube",
+            "color": "orange"
+          },
+          "bin": "d3"
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "green"
+          },
+          "bin": "flat"
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "sphere",
+            "color": "magenta"
+          },
+          "bin": "d3"
+        }
+      ],
+      "bins": [
+        {
+          "id": "flat",
+          "label": {
+            "uz": "Yassi",
+            "ru": "Плоские",
+            "en": "Flat"
+          },
+          "color": "blue"
+        },
+        {
+          "id": "d3",
+          "label": {
+            "uz": "Hajmli",
+            "ru": "Объёмные",
+            "en": "3D"
+          },
+          "color": "magenta"
+        }
+      ],
+      "hint": {
+        "uz": "Hajmli shakllar fazoda joy egallaydi.",
+        "ru": "Объёмные фигуры занимают место.",
+        "en": "3D shapes take up space."
+      },
+      "explanation": {
+        "uz": "Shakllarni ajratdik.",
+        "ru": "Разделили фигуры.",
+        "en": "We sorted the shapes."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 11,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Oʻquvchilar 28 ta shakl yasashdi: 14 tasi shar, 3 tasi kub, qolgani piramida. Nechta piramida? Bloklardan yasa.",
+        "ru": "Сделали 28 фигур: 14 шаров, 3 куба, остальные пирамиды. Сколько пирамид? Собери из блоков.",
+        "en": "28 shapes were made: 14 spheres, 3 cubes, the rest pyramids. How many pyramids? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "28 - 14 - 3 = 11.",
+        "ru": "28 - 14 - 3 = 11.",
+        "en": "28 - 14 - 3 = 11."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Simdan tomoni 3 dm boʻlgan kvadrat yasaldi (P = 12 dm). Undan teng tomonli uchburchak yasaldi. Uchburchak tomoni necha dm?",
+        "ru": "Из проволоки сделали квадрат со стороной 3 дм (P = 12 дм), затем равносторонний треугольник. Какова его сторона?",
+        "en": "A wire square of side 3 dm (P = 12 dm) was reshaped into an equilateral triangle. What is its side?"
+      },
+      "hint": {
+        "uz": "12 ni 3 ga boʻl (3 ta teng tomon).",
+        "ru": "Раздели 12 на 3 (три равные стороны).",
+        "en": "Divide 12 by 3 (three equal sides)."
+      },
+      "explanation": {
+        "uz": "12 : 3 = 4 dm.",
+        "ru": "12 : 3 = 4 дм.",
+        "en": "12 : 3 = 4 dm."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma silindrlarni belgila!",
+        "ru": "Отметь все цилиндры!",
+        "en": "Tap all the cylinders!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "cylinder",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "cube",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "cylinder",
+            "color": "green"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "sphere",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c"
+      ],
+      "hint": {
+        "uz": "Silindr — banka yoki stakan kabi.",
+        "ru": "Цилиндр — как банка или стакан.",
+        "en": "A cylinder is like a can or a glass."
+      },
+      "explanation": {
+        "uz": "Ikkita silindrni topdik.",
+        "ru": "Нашли два цилиндра.",
+        "en": "We found two cylinders."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "28 - 14",
+              "right": "14"
+            },
+            {
+              "left": "14 + 3",
+              "right": "17"
+            },
+            {
+              "left": "9 + 9",
+              "right": "18"
+            },
+            {
+              "left": "20 - 8",
+              "right": "12"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta kubni bos!",
+        "ru": "Нажми на самый большой куб!",
+        "en": "Tap the biggest cube!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "cube",
+            "color": "blue",
+            "scale": 0.7
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "cube",
+            "color": "orange",
+            "scale": 1.3
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "cube",
+            "color": "green",
+            "scale": 0.95
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Eng koʻp joy egallaganini tanla.",
+        "ru": "Выбери занимающий больше места.",
+        "en": "Pick the one taking the most space."
+      },
+      "explanation": {
+        "uz": "Eng katta kubni topdik.",
+        "ru": "Нашли самый большой куб.",
+        "en": "We found the biggest cube."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 5,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 8 + 5. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 8 + 5. Используй числовую прямую.",
+        "en": "Work it out: 8 + 5. Use the number line."
+      },
+      "hint": {
+        "uz": "8 dan boshla, 5 oldinga sur.",
+        "ru": "Встань на 8, продвинься на 5.",
+        "en": "Start at 8, move 5 forward."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13.",
+        "ru": "8 + 5 = 13.",
+        "en": "8 + 5 = 13."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 28
+        }
+      },
+      "prompt": {
+        "uz": "Jami 28 ta shakl. Shu sonni bloklardan yasa.",
+        "ru": "Всего 28 фигур. Собери это число.",
+        "en": "28 shapes in all. Build that number."
+      },
+      "hint": {
+        "uz": "2 ta oʻnlik (+10) va 8 ta birlik (+1).",
+        "ru": "2 десятков (+10) и 8 единиц (+1).",
+        "en": "2 tens (+10) and 8 ones (+1)."
+      },
+      "explanation": {
+        "uz": "28 = 20 + 8.",
+        "ru": "28 = 20 + 8.",
+        "en": "28 = 20 + 8."
+      }
+    }
+  ]
+}

@@ -1,0 +1,390 @@
+{
+  "topicId": "g1-math-121",
+  "subjectKey": "g1-math",
+  "emojis": "📐🔺✨",
+  "title": {
+    "uz": "Burchak bilan tanishamiz",
+    "ru": "Знакомимся с углом",
+    "en": "Meet the angle"
+  },
+  "recall": {
+    "uz": "Bir nuqtadan chiquvchi ikki nurdan burchak hosil boʻladi. Toʻgʻri burchak 90 gradusga teng. Oʻtkir burchak toʻgʻri burchakdan kichik, oʻtmas burchak esa undan katta boʻladi.",
+    "ru": "Угол образуют два луча из одной точки. Прямой угол равен 90 градусам. Острый угол меньше прямого, а тупой — больше.",
+    "en": "An angle is made by two rays from one point. A right angle is 90 degrees. An acute angle is smaller than a right angle, an obtuse angle is bigger."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "angle_find",
+        "props": {
+          "angles": [
+            {
+              "id": "a",
+              "deg": 90
+            },
+            {
+              "id": "b",
+              "deg": 45
+            },
+            {
+              "id": "c",
+              "deg": 120
+            },
+            {
+              "id": "d",
+              "deg": 90
+            },
+            {
+              "id": "e",
+              "deg": 60
+            }
+          ],
+          "target": "right"
+        }
+      },
+      "prompt": {
+        "uz": "Hamma toʻgʻri burchaklarni bos!",
+        "ru": "Нажми на все прямые углы!",
+        "en": "Tap all the right angles!"
+      },
+      "hint": {
+        "uz": "Toʻgʻri burchak — 90°, oʻtkir — undan kichik, oʻtmas — undan katta.",
+        "ru": "Прямой угол — 90°, острый — меньше, тупой — больше.",
+        "en": "A right angle is 90°, acute is smaller, obtuse is bigger."
+      },
+      "explanation": {
+        "uz": "Hamma toʻgʻri burchaklarni topdik.",
+        "ru": "Нашли все прямые углы.",
+        "en": "We found all the right angles."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "angle_find",
+        "props": {
+          "angles": [
+            {
+              "id": "a",
+              "deg": 40
+            },
+            {
+              "id": "b",
+              "deg": 90
+            },
+            {
+              "id": "c",
+              "deg": 130
+            },
+            {
+              "id": "d",
+              "deg": 60
+            },
+            {
+              "id": "e",
+              "deg": 90
+            }
+          ],
+          "target": "acute"
+        }
+      },
+      "prompt": {
+        "uz": "Hamma oʻtkir burchaklarni bos!",
+        "ru": "Нажми на все острые углы!",
+        "en": "Tap all the acute angles!"
+      },
+      "hint": {
+        "uz": "Toʻgʻri burchak — 90°, oʻtkir — undan kichik, oʻtmas — undan katta.",
+        "ru": "Прямой угол — 90°, острый — меньше, тупой — больше.",
+        "en": "A right angle is 90°, acute is smaller, obtuse is bigger."
+      },
+      "explanation": {
+        "uz": "Hamma oʻtkir burchaklarni topdik.",
+        "ru": "Нашли все острые углы.",
+        "en": "We found all the acute angles."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "angle_find",
+        "props": {
+          "angles": [
+            {
+              "id": "a",
+              "deg": 120
+            },
+            {
+              "id": "b",
+              "deg": 90
+            },
+            {
+              "id": "c",
+              "deg": 150
+            },
+            {
+              "id": "d",
+              "deg": 45
+            },
+            {
+              "id": "e",
+              "deg": 90
+            }
+          ],
+          "target": "obtuse"
+        }
+      },
+      "prompt": {
+        "uz": "Hamma oʻtmas burchaklarni bos!",
+        "ru": "Нажми на все тупые углы!",
+        "en": "Tap all the obtuse angles!"
+      },
+      "hint": {
+        "uz": "Toʻgʻri burchak — 90°, oʻtkir — undan kichik, oʻtmas — undan katta.",
+        "ru": "Прямой угол — 90°, острый — меньше, тупой — больше.",
+        "en": "A right angle is 90°, acute is smaller, obtuse is bigger."
+      },
+      "explanation": {
+        "uz": "Hamma oʻtmas burchaklarni topdik.",
+        "ru": "Нашли все тупые углы.",
+        "en": "We found all the obtuse angles."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 21,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 98 - (43 + 34). Javobni bloklardan yasa.",
+        "ru": "Вычисли: 98 - (43 + 34). Собери ответ из блоков.",
+        "en": "Work out 98 - (43 + 34). Build the answer."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "98 - 77 = 21.",
+        "ru": "98 - 77 = 21.",
+        "en": "98 - 77 = 21."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 26,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: (99 - 78) + 5. Javobni bloklardan yasa.",
+        "ru": "Вычисли: (99 - 78) + 5. Собери ответ.",
+        "en": "Work out (99 - 78) + 5. Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "21 + 5 = 26.",
+        "ru": "21 + 5 = 26.",
+        "en": "21 + 5 = 26."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "98 - 77",
+              "right": "21"
+            },
+            {
+              "left": "97 - 56 + 2",
+              "right": "43"
+            },
+            {
+              "left": "(69 - 51) - 8",
+              "right": "10"
+            },
+            {
+              "left": "(87 + 12) - 60",
+              "right": "39"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "90",
+            "45",
+            "180"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Toʻgʻri burchak necha gradusga teng?",
+        "ru": "Сколько градусов в прямом угле?",
+        "en": "How many degrees is a right angle?"
+      },
+      "hint": {
+        "uz": "Kvadratning burchagi — toʻgʻri burchak.",
+        "ru": "Угол квадрата — прямой.",
+        "en": "A square's corner is a right angle."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri burchak 90 gradus.",
+        "ru": "Прямой угол 90 градусов.",
+        "en": "A right angle is 90 degrees."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "angle_find",
+        "props": {
+          "angles": [
+            {
+              "id": "a",
+              "deg": 90
+            },
+            {
+              "id": "b",
+              "deg": 30
+            },
+            {
+              "id": "c",
+              "deg": 90
+            },
+            {
+              "id": "d",
+              "deg": 110
+            },
+            {
+              "id": "e",
+              "deg": 90
+            }
+          ],
+          "target": "right"
+        }
+      },
+      "prompt": {
+        "uz": "Hamma toʻgʻri burchaklarni bos!",
+        "ru": "Нажми на все прямые углы!",
+        "en": "Tap all the right angles!"
+      },
+      "hint": {
+        "uz": "Toʻgʻri burchak — 90°, oʻtkir — undan kichik, oʻtmas — undan katta.",
+        "ru": "Прямой угол — 90°, острый — меньше, тупой — больше.",
+        "en": "A right angle is 90°, acute is smaller, obtuse is bigger."
+      },
+      "explanation": {
+        "uz": "Hamma toʻgʻri burchaklarni topdik.",
+        "ru": "Нашли все прямые углы.",
+        "en": "We found all the right angles."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 21,
+          "y": 39
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi perimetr katta: 21 yoki 39? Toʻgʻri belgini tanla.",
+        "ru": "Какой периметр больше: 21 или 39? Выбери знак.",
+        "en": "Which perimeter is bigger: 21 or 39? Choose the sign."
+      },
+      "hint": {
+        "uz": "Katta son — katta perimetr.",
+        "ru": "Больше число — больше периметр.",
+        "en": "A bigger number is a bigger perimeter."
+      },
+      "explanation": {
+        "uz": "21 < 39.",
+        "ru": "21 < 39.",
+        "en": "21 < 39."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 43
+        }
+      },
+      "prompt": {
+        "uz": "Sonni bloklardan yasa: 43.",
+        "ru": "Собери число 43 из блоков.",
+        "en": "Build the number 43 from blocks."
+      },
+      "hint": {
+        "uz": "4 ta oʻnlik (+10) va 3 ta birlik (+1).",
+        "ru": "4 десятков (+10) и 3 единиц (+1).",
+        "en": "4 tens (+10) and 3 ones (+1)."
+      },
+      "explanation": {
+        "uz": "43 = 40 + 3.",
+        "ru": "43 = 40 + 3.",
+        "en": "43 = 40 + 3."
+      }
+    }
+  ]
+}

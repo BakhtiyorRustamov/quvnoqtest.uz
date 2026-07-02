@@ -231,42 +231,31 @@
       "id": "q6"
     },
     {
+      "id": "q7",
       "type": "widget",
       "visualHint": "none",
       "widget": {
-        "type": "mcq",
+        "type": "ruler_measure",
         "props": {
-          "choices": [
-            "40",
-            "35",
-            "50"
-          ],
-          "answerIndex": 0
+          "lengthCm": 6,
+          "maxCm": 10
         }
       },
       "prompt": {
-        "uz": "Qonuniyatni aniqla va davom ettir: 10, 20, 30, ?",
-        "ru": "Найди закономерность и продолжи: 10, 20, 30, ?",
-        "en": "Find the pattern and continue: 10, 20, 30, ?"
+        "uz": "Chizgʻichda oʻchirgʻichning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: ластик. Сколько см?",
+        "en": "Measure the eraser on the ruler. How many cm?"
       },
       "hint": {
-        "uz": "Har safar 10 ortib boryapti.",
-        "ru": "Каждый раз прибавляется 10.",
-        "en": "It increases by 10 each time."
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
       },
       "explanation": {
-        "uz": "30 + 10 = 40.",
-        "ru": "30 + 10 = 40.",
-        "en": "30 + 10 = 40."
-      },
-      "componentProposal": {
-        "suggestedType": "pattern_sequence",
-        "concept": "finding the next term in a number pattern",
-        "interaction": "tap/drag the tile that continues the sequence",
-        "props": "{ sequence:number[], answer }",
-        "why": "no current component renders an ordered number-pattern strip"
-      },
-      "id": "q7"
+        "uz": "Oʻchirgʻichning uzunligi 6 cm.",
+        "ru": "Длина: 6 см.",
+        "en": "The eraser is 6 cm long."
+      }
     },
     {
       "type": "widget",

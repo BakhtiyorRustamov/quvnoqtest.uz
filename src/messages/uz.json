@@ -152,7 +152,9 @@
       "subscribeCta": "Obuna boʻlib, koʻproq mashq qil",
       "subscribeNotePaid": "Mavzularni xohlagancha qayta oʻtab, natijangni mustahkamla."
     },
-    "part3": "3-qism"
+    "part3": "3-qism",
+    "part4": "4-qism",
+    "video": "Video dars"
   },
   "lesson": {
     "letsStart": "Boshlaymiz!",

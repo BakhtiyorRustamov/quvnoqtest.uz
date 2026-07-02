@@ -1,583 +1,542 @@
 {
   "g1-math-01.uz.wav": {
-    "hash": "c1c54af841d216a0c09732150f963040ae20e50c179b882cc23263d30a43c2a1",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1403564,
-    "at": "2026-06-18T15:23:46.078Z"
-  },
-  "g1-math-02.uz.wav": {
-    "hash": "2b3450eab43fee4be3c159fcf95ed0ea1489bb62c39141b3def0c0c4856be0e7",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1451564,
-    "at": "2026-06-18T15:24:00.621Z"
-  },
-  "g1-math-03.uz.wav": {
-    "hash": "036f38c548da326763ab13ceef718aa28585b442f45f4203f3fe23c06d0062a7",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1355564,
-    "at": "2026-06-18T16:28:59.044Z"
-  },
-  "g1-math-04.uz.wav": {
-    "hash": "7d8c6c318f52ca60931b2e6d2b9bf0d3fb190ee2247113d6a9493804033f838e",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1597484,
-    "at": "2026-06-18T16:29:16.827Z"
-  },
-  "g1-math-05.uz.wav": {
-    "hash": "f05eecee860752e203ba556f779063d3b2d0152c915e234e8f56d3485401ea64",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1516844,
-    "at": "2026-06-18T16:29:29.395Z"
-  },
-  "g1-math-06.uz.wav": {
-    "hash": "c5695561377c43c066233889499c6917393f793881a339db88a1992fe877abfa",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1186604,
-    "at": "2026-06-18T16:29:42.045Z"
-  },
-  "g1-math-07.uz.wav": {
-    "hash": "bc0dd4996a34d06840b0d8f48c3b0390c96b1bcc53c6552bc34769aa83b1c636",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1065644,
-    "at": "2026-06-18T16:29:52.152Z"
-  },
-  "g1-math-08.uz.wav": {
-    "hash": "6f18b80271d89c62ddd213d6e17815851aa86b7604e35ba66e6de5d4d2d09893",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1297964,
-    "at": "2026-06-18T17:51:33.459Z"
-  },
-  "g1-math-09.uz.wav": {
-    "hash": "1bcc90f1471de96391b5933f6e74a92d9862531bc648bc9d6064b64225614d29",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1136684,
-    "at": "2026-06-18T17:51:48.719Z"
-  },
-  "g1-math-10.uz.wav": {
-    "hash": "57ce91eecd63729a90f26804df4b7081d5a48db6f97c6c3e4c2657df12345e99",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1161644,
-    "at": "2026-06-18T17:52:01.251Z"
-  },
-  "g1-math-11.uz.wav": {
-    "hash": "1c4408c6ab739b0bca95b10823ea77003ec3a90a1591e564d686aae2a41a122b",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 889004,
-    "at": "2026-06-18T17:52:09.223Z"
-  },
-  "g1-math-12.uz.wav": {
-    "hash": "fdc4cd06093ce9318929affef53f55b826388c762172a9a5daf6af923742de08",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 910124,
-    "at": "2026-06-18T17:52:18.684Z"
-  },
-  "g1-math-13.uz.wav": {
-    "hash": "37fda87bfdea5c5ed771c20e1e758347b92ad685291b9e0c91d918242f3be332",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1155884,
-    "at": "2026-06-19T10:27:38.512Z"
-  },
-  "g1-math-14.uz.wav": {
-    "hash": "e2cd778536381d8acd75ca6e88aa79f0f787758267dc979914265e6afa122865",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1075244,
-    "at": "2026-06-19T10:27:47.909Z"
-  },
-  "g1-math-15.uz.wav": {
-    "hash": "b6b6fce600683c5235b5b7333a1e785be9c18bab519b2d1e07c0120ff2eed3c6",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1309484,
-    "at": "2026-06-19T10:28:02.207Z"
-  },
-  "g1-math-16.uz.wav": {
-    "hash": "86e3ed08da90d0bafc8eb288781a458e095767faa65e9aad87b8a6d089fd057d",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1228844,
-    "at": "2026-06-19T10:28:14.185Z"
-  },
-  "g1-math-17.uz.wav": {
-    "hash": "41b39734ed345b365cd7f0aa9557284beb9744fa1550df6150b6407f130f4772",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1059884,
-    "at": "2026-06-19T10:28:24.621Z"
-  },
-  "g1-math-18.uz.wav": {
-    "hash": "3ff4b3d0350c7cc806eb2a3958c9d4f6b051b6cb04960c8c32e77dd48be25a63",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1056044,
-    "at": "2026-06-19T10:28:36.404Z"
-  },
-  "g1-math-19.uz.wav": {
-    "hash": "73ed7564e829553cd550e0c37ca14925f3d3a8bbd1d87cc2cb0b2fe3b0d99000",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 910124,
-    "at": "2026-06-19T10:57:37.166Z"
-  },
-  "g1-math-20.uz.wav": {
-    "hash": "1a2b66ed17ec6e3c92e2b9f9224bd22bee299b101e91412b616b5ea2c3235549",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1059884,
-    "at": "2026-06-19T10:57:46.954Z"
-  },
-  "g1-math-21.uz.wav": {
-    "hash": "0709db856c0119f747df31021de8c3bc6b0745fc281a1c363edccaa2100200ac",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1140524,
-    "at": "2026-06-19T10:57:57.217Z"
-  },
-  "g1-math-22.uz.wav": {
-    "hash": "aa3fc00b82574441d793b3e282710dfbade64a5aea4134acb7b1ee1e69c05eba",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1271084,
-    "at": "2026-06-19T10:58:07.925Z"
-  },
-  "g1-math-23.uz.wav": {
-    "hash": "5b4254dbe35ad3a6c3832d860cfc7f795388d08171b29a33c433e20dc28a7216",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1192364,
-    "at": "2026-06-19T10:58:18.970Z"
-  },
-  "g1-math-24.uz.wav": {
-    "hash": "ec02de507fb2392572a474a6d65e31563aca8609fec90ba4230ea4cc7ebea686",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 946604,
-    "at": "2026-06-19T10:58:28.043Z"
-  },
-  "g1-math-25.uz.wav": {
-    "hash": "76e5b181d9523be30e87e83569f4522b828018cedf7c774209f54877d634dc4a",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1067564,
-    "at": "2026-06-19T17:49:49.848Z"
-  },
-  "g1-math-26.uz.wav": {
-    "hash": "7fe2f53bea4c654268770b5562f715087ba2921b7d399ce37f03ab4e6e72608c",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1221164,
-    "at": "2026-06-19T17:50:01.118Z"
-  },
-  "g1-math-27.uz.wav": {
-    "hash": "69139e63a66a6e24845dd9bc61d4e9b0801e6b5840680904775a038abc8b1a9c",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1163564,
-    "at": "2026-06-19T17:50:12.996Z"
-  },
-  "g1-math-28.uz.wav": {
-    "hash": "1bc134b1a7e2eadba310414f3396434180c9ca0504c8c7f7c043c959ca22994a",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 960044,
-    "at": "2026-06-19T17:50:22.746Z"
-  },
-  "g1-math-29.uz.wav": {
-    "hash": "493c82261f76cd5683a2ed22fcf53f5ba7e9bda0b381fe5b474d8c5435841b54",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1797164,
-    "at": "2026-06-19T17:50:38.212Z"
-  },
-  "g1-math-30.uz.wav": {
-    "hash": "50b80b872547782c89d9c45b47d1398d5550b9c5eaa03e198be47df9c9538151",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1526444,
-    "at": "2026-06-19T17:50:53.511Z"
-  },
-  "g1-math-31.uz.wav": {
-    "hash": "7929d5cdd0d1deb923dd8acbbf854ec1c8112707105a9f559f50f541f0ec2d95",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1054124,
-    "at": "2026-06-19T17:51:02.665Z"
-  },
-  "g1-math-32.uz.wav": {
-    "hash": "d4585f392b8c1536e413c25488c7296720a77bf42081bee6de0ae8c0df1c77b5",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1290284,
-    "at": "2026-06-19T17:51:14.606Z"
-  },
-  "g1-math-33.uz.wav": {
-    "hash": "b3c2f6e3e250a36666b92f646708aa5505d34c4aea8fec3058a0a34d2b1de1af",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 940844,
-    "at": "2026-06-19T17:51:22.712Z"
-  },
-  "g1-math-34.uz.wav": {
-    "hash": "ac71550804164be6528f62e12f4f0ab2477118ac000e5de1d4a92f1724588a26",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 985004,
-    "at": "2026-06-19T17:51:33.370Z"
-  },
-  "g1-math-35.uz.wav": {
-    "hash": "14e16b60911f2c818ea1199fb2f90e1a59a64697d432838def019052cd495740",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 856364,
-    "at": "2026-06-19T17:51:42.457Z"
-  },
-  "g1-math-36.uz.wav": {
-    "hash": "2b921973062b8c71412dfa59f22eb3585f4e403223bd3d4cc482761cbe86a198",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 969644,
-    "at": "2026-06-19T18:08:40.124Z"
-  },
-  "g1-math-37.uz.wav": {
-    "hash": "d2716b41796e8f896b0e76071fa583cb03af78cbdd1fd2b38339c33bdb301e52",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 1267244,
-    "at": "2026-06-19T18:08:51.135Z"
-  },
-  "g1-math-38.uz.wav": {
-    "hash": "35d56c70d48d3cbf2761c3072845cd304119a194f3eb518fc715245b7028648d",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 915884,
-    "at": "2026-06-19T18:09:02.088Z"
-  },
-  "g1-math-39.uz.wav": {
-    "hash": "2c844cf1651eee855af80d4f77849280054c849a4a3067bb688260f9329cec21",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 769964,
-    "at": "2026-06-19T18:09:11.510Z"
-  },
-  "g1-math-40.uz.wav": {
-    "hash": "fa47a81a01ab2652ebec020c0e2b77634cd288163885dd886cf7cedfff674399",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 898604,
-    "at": "2026-06-19T18:09:19.410Z"
-  },
-  "g1-math-41.uz.wav": {
-    "hash": "f2f89fcbba16d59357c1fbde4342cd0d57e6933373762e70a6510692f0ae31cf",
-    "model": "gemini-3.1-flash-tts-preview",
-    "voice": "Charon",
-    "lang": "en-US",
-    "bytes": 842924,
-    "at": "2026-06-19T18:09:29.062Z"
-  },
-  "g1-math-42.uz.wav": {
-    "hash": "68735dd7c687811155d6f9e208a88f6a0c05fc18b1a4de5742b588abe7a84c14",
+    "hash": "d8b06c091c6493b67e94bcc586a0ac4b1cac9f7eafbbc61f024d2dcbdd8a4a21",
     "provider": "azure",
     "voice": "uz-UZ-SardorNeural",
-    "bytes": 931020,
-    "at": "2026-06-22T07:39:22.393Z"
+    "bytes": 915398,
+    "at": "2026-06-29T06:29:03.087Z"
+  },
+  "g1-math-02.uz.wav": {
+    "hash": "5509ac063af46d442b658c94bed9373491ea24ca35f1ddaf37d0b610fa3e5c9f",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1033608,
+    "at": "2026-06-29T06:29:05.553Z"
+  },
+  "g1-math-03.uz.wav": {
+    "hash": "ca945aa793e9e6fd4a526608402b2aed63b50a949355b7890dd2e98a57f134e4",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 871708,
+    "at": "2026-06-29T06:29:07.642Z"
+  },
+  "g1-math-04.uz.wav": {
+    "hash": "3723bfa04f666b69c1c0039fd6098c74fbfc716aad5270db7117c74c7162a8d6",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 963832,
+    "at": "2026-06-29T06:29:10.182Z"
+  },
+  "g1-math-05.uz.wav": {
+    "hash": "72cd6cf91bdc43e6f4421e4d229f3b4351ff76d6a1b46b9b61c42ea5234b24c6",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 928174,
+    "at": "2026-06-29T06:29:12.856Z"
+  },
+  "g1-math-06.uz.wav": {
+    "hash": "efcafeb62685c8fb61b3c40094944f0ebd8509b4304796025125e39a26104c1e",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 867090,
+    "at": "2026-06-29T06:29:15.087Z"
+  },
+  "g1-math-07.uz.wav": {
+    "hash": "898fb9d53662e290260c13d5b5c45f0e2d9d2b1b60f43d0a6337b02dda441385",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 866766,
+    "at": "2026-06-29T06:29:17.127Z"
+  },
+  "g1-math-08.uz.wav": {
+    "hash": "932a83b7328b638ad80716bd8a68439c6f37ab5ea2ce7e67ecf2f4d5d3d61394",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 877660,
+    "at": "2026-06-29T06:29:19.320Z"
+  },
+  "g1-math-09.uz.wav": {
+    "hash": "932839b894c64c9f73908a90990fac22d50baac355b56c206d0befb777950382",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 815934,
+    "at": "2026-06-29T06:29:21.347Z"
+  },
+  "g1-math-10.uz.wav": {
+    "hash": "072681120512c81b86910c762a5bc4d4b1463c647e592e5bdad909309d5e743b",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 766604,
+    "at": "2026-06-29T06:29:23.432Z"
+  },
+  "g1-math-11.uz.wav": {
+    "hash": "a367163ec48d51ec49872f71d7194b3e411b1648759a4037317434f2806ebfb3",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 804474,
+    "at": "2026-06-29T06:29:25.571Z"
+  },
+  "g1-math-12.uz.wav": {
+    "hash": "7c0febb3162b051c7eb043b004cbfb74718a7d098420d32207846f7e437b1788",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 762846,
+    "at": "2026-06-29T06:29:28.094Z"
+  },
+  "g1-math-13.uz.wav": {
+    "hash": "673957d2908b7a81f7919579a932c2890acc94a9a58920ec2b699753227b2a57",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 809036,
+    "at": "2026-06-29T06:29:30.082Z"
+  },
+  "g1-math-14.uz.wav": {
+    "hash": "46296332866090b50693726440ae8914883b0ecd6625f26526c26793a56a83a2",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 748560,
+    "at": "2026-06-29T06:29:32.105Z"
+  },
+  "g1-math-15.uz.wav": {
+    "hash": "046b719111cfbd654fb8d57048b1fb413d47f987cc74c8719bfde8d77bd0349f",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 814762,
+    "at": "2026-06-29T06:29:34.204Z"
+  },
+  "g1-math-16.uz.wav": {
+    "hash": "4b5e807920dbcf974494145055925f4233f8a2ef59d5aa31de2ec443718dab0c",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 815430,
+    "at": "2026-06-29T06:29:36.242Z"
+  },
+  "g1-math-17.uz.wav": {
+    "hash": "43c94d77249bffc3f72624385e20fd54e26c2dc595d9baef95f4d2d16e095217",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 803138,
+    "at": "2026-06-29T06:29:38.385Z"
+  },
+  "g1-math-18.uz.wav": {
+    "hash": "27e1c80d4e333cc038df9462ad4be16bc72b6b17bd8ff78834e31ac9fccd2855",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 792092,
+    "at": "2026-06-29T06:29:40.408Z"
+  },
+  "g1-math-19.uz.wav": {
+    "hash": "2fa290d247242e501912b93c64ba028aac5303ff9d8c3c25e5d2516e63e5cfda",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 740948,
+    "at": "2026-06-29T06:29:42.425Z"
+  },
+  "g1-math-20.uz.wav": {
+    "hash": "4b4c0348fa25d5bca8576beefc64cbfeabd3d203de24b3bb3e3945ed8065b03b",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 742794,
+    "at": "2026-06-29T06:29:44.431Z"
+  },
+  "g1-math-21.uz.wav": {
+    "hash": "2b53efeb90b1ed7a0af208f023ce3bfa6b5cb5dfd964f1741dfd88d657c30d9e",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 805912,
+    "at": "2026-06-29T06:29:46.404Z"
+  },
+  "g1-math-22.uz.wav": {
+    "hash": "6915584d78e0cdf143443095bbc4d8f672cd12a74879ae6f156384bc9379e13a",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 827750,
+    "at": "2026-06-29T06:29:48.413Z"
+  },
+  "g1-math-23.uz.wav": {
+    "hash": "05bfab768383ef7c086eded809faa4948fbd5afa7c30e39790311278f2b0e590",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 835930,
+    "at": "2026-06-29T06:29:50.742Z"
+  },
+  "g1-math-24.uz.wav": {
+    "hash": "3a8cc62973a2097f902a6d05619d87ceadef8c82e6103c6b79225e305a72f427",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 834418,
+    "at": "2026-06-29T06:29:52.716Z"
+  },
+  "g1-math-25.uz.wav": {
+    "hash": "1631701aacff0d1e1a7d997dd7e7157428713e6eb6795aa5386483b1b1448a1e",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 872628,
+    "at": "2026-06-29T06:29:54.868Z"
+  },
+  "g1-math-26.uz.wav": {
+    "hash": "1c6182543e931a624162b22a7e844969a71b12379fa1afee0633f740fc5d0914",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 848728,
+    "at": "2026-06-29T06:29:56.853Z"
+  },
+  "g1-math-27.uz.wav": {
+    "hash": "34613c9490c0b4d08d0a2b4167e0cb81cca86d319d9f5151452e04cc50f83af3",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 821830,
+    "at": "2026-06-29T06:29:59.148Z"
+  },
+  "g1-math-28.uz.wav": {
+    "hash": "12085eb236f9ba767cf9aeaf07c754ab8f8313df3b539b4e2afebe4341f8f574",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 757312,
+    "at": "2026-06-29T06:30:01.557Z"
+  },
+  "g1-math-29.uz.wav": {
+    "hash": "74d70ac7561187a225bfd02c24659c7e99f705ebcd952230e513484144defbf7",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1019090,
+    "at": "2026-06-29T06:30:04.575Z"
+  },
+  "g1-math-30.uz.wav": {
+    "hash": "cb4dd4cd2c4e083a7687da288fccb37a3116f94c5493483f1efdf5b10de664a1",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 802654,
+    "at": "2026-06-29T06:30:07.041Z"
+  },
+  "g1-math-31.uz.wav": {
+    "hash": "74819d956118d87683261f52a537da6263b4aeea0a55d3800c82da6d45c6c79a",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 805962,
+    "at": "2026-06-29T06:30:09.555Z"
+  },
+  "g1-math-32.uz.wav": {
+    "hash": "ab6181e6bacfeb8213830cab5f0075bbcd989c19e6b86159654a1997ae9b3c4b",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 755576,
+    "at": "2026-06-29T06:30:11.649Z"
+  },
+  "g1-math-33.uz.wav": {
+    "hash": "b17f2529c11659ae6290327093281601e67cd9e2d6daf505b7584a46bc2ede9b",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 675804,
+    "at": "2026-06-29T06:30:13.753Z"
+  },
+  "g1-math-34.uz.wav": {
+    "hash": "c168fb32cb0a83b0b15b934b81ee9c5bb32a3065c28919c4d2533653e11c3f18",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 655720,
+    "at": "2026-06-29T06:30:15.756Z"
+  },
+  "g1-math-35.uz.wav": {
+    "hash": "6e34f04f2ce412640e0672ba3712e8922055a7ed7358e5e866da3750e194d262",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 603428,
+    "at": "2026-06-29T06:30:17.814Z"
+  },
+  "g1-math-36.uz.wav": {
+    "hash": "f2a499feb96b074fe1f192380f02735957d5e8f683501128feae8897939331fe",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 616122,
+    "at": "2026-06-29T06:30:19.641Z"
+  },
+  "g1-math-37.uz.wav": {
+    "hash": "9766e094ec33d7f4264f044547b27c2ad7c164b23f721a3b331e22f4eab92a2c",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 834210,
+    "at": "2026-06-29T06:30:21.859Z"
+  },
+  "g1-math-38.uz.wav": {
+    "hash": "aa1d01150b3cbfe0ca07d1297f90eacc641e4b7f588ee1c3450d2a70ac11a592",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 719592,
+    "at": "2026-06-29T06:30:23.863Z"
+  },
+  "g1-math-39.uz.wav": {
+    "hash": "1531c7b716fb8f04d7bbf8a4cb81bff0357159e9e51179e25570b96256bca0e4",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 612060,
+    "at": "2026-06-29T06:30:25.966Z"
+  },
+  "g1-math-40.uz.wav": {
+    "hash": "a6d41431a0bfbfa617276584c0a67ce3d05c23cfd9bd4fd2d24d4a7c62956ce3",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 700278,
+    "at": "2026-06-29T06:30:27.985Z"
+  },
+  "g1-math-41.uz.wav": {
+    "hash": "8c2bfcef2d452e91e5e6271a96c60c83cfe9a4b591dca68b27f96023702af730",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 641094,
+    "at": "2026-06-29T06:30:30.331Z"
+  },
+  "g1-math-42.uz.wav": {
+    "hash": "bbf71d9b90543141372bd95cb8634e11b884dfd19577072eea1e85031098e4c0",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1072218,
+    "at": "2026-06-29T06:30:32.762Z"
   },
   "g1-math-43.uz.wav": {
-    "hash": "8df8e4bf0819f45bd8916173564d3553f44345a71a3568c25bd429e4f8dc6a69",
+    "hash": "3f4696bbada47bada0101ebc8ad45e5ead253521f0d14f1956f65e3326fc7b5c",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 933942,
-    "at": "2026-06-22T09:50:03.518Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1207444,
+    "at": "2026-06-29T06:30:37.095Z"
   },
   "g1-math-44.uz.wav": {
-    "hash": "a6d37c99fd420201c059bf76fd43905677dca6b6abf8f9f935d5a039653b9f17",
+    "hash": "2a24356198bff606d038870d8291122e0404a9e14f06a1a1a2bcfb522b702cdc",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1219830,
-    "at": "2026-06-22T12:33:30.444Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1205328,
+    "at": "2026-06-29T06:30:40.452Z"
   },
   "g1-math-48.uz.wav": {
-    "hash": "6c2f18249f887f0e019b0ca1bc0dc86464218bba00d18e95c7617dfbed96af84",
+    "hash": "46e6adcf78587b512dc3131e8f94a7315562c6ff9a3aefa0c7bf91d3c77de6be",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1317254,
-    "at": "2026-06-25T11:49:18.059Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1153698,
+    "at": "2026-06-29T06:30:51.948Z"
   },
   "g1-math-49.uz.wav": {
-    "hash": "f757082d3defb9f424e08569a532b9a10ee0f25b621320ff2e9eb43cd90890d8",
+    "hash": "0db60e7adfafe8e28f30694f9fc2154edb220a1bcbcca678d2e76d1cdefa53cd",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1178948,
-    "at": "2026-06-25T11:49:29.030Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1133464,
+    "at": "2026-06-29T06:30:54.639Z"
   },
   "g1-math-50.uz.wav": {
-    "hash": "d5e0d4e83b1b74870094c62cd7188244e80a9c0de41dd7827fe3be56bfc15010",
+    "hash": "a9a986e9a73ea423c292a08786220dca3420766fb2ffb3e4679fa0c5d8899aaa",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 860664,
-    "at": "2026-06-25T11:49:37.214Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 964822,
+    "at": "2026-06-29T06:30:56.675Z"
   },
   "g1-math-51.uz.wav": {
-    "hash": "f346c214958ee1b0fbad4da53bfe7278e3062fb4213b099e82ae9dbcc3838b92",
+    "hash": "9abe996a7b581366d15d1303103afcc21c2d006f8df6c9c90629f8042f8388db",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 941902,
-    "at": "2026-06-25T11:49:46.416Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 956044,
+    "at": "2026-06-29T06:31:00.350Z"
   },
   "g1-math-52.uz.wav": {
-    "hash": "4c6322a36b6f8789bb6eff22e4d3f8d7a97565b23df1dfbb059f7898d05a702c",
+    "hash": "2a377b5bf4b8e92fa28a2fb4f1fa71bd9cb9b724c200ebdcae936ca5d0d7596c",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1014348,
-    "at": "2026-06-25T11:49:56.538Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1002380,
+    "at": "2026-06-29T06:31:02.876Z"
   },
   "g1-math-53.uz.wav": {
-    "hash": "b9edae313c52a102d4d9e07869d97f8c8f45b281979b719273cd4e7f5e733bd0",
+    "hash": "ea73629f38abe304112346cb45b7b96050503867d0ca48f913f90d86b23ee7c5",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1160120,
-    "at": "2026-06-25T11:50:08.788Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1067344,
+    "at": "2026-06-29T06:31:05.357Z"
   },
   "g1-math-54.uz.wav": {
-    "hash": "6b4a7ecb0cbd8b07144e183f54cf11242ab999c060568365918891885f87e544",
+    "hash": "f319673835b1920fd584d010ff366f5c0693da4a3a4c3f51106d1dd2bdd7f3ad",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1085784,
-    "at": "2026-06-25T11:50:20.378Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1037032,
+    "at": "2026-06-29T06:31:07.646Z"
   },
   "g1-math-55.uz.wav": {
-    "hash": "7af05e0421d2742f053c8f8e741ac9be6ce028fe9295ae68800282d79db950df",
+    "hash": "9ff64d75476cc0b5950b44f6817ed94706b5aa0c1ff6c00ec1dddeb751cf2964",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1186120,
-    "at": "2026-06-25T11:50:32.951Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1064188,
+    "at": "2026-06-29T06:31:09.961Z"
   },
   "g1-math-56.uz.wav": {
-    "hash": "2f1fc11969ccb3fdb7b279d48c80e95b0133ae2761b55582cd4dd90867ae746a",
+    "hash": "1862c76353920bac0a3f733a88dffde8680c3528357e23bc25390ce2d99829c3",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1054612,
-    "at": "2026-06-25T13:05:13.350Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1002534,
+    "at": "2026-06-29T06:31:12.413Z"
   },
   "g1-math-57.uz.wav": {
-    "hash": "105037da74fb75957ff9a63f9077ac4b24bbe44f33d8cdd5938dfb2ae82cc140",
+    "hash": "f495c875e985b05a5fef854aadb01fdc5301789eab0c4552e17ad590b41e9cf7",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1123184,
-    "at": "2026-06-25T13:05:24.627Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1134296,
+    "at": "2026-06-29T06:31:14.862Z"
   },
   "g1-math-58.uz.wav": {
-    "hash": "e295f82cddfc291d6c6403e3db9259936e7052271e544e5ae27d0a75b493660f",
+    "hash": "8946e108b199b096512343b85fdcf83bb40a394a95e3cb3077a0c5e181a2043b",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 964818,
-    "at": "2026-06-25T13:05:33.745Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1021348,
+    "at": "2026-06-29T06:31:17.334Z"
   },
   "g1-math-59.uz.wav": {
-    "hash": "704b64e56ee1c639b63c14d1ea2b24bf8bf7fe86fa2de26f1b6a25dd031c18bd",
+    "hash": "5ff2065a5477e70c677ed5b81369fcf0310923bbc112221eeacca11bff45cdd4",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 857784,
-    "at": "2026-06-25T13:05:41.893Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 910762,
+    "at": "2026-06-29T06:31:19.533Z"
   },
   "g1-math-60.uz.wav": {
-    "hash": "d879b57083908ab943e1de9ab08fbd60de5566f2c0f3853abd5289e8896bcacd",
+    "hash": "06012fae073713cc5ab012bf14134d28ca28b762d280f3ced1e52ae5647055df",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1024226,
-    "at": "2026-06-25T13:05:51.316Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1026976,
+    "at": "2026-06-29T06:31:22.122Z"
   },
   "g1-math-61.uz.wav": {
-    "hash": "4609979de20d1391f26182732999fe5ebf0994d54044cc7126c450302f867c0f",
+    "hash": "69fd0eb08d283c081fd07d20705aeae8a6a8368259cd4650c0816d1d8dabd4f3",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 953742,
-    "at": "2026-06-25T13:06:01.011Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1002782,
+    "at": "2026-06-29T06:31:24.403Z"
   },
   "g1-math-62.uz.wav": {
-    "hash": "0a79a4e8142d24ee5b90f4203ab880d25f9bfb97c3934eda06fc130bf3b54ced",
+    "hash": "1faa73eb28917fd4d2530229c19514f6a33336327533bb42be93c4b8d5e54fe7",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 908628,
-    "at": "2026-06-25T13:06:10.082Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 937870,
+    "at": "2026-06-29T06:31:26.450Z"
   },
   "g1-math-63.uz.wav": {
-    "hash": "bb1c43e363c7353082a6a85e4fc76a45ee65f9e3ca2bb5b9a4f2cf83a93ef21b",
+    "hash": "eaee66c1c74ab847520474f94e617eb0f7b3c7b0a0275c55eb3bc9fc70036969",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1134718,
-    "at": "2026-06-25T13:06:21.527Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1070658,
+    "at": "2026-06-29T06:31:28.875Z"
   },
   "g1-math-64.uz.wav": {
-    "hash": "9cf6e15727c5d0bf8d39ec2eab61a98d9dcea81c2490ebb4991856ec53e225e9",
+    "hash": "f8ed780df17bfd4e90731e70cd9ef525995a518966b31256a68674883fabf7f0",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1021946,
-    "at": "2026-06-25T13:06:31.243Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1076290,
+    "at": "2026-06-29T06:31:31.357Z"
   },
   "g1-math-65.uz.wav": {
-    "hash": "9c025ac31689352681313f25a180a6346d79b27f849370d1266169b7dd662206",
+    "hash": "90e42e9a562279b280d7c35d1e32d9400b42ae9193c264247ea0b759fb42ebfd",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1073224,
-    "at": "2026-06-25T13:06:43.166Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1090390,
+    "at": "2026-06-29T06:31:34.287Z"
   },
   "g1-math-66.uz.wav": {
-    "hash": "7eaae427b75368a81e583b84a03f92aefc607008f8eb8a34156a9e6d996fa47b",
+    "hash": "4db5eed2cbe37a0d21c4332f5cbf2ac578ecc5017b5c9ffe4fea7c9a3294439e",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1216184,
-    "at": "2026-06-25T13:06:56.648Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1011656,
+    "at": "2026-06-29T06:31:36.511Z"
   },
   "g1-math-68.uz.wav": {
-    "hash": "5746e2606a081ba6c8e2802aaf1a7d53eeaf699548a02bb5f0b6f9e024d6d415",
+    "hash": "df9aa4effed6f4e19c5b91e17fb36d68fdb39017dad7e6d62fd1ff1b98a8b66e",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 887856,
-    "at": "2026-06-25T14:20:06.541Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 895898,
+    "at": "2026-06-29T06:31:41.101Z"
   },
   "g1-math-72.uz.wav": {
-    "hash": "af39dd915895de9e0c5e8c9bc7c40beaaf87cee69e1a8f2f02f229387370a3c8",
+    "hash": "ca4e6ff1b096ebc9cbeba29602bffa59d09b2ca810facd96286572d5979bf084",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 952674,
-    "at": "2026-06-25T14:20:15.978Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 985610,
+    "at": "2026-06-29T06:31:50.349Z"
   },
   "g1-math-73.uz.wav": {
-    "hash": "d7f92858ff49a0edc0fce554fe1b75fc20f21448ee18530a1d9f686204eb7218",
+    "hash": "b58a8f3ee672d2e49e8ba16783a6b9678b5358ec0c6ee8c805c70dd03efdd202",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1054788,
-    "at": "2026-06-25T14:20:26.021Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1018488,
+    "at": "2026-06-29T06:31:53.233Z"
   },
   "g1-math-75.uz.wav": {
-    "hash": "1e3a5934f951675f17b477cd6848817072abec2c1f6791505921e56cd946e44d",
+    "hash": "db0ec1851168460de685f8a48ec718badf68a5f3b6d7ca9edd90aa3e9c517d10",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 987960,
-    "at": "2026-06-25T15:33:31.053Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 944450,
+    "at": "2026-06-29T06:31:55.472Z"
   },
   "g1-math-76.uz.wav": {
-    "hash": "1b842723a22e867d80c28f20d5c8faa189cdd2afbec854d2c7afa795040cb83b",
+    "hash": "86bef406b321581b99c2c3d52e73b860b47ed524516f166f17b7983b5a8dadc2",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 1007894,
-    "at": "2026-06-25T15:33:40.904Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 973476,
+    "at": "2026-06-29T06:31:57.970Z"
   },
   "g1-math-77.uz.wav": {
-    "hash": "93f50731f1d5121ab9c4df495c5bdeec54e322ce9d81afae2b68e8a457bd12c8",
+    "hash": "bc1a5d463781ac0869cbe0e0ad66e2039801f876876f7d731816b27f4ab4219b",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 817358,
-    "at": "2026-06-25T15:33:50.079Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 790720,
+    "at": "2026-06-29T06:32:00.265Z"
   },
   "g1-math-78.uz.wav": {
-    "hash": "373c55880d5e99be3b86119e5aa15b85c8867a4b5ed622deb416fe2032eecf79",
+    "hash": "fee51117622f4dc306573506125e510c9f5c8854c575ced7c0e95d7baf334b7a",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 773962,
-    "at": "2026-06-25T15:34:02.115Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 806030,
+    "at": "2026-06-29T06:32:02.545Z"
   },
   "g1-math-79.uz.wav": {
-    "hash": "b42540829ddbce9a51beac5836aafb2074e6044c9be16056e922a0e6a5af947d",
+    "hash": "d0992917e212ab623780e4b7d11c3cfb7c8496b237bbcc311a556b420801aae9",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 903122,
-    "at": "2026-06-25T15:34:11.749Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 878774,
+    "at": "2026-06-29T06:32:04.795Z"
   },
   "g1-math-80.uz.wav": {
-    "hash": "7e9f14f1518a0bc8d9bae8fe34795a9966680db95d313146baee0f23714355fa",
+    "hash": "0f32f953d0bc938bea3b708c8003bce35611af0ca6aeb4fd2c6b4abbd58bf217",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 848590,
-    "at": "2026-06-25T15:34:19.842Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 794810,
+    "at": "2026-06-29T06:32:06.921Z"
   },
   "g1-math-81.uz.wav": {
-    "hash": "5e55e1cb7311c610187e3f8991245cf5816df790cd2d8c2beb1f8b0404253392",
+    "hash": "db39ba55e91616b13c7d5f1049c62ea3d5bad3280ff5b09aca828e20e9b75d5a",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 928842,
-    "at": "2026-06-25T15:34:29.077Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 982374,
+    "at": "2026-06-29T06:32:09.342Z"
   },
   "g1-math-82.uz.wav": {
-    "hash": "d22830b6367aed5855ccfcf04da4a25b9262254ff5c3bbb500c6268697803840",
+    "hash": "ebcfb916db5530253c30fd440bc9a7cfeed2c2157b6ea25c03287fd346a175ea",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 991776,
-    "at": "2026-06-25T15:34:38.701Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 922882,
+    "at": "2026-06-29T06:32:11.452Z"
   },
   "g1-math-83.uz.wav": {
-    "hash": "72ec8c586483c69dad3a41bc31d6b823dd26e5218cbe2c3ec1af6252d50307f0",
+    "hash": "4f22bf86d23fd44e4bd8b91d2450a13193a7fda7529ddffc01f40b223a495223",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 914596,
-    "at": "2026-06-25T15:34:47.356Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 874380,
+    "at": "2026-06-29T06:32:13.546Z"
   },
   "g1-math-84.uz.wav": {
-    "hash": "2f45c799b091a3a2cfc30d340c9d4a6bd999a19efea9d175697d62569a498ae5",
+    "hash": "292389d767f001bc69bb0e4654f3b55390bec17c00ab382d9b6254170e6eb7c8",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 782324,
-    "at": "2026-06-25T15:34:55.831Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 791804,
+    "at": "2026-06-29T06:32:15.780Z"
   },
   "g1-math-85.uz.wav": {
-    "hash": "8a205f2ec6b09e0a719d1d2181cabda9fecaf809f7c3bff8cdb57d2783151a73",
+    "hash": "1c3aa43e707f3d4354221d1cda12599ebc6257c97043348758112b15e2741bd5",
     "provider": "azure",
-    "voice": "de-DE-Florian:DragonHDLatestNeural",
-    "bytes": 803242,
-    "at": "2026-06-25T15:35:05.155Z"
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 793520,
+    "at": "2026-06-29T06:32:17.860Z"
   },
   "g1-math-90.uz.wav": {
     "hash": "7273cb67f32254bdf52b00a521d27e09e6cfcf0a1720d9761b4a376f960db6f7",
@@ -643,10 +602,402 @@
     "at": "2026-06-26T06:54:25.003Z"
   },
   "g1-math-99.uz.wav": {
-    "hash": "8a377b06cbfd49fb623be0b587dbfde32e538ddad9091369933e21c2b29e47dc",
+    "hash": "1921822221ff26e4376d66d26a9c5e259ac93e36d8b4988e7d11926df2a50ff8",
     "provider": "azure",
     "voice": "uz-UZ-SardorNeural",
-    "bytes": 962990,
-    "at": "2026-06-26T09:02:33.095Z"
+    "bytes": 958218,
+    "at": "2026-06-29T06:32:27.957Z"
+  },
+  "g1-math-100.uz.wav": {
+    "hash": "eeebc53cc855f8297408cde23c83a6e1a98af82a89e36f80a40ca94ce275a1e6",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 891234,
+    "at": "2026-06-29T05:46:08.274Z"
+  },
+  "g1-math-101.uz.wav": {
+    "hash": "586b3e9e21ada32b9150c4e6060313b45aba780034a5e0dda668bb802a5e496d",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 892150,
+    "at": "2026-06-29T05:46:10.323Z"
+  },
+  "g1-math-102.uz.wav": {
+    "hash": "eb5738b7c8c24bbba8463a8e5ea0bd2b57d1529184fcb987aeb27201dc490d92",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 920112,
+    "at": "2026-06-29T05:46:12.787Z"
+  },
+  "g1-math-103.uz.wav": {
+    "hash": "2f2b619a55cbe9b2e7ed2ed80b6eb1c4c4de1993f56f7151531250be97add449",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 977102,
+    "at": "2026-06-29T05:46:14.983Z"
+  },
+  "g1-math-104.uz.wav": {
+    "hash": "ab4a0e3a4b899dd2515b06e042da83f4077754e07a1acc7b2e2d70ae97e90bf6",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 742190,
+    "at": "2026-06-29T05:46:17.243Z"
+  },
+  "g1-math-105.uz.wav": {
+    "hash": "bafe175706df74173770d3b7e40b296ae3c89e3b20fdc92a62137af121dd6f7c",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 743450,
+    "at": "2026-06-29T05:46:19.733Z"
+  },
+  "g1-math-45.uz.wav": {
+    "hash": "e17c2a1dbd35332ac29074ea2b4757cf48ee3d2ff734d27c56c1db97ae6af3ab",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1023158,
+    "at": "2026-06-29T06:30:43.002Z"
+  },
+  "g1-math-46.uz.wav": {
+    "hash": "f06a5e99c139b4057c5a5cd1eaaefa4392bbf0b01c99bf94145222aa1270f9d4",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1125618,
+    "at": "2026-06-29T06:30:45.632Z"
+  },
+  "g1-math-47.uz.wav": {
+    "hash": "40d4eb06ce80c175d181b4ef2518e05e41033df76c284525e306857af78a194e",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1191054,
+    "at": "2026-06-29T06:30:48.194Z"
+  },
+  "g1-math-67.uz.wav": {
+    "hash": "ccaffbcc67db49e6734b65d5d813a3552001578e31adba1fdb65780814f6dfd1",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 920342,
+    "at": "2026-06-29T06:31:39.031Z"
+  },
+  "g1-math-69.uz.wav": {
+    "hash": "df5ef45b1cf620aca836ec49b69bd5b0628f76e647f42efe97a1dcdd5e97a492",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 999442,
+    "at": "2026-06-29T06:31:43.265Z"
+  },
+  "g1-math-70.uz.wav": {
+    "hash": "da69421a12a6cc94dfe144a77bbeb443c61b6f1a4921e2a064351c7dff7b8d94",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1112740,
+    "at": "2026-06-29T06:31:45.771Z"
+  },
+  "g1-math-71.uz.wav": {
+    "hash": "0e6be5152f41356753562b9255d3eafb0aec523d3c4936f3668deab5903cb42d",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 934886,
+    "at": "2026-06-29T06:31:47.947Z"
+  },
+  "g1-math-86.uz.wav": {
+    "hash": "ce195f9f8ce5e33be6ba1c7667e4fee2af9c8c1b06b9f2b0e4fc87ffd338969d",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 867318,
+    "at": "2026-06-29T06:32:19.781Z"
+  },
+  "g1-math-87.uz.wav": {
+    "hash": "e294bec5b52c6cb8e2898e6dd528f0b86e55afa0deeb2b2db3ba0a1459d45705",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1079878,
+    "at": "2026-06-29T06:32:21.744Z"
+  },
+  "g1-math-88.uz.wav": {
+    "hash": "e59273a22bbe7eff523d081871722eb0c52b91fcefb4f5c4eb93c6407045a14c",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 710684,
+    "at": "2026-06-29T06:32:23.732Z"
+  },
+  "g1-math-89.uz.wav": {
+    "hash": "f738d563f3ad61421a73700e4f734b6949f68a0d2f30d329dad41d0e7ed0cbaf",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 732734,
+    "at": "2026-06-29T06:32:25.741Z"
+  },
+  "g1-math-106.uz.wav": {
+    "hash": "dcf6921ec0c1ba3ff223541baafcd2c2f20d8dcb1496fd92dc110db4ae1dc531",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 916314,
+    "at": "2026-06-29T07:30:41.064Z"
+  },
+  "g1-math-107.uz.wav": {
+    "hash": "8ce193d57c0684071d4ff027604352bb519900d51e0c22f7e3ca86f0f356167f",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 904814,
+    "at": "2026-06-29T07:30:43.135Z"
+  },
+  "g1-math-108.uz.wav": {
+    "hash": "b04eaf5d116b232c5833852ea75a4df66d6bc58785e66d4e0b5f75b5e021ed0a",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 970586,
+    "at": "2026-06-29T07:30:46.710Z"
+  },
+  "g1-math-109.uz.wav": {
+    "hash": "f2bf11ccc62abcadd395e9a6ec8cbb37c2cd90ebd416e60b5613659d814ab1b0",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 961970,
+    "at": "2026-06-29T07:30:49.034Z"
+  },
+  "g1-math-110.uz.wav": {
+    "hash": "5ad60d01ffeeaacb1550c8709cf90b999ec6b731071dc306580eb989acdddc96",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 974758,
+    "at": "2026-06-29T07:30:51.644Z"
+  },
+  "g1-math-111.uz.wav": {
+    "hash": "8de06a440e5769d1784912d79efbcae7adbb65a3c701706b8285a36905095787",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 814480,
+    "at": "2026-06-29T07:30:53.994Z"
+  },
+  "g1-math-112.uz.wav": {
+    "hash": "1015a4d36b26de60e8fa7b5cdfb300638c9ecc9e32870b9914344b59b755839e",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 887416,
+    "at": "2026-06-29T09:40:15.512Z"
+  },
+  "g1-math-113.uz.wav": {
+    "hash": "043cb8b09d71beeb150cb18dea51fe2716724ed5418e28b7c3aebd9e356a3048",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 763248,
+    "at": "2026-06-29T09:40:18.136Z"
+  },
+  "g1-math-114.uz.wav": {
+    "hash": "059ac578599bcd70727c9659e17ab5a60c54ba50e50460f21dbe4d16d8ef3a83",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 950058,
+    "at": "2026-06-29T09:40:20.579Z"
+  },
+  "g1-math-115.uz.wav": {
+    "hash": "42350e6163be7df1c273ded3f3eea9dbee7b382246b1d406bbde11ff323b7ecd",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 935508,
+    "at": "2026-06-29T09:40:25.208Z"
+  },
+  "g1-math-116.uz.wav": {
+    "hash": "3004decd352c1a805da5cafd44ee2a63bead14e0e3d3efb596364c0e5779c384",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 974254,
+    "at": "2026-06-29T09:40:29.491Z"
+  },
+  "g1-math-117.uz.wav": {
+    "hash": "926ec23697b136091887622c9b92401964c06ba0fb6faf8255520d90d3b38254",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 931006,
+    "at": "2026-06-29T09:40:31.842Z"
+  },
+  "g1-math-118.uz.wav": {
+    "hash": "c5fd2931414ec319b011b1d81f01d8606cdf9b74fda90de96af36f55a0c679a6",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 765300,
+    "at": "2026-06-29T14:43:03.721Z"
+  },
+  "g1-math-119.uz.wav": {
+    "hash": "a7eeb65d6865a005f778c9ddbf3174415582dfdeb863ca2b60639db634373dac",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 964490,
+    "at": "2026-06-29T14:43:06.099Z"
+  },
+  "g1-math-120.uz.wav": {
+    "hash": "49013fb13da99c49dc976696107c71e4552a885d2dbc416f32eb3b96b1423a25",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 840450,
+    "at": "2026-06-29T14:43:08.137Z"
+  },
+  "g1-math-121.uz.wav": {
+    "hash": "316fbdd127bc305203e00e9aa8b62461732a21af4fdf0586ddcddfaa29d7e200",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 737224,
+    "at": "2026-06-29T14:43:10.224Z"
+  },
+  "g1-math-122.uz.wav": {
+    "hash": "713365499771ca46086f40726bd1244057b740ab86141c279a2f65f9372f86d0",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 842146,
+    "at": "2026-06-29T14:43:12.320Z"
+  },
+  "g1-math-123.uz.wav": {
+    "hash": "cb36be2d8ce6ba73aec5a1099a29b50f240638fc3c451d1d8293b9207eeae63f",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 895328,
+    "at": "2026-06-29T14:43:15.311Z"
+  },
+  "g1-math-124.uz.wav": {
+    "hash": "5261bdee3f86d9ba68af6d66103ae0a970b0463a9faace42113d70fdd82c5cdf",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 765708,
+    "at": "2026-06-29T14:43:17.475Z"
+  },
+  "g1-math-125.uz.wav": {
+    "hash": "5e5aa7257b9318d917edc3e2f8a7560a421ce4a431cb1a18f9277c3f60d06b46",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 782380,
+    "at": "2026-06-29T14:43:19.515Z"
+  },
+  "g1-math-126.uz.wav": {
+    "hash": "34745b96fb47c2fd4e394fec6b511d3b0e2c150e238798277155ff3f6dd0ece5",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 781946,
+    "at": "2026-06-29T14:43:21.675Z"
+  },
+  "g1-math-127.uz.wav": {
+    "hash": "8cabeaf9225cf2f1ec1f1ee1c029b21bbf8980ccee7ab8a2951455564a4daac3",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 929650,
+    "at": "2026-06-29T14:43:23.915Z"
+  },
+  "g1-math-128.uz.wav": {
+    "hash": "0278f6633a4b54a799b8a5b7c6fb2567be61c42fdfd478f3ab2a6fa94e00b22f",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 924014,
+    "at": "2026-06-29T14:43:26.552Z"
+  },
+  "g1-math-129.uz.wav": {
+    "hash": "3f4b9fc19874cbb92b3a01b80e62903af08ec80db03a4e7beb3475dfcb7573af",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 844208,
+    "at": "2026-06-29T14:43:28.655Z"
+  },
+  "g1-math-130.uz.wav": {
+    "hash": "8fc3911eb1dd5ab210a6d1264017b69297055291c33a1755a8f4bf29a7790e26",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 914690,
+    "at": "2026-06-29T14:43:32.071Z"
+  },
+  "g1-math-131.uz.wav": {
+    "hash": "0477906df4b2784428cc66f2abd4db541134274422c0dc816cfedb7a124bc83a",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 929468,
+    "at": "2026-06-29T14:43:34.791Z"
+  },
+  "g1-math-132.uz.wav": {
+    "hash": "20c1c9d9ea4959a429cb40bb42046ae498b0013278b84874c0dbd37cc784f5db",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 929850,
+    "at": "2026-06-29T14:43:37.355Z"
+  },
+  "g1-math-133.uz.wav": {
+    "hash": "91212a78a6de1c0181dfb51fe01aac0d606a79f4655428665e50b32114caed1d",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 809752,
+    "at": "2026-07-01T09:12:32.581Z"
+  },
+  "g1-math-134.uz.wav": {
+    "hash": "a90cce6494f4eccfd8ad20c60b1073a501ba8af802761d27f8ce6f5b941dd3a7",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1049252,
+    "at": "2026-07-01T09:12:35.698Z"
+  },
+  "g1-math-135.uz.wav": {
+    "hash": "0de7c311cc8e9791f5df77a929a4e10d22627b4ac17d8cd28268d4f5ef54ab03",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1095542,
+    "at": "2026-07-01T09:12:38.182Z"
+  },
+  "g1-math-136.uz.wav": {
+    "hash": "65d0c5f49ef9208378e17456ad38bf1c6bbfe4765c9b55598c0a7ba209de999f",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 1213138,
+    "at": "2026-07-01T09:12:41.108Z"
+  },
+  "g1-math-137.uz.wav": {
+    "hash": "458e6e2f7f7d36d32846f6a6a0c24f3d9a3c9a6cdd69cec05a73129756331fb9",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 836678,
+    "at": "2026-07-01T09:12:43.256Z"
+  },
+  "g1-math-138.uz.wav": {
+    "hash": "412af8b2867479f2a6c7bd19a1900e8d3f9c137aa3698056a861c237ce7068d7",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 820976,
+    "at": "2026-07-01T09:12:45.320Z"
+  },
+  "g1-math-139.uz.wav": {
+    "hash": "850f2fb319a23a1575b783a9596a7106b25074da5fc266fe4acc554e0bcbe18e",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 800706,
+    "at": "2026-07-01T09:12:47.534Z"
+  },
+  "g1-math-140.uz.wav": {
+    "hash": "369c8d896294acc349265fc08300e3b208349ab285185a51183a491a3dcbcfb5",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 893526,
+    "at": "2026-07-01T09:12:49.666Z"
+  },
+  "g1-math-141.uz.wav": {
+    "hash": "e2f77c4aae65c157100e1b78c74dacb8e716c559a66f7a563545e5b3452818fa",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 851328,
+    "at": "2026-07-01T09:12:52.405Z"
+  },
+  "g1-math-142.uz.wav": {
+    "hash": "9fbbc41c72408e1e8f9d9d6e2176cfe1c4558f1c7969e0fd02cc106fed47f537",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 709478,
+    "at": "2026-07-01T09:12:54.415Z"
+  },
+  "g1-math-143.uz.wav": {
+    "hash": "f4f743f3f0ce4075e80f4bed607ce7cc92553446542dd826a50561f180dc821a",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 809870,
+    "at": "2026-07-01T09:12:56.739Z"
+  },
+  "g1-math-144.uz.wav": {
+    "hash": "2b8d7b4e06b3039c6a29761fa27c39eb5c798ebae3212f4b735a49090e669c47",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 887052,
+    "at": "2026-07-01T09:12:58.959Z"
   }
 }

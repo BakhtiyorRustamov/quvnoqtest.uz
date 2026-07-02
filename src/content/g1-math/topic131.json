@@ -1,0 +1,367 @@
+{
+  "topicId": "g1-math-131",
+  "subjectKey": "g1-math",
+  "emojis": "🔤📝✨",
+  "title": {
+    "uz": "Ifodalar",
+    "ru": "Выражения",
+    "en": "Expressions"
+  },
+  "recall": {
+    "uz": "Ifoda raqamlar, harflar va belgilardan tuziladi. Harfiy ifodalarda lotin alifbosi harflari ishlatiladi. Masalan, «3 + y» — bu 3 bilan y ning yigʻindisi. Harf oʻrniga son qoʻyib, ifoda qiymatini topamiz.",
+    "ru": "Выражение состоит из чисел, букв и знаков. В буквенных выражениях используют латинские буквы. Например, «3 + y» — это сумма 3 и y. Подставив число вместо буквы, находим значение.",
+    "en": "An expression is made of numbers, letters and signs. Letter expressions use Latin letters. For example «3 + y» is the sum of 3 and y. Putting a number for the letter gives its value."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "9",
+            "8",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "y = 6 boʻlsa, 3 + y nechaga teng?",
+        "ru": "Если y = 6, чему равно 3 + y?",
+        "en": "If y = 6, what is 3 + y?"
+      },
+      "hint": {
+        "uz": "y oʻrniga 6 ni qoʻy.",
+        "ru": "Подставь 6 вместо y.",
+        "en": "Put 6 in place of y."
+      },
+      "explanation": {
+        "uz": "3 + 6 = 9.",
+        "ru": "3 + 6 = 9.",
+        "en": "3 + 6 = 9."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "m = 7, b = 5 boʻlsa, m + b nechaga teng?",
+        "ru": "Если m = 7, b = 5, чему равно m + b?",
+        "en": "If m = 7, b = 5, what is m + b?"
+      },
+      "hint": {
+        "uz": "m + b = 7 + 5.",
+        "ru": "m + b = 7 + 5.",
+        "en": "m + b = 7 + 5."
+      },
+      "explanation": {
+        "uz": "7 + 5 = 12.",
+        "ru": "7 + 5 = 12.",
+        "en": "7 + 5 = 12."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 47,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "d = 35 boʻlsa, d + 12 ni hisobla va bloklardan yasa.",
+        "ru": "Если d = 35, вычисли d + 12 и собери из блоков.",
+        "en": "If d = 35, work out d + 12 and build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "35 + 12 = 47.",
+        "ru": "35 + 12 = 47.",
+        "en": "35 + 12 = 47."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "35 + 12",
+              "right": "47"
+            },
+            {
+              "left": "60 - 35",
+              "right": "25"
+            },
+            {
+              "left": "12 + 11",
+              "right": "23"
+            },
+            {
+              "left": "99 - 30",
+              "right": "69"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 47,
+          "y": 25
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 47 va 25. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 47 и 25. Какой знак верный?",
+        "en": "Compare: 47 and 25. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "47 > 25.",
+        "ru": "47 > 25.",
+        "en": "47 > 25."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 14,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Bayramga m shisha sharbat va b shisha limonad keltirildi: m = 8, b = 6. Jami nechta shisha? Bloklardan yasa.",
+        "ru": "На праздник принесли m бутылок сока и b лимонада: m = 8, b = 6. Сколько всего? Собери из блоков.",
+        "en": "m bottles of juice and b of lemonade were brought: m = 8, b = 6. How many bottles? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "8 + 6 = 14.",
+        "ru": "8 + 6 = 14.",
+        "en": "8 + 6 = 14."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 7 + 8. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 7 + 8. Используй числовую прямую.",
+        "en": "Work it out: 7 + 8. Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla, 8 oldinga sur.",
+        "ru": "Встань на 7, продвинься на 8.",
+        "en": "Start at 7, move 8 forward."
+      },
+      "explanation": {
+        "uz": "7 + 8 = 15.",
+        "ru": "7 + 8 = 15.",
+        "en": "7 + 8 = 15."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 62
+        }
+      },
+      "prompt": {
+        "uz": "Sonni bloklardan yasa: 62.",
+        "ru": "Собери число 62.",
+        "en": "Build the number 62."
+      },
+      "hint": {
+        "uz": "6 ta oʻnlik (+10) va 2 ta birlik (+1).",
+        "ru": "6 десятков (+10) и 2 единиц (+1).",
+        "en": "6 tens (+10) and 2 ones (+1)."
+      },
+      "explanation": {
+        "uz": "62 = 60 + 2.",
+        "ru": "62 = 60 + 2.",
+        "en": "62 = 60 + 2."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "12 + 11",
+              "bin": "v23"
+            },
+            {
+              "id": "b",
+              "label": "20 + 3",
+              "bin": "v23"
+            },
+            {
+              "id": "c",
+              "label": "15 + 8",
+              "bin": "v23"
+            },
+            {
+              "id": "d",
+              "label": "20 + 27",
+              "bin": "v47"
+            },
+            {
+              "id": "e",
+              "label": "40 + 7",
+              "bin": "v47"
+            },
+            {
+              "id": "f",
+              "label": "45 + 2",
+              "bin": "v47"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v23",
+              "label": "23"
+            },
+            {
+              "id": "v47",
+              "label": "47"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик его значения!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в нужный ящик.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "17 - 6",
+              "right": "11"
+            },
+            {
+              "left": "35 - 12",
+              "right": "23"
+            },
+            {
+              "left": "40 + 9",
+              "right": "49"
+            },
+            {
+              "left": "70 - 10",
+              "right": "60"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    }
+  ]
+}

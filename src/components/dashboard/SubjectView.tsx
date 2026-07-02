@@ -7,10 +7,13 @@ import { useLocale, useTranslations } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import AIMascotButton from '@/components/ui/AIMascotButton';
 import TopicRecommendation from './TopicRecommendation';
+import VideoLightbox from '@/components/ui/VideoLightbox';
 import { useUser } from '@/components/providers/UserProvider';
 import { api } from '@/lib/client';
 import { G1_MATH_TOPICS, G1_MATH_REVIEWS, isBuiltTopic } from '@/content';
-import { G1_MATH_PART2_START, G1_MATH_PART3_START } from '@/content/g1-math/topics';
+import { G1_MATH_PART2_START, G1_MATH_PART3_START, G1_MATH_PART4_START } from '@/content/g1-math/topics';
+import { EXAM_TITLE } from '@/content/g1-math/exam';
+import { DTM_TITLE } from '@/content/g1-math/dtm-exam';
 import { pick } from '@/lib/i18n-config';
 import type { ProgressRow } from '@/lib/store/types';
 
@@ -281,21 +284,104 @@ export default function SubjectView() {
 
             const part1 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n < G1_MATH_PART2_START), true);
             const part2 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART2_START && tp.n < G1_MATH_PART3_START), false);
-            const part3 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART3_START), false);
+            const part3 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART3_START && tp.n < G1_MATH_PART4_START), false);
+            const part4 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART4_START), false);
 
             return (
               <>
-                <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide mb-2">{t('dashboard.part1')}</h3>
+                <div className="mb-2 flex items-center gap-3">
+                  <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part1')}</h3>
+                  <VideoLightbox src="/videos/part1.mp4" poster="/videos/part1.jpg" label={t('dashboard.video')} />
+                </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part1.map(renderEntry)}</div>
 
-                <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide mt-6 mb-2">{t('dashboard.part2')}</h3>
+                <div className="mt-6 mb-2 flex items-center gap-3">
+                  <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part2')}</h3>
+                  <VideoLightbox src="/videos/part2.mp4" poster="/videos/part2.jpg" label={t('dashboard.video')} />
+                </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part2.map(renderEntry)}</div>
 
-                <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide mt-6 mb-2">{t('dashboard.part3')}</h3>
+                <div className="mt-6 mb-2 flex items-center gap-3">
+                  <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part3')}</h3>
+                  <VideoLightbox src="/videos/part3.mp4" poster="/videos/part3.jpg" label={t('dashboard.video')} />
+                </div>
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part3.map(renderEntry)}</div>
+
+                <div className="mt-6 mb-2 flex items-center gap-3">
+                  <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part4')}</h3>
+                  <VideoLightbox src="/videos/part4.mp4" poster="/videos/part4.jpg" label={t('dashboard.video')} />
+                </div>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part4.map(renderEntry)}</div>
               </>
             );
           })()}
+        </section>
+
+        {/* Presidential-school practice exam — always available, sits at the very
+            bottom of the subject. 30 randomized questions, 60-minute timer. */}
+        <section className="mt-8">
+          <Link
+            href="/exam/g1-math"
+            className="block rounded-3xl border-2 border-brand-orange/60 bg-gradient-to-br from-brand-orange/15 to-brand-magenta/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
+          >
+            <div className="flex items-center gap-4">
+              <img
+                src="/prezident-logo.png"
+                alt=""
+                aria-hidden
+                className="shrink-0 w-14 h-14 rounded-full bg-white object-cover shadow-card"
+              />
+              <div className="flex-1 leading-snug">
+                <span className="block font-black text-ink text-lg">{pick(EXAM_TITLE, locale)}</span>
+                <span className="block font-bold text-ink/50 text-[13px]">
+                  {pick(
+                    {
+                      uz: '30 ta savol · 60 daqiqa · sonlar har safar oʻzgaradi',
+                      ru: '30 вопросов · 60 минут · числа меняются каждый раз',
+                      en: '30 questions · 60 minutes · numbers change every time'
+                    },
+                    locale
+                  )}
+                </span>
+              </div>
+              <span className="shrink-0 text-brand-orange font-black text-xl" aria-hidden>
+                ▶
+              </span>
+            </div>
+          </Link>
+        </section>
+
+        {/* DTM-style practice exam — sits under the Presidential one. */}
+        <section className="mt-4">
+          <Link
+            href="/exam/g1-dtm"
+            className="block rounded-3xl border-2 border-brand-blue/60 bg-gradient-to-br from-brand-blue/15 to-brand-green/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
+          >
+            <div className="flex items-center gap-4">
+              <img
+                src="/dtm-logo.png"
+                alt=""
+                aria-hidden
+                className="shrink-0 w-14 h-14 rounded-full bg-white object-cover shadow-card"
+              />
+              <div className="flex-1 leading-snug">
+                <span className="block font-black text-ink text-lg">{pick(DTM_TITLE, locale)}</span>
+                <span className="block font-bold text-ink/50 text-[13px]">
+                  {pick(
+                    {
+                      uz: '30 ta savol · 60 daqiqa · sonlar har safar oʻzgaradi',
+                      ru: '30 вопросов · 60 минут · числа меняются каждый раз',
+                      en: '30 questions · 60 minutes · numbers change every time'
+                    },
+                    locale
+                  )}
+                </span>
+              </div>
+              <span className="shrink-0 text-brand-blue font-black text-xl" aria-hidden>
+                ▶
+              </span>
+            </div>
+          </Link>
         </section>
 
         {/* personalized "focused review" — practise low-score topics + subscribe */}

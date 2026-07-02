@@ -329,42 +329,31 @@
       "id": "q9"
     },
     {
+      "id": "q10",
       "type": "widget",
       "visualHint": "none",
       "widget": {
-        "type": "mcq",
+        "type": "ruler_measure",
         "props": {
-          "choices": [
-            "80",
-            "18",
-            "8"
-          ],
-          "answerIndex": 0
+          "lengthCm": 10,
+          "maxCm": 12
         }
       },
       "prompt": {
-        "uz": "8 dm necha cm boʻladi?",
-        "ru": "Сколько см в 8 дм?",
-        "en": "How many cm are in 8 dm?"
+        "uz": "Chizgʻichda boʻrning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: мелок. Сколько см?",
+        "en": "Measure the crayon on the ruler. How many cm?"
       },
       "hint": {
-        "uz": "Har dm 10 cm: 8 ni 10 ga ko'paytir.",
-        "ru": "Каждый дм — 10 см: умножь 8 на 10.",
-        "en": "Each dm is 10 cm: multiply 8 by 10."
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
       },
       "explanation": {
-        "uz": "8 dm = 80 cm.",
-        "ru": "8 дм = 80 см.",
-        "en": "8 dm = 80 cm."
-      },
-      "componentProposal": {
-        "suggestedType": "unit_convert",
-        "concept": "converting between dm and cm (1 dm = 10 cm)",
-        "interaction": "slide tens-rods (dm) and ones (cm) to assemble a length",
-        "props": "{ dm, cm }",
-        "why": "no current component models dm<->cm unit conversion explicitly"
-      },
-      "id": "q10"
+        "uz": "Boʻrning uzunligi 10 cm.",
+        "ru": "Длина: 10 см.",
+        "en": "The crayon is 10 cm long."
+      }
     }
   ]
 }

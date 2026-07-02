@@ -1,0 +1,342 @@
+{
+  "topicId": "g1-math-113",
+  "subjectKey": "g1-math",
+  "emojis": "✏️📏✨",
+  "title": {
+    "uz": "Berilgan uzunlikda kesma chizamiz",
+    "ru": "Чертим отрезок заданной длины",
+    "en": "Drawing a segment of a given length"
+  },
+  "recall": {
+    "uz": "Berilgan uzunlikda kesma chizish uchun nuqta qoʻyamiz, chizgʻichning nolini unga qoʻyamiz, kerakli uzunlikni belgilaymiz va ikki nuqtani tutashtiramiz. Oʻlchashni doim nol dan boshlaymiz.",
+    "ru": "Чтобы начертить отрезок заданной длины: ставим точку, прикладываем к ней ноль линейки, отмечаем нужную длину и соединяем две точки. Измерение всегда начинаем с нуля.",
+    "en": "To draw a segment of a given length: mark a point, put the ruler's zero on it, mark the needed length, and join the two points. Always start measuring from zero."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 7,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda AB kesmaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину отрезка AB. Сколько см?",
+        "en": "Measure segment AB on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Kesmaning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается отрезок.",
+        "en": "See which number the segment ends on."
+      },
+      "explanation": {
+        "uz": "Kesma AB uzunligi 7 cm.",
+        "ru": "Длина отрезка AB: 7 см.",
+        "en": "Segment AB is 7 cm long."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 5,
+          "maxCm": 10
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda MK kesmaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину отрезка MK. Сколько см?",
+        "en": "Measure segment MK on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Kesmaning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается отрезок.",
+        "en": "See which number the segment ends on."
+      },
+      "explanation": {
+        "uz": "Kesma MK uzunligi 5 cm.",
+        "ru": "Длина отрезка MK: 5 см.",
+        "en": "Segment MK is 5 cm long."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 30
+        }
+      },
+      "prompt": {
+        "uz": "30 cm = 3 dm 0 cm. Bloklardan yasa: oʻnlik = 1 dm, birlik = 1 cm.",
+        "ru": "30 см = 3 дм 0 см. Собери из блоков: десяток = 1 дм, единица = 1 см.",
+        "en": "30 cm = 3 dm 0 cm. Build it: a ten-rod = 1 dm, a one-cube = 1 cm."
+      },
+      "hint": {
+        "uz": "3 ta dm va 0 ta cm.",
+        "ru": "3 дм и 0 см.",
+        "en": "3 dm and 0 cm."
+      },
+      "explanation": {
+        "uz": "30 = 30 + 0 cm.",
+        "ru": "30 = 30 + 0 см.",
+        "en": "30 = 30 + 0 cm."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 54
+        }
+      },
+      "prompt": {
+        "uz": "54 cm = 5 dm 4 cm. Bloklardan yasa: oʻnlik = 1 dm, birlik = 1 cm.",
+        "ru": "54 см = 5 дм 4 см. Собери из блоков: десяток = 1 дм, единица = 1 см.",
+        "en": "54 cm = 5 dm 4 cm. Build it: a ten-rod = 1 dm, a one-cube = 1 cm."
+      },
+      "hint": {
+        "uz": "5 ta dm va 4 ta cm.",
+        "ru": "5 дм и 4 см.",
+        "en": "5 dm and 4 cm."
+      },
+      "explanation": {
+        "uz": "54 = 50 + 4 cm.",
+        "ru": "54 = 50 + 4 см.",
+        "en": "54 = 50 + 4 cm."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 21,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "AB kesma 27 cm, BC esa undan 6 cm kalta. BC necha cm? Bloklardan yasa.",
+        "ru": "Отрезок AB 27 см, BC на 6 см короче. Сколько см BC? Собери из блоков.",
+        "en": "Segment AB is 27 cm, BC is 6 cm shorter. How many cm is BC? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "27 - 6 = 21 cm.",
+        "ru": "27 - 6 = 21 см.",
+        "en": "27 - 6 = 21 cm."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 4,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Ikki kesma: 7 cm va 4 cm. Umumiy uzunligi necha cm?",
+        "ru": "Два отрезка: 7 см и 4 см. Какова общая длина?",
+        "en": "Two segments: 7 cm and 4 cm. What is the total length?"
+      },
+      "hint": {
+        "uz": "7 dan boshla, 4 cm oldinga sur.",
+        "ru": "Встань на 7, продвинься на 4 см.",
+        "en": "Start at 7, move 4 cm forward."
+      },
+      "explanation": {
+        "uz": "7 + 4 = 11 cm.",
+        "ru": "7 + 4 = 11 см.",
+        "en": "7 + 4 = 11 cm."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 27,
+          "y": 21
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi kesma uzunroq: 27 cm yoki 21 cm? Toʻgʻri belgini tanla.",
+        "ru": "Какой отрезок длиннее: 27 см или 21 см? Выбери знак.",
+        "en": "Which segment is longer: 27 cm or 21 cm? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgan kesma uzunroq.",
+        "ru": "Отрезок с большим числом длиннее.",
+        "en": "The bigger number is the longer segment."
+      },
+      "explanation": {
+        "uz": "27 > 21.",
+        "ru": "27 > 21.",
+        "en": "27 > 21."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "32 - 2",
+              "right": "30"
+            },
+            {
+              "left": "54 - 4",
+              "right": "50"
+            },
+            {
+              "left": "8 + 10",
+              "right": "18"
+            },
+            {
+              "left": "12 + 12",
+              "right": "24"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir uzunlikni qiymati bilan ulang!",
+        "ru": "Соедини каждую длину с её значением!",
+        "en": "Match each length with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir uzunlik oʻz qiymati bilan ulandi.",
+        "ru": "Каждая длина соединена со своим значением.",
+        "en": "Each length is matched with its value."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 9,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda EF kesmaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину отрезка EF. Сколько см?",
+        "en": "Measure segment EF on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Kesmaning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается отрезок.",
+        "en": "See which number the segment ends on."
+      },
+      "explanation": {
+        "uz": "Kesma EF uzunligi 9 cm.",
+        "ru": "Длина отрезка EF: 9 см.",
+        "en": "Segment EF is 9 cm long."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "10 + 20",
+              "bin": "v30"
+            },
+            {
+              "id": "b",
+              "label": "25 + 5",
+              "bin": "v30"
+            },
+            {
+              "id": "c",
+              "label": "15 + 15",
+              "bin": "v30"
+            },
+            {
+              "id": "d",
+              "label": "30 + 20",
+              "bin": "v50"
+            },
+            {
+              "id": "e",
+              "label": "40 + 10",
+              "bin": "v50"
+            },
+            {
+              "id": "f",
+              "label": "25 + 25",
+              "bin": "v50"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v30",
+              "label": "30"
+            },
+            {
+              "id": "v50",
+              "label": "50"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir uzunlikni qiymati (cm) boʻyicha toʻgʻri qutiga sudra!",
+        "ru": "Перетащи каждую длину в ящик её значения (см)!",
+        "en": "Drag each length into the bucket of its value (cm)!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в ящик с этим числом.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir uzunlik oʻz qiymati qutisida.",
+        "ru": "Каждая длина в ящике своего значения.",
+        "en": "Each length is in the bucket of its value."
+      }
+    }
+  ]
+}

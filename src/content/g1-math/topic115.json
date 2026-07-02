@@ -1,0 +1,364 @@
+{
+  "topicId": "g1-math-115",
+  "subjectKey": "g1-math",
+  "emojis": "〰️📏✨",
+  "title": {
+    "uz": "Siniq chiziq uzunligini topamiz",
+    "ru": "Длина ломаной линии",
+    "en": "Length of a broken line"
+  },
+  "recall": {
+    "uz": "Siniq chiziq bir nechta kesmadan — boʻgʻinlardan iborat. Siniq chiziqning uzunligi uning hamma boʻgʻinlari uzunliklari yigʻindisiga teng. Masalan, boʻgʻinlar besh, uch va toʻrt santimetr boʻlsa, uzunligi oʻn ikki santimetr.",
+    "ru": "Ломаная состоит из нескольких отрезков — звеньев. Длина ломаной равна сумме длин всех её звеньев. Например, если звенья пять, три и четыре сантиметра, длина — двенадцать сантиметров.",
+    "en": "A broken line is made of several segments — links. Its length is the sum of all its links. For example if the links are five, three and four centimetres, the length is twelve centimetres."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "straight_curved",
+        "props": {
+          "lines": [
+            {
+              "id": "a",
+              "kind": "straight"
+            },
+            {
+              "id": "b",
+              "kind": "curved"
+            },
+            {
+              "id": "c",
+              "kind": "straight"
+            },
+            {
+              "id": "d",
+              "kind": "curved"
+            },
+            {
+              "id": "e",
+              "kind": "straight"
+            }
+          ],
+          "target": "straight"
+        }
+      },
+      "prompt": {
+        "uz": "Hamma toʻgʻri chiziqlarni belgila!",
+        "ru": "Отметь все прямые линии!",
+        "en": "Tap all the straight lines!"
+      },
+      "hint": {
+        "uz": "Toʻgʻri chiziq egilmaydi.",
+        "ru": "Прямая линия не изгибается.",
+        "en": "A straight line does not bend."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri chiziqlarni topdik.",
+        "ru": "Нашли прямые линии.",
+        "en": "We found the straight lines."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 12,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Siniq chiziqning boʻgʻinlari 5 cm, 3 cm, 4 cm. Uzunligi necha cm? Bloklardan yasa.",
+        "ru": "Звенья ломаной 5 см, 3 см, 4 см. Какова длина? Собери из блоков.",
+        "en": "A broken line's links are 5 cm, 3 cm, 4 cm. What is its length? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "5 + 3 + 4 = 12 cm.",
+        "ru": "5 + 3 + 4 = 12 см.",
+        "en": "5 + 3 + 4 = 12 cm."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 7,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda AB kesmaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину отрезка AB. Сколько см?",
+        "en": "Measure segment AB on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Kesmaning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается отрезок.",
+        "en": "See which number the segment ends on."
+      },
+      "explanation": {
+        "uz": "Kesma AB uzunligi 7 cm.",
+        "ru": "Длина отрезка AB: 7 см.",
+        "en": "Segment AB is 7 cm long."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 6,
+          "b": 5,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Siniq chiziq boʻgʻinlari: 6 cm va 5 cm. Umumiy uzunligi necha cm?",
+        "ru": "Звенья ломаной: 6 см и 5 см. Какова общая длина?",
+        "en": "Broken-line links: 6 cm and 5 cm. What is the total length?"
+      },
+      "hint": {
+        "uz": "6 dan boshla, 5 cm oldinga sur.",
+        "ru": "Встань на 6, продвинься на 5 см.",
+        "en": "Start at 6, move 5 cm forward."
+      },
+      "explanation": {
+        "uz": "6 + 5 = 11 cm.",
+        "ru": "6 + 5 = 11 см.",
+        "en": "6 + 5 = 11 cm."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "4 + 5 + 6",
+              "right": "15"
+            },
+            {
+              "left": "3 + 7 + 8",
+              "right": "18"
+            },
+            {
+              "left": "9 + 2 + 9",
+              "right": "20"
+            },
+            {
+              "left": "5 + 5 + 4",
+              "right": "14"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir uzunlikni qiymati bilan ulang!",
+        "ru": "Соедини каждую длину с её значением!",
+        "en": "Match each length with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir uzunlik oʻz qiymati bilan ulandi.",
+        "ru": "Каждая длина соединена со своим значением.",
+        "en": "Each length is matched with its value."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 78,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Siniq chiziqning 1-boʻgʻini 45 cm, 2-boʻgʻini 12 cm kalta (33 cm). Butun uzunligi? Bloklardan yasa.",
+        "ru": "1-е звено 45 см, 2-е на 12 см короче (33 см). Вся длина? Собери из блоков.",
+        "en": "The 1st link is 45 cm, the 2nd is 12 cm shorter (33 cm). Total length? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "45 + 33 = 78 cm.",
+        "ru": "45 + 33 = 78 см.",
+        "en": "45 + 33 = 78 cm."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 12,
+          "y": 18
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi kesma uzunroq: 12 cm yoki 18 cm? Toʻgʻri belgini tanla.",
+        "ru": "Какой отрезок длиннее: 12 см или 18 см? Выбери знак.",
+        "en": "Which segment is longer: 12 cm or 18 cm? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgan kesma uzunroq.",
+        "ru": "Отрезок с большим числом длиннее.",
+        "en": "The bigger number is the longer segment."
+      },
+      "explanation": {
+        "uz": "12 < 18.",
+        "ru": "12 < 18.",
+        "en": "12 < 18."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 8,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda MK kesmaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину отрезка MK. Сколько см?",
+        "en": "Measure segment MK on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Kesmaning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается отрезок.",
+        "en": "See which number the segment ends on."
+      },
+      "explanation": {
+        "uz": "Kesma MK uzunligi 8 cm.",
+        "ru": "Длина отрезка MK: 8 см.",
+        "en": "Segment MK is 8 cm long."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "8 + 7",
+              "bin": "v15"
+            },
+            {
+              "id": "b",
+              "label": "10 + 5",
+              "bin": "v15"
+            },
+            {
+              "id": "c",
+              "label": "9 + 6",
+              "bin": "v15"
+            },
+            {
+              "id": "d",
+              "label": "9 + 9",
+              "bin": "v18"
+            },
+            {
+              "id": "e",
+              "label": "12 + 6",
+              "bin": "v18"
+            },
+            {
+              "id": "f",
+              "label": "10 + 8",
+              "bin": "v18"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v15",
+              "label": "15"
+            },
+            {
+              "id": "v18",
+              "label": "18"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir uzunlikni qiymati (cm) boʻyicha toʻgʻri qutiga sudra!",
+        "ru": "Перетащи каждую длину в ящик её значения (см)!",
+        "en": "Drag each length into the bucket of its value (cm)!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в ящик с этим числом.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir uzunlik oʻz qiymati qutisida.",
+        "ru": "Каждая длина в ящике своего значения.",
+        "en": "Each length is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 36
+        }
+      },
+      "prompt": {
+        "uz": "36 cm = 3 dm 6 cm. Bloklardan yasa: oʻnlik = 1 dm, birlik = 1 cm.",
+        "ru": "36 см = 3 дм 6 см. Собери из блоков: десяток = 1 дм, единица = 1 см.",
+        "en": "36 cm = 3 dm 6 cm. Build it: a ten-rod = 1 dm, a one-cube = 1 cm."
+      },
+      "hint": {
+        "uz": "3 ta dm va 6 ta cm.",
+        "ru": "3 дм и 6 см.",
+        "en": "3 dm and 6 cm."
+      },
+      "explanation": {
+        "uz": "36 = 30 + 6 cm.",
+        "ru": "36 = 30 + 6 см.",
+        "en": "36 = 30 + 6 cm."
+      }
+    }
+  ]
+}

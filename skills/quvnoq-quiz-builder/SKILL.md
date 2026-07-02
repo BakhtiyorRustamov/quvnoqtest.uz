@@ -34,6 +34,10 @@ Treat these as authoritative. If registry and this skill disagree, registry wins
 - Read the topic material (book page / lesson text).
 - Output a CONCEPT LIST: every distinct skill the topic teaches.
 - Tag grade (metadata only — NEVER pick a component by grade).
+- TITLE: always PARAPHRASE the lesson title (uz/ru/en) — never copy the book
+  heading verbatim. Make it kid-friendly and active (e.g. book "Santimetr.
+  Detsimetr" → "Detsimetr bilan tanishamiz"). Keep all three languages in sync
+  in BOTH the topic JSON `title` and `topics.ts`.
 
 ### Phase 2 — Map concepts → components, minimize mcq (REQUIRED)
 - For each concept pick the component whose VISUAL best fits it.
@@ -54,6 +58,9 @@ Treat these as authoritative. If registry and this skill disagree, registry wins
   unless difficulty differs meaningfully. Compare against
   `src/data/questions.seed.json` from earlier runs and avoid repeating
   prop sets / scenarios across runs.
+- drag_buckets: the component SHUFFLES tiles on render, so authoring order is
+  irrelevant — but still spread the answer key (don't make every "left" tile a
+  single bin in a way that reads as a pattern). Bins of ~equal size are best.
 
 ### Phase 4 — Trilingual text (UZ/RU/EN)
 - Visual components render their own strings; pass `lang` in props where the
@@ -67,6 +74,11 @@ Treat these as authoritative. If registry and this skill disagree, registry wins
 - RU/EN must be natural equivalents, age-appropriate, not literal.
 - If a visual component does NOT yet accept `lang`, note it under
   `i18nGaps` in your final report so it can be patched.
+- READ-ALOUD (uz): only the lesson `title` + `recall` are spoken (by
+  `scripts/seed-tts.mjs`). Unit abbreviations (cm/dm/mm/km/kg) are auto-spoken
+  as full Uzbek words and redundant "(cm)"-style parentheticals are dropped, so
+  recall may use them freely. Keep recall <= 300 chars. Audio is the user's job
+  to regenerate (`npm run seed:tts`, `TTS_FORCE=1` to refresh changed clips).
 
 ### Phase 5 — Validate (REQUIRED, fix & regenerate on any fail)
 - [ ] Every props object valid against its component contract (ranges + math:
@@ -90,12 +102,28 @@ Emit an item shaped like:
   } }
 This turns each fallback into a roadmap item instead of monotony.
 
-## Output format (UNCHANGED from existing pipeline)
-- Return ONLY a JSON array, no prose, no markdown fences.
-- Then SAVE the array to src/data/questions.seed.json (create folder if
-  needed) for human review before any DB write.
-- After saving, report in plain text: total count, types used + count of each,
-  any mcq fallbacks with their componentProposal, and any i18nGaps.
+## Output format & wiring (REQUIRED — this is what makes a lesson playable)
+Each lesson is ONE file `src/content/g1-math/topicNN.json` shaped like the
+existing topics (see topic99.json):
+  { topicId:"g1-math-NN", subjectKey:"g1-math", emojis, title{uz,ru,en},
+    recall{uz,ru,en}, items:[ {id:"qN", type:"widget", visualHint:"none",
+    widget:{type,props}, prompt{}, hint{}, explanation{}, componentProposal? } ] }
+Map book lesson number → topic number (book "Lesson 100" → topic100.json).
+
+To actually surface the lesson you MUST also:
+1. `src/content/index.ts` — add `import topicNNJson` and a `'g1-math-NN':`
+   entry in the LESSONS map (this flips it from "coming soon" to built).
+2. `src/content/g1-math/topics.ts` — replace the `P(NN)` placeholder with a
+   real `T(NN, uz, ru, en)` using the PARAPHRASED title.
+A lesson file that isn't registered in index.ts will NOT appear.
+
+`src/data/questions.seed.json` is an OPTIONAL review dump only — it is NOT
+imported by the app and is not shipped in the bundle. Write it if useful for
+review; it is not required for the lesson to work.
+
+After building, report in plain text (keep it SHORT — no per-topic tables):
+total count, types used + count of each, any mcq fallbacks with their
+componentProposal, and any i18nGaps.
 
 ## Anti-monotony summary (the point of this skill)
 Monotony comes from over-using mcq and repeating prop sets. Beat it by:

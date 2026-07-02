@@ -1,0 +1,365 @@
+{
+  "topicId": "g1-math-140",
+  "subjectKey": "g1-math",
+  "emojis": "🟰⚽✨",
+  "title": {
+    "uz": "Masalalarni tenglama bilan yechamiz",
+    "ru": "Решаем задачи уравнениями",
+    "en": "Solving problems with equations"
+  },
+  "recall": {
+    "uz": "Masalani tenglama bilan yechish uchun nomaʼlumni harf bilan belgilab, shartga koʻra tenglama tuzamiz. Soʻng tenglamani yechib, ildizini topamiz va javobni masalaga qoʻyib tekshiramiz. Bir masaladan bir nechta tenglik tuzish mumkin.",
+    "ru": "Чтобы решить задачу уравнением, обозначаем неизвестное буквой и по условию составляем уравнение. Затем решаем его, находим корень и проверяем ответ в задаче. Из одной задачи можно составить несколько равенств.",
+    "en": "To solve a problem with an equation, we mark the unknown with a letter and build an equation from the conditions. Then we solve it, find the root and check the answer in the problem. One problem can give several equalities."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "15 + x = 37",
+          "answer": 22,
+          "choices": [
+            22,
+            21,
+            23
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Feruz 15 ta belgi chizdi, birgalikda 37 ta. Komil nechta? 15 + x = 37.",
+        "ru": "Феруз нарисовал 15 знаков, вместе 37. Сколько у Комила? 15 + x = 37.",
+        "en": "Feruz drew 15 signs, together 37. How many did Komil draw? 15 + x = 37."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 22 ga teng.",
+        "ru": "Неизвестное равно 22.",
+        "en": "The unknown equals 22."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 16,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Ommaviy kurashda 10, milliy kurashda 6 sportchi. Jami nechta? Bloklardan yasa.",
+        "ru": "В массовой борьбе 10, в национальной 6 спортсменов. Сколько всего? Собери из блоков.",
+        "en": "10 wrestlers in mass wrestling, 6 in national. How many in all? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "10 + 6 = 16.",
+        "ru": "10 + 6 = 16.",
+        "en": "10 + 6 = 16."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "6 + x = 16",
+          "answer": 10,
+          "choices": [
+            10,
+            9,
+            11
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Jami 16 sportchi, 6 tasi milliy kurashda. Nechtasi ommaviy kurashda? 6 + x = 16.",
+        "ru": "Всего 16 спортсменов, 6 в национальной борьбе. Сколько в массовой? 6 + x = 16.",
+        "en": "16 athletes in all, 6 in national wrestling. How many in mass wrestling? 6 + x = 16."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 10 ga teng.",
+        "ru": "Неизвестное равно 10.",
+        "en": "The unknown equals 10."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "x + 10 = 16",
+          "answer": 6,
+          "choices": [
+            6,
+            5,
+            7
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Jami 16 sportchi, 10 tasi ommaviy kurashda. Nechtasi milliy kurashda? x + 10 = 16.",
+        "ru": "Всего 16, 10 в массовой борьбе. Сколько в национальной? x + 10 = 16.",
+        "en": "16 in all, 10 in mass wrestling. How many in national? x + 10 = 16."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 6 ga teng.",
+        "ru": "Неизвестное равно 6.",
+        "en": "The unknown equals 6."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "15 + 22",
+              "right": "37"
+            },
+            {
+              "left": "10 + 6",
+              "right": "16"
+            },
+            {
+              "left": "40 + 12",
+              "right": "52"
+            },
+            {
+              "left": "70 - 8",
+              "right": "62"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagini hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 22,
+          "y": 15
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 22 va 15. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 22 и 15. Какой знак верный?",
+        "en": "Compare: 22 and 15. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "22 > 15.",
+        "ru": "22 > 15.",
+        "en": "22 > 15."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 8 + 8. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 8 + 8. Используй числовую прямую.",
+        "en": "Work it out: 8 + 8. Use the number line."
+      },
+      "hint": {
+        "uz": "8 dan boshla, 8 oldinga sur.",
+        "ru": "Встань на 8, продвинься на 8.",
+        "en": "Start at 8, move 8 forward."
+      },
+      "explanation": {
+        "uz": "8 + 8 = 16.",
+        "ru": "8 + 8 = 16.",
+        "en": "8 + 8 = 16."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 37
+        }
+      },
+      "prompt": {
+        "uz": "Sonni bloklardan yasa: 37.",
+        "ru": "Собери число 37.",
+        "en": "Build the number 37."
+      },
+      "hint": {
+        "uz": "3 ta oʻnlik (+10) va 7 ta birlik (+1).",
+        "ru": "3 десятков (+10) и 7 единиц (+1).",
+        "en": "3 tens (+10) and 7 ones (+1)."
+      },
+      "explanation": {
+        "uz": "37 = 30 + 7.",
+        "ru": "37 = 30 + 7.",
+        "en": "37 = 30 + 7."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "10 + 6",
+              "bin": "v16"
+            },
+            {
+              "id": "b",
+              "label": "8 + 8",
+              "bin": "v16"
+            },
+            {
+              "id": "c",
+              "label": "20 - 4",
+              "bin": "v16"
+            },
+            {
+              "id": "d",
+              "label": "15 + 22",
+              "bin": "v37"
+            },
+            {
+              "id": "e",
+              "label": "30 + 7",
+              "bin": "v37"
+            },
+            {
+              "id": "f",
+              "label": "40 - 3",
+              "bin": "v37"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v16",
+              "label": "16"
+            },
+            {
+              "id": "v37",
+              "label": "37"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик его значения!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в нужный ящик.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "16 - x = 10 boʻlsa, x nechа?",
+        "ru": "Если 16 - x = 10, чему равно x?",
+        "en": "If 16 - x = 10, what is x?"
+      },
+      "hint": {
+        "uz": "16 - 10 ni hisobla.",
+        "ru": "Вычисли 16 - 10.",
+        "en": "Work out 16 - 10."
+      },
+      "explanation": {
+        "uz": "x = 6.",
+        "ru": "x = 6.",
+        "en": "x = 6."
+      }
+    }
+  ]
+}

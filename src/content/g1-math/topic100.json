@@ -166,42 +166,31 @@
       "id": "q5"
     },
     {
+      "id": "q6",
       "type": "widget",
       "visualHint": "none",
       "widget": {
-        "type": "mcq",
+        "type": "ruler_measure",
         "props": {
-          "choices": [
-            "6",
-            "12",
-            "3"
-          ],
-          "answerIndex": 0
+          "lengthCm": 7,
+          "maxCm": 10
         }
       },
       "prompt": {
-        "uz": "Chizgʻichda 1 cm = 2 katak. Kesma 12 katak uzunlikda. U necha cm?",
-        "ru": "На линейке 1 см = 2 клетки. Отрезок длиной 12 клеток. Сколько это см?",
-        "en": "On the ruler 1 cm = 2 cells. A segment is 12 cells long. How many cm is it?"
+        "uz": "Chizgʻichda qalamning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: карандаш. Сколько см?",
+        "en": "Measure the pencil on the ruler. How many cm?"
       },
       "hint": {
-        "uz": "12 katakni 2 ga boʻl.",
-        "ru": "Раздели 12 клеток на 2.",
-        "en": "Divide 12 cells by 2."
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
       },
       "explanation": {
-        "uz": "12 katak = 6 cm.",
-        "ru": "12 клеток = 6 см.",
-        "en": "12 cells = 6 cm."
-      },
-      "componentProposal": {
-        "suggestedType": "ruler_measure",
-        "concept": "reading a length off a ruler (cells/cm), incl. 1 cm = 2 cells",
-        "interaction": "drag a ruler/marker along an object and read the centimetre value",
-        "props": "{ lengthCm, unit: 'cm'|'cell', maxCm }",
-        "why": "no current component renders a ruler or models cell<->cm reading"
-      },
-      "id": "q6"
+        "uz": "Qalamning uzunligi 7 cm.",
+        "ru": "Длина: 7 см.",
+        "en": "The pencil is 7 cm long."
+      }
     },
     {
       "type": "widget",
@@ -325,42 +314,31 @@
       "id": "q9"
     },
     {
+      "id": "q10",
       "type": "widget",
       "visualHint": "none",
       "widget": {
-        "type": "mcq",
+        "type": "ruler_measure",
         "props": {
-          "choices": [
-            "9",
-            "12",
-            "15"
-          ],
-          "answerIndex": 0
+          "lengthCm": 9,
+          "maxCm": 12
         }
       },
       "prompt": {
-        "uz": "Kesma chizgʻichda 3-belgidan 12-belgigacha choʻzilgan. Uning uzunligi necha cm?",
-        "ru": "Отрезок на линейке тянется от метки 3 до метки 12. Какова его длина в см?",
-        "en": "A segment runs from mark 3 to mark 12 on a ruler. How long is it in cm?"
+        "uz": "Chizgʻichda lentaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: лента. Сколько см?",
+        "en": "Measure the ribbon on the ruler. How many cm?"
       },
       "hint": {
-        "uz": "Katta sondan kichigini ayir: 12 - 3.",
-        "ru": "Из большего вычти меньшее: 12 - 3.",
-        "en": "Subtract: 12 - 3."
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
       },
       "explanation": {
-        "uz": "12 - 3 = 9 cm.",
-        "ru": "12 - 3 = 9 см.",
-        "en": "12 - 3 = 9 cm."
-      },
-      "componentProposal": {
-        "suggestedType": "ruler_measure",
-        "concept": "reading a length off a ruler (cells/cm), incl. 1 cm = 2 cells",
-        "interaction": "drag a ruler/marker along an object and read the centimetre value",
-        "props": "{ lengthCm, unit: 'cm'|'cell', maxCm }",
-        "why": "no current component renders a ruler or models cell<->cm reading"
-      },
-      "id": "q10"
+        "uz": "Lentaning uzunligi 9 cm.",
+        "ru": "Длина: 9 см.",
+        "en": "The ribbon is 9 cm long."
+      }
     }
   ]
 }

@@ -1,0 +1,344 @@
+{
+  "topicId": "g1-math-110",
+  "subjectKey": "g1-math",
+  "emojis": "⚖️🔗✨",
+  "title": {
+    "uz": "Kattaliklarni qulay hisoblaymiz",
+    "ru": "Удобно считаем величины",
+    "en": "Computing quantities the easy way"
+  },
+  "recall": {
+    "uz": "Bir nechta kattalikni qoʻshganda, qulay tartibda guruhlash mumkin — natija oʻzgarmaydi. Nomaʼlum qoʻshiluvchini topish uchun yigʻindidan maʼlum qoʻshiluvchini ayiramiz. Masalan, sakkiz, toʻrt va ikki kilogramm — jami oʻn toʻrt kilogramm.",
+    "ru": "Складывая несколько величин, можно удобно их группировать — результат не меняется. Чтобы найти неизвестное слагаемое, из суммы вычитаем известное. Например, восемь, четыре и два килограмма — всего четырнадцать.",
+    "en": "When adding several quantities, you can group them conveniently — the result is the same. To find a missing addend, subtract the known one from the sum. For example eight, four and two kilograms make fourteen."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 14,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Oʻramaga 8 kg yongʻoq, 4 kg mayiz, 2 kg urugʻ solindi. Jami necha kg? Bloklardan yasa.",
+        "ru": "В упаковку 8 кг орехов, 4 кг изюма, 2 кг семечек. Сколько всего? Собери из блоков.",
+        "en": "8 kg nuts, 4 kg raisins, 2 kg seeds were packed. How many kg in all? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "8 + 4 + 2 = 14.",
+        "ru": "8 + 4 + 2 = 14.",
+        "en": "8 + 4 + 2 = 14."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 15,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 6 + 5 + 4 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 6 + 5 + 4 = ?",
+        "en": "Work it out and build the answer with blocks: 6 + 5 + 4 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "6 + 5 + 4 = 15.",
+        "ru": "6 + 5 + 4 = 15.",
+        "en": "6 + 5 + 4 = 15."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 8,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda tayoqchaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: палочка. Сколько см?",
+        "en": "Measure the stick on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
+      },
+      "explanation": {
+        "uz": "Tayoqchaning uzunligi 8 cm.",
+        "ru": "Длина: 8 см.",
+        "en": "The stick is 8 cm long."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "12 + 23",
+              "right": "35"
+            },
+            {
+              "left": "65 - 15",
+              "right": "50"
+            },
+            {
+              "left": "9 + 9",
+              "right": "18"
+            },
+            {
+              "left": "31 + 14",
+              "right": "45"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 24,
+          "y": 12
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 24 kg va 12 kg. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 24 кг и 12 кг. Какой знак верный?",
+        "en": "Compare: 24 kg and 12 kg. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Soni katta boʻlsa, ogʻir.",
+        "ru": "Больше число — тяжелее.",
+        "en": "A bigger number is heavier."
+      },
+      "explanation": {
+        "uz": "24 > 12.",
+        "ru": "24 > 12.",
+        "en": "24 > 12."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 30,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Nomaʼlum qoʻshiluvchini top: 27 + ? = 57. Javobni bloklardan yasa.",
+        "ru": "Найди неизвестное слагаемое: 27 + ? = 57. Собери ответ.",
+        "en": "Find the missing addend: 27 + ? = 57. Build the answer."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "57 - 27 = 30.",
+        "ru": "57 - 27 = 30.",
+        "en": "57 - 27 = 30."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 7,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "7 kg va 7 kg — birga necha kg? Sonlar chizigʻida hisobla.",
+        "ru": "7 кг и 7 кг — сколько вместе? Посчитай на числовой прямой.",
+        "en": "7 kg and 7 kg — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla, 7 qadam oldinga sur.",
+        "ru": "Встань на 7, продвинься на 7.",
+        "en": "Start at 7, move 7 forward."
+      },
+      "explanation": {
+        "uz": "7 + 7 = 14 kg.",
+        "ru": "7 + 7 = 14 кг.",
+        "en": "7 + 7 = 14 kg."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "12 + 23",
+              "bin": "v35"
+            },
+            {
+              "id": "b",
+              "label": "30 + 5",
+              "bin": "v35"
+            },
+            {
+              "id": "c",
+              "label": "15 + 20",
+              "bin": "v35"
+            },
+            {
+              "id": "d",
+              "label": "65 - 15",
+              "bin": "v50"
+            },
+            {
+              "id": "e",
+              "label": "30 + 20",
+              "bin": "v50"
+            },
+            {
+              "id": "f",
+              "label": "25 + 25",
+              "bin": "v50"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v35",
+              "label": "35"
+            },
+            {
+              "id": "v50",
+              "label": "50"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha toʻgʻri qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик его значения!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в ящик с этим числом.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 66
+        }
+      },
+      "prompt": {
+        "uz": "Omborda 66 kg un bor. Shu miqdorni bloklardan yasa.",
+        "ru": "На складе 66 кг муки. Собери это число.",
+        "en": "A store has 66 kg of flour. Build that number."
+      },
+      "hint": {
+        "uz": "6 ta oʻnlik (+10) va 6 ta birlik (+1).",
+        "ru": "6 десятков (+10) и 6 единиц (+1).",
+        "en": "6 tens (+10) and 6 ones (+1)."
+      },
+      "explanation": {
+        "uz": "66 = 60 + 6.",
+        "ru": "66 = 60 + 6.",
+        "en": "66 = 60 + 6."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "9 kg va 8 kg — birga necha kg? Sonlar chizigʻida hisobla.",
+        "ru": "9 кг и 8 кг — сколько вместе? Посчитай на числовой прямой.",
+        "en": "9 kg and 8 kg — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "9 dan boshla, 8 qadam oldinga sur.",
+        "ru": "Встань на 9, продвинься на 8.",
+        "en": "Start at 9, move 8 forward."
+      },
+      "explanation": {
+        "uz": "9 + 8 = 17 kg.",
+        "ru": "9 + 8 = 17 кг.",
+        "en": "9 + 8 = 17 kg."
+      }
+    }
+  ]
+}

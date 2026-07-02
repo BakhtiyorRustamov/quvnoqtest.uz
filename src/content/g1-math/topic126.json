@@ -1,0 +1,407 @@
+{
+  "topicId": "g1-math-126",
+  "subjectKey": "g1-math",
+  "emojis": "🦋📐✨",
+  "title": {
+    "uz": "Simmetriya bilan tanishamiz",
+    "ru": "Знакомимся с симметрией",
+    "en": "Meet symmetry"
+  },
+  "recall": {
+    "uz": "Shaklni ikkita bir xil qismga boʻladigan chiziq simmetriya oʻqi deyiladi. Simmetrik shakl oʻq atrofida ikki teng qismdan iborat. Oʻq vertikal, gorizontal yoki diagonal boʻlishi mumkin.",
+    "ru": "Линия, делящая фигуру на две одинаковые части, называется осью симметрии. Симметричная фигура состоит из двух равных частей. Ось может быть вертикальной, горизонтальной или диагональной.",
+    "en": "A line that splits a figure into two equal parts is an axis of symmetry. A symmetric figure has two equal halves across the axis. The axis can be vertical, horizontal or diagonal."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "symmetry_grid",
+        "props": {
+          "rows": 5,
+          "cols": 6,
+          "left": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "color": "#1fa7e0"
+        }
+      },
+      "prompt": {
+        "uz": "Shaklni simmetrik qilib toʻldir.",
+        "ru": "Дополни фигуру до симметричной.",
+        "en": "Complete the figure to make it symmetric."
+      },
+      "hint": {
+        "uz": "Chap tomonni koʻzdan kechir va oʻng tomonni xuddi shunday qil.",
+        "ru": "Посмотри на левую часть и сделай правую такой же.",
+        "en": "Look at the left side and make the right side match."
+      },
+      "explanation": {
+        "uz": "Shakl simmetriya oʻqiga nisbatan ikki teng qismdan iborat.",
+        "ru": "Фигура состоит из двух равных частей относительно оси.",
+        "en": "The figure has two equal halves across the axis."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "symmetry_grid",
+        "props": {
+          "rows": 5,
+          "cols": 6,
+          "left": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "color": "#f39a1f"
+        }
+      },
+      "prompt": {
+        "uz": "Shaklni simmetrik qilib toʻldir.",
+        "ru": "Дополни фигуру до симметричной.",
+        "en": "Complete the figure to make it symmetric."
+      },
+      "hint": {
+        "uz": "Chap tomonni koʻzdan kechir va oʻng tomonni xuddi shunday qil.",
+        "ru": "Посмотри на левую часть и сделай правую такой же.",
+        "en": "Look at the left side and make the right side match."
+      },
+      "explanation": {
+        "uz": "Shakl simmetriya oʻqiga nisbatan ikki teng qismdan iborat.",
+        "ru": "Фигура состоит из двух равных частей относительно оси.",
+        "en": "The figure has two equal halves across the axis."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 21,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Aziza 35 ta simmetrik shakl chizdi, Madina undan 14 ta kam. Madina nechta chizdi? Bloklardan yasa.",
+        "ru": "Азиза нарисовала 35 симметричных фигур, Мадина на 14 меньше. Сколько у Мадины? Собери из блоков.",
+        "en": "Aziza drew 35 symmetric shapes, Madina 14 fewer. How many did Madina draw? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "35 - 14 = 21.",
+        "ru": "35 - 14 = 21.",
+        "en": "35 - 14 = 21."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "35 - 14",
+              "right": "21"
+            },
+            {
+              "left": "40 - 18",
+              "right": "22"
+            },
+            {
+              "left": "12 + 23",
+              "right": "35"
+            },
+            {
+              "left": "9 + 9",
+              "right": "18"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "symmetry_grid",
+        "props": {
+          "rows": 5,
+          "cols": 6,
+          "left": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "color": "#46c06a"
+        }
+      },
+      "prompt": {
+        "uz": "Shaklni simmetrik qilib toʻldir.",
+        "ru": "Дополни фигуру до симметричной.",
+        "en": "Complete the figure to make it symmetric."
+      },
+      "hint": {
+        "uz": "Chap tomonni koʻzdan kechir va oʻng tomonni xuddi shunday qil.",
+        "ru": "Посмотри на левую часть и сделай правую такой же.",
+        "en": "Look at the left side and make the right side match."
+      },
+      "explanation": {
+        "uz": "Shakl simmetriya oʻqiga nisbatan ikki teng qismdan iborat.",
+        "ru": "Фигура состоит из двух равных частей относительно оси.",
+        "en": "The figure has two equal halves across the axis."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "2",
+            "1"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Kvadratning nechta simmetriya oʻqi bor?",
+        "ru": "Сколько осей симметрии у квадрата?",
+        "en": "How many axes of symmetry does a square have?"
+      },
+      "hint": {
+        "uz": "Vertikal, gorizontal va ikki diagonal.",
+        "ru": "Вертикальная, горизонтальная и две диагональных.",
+        "en": "Vertical, horizontal and two diagonals."
+      },
+      "explanation": {
+        "uz": "Kvadratning 4 ta simmetriya oʻqi bor.",
+        "ru": "У квадрата 4 оси симметрии.",
+        "en": "A square has 4 axes of symmetry."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 36
+        }
+      },
+      "prompt": {
+        "uz": "Sonni bloklardan yasa: 36.",
+        "ru": "Собери число 36.",
+        "en": "Build the number 36."
+      },
+      "hint": {
+        "uz": "3 ta oʻnlik (+10) va 6 ta birlik (+1).",
+        "ru": "3 десятков (+10) и 6 единиц (+1).",
+        "en": "3 tens (+10) and 6 ones (+1)."
+      },
+      "explanation": {
+        "uz": "36 = 30 + 6.",
+        "ru": "36 = 30 + 6.",
+        "en": "36 = 30 + 6."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 35,
+          "y": 21
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 35 va 21. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 35 и 21. Какой знак верный?",
+        "en": "Compare: 35 and 21. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "35 > 21.",
+        "ru": "35 > 21.",
+        "en": "35 > 21."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 9,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 9 + 9. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 9 + 9. Используй числовую прямую.",
+        "en": "Work it out: 9 + 9. Use the number line."
+      },
+      "hint": {
+        "uz": "9 dan boshla, 9 oldinga sur.",
+        "ru": "Встань на 9, продвинься на 9.",
+        "en": "Start at 9, move 9 forward."
+      },
+      "explanation": {
+        "uz": "9 + 9 = 18.",
+        "ru": "9 + 9 = 18.",
+        "en": "9 + 9 = 18."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "symmetry_grid",
+        "props": {
+          "rows": 5,
+          "cols": 6,
+          "left": [
+            [
+              2,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "color": "#d63384"
+        }
+      },
+      "prompt": {
+        "uz": "Shaklni simmetrik qilib toʻldir.",
+        "ru": "Дополни фигуру до симметричной.",
+        "en": "Complete the figure to make it symmetric."
+      },
+      "hint": {
+        "uz": "Chap tomonni koʻzdan kechir va oʻng tomonni xuddi shunday qil.",
+        "ru": "Посмотри на левую часть и сделай правую такой же.",
+        "en": "Look at the left side and make the right side match."
+      },
+      "explanation": {
+        "uz": "Shakl simmetriya oʻqiga nisbatan ikki teng qismdan iborat.",
+        "ru": "Фигура состоит из двух равных частей относительно оси.",
+        "en": "The figure has two equal halves across the axis."
+      }
+    }
+  ]
+}
