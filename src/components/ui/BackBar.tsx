@@ -16,12 +16,18 @@ export default function BackBar({
   onBack,
   backHref,
   showMute = true,
-  showLang = false
+  showLang = false,
+  homeHref,
+  homeLabel
 }: {
   onBack?: () => void;
   backHref?: string;
   showMute?: boolean;
   showLang?: boolean;
+  /** Override the home button target (e.g. the subject page inside a lesson). */
+  homeHref?: string;
+  /** Override the home button label (e.g. "Matematika 1"). */
+  homeLabel?: string;
 }) {
   const t = useTranslations('common');
   const router = useRouter();
@@ -41,8 +47,8 @@ export default function BackBar({
       <div className="flex items-center gap-2">
         {showLang && <LangSwitcher />}
         {showMute && <MuteToggle />}
-        <Link href="/dashboard" className="btn-blue text-base" aria-label={t('toDashboard')}>
-          <span aria-hidden>🏠</span> {t('toDashboard')}
+        <Link href={homeHref ?? '/dashboard'} className="btn-blue text-base" aria-label={homeLabel ?? t('toDashboard')}>
+          <span aria-hidden>🏠</span> {homeLabel ?? t('toDashboard')}
         </Link>
       </div>
     </div>

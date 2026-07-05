@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-16",
+  "subjectKey": "g1-ona",
+  "emojis": "🇶⛰️🌳",
+  "title": {
+    "uz": "Q va Gʻ tovushlari",
+    "ru": "Звуки Q и Gʻ",
+    "en": "The sounds Q and Gʻ"
+  },
+  "recall": {
+    "uz": "Q va Gʻ — undosh tovushlar. Soʻz oxirida ularni farqlash muhim: bogʻ, togʻ, sogʻ (gʻ bilan); quloq, oyoq, tomoq (q bilan).",
+    "ru": "Q и Gʻ — согласные. В конце слова их важно различать: bogʻ, togʻ, sogʻ (с gʻ); quloq, oyoq, tomoq (с q).",
+    "en": "Q and Gʻ are consonants. At the end of a word they matter: bogʻ, togʻ, sogʻ (with gʻ); quloq, oyoq, tomoq (with q)."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "bo", "after": "", "choices": ["gʻ", "g", "q"], "answer": "gʻ", "emoji": "🌳", "clue": { "uz": "Mevali daraxtlar oʻsadigan joy", "ru": "Место, где растут фруктовые деревья", "en": "Where fruit trees grow" } } },
+      "prompt": { "uz": "Oxirgi tovushni qoʻy!", "ru": "Вставь последний звук!", "en": "Add the last sound!" },
+      "hint": { "uz": "bo … — «bogʻ».", "ru": "bo … — «bogʻ» (сад).", "en": "bo … — “bogʻ” (garden)." },
+      "explanation": { "uz": "«bogʻ» «gʻ» bilan tugaydi.", "ru": "«bogʻ» оканчивается на «gʻ».", "en": "“bogʻ” ends with “gʻ”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "to", "after": "", "choices": ["gʻ", "q", "g"], "answer": "gʻ", "emoji": "⛰️", "clue": { "uz": "Juda baland tabiat joyi", "ru": "Очень высокое место природы", "en": "A very high place in nature" } } },
+      "prompt": { "uz": "Oxirgi tovushni qoʻy!", "ru": "Вставь последний звук!", "en": "Add the last sound!" },
+      "hint": { "uz": "to … — «togʻ».", "ru": "to … — «togʻ» (гора).", "en": "to … — “togʻ” (mountain)." },
+      "explanation": { "uz": "«togʻ» «gʻ» bilan tugaydi.", "ru": "«togʻ» оканчивается на «gʻ».", "en": "“togʻ” ends with “gʻ”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "qishlo", "after": "", "choices": ["q", "gʻ", "k"], "answer": "q", "emoji": "🏡", "clue": { "uz": "Kichik aholi punkti", "ru": "Небольшой населённый пункт (село)", "en": "A small settlement (village)" } } },
+      "prompt": { "uz": "Oxirgi tovushni qoʻy!", "ru": "Вставь последний звук!", "en": "Add the last sound!" },
+      "hint": { "uz": "qishlo … — «qishloq».", "ru": "qishlo … — «qishloq» (село).", "en": "qishlo … — “qishloq” (village)." },
+      "explanation": { "uz": "«qishloq» «q» bilan tugaydi.", "ru": "«qishloq» оканчивается на «q».", "en": "“qishloq” ends with “q”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "quloq", "bin": "q" }, { "id": "b", "label": "oyoq", "bin": "q" }, { "id": "c", "label": "tomoq", "bin": "q" }, { "id": "d", "label": "bogʻ", "bin": "gʻ" }, { "id": "e", "label": "togʻ", "bin": "gʻ" }, { "id": "f", "label": "sogʻ", "bin": "gʻ" } ], "bins": [ { "id": "q", "label": "«Q» bilan tugaydi" }, { "id": "gʻ", "label": "«Gʻ» bilan tugaydi" } ] } },
+      "prompt": { "uz": "Soʻz oxiriga qarab ajrat!", "ru": "Раздели по концу слова!", "en": "Sort by the word ending!" },
+      "hint": { "uz": "«quloq» — q, «bogʻ» — gʻ bilan.", "ru": "«quloq» — на q, «bogʻ» — на gʻ.", "en": "“quloq” ends in q, “bogʻ” in gʻ." },
+      "explanation": { "uz": "Q va Gʻ soʻz oxirida farqlanadi.", "ru": "Q и Gʻ различаются в конце слова.", "en": "Q and Gʻ differ at the end of a word." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "quloq", "match": true }, { "text": "bogʻ", "match": false }, { "text": "oyoq", "match": true }, { "text": "togʻ", "match": false }, { "text": "yonoq", "match": true }, { "text": "gul", "match": false } ] } },
+      "prompt": { "uz": "«Q» bilan tugagan soʻzlarni bos!", "ru": "Нажми слова, оканчивающиеся на «q»!", "en": "Tap the words that end with “q”!" },
+      "hint": { "uz": "quloq, oyoq, yonoq — «q» bilan.", "ru": "quloq, oyoq, yonoq — на «q».", "en": "quloq, oyoq, yonoq end with “q”." },
+      "explanation": { "uz": "quloq, oyoq, yonoq — «q» bilan tugaydi.", "ru": "quloq, oyoq, yonoq оканчиваются на «q».", "en": "quloq, oyoq, yonoq end with “q”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "quloq", "right": "👂" }, { "left": "oyoq", "right": "🦶" }, { "left": "bogʻ", "right": "🌳" }, { "left": "togʻ", "right": "⛰️" } ] } },
+      "prompt": { "uz": "Soʻzni rasmiga ula!", "ru": "Соедини слово с картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«quloq» — 👂, «togʻ» — ⛰️.", "ru": "«quloq» — 👂, «togʻ» — ⛰️.", "en": "“quloq” — 👂, “togʻ” — ⛰️." },
+      "explanation": { "uz": "Har soʻz «q» yoki «gʻ» bilan tugaydi.", "ru": "Каждое слово оканчивается на «q» или «gʻ».", "en": "Each word ends with “q” or “gʻ”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "qishloq", "letters": ["q", "i", "sh", "l", "o", "q"], "emoji": "🏡", "clue": { "uz": "Buvimlar yashaydigan joy", "ru": "Место, где живут бабушки", "en": "Where grandparents live" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: q, i, sh, l, o, q.", "ru": "Части: q, i, sh, l, o, q.", "en": "Parts: q, i, sh, l, o, q." },
+      "explanation": { "uz": "«qishloq» «q» bilan boshlanib, «q» bilan tugaydi.", "ru": "«qishloq» начинается и оканчивается на «q».", "en": "“qishloq” starts and ends with “q”." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Togʻda", "qor", "yogʻdi."], "emoji": "🏔️", "clue": { "uz": "Togʻ haqida gap", "ru": "Предложение о горе", "en": "A sentence about the mountain" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Qayerda? — «Togʻda».", "ru": "Где? — «Togʻda».", "en": "Where? — “Togʻda”." },
+      "explanation": { "uz": "«Togʻda» soʻzida «gʻ» bor.", "ru": "В слове «Togʻda» есть «gʻ».", "en": "The word “Togʻda” contains “gʻ”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "quloq", "letters": ["q", "u", "l", "o", "q"], "emoji": "👂", "clue": { "uz": "Eshitish aʼzosi", "ru": "Орган слуха", "en": "The organ of hearing" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: q, u, l, o, q.", "ru": "Части: q, u, l, o, q.", "en": "Parts: q, u, l, o, q." },
+      "explanation": { "uz": "«quloq» ikki «q» bilan yoziladi.", "ru": "«quloq» пишется с двумя «q».", "en": "“quloq” is written with two “q”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["bogʻ", "non", "qish"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz «gʻ» bilan tugaydi?", "ru": "Какое слово оканчивается на «gʻ»?", "en": "Which word ends with “gʻ”?" },
+      "hint": { "uz": "Mevali daraxtlar joyi.", "ru": "Место фруктовых деревьев.", "en": "The place of fruit trees." },
+      "explanation": { "uz": "«bogʻ» «gʻ» bilan tugaydi.", "ru": "«bogʻ» оканчивается на «gʻ».", "en": "“bogʻ” ends with “gʻ”." }
+    }
+  ]
+}

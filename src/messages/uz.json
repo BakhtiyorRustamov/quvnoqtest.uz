@@ -154,7 +154,9 @@
     },
     "part3": "3-qism",
     "part4": "4-qism",
-    "video": "Video dars"
+    "video": "Video dars",
+    "showMore": "Barchasini koʻrsatish",
+    "showLess": "Yigʻish"
   },
   "lesson": {
     "letsStart": "Boshlaymiz!",

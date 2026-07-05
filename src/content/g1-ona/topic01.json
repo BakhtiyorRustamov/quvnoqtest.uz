@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-01",
+  "subjectKey": "g1-ona",
+  "emojis": "🗣️📖🇺🇿",
+  "title": {
+    "uz": "Ona tili bilan tanishamiz",
+    "ru": "Знакомимся с родным языком",
+    "en": "Getting to know our mother tongue"
+  },
+  "recall": {
+    "uz": "Ona tili — inson oilasida birinchi boʻlib oʻrgangan tili. Oʻzbek tili — bizning ona tilimiz va Oʻzbekistonning davlat tili. Dunyoda koʻp tillar bor, lekin har kimga oʻz ona tili aziz.",
+    "ru": "Родной язык — это язык, который человек первым выучил в семье. Узбекский — наш родной язык и государственный язык Узбекистана. В мире много языков, но каждому дорог свой родной язык.",
+    "en": "The mother tongue is the first language a person learns in the family. Uzbek is our mother tongue and the state language of Uzbekistan. There are many languages, but everyone treasures their own."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "ona", "emoji": "👩", "clue": { "uz": "Bizni sevadigan eng aziz inson", "ru": "Самый родной человек", "en": "The dearest person who loves us" } } },
+      "prompt": { "uz": "Harflarni tartibla va soʻzni yigʻ!", "ru": "Расставь буквы и собери слово!", "en": "Order the letters and build the word!" },
+      "hint": { "uz": "Uch harf: o, n, a.", "ru": "Три буквы: o, n, a.", "en": "Three letters: o, n, a." },
+      "explanation": { "uz": "«Ona» soʻzi hosil boʻldi. «Ona tili» ham shu soʻzdan boshlanadi.", "ru": "Получилось слово «ona». С него начинается «ona tili».", "en": "We built “ona” (mother). “Ona tili” begins with this word." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "vatan", "emoji": "🇺🇿", "clue": { "uz": "Biz tugʻilib oʻsgan yurt", "ru": "Родина, где мы родились", "en": "The homeland where we were born" } } },
+      "prompt": { "uz": "Harflardan soʻzni yigʻ!", "ru": "Собери слово из букв!", "en": "Build the word from the letters!" },
+      "hint": { "uz": "Besh harf: v, a, t, a, n.", "ru": "Пять букв: v, a, t, a, n.", "en": "Five letters: v, a, t, a, n." },
+      "explanation": { "uz": "«Vatan» soʻzi hosil boʻldi. Ona tilimiz — Vatanimizning boyligi.", "ru": "Получилось «vatan». Родной язык — богатство Родины.", "en": "We built “vatan” (homeland). Our mother tongue is its treasure." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "til", "emoji": "👅", "clue": { "uz": "Uning yordamida gaplashamiz", "ru": "С его помощью мы говорим", "en": "We speak with its help" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Uch harf: t, i, l.", "ru": "Три буквы: t, i, l.", "en": "Three letters: t, i, l." },
+      "explanation": { "uz": "«Til» soʻzi hosil boʻldi. Til bilan bir-birimizni tushunamiz.", "ru": "Получилось «til» (язык). Языком мы понимаем друг друга.", "en": "We built “til” (language). With language we understand each other." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "o", "after": "a", "choices": ["n", "m", "l"], "answer": "n", "emoji": "👩", "clue": { "uz": "«Ona» soʻzini toʻldir", "ru": "Дополни слово «ona»", "en": "Complete the word “ona”" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "o … a — oʻrtada «n».", "ru": "o … a — посередине «n».", "en": "o … a — the middle letter is “n”." },
+      "explanation": { "uz": "o + n + a = «ona». Har bir harf soʻzda oʻz oʻrniga ega.", "ru": "o + n + a = «ona». Каждая буква на своём месте.", "en": "o + n + a = “ona”. Every letter has its place." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "t", "after": "l", "choices": ["i", "a", "o"], "answer": "i", "emoji": "👅", "clue": { "uz": "«Til» soʻzini toʻldir", "ru": "Дополни слово «til»", "en": "Complete the word “til”" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "t … l — oʻrtada «i».", "ru": "t … l — посередине «i».", "en": "t … l — the middle letter is “i”." },
+      "explanation": { "uz": "t + i + l = «til». Bu soʻz ona tilimizning nomida bor.", "ru": "t + i + l = «til». Это слово есть в названии «ona tili».", "en": "t + i + l = “til”. This word is in the name “ona tili”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Ona", "right": "👩" }, { "left": "Vatan", "right": "🏡" }, { "left": "Til", "right": "👅" }, { "left": "Kitob", "right": "📖" } ] } },
+      "prompt": { "uz": "Soʻzni oʻz rasmiga ula!", "ru": "Соедини слово с его картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«Ona» — 👩, «Kitob» — 📖.", "ru": "«Ona» — 👩, «Kitob» — 📖.", "en": "“Ona” — 👩, “Kitob” — 📖." },
+      "explanation": { "uz": "Bular oʻzbekcha, ya'ni ona tilimizdagi soʻzlar.", "ru": "Это узбекские слова — из нашего родного языка.", "en": "These are Uzbek words — from our mother tongue." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Men", "oʻzbekcha", "gapiraman."], "emoji": "🗣️", "clue": { "uz": "Ona tilingda gap tuz", "ru": "Составь предложение на родном языке", "en": "Make a sentence in your mother tongue" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Kim? — «Men». Qanday? — «oʻzbekcha».", "ru": "Кто? — «Men». Как? — «oʻzbekcha».", "en": "Who? — “Men”. How? — “oʻzbekcha”." },
+      "explanation": { "uz": "«Men oʻzbekcha gapiraman.» — biz ona tilimizda gaplashamiz.", "ru": "«Men oʻzbekcha gapiraman.» — мы говорим на родном языке.", "en": "“Men oʻzbekcha gapiraman.” — we speak in our mother tongue." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "va", "after": "an", "choices": ["t", "d", "k"], "answer": "t", "emoji": "🏡", "clue": { "uz": "Biz tugʻilgan yurt", "ru": "Родина, где мы родились", "en": "The homeland where we were born" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "va … an — «vatan».", "ru": "va … an — «vatan» (Родина).", "en": "va … an — “vatan” (homeland)." },
+      "explanation": { "uz": "v + a + t + a + n = «vatan». Ona tilimiz — Vatanimiz boyligi.", "ru": "v + a + t + a + n = «vatan». Родной язык — богатство Родины.", "en": "v + a + t + a + n = “vatan”. Our mother tongue is the homeland's treasure." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Oʻzbek tili", "ru": "Узбекский язык", "en": "Uzbek" }, { "uz": "Ingliz tili", "ru": "Английский язык", "en": "English" }, { "uz": "Yapon tili", "ru": "Японский язык", "en": "Japanese" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻzbekistonning davlat tili qaysi?", "ru": "Какой государственный язык в Узбекистане?", "en": "What is the state language of Uzbekistan?" },
+      "hint": { "uz": "Davlat tili — mamlakatning asosiy tili.", "ru": "Государственный язык — главный язык страны.", "en": "The state language is the country's main language." },
+      "explanation": { "uz": "Oʻzbek tili — Oʻzbekistonning davlat tili va bizning ona tilimiz.", "ru": "Узбекский — государственный язык Узбекистана и наш родной язык.", "en": "Uzbek is the state language of Uzbekistan and our mother tongue." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Oilada birinchi oʻrgangan tili", "ru": "Язык, выученный первым в семье", "en": "The first language learned in the family" }, { "uz": "Maktabdagi chet tili", "ru": "Иностранный язык в школе", "en": "A foreign language at school" }, { "uz": "Faqat kitobdagi til", "ru": "Язык только из книг", "en": "A language only in books" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Ona tili» nima degani?", "ru": "Что означает «родной язык»?", "en": "What does “mother tongue” mean?" },
+      "hint": { "uz": "Ona tilini oilamizda, kichkinaligimizdan oʻrganamiz.", "ru": "Родной язык учим в семье, с детства.", "en": "We learn it in the family, from childhood." },
+      "explanation": { "uz": "Ona tili — inson oilasida birinchi boʻlib oʻrgangan tili.", "ru": "Родной язык — язык, выученный первым в семье.", "en": "The mother tongue is the first language learned in the family." }
+    }
+  ]
+}

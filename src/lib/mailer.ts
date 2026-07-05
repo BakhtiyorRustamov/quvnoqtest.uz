@@ -15,15 +15,29 @@ const BRAND = {
 
 /** Branded, trilingual magic-link email. `link` already carries the token. */
 function magicLinkHtml(link: string): string {
-  // Build absolute asset URLs from the same origin the link points at, so a
-  // production link → production-hosted images (and dev → dev).
+  // Site origin for the footer link (derived from the magic link itself).
   let origin = 'https://quvnoqtest.uz';
   try {
     origin = new URL(link).origin;
   } catch {
     /* keep default */
   }
-  const mascot = `${origin}/ai-mascot.png`;
+
+  // The logo is DRAWN with table cells + coloured text (no images), so it can
+  // never appear as a broken/fallback picture in any mail client.
+  const logoHtml = `
+          <table role="presentation" cellpadding="0" cellspacing="0" style="margin:0 auto;background:#ffffff;border-radius:20px;box-shadow:0 3px 10px rgba(0,0,0,0.12);"><tr>
+            <td style="padding:12px 20px;">
+              <table role="presentation" cellpadding="0" cellspacing="0"><tr>
+                <td style="vertical-align:middle;">
+                  <div style="width:40px;height:40px;border:8px solid ${BRAND.orange};border-radius:50%;font-size:0;line-height:0;">&nbsp;</div>
+                </td>
+                <td style="vertical-align:middle;padding-left:12px;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:26px;font-weight:800;letter-spacing:.2px;white-space:nowrap;">
+                  <span style="color:${BRAND.orange};">Q</span><span style="color:${BRAND.blue};">u</span><span style="color:${BRAND.green};">v</span><span style="color:#C2298A;">n</span><span style="color:${BRAND.purple};">o</span><span style="color:${BRAND.orange};">q</span><span style="color:${BRAND.ink};">Test</span><span style="color:#8a97a8;">.uz</span>
+                </td>
+              </tr></table>
+            </td>
+          </tr></table>`;
 
   return `<!doctype html>
 <html lang="uz">
@@ -34,9 +48,8 @@ function magicLinkHtml(link: string): string {
     <tr><td align="center">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background:#ffffff;border-radius:24px;overflow:hidden;box-shadow:0 6px 24px rgba(30,58,95,0.10);">
         <!-- header -->
-        <tr><td style="background:linear-gradient(135deg,${BRAND.orange},#ffb347);padding:28px 24px;text-align:center;">
-          <img src="${mascot}" width="84" height="84" alt="Quvnoq" style="display:block;margin:0 auto 10px;border:0;">
-          <div style="color:#ffffff;font-size:24px;font-weight:800;letter-spacing:.3px;text-shadow:0 1px 2px rgba(0,0,0,0.12);">QuvnoqTest.uz</div>
+        <tr><td style="background:linear-gradient(135deg,${BRAND.orange},#ffb347);padding:26px 24px;text-align:center;">
+${logoHtml}
         </td></tr>
         <!-- body -->
         <tr><td style="padding:30px 28px 8px;text-align:center;">

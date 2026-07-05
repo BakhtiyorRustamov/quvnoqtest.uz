@@ -999,5 +999,215 @@
     "voice": "uz-UZ-SardorNeural",
     "bytes": 887052,
     "at": "2026-07-01T09:12:58.959Z"
+  },
+  "g1-ona-01.uz.wav": {
+    "hash": "0be7dea3c4f21128f96e8be65ff78e77bb9c32720a3175ffeb97432a2cbfe7cc",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 795444,
+    "at": "2026-07-04T12:24:18.381Z"
+  },
+  "g1-ona-02.uz.wav": {
+    "hash": "91cd03af9f1227deed27813588dd791a3038f9c4b45379988f729c8298b2e441",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 740112,
+    "at": "2026-07-04T12:24:25.981Z"
+  },
+  "g1-ona-03.uz.wav": {
+    "hash": "4b1ec3c3a75469aab5a4a7db0f658aac7ec1b2bde67a96853c51e585d662491e",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 911230,
+    "at": "2026-07-04T12:24:39.517Z"
+  },
+  "g1-ona-04.uz.wav": {
+    "hash": "f1dae8650d99cb51caad74803a5e42d872a8fc01875e1ce635b0fc2501ee0f80",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 901470,
+    "at": "2026-07-04T12:24:46.544Z"
+  },
+  "g1-ona-05.uz.wav": {
+    "hash": "b34db54c5d7f6774d8fb773cd16cb427304a7bb63c293c9edaa82d56eb3d09f2",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 804378,
+    "at": "2026-07-04T12:24:51.528Z"
+  },
+  "g1-ona-06.uz.wav": {
+    "hash": "2bf38bd79a6a503c359f6ebd49debed5e1ada40fda35fdad8a8204e38eef9669",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 986892,
+    "at": "2026-07-04T12:24:58.530Z"
+  },
+  "g1-ona-07.uz.wav": {
+    "hash": "989908b89c2b88289aca4095de7102776a19242a8f0a6050ce5f7da4c42f7fa2",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 906960,
+    "at": "2026-07-04T12:25:07.181Z"
+  },
+  "g1-ona-08.uz.wav": {
+    "hash": "76a0d4d7abcb4fecabfb7058ff543509f25655e2c60454ebabe133aa24acab0a",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 895430,
+    "at": "2026-07-04T12:25:12.500Z"
+  },
+  "g1-ona-09.uz.wav": {
+    "hash": "79cd29509b42c1eb5f75d2b4d0929c4a6aced83fad4bcd15abc171e32801dd7d",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 831946,
+    "at": "2026-07-04T12:25:18.192Z"
+  },
+  "g1-ona-12.uz.wav": {
+    "hash": "07d65c04096c734778179fc895bd5e2ea650567ca2bda8d41549ecef4e4b92f6",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 917204,
+    "at": "2026-07-04T12:25:44.742Z"
+  },
+  "g1-ona-13.uz.wav": {
+    "hash": "cf81df8d3248bd8dc6edce4951e058c83fb9dee57019254c13966a1ae95dc6bb",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 823420,
+    "at": "2026-07-04T12:25:49.090Z"
+  },
+  "g1-ona-14.uz.wav": {
+    "hash": "61ded6327d2e27eadc6f46fd63e29af1b01b1a7b5ac2c12cc72dcabb5b73f4ee",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 911008,
+    "at": "2026-07-04T12:25:52.282Z"
+  },
+  "g1-ona-15.uz.wav": {
+    "hash": "3021030df01fd111b6bc49f5d02f6028b37ea283479f9080896ab4d14b4708a8",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 851770,
+    "at": "2026-07-04T12:25:56.632Z"
+  },
+  "g1-ona-16.uz.wav": {
+    "hash": "839fe9690ea3be590d5ac0e5d86ef1f338fc707eaeaa9c1c0c25135432f0f1b4",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 606404,
+    "at": "2026-07-04T12:26:01.392Z"
+  },
+  "g1-ona-17.uz.wav": {
+    "hash": "f9fe3c643e5d36cb12170daf33257c52ea370b3033f5ed6a171bb543e98939b9",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 840888,
+    "at": "2026-07-04T12:26:04.326Z"
+  },
+  "g1-ona-18.uz.wav": {
+    "hash": "33f8880ef45bf42e87bbbdb9e1ce879fff7b1c6a79f73f216357d2f12270599d",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 972248,
+    "at": "2026-07-04T12:26:09.640Z"
+  },
+  "g1-ona-19.uz.wav": {
+    "hash": "ae054048587573c795661f146e2e7736924bf6eeae36ca62454272a01a1b0180",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 742774,
+    "at": "2026-07-04T12:26:17.298Z"
+  },
+  "g1-ona-20.uz.wav": {
+    "hash": "69aa5c6a989380cef3cc1074cb288cea058fb5f5b5198ebd193e97801a988669",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 855500,
+    "at": "2026-07-04T12:26:35.161Z"
+  },
+  "g1-ona-21.uz.wav": {
+    "hash": "9caab90dff6d3de9a7aef2c0d61c507d7e82d6673da095d1b6a2e6e6a0a40903",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 841016,
+    "at": "2026-07-04T12:26:46.649Z"
+  },
+  "g1-ona-22.uz.wav": {
+    "hash": "e93f63c2e7732577a8bb58d626a17d2ccaa896ec0e4533f5168f2a9c9e963d06",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 863394,
+    "at": "2026-07-04T12:26:58.836Z"
+  },
+  "g1-ona-23.uz.wav": {
+    "hash": "30845ee058ee6d9df3cece1f4011d3326fb3801808e16e9614df04be33026e42",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 763346,
+    "at": "2026-07-04T12:27:14.633Z"
+  },
+  "g1-ona-24.uz.wav": {
+    "hash": "c9cd1f6126e10adf012e2d4a530820c2ae6efd4ba3ce0970795d536e84e744c3",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 735502,
+    "at": "2026-07-04T12:27:21.088Z"
+  },
+  "g1-ona-25.uz.wav": {
+    "hash": "2bf72ea9e913523f28964c1025997b4f66a12447c90d78d44f6d885318ee5e60",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 712616,
+    "at": "2026-07-04T12:27:26.999Z"
+  },
+  "g1-ona-26.uz.wav": {
+    "hash": "f4653fdf234d1dd10c594068f0317092d23d350c1ade3ecd0e6a966b7590457a",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 851728,
+    "at": "2026-07-04T12:27:41.595Z"
+  },
+  "g1-ona-27.uz.wav": {
+    "hash": "49db3e65ad08343e7c26d0b84c8c87511ed3992f82719a93a0eb7ca11b40d323",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 646398,
+    "at": "2026-07-04T12:27:45.316Z"
+  },
+  "g1-ona-28.uz.wav": {
+    "hash": "7b2e54952eb286b0fa224c4d6e32c5338bececb1aa532105bdd111c21dda2489",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 774152,
+    "at": "2026-07-04T12:27:51.396Z"
+  },
+  "g1-ona-29.uz.wav": {
+    "hash": "617dc5d4fed8e1f60c9c6af8a5d2d4edb4dcb4ba975e11f6c2f51bd1ae27a9dc",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 759326,
+    "at": "2026-07-04T12:27:55.799Z"
+  },
+  "g1-ona-10.uz.wav": {
+    "hash": "6fff78e19da64c1757b86cba87e6f82f34c3be77d78cd9c9c176172d949a79f5",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 879978,
+    "at": "2026-07-04T12:28:52.271Z"
+  },
+  "g1-ona-11.uz.wav": {
+    "hash": "3d7ff1753faec7e64243df5b724a4cbbc5951a68eb4dad5f5c72596888d1d81b",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 903670,
+    "at": "2026-07-04T12:28:55.979Z"
+  },
+  "g1-ona-30.uz.wav": {
+    "hash": "7faf088820cbcd3afdf6f2e8a62e393effc097169878334e0883d5eb2ab825b6",
+    "provider": "azure",
+    "voice": "uz-UZ-SardorNeural",
+    "bytes": 775196,
+    "at": "2026-07-04T12:28:59.306Z"
   }
 }

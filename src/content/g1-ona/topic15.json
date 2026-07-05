@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-15",
+  "subjectKey": "g1-ona",
+  "emojis": "🇯🦒📰",
+  "title": {
+    "uz": "J harfining ikki qiyofasi",
+    "ru": "Две стороны буквы J",
+    "en": "The two faces of the letter J"
+  },
+  "recall": {
+    "uz": "J — undosh harf. U ikki xil talaffuz qilinadi, lekin yozuvda bir xil yoziladi. J bilan soʻzlar: jasur, juma, jigar, jism, jurnal, ajdar, jirafa.",
+    "ru": "J — согласная. Она произносится двумя способами, но пишется одинаково. Слова с J: jasur, juma, jigar, jism, jurnal, ajdar, jirafa.",
+    "en": "J is a consonant. It is pronounced in two ways but written the same. Words with J: jasur, juma, jigar, jism, jurnal, ajdar, jirafa."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "jasur", "emoji": "🦁", "clue": { "uz": "Qoʻrqmas, botir", "ru": "Бесстрашный, храбрый", "en": "Fearless, brave" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: j, a, s, u, r.", "ru": "Буквы: j, a, s, u, r.", "en": "Letters: j, a, s, u, r." },
+      "explanation": { "uz": "«jasur» «j» bilan boshlanadi.", "ru": "«jasur» начинается с «j».", "en": "“jasur” starts with “j”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "irafa", "choices": ["j", "ch", "y"], "answer": "j", "emoji": "🦒", "clue": { "uz": "Uzun boʻyinli hayvon", "ru": "Животное с длинной шеей", "en": "A long-necked animal" } } },
+      "prompt": { "uz": "Birinchi harfni qoʻy!", "ru": "Вставь первую букву!", "en": "Add the first letter!" },
+      "hint": { "uz": "… i r a f a — «jirafa».", "ru": "… i r a f a — «jirafa» (жираф).", "en": "… i r a f a — “jirafa” (giraffe)." },
+      "explanation": { "uz": "«jirafa» «j» bilan boshlanadi.", "ru": "«jirafa» начинается с «j».", "en": "“jirafa” starts with “j”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "jasur", "match": true }, { "text": "non", "match": false }, { "text": "jism", "match": true }, { "text": "tosh", "match": false }, { "text": "ajdar", "match": true }, { "text": "gul", "match": false } ] } },
+      "prompt": { "uz": "«J» harfi bor soʻzlarni bos!", "ru": "Нажми слова с буквой «j»!", "en": "Tap the words with the letter “j”!" },
+      "hint": { "uz": "jasur, jism, ajdar — «j» bor.", "ru": "jasur, jism, ajdar — есть «j».", "en": "jasur, jism, ajdar contain “j”." },
+      "explanation": { "uz": "jasur, jism, ajdar soʻzlarida «j» bor.", "ru": "В jasur, jism, ajdar есть «j».", "en": "jasur, jism, ajdar contain “j”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "jasur", "bin": "yum" }, { "id": "b", "label": "juma", "bin": "yum" }, { "id": "c", "label": "jigar", "bin": "yum" }, { "id": "d", "label": "jurnal", "bin": "qat" }, { "id": "e", "label": "projektor", "bin": "qat" }, { "id": "f", "label": "garaj", "bin": "qat" } ], "bins": [ { "id": "yum", "label": "Yumshoq J" }, { "id": "qat", "label": "Qattiq J" } ] } },
+      "prompt": { "uz": "Talaffuziga qarab ajrat!", "ru": "Раздели по произношению!", "en": "Sort by pronunciation!" },
+      "hint": { "uz": "jasur — yumshoq, jurnal — qattiq.", "ru": "jasur — мягкое, jurnal — твёрдое.", "en": "jasur is soft, jurnal is hard." },
+      "explanation": { "uz": "«J» ikki xil aytiladi, ammo bir xil yoziladi.", "ru": "«J» произносится двумя способами, но пишется одинаково.", "en": "“J” is said two ways but written the same." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "uma", "choices": ["j", "ch", "y"], "answer": "j", "emoji": "📅", "clue": { "uz": "Haftaning bir kuni", "ru": "День недели (пятница)", "en": "A day of the week (Friday)" } } },
+      "prompt": { "uz": "Birinchi harfni qoʻy!", "ru": "Вставь первую букву!", "en": "Add the first letter!" },
+      "hint": { "uz": "… u m a — «juma».", "ru": "… u m a — «juma» (пятница).", "en": "… u m a — “juma” (Friday)." },
+      "explanation": { "uz": "«juma» «j» bilan boshlanadi.", "ru": "«juma» начинается с «j».", "en": "“juma” starts with “j”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "jism", "emoji": "🧊", "clue": { "uz": "Har qanday narsa", "ru": "Любой предмет, тело", "en": "Any object or body" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: j, i, s, m.", "ru": "Буквы: j, i, s, m.", "en": "Letters: j, i, s, m." },
+      "explanation": { "uz": "«jism» «j» bilan boshlanadi.", "ru": "«jism» начинается с «j».", "en": "“jism” starts with “j”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Jasur", "bola", "qoʻrqmaydi."], "emoji": "🦁", "clue": { "uz": "Jasur bola haqida", "ru": "О храбром ребёнке", "en": "About a brave child" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Jasur bola».", "ru": "Кто? — «Jasur bola».", "en": "Who? — “Jasur bola”." },
+      "explanation": { "uz": "«Jasur» soʻzi «J» bilan boshlanadi.", "ru": "Слово «Jasur» начинается с «J».", "en": "The word “Jasur” starts with “J”." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "jism", "bin": "bor" }, { "id": "b", "label": "juma", "bin": "bor" }, { "id": "c", "label": "ajdar", "bin": "bor" }, { "id": "d", "label": "non", "bin": "yoq" }, { "id": "e", "label": "tosh", "bin": "yoq" }, { "id": "f", "label": "kitob", "bin": "yoq" } ], "bins": [ { "id": "bor", "label": "«J» bor" }, { "id": "yoq", "label": "«J» yoʻq" } ] } },
+      "prompt": { "uz": "«J» bor-yoʻqligiga qarab ajrat!", "ru": "Раздели: есть ли «j»?", "en": "Sort by whether they have “j”!" },
+      "hint": { "uz": "jism, juma, ajdar — «j» bor.", "ru": "jism, juma, ajdar — есть «j».", "en": "jism, juma, ajdar have “j”." },
+      "explanation": { "uz": "Baʼzi soʻzlarda «j» bor, baʼzilarida yoʻq.", "ru": "В одних словах «j» есть, в других нет.", "en": "Some words have “j”, others don't." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "«J» harfi nechta xil talaffuz qilinadi?", "ru": "Сколькими способами произносится «J»?", "en": "In how many ways is “J” pronounced?" },
+      "hint": { "uz": "jasur va jurnal soʻzlarini solishtir.", "ru": "Сравни jasur и jurnal.", "en": "Compare jasur and jurnal." },
+      "explanation": { "uz": "«J» ikki xil talaffuz qilinadi, bir xil yoziladi.", "ru": "«J» произносится двумя способами, пишется одинаково.", "en": "“J” is pronounced two ways, written the same." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["jigar", "tomosha", "kitob"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻzda «j» bor?", "ru": "В каком слове есть «j»?", "en": "Which word has “j”?" },
+      "hint": { "uz": "Ichki aʼzo nomi.", "ru": "Название внутреннего органа.", "en": "The name of an internal organ." },
+      "explanation": { "uz": "«jigar» soʻzida «j» bor.", "ru": "В «jigar» есть «j».", "en": "“jigar” contains “j”." }
+    }
+  ]
+}

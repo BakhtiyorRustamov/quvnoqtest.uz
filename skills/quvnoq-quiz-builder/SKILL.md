@@ -12,7 +12,7 @@ to pick the best component for the concept and feed valid props. Interactivity
 variety comes from USING DIFFERENT COMPONENTS, not from the question text.
 
 ## Sources of truth (read every run — do not invent props)
-1. `src/components/learning/registry.js` — live list of available `type`s.
+1. `src/components/learning/registry.ts` — live `WIDGETS` map of available `type`s.
 2. The JSDoc at the top of each component file — exact props + valid ranges.
 Treat these as authoritative. If registry and this skill disagree, registry wins.
 
@@ -30,9 +30,15 @@ Treat these as authoritative. If registry and this skill disagree, registry wins
 
 ## Mandatory workflow
 
-### Phase 1 — Analyze the topic (REQUIRED before any question)
-- Read the topic material (book page / lesson text).
-- Output a CONCEPT LIST: every distinct skill the topic teaches.
+### Phase 1 — Read the topic & build a CONCEPT CHECKLIST (REQUIRED, do this FIRST)
+Before writing ANY question, read the whole topic material (book page / lesson
+text) and take notes. Produce an explicit **concept checklist** — one line per
+distinct thing the topic teaches:
+  - [ ] concept 1 — <what the child must be able to do>
+  - [ ] concept 2 — ...
+This checklist is the contract for the rest of the run. Every concept on it MUST
+be covered by at least one question, and Phase 5 checks each box off. Do not
+start Phase 2 until the checklist is written.
 - Tag grade (metadata only — NEVER pick a component by grade).
 - TITLE: always PARAPHRASE the lesson title (uz/ru/en) — never copy the book
   heading verbatim. Make it kid-friendly and active (e.g. book "Santimetr.
@@ -47,9 +53,26 @@ Treat these as authoritative. If registry and this skill disagree, registry wins
   number_line_addition, place_value_blocks, etc. express this concept by
   reframing the question? If yes, use it.
 - Hard cap: at most 20% of items may be `mcq`. If more concepts have no fit,
-  do NOT pad with mcq — instead emit a `componentProposal` (see below).
+  do NOT pad with mcq.
+- **CREATE A NEW COMPONENT WHEN THE TOPIC NEEDS ONE.** If a concept has no good
+  visual fit in the registry (common for a genuinely new topic — e.g. a reading
+  or grammar skill with no existing widget), build a real learning component
+  rather than falling back to mcq. Steps:
+    1. Follow the `interactive-learning-components` skill and the reference in
+       `src/components/learning/` (e.g. `NumberLineAddition.jsx`) — code-native,
+       animated, self-grading, with a JSDoc props contract and `lang` support.
+    2. Create `src/components/learning/<Name>.jsx`, then register its `type` in
+       the `WIDGETS` map in `src/components/learning/registry.ts` (and add a
+       `WIDGET_LABELS` entry).
+    3. Use the new `type` in this topic's items like any other widget.
+  Only emit a `componentProposal` (see below) instead of building when the
+  component is out of scope for this run; otherwise prefer building it.
 
 ### Phase 3 — Diversity & novelty plan (REQUIRED)
+- **COUNT: make exactly 10 questions per topic**, and together they MUST cover
+  every concept on the Phase 1 checklist. If there are more than 10 concepts,
+  merge the closest ones; if fewer, add depth/difficulty variants so each
+  concept still gets a question and the set totals 10.
 - Build a plan table: | # | concept | type | props | difficulty |
 - Use >= 4 distinct component types if the topic allows.
 - No concept takes more than ~1/3 of the set.
@@ -81,12 +104,14 @@ Treat these as authoritative. If registry and this skill disagree, registry wins
   to regenerate (`npm run seed:tts`, `TTS_FORCE=1` to refresh changed clips).
 
 ### Phase 5 — Validate (REQUIRED, fix & regenerate on any fail)
+- [ ] Exactly 10 questions?
+- [ ] EVERY concept on the Phase 1 checklist is covered — tick each box?
 - [ ] Every props object valid against its component contract (ranges + math:
       p<q, a+b≤maxSum, target 11–99, etc.)?
 - [ ] <= 20% mcq?
 - [ ] >= 4 component types (when topic allows)?
 - [ ] No trivial duplicates within set or vs previous seed file?
-- [ ] All concepts from Phase 1 covered?
+- [ ] Any newly created component registered in registry.ts and rendering?
 - [ ] mcq text trilingual; lang passed where supported?
 
 ## When NO component fits — propose, don't dump mcq
@@ -121,9 +146,11 @@ A lesson file that isn't registered in index.ts will NOT appear.
 imported by the app and is not shipped in the bundle. Write it if useful for
 review; it is not required for the lesson to work.
 
-After building, report in plain text (keep it SHORT — no per-topic tables):
-total count, types used + count of each, any mcq fallbacks with their
-componentProposal, and any i18nGaps.
+After building, report in plain text — SHORT (a few lines, no long write-ups,
+no per-topic tables, no separate report files): the concept checklist with each
+box ticked, total count (should be 10), types used + count of each, any new
+component built, any mcq fallbacks with their componentProposal, and any
+i18nGaps.
 
 ## Anti-monotony summary (the point of this skill)
 Monotony comes from over-using mcq and repeating prop sets. Beat it by:

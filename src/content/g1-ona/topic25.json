@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-25",
+  "subjectKey": "g1-ona",
+  "emojis": "🔗➖🌊",
+  "title": {
+    "uz": "Birikmalarni ajratmaymiz",
+    "ru": "Не разрываем сочетания",
+    "en": "Keeping combinations together"
+  },
+  "recall": {
+    "uz": "Bir tovushni ifodalovchi ch, sh, ng birikmalari koʻchirishda ajratilmaydi: de-ngiz, ish-chan, koʻ-ngil. Ular birga koʻchiriladi.",
+    "ru": "Сочетания ch, sh, ng, обозначающие один звук, при переносе не разрывают: de-ngiz, ish-chan, koʻ-ngil. Они переносятся вместе.",
+    "en": "The combinations ch, sh, ng (one sound each) are not split when carried over: de-ngiz, ish-chan, koʻ-ngil. They move together."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["de", "ngiz"], "emoji": "🌊", "clue": { "uz": "Juda katta suv havzasi", "ru": "Очень большой водоём", "en": "A very large body of water" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "de- … -ngiz («ng» birga).", "ru": "de- … -ngiz («ng» вместе).", "en": "de- … -ngiz (“ng” together)." },
+      "explanation": { "uz": "«de-ngiz» — «ng» ajratilmaydi, birga koʻchadi.", "ru": "«de-ngiz» — «ng» не разрывают.", "en": "“de-ngiz” — “ng” stays together." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["ish", "chan"], "emoji": "💪", "clue": { "uz": "Mehnatni sevadigan", "ru": "Трудолюбивый", "en": "Hard-working" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "ish- … -chan («ch» birga).", "ru": "ish- … -chan («ch» вместе).", "en": "ish- … -chan (“ch” together)." },
+      "explanation": { "uz": "«ish-chan» — «ch» ajratilmaydi.", "ru": "«ish-chan» — «ch» не разрывают.", "en": "“ish-chan” — “ch” stays together." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["de-ngiz", "den-giz", "deng-iz"], "answerIndex": 0 } },
+      "prompt": { "uz": "«dengiz» qanday koʻchiriladi?", "ru": "Как переносится «dengiz»?", "en": "How is “dengiz” carried over?" },
+      "hint": { "uz": "«ng» ajratilmaydi.", "ru": "«ng» не разрывают.", "en": "“ng” is not split." },
+      "explanation": { "uz": "Toʻgʻrisi — «de-ngiz» («ng» birga).", "ru": "Правильно — «de-ngiz» («ng» вместе).", "en": "Correct is “de-ngiz” (“ng” together)." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "dengiz", "match": true }, { "text": "maktab", "match": false }, { "text": "koʻngil", "match": true }, { "text": "kitob", "match": false }, { "text": "rang", "match": true }, { "text": "non", "match": false } ] } },
+      "prompt": { "uz": "«ng» birikmasi bor soʻzlarni bos!", "ru": "Нажми слова с сочетанием «ng»!", "en": "Tap the words with the combination “ng”!" },
+      "hint": { "uz": "dengiz, koʻngil, rang — «ng» bor.", "ru": "dengiz, koʻngil, rang — есть «ng».", "en": "dengiz, koʻngil, rang contain “ng”." },
+      "explanation": { "uz": "dengiz, koʻngil, rang soʻzlarida «ng» bor.", "ru": "В dengiz, koʻngil, rang есть «ng».", "en": "dengiz, koʻngil, rang contain “ng”." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["koʻ", "ngil"], "emoji": "❤️", "clue": { "uz": "Insonning qalbi, dili", "ru": "Душа человека", "en": "A person's heart, soul" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "koʻ- … -ngil («ng» birga).", "ru": "koʻ- … -ngil («ng» вместе).", "en": "koʻ- … -ngil (“ng” together)." },
+      "explanation": { "uz": "«koʻ-ngil» — «ng» ajratilmaydi.", "ru": "«koʻ-ngil» — «ng» не разрывают.", "en": "“koʻ-ngil” — “ng” stays together." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "dengiz", "right": "de-ngiz" }, { "left": "ishchan", "right": "ish-chan" }, { "left": "koʻngil", "right": "koʻ-ngil" }, { "left": "moshina", "right": "mo-shi-na" } ] } },
+      "prompt": { "uz": "Soʻzni toʻgʻri koʻchirilishiga ula!", "ru": "Соедини слово с верным переносом!", "en": "Match each word to its correct line-break!" },
+      "hint": { "uz": "Birikma birga qoladi.", "ru": "Сочетание остаётся вместе.", "en": "The combination stays together." },
+      "explanation": { "uz": "ch, sh, ng birikmalari ajratilmaydi.", "ru": "Сочетания ch, sh, ng не разрывают.", "en": "The combinations ch, sh, ng are not split." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "singil", "letters": ["s", "i", "ng", "i", "l"], "emoji": "👧", "clue": { "uz": "Kichik opa", "ru": "Младшая сестра", "en": "A younger sister" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: s, i, ng, i, l.", "ru": "Части: s, i, ng, i, l.", "en": "Parts: s, i, ng, i, l." },
+      "explanation": { "uz": "«singil» — «ng» birikmasi ajratilmaydi (si-ngil).", "ru": "«singil» — «ng» не разрывают (si-ngil).", "en": "“singil” — “ng” stays together (si-ngil)." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "maʼyus", "match": true }, { "text": "kitob", "match": false }, { "text": "taʼtil", "match": true }, { "text": "non", "match": false }, { "text": "maʼlum", "match": true }, { "text": "tosh", "match": false } ] } },
+      "prompt": { "uz": "Tutuq belgisi bor soʻzlarni bos!", "ru": "Нажми слова со знаком тутук!", "en": "Tap the words with the tutuq sign!" },
+      "hint": { "uz": "maʼyus, taʼtil, maʼlum — belgisi bor.", "ru": "maʼyus, taʼtil, maʼlum — со знаком.", "en": "maʼyus, taʼtil, maʼlum have the sign." },
+      "explanation": { "uz": "maʼyus, taʼtil, maʼlum — tutuq belgisi bilan yoziladi.", "ru": "maʼyus, taʼtil, maʼlum пишутся со знаком тутук.", "en": "maʼyus, taʼtil, maʼlum are written with the tutuq sign." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Birikma", "boʻgʻinda", "birga", "koʻchiriladi."], "emoji": "🔗", "clue": { "uz": "Koʻchirish qoidasi", "ru": "Правило переноса", "en": "The line-break rule" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Qanday? — «birga».", "ru": "Как? — «birga» (вместе).", "en": "How? — “birga” (together)." },
+      "explanation": { "uz": "ch, sh, ng birikmalari birga koʻchiriladi.", "ru": "Сочетания ch, sh, ng переносят вместе.", "en": "The combinations ch, sh, ng are carried over together." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Ajratilmaydi", "ru": "Не разрывают", "en": "Not split" }, { "uz": "Ajratiladi", "ru": "Разрывают", "en": "Split" }, { "uz": "Oʻchiriladi", "ru": "Стирают", "en": "Erased" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Koʻchirishda «ch», «sh», «ng» qanday boʻladi?", "ru": "Что происходит с «ch», «sh», «ng» при переносе?", "en": "What happens to “ch”, “sh”, “ng” at a line break?" },
+      "hint": { "uz": "Ular bir tovushni ifodalaydi.", "ru": "Они обозначают один звук.", "en": "They stand for one sound." },
+      "explanation": { "uz": "«ch», «sh», «ng» birikmalari ajratilmaydi.", "ru": "Сочетания «ch», «sh», «ng» не разрывают.", "en": "The combinations “ch”, “sh”, “ng” are not split." }
+    }
+  ]
+}

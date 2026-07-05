@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-05",
+  "subjectKey": "g1-ona",
+  "emojis": "🔤✍️📖",
+  "title": {
+    "uz": "Harflar olamiga sayohat",
+    "ru": "Путешествие в мир букв",
+    "en": "A journey into the world of letters"
+  },
+  "recall": {
+    "uz": "Harflarni yozamiz, koʻramiz va oʻqiymiz. Oʻzbek tilida 29 ta harf bor. Tovushni eshitamiz, harfni koʻramiz. Har bir tovush maʼlum bir harf bilan yoziladi.",
+    "ru": "Буквы мы пишем, видим и читаем. В узбекском языке 29 букв. Звук слышим, букву видим. Каждый звук записывается своей буквой.",
+    "en": "We write, see and read letters. Uzbek has 29 letters. We hear a sound and see a letter. Each sound is written by a certain letter."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "alifbo", "emoji": "🔠", "clue": { "uz": "Barcha harflar tartibi", "ru": "Порядок всех букв", "en": "The order of all letters" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: a, l, i, f, b, o.", "ru": "Буквы: a, l, i, f, b, o.", "en": "Letters: a, l, i, f, b, o." },
+      "explanation": { "uz": "«Alifbo» hosil boʻldi. Alifbo — barcha harflarning tartibi.", "ru": "Получилось «alifbo» (алфавит). Это порядок всех букв.", "en": "We built “alifbo” (alphabet) — the order of all letters." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "har", "after": "", "choices": ["f", "v", "x"], "answer": "f", "emoji": "🔤", "clue": { "uz": "Uni koʻramiz va yozamiz", "ru": "Её видим и пишем", "en": "We see and write it" } } },
+      "prompt": { "uz": "Oxirgi harfni qoʻy!", "ru": "Вставь последнюю букву!", "en": "Add the last letter!" },
+      "hint": { "uz": "har… — oxirida «f».", "ru": "har… — в конце «f».", "en": "har… — the last letter is “f”." },
+      "explanation": { "uz": "h + a + r + f = «harf».", "ru": "h + a + r + f = «harf».", "en": "h + a + r + f = “harf”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "A", "bin": "harf" }, { "id": "b", "label": "B", "bin": "harf" }, { "id": "c", "label": "S", "bin": "harf" }, { "id": "d", "label": "3", "bin": "raqam" }, { "id": "e", "label": "7", "bin": "raqam" }, { "id": "f", "label": "5", "bin": "raqam" } ], "bins": [ { "id": "harf", "label": "Harf" }, { "id": "raqam", "label": "Raqam" } ] } },
+      "prompt": { "uz": "Harf va raqamni ajrat!", "ru": "Раздели буквы и цифры!", "en": "Sort letters and numbers!" },
+      "hint": { "uz": "A, B, S — harf. 3, 7, 5 — raqam.", "ru": "A, B, S — буквы. 3, 7, 5 — цифры.", "en": "A, B, S are letters. 3, 7, 5 are numbers." },
+      "explanation": { "uz": "Harf bilan soʻz yozamiz, raqam bilan sanaymiz.", "ru": "Буквами пишем слова, цифрами считаем.", "en": "We write words with letters and count with numbers." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "A", "right": "Anor" }, { "left": "K", "right": "Kitob" }, { "left": "O", "right": "Ona" }, { "left": "T", "right": "Tosh" } ] } },
+      "prompt": { "uz": "Harfni shu harf bilan boshlanadigan soʻzga ula!", "ru": "Соедини букву со словом на эту букву!", "en": "Match the letter to a word that starts with it!" },
+      "hint": { "uz": "«K» — «Kitob».", "ru": "«K» — «Kitob».", "en": "“K” — “Kitob”." },
+      "explanation": { "uz": "Har soʻz maʼlum harf bilan boshlanadi.", "ru": "Каждое слово начинается со своей буквы.", "en": "Each word starts with a certain letter." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "ki", "after": "ob", "choices": ["t", "d", "p"], "answer": "t", "emoji": "📕", "clue": { "uz": "Oʻqiydigan narsamiz", "ru": "То, что мы читаем", "en": "The thing we read" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "ki … ob — «kitob».", "ru": "ki … ob — «kitob» (книга).", "en": "ki … ob — “kitob” (book)." },
+      "explanation": { "uz": "k + i + t + o + b = «kitob». Kitobni harflar bilan oʻqiymiz.", "ru": "k + i + t + o + b = «kitob». Книгу читаем по буквам.", "en": "k + i + t + o + b = “kitob”. We read a book by its letters." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Oʻzbek", "alifbosida", "29", "harf", "bor."], "emoji": "🔠", "clue": { "uz": "Harflar soni haqida", "ru": "О количестве букв", "en": "About the number of letters" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nechta? — «29 harf».", "ru": "Сколько? — «29 harf».", "en": "How many? — “29 harf”." },
+      "explanation": { "uz": "Oʻzbek alifbosida 29 ta harf bor.", "ru": "В узбекском алфавите 29 букв.", "en": "The Uzbek alphabet has 29 letters." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "yozuv", "emoji": "✍️", "clue": { "uz": "Harflar bilan qilinadigan ish", "ru": "То, что делаем буквами", "en": "What we do with letters" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: y, o, z, u, v.", "ru": "Буквы: y, o, z, u, v.", "en": "Letters: y, o, z, u, v." },
+      "explanation": { "uz": "«Yozuv» hosil boʻldi. Yozuvda harflardan foydalanamiz.", "ru": "Получилось «yozuv» (письмо). В письме используем буквы.", "en": "We built “yozuv” (writing). Writing uses letters." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "A", "right": "a" }, { "left": "B", "right": "b" }, { "left": "K", "right": "k" }, { "left": "O", "right": "o" } ] } },
+      "prompt": { "uz": "Katta harfni kichigiga ula!", "ru": "Соедини заглавную букву со строчной!", "en": "Match the capital letter to its small one!" },
+      "hint": { "uz": "«A» — «a».", "ru": "«A» — «a».", "en": "“A” — “a”." },
+      "explanation": { "uz": "Har harfning katta va kichik shakli bor.", "ru": "У каждой буквы есть заглавная и строчная форма.", "en": "Each letter has a capital and a small form." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["29", "30", "12"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻzbek tilida nechta harf bor?", "ru": "Сколько букв в узбекском языке?", "en": "How many letters are there in Uzbek?" },
+      "hint": { "uz": "Harflar tovushlardan bitta kam.", "ru": "Букв на одну меньше, чем звуков.", "en": "There is one fewer letter than sounds." },
+      "explanation": { "uz": "Oʻzbek tilida 29 ta harf bor (tovushlar esa 30 ta).", "ru": "В узбекском 29 букв (а звуков — 30).", "en": "Uzbek has 29 letters (and 30 sounds)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Koʻramiz, yozamiz va oʻqiymiz", "ru": "Видим, пишем и читаем", "en": "We see, write and read it" }, { "uz": "Faqat eshitamiz", "ru": "Только слышим", "en": "We only hear it" }, { "uz": "Faqat hidlaymiz", "ru": "Только нюхаем", "en": "We only smell it" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Harfni nima qilamiz?", "ru": "Что мы делаем с буквой?", "en": "What do we do with a letter?" },
+      "hint": { "uz": "Harf — yozma nutqda. Uni koʻz bilan koʻramiz.", "ru": "Буква — в письменной речи. Её видим глазом.", "en": "A letter belongs to written speech. We see it with the eye." },
+      "explanation": { "uz": "Harfni koʻramiz, yozamiz va oʻqiymiz. Tovushni esa eshitamiz.", "ru": "Букву видим, пишем и читаем. А звук слышим.", "en": "We see, write and read a letter. A sound we hear." }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "topicId": "g1-math-review-3",
+  "subjectKey": "g1-math",
+  "skipRecall": true,
+  "emojis": "🤖🎯➖",
+  "title": {
+    "uz": "Takrorlash oʻyini: Tank nishoni",
+    "ru": "Игра-повторение: Танковая цель",
+    "en": "Review game: Tank Targets"
+  },
+  "recall": {
+    "uz": "Takrorlash oʻyini. Toʻrtta tank misollar bilan keladi. Kanondagi songa teng misolli tankni top va bos. Diqqat, tayyor, boshladik.",
+    "ru": "Игра-повторение. Четыре танка приезжают с примерами. Найди танк с примером, равным числу на пушке, и нажми. Внимание, приготовились, поехали.",
+    "en": "A review game. Four tanks roll up with expressions. Find the tank whose expression equals the cannon number and tap it. Ready, set, go."
+  },
+  "items": [
+    {
+      "id": "g1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tank_targets", "completeOn": "finish" },
+      "prompt": {
+        "uz": "Tank nishoni: kanondagi songa teng misolli tankni bos!",
+        "ru": "Танковая цель: нажми на танк с примером, равным числу на пушке!",
+        "en": "Tank targets: tap the tank whose expression equals the cannon number!"
+      },
+      "hint": {
+        "uz": "Har bir tankdagi misolni yechib, natijasini kanondagi son bilan solishtir.",
+        "ru": "Реши пример на каждом танке и сравни результат с числом на пушке.",
+        "en": "Solve each tank's expression and compare the result with the cannon number."
+      },
+      "explanation": {
+        "uz": "Misollarni yechib, natijalarni solishtirishni mashq qildik. Mergan boʻlganing uchun barakalla!",
+        "ru": "Мы решали примеры и сравнивали результаты. Молодец, какая меткость!",
+        "en": "We solved expressions and compared results. Well done, sharp shooting!"
+      }
+    }
+  ]
+}

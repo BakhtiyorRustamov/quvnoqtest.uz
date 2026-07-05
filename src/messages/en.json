@@ -154,7 +154,9 @@
     },
     "part3": "Part 3",
     "part4": "Part 4",
-    "video": "Video lesson"
+    "video": "Video lesson",
+    "showMore": "Show all",
+    "showLess": "Show less"
   },
   "lesson": {
     "letsStart": "Let's start!",

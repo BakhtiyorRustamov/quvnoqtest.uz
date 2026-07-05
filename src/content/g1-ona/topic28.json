@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-28",
+  "subjectKey": "g1-ona",
+  "emojis": "💬✅📝",
+  "title": {
+    "uz": "Gap — tugal fikr",
+    "ru": "Предложение — законченная мысль",
+    "en": "A sentence — a complete thought"
+  },
+  "recall": {
+    "uz": "Gap soʻzlardan tuziladi va tugallangan fikrni bildiradi. «Qushlar bizning doʻstimiz.» — bu gap. «Doʻstimiz, qushlar, bizning» — bu shunchaki soʻzlar toʻplami.",
+    "ru": "Предложение состоит из слов и выражает законченную мысль. «Qushlar bizning doʻstimiz.» — предложение. «Doʻstimiz, qushlar, bizning» — просто набор слов.",
+    "en": "A sentence is made of words and expresses a complete thought. “Qushlar bizning doʻstimiz.” is a sentence. “Doʻstimiz, qushlar, bizning” is just a set of words."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Oltin kuz keldi.", "match": true }, { "text": "Boʻldi, paydo, osmonda", "match": false }, { "text": "Xoʻroz don choʻqiyapti.", "match": true }, { "text": "Mening doʻstim.", "match": false }, { "text": "Quyosh nur sochmoqda.", "match": true }, { "text": "qor, oq, sovuq", "match": false } ] } },
+      "prompt": { "uz": "Gaplarni bos (tugal fikrni)!", "ru": "Нажми предложения (с законченной мыслью)!", "en": "Tap the sentences (complete thoughts)!" },
+      "hint": { "uz": "Gap tugallangan fikrni bildiradi.", "ru": "Предложение выражает законченную мысль.", "en": "A sentence expresses a complete thought." },
+      "explanation": { "uz": "Faqat tugallangan fikrli qatorlar — gap.", "ru": "Только строки с законченной мыслью — предложения.", "en": "Only complete-thought lines are sentences." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Bahor keldi.", "bin": "gap" }, { "id": "b", "label": "Qush uchdi.", "bin": "gap" }, { "id": "c", "label": "Kun isidi.", "bin": "gap" }, { "id": "d", "label": "olma, non", "bin": "toplam" }, { "id": "e", "label": "katta, kichik", "bin": "toplam" }, { "id": "f", "label": "yugur, sakra", "bin": "toplam" } ], "bins": [ { "id": "gap", "label": "Gap" }, { "id": "toplam", "label": "Soʻzlar toʻplami" } ] } },
+      "prompt": { "uz": "Gap va soʻzlar toʻplamini ajrat!", "ru": "Раздели предложение и набор слов!", "en": "Sort sentences and word-sets!" },
+      "hint": { "uz": "Gapda tugal fikr bor.", "ru": "В предложении есть законченная мысль.", "en": "A sentence has a complete thought." },
+      "explanation": { "uz": "Gap tugal fikr, toʻplam esa bogʻlanmagan soʻzlar.", "ru": "Предложение — мысль, набор — несвязанные слова.", "en": "A sentence is a thought; a set is unlinked words." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Qushlar", "bizning", "doʻstimiz."], "emoji": "🐦", "clue": { "uz": "Qushlar haqida gap", "ru": "Предложение о птицах", "en": "A sentence about birds" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Qushlar».", "ru": "Кто? — «Qushlar».", "en": "Who? — “Qushlar”." },
+      "explanation": { "uz": "Soʻzlar toʻgʻri tartibda gap hosil qildi.", "ru": "Слова в верном порядке образовали предложение.", "en": "The words in the right order formed a sentence." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Tugallangan fikr", "ru": "Законченная мысль", "en": "A complete thought" }, { "uz": "Bitta harf", "ru": "Одна буква", "en": "A single letter" }, { "uz": "Rasm", "ru": "Картинка", "en": "A picture" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Gap nima?", "ru": "Что такое предложение?", "en": "What is a sentence?" },
+      "hint": { "uz": "Gap soʻzlardan tuziladi.", "ru": "Предложение состоит из слов.", "en": "A sentence is made of words." },
+      "explanation": { "uz": "Gap — tugallangan fikrni bildiruvchi soʻzlar.", "ru": "Предложение — слова, выражающие законченную мысль.", "en": "A sentence is words expressing a complete thought." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "gap", "emoji": "💬", "clue": { "uz": "Tugal fikrni bildiradi", "ru": "Выражает законченную мысль", "en": "Expresses a complete thought" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: g, a, p.", "ru": "Буквы: g, a, p.", "en": "Letters: g, a, p." },
+      "explanation": { "uz": "«gap» soʻzlardan tuziladi.", "ru": "«gap» (предложение) состоит из слов.", "en": "“gap” (sentence) is made of words." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Oltin", "kuz", "keldi."], "emoji": "🍂", "clue": { "uz": "Kuz haqida gap", "ru": "Предложение об осени", "en": "A sentence about autumn" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Qanday kuz? — «Oltin».", "ru": "Какая осень? — «Oltin».", "en": "What autumn? — “Oltin”." },
+      "explanation": { "uz": "«Oltin kuz keldi.» — tugal fikrli gap.", "ru": "«Oltin kuz keldi.» — предложение с мыслью.", "en": "“Oltin kuz keldi.” is a complete-thought sentence." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Quyosh", "right": "chiqdi." }, { "left": "Yomgʻir", "right": "yogʻdi." }, { "left": "Bola", "right": "kuldi." }, { "left": "Gullar", "right": "ochildi." } ] } },
+      "prompt": { "uz": "Soʻzlarni ulab, gap hosil qil!", "ru": "Соедини слова в предложение!", "en": "Connect the words into a sentence!" },
+      "hint": { "uz": "«Quyosh» nima qildi? — «chiqdi».", "ru": "«Quyosh» что сделал? — «chiqdi».", "en": "What did “Quyosh” do? — “chiqdi”." },
+      "explanation": { "uz": "Har juftlik bir gap: soʻzlar maʼno bilan bogʻlanadi.", "ru": "Каждая пара — предложение: слова связаны по смыслу.", "en": "Each pair is a sentence: words connect by meaning." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "g", "after": "p", "choices": ["a", "o", "u"], "answer": "a", "emoji": "💬", "clue": { "uz": "Tugal fikr", "ru": "Законченная мысль", "en": "A complete thought" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "g … p — «gap».", "ru": "g … p — «gap».", "en": "g … p — “gap”." },
+      "explanation": { "uz": "g + a + p = «gap».", "ru": "g + a + p = «gap».", "en": "g + a + p = “gap”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["Bahor keldi.", "kitob, qalam", "issiq"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi biri gap?", "ru": "Что из этого — предложение?", "en": "Which of these is a sentence?" },
+      "hint": { "uz": "Gapda tugal fikr bor.", "ru": "В предложении есть мысль.", "en": "A sentence has a complete thought." },
+      "explanation": { "uz": "«Bahor keldi.» — gap (tugal fikr).", "ru": "«Bahor keldi.» — предложение (мысль).", "en": "“Bahor keldi.” is a sentence (a thought)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bola", "kitob", "oʻqiydi."], "emoji": "📖", "clue": { "uz": "Bola haqida gap", "ru": "Предложение о ребёнке", "en": "A sentence about a child" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Bola». Nima qiladi? — «oʻqiydi».", "ru": "Кто? — «Bola». Что делает? — «oʻqiydi».", "en": "Who? — “Bola”. Does what? — “oʻqiydi”." },
+      "explanation": { "uz": "«Bola kitob oʻqiydi.» — tugal fikrli gap.", "ru": "«Bola kitob oʻqiydi.» — предложение с мыслью.", "en": "“Bola kitob oʻqiydi.” is a complete-thought sentence." }
+    }
+  ]
+}

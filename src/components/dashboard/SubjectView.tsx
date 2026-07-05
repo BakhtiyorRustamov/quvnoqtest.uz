@@ -7,6 +7,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import AIMascotButton from '@/components/ui/AIMascotButton';
 import TopicRecommendation from './TopicRecommendation';
+import CollapsibleGrid from './CollapsibleGrid';
 import VideoLightbox from '@/components/ui/VideoLightbox';
 import { useUser } from '@/components/providers/UserProvider';
 import { api } from '@/lib/client';
@@ -85,8 +86,15 @@ export default function SubjectView() {
   }, [redraw]);
 
   function pt(e: React.PointerEvent): { x: number; y: number } {
-    const r = canvasRef.current!.getBoundingClientRect();
-    return { x: e.clientX - r.left, y: e.clientY - r.top };
+    const canvas = canvasRef.current!;
+    const r = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    // Normalize by the ratio between the backing store and the on-screen size so
+    // strokes land under the finger even if the canvas was sized before a layout
+    // shift (the cause of the mobile "draws a few cm too low" offset).
+    const scaleX = r.width ? canvas.width / dpr / r.width : 1;
+    const scaleY = r.height ? canvas.height / dpr / r.height : 1;
+    return { x: (e.clientX - r.left) * scaleX, y: (e.clientY - r.top) * scaleY };
   }
 
   return (
@@ -285,7 +293,13 @@ export default function SubjectView() {
             const part1 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n < G1_MATH_PART2_START), true);
             const part2 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART2_START && tp.n < G1_MATH_PART3_START), false);
             const part3 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART3_START && tp.n < G1_MATH_PART4_START), false);
-            const part4 = buildEntries(G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART4_START), false);
+            // Final-review lessons (142–144) get their own prominent row below.
+            const FINAL_REVIEW_START = 142;
+            const part4 = buildEntries(
+              G1_MATH_TOPICS.filter((tp) => tp.n >= G1_MATH_PART4_START && tp.n < FINAL_REVIEW_START),
+              false
+            );
+            const finals = G1_MATH_TOPICS.filter((tp) => tp.n >= FINAL_REVIEW_START && !completedKeys.has(tp.key));
 
             return (
               <>
@@ -293,25 +307,47 @@ export default function SubjectView() {
                   <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part1')}</h3>
                   <VideoLightbox src="/videos/part1.mp4" poster="/videos/part1.jpg" label={t('dashboard.video')} />
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part1.map(renderEntry)}</div>
+                <CollapsibleGrid>{part1.map(renderEntry)}</CollapsibleGrid>
 
                 <div className="mt-6 mb-2 flex items-center gap-3">
                   <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part2')}</h3>
                   <VideoLightbox src="/videos/part2.mp4" poster="/videos/part2.jpg" label={t('dashboard.video')} />
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part2.map(renderEntry)}</div>
+                <CollapsibleGrid>{part2.map(renderEntry)}</CollapsibleGrid>
 
                 <div className="mt-6 mb-2 flex items-center gap-3">
                   <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part3')}</h3>
                   <VideoLightbox src="/videos/part3.mp4" poster="/videos/part3.jpg" label={t('dashboard.video')} />
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part3.map(renderEntry)}</div>
+                <CollapsibleGrid>{part3.map(renderEntry)}</CollapsibleGrid>
 
                 <div className="mt-6 mb-2 flex items-center gap-3">
                   <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part4')}</h3>
                   <VideoLightbox src="/videos/part4.mp4" poster="/videos/part4.jpg" label={t('dashboard.video')} />
                 </div>
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5">{part4.map(renderEntry)}</div>
+                <CollapsibleGrid>{part4.map(renderEntry)}</CollapsibleGrid>
+
+                {/* Final reviews (142–144) — bigger, on their own row */}
+                {finals.length > 0 && (
+                  <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {finals.map((tp, i) => (
+                      <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 * i }}>
+                        <Link
+                          href={`/lesson/${tp.key}`}
+                          className="h-full flex items-center gap-3 px-4 py-4 rounded-2xl border-2 border-brand-orange/60 bg-gradient-to-br from-brand-orange/15 to-brand-purple/15 hover:-translate-y-0.5 transition-transform"
+                        >
+                          <span className="shrink-0 w-11 h-11 rounded-full grid place-items-center font-black text-white text-base bg-brand-orange">
+                            {tp.n}
+                          </span>
+                          <span className="flex-1 font-black text-ink text-[15px] leading-snug">{pick(tp.title, locale)}</span>
+                          <span className="shrink-0 text-brand-orange font-black text-lg" aria-hidden>
+                            ▶
+                          </span>
+                        </Link>
+                      </motion.div>
+                    ))}
+                  </div>
+                )}
               </>
             );
           })()}

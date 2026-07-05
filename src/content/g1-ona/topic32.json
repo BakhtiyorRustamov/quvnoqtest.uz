@@ -1,0 +1,108 @@
+{
+  "topicId": "g1-ona-32",
+  "subjectKey": "g1-ona",
+  "emojis": "📖💧🌸",
+  "title": {
+    "uz": "Matn — gaplardan tuziladi",
+    "ru": "Текст — строится из предложений",
+    "en": "A text — built from sentences"
+  },
+  "recall": {
+    "uz": "Matn gaplardan, gap esa soʻzlardan tuziladi. Mazmunan bogʻlangan gaplar matn hosil qiladi. Barcha ertak, topishmoq, maqol, hikoya va sheʼrlar — matn. Matnga sarlavha (nom) qoʻyiladi.",
+    "ru": "Текст состоит из предложений, а предложение — из слов. Связанные по смыслу предложения образуют текст. Сказки, загадки, пословицы, рассказы и стихи — это тексты. Тексту дают заголовок.",
+    "en": "A text is made of sentences, and a sentence of words. Meaningfully connected sentences form a text. Tales, riddles, proverbs, stories and poems are texts. A text is given a title."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "media": { "gif": "/quiz-media/ona-matn.gif", "alt": { "uz": "Tomchidan gul unib chiqadi", "ru": "Из капли вырастает цветок", "en": "A flower grows from a raindrop" }, "maxWidth": 220 },
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Gaplardan", "ru": "Из предложений", "en": "From sentences" }, { "uz": "Harflardan", "ru": "Из букв", "en": "From letters" }, { "uz": "Raqamlardan", "ru": "Из цифр", "en": "From numbers" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Matn nimadan tuziladi?", "ru": "Из чего строится текст?", "en": "What is a text built from?" },
+      "hint": { "uz": "Bogʻlangan gaplar matn hosil qiladi.", "ru": "Связанные предложения образуют текст.", "en": "Connected sentences form a text." },
+      "explanation": { "uz": "Matn mazmunan bogʻlangan gaplardan tuziladi.", "ru": "Текст состоит из связанных предложений.", "en": "A text is made of connected sentences." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Soʻzlardan", "ru": "Из слов", "en": "From words" }, { "uz": "Gaplardan", "ru": "Из предложений", "en": "From sentences" }, { "uz": "Matnlardan", "ru": "Из текстов", "en": "From texts" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Gap nimadan tuziladi?", "ru": "Из чего строится предложение?", "en": "What is a sentence built from?" },
+      "hint": { "uz": "Gap — soʻzlardan.", "ru": "Предложение — из слов.", "en": "A sentence — from words." },
+      "explanation": { "uz": "Gap soʻzlardan tuziladi; gaplardan matn.", "ru": "Предложение — из слов; из предложений — текст.", "en": "A sentence is made of words; sentences make a text." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "ertak", "bin": "matn" }, { "id": "b", "label": "hikoya", "bin": "matn" }, { "id": "c", "label": "sheʼr", "bin": "matn" }, { "id": "d", "label": "soʻz", "bin": "emas" }, { "id": "e", "label": "harf", "bin": "emas" }, { "id": "f", "label": "raqam", "bin": "emas" } ], "bins": [ { "id": "matn", "label": "Matn boʻladi" }, { "id": "emas", "label": "Matn emas" } ] } },
+      "prompt": { "uz": "Qaysi biri matn — ajrat!", "ru": "Что является текстом — раздели!", "en": "Which is a text — sort it!" },
+      "hint": { "uz": "Ertak, hikoya, sheʼr — matn.", "ru": "Сказка, рассказ, стих — текст.", "en": "A tale, story, poem — a text." },
+      "explanation": { "uz": "Ertak, hikoya, sheʼr — matn; soʻz va harf — emas.", "ru": "Сказка, рассказ, стих — текст; слово и буква — нет.", "en": "A tale, story, poem are texts; a word and letter are not." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "ertak", "match": true }, { "text": "harf", "match": false }, { "text": "hikoya", "match": true }, { "text": "soʻz", "match": false }, { "text": "sheʼr", "match": true }, { "text": "tovush", "match": false } ] } },
+      "prompt": { "uz": "Matn boʻla oladiganlarini bos!", "ru": "Нажми то, что может быть текстом!", "en": "Tap what can be a text!" },
+      "hint": { "uz": "Ertak, hikoya, sheʼr — matn.", "ru": "Сказка, рассказ, стих — текст.", "en": "A tale, story, poem — a text." },
+      "explanation": { "uz": "Ertak, hikoya, sheʼr matn hisoblanadi.", "ru": "Сказка, рассказ, стих считаются текстом.", "en": "A tale, story and poem count as texts." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Kichkina", "tomchi", "yigʻladi."], "emoji": "💧", "clue": { "uz": "Tomchi haqida gap", "ru": "Предложение о капле", "en": "A sentence about a raindrop" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «tomchi».", "ru": "Кто? — «tomchi».", "en": "Who? — “tomchi”." },
+      "explanation": { "uz": "Bu gap matnning bir boʻlagi boʻla oladi.", "ru": "Это предложение может быть частью текста.", "en": "This sentence can be part of a text." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Urugʻdan", "chiroyli", "gul", "ochildi."], "emoji": "🌸", "clue": { "uz": "Gul haqida gap", "ru": "Предложение о цветке", "en": "A sentence about a flower" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nimadan? — «Urugʻdan».", "ru": "Из чего? — «Urugʻdan».", "en": "From what? — “Urugʻdan”." },
+      "explanation": { "uz": "Gaplarni ketma-ket qoʻyib, matn tuziladi.", "ru": "Расставляя предложения по порядку, строим текст.", "en": "Putting sentences in order builds a text." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Tomchi", "right": "tushdi." }, { "left": "Urugʻ", "right": "undi." }, { "left": "Gul", "right": "ochildi." }, { "left": "Bola", "right": "quvondi." } ] } },
+      "prompt": { "uz": "Soʻzlarni ulab, gap hosil qil!", "ru": "Соедини слова в предложение!", "en": "Connect the words into a sentence!" },
+      "hint": { "uz": "«Gul» nima qildi? — «ochildi».", "ru": "«Gul» что сделал? — «ochildi».", "en": "What did “Gul” do? — “ochildi”." },
+      "explanation": { "uz": "Har juftlik bir gap. Gaplar birga matn boʻladi.", "ru": "Каждая пара — предложение. Вместе — текст.", "en": "Each pair is a sentence. Together they make a text." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "matn", "emoji": "📖", "clue": { "uz": "Bogʻlangan gaplar yigʻindisi", "ru": "Набор связанных предложений", "en": "A set of connected sentences" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: m, a, t, n.", "ru": "Буквы: m, a, t, n.", "en": "Letters: m, a, t, n." },
+      "explanation": { "uz": "«matn» — bogʻlangan gaplardan tuziladi.", "ru": "«matn» (текст) — из связанных предложений.", "en": "“matn” (text) — made of connected sentences." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Bahor keldi.", "bin": "gap" }, { "id": "b", "label": "Gul ochildi.", "bin": "gap" }, { "id": "c", "label": "Qush uchdi.", "bin": "gap" }, { "id": "d", "label": "gul, suv", "bin": "toplam" }, { "id": "e", "label": "issiq, sovuq", "bin": "toplam" }, { "id": "f", "label": "kel, ket", "bin": "toplam" } ], "bins": [ { "id": "gap", "label": "Gap" }, { "id": "toplam", "label": "Soʻzlar toʻplami" } ] } },
+      "prompt": { "uz": "Gap va soʻzlar toʻplamini ajrat!", "ru": "Раздели предложение и набор слов!", "en": "Sort sentences and word-sets!" },
+      "hint": { "uz": "Gapda tugal fikr bor.", "ru": "В предложении есть законченная мысль.", "en": "A sentence has a complete thought." },
+      "explanation": { "uz": "Gap tugal fikr; toʻplam — bogʻlanmagan soʻzlar.", "ru": "Предложение — мысль; набор — несвязанные слова.", "en": "A sentence is a thought; a set is unlinked words." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "ma", "after": "n", "choices": ["t", "d", "k"], "answer": "t", "emoji": "📖", "clue": { "uz": "Bogʻlangan gaplar", "ru": "Связанные предложения", "en": "Connected sentences" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "ma … n — «matn».", "ru": "ma … n — «matn».", "en": "ma … n — “matn”." },
+      "explanation": { "uz": "m + a + t + n = «matn».", "ru": "m + a + t + n = «matn».", "en": "m + a + t + n = “matn”." }
+    }
+  ]
+}

@@ -23,10 +23,18 @@ import AngleFind from './AngleFind';
 import SymmetryGrid from './SymmetryGrid';
 import EquationSolve from './EquationSolve';
 import NumberOrder from './NumberOrder';
+import WordScramble from './WordScramble';
+import LetterComplete from './LetterComplete';
+import SentenceOrder from './SentenceOrder';
+import TapMatch from './TapMatch';
+import SyllableBuild from './SyllableBuild';
 import Mcq from './Mcq';
 
-// Large interactive game — loaded client-only (uses AudioContext / window).
+// Large interactive games — loaded client-only (AudioContext / fullscreen / window).
 const GrandPrixAddition = dynamic(() => import('./GrandPrixAddition'), { ssr: false });
+const TugOfWarMath = dynamic(() => import('./TugOfWarMath'), { ssr: false });
+const TankTargets = dynamic(() => import('./TankTargets'), { ssr: false });
+const ScaleCompare = dynamic(() => import('./ScaleCompare'), { ssr: false });
 
 /**
  * Shared contract (every widget):
@@ -46,6 +54,9 @@ export const WIDGETS: Record<string, ComponentType<any>> = {
   position_grid: PositionGrid,
   straight_curved: StraightCurved,
   grand_prix_addition: GrandPrixAddition,
+  tug_of_war_math: TugOfWarMath,
+  tank_targets: TankTargets,
+  scale_compare: ScaleCompare,
   match_pairs: MatchPairs,
   drag_buckets: DragBuckets,
   ruler_measure: RulerMeasure,
@@ -54,6 +65,11 @@ export const WIDGETS: Record<string, ComponentType<any>> = {
   symmetry_grid: SymmetryGrid,
   equation_solve: EquationSolve,
   number_order: NumberOrder,
+  word_scramble: WordScramble,
+  letter_complete: LetterComplete,
+  sentence_order: SentenceOrder,
+  tap_match: TapMatch,
+  syllable_build: SyllableBuild,
   mcq: Mcq
 };
 
@@ -81,6 +97,9 @@ export const WIDGET_LABELS: Record<string, L10n> = {
   position_grid: { uz: 'Joylashish — toʻr', ru: 'Расположение — сетка', en: 'Position — grid' },
   straight_curved: { uz: 'Toʻgʻri va egri chiziqlar', ru: 'Прямые и кривые линии', en: 'Straight & curved lines' },
   grand_prix_addition: { uz: 'Qoʻshish poygasi', ru: 'Гонка сложения', en: 'Addition Grand Prix' },
+  tug_of_war_math: { uz: 'Kemalar bellashuvi', ru: 'Перетягивание буксиров', en: 'Tugboat tug-of-war' },
+  tank_targets: { uz: 'Tank nishoni', ru: 'Танковая цель', en: 'Tank targets' },
+  scale_compare: { uz: 'Tarozi oʻyini', ru: 'Игра с весами', en: 'Scale game' },
   match_pairs: { uz: 'Juftlarni ulash', ru: 'Соедини пары', en: 'Match the pairs' },
   drag_buckets: { uz: 'Qutilarga sudrab tashlash', ru: 'Перетащи в ящики', en: 'Drag into buckets' },
   ruler_measure: { uz: 'Chizgʻichda oʻlchash', ru: 'Измерение линейкой', en: 'Measure with a ruler' },
@@ -89,5 +108,10 @@ export const WIDGET_LABELS: Record<string, L10n> = {
   symmetry_grid: { uz: 'Simmetriyani toʻldirish', ru: 'Дополни симметрию', en: 'Complete the symmetry' },
   equation_solve: { uz: 'Tenglamani yechish', ru: 'Реши уравнение', en: 'Solve the equation' },
   number_order: { uz: 'Sonlarni tartiblash', ru: 'Расставь числа по порядку', en: 'Order the numbers' },
+  word_scramble: { uz: 'Soʻzni yigʻ (harflar)', ru: 'Собери слово из букв', en: 'Build the word from letters' },
+  letter_complete: { uz: 'Harfni toʻldir', ru: 'Вставь букву', en: 'Complete the letter' },
+  sentence_order: { uz: 'Gap tuz (soʻzlarni tartibla)', ru: 'Составь предложение из слов', en: 'Order words into a sentence' },
+  tap_match: { uz: 'Mos keladiganini bos', ru: 'Нажми подходящие', en: 'Tap all that fit' },
+  syllable_build: { uz: 'Boʻgʻinlardan soʻz tuz', ru: 'Собери слово из слогов', en: 'Build a word from syllables' },
   mcq: { uz: 'Test savoli (zaxira)', ru: 'Тестовый вопрос (резерв)', en: 'Multiple choice (fallback)' }
 };

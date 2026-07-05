@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-24",
+  "subjectKey": "g1-ona",
+  "emojis": "↩️➖📝",
+  "title": {
+    "uz": "Boʻgʻinni satrga koʻchiramiz",
+    "ru": "Переносим слог на строку",
+    "en": "Moving a syllable to the next line"
+  },
+  "recall": {
+    "uz": "Satrga soʻz sigʻmasa, boʻgʻin koʻchiriladi. Boʻgʻin satr oxiriga chiziqcha qoʻyib koʻchiriladi: mak-tab. Bir boʻgʻinli soʻzlar (non, gul) koʻchirilmaydi.",
+    "ru": "Если слово не помещается на строке, слог переносят. Ставят чёрточку в конце строки: mak-tab. Односложные слова (non, gul) не переносят.",
+    "en": "If a word doesn't fit on a line, a syllable is carried over with a hyphen: mak-tab. Single-syllable words (non, gul) are not carried over."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["cha", "van", "doz"], "emoji": "🐎", "clue": { "uz": "Ot minadigan chavgirt", "ru": "Всадник на коне", "en": "A horse rider" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "cha- … -van- … -doz.", "ru": "cha- … -van- … -doz.", "en": "cha- … -van- … -doz." },
+      "explanation": { "uz": "«cha-van-doz» — 3 boʻgʻin, koʻchirsa boʻladi.", "ru": "«cha-van-doz» — 3 слога, можно переносить.", "en": "“cha-van-doz” — 3 syllables, can be carried over." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["chi", "roy", "li"], "emoji": "✨", "clue": { "uz": "Goʻzal, koʻrkam", "ru": "Красивый", "en": "Beautiful" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "chi- … -roy- … -li.", "ru": "chi- … -roy- … -li.", "en": "chi- … -roy- … -li." },
+      "explanation": { "uz": "«chi-roy-li» — 3 boʻgʻin.", "ru": "«chi-roy-li» — 3 слога.", "en": "“chi-roy-li” — 3 syllables." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Boʻgʻinlab koʻchiramiz", "ru": "Переносим по слогам", "en": "We carry it over by syllable" }, { "uz": "Oʻchiramiz", "ru": "Стираем", "en": "We erase it" }, { "uz": "Tashlab ketamiz", "ru": "Оставляем", "en": "We leave it out" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Soʻz satrga sigʻmasa nima qilamiz?", "ru": "Что делать, если слово не влезло в строку?", "en": "What do we do if a word doesn't fit on a line?" },
+      "hint": { "uz": "Chiziqcha qoʻyamiz.", "ru": "Ставим чёрточку.", "en": "We add a hyphen." },
+      "explanation": { "uz": "Boʻgʻinni chiziqcha bilan keyingi satrga koʻchiramiz.", "ru": "Переносим слог на следующую строку с чёрточкой.", "en": "We carry the syllable to the next line with a hyphen." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "non", "match": true }, { "text": "maktab", "match": false }, { "text": "gul", "match": true }, { "text": "kitob", "match": false }, { "text": "tosh", "match": true }, { "text": "ovqat", "match": false } ] } },
+      "prompt": { "uz": "Koʻchirilmaydigan (bir boʻgʻinli) soʻzlarni bos!", "ru": "Нажми непереносимые (односложные) слова!", "en": "Tap the words that can't be carried over (one syllable)!" },
+      "hint": { "uz": "non, gul, tosh — bir boʻgʻinli.", "ru": "non, gul, tosh — односложные.", "en": "non, gul, tosh have one syllable." },
+      "explanation": { "uz": "Bir boʻgʻinli soʻzlar koʻchirilmaydi.", "ru": "Односложные слова не переносят.", "en": "Single-syllable words are not carried over." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "maktab", "bin": "ha" }, { "id": "b", "label": "kitob", "bin": "ha" }, { "id": "c", "label": "ovqat", "bin": "ha" }, { "id": "d", "label": "non", "bin": "yoq" }, { "id": "e", "label": "gul", "bin": "yoq" }, { "id": "f", "label": "tosh", "bin": "yoq" } ], "bins": [ { "id": "ha", "label": "Koʻchiriladi" }, { "id": "yoq", "label": "Koʻchirilmaydi" } ] } },
+      "prompt": { "uz": "Koʻchsa boʻladimi — ajrat!", "ru": "Можно ли переносить — раздели!", "en": "Can it be carried over — sort it!" },
+      "hint": { "uz": "Ikki boʻgʻinlilar koʻchiriladi.", "ru": "Двусложные переносят.", "en": "Two-syllable words are carried over." },
+      "explanation": { "uz": "Faqat ikki va undan koʻp boʻgʻinlilar koʻchiriladi.", "ru": "Переносят только слова с двумя и более слогами.", "en": "Only words with two or more syllables are carried over." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["sar", "kar", "da"], "emoji": "⚔️", "clue": { "uz": "Qoʻshin boshligʻi", "ru": "Полководец", "en": "A military commander" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "sar- … -kar- … -da.", "ru": "sar- … -kar- … -da.", "en": "sar- … -kar- … -da." },
+      "explanation": { "uz": "«sar-kar-da» — 3 boʻgʻin.", "ru": "«sar-kar-da» — 3 слога.", "en": "“sar-kar-da” — 3 syllables." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "satr", "emoji": "📝", "clue": { "uz": "Yozuvdagi bir qator", "ru": "Одна строка в тексте", "en": "One line of writing" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: s, a, t, r.", "ru": "Буквы: s, a, t, r.", "en": "Letters: s, a, t, r." },
+      "explanation": { "uz": "«satr» — yozuvdagi qator. Soʻz satrga sigʻmasa, koʻchiramiz.", "ru": "«satr» — строка. Если слово не влезло, переносим.", "en": "“satr” (line) — if a word doesn't fit, we carry it over." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "maktab", "right": "mak-tab" }, { "left": "kitob", "right": "ki-tob" }, { "left": "ovqat", "right": "ov-qat" }, { "left": "bola", "right": "bo-la" } ] } },
+      "prompt": { "uz": "Soʻzni boʻgʻinlangan shakliga ula!", "ru": "Соедини слово с его разбивкой на слоги!", "en": "Match each word to its syllable split!" },
+      "hint": { "uz": "«maktab» — «mak-tab».", "ru": "«maktab» — «mak-tab».", "en": "“maktab” — “mak-tab”." },
+      "explanation": { "uz": "Koʻchirishda boʻgʻin chegarasidan chiziqcha qoʻyiladi.", "ru": "При переносе чёрточку ставят на границе слога.", "en": "When carrying over, the hyphen goes at the syllable border." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Boʻgʻin", "chiziqcha", "bilan", "koʻchiriladi."], "emoji": "➖", "clue": { "uz": "Koʻchirish qoidasi", "ru": "Правило переноса", "en": "The line-break rule" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima bilan? — «chiziqcha».", "ru": "С чем? — «chiziqcha» (чёрточка).", "en": "With what? — “chiziqcha” (a hyphen)." },
+      "explanation": { "uz": "Boʻgʻin satr oxiriga chiziqcha qoʻyib koʻchiriladi.", "ru": "Слог переносят с чёрточкой в конце строки.", "en": "A syllable is carried over with a hyphen at the line's end." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Yoʻq, bir boʻgʻinli", "ru": "Нет, односложное", "en": "No, it has one syllable" }, { "uz": "Ha, boʻladi", "ru": "Да, можно", "en": "Yes, it can" }, { "uz": "Baʼzan", "ru": "Иногда", "en": "Sometimes" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«non» soʻzini koʻchirib boʻladimi?", "ru": "Можно ли перенести слово «non»?", "en": "Can the word “non” be carried over?" },
+      "hint": { "uz": "«non» — bitta boʻgʻin.", "ru": "«non» — один слог.", "en": "“non” has one syllable." },
+      "explanation": { "uz": "Yoʻq, «non» bir boʻgʻinli — koʻchirilmaydi.", "ru": "Нет, «non» односложное — не переносится.", "en": "No, “non” has one syllable — it isn't carried over." }
+    }
+  ]
+}

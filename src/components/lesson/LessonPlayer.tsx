@@ -14,6 +14,8 @@ import Completion from './Completion';
 import DrawOverlay from './DrawOverlay';
 import { useUser } from '@/components/providers/UserProvider';
 import { api } from '@/lib/client';
+import { pick } from '@/lib/i18n-config';
+import { SUBJECT_HOME } from '@/lib/subjectHome';
 
 /**
  * Flow (SRS §6.2): Recall → 10 items one at a time → Completion.
@@ -24,6 +26,7 @@ export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
   const locale = useLocale();
   const { ensureUser } = useUser();
   const total = lesson.items.length;
+  const home = SUBJECT_HOME[lesson.subjectKey];
   // Game/review lessons skip the read-aloud intro and start on the first item.
   const startStep = lesson.skipRecall ? 1 : 0;
   const [step, setStep] = useState(startStep);
@@ -82,8 +85,15 @@ export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
         </div>
       )}
 
-      {/* Back + Sound + Dashboard + Language on every step (FR-QZ-12 / FR-NAV-1) */}
-      <BackBar onBack={onBack} showLang />
+      {/* Back + Sound + Subject-home + Language on every step (FR-QZ-12 / FR-NAV-1).
+         The home button shows the subject (e.g. "Matematika 1") and returns to
+         that subject's page instead of the global dashboard. */}
+      <BackBar
+        onBack={onBack}
+        showLang
+        homeHref={home?.href}
+        homeLabel={home ? pick(home.label, locale) : undefined}
+      />
 
       <div className="flex-1 relative mt-2">
         <AnimatePresence mode="wait">

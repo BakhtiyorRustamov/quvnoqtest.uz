@@ -60,9 +60,30 @@ create table if not exists drawings (
   primary key (user_id, subject_key)
 );
 
+-- Parents (Telegram mini-app users) and their linked children
+create table if not exists parents (
+  id uuid primary key default gen_random_uuid(),
+  telegram_id bigint unique not null,
+  name text,
+  username text,
+  locale text not null default 'uz',
+  created_at timestamptz not null default now()
+);
+
+create table if not exists parent_children (
+  id uuid primary key default gen_random_uuid(),
+  parent_id uuid not null references parents (id) on delete cascade,
+  child_user_id uuid not null references users (id) on delete cascade,
+  created_at timestamptz not null default now(),
+  unique (parent_id, child_user_id)
+);
+create index if not exists parent_children_parent_idx on parent_children (parent_id);
+
 alter table users enable row level security;
 alter table progress enable row level security;
 alter table quiz_attempts enable row level security;
 alter table ai_usage enable row level security;
 alter table magic_links enable row level security;
 alter table drawings enable row level security;
+alter table parents enable row level security;
+alter table parent_children enable row level security;

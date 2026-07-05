@@ -1,13 +1,20 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getStore } from '@/lib/store';
 import { mailerConfigured, sendMagicLinkEmail } from '@/lib/mailer';
+import { clientIp, rateLimit } from '@/lib/rateLimit';
 
 /** Claim-by-email (SRS §6.6.2): create a magic link and deliver it. */
 export async function POST(req: NextRequest) {
   const body = await req.json().catch(() => ({}));
-  const email = String(body.email ?? '').trim().toLowerCase();
+  const email = String(body.email ?? '').trim().toLowerCase().slice(0, 254);
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return NextResponse.json({ error: 'invalid_email' }, { status: 400 });
+  }
+
+  // Anti-abuse: cap link emails per device and per target address
+  const ip = clientIp(req);
+  if (!rateLimit(`ml:ip:${ip}`, 5, 15 * 60 * 1000) || !rateLimit(`ml:em:${email}`, 5, 15 * 60 * 1000)) {
+    return NextResponse.json({ error: 'too_many_requests' }, { status: 429 });
   }
 
   const store = getStore();

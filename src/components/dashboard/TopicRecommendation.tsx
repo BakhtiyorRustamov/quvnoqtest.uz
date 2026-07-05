@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { getTopic, isBuiltTopic } from '@/content';
 import { pick } from '@/lib/i18n-config';
+import type { TopicMeta } from '@/content/types';
 import type { ProgressRow } from '@/lib/store/types';
 
 /** Score (out of 10) at or below which a finished topic is suggested for review. */
@@ -25,12 +26,18 @@ export default function TopicRecommendation({
   progress,
   name,
   isPaid,
-  locale
+  locale,
+  getTopicMeta = getTopic,
+  startHref = '/lesson/g1-math-01'
 }: {
   progress: ProgressRow[];
   name: string | null;
   isPaid: boolean;
   locale: string;
+  /** topic-meta lookup for this subject (defaults to grade-1 maths). */
+  getTopicMeta?: (key: string) => TopicMeta | undefined;
+  /** where the "start" CTA points when nothing is completed yet. */
+  startHref?: string;
 }) {
   const t = useTranslations('dashboard.topicReco');
   const displayName = name || t('friend');
@@ -39,7 +46,7 @@ export default function TopicRecommendation({
   const lowScore = completed
     .filter((p) => typeof p.score === 'number' && p.score <= REVIEW_THRESHOLD && isBuiltTopic(p.topicKey))
     .map((p) => {
-      const meta = getTopic(p.topicKey);
+      const meta = getTopicMeta(p.topicKey);
       return meta ? { key: p.topicKey, n: meta.n, title: pick(meta.title, locale), score: p.score ?? 0 } : null;
     })
     .filter((x): x is { key: string; n: number; title: string; score: number } => x !== null)
@@ -109,7 +116,7 @@ export default function TopicRecommendation({
 
           <div className="mt-5 flex flex-wrap items-center gap-2.5">
             {!hasStarted && (
-              <Link href="/lesson/g1-math-01" className="rounded-full bg-ink px-5 py-2.5 text-sm font-black text-white shadow-md transition-transform hover:-translate-y-0.5">
+              <Link href={startHref} className="rounded-full bg-ink px-5 py-2.5 text-sm font-black text-white shadow-md transition-transform hover:-translate-y-0.5">
                 🚀 {t('startCta')}
               </Link>
             )}

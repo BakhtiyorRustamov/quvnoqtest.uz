@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-22",
+  "subjectKey": "g1-ona",
+  "emojis": "🧩🔤🎵",
+  "title": {
+    "uz": "Boʻgʻin — soʻz boʻlaklari",
+    "ru": "Слог — части слова",
+    "en": "Syllables — the chunks of a word"
+  },
+  "recall": {
+    "uz": "Soʻzlar boʻgʻinlarga ajratiladi: mak-tab. Har boʻgʻinda bitta unli boʻladi. Boʻgʻin ikki xil: ochiq boʻgʻin unli bilan (ta-la-ba), yopiq boʻgʻin undosh bilan (meh-nat) tugaydi.",
+    "ru": "Слова делятся на слоги: mak-tab. В каждом слоге одна гласная. Слоги бывают открытые (на гласную: ta-la-ba) и закрытые (на согласную: meh-nat).",
+    "en": "Words split into syllables: mak-tab. Each syllable has one vowel. Syllables are open (ending in a vowel: ta-la-ba) or closed (ending in a consonant: meh-nat)."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["mak", "tab"], "emoji": "🏫", "clue": { "uz": "Bilim maskani", "ru": "Место знаний (школа)", "en": "The place of knowledge (school)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "mak- … -tab.", "ru": "mak- … -tab.", "en": "mak- … -tab." },
+      "explanation": { "uz": "«mak-tab» — ikki boʻgʻinli soʻz.", "ru": "«mak-tab» — двусложное слово.", "en": "“mak-tab” has two syllables." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["ki", "tob"], "emoji": "📖", "clue": { "uz": "Oʻqiydigan narsamiz", "ru": "То, что мы читаем", "en": "The thing we read" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "ki- … -tob.", "ru": "ki- … -tob.", "en": "ki- … -tob." },
+      "explanation": { "uz": "«ki-tob» — ikki boʻgʻin. «ki» ochiq, «tob» yopiq.", "ru": "«ki-tob» — два слога. «ki» открытый, «tob» закрытый.", "en": "“ki-tob” has two syllables. “ki” open, “tob” closed." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["o", "na"], "emoji": "👩", "clue": { "uz": "Eng aziz insonimiz", "ru": "Самый родной человек", "en": "Our dearest person" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "o- … -na.", "ru": "o- … -na.", "en": "o- … -na." },
+      "explanation": { "uz": "«o-na» — ikki ochiq boʻgʻin.", "ru": "«o-na» — два открытых слога.", "en": "“o-na” — two open syllables." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["1", "0", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Har boʻgʻinda nechta unli boʻladi?", "ru": "Сколько гласных в каждом слоге?", "en": "How many vowels are in each syllable?" },
+      "hint": { "uz": "Unlisiz boʻgʻin boʻlmaydi.", "ru": "Без гласной слога нет.", "en": "There is no syllable without a vowel." },
+      "explanation": { "uz": "Har boʻgʻinda bitta unli boʻladi.", "ru": "В каждом слоге одна гласная.", "en": "Each syllable has one vowel." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "ta", "bin": "ochiq" }, { "id": "b", "label": "la", "bin": "ochiq" }, { "id": "c", "label": "o", "bin": "ochiq" }, { "id": "d", "label": "tob", "bin": "yopiq" }, { "id": "e", "label": "non", "bin": "yopiq" }, { "id": "f", "label": "bir", "bin": "yopiq" } ], "bins": [ { "id": "ochiq", "label": "Ochiq boʻgʻin" }, { "id": "yopiq", "label": "Yopiq boʻgʻin" } ] } },
+      "prompt": { "uz": "Boʻgʻinlarni ajrat!", "ru": "Раздели слоги!", "en": "Sort the syllables!" },
+      "hint": { "uz": "«ta» — unli bilan (ochiq), «tob» — undosh bilan (yopiq).", "ru": "«ta» — на гласную (открытый), «tob» — на согласную (закрытый).", "en": "“ta” ends in a vowel (open), “tob” in a consonant (closed)." },
+      "explanation": { "uz": "Ochiq boʻgʻin unli, yopiq boʻgʻin undosh bilan tugaydi.", "ru": "Открытый слог оканчивается на гласную, закрытый — на согласную.", "en": "An open syllable ends in a vowel, a closed one in a consonant." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "boʻgʻin", "letters": ["b", "oʻ", "gʻ", "i", "n"], "emoji": "🎵", "clue": { "uz": "Soʻzning bir boʻlagi", "ru": "Часть слова (слог)", "en": "A chunk of a word (a syllable)" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: b, oʻ, gʻ, i, n.", "ru": "Части: b, oʻ, gʻ, i, n.", "en": "Parts: b, oʻ, gʻ, i, n." },
+      "explanation": { "uz": "«boʻgʻin» — soʻzning unli bilan aytiladigan boʻlagi.", "ru": "«boʻgʻin» (слог) — часть слова с гласной.", "en": "“boʻgʻin” (syllable) — a word-part said with a vowel." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "ta", "match": true }, { "text": "tob", "match": false }, { "text": "ki", "match": true }, { "text": "non", "match": false }, { "text": "la", "match": true }, { "text": "bir", "match": false } ] } },
+      "prompt": { "uz": "Ochiq boʻgʻinlarni bos!", "ru": "Нажми открытые слоги!", "en": "Tap the open syllables!" },
+      "hint": { "uz": "Ochiq boʻgʻin unli bilan tugaydi.", "ru": "Открытый слог оканчивается на гласную.", "en": "An open syllable ends in a vowel." },
+      "explanation": { "uz": "ta, ki, la — unli bilan tugagan ochiq boʻgʻinlar.", "ru": "ta, ki, la — открытые слоги на гласную.", "en": "ta, ki, la are open syllables ending in a vowel." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "gul", "right": "1" }, { "left": "bola", "right": "2" }, { "left": "kitoblar", "right": "3" }, { "left": "televizor", "right": "4" } ] } },
+      "prompt": { "uz": "Soʻzni boʻgʻin soniga ula!", "ru": "Соедини слово с числом слогов!", "en": "Match each word to its syllable count!" },
+      "hint": { "uz": "«gul» — 1, «bola» — 2 boʻgʻin.", "ru": "«gul» — 1, «bola» — 2 слога.", "en": "“gul” — 1, “bola” — 2 syllables." },
+      "explanation": { "uz": "Boʻgʻin soni unlilar soniga teng.", "ru": "Число слогов равно числу гласных.", "en": "The syllable count equals the number of vowels." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Soʻzlar", "boʻgʻinlarga", "boʻlinadi."], "emoji": "🧩", "clue": { "uz": "Boʻgʻin haqida gap", "ru": "Предложение о слоге", "en": "A sentence about syllables" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima? — «Soʻzlar». Nimaga? — «boʻgʻinlarga».", "ru": "Что? — «Soʻzlar». На что? — «boʻgʻinlarga».", "en": "What? — “Soʻzlar”. Into what? — “boʻgʻinlarga”." },
+      "explanation": { "uz": "Soʻzlar boʻgʻinlarga boʻlinadi.", "ru": "Слова делятся на слоги.", "en": "Words are divided into syllables." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "«maktab» soʻzida nechta boʻgʻin bor?", "ru": "Сколько слогов в слове «maktab»?", "en": "How many syllables are in “maktab”?" },
+      "hint": { "uz": "mak-tab.", "ru": "mak-tab.", "en": "mak-tab." },
+      "explanation": { "uz": "«mak-tab» — 2 boʻgʻin (2 unli).", "ru": "«mak-tab» — 2 слога (2 гласные).", "en": "“mak-tab” — 2 syllables (2 vowels)." }
+    }
+  ]
+}

@@ -3,7 +3,10 @@ import React, { useState } from "react";
 
 /**
  * Mcq — plain multiple-choice fallback for concepts with no matching component.
- * Props: { prompt, choices: string[3-4], answerIndex, lang='uz', embedded=false, onAttempt, onCorrect, onNext }
+ * Props: { prompt, choices: (string | {uz,ru,en})[3-4], answerIndex, lang='uz',
+ *          embedded=false, onAttempt, onCorrect, onNext }
+ * A choice may be a plain string (locale-neutral, e.g. "48") or an {uz,ru,en}
+ * object for text answers that need translating.
  * embedded: hides the "next" button (the quiz shell provides flow).
  */
 const STRINGS = {
@@ -66,7 +69,8 @@ export default function Mcq({
       <p style={S.choose}>{t.choose}</p>
       <div style={S.choices}>
         {order.map((i) => {
-          const c = choices[i];
+          const raw = choices[i];
+          const c = raw && typeof raw === "object" ? raw[lang] ?? raw.uz ?? "" : raw;
           const correctBtn = status !== "idle" && i === answerIndex;
           const wrongBtn = picked === i && status === "wrong";
           return (

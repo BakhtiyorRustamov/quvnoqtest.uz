@@ -51,6 +51,19 @@ export interface QTStore {
   createMagicLink(email: string): Promise<{ token: string } | null>;
   /** Returns true when the token was valid and the account was claimed/merged. */
   claimMagicLink(token: string): Promise<boolean>;
+  /**
+   * Parent lookup (parents' page): finds a child by public ID AND name — both
+   * must match, so the ID alone is not enough to read someone's progress.
+   */
+  findChild(publicId: string, name: string): Promise<{ user: UserRecord; progress: ProgressRow[] } | null>;
+}
+
+/** Loose name equality for the parent lookup (case/space/apostrophe tolerant). */
+export function namesMatch(a: string | null | undefined, b: string | null | undefined): boolean {
+  const norm = (s: string) =>
+    s.toLowerCase().replace(/['’ʻʼ`]/g, '').replace(/\s+/g, ' ').trim();
+  if (!a || !b) return false;
+  return norm(a) === norm(b);
 }
 
 export function isPaid(user: UserRecord | null): boolean {

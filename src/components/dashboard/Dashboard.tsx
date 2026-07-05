@@ -4,8 +4,9 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { useUser } from '@/components/providers/UserProvider';
-import { getGrade, GRADES, isUnlockedSubject, progressSubjectKey } from '@/content/taxonomy';
-import { G1_MATH_TOPICS } from '@/content';
+import { getGrade, GRADES, isUnlockedSubject, unlockedSubjectHref, progressSubjectKey } from '@/content/taxonomy';
+import { pick } from '@/lib/i18n-config';
+import { G1_MATH_TOPICS, G1_ONA_TOPICS } from '@/content';
 import { api } from '@/lib/client';
 import type { ProgressRow } from '@/lib/store/types';
 import LangSwitcher from '@/components/ui/LangSwitcher';
@@ -15,6 +16,7 @@ import AnimatedLogo from '@/components/landing/AnimatedLogo';
 import ProfileDrawer from './ProfileDrawer';
 import SubjectProgressCard from './SubjectProgressCard';
 import DashboardStats from './DashboardStats';
+import OlympiadSection from './OlympiadSection';
 
 /** Free + paid dashboard (SRS §6.3 / §6.4) — same layout, labels/locks differ. */
 export default function Dashboard() {
@@ -89,9 +91,9 @@ export default function Dashboard() {
       <section className="max-w-4xl mx-auto px-3 mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
         {gradeDef.subjects.map((s, i) => {
           const unlocked = isUnlockedSubject(grade, s.key);
-          const href = unlocked ? '/dashboard/g1-math' : `/subject/${grade}/${s.key}`;
+          const href = (unlocked && unlockedSubjectHref(grade, s.key)) || `/subject/${grade}/${s.key}`;
           const pk = progressSubjectKey(grade, s.key);
-          const total = pk === 'g1-math' ? G1_MATH_TOPICS.length : 0;
+          const total = pk === 'g1-math' ? G1_MATH_TOPICS.length : pk === 'g1-ona' ? G1_ONA_TOPICS.length : 0;
           const learned = progress.filter((p) => p.subjectKey === pk && p.status === 'completed').length;
           return (
             <SubjectProgressCard
@@ -111,6 +113,22 @@ export default function Dashboard() {
 
       {/* progress stats & charts (real /api/progress data) */}
       <DashboardStats progress={progress} grade={grade} subjects={gradeDef.subjects} name={user?.name ?? null} locale={locale} />
+
+      {/* Quvnoq Olimpiada — big announcement + countdown (dummy, under results) */}
+      <OlympiadSection locale={locale} />
+
+      {/* parents' corner */}
+      <div className="max-w-4xl mx-auto px-3 mt-6 text-center">
+        <Link
+          href="/parent"
+          className="inline-flex items-center gap-2 rounded-2xl bg-white/90 border-2 border-ink/15 shadow-card px-5 py-3 font-extrabold text-ink hover:-translate-y-0.5 transition-transform"
+        >
+          {pick(
+            { uz: 'Ota-onalar sahifasi', ru: 'Страница для родителей', en: 'Parents’ page' },
+            locale
+          )}
+        </Link>
+      </div>
 
       {/* brand logo (bottom) */}
       <footer className="mt-14 flex flex-col items-center gap-1.5 px-3 pb-4 text-center">

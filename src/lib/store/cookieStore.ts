@@ -1,12 +1,13 @@
 import 'server-only';
 import { cookies } from 'next/headers';
-import { createHmac, randomUUID, randomBytes } from 'node:crypto';
+import { createHmac, randomUUID, randomBytes, timingSafeEqual } from 'node:crypto';
 import {
   type QTStore,
   type UserRecord,
   type ProgressRow,
   type AiUsage,
-  makePublicId
+  makePublicId,
+  namesMatch
 } from './types';
 
 /**
@@ -30,8 +31,28 @@ type SessData = {
   ml?: { token: string; email: string; exp: number };
 };
 
+let warnedDefaultSecret = false;
 function secret(): string {
-  return process.env.SESSION_SECRET || 'qt-dev-secret-change-me';
+  const s = process.env.SESSION_SECRET;
+  if (!s) {
+    // A known fallback secret makes every session cookie forgeable (including
+    // paidUntil). Fine for local dev; loudly unacceptable in production.
+    if (process.env.NODE_ENV === 'production' && !warnedDefaultSecret) {
+      warnedDefaultSecret = true;
+      console.error(
+        '[security] SESSION_SECRET is not set in production — session cookies are forgeable. Set SESSION_SECRET now.'
+      );
+    }
+    return 'qt-dev-secret-change-me';
+  }
+  return s;
+}
+
+/** Constant-time string comparison (avoids timing side channels on secrets). */
+function safeEqual(a: string, b: string): boolean {
+  const ab = Buffer.from(a, 'utf8');
+  const bb = Buffer.from(b, 'utf8');
+  return ab.length === bb.length && timingSafeEqual(ab, bb);
 }
 
 function sign(payload: string): string {
@@ -49,7 +70,7 @@ function decode(raw: string | undefined): SessData | null {
   if (i < 0) return null;
   const payload = raw.slice(0, i);
   const sig = raw.slice(i + 1);
-  if (sign(payload) !== sig) return null;
+  if (!safeEqual(sign(payload), sig)) return null;
   try {
     return JSON.parse(Buffer.from(payload, 'base64url').toString('utf8')) as SessData;
   } catch {
@@ -160,11 +181,18 @@ export function cookieStore(): QTStore {
 
     async claimMagicLink(token) {
       const s = await read();
-      if (!s?.ml || s.ml.token !== token || s.ml.exp < Date.now()) return false;
+      if (!s?.ml || !safeEqual(s.ml.token, token) || s.ml.exp < Date.now()) return false;
       s.u.email = s.ml.email;
       delete s.ml;
       await write(s);
       return true;
+    },
+
+    async findChild(publicId, name) {
+      // Cookie mode is per-device: the only findable child is this device's own record.
+      const s = await read();
+      if (!s || s.u.publicId !== publicId || !namesMatch(s.u.name, name)) return null;
+      return { user: s.u, progress: Object.values(s.p) };
     }
   };
 }

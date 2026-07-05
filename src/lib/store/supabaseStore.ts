@@ -6,7 +6,8 @@ import {
   type QTStore,
   type UserRecord,
   type ProgressRow,
-  makePublicId
+  makePublicId,
+  namesMatch
 } from './types';
 
 const DEVICE_COOKIE = 'qt_device';
@@ -272,6 +273,24 @@ export function supabaseStore(): QTStore {
       await setDeviceToken(newToken);
       await sb().from('magic_links').update({ consumed_at: new Date().toISOString() }).eq('token', token);
       return true;
+    },
+
+    async findChild(publicId, name) {
+      const { data } = await sb().from('users').select('*').eq('public_id', publicId).maybeSingle();
+      if (!data) return null;
+      const user = rowToUser(data);
+      if (!namesMatch(user.name, name)) return null;
+      const { data: prog } = await sb().from('progress').select('*').eq('user_id', user.id);
+      const progress = (prog ?? []).map(
+        (r: any): ProgressRow => ({
+          subjectKey: r.subject_key,
+          topicKey: r.topic_key,
+          status: r.status,
+          score: r.score,
+          completedAt: r.completed_at
+        })
+      );
+      return { user, progress };
     }
   };
 }

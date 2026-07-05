@@ -111,6 +111,8 @@ export default function MatchPairs({ pairs = [], lang = "uz", embedded = false, 
       {!embedded && won && (
         <button onClick={() => typeof onNext === "function" && onNext()} style={S.nextBtn}>{t.next} →</button>
       )}
+      {/* extra graph-paper row at the bottom, half-covered with a gradient fade */}
+      <div aria-hidden style={S.fadeRow} />
     </div>
   );
 }
@@ -121,7 +123,8 @@ button:focus-visible{outline:3px solid #2f9fe0;outline-offset:2px;}
 @media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important;}}
 `;
 const S = {
-  wrap: { position: "relative", maxWidth: 520, margin: "0 auto", padding: "16px 14px 18px", borderRadius: 24, border: "2px solid #ece1c8", boxShadow: "0 18px 40px -22px rgba(80,60,20,.5)", backgroundColor: "#fbf6ea", backgroundImage: "linear-gradient(#ece1c8 1px,transparent 1px),linear-gradient(90deg,#ece1c8 1px,transparent 1px)", backgroundSize: "27px 27px", fontFamily: "inherit", color: "#33302b" },
+  wrap: { position: "relative", maxWidth: 520, margin: "0 auto", padding: "16px 14px 52px", borderRadius: 24, border: "2px solid #ece1c8", boxShadow: "0 18px 40px -22px rgba(80,60,20,.5)", backgroundColor: "#fbf6ea", backgroundImage: "linear-gradient(#ece1c8 1px,transparent 1px),linear-gradient(90deg,#ece1c8 1px,transparent 1px)", backgroundSize: "27px 27px", fontFamily: "inherit", color: "#33302b" },
+  fadeRow: { position: "absolute", left: 2, right: 2, bottom: 2, height: 40, borderRadius: "0 0 22px 22px", background: "linear-gradient(to bottom, rgba(251,246,234,0) 0%, #fbf6ea 75%)", pointerEvents: "none" },
   instr: { textAlign: "center", margin: "0 0 12px", fontSize: 14, fontWeight: 700, color: "#9aa0a6" },
   grid: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 },
   col: { display: "grid", gap: 10 },

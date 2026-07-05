@@ -166,9 +166,12 @@ export default function Landing() {
 
   function pickSubject(s: SubjectDef) {
     if (!openDef) return;
-    play(isUnlockedSubject(openDef.grade, s.key) ? 'win' : 'pop');
+    const unlocked = isUnlockedSubject(openDef.grade, s.key);
+    play(unlocked ? 'win' : 'pop');
     setFlight({ s, grade: openDef.grade });
-    const dest = isUnlockedSubject(openDef.grade, s.key) ? '/lesson/g1-math-01' : `/subject/${openDef.grade}/${s.key}`;
+    // Each unlocked subject opens its OWN first lesson (not always maths).
+    const demoLesson = s.key === 'ona-tili-savod' ? '/lesson/g1-ona-01' : '/lesson/g1-math-01';
+    const dest = unlocked ? demoLesson : `/subject/${openDef.grade}/${s.key}`;
     setTimeout(() => router.push(dest), reduce ? 0 : 700);
   }
 

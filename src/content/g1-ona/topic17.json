@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-17",
+  "subjectKey": "g1-ona",
+  "emojis": "🔤🫖🌊",
+  "title": {
+    "uz": "ng, sh, ch — uch birikma",
+    "ru": "ng, sh, ch — три сочетания",
+    "en": "ng, sh, ch — three combinations"
+  },
+  "recall": {
+    "uz": "Oʻzbek alifbosida 3 ta harf birikmasi bor: ng, sh, ch. «ng» soʻz boshida kelmaydi (tong, rang). «ch» — c va h dan, «sh» — s va h dan hosil boʻladi.",
+    "ru": "В узбекском алфавите 3 буквосочетания: ng, sh, ch. «ng» не стоит в начале слова (tong, rang). «ch» — из c и h, «sh» — из s и h.",
+    "en": "The Uzbek alphabet has 3 letter-combinations: ng, sh, ch. “ng” never starts a word (tong, rang). “ch” is c+h; “sh” is s+h."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "choynak", "letters": ["ch", "o", "y", "n", "a", "k"], "emoji": "🫖", "clue": { "uz": "Choy quyiladigan idish", "ru": "Посуда для чая", "en": "A pot for pouring tea" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: ch, o, y, n, a, k.", "ru": "Части: ch, o, y, n, a, k.", "en": "Parts: ch, o, y, n, a, k." },
+      "explanation": { "uz": "«choynak» «ch» birikmasi bilan boshlanadi.", "ru": "«choynak» начинается с сочетания «ch».", "en": "“choynak” starts with the combination “ch”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "to", "after": "", "choices": ["sh", "s", "ch"], "answer": "sh", "emoji": "🗿", "clue": { "uz": "Qattiq jism", "ru": "Твёрдый предмет", "en": "A hard object" } } },
+      "prompt": { "uz": "Oxirgi birikmani qoʻy!", "ru": "Вставь последнее сочетание!", "en": "Add the last combination!" },
+      "hint": { "uz": "to … — «tosh».", "ru": "to … — «tosh».", "en": "to … — “tosh”." },
+      "explanation": { "uz": "«tosh» «sh» birikmasi bilan tugaydi.", "ru": "«tosh» оканчивается на «sh».", "en": "“tosh” ends with the combination “sh”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "choy", "bin": "ch" }, { "id": "b", "label": "chumchuq", "bin": "ch" }, { "id": "c", "label": "chigirtka", "bin": "ch" }, { "id": "d", "label": "shakar", "bin": "sh" }, { "id": "e", "label": "sham", "bin": "sh" }, { "id": "f", "label": "sharbat", "bin": "sh" } ], "bins": [ { "id": "ch", "label": "«ch» bilan" }, { "id": "sh", "label": "«sh» bilan" } ] } },
+      "prompt": { "uz": "Birikmasiga qarab ajrat!", "ru": "Раздели по сочетанию!", "en": "Sort by the combination!" },
+      "hint": { "uz": "«choy» — ch, «sham» — sh bilan.", "ru": "«choy» — ch, «sham» — sh.", "en": "“choy” with ch, “sham” with sh." },
+      "explanation": { "uz": "ch va sh — ikki xil harf birikmasi.", "ru": "ch и sh — разные буквосочетания.", "en": "ch and sh are two different combinations." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "tong", "match": true }, { "text": "choy", "match": false }, { "text": "dengiz", "match": true }, { "text": "tosh", "match": false }, { "text": "rang", "match": true }, { "text": "sham", "match": false } ] } },
+      "prompt": { "uz": "«ng» birikmasi bor soʻzlarni bos!", "ru": "Нажми слова с сочетанием «ng»!", "en": "Tap the words with “ng”!" },
+      "hint": { "uz": "tong, dengiz, rang — «ng» bor.", "ru": "tong, dengiz, rang — есть «ng».", "en": "tong, dengiz, rang contain “ng”." },
+      "explanation": { "uz": "«ng» soʻz oʻrtasi yoki oxirida keladi: tong, rang.", "ru": "«ng» бывает в середине или конце: tong, rang.", "en": "“ng” appears in the middle or end: tong, rang." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "ra", "after": "", "choices": ["ng", "n", "g"], "answer": "ng", "emoji": "🎨", "clue": { "uz": "Qizil, koʻk — bular …", "ru": "Красный, синий — это …", "en": "Red, blue — these are …" } } },
+      "prompt": { "uz": "Oxirgi birikmani qoʻy!", "ru": "Вставь последнее сочетание!", "en": "Add the last combination!" },
+      "hint": { "uz": "ra … — «rang».", "ru": "ra … — «rang» (цвет).", "en": "ra … — “rang” (colour)." },
+      "explanation": { "uz": "«rang» «ng» birikmasi bilan tugaydi.", "ru": "«rang» оканчивается на «ng».", "en": "“rang” ends with the combination “ng”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "choynak", "right": "🫖" }, { "left": "chumchuq", "right": "🐦" }, { "left": "shakar", "right": "🍬" }, { "left": "sham", "right": "🕯️" } ] } },
+      "prompt": { "uz": "Soʻzni rasmiga ula!", "ru": "Соедини слово с картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«sham» — 🕯️, «shakar» — 🍬.", "ru": "«sham» — 🕯️, «shakar» — 🍬.", "en": "“sham” — 🕯️, “shakar” — 🍬." },
+      "explanation": { "uz": "Har soʻzda «ch» yoki «sh» birikmasi bor.", "ru": "В каждом слове есть «ch» или «sh».", "en": "Each word has “ch” or “sh”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "dengiz", "letters": ["d", "e", "ng", "i", "z"], "emoji": "🌊", "clue": { "uz": "Juda katta suv havzasi", "ru": "Очень большой водоём", "en": "A very large body of water" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: d, e, ng, i, z.", "ru": "Части: d, e, ng, i, z.", "en": "Parts: d, e, ng, i, z." },
+      "explanation": { "uz": "«dengiz» oʻrtasida «ng» birikmasi bor.", "ru": "В «dengiz» есть сочетание «ng».", "en": "“dengiz” has “ng” in the middle." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["ng", "sh", "ch"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi birikma soʻz boshida kelmaydi?", "ru": "Какое сочетание не бывает в начале слова?", "en": "Which combination never starts a word?" },
+      "hint": { "uz": "tong, rang — bu birikma oxirida.", "ru": "tong, rang — это сочетание в конце.", "en": "tong, rang — this one is at the end." },
+      "explanation": { "uz": "«ng» hech qachon soʻz boshida kelmaydi.", "ru": "«ng» никогда не стоит в начале слова.", "en": "“ng” never starts a word." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Dengizda", "kema", "suzadi."], "emoji": "⛵", "clue": { "uz": "Dengiz haqida gap", "ru": "Предложение о море", "en": "A sentence about the sea" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Qayerda? — «Dengizda».", "ru": "Где? — «Dengizda».", "en": "Where? — “Dengizda”." },
+      "explanation": { "uz": "«Dengizda» soʻzida «ng» birikmasi bor.", "ru": "В слове «Dengizda» есть «ng».", "en": "The word “Dengizda” contains “ng”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "c va h", "ru": "c и h", "en": "c and h" }, { "uz": "s va h", "ru": "s и h", "en": "s and h" }, { "uz": "n va g", "ru": "n и g", "en": "n and g" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«ch» qaysi harflardan tuziladi?", "ru": "Из каких букв состоит «ch»?", "en": "Which letters make up “ch”?" },
+      "hint": { "uz": "«c» faqat «h» bilan ishlatiladi.", "ru": "«c» используется только с «h».", "en": "“c” is used only with “h”." },
+      "explanation": { "uz": "«ch» — «c» va «h» harflaridan tuziladi.", "ru": "«ch» состоит из «c» и «h».", "en": "“ch” is made of “c” and “h”." }
+    }
+  ]
+}

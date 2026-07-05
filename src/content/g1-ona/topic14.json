@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-14",
+  "subjectKey": "g1-ona",
+  "emojis": "❌🅷💨",
+  "title": {
+    "uz": "X va H — chalkash tovushlar",
+    "ru": "X и H — похожие звуки",
+    "en": "X and H — the easily-mixed sounds"
+  },
+  "recall": {
+    "uz": "X va H — undosh harflar. X: xona, xat, xazon, daraxt. H: havo, hayot, hovuz, guruh. Ularni toʻgʻri yozish uchun talaffuzga eʼtibor beramiz.",
+    "ru": "X и H — согласные. X: xona, xat, xazon, daraxt. H: havo, hayot, hovuz, guruh. Чтобы писать верно, слушаем произношение.",
+    "en": "X and H are consonants. X: xona, xat, xazon, daraxt. H: havo, hayot, hovuz, guruh. We listen to the pronunciation to spell them right."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "urmo", "choices": ["x", "h", "q"], "answer": "x", "emoji": "🟤", "clue": { "uz": "Shirin, quritilgan meva", "ru": "Сладкий сушёный плод (хурма)", "en": "A sweet dried fruit (persimmon)" } } },
+      "prompt": { "uz": "Birinchi harfni qoʻy!", "ru": "Вставь первую букву!", "en": "Add the first letter!" },
+      "hint": { "uz": "… u r m o — «xurmo».", "ru": "… u r m o — «xurmo».", "en": "… u r m o — “xurmo”." },
+      "explanation": { "uz": "«xurmo» «x» bilan yoziladi.", "ru": "«xurmo» пишется с «x».", "en": "“xurmo” is written with “x”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "avo", "choices": ["h", "x", "q"], "answer": "h", "emoji": "💨", "clue": { "uz": "Nafas oladigan narsamiz", "ru": "То, чем мы дышим", "en": "What we breathe" } } },
+      "prompt": { "uz": "Birinchi harfni qoʻy!", "ru": "Вставь первую букву!", "en": "Add the first letter!" },
+      "hint": { "uz": "… a v o — «havo».", "ru": "… a v o — «havo» (воздух).", "en": "… a v o — “havo” (air)." },
+      "explanation": { "uz": "«havo» «h» bilan yoziladi.", "ru": "«havo» пишется с «h».", "en": "“havo” is written with “h”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "xona", "bin": "x" }, { "id": "b", "label": "xat", "bin": "x" }, { "id": "c", "label": "xazon", "bin": "x" }, { "id": "d", "label": "hovuz", "bin": "h" }, { "id": "e", "label": "hayot", "bin": "h" }, { "id": "f", "label": "havo", "bin": "h" } ], "bins": [ { "id": "x", "label": "«X» bilan" }, { "id": "h", "label": "«H» bilan" } ] } },
+      "prompt": { "uz": "Soʻzni harfiga qarab ajrat!", "ru": "Раздели слова по букве!", "en": "Sort the words by their letter!" },
+      "hint": { "uz": "«xona» — x, «havo» — h bilan.", "ru": "«xona» — с x, «havo» — с h.", "en": "“xona” with x, “havo” with h." },
+      "explanation": { "uz": "X va H — ikki xil undosh. Ularni farqlaymiz.", "ru": "X и H — разные согласные. Мы их различаем.", "en": "X and H are two different consonants. We tell them apart." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "xat", "match": true }, { "text": "havo", "match": false }, { "text": "xona", "match": true }, { "text": "hid", "match": false }, { "text": "daraxt", "match": true }, { "text": "shahar", "match": false } ] } },
+      "prompt": { "uz": "«X» tovushi bor soʻzlarni bos!", "ru": "Нажми слова со звуком «x»!", "en": "Tap the words with the sound “x”!" },
+      "hint": { "uz": "xat, xona, daraxt — «x» bor.", "ru": "xat, xona, daraxt — есть «x».", "en": "xat, xona, daraxt contain “x”." },
+      "explanation": { "uz": "xat, xona, daraxt soʻzlarida «x» bor.", "ru": "В xat, xona, daraxt есть «x».", "en": "xat, xona, daraxt contain “x”." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "pa", "after": "ta", "choices": ["x", "h", "q"], "answer": "x", "emoji": "🌱", "clue": { "uz": "Oq tolali oʻsimlik", "ru": "Растение с белым волокном (хлопок)", "en": "A plant with white fibre (cotton)" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "pa … ta — «paxta».", "ru": "pa … ta — «paxta» (хлопок).", "en": "pa … ta — “paxta” (cotton)." },
+      "explanation": { "uz": "Toʻgʻrisi — «paxta» («x» bilan).", "ru": "Правильно — «paxta» (с «x»).", "en": "Correct is “paxta” (with “x”)." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "xat", "right": "✉️" }, { "left": "hovuz", "right": "🏊" }, { "left": "xona", "right": "🏠" }, { "left": "hid", "right": "👃" } ] } },
+      "prompt": { "uz": "Soʻzni rasmiga ula!", "ru": "Соедини слово с картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«xat» — ✉️, «hovuz» — 🏊.", "ru": "«xat» — ✉️, «hovuz» — 🏊.", "en": "“xat” — ✉️, “hovuz” — 🏊." },
+      "explanation": { "uz": "Har soʻzda «x» yoki «h» harfi bor.", "ru": "В каждом слове есть «x» или «h».", "en": "Each word has the letter “x” or “h”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "shahar", "letters": ["sh", "a", "h", "a", "r"], "emoji": "🏙️", "clue": { "uz": "Katta aholi punkti", "ru": "Большой населённый пункт", "en": "A large settlement" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: sh, a, h, a, r.", "ru": "Части: sh, a, h, a, r.", "en": "Parts: sh, a, h, a, r." },
+      "explanation": { "uz": "«shahar» oʻrtasida «h» harfi bor.", "ru": "В «shahar» есть буква «h».", "en": "“shahar” has the letter “h” in the middle." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Havo", "juda", "toza."], "emoji": "💨", "clue": { "uz": "Havo haqida gap", "ru": "Предложение о воздухе", "en": "A sentence about the air" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima? — «Havo». Qanday? — «toza».", "ru": "Что? — «Havo». Какой? — «toza».", "en": "What? — “Havo”. How? — “toza”." },
+      "explanation": { "uz": "«Havo» soʻzi «H» bilan yoziladi.", "ru": "Слово «Havo» пишется с «H».", "en": "The word “Havo” is written with “H”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["paxta", "pahta", "paqta"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz toʻgʻri yozilgan?", "ru": "Какое слово написано верно?", "en": "Which word is spelled correctly?" },
+      "hint": { "uz": "Oq tolali oʻsimlik.", "ru": "Растение с белым волокном.", "en": "A plant with white fibre." },
+      "explanation": { "uz": "Toʻgʻrisi — «paxta».", "ru": "Правильно — «paxta».", "en": "The correct spelling is “paxta”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["guruh", "gurux", "guruq"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz «h» bilan toʻgʻri yozilgan?", "ru": "Какое слово верно написано с «h»?", "en": "Which word is correctly spelled with “h”?" },
+      "hint": { "uz": "Bir toʻda, jamoa.", "ru": "Группа, коллектив.", "en": "A group, a team." },
+      "explanation": { "uz": "Toʻgʻrisi — «guruh» («h» bilan).", "ru": "Правильно — «guruh» (с «h»).", "en": "Correct is “guruh” (with “h”)." }
+    }
+  ]
+}

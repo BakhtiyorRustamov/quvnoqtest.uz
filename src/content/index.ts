@@ -144,7 +144,51 @@ import topic142Json from '@/content/g1-math/topic142.json';
 import topic143Json from '@/content/g1-math/topic143.json';
 import topic144Json from '@/content/g1-math/topic144.json';
 import review01Json from '@/content/g1-math/review01.json';
+import review02Json from '@/content/g1-math/review02.json';
+import review03Json from '@/content/g1-math/review03.json';
+import review04Json from '@/content/g1-math/review04.json';
 import { G1_MATH_TOPICS, getTopic } from '@/content/g1-math/topics';
+import onaTopic01Json from '@/content/g1-ona/topic01.json';
+import onaTopic02Json from '@/content/g1-ona/topic02.json';
+import onaTopic03Json from '@/content/g1-ona/topic03.json';
+import onaTopic04Json from '@/content/g1-ona/topic04.json';
+import onaTopic05Json from '@/content/g1-ona/topic05.json';
+import onaTopic06Json from '@/content/g1-ona/topic06.json';
+import onaTopic07Json from '@/content/g1-ona/topic07.json';
+import onaTopic08Json from '@/content/g1-ona/topic08.json';
+import onaTopic09Json from '@/content/g1-ona/topic09.json';
+import onaTopic10Json from '@/content/g1-ona/topic10.json';
+import onaTopic11Json from '@/content/g1-ona/topic11.json';
+import onaTopic12Json from '@/content/g1-ona/topic12.json';
+import onaTopic13Json from '@/content/g1-ona/topic13.json';
+import onaTopic14Json from '@/content/g1-ona/topic14.json';
+import onaTopic15Json from '@/content/g1-ona/topic15.json';
+import onaTopic16Json from '@/content/g1-ona/topic16.json';
+import onaTopic17Json from '@/content/g1-ona/topic17.json';
+import onaTopic18Json from '@/content/g1-ona/topic18.json';
+import onaTopic19Json from '@/content/g1-ona/topic19.json';
+import onaTopic20Json from '@/content/g1-ona/topic20.json';
+import onaTopic21Json from '@/content/g1-ona/topic21.json';
+import onaTopic22Json from '@/content/g1-ona/topic22.json';
+import onaTopic23Json from '@/content/g1-ona/topic23.json';
+import onaTopic24Json from '@/content/g1-ona/topic24.json';
+import onaTopic25Json from '@/content/g1-ona/topic25.json';
+import onaTopic26Json from '@/content/g1-ona/topic26.json';
+import onaTopic27Json from '@/content/g1-ona/topic27.json';
+import onaTopic28Json from '@/content/g1-ona/topic28.json';
+import onaTopic29Json from '@/content/g1-ona/topic29.json';
+import onaTopic30Json from '@/content/g1-ona/topic30.json';
+import onaTopic31Json from '@/content/g1-ona/topic31.json';
+import onaTopic32Json from '@/content/g1-ona/topic32.json';
+import onaTopic33Json from '@/content/g1-ona/topic33.json';
+import onaTopic34Json from '@/content/g1-ona/topic34.json';
+import onaTopic35Json from '@/content/g1-ona/topic35.json';
+import onaTopic36Json from '@/content/g1-ona/topic36.json';
+import onaTopic37Json from '@/content/g1-ona/topic37.json';
+import onaTopic38Json from '@/content/g1-ona/topic38.json';
+import onaTopic39Json from '@/content/g1-ona/topic39.json';
+import onaTopic40Json from '@/content/g1-ona/topic40.json';
+import { G1_ONA_TOPICS, getOnaTopic } from '@/content/g1-ona/topics';
 
 export const TOPIC01: Lesson = topic01Json as unknown as Lesson;
 export const TOPIC02: Lesson = topic02Json as unknown as Lesson;
@@ -293,7 +337,50 @@ export const LESSONS: Record<string, Lesson> = {
   'g1-math-142': topic142Json as unknown as Lesson,
   'g1-math-143': topic143Json as unknown as Lesson,
   'g1-math-144': topic144Json as unknown as Lesson,
-  'g1-math-review-1': review01Json as unknown as Lesson
+  'g1-math-review-1': review01Json as unknown as Lesson,
+  'g1-math-review-2': review02Json as unknown as Lesson,
+  'g1-math-review-3': review03Json as unknown as Lesson,
+  'g1-math-review-4': review04Json as unknown as Lesson,
+  'g1-ona-01': onaTopic01Json as unknown as Lesson,
+  'g1-ona-02': onaTopic02Json as unknown as Lesson,
+  'g1-ona-03': onaTopic03Json as unknown as Lesson,
+  'g1-ona-04': onaTopic04Json as unknown as Lesson,
+  'g1-ona-05': onaTopic05Json as unknown as Lesson,
+  'g1-ona-06': onaTopic06Json as unknown as Lesson,
+  'g1-ona-07': onaTopic07Json as unknown as Lesson,
+  'g1-ona-08': onaTopic08Json as unknown as Lesson,
+  'g1-ona-09': onaTopic09Json as unknown as Lesson,
+  'g1-ona-10': onaTopic10Json as unknown as Lesson,
+  'g1-ona-11': onaTopic11Json as unknown as Lesson,
+  'g1-ona-12': onaTopic12Json as unknown as Lesson,
+  'g1-ona-13': onaTopic13Json as unknown as Lesson,
+  'g1-ona-14': onaTopic14Json as unknown as Lesson,
+  'g1-ona-15': onaTopic15Json as unknown as Lesson,
+  'g1-ona-16': onaTopic16Json as unknown as Lesson,
+  'g1-ona-17': onaTopic17Json as unknown as Lesson,
+  'g1-ona-18': onaTopic18Json as unknown as Lesson,
+  'g1-ona-19': onaTopic19Json as unknown as Lesson,
+  'g1-ona-20': onaTopic20Json as unknown as Lesson,
+  'g1-ona-21': onaTopic21Json as unknown as Lesson,
+  'g1-ona-22': onaTopic22Json as unknown as Lesson,
+  'g1-ona-23': onaTopic23Json as unknown as Lesson,
+  'g1-ona-24': onaTopic24Json as unknown as Lesson,
+  'g1-ona-25': onaTopic25Json as unknown as Lesson,
+  'g1-ona-26': onaTopic26Json as unknown as Lesson,
+  'g1-ona-27': onaTopic27Json as unknown as Lesson,
+  'g1-ona-28': onaTopic28Json as unknown as Lesson,
+  'g1-ona-29': onaTopic29Json as unknown as Lesson,
+  'g1-ona-30': onaTopic30Json as unknown as Lesson,
+  'g1-ona-31': onaTopic31Json as unknown as Lesson,
+  'g1-ona-32': onaTopic32Json as unknown as Lesson,
+  'g1-ona-33': onaTopic33Json as unknown as Lesson,
+  'g1-ona-34': onaTopic34Json as unknown as Lesson,
+  'g1-ona-35': onaTopic35Json as unknown as Lesson,
+  'g1-ona-36': onaTopic36Json as unknown as Lesson,
+  'g1-ona-37': onaTopic37Json as unknown as Lesson,
+  'g1-ona-38': onaTopic38Json as unknown as Lesson,
+  'g1-ona-39': onaTopic39Json as unknown as Lesson,
+  'g1-ona-40': onaTopic40Json as unknown as Lesson
 };
 
 /**
@@ -309,15 +396,16 @@ export const G1_MATH_REVIEWS: ReviewLesson[] = [
     title: { uz: 'Takrorlash oʻyini', ru: 'Игра-повторение', en: 'Review game' },
     built: true
   },
-  { key: 'g1-math-review-2', after: 20, title: { uz: 'Takrorlash oʻyini', ru: 'Игра-повторение', en: 'Review game' }, built: false },
-  { key: 'g1-math-review-3', after: 30, title: { uz: 'Takrorlash oʻyini', ru: 'Игра-повторение', en: 'Review game' }, built: false },
-  { key: 'g1-math-review-4', after: 40, title: { uz: 'Takrorlash oʻyini', ru: 'Игра-повторение', en: 'Review game' }, built: false }
+  { key: 'g1-math-review-2', after: 20, title: { uz: 'Takrorlash oʻyini', ru: 'Игра-повторение', en: 'Review game' }, built: true },
+  { key: 'g1-math-review-3', after: 30, title: { uz: 'Takrorlash oʻyini', ru: 'Игра-повторение', en: 'Review game' }, built: true },
+  { key: 'g1-math-review-4', after: 40, title: { uz: 'Takrorlash oʻyini', ru: 'Игра-повторение', en: 'Review game' }, built: true }
 ];
 
 /** Topic keys that have a fully built, playable lesson (vs. "coming soon"). */
 export const BUILT_TOPIC_KEYS = new Set(Object.keys(LESSONS));
 
 export { G1_MATH_TOPICS, getTopic };
+export { G1_ONA_TOPICS, getOnaTopic };
 
 export function getLesson(topicKey: string): Lesson | undefined {
   return LESSONS[topicKey];

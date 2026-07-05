@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import type { Lesson } from '@/content/types';
 import { pick } from '@/lib/i18n-config';
+import { subjectHome } from '@/lib/subjectHome';
 import { bigCelebration } from '@/lib/confetti';
 import { useSound } from '@/components/providers/SoundProvider';
 
@@ -33,6 +34,7 @@ export default function Completion({
   }, [play]);
 
   const mood = score >= 9 ? t('perfect') : score >= 6 ? t('good') : t('keepGoing');
+  const home = subjectHome(lesson.subjectKey);
 
   return (
     <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-2xl mx-auto px-4 text-center pb-16">
@@ -54,9 +56,9 @@ export default function Completion({
       </div>
 
       <div className="mt-6">
-        {/* large Go-to-Dashboard (FR-QZ-8) */}
-        <Link href="/dashboard" className="btn-primary text-2xl px-12 py-5 inline-flex">
-          🏠 {t('goDashboard')}
+        {/* large Go-to-Subject button (FR-QZ-8) — returns to this subject's page */}
+        <Link href={home?.href ?? '/dashboard'} className="btn-primary text-2xl px-12 py-5 inline-flex">
+          🏠 {home ? pick(home.label, locale) : t('goDashboard')}
         </Link>
       </div>
 

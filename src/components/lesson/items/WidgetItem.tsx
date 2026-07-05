@@ -3,6 +3,7 @@
 import { useRef } from 'react';
 import { WIDGETS } from '@/components/learning/registry';
 import { useSound } from '@/components/providers/SoundProvider';
+import { useUser } from '@/components/providers/UserProvider';
 import type { ItemComponentProps } from './ClickCorrect';
 
 /**
@@ -14,6 +15,7 @@ import type { ItemComponentProps } from './ClickCorrect';
  */
 export default function WidgetItem({ item, locale, done, onResult }: ItemComponentProps) {
   const { play } = useSound();
+  const { user } = useUser();
   const first = useRef<boolean | null>(null);
   const finished = useRef(false);
 
@@ -31,6 +33,7 @@ export default function WidgetItem({ item, locale, done, onResult }: ItemCompone
       <Widget
         {...(spec.props ?? {})}
         lang={locale}
+        username={user?.name ?? ''}
         embedded
         debug={false}
         onAttempt={(ok: boolean) => {

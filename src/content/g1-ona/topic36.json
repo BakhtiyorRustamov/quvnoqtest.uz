@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-36",
+  "subjectKey": "g1-ona",
+  "emojis": "🧑‍🔧🏠🔤",
+  "title": {
+    "uz": "Shaxs va narsani ajratamiz",
+    "ru": "Различаем лицо и предмет",
+    "en": "Telling persons and things apart"
+  },
+  "recall": {
+    "uz": "Shaxs (usta, rassom) va narsa (bino, qalam) nomini bildirgan soʻzlarni ajratamiz. Shaxsga «Kim?», narsaga «Nima?» soʻrogʻi beriladi. Koʻplik «-lar» bilan yasaladi: bino — binolar.",
+    "ru": "Различаем слова, называющие лицо (usta, rassom) и предмет (bino, qalam). К лицу — «Кто?», к предмету — «Что?». Множественное — с «-lar»: bino — binolar.",
+    "en": "We tell apart words naming a person (usta, rassom) and a thing (bino, qalam). A person — “Who?”, a thing — “What?”. The plural adds “-lar”: bino — binolar."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "usta", "bin": "shaxs" }, { "id": "b", "label": "rassom", "bin": "shaxs" }, { "id": "c", "label": "shifokor", "bin": "shaxs" }, { "id": "d", "label": "bino", "bin": "narsa" }, { "id": "e", "label": "qalam", "bin": "narsa" }, { "id": "f", "label": "libos", "bin": "narsa" } ], "bins": [ { "id": "shaxs", "label": "Shaxs (Kim?)" }, { "id": "narsa", "label": "Narsa (Nima?)" } ] } },
+      "prompt": { "uz": "Shaxs va narsani ajrat!", "ru": "Раздели лицо и предмет!", "en": "Sort persons and things!" },
+      "hint": { "uz": "usta — odam, bino — buyum.", "ru": "usta — человек, bino — предмет.", "en": "usta is a person, bino a thing." },
+      "explanation": { "uz": "usta, rassom, shifokor — shaxs; bino, qalam, libos — narsa.", "ru": "usta, rassom, shifokor — лица; bino, qalam, libos — предметы.", "en": "usta, rassom, shifokor are people; bino, qalam, libos are things." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "bino", "right": "binolar" }, { "left": "olma", "right": "olmalar" }, { "left": "usta", "right": "ustalar" }, { "left": "kema", "right": "kemalar" } ] } },
+      "prompt": { "uz": "Soʻzni koʻplikka ula!", "ru": "Соедини слово с мн. числом!", "en": "Match each word to its plural!" },
+      "hint": { "uz": "«bino» — «binolar».", "ru": "«bino» — «binolar».", "en": "“bino” — “binolar”." },
+      "explanation": { "uz": "Koʻplik «-lar» qoʻshimchasi bilan yasaladi.", "ru": "Множественное — с суффиксом «-lar».", "en": "The plural is formed with “-lar”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "usta", "match": true }, { "text": "bino", "match": false }, { "text": "rassom", "match": true }, { "text": "qalam", "match": false }, { "text": "shifokor", "match": true }, { "text": "libos", "match": false } ] } },
+      "prompt": { "uz": "Shaxs soʻzlarini bos!", "ru": "Нажми слова-лица!", "en": "Tap the person words!" },
+      "hint": { "uz": "Kasb-hunar egalari — shaxs.", "ru": "Профессии — это лица.", "en": "Occupations are people." },
+      "explanation": { "uz": "usta, rassom, shifokor — shaxs soʻzlari (Kim?).", "ru": "usta, rassom, shifokor — слова-лица (Кто?).", "en": "usta, rassom, shifokor are person words (Who?)." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "dosh + qozon", "right": "doshqozon" }, { "left": "asal + ari", "right": "asalari" }, { "left": "gul + xan", "right": "gulxan" }, { "left": "koʻz + oynak", "right": "koʻzoynak" } ] } },
+      "prompt": { "uz": "Boʻlaklarni qoʻshib, soʻz hosil qil!", "ru": "Соедини части в слово!", "en": "Join the parts into a word!" },
+      "hint": { "uz": "«gul» + «xan» = «gulxan».", "ru": "«gul» + «xan» = «gulxan».", "en": "“gul” + “xan” = “gulxan”." },
+      "explanation": { "uz": "Ikki boʻlak qoʻshilib, yangi narsa nomi hosil boʻladi.", "ru": "Две части соединяются в новое слово-предмет.", "en": "Two parts join into a new thing word." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "rassom", "letters": ["r", "a", "s", "s", "o", "m"], "emoji": "🎨", "clue": { "uz": "Rasm chizadigan shaxs", "ru": "Тот, кто рисует (художник)", "en": "A person who paints (an artist)" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: r, a, s, s, o, m.", "ru": "Буквы: r, a, s, s, o, m.", "en": "Letters: r, a, s, s, o, m." },
+      "explanation": { "uz": "«rassom» — shaxs soʻzi (Kim?).", "ru": "«rassom» (художник) — слово-лицо (Кто?).", "en": "“rassom” (artist) is a person word (Who?)." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "kema", "after": "", "choices": ["lar", "da", "ni"], "answer": "lar", "emoji": "⛵", "clue": { "uz": "Bitta emas, koʻp kema", "ru": "Не одна, а много кораблей", "en": "Not one, but many ships" } } },
+      "prompt": { "uz": "Koʻplik qoʻshimchasini qoʻy!", "ru": "Добавь суффикс мн. числа!", "en": "Add the plural suffix!" },
+      "hint": { "uz": "kema + … = koʻp kema.", "ru": "kema + … = много кораблей.", "en": "kema + … = many ships." },
+      "explanation": { "uz": "kema + lar = «kemalar» (Nimalar?).", "ru": "kema + lar = «kemalar» (Что мн.?).", "en": "kema + lar = “kemalar” (Nimalar?)." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "bino", "match": true }, { "text": "usta", "match": false }, { "text": "qalam", "match": true }, { "text": "rassom", "match": false }, { "text": "libos", "match": true }, { "text": "shifokor", "match": false } ] } },
+      "prompt": { "uz": "Narsa soʻzlarini bos!", "ru": "Нажми слова-предметы!", "en": "Tap the thing words!" },
+      "hint": { "uz": "Buyumni bildirgan soʻzlarni tanla.", "ru": "Выбери слова-предметы.", "en": "Choose words that name things." },
+      "explanation": { "uz": "bino, qalam, libos — narsa soʻzlari (Nima?).", "ru": "bino, qalam, libos — слова-предметы (Что?).", "en": "bino, qalam, libos are thing words (What?)." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Rassom", "chiroyli", "rasm", "chizdi."], "emoji": "🎨", "clue": { "uz": "Rassom haqida gap", "ru": "Предложение о художнике", "en": "A sentence about an artist" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Rassom». Nima? — «rasm».", "ru": "Кто? — «Rassom». Что? — «rasm».", "en": "Who? — “Rassom”. What? — “rasm”." },
+      "explanation": { "uz": "«Rassom» — shaxs (Kim?), «rasm» — narsa (Nima?).", "ru": "«Rassom» — лицо (Кто?), «rasm» — предмет (Что?).", "en": "“Rassom” is a person (Who?), “rasm” a thing (What?)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "bino", "bin": "bir" }, { "id": "b", "label": "olma", "bin": "bir" }, { "id": "c", "label": "usta", "bin": "bir" }, { "id": "d", "label": "binolar", "bin": "kop" }, { "id": "e", "label": "olmalar", "bin": "kop" }, { "id": "f", "label": "ustalar", "bin": "kop" } ], "bins": [ { "id": "bir", "label": "Bitta" }, { "id": "kop", "label": "Koʻp" } ] } },
+      "prompt": { "uz": "Bitta va koʻpni ajrat!", "ru": "Раздели один и много!", "en": "Sort one and many!" },
+      "hint": { "uz": "«-lar» boʻlsa — koʻp.", "ru": "Есть «-lar» — много.", "en": "With “-lar” — many." },
+      "explanation": { "uz": "«-lar» qoʻshimchasi koʻplikni bildiradi.", "ru": "Суффикс «-lar» — множественное число.", "en": "The suffix “-lar” marks the plural." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Shaxsni", "ru": "Лицо", "en": "A person" }, { "uz": "Narsani", "ru": "Предмет", "en": "A thing" }, { "uz": "Belgini", "ru": "Признак", "en": "A sign" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«duradgor» soʻzi nimani bildiradi?", "ru": "Что выражает слово «duradgor»?", "en": "What does the word “duradgor” name?" },
+      "hint": { "uz": "Yogʻochdan buyum yasaydigan kishi.", "ru": "Тот, кто делает вещи из дерева.", "en": "A person who makes things from wood." },
+      "explanation": { "uz": "«duradgor» — shaxs (Kim?).", "ru": "«duradgor» (плотник) — лицо (Кто?).", "en": "“duradgor” (carpenter) is a person (Who?)." }
+    }
+  ]
+}

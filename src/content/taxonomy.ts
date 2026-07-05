@@ -26,7 +26,8 @@ const S = (key: string, uz: string, ru: string, en: string, sketch: string, colo
 
 /** Master subject registry (names per §7.1, trilingual). */
 export const SUBJECTS: Record<string, SubjectDef> = {
-  'ona-tili-savod': S('ona-tili-savod', 'Ona tili va oʻqish savodxonligi', 'Родной язык и читательская грамотность', 'Native language & reading', 'lang', '#1FA7E0'),
+  'ona-tili-savod': S('ona-tili-savod', 'Ona tili', 'Родной язык', 'Native language', 'lang', '#1FA7E0'),
+  'oqish-savodxonligi': S('oqish-savodxonligi', 'Oʻqish savodxonligi', 'Читательская грамотность', 'Reading literacy', 'lit', '#C2298A'),
   matematika: S('matematika', 'Matematika', 'Математика', 'Mathematics', 'math', '#F39A1F'),
   'tabiiy-fanlar': S('tabiiy-fanlar', 'Tabiiy fanlar', 'Естественные науки', 'Natural science', 'nature', '#8DC63F'),
   tarbiya: S('tarbiya', 'Tarbiya', 'Воспитание', 'Character education', 'heart', '#C2298A'),
@@ -65,7 +66,7 @@ const G = (grade: number, tier: GradeDef['tier'], keys: string[]): GradeDef => (
 
 /** Grade → subject map, order preserved exactly per SRS §7.1. */
 export const GRADES: GradeDef[] = [
-  G(1, 1, ['ona-tili-savod', 'matematika', 'tabiiy-fanlar', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
+  G(1, 1, ['ona-tili-savod', 'oqish-savodxonligi', 'matematika', 'tabiiy-fanlar', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
   G(2, 1, ['ona-tili-savod', 'matematika', 'tabiiy-fanlar', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
   G(3, 2, ['ona-tili-savod', 'matematika', 'tabiiy-fanlar', 'informatika', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
   G(4, 2, ['ona-tili-savod', 'matematika', 'tabiiy-fanlar', 'informatika', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
@@ -86,13 +87,21 @@ export function getSubject(gradeNum: number, subjectKey: string): SubjectDef | u
   return getGrade(gradeNum)?.subjects.find((s) => s.key === subjectKey);
 }
 
-/** The only interactive subject in v1.0. */
+/** Interactive subjects in v1.0: grade-1 Matematika and grade-1 Ona tili. */
 export function isUnlockedSubject(gradeNum: number, subjectKey: string): boolean {
-  return gradeNum === 1 && subjectKey === 'matematika';
+  return gradeNum === 1 && (subjectKey === 'matematika' || subjectKey === 'ona-tili-savod');
+}
+
+/** Route to the built subject view for an unlocked subject (else null). */
+export function unlockedSubjectHref(gradeNum: number, subjectKey: string): string | null {
+  if (gradeNum === 1 && subjectKey === 'matematika') return '/dashboard/g1-math';
+  if (gradeNum === 1 && subjectKey === 'ona-tili-savod') return '/dashboard/g1-ona';
+  return null;
 }
 
 /** progress subject key, e.g. `g1-math` for grade-1 Matematika. */
 export function progressSubjectKey(gradeNum: number, subjectKey: string): string {
   if (gradeNum === 1 && subjectKey === 'matematika') return 'g1-math';
+  if (gradeNum === 1 && subjectKey === 'ona-tili-savod') return 'g1-ona';
   return `g${gradeNum}-${subjectKey}`;
 }
