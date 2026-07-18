@@ -1,0 +1,42 @@
+{
+  "topicId": "g1-tex-29",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Erkin mavzu",
+    "ru": "Свободная тема",
+    "en": "Free topic"
+  },
+  "recall": {
+    "uz": "Yana erkin mavzu! Oʻzing oʻylab, istagan buyumingni yasa.",
+    "ru": "Снова свободная тема! Придумай и сделай что хочешь.",
+    "en": "Another free topic! Think it up and make anything you like."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xohlagan narsangni yasa, soʻng suratga ol.",
+        "ru": "Сделай что хочешь и сфотографируй.",
+        "en": "Make anything you like, then take a photo."
+      },
+      "hint": {
+        "uz": "Tasavvuringni ishga sol!",
+        "ru": "Включи воображение!",
+        "en": "Use your imagination!"
+      },
+      "explanation": {
+        "uz": "Ajoyib ijod!",
+        "ru": "Замечательное творчество!",
+        "en": "Wonderful creativity!"
+      },
+      "widget": {
+        "type": "photo_upload",
+        "props": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "topicId": "g1-alifbe-09",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🍞🍐👃",
+  "title": {
+    "uz": "«N n» harfi",
+    "ru": "Буква «N n»",
+    "en": "The letter “N n”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «N n». U undosh tovush. Uni aytganda til yuqori tishlarga tegadi, havo burundan chiqadi. «N» bilan: non, nok. «N» qoʻshsak yangi soʻzlar chiqadi: o-na, a-na. Endi O, T, A, N harflarini bilamiz.",
+    "ru": "Сегодня наша буква — «N n». Это согласный звук. Язык касается верхних зубов, воздух выходит через нос. Слова: non, nok. С «N» получаются новые слова: o-na, a-na. Теперь мы знаем O, T, A, N.",
+    "en": "Today's letter is “N n”. It is a consonant. The tongue touches the upper teeth and the air leaves through the nose. Words: non, nok. With “N” we make new words: o-na, a-na. Now we know O, T, A, N."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«N» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «N»!", "en": "Find the word that starts with “N”!" },
+      "hint": { "uz": "Soʻzning boshini choʻzib ayt: n-n-non.", "ru": "Протяни начало: н-н-non.", "en": "Stretch the start: n-n-non." },
+      "explanation": { "uz": "«non» «N» tovushi bilan boshlanadi.", "ru": "«non» начинается со звука «N».", "en": "“non” (bread) starts with the sound “N”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«N» harfini topib, hammasini bos!", "ru": "Найди букву «N» и нажми на все!", "en": "Find the letter “N” and tap them all!" },
+      "hint": { "uz": "Katta «N» ham, kichik «n» ham boʻladi.", "ru": "Считаются большая «N» и маленькая «n».", "en": "Both capital “N” and small “n” count." },
+      "explanation": { "uz": "«N» harfini topding!", "ru": "Ты нашёл букву «N»!", "en": "You found the letter “N”!" },
+      "widget": {
+        "type": "letter_hunt",
+        "props": { "target": "N", "cols": 3, "grid": ["N", "a", "n", "O", "N", "t", "n", "A", "N"] }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍞 «non»da birinchi «n» tovushi qaysi katakchada?", "ru": "🍞 В какой клетке первый звук «n» в слове «non»?", "en": "🍞 Which box has the first “n” sound in “non”?" },
+      "hint": { "uz": "«non» «n» bilan boshlanadi — birinchi katak.", "ru": "«non» начинается с «n» — первая клетка.", "en": "“non” starts with “n” — the first box." },
+      "explanation": { "uz": "«non» «n» bilan boshlanadi — birinchi katakda.", "ru": "«non» начинается с «n» — первая клетка.", "en": "“non” starts with “n” — the first box." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "🍞", "word": { "uz": "non", "ru": "non", "en": "non" }, "sound": "n", "cells": ["n", "o", "n"], "answer": 0 }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "👩 «ona»da «n» tovushi qaysi katakchada?", "ru": "👩 В какой клетке звук «n» в слове «ona»?", "en": "👩 Which box has the “n” sound in “ona”?" },
+      "hint": { "uz": "«n» soʻzning oʻrtasida — ikkinchi katak.", "ru": "«n» в середине слова — вторая клетка.", "en": "“n” is in the middle — the second box." },
+      "explanation": { "uz": "«ona»da «n» oʻrtada — ikkinchi katakda.", "ru": "В «ona» звук «n» в середине.", "en": "In “ona” the “n” is in the middle." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "👩", "word": { "uz": "ona", "ru": "ona", "en": "ona" }, "sound": "n", "cells": ["o", "n", "a"], "answer": 1 }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«N» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «N»!", "en": "Tap the words that have the “N” sound!" },
+      "hint": { "uz": "non, nok, ona — «n» tovushi bor.", "ru": "non, nok, ona — есть звук «n».", "en": "non, nok, ona have the “n” sound." },
+      "explanation": { "uz": "non, nok, ona — «n» bor. ot va olmada «n» yoʻq.", "ru": "non, nok, ona — есть «n». В ot и olma «n» нет.", "en": "non, nok, ona have “n”. ot and olma do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" }, "correct": true },
+            { "id": "pear", "emoji": "🍐", "label": { "uz": "nok", "ru": "nok", "en": "nok" }, "correct": true },
+            { "id": "mother", "emoji": "👩", "label": { "uz": "ona", "ru": "ona", "en": "ona" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍞 «non» soʻzining tovush chizmasini rangla!", "ru": "🍞 Раскрась схему звуков слова «non»!", "en": "🍞 Colour the sound scheme of the word “non”!" },
+      "hint": { "uz": "n — undosh (koʻk), o — unli (qizil), n — undosh (koʻk).", "ru": "n — синий, o — красный, n — синий.", "en": "n blue, o red, n blue." },
+      "explanation": { "uz": "«non»: n, o, n — undosh, unli, undosh.", "ru": "«non»: согласный, гласный, согласный.", "en": "“non”: consonant, vowel, consonant." },
+      "widget": {
+        "type": "sound_scheme",
+        "props": { "emoji": "🍞", "word": { "uz": "non", "ru": "non", "en": "non" }, "scheme": ["c", "v", "c"] }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Harflardan «ona» soʻzini tuz!", "ru": "Составь слово «ona» из букв!", "en": "Build the word “ona” from letters!" },
+      "hint": { "uz": "o — n — a tartibida bos.", "ru": "Нажимай по порядку: o — n — a.", "en": "Tap in order: o — n — a." },
+      "explanation": { "uz": "o + n + a = «ona». «N» yangi soʻz yasadi!", "ru": "o + n + a = «ona». «N» составила новое слово!", "en": "o + n + a = “ona” (mother). “N” built a new word!" },
+      "widget": {
+        "type": "build_word",
+        "props": { "emoji": "👩", "word": "ona", "label": { "uz": "ona", "ru": "мама", "en": "mother" } }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Harflardan «non» soʻzini tuz!", "ru": "Составь слово «non» из букв!", "en": "Build the word “non” from letters!" },
+      "hint": { "uz": "n — o — n tartibida bos.", "ru": "Нажимай по порядку: n — o — n.", "en": "Tap in order: n — o — n." },
+      "explanation": { "uz": "n + o + n = «non». Ikki «n» va bitta «o».", "ru": "n + o + n = «non». Две «n» и одна «o».", "en": "n + o + n = “non” (bread). Two “n” and one “o”." },
+      "widget": {
+        "type": "build_word",
+        "props": { "emoji": "🍞", "word": "non", "label": { "uz": "non", "ru": "хлеб", "en": "bread" } }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«N» tovushini aytganda havo burundan chiqadi.", "ru": "При звуке «N» воздух выходит через нос.", "en": "When saying “N” the air comes out through the nose." },
+      "hint": { "uz": "«N-n-n» deb ayt va burningni his qil.", "ru": "Скажи «н-н-н» и почувствуй нос.", "en": "Say “n-n-n” and feel your nose." },
+      "explanation": { "uz": "Toʻgʻri! «N» — burun tovushi, u undosh.", "ru": "Верно! «N» — носовой согласный.", "en": "True! “N” is a nasal consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "👃", "answer": true } }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«o__a» — qaysi harfni qoʻshsak «ona» boʻladi?", "ru": "«o__a» — какую букву добавить, чтобы вышло «ona»?", "en": "“o__a” — which letter makes it “ona”?" },
+      "hint": { "uz": "Bugungi harfimizni qoʻsh.", "ru": "Добавь нашу сегодняшнюю букву.", "en": "Add today's letter." },
+      "explanation": { "uz": "o + n + a = «ona». «n» harfini qoʻshdik.", "ru": "o + n + a = «ona». Добавили «n».", "en": "o + n + a = “ona”. We added “n”." },
+      "widget": { "type": "mcq", "props": { "choices": ["n", "t", "m"], "answerIndex": 0 } }
+    }
+  ]
+}

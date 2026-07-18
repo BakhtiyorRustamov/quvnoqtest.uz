@@ -1,0 +1,522 @@
+{
+  "topicId": "g1-ingliz-31",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🙌👀👂👃",
+  "title": {
+    "uz": "Mening tanam",
+    "ru": "Моё тело",
+    "en": "My body"
+  },
+  "recall": {
+    "uz": "5-boʻlim: Tana! Bugun tana aʼzolarini inglizcha oʻrganamiz: eyes — koʻzlar, nose — burun, ears — quloqlar, mouth — ogʻiz.",
+    "ru": "Раздел 5: Тело! Сегодня учим части тела по-английски: eyes — глаза, nose — нос, ears — уши, mouth — рот.",
+    "en": "Unit 5: Body! Today we learn body parts in English: eyes, nose, ears and mouth."
+  },
+  "ttsText": {
+    "uz": "Mening tanam.",
+    "en": "Unit 5: My body! Eyes, nose, ears and mouth."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu qaysi aʼzo?",
+        "ru": "Послушай. Какая это часть тела?",
+        "en": "Listen. Which body part is it?"
+      },
+      "hint": {
+        "uz": "«nose» — burun.",
+        "ru": "«nose» — нос.",
+        "en": "\"It's my nose.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's my nose — burun.",
+        "ru": "Верно! It's my nose — нос.",
+        "en": "Right! It's my nose."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What's this?",
+              "audio": {
+                "key": "ing31-q1-a",
+                "text": "What's this?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's my nose!",
+              "audio": {
+                "key": "ing31-q1-b",
+                "text": "It's my nose!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu qaysi aʼzo?",
+              "ru": "Какая это часть?",
+              "en": "Which part is it?"
+            },
+            "choices": [
+              "nose",
+              "ears",
+              "hands"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va koʻzlarni bos!",
+        "ru": "Послушай и нажми глаза!",
+        "en": "Listen and tap the eyes!"
+      },
+      "audio": {
+        "key": "ing31-q2",
+        "text": "Eyes! Tap the eyes.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«eyes» — koʻzlar (koʻramiz).",
+        "ru": "«eyes» — глаза (видим).",
+        "en": "We see with our \"eyes\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Eyes — koʻzlar.",
+        "ru": "Верно! Eyes — глаза.",
+        "en": "Right! Eyes!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👀",
+              "label": "eyes",
+              "correct": true
+            },
+            {
+              "emoji": "👂",
+              "label": "ears"
+            },
+            {
+              "emoji": "👃",
+              "label": "nose"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va burunni bos!",
+        "ru": "Послушай и нажми нос!",
+        "en": "Listen and tap the nose!"
+      },
+      "audio": {
+        "key": "ing31-q3",
+        "text": "Nose! Tap the nose.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«nose» — burun (hidlaymiz).",
+        "ru": "«nose» — нос (нюхаем).",
+        "en": "We smell with our \"nose\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Nose — burun.",
+        "ru": "Верно! Nose — нос.",
+        "en": "Right! Nose!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👃",
+              "label": "nose",
+              "correct": true
+            },
+            {
+              "emoji": "👄",
+              "label": "mouth"
+            },
+            {
+              "emoji": "👀",
+              "label": "eyes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va quloqlarni bos!",
+        "ru": "Послушай и нажми уши!",
+        "en": "Listen and tap the ears!"
+      },
+      "audio": {
+        "key": "ing31-q4",
+        "text": "Ears! Tap the ears.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«ears» — quloqlar (eshitamiz).",
+        "ru": "«ears» — уши (слышим).",
+        "en": "We hear with our \"ears\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ears — quloqlar.",
+        "ru": "Верно! Ears — уши.",
+        "en": "Right! Ears!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👂",
+              "label": "ears",
+              "correct": true
+            },
+            {
+              "emoji": "👀",
+              "label": "eyes"
+            },
+            {
+              "emoji": "✋",
+              "label": "hand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va ogʻizni bos!",
+        "ru": "Послушай и нажми рот!",
+        "en": "Listen and tap the mouth!"
+      },
+      "audio": {
+        "key": "ing31-q5",
+        "text": "Mouth! Tap the mouth.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«mouth» — ogʻiz (gapiramiz).",
+        "ru": "«mouth» — рот (говорим).",
+        "en": "We speak with our \"mouth\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Mouth — ogʻiz.",
+        "ru": "Верно! Mouth — рот.",
+        "en": "Right! Mouth!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👄",
+              "label": "mouth",
+              "correct": true
+            },
+            {
+              "emoji": "👃",
+              "label": "nose"
+            },
+            {
+              "emoji": "👂",
+              "label": "ears"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil juftni top!",
+        "ru": "Найди одинаковую пару!",
+        "en": "Find the matching pair!"
+      },
+      "hint": {
+        "uz": "Bir xil ikkita rasmni top.",
+        "ru": "Найди два одинаковых.",
+        "en": "Find the two that are the same."
+      },
+      "explanation": {
+        "uz": "Barakalla! Juftni topding!",
+        "ru": "Молодец! Ты нашёл пару!",
+        "en": "Great! You found the pair!"
+      },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            {
+              "id": "e1",
+              "emoji": "👀",
+              "key": "eyes"
+            },
+            {
+              "id": "ear",
+              "emoji": "👂",
+              "key": "ear"
+            },
+            {
+              "id": "e2",
+              "emoji": "👀",
+              "key": "eyes"
+            },
+            {
+              "id": "nose",
+              "emoji": "👃",
+              "key": "nose"
+            },
+            {
+              "id": "hand",
+              "emoji": "✋",
+              "key": "hand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni tana aʼzosiga ula!",
+        "ru": "Соедини слово с частью тела!",
+        "en": "Match each word to its body part!"
+      },
+      "hint": {
+        "uz": "eyes, nose, ears, mouth.",
+        "ru": "eyes, nose, ears, mouth.",
+        "en": "eyes, nose, ears, mouth."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Aʼzolarni bilding!",
+        "ru": "Отлично! Ты знаешь части тела!",
+        "en": "Awesome! You know the body parts!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "eyes"
+              },
+              "right": {
+                "emoji": "👀"
+              }
+            },
+            {
+              "left": {
+                "label": "nose"
+              },
+              "right": {
+                "emoji": "👃"
+              }
+            },
+            {
+              "left": {
+                "label": "ears"
+              },
+              "right": {
+                "emoji": "👂"
+              }
+            },
+            {
+              "left": {
+                "label": "mouth"
+              },
+              "right": {
+                "emoji": "👄"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, soʻz va aʼzoni juftla!",
+        "ru": "Открывай карточки: слово и часть тела!",
+        "en": "Flip the cards: match each word to its body part!"
+      },
+      "hint": {
+        "uz": "hands ✋, arm 💪, feet 👣.",
+        "ru": "hands ✋, arm 💪, feet 👣.",
+        "en": "hands ✋, arm 💪, feet 👣."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "✋"
+              },
+              "b": {
+                "label": "hands"
+              }
+            },
+            {
+              "a": {
+                "emoji": "💪"
+              },
+              "b": {
+                "label": "arm"
+              }
+            },
+            {
+              "a": {
+                "emoji": "👣"
+              },
+              "b": {
+                "label": "feet"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yuzdagi aʼzolarni belgila!",
+        "ru": "Отметь части лица!",
+        "en": "Tap the parts of the face!"
+      },
+      "hint": {
+        "uz": "Koʻz, burun, ogʻiz.",
+        "ru": "Глаза, нос, рот.",
+        "en": "Eyes, nose, mouth."
+      },
+      "explanation": {
+        "uz": "Barakalla! Koʻz, burun, ogʻiz — yuzda!",
+        "ru": "Молодец! Глаза, нос, рот — на лице!",
+        "en": "Great! Eyes, nose, mouth are on the face!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👀",
+              "label": "eyes",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👃",
+              "label": "nose",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👄",
+              "label": "mouth",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "✋",
+              "label": "hand"
+            },
+            {
+              "id": "d1",
+              "emoji": "👣",
+              "label": "feet"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Nima bilan koʻramiz?",
+        "ru": "Чем мы видим?",
+        "en": "What do we see with?"
+      },
+      "hint": {
+        "uz": "Koʻrish aʼzosi.",
+        "ru": "Орган зрения.",
+        "en": "The organ for seeing."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! We see with our eyes.",
+        "ru": "Верно! We see with our eyes.",
+        "en": "Right! We see with our eyes."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "eyes\nkoʻzlar",
+              "ru": "eyes\nглаза",
+              "en": "eyes"
+            },
+            {
+              "uz": "ears\nquloqlar",
+              "ru": "ears\nуши",
+              "en": "ears"
+            },
+            {
+              "uz": "hands\nqoʻllar",
+              "ru": "hands\nруки",
+              "en": "hands"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

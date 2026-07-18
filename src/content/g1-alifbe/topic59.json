@@ -1,0 +1,451 @@
+{
+  "topicId": "g1-alifbe-59",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🌊👧🍎",
+  "title": {
+    "uz": "«Ng ng» harfi",
+    "ru": "Буква «Ng ng»",
+    "en": "The letter “Ng ng”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «Ng ng». U undosh tovush. «Ng» bilan: dengiz, singil. Ism va joy nomlari bosh harf bilan yoziladi!",
+    "ru": "Сегодня наша буква — «Ng ng». Это согласный звук. Слова: dengiz, singil. Имена и названия пишутся с заглавной буквы!",
+    "en": "Today's letter is “Ng ng”. It is a consonant. Words: dengiz, singil. Names and places are written with a capital letter!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ng» tovushi bor soʻzni top!",
+        "ru": "Найди слово со звуком «Ng»!",
+        "en": "Find a word with the “Ng” sound!"
+      },
+      "hint": {
+        "uz": "«ng» soʻz oʻrtasida yoki oxirida keladi.",
+        "ru": "«ng» бывает в середине или в конце.",
+        "en": "“ng” comes in the middle or end."
+      },
+      "explanation": {
+        "uz": "«dengiz»da «ng» tovushi bor.",
+        "ru": "В «dengiz» есть звук «ng».",
+        "en": "“dengiz” has the “ng” sound."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🌊",
+              "label": {
+                "uz": "dengiz",
+                "ru": "море",
+                "en": "sea"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ng» harfini topib, hammasini bos!",
+        "ru": "Найди букву «Ng» и нажми на все!",
+        "en": "Find the letter “Ng” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham.",
+        "ru": "Большая и маленькая тоже.",
+        "en": "Capital and small too."
+      },
+      "explanation": {
+        "uz": "«Ng» harfini topding!",
+        "ru": "Ты нашёл букву «Ng»!",
+        "en": "You found the letter “Ng”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "Ng",
+          "cols": 3,
+          "grid": [
+            "Ng",
+            "o",
+            "ng",
+            "T",
+            "Ng",
+            "i",
+            "ng",
+            "n",
+            "Ng"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌊 «dengiz»da «ng» tovushi qaysi katakchada?",
+        "ru": "🌊 В какой клетке звук «ng» в слове «dengiz»?",
+        "en": "🌊 Which box has the “ng” sound in “dengiz”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«dengiz»da «ng» toʻgʻri joyda.",
+        "ru": "В «dengiz» звук «ng» на верном месте.",
+        "en": "In “dengiz” the “ng” is right."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🌊",
+          "word": {
+            "uz": "dengiz",
+            "ru": "dengiz",
+            "en": "dengiz"
+          },
+          "sound": "ng",
+          "cells": [
+            "d",
+            "e",
+            "ng",
+            "i",
+            "z"
+          ],
+          "answer": 2
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌊 «dengiz» soʻzining tovush chizmasini rangla!",
+        "ru": "🌊 Раскрась схему звуков «dengiz»!",
+        "en": "🌊 Colour the sound scheme of “dengiz”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«dengiz» chizmasini rangladik.",
+        "ru": "Мы раскрасили схему «dengiz».",
+        "en": "We coloured the scheme of “dengiz”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "🌊",
+          "word": {
+            "uz": "dengiz",
+            "ru": "dengiz",
+            "en": "dengiz"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c",
+            "v",
+            "c"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ng» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «Ng»!",
+        "en": "Tap the words with the “Ng” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «ng» tovushi bor.",
+        "ru": "В них есть звук «ng».",
+        "en": "They have the “ng” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌊",
+              "label": {
+                "uz": "dengiz",
+                "ru": "dengiz",
+                "en": "dengiz"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👧",
+              "label": {
+                "uz": "singil",
+                "ru": "singil",
+                "en": "singil"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            },
+            {
+              "id": "d2",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌊 Yetishmayotgan harfni qoʻy!",
+        "ru": "🌊 Вставь недостающую букву!",
+        "en": "🌊 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz: «dengiz».",
+        "ru": "Слово: «dengiz».",
+        "en": "The word: “dengiz”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «ng».",
+        "ru": "Верная буква — «ng».",
+        "en": "The right letter is “ng”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🌊",
+          "label": {
+            "uz": "dengiz",
+            "ru": "море",
+            "en": "sea"
+          },
+          "letters": [
+            "d",
+            "e",
+            "ng",
+            "i",
+            "z"
+          ],
+          "blank": 2,
+          "choices": [
+            "ng",
+            "n",
+            "g"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bosh harf bilan yoziladigan soʻzlarni belgila!",
+        "ru": "Отметь слова с заглавной буквы!",
+        "en": "Tap the words that need a capital letter!"
+      },
+      "hint": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия — с заглавной.",
+        "en": "Names and places take a capital."
+      },
+      "explanation": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия пишутся с заглавной буквы.",
+        "en": "Names and place names are written with a capital."
+      },
+      "widget": {
+        "type": "capital_pick",
+        "props": {
+          "words": [
+            {
+              "word": "Anvar",
+              "capital": true
+            },
+            {
+              "word": "Toshkent",
+              "capital": true
+            },
+            {
+              "word": "dengiz",
+              "capital": false
+            },
+            {
+              "word": "singil",
+              "capital": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ng» — undosh tovush.",
+        "ru": "«Ng» — согласный звук.",
+        "en": "“Ng” is a consonant."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Ng» — undosh.",
+        "ru": "Верно! «Ng» — согласный.",
+        "en": "True! “Ng” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌊 «dengiz» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🌊 Похлопай «dengiz» по слогам!",
+        "en": "🌊 Clap “dengiz” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«dengiz» — 2 boʻgʻin.",
+        "ru": "«dengiz» — 2 слога.",
+        "en": "“dengiz” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🌊",
+          "word": {
+            "uz": "dengiz",
+            "ru": "dengiz",
+            "en": "dengiz"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«ng» — bu ...",
+        "ru": "«ng» — это ...",
+        "en": "“ng” is ..."
+      },
+      "hint": {
+        "uz": "«ng» tovushini ayt.",
+        "ru": "Скажи звук «ng».",
+        "en": "Say the “ng” sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — ikki harf, bitta tovush.",
+        "ru": "Верно — две буквы, один звук.",
+        "en": "Right — two letters, one sound."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ikki harf, bitta tovush",
+              "ru": "две буквы, один звук",
+              "en": "two letters, one sound"
+            },
+            {
+              "uz": "bitta harf",
+              "ru": "одна буква",
+              "en": "one letter"
+            },
+            {
+              "uz": "unli tovush",
+              "ru": "гласный звук",
+              "en": "a vowel"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

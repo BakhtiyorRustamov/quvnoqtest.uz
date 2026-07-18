@@ -1,0 +1,514 @@
+{
+  "topicId": "g1-alifbe-64",
+  "subjectKey": "g1-alifbe",
+  "emojis": "❄️🎄⛄📅",
+  "title": {
+    "uz": "Oʻlkamizda qish",
+    "ru": "Зима в нашем краю",
+    "en": "Winter in our land"
+  },
+  "recall": {
+    "uz": "Qish — yilning sovuq fasli. Qishda qor yogʻadi. Yangi yil bayrami keladi! Oylar: dekabr, yanvar, fevral.",
+    "ru": "Зима — холодное время года. Зимой идёт снег. Приходит Новый год! Месяцы: dekabr, yanvar, fevral.",
+    "en": "Winter is the cold season. In winter it snows. New Year comes! Months: dekabr, yanvar, fevral."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Yangi yil haqida.",
+        "ru": "О Новом годе.",
+        "en": "About New Year."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — archa.",
+        "ru": "Верный ответ — archa.",
+        "en": "The right answer — archa."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🎄",
+          "text": {
+            "uz": "Yangi yil keldi.\nHamma xursand.\nArcha bezatildi va bolalarga sovgʻa berildi.",
+            "ru": "Yangi yil keldi.\nHamma xursand.\nArcha bezatildi va bolalarga sovgʻa berildi.",
+            "en": "Yangi yil keldi.\nHamma xursand.\nArcha bezatildi va bolalarga sovgʻa berildi."
+          },
+          "question": {
+            "uz": "Nima bezatildi?",
+            "ru": "Nima bezatildi?",
+            "en": "Nima bezatildi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "archa",
+                "ru": "archa",
+                "en": "archa"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "maktab",
+                "ru": "maktab",
+                "en": "maktab"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "koʻcha",
+                "ru": "koʻcha",
+                "en": "koʻcha"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qishda ob-havo qanday boʻladi?",
+        "ru": "Какая погода зимой?",
+        "en": "What is the weather like in winter?"
+      },
+      "hint": {
+        "uz": "Qishda qor yogʻadi.",
+        "ru": "Зимой идёт снег.",
+        "en": "In winter it snows."
+      },
+      "explanation": {
+        "uz": "Qishda havo sovuq boʻladi.",
+        "ru": "Зимой погода холодная.",
+        "en": "In winter the weather is cold."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "sovuq",
+              "ru": "холодная",
+              "en": "cold"
+            },
+            {
+              "uz": "issiq",
+              "ru": "жаркая",
+              "en": "hot"
+            },
+            {
+              "uz": "jazirama",
+              "ru": "знойная",
+              "en": "scorching"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qish oylarini tartibda joyla!",
+        "ru": "Расставь зимние месяцы по порядку!",
+        "en": "Put the winter months in order!"
+      },
+      "hint": {
+        "uz": "dekabr, yanvar, fevral.",
+        "ru": "dekabr, yanvar, fevral.",
+        "en": "dekabr, yanvar, fevral."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: dekabr, yanvar, fevral.",
+        "ru": "Верно: dekabr, yanvar, fevral.",
+        "en": "Correct: dekabr, yanvar, fevral."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "m0",
+              "label": {
+                "uz": "dekabr",
+                "ru": "dekabr",
+                "en": "dekabr"
+              }
+            },
+            {
+              "id": "m1",
+              "label": {
+                "uz": "yanvar",
+                "ru": "yanvar",
+                "en": "yanvar"
+              }
+            },
+            {
+              "id": "m2",
+              "label": {
+                "uz": "fevral",
+                "ru": "fevral",
+                "en": "fevral"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir faslni nomi bilan ula!",
+        "ru": "Соедини время года с названием!",
+        "en": "Match each season to its name!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab faslni ayt.",
+        "ru": "Посмотри и назови сезон.",
+        "en": "Look and name the season."
+      },
+      "explanation": {
+        "uz": "Barcha fasllarni toʻgʻri ulading!",
+        "ru": "Ты верно соединил сезоны!",
+        "en": "You matched all the seasons!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "❄️"
+              },
+              "right": {
+                "label": {
+                  "uz": "qish",
+                  "ru": "qish",
+                  "en": "qish"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🌸"
+              },
+              "right": {
+                "label": {
+                  "uz": "bahor",
+                  "ru": "bahor",
+                  "en": "bahor"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "☀️"
+              },
+              "right": {
+                "label": {
+                  "uz": "yoz",
+                  "ru": "yoz",
+                  "en": "yoz"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍂"
+              },
+              "right": {
+                "label": {
+                  "uz": "kuz",
+                  "ru": "kuz",
+                  "en": "kuz"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qish oylarini belgila!",
+        "ru": "Отметь зимние месяцы!",
+        "en": "Tap the winter months!"
+      },
+      "hint": {
+        "uz": "Qish: dekabr, yanvar, fevral.",
+        "ru": "Зима: dekabr, yanvar, fevral.",
+        "en": "Winter: dekabr, yanvar, fevral."
+      },
+      "explanation": {
+        "uz": "Ular qish oylari.",
+        "ru": "Это зимние месяцы.",
+        "en": "These are winter months."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "❄️",
+              "label": {
+                "uz": "dekabr",
+                "ru": "dekabr",
+                "en": "dekabr"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "⛄",
+              "label": {
+                "uz": "yanvar",
+                "ru": "yanvar",
+                "en": "yanvar"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "❄️",
+              "label": {
+                "uz": "fevral",
+                "ru": "fevral",
+                "en": "fevral"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "☀️",
+              "label": {
+                "uz": "iyul",
+                "ru": "iyul",
+                "en": "iyul"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🌷",
+              "label": {
+                "uz": "aprel",
+                "ru": "aprel",
+                "en": "aprel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "❄️ «yanvar» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "❄️ Похлопай «yanvar» по слогам!",
+        "en": "❄️ Clap «yanvar» by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«yanvar» — 2 boʻgʻin.",
+        "ru": "«yanvar» — 2 слога.",
+        "en": "«yanvar» — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "❄️",
+          "word": {
+            "uz": "yanvar",
+            "ru": "yanvar",
+            "en": "yanvar"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qishda daraxtlar barg chiqaradi.",
+        "ru": "Зимой деревья покрываются листвой.",
+        "en": "In winter trees grow leaves."
+      },
+      "hint": {
+        "uz": "Qishda havo sovuq.",
+        "ru": "Зимой холодно.",
+        "en": "Winter is cold."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Qishda daraxtlar barg chiqarmaydi.",
+        "ru": "Неверно! Зимой деревья не покрываются листвой.",
+        "en": "False! Trees do not grow leaves in winter."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌳",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «qor» soʻzini tuz!",
+        "ru": "Составь слово «qor»!",
+        "en": "Build the word «qor»!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «qor» soʻzini tuzding.",
+        "ru": "Молодец! Ты собрал «qor».",
+        "en": "Great! You built «qor»."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "❄️",
+          "word": "qor",
+          "label": {
+            "uz": "qor",
+            "ru": "снег",
+            "en": "snow"
+          },
+          "letters": [
+            "q",
+            "o",
+            "r"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Bir yilda 12 oy bor.",
+        "ru": "В году 12 месяцев.",
+        "en": "A year has 12 months."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — dekabr.",
+        "ru": "Верный ответ — dekabr.",
+        "en": "The right answer — dekabr."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "📅",
+          "text": {
+            "uz": "Bir yilda 12 oy bor.\nYil dekabr bilan tugaydi.\nYangi yil yanvarda boshlanadi.",
+            "ru": "Bir yilda 12 oy bor.\nYil dekabr bilan tugaydi.\nYangi yil yanvarda boshlanadi.",
+            "en": "Bir yilda 12 oy bor.\nYil dekabr bilan tugaydi.\nYangi yil yanvarda boshlanadi."
+          },
+          "question": {
+            "uz": "Yil qaysi oy bilan tugaydi?",
+            "ru": "Yil qaysi oy bilan tugaydi?",
+            "en": "Yil qaysi oy bilan tugaydi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "dekabr",
+                "ru": "dekabr",
+                "en": "dekabr"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "yanvar",
+                "ru": "yanvar",
+                "en": "yanvar"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "mart",
+                "ru": "mart",
+                "en": "mart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir yilda nechta oy bor?",
+        "ru": "Сколько месяцев в году?",
+        "en": "How many months are in a year?"
+      },
+      "hint": {
+        "uz": "Oylarni sana.",
+        "ru": "Посчитай месяцы.",
+        "en": "Count the months."
+      },
+      "explanation": {
+        "uz": "Bir yilda 12 oy bor.",
+        "ru": "В году 12 месяцев.",
+        "en": "A year has 12 months."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "10",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

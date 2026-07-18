@@ -1,0 +1,183 @@
+{
+  "topicId": "g1-alifbe-02",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🏫✏️📚💬",
+  "title": {
+    "uz": "Maktabga xush kelibsiz! Soʻz va gap",
+    "ru": "Добро пожаловать в школу! Слово и предложение",
+    "en": "Welcome to school! Word and sentence"
+  },
+  "recall": {
+    "uz": "Men birinchi sinf oʻquvchisiman! Maktabda oʻqiymiz, doʻstlashamiz va yangi narsalarni bilamiz. Har bir narsaning nomi bor — bu soʻz. Soʻzlar birlashib, gap hosil qiladi. Maktab buyumlari: qalam, kitob, daftar, ruchka.",
+    "ru": "Я — первоклассник! В школе мы учимся, дружим и узнаём новое. У каждого предмета есть имя — это слово. Слова вместе образуют предложение. Школьные вещи: карандаш, книга, тетрадь, ручка.",
+    "en": "I am a first-grader! At school we study, make friends and learn new things. Every thing has a name — that is a word. Words together make a sentence. School things: pencil, book, notebook, pen."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Maktab buyumini top!", "ru": "Найди школьный предмет!", "en": "Find the school thing!" },
+      "hint": { "uz": "Uni sinfda, dars paytida ishlatamiz.", "ru": "Мы пользуемся им в классе на уроке.", "en": "We use it in class during a lesson." },
+      "explanation": { "uz": "Qalam — maktab buyumi. U bilan yozamiz.", "ru": "Карандаш — школьный предмет. Им мы пишем.", "en": "A pencil is a school thing. We write with it." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "pencil", "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" }, "correct": true },
+            { "id": "banana", "emoji": "🍌", "label": { "uz": "banan", "ru": "банан", "en": "banana" } },
+            { "id": "cat", "emoji": "🐱", "label": { "uz": "mushuk", "ru": "кошка", "en": "cat" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Tap the word that doesn't belong!" },
+      "hint": { "uz": "Uchtasi maktab buyumi, bittasi esa emas.", "ru": "Три — школьные вещи, а одно — нет.", "en": "Three are school things, one is not." },
+      "explanation": { "uz": "Samolyot — maktab buyumi emas. Qolganlari maktabniki.", "ru": "Самолёт — не школьный предмет. Остальные — школьные.", "en": "An airplane is not a school thing. The others are." },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": { "uz": "maktab buyumlari", "ru": "школьные вещи", "en": "school things" },
+          "tiles": [
+            { "text": "qalam" },
+            { "text": "kitob" },
+            { "text": "daftar" },
+            { "text": "samolyot", "odd": true }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Barcha maktab buyumlarini belgila!", "ru": "Отметь все школьные вещи!", "en": "Tap all the school things!" },
+      "hint": { "uz": "Qalam, kitob, daftar, qaychi — maktabniki.", "ru": "Карандаш, книга, тетрадь, ножницы — школьные.", "en": "Pencil, book, notebook, scissors are for school." },
+      "explanation": { "uz": "Maktab buyumlari: qalam, kitob, daftar, qaychi.", "ru": "Школьные вещи: карандаш, книга, тетрадь, ножницы.", "en": "School things: pencil, book, notebook, scissors." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "pencil", "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" }, "correct": true },
+            { "id": "book", "emoji": "📚", "label": { "uz": "kitob", "ru": "книга", "en": "book" }, "correct": true },
+            { "id": "notebook", "emoji": "📓", "label": { "uz": "daftar", "ru": "тетрадь", "en": "notebook" }, "correct": true },
+            { "id": "scissors", "emoji": "✂️", "label": { "uz": "qaychi", "ru": "ножницы", "en": "scissors" }, "correct": true },
+            { "id": "icecream", "emoji": "🍦", "label": { "uz": "muzqaymoq", "ru": "мороженое", "en": "ice cream" } },
+            { "id": "ball", "emoji": "⚽", "label": { "uz": "koptok", "ru": "мяч", "en": "ball" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«Kitob» soʻzi nechta narsani bildiradi?", "ru": "Сколько предметов называет слово «книга»?", "en": "How many things does the word “book” name?" },
+      "hint": { "uz": "Bitta soʻz — bitta narsaning nomi.", "ru": "Одно слово — имя одного предмета.", "en": "One word names one thing." },
+      "explanation": { "uz": "«Kitob» — bitta soʻz, bitta narsani bildiradi.", "ru": "«Книга» — одно слово, называет один предмет.", "en": "“Book” is one word and names one thing." },
+      "widget": { "type": "mcq", "props": { "choices": ["1", "2", "3"], "answerIndex": 0 } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Soʻzlarni ajrat: maktab buyumimi yoki oʻyinchoq?", "ru": "Разложи слова: школьная вещь или игрушка?", "en": "Sort the words: school thing or toy?" },
+      "hint": { "uz": "Maktab buyumi bilan oʻqiymiz, oʻyinchoq bilan oʻynaymiz.", "ru": "Школьной вещью учимся, игрушкой играем.", "en": "We study with a school thing, we play with a toy." },
+      "explanation": { "uz": "Qalam, daftar, kitob — maktabniki; ayiqcha, varrak, koptok — oʻyinchoq.", "ru": "Карандаш, тетрадь, книга — школьные; мишка, змей, мяч — игрушки.", "en": "Pencil, notebook, book are for school; teddy, kite, ball are toys." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "school", "label": { "uz": "🏫 Maktab buyumi", "ru": "🏫 Школьная вещь", "en": "🏫 School thing" }, "color": "#f4693b" },
+            { "id": "toy", "label": { "uz": "🧸 Oʻyinchoq", "ru": "🧸 Игрушка", "en": "🧸 Toy" }, "color": "#2f9fe0" }
+          ],
+          "items": [
+            { "id": "pencil", "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" }, "bin": "school" },
+            { "id": "notebook", "emoji": "📓", "label": { "uz": "daftar", "ru": "тетрадь", "en": "notebook" }, "bin": "school" },
+            { "id": "book", "emoji": "📚", "label": { "uz": "kitob", "ru": "книга", "en": "book" }, "bin": "school" },
+            { "id": "teddy", "emoji": "🧸", "label": { "uz": "ayiqcha", "ru": "мишка", "en": "teddy" }, "bin": "toy" },
+            { "id": "kite", "emoji": "🪁", "label": { "uz": "varrak", "ru": "змей", "en": "kite" }, "bin": "toy" },
+            { "id": "ball", "emoji": "⚽", "label": { "uz": "koptok", "ru": "мяч", "en": "ball" }, "bin": "toy" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir buyumni nomiga ula!", "ru": "Соедини каждый предмет с его словом!", "en": "Match each thing to its word!" },
+      "hint": { "uz": "Rasmga qarab, uning nomini top.", "ru": "Посмотри на картинку и найди её слово.", "en": "Look at the picture and find its word." },
+      "explanation": { "uz": "Har bir buyumning oʻz nomi — soʻzi bor.", "ru": "У каждого предмета есть своё имя — слово.", "en": "Every thing has its own name — a word." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "✏️" }, "right": { "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" } } },
+            { "left": { "emoji": "📚" }, "right": { "label": { "uz": "kitob", "ru": "книга", "en": "book" } } },
+            { "left": { "emoji": "✂️" }, "right": { "label": { "uz": "qaychi", "ru": "ножницы", "en": "scissors" } } },
+            { "left": { "emoji": "📓" }, "right": { "label": { "uz": "daftar", "ru": "тетрадь", "en": "notebook" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«Men maktabga bordim.» gapida nechta soʻz bor?", "ru": "Сколько слов в предложении «Я пошёл в школу.»?", "en": "How many words are in the sentence “I went to school.”?" },
+      "hint": { "uz": "Har bir soʻzni sanab koʻr: Men — maktabga — bordim.", "ru": "Посчитай каждое слово: Я — в школу — пошёл.", "en": "Count each word: I — to school — went." },
+      "explanation": { "uz": "Gapda uchta soʻz bor: Men, maktabga, bordim.", "ru": "В предложении три слова.", "en": "The sentence has three words." },
+      "widget": { "type": "mcq", "props": { "choices": ["3", "2", "4"], "answerIndex": 0 } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Soʻzlarni tartibga sol va gap tuz!", "ru": "Расставь слова по порядку и составь предложение!", "en": "Put the words in order and make a sentence!" },
+      "hint": { "uz": "Kim? Nima qiladi? Nimani? — Men kitob oʻqiyman.", "ru": "Кто? Что делает? Что? — Я читаю книгу.", "en": "Who? Does what? What? — I read a book." },
+      "explanation": { "uz": "Soʻzlar tartib bilan gap boʻldi: «Men kitob oʻqiyman.»", "ru": "Слова по порядку составили предложение: «Я читаю книгу.»", "en": "In order the words make a sentence: “I read a book.”" },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "men", "label": { "uz": "Men", "ru": "Я", "en": "I" } },
+            { "id": "kitob", "label": { "uz": "kitob", "ru": "книгу", "en": "a book" } },
+            { "id": "oqiyman", "label": { "uz": "oʻqiyman", "ru": "читаю", "en": "read" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Gap soʻzlardan tuziladi.", "ru": "Предложение состоит из слов.", "en": "A sentence is made of words." },
+      "hint": { "uz": "Bir nechta soʻz birlashsa, gap boʻladi.", "ru": "Несколько слов вместе образуют предложение.", "en": "Several words together make a sentence." },
+      "explanation": { "uz": "Toʻgʻri! Soʻzlar birlashib gap hosil qiladi.", "ru": "Верно! Слова вместе образуют предложение.", "en": "True! Words together form a sentence." },
+      "widget": { "type": "true_false", "props": { "emoji": "💬", "answer": true } }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!", "ru": "Открой карточки и соедини картинку со словом!", "en": "Flip the cards and match each picture to its word!" },
+      "hint": { "uz": "Qalam — qalam, kitob — kitob, sumka — sumka.", "ru": "Карандаш — карандаш, книга — книга, портфель — портфель.", "en": "Pencil — pencil, book — book, bag — bag." },
+      "explanation": { "uz": "Rasm va soʻzni toʻgʻri juftlading!", "ru": "Ты верно соединил картинку и слово!", "en": "You matched the picture and the word correctly!" },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            { "a": { "emoji": "✏️" }, "b": { "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" } } },
+            { "a": { "emoji": "📚" }, "b": { "label": { "uz": "kitob", "ru": "книга", "en": "book" } } },
+            { "a": { "emoji": "🎒" }, "b": { "label": { "uz": "sumka", "ru": "портфель", "en": "bag" } } }
+          ]
+        }
+      }
+    }
+  ]
+}

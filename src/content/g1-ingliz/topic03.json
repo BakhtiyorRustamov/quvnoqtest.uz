@@ -1,0 +1,541 @@
+{
+  "topicId": "g1-ingliz-03",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🔭🌳🏡✨",
+  "title": {
+    "uz": "Qiziquvchan boʻl! (hikoya)",
+    "ru": "Будь любознательным! (история)",
+    "en": "Be curious! (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bolalar hovlida oʻynab, ajoyib narsa topib olishadi. Qiziquvchan boʻl!",
+    "ru": "Время истории! Дети играют во дворе и находят кое-что чудесное. Будь любознательным!",
+    "en": "Story time! Three friends find something amazing. Be curious!"
+  },
+  "ttsText": {
+    "uz": "Qiziquvchan boʻl! Hikoya.",
+    "en": "Story time! Three friends find something amazing. Be curious!"
+  },
+  "recallAudioLang": "en",
+  "recallMedia": {
+    "gif": "/quiz-media/en-curious.gif",
+    "maxWidth": 260
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tingla!",
+        "ru": "Послушай историю!",
+        "en": "Listen to the story!"
+      },
+      "hint": {
+        "uz": "Har bir gapni diqqat bilan tingla, keyin savollar boʻladi.",
+        "ru": "Слушай внимательно — потом будут вопросы.",
+        "en": "Listen carefully — questions come next."
+      },
+      "explanation": {
+        "uz": "Barakalla! Endi savollarga tayyorsan.",
+        "ru": "Молодец! Теперь ты готов к вопросам.",
+        "en": "Great! Now you're ready for the questions."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩‍🏫",
+              "name": "Narrator",
+              "text": "Mia, Sam and Zara play in the yard.",
+              "audio": {
+                "key": "ing03-q1-a",
+                "text": "Mia, Sam and Zara play in the yard.",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Wow! Look! Come here!",
+              "audio": {
+                "key": "ing03-q1-b",
+                "text": "Wow! Look! Come here!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What is it?",
+              "audio": {
+                "key": "ing03-q1-c",
+                "text": "What is it?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's a treehouse!",
+              "audio": {
+                "key": "ing03-q1-d",
+                "text": "It's a treehouse!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bolalar nimani koʻrishdi?",
+              "ru": "Что увидели дети?",
+              "en": "What did the children see?"
+            },
+            "choices": [
+              {
+                "uz": "Daraxt uycha",
+                "ru": "Домик на дереве",
+                "en": "A treehouse"
+              },
+              {
+                "uz": "Mushuk",
+                "ru": "Кошку",
+                "en": "A cat"
+              },
+              {
+                "uz": "Mashina",
+                "ru": "Машину",
+                "en": "A car"
+              }
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Voqealarni roʻy bergan tartibida bos!",
+        "ru": "Нажимай события по порядку!",
+        "en": "Tap the story events in order!"
+      },
+      "hint": {
+        "uz": "Avval oʻyin, keyin topilma, oxirida uychada oʻynash.",
+        "ru": "Сначала игра, потом находка, в конце — игра в домике.",
+        "en": "First playing, then the discovery, then playing inside."
+      },
+      "explanation": {
+        "uz": "Barakalla! Hikoyani yaxshi eslab qolding!",
+        "ru": "Молодец! Ты хорошо запомнил историю!",
+        "en": "Great! You remembered the story well!"
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🌳",
+          "events": [
+            {
+              "text": {
+                "uz": "Bolalar hovlida oʻynashdi.",
+                "ru": "Дети играли во дворе.",
+                "en": "The children played in the yard."
+              }
+            },
+            {
+              "text": {
+                "uz": "Sam daraxt orqasida nimadir koʻrdi.",
+                "ru": "Сэм что-то заметил за деревом.",
+                "en": "Sam noticed something behind the tree."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ular daraxtdagi uychani topishdi.",
+                "ru": "Они нашли домик на дереве.",
+                "en": "They found a treehouse."
+              }
+            },
+            {
+              "text": {
+                "uz": "Doʻstlar yuqoriga chiqib, birga oʻynashdi.",
+                "ru": "Друзья забрались наверх и играли вместе.",
+                "en": "The friends climbed up and played together."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va bolalar topgan narsani bos!",
+        "ru": "Послушай и нажми то, что нашли дети!",
+        "en": "Listen and tap what the children found!"
+      },
+      "audio": {
+        "key": "ing03-q3",
+        "text": "Look! It's a treehouse!",
+        "voice": "boy"
+      },
+      "hint": {
+        "uz": "«Treehouse» — daraxtdagi uycha.",
+        "ru": "«Treehouse» — домик на дереве.",
+        "en": "\"Tree\" + \"house\" — a house in a tree."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Treehouse — daraxt uycha.",
+        "ru": "Верно! Treehouse — домик на дереве.",
+        "en": "Right! A treehouse!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🌳",
+              "label": {
+                "uz": "daraxt uycha",
+                "ru": "домик на дереве",
+                "en": "treehouse"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🚗",
+              "label": {
+                "uz": "mashina",
+                "ru": "машина",
+                "en": "car"
+              }
+            },
+            {
+              "emoji": "🐱",
+              "label": {
+                "uz": "mushuk",
+                "ru": "кошка",
+                "en": "cat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Look!» soʻzi nima degani? Tingla va bos!",
+        "ru": "Что значит «Look!»? Послушай и нажми!",
+        "en": "What does \"Look!\" mean? Listen and tap!"
+      },
+      "audio": {
+        "key": "ing03-q4",
+        "text": "Look! Look!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "Buni aytganda qoʻl bilan koʻrsatamiz.",
+        "ru": "Говоря это, мы показываем рукой.",
+        "en": "You use your eyes for this."
+      },
+      "explanation": {
+        "uz": "Barakalla! «Look!» — «Qara!» degani, koʻz bilan qaraymiz.",
+        "ru": "Молодец! «Look!» значит «Смотри!» — смотрим глазами.",
+        "en": "Great! \"Look!\" means to use your eyes."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👀",
+              "label": {
+                "uz": "qarash",
+                "ru": "смотреть",
+                "en": "look"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "👂",
+              "label": {
+                "uz": "eshitish",
+                "ru": "слушать",
+                "en": "listen"
+              }
+            },
+            {
+              "emoji": "🏃",
+              "label": {
+                "uz": "yugurish",
+                "ru": "бежать",
+                "en": "run"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻri yoki notoʻgʻri: qiziquvchan bola yangi narsalarni kashf qiladi.",
+        "ru": "Верно или неверно: любознательный ребёнок открывает новое.",
+        "en": "True or false: a curious child discovers new things."
+      },
+      "hint": {
+        "uz": "Sam qiziqdi — va uycha topildi!",
+        "ru": "Сэм полюбопытствовал — и нашёлся домик!",
+        "en": "Sam was curious — and found the treehouse!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Qiziquvchanlik yangi kashfiyotlarga olib boradi.",
+        "ru": "Верно! Любознательность ведёт к открытиям.",
+        "en": "True! Curiosity leads to discoveries."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔭",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qiziquvchan boʻlish nima degani?",
+        "ru": "Что значит быть любознательным?",
+        "en": "What does it mean to be curious?"
+      },
+      "hint": {
+        "uz": "Sam daraxt orqasiga qaradi va soʻradi: «What is it?»",
+        "ru": "Сэм заглянул за дерево и спросил: «What is it?»",
+        "en": "Sam looked closer and asked questions."
+      },
+      "explanation": {
+        "uz": "Barakalla! Qiziquvchan bola atrofga qaraydi va savol beradi.",
+        "ru": "Молодец! Любознательный смотрит вокруг и задаёт вопросы.",
+        "en": "Great! A curious child looks around and asks questions."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Atrofga qarash va savol berish",
+              "ru": "Смотреть вокруг и спрашивать",
+              "en": "Looking around and asking questions"
+            },
+            {
+              "uz": "Kun boʻyi uxlash",
+              "ru": "Спать весь день",
+              "en": "Sleeping all day"
+            },
+            {
+              "uz": "Hech narsaga qaramastlik",
+              "ru": "Ни на что не смотреть",
+              "en": "Never looking at anything"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bolalar uychani topgach nima qilishdi?",
+        "ru": "Что сделали дети, когда нашли домик?",
+        "en": "What did the children do after they found the treehouse?"
+      },
+      "hint": {
+        "uz": "Hikoyaning oxirini esla.",
+        "ru": "Вспомни конец истории.",
+        "en": "Remember the end of the story."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ular yuqoriga chiqib, birga oʻynashdi.",
+        "ru": "Верно! Они забрались наверх и играли вместе.",
+        "en": "Right! They climbed up and played together."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yuqoriga chiqib oʻynashdi",
+              "ru": "Забрались и играли",
+              "en": "They climbed up and played"
+            },
+            {
+              "uz": "Uyga ketib qolishdi",
+              "ru": "Ушли домой",
+              "en": "They went home"
+            },
+            {
+              "uz": "Yigʻlab yuborishdi",
+              "ru": "Заплакали",
+              "en": "They cried"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qiziquvchan bola nima qiladi? Hammasini belgila!",
+        "ru": "Что делает любознательный ребёнок? Отметь всё!",
+        "en": "What does a curious child do? Tap all that fit!"
+      },
+      "hint": {
+        "uz": "Ikkita javob toʻgʻri.",
+        "ru": "Правильных ответов два.",
+        "en": "Two answers are correct."
+      },
+      "explanation": {
+        "uz": "Barakalla! Qiziquvchan bola diqqat bilan qaraydi va savol beradi.",
+        "ru": "Молодец! Любознательный внимательно смотрит и спрашивает.",
+        "en": "Great! A curious child looks closely and asks questions."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "emoji": "🔍",
+              "label": {
+                "uz": "diqqat bilan qaraydi",
+                "ru": "внимательно смотрит",
+                "en": "looks closely"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "❓",
+              "label": {
+                "uz": "savol beradi",
+                "ru": "задаёт вопросы",
+                "en": "asks questions"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "😴",
+              "label": {
+                "uz": "faqat uxlaydi",
+                "ru": "только спит",
+                "en": "only sleeps"
+              }
+            },
+            {
+              "emoji": "🙈",
+              "label": {
+                "uz": "koʻzini yumib oladi",
+                "ru": "закрывает глаза",
+                "en": "covers his eyes"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. «Wow!» qachon aytiladi?",
+        "ru": "Послушай. Когда говорят «Wow!»?",
+        "en": "Listen. When do we say \"Wow!\"?"
+      },
+      "audio": {
+        "key": "ing03-q9",
+        "text": "Wow! It's a treehouse!",
+        "voice": "boy"
+      },
+      "hint": {
+        "uz": "Ajablanganingda nima deysan?",
+        "ru": "Что ты говоришь, когда удивляешься?",
+        "en": "It's a word of surprise."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Wow!» — hayratlanganda aytiladi.",
+        "ru": "Верно! «Wow!» говорят, когда удивляются.",
+        "en": "Right! \"Wow!\" shows surprise."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Hayratlanganda",
+              "ru": "Когда удивляемся",
+              "en": "When we are surprised"
+            },
+            {
+              "uz": "Uxlaganda",
+              "ru": "Когда спим",
+              "en": "When we sleep"
+            },
+            {
+              "uz": "Xayrlashganda",
+              "ru": "Когда прощаемся",
+              "en": "When we say goodbye"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qoidasi qanday edi?",
+        "ru": "Какое правило было в истории?",
+        "en": "What was the story's value?"
+      },
+      "hint": {
+        "uz": "Darsimiz nomini esla!",
+        "ru": "Вспомни название урока!",
+        "en": "Remember the lesson's title!"
+      },
+      "explanation": {
+        "uz": "Barakalla! Be curious — qiziquvchan boʻl!",
+        "ru": "Молодец! Be curious — будь любознательным!",
+        "en": "Great! Be curious!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "Be curious!",
+            "Be sleepy!",
+            "Be slow!"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

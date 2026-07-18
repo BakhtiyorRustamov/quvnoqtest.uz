@@ -1,0 +1,556 @@
+{
+  "topicId": "g1-ingliz-01",
+  "subjectKey": "g1-ingliz",
+  "emojis": "👋🌈🎨🤖",
+  "title": {
+    "uz": "Salomlashamiz va ranglarni oʻrganamiz",
+    "ru": "Здороваемся и учим цвета",
+    "en": "Saying hello & learning colors"
+  },
+  "recall": {
+    "uz": "Hello! — Salom! Bugun inglizcha salomlashamiz va ranglarni oʻrganamiz.",
+    "ru": "Hello! — Привет! Сегодня здороваемся по-английски и учим цвета.",
+    "en": "Hello! I'm Robo! Let's say hello and learn the colors!"
+  },
+  "ttsText": {
+    "uz": "Salomlashamiz va ranglarni oʻrganamiz.",
+    "en": "Hello! I'm Robo! Let's say hello and learn the colors!"
+  },
+  "recallAudioLang": "en",
+  "recallMedia": {
+    "gif": "/quiz-media/en-hello.gif",
+    "maxWidth": 260
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bolaning ismi nima?",
+        "ru": "Послушай диалог. Как зовут мальчика?",
+        "en": "Listen to the dialog. What is the boy's name?"
+      },
+      "hint": {
+        "uz": "«I'm …» — «Men …man» degani. Bola oʻz ismini aytadi.",
+        "ru": "«I'm …» значит «Я — …». Мальчик называет своё имя.",
+        "en": "\"I'm …\" means \"My name is …\". The boy says his own name."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bola «I'm Sam» dedi — uning ismi Sam.",
+        "ru": "Молодец! Мальчик сказал «I'm Sam» — его зовут Сэм.",
+        "en": "Great! The boy said \"I'm Sam\" — his name is Sam."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Hello! I'm Mia. What's your name?",
+              "audio": {
+                "key": "ing01-q1-a",
+                "text": "Hello! I'm Mia. What's your name?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Hi! I'm Sam!",
+              "audio": {
+                "key": "ing01-q1-b",
+                "text": "Hi! I'm Sam!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bolaning ismi nima?",
+              "ru": "Как зовут мальчика?",
+              "en": "What is the boy's name?"
+            },
+            "choices": [
+              "Sam",
+              "Mia",
+              "Robo"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri rangni bos!",
+        "ru": "Послушай и нажми нужный цвет!",
+        "en": "Listen and tap the right color!"
+      },
+      "audio": {
+        "key": "ing01-q2",
+        "text": "Red! Tap the red circle.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«Red» — qizil rang.",
+        "ru": "«Red» — это красный цвет.",
+        "en": "\"Red\" is the color of a tomato."
+      },
+      "explanation": {
+        "uz": "Barakalla! Red — qizil.",
+        "ru": "Молодец! Red — красный.",
+        "en": "Great! Red!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "circle",
+            "color": "red"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "green"
+          }
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri rangni bos!",
+        "ru": "Послушай и нажми нужный цвет!",
+        "en": "Listen and tap the right color!"
+      },
+      "audio": {
+        "key": "ing01-q3",
+        "text": "Blue! Tap the blue circle.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«Blue» — osmon rangi.",
+        "ru": "«Blue» — цвет неба.",
+        "en": "\"Blue\" is the color of the sky."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Blue — koʻk.",
+        "ru": "Верно! Blue — синий.",
+        "en": "Right! Blue!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "circle",
+            "color": "yellow"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "orange"
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri rangni bos!",
+        "ru": "Послушай и нажми нужный цвет!",
+        "en": "Listen and tap the right color!"
+      },
+      "audio": {
+        "key": "ing01-q4",
+        "text": "Green! Tap the green circle.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«Green» — barglar rangi.",
+        "ru": "«Green» — цвет листьев.",
+        "en": "\"Green\" is the color of leaves."
+      },
+      "explanation": {
+        "uz": "Barakalla! Green — yashil.",
+        "ru": "Молодец! Green — зелёный.",
+        "en": "Great! Green!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "circle",
+            "color": "purple"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "circle",
+            "color": "red"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "green"
+          }
+        }
+      ],
+      "answer": [
+        "c"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri yurakchani bos!",
+        "ru": "Послушай и нажми нужное сердечко!",
+        "en": "Listen and tap the right heart!"
+      },
+      "audio": {
+        "key": "ing01-q5",
+        "text": "Pink! Tap the pink heart.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«Pink» — pushti rang.",
+        "ru": "«Pink» — розовый цвет.",
+        "en": "\"Pink\" is a light, soft red."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Pink — pushti.",
+        "ru": "Верно! Pink — розовый.",
+        "en": "Right! Pink!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "💗",
+              "label": "pink",
+              "correct": true
+            },
+            {
+              "emoji": "💜",
+              "label": "purple"
+            },
+            {
+              "emoji": "💛",
+              "label": "yellow"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri yurakchani bos!",
+        "ru": "Послушай и нажми нужное сердечко!",
+        "en": "Listen and tap the right heart!"
+      },
+      "audio": {
+        "key": "ing01-q6",
+        "text": "Purple! Tap the purple heart.",
+        "voice": "boy"
+      },
+      "hint": {
+        "uz": "«Purple» — binafsha rang.",
+        "ru": "«Purple» — фиолетовый цвет.",
+        "en": "\"Purple\" is the color of grapes."
+      },
+      "explanation": {
+        "uz": "Barakalla! Purple — binafsha.",
+        "ru": "Молодец! Purple — фиолетовый.",
+        "en": "Great! Purple!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "💜",
+              "label": "purple",
+              "correct": true
+            },
+            {
+              "emoji": "🧡",
+              "label": "orange"
+            },
+            {
+              "emoji": "💙",
+              "label": "blue"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni oʻz rangiga ula!",
+        "ru": "Соедини английское слово с его цветом!",
+        "en": "Match each English word to its color!"
+      },
+      "hint": {
+        "uz": "Red — qizil, yellow — sariq, blue — koʻk, green — yashil.",
+        "ru": "Red — красный, yellow — жёлтый, blue — синий, green — зелёный.",
+        "en": "Red, yellow, blue, green — say each word aloud."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Toʻrtta rangni inglizcha bilding!",
+        "ru": "Отлично! Ты знаешь четыре цвета по-английски!",
+        "en": "Awesome! You know four colors in English!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "red"
+              },
+              "right": {
+                "emoji": "🔴"
+              }
+            },
+            {
+              "left": {
+                "label": "yellow"
+              },
+              "right": {
+                "emoji": "🟡"
+              }
+            },
+            {
+              "left": {
+                "label": "blue"
+              },
+              "right": {
+                "emoji": "🔵"
+              }
+            },
+            {
+              "left": {
+                "label": "green"
+              },
+              "right": {
+                "emoji": "🟢"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Xayrlashganda nima deymiz?",
+        "ru": "Послушай. Что мы говорим на прощание?",
+        "en": "Listen. What do we say when we leave?"
+      },
+      "hint": {
+        "uz": "«Goodbye» — xayr degani.",
+        "ru": "«Goodbye» значит «до свидания».",
+        "en": "\"Goodbye\" is for leaving, \"Hello\" is for meeting."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ketayotganda «Goodbye!» deymiz.",
+        "ru": "Верно! Уходя, говорим «Goodbye!».",
+        "en": "Right! We say \"Goodbye!\" when we leave."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Goodbye, Sam!",
+              "audio": {
+                "key": "ing01-q8-a",
+                "text": "Goodbye, Sam!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Bye-bye, Mia!",
+              "audio": {
+                "key": "ing01-q8-b",
+                "text": "Bye-bye, Mia!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Xayrlashganda nima deymiz?",
+              "ru": "Что говорим на прощание?",
+              "en": "What do we say when we leave?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Hello!",
+              "I'm Sam!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rang va soʻz juftini top!",
+        "ru": "Открывай карточки: цвет и его слово!",
+        "en": "Flip the cards: match each color to its word!"
+      },
+      "hint": {
+        "uz": "Qizil doira — «red», yashil — «green», sariq — «yellow».",
+        "ru": "Красный круг — «red», зелёный — «green», жёлтый — «yellow».",
+        "en": "The red circle goes with \"red\", and so on."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr ishladi!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🔴"
+              },
+              "b": {
+                "label": "red"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🟢"
+              },
+              "b": {
+                "label": "green"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🟡"
+              },
+              "b": {
+                "label": "yellow"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻq sariq narsani bos!",
+        "ru": "Послушай и нажми оранжевый предмет!",
+        "en": "Listen and tap the orange thing!"
+      },
+      "audio": {
+        "key": "ing01-q10",
+        "text": "Orange! Tap the orange one.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«Orange» — sabzi rangi.",
+        "ru": "«Orange» — цвет морковки.",
+        "en": "\"Orange\" is the color of a carrot."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Sabzi — orange rangda.",
+        "ru": "Верно! Морковка оранжевая — orange.",
+        "en": "Right! The carrot is orange."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🥕",
+              "label": {
+                "uz": "sabzi",
+                "ru": "морковка",
+                "en": "carrot"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🍏",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              }
+            },
+            {
+              "emoji": "🍇",
+              "label": {
+                "uz": "uzum",
+                "ru": "виноград",
+                "en": "grapes"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

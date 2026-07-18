@@ -1,0 +1,327 @@
+{
+  "topicId": "g1-informatika-32",
+  "subjectKey": "g1-informatika",
+  "emojis": "🎒📐📚✏️",
+  "title": {
+    "uz": "Eng keraklisi",
+    "ru": "Самое нужное",
+    "en": "The most necessary"
+  },
+  "recall": {
+    "uz": "Har bir ish uchun ayrim narsalar kerak, ayrimlari kerak emas. Matematika darsiga daftar, qalam va chizgʻich kerak, oʻyinchoq esa kerak emas. Ishga kirishishdan oldin eng keraklisini tanlaymiz — ortiqchasini chetga qoʻyamiz. Kompyuterga topshiriq berganda ham faqat kerakli maʼlumotni beramiz.",
+    "ru": "Для каждого дела одни вещи нужны, а другие нет. Для урока математики нужны тетрадь, карандаш и линейка, а игрушка не нужна. Перед делом мы выбираем самое нужное и откладываем лишнее. И компьютеру для задачи даём только нужные сведения.",
+    "en": "For every task some things are needed and others are not. A maths lesson needs a notebook, a pencil and a ruler, but not a toy. Before we start, we pick the most necessary things and set the extras aside. When we give a computer a task, we also give only the information it needs."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matematika darsiga qaysi buyumlar kerak? Belgila!",
+        "ru": "Какие вещи нужны на урок математики? Отметь!",
+        "en": "Which items are needed for a maths lesson? Tap them!"
+      },
+      "hint": {
+        "uz": "Yozish va oʻlchash uchun nima kerak?",
+        "ru": "Что нужно, чтобы писать и измерять?",
+        "en": "What do you need to write and measure?"
+      },
+      "explanation": {
+        "uz": "Daftar, qalam va chizgʻich kerak.",
+        "ru": "Нужны тетрадь, карандаш и линейка.",
+        "en": "A notebook, a pencil and a ruler are needed."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "c0", "emoji": "📓", "label": { "uz": "daftar", "ru": "тетрадь", "en": "notebook" }, "correct": true },
+            { "id": "c1", "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" }, "correct": true },
+            { "id": "c2", "emoji": "📏", "label": { "uz": "chizgʻich", "ru": "линейка", "en": "ruler" }, "correct": true },
+            { "id": "d0", "emoji": "⚽", "label": { "uz": "koptok", "ru": "мяч", "en": "ball" } },
+            { "id": "d1", "emoji": "🎈", "label": { "uz": "sharcha", "ru": "шарик", "en": "balloon" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qizcha musiqa maktabiga bormoqchi. U nimani olib borsin?",
+        "ru": "Девочка идёт в музыкальную школу. Что ей взять?",
+        "en": "A girl is going to music school. What should she take?"
+      },
+      "hint": {
+        "uz": "Musiqa cholgʻusini top.",
+        "ru": "Найди музыкальный инструмент.",
+        "en": "Find the musical instrument."
+      },
+      "explanation": {
+        "uz": "Musiqa darsiga cholgʻu kerak.",
+        "ru": "На музыку нужен инструмент.",
+        "en": "Music class needs an instrument."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "ok", "emoji": "🎸", "label": { "uz": "cholgʻu", "ru": "инструмент", "en": "instrument" }, "correct": true },
+            { "id": "a", "emoji": "⚽", "label": { "uz": "koptok", "ru": "мяч", "en": "ball" } },
+            { "id": "b", "emoji": "🎾", "label": { "uz": "raketka", "ru": "ракетка", "en": "racket" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bu narsalar qaysi faslda kerak? Ikki savatga ajrat!",
+        "ru": "В какое время года нужны эти вещи? Разложи!",
+        "en": "In which season are these needed? Sort them!"
+      },
+      "hint": {
+        "uz": "Sovuq — qish, issiq — yoz.",
+        "ru": "Холод — зима, жара — лето.",
+        "en": "Cold — winter, hot — summer."
+      },
+      "explanation": {
+        "uz": "Har fasl uchun keraklisini tanlading.",
+        "ru": "Ты выбрал нужное для каждого сезона.",
+        "en": "You chose what each season needs."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "q", "label": { "uz": "Qish", "ru": "Зима", "en": "Winter" } },
+            { "id": "y", "label": { "uz": "Yoz", "ru": "Лето", "en": "Summer" } }
+          ],
+          "items": [
+            { "emoji": "⛄", "label": { "uz": "qor odam", "ru": "снеговик", "en": "snowman" }, "bin": "q" },
+            { "emoji": "❄️", "label": { "uz": "qor", "ru": "снег", "en": "snow" }, "bin": "q" },
+            { "emoji": "☕", "label": { "uz": "issiq choy", "ru": "горячий чай", "en": "hot tea" }, "bin": "q" },
+            { "emoji": "☀️", "label": { "uz": "quyosh", "ru": "солнце", "en": "sun" }, "bin": "y" },
+            { "emoji": "🍦", "label": { "uz": "muzqaymoq", "ru": "мороженое", "en": "ice cream" }, "bin": "y" },
+            { "emoji": "🏖️", "label": { "uz": "plyaj", "ru": "пляж", "en": "beach" }, "bin": "y" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir buyumni oʻz darsiga ula!",
+        "ru": "Соедини каждую вещь с её уроком!",
+        "en": "Match each item to its lesson!"
+      },
+      "hint": {
+        "uz": "Bu buyum qaysi darsda ishlatiladi?",
+        "ru": "На каком уроке нужна эта вещь?",
+        "en": "In which lesson is this item used?"
+      },
+      "explanation": {
+        "uz": "Har buyum oʻz ishiga mos keladi.",
+        "ru": "Каждая вещь подходит своему делу.",
+        "en": "Each item fits its own task."
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "📐" }, "right": { "label": { "uz": "matematika", "ru": "математика", "en": "maths" } } },
+            { "left": { "emoji": "🖌️" }, "right": { "label": { "uz": "rasm", "ru": "рисование", "en": "drawing" } } },
+            { "left": { "emoji": "🎵" }, "right": { "label": { "uz": "musiqa", "ru": "музыка", "en": "music" } } },
+            { "left": { "emoji": "⚽" }, "right": { "label": { "uz": "sport", "ru": "спорт", "en": "sport" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sport darsiga qaysi buyum eng kerakli?",
+        "ru": "Что самое нужное на уроке спорта?",
+        "en": "What is most necessary for a sport lesson?"
+      },
+      "hint": {
+        "uz": "U bilan oʻynaladi.",
+        "ru": "С этим играют.",
+        "en": "You play with it."
+      },
+      "explanation": {
+        "uz": "Sportga koptok kerak.",
+        "ru": "Для спорта нужен мяч.",
+        "en": "Sport needs a ball."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            { "uz": "koptok", "ru": "мяч", "en": "ball" },
+            { "uz": "kitob", "ru": "книга", "en": "book" },
+            { "uz": "qoshiq", "ru": "ложка", "en": "spoon" }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Maktab buyumlari orasida ortiqcha soʻzni top!",
+        "ru": "Найди лишнее среди школьных вещей!",
+        "en": "Find the odd one out among school items!"
+      },
+      "hint": {
+        "uz": "Qaysi biri darsda kerak emas?",
+        "ru": "Что не нужно на уроке?",
+        "en": "Which one is not needed in class?"
+      },
+      "explanation": {
+        "uz": "Muzqaymoq — oʻquv quroli emas.",
+        "ru": "Мороженое — не учебный предмет.",
+        "en": "Ice cream is not a school tool."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": { "uz": "darsda kerak boʻladi", "ru": "нужны на уроке", "en": "needed in class" },
+          "tiles": [
+            { "text": "qalam" },
+            { "text": "daftar" },
+            { "text": "kitob" },
+            { "text": "muzqaymoq", "odd": true }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Dars tayyorlashda oʻyinchoq eng kerakli buyum.» Bu rostmi?",
+        "ru": "«Для подготовки к уроку игрушка — самое нужное.» Верно?",
+        "en": "'A toy is the most necessary item for lesson prep.' Is this true?"
+      },
+      "hint": {
+        "uz": "Darsga nima kerak — oʻyla.",
+        "ru": "Подумай, что нужно для урока.",
+        "en": "Think what a lesson needs."
+      },
+      "explanation": {
+        "uz": "Yolgʻon — oʻyinchoq dars uchun kerak emas.",
+        "ru": "Неверно — игрушка не нужна для урока.",
+        "en": "False — a toy is not needed for a lesson."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": { "emoji": "🎈", "answer": false }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Rasm chizish uchun nima kerak? Belgila!",
+        "ru": "Что нужно, чтобы рисовать? Отметь!",
+        "en": "What is needed to draw? Tap them!"
+      },
+      "hint": {
+        "uz": "Chizadigan va boʻyaydigan narsa.",
+        "ru": "То, чем рисуют и красят.",
+        "en": "Things you draw and colour with."
+      },
+      "explanation": {
+        "uz": "Qogʻoz, moʻyqalam va boʻyoq kerak.",
+        "ru": "Нужны бумага, кисть и краски.",
+        "en": "Paper, a brush and paints are needed."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "c0", "emoji": "📄", "label": { "uz": "qogʻoz", "ru": "бумага", "en": "paper" }, "correct": true },
+            { "id": "c1", "emoji": "🖌️", "label": { "uz": "moʻyqalam", "ru": "кисть", "en": "brush" }, "correct": true },
+            { "id": "c2", "emoji": "🎨", "label": { "uz": "boʻyoq", "ru": "краски", "en": "paints" }, "correct": true },
+            { "id": "d0", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } },
+            { "id": "d1", "emoji": "⚽", "label": { "uz": "koptok", "ru": "мяч", "en": "ball" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Buyumni oʻz juftiga qoʻshib eslab qol!",
+        "ru": "Запомни и соедини вещь с её парой!",
+        "en": "Remember and match each item to its pair!"
+      },
+      "hint": {
+        "uz": "Buyum va u nima uchun kerak.",
+        "ru": "Вещь и для чего она нужна.",
+        "en": "An item and what it is for."
+      },
+      "explanation": {
+        "uz": "Har buyum oʻz ishi bilan juft.",
+        "ru": "Каждая вещь в паре со своим делом.",
+        "en": "Each item pairs with its use."
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            { "a": { "emoji": "✏️" }, "b": { "label": { "uz": "yozish", "ru": "письмо", "en": "writing" } } },
+            { "a": { "emoji": "📏" }, "b": { "label": { "uz": "oʻlchash", "ru": "измерение", "en": "measuring" } } },
+            { "a": { "emoji": "🖌️" }, "b": { "label": { "uz": "chizish", "ru": "рисование", "en": "drawing" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Eng keraklisi» nimani anglatadi?",
+        "ru": "Что значит «самое нужное»?",
+        "en": "What does 'the most necessary' mean?"
+      },
+      "hint": {
+        "uz": "Ishga zarur boʻlgan narsa.",
+        "ru": "То, что нужно для дела.",
+        "en": "What the task requires."
+      },
+      "explanation": {
+        "uz": "Topshiriq uchun zarur boʻlgan buyum.",
+        "ru": "Вещь, необходимая для задания.",
+        "en": "The item required for the task."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            { "uz": "topshiriq uchun zarur buyum", "ru": "вещь, нужная для задания", "en": "the item the task needs" },
+            { "uz": "eng chiroyli buyum", "ru": "самая красивая вещь", "en": "the prettiest item" },
+            { "uz": "eng katta buyum", "ru": "самая большая вещь", "en": "the biggest item" }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "topicId": "g1-alifbe-21",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🐋☀️🎬",
+  "title": { "uz": "«K k» harfi", "ru": "Буква «K k»", "en": "The letter “K k”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «K k». U undosh tovush. Uni aytganda lablar biroz ochiq, tishlar bir-biriga tegmaydi. «K» bilan: kit, kun, kino, kitob. Endi «kit» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «K k». Это согласный звук. Губы чуть приоткрыты, зубы не касаются. Слова: kit, kun, kino, kitob. Теперь мы можем прочитать слово «kit»!",
+    "en": "Today's letter is “K k”. It is a consonant. The lips open a little and the teeth do not touch. Words: kit, kun, kino, kitob. Now we can read and build the word “kit”!"
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«K» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «K»!", "en": "Find the word that starts with “K”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: k-k-kit.", "ru": "Протяни начало: к-к-kit.", "en": "Stretch the start: k-k-kit." },
+      "explanation": { "uz": "«kit» «K» tovushi bilan boshlanadi.", "ru": "«kit» начинается со звука «K».", "en": "“kit” (whale) starts with the sound “K”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "whale", "emoji": "🐋", "label": { "uz": "kit", "ru": "kit", "en": "kit" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«K» harfini topib, hammasini bos!", "ru": "Найди букву «K» и нажми на все!", "en": "Find the letter “K” and tap them all!" },
+      "hint": { "uz": "Katta «K» ham, kichik «k» ham.", "ru": "Считаются «K» и «k».", "en": "Both “K” and “k” count." },
+      "explanation": { "uz": "«K» harfini topding!", "ru": "Ты нашёл букву «K»!", "en": "You found the letter “K”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "K", "cols": 3, "grid": ["K", "i", "k", "D", "K", "o", "k", "u", "K"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🐋 «kit»da «k» tovushi qaysi katakchada?", "ru": "🐋 В какой клетке звук «k» в слове «kit»?", "en": "🐋 Which box has the “k” sound in “kit”?" },
+      "hint": { "uz": "«kit» «k» bilan boshlanadi.", "ru": "«kit» начинается с «k».", "en": "“kit” starts with “k”." },
+      "explanation": { "uz": "«kit»da «k» — birinchi katakda.", "ru": "В «kit» звук «k» — первая клетка.", "en": "In “kit” the “k” is in the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🐋", "word": { "uz": "kit", "ru": "kit", "en": "kit" }, "sound": "k", "cells": ["k", "i", "t"], "answer": 0 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🐋 «kit» soʻzining tovush chizmasini rangla!", "ru": "🐋 Раскрась схему звуков слова «kit»!", "en": "🐋 Colour the sound scheme of “kit”!" },
+      "hint": { "uz": "k — undosh, i — unli, t — undosh.", "ru": "k — согласный, i — гласный, t — согласный.", "en": "k consonant, i vowel, t consonant." },
+      "explanation": { "uz": "«kit»: k, i, t — undosh, unli, undosh.", "ru": "«kit»: согласный, гласный, согласный.", "en": "“kit”: consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🐋", "word": { "uz": "kit", "ru": "kit", "en": "kit" }, "scheme": ["c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«K» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «K»!", "en": "Tap the words that have the “K” sound!" },
+      "hint": { "uz": "kit, kun, kino — «k» tovushi bor.", "ru": "kit, kun, kino — есть звук «k».", "en": "kit, kun, kino have the “k” sound." },
+      "explanation": { "uz": "kit, kun, kino — «k» bor. ot, olmada yoʻq.", "ru": "kit, kun, kino — есть «k». В ot, olma нет.", "en": "kit, kun, kino have “k”. ot, olma do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "whale", "emoji": "🐋", "label": { "uz": "kit", "ru": "kit", "en": "kit" }, "correct": true },
+        { "id": "sun", "emoji": "☀️", "label": { "uz": "kun", "ru": "kun", "en": "kun" }, "correct": true },
+        { "id": "cinema", "emoji": "🎬", "label": { "uz": "kino", "ru": "kino", "en": "kino" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «kit» soʻzini tuz!", "ru": "Составь слово «kit» из букв!", "en": "Build the word “kit” from letters!" },
+      "hint": { "uz": "k — i — t tartibida bos.", "ru": "Нажимай по порядку: k — i — t.", "en": "Tap in order: k — i — t." },
+      "explanation": { "uz": "k + i + t = «kit».", "ru": "k + i + t = «kit».", "en": "k + i + t = “kit” (whale)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🐋", "word": "kit", "label": { "uz": "kit", "ru": "кит", "en": "whale" } } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«K» — undosh tovush.", "ru": "«K» — согласный звук.", "en": "“K” is a consonant sound." },
+      "hint": { "uz": "«K»da tishlar bir-biriga tegmaydi.", "ru": "При «K» зубы не касаются.", "en": "For “K” the teeth do not touch." },
+      "explanation": { "uz": "Toʻgʻri! «K» — undosh tovush.", "ru": "Верно! «K» — согласный.", "en": "True! “K” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🎬 «kino» soʻzini boʻgʻinlab qarsak chal!", "ru": "🎬 Похлопай слово «kino» по слогам!", "en": "🎬 Clap the word “kino” by syllables!" },
+      "hint": { "uz": "ki-no — ikki marta qarsak.", "ru": "ki-no — два хлопка.", "en": "ki-no — two claps." },
+      "explanation": { "uz": "«kino» = ki-no, ikki boʻgʻin.", "ru": "«kino» = ki-no, два слога.", "en": "“kino” = ki-no, two syllables." },
+      "widget": { "type": "syllable_clap", "props": { "emoji": "🎬", "word": { "uz": "kino", "ru": "kino", "en": "kino" }, "syllables": 2 } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Har bir rasmni soʻzi bilan ula!", "ru": "Соедини каждую картинку с её словом!", "en": "Match each picture to its word!" },
+      "hint": { "uz": "kit — 🐋, kun — ☀️, kino — 🎬, olma — 🍎.", "ru": "kit — 🐋, kun — ☀️, kino — 🎬, olma — 🍎.", "en": "kit — 🐋, kun — ☀️, kino — 🎬, olma — 🍎." },
+      "explanation": { "uz": "Rasm va soʻzni toʻgʻri ulading!", "ru": "Ты верно соединил картинку и слово!", "en": "You matched picture and word correctly!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "emoji": "🐋" }, "right": { "label": { "uz": "kit", "ru": "kit", "en": "kit" } } },
+        { "left": { "emoji": "☀️" }, "right": { "label": { "uz": "kun", "ru": "kun", "en": "kun" } } },
+        { "left": { "emoji": "🎬" }, "right": { "label": { "uz": "kino", "ru": "kino", "en": "kino" } } },
+        { "left": { "emoji": "🍎" }, "right": { "label": { "uz": "olma", "ru": "olma", "en": "olma" } } }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Qaysi harf «K»?", "ru": "Какая буква «K»?", "en": "Which letter is “K”?" },
+      "hint": { "uz": "Uning tik chizigʻi va ikki qiya chizigʻi bor.", "ru": "У неё вертикальная и две косые чёрточки.", "en": "It has a vertical line and two slanted lines." },
+      "explanation": { "uz": "«K» — tik va ikki qiya chiziqli harf.", "ru": "«K» — буква с вертикальной и косыми линиями.", "en": "“K” has a vertical and two slanted lines." },
+      "widget": { "type": "mcq", "props": { "choices": ["K", "T", "N"], "answerIndex": 0 } }
+    }
+  ]
+}

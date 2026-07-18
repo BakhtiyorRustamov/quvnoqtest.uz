@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-48",
+  "subjectKey": "g1-ona",
+  "emojis": "🐶🐱❓",
+  "title": {
+    "uz": "Nima qildi? Nima qiladi? Nima qilyapti?",
+    "ru": "Что сделал? Что делает? Что делает сейчас?",
+    "en": "What did / does / is it doing?"
+  },
+  "recall": {
+    "uz": "Harakat soʻzlari uch xil soʻroqqa javob boʻladi: «Nima qildi?» (oʻqidi), «Nima qiladi?» (oʻqiydi), «Nima qilyapti?» (oʻqiyapti). Har bir hayvonning oʻz harakati bor: it vovullaydi, mushuk miyovlaydi, qush uchadi, baliq suzadi.",
+    "ru": "Слова-действия отвечают на три вопроса: «Что сделал?» (oʻqidi), «Что делает?» (oʻqiydi), «Что делает сейчас?» (oʻqiyapti). У каждого животного своё действие: собака лает, кот мяукает, птица летает, рыба плавает.",
+    "en": "Action words answer three questions: “What did it do?” (oʻqidi), “What does it do?” (oʻqiydi), “What is it doing?” (oʻqiyapti). Each animal has its own action: a dog barks, a cat meows, a bird flies, a fish swims."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "It", "right": "vovullaydi" }, { "left": "Mushuk", "right": "miyovlaydi" }, { "left": "Ot", "right": "kishnaydi" }, { "left": "Sigir", "right": "maʼraydi" } ] } },
+      "prompt": { "uz": "Hayvonni oʻz harakatiga (tovushiga) ula!", "ru": "Соедини животное с его действием (звуком)!", "en": "Match each animal to its action (sound)!" },
+      "hint": { "uz": "It — vovullaydi, mushuk — miyovlaydi.", "ru": "Собака — лает, кот — мяукает.", "en": "A dog barks; a cat meows." },
+      "explanation": { "uz": "Har bir hayvonning oʻ harakat soʻzi bor.", "ru": "У каждого животного своё слово-действие.", "en": "Each animal has its own action word." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "uchadi", "match": true }, { "text": "suzadi", "match": false }, { "text": "sakraydi", "match": true }, { "text": "oʻkiradi", "match": false }, { "text": "chirqillaydi", "match": true }, { "text": "irillaydi", "match": false } ] } },
+      "prompt": { "uz": "Faqat chumchuqning harakatlarini bos!", "ru": "Нажми только действия воробья!", "en": "Tap only the sparrow's actions!" },
+      "hint": { "uz": "suzadi — baliq, oʻkiradi — sher, irillaydi — it.", "ru": "suzadi — рыба, oʻkiradi — лев, irillaydi — собака.", "en": "suzadi is a fish, oʻkiradi a lion, irillaydi a dog." },
+      "explanation": { "uz": "Chumchuq uchadi, sakraydi, chirqillaydi.", "ru": "Воробей летает, прыгает, чирикает.", "en": "A sparrow flies, hops and chirps." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "ot", "bin": "yuguradi" }, { "id": "b", "label": "quyon", "bin": "yuguradi" }, { "id": "c", "label": "it", "bin": "yuguradi" }, { "id": "d", "label": "baliq", "bin": "suzadi" }, { "id": "e", "label": "oʻrdak", "bin": "suzadi" }, { "id": "f", "label": "qurbaqa", "bin": "suzadi" } ], "bins": [ { "id": "yuguradi", "label": "Yuguradi (quruqlikda)" }, { "id": "suzadi", "label": "Suzadi (suvda)" } ] } },
+      "prompt": { "uz": "Hayvonlarni harakatiga qarab ajrat!", "ru": "Раздели животных по их действию!", "en": "Sort the animals by their action!" },
+      "hint": { "uz": "baliq, oʻrdak, qurbaqa — suvda suzadi.", "ru": "рыба, утка, лягушка — плавают в воде.", "en": "fish, duck, frog swim in water." },
+      "explanation": { "uz": "Ot, quyon, it yuguradi; baliq, oʻrdak, qurbaqa suzadi.", "ru": "Конь, заяц, собака бегают; рыба, утка, лягушка плавают.", "en": "Horse, rabbit, dog run; fish, duck, frog swim." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "It baland ovozda ", "after": ".", "choices": ["vovullaydi", "miyovlaydi", "suzadi"], "answer": "vovullaydi", "emoji": "🐶", "clue": { "uz": "It qanday tovush chiqaradi?", "ru": "Какой звук издаёт собака?", "en": "What sound does a dog make?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "It «vov-vov» qiladi.", "ru": "Собака делает «гав-гав».", "en": "A dog goes “woof-woof”." },
+      "explanation": { "uz": "It vovullaydi. «Vovullaydi» — harakat soʻzi.", "ru": "Собака лает. «Vovullaydi» — слово-действие.", "en": "A dog barks. “Vovullaydi” is an action word." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Baliq suvda ", "after": ".", "choices": ["suzadi", "uchadi", "yuguradi"], "answer": "suzadi", "emoji": "🐟", "clue": { "uz": "Baliq suvda nima qiladi?", "ru": "Что делает рыба в воде?", "en": "What does a fish do in water?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "Suvda harakat qiladigan soʻzni tanla.", "ru": "Выбери слово о движении в воде.", "en": "Choose the word for moving in water." },
+      "explanation": { "uz": "Baliq suzadi. «Suzadi» — harakat soʻzi.", "ru": "Рыба плавает. «Suzadi» — слово-действие.", "en": "A fish swims. “Suzadi” is an action word." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Qush osmonda ", "after": ".", "choices": ["uchadi", "sudraladi", "suzadi"], "answer": "uchadi", "emoji": "🐦", "clue": { "uz": "Qush osmonda nima qiladi?", "ru": "Что делает птица в небе?", "en": "What does a bird do in the sky?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "Qanoti bor hayvon havoda nima qiladi?", "ru": "Что делает крылатое животное в воздухе?", "en": "What does a winged animal do in the air?" },
+      "explanation": { "uz": "Qush uchadi. «Uchadi» — harakat soʻzi.", "ru": "Птица летает. «Uchadi» — слово-действие.", "en": "A bird flies. “Uchadi” is an action word." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "oʻqidi", "right": "Nima qildi?" }, { "left": "oʻqiydi", "right": "Nima qiladi?" }, { "left": "oʻqiyapti", "right": "Nima qilyapti?" } ] } },
+      "prompt": { "uz": "Harakat soʻzini oʻz soʻrogʻiga ula!", "ru": "Соедини слово-действие с его вопросом!", "en": "Match each action word to its question!" },
+      "hint": { "uz": "«-di» — oʻtgan zamon: Nima qildi?", "ru": "«-di» — прошедшее: Что сделал?", "en": "“-di” is past: What did it do?" },
+      "explanation": { "uz": "oʻqidi — Nima qildi?; oʻqiydi — Nima qiladi?; oʻqiyapti — Nima qilyapti?", "ru": "oʻqidi — что сделал?; oʻqiydi — что делает?; oʻqiyapti — что делает сейчас?", "en": "oʻqidi — what did it do?; oʻqiydi — what does it do?; oʻqiyapti — what is it doing?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "yuguryapti", "match": true }, { "text": "daraxt", "match": false }, { "text": "oʻynayapti", "match": true }, { "text": "qizil", "match": false }, { "text": "yozyapti", "match": true }, { "text": "kitob", "match": false } ] } },
+      "prompt": { "uz": "«Nima qilyapti?» soʻrogʻiga javob boʻlganlarni bos!", "ru": "Нажми слова, отвечающие на «что делает сейчас?»!", "en": "Tap the words that answer “what is it doing?”!" },
+      "hint": { "uz": "daraxt, kitob — narsa; qizil — belgi.", "ru": "daraxt, kitob — предметы; qizil — признак.", "en": "daraxt, kitob are things; qizil is an attribute." },
+      "explanation": { "uz": "yuguryapti, oʻynayapti, yozyapti — harakat soʻzlari.", "ru": "yuguryapti, oʻynayapti, yozyapti — слова-действия.", "en": "yuguryapti, oʻynayapti, yozyapti are action words." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["mi", "yov", "lay", "di"], "emoji": "🐱", "clue": { "uz": "Mushukning harakati", "ru": "Действие кота", "en": "A cat's action" } } },
+      "prompt": { "uz": "Boʻgʻinlardan harakat soʻzini tuz!", "ru": "Собери слово-действие из слогов!", "en": "Build the action word from syllables!" },
+      "hint": { "uz": "mi- … -yov- … -lay- … -di.", "ru": "mi- … -yov- … -lay- … -di.", "en": "mi- … -yov- … -lay- … -di." },
+      "explanation": { "uz": "«Miyovlaydi» — mushukning harakat soʻzi.", "ru": "«Miyovlaydi» — слово-действие кота.", "en": "“Miyovlaydi” is the cat's action word." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "uchadi", "letters": ["u", "ch", "a", "d", "i"], "emoji": "🐦", "clue": { "uz": "Qushning harakati", "ru": "Действие птицы", "en": "A bird's action" } } },
+      "prompt": { "uz": "Harflardan harakat soʻzini yigʻ!", "ru": "Собери слово-действие из букв!", "en": "Build the action word from the letters!" },
+      "hint": { "uz": "Qush osmonda nima qiladi?", "ru": "Что делает птица в небе?", "en": "What does a bird do in the sky?" },
+      "explanation": { "uz": "«Uchadi» — harakat soʻzi (qush uchadi).", "ru": "«Uchadi» — слово-действие (птица летает).", "en": "“Uchadi” is an action word (a bird flies)." }
+    }
+  ]
+}

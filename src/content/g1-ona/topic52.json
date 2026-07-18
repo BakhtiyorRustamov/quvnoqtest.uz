@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-52",
+  "subjectKey": "g1-ona",
+  "emojis": "🔁⚡🎨",
+  "title": {
+    "uz": "Takrorlash — harakat va belgi",
+    "ru": "Повторение — действие и признак",
+    "en": "Review — actions and attributes"
+  },
+  "recall": {
+    "uz": "Takrorlaymiz! Harakatni bildirgan soʻzlar «Nima qildi?» soʻrogʻiga (yugurdi, kuyladi), belgini bildirgan soʻzlar «Qanday?» soʻrogʻiga (shirin, baland) javob boʻladi. Narsani bildirgan soʻzlar esa «Kim?», «Nima?» soʻrogʻiga javob boʻladi.",
+    "ru": "Повторяем! Слова-действия отвечают на «Что сделал?» (yugurdi, kuyladi), слова-признаки — на «Какой?» (shirin, baland). А слова-предметы отвечают на «Кто?», «Что?».",
+    "en": "Let's review! Action words answer “What did it do?” (yugurdi, kuyladi); attribute words answer “What kind?” (shirin, baland). Thing words answer “Who?”, “What?”."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "yugurdi", "bin": "harakat" }, { "id": "b", "label": "kuyladi", "bin": "harakat" }, { "id": "c", "label": "sakradi", "bin": "harakat" }, { "id": "d", "label": "shirin", "bin": "belgi" }, { "id": "e", "label": "baland", "bin": "belgi" }, { "id": "f", "label": "qizil", "bin": "belgi" } ], "bins": [ { "id": "harakat", "label": "Harakat (nima qildi?)" }, { "id": "belgi", "label": "Belgi (qanday?)" } ] } },
+      "prompt": { "uz": "Ajrat: harakat soʻzi va belgi soʻzi!", "ru": "Раздели: действие и признак!", "en": "Sort: action word vs attribute word!" },
+      "hint": { "uz": "yugurdi, kuyladi — harakat; shirin, baland — belgi.", "ru": "yugurdi, kuyladi — действия; shirin, baland — признаки.", "en": "yugurdi, kuyladi are actions; shirin, baland are attributes." },
+      "explanation": { "uz": "Harakat «nima qildi?», belgi «qanday?» soʻrogʻiga javob.", "ru": "Действие — «что сделал?», признак — «какой?».", "en": "Actions answer “what did it do?”, attributes answer “what kind?”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "qaynamoq", "match": true }, { "text": "shirin", "match": false }, { "text": "kuylamoq", "match": true }, { "text": "osmon", "match": false }, { "text": "yugurmoq", "match": true }, { "text": "baland", "match": false } ] } },
+      "prompt": { "uz": "Harakatni bildirgan soʻzlarni bos!", "ru": "Нажми слова-действия!", "en": "Tap the action words!" },
+      "hint": { "uz": "shirin, baland — belgi; osmon — narsa.", "ru": "shirin, baland — признаки; osmon — предмет.", "en": "shirin, baland are attributes; osmon is a thing." },
+      "explanation": { "uz": "qaynamoq, kuylamoq, yugurmoq — harakat soʻzlari.", "ru": "qaynamoq, kuylamoq, yugurmoq — слова-действия.", "en": "qaynamoq, kuylamoq, yugurmoq are action words." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "barg", "right": "yashil" }, { "left": "ona", "right": "mehribon" }, { "left": "osmon", "right": "havorang" }, { "left": "olma", "right": "shirin" } ] } },
+      "prompt": { "uz": "Narsani unga mos belgiga ula!", "ru": "Соедини предмет с признаком!", "en": "Match each thing to its attribute!" },
+      "hint": { "uz": "barg — yashil, ona — mehribon.", "ru": "лист — зелёный, мама — добрая.", "en": "leaf — green, mother — kind." },
+      "explanation": { "uz": "Yashil barg, mehribon ona, havorang osmon, shirin olma.", "ru": "Зелёный лист, добрая мама, голубое небо, сладкое яблоко.", "en": "Green leaf, kind mother, blue sky, sweet apple." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "yugurmoq" }, { "text": "kuylamoq" }, { "text": "soʻzlamoq" }, { "text": "shirin", "odd": true } ], "clue": { "uz": "Harakat soʻzlari — bittasi belgi", "ru": "Слова-действия — одно из них признак", "en": "Action words — one is an attribute" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Qaysi biri harakat emas?", "ru": "Какое из них не действие?", "en": "Which one is not an action?" },
+      "explanation": { "uz": "«Shirin» — belgi soʻzi, qolganlari harakat.", "ru": "«Shirin» — признак, остальные действия.", "en": "“Shirin” is an attribute; the rest are actions." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Mening onam juda ", "after": ".", "choices": ["mehribon", "yashil", "yugurdi"], "answer": "mehribon", "emoji": "👩", "clue": { "uz": "Ona qanday?", "ru": "Мама какая?", "en": "What is mother like?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Onaga xos yaxshi xususiyat.", "ru": "Хорошее качество мамы.", "en": "A good quality of a mother." },
+      "explanation": { "uz": "Onam mehribon. «Mehribon» — belgi (xususiyat) soʻzi.", "ru": "Мама добрая. «Mehribon» — слово-признак.", "en": "My mother is kind. “Mehribon” is an attribute word." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Bola koʻchada tez ", "after": ".", "choices": ["yuguradi", "shirin", "qizil"], "answer": "yuguradi", "emoji": "🏃", "clue": { "uz": "Bola nima qiladi?", "ru": "Что делает мальчик?", "en": "What does the boy do?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "«Qanday?» emas, «nima qiladi?» degan soʻz kerak.", "ru": "Нужно слово «что делает?», а не «какой?».", "en": "You need a “what does it do?” word, not “what kind?”." },
+      "explanation": { "uz": "Bola yuguradi. «Yuguradi» — harakat soʻzi.", "ru": "Мальчик бежит. «Yuguradi» — слово-действие.", "en": "The boy runs. “Yuguradi” is an action word." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "osmon", "bin": "narsa" }, { "id": "b", "label": "ona", "bin": "narsa" }, { "id": "c", "label": "olma", "bin": "narsa" }, { "id": "d", "label": "yashil", "bin": "belgi" }, { "id": "e", "label": "mehribon", "bin": "belgi" }, { "id": "f", "label": "shirin", "bin": "belgi" } ], "bins": [ { "id": "narsa", "label": "Narsa (kim? nima?)" }, { "id": "belgi", "label": "Belgi (qanday?)" } ] } },
+      "prompt": { "uz": "Ajrat: narsa soʻzi va belgi soʻzi!", "ru": "Раздели: предмет и признак!", "en": "Sort: thing word vs attribute word!" },
+      "hint": { "uz": "osmon, ona, olma — narsa; yashil, shirin — belgi.", "ru": "osmon, ona, olma — предметы; yashil, shirin — признаки.", "en": "osmon, ona, olma are things; yashil, shirin are attributes." },
+      "explanation": { "uz": "Narsa «kim?/nima?», belgi «qanday?» soʻrogʻiga javob.", "ru": "Предмет — «кто?/что?», признак — «какой?».", "en": "A thing answers “who?/what?”; an attribute answers “what kind?”." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bogʻda", "qizil", "olma", "pishdi."], "emoji": "🍎", "clue": { "uz": "Olma haqida gap", "ru": "Предложение о яблоке", "en": "A sentence about an apple" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Qanday olma? — qizil. Nima qildi? — pishdi.", "ru": "Какое яблоко? — красное. Что сделало? — созрело.", "en": "What kind of apple? — red. What did it do? — ripened." },
+      "explanation": { "uz": "Bogʻda qizil olma pishdi. «Qizil» — belgi, «pishdi» — harakat.", "ru": "В саду созрело красное яблоко. «Qizil» — признак, «pishdi» — действие.", "en": "A red apple ripened in the garden. “Qizil” is an attribute; “pishdi” is an action." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["meh", "ri", "bon"], "emoji": "💗", "clue": { "uz": "Onaning belgisi (yaxshi xususiyat)", "ru": "Признак мамы (доброта)", "en": "A mother's attribute (kindness)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan belgi soʻzini tuz!", "ru": "Собери слово-признак из слогов!", "en": "Build the attribute word from syllables!" },
+      "hint": { "uz": "meh- … -ri- … -bon.", "ru": "meh- … -ri- … -bon.", "en": "meh- … -ri- … -bon." },
+      "explanation": { "uz": "«Mehribon» — xususiyat (belgi) soʻzi.", "ru": "«Mehribon» — слово-признак.", "en": "“Mehribon” is a quality (attribute) word." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "yugurdi", "letters": ["y", "u", "g", "u", "r", "d", "i"], "emoji": "🏃", "clue": { "uz": "Tez harakat (harakat soʻzi)", "ru": "Быстрое действие", "en": "A fast action" } } },
+      "prompt": { "uz": "Harflardan harakat soʻzini yigʻ!", "ru": "Собери слово-действие из букв!", "en": "Build the action word from the letters!" },
+      "hint": { "uz": "Poygada bola nima qildi?", "ru": "Что сделал мальчик на гонке?", "en": "What did the boy do in the race?" },
+      "explanation": { "uz": "«Yugurdi» — harakat soʻzi («nima qildi?»).", "ru": "«Yugurdi» — слово-действие («что сделал?»).", "en": "“Yugurdi” is an action word (“what did it do?”)." }
+    }
+  ]
+}

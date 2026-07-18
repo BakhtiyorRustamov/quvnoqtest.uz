@@ -1,0 +1,469 @@
+{
+  "topicId": "g1-informatika-14",
+  "subjectKey": "g1-informatika",
+  "emojis": "🍵📄🥚🍳",
+  "title": {
+    "uz": "Amallarning ketma-ketligi",
+    "ru": "Последовательность действий",
+    "en": "Sequence of actions"
+  },
+  "recall": {
+    "uz": "Ish maʼlum tartibda bajariladi. Choy damlash yoki samolyotcha yasashda amallar ketma-ketligiga rioya qilamiz.",
+    "ru": "Работа делается по порядку. Заваривая чай или складывая самолётик, соблюдаем последовательность действий.",
+    "en": "Work is done in order. Brewing tea or folding a paper plane, we follow the sequence of steps."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Choy damlash tartibini joyla!",
+        "ru": "Порядок заваривания чая!",
+        "en": "Order the tea-brewing steps!"
+      },
+      "hint": {
+        "uz": "Chayamiz, choy solamiz, suv quyamiz.",
+        "ru": "Ополоснуть, засыпать, залить.",
+        "en": "Rinse, add tea, pour water."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri tartib!",
+        "ru": "Верный порядок!",
+        "en": "Correct order!"
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "events": [
+            {
+              "text": {
+                "uz": "Choynakni issiq suvda chaymiz.",
+                "ru": "Ополаскиваем чайник.",
+                "en": "We rinse the teapot."
+              }
+            },
+            {
+              "text": {
+                "uz": "Choynakka quruq choy solamiz.",
+                "ru": "Засыпаем сухой чай.",
+                "en": "We add dry tea."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ustiga qaynagan suv quyamiz.",
+                "ru": "Заливаем кипятком.",
+                "en": "We pour boiling water."
+              }
+            },
+            {
+              "text": {
+                "uz": "5 daqiqa damlaymiz.",
+                "ru": "Настаиваем 5 минут.",
+                "en": "We let it brew 5 minutes."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Quymoq tayyorlash tartibini joyla!",
+        "ru": "Порядок: жарим яичницу!",
+        "en": "Order: frying eggs!"
+      },
+      "hint": {
+        "uz": "Yogʻ, tuxum, qovuramiz.",
+        "ru": "Масло, яйцо, жарим.",
+        "en": "Oil, egg, fry."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "events": [
+            {
+              "text": {
+                "uz": "Tovaga yogʻ solamiz.",
+                "ru": "Наливаем масло.",
+                "en": "We put oil in the pan."
+              }
+            },
+            {
+              "text": {
+                "uz": "Tuxumni chaqamiz.",
+                "ru": "Разбиваем яйцо.",
+                "en": "We crack the egg."
+              }
+            },
+            {
+              "text": {
+                "uz": "Qovuramiz.",
+                "ru": "Жарим.",
+                "en": "We fry it."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan buyum nomini tuz! (🍵)",
+        "ru": "Составь слово! (🍵)",
+        "en": "Build the word! (🍵)"
+      },
+      "hint": {
+        "uz": "N-O-Y-CH-A-K harflaridan.",
+        "ru": "Из букв N-O-Y-CH-A-K.",
+        "en": "From N-O-Y-CH-A-K."
+      },
+      "explanation": {
+        "uz": "Barakalla! «choynak» soʻzini tuzding.",
+        "ru": "Молодец! «choynak».",
+        "en": "Great! You built “choynak”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🍵",
+          "word": "choynak",
+          "label": {
+            "uz": "choynak",
+            "ru": "чайник",
+            "en": "teapot"
+          },
+          "letters": [
+            "ch",
+            "o",
+            "y",
+            "n",
+            "a",
+            "k"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Choy damlashda birinchi nima qilamiz?",
+        "ru": "Что первым при заварке чая?",
+        "en": "What do we do first when brewing tea?"
+      },
+      "hint": {
+        "uz": "Choynakni tayyorlaymiz.",
+        "ru": "Готовим чайник.",
+        "en": "We prepare the teapot."
+      },
+      "explanation": {
+        "uz": "Avval choynakni chaymiz.",
+        "ru": "Сначала ополаскиваем чайник.",
+        "en": "First we rinse the teapot."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "choynakni chaymiz",
+              "ru": "ополаскиваем чайник",
+              "en": "rinse the teapot"
+            },
+            {
+              "uz": "choy ichamiz",
+              "ru": "пьём чай",
+              "en": "drink tea"
+            },
+            {
+              "uz": "suvni toʻkamiz",
+              "ru": "выливаем воду",
+              "en": "pour out water"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Avval choy solib, keyin suv quyamiz.",
+        "ru": "Сначала чай, потом вода.",
+        "en": "First tea, then water."
+      },
+      "hint": {
+        "uz": "Tartibga qara.",
+        "ru": "Смотри на порядок.",
+        "en": "Look at the order."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qoʻl yuvish tartibini joyla!",
+        "ru": "Порядок мытья рук!",
+        "en": "Order washing hands!"
+      },
+      "hint": {
+        "uz": "Suv, sovun, chayish, artish.",
+        "ru": "Вода, мыло, ополоснуть, вытереть.",
+        "en": "Water, soap, rinse, dry."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "events": [
+            {
+              "text": {
+                "uz": "Jomni ochamiz.",
+                "ru": "Открываем кран.",
+                "en": "We turn on the tap."
+              }
+            },
+            {
+              "text": {
+                "uz": "Qoʻlni sovunlaymiz.",
+                "ru": "Намыливаем руки.",
+                "en": "We soap our hands."
+              }
+            },
+            {
+              "text": {
+                "uz": "Suvda chayamiz.",
+                "ru": "Смываем водой.",
+                "en": "We rinse with water."
+              }
+            },
+            {
+              "text": {
+                "uz": "Sochiqda artamiz.",
+                "ru": "Вытираем полотенцем.",
+                "en": "We dry with a towel."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Amallarni notoʻgʻri tartibda bajarsak nima boʻladi?",
+        "ru": "Что если нарушить порядок?",
+        "en": "What if the order is wrong?"
+      },
+      "hint": {
+        "uz": "Ish qanday chiqadi?",
+        "ru": "Как выйдет работа?",
+        "en": "How will the work turn out?"
+      },
+      "explanation": {
+        "uz": "Ish notoʻgʻri chiqadi.",
+        "ru": "Работа выйдет неправильно.",
+        "en": "The work turns out wrong."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ish notoʻgʻri chiqadi",
+              "ru": "работа выйдет неправильно",
+              "en": "the work turns out wrong"
+            },
+            {
+              "uz": "hech narsa",
+              "ru": "ничего",
+              "en": "nothing"
+            },
+            {
+              "uz": "tezroq boʻladi",
+              "ru": "быстрее",
+              "en": "faster"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ertalabki ishlarni tartibda joyla!",
+        "ru": "Утренние дела по порядку!",
+        "en": "Order the morning routine!"
+      },
+      "hint": {
+        "uz": "Uygʻonish, yuvinish, nonushta, maktab.",
+        "ru": "Проснуться, умыться, завтрак, школа.",
+        "en": "Wake, wash, breakfast, school."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "😀 uygʻonish",
+                "ru": "😀 проснуться",
+                "en": "😀 wake up"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "🚿 yuvinish",
+                "ru": "🚿 умыться",
+                "en": "🚿 wash"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🍞 nonushta",
+                "ru": "🍞 завтрак",
+                "en": "🍞 breakfast"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "🎒 maktab",
+                "ru": "🎒 школа",
+                "en": "🎒 school"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Samolyotcha nimadan yasaladi?",
+        "ru": "Из чего складывают самолётик?",
+        "en": "What is a paper plane made from?"
+      },
+      "hint": {
+        "uz": "Uni buklaymiz.",
+        "ru": "Его складывают.",
+        "en": "We fold it."
+      },
+      "explanation": {
+        "uz": "Samolyotcha qogʻozdan yasaladi.",
+        "ru": "Самолётик — из бумаги.",
+        "en": "A paper plane is made of paper."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "📄",
+              "label": {
+                "uz": "qogʻoz",
+                "ru": "бумага",
+                "en": "paper"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🥛",
+              "label": {
+                "uz": "sut",
+                "ru": "молоко",
+                "en": "milk"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "💧",
+              "label": {
+                "uz": "suv",
+                "ru": "вода",
+                "en": "water"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir ishning oʻz tartibi bor.",
+        "ru": "У каждого дела свой порядок.",
+        "en": "Every task has its own order."
+      },
+      "hint": {
+        "uz": "Qadamma-qadam.",
+        "ru": "Шаг за шагом.",
+        "en": "Step by step."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍳",
+          "answer": true
+        }
+      }
+    }
+  ]
+}

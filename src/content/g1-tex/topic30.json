@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-30",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Dengiz jonivorlari",
+    "ru": "Морские животные",
+    "en": "Sea animals"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻozdan sakkizoyoq yasaymiz.",
+    "ru": "Сегодня из цветной бумаги сделаем осьминога.",
+    "en": "Today we make an octopus from coloured paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sakkizoyoq yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай осьминога. Выполняй каждый этап по рисунку!",
+        "en": "Make an octopus. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Sakkizta oyoq boʻlsin.",
+        "ru": "Пусть будет восемь ножек.",
+        "en": "It should have eight legs."
+      },
+      "explanation": {
+        "uz": "Kulgili sakkizoyoq!",
+        "ru": "Забавный осьминог!",
+        "en": "A funny octopus!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Sakkizoyoq boshini qirq.",
+              "ru": "Вырежь голову осьминога.",
+              "en": "Cut the octopus's head."
+            },
+            {
+              "uz": "Sakkizta ilma oyoqni qoʻsh.",
+              "ru": "Добавь восемь волнистых ножек.",
+              "en": "Add eight wavy legs."
+            },
+            {
+              "uz": "Koʻz va suv pufaklarini qoʻsh.",
+              "ru": "Добавь глаза и пузырьки.",
+              "en": "Add eyes and bubbles."
+            }
+          ],
+          "art": "seaanimal",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

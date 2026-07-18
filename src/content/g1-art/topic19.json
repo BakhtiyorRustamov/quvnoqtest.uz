@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-19", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Oʻrmon jonivorlari. Quyoncha", "ru": "Лесные звери. Зайчик", "en": "Forest animals. The bunny" },
+  "recall": {
+    "uz": "Oʻrmonda quyoncha yashaydi. Uning uzun quloqlari va yumshoq juni bor. Keling, quyonchani boʻyaymiz.",
+    "ru": "В лесу живёт зайчик. У него длинные уши и мягкая шёрстка. Давай раскрасим зайчика.",
+    "en": "A bunny lives in the forest. It has long ears and soft fur. Let's colour the bunny."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Quyonchani boʻya.", "ru": "Раскрась зайчика.", "en": "Colour the bunny." },
+      "hint": { "uz": "Yumshoq ranglardan foydalan.", "ru": "Используй мягкие цвета.", "en": "Use soft colours." },
+      "explanation": { "uz": "Yumshoqqina quyoncha!", "ru": "Мягкий зайчик!", "en": "A soft little bunny!" },
+      "widget": { "type": "color_sheet", "props": { "sheet": "bunny" } } }
+  ]
+}

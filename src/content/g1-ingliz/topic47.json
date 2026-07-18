@@ -1,0 +1,485 @@
+{
+  "topicId": "g1-ingliz-47",
+  "subjectKey": "g1-ingliz",
+  "emojis": "☂️⬆️🚌☀️",
+  "title": {
+    "uz": "«u» tovushi: soyabon",
+    "ru": "Звук «u»: зонт",
+    "en": "The 'u' sound: an umbrella"
+  },
+  "recall": {
+    "uz": "Hayvon tovushlari! Bugun «u» tovushini mashq qilamiz: umbrella — soyabon, up — yuqoriga, bus — avtobus. U-u-umbrella!",
+    "ru": "Звуки животных! Сегодня тренируем звук «u»: umbrella — зонт, up — вверх, bus — автобус. U-u-umbrella!",
+    "en": "Animal sounds! Today we practise the /u/ sound: umbrella, up and bus. U-u-umbrella!"
+  },
+  "ttsText": {
+    "uz": "«u» tovushi.",
+    "en": "Animal sounds! The u sound. U-u-umbrella! An umbrella bird can jump!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «u» bilan boshlanadigan narsani bos!",
+        "ru": "Послушай и нажми предмет на «u»!",
+        "en": "Listen and tap the thing that starts with /u/!"
+      },
+      "audio": {
+        "key": "ing47-q1",
+        "text": "Umbrella! U-u-umbrella!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«umbrella» — soyabon (yomgʻirda).",
+        "ru": "«umbrella» — зонт (в дождь).",
+        "en": "\"umbrella\" starts with /u/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Umbrella — soyabon.",
+        "ru": "Верно! Umbrella — зонт.",
+        "en": "Right! Umbrella!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "☂️",
+              "label": "umbrella",
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🐢",
+              "label": "turtle"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«u» bilan boshlanadigan yoʻnalishni bos!",
+        "ru": "Нажми направление на «u»!",
+        "en": "Tap the direction that starts with /u/!"
+      },
+      "audio": {
+        "key": "ing47-q2",
+        "text": "Up! U-u-up!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«up» — yuqoriga.",
+        "ru": "«up» — вверх.",
+        "en": "\"up\" starts with /u/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Up — yuqoriga.",
+        "ru": "Верно! Up — вверх.",
+        "en": "Right! Up!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "⬆️",
+              "label": "up",
+              "correct": true
+            },
+            {
+              "emoji": "⬇️",
+              "label": "down"
+            },
+            {
+              "emoji": "➡️",
+              "label": "right"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«u» tovushi bilan boshlanadigan hammasini belgila!",
+        "ru": "Отметь всё на «u»!",
+        "en": "Tap everything that starts with /u/!"
+      },
+      "hint": {
+        "uz": "umbrella, up, umpire.",
+        "ru": "umbrella, up, umpire.",
+        "en": "umbrella, up, umpire."
+      },
+      "explanation": {
+        "uz": "Barakalla! Umbrella, up — hammasi «u»!",
+        "ru": "Молодец! Umbrella, up — всё на «u»!",
+        "en": "Great! Umbrella, up — all /u/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "☂️",
+              "label": "umbrella",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "⬆️",
+              "label": "up",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🔓",
+              "label": "unlock",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «u» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «u»?",
+        "en": "Which word starts with the /u/ sound?"
+      },
+      "hint": {
+        "uz": "Ogʻzingni ochib «u» de.",
+        "ru": "Скажи «u».",
+        "en": "Say /u/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «umbrella» — «u» tovushi.",
+        "ru": "Верно! «umbrella» — звук «u».",
+        "en": "Right! \"umbrella\" starts with /u/."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "☂️",
+              "label": "umbrella",
+              "correct": true
+            },
+            {
+              "emoji": "🍌",
+              "label": "banana"
+            },
+            {
+              "emoji": "🐱",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va birga ayt. Qaysi tovush takrorlanadi?",
+        "ru": "Послушай и повтори. Какой звук повторяется?",
+        "en": "Listen and say it. Which sound repeats?"
+      },
+      "hint": {
+        "uz": "Umbrella, up, jump — bir tovush.",
+        "ru": "Umbrella, up, jump — один звук.",
+        "en": "umbrella, up, jump — the same sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «u» tovushi takrorlanadi.",
+        "ru": "Верно! Повторяется звук «u».",
+        "en": "Right! The /u/ sound repeats."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🐦",
+              "name": "Bird",
+              "text": "An umbrella bird can jump up!",
+              "audio": {
+                "key": "ing47-q5-a",
+                "text": "An umbrella bird can jump up!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "You",
+              "text": "U-u-umbrella! U-u-up!",
+              "audio": {
+                "key": "ing47-q5-b",
+                "text": "U! U! U! Umbrella, up, jump!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qaysi tovush?",
+              "ru": "Какой звук?",
+              "en": "Which sound?"
+            },
+            "choices": [
+              "/i/",
+              "/e/",
+              "/u/"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «up» soʻzi «u» tovushi bilan boshlanadi.",
+        "ru": "Верно? Слово «up» начинается на «u».",
+        "en": "Is this right? \"up\" starts with the /u/ sound."
+      },
+      "hint": {
+        "uz": "U-u-up!",
+        "ru": "U-u-up!",
+        "en": "U-u-up!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Up — «u» tovushi.",
+        "ru": "Верно! Up — звук «u».",
+        "en": "Right! \"up\" starts with /u/."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "⬆️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil juftni top!",
+        "ru": "Найди одинаковую пару!",
+        "en": "Find the matching pair!"
+      },
+      "hint": {
+        "uz": "Bir xil ikkita rasmni top.",
+        "ru": "Найди два одинаковых.",
+        "en": "Find the two that are the same."
+      },
+      "explanation": {
+        "uz": "Barakalla! Juftni topding!",
+        "ru": "Молодец! Ты нашёл пару!",
+        "en": "Great! You found the pair!"
+      },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            {
+              "id": "um1",
+              "emoji": "☂️",
+              "key": "umbrella"
+            },
+            {
+              "id": "up",
+              "emoji": "⬆️",
+              "key": "up"
+            },
+            {
+              "id": "um2",
+              "emoji": "☂️",
+              "key": "umbrella"
+            },
+            {
+              "id": "bus",
+              "emoji": "🚌",
+              "key": "bus"
+            },
+            {
+              "id": "apple",
+              "emoji": "🍎",
+              "key": "apple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«u» bilan boshlanadigan transportni bos!",
+        "ru": "Нажми транспорт... а вот «bus» — на «b». Нажми зонт на «u»!",
+        "en": "Tap the thing that starts with /u/!"
+      },
+      "audio": {
+        "key": "ing47-q8",
+        "text": "Umbrella! U-u-umbrella!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "Soyabon — «u».",
+        "ru": "Зонт — «u».",
+        "en": "Umbrella — /u/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Umbrella — «u» tovushi.",
+        "ru": "Верно! Umbrella — звук «u».",
+        "en": "Right! Umbrella!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "☂️",
+              "label": "umbrella",
+              "correct": true
+            },
+            {
+              "emoji": "🚌",
+              "label": "bus"
+            },
+            {
+              "emoji": "☀️",
+              "label": "sun"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, «u» soʻzlarini juftla!",
+        "ru": "Открывай карточки: слова на «u»!",
+        "en": "Flip the cards: match the /u/ words!"
+      },
+      "hint": {
+        "uz": "umbrella ☂️, up ⬆️, unlock 🔓.",
+        "ru": "umbrella ☂️, up ⬆️, unlock 🔓.",
+        "en": "umbrella ☂️, up ⬆️, unlock 🔓."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "☂️"
+              },
+              "b": {
+                "label": "umbrella"
+              }
+            },
+            {
+              "a": {
+                "emoji": "⬆️"
+              },
+              "b": {
+                "label": "up"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🔓"
+              },
+              "b": {
+                "label": "unlock"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «u» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «u»?",
+        "en": "Which word starts with the /u/ sound?"
+      },
+      "hint": {
+        "uz": "U-u-umbrella!",
+        "ru": "U-u-umbrella!",
+        "en": "U-u-umbrella!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «umbrella» — «u» tovushi.",
+        "ru": "Верно! «umbrella» — звук «u».",
+        "en": "Right! \"umbrella\" starts with /u/."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "umbrella\nsoyabon",
+              "ru": "umbrella\nзонт",
+              "en": "umbrella"
+            },
+            {
+              "uz": "dog\nit",
+              "ru": "dog\nсобака",
+              "en": "dog"
+            },
+            {
+              "uz": "ball\nkoptok",
+              "ru": "ball\nмяч",
+              "en": "ball"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

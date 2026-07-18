@@ -1,0 +1,97 @@
+{
+  "topicId": "g1-alifbe-27",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🥾🐐🍎",
+  "title": { "uz": "«E e» harfi", "ru": "Буква «E e»", "en": "The letter “E e”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «E e». U unli tovush. Uni aytganda lablar jilmaymaydi, tishlar koʻrinib turadi: e-e-e. «E» bilan: etik, echki, el, ertak. Endi «etik» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «E e». Это гласный звук. Губы не улыбаются, зубы видны: э-э-э. Слова: etik, echki, el, ertak. Теперь мы можем прочитать слово «etik»!",
+    "en": "Today's letter is “E e”. It is a vowel. The lips do not smile and the teeth show: e-e-e. Words: etik, echki, el, ertak. Now we can read and build the word “etik”!"
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«E» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «E»!", "en": "Find the word that starts with “E”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: e-e-etik.", "ru": "Протяни начало: э-э-etik.", "en": "Stretch the start: e-e-etik." },
+      "explanation": { "uz": "«etik» «E» tovushi bilan boshlanadi.", "ru": "«etik» начинается со звука «E».", "en": "“etik” (boot) starts with the sound “E”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "boot", "emoji": "🥾", "label": { "uz": "etik", "ru": "etik", "en": "etik" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«E» harfini topib, hammasini bos!", "ru": "Найди букву «E» и нажми на все!", "en": "Find the letter “E” and tap them all!" },
+      "hint": { "uz": "Katta «E» ham, kichik «e» ham.", "ru": "Считаются «E» и «e».", "en": "Both “E” and “e” count." },
+      "explanation": { "uz": "«E» harfini topding!", "ru": "Ты нашёл букву «E»!", "en": "You found the letter “E”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "E", "cols": 3, "grid": ["E", "o", "e", "B", "E", "l", "e", "t", "E"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🥾 «etik»da «e» tovushi qaysi katakchada?", "ru": "🥾 В какой клетке звук «e» в слове «etik»?", "en": "🥾 Which box has the “e” sound in “etik”?" },
+      "hint": { "uz": "«etik» «e» bilan boshlanadi.", "ru": "«etik» начинается с «e».", "en": "“etik” starts with “e”." },
+      "explanation": { "uz": "«etik»da «e» — birinchi katakda.", "ru": "В «etik» звук «e» — первая клетка.", "en": "In “etik” the “e” is in the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🥾", "word": { "uz": "etik", "ru": "etik", "en": "etik" }, "sound": "e", "cells": ["e", "t", "i", "k"], "answer": 0 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🥾 «etik» soʻzining tovush chizmasini rangla!", "ru": "🥾 Раскрась схему звуков слова «etik»!", "en": "🥾 Colour the sound scheme of “etik”!" },
+      "hint": { "uz": "e — unli, t — undosh, i — unli, k — undosh.", "ru": "e — гласный, t — согласный, i — гласный, k — согласный.", "en": "e vowel, t consonant, i vowel, k consonant." },
+      "explanation": { "uz": "«etik»: e, t, i, k — unli, undosh, unli, undosh.", "ru": "«etik»: гласный, согласный, гласный, согласный.", "en": "“etik”: vowel, consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🥾", "word": { "uz": "etik", "ru": "etik", "en": "etik" }, "scheme": ["v", "c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«E» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «E»!", "en": "Tap the words that have the “E” sound!" },
+      "hint": { "uz": "etik, echki — «e» tovushi bor.", "ru": "etik, echki — есть звук «e».", "en": "etik, echki have the “e” sound." },
+      "explanation": { "uz": "etik, echki — «e» bor. ot, olma, nonda yoʻq.", "ru": "etik, echki — есть «e». В ot, olma, non нет.", "en": "etik, echki have “e”. ot, olma, non do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "boot", "emoji": "🥾", "label": { "uz": "etik", "ru": "etik", "en": "etik" }, "correct": true },
+        { "id": "goat", "emoji": "🐐", "label": { "uz": "echki", "ru": "echki", "en": "echki" }, "correct": true },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «etik» soʻzini tuz!", "ru": "Составь слово «etik» из букв!", "en": "Build the word “etik” from letters!" },
+      "hint": { "uz": "e — t — i — k tartibida bos.", "ru": "Нажимай по порядку: e — t — i — k.", "en": "Tap in order: e — t — i — k." },
+      "explanation": { "uz": "e + t + i + k = «etik».", "ru": "e + t + i + k = «etik».", "en": "e + t + i + k = “etik” (boot)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🥾", "word": "etik", "label": { "uz": "etik", "ru": "сапог", "en": "boot" } } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«E» — unli tovush.", "ru": "«E» — гласный звук.", "en": "“E” is a vowel sound." },
+      "hint": { "uz": "«E»ni aytganda tishlar koʻrinib turadi.", "ru": "При «E» видны зубы.", "en": "For “E” the teeth show." },
+      "explanation": { "uz": "Toʻgʻri! «E» — unli tovush.", "ru": "Верно! «E» — гласный.", "en": "True! “E” is a vowel." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔴", "answer": true } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🐐 «echki» soʻzini boʻgʻinlab qarsak chal!", "ru": "🐐 Похлопай слово «echki» по слогам!", "en": "🐐 Clap the word “echki” by syllables!" },
+      "hint": { "uz": "ech-ki — ikki marta qarsak.", "ru": "ech-ki — два хлопка.", "en": "ech-ki — two claps." },
+      "explanation": { "uz": "«echki» = ech-ki, ikki boʻgʻin.", "ru": "«echki» = ech-ki, два слога.", "en": "“echki” = ech-ki, two syllables." },
+      "widget": { "type": "syllable_clap", "props": { "emoji": "🐐", "word": { "uz": "echki", "ru": "echki", "en": "echki" }, "syllables": 2 } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!", "ru": "Открой карточки и соедини картинку со словом!", "en": "Flip the cards and match each picture to its word!" },
+      "hint": { "uz": "etik — 🥾, echki — 🐐, olma — 🍎.", "ru": "etik — 🥾, echki — 🐐, olma — 🍎.", "en": "etik — 🥾, echki — 🐐, olma — 🍎." },
+      "explanation": { "uz": "Rasm va soʻzni toʻgʻri juftlading!", "ru": "Ты верно соединил картинку и слово!", "en": "You matched picture and word correctly!" },
+      "widget": { "type": "memory_match", "props": { "pairs": [
+        { "a": { "emoji": "🥾" }, "b": { "label": { "uz": "etik", "ru": "etik", "en": "etik" } } },
+        { "a": { "emoji": "🐐" }, "b": { "label": { "uz": "echki", "ru": "echki", "en": "echki" } } },
+        { "a": { "emoji": "🍎" }, "b": { "label": { "uz": "olma", "ru": "olma", "en": "olma" } } }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«E»ni aytganda tishlar qanday boʻladi?", "ru": "Что с зубами при звуке «E»?", "en": "What do the teeth do when saying “E”?" },
+      "hint": { "uz": "«E-e-e» deb ayt.", "ru": "Скажи «э-э-э».", "en": "Say “e-e-e”." },
+      "explanation": { "uz": "«E»da tishlar koʻrinib turadi.", "ru": "При «E» зубы видны.", "en": "For “E” the teeth show." },
+      "widget": { "type": "mcq", "props": { "choices": [{ "uz": "koʻrinib turadi", "ru": "видны", "en": "they show" }, { "uz": "yopiladi", "ru": "закрыты", "en": "they close" }, { "uz": "yoʻqoladi", "ru": "исчезают", "en": "disappear" }], "answerIndex": 0 } }
+    }
+  ]
+}

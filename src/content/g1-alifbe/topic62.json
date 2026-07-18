@@ -1,0 +1,515 @@
+{
+  "topicId": "g1-alifbe-62",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🐦🌹🏰",
+  "title": {
+    "uz": "Tutuq belgisi — oʻqish mashqi",
+    "ru": "Разделительный знак — чтение",
+    "en": "The glottal sign — reading"
+  },
+  "recall": {
+    "uz": "Tutuq belgili soʻzlarni oʻqiymiz: qalʼa, taʼlim, neʼmat. Matn oʻqib, savolga javob beramiz.",
+    "ru": "Читаем слова со знаком ʼ: qalʼa, taʼlim, neʼmat. Читаем текст и отвечаем.",
+    "en": "We read words with the ʼ sign: qalʼa, taʼlim, neʼmat. We read a text and answer."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tutuq belgisini toʻgʻri joyga qoʻy: qal…a",
+        "ru": "Поставь знак ʼ верно: qal…a",
+        "en": "Place the ʼ sign: qal…a"
+      },
+      "hint": {
+        "uz": "Soʻzni ayt: qalʼa.",
+        "ru": "Произнеси: qalʼa.",
+        "en": "Say it: qalʼa."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! qalʼa.",
+        "ru": "Верно! qalʼa.",
+        "en": "Right! qalʼa."
+      },
+      "widget": {
+        "type": "tutuq_place",
+        "props": {
+          "emoji": "🏰",
+          "label": {
+            "uz": "qalʼa",
+            "ru": "крепость",
+            "en": "fortress"
+          },
+          "letters": [
+            "q",
+            "a",
+            "l",
+            "a"
+          ],
+          "gap": 3
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "Нажми верно написанное слово!",
+        "en": "Tap the correctly written word!"
+      },
+      "hint": {
+        "uz": "Tutuq belgisi «ʼ» kerak.",
+        "ru": "Нужен знак «ʼ».",
+        "en": "The ʼ sign is needed."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri — taʼlim.",
+        "ru": "Верно — taʼlim.",
+        "en": "Correct — taʼlim."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "📚",
+          "options": [
+            {
+              "id": "ok",
+              "word": "taʼlim",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "talim"
+            },
+            {
+              "id": "w2",
+              "word": "taʼʼlim"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Sa'va — qush.",
+        "ru": "Sa'va — птица.",
+        "en": "Sa'va is a bird."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — togʻli joylarda.",
+        "ru": "Верный ответ — togʻli joylarda.",
+        "en": "The right answer — togʻli joylarda."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🐦",
+          "text": {
+            "uz": "Saʼva — kichkina sayroqi qush.\nU togʻli joylarda yashaydi.\nSaʼva daraxtga in quradi.",
+            "ru": "Saʼva — kichkina sayroqi qush.\nU togʻli joylarda yashaydi.\nSaʼva daraxtga in quradi.",
+            "en": "Saʼva — kichkina sayroqi qush.\nU togʻli joylarda yashaydi.\nSaʼva daraxtga in quradi."
+          },
+          "question": {
+            "uz": "Saʼva qayerda yashaydi?",
+            "ru": "Saʼva qayerda yashaydi?",
+            "en": "Saʼva qayerda yashaydi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "togʻli joylarda",
+                "ru": "togʻli joylarda",
+                "en": "togʻli joylarda"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "dengizda",
+                "ru": "dengizda",
+                "en": "dengizda"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "choʻlda",
+                "ru": "choʻlda",
+                "en": "choʻlda"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Na'matak — buta.",
+        "ru": "Na'matak — куст.",
+        "en": "Na'matak is a shrub."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — shirali.",
+        "ru": "Верный ответ — shirali.",
+        "en": "The right answer — shirali."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🌹",
+          "text": {
+            "uz": "Naʼmatak buta boʻlib oʻsadi.\nUning guli xushboʻy.\nMevasi shirali va foydali.",
+            "ru": "Naʼmatak buta boʻlib oʻsadi.\nUning guli xushboʻy.\nMevasi shirali va foydali.",
+            "en": "Naʼmatak buta boʻlib oʻsadi.\nUning guli xushboʻy.\nMevasi shirali va foydali."
+          },
+          "question": {
+            "uz": "Naʼmatakning mevasi qanday?",
+            "ru": "Naʼmatakning mevasi qanday?",
+            "en": "Naʼmatakning mevasi qanday?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "shirali",
+                "ru": "shirali",
+                "en": "shirali"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "achchiq",
+                "ru": "achchiq",
+                "en": "achchiq"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "shoʻr",
+                "ru": "shoʻr",
+                "en": "shoʻr"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "📚 «taʼlim» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "📚 Похлопай «taʼlim» по слогам!",
+        "en": "📚 Clap “taʼlim” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«taʼlim» — 2 boʻgʻin.",
+        "ru": "«taʼlim» — 2 слога.",
+        "en": "“taʼlim” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "📚",
+          "word": {
+            "uz": "taʼlim",
+            "ru": "taʼlim",
+            "en": "taʼlim"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍞 Yetishmayotgan harfni qoʻy!",
+        "ru": "🍞 Вставь недостающую букву!",
+        "en": "🍞 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz: neʼmat.",
+        "ru": "Слово: neʼmat.",
+        "en": "The word: neʼmat."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «m».",
+        "ru": "Верная буква — «m».",
+        "en": "The right letter is “m”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🍞",
+          "label": {
+            "uz": "neʼmat",
+            "ru": "благо",
+            "en": "blessing"
+          },
+          "letters": [
+            "n",
+            "e",
+            "ʼ",
+            "m",
+            "a",
+            "t"
+          ],
+          "blank": 3,
+          "choices": [
+            "m",
+            "n",
+            "l"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bosh harf bilan yoziladigan soʻzlarni belgila!",
+        "ru": "Отметь слова с заглавной буквы!",
+        "en": "Tap the words that need a capital!"
+      },
+      "hint": {
+        "uz": "Ismlar bosh harf bilan yoziladi.",
+        "ru": "Имена — с заглавной.",
+        "en": "Names take a capital."
+      },
+      "explanation": {
+        "uz": "Ismlar bosh harf bilan yoziladi.",
+        "ru": "Имена пишутся с заглавной.",
+        "en": "Names are written with a capital."
+      },
+      "widget": {
+        "type": "capital_pick",
+        "props": {
+          "words": [
+            {
+              "word": "Eʼzoza",
+              "capital": true
+            },
+            {
+              "word": "Maʼmura",
+              "capital": true
+            },
+            {
+              "word": "Saʼdulla",
+              "capital": true
+            },
+            {
+              "word": "qalʼa",
+              "capital": false
+            },
+            {
+              "word": "taʼlim",
+              "capital": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz.",
+        "ru": "Составь предложение из слов.",
+        "en": "Order the words into a sentence."
+      },
+      "hint": {
+        "uz": "Saʼva — chiroyli — qush.",
+        "ru": "Saʼva — chiroyli — qush.",
+        "en": "Saʼva — chiroyli — qush."
+      },
+      "explanation": {
+        "uz": "«Saʼva chiroyli qush.» — gap tuzding!",
+        "ru": "«Saʼva chiroyli qush.» — предложение!",
+        "en": "“Saʼva chiroyli qush.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Saʼva",
+                "ru": "Saʼva",
+                "en": "Saʼva"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "chiroyli",
+                "ru": "chiroyli",
+                "en": "chiroyli"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "qush",
+                "ru": "qush",
+                "en": "qush"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tutuq belgisi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со знаком ʼ!",
+        "en": "Tap the words with the ʼ sign!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin oʻqi.",
+        "ru": "Читай каждое слово.",
+        "en": "Read each word."
+      },
+      "explanation": {
+        "uz": "Ularda tutuq belgisi bor.",
+        "ru": "В них есть знак ʼ.",
+        "en": "They contain the ʼ sign."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏰",
+              "label": {
+                "uz": "qalʼa",
+                "ru": "qalʼa",
+                "en": "qalʼa"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "📚",
+              "label": {
+                "uz": "taʼlim",
+                "ru": "taʼlim",
+                "en": "taʼlim"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍞",
+              "label": {
+                "uz": "neʼmat",
+                "ru": "neʼmat",
+                "en": "neʼmat"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🏫",
+              "label": {
+                "uz": "maktab",
+                "ru": "maktab",
+                "en": "maktab"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tutuq belgisi bilan yozilgan soʻzni tanla.",
+        "ru": "Выбери слово со знаком ʼ.",
+        "en": "Choose the word written with the ʼ sign."
+      },
+      "hint": {
+        "uz": "Uni sekin oʻqi.",
+        "ru": "Прочитай медленно.",
+        "en": "Read it slowly."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri — isteʼdod.",
+        "ru": "Верно — isteʼdod.",
+        "en": "Right — isteʼdod."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "isteʼdod",
+              "ru": "isteʼdod",
+              "en": "isteʼdod"
+            },
+            {
+              "uz": "kitob",
+              "ru": "kitob",
+              "en": "kitob"
+            },
+            {
+              "uz": "bahor",
+              "ru": "bahor",
+              "en": "bahor"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

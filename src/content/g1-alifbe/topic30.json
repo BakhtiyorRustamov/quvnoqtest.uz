@@ -1,0 +1,509 @@
+{
+  "topicId": "g1-alifbe-30",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖📦⛵🍎",
+  "title": {
+    "uz": "«Y y» — oʻqish mashqi",
+    "ru": "Буква «Y y» — чтение",
+    "en": "Letter “Y y” — reading"
+  },
+  "recall": {
+    "uz": "«Y» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: yuk, yelkan. «Y» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «Y». Теперь читаем слова: yuk, yelkan. «Y» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “Y”. Now we read words: yuk, yelkan. “Y” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "📦 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "📦 Прочитай и нажми верно написанное слово!",
+        "en": "📦 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «yuk».",
+        "ru": "Прочитай: «yuk».",
+        "en": "Read it: “yuk”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «yuk».",
+        "ru": "Верно — «yuk».",
+        "en": "Correct — “yuk”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "📦",
+          "options": [
+            {
+              "id": "ok",
+              "word": "yuk",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "yak"
+            },
+            {
+              "id": "w2",
+              "word": "yuq"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «yuk» soʻzini tuz!",
+        "ru": "Составь слово «yuk»!",
+        "en": "Build the word “yuk”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «yuk» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «yuk».",
+        "en": "Great! You read “yuk”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "📦",
+          "word": "yuk",
+          "label": {
+            "uz": "yuk",
+            "ru": "груз",
+            "en": "load"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "📦 «yuk»da «y» tovushi qaysi katakchada?",
+        "ru": "📦 В какой клетке звук «y» в слове «yuk»?",
+        "en": "📦 Which box has the “y” sound in “yuk”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«yuk»da «y» tovushi toʻgʻri joyda.",
+        "ru": "В «yuk» звук «y» на верном месте.",
+        "en": "In “yuk” the “y” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "📦",
+          "word": {
+            "uz": "yuk",
+            "ru": "yuk",
+            "en": "yuk"
+          },
+          "sound": "y",
+          "cells": [
+            "y",
+            "u",
+            "k"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "⛵ «yelkan» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "⛵ Похлопай слово «yelkan» по слогам!",
+        "en": "⛵ Clap the word “yelkan” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«yelkan» — 2 boʻgʻin.",
+        "ru": "«yelkan» — 2 слога.",
+        "en": "“yelkan” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "⛵",
+          "word": {
+            "uz": "yelkan",
+            "ru": "yelkan",
+            "en": "yelkan"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Y» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «Y»!",
+        "en": "Tap the words that have the “Y” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «y» tovushi bor.",
+        "ru": "Верно! В них есть звук «y».",
+        "en": "Right! They have the “y” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "📦",
+              "label": {
+                "uz": "yuk",
+                "ru": "yuk",
+                "en": "yuk"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "⛵",
+              "label": {
+                "uz": "yelkan",
+                "ru": "yelkan",
+                "en": "yelkan"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            },
+            {
+              "id": "d2",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«yuk» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «yuk». Найди картинку!",
+        "en": "Read “yuk”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«yuk» — 📦.",
+        "ru": "«yuk» — 📦.",
+        "en": "“yuk” is 📦."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "📦",
+              "label": {
+                "uz": "yuk",
+                "ru": "груз",
+                "en": "load"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "⛵",
+              "label": {
+                "uz": "yelkan",
+                "ru": "yelkan",
+                "en": "yelkan"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "📦"
+              },
+              "right": {
+                "label": {
+                  "uz": "yuk",
+                  "ru": "yuk",
+                  "en": "yuk"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⛵"
+              },
+              "right": {
+                "label": {
+                  "uz": "yelkan",
+                  "ru": "yelkan",
+                  "en": "yelkan"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍞"
+              },
+              "right": {
+                "label": {
+                  "uz": "non",
+                  "ru": "non",
+                  "en": "non"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ota … oldi.",
+        "ru": "Составь предложение: Ota … oldi.",
+        "en": "Order the words: Ota … oldi."
+      },
+      "hint": {
+        "uz": "Ota — yuk — oldi.",
+        "ru": "Ota — yuk — oldi.",
+        "en": "Ota — yuk — oldi."
+      },
+      "explanation": {
+        "uz": "«Ota yuk oldi.» — gap oʻqiding!",
+        "ru": "«Ota yuk oldi.» — предложение!",
+        "en": "“Ota yuk oldi.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ota",
+                "ru": "Ota",
+                "en": "Ota"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "yuk",
+                "ru": "yuk",
+                "en": "yuk"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "📦"
+              },
+              "b": {
+                "label": {
+                  "uz": "yuk",
+                  "ru": "yuk",
+                  "en": "yuk"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "⛵"
+              },
+              "b": {
+                "label": {
+                  "uz": "yelkan",
+                  "ru": "yelkan",
+                  "en": "yelkan"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«yuk» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «yuk»?",
+        "en": "How many sounds are in “yuk”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«yuk»da 3 ta tovush bor.",
+        "ru": "В «yuk» 3 звука.",
+        "en": "“yuk” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

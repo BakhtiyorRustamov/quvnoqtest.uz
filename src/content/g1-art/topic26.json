@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-26", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Bahor manzarasi", "ru": "Весенний пейзаж", "en": "A spring scene" },
+  "recall": {
+    "uz": "Bahorda tabiat uygʻonadi: quyosh charaqlaydi, gullar ochiladi, kapalaklar va asalarilar uchadi. Keling, bahor manzarasini boʻyaymiz.",
+    "ru": "Весной природа просыпается: светит солнце, распускаются цветы, летают бабочки и пчёлы. Давай раскрасим весенний пейзаж.",
+    "en": "In spring nature wakes up: the sun shines, flowers bloom, butterflies and bees fly. Let's colour the spring scene."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Bahor manzarasini boʻya.", "ru": "Раскрась весенний пейзаж.", "en": "Colour the spring scene." },
+      "hint": { "uz": "Quyosh, gullar, kapalak va kamalakni rangla.", "ru": "Раскрась солнце, цветы, бабочку и радугу.", "en": "Colour the sun, flowers, butterfly and rainbow." },
+      "explanation": { "uz": "Goʻzal bahor manzarasi!", "ru": "Прекрасный весенний пейзаж!", "en": "A beautiful spring scene!" },
+      "widget": { "type": "color_sheet", "props": { "sheet": "spring-scene" } } }
+  ]
+}

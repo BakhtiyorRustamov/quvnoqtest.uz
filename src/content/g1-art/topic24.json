@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-24", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Bahor gullari", "ru": "Весенние цветы", "en": "Spring flowers" },
+  "recall": {
+    "uz": "Bahorda maysazorlarda rang-barang gullar ochiladi: lola, chinnigul va boychechak. Quyosh, kapalak va asalarilar ham paydo boʻladi. Keling, bahor manzarasini boʻyaymiz.",
+    "ru": "Весной на лугах распускаются разноцветные цветы: тюльпаны, ромашки и подснежники. Появляются солнце, бабочки и пчёлы. Давай раскрасим весенний пейзаж.",
+    "en": "In spring the meadows bloom with colourful flowers: tulips, daisies and snowdrops. The sun, butterflies and bees appear too. Let's colour the spring scene."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Bahorgi maysazorni boʻya.", "ru": "Раскрась весенний луг.", "en": "Colour the spring meadow." },
+      "hint": { "uz": "Gullar, maysa va quyoshni rangla.", "ru": "Раскрась цветы, траву и солнце.", "en": "Colour the flowers, grass and sun." },
+      "explanation": { "uz": "Goʻzal bahor!", "ru": "Прекрасная весна!", "en": "Beautiful spring!" },
+      "widget": { "type": "color_sheet", "props": { "sheet": "spring-meadow" } } }
+  ]
+}

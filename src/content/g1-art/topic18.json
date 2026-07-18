@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-18", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Vatan himoyachilari", "ru": "Защитники Родины", "en": "Defenders of the homeland" },
+  "recall": {
+    "uz": "Oʻgʻil bolalar kelajakda Vatan himoyachisi boʻlishadi. Koʻpchilik texnikani — mashina va samolyotlarni yaxshi koʻradi. Keling, mashinani boʻyaymiz.",
+    "ru": "Мальчики в будущем станут защитниками Родины. Многие любят технику — машины и самолёты. Давай раскрасим машину.",
+    "en": "Boys will one day become defenders of the homeland. Many of them love vehicles — cars and airplanes. Let's colour a car."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Mashinani boʻya.", "ru": "Раскрась машину.", "en": "Colour the car." },
+      "hint": { "uz": "Kuzov, oyna va gʻildiraklarni boʻya.", "ru": "Раскрась кузов, окна и колёса.", "en": "Colour the body, windows and wheels." },
+      "explanation": { "uz": "Chiroyli mashina!", "ru": "Красивая машина!", "en": "A cool car!" },
+      "widget": { "type": "color_fill", "props": { "picture": "car" } } }
+  ]
+}

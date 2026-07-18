@@ -1,0 +1,509 @@
+{
+  "topicId": "g1-ingliz-09",
+  "subjectKey": "g1-ingliz",
+  "emojis": "📖🤝😀🏫",
+  "title": {
+    "uz": "Doʻst orttiramiz (hikoya)",
+    "ru": "Заводим друзей (история)",
+    "en": "Making friends (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bugungi qadriyat — «Make friends» (doʻst ortdir). Yangi bolaga «Hello! Be my friend» deb doʻst boʻlamiz.",
+    "ru": "Время истории! Ценность сегодня — «Make friends» (заводи друзей). Новому ребёнку говорим «Hello! Be my friend» и дружим.",
+    "en": "Story time! Today's value is \"Make friends.\" We say \"Hello! Be my friend\" to a new child."
+  },
+  "ttsText": {
+    "uz": "Doʻst orttiramiz.",
+    "en": "Story time! Make friends. Say: Hello! Be my friend!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: nima birinchi boʻldi?",
+        "ru": "Расставь историю по порядку!",
+        "en": "Put the story in order!"
+      },
+      "hint": {
+        "uz": "Avval yangi bola keladi.",
+        "ru": "Сначала приходит новый ребёнок.",
+        "en": "First a new child arrives."
+      },
+      "explanation": {
+        "uz": "Barakalla! Doʻst ortdirish shunday boʻladi.",
+        "ru": "Молодец! Так заводят друзей.",
+        "en": "Great! That's how we make friends."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🤝",
+          "events": [
+            {
+              "text": {
+                "uz": "Sinfga yangi bola keldi.",
+                "ru": "В класс пришёл новый ребёнок.",
+                "en": "A new child comes to class."
+              }
+            },
+            {
+              "text": {
+                "uz": "U yolgʻiz oʻtiribdi.",
+                "ru": "Он сидит один.",
+                "en": "He sits alone."
+              }
+            },
+            {
+              "text": {
+                "uz": "Sam «Hello! Be my friend» dedi.",
+                "ru": "Сэм сказал «Hello! Be my friend».",
+                "en": "Sam says \"Hello! Be my friend.\""
+              }
+            },
+            {
+              "text": {
+                "uz": "Endi ular birga oʻynaydi.",
+                "ru": "Теперь они играют вместе.",
+                "en": "Now they play together."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sam nima soʻradi?",
+        "ru": "Послушай. О чём попросил Сэм?",
+        "en": "Listen. What did Sam ask?"
+      },
+      "hint": {
+        "uz": "«Be my friend» — doʻstim boʻl.",
+        "ru": "«Be my friend» — будь моим другом.",
+        "en": "\"Be my friend\" is a kind question."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Sam «Be my friend?» dedi.",
+        "ru": "Верно! Сэм сказал «Be my friend?».",
+        "en": "Right! Sam said \"Be my friend?\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Hello! I'm Sam. Be my friend?",
+              "audio": {
+                "key": "ing09-q2-a",
+                "text": "Hello! I'm Sam. Be my friend?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "Tom",
+              "text": "Yes! Thank you!",
+              "audio": {
+                "key": "ing09-q2-b",
+                "text": "Yes! Thank you!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima soʻradi?",
+              "ru": "О чём попросил Сэм?",
+              "en": "What did Sam ask?"
+            },
+            "choices": [
+              "What's this?",
+              "Be my friend?",
+              "How many books?"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qadriyati nima?",
+        "ru": "Какая ценность у истории?",
+        "en": "What is the value of the story?"
+      },
+      "hint": {
+        "uz": "Yangi bolaga yaxshi boʻldik.",
+        "ru": "Мы были добры к новичку.",
+        "en": "We were kind to the new child."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Make friends — doʻst ortdir.",
+        "ru": "Верно! Make friends — заводи друзей.",
+        "en": "Right! Make friends!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "doʻst ortdirish",
+              "ru": "заводить друзей",
+              "en": "make friends"
+            },
+            {
+              "uz": "jahl qilish",
+              "ru": "злиться",
+              "en": "be angry"
+            },
+            {
+              "uz": "yolgʻiz qolish",
+              "ru": "оставаться одному",
+              "en": "stay alone"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi doʻstlar oʻzini qanday his qiladi?",
+        "ru": "Как чувствуют себя добрые друзья?",
+        "en": "How do good friends feel?"
+      },
+      "hint": {
+        "uz": "Doʻstlar bilan xursand boʻlamiz.",
+        "ru": "С друзьями мы радуемся.",
+        "en": "Friends feel happy together."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Happy — xursand.",
+        "ru": "Верно! Happy — радостный.",
+        "en": "Right! Happy!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "😀",
+              "label": "happy",
+              "correct": true
+            },
+            {
+              "emoji": "😢",
+              "label": "sad"
+            },
+            {
+              "emoji": "😠",
+              "label": "angry"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Yaxshi doʻstlar boʻlishadi va yordam beradi.",
+        "ru": "Верно? Добрые друзья делятся и помогают.",
+        "en": "Is this right? Good friends share and help."
+      },
+      "hint": {
+        "uz": "Doʻstlik — yaxshilik.",
+        "ru": "Дружба — это добро.",
+        "en": "Friendship is kindness."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Doʻstlar boʻlishadi va yordam beradi.",
+        "ru": "Верно! Друзья делятся и помогают.",
+        "en": "Right! Friends share and help."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🤝",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima deb javob berdi?",
+        "ru": "Послушай. Что ответил ребёнок?",
+        "en": "Listen. What did the child answer?"
+      },
+      "hint": {
+        "uz": "«Come and play» — kel, oʻynaymiz.",
+        "ru": "«Come and play» — иди играть.",
+        "en": "\"Come and play\" is a friendly answer."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes! Come and play!»",
+        "ru": "Верно! «Yes! Come and play!»",
+        "en": "Right! \"Yes! Come and play!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🧒",
+              "name": "Tom",
+              "text": "Can I play?",
+              "audio": {
+                "key": "ing09-q6-a",
+                "text": "Can I play?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes! Come and play!",
+              "audio": {
+                "key": "ing09-q6-b",
+                "text": "Yes! Come and play!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "Yes! Come and play!",
+              "How many?",
+              "No! Go away!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yangi bola yolgʻiz. Sen nima deysan?",
+        "ru": "Новичок один. Что ты скажешь?",
+        "en": "A new pupil is alone. What do you say?"
+      },
+      "hint": {
+        "uz": "Doʻstona gap tanla.",
+        "ru": "Выбери добрые слова.",
+        "en": "Choose kind words."
+      },
+      "explanation": {
+        "uz": "Barakalla! «Hello! Be my friend.»",
+        "ru": "Молодец! «Hello! Be my friend.»",
+        "en": "Great! \"Hello! Be my friend.\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«Hello! Be my friend.»",
+              "ru": "«Hello! Be my friend.»",
+              "en": "\"Hello! Be my friend.\""
+            },
+            {
+              "uz": "«Go away!»",
+              "ru": "«Go away!»",
+              "en": "\"Go away!\""
+            },
+            {
+              "uz": "«No!»",
+              "ru": "«No!»",
+              "en": "\"No!\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻstlar qiladigan yaxshi ishlarni belgila!",
+        "ru": "Отметь добрые дела друзей!",
+        "en": "Tap the kind things friends do!"
+      },
+      "hint": {
+        "uz": "Boʻlishish, yordam, tabassum.",
+        "ru": "Делиться, помогать, улыбаться.",
+        "en": "Share, help, smile."
+      },
+      "explanation": {
+        "uz": "Barakalla! Doʻstlar boʻlishadi, yordam beradi, tabassum qiladi.",
+        "ru": "Молодец! Друзья делятся, помогают, улыбаются.",
+        "en": "Great! Friends share, help and smile!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🤝",
+              "label": "share",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🙂",
+              "label": "smile",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💛",
+              "label": "help",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "😠",
+              "label": "shout"
+            },
+            {
+              "id": "d1",
+              "emoji": "😢",
+              "label": "cry"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Friend»ning tarjimasi nima?",
+        "ru": "Что значит «friend»?",
+        "en": "What does \"friend\" mean?"
+      },
+      "hint": {
+        "uz": "Birga oʻynaydigan bola.",
+        "ru": "Тот, с кем играешь.",
+        "en": "Someone you play with."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Friend — doʻst.",
+        "ru": "Верно! Friend — друг.",
+        "en": "Right! A friend."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "doʻst",
+              "ru": "друг",
+              "en": "a friend"
+            },
+            {
+              "uz": "kitob",
+              "ru": "книга",
+              "en": "a book"
+            },
+            {
+              "uz": "oʻqituvchi",
+              "ru": "учитель",
+              "en": "a teacher"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Doʻstlar xayrlashganda nima deydi?",
+        "ru": "Послушай. Что говорят друзья на прощание?",
+        "en": "Listen. What do friends say when they leave?"
+      },
+      "hint": {
+        "uz": "«See you!» — koʻrishguncha.",
+        "ru": "«See you!» — до встречи.",
+        "en": "\"See you!\" means goodbye for now."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «See you tomorrow!»",
+        "ru": "Верно! «See you tomorrow!»",
+        "en": "Right! \"See you tomorrow!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "See you tomorrow, friend!",
+              "audio": {
+                "key": "ing09-q10-a",
+                "text": "See you tomorrow, friend!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "Tom",
+              "text": "Bye! See you!",
+              "audio": {
+                "key": "ing09-q10-b",
+                "text": "Bye! See you!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Doʻstlar nima deydi?",
+              "ru": "Что говорят друзья?",
+              "en": "What do the friends say?"
+            },
+            "choices": [
+              "See you!",
+              "How many?",
+              "Stand up!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    }
+  ]
+}

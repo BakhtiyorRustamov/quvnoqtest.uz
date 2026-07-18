@@ -1,0 +1,564 @@
+{
+  "topicId": "g1-informatika-24",
+  "subjectKey": "g1-informatika",
+  "emojis": "🌀🏠🐭🧀",
+  "title": {
+    "uz": "Labirint",
+    "ru": "Лабиринт",
+    "en": "Maze"
+  },
+  "recall": {
+    "uz": "Labirintdan yoʻl topamiz. Yuqoriga, pastga, chapga yoki oʻngga harakat qilamiz. Belgilangan tartibga rioya qilib yoʻlni topamiz.",
+    "ru": "В лабиринте ищем путь. Двигаемся вверх, вниз, влево или вправо. Идём по заданному правилу.",
+    "en": "In a maze we find the way. We move up, down, left or right. We follow the given rule to find the path."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Labirintdagi harakatlarni tartib bilan joyla!",
+        "ru": "Расставь ходы в лабиринте!",
+        "en": "Order the maze moves!"
+      },
+      "hint": {
+        "uz": "1, 2, 3, 4-qadam.",
+        "ru": "Шаг 1, 2, 3, 4.",
+        "en": "Step 1, 2, 3, 4."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yoʻl!",
+        "ru": "Верный путь!",
+        "en": "Correct path!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "1) ⬆️ yuqoriga",
+                "ru": "1) ⬆️ вверх",
+                "en": "1) ⬆️ up"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "2) ➡️ oʻngga",
+                "ru": "2) ➡️ вправо",
+                "en": "2) ➡️ right"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "3) ⬇️ pastga",
+                "ru": "3) ⬇️ вниз",
+                "en": "3) ⬇️ down"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "4) ➡️ oʻngga",
+                "ru": "4) ➡️ вправо",
+                "en": "4) ➡️ right"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Labirintda qaysi tomonlarga yurish mumkin?",
+        "ru": "Куда можно идти в лабиринте?",
+        "en": "Which ways can we move in a maze?"
+      },
+      "hint": {
+        "uz": "Toʻrt tomon.",
+        "ru": "Четыре стороны.",
+        "en": "Four ways."
+      },
+      "explanation": {
+        "uz": "Yuqori, past, chap va oʻngga.",
+        "ru": "Вверх, вниз, влево и вправо.",
+        "en": "Up, down, left and right."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yuqori, past, chap, oʻng",
+              "ru": "вверх, вниз, влево, вправо",
+              "en": "up, down, left, right"
+            },
+            {
+              "uz": "faqat oʻngga",
+              "ru": "только вправо",
+              "en": "only right"
+            },
+            {
+              "uz": "faqat yuqoriga",
+              "ru": "только вверх",
+              "en": "only up"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Labirint chiqishidagi katakni bos!",
+        "ru": "Нажми клетку-выход!",
+        "en": "Tap the exit cell!"
+      },
+      "hint": {
+        "uz": "Pastki oʻng burchak.",
+        "ru": "Нижний правый угол.",
+        "en": "Bottom-right corner."
+      },
+      "explanation": {
+        "uz": "Barakalla! Chiqish shu yerda.",
+        "ru": "Молодец! Здесь выход.",
+        "en": "Great! The exit is here."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 3,
+          "cols": 3,
+          "answer": "br",
+          "prompt": {
+            "uz": "Chiqish katakchasini bos (pastki oʻng)",
+            "ru": "Нажми выход (нижний правый)",
+            "en": "Tap the exit (bottom-right)"
+          },
+          "cells": [
+            {
+              "id": "a",
+              "kind": "square",
+              "color": "blue",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "b",
+              "kind": "square",
+              "color": "blue",
+              "r": 0,
+              "c": 1
+            },
+            {
+              "id": "c",
+              "kind": "square",
+              "color": "blue",
+              "r": 0,
+              "c": 2
+            },
+            {
+              "id": "d",
+              "kind": "square",
+              "color": "blue",
+              "r": 1,
+              "c": 0
+            },
+            {
+              "id": "e",
+              "kind": "square",
+              "color": "blue",
+              "r": 1,
+              "c": 1
+            },
+            {
+              "id": "f",
+              "kind": "square",
+              "color": "blue",
+              "r": 1,
+              "c": 2
+            },
+            {
+              "id": "g",
+              "kind": "square",
+              "color": "blue",
+              "r": 2,
+              "c": 0
+            },
+            {
+              "id": "h",
+              "kind": "square",
+              "color": "blue",
+              "r": 2,
+              "c": 1
+            },
+            {
+              "id": "br",
+              "kind": "roof",
+              "color": "red",
+              "r": 2,
+              "c": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan soʻz tuz! (🌀)",
+        "ru": "Составь слово! (🌀)",
+        "en": "Build the word! (🌀)"
+      },
+      "hint": {
+        "uz": "L-A-B-I-R-I-N-T harflaridan.",
+        "ru": "Из букв L-A-B-I-R-I-N-T.",
+        "en": "From L-A-B-I-R-I-N-T."
+      },
+      "explanation": {
+        "uz": "Barakalla! «labirint» soʻzini tuzding.",
+        "ru": "Молодец! «labirint».",
+        "en": "Great! You built “labirint”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🌀",
+          "word": "labirint",
+          "label": {
+            "uz": "labirint",
+            "ru": "лабиринт",
+            "en": "maze"
+          },
+          "letters": [
+            "l",
+            "a",
+            "b",
+            "i",
+            "r",
+            "i",
+            "n",
+            "t"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflarni alifbo tartibida joyla!",
+        "ru": "Расставь буквы по алфавиту!",
+        "en": "Order the letters alphabetically!"
+      },
+      "hint": {
+        "uz": "A, B, D, E, F.",
+        "ru": "A, B, D, E, F.",
+        "en": "A, B, D, E, F."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: A, B, D, E, F.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "A",
+                "ru": "A",
+                "en": "A"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "B",
+                "ru": "B",
+                "en": "B"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "D",
+                "ru": "D",
+                "en": "D"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "E",
+                "ru": "E",
+                "en": "E"
+              }
+            },
+            {
+              "id": "e",
+              "label": {
+                "uz": "F",
+                "ru": "F",
+                "en": "F"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sichqoncha pishloqqa qanday yetadi?",
+        "ru": "Как мышь дойдёт до сыра?",
+        "en": "How does the mouse reach the cheese?"
+      },
+      "hint": {
+        "uz": "Harflar tartibi bilan.",
+        "ru": "По порядку букв.",
+        "en": "In letter order."
+      },
+      "explanation": {
+        "uz": "Alifbo tartibida yurib yetadi.",
+        "ru": "Идя по алфавиту.",
+        "en": "By moving in alphabetical order."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "alifbo tartibida yurib",
+              "ru": "по алфавиту",
+              "en": "in alphabetical order"
+            },
+            {
+              "uz": "orqaga qaytib",
+              "ru": "назад",
+              "en": "going back"
+            },
+            {
+              "uz": "sakrab",
+              "ru": "прыгая",
+              "en": "by jumping"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Labirintda toʻgʻri yoʻlni topish kerak.",
+        "ru": "В лабиринте нужно найти верный путь.",
+        "en": "In a maze you must find the right path."
+      },
+      "hint": {
+        "uz": "Berk yoʻllardan qaytamiz.",
+        "ru": "От тупиков возвращаемся.",
+        "en": "We go back from dead ends."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌀",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir oʻqni harakati bilan ula!",
+        "ru": "Соедини стрелку с движением!",
+        "en": "Match each arrow to its move!"
+      },
+      "hint": {
+        "uz": "Oʻq qayerga koʻrsatadi?",
+        "ru": "Куда указывает стрелка?",
+        "en": "Where does the arrow point?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "➡️"
+              },
+              "right": {
+                "label": {
+                  "uz": "oʻngga",
+                  "ru": "вправо",
+                  "en": "right"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬅️"
+              },
+              "right": {
+                "label": {
+                  "uz": "chapga",
+                  "ru": "влево",
+                  "en": "left"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬆️"
+              },
+              "right": {
+                "label": {
+                  "uz": "yuqoriga",
+                  "ru": "вверх",
+                  "en": "up"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬇️"
+              },
+              "right": {
+                "label": {
+                  "uz": "pastga",
+                  "ru": "вниз",
+                  "en": "down"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Labirint oxirida bolani nima kutyapti?",
+        "ru": "Что ждёт в конце лабиринта?",
+        "en": "What waits at the end of the maze?"
+      },
+      "hint": {
+        "uz": "U yerga borish kerak.",
+        "ru": "Туда нужно дойти.",
+        "en": "We need to reach it."
+      },
+      "explanation": {
+        "uz": "Oxirida uy kutyapti.",
+        "ru": "В конце — дом.",
+        "en": "A home waits at the end."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🏠",
+              "label": {
+                "uz": "uy",
+                "ru": "дом",
+                "en": "home"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "⭐",
+              "label": {
+                "uz": "yulduz",
+                "ru": "звезда",
+                "en": "star"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Labirintdan chiqish uchun nima kerak?",
+        "ru": "Что нужно, чтобы выйти из лабиринта?",
+        "en": "What do we need to solve a maze?"
+      },
+      "hint": {
+        "uz": "Yoʻlni topamiz.",
+        "ru": "Находим путь.",
+        "en": "We find the path."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yoʻlni topish kerak.",
+        "ru": "Нужно найти верный путь.",
+        "en": "We need to find the right path."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "toʻgʻri yoʻlni topish",
+              "ru": "найти верный путь",
+              "en": "find the right path"
+            },
+            {
+              "uz": "koʻzni yumish",
+              "ru": "закрыть глаза",
+              "en": "close our eyes"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

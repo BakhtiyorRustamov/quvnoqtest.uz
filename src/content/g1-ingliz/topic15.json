@@ -1,0 +1,505 @@
+{
+  "topicId": "g1-ingliz-15",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🎁🎂🙏😊",
+  "title": {
+    "uz": "Rahmat ayt (hikoya)",
+    "ru": "Скажи спасибо (история)",
+    "en": "Say thank you (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bugungi qadriyat — «Say thank you» (rahmat ayt). Sovgʻa olganda «Thank you!» — «Rahmat!» deymiz.",
+    "ru": "Время истории! Ценность сегодня — «Say thank you» (говори спасибо). Получив подарок, говорим «Thank you!» — «Спасибо!».",
+    "en": "Story time! Today's value is \"Say thank you.\" When we get a gift we say \"Thank you!\""
+  },
+  "ttsText": {
+    "uz": "Rahmat ayt.",
+    "en": "Story time! Say thank you. Here's a gift! Thank you!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: nima birinchi boʻldi?",
+        "ru": "Расставь историю по порядку!",
+        "en": "Put the story in order!"
+      },
+      "hint": {
+        "uz": "Avval tugʻilgan kun boshlanadi.",
+        "ru": "Сначала начинается день рождения.",
+        "en": "First the birthday begins."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sovgʻa uchun rahmat aytamiz.",
+        "ru": "Молодец! За подарок говорим спасибо.",
+        "en": "Great! We say thank you for a gift."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🎁",
+          "events": [
+            {
+              "text": {
+                "uz": "Bugun Samning tugʻilgan kuni.",
+                "ru": "Сегодня день рождения Сэма.",
+                "en": "It's Sam's birthday."
+              }
+            },
+            {
+              "text": {
+                "uz": "Mia Samga sovgʻa beradi.",
+                "ru": "Мия дарит Сэму подарок.",
+                "en": "Mia gives Sam a gift."
+              }
+            },
+            {
+              "text": {
+                "uz": "Sam sovgʻani ochadi — robot!",
+                "ru": "Сэм открывает подарок — робот!",
+                "en": "Sam opens the gift — a robot!"
+              }
+            },
+            {
+              "text": {
+                "uz": "Sam «Thank you!» deydi.",
+                "ru": "Сэм говорит «Thank you!».",
+                "en": "Sam says \"Thank you!\""
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sam nima dedi?",
+        "ru": "Послушай. Что сказал Сэм?",
+        "en": "Listen. What did Sam say?"
+      },
+      "hint": {
+        "uz": "«Thank you» — rahmat.",
+        "ru": "«Thank you» — спасибо.",
+        "en": "\"Thank you\" is a polite word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Sam «Thank you!» dedi.",
+        "ru": "Верно! Сэм сказал «Thank you!».",
+        "en": "Right! Sam said \"Thank you!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Happy birthday! Here's a gift.",
+              "audio": {
+                "key": "ing15-q2-a",
+                "text": "Happy birthday! Here's a gift.",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Thank you, Mia!",
+              "audio": {
+                "key": "ing15-q2-b",
+                "text": "Thank you, Mia!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "Go away!",
+              "Thank you!",
+              "How many?"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qadriyati nima?",
+        "ru": "Какая ценность у истории?",
+        "en": "What is the value of the story?"
+      },
+      "hint": {
+        "uz": "Sovgʻa uchun nima aytamiz?",
+        "ru": "Что говорим за подарок?",
+        "en": "What do we say for a gift?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Say thank you — rahmat ayt.",
+        "ru": "Верно! Say thank you — говори спасибо.",
+        "en": "Right! Say thank you!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "rahmat aytish",
+              "ru": "говорить спасибо",
+              "en": "say thank you"
+            },
+            {
+              "uz": "jahl qilish",
+              "ru": "злиться",
+              "en": "be angry"
+            },
+            {
+              "uz": "yashirish",
+              "ru": "прятать",
+              "en": "hide it"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tugʻilgan kun sovgʻasini bos!",
+        "ru": "Нажми подарок!",
+        "en": "Tap the birthday gift!"
+      },
+      "hint": {
+        "uz": "Lentali quti.",
+        "ru": "Коробка с лентой.",
+        "en": "A box with a ribbon."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 🎁 — sovgʻa.",
+        "ru": "Верно! 🎁 — подарок.",
+        "en": "Right! 🎁 a gift!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🎁",
+              "label": "gift",
+              "correct": true
+            },
+            {
+              "emoji": "🥕",
+              "label": "carrot"
+            },
+            {
+              "emoji": "📏",
+              "label": "ruler"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Sovgʻa olganda «thank you» deymiz.",
+        "ru": "Верно? Получив подарок, говорим «thank you».",
+        "en": "Is this right? We say \"thank you\" for a gift."
+      },
+      "hint": {
+        "uz": "Bu odob.",
+        "ru": "Это вежливость.",
+        "en": "It is polite."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Sovgʻa uchun rahmat aytamiz.",
+        "ru": "Верно! За подарок говорим спасибо.",
+        "en": "Right! We say thank you for a gift."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🙏",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola qanday minnatdorchilik bildirdi?",
+        "ru": "Послушай. Как ребёнок поблагодарил?",
+        "en": "Listen. How did the child say thanks?"
+      },
+      "hint": {
+        "uz": "«Thank you very much» — katta rahmat.",
+        "ru": "«Thank you very much» — большое спасибо.",
+        "en": "\"Thank you very much\" is a big thanks."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Thank you very much!»",
+        "ru": "Верно! «Thank you very much!»",
+        "en": "Right! \"Thank you very much!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Here's a present for you!",
+              "audio": {
+                "key": "ing15-q6-a",
+                "text": "Here's a present for you!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Oh, thank you very much!",
+              "audio": {
+                "key": "ing15-q6-b",
+                "text": "Oh, thank you very much!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "Sit down!",
+              "No, it isn't!",
+              "Thank you very much!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kimdir senga oʻyinchoq berdi. Nima deysan?",
+        "ru": "Тебе подарили игрушку. Что скажешь?",
+        "en": "Someone gives you a toy. What do you say?"
+      },
+      "hint": {
+        "uz": "Odob bilan javob ber.",
+        "ru": "Ответь вежливо.",
+        "en": "Answer politely."
+      },
+      "explanation": {
+        "uz": "Barakalla! «Thank you!»",
+        "ru": "Молодец! «Thank you!»",
+        "en": "Great! \"Thank you!\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«Thank you!»",
+              "ru": "«Thank you!»",
+              "en": "\"Thank you!\""
+            },
+            {
+              "uz": "«Go away!»",
+              "ru": "«Go away!»",
+              "en": "\"Go away!\""
+            },
+            {
+              "uz": "«No!»",
+              "ru": "«No!»",
+              "en": "\"No!\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Thank you»ning tarjimasi nima?",
+        "ru": "Что значит «thank you»?",
+        "en": "What does \"thank you\" mean?"
+      },
+      "hint": {
+        "uz": "Minnatdorchilik soʻzi.",
+        "ru": "Слово благодарности.",
+        "en": "A word of thanks."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Thank you — rahmat.",
+        "ru": "Верно! Thank you — спасибо.",
+        "en": "Right! Thank you!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "rahmat",
+              "ru": "спасибо",
+              "en": "thank you"
+            },
+            {
+              "uz": "salom",
+              "ru": "привет",
+              "en": "hello"
+            },
+            {
+              "uz": "xayr",
+              "ru": "пока",
+              "en": "goodbye"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, bayram juftlarini top!",
+        "ru": "Открывай карточки: пары праздника!",
+        "en": "Flip the cards: match the party pairs!"
+      },
+      "hint": {
+        "uz": "gift — 🎁, cake — 🎂, balloon — 🎈.",
+        "ru": "gift — 🎁, cake — 🎂, balloon — 🎈.",
+        "en": "gift — 🎁, cake — 🎂, balloon — 🎈."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bayram soʻzlarini bilding!",
+        "ru": "Молодец! Ты знаешь слова праздника!",
+        "en": "Great! You know the party words!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🎁"
+              },
+              "b": {
+                "label": "gift"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎂"
+              },
+              "b": {
+                "label": "cake"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎈"
+              },
+              "b": {
+                "label": "balloon"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sam doʻstlariga nima dedi?",
+        "ru": "Послушай. Что Сэм сказал друзьям?",
+        "en": "Listen. What did Sam say to his friends?"
+      },
+      "hint": {
+        "uz": "Hamma tabrikladi.",
+        "ru": "Все поздравили.",
+        "en": "Everyone said happy birthday."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Thank you, friends!»",
+        "ru": "Верно! «Thank you, friends!»",
+        "en": "Right! \"Thank you, friends!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Friends",
+              "text": "Happy birthday, Sam!",
+              "audio": {
+                "key": "ing15-q10-a",
+                "text": "Happy birthday, Sam!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Thank you, friends!",
+              "audio": {
+                "key": "ing15-q10-b",
+                "text": "Thank you, friends!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "Thank you, friends!",
+              "How many?",
+              "Goodbye!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    }
+  ]
+}

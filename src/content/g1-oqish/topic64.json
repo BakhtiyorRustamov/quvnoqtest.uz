@@ -1,0 +1,165 @@
+{
+  "topicId": "g1-oqish-64",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "☀️📚🍉",
+  "title": {
+    "uz": "Oʻtilganlarni mustahkamlash",
+    "ru": "Закрепление пройденного",
+    "en": "Reviewing what we learned"
+  },
+  "recall": {
+    "uz": "Oʻquv yilini yakunlaymiz: fasllar, kitob, Vatan va goʻzal xulq haqida oʻrganganlarimizni takrorlaymiz.",
+    "ru": "Завершаем учебный год: повторяем времена года, книгу, Родину и добрый нрав.",
+    "en": "We wrap up the year: reviewing seasons, books, the Homeland and good character."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Yil yakuni",
+        "variant": "poem",
+        "audio": "g1-oqish-64-q1",
+        "lines": [
+          "Oʻquv yili nihoyasi,",
+          "Koʻp bilim oʻrgandik biz.",
+          "Vatan, kitob, fasllar —",
+          "Barchasini sevdik biz.",
+          "",
+          "Yoz keldi — dam olamiz,",
+          "Yangi bilimlar kutar.",
+          "Oʻqigan, izlangan bola",
+          "Baxt-saodatga yetar."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Oʻqigan bola nimaga erishadi?", "ru": "Чего достигает учащийся ребёнок?", "en": "What does a studious child achieve?" },
+      "explanation": { "uz": "Sheʼr oʻquv yili yakuni va bilim qadri haqida.", "ru": "Стихотворение о завершении года и ценности знаний.", "en": "The poem is about the year's end and the worth of knowledge." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "riddle_solve", "props": {
+        "lines": [
+          { "uz": "Toʻkinlikda noz-neʼmat,", "ru": "Полно даров и плодов,", "en": "Full of fruit and bounty," },
+          { "uz": "Kunlar issiq, uzun, roʻshnolat.", "ru": "дни жаркие и длинные.", "en": "days hot and long." },
+          { "uz": "Qovun-tarvuz gʻarq pishar —", "ru": "Дыни и арбузы поспевают —", "en": "melons ripen in full —" },
+          { "uz": "Qaysi fasl, ayt, hikmat?", "ru": "какое это время года?", "en": "which season is it, say?" }
+        ],
+        "options": [
+          { "emoji": "☀️", "label": { "uz": "Yoz", "ru": "Лето", "en": "Summer" }, "correct": true },
+          { "emoji": "❄️", "label": { "uz": "Qish", "ru": "Зима", "en": "Winter" } },
+          { "emoji": "🍂", "label": { "uz": "Kuz", "ru": "Осень", "en": "Autumn" } }
+        ]
+      } },
+      "prompt": { "uz": "Topishmoqni yeching: bu qaysi fasl?", "ru": "Отгадай загадку: какое время года?", "en": "Solve the riddle: which season is it?" },
+      "hint": { "uz": "Qovun-tarvuz qaysi faslda pishadi?", "ru": "В какое время года зреют дыни?", "en": "In which season do melons ripen?" },
+      "explanation": { "uz": "Javob — yoz: issiq, uzun kunli, mevaga boy fasl.", "ru": "Ответ — лето: жаркое, длинные дни, много плодов.", "en": "The answer is summer: hot, long days, rich in fruit." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": {
+        "words": ["Ilm", "istasang,", "takror", "qil."],
+        "emoji": "📖",
+        "clue": { "uz": "Bilim haqidagi maqol", "ru": "Пословица о знаниях", "en": "A proverb about knowledge" }
+      } },
+      "prompt": { "uz": "Soʻzlarni tartibla va maqolni oʻqing!", "ru": "Расставь слова и прочитай пословицу!", "en": "Order the words to read the proverb!" },
+      "hint": { "uz": "«Ilm» soʻzidan boshlanadi.", "ru": "Начинается со слова «Ilm».", "en": "It starts with the word “Ilm”." },
+      "explanation": { "uz": "«Ilm istasang, takror qil» — bilim takrorlash bilan mustahkamlanadi.", "ru": "«Хочешь знаний — повторяй».", "en": "“If you want knowledge, repeat it.”" }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Oʻqigan va izlangan bola bilimga erishadi.", "ru": "Учащийся и любознательный ребёнок достигает знаний.", "en": "A studious, curious child gains knowledge." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «oʻqigan, izlangan bola baxtga yetar» deyilgan.", "ru": "В стихотворении так и сказано.", "en": "The poem says exactly this." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Sheʼrning oxirgi qatorlarini eslang.", "ru": "Вспомни последние строки.", "en": "Recall the last lines." },
+      "explanation": { "uz": "Toʻgʻri: oʻqib-izlangan bola bilim va baxtga erishadi.", "ru": "Верно: прилежный ребёнок достигает знаний и счастья.", "en": "True: a diligent child reaches knowledge and happiness." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "Yoz", "right": "qovun-tarvuz pishadi" },
+        { "left": "Qish", "right": "qor yogʻadi" },
+        { "left": "Bahor", "right": "gullar ochiladi" }
+      ] } },
+      "prompt": { "uz": "Faslni belgisiga ula!", "ru": "Соедини сезон с его признаком!", "en": "Match each season to its sign!" },
+      "hint": { "uz": "Har faslning oʻz belgisi bor.", "ru": "У каждого сезона свой признак.", "en": "Each season has its own sign." },
+      "explanation": { "uz": "Yoz — qovun-tarvuz; Qish — qor; Bahor — gullar.", "ru": "Лето — дыни; Зима — снег; Весна — цветы.", "en": "Summer — melons; Winter — snow; Spring — flowers." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Vatan, kitob, fasllar va goʻzal xulq haqida", "ru": "О Родине, книге, сезонах и добром нраве", "en": "About the Homeland, books, seasons and good character" },
+        { "uz": "Faqat sonlar haqida", "ru": "Только о числах", "en": "Only about numbers" },
+        { "uz": "Hech narsa haqida", "ru": "Ни о чём", "en": "About nothing" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Bu oʻquv yilida biz nimalarni oʻrgandik?", "ru": "Что мы изучили за этот учебный год?", "en": "What did we learn this school year?" },
+      "hint": { "uz": "Boʻlimlar: Vatan, kitob, bahor, ajdodlar, ertak, odob, yoz.", "ru": "Разделы: Родина, книга, весна, предки, сказки, вежливость, лето.", "en": "The sections: Homeland, books, spring, ancestors, tales, manners, summer." },
+      "explanation": { "uz": "Yil davomida Vatan, kitob, fasllar, ertak va goʻzal xulqni oʻrgandik.", "ru": "За год мы изучили Родину, книгу, сезоны, сказки и добрый нрав.", "en": "This year we studied the Homeland, books, seasons, tales and good character." },
+      "openEnd": { "uz": "Yil davomida oʻrgangan qaysi sheʼr yoki ertak senga koʻproq yoqdi?", "ru": "Какое стихотворение или сказка понравились тебе больше всего?", "en": "Which poem or tale did you like most this year?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Kunlar uzun boʻladi", "match": true },
+        { "text": "Qovun-tarvuz pishadi", "match": true },
+        { "text": "Havo issiq boʻladi", "match": true },
+        { "text": "Qor yogʻadi", "match": false },
+        { "text": "Barglar toʻkiladi", "match": false }
+      ] } },
+      "prompt": { "uz": "Yozning belgilarini bos!", "ru": "Нажми признаки лета!", "en": "Tap the signs of summer!" },
+      "hint": { "uz": "Yozda havo issiq, kunlar uzun.", "ru": "Летом жарко, дни длинные.", "en": "Summer is hot with long days." },
+      "explanation": { "uz": "Uzun kun, issiq havo, qovun-tarvuz — yoz; qor va toʻkilgan barg — yoʻq.", "ru": "Длинные дни, жара, дыни — лето; снег и листопад — нет.", "en": "Long days, heat, melons are summer; snow and falling leaves are not." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "hidden_words", "props": {
+        "words": ["bahor", "yoz", "kuz", "qish"],
+        "clue": { "uz": "Yilning toʻrt fasli yashiringan", "ru": "Здесь спрятаны четыре времени года", "en": "The four seasons are hidden here" }
+      } },
+      "prompt": { "uz": "Yashiringan fasllarni ajrating!", "ru": "Раздели спрятанные сезоны!", "en": "Split the hidden seasons apart!" },
+      "hint": { "uz": "Har fasl tugagan joyga chiziq qoʻy.", "ru": "Ставь черту там, где кончается сезон.", "en": "Place a divider where each season ends." },
+      "explanation": { "uz": "Yashiringan fasllar: bahor, yoz, kuz, qish.", "ru": "Спрятанные сезоны: bahor, yoz, kuz, qish.", "en": "The hidden seasons: bahor, yoz, kuz, qish." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "size_order", "props": {
+        "words": ["Yaxshi", "dam", "mehnatga", "hamdam."],
+        "phrase": "Yaxshi dam — mehnatga hamdam.",
+        "meaning": { "uz": "Yaxshi dam olish keyingi mehnatga kuch beradi.", "ru": "Хороший отдых придаёт сил для труда.", "en": "Good rest gives strength for work." }
+      } },
+      "prompt": { "uz": "Soʻzlarni kichikdan kattaga bosib, maqolni oʻqing!", "ru": "Нажимай слова от маленького к большому и прочитай пословицу!", "en": "Tap the words smallest to largest to read the proverb!" },
+      "hint": { "uz": "Eng kichik soʻzdan boshla.", "ru": "Начни с самого маленького слова.", "en": "Start with the smallest word." },
+      "explanation": { "uz": "«Yaxshi dam — mehnatga hamdam»: dam olish mehnatga kuch beradi.", "ru": "«Хороший отдых — спутник труда».", "en": "“Good rest is a companion to work.”" }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "bilim", "syllables": ["bi", "lim"], "emoji": "📚", "clue": { "uz": "Oʻqib-oʻrganib egallaydigan narsa", "ru": "То, что обретают учением", "en": "What you gain by studying" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "bi + lim = ?", "ru": "bi + lim = ?", "en": "bi + lim = ?" },
+      "explanation": { "uz": "bi-lim → bilim. Oʻqish orqali egallanadi.", "ru": "bi-lim → bilim (знание).", "en": "bi-lim → bilim (knowledge)." }
+    }
+  ]
+}

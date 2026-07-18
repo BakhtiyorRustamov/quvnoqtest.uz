@@ -1,0 +1,535 @@
+{
+  "topicId": "g1-alifbe-56",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🦒🐤🧶",
+  "title": {
+    "uz": "«J j» — oʻqish mashqi",
+    "ru": "Буква «J j» — чтение",
+    "en": "Letter “J j” — reading"
+  },
+  "recall": {
+    "uz": "«J» harfini oʻrgandik. Endi matn oʻqiymiz: jirafa, joʻja, jun. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «J». Теперь читаем текст: jirafa, joʻja, jun. Тренируем чтение!",
+    "en": "We learned the letter “J”. Now we read a text: jirafa, joʻja, jun. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🦒 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🦒 Прочитай и нажми верно написанное слово!",
+        "en": "🦒 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «jirafa».",
+        "ru": "Прочитай: «jirafa».",
+        "en": "Read it: “jirafa”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «jirafa».",
+        "ru": "Верно — «jirafa».",
+        "en": "Correct — “jirafa”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🦒",
+          "options": [
+            {
+              "id": "ok",
+              "word": "jirafa",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "jirafo"
+            },
+            {
+              "id": "w2",
+              "word": "zirafa"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «jirafa» soʻzini tuz!",
+        "ru": "Составь слово «jirafa»!",
+        "en": "Build the word “jirafa”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «jirafa» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «jirafa».",
+        "en": "Great! You read “jirafa”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🦒",
+          "word": "jirafa",
+          "label": {
+            "uz": "jirafa",
+            "ru": "жираф",
+            "en": "giraffe"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «jirafa».",
+        "ru": "Верный ответ — «jirafa».",
+        "en": "The right answer is “jirafa”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🦒",
+          "text": {
+            "uz": "Jasur jun oldi.\nJamila jirafa chizdi.",
+            "ru": "Jasur jun oldi.\nJamila jirafa chizdi.",
+            "en": "Jasur jun oldi.\nJamila jirafa chizdi."
+          },
+          "question": {
+            "uz": "Jamila nima chizdi?",
+            "ru": "Jamila nima chizdi?",
+            "en": "Jamila nima chizdi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "jirafa",
+                "ru": "jirafa",
+                "en": "jirafa"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "jun",
+                "ru": "jun",
+                "en": "jun"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "xat",
+                "ru": "xat",
+                "en": "xat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🦒 «jirafa» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🦒 Похлопай «jirafa» по слогам!",
+        "en": "🦒 Clap “jirafa” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«jirafa» — 3 boʻgʻin.",
+        "ru": "«jirafa» — 3 слога.",
+        "en": "“jirafa” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🦒",
+          "word": {
+            "uz": "jirafa",
+            "ru": "jirafa",
+            "en": "jirafa"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«J» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «J»!",
+        "en": "Tap the words with the “J” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «j» tovushi bor.",
+        "ru": "В них есть звук «j».",
+        "en": "They have the “j” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🦒",
+              "label": {
+                "uz": "jirafa",
+                "ru": "jirafa",
+                "en": "jirafa"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐤",
+              "label": {
+                "uz": "joʻja",
+                "ru": "joʻja",
+                "en": "joʻja"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🧶",
+              "label": {
+                "uz": "jun",
+                "ru": "jun",
+                "en": "jun"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«jirafa» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «jirafa». Найди картинку!",
+        "en": "Read “jirafa”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«jirafa» — 🦒.",
+        "ru": "«jirafa» — 🦒.",
+        "en": "“jirafa” is 🦒."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🦒",
+              "label": {
+                "uz": "jirafa",
+                "ru": "жираф",
+                "en": "giraffe"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🐤",
+              "label": {
+                "uz": "joʻja",
+                "ru": "joʻja",
+                "en": "joʻja"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🧶",
+              "label": {
+                "uz": "jun",
+                "ru": "jun",
+                "en": "jun"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🦒"
+              },
+              "right": {
+                "label": {
+                  "uz": "jirafa",
+                  "ru": "jirafa",
+                  "en": "jirafa"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐤"
+              },
+              "right": {
+                "label": {
+                  "uz": "joʻja",
+                  "ru": "joʻja",
+                  "en": "joʻja"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🧶"
+              },
+              "right": {
+                "label": {
+                  "uz": "jun",
+                  "ru": "jun",
+                  "en": "jun"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Jasur … oldi.",
+        "ru": "Составь предложение: Jasur … oldi.",
+        "en": "Order the words: Jasur … oldi."
+      },
+      "hint": {
+        "uz": "Jasur — jun — oldi.",
+        "ru": "Jasur — jun — oldi.",
+        "en": "Jasur — jun — oldi."
+      },
+      "explanation": {
+        "uz": "«Jasur jun oldi.» — gap oʻqiding!",
+        "ru": "«Jasur jun oldi.» — предложение!",
+        "en": "“Jasur jun oldi.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Jasur",
+                "ru": "Jasur",
+                "en": "Jasur"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "jun",
+                "ru": "jun",
+                "en": "jun"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🦒"
+              },
+              "b": {
+                "label": {
+                  "uz": "jirafa",
+                  "ru": "jirafa",
+                  "en": "jirafa"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐤"
+              },
+              "b": {
+                "label": {
+                  "uz": "joʻja",
+                  "ru": "joʻja",
+                  "en": "joʻja"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🧶"
+              },
+              "b": {
+                "label": {
+                  "uz": "jun",
+                  "ru": "jun",
+                  "en": "jun"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«jirafa» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «jirafa»?",
+        "en": "How many sounds are in “jirafa”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«jirafa»da 6 ta tovush bor.",
+        "ru": "В «jirafa» 6 звука.",
+        "en": "“jirafa” has 6 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

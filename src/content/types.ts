@@ -72,6 +72,27 @@ export type MatchSide = { id: string; art: Art; match?: string };
  *  (e.g. a "tens & ones" or celebratory clip). Purely cosmetic — never graded. */
 export type ItemMedia = { gif: string; alt?: L10n; maxWidth?: number };
 
+/** Ingliz tili voice cast — role → Gemini voice is resolved in seed-tts.mjs
+ *  (girl=Leda · boy=Puck · teacher=Kore · man=Charon). */
+export type AudioVoice = 'girl' | 'boy' | 'teacher' | 'man';
+
+/**
+ * A pre-seeded English audio clip played INSIDE a question (Ingliz tili).
+ * `key` names the cached file (public/audio/tts/en/<key>.wav); `text` is what
+ * the seed script synthesizes (never shown to the child unless the item also
+ * prints it); `voice` picks the cast member; `style` optionally steers the
+ * delivery ("Say it slowly, like a teacher"). The app NEVER calls a TTS API at
+ * runtime — `npm run seed:tts -- --only ingliz` generates the files once.
+ */
+export type ItemAudio = {
+  key: string;
+  text: string;
+  voice?: AudioVoice;
+  style?: string;
+  /** autoplay once when the question appears (default: tap to play) */
+  autoplay?: boolean;
+};
+
 export type LessonItem = {
   id: string;
   type: ItemType;
@@ -81,6 +102,9 @@ export type LessonItem = {
   visualHint: VisualHint;
   /** optional decorative GIF shown under the prompt */
   media?: ItemMedia;
+  /** Ingliz tili: English clip played from a big speaker button under the
+   *  prompt — "listen and tap", word pronunciations, mini dialogs. */
+  audio?: ItemAudio;
   /** click_correct / multi_select / sequence answer options */
   options?: Option[];
   /** ids of correct option(s) */
@@ -97,6 +121,13 @@ export type LessonItem = {
   slots?: Slot[];
   /** widget — interactive learning component (registry key + props) */
   widget?: WidgetSpec;
+  /** Oʻqish: an explicit passage to reopen from this item's "read again" button.
+   *  Optional — by default the lesson's reading passage (first poem/story/karaoke
+   *  item) is used automatically, so authors usually don't set this. */
+  reference?: WidgetSpec;
+  /** Oʻqish: an open-ended discussion question shown UNDER the graded item, with
+   *  no input — the child just thinks/answers aloud. Ungraded, purely displayed. */
+  openEnd?: L10n;
 };
 
 export type Lesson = {
@@ -105,6 +136,15 @@ export type Lesson = {
   emojis: string;
   title: L10n;
   recall: L10n;
+  /** Ingliz tili: the intro screen shows this animated GIF INSTEAD of the
+   *  explanatory paragraph (GIF + title replace the topic text). */
+  recallMedia?: ItemMedia;
+  /** Locale of the intro read-aloud clip. 'en' → an English clip
+   *  (<topicId>.en.wav) plays for ALL UI languages (used by Ingliz tili). */
+  recallAudioLang?: 'uz' | 'en';
+  /** hide the recall read-aloud (speaker) button entirely — subjects with no
+   *  seeded audio at all (e.g. Tasviriy sanʼat). */
+  hideAudio?: boolean;
   items: LessonItem[];
   /** skip the read-aloud intro screen and launch straight into the first item
    *  (used by review "game" lessons). */

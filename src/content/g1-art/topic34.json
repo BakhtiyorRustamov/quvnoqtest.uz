@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-34", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Monotipiya. Kapalak", "ru": "Монотипия. Бабочка", "en": "Monotype. Butterfly" },
+  "recall": {
+    "uz": "Monotipiya — qogʻozning bir tomoniga boʻyoq surtib, buklab bossak, ikkinchi tomonda aynan shunday naqsh chiqadi. Shunday kapalak yasa, soʻng suratga ol.",
+    "ru": "Монотипия — нанеси краску на одну половину бумаги, сложи и прижми, и на другой половине появится такой же узор. Сделай так бабочку и сфотографируй.",
+    "en": "Monotype — put paint on one half of the paper, fold and press, and the same pattern appears on the other half. Make a butterfly this way, then photograph it."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Monotipiya usulida kapalak yasa va suratga ol.", "ru": "Сделай бабочку монотипией и сфотографируй.", "en": "Make a butterfly by monotype, then photograph it." },
+      "hint": { "uz": "Bir tomonga boʻyoq surt, buklab bos.", "ru": "Нанеси краску на одну сторону, сложи и прижми.", "en": "Paint one side, fold and press." },
+      "explanation": { "uz": "Simmetrik kapalak!", "ru": "Симметричная бабочка!", "en": "A symmetrical butterfly!" },
+      "widget": { "type": "photo_upload", "props": {} } }
+  ]
+}

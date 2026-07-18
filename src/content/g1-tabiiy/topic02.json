@@ -1,0 +1,216 @@
+{
+  "topicId": "g1-tabiiy-02",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🌳🏢🦋🪨",
+  "title": {
+    "uz": "Atrofimdagi obyektlar olami",
+    "ru": "Мир предметов вокруг меня",
+    "en": "The world of objects around me"
+  },
+  "recall": {
+    "uz": "Atrofimizda binolar bor: maktab, dorixona, non doʻkoni. Narsalar tabiiy yoki inson yaratgan boʻladi. Daraxt, tosh, bulut — tabiiy. Tabiat esa jonli va jonsizga boʻlinadi: oʻsimlik va hayvon jonli, tosh va suv jonsiz.",
+    "ru": "Вокруг нас есть здания: школа, аптека, хлебный магазин. Предметы бывают природными или созданными человеком. Дерево, камень, облако — природные. Природа делится на живую и неживую: растения и животные живые, камень и вода — неживые.",
+    "en": "Around us there are buildings: a school, a pharmacy, a bakery. Objects are either natural or made by people. A tree, a rock and a cloud are natural. Nature is either living or non-living: plants and animals are living, a rock and water are non-living."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kasal boʻlsak, dorini qayerdan olamiz? Toʻgʻri binoni bos!", "ru": "Где мы берём лекарство, когда болеем? Нажми верное здание!", "en": "Where do we get medicine when sick? Tap the right building!" },
+      "hint": { "uz": "Dori sotiladigan bino — dorixona.", "ru": "Здание, где продают лекарства, — аптека.", "en": "The building where medicine is sold is the pharmacy." },
+      "explanation": { "uz": "Dorixonada dori olamiz. Har bir bino oʻz vazifasi uchun kerak.", "ru": "В аптеке берём лекарство. Каждое здание нужно для своего дела.", "en": "We get medicine at the pharmacy. Each building serves its own purpose." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "pharm", "emoji": "🏥", "label": { "uz": "dorixona", "ru": "аптека", "en": "pharmacy" }, "correct": true },
+            { "id": "bread", "emoji": "🥖", "label": { "uz": "non doʻkoni", "ru": "хлебный", "en": "bakery" } },
+            { "id": "barber", "emoji": "💈", "label": { "uz": "sartaroshxona", "ru": "парикмахерская", "en": "barber" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir binoni oʻz ishiga ula!", "ru": "Соедини каждое здание с его делом!", "en": "Match each building to what we do there!" },
+      "hint": { "uz": "Maktabda oʻqiymiz, non doʻkonida non olamiz.", "ru": "В школе учимся, в хлебном берём хлеб.", "en": "We study at school, we buy bread at the bakery." },
+      "explanation": { "uz": "Har bir bino odamlarga alohida xizmat qiladi.", "ru": "Каждое здание служит людям по-своему.", "en": "Each building serves people in its own way." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🏫", "label": { "uz": "maktab", "ru": "школа", "en": "school" } }, "right": { "emoji": "📚", "label": { "uz": "oʻqiymiz", "ru": "учимся", "en": "study" } } },
+            { "left": { "emoji": "🥖", "label": { "uz": "non doʻkoni", "ru": "хлебный", "en": "bakery" } }, "right": { "emoji": "🍞", "label": { "uz": "non olamiz", "ru": "берём хлеб", "en": "get bread" } } },
+            { "left": { "emoji": "🏥", "label": { "uz": "dorixona", "ru": "аптека", "en": "pharmacy" } }, "right": { "emoji": "💊", "label": { "uz": "dori olamiz", "ru": "берём лекарство", "en": "get medicine" } } },
+            { "left": { "emoji": "💈", "label": { "uz": "sartaroshxona", "ru": "парикмахерская", "en": "barber" } }, "right": { "emoji": "✂️", "label": { "uz": "soch olamiz", "ru": "стрижёмся", "en": "get a haircut" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Inson yaratgan narsalarni belgila!", "ru": "Отметь предметы, созданные человеком!", "en": "Tap the things made by people!" },
+      "hint": { "uz": "Favvora, svetofor, bino — odamlar yasagan.", "ru": "Фонтан, светофор, дом — сделали люди.", "en": "A fountain, a traffic light and a building are made by people." },
+      "explanation": { "uz": "Favvora, svetofor va bino inson yaratgan. Daraxt, tosh va quyosh — tabiiy.", "ru": "Фонтан, светофор и дом созданы человеком. Дерево, камень и солнце — природные.", "en": "The fountain, traffic light and building are man-made. The tree, rock and sun are natural." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "fountain", "emoji": "⛲", "label": { "uz": "favvora", "ru": "фонтан", "en": "fountain" }, "correct": true },
+            { "id": "light", "emoji": "🚦", "label": { "uz": "svetofor", "ru": "светофор", "en": "traffic light" }, "correct": true },
+            { "id": "build", "emoji": "🏢", "label": { "uz": "bino", "ru": "дом", "en": "building" }, "correct": true },
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" } },
+            { "id": "rock", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "rock" } },
+            { "id": "sun", "emoji": "☀️", "label": { "uz": "quyosh", "ru": "солнце", "en": "sun" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Narsalarni tabiiy va inson yaratgan qutilarga ajrat!", "ru": "Разложи предметы: природные и созданные человеком!", "en": "Sort the objects: natural and man-made!" },
+      "hint": { "uz": "Oʻzi paydo boʻlgan — tabiiy; odam yasagan — inson yaratgan.", "ru": "Появилось само — природное; сделал человек — рукотворное.", "en": "It appeared on its own → natural; a person made it → man-made." },
+      "explanation": { "uz": "Daraxt va tosh tabiiy, favvora va svetofor inson yaratgan obyekt.", "ru": "Дерево и камень природные, фонтан и светофор — рукотворные.", "en": "The tree and rock are natural; the fountain and traffic light are man-made." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "nature", "label": { "uz": "🌿 Tabiiy", "ru": "🌿 Природное", "en": "🌿 Natural" }, "color": "#46c06a" },
+            { "id": "made", "label": { "uz": "🏗️ Inson yaratgan", "ru": "🏗️ Рукотворное", "en": "🏗️ Man-made" }, "color": "#f39a1f" }
+          ],
+          "items": [
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" }, "bin": "nature" },
+            { "id": "rock", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "rock" }, "bin": "nature" },
+            { "id": "fountain", "emoji": "⛲", "label": { "uz": "favvora", "ru": "фонтан", "en": "fountain" }, "bin": "made" },
+            { "id": "light", "emoji": "🚦", "label": { "uz": "svetofor", "ru": "светофор", "en": "traffic light" }, "bin": "made" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri jonli tabiat?", "ru": "Что относится к живой природе?", "en": "Which one is living nature?" },
+      "hint": { "uz": "Jonli narsa nafas oladi, oʻsadi, harakatlanadi.", "ru": "Живое дышит, растёт, двигается.", "en": "A living thing breathes, grows and moves." },
+      "explanation": { "uz": "Kapalak jonli tabiat — u yashaydi va harakatlanadi. Tosh va bulut jonsiz.", "ru": "Бабочка — живая природа: она живёт и двигается. Камень и облако неживые.", "en": "The butterfly is living nature — it lives and moves. The rock and cloud are non-living." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "butterfly", "emoji": "🦋", "label": { "uz": "kapalak", "ru": "бабочка", "en": "butterfly" }, "correct": true },
+            { "id": "rock", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "rock" } },
+            { "id": "cloud", "emoji": "☁️", "label": { "uz": "bulut", "ru": "облако", "en": "cloud" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri jonsiz tabiat?", "ru": "Что относится к неживой природе?", "en": "Which one is non-living nature?" },
+      "hint": { "uz": "Jonsiz narsa nafas olmaydi va oʻsmaydi.", "ru": "Неживое не дышит и не растёт.", "en": "A non-living thing does not breathe or grow." },
+      "explanation": { "uz": "Quyosh jonsiz tabiat. Daraxt va sigir esa jonli.", "ru": "Солнце — неживая природа. А дерево и корова живые.", "en": "The sun is non-living nature. The tree and cow are living." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "sun", "emoji": "☀️", "label": { "uz": "quyosh", "ru": "солнце", "en": "sun" }, "correct": true },
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" } },
+            { "id": "cow", "emoji": "🐄", "label": { "uz": "sigir", "ru": "корова", "en": "cow" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Jonli va jonsiz tabiatga ajrat!", "ru": "Разложи на живую и неживую природу!", "en": "Sort into living and non-living nature!" },
+      "hint": { "uz": "Oʻsadigan, nafas oladiganlar — jonli; qolganlari — jonsiz.", "ru": "Что растёт и дышит — живое; остальное — неживое.", "en": "What grows and breathes is living; the rest is non-living." },
+      "explanation": { "uz": "Daraxt, kapalak, sigir — jonli. Bulut, tosh, suv — jonsiz tabiat.", "ru": "Дерево, бабочка, корова — живые. Облако, камень, вода — неживые.", "en": "Tree, butterfly and cow are living. Cloud, rock and water are non-living." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "live", "label": { "uz": "🌱 Jonli", "ru": "🌱 Живое", "en": "🌱 Living" }, "color": "#46c06a" },
+            { "id": "nonlive", "label": { "uz": "🪨 Jonsiz", "ru": "🪨 Неживое", "en": "🪨 Non-living" }, "color": "#2f9fe0" }
+          ],
+          "items": [
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" }, "bin": "live" },
+            { "id": "butterfly", "emoji": "🦋", "label": { "uz": "kapalak", "ru": "бабочка", "en": "butterfly" }, "bin": "live" },
+            { "id": "cow", "emoji": "🐄", "label": { "uz": "sigir", "ru": "корова", "en": "cow" }, "bin": "live" },
+            { "id": "cloud", "emoji": "☁️", "label": { "uz": "bulut", "ru": "облако", "en": "cloud" }, "bin": "nonlive" },
+            { "id": "rock", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "rock" }, "bin": "nonlive" },
+            { "id": "water", "emoji": "💧", "label": { "uz": "suv", "ru": "вода", "en": "water" }, "bin": "nonlive" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Barcha jonli narsalarni belgila!", "ru": "Отметь всё живое!", "en": "Tap all the living things!" },
+      "hint": { "uz": "It, gul, qush — jonli. Tosh, mashina, quyosh — jonsiz.", "ru": "Собака, цветок, птица — живые. Камень, машина, солнце — нет.", "en": "Dog, flower, bird are living. Rock, car, sun are not." },
+      "explanation": { "uz": "It, gul va qush jonli — ular oʻsadi va nafas oladi.", "ru": "Собака, цветок и птица живые — они растут и дышат.", "en": "Dog, flower and bird are living — they grow and breathe." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "dog", "emoji": "🐕", "label": { "uz": "it", "ru": "собака", "en": "dog" }, "correct": true },
+            { "id": "flower", "emoji": "🌷", "label": { "uz": "gul", "ru": "цветок", "en": "flower" }, "correct": true },
+            { "id": "bird", "emoji": "🐦", "label": { "uz": "qush", "ru": "птица", "en": "bird" }, "correct": true },
+            { "id": "rock", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "rock" } },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "mashina", "ru": "машина", "en": "car" } },
+            { "id": "sun", "emoji": "☀️", "label": { "uz": "quyosh", "ru": "солнце", "en": "sun" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bogʻda oʻtiribsan. Qaysi biri inson yaratgan?", "ru": "Ты сидишь в парке. Что создано человеком?", "en": "You are sitting in a park. Which one is man-made?" },
+      "hint": { "uz": "Oʻrindiqni odamlar yasagan; daraxt va gul tabiiy.", "ru": "Скамейку сделали люди; дерево и цветок природные.", "en": "The bench is made by people; the tree and flower are natural." },
+      "explanation": { "uz": "Oʻrindiq inson yaratgan obyekt. Daraxt va gul tabiiy obyekt.", "ru": "Скамейка — рукотворный предмет. Дерево и цветок — природные.", "en": "The bench is man-made. The tree and flower are natural." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "bench", "emoji": "🪑", "label": { "uz": "oʻrindiq", "ru": "скамейка", "en": "bench" }, "correct": true },
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" } },
+            { "id": "flower", "emoji": "🌼", "label": { "uz": "gul", "ru": "цветок", "en": "flower" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Nafas oladigan, oʻsadigan — jonli. Qaysi biri jonli?", "ru": "Кто дышит и растёт — живой. Кто из них живой?", "en": "What breathes and grows is living. Which one is living?" },
+      "hint": { "uz": "Bola oʻsadi va nafas oladi — u jonli.", "ru": "Ребёнок растёт и дышит — он живой.", "en": "A child grows and breathes — it is living." },
+      "explanation": { "uz": "Bola jonli. Tosh va mashina jonsiz — ular oʻsmaydi.", "ru": "Ребёнок живой. Камень и машина неживые — они не растут.", "en": "A child is living. A rock and a car are non-living — they don't grow." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "child", "emoji": "🧒", "label": { "uz": "bola", "ru": "ребёнок", "en": "child" }, "correct": true },
+            { "id": "rock", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "rock" } },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "mashina", "ru": "машина", "en": "car" } }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "g1-art-12", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Olma", "ru": "Яблоко", "en": "The apple" },
+  "recall": {
+    "uz": "Olma — mazali va foydali meva. U qizil, sariq yoki yashil boʻladi. Keling, olmani boʻyaymiz.",
+    "ru": "Яблоко — вкусный и полезный фрукт. Оно бывает красным, жёлтым или зелёным. Давай раскрасим яблоко.",
+    "en": "The apple is a tasty, healthy fruit. It can be red, yellow or green. Let's colour an apple."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Olmani boʻya.", "ru": "Раскрась яблоко.", "en": "Colour the apple." },
+      "hint": { "uz": "Olma — qizil, bargi — yashil.", "ru": "Яблоко — красное, лист — зелёный.", "en": "Apple red, leaf green." },
+      "explanation": { "uz": "Mazali olma!", "ru": "Вкусное яблоко!", "en": "A tasty apple!" },
+      "widget": { "type": "color_fill", "props": { "picture": "apple" } }
+    }
+  ]
+}

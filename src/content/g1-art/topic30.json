@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-30", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Kapalaklar rasmini chizamiz", "ru": "Рисуем бабочек", "en": "Drawing butterflies" },
+  "recall": {
+    "uz": "Kapalak qanotlari simmetrik — chap va oʻng tomoni bir xil. Keling, namunaga qarab kapalak chizamiz.",
+    "ru": "Крылья бабочки симметричны — левая и правая стороны одинаковы. Давай нарисуем бабочку по образцу.",
+    "en": "A butterfly's wings are symmetrical — the left and right sides match. Let's draw a butterfly from the model."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Namunaga qarab, kapalak chiz.", "ru": "Глядя на образец, нарисуй бабочку.", "en": "Looking at the model, draw a butterfly." },
+      "hint": { "uz": "Ikki tomonni bir xil chiz.", "ru": "Нарисуй обе стороны одинаково.", "en": "Draw both sides the same." },
+      "explanation": { "uz": "Uchayotgan kapalak!", "ru": "Летящая бабочка!", "en": "A flying butterfly!" },
+      "widget": { "type": "free_draw", "props": { "example": "butterfly" } } }
+  ]
+}

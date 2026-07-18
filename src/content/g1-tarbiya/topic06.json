@@ -1,0 +1,248 @@
+{
+  "topicId": "g1-tarbiya-06",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🤝💪🧩🌟",
+  "title": {
+    "uz": "Biz ahil jamoamiz",
+    "ru": "Мы — дружный коллектив",
+    "en": "We are a friendly community"
+  },
+  "recall": {
+    "uz": "«Kuch — birlikda», deydi xalqimiz. Doʻstlar birga ishlasa, har qanday vazifani osonlik bilan uddalaydi. Bir-biriga yordam berish, navbat bilan ishlash va hamkorlik yaxshi natija beradi.",
+    "ru": "«Сила — в единстве», говорит наш народ. Когда друзья работают вместе, они легко справляются с любой задачей. Помощь друг другу, работа по очереди и сотрудничество дают хороший результат.",
+    "en": "\"Strength is in unity,\" our people say. When friends work together, they handle any task easily. Helping one another, taking turns and cooperating bring good results."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: bolalar sinfni qanday tozaladi?",
+        "ru": "Расставь историю: как дети убрали класс?",
+        "en": "Put the story in order: how did the children clean the class?"
+      },
+      "hint": {
+        "uz": "Avval ish boʻlinadi, oxirida sinf toza boʻladi.",
+        "ru": "Сначала делят работу, в конце класс чистый.",
+        "en": "First they share the work, at the end the class is clean."
+      },
+      "explanation": {
+        "uz": "Barakalla! Birgalikda ish tez bitdi.",
+        "ru": "Молодец! Вместе работа сделана быстро.",
+        "en": "Great! Together the work was done quickly."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🤝",
+          "events": [
+            {
+              "text": {
+                "uz": "Bolalar sinfni tozalamoqchi boʻldi.",
+                "ru": "Дети решили убрать класс.",
+                "en": "The children decided to clean the class."
+              }
+            },
+            {
+              "text": {
+                "uz": "Har biri bitta ishni oldi.",
+                "ru": "Каждый взял одно дело.",
+                "en": "Each one took a task."
+              }
+            },
+            {
+              "text": {
+                "uz": "Birgalikda tez ishlashdi.",
+                "ru": "Вместе работали быстро.",
+                "en": "Together they worked fast."
+              }
+            },
+            {
+              "text": {
+                "uz": "Sinf toza va chiroyli boʻldi.",
+                "ru": "Класс стал чистым и красивым.",
+                "en": "The class became clean and lovely."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Kuch — birlikda» maqoli nimani anglatadi?",
+        "ru": "Что означает пословица «Сила — в единстве»?",
+        "en": "What does the saying \"Strength is in unity\" mean?"
+      },
+      "hint": {
+        "uz": "Birga ishlash haqida.",
+        "ru": "О работе вместе.",
+        "en": "About working together."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Birga ishlash kuch beradi.",
+        "ru": "Верно! Работа вместе даёт силу.",
+        "en": "Right! Working together gives strength."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "birga ishlash kuch beradi",
+              "ru": "работа вместе даёт силу",
+              "en": "working together gives strength"
+            },
+            {
+              "uz": "yolgʻiz ishlash yaxshi",
+              "ru": "работать одному лучше",
+              "en": "working alone is better"
+            },
+            {
+              "uz": "ishlamaslik kerak",
+              "ru": "не нужно работать",
+              "en": "we should not work"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hamkorlikdagi yaxshi ishlarni belgila!",
+        "ru": "Отметь добрые дела в сотрудничестве!",
+        "en": "Tap the good ways to cooperate!"
+      },
+      "hint": {
+        "uz": "Birga koʻtarish, navbat, yordam.",
+        "ru": "Нести вместе, по очереди, помогать.",
+        "en": "Carry together, take turns, help."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bular haqiqiy hamkorlik.",
+        "ru": "Молодец! Это настоящее сотрудничество.",
+        "en": "Great! That's real cooperation."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🤝",
+              "label": {
+                "uz": "birga koʻtarish",
+                "ru": "нести вместе",
+                "en": "carry together"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🔁",
+              "label": {
+                "uz": "navbat bilan ishlash",
+                "ru": "работать по очереди",
+                "en": "take turns"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💛",
+              "label": {
+                "uz": "yordam berish",
+                "ru": "помогать",
+                "en": "help each other"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "😠",
+              "label": {
+                "uz": "janjal qilish",
+                "ru": "ссориться",
+                "en": "quarrel"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🙅",
+              "label": {
+                "uz": "yordamdan bosh tortish",
+                "ru": "отказывать в помощи",
+                "en": "refuse to help"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Ogʻir ishni birga qilsak, osonlashadi.",
+        "ru": "Верно? Если тяжёлое дело делать вместе, оно легче.",
+        "en": "Is this right? A hard task becomes easier when we do it together."
+      },
+      "hint": {
+        "uz": "Koʻp qoʻl — yengil ish.",
+        "ru": "Много рук — лёгкая работа.",
+        "en": "Many hands make light work."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Birga qilsak, osonlashadi.",
+        "ru": "Верно! Вместе легче.",
+        "en": "Right! Together it's easier."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "💪",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻstlaringiz bilan birga qanday ishni uddaladingiz? Aytib bering.",
+        "ru": "Какое дело вы сделали вместе с друзьями? Расскажи.",
+        "en": "What task did you complete together with your friends? Tell about it."
+      },
+      "hint": {
+        "uz": "Oʻyin, tozalik, sport — birga qilgan ishingni esla.",
+        "ru": "Игра, уборка, спорт — вспомни, что делали вместе.",
+        "en": "A game, cleaning, sport — recall what you did together."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Birgalikdagi ish quvonch keltiradi.",
+        "ru": "Отлично! Совместное дело приносит радость.",
+        "en": "Great! Working together brings joy."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Biz doʻstlarim bilan hovlini birga tozaladik. Har birimiz bir ishni oldik va tez bitirdik.",
+            "ru": "Мы с друзьями вместе убрали двор. Каждый взял своё дело, и мы быстро закончили.",
+            "en": "My friends and I cleaned the yard together. Each of us took a task and finished it fast."
+          }
+        }
+      }
+    }
+  ]
+}

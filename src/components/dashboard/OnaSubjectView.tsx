@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
@@ -10,9 +10,11 @@ import CollapsibleGrid from './CollapsibleGrid';
 import TopicRecommendation from './TopicRecommendation';
 import { useUser } from '@/components/providers/UserProvider';
 import { api } from '@/lib/client';
-import { G1_ONA_TOPICS, getOnaTopic, isBuiltTopic } from '@/content';
+import { G1_ONA_TOPICS, G1_ONA_REVIEWS, getOnaTopic, isBuiltTopic } from '@/content';
 import { G1_ONA_PART2_START } from '@/content/g1-ona/topics';
+import { ONA_DTM_TITLE } from '@/content/g1-ona/dtm-exam';
 import { pick } from '@/lib/i18n-config';
+import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
 
 /**
@@ -136,9 +138,43 @@ export default function OnaSubjectView() {
     );
   };
 
+  // Review "game" lesson tile — purple, like the math games; sits at a fixed
+  // position and never moves to "Hozircha oʻrganganlarim".
+  const GAME_ICONS: Record<string, string> = { 'g1-ona-review-1': '🧩', 'g1-ona-review-2': '🐘' };
+  const renderReviewTile = (r: (typeof G1_ONA_REVIEWS)[number], i: number) => {
+    const delay = Math.min(i * 0.02, 0.4);
+    return (
+      <motion.div key={r.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
+        <Link
+          href={`/lesson/${r.key}`}
+          className="h-full flex items-center gap-2 px-3 py-2.5 rounded-2xl border-2 border-brand-purple/60 bg-gradient-to-br from-brand-purple/15 to-brand-magenta/15 hover:-translate-y-0.5 transition-transform"
+        >
+          <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center text-base bg-brand-purple/20" aria-hidden>
+            {GAME_ICONS[r.key] ?? '🏁'}
+          </span>
+          <span className="flex-1 leading-snug">
+            <span className="block font-black text-brand-purple text-[12.5px]">{pick(r.title, locale)}</span>
+            <span className="block font-bold text-ink/45 text-[10.5px]">{t('dashboard.review')}</span>
+          </span>
+          <span className="shrink-0 text-brand-orange font-black" aria-hidden>
+            ▶
+          </span>
+        </Link>
+      </motion.div>
+    );
+  };
+
   // Mavzular excludes completed lessons — those live only in the notebook above.
+  // Part 1 interleaves the review games at their fixed "after" positions
+  // (they stay even when the surrounding lessons are completed), same as math.
+  const reviewsByAfter = new Map(G1_ONA_REVIEWS.map((r) => [r.after, r]));
+  const part1: ReactNode[] = [];
+  for (const tp of G1_ONA_TOPICS.filter((x) => x.n < G1_ONA_PART2_START)) {
+    if (!completedKeys.has(tp.key)) part1.push(renderTile(tp, part1.length));
+    const r = reviewsByAfter.get(tp.n);
+    if (r) part1.push(renderReviewTile(r, part1.length));
+  }
   const notLearned = G1_ONA_TOPICS.filter((tp) => !completedKeys.has(tp.key));
-  const part1 = notLearned.filter((tp) => tp.n < G1_ONA_PART2_START);
   const part2 = notLearned.filter((tp) => tp.n >= G1_ONA_PART2_START);
 
   return (
@@ -148,7 +184,7 @@ export default function OnaSubjectView() {
       <div className="max-w-3xl mx-auto px-3">
         <div className="flex items-center gap-3 mt-4">
           <h1 className="font-black text-ink text-2xl sm:text-3xl">
-            {t('common.grade', { n: 1 })} · Ona tili
+            {t('common.grade', { n: 1 })} · {pick(SUBJECTS['ona-tili-savod'].name, locale)}
           </h1>
         </div>
 
@@ -246,7 +282,7 @@ export default function OnaSubjectView() {
           <div className="mb-2">
             <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part1')}</h3>
           </div>
-          <CollapsibleGrid>{part1.map(renderTile)}</CollapsibleGrid>
+          <CollapsibleGrid>{part1}</CollapsibleGrid>
 
           <div className="mt-6 mb-2">
             <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part2')}</h3>
@@ -254,27 +290,33 @@ export default function OnaSubjectView() {
           <CollapsibleGrid>{part2.map(renderTile)}</CollapsibleGrid>
         </section>
 
-        {/* dummy "savodxonlik imtihoni" — coming soon */}
+        {/* DTM-style Ona tili practice exam — 20 questions, 30-minute timer.
+            Words/items and order re-randomize every attempt. */}
         <section className="mt-8">
-          <div className="block rounded-3xl border-2 border-brand-orange/50 bg-gradient-to-br from-brand-orange/10 to-brand-magenta/10 px-5 py-5 opacity-80 cursor-default">
+          <Link
+            href="/exam/g1-ona-dtm"
+            className="block rounded-3xl border-2 border-brand-blue/60 bg-gradient-to-br from-brand-blue/15 to-brand-green/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
+          >
             <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>
-                📝
-              </span>
+              <span aria-hidden className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card">🎓</span>
               <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
+                <span className="block font-black text-ink text-lg">{pick(ONA_DTM_TITLE, locale)}</span>
+                <span className="block font-bold text-ink/50 text-[13px]">
                   {pick(
-                    { uz: 'Savodxonlik imtihoni', ru: 'Экзамен по грамотности', en: 'Literacy exam' },
+                    {
+                      uz: '20 ta savol · 30 daqiqa · har safar boshqa test',
+                      ru: '20 вопросов · 30 минут · каждый раз другой тест',
+                      en: '20 questions · 30 minutes · a different test each time'
+                    },
                     locale
                   )}
                 </span>
-                <span className="block font-bold text-ink/50 text-[13px]">{t('common.comingSoon')}</span>
               </div>
-              <span className="shrink-0 text-base" aria-hidden>
-                🔒
+              <span className="shrink-0 text-brand-blue font-black text-xl" aria-hidden>
+                ▶
               </span>
             </div>
-          </div>
+          </Link>
         </section>
 
         {/* personalized "focused review" — practise low-score Ona tili topics */}

@@ -1,0 +1,191 @@
+{
+  "topicId": "g1-tabiiy-22",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🚌🚊🚇🚕",
+  "title": {
+    "uz": "Jamoat transportida xavfsizlik",
+    "ru": "Безопасность в общественном транспорте",
+    "en": "Safety on public transport"
+  },
+  "recall": {
+    "uz": "Jamoat transporti — avtobus, tramvay, metro va poyezd — koʻp odamni birga olib yuradi va vaqtni tejaydi. Unда xavfsizlik qoidalari bor: xavfsizlik kamarini taqamiz, boshni oynadan chiqarmaymiz, kattalarga oʻrin beramiz, shovqin qilmaymiz, metroda platforma chetiga yaqin bormaymiz.",
+    "ru": "Общественный транспорт — автобус, трамвай, метро и поезд — перевозит много людей и экономит время. В нём есть правила безопасности: пристёгиваем ремень, не высовываемся из окна, уступаем место старшим, не шумим, в метро не подходим к краю платформы.",
+    "en": "Public transport — bus, tram, metro and train — carries many people together and saves time. It has safety rules: we buckle the seatbelt, don't lean out the window, give our seat to elders, stay quiet, and don't go near the platform edge in the metro."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Jamoat transportini belgila!", "ru": "Отметь общественный транспорт!", "en": "Tap the public transport!" },
+      "hint": { "uz": "Jamoat transporti koʻp odamni birga olib yuradi.", "ru": "Общественный транспорт везёт много людей сразу.", "en": "Public transport carries many people at once." },
+      "explanation": { "uz": "Avtobus, tramvay va metro — jamoat transporti. Shaxsiy velosiped, samokat va vertolyot — yoʻq.", "ru": "Автобус, трамвай и метро — общественный транспорт. Личный велосипед, самокат и вертолёт — нет.", "en": "Bus, tram and metro are public transport. A private bicycle, scooter and helicopter are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "bus", "emoji": "🚌", "label": { "uz": "avtobus", "ru": "автобус", "en": "bus" }, "correct": true },
+            { "id": "tram", "emoji": "🚊", "label": { "uz": "tramvay", "ru": "трамвай", "en": "tram" }, "correct": true },
+            { "id": "metro", "emoji": "🚇", "label": { "uz": "metro", "ru": "метро", "en": "metro" }, "correct": true },
+            { "id": "bike", "emoji": "🚲", "label": { "uz": "velosiped", "ru": "велосипед", "en": "bicycle" } },
+            { "id": "scooter", "emoji": "🛴", "label": { "uz": "samokat", "ru": "самокат", "en": "scooter" } },
+            { "id": "heli", "emoji": "🚁", "label": { "uz": "vertolyot", "ru": "вертолёт", "en": "helicopter" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir jamoat transportini oʻz joyiga ula!", "ru": "Соедини каждый вид транспорта с его местом!", "en": "Match each public transport to where it runs!" },
+      "hint": { "uz": "Metro — yer ostida, tramvay — rels, avtobus — yoʻl.", "ru": "Метро — под землёй, трамвай — рельсы, автобус — дорога.", "en": "Metro — underground, tram — rails, bus — road." },
+      "explanation": { "uz": "Metro yer ostida, tramvay relsda, avtobus yoʻlda, taksi buyurtma bilan yuradi.", "ru": "Метро под землёй, трамвай по рельсам, автобус по дороге, такси по заказу.", "en": "Metro runs underground, tram on rails, bus on the road, taxi on request." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🚇", "label": { "uz": "metro", "ru": "метро", "en": "metro" } }, "right": { "label": { "uz": "yer ostida", "ru": "под землёй", "en": "underground" } } },
+            { "left": { "emoji": "🚊", "label": { "uz": "tramvay", "ru": "трамвай", "en": "tram" } }, "right": { "label": { "uz": "rels ustida", "ru": "по рельсам", "en": "on rails" } } },
+            { "left": { "emoji": "🚌", "label": { "uz": "avtobus", "ru": "автобус", "en": "bus" } }, "right": { "label": { "uz": "yoʻlda", "ru": "по дороге", "en": "on the road" } } },
+            { "left": { "emoji": "🚕", "label": { "uz": "taksi", "ru": "такси", "en": "taxi" } }, "right": { "label": { "uz": "buyurtma bilan", "ru": "по заказу", "en": "on request" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Transportda toʻgʻri va notoʻgʻri xatti-harakatga ajrat!", "ru": "Разложи правильное и неправильное поведение в транспорте!", "en": "Sort correct and wrong behavior on transport!" },
+      "hint": { "uz": "Sekin gaplashish, oʻrin berish — toʻgʻri; shovqin, iflos qilish — notoʻgʻri.", "ru": "Тихо говорить, уступать место — правильно; шуметь, мусорить — неправильно.", "en": "Speaking quietly, giving a seat — right; being noisy, littering — wrong." },
+      "explanation": { "uz": "Sekin gaplashish, oʻrin berish va chipta olish — toʻgʻri. Boshni chiqarish, shovqin va iflos qilish — notoʻgʻri.", "ru": "Тихо говорить, уступать место, брать билет — правильно. Высовываться, шуметь, мусорить — неправильно.", "en": "Speaking quietly, giving a seat, buying a ticket — right. Leaning out, noise, littering — wrong." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "ok", "label": { "uz": "✅ Toʻgʻri", "ru": "✅ Правильно", "en": "✅ Right" }, "color": "#46c06a" },
+            { "id": "no", "label": { "uz": "❌ Notoʻgʻri", "ru": "❌ Неправильно", "en": "❌ Wrong" }, "color": "#e14b4b" }
+          ],
+          "items": [
+            { "id": "quiet", "emoji": "🤫", "label": { "uz": "sekin gaplashish", "ru": "тихо говорить", "en": "speak quietly" }, "bin": "ok" },
+            { "id": "seat", "emoji": "💺", "label": { "uz": "oʻrin berish", "ru": "уступить место", "en": "give a seat" }, "bin": "ok" },
+            { "id": "ticket", "emoji": "🎫", "label": { "uz": "chipta olish", "ru": "взять билет", "en": "buy a ticket" }, "bin": "ok" },
+            { "id": "window", "emoji": "🪟", "label": { "uz": "boshni chiqarish", "ru": "высовываться", "en": "lean out window" }, "bin": "no" },
+            { "id": "noise", "emoji": "📢", "label": { "uz": "shovqin solish", "ru": "шуметь", "en": "make noise" }, "bin": "no" },
+            { "id": "litter", "emoji": "🗑️", "label": { "uz": "iflos qilish", "ru": "мусорить", "en": "litter" }, "bin": "no" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Boshni mashina oynasidan chiqarish xavfli.", "ru": "Верно? Высовывать голову из окна машины опасно.", "en": "True? Sticking your head out the car window is dangerous." },
+      "hint": { "uz": "Yoʻldagi boshqa transport yaqindan oʻtadi.", "ru": "Рядом близко проезжает другой транспорт.", "en": "Other vehicles pass by closely." },
+      "explanation": { "uz": "Toʻgʻri. Boshni va qoʻlni oynadan chiqarmaymiz — bu juda xavfli.", "ru": "Верно. Голову и руки из окна не высовываем — это очень опасно.", "en": "True. We don't stick our head or hands out the window — it is very dangerous." },
+      "widget": { "type": "true_false", "props": { "emoji": "🪟", "answer": true } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Avtobusda kimga oʻrin beramiz?", "ru": "Кому уступаем место в автобусе?", "en": "Whom do we give our seat to on the bus?" },
+      "hint": { "uz": "Keksa va katta yoshli odamlarga hurmat koʻrsatamiz.", "ru": "Проявляем уважение к пожилым и старшим.", "en": "We show respect to older people." },
+      "explanation": { "uz": "Avtobusda keksa va kattalarga oʻrin beramiz. Bu — hurmat belgisi.", "ru": "В автобусе уступаем место пожилым и старшим. Это знак уважения.", "en": "On the bus we give our seat to elders. It is a sign of respect." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "elder", "emoji": "👵", "label": { "uz": "keksa odam", "ru": "пожилой человек", "en": "an elder" }, "correct": true },
+            { "id": "kid", "emoji": "🧒", "label": { "uz": "tengdosh", "ru": "ровесник", "en": "a peer" } },
+            { "id": "bag", "emoji": "🎒", "label": { "uz": "sumka", "ru": "сумка", "en": "a bag" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Mashinada xavfsizlik kamarini taqish kerak.", "ru": "Верно? В машине нужно пристёгивать ремень безопасности.", "en": "True? We must fasten the seatbelt in a car." },
+      "hint": { "uz": "Kamar bizni himoya qiladi.", "ru": "Ремень нас защищает.", "en": "The seatbelt protects us." },
+      "explanation": { "uz": "Toʻgʻri. Mashinada har doim xavfsizlik kamarini taqamiz.", "ru": "Верно. В машине всегда пристёгиваем ремень безопасности.", "en": "True. In a car we always fasten the seatbelt." },
+      "widget": { "type": "true_false", "props": { "emoji": "🚗", "answer": true } }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Jamoat transportida toʻgʻri ishlarni belgila!", "ru": "Отметь правильные действия в транспорте!", "en": "Tap the correct behaviors on public transport!" },
+      "hint": { "uz": "Oʻrin berish, sekin gaplashish, chipta olish — toʻgʻri.", "ru": "Уступать место, тихо говорить, брать билет — правильно.", "en": "Give a seat, speak quietly, buy a ticket — right." },
+      "explanation": { "uz": "Oʻrin berish, sekin gaplashish va chipta olish — toʻgʻri. Shovqin, boshni chiqarish, iflos qilish — yoʻq.", "ru": "Уступать место, тихо говорить, брать билет — правильно. Шум, высовываться, мусор — нет.", "en": "Give a seat, speak quietly, buy a ticket — right. Noise, leaning out, littering — no." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "seat", "emoji": "💺", "label": { "uz": "oʻrin berish", "ru": "уступить место", "en": "give a seat" }, "correct": true },
+            { "id": "quiet", "emoji": "🤫", "label": { "uz": "sekin gaplashish", "ru": "тихо говорить", "en": "speak quietly" }, "correct": true },
+            { "id": "ticket", "emoji": "🎫", "label": { "uz": "chipta olish", "ru": "взять билет", "en": "buy a ticket" }, "correct": true },
+            { "id": "noise", "emoji": "📢", "label": { "uz": "shovqin solish", "ru": "шуметь", "en": "make noise" } },
+            { "id": "window", "emoji": "🪟", "label": { "uz": "boshni chiqarish", "ru": "высовываться", "en": "lean out" } },
+            { "id": "litter", "emoji": "🗑️", "label": { "uz": "iflos qilish", "ru": "мусорить", "en": "litter" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Metroda platforma chetiga yaqin borish xavfli.", "ru": "Верно? Подходить к краю платформы в метро опасно.", "en": "True? Going near the platform edge in the metro is dangerous." },
+      "hint": { "uz": "Chetdan uzoqroq, xavfsiz chiziq ortida turamiz.", "ru": "Стоим подальше от края, за безопасной линией.", "en": "We stand away from the edge, behind the safety line." },
+      "explanation": { "uz": "Toʻgʻri. Metroda platforma chetiga yaqin bormaymiz — bu xavfli.", "ru": "Верно. В метро не подходим к краю платформы — это опасно.", "en": "True. In the metro we don't go near the platform edge — it is dangerous." },
+      "widget": { "type": "true_false", "props": { "emoji": "🚇", "answer": true } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Jamoat transporti nimaga yordam beradi?", "ru": "Чему помогает общественный транспорт?", "en": "What does public transport help with?" },
+      "hint": { "uz": "Koʻp odam birga yursa, havo tozaroq boʻladi.", "ru": "Когда едут вместе, воздух чище.", "en": "When many ride together, the air stays cleaner." },
+      "explanation": { "uz": "Jamoat transporti atrof-muhitni asrashga yordam beradi. U havoni kamroq ifloslaydi.", "ru": "Общественный транспорт помогает беречь природу. Он меньше загрязняет воздух.", "en": "Public transport helps protect the environment. It pollutes the air less." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "earth", "emoji": "🌍", "label": { "uz": "tabiatni asraydi", "ru": "бережёт природу", "en": "protects nature" }, "correct": true },
+            { "id": "smoke", "emoji": "💨", "label": { "uz": "havoni ifloslaydi", "ru": "загрязняет воздух", "en": "dirties the air" } },
+            { "id": "noise", "emoji": "🔊", "label": { "uz": "shovqin koʻpaytiradi", "ru": "добавляет шум", "en": "adds noise" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Shaxsiy va jamoat transportiga ajrat!", "ru": "Разложи на личный и общественный транспорт!", "en": "Sort into personal and public transport!" },
+      "hint": { "uz": "Velosiped va mashina — shaxsiy; avtobus va metro — jamoat.", "ru": "Велосипед и машина — личные; автобус и метро — общественные.", "en": "Bicycle and car are personal; bus and metro are public." },
+      "explanation": { "uz": "Velosiped, mashina va samokat — shaxsiy. Avtobus, tramvay va metro — jamoat transporti.", "ru": "Велосипед, машина и самокат — личные. Автобус, трамвай и метро — общественные.", "en": "Bicycle, car and scooter are personal. Bus, tram and metro are public transport." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "personal", "label": { "uz": "👤 Shaxsiy", "ru": "👤 Личный", "en": "👤 Personal" }, "color": "#f39a1f" },
+            { "id": "public", "label": { "uz": "👥 Jamoat", "ru": "👥 Общественный", "en": "👥 Public" }, "color": "#2f9fe0" }
+          ],
+          "items": [
+            { "id": "bike", "emoji": "🚲", "label": { "uz": "velosiped", "ru": "велосипед", "en": "bicycle" }, "bin": "personal" },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "mashina", "ru": "машина", "en": "car" }, "bin": "personal" },
+            { "id": "scooter", "emoji": "🛴", "label": { "uz": "samokat", "ru": "самокат", "en": "scooter" }, "bin": "personal" },
+            { "id": "bus", "emoji": "🚌", "label": { "uz": "avtobus", "ru": "автобус", "en": "bus" }, "bin": "public" },
+            { "id": "tram", "emoji": "🚊", "label": { "uz": "tramvay", "ru": "трамвай", "en": "tram" }, "bin": "public" },
+            { "id": "metro", "emoji": "🚇", "label": { "uz": "metro", "ru": "метро", "en": "metro" }, "bin": "public" }
+          ]
+        }
+      }
+    }
+  ]
+}

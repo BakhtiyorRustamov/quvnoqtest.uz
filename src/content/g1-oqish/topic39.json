@@ -1,0 +1,153 @@
+{
+  "topicId": "g1-oqish-39",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🔭🌟🏛️",
+  "title": {
+    "uz": "Yulduzlarni oʻrgangan bobo",
+    "ru": "Дед, изучавший звёзды",
+    "en": "The grandfather who studied the stars"
+  },
+  "recall": {
+    "uz": "Buyuk olim va shoh Mirzo Ulugʻbek haqidagi matnni tinglab oʻqiymiz va uning rasadxonasi haqida bilib olamiz.",
+    "ru": "Слушаем текст о великом учёном и правителе Мирзо Улугбеке и узнаём о его обсерватории.",
+    "en": "We read about the great scholar and ruler Mirzo Ulugbek and learn about his observatory."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Mirzo Ulugʻbek",
+        "variant": "story",
+        "audio": "g1-oqish-39-q1",
+        "lines": [
+          "Mirzo Ulugʻbek buyuk olim va adolatli shoh boʻlgan.",
+          "U Amir Temurning nevarasi edi.",
+          "Ulugʻbek yulduzlar ilmini — astronomiyani chuqur oʻrgangan.",
+          "U Samarqandda katta rasadxona qurdirgan.",
+          "U yerda osmon, oy va yulduzlarni kuzatgan.",
+          "Ulugʻbek yulduzlar jadvalini tuzgan.",
+          "Uning ilmiy ishlari butun dunyoga mashhur boʻlgan."
+        ]
+      } },
+      "prompt": { "uz": "Matnni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Ulugʻbek Samarqandda nima qurdirgan?", "ru": "Что построил Улугбек в Самарканде?", "en": "What did Ulugbek build in Samarkand?" },
+      "explanation": { "uz": "Matn olim va shoh Mirzo Ulugʻbek hamda uning rasadxonasi haqida.", "ru": "Текст об учёном и правителе Мирзо Улугбеке и его обсерватории.", "en": "The text is about the scholar-ruler Mirzo Ulugbek and his observatory." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Ulugʻbek Samarqandda rasadxona qurdirgan.", "ru": "Улугбек построил обсерваторию в Самарканде.", "en": "Ulugbek built an observatory in Samarkand." },
+        "answer": "true",
+        "why": { "uz": "Matnda «Samarqandda katta rasadxona qurdirgan» deyilgan.", "ru": "В тексте сказано, что он построил обсерваторию в Самарканде.", "en": "The text says he built a large observatory in Samarkand." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Ulugʻbek yulduzlarni qayerda kuzatgan?", "ru": "Где Улугбек наблюдал звёзды?", "en": "Where did Ulugbek watch the stars?" },
+      "explanation": { "uz": "Toʻgʻri: Ulugʻbek Samarqandda rasadxona qurdirgan.", "ru": "Верно: Улугбек построил обсерваторию в Самарканде.", "en": "True: Ulugbek built an observatory in Samarkand." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Ulugʻbek dengiz ostini oʻrgangan.", "ru": "Улугбек изучал морское дно.", "en": "Ulugbek studied the bottom of the sea." },
+        "answer": "false",
+        "why": { "uz": "Aksincha, u osmon, oy va yulduzlarni oʻrgangan.", "ru": "Наоборот, он изучал небо, луну и звёзды.", "en": "On the contrary, he studied the sky, moon and stars." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Ulugʻbek nimani kuzatgan?", "ru": "Что наблюдал Улугбек?", "en": "What did Ulugbek observe?" },
+      "explanation": { "uz": "Notoʻgʻri: u osmon jismlarini oʻrgangan.", "ru": "Неверно: он изучал небесные тела.", "en": "False: he studied the heavenly bodies." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Olim va adolatli shoh", "ru": "Учёный и справедливый правитель", "en": "A scholar and a just ruler" },
+        { "uz": "Dengizchi", "ru": "Моряк", "en": "A sailor" },
+        { "uz": "Sportchi", "ru": "Спортсмен", "en": "An athlete" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Mirzo Ulugʻbek kim boʻlgan?", "ru": "Кем был Мирзо Улугбек?", "en": "Who was Mirzo Ulugbek?" },
+      "hint": { "uz": "U ham ilm bilan, ham davlat bilan shugʻullangan.", "ru": "Он занимался и наукой, и государством.", "en": "He was involved in both science and the state." },
+      "explanation": { "uz": "Mirzo Ulugʻbek — buyuk olim va adolatli shoh boʻlgan.", "ru": "Мирзо Улугбек был великим учёным и справедливым правителем.", "en": "Mirzo Ulugbek was a great scholar and a just ruler." },
+      "openEnd": { "uz": "Sen ham osmonni kuzatganmisan? Nima koʻrgansan?", "ru": "Ты наблюдал за небом? Что видел?", "en": "Have you watched the sky? What did you see?" }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "osmon", "match": true },
+        { "text": "oy", "match": true },
+        { "text": "yulduzlar", "match": true },
+        { "text": "poyabzal", "match": false },
+        { "text": "qoshiq", "match": false }
+      ] } },
+      "prompt": { "uz": "Ulugʻbek rasadxonada nimalarni kuzatgan? Bos!", "ru": "Что наблюдал Улугбек в обсерватории? Нажми!", "en": "What did Ulugbek observe at the observatory? Tap!" },
+      "hint": { "uz": "U osmon jismlarini oʻrgangan.", "ru": "Он изучал небесные тела.", "en": "He studied heavenly bodies." },
+      "explanation": { "uz": "Ulugʻbek osmon, oy va yulduzlarni kuzatgan; poyabzal va qoshiq — yoʻq.", "ru": "Улугбек наблюдал небо, луну и звёзды; обувь и ложка — нет.", "en": "Ulugbek observed the sky, moon and stars; a shoe and a spoon — no." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "rasadxona", "right": "yulduzlarni kuzatish binosi" },
+        { "left": "nevara", "right": "farzandning farzandi" },
+        { "left": "astronomiya", "right": "yulduzlar haqidagi fan" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«rasadxona» — yulduzlarni kuzatadigan joy.", "ru": "«rasadxona» — обсерватория.", "en": "“rasadxona” is an observatory." },
+      "explanation": { "uz": "rasadxona = kuzatish binosi; nevara = farzand farzandi; astronomiya = yulduzlar fani.", "ru": "rasadxona = обсерватория; nevara = внук; astronomiya = наука о звёздах.", "en": "rasadxona = an observatory; nevara = a grandchild; astronomiya = the science of stars." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Ulugʻbek — Amir Temurning ", "after": ".", "choices": ["nevarasi", "ustozi", "qoʻshnisi"], "answer": "nevarasi", "emoji": "🔭", "clue": { "uz": "Ular qanday qarindosh?", "ru": "Кем они приходятся друг другу?", "en": "How are they related?" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Farzandning farzandi kim?", "ru": "Кто такой внук?", "en": "Who is a grandchild?" },
+      "explanation": { "uz": "Ulugʻbek — Amir Temurning nevarasi (farzandining farzandi).", "ru": "Улугбек — внук Амира Темура.", "en": "Ulugbek is Amir Temur's grandson." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Ulugʻbek Samarqandda" },
+          { "blank": "rasadxona" },
+          { "text": "qurib, u yerda" },
+          { "blank": "yulduzlarni" },
+          { "text": "kuzatgan." }
+        ],
+        "bank": ["rasadxona", "yulduzlarni", "somsa"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "U osmonni oʻrganadigan bino qurdi.", "ru": "Он построил здание для изучения неба.", "en": "He built a place to study the sky." },
+      "explanation": { "uz": "«Ulugʻbek rasadxona qurib, u yerda yulduzlarni kuzatgan».", "ru": "«Улугбек построил обсерваторию и наблюдал там звёзды».", "en": "“Ulugbek built an observatory and watched the stars there.”" }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Ilm", "—", "eng", "katta", "boylik."], "emoji": "📖", "clue": { "uz": "Allomalar hayotidan olingan hikmat", "ru": "Мудрость из жизни учёных", "en": "Wisdom from the scholars' lives" } } },
+      "prompt": { "uz": "Soʻzlardan hikmatli gap tuzing!", "ru": "Составь мудрое предложение из слов!", "en": "Build the wise sentence from the words!" },
+      "hint": { "uz": "Gap «Ilm» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Ilm».", "en": "The sentence starts with “Ilm”." },
+      "explanation": { "uz": "«Ilm — eng katta boylik»: bilim insonni ulugʻ qiladi.", "ru": "«Знание — самое большое богатство»: оно возвышает человека.", "en": "“Knowledge is the greatest wealth”: it makes a person great." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "rasadxona", "syllables": ["ra", "sad", "xo", "na"], "emoji": "🔭", "clue": { "uz": "Yulduzlarni kuzatadigan bino", "ru": "Здание для наблюдения за звёздами", "en": "A building for watching the stars" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "ra + sad + xo + na = ?", "ru": "ra + sad + xo + na = ?", "en": "ra + sad + xo + na = ?" },
+      "explanation": { "uz": "ra-sad-xo-na → rasadxona. Ulugʻbek shunday bino qurgan.", "ru": "ra-sad-xo-na → rasadxona (обсерватория).", "en": "ra-sad-xo-na → rasadxona (an observatory)." }
+    }
+  ]
+}

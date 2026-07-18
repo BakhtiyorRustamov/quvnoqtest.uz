@@ -1,0 +1,500 @@
+{
+  "topicId": "g1-ingliz-41",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐘🥚✉️🔟",
+  "title": {
+    "uz": "«e» tovushi: fil",
+    "ru": "Звук «e»: слон",
+    "en": "The 'e' sound: an elephant"
+  },
+  "recall": {
+    "uz": "Hayvon tovushlari! Bugun «e» tovushini mashq qilamiz: elephant — fil, egg — tuxum, envelope — konvert. E-e-elephant!",
+    "ru": "Звуки животных! Сегодня тренируем звук «e»: elephant — слон, egg — яйцо, envelope — конверт. E-e-elephant!",
+    "en": "Animal sounds! Today we practise the /e/ sound: elephant, egg and envelope. E-e-elephant!"
+  },
+  "ttsText": {
+    "uz": "«e» tovushi.",
+    "en": "Animal sounds! The e sound. E-e-elephant! An elephant with ten eggs!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «e» bilan boshlanadigan hayvonni bos!",
+        "ru": "Послушай и нажми животное на «e»!",
+        "en": "Listen and tap the animal that starts with /e/!"
+      },
+      "audio": {
+        "key": "ing41-q1",
+        "text": "Elephant! E-e-elephant!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«elephant» — fil.",
+        "ru": "«elephant» — слон.",
+        "en": "\"elephant\" starts with /e/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Elephant — fil.",
+        "ru": "Верно! Elephant — слон.",
+        "en": "Right! Elephant!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐘",
+              "label": "elephant",
+              "correct": true
+            },
+            {
+              "emoji": "🐜",
+              "label": "ant"
+            },
+            {
+              "emoji": "🐢",
+              "label": "turtle"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«e» bilan boshlanadigan taomni bos!",
+        "ru": "Нажми еду на «e»!",
+        "en": "Tap the food that starts with /e/!"
+      },
+      "audio": {
+        "key": "ing41-q2",
+        "text": "Egg! E-e-egg!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«egg» — tuxum.",
+        "ru": "«egg» — яйцо.",
+        "en": "\"egg\" starts with /e/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Egg — tuxum.",
+        "ru": "Верно! Egg — яйцо.",
+        "en": "Right! Egg!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🥚",
+              "label": "egg",
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🍌",
+              "label": "banana"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«e» tovushi bilan boshlanadigan hammasini belgila!",
+        "ru": "Отметь всё на «e»!",
+        "en": "Tap everything that starts with /e/!"
+      },
+      "hint": {
+        "uz": "elephant, egg, envelope.",
+        "ru": "elephant, egg, envelope.",
+        "en": "elephant, egg, envelope."
+      },
+      "explanation": {
+        "uz": "Barakalla! Elephant, egg, envelope — hammasi «e»!",
+        "ru": "Молодец! Elephant, egg, envelope — всё на «e»!",
+        "en": "Great! Elephant, egg, envelope — all /e/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐘",
+              "label": "elephant",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🥚",
+              "label": "egg",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "✉️",
+              "label": "envelope",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«e» bilan boshlanadigan narsani bos!",
+        "ru": "Нажми предмет на «e»!",
+        "en": "Tap the thing that starts with /e/!"
+      },
+      "audio": {
+        "key": "ing41-q4",
+        "text": "Envelope! E-e-envelope!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«envelope» — konvert (xat).",
+        "ru": "«envelope» — конверт (письмо).",
+        "en": "\"envelope\" holds a letter."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Envelope — konvert.",
+        "ru": "Верно! Envelope — конверт.",
+        "en": "Right! Envelope!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "✉️",
+              "label": "envelope",
+              "correct": true
+            },
+            {
+              "emoji": "📖",
+              "label": "book"
+            },
+            {
+              "emoji": "✏️",
+              "label": "pencil"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va birga ayt. Qaysi tovush takrorlanadi?",
+        "ru": "Послушай и повтори. Какой звук повторяется?",
+        "en": "Listen and say it. Which sound repeats?"
+      },
+      "hint": {
+        "uz": "Elephant, egg, envelope — bir tovush.",
+        "ru": "Elephant, egg, envelope — один звук.",
+        "en": "elephant, egg, envelope — the same sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «e» tovushi takrorlanadi.",
+        "ru": "Верно! Повторяется звук «e».",
+        "en": "Right! The /e/ sound repeats."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🐘",
+              "name": "Elephant",
+              "text": "An elephant with ten eggs!",
+              "audio": {
+                "key": "ing41-q5-a",
+                "text": "An elephant with ten eggs!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "You",
+              "text": "E-e-elephant! E-e-egg!",
+              "audio": {
+                "key": "ing41-q5-b",
+                "text": "E! E! E! Elephant, egg, envelope!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qaysi tovush?",
+              "ru": "Какой звук?",
+              "en": "Which sound?"
+            },
+            "choices": [
+              "/a/",
+              "/e/",
+              "/i/"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «egg» soʻzi «e» tovushi bilan boshlanadi.",
+        "ru": "Верно? Слово «egg» начинается на «e».",
+        "en": "Is this right? \"egg\" starts with the /e/ sound."
+      },
+      "hint": {
+        "uz": "E-e-egg!",
+        "ru": "E-e-egg!",
+        "en": "E-e-egg!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Egg — «e» tovushi.",
+        "ru": "Верно! Egg — звук «e».",
+        "en": "Right! \"egg\" starts with /e/."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🥚",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil juftni top!",
+        "ru": "Найди одинаковую пару!",
+        "en": "Find the matching pair!"
+      },
+      "hint": {
+        "uz": "Bir xil ikkita rasmni top.",
+        "ru": "Найди два одинаковых.",
+        "en": "Find the two that are the same."
+      },
+      "explanation": {
+        "uz": "Barakalla! Juftni topding!",
+        "ru": "Молодец! Ты нашёл пару!",
+        "en": "Great! You found the pair!"
+      },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            {
+              "id": "el1",
+              "emoji": "🐘",
+              "key": "elephant"
+            },
+            {
+              "id": "egg",
+              "emoji": "🥚",
+              "key": "egg"
+            },
+            {
+              "id": "el2",
+              "emoji": "🐘",
+              "key": "elephant"
+            },
+            {
+              "id": "env",
+              "emoji": "✉️",
+              "key": "envelope"
+            },
+            {
+              "id": "apple",
+              "emoji": "🍎",
+              "key": "apple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yana «e» bilan boshlanadigan hammasini belgila!",
+        "ru": "Снова отметь всё на «e»!",
+        "en": "Tap all the /e/ words again!"
+      },
+      "hint": {
+        "uz": "elephant, egg, envelope.",
+        "ru": "elephant, egg, envelope.",
+        "en": "elephant, egg, envelope."
+      },
+      "explanation": {
+        "uz": "Barakalla! Elephant, egg, envelope — «e»!",
+        "ru": "Молодец! Elephant, egg, envelope — «e»!",
+        "en": "Great! Elephant, egg, envelope — /e/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐘",
+              "label": "elephant",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🥚",
+              "label": "egg",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "✉️",
+              "label": "envelope",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "☀️",
+              "label": "sun"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐱",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, «e» soʻzlarini juftla!",
+        "ru": "Открывай карточки: слова на «e»!",
+        "en": "Flip the cards: match the /e/ words!"
+      },
+      "hint": {
+        "uz": "elephant 🐘, egg 🥚, envelope ✉️.",
+        "ru": "elephant 🐘, egg 🥚, envelope ✉️.",
+        "en": "elephant 🐘, egg 🥚, envelope ✉️."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐘"
+              },
+              "b": {
+                "label": "elephant"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🥚"
+              },
+              "b": {
+                "label": "egg"
+              }
+            },
+            {
+              "a": {
+                "emoji": "✉️"
+              },
+              "b": {
+                "label": "envelope"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «e» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «e»?",
+        "en": "Which word starts with the /e/ sound?"
+      },
+      "hint": {
+        "uz": "E-e-elephant!",
+        "ru": "E-e-elephant!",
+        "en": "E-e-elephant!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «elephant» — «e» tovushi.",
+        "ru": "Верно! «elephant» — звук «e».",
+        "en": "Right! \"elephant\" starts with /e/."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "elephant\nfil",
+              "ru": "elephant\nслон",
+              "en": "elephant"
+            },
+            {
+              "uz": "dog\nit",
+              "ru": "dog\nсобака",
+              "en": "dog"
+            },
+            {
+              "uz": "ball\nkoptok",
+              "ru": "ball\nмяч",
+              "en": "ball"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "topicId": "g1-oqish-34",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌸🎉✅",
+  "title": {
+    "uz": "Boʻlim yuzasidan takrorlash",
+    "ru": "Повторение по разделу",
+    "en": "Section review"
+  },
+  "recall": {
+    "uz": "«Bahor keldi, keladi Navroʻz» boʻlimini takrorlaymiz: bahor belgilari, Navroʻz va hikmatli soʻzlarni eslaymiz.",
+    "ru": "Повторяем раздел «Пришла весна, идёт Навруз»: приметы весны, Навруз и мудрые слова.",
+    "en": "We review the section “Spring came, Navruz comes”: the signs of spring, Navruz and wise sayings."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Xush kelibsan, shod bahor!",
+        "variant": "poem",
+        "audio": "g1-oqish-34-q1",
+        "lines": [
+          "Bahor keldi, kuldi olam,",
+          "Gullar ochdi bogʻ aro.",
+          "Qaldirgʻochlar qaytdi yana,",
+          "Sochdi nurin quyosh, ha.",
+          "",
+          "Keldi Navroʻz — yangi kun,",
+          "Sumalak qaynar qozon.",
+          "Doʻstlik, birlik bayrami,",
+          "Xush kelibsan, shod bahor!"
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Bu sheʼrda boʻlim gʻoyalari jamlangan.", "ru": "В стихотворении собраны идеи раздела.", "en": "This poem gathers the section's ideas." },
+      "explanation": { "uz": "Sheʼr bahor va Navroʻz — boʻlimning bosh mavzularini takrorlaydi.", "ru": "Стихотворение повторяет главные темы раздела — весну и Навруз.", "en": "The poem reviews the section's main themes — spring and Navruz." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "Bahorning ilk guli", "right": "boychechak" },
+        { "left": "Bahor elchisi qush", "right": "qaldirgʻoch" },
+        { "left": "21-mart bayrami", "right": "Navroʻz" }
+      ] } },
+      "prompt": { "uz": "Tezkor savol: har bir izohni javobiga ula!", "ru": "Быстрый вопрос: соедини подсказку с ответом!", "en": "Quick question: match each clue to its answer!" },
+      "hint": { "uz": "Boʻlimda oʻrgangan soʻzlarni eslang.", "ru": "Вспомни слова из раздела.", "en": "Recall the words from the section." },
+      "explanation": { "uz": "Ilk gul — boychechak; elchi qush — qaldirgʻoch; 21-mart — Navroʻz.", "ru": "Первый цветок — подснежник; птица-вестник — ласточка; 21 марта — Навруз.", "en": "First flower — snowdrop; herald bird — swallow; 21 March — Navruz." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "cinquain", "props": {
+        "topic": { "uz": "Bahor", "ru": "Весна", "en": "Spring" },
+        "lines": [
+          { "label": { "uz": "Qanday?", "ru": "Какая?", "en": "What is it like?" }, "need": 2, "bank": ["iliq", "goʻzal", "yashil", "serquyosh", "gulli"] },
+          { "label": { "uz": "Nima keltiradi?", "ru": "Что приносит?", "en": "What does it bring?" }, "need": 2, "bank": ["gullar", "yomgʻir", "qushlar", "issiqlik", "hosil"] },
+          { "label": { "uz": "Maʼnodosh soʻz", "ru": "Синоним", "en": "A synonym" }, "need": 1, "bank": ["koʻklam", "navbahor", "ilkbahor"] }
+        ]
+      } },
+      "prompt": { "uz": "«Bahor» soʻziga sinkveyn tuzing — mos soʻzlarni tanlang!", "ru": "Составь синквейн к слову «весна» — подбери слова!", "en": "Build a cinquain for “spring” — pick the words!" },
+      "hint": { "uz": "Bahorni taʼriflaydigan va u keltiradigan narsalarni tanla.", "ru": "Выбери, какая весна и что она приносит.", "en": "Choose what spring is like and what it brings." },
+      "explanation": { "uz": "Sinkveyn bahorni sifat, keltiradigan narsa va maʼnodosh soʻz bilan taʼriflaydi.", "ru": "Синквейн описывает весну признаками, дарами и синонимом.", "en": "The cinquain describes spring with qualities, gifts and a synonym." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Boychechak — bahorning ilk guli.", "ru": "Подснежник — первый весенний цветок.", "en": "The snowdrop is the first flower of spring." },
+        "answer": "true",
+        "why": { "uz": "Boʻlimda boychechak qor ostidan birinchi chiqishini oʻrgandik.", "ru": "В разделе мы узнали, что подснежник первым выходит из-под снега.", "en": "In the section we learned the snowdrop is first out of the snow." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Qor ostidan birinchi qaysi gul chiqadi?", "ru": "Какой цветок первым выходит из-под снега?", "en": "Which flower first pushes through the snow?" },
+      "explanation": { "uz": "Toʻgʻri: boychechak — bahorning ilk guli.", "ru": "Верно: подснежник — первый цветок весны.", "en": "True: the snowdrop is spring's first flower." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Bahor", "ru": "Весна", "en": "Spring" },
+        { "uz": "Qish", "ru": "Зима", "en": "Winter" },
+        { "uz": "Kuz", "ru": "Осень", "en": "Autumn" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Topishmoq: bir fasl bor tengsiz chiroy — kurtak, gullar, dovuchcha. Bu qaysi fasl?", "ru": "Загадка: пора несравненной красы — почки, цветы, завязь. Что за пора?", "en": "Riddle: a season of matchless beauty — buds, flowers, first fruit. Which season is it?" },
+      "hint": { "uz": "Bu faslda daraxtlar kurtak yozadi.", "ru": "В эту пору деревья дают почки.", "en": "In this season trees bud." },
+      "explanation": { "uz": "Bu — bahor: kurtak, gul va ilk mevalar shu faslda paydo boʻladi.", "ru": "Это весна: почки, цветы и первые завязи появляются весной.", "en": "It's spring: buds, flowers and first fruit appear in spring." },
+      "openEnd": { "uz": "Boʻlimdagi qaysi asar yoki bayram senga koʻproq yoqdi? Nega?", "ru": "Какое произведение или праздник раздела тебе понравилось больше? Почему?", "en": "Which text or holiday in this section did you like most? Why?" }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Navroʻz", "match": true },
+        { "text": "sumalak", "match": true },
+        { "text": "boychechak", "match": true },
+        { "text": "chana", "match": false },
+        { "text": "muzlik", "match": false }
+      ] } },
+      "prompt": { "uz": "Bahor va Navroʻzga oid soʻzlarni bos!", "ru": "Нажми слова о весне и Наврузе!", "en": "Tap the words about spring and Navruz!" },
+      "hint": { "uz": "Bahorda keladigan bayram va narsalarni tanlang.", "ru": "Выбери, что приходит весной.", "en": "Choose what comes with spring." },
+      "explanation": { "uz": "Navroʻz, sumalak, boychechak — bahorga oid; chana va muzlik — qishga.", "ru": "Навруз, сумаляк, подснежник — о весне; санки и лёд — о зиме.", "en": "Navruz, sumalak, snowdrop belong to spring; sled and ice to winter." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Ona —" },
+          { "blank": "daraxt" },
+          { "text": ", bola —" },
+          { "blank": "meva" },
+          { "text": "." }
+        ],
+        "bank": ["daraxt", "meva", "tosh"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, maqolni toʻldiring!", "ru": "Выбери слово и дополни пословицу!", "en": "Pick a word and complete the proverb!" },
+      "hint": { "uz": "Daraxt meva beradi, ona farzand tarbiyalaydi.", "ru": "Дерево даёт плод, мама растит дитя.", "en": "A tree gives fruit; a mother raises a child." },
+      "explanation": { "uz": "«Ona — daraxt, bola — meva»: farzand onaning mehnati mevasi.", "ru": "«Мама — дерево, дитя — плод»: ребёнок — плод труда мамы.", "en": "“Mother is a tree, the child is its fruit”: a child is the fruit of a mother's care." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Navroʻz", "—", "yangi", "kun."], "emoji": "🌞", "clue": { "uz": "Navroʻz maʼnosi", "ru": "Значение Навруза", "en": "The meaning of Navruz" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuzing!", "ru": "Составь предложение из слов!", "en": "Build the sentence from the words!" },
+      "hint": { "uz": "Gap «Navroʻz» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Navroʻz».", "en": "The sentence starts with “Navroʻz”." },
+      "explanation": { "uz": "«Navroʻz — yangi kun»: bahorning va yangi yilning boshlanishi.", "ru": "«Навруз — новый день»: начало весны и нового года.", "en": "“Navruz is a new day”: the start of spring and a new year." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "first_letters", "props": {
+        "objects": [
+          { "emoji": "🥁", "letter": "B", "name": { "uz": "baraban", "ru": "барабан", "en": "drum" } },
+          { "emoji": "🍯", "letter": "A", "name": { "uz": "asal", "ru": "мёд", "en": "honey" } },
+          { "emoji": "🦅", "letter": "H", "name": { "uz": "humo", "ru": "хумо", "en": "humo bird" } },
+          { "emoji": "🔥", "letter": "O", "name": { "uz": "olov", "ru": "огонь", "en": "fire" } },
+          { "emoji": "🤖", "letter": "R", "name": { "uz": "robot", "ru": "робот", "en": "robot" } }
+        ],
+        "word": "BAHOR",
+        "meaning": { "uz": "Bahor — boʻlimning bosh fasli.", "ru": "Bahor — весна, главное время раздела.", "en": "Bahor — spring, the section's season." }
+      } },
+      "prompt": { "uz": "Rasmlarni chapdan oʻngga bosib, faslni oching!", "ru": "Нажимай картинки слева направо и открой время года!", "en": "Tap the pictures left to right to reveal the season!" },
+      "hint": { "uz": "Har bir rasm nomining birinchi harfini ol.", "ru": "Возьми первую букву каждого названия.", "en": "Take the first letter of each name." },
+      "explanation": { "uz": "baraban, asal, humo, olov, robot → BAHOR.", "ru": "барабан, мёд, хумо, огонь, робот → BAHOR.", "en": "drum, honey, humo, fire, robot → BAHOR." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "koʻklam", "syllables": ["koʻk", "lam"], "emoji": "🌿", "clue": { "uz": "Bahorning maʼnodoshi", "ru": "Синоним весны", "en": "A synonym for spring" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "koʻk + lam = ?", "ru": "koʻk + lam = ?", "en": "koʻk + lam = ?" },
+      "explanation": { "uz": "koʻk-lam → koʻklam. Bahorning yana bir nomi.", "ru": "koʻk-lam → koʻklam (весна).", "en": "koʻk-lam → koʻklam (spring)." }
+    }
+  ]
+}

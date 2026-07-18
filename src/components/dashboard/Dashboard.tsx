@@ -6,7 +6,13 @@ import { useLocale, useTranslations } from 'next-intl';
 import { useUser } from '@/components/providers/UserProvider';
 import { getGrade, GRADES, isUnlockedSubject, unlockedSubjectHref, progressSubjectKey } from '@/content/taxonomy';
 import { pick } from '@/lib/i18n-config';
-import { G1_MATH_TOPICS, G1_ONA_TOPICS } from '@/content';
+import { G1_MATH_TOPICS, G1_ONA_TOPICS, G1_ALIFBE_TOPICS, G1_INGLIZ_LESSONS } from '@/content';
+import { G1_OQISH_LESSONS } from '@/content/g1-oqish/structure';
+import { G1_INFORMATIKA_TOPICS } from '@/content/g1-informatika/topics';
+import { G1_TARBIYA_TOPICS } from '@/content/g1-tarbiya/topics';
+import { G1_ART_TOPICS } from '@/content/g1-art/topics';
+import { G1_TEX_TOPICS } from '@/content/g1-tex/topics';
+import { G1_TABIIY_TOPICS } from '@/content/g1-tabiiy/topics';
 import { api } from '@/lib/client';
 import type { ProgressRow } from '@/lib/store/types';
 import LangSwitcher from '@/components/ui/LangSwitcher';
@@ -91,10 +97,28 @@ export default function Dashboard() {
       <section className="max-w-4xl mx-auto px-3 mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
         {gradeDef.subjects.map((s, i) => {
           const unlocked = isUnlockedSubject(grade, s.key);
-          const href = (unlocked && unlockedSubjectHref(grade, s.key)) || `/subject/${grade}/${s.key}`;
+          // locked subjects have no page yet — the card renders unclickable
+          const href = (unlocked && unlockedSubjectHref(grade, s.key)) || '';
           const pk = progressSubjectKey(grade, s.key);
-          const total = pk === 'g1-math' ? G1_MATH_TOPICS.length : pk === 'g1-ona' ? G1_ONA_TOPICS.length : 0;
-          const learned = progress.filter((p) => p.subjectKey === pk && p.status === 'completed').length;
+          // Fikrlash is a practice area: the card shows best test score out of 10
+          // instead of learned/total lessons.
+          const total =
+            pk === 'g1-alifbe' ? G1_ALIFBE_TOPICS.length
+            : pk === 'g1-math' ? G1_MATH_TOPICS.length
+            : pk === 'g1-ona' ? G1_ONA_TOPICS.length
+            : pk === 'g1-oqish' ? G1_OQISH_LESSONS.length
+            : pk === 'g1-ingliz' ? G1_INGLIZ_LESSONS.length
+            : pk === 'g1-informatika' ? G1_INFORMATIKA_TOPICS.length
+            : pk === 'g1-tarbiya' ? G1_TARBIYA_TOPICS.length
+            : pk === 'g1-art' ? G1_ART_TOPICS.length
+            : pk === 'g1-tex' ? G1_TEX_TOPICS.length
+            : pk === 'g1-tabiiy' ? G1_TABIIY_TOPICS.length
+            : pk === 'g1-fikr' ? 10
+            : 0;
+          const learned =
+            pk === 'g1-fikr'
+              ? progress.filter((p) => p.subjectKey === pk).reduce((m, p) => Math.max(m, p.score ?? 0), 0)
+              : progress.filter((p) => p.subjectKey === pk && p.status === 'completed').length;
           return (
             <SubjectProgressCard
               key={s.key}

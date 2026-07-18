@@ -1,0 +1,308 @@
+{
+  "topicId": "g1-tarbiya-20",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "⭐🍵🎁🌳",
+  "title": {
+    "uz": "Mustahkamlash",
+    "ru": "Закрепление",
+    "en": "Consolidation"
+  },
+  "recall": {
+    "uz": "Bu darsda madaniyatimiz boʻyicha oʻrganganlarimizni takrorlaymiz: yaxshi iz va nom qoldirish, tabiatda odob, mehmon kutish, sovgʻa tanlash hamda mehmon boʻlish odobi. Odob — millatimizning goʻzal boyligi.",
+    "ru": "На этом уроке мы повторяем изученное о нашей культуре: оставить добрый след и имя, вести себя на природе, встречать гостей, выбирать подарок и правила гостя. Воспитанность — прекрасное богатство нашего народа.",
+    "en": "In this lesson we review what we learned about our culture: leaving a good trace and name, manners in nature, welcoming guests, choosing a gift and being a good guest. Good manners are the beautiful wealth of our people."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xatti-harakatlarni ajrat: odobli yoki odobsiz!",
+        "ru": "Разложи поступки: воспитанно или невоспитанно!",
+        "en": "Sort the actions: polite or impolite!"
+      },
+      "hint": {
+        "uz": "Kutib olish, sovgʻa, rahmat — odobli.",
+        "ru": "Встретить, подарок, спасибо — воспитанно.",
+        "en": "Welcome, a gift, thanks — polite."
+      },
+      "explanation": {
+        "uz": "Barakalla! Odobli xulqni tanla.",
+        "ru": "Молодец! Выбирай воспитанное поведение.",
+        "en": "Great! Choose polite behaviour."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "Odobli",
+                "ru": "Воспитанно",
+                "en": "Polite"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "uz": "Odobsiz",
+                "ru": "Невоспитанно",
+                "en": "Impolite"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "😊",
+              "label": {
+                "uz": "mehmonni kutib olish",
+                "ru": "встретить гостя",
+                "en": "welcome a guest"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🎁",
+              "label": {
+                "uz": "sovgʻa olib borish",
+                "ru": "принести подарок",
+                "en": "bring a gift"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🗑️",
+              "label": {
+                "uz": "chiqindini yigʻish",
+                "ru": "собрать мусор",
+                "en": "gather trash"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🐢",
+              "label": {
+                "uz": "mehmonga kech qolish",
+                "ru": "опоздать в гости",
+                "en": "arrive late as a guest"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "😠",
+              "label": {
+                "uz": "qoʻpollik qilish",
+                "ru": "грубить",
+                "en": "be rude"
+              },
+              "bin": "no"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi ishlar orasidan ortiqchasini top!",
+        "ru": "Найди лишнее среди добрых дел!",
+        "en": "Find the odd one out among the good deeds!"
+      },
+      "hint": {
+        "uz": "Qaysi biri yaxshi ish emas?",
+        "ru": "Что не является добрым делом?",
+        "en": "Which one is not a good deed?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Axlat tashlash» — yaxshi ish emas.",
+        "ru": "Верно! «Мусорить» — не доброе дело.",
+        "en": "Right! \"Littering\" is not a good deed."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "yaxshi ishlar",
+            "ru": "добрые дела",
+            "en": "good deeds"
+          },
+          "tiles": [
+            {
+              "text": "sovgʻa berish"
+            },
+            {
+              "text": "daraxt ekish"
+            },
+            {
+              "text": "mehmon kutish"
+            },
+            {
+              "text": "axlat tashlash",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir qadriyatni mos belgisiga ula!",
+        "ru": "Соедини каждую ценность с её символом!",
+        "en": "Match each value to its symbol!"
+      },
+      "hint": {
+        "uz": "mehmon — 🍵, sovgʻa — 🎁, tabiat — 🌳.",
+        "ru": "гость — 🍵, подарок — 🎁, природа — 🌳.",
+        "en": "guest — 🍵, gift — 🎁, nature — 🌳."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": {
+                  "uz": "mehmon",
+                  "ru": "гость",
+                  "en": "guest"
+                }
+              },
+              "right": {
+                "emoji": "🍵"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "sovgʻa",
+                  "ru": "подарок",
+                  "en": "gift"
+                }
+              },
+              "right": {
+                "emoji": "🎁"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "tabiat",
+                  "ru": "природа",
+                  "en": "nature"
+                }
+              },
+              "right": {
+                "emoji": "🌳"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, madaniyat juftlarini top!",
+        "ru": "Открывай карточки: пары культуры!",
+        "en": "Flip the cards: match the culture pairs!"
+      },
+      "hint": {
+        "uz": "mehmon 🍵, sovgʻa 🎁, tabiat 🌳.",
+        "ru": "гость 🍵, подарок 🎁, природа 🌳.",
+        "en": "guest 🍵, gift 🎁, nature 🌳."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🍵"
+              },
+              "b": {
+                "label": {
+                  "uz": "mehmon",
+                  "ru": "гость",
+                  "en": "guest"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎁"
+              },
+              "b": {
+                "label": {
+                  "uz": "sovgʻa",
+                  "ru": "подарок",
+                  "en": "gift"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🌳"
+              },
+              "b": {
+                "label": {
+                  "uz": "tabiat",
+                  "ru": "природа",
+                  "en": "nature"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Madaniyatimizdan sizga eng yoqqan odob qaysi va nega?",
+        "ru": "Какое правило нашей культуры тебе понравилось больше всего и почему?",
+        "en": "Which custom of our culture did you like most, and why?"
+      },
+      "hint": {
+        "uz": "Mehmondorchilik, sovgʻa, tabiatga gʻamxoʻrlik — nimasi yoqdi?",
+        "ru": "Гостеприимство, подарок, забота о природе — что понравилось?",
+        "en": "Hospitality, gifts, caring for nature — what did you like?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen madaniyatimizni qadrlaysan.",
+        "ru": "Отлично! Ты ценишь нашу культуру.",
+        "en": "Great! You value our culture."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Menga mehmondorchilik odobi eng yoqadi, chunki mehmonlarni kutib olish quvonch keltiradi.",
+            "ru": "Мне больше всего нравится гостеприимство, ведь встречать гостей — это радость.",
+            "en": "I like hospitality most, because welcoming guests brings joy."
+          }
+        }
+      }
+    }
+  ]
+}

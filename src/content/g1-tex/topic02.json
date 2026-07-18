@@ -1,0 +1,29 @@
+{
+  "topicId": "g1-tex-02", "subjectKey": "g1-tex", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Texnologiya darsida ishlash qoidalari", "ru": "Правила работы на уроке технологии", "en": "Rules for the technology lesson" },
+  "recall": {
+    "uz": "Texnologiya darsida qoidalarga amal qilamiz: topshiriqni diqqat bilan oʻrganamiz, partani iflos qilmaslik uchun ostiga kleyonka yozamiz, qaychi va yelimdan ehtiyot boʻlib foydalanamiz, ish tugagach ortiqcha narsalarni chiqindi qutisiga tashlaymiz.",
+    "ru": "На уроке технологии мы соблюдаем правила: внимательно изучаем задание, стелем клеёнку, чтобы не запачкать парту, осторожно пользуемся ножницами и клеем, а после работы убираем лишнее в мусорное ведро.",
+    "en": "In the technology lesson we follow the rules: study the task carefully, put a mat down so the desk stays clean, use scissors and glue carefully, and after work put the leftovers in the bin."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Qaychidan qanday foydalanamiz?", "ru": "Как пользоваться ножницами?", "en": "How do we use scissors?" },
+      "hint": { "uz": "Xavfsizlik muhim.", "ru": "Важна безопасность.", "en": "Safety matters." },
+      "explanation": { "uz": "Toʻgʻri! Ehtiyot boʻlib.", "ru": "Верно! Осторожно.", "en": "Right! Carefully." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "ehtiyot boʻlib foydalanamiz", "ru": "пользуемся осторожно", "en": "we use them carefully" },
+        { "uz": "birovga uloqtiramiz", "ru": "бросаем в других", "en": "throw them at others" },
+        { "uz": "ogʻzimizga solamiz", "ru": "берём в рот", "en": "put them in our mouth" }
+      ], "answerIndex": 0 } } },
+    { "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Ish tugagach, ortiqcha narsalarni nima qilamiz?", "ru": "Что делаем с мусором после работы?", "en": "What do we do with the scraps when we finish?" },
+      "hint": { "uz": "Toza saqlaymiz.", "ru": "Соблюдаем чистоту.", "en": "We keep things clean." },
+      "explanation": { "uz": "Toʻgʻri! Chiqindi qutisiga tashlaymiz.", "ru": "Верно! Выбрасываем в мусорное ведро.", "en": "Right! We put them in the bin." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "chiqindi qutisiga tashlaymiz", "ru": "выбрасываем в мусорку", "en": "put them in the bin" },
+        { "uz": "partada qoldiramiz", "ru": "оставляем на парте", "en": "leave them on the desk" },
+        { "uz": "yerga tashlaymiz", "ru": "бросаем на пол", "en": "throw them on the floor" }
+      ], "answerIndex": 0 } } }
+  ]
+}

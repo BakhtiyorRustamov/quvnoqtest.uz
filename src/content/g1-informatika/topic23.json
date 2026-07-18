@@ -1,0 +1,498 @@
+{
+  "topicId": "g1-informatika-23",
+  "subjectKey": "g1-informatika",
+  "emojis": "🚦🔌🚸🚌",
+  "title": {
+    "uz": "Xavfsiz hudud",
+    "ru": "Безопасная зона",
+    "en": "Safe zone"
+  },
+  "recall": {
+    "uz": "Xavfsizlik qoidalariga rioya qilamiz. Yoʻlni chiroq yashil boʻlganda kesib oʻtamiz. Elektr rozetkasi bilan oʻynamaymiz.",
+    "ru": "Соблюдаем правила безопасности. Дорогу переходим на зелёный свет. С розеткой не играем.",
+    "en": "We follow safety rules. We cross the road on green. We do not play with electrical sockets."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yoʻlni qaysi chiroqda kesib oʻtamiz?",
+        "ru": "На какой свет переходим дорогу?",
+        "en": "On which light do we cross?"
+      },
+      "hint": {
+        "uz": "Yur degan rang.",
+        "ru": "Цвет «иди».",
+        "en": "The 'go' colour."
+      },
+      "explanation": {
+        "uz": "Yashil chiroqda yoʻlni kesib oʻtamiz.",
+        "ru": "Переходим на зелёный.",
+        "en": "We cross on the green light."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yashil",
+              "ru": "зелёный",
+              "en": "green"
+            },
+            {
+              "uz": "qizil",
+              "ru": "красный",
+              "en": "red"
+            },
+            {
+              "uz": "sariq",
+              "ru": "жёлтый",
+              "en": "yellow"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Holatlarni ajrat: xavfsiz va xavfli!",
+        "ru": "Раздели: безопасно и опасно!",
+        "en": "Sort them: safe and dangerous!"
+      },
+      "hint": {
+        "uz": "Avval rasmni, keyin qutini bos.",
+        "ru": "Сначала картинку, потом ящик.",
+        "en": "Tap a picture, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xavfsiz va xavfliga ajratding.",
+        "ru": "Молодец!",
+        "en": "Great! Sorted safe and dangerous."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "s",
+              "label": {
+                "uz": "Xavfsiz",
+                "ru": "Безопасно",
+                "en": "Safe"
+              }
+            },
+            {
+              "id": "x",
+              "label": {
+                "uz": "Xavfli",
+                "ru": "Опасно",
+                "en": "Dangerous"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "📗",
+              "label": {
+                "uz": "kitob oʻqish",
+                "ru": "читать книгу",
+                "en": "reading a book"
+              },
+              "bin": "s"
+            },
+            {
+              "emoji": "🚿",
+              "label": {
+                "uz": "qoʻl yuvish",
+                "ru": "мыть руки",
+                "en": "washing hands"
+              },
+              "bin": "s"
+            },
+            {
+              "emoji": "🔌",
+              "label": {
+                "uz": "rozetka bilan oʻynash",
+                "ru": "играть с розеткой",
+                "en": "playing with a socket"
+              },
+              "bin": "x"
+            },
+            {
+              "emoji": "🔥",
+              "label": {
+                "uz": "olov bilan oʻynash",
+                "ru": "играть с огнём",
+                "en": "playing with fire"
+              },
+              "bin": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Elektr rozetkasi bilan oʻynash mumkinmi?",
+        "ru": "Можно играть с розеткой?",
+        "en": "May we play with a socket?"
+      },
+      "hint": {
+        "uz": "Bu xavfli.",
+        "ru": "Это опасно.",
+        "en": "It is dangerous."
+      },
+      "explanation": {
+        "uz": "Yoʻq, bu xavfli.",
+        "ru": "Нет, это опасно.",
+        "en": "No, it is dangerous."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yoʻq, xavfli",
+              "ru": "нет, опасно",
+              "en": "no, dangerous"
+            },
+            {
+              "uz": "ha, mumkin",
+              "ru": "да, можно",
+              "en": "yes, allowed"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qizil chiroqda yoʻlni kesib oʻtish xavfli.",
+        "ru": "Переходить на красный опасно.",
+        "en": "Crossing on red is dangerous."
+      },
+      "hint": {
+        "uz": "Qizil — toʻxta.",
+        "ru": "Красный — стой.",
+        "en": "Red means stop."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🚦",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xavfli holatlarni belgila!",
+        "ru": "Отметь опасные ситуации!",
+        "en": "Tap the dangerous situations!"
+      },
+      "hint": {
+        "uz": "Zarar yetkazadigan ishlar.",
+        "ru": "Что может навредить.",
+        "en": "Things that can harm."
+      },
+      "explanation": {
+        "uz": "Ular xavfli.",
+        "ru": "Они опасны.",
+        "en": "They are dangerous."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🔌",
+              "label": {
+                "uz": "rozetka bilan oʻynash",
+                "ru": "играть с розеткой",
+                "en": "play with a socket"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🔥",
+              "label": {
+                "uz": "olovga yaqinlashish",
+                "ru": "подойти к огню",
+                "en": "go near fire"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "⬆️",
+              "label": {
+                "uz": "baland joyga chiqish",
+                "ru": "лезть высоко",
+                "en": "climb up high"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "📗",
+              "label": {
+                "uz": "kitob oʻqish",
+                "ru": "читать книгу",
+                "en": "reading"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🚿",
+              "label": {
+                "uz": "qoʻl yuvish",
+                "ru": "мыть руки",
+                "en": "washing hands"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Baland javonga chiqib olish qanday ish?",
+        "ru": "Лезть на высокую полку — это как?",
+        "en": "Climbing a tall shelf is what kind of act?"
+      },
+      "hint": {
+        "uz": "Yiqilib tushish mumkin.",
+        "ru": "Можно упасть.",
+        "en": "You could fall."
+      },
+      "explanation": {
+        "uz": "Bu xavfli.",
+        "ru": "Это опасно.",
+        "en": "It is dangerous."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "xavfli",
+              "ru": "опасно",
+              "en": "dangerous"
+            },
+            {
+              "uz": "xavfsiz",
+              "ru": "безопасно",
+              "en": "safe"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan transport nomini tuz! (🚌)",
+        "ru": "Составь слово! (🚌)",
+        "en": "Build the word! (🚌)"
+      },
+      "hint": {
+        "uz": "A-V-T-O-B-U-S harflaridan.",
+        "ru": "Из букв A-V-T-O-B-U-S.",
+        "en": "From A-V-T-O-B-U-S."
+      },
+      "explanation": {
+        "uz": "Barakalla! «avtobus» soʻzini tuzding.",
+        "ru": "Молодец! «avtobus».",
+        "en": "Great! You built “avtobus”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🚌",
+          "word": "avtobus",
+          "label": {
+            "uz": "avtobus",
+            "ru": "автобус",
+            "en": "bus"
+          },
+          "letters": [
+            "a",
+            "v",
+            "t",
+            "o",
+            "b",
+            "u",
+            "s"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (xavfli ish)",
+        "ru": "Нажми лишнее! (опасное)",
+        "en": "Tap the odd one! (dangerous)"
+      },
+      "hint": {
+        "uz": "Qaysi biri zarar keltiradi?",
+        "ru": "Что вредит?",
+        "en": "Which one causes harm?"
+      },
+      "explanation": {
+        "uz": "Olov bilan oʻynash xavfli.",
+        "ru": "Играть с огнём опасно.",
+        "en": "Playing with fire is dangerous."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "xavfsiz ishlar",
+            "ru": "безопасные дела",
+            "en": "safe activities"
+          },
+          "tiles": [
+            {
+              "text": "kitob oʻqish"
+            },
+            {
+              "text": "rasm chizish"
+            },
+            {
+              "text": "qoʻl yuvish"
+            },
+            {
+              "text": "olov bilan oʻynash",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi holat xavfsiz?",
+        "ru": "Какая ситуация безопасна?",
+        "en": "Which situation is safe?"
+      },
+      "hint": {
+        "uz": "Zararsiz ish.",
+        "ru": "Безвредное дело.",
+        "en": "A harmless act."
+      },
+      "explanation": {
+        "uz": "Kitob oʻqish xavfsiz.",
+        "ru": "Читать книгу безопасно.",
+        "en": "Reading a book is safe."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "📗",
+              "label": {
+                "uz": "kitob oʻqish",
+                "ru": "читать книгу",
+                "en": "reading"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🔌",
+              "label": {
+                "uz": "rozetka",
+                "ru": "розетка",
+                "en": "socket"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🔥",
+              "label": {
+                "uz": "olov",
+                "ru": "огонь",
+                "en": "fire"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xavfsiz boʻlish uchun nima qilamiz?",
+        "ru": "Что делаем для безопасности?",
+        "en": "How do we stay safe?"
+      },
+      "hint": {
+        "uz": "Qoidaga amal qilamiz.",
+        "ru": "Соблюдаем правила.",
+        "en": "We follow the rules."
+      },
+      "explanation": {
+        "uz": "Xavfsizlik qoidalariga amal qilamiz.",
+        "ru": "Соблюдаем правила безопасности.",
+        "en": "We follow safety rules."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qoidalarga amal qilamiz",
+              "ru": "соблюдаем правила",
+              "en": "follow the rules"
+            },
+            {
+              "uz": "qoidalarni buzamiz",
+              "ru": "нарушаем правила",
+              "en": "break the rules"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

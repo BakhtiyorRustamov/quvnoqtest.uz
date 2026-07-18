@@ -1,0 +1,166 @@
+{
+  "topicId": "g1-oqish-60",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌟📚✨",
+  "title": {
+    "uz": "Boʻlim yuzasidan takrorlash",
+    "ru": "Повторение по разделу",
+    "en": "Section review"
+  },
+  "recall": {
+    "uz": "«Goʻzal odob, aʼlo xulq» sheʼrini tinglab oʻqiymiz va boʻlimda oʻrgangan xulq-odobni takrorlaymiz.",
+    "ru": "Слушаем стихотворение «Красивый нрав, отличный характер» и повторяем раздел о вежливости.",
+    "en": "We read the poem “Fine manners, noble character” and review the section on good conduct."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Goʻzal odob, aʼlo xulq",
+        "variant": "poem",
+        "audio": "g1-oqish-60-q1",
+        "lines": [
+          "Chin yurakdan tirishsang,",
+          "Aʼlo oʻqishing mumkin.",
+          "Bilganlaring bir kuni",
+          "Yodingdan chiqar, mumkin.",
+          "",
+          "Goʻzal odob, aʼlo xulq",
+          "Yuragingga oʻrnashsa,",
+          "U seni hech tark etmay,",
+          "Tilagingga yetkazar."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Goʻzal odob yuragingga oʻrnashsa, nima boʻladi?", "ru": "Что будет, если добрый нрав войдёт в сердце?", "en": "What happens when good manners settle in your heart?" },
+      "explanation": { "uz": "Sheʼr goʻzal xulq insonni hech qachon tark etmasligi haqida.", "ru": "Стихотворение о том, что добрый нрав никогда не покидает человека.", "en": "The poem shows that good character never leaves a person." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "Chaqirsa", "right": "Labbay" },
+        { "left": "Yordam olganda", "right": "Rahmat" },
+        { "left": "Kulib kutib olsa", "right": "Marhamat" }
+      ] } },
+      "prompt": { "uz": "Vaziyatni sehrli soʻzga ula!", "ru": "Соедини ситуацию с вежливым словом!", "en": "Match each moment to its polite word!" },
+      "hint": { "uz": "Har bir holatning oʻz sehrli soʻzi bor.", "ru": "У каждого случая своё слово.", "en": "Each moment has its own word." },
+      "explanation": { "uz": "Chaqirsa — Labbay; yordam olganda — Rahmat; kutib olsa — Marhamat.", "ru": "Позвали — Labbay; помогли — Rahmat; встречают — Marhamat.", "en": "Called — Labbay; helped — Rahmat; welcomed — Marhamat." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": {
+        "tiles": [
+          { "id": "t1", "label": "rostgoʻylik", "bin": "b1" },
+          { "id": "t2", "label": "kamtarlik", "bin": "b1" },
+          { "id": "t3", "label": "mehribonlik", "bin": "b1" },
+          { "id": "t4", "label": "yolgʻon", "bin": "b2" },
+          { "id": "t5", "label": "maqtanchoqlik", "bin": "b2" },
+          { "id": "t6", "label": "ochkoʻzlik", "bin": "b2" }
+        ],
+        "bins": [
+          { "id": "b1", "label": "fazilat" },
+          { "id": "b2", "label": "illat" }
+        ]
+      } },
+      "prompt": { "uz": "Soʻzlarni fazilat va illatga ajrating!", "ru": "Раздели слова: добродетель и порок!", "en": "Sort the words: virtue and vice!" },
+      "hint": { "uz": "Fazilat — yaxshi, illat — yomon xislat.", "ru": "Добродетель — хорошее, порок — плохое.", "en": "Virtue is good, vice is bad." },
+      "explanation": { "uz": "rostgoʻylik, kamtarlik, mehribonlik — fazilat; yolgʻon, maqtanchoqlik, ochkoʻzlik — illat.", "ru": "правдивость, скромность, доброта — добродетели; ложь, хвастовство, жадность — пороки.", "en": "truthfulness, modesty, kindness are virtues; lying, boasting, greed are vices." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "hidden_words", "props": {
+        "words": ["odob", "axloq", "orasta"],
+        "clue": { "uz": "Boʻlim soʻzlari yashiringan", "ru": "Здесь спрятаны слова раздела", "en": "The section's words are hidden here" }
+      } },
+      "prompt": { "uz": "Yashiringan soʻzlarni ajrating!", "ru": "Раздели спрятанные слова!", "en": "Split the hidden words apart!" },
+      "hint": { "uz": "Har soʻz tugagan joyga chiziq qoʻy.", "ru": "Ставь черту там, где кончается слово.", "en": "Place a divider where each word ends." },
+      "explanation": { "uz": "Yashiringan soʻzlar: odob, axloq, orasta.", "ru": "Спрятанные слова: odob, axloq, orasta.", "en": "The hidden words: odob, axloq, orasta." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Goʻzal odob yurakka oʻrnashsa, insonni tark etmaydi.", "ru": "Добрый нрав, войдя в сердце, не покидает человека.", "en": "Once good character settles in the heart, it never leaves." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «seni hech tark etmay» deyilgan.", "ru": "В стихотворении сказано «никогда тебя не покинет».", "en": "The poem says it “never leaves you”." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Sheʼrning ikkinchi bandini eslang.", "ru": "Вспомни вторую строфу.", "en": "Recall the second stanza." },
+      "explanation": { "uz": "Toʻgʻri: goʻzal xulq insonni hech qachon tark etmaydi.", "ru": "Верно: добрый нрав не покидает человека.", "en": "True: good character never leaves a person." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Goʻzal xulq va odob-axloq haqida", "ru": "О добром нраве и вежливости", "en": "About good character and manners" },
+        { "uz": "Fasllar haqida", "ru": "О временах года", "en": "About the seasons" },
+        { "uz": "Sonlar haqida", "ru": "О числах", "en": "About numbers" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Bu boʻlim nima haqida edi?", "ru": "О чём был этот раздел?", "en": "What was this section about?" },
+      "hint": { "uz": "Odob, orastalik, rostgoʻylik — bularning umumiy nomi?", "ru": "Вежливость, опрятность, правдивость — как назвать вместе?", "en": "Manners, tidiness, truthfulness — what's the common theme?" },
+      "explanation": { "uz": "Boʻlim goʻzal xulq va odob-axloq haqida edi.", "ru": "Раздел был о добром нраве и вежливости.", "en": "The section was about good character and manners." },
+      "openEnd": { "uz": "Boʻlimda oʻrgangan qaysi xulq senga koʻproq yoqdi? Nega?", "ru": "Какое качество из раздела тебе понравилось больше? Почему?", "en": "Which quality from the section did you like most? Why?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": {
+        "words": ["Yaxshilik", "qilsang,", "yaxshilik", "topasan."],
+        "emoji": "🌟",
+        "clue": { "uz": "Yaxshilik haqidagi maqol", "ru": "Пословица о добре", "en": "A proverb about kindness" }
+      } },
+      "prompt": { "uz": "Soʻzlarni tartibla va maqolni oʻqing!", "ru": "Расставь слова и прочитай пословицу!", "en": "Order the words to read the proverb!" },
+      "hint": { "uz": "«Yaxshilik» soʻzidan boshlanadi.", "ru": "Начинается со слова «Yaxshilik».", "en": "It starts with the word “Yaxshilik”." },
+      "explanation": { "uz": "«Yaxshilik qilsang, yaxshilik topasan» — ezgulik qaytadi.", "ru": "«Сделаешь добро — добро и найдёшь».", "en": "“Do good and you will find good.”" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "mehribonlik", "match": true },
+        { "text": "halollik", "match": true },
+        { "text": "kamtarlik", "match": true },
+        { "text": "yolgʻon", "match": false },
+        { "text": "ochkoʻzlik", "match": false }
+      ] } },
+      "prompt": { "uz": "Fazilatlarni (yaxshi xislatlarni) bos!", "ru": "Нажми добродетели!", "en": "Tap the virtues!" },
+      "hint": { "uz": "Fazilat — ardoqlanadigan yaxshi xislat.", "ru": "Добродетель — ценимое хорошее качество.", "en": "A virtue is a prized good trait." },
+      "explanation": { "uz": "Mehribonlik, halollik, kamtarlik — fazilat; yolgʻon, ochkoʻzlik — illat.", "ru": "Доброта, честность, скромность — добродетели; ложь, жадность — пороки.", "en": "Kindness, honesty, modesty are virtues; lying, greed are vices." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "fazilat", "syllables": ["fa", "zi", "lat"], "emoji": "✨", "clue": { "uz": "Yaxshi xulq, ibratli xislat", "ru": "Добродетель, хорошее качество", "en": "A virtue, a good trait" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "fa + zi + lat = ?", "ru": "fa + zi + lat = ?", "en": "fa + zi + lat = ?" },
+      "explanation": { "uz": "fa-zi-lat → fazilat. Yaxshi, ardoqli xislat.", "ru": "fa-zi-lat → fazilat (добродетель).", "en": "fa-zi-lat → fazilat (a virtue)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "size_order", "props": {
+        "words": ["Yaxshilik", "yerda", "qolmaydi."],
+        "phrase": "Yaxshilik yerda qolmaydi.",
+        "meaning": { "uz": "Qilingan yaxshilik albatta qaytadi.", "ru": "Сделанное добро обязательно вернётся.", "en": "A good deed always comes back." }
+      } },
+      "prompt": { "uz": "Soʻzlarni kichikdan kattaga bosib, maqolni oʻqing!", "ru": "Нажимай слова от маленького к большому и прочитай пословицу!", "en": "Tap the words smallest to largest to read the proverb!" },
+      "hint": { "uz": "Eng kichik soʻzdan boshla.", "ru": "Начни с самого маленького слова.", "en": "Start with the smallest word." },
+      "explanation": { "uz": "«Yaxshilik yerda qolmaydi» — ezgulik qaytadi.", "ru": "«Добро не пропадёт».", "en": "“Kindness never goes to waste.”" }
+    }
+  ]
+}

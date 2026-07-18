@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-21", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Gul solingan guldon", "ru": "Ваза с цветами", "en": "A vase of flowers" },
+  "recall": {
+    "uz": "Guldon — gullar solinadigan idish. Undagi rang-barang gullar xonani bezaydi. Keling, guldondagi gullarni boʻyaymiz.",
+    "ru": "Ваза — сосуд для цветов. Разноцветные цветы в ней украшают комнату. Давай раскрасим цветы в вазе.",
+    "en": "A vase is a container for flowers. Its colourful flowers decorate the room. Let's colour the flowers in the vase."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Guldon va gullarni boʻya.", "ru": "Раскрась вазу и цветы.", "en": "Colour the vase and the flowers." },
+      "hint": { "uz": "Har gulni boshqa rangga boʻya.", "ru": "Раскрась каждый цветок по-своему.", "en": "Colour each flower differently." },
+      "explanation": { "uz": "Chiroyli guldasta!", "ru": "Красивый букет!", "en": "A lovely bouquet!" },
+      "widget": { "type": "color_fill", "props": { "picture": "vase" } } }
+  ]
+}

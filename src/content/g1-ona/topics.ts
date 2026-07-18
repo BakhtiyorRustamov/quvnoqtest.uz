@@ -62,7 +62,22 @@ export const G1_ONA_TOPICS: TopicMeta[] = [
   T(38, 'Shaxs-narsa bellashuvi (takrorlash)', 'Состязание лиц и предметов (повторение)', 'Persons-and-things contest (review)'),
   T(39, 'Ismlar bosh harf bilan', 'Имена — с заглавной буквы', 'Names begin with a capital letter'),
   T(40, 'Ism, sharif, familiya', 'Имя, отчество, фамилия', 'Name, patronymic, surname'),
-  ...Array.from({ length: 16 }, (_, i) => P(i + 41))
+  T(41, 'Joy nomlari — bosh harf', 'Названия мест — заглавная буква', 'Place names — capital letters'),
+  T(42, 'Joy nomlarini bildiruvchi soʻzlar', 'Слова, называющие места', 'Words that name places'),
+  T(43, 'Hayvon laqablari — bosh harf', 'Клички животных — заглавная буква', 'Animal nicknames — capital letters'),
+  T(44, 'Laqab va oddiy soʻz', 'Кличка и обычное слово', 'Nickname vs. ordinary word'),
+  T(45, 'Takrorlash — bosh harf', 'Повторение — заглавная буква', 'Review — capital letters'),
+  T(46, 'Harakatni bildirgan soʻzlar', 'Слова, обозначающие действие', 'Words that name actions'),
+  T(47, 'Harakat soʻzlarini aniqlash', 'Определяем слова-действия', 'Identifying action words'),
+  T(48, 'Nima qildi? Nima qiladi? Nima qilyapti?', 'Что сделал? Что делает?', 'What did / does / is it doing?'),
+  T(49, 'Belgini bildirgan soʻzlar', 'Слова, обозначающие признак', 'Words that name attributes'),
+  T(50, 'Qanday? Qanaqa? soʻzlar', 'Слова на вопрос «Какой?»', 'Words that answer “What kind?”'),
+  T(51, 'Rang, taʼm, hajm belgilari', 'Признаки: цвет, вкус, размер', 'Attributes: colour, taste, size'),
+  T(52, 'Takrorlash — harakat va belgi', 'Повторение — действие и признак', 'Review — actions and attributes'),
+  T(53, 'Sanoq, miqdor va tartib', 'Счёт, количество и порядок', 'Count, quantity and order'),
+  T(54, 'Miqdor — -ta va nafar', 'Количество — -ta и nafar', 'Quantity — -ta and nafar'),
+  T(55, 'Tartib — -inchi qoʻshimchasi', 'Порядок — суффикс -inchi', 'Order — the suffix -inchi'),
+  T(56, 'Takrorlash — soʻz turlari', 'Повторение — виды слов', 'Review — kinds of words')
 ];
 
 export function getOnaTopic(key: string): TopicMeta | undefined {

@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-55",
+  "subjectKey": "g1-ona",
+  "emojis": "🥇🪑✍️",
+  "title": {
+    "uz": "Tartib — -inchi qoʻshimchasi",
+    "ru": "Порядок — суффикс -inchi",
+    "en": "Order — the suffix -inchi"
+  },
+  "recall": {
+    "uz": "Shaxs va narsaning tartibini bildirgan soʻzlar sanoq soʻzlarga -inchi, -nchi qoʻshimchasini qoʻshish orqali yasaladi: besh — beshinchi, uch — uchinchi. Ular «Nechanchi?» soʻrogʻiga javob boʻladi: beshinchi qator, uchinchi sinf.",
+    "ru": "Слова, обозначающие порядок, образуются добавлением суффикса -inchi, -nchi к числам: besh — beshinchi, uch — uchinchi. Они отвечают на вопрос «Который?»: beshinchi qator, uchinchi sinf.",
+    "en": "Order words are formed by adding the suffix -inchi, -nchi to numbers: besh — beshinchi, uch — uchinchi. They answer “Which one?”: beshinchi qator (fifth row), uchinchi sinf (third grade)."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "besh", "after": "", "choices": ["inchi", "ta", "lar"], "answer": "inchi", "emoji": "🎽", "clue": { "uz": "Tartib: Nechanchi qator?", "ru": "Порядок: который ряд?", "en": "Order: which row?" } } },
+      "prompt": { "uz": "Tartib qoʻshimchasini qoʻy!", "ru": "Добавь суффикс порядка!", "en": "Add the order suffix!" },
+      "hint": { "uz": "Tartib soni -inchi bilan tugaydi.", "ru": "Порядковое оканчивается на -inchi.", "en": "The ordinal ends in -inchi." },
+      "explanation": { "uz": "besh + inchi = «beshinchi» (Nechanchi qator?).", "ru": "besh + inchi = «beshinchi» (который ряд?).", "en": "besh + inchi = “beshinchi” (which row?)." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "uch", "after": "", "choices": ["inchi", "ta", "dan"], "answer": "inchi", "emoji": "🏫", "clue": { "uz": "Tartib: Nechanchi sinf?", "ru": "Порядок: который класс?", "en": "Order: which grade?" } } },
+      "prompt": { "uz": "Tartib qoʻshimchasini qoʻy!", "ru": "Добавь суффикс порядка!", "en": "Add the order suffix!" },
+      "hint": { "uz": "Nechanchi? soʻrogʻiga javob — -inchi.", "ru": "Ответ на «Который?» — -inchi.", "en": "The answer to “Which one?” is -inchi." },
+      "explanation": { "uz": "uch + inchi = «uchinchi» (Nechanchi sinf?).", "ru": "uch + inchi = «uchinchi» (который класс?).", "en": "uch + inchi = “uchinchi” (which grade?)." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "bir", "right": "birinchi" }, { "left": "olti", "right": "oltinchi" }, { "left": "yetti", "right": "yettinchi" }, { "left": "oʻn", "right": "oʻninchi" } ] } },
+      "prompt": { "uz": "Sanoq sonini tartib soniga ula!", "ru": "Соедини число с порядковым!", "en": "Match each count to its ordinal!" },
+      "hint": { "uz": "olti — oltinchi, yetti — yettinchi.", "ru": "шесть — шестой, семь — седьмой.", "en": "six — sixth, seven — seventh." },
+      "explanation": { "uz": "-inchi/-nchi qoʻshimchasi tartib sonini yasaydi.", "ru": "Суффикс -inchi/-nchi образует порядковое.", "en": "The -inchi/-nchi suffix forms the ordinal." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "bir", "bin": "sanoq" }, { "id": "b", "label": "besh", "bin": "sanoq" }, { "id": "c", "label": "oʻn", "bin": "sanoq" }, { "id": "d", "label": "birinchi", "bin": "tartib" }, { "id": "e", "label": "beshinchi", "bin": "tartib" }, { "id": "f", "label": "oʻninchi", "bin": "tartib" } ], "bins": [ { "id": "sanoq", "label": "Sanoq (Necha?)" }, { "id": "tartib", "label": "Tartib (Nechanchi?)" } ] } },
+      "prompt": { "uz": "Ajrat: sanoq va tartib soʻzlari!", "ru": "Раздели: счёт и порядок!", "en": "Sort: count vs order words!" },
+      "hint": { "uz": "-inchi bilan tugagan — tartib.", "ru": "Оканчивается на -inchi — порядок.", "en": "Ends in -inchi — order." },
+      "explanation": { "uz": "bir, besh, oʻn — sanoq; birinchi, beshinchi, oʻninchi — tartib.", "ru": "bir, besh, oʻn — счёт; birinchi, beshinchi, oʻninchi — порядок.", "en": "bir, besh, oʻn — count; birinchi, beshinchi, oʻninchi — order." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Men ", "after": " qatorda oʻtiraman.", "choices": ["ikkinchi", "ikkita", "ikki"], "answer": "ikkinchi", "emoji": "🪑", "clue": { "uz": "Nechanchi qator?", "ru": "Который ряд?", "en": "Which row?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos son soʻzini qoʻy!", "ru": "Вставь подходящее слово-число!", "en": "Fill the gap with the right number word!" },
+      "hint": { "uz": "Tartibni bildirgan soʻz kerak.", "ru": "Нужно слово порядка.", "en": "You need an order word." },
+      "explanation": { "uz": "Men ikkinchi qatorda oʻtiraman. «Ikkinchi» — tartib soni.", "ru": "Я сижу во втором ряду. «Ikkinchi» — порядковое.", "en": "I sit in the second row. “Ikkinchi” is an ordinal." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "birinchi" }, { "text": "beshinchi" }, { "text": "oltinchi" }, { "text": "olti", "odd": true } ], "clue": { "uz": "Tartib soʻzlari — bittasi sanoq", "ru": "Порядковые — одно из них счёт", "en": "Order words — one is a count" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Qaysi birida -inchi qoʻshimchasi yoʻq?", "ru": "У какого нет суффикса -inchi?", "en": "Which one lacks the -inchi suffix?" },
+      "explanation": { "uz": "«Olti» — sanoq (Necha?), qolganlari tartib (Nechanchi?).", "ru": "«Olti» — счёт, остальные — порядковые.", "en": "“Olti” is a count; the rest are ordinals." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Dilshod uchun ", "after": " kuz keldi.", "choices": ["sakkizinchi", "sakkizta", "sakkiz"], "answer": "sakkizinchi", "emoji": "🍂", "clue": { "uz": "Nechanchi kuz?", "ru": "Которая осень?", "en": "Which autumn?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos son soʻzini qoʻy!", "ru": "Вставь подходящее слово-число!", "en": "Fill the gap with the right number word!" },
+      "hint": { "uz": "Tartibni bildirgan soʻz — -inchi bilan.", "ru": "Порядковое слово — с -inchi.", "en": "An order word — with -inchi." },
+      "explanation": { "uz": "Sakkizinchi kuz keldi. «Sakkizinchi» — tartib soni.", "ru": "Пришла восьмая осень. «Sakkizinchi» — порядковое.", "en": "The eighth autumn came. “Sakkizinchi” is an ordinal." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["be", "shin", "chi"], "emoji": "🖐️", "clue": { "uz": "Tartib soʻzi (Nechanchi?)", "ru": "Порядковое (Который?)", "en": "An order word (Which one?)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan tartib soʻzini tuz!", "ru": "Собери порядковое слово из слогов!", "en": "Build the order word from syllables!" },
+      "hint": { "uz": "be- … -shin- … -chi.", "ru": "be- … -shin- … -chi.", "en": "be- … -shin- … -chi." },
+      "explanation": { "uz": "«Beshinchi» — tartib soni (beshinchi qator).", "ru": "«Beshinchi» — порядковое (пятый ряд).", "en": "“Beshinchi” is an ordinal (fifth row)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "uchinchi", "letters": ["u", "ch", "i", "n", "ch", "i"], "emoji": "🥉", "clue": { "uz": "Tartib soʻzi (3-oʻrin)", "ru": "Порядковое (3-е место)", "en": "An order word (3rd place)" } } },
+      "prompt": { "uz": "Harflardan tartib soʻzini yigʻ!", "ru": "Собери порядковое слово из букв!", "en": "Build the order word from the letters!" },
+      "hint": { "uz": "Uch sonidan yasaladi.", "ru": "Образуется от числа «три».", "en": "Formed from the number three." },
+      "explanation": { "uz": "«Uchinchi» — tartib soni (uchinchi sinf).", "ru": "«Uchinchi» — порядковое (третий класс).", "en": "“Uchinchi” is an ordinal (third grade)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "birinchi", "match": true }, { "text": "besh", "match": false }, { "text": "oltinchi", "match": true }, { "text": "oʻnta", "match": false }, { "text": "beshinchi", "match": true }, { "text": "uch", "match": false } ] } },
+      "prompt": { "uz": "Tartibni bildirgan soʻzlarni bos!", "ru": "Нажми порядковые слова!", "en": "Tap the order words!" },
+      "hint": { "uz": "besh, uch — sanoq; oʻnta — miqdor.", "ru": "besh, uch — счёт; oʻnta — количество.", "en": "besh, uch are counts; oʻnta is quantity." },
+      "explanation": { "uz": "birinchi, oltinchi, beshinchi — tartib soʻzlari.", "ru": "birinchi, oltinchi, beshinchi — порядковые.", "en": "birinchi, oltinchi, beshinchi are order words." }
+    }
+  ]
+}

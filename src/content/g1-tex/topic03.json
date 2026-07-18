@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-03",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Kapalak qurti",
+    "ru": "Гусеница",
+    "en": "A caterpillar"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻoz doirachalaridan quvnoq qurtcha yasaymiz.",
+    "ru": "Сегодня из бумажных кружочков сделаем весёлую гусеницу.",
+    "en": "Today we make a cheerful caterpillar from paper circles."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kapalak qurtini yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай гусеницу. Выполняй каждый этап по рисунку!",
+        "en": "Make the caterpillar. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Doiralarni yonma-yon yopishtir.",
+        "ru": "Клей кружочки в ряд.",
+        "en": "Glue the circles in a row."
+      },
+      "explanation": {
+        "uz": "Zoʻr qurtcha!",
+        "ru": "Отличная гусеница!",
+        "en": "A great caterpillar!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            },
+            {
+              "uz": "qalam",
+              "ru": "карандаш",
+              "en": "a pencil"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Rangli qogʻozdan bir nechta bir xil doira qirqib ol.",
+              "ru": "Вырежь несколько одинаковых кружочков.",
+              "en": "Cut several equal circles."
+            },
+            {
+              "uz": "Doiralarni yonma-yon yopishtirib, tana yasa.",
+              "ru": "Склей кружочки в ряд — получится тело.",
+              "en": "Glue the circles in a row to make the body."
+            },
+            {
+              "uz": "Bosh doiraga koʻz, tabassum va moʻylov chiz.",
+              "ru": "На голове нарисуй глаза, улыбку и усики.",
+              "en": "Draw eyes, a smile and antennae on the head."
+            }
+          ],
+          "art": "caterpillar",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

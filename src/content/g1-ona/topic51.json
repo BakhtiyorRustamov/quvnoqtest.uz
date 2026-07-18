@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-51",
+  "subjectKey": "g1-ona",
+  "emojis": "🎨🍋📏",
+  "title": {
+    "uz": "Rang, taʼm, hajm belgilari",
+    "ru": "Признаки: цвет, вкус, размер",
+    "en": "Attributes: colour, taste, size"
+  },
+  "recall": {
+    "uz": "Belgini bildirgan soʻzlar narsaning rang-tusini (qizil, koʻk), taʼm-mazasini (shirin, nordon), hajmini (katta, kichik) va xil-xususiyatini (mehribon, quvnoq) ifodalaydi. Bularning barchasi «Qanday?» soʻrogʻiga javob boʻladi.",
+    "ru": "Слова-признаки выражают цвет (qizil, koʻk), вкус (shirin, nordon), размер (katta, kichik) и свойство (mehribon, quvnoq) предмета. Все они отвечают на вопрос «Какой?».",
+    "en": "Attribute words express a thing's colour (qizil, koʻk), taste (shirin, nordon), size (katta, kichik) and quality (mehribon, quvnoq). They all answer the question “What kind?”."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "qizil", "bin": "rang" }, { "id": "b", "label": "koʻk", "bin": "rang" }, { "id": "c", "label": "shirin", "bin": "tam" }, { "id": "d", "label": "nordon", "bin": "tam" }, { "id": "e", "label": "katta", "bin": "hajm" }, { "id": "f", "label": "kichik", "bin": "hajm" } ], "bins": [ { "id": "rang", "label": "Rang" }, { "id": "tam", "label": "Taʼm" }, { "id": "hajm", "label": "Hajm" } ] } },
+      "prompt": { "uz": "Belgilarni turkumlarga ajrat!", "ru": "Раздели признаки по группам!", "en": "Sort the attributes into groups!" },
+      "hint": { "uz": "qizil, koʻk — rang; shirin, nordon — taʼm.", "ru": "qizil, koʻk — цвет; shirin, nordon — вкус.", "en": "qizil, koʻk are colours; shirin, nordon are tastes." },
+      "explanation": { "uz": "Belgi soʻzlari rang, taʼm va hajmni ifodalaydi.", "ru": "Слова-признаки выражают цвет, вкус и размер.", "en": "Attribute words express colour, taste and size." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "gilos", "right": "shirin" }, { "left": "limon", "right": "nordon" }, { "left": "qor", "right": "oq" }, { "left": "fil", "right": "katta" } ] } },
+      "prompt": { "uz": "Narsani unga mos belgiga ula!", "ru": "Соедини предмет с его признаком!", "en": "Match each thing to its attribute!" },
+      "hint": { "uz": "limon — nordon, fil — katta.", "ru": "лимон — кислый, слон — большой.", "en": "lemon — sour, elephant — big." },
+      "explanation": { "uz": "Shirin gilos, nordon limon, oq qor, katta fil.", "ru": "Сладкая черешня, кислый лимон, белый снег, большой слон.", "en": "Sweet cherry, sour lemon, white snow, big elephant." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "qizil", "match": true }, { "text": "shirin", "match": false }, { "text": "yashil", "match": true }, { "text": "katta", "match": false }, { "text": "oq", "match": true }, { "text": "nordon", "match": false } ] } },
+      "prompt": { "uz": "Faqat rang belgilarini bos!", "ru": "Нажми только цвета!", "en": "Tap only the colour words!" },
+      "hint": { "uz": "shirin, nordon — taʼm; katta — hajm.", "ru": "shirin, nordon — вкус; katta — размер.", "en": "shirin, nordon are tastes; katta is size." },
+      "explanation": { "uz": "qizil, yashil, oq — rang belgilari.", "ru": "qizil, yashil, oq — цвета.", "en": "qizil, yashil, oq are colour words." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Limonning taʼmi ", "after": ".", "choices": ["nordon", "shirin", "baland"], "answer": "nordon", "emoji": "🍋", "clue": { "uz": "Limon qanday taʼmga ega?", "ru": "Какой лимон на вкус?", "en": "What does a lemon taste like?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Limon shirin emas — aksincha.", "ru": "Лимон не сладкий — наоборот.", "en": "A lemon is not sweet — the opposite." },
+      "explanation": { "uz": "Limon nordon. «Nordon» — taʼm (belgi) soʻzi.", "ru": "Лимон кислый. «Nordon» — слово-признак (вкус).", "en": "A lemon is sour. “Nordon” is a taste (attribute) word." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Fil juda ", "after": " hayvon.", "choices": ["katta", "kichik", "shirin"], "answer": "katta", "emoji": "🐘", "clue": { "uz": "Fil qanday hajmda?", "ru": "Какого размера слон?", "en": "What size is an elephant?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Fil — juda yirik hayvon.", "ru": "Слон — очень крупное животное.", "en": "An elephant is a very large animal." },
+      "explanation": { "uz": "Fil katta hayvon. «Katta» — hajm (belgi) soʻzi.", "ru": "Слон большой. «Katta» — слово-признак (размер).", "en": "An elephant is big. “Katta” is a size (attribute) word." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "qizil" }, { "text": "koʻk" }, { "text": "yashil" }, { "text": "shirin", "odd": true } ], "clue": { "uz": "Rang belgilari — bittasi taʼm", "ru": "Цвета — одно из них вкус", "en": "Colours — one is a taste" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Qaysi biri rang emas?", "ru": "Какое из них не цвет?", "en": "Which one is not a colour?" },
+      "explanation": { "uz": "«Shirin» — taʼm belgisi, qolganlari rang.", "ru": "«Shirin» — вкус, остальные цвета.", "en": "“Shirin” is a taste; the rest are colours." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "katta", "right": "kichik" }, { "left": "baland", "right": "past" }, { "left": "uzun", "right": "qisqa" } ] } },
+      "prompt": { "uz": "Qarama-qarshi belgilarni ula!", "ru": "Соедини противоположные признаки!", "en": "Match the opposite attributes!" },
+      "hint": { "uz": "katta — kichik, baland — past.", "ru": "большой — маленький, высокий — низкий.", "en": "big — small, tall — short." },
+      "explanation": { "uz": "Qarama-qarshi belgilar: katta-kichik, baland-past, uzun-qisqa.", "ru": "Противоположные признаки: katta-kichik, baland-past, uzun-qisqa.", "en": "Opposite attributes: katta-kichik, baland-past, uzun-qisqa." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Oq kuchukcha juda ", "after": " edi.", "choices": ["chiroyli", "xunuk", "nordon"], "answer": "chiroyli", "emoji": "🐶", "clue": { "uz": "Kuchukcha qanday edi?", "ru": "Каким был щенок?", "en": "What was the puppy like?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Koʻrkam, goʻzal — degan maʼnodagi soʻz.", "ru": "Слово со значением «красивый».", "en": "A word meaning “beautiful”." },
+      "explanation": { "uz": "Chiroyli oq kuchukcha. «Chiroyli» — xususiyat (belgi) soʻzi.", "ru": "Красивый белый щенок. «Chiroyli» — слово-признак.", "en": "A beautiful white puppy. “Chiroyli” is a quality (attribute) word." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["shi", "rin"], "emoji": "🍯", "clue": { "uz": "Asalning taʼmi (belgi)", "ru": "Вкус мёда (признак)", "en": "The taste of honey (an attribute)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan belgi soʻzini tuz!", "ru": "Собери слово-признак из слогов!", "en": "Build the attribute word from syllables!" },
+      "hint": { "uz": "shi- … -rin.", "ru": "shi- … -rin.", "en": "shi- … -rin." },
+      "explanation": { "uz": "«Shirin» — taʼm belgisi (shirin asal).", "ru": "«Shirin» — вкус (сладкий мёд).", "en": "“Shirin” is a taste attribute (sweet honey)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "qizil", "letters": ["q", "i", "z", "i", "l"], "emoji": "🍎", "clue": { "uz": "Olmaning rangi (belgi)", "ru": "Цвет яблока (признак)", "en": "An apple's colour (an attribute)" } } },
+      "prompt": { "uz": "Harflardan belgi soʻzini yigʻ!", "ru": "Собери слово-признак из букв!", "en": "Build the attribute word from the letters!" },
+      "hint": { "uz": "Pishgan olma qanday rangda?", "ru": "Какого цвета спелое яблоко?", "en": "What colour is a ripe apple?" },
+      "explanation": { "uz": "«Qizil» — rang belgisi (qizil olma).", "ru": "«Qizil» — цвет (красное яблоко).", "en": "“Qizil” is a colour attribute (a red apple)." }
+    }
+  ]
+}

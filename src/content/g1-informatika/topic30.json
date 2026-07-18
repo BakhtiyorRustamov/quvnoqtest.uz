@@ -1,0 +1,415 @@
+{
+  "topicId": "g1-informatika-30",
+  "subjectKey": "g1-informatika",
+  "emojis": "✅❌📖🎾",
+  "title": {
+    "uz": "Tasdiq – inkor",
+    "ru": "Утверждение – отрицание",
+    "en": "Affirmation – negation"
+  },
+  "recall": {
+    "uz": "Gaplar tasdiq yoki inkor boʻladi. «Qalam — oʻquv quroli» — tasdiq. «Olma — oʻquv quroli emas» — inkor. «Ha» va «yoʻq» bilan javob beramiz.",
+    "ru": "Предложения бывают утвердительные и отрицательные. «Карандаш — учебный предмет» — утверждение. «Яблоко — не учебный предмет» — отрицание. Отвечаем «да» и «нет».",
+    "en": "Sentences can affirm or negate. 'A pencil is a school tool' affirms. 'An apple is not a school tool' negates. We answer with 'yes' and 'no'."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Qalam — oʻquv quroli.» Bu toʻgʻrimi?",
+        "ru": "«Карандаш — учебный предмет.» Верно?",
+        "en": "'A pencil is a school tool.' Is this true?"
+      },
+      "hint": {
+        "uz": "Qalam bilan yozamiz.",
+        "ru": "Карандашом пишем.",
+        "en": "We write with a pencil."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri — bu tasdiq.",
+        "ru": "Верно — это утверждение.",
+        "en": "True — this affirms."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "✏️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Olma — oʻquv quroli.» Bu toʻgʻrimi?",
+        "ru": "«Яблоко — учебный предмет.» Верно?",
+        "en": "'An apple is a school tool.' Is this true?"
+      },
+      "hint": {
+        "uz": "Olma — meva.",
+        "ru": "Яблоко — фрукт.",
+        "en": "An apple is a fruit."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri — olma oʻquv quroli emas.",
+        "ru": "Неверно — яблоко не учебный предмет.",
+        "en": "False — an apple is not a school tool."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍎",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Mushuk uchadi.» Bu gap toʻgʻrimi?",
+        "ru": "«Кот летает.» Это верно?",
+        "en": "'A cat flies.' Is this true?"
+      },
+      "hint": {
+        "uz": "Mushuk yura oladi.",
+        "ru": "Кот ходит.",
+        "en": "A cat walks."
+      },
+      "explanation": {
+        "uz": "Yoʻq, notoʻgʻri — bu inkor.",
+        "ru": "Нет, неверно.",
+        "en": "No, false."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yoʻq, notoʻgʻri",
+              "ru": "нет, неверно",
+              "en": "no, false"
+            },
+            {
+              "uz": "ha, toʻgʻri",
+              "ru": "да, верно",
+              "en": "yes, true"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Baliq suvda yashaydi.» Bu toʻgʻrimi?",
+        "ru": "«Рыба живёт в воде.» Верно?",
+        "en": "'A fish lives in water.' Is this true?"
+      },
+      "hint": {
+        "uz": "Baliqni oʻyla.",
+        "ru": "Подумай о рыбе.",
+        "en": "Think of a fish."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐟",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Quyosh kechasi chiqadi.» Bu toʻgʻrimi?",
+        "ru": "«Солнце встаёт ночью.» Верно?",
+        "en": "'The sun rises at night.' Is this true?"
+      },
+      "hint": {
+        "uz": "Quyosh kunduzi chiqadi.",
+        "ru": "Солнце — днём.",
+        "en": "The sun is out by day."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri — quyosh kunduzi chiqadi.",
+        "ru": "Неверно — солнце днём.",
+        "en": "False — the sun rises by day."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "☀️",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻquv qurollarini belgila!",
+        "ru": "Отметь учебные предметы!",
+        "en": "Tap the school tools!"
+      },
+      "hint": {
+        "uz": "Darsda kerak boʻladi.",
+        "ru": "Нужны на уроке.",
+        "en": "Needed in class."
+      },
+      "explanation": {
+        "uz": "Ular oʻquv qurollari.",
+        "ru": "Это учебные предметы.",
+        "en": "These are school tools."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "✏️",
+              "label": {
+                "uz": "qalam",
+                "ru": "карандаш",
+                "en": "pencil"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "📓",
+              "label": {
+                "uz": "daftar",
+                "ru": "тетрадь",
+                "en": "notebook"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "📏",
+              "label": {
+                "uz": "chizgʻich",
+                "ru": "линейка",
+                "en": "ruler"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": {
+                "uz": "koptok",
+                "ru": "мяч",
+                "en": "ball"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Bu sabzavot ham, meva ham emas, qizil ham, yashil ham emas.» Bu nima?",
+        "ru": "«Не овощ, не фрукт, не красный, не зелёный.» Что это?",
+        "en": "'Not a vegetable, not a fruit, not red, not green.' What is it?"
+      },
+      "hint": {
+        "uz": "U bilan oʻynaladi.",
+        "ru": "С этим играют.",
+        "en": "You play with it."
+      },
+      "explanation": {
+        "uz": "Bu — koptok.",
+        "ru": "Это мяч.",
+        "en": "It is a ball."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "koptok",
+              "ru": "мяч",
+              "en": "ball"
+            },
+            {
+              "uz": "olma",
+              "ru": "яблоко",
+              "en": "apple"
+            },
+            {
+              "uz": "pomidor",
+              "ru": "помидор",
+              "en": "tomato"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech! (inkor bilan)",
+        "ru": "Отгадай загадку! (с отрицанием)",
+        "en": "Solve the riddle! (with negation)"
+      },
+      "hint": {
+        "uz": "Sabzavot ham, meva ham emas.",
+        "ru": "Не овощ и не фрукт.",
+        "en": "Neither vegetable nor fruit."
+      },
+      "explanation": {
+        "uz": "Javob — koptok!",
+        "ru": "Ответ — мяч!",
+        "en": "The answer is a ball!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Sabzavot ham, meva ham emas,",
+              "ru": "Не овощ и не фрукт,",
+              "en": "Not a vegetable, not a fruit,"
+            },
+            {
+              "uz": "Qizil ham, yashil ham emas.",
+              "ru": "Не красный и не зелёный.",
+              "en": "not red, and not green."
+            }
+          ],
+          "options": [
+            {
+              "emoji": "🎾",
+              "label": {
+                "uz": "koptok",
+                "ru": "мяч",
+                "en": "ball"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              }
+            },
+            {
+              "emoji": "🍅",
+              "label": {
+                "uz": "pomidor",
+                "ru": "помидор",
+                "en": "tomato"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ha» — tasdiq, «yoʻq» — inkor javobi.",
+        "ru": "«Да» — утверждение, «нет» — отрицание.",
+        "en": "'Yes' affirms, 'no' negates."
+      },
+      "hint": {
+        "uz": "Ikki xil javob.",
+        "ru": "Два вида ответа.",
+        "en": "Two kinds of answer."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "✅",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Kitob — oʻquv quroli» qanday gap?",
+        "ru": "«Книга — учебный предмет» — какое это?",
+        "en": "'A book is a school tool' — what kind of sentence?"
+      },
+      "hint": {
+        "uz": "Toʻgʻri ekanini bildiradi.",
+        "ru": "Утверждает правду.",
+        "en": "States something true."
+      },
+      "explanation": {
+        "uz": "Bu — tasdiq gap.",
+        "ru": "Это утверждение.",
+        "en": "This is an affirmation."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "tasdiq",
+              "ru": "утверждение",
+              "en": "affirmation"
+            },
+            {
+              "uz": "inkor",
+              "ru": "отрицание",
+              "en": "negation"
+            },
+            {
+              "uz": "savol",
+              "ru": "вопрос",
+              "en": "question"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

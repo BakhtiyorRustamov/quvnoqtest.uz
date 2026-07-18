@@ -1,0 +1,136 @@
+{
+  "topicId": "g1-ingliz-59",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🔤🐼🐻🐙",
+  "title": { "uz": "Takrorlash: tovushlar", "ru": "Повторение: звуки", "en": "Review: my sounds" },
+  "recall": {
+    "uz": "Takrorlash! Barcha tovushlarni eslaymiz: p — panda, b — bear (ayiq), t — turtle (toshbaqa), d — dolphin (delfin), a — ant (chumoli), o — octopus (sakkizoyoq).",
+    "ru": "Повторение! Вспоминаем все звуки: p — panda, b — bear (медведь), t — turtle (черепаха), d — dolphin (дельфин), a — ant (муравей), o — octopus (осьминог).",
+    "en": "Review! Let's remember all our sounds: p — panda, b — bear, t — turtle, d — dolphin, a — ant, o — octopus."
+  },
+  "ttsText": { "uz": "Takrorlash: tovushlar.", "en": "Review! P panda, b bear, t turtle, d dolphin, a ant, o octopus!" },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Tovushni hayvonga ula! (p, b, t, d)", "ru": "Соедини звук с животным! (p, b, t, d)", "en": "Match each sound to its animal! (p, b, t, d)" },
+      "hint": { "uz": "p — panda, b — bear, t — turtle, d — dolphin.", "ru": "p — panda, b — bear, t — turtle, d — dolphin.", "en": "p — panda, b — bear, t — turtle, d — dolphin." },
+      "explanation": { "uz": "Barakalla! Tovushlarni bilding!", "ru": "Молодец! Ты знаешь звуки!", "en": "Great! You know the sounds!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "label": "p" }, "right": { "emoji": "🐼" } },
+        { "left": { "label": "b" }, "right": { "emoji": "🐻" } },
+        { "left": { "label": "t" }, "right": { "emoji": "🐢" } },
+        { "left": { "label": "d" }, "right": { "emoji": "🐬" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«b» tovushli hayvonni bos!", "ru": "Нажми животное на звук «b»!", "en": "Tap the /b/ animal!" },
+      "audio": { "key": "ing59-q2", "text": "Bear! B-b-bear!", "voice": "teacher" },
+      "hint": { "uz": "«bear» — ayiq.", "ru": "«bear» — медведь.", "en": "\"bear\" starts with /b/." },
+      "explanation": { "uz": "Toʻgʻri! Bear — ayiq.", "ru": "Верно! Bear — медведь.", "en": "Right! Bear!" },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "🐻", "label": "bear", "correct": true },
+        { "emoji": "🐢", "label": "turtle" },
+        { "emoji": "🐬", "label": "dolphin" }
+      ] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«t» tovushli hayvonni bos!", "ru": "Нажми животное на звук «t»!", "en": "Tap the /t/ animal!" },
+      "audio": { "key": "ing59-q3", "text": "Turtle! T-t-turtle!", "voice": "girl" },
+      "hint": { "uz": "«turtle» — toshbaqa.", "ru": "«turtle» — черепаха.", "en": "\"turtle\" starts with /t/." },
+      "explanation": { "uz": "Toʻgʻri! Turtle — toshbaqa.", "ru": "Верно! Turtle — черепаха.", "en": "Right! Turtle!" },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "🐢", "label": "turtle", "correct": true },
+        { "emoji": "🐼", "label": "panda" },
+        { "emoji": "🐜", "label": "ant" }
+      ] } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«d» tovushli hayvonni bos!", "ru": "Нажми животное на звук «d»!", "en": "Tap the /d/ animal!" },
+      "audio": { "key": "ing59-q4", "text": "Dolphin! D-d-dolphin!", "voice": "man" },
+      "hint": { "uz": "«dolphin» — delfin.", "ru": "«dolphin» — дельфин.", "en": "\"dolphin\" starts with /d/." },
+      "explanation": { "uz": "Toʻgʻri! Dolphin — delfin.", "ru": "Верно! Dolphin — дельфин.", "en": "Right! Dolphin!" },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "🐬", "label": "dolphin", "correct": true },
+        { "emoji": "🐻", "label": "bear" },
+        { "emoji": "🐙", "label": "octopus" }
+      ] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«a» tovushi bilan boshlanadigan soʻzlarni bos!", "ru": "Нажми слова на звук «a»!", "en": "Tap the words that start with /a/!" },
+      "hint": { "uz": "ant, apple, alligator.", "ru": "ant, apple, alligator.", "en": "ant, apple, alligator." },
+      "explanation": { "uz": "Barakalla! Ular «a» tovushi!", "ru": "Молодец! Это звук «a»!", "en": "Great! Those start with /a/!" },
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "ant", "match": true },
+        { "text": "apple", "match": true },
+        { "text": "bear", "match": false },
+        { "text": "alligator", "match": true },
+        { "text": "dog", "match": false },
+        { "text": "octopus", "match": false }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Bir xil juftni top!", "ru": "Найди одинаковую пару!", "en": "Find the matching pair!" },
+      "hint": { "uz": "Bir xil ikkita hayvonni top.", "ru": "Найди два одинаковых.", "en": "Find the two that are the same." },
+      "explanation": { "uz": "Barakalla! Juftni topding!", "ru": "Молодец! Ты нашёл пару!", "en": "Great! You found the pair!" },
+      "widget": { "type": "find_pair", "props": { "tiles": [
+        { "id": "p1", "emoji": "🐼", "key": "panda" },
+        { "id": "bear", "emoji": "🐻", "key": "bear" },
+        { "id": "p2", "emoji": "🐼", "key": "panda" },
+        { "id": "turtle", "emoji": "🐢", "key": "turtle" },
+        { "id": "dolphin", "emoji": "🐬", "key": "dolphin" }
+      ] } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Tovushni soʻzga ula! (a, i, e, o)", "ru": "Соедини звук со словом! (a, i, e, o)", "en": "Match each sound to its word! (a, i, e, o)" },
+      "hint": { "uz": "a — ant, i — iguana, e — elephant, o — octopus.", "ru": "a — ant, i — iguana, e — elephant, o — octopus.", "en": "a — ant, i — iguana, e — elephant, o — octopus." },
+      "explanation": { "uz": "Barakalla! Unli tovushlarni bilding!", "ru": "Молодец! Ты знаешь гласные звуки!", "en": "Great! You know the vowel sounds!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "label": "a" }, "right": { "emoji": "🐜" } },
+        { "left": { "label": "i" }, "right": { "emoji": "🦎" } },
+        { "left": { "label": "e" }, "right": { "emoji": "🐘" } },
+        { "left": { "label": "o" }, "right": { "emoji": "🐙" } }
+      ] } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kartalarni ochib, tovush juftlarini top!", "ru": "Открывай карточки: пары звуков!", "en": "Flip the cards: match the sound pairs!" },
+      "hint": { "uz": "panda 🐼, iguana 🦎, octopus 🐙.", "ru": "panda 🐼, iguana 🦎, octopus 🐙.", "en": "panda 🐼, iguana 🦎, octopus 🐙." },
+      "explanation": { "uz": "Barakalla!", "ru": "Молодец!", "en": "Great!" },
+      "widget": { "type": "memory_match", "props": { "pairs": [
+        { "a": { "emoji": "🐼" }, "b": { "label": "panda" } },
+        { "a": { "emoji": "🦎" }, "b": { "label": "iguana" } },
+        { "a": { "emoji": "🐙" }, "b": { "label": "octopus" } }
+      ] } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«o» tovushli hayvonni bos!", "ru": "Нажми животное на звук «o»!", "en": "Tap the /o/ animal!" },
+      "audio": { "key": "ing59-q9", "text": "Octopus! O-o-octopus!", "voice": "teacher" },
+      "hint": { "uz": "«octopus» — sakkizoyoq.", "ru": "«octopus» — осьминог.", "en": "\"octopus\" starts with /o/." },
+      "explanation": { "uz": "Toʻgʻri! Octopus — sakkizoyoq.", "ru": "Верно! Octopus — осьминог.", "en": "Right! Octopus!" },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "🐙", "label": "octopus", "correct": true },
+        { "emoji": "🐢", "label": "turtle" },
+        { "emoji": "🐼", "label": "panda" }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Qaysi soʻz «p» tovushi bilan boshlanadi?", "ru": "Какое слово начинается на звук «p»?", "en": "Which word starts with the /p/ sound?" },
+      "hint": { "uz": "P-p-panda!", "ru": "P-p-panda!", "en": "P-p-panda!" },
+      "explanation": { "uz": "Toʻgʻri! «panda» — «p» tovushi.", "ru": "Верно! «panda» — звук «p».", "en": "Right! \"panda\" starts with /p/." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "panda\npanda", "ru": "panda\nпанда", "en": "panda" },
+        { "uz": "dog\nit", "ru": "dog\nсобака", "en": "dog" },
+        { "uz": "ball\nkoptok", "ru": "ball\nмяч", "en": "ball" }
+      ], "answerIndex": 0 } }
+    }
+  ]
+}

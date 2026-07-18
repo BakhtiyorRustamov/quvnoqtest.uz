@@ -1,0 +1,577 @@
+{
+  "topicId": "g1-informatika-05",
+  "subjectKey": "g1-informatika",
+  "emojis": "👃🌹🍞🚗",
+  "title": {
+    "uz": "Biz nimalarni hidlaymiz?",
+    "ru": "Что мы нюхаем?",
+    "en": "What do we smell?"
+  },
+  "recall": {
+    "uz": "Burun — hid bilish aʼzosi. Burun bilan yoqimli va yoqimsiz hidlarni bilamiz. Gulning hidi yoqimli, tutunning hidi yoqimsiz.",
+    "ru": "Нос — орган обоняния. Носом мы чувствуем приятные и неприятные запахи. Цветок пахнет приятно, дым — неприятно.",
+    "en": "The nose is the organ of smell. With our nose we sense pleasant and unpleasant smells. A flower smells nice, smoke smells bad."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi aʼzo bilan hid bilamiz?",
+        "ru": "Каким органом чувствуем запах?",
+        "en": "Which organ do we smell with?"
+      },
+      "hint": {
+        "uz": "U yuzimizning oʻrtasida.",
+        "ru": "Он в центре лица.",
+        "en": "It is in the middle of the face."
+      },
+      "explanation": {
+        "uz": "Biz burun bilan hidlaymiz.",
+        "ru": "Мы нюхаем носом.",
+        "en": "We smell with our nose."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "👃",
+              "label": {
+                "uz": "burun",
+                "ru": "нос",
+                "en": "nose"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hidlarni ajrat: yoqimli va yoqimsiz!",
+        "ru": "Раздели запахи: приятные и нет!",
+        "en": "Sort smells: pleasant and unpleasant!"
+      },
+      "hint": {
+        "uz": "Avval rasmni, keyin qutini bos.",
+        "ru": "Сначала картинку, потом ящик.",
+        "en": "Tap a picture, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Hidlarni ajratding.",
+        "ru": "Молодец! Запахи разделены.",
+        "en": "Great! Smells sorted."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "y",
+              "label": {
+                "uz": "Yoqimli",
+                "ru": "Приятный",
+                "en": "Pleasant"
+              }
+            },
+            {
+              "id": "n",
+              "label": {
+                "uz": "Yoqimsiz",
+                "ru": "Неприятный",
+                "en": "Unpleasant"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🌹",
+              "label": {
+                "uz": "atirgul",
+                "ru": "роза",
+                "en": "rose"
+              },
+              "bin": "y"
+            },
+            {
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "хлеб",
+                "en": "bread"
+              },
+              "bin": "y"
+            },
+            {
+              "emoji": "🌸",
+              "label": {
+                "uz": "gul",
+                "ru": "цветок",
+                "en": "flower"
+              },
+              "bin": "y"
+            },
+            {
+              "emoji": "🚗",
+              "label": {
+                "uz": "tutun",
+                "ru": "дым",
+                "en": "exhaust"
+              },
+              "bin": "n"
+            },
+            {
+              "emoji": "🗑️",
+              "label": {
+                "uz": "axlat",
+                "ru": "мусор",
+                "en": "rubbish"
+              },
+              "bin": "n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hidni qaysi aʼzo biladi?",
+        "ru": "Каким органом узнаём запах?",
+        "en": "Which organ tells smell?"
+      },
+      "hint": {
+        "uz": "Hidlab koʻr.",
+        "ru": "Понюхай.",
+        "en": "Take a sniff."
+      },
+      "explanation": {
+        "uz": "Hidni burun biladi.",
+        "ru": "Запах узнаёт нос.",
+        "en": "The nose tells smell."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "burun",
+              "ru": "нос",
+              "en": "nose"
+            },
+            {
+              "uz": "til",
+              "ru": "язык",
+              "en": "tongue"
+            },
+            {
+              "uz": "quloq",
+              "ru": "уши",
+              "en": "ears"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hid taratadigan narsalarni belgila!",
+        "ru": "Отметь, что пахнет!",
+        "en": "Tap the things that give off a smell!"
+      },
+      "hint": {
+        "uz": "Qaysilarini hidlash mumkin?",
+        "ru": "Что можно понюхать?",
+        "en": "Which can you smell?"
+      },
+      "explanation": {
+        "uz": "Ular hid taratadi.",
+        "ru": "Они пахнут.",
+        "en": "They give off a smell."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌹",
+              "label": {
+                "uz": "atirgul",
+                "ru": "роза",
+                "en": "rose"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "хлеб",
+                "en": "bread"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "📷",
+              "label": {
+                "uz": "kamera",
+                "ru": "камера",
+                "en": "camera"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🔵",
+              "label": {
+                "uz": "doira",
+                "ru": "круг",
+                "en": "circle"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Burun bilan hidni bilamiz.",
+        "ru": "Носом мы чувствуем запах.",
+        "en": "We sense smell with our nose."
+      },
+      "hint": {
+        "uz": "Gulni hidlab koʻr.",
+        "ru": "Понюхай цветок.",
+        "en": "Smell a flower."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Burun — hid aʼzosi.",
+        "ru": "Верно! Нос — орган обоняния.",
+        "en": "True! The nose is for smelling."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👃",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (hidi yoqimsiz)",
+        "ru": "Нажми лишнее! (пахнет неприятно)",
+        "en": "Tap the odd one! (smells bad)"
+      },
+      "hint": {
+        "uz": "Qaysi biri yoqimsiz?",
+        "ru": "Что пахнет плохо?",
+        "en": "Which smells bad?"
+      },
+      "explanation": {
+        "uz": "Tutunning hidi yoqimsiz.",
+        "ru": "Дым пахнет неприятно.",
+        "en": "Smoke smells unpleasant."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "yoqimli hidlar",
+            "ru": "приятные запахи",
+            "en": "pleasant smells"
+          },
+          "tiles": [
+            {
+              "text": "atirgul"
+            },
+            {
+              "text": "non"
+            },
+            {
+              "text": "taom"
+            },
+            {
+              "text": "tutun",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Ikki teshigi bor, hidni tuyar.",
+        "ru": "Две дырочки, чует запах.",
+        "en": "Two little holes, it senses smell."
+      },
+      "explanation": {
+        "uz": "Javob — burun!",
+        "ru": "Ответ — нос!",
+        "en": "The answer is the nose!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Ikki teshigi bor,",
+              "ru": "Две дырочки,",
+              "en": "Two little holes,"
+            },
+            {
+              "uz": "Hidni oʻzi tuyar.",
+              "ru": "он чует запах.",
+              "en": "it senses the smell."
+            }
+          ],
+          "options": [
+            {
+              "emoji": "👃",
+              "label": {
+                "uz": "burun",
+                "ru": "нос",
+                "en": "nose"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            },
+            {
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "язык",
+                "en": "tongue"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysining hidi yoqimli?",
+        "ru": "У чего приятный запах?",
+        "en": "Which one smells pleasant?"
+      },
+      "hint": {
+        "uz": "Xushboʻyini top.",
+        "ru": "Найди ароматное.",
+        "en": "Find the fragrant one."
+      },
+      "explanation": {
+        "uz": "Atirgulning hidi yoqimli.",
+        "ru": "Роза пахнет приятно.",
+        "en": "A rose smells pleasant."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🌹",
+              "label": {
+                "uz": "atirgul",
+                "ru": "роза",
+                "en": "rose"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🚗",
+              "label": {
+                "uz": "tutun",
+                "ru": "дым",
+                "en": "exhaust"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🗑️",
+              "label": {
+                "uz": "axlat",
+                "ru": "мусор",
+                "en": "rubbish"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hid taratadigan narsani nomi bilan juftla!",
+        "ru": "Соедини пахнущее с названием!",
+        "en": "Match the smelly thing to its name!"
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Смотри на картинку.",
+        "en": "Look at the picture."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🌹"
+              },
+              "b": {
+                "label": {
+                  "uz": "atirgul",
+                  "ru": "роза",
+                  "en": "rose"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍋"
+              },
+              "b": {
+                "label": {
+                  "uz": "limon",
+                  "ru": "лимон",
+                  "en": "lemon"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍞"
+              },
+              "b": {
+                "label": {
+                  "uz": "non",
+                  "ru": "хлеб",
+                  "en": "bread"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Burun — bu qanday aʼzo?",
+        "ru": "Нос — какой это орган?",
+        "en": "The nose is an organ of what?"
+      },
+      "hint": {
+        "uz": "Burun nima qiladi?",
+        "ru": "Что делает нос?",
+        "en": "What does the nose do?"
+      },
+      "explanation": {
+        "uz": "Burun — hid bilish aʼzosi.",
+        "ru": "Нос — орган обоняния.",
+        "en": "The nose is for smelling."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "hid bilish",
+              "ru": "обоняние",
+              "en": "smelling"
+            },
+            {
+              "uz": "koʻrish",
+              "ru": "зрение",
+              "en": "seeing"
+            },
+            {
+              "uz": "eshitish",
+              "ru": "слух",
+              "en": "hearing"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

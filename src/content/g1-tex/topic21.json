@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-21",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Quvnoq hasharotlar",
+    "ru": "Весёлые насекомые",
+    "en": "Cheerful insects"
+  },
+  "recall": {
+    "uz": "Bugun plastilindan quvnoq asalari yasaymiz.",
+    "ru": "Сегодня из пластилина слепим весёлую пчёлку.",
+    "en": "Today we make a cheerful bee from plastilin."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Asalari yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Слепи пчёлку. Выполняй каждый этап по рисунку!",
+        "en": "Make a bee. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Sariq va qora — asalari ranglari.",
+        "ru": "Жёлтый и чёрный — цвета пчёлки.",
+        "en": "Yellow and black are the bee's colours."
+      },
+      "explanation": {
+        "uz": "Quvnoq asalari!",
+        "ru": "Весёлая пчёлка!",
+        "en": "A cheerful bee!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "sariq plastilin",
+              "ru": "жёлтый пластилин",
+              "en": "yellow plastilin"
+            },
+            {
+              "uz": "qora plastilin",
+              "ru": "чёрный пластилин",
+              "en": "black plastilin"
+            },
+            {
+              "uz": "taxtakach",
+              "ru": "дощечка",
+              "en": "a work board"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Sariq plastilindan oval tana yasa.",
+              "ru": "Слепи овальное тело из жёлтого пластилина.",
+              "en": "Roll an oval body from yellow plastilin."
+            },
+            {
+              "uz": "Qora yoʻl-yoʻl chiziqlar qoʻy.",
+              "ru": "Добавь чёрные полоски.",
+              "en": "Add black stripes."
+            },
+            {
+              "uz": "Qanot, koʻz va moʻylovni qoʻsh.",
+              "ru": "Добавь крылья, глаза и усики.",
+              "en": "Add wings, eyes and antennae."
+            }
+          ],
+          "art": "bug",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

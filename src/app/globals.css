@@ -107,6 +107,94 @@ body {
     100% 100%;
 }
 
+/* green nature-notebook variant (Tabiiy fanlar subject view) */
+.notebook-green {
+  background-color: #f5fbee;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent calc(var(--line-h) - 1px),
+      #cbe7b6 calc(var(--line-h) - 1px),
+      #cbe7b6 var(--line-h)
+    ),
+    linear-gradient(
+      to right,
+      transparent 56px,
+      rgba(141, 198, 63, 0.5) 56px,
+      rgba(141, 198, 63, 0.5) 58px,
+      transparent 58px
+    );
+  background-size:
+    100% var(--line-h),
+    100% 100%;
+}
+
+/* coral literacy-notebook variant (Alifbe subject view) */
+.notebook-coral {
+  background-color: #fff6f2;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent calc(var(--line-h) - 1px),
+      #f7cdbd calc(var(--line-h) - 1px),
+      #f7cdbd var(--line-h)
+    ),
+    linear-gradient(
+      to right,
+      transparent 56px,
+      rgba(244, 105, 59, 0.5) 56px,
+      rgba(244, 105, 59, 0.5) 58px,
+      transparent 58px
+    );
+  background-size:
+    100% var(--line-h),
+    100% 100%;
+}
+
+/* rose character-education notebook variant (Tarbiya subject view) */
+.notebook-rose {
+  background-color: #fdf1f6;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent calc(var(--line-h) - 1px),
+      #f2c9dd calc(var(--line-h) - 1px),
+      #f2c9dd var(--line-h)
+    ),
+    linear-gradient(
+      to right,
+      transparent 56px,
+      rgba(194, 41, 138, 0.5) 56px,
+      rgba(194, 41, 138, 0.5) 58px,
+      transparent 58px
+    );
+  background-size:
+    100% var(--line-h),
+    100% 100%;
+}
+
+/* teal informatics-notebook variant (Informatika subject view) */
+.notebook-teal {
+  background-color: #eefbfa;
+  background-image:
+    linear-gradient(
+      to bottom,
+      transparent calc(var(--line-h) - 1px),
+      #bce7e3 calc(var(--line-h) - 1px),
+      #bce7e3 var(--line-h)
+    ),
+    linear-gradient(
+      to right,
+      transparent 56px,
+      rgba(18, 166, 160, 0.5) 56px,
+      rgba(18, 166, 160, 0.5) 58px,
+      transparent 58px
+    );
+  background-size:
+    100% var(--line-h),
+    100% 100%;
+}
+
 /* squared math-notebook paper (daftar katagi) */
 .grid-paper {
   background-color: #ffffff;

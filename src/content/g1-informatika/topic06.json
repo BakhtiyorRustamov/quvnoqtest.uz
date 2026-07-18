@@ -1,0 +1,602 @@
+{
+  "topicId": "g1-informatika-06",
+  "subjectKey": "g1-informatika",
+  "emojis": "👅🍬🍋🌶️",
+  "title": {
+    "uz": "Turli xil taʼmlar",
+    "ru": "Разные вкусы",
+    "en": "Different tastes"
+  },
+  "recall": {
+    "uz": "Til — taʼm bilish aʼzosi. Til bilan shirin, nordon, achchiq va shoʻr taʼmlarni farqlaymiz. Asal shirin, limon nordon.",
+    "ru": "Язык — орган вкуса. Языком мы различаем сладкое, кислое, горькое и солёное. Мёд сладкий, лимон кислый.",
+    "en": "The tongue is the organ of taste. With it we tell sweet, sour, bitter and salty. Honey is sweet, lemon is sour."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi aʼzo bilan taʼmni bilamiz?",
+        "ru": "Каким органом чувствуем вкус?",
+        "en": "Which organ do we taste with?"
+      },
+      "hint": {
+        "uz": "U ogʻzimizda.",
+        "ru": "Он во рту.",
+        "en": "It is in the mouth."
+      },
+      "explanation": {
+        "uz": "Biz til bilan taʼmni bilamiz.",
+        "ru": "Мы чувствуем вкус языком.",
+        "en": "We taste with our tongue."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "язык",
+                "en": "tongue"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni taʼmi boʻyicha qutilarga ajrat!",
+        "ru": "Разложи по вкусу!",
+        "en": "Sort the foods by taste!"
+      },
+      "hint": {
+        "uz": "Avval rasmni, keyin qutini bos.",
+        "ru": "Сначала картинку, потом ящик.",
+        "en": "Tap a picture, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Taʼmlarga ajratding.",
+        "ru": "Молодец! Разложил по вкусам.",
+        "en": "Great! Sorted by taste."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "sh",
+              "label": {
+                "uz": "Shirin",
+                "ru": "Сладкий",
+                "en": "Sweet"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "uz": "Nordon",
+                "ru": "Кислый",
+                "en": "Sour"
+              }
+            },
+            {
+              "id": "ac",
+              "label": {
+                "uz": "Achchiq",
+                "ru": "Горький",
+                "en": "Bitter"
+              }
+            },
+            {
+              "id": "so",
+              "label": {
+                "uz": "Shoʻr",
+                "ru": "Солёный",
+                "en": "Salty"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍬",
+              "label": {
+                "uz": "konfet",
+                "ru": "конфета",
+                "en": "candy"
+              },
+              "bin": "sh"
+            },
+            {
+              "emoji": "🍯",
+              "label": {
+                "uz": "asal",
+                "ru": "мёд",
+                "en": "honey"
+              },
+              "bin": "sh"
+            },
+            {
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "🍊",
+              "label": {
+                "uz": "mandarin",
+                "ru": "мандарин",
+                "en": "tangerine"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "🌶️",
+              "label": {
+                "uz": "qalampir",
+                "ru": "перец",
+                "en": "pepper"
+              },
+              "bin": "ac"
+            },
+            {
+              "emoji": "🍟",
+              "label": {
+                "uz": "sho'r kartoshka",
+                "ru": "солёная картошка",
+                "en": "salty fries"
+              },
+              "bin": "so"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Limonning taʼmi qanday?",
+        "ru": "Какой вкус у лимона?",
+        "en": "What does a lemon taste like?"
+      },
+      "hint": {
+        "uz": "Nordonmi, shirinmi?",
+        "ru": "Кислый или сладкий?",
+        "en": "Sour or sweet?"
+      },
+      "explanation": {
+        "uz": "Limon nordon.",
+        "ru": "Лимон кислый.",
+        "en": "A lemon is sour."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "nordon",
+              "ru": "кислый",
+              "en": "sour"
+            },
+            {
+              "uz": "shirin",
+              "ru": "сладкий",
+              "en": "sweet"
+            },
+            {
+              "uz": "shoʻr",
+              "ru": "солёный",
+              "en": "salty"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Shirin narsalarni belgila!",
+        "ru": "Отметь сладкое!",
+        "en": "Tap the sweet things!"
+      },
+      "hint": {
+        "uz": "Faqat shirinlarini tanla.",
+        "ru": "Выбери только сладкое.",
+        "en": "Pick only sweet ones."
+      },
+      "explanation": {
+        "uz": "Ular shirin.",
+        "ru": "Они сладкие.",
+        "en": "They are sweet."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍬",
+              "label": {
+                "uz": "konfet",
+                "ru": "конфета",
+                "en": "candy"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍯",
+              "label": {
+                "uz": "asal",
+                "ru": "мёд",
+                "en": "honey"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍫",
+              "label": {
+                "uz": "shokolad",
+                "ru": "шоколад",
+                "en": "chocolate"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍟",
+              "label": {
+                "uz": "sho'r kartoshka",
+                "ru": "солёная картошка",
+                "en": "salty fries"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tuzning taʼmi shoʻr.",
+        "ru": "Соль солёная на вкус.",
+        "en": "Salt tastes salty."
+      },
+      "hint": {
+        "uz": "Bir chimdim tuzni tatib koʻr.",
+        "ru": "Попробуй щепотку соли.",
+        "en": "Taste a pinch of salt."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tuz shoʻr.",
+        "ru": "Верно! Соль солёная.",
+        "en": "True! Salt is salty."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍟",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani taʼmi bilan ula!",
+        "ru": "Соедини еду с её вкусом!",
+        "en": "Match each food to its taste!"
+      },
+      "hint": {
+        "uz": "Taʼmini oʻyla.",
+        "ru": "Подумай о вкусе.",
+        "en": "Think of the taste."
+      },
+      "explanation": {
+        "uz": "Barcha taʼmlarni topding!",
+        "ru": "Ты нашёл все вкусы!",
+        "en": "You found all the tastes!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🍋"
+              },
+              "right": {
+                "label": {
+                  "uz": "nordon",
+                  "ru": "кислый",
+                  "en": "sour"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍬"
+              },
+              "right": {
+                "label": {
+                  "uz": "shirin",
+                  "ru": "сладкий",
+                  "en": "sweet"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍟"
+              },
+              "right": {
+                "label": {
+                  "uz": "shoʻr",
+                  "ru": "солёный",
+                  "en": "salty"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (taʼmi boshqa)",
+        "ru": "Нажми лишнее! (другой вкус)",
+        "en": "Tap the odd one! (different taste)"
+      },
+      "hint": {
+        "uz": "Qaysi biri shirin emas?",
+        "ru": "Что не сладкое?",
+        "en": "Which is not sweet?"
+      },
+      "explanation": {
+        "uz": "Limon nordon, qolganlari shirin.",
+        "ru": "Лимон кислый, остальные сладкие.",
+        "en": "The lemon is sour, the rest are sweet."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "shirin narsalar",
+            "ru": "сладкое",
+            "en": "sweet things"
+          },
+          "tiles": [
+            {
+              "text": "asal"
+            },
+            {
+              "text": "konfet"
+            },
+            {
+              "text": "shakar"
+            },
+            {
+              "text": "limon",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "U ogʻzingda, taʼmni biladi.",
+        "ru": "Он во рту, знает вкус.",
+        "en": "In your mouth, it knows taste."
+      },
+      "explanation": {
+        "uz": "Javob — til!",
+        "ru": "Ответ — язык!",
+        "en": "The answer is the tongue!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Ogʻiz ichida yashar,",
+              "ru": "Живёт во рту,",
+              "en": "It lives in the mouth,"
+            },
+            {
+              "uz": "Har taʼmni u bilar.",
+              "ru": "знает каждый вкус.",
+              "en": "and knows every taste."
+            }
+          ],
+          "options": [
+            {
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "язык",
+                "en": "tongue"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              }
+            },
+            {
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Achchiq taʼmli narsa qaysi?",
+        "ru": "Что горькое на вкус?",
+        "en": "Which one tastes bitter?"
+      },
+      "hint": {
+        "uz": "Achchigʻini top.",
+        "ru": "Найди горькое.",
+        "en": "Find the bitter one."
+      },
+      "explanation": {
+        "uz": "Qalampir achchiq.",
+        "ru": "Перец горький.",
+        "en": "Pepper is bitter."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qalampir",
+              "ru": "перец",
+              "en": "pepper"
+            },
+            {
+              "uz": "olma",
+              "ru": "яблоко",
+              "en": "apple"
+            },
+            {
+              "uz": "asal",
+              "ru": "мёд",
+              "en": "honey"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysining taʼmi shirin?",
+        "ru": "Что сладкое на вкус?",
+        "en": "Which one is sweet?"
+      },
+      "hint": {
+        "uz": "Shirinini top.",
+        "ru": "Найди сладкое.",
+        "en": "Find the sweet one."
+      },
+      "explanation": {
+        "uz": "Konfet shirin.",
+        "ru": "Конфета сладкая.",
+        "en": "Candy is sweet."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🍭",
+              "label": {
+                "uz": "konfet",
+                "ru": "леденец",
+                "en": "lollipop"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🌶️",
+              "label": {
+                "uz": "qalampir",
+                "ru": "перец",
+                "en": "pepper"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -5,13 +5,17 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
-import { G1_MATH_TOPICS } from '@/content';
+import { G1_MATH_TOPICS, G1_ONA_TOPICS } from '@/content';
 import { pick, type L10n } from '@/lib/i18n-config';
 import { api } from '@/lib/client';
 import { PRESIDENT_EXAM_CONFIG, type ExamQuestion } from '@/content/g1-math/exam';
 import { DTM_EXAM_CONFIG } from '@/content/g1-math/dtm-exam';
+import { ONA_DTM_EXAM_CONFIG } from '@/content/g1-ona/dtm-exam';
+import { FIKR_EXAM_CONFIG } from '@/content/g1-fikr/exam';
+import { FIKR2_EXAM_CONFIG } from '@/content/g1-fikr/exam2';
+import { FIKR3_EXAM_CONFIG } from '@/content/g1-fikr/exam3';
 
-export type ExamVariant = 'president' | 'dtm';
+export type ExamVariant = 'president' | 'dtm' | 'ona' | 'fikr' | 'fikr2' | 'fikr3';
 
 type Phase = 'intro' | 'quiz' | 'done';
 
@@ -116,8 +120,21 @@ function ExamImage({ image, note, locale }: { image: { src: string; prompt: L10n
 export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVariant }) {
   // Pick the config on the client — passing the config object (which holds a
   // function) across the Server→Client boundary is not allowed by Next.js.
-  const config = variant === 'dtm' ? DTM_EXAM_CONFIG : PRESIDENT_EXAM_CONFIG;
+  const config =
+    variant === 'fikr3' ? FIKR3_EXAM_CONFIG
+    : variant === 'fikr2' ? FIKR2_EXAM_CONFIG
+    : variant === 'fikr' ? FIKR_EXAM_CONFIG
+    : variant === 'ona' ? ONA_DTM_EXAM_CONFIG
+    : variant === 'dtm' ? DTM_EXAM_CONFIG
+    : PRESIDENT_EXAM_CONFIG;
   const { title, intro, minutes, count, build, logoSrc, topicKey } = config;
+  // Which subject's lessons the results screen links to for review, and where
+  // "Back"/"Dashboard" return to. Fikrlash is a pure practice area — it has no
+  // lessons of its own, so its results screen skips the review-topics card.
+  const reviewTopicsList = variant === 'ona' ? G1_ONA_TOPICS : G1_MATH_TOPICS;
+  const isFikr = variant === 'fikr' || variant === 'fikr2' || variant === 'fikr3';
+  const backHref = isFikr ? '/dashboard/g1-fikr' : variant === 'ona' ? '/dashboard/g1-ona' : '/dashboard/g1-math';
+  const hasLessonReco = !isFikr;
   const locale = useLocale();
   const t = S[locale] || S.uz;
 
@@ -128,7 +145,7 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
   const [secondsLeft, setSecondsLeft] = useState(minutes * 60);
   const saved = useRef(false);
 
-  const topicByN = useMemo(() => new Map(G1_MATH_TOPICS.map((tp) => [tp.n, tp])), []);
+  const topicByN = useMemo(() => new Map(reviewTopicsList.map((tp) => [tp.n, tp])), [reviewTopicsList]);
 
   const finish = useCallback(
     (final: (number | null)[]) => {
@@ -179,7 +196,7 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
   if (phase === 'intro') {
     return (
       <main className="min-h-screen pb-16">
-        <BackBar backHref="/dashboard/g1-math" showLang />
+        <BackBar backHref={backHref} showLang />
         <div className="max-w-2xl mx-auto px-4">
           <div className="text-center mt-6">
             <img src={logoSrc} alt="" aria-hidden className="w-24 h-24 mx-auto rounded-full shadow-card object-cover" />
@@ -212,7 +229,7 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
     const low = secondsLeft <= 60;
     return (
       <main className="min-h-screen pb-10">
-        <BackBar backHref="/dashboard/g1-math" showLang />
+        <BackBar backHref={backHref} showLang />
         <div className="max-w-2xl mx-auto px-4">
           {/* timer + progress */}
           <div className="flex items-center justify-between mt-3">
@@ -249,9 +266,16 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
                       answers[idx] === ci ? 'ring-4 ring-brand-blue bg-brand-blue/10' : ''
                     }`}
                   >
-                    <span className="inline-grid place-items-center w-8 h-8 rounded-full bg-brand-blue/15 text-brand-blue mr-2 text-sm">
-                      {String.fromCharCode(65 + ci)}
+                    {/* OMR-style bubble: blank circle that fills with a black dot once chosen */}
+                    <span
+                      aria-hidden
+                      className={`mr-2.5 inline-grid h-7 w-7 shrink-0 place-items-center rounded-full border-[2.5px] align-middle transition-colors ${
+                        answers[idx] === ci ? 'border-ink' : 'border-ink/35'
+                      }`}
+                    >
+                      {answers[idx] === ci && <span className="h-3.5 w-3.5 rounded-full bg-ink" />}
                     </span>
+                    <span className="mr-1 font-black text-ink/55">{String.fromCharCode(65 + ci)})</span>
                     {pick(c, locale)}
                   </button>
                 ))}
@@ -321,7 +345,7 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
 
   return (
     <main className="min-h-screen pb-16">
-      <BackBar backHref="/dashboard/g1-math" showLang />
+      <BackBar backHref={backHref} showLang />
       <div className="max-w-2xl mx-auto px-4 text-center">
         <div className="text-6xl mt-4">{score >= count * 0.8 ? '🏆' : score >= count * 0.5 ? '🎉' : '💪'}</div>
         {timedOut && <p className="font-black text-error mt-1">{t.timeUp}</p>}
@@ -336,7 +360,7 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
           <button onClick={retry} className="btn-primary text-lg px-8 py-4">
             🔄 {t.retry}
           </button>
-          <Link href="/dashboard/g1-math" className="btn-ghost text-lg px-8 py-4">
+          <Link href={backHref} className="btn-ghost text-lg px-8 py-4">
             🏠 {t.dashboard}
           </Link>
         </div>
@@ -377,7 +401,9 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
           })}
         </ol>
 
-        {/* topic-review recommendations — shown AFTER the question review */}
+        {/* topic-review recommendations — shown AFTER the question review
+            (skipped for practice-only subjects with no lessons) */}
+        {hasLessonReco && (
         <div className="card p-5 mt-8 text-left">
           <h2 className="font-black text-ink text-lg mb-2">📚 {t.recoTitle}</h2>
           {recoNs.length === 0 ? (
@@ -400,6 +426,7 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
             </div>
           )}
         </div>
+        )}
 
         <div className="mt-6">
           <button onClick={retry} className="btn-primary text-lg px-8 py-4">

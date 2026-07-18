@@ -1,0 +1,535 @@
+{
+  "topicId": "g1-alifbe-42",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🧅👞🍚",
+  "title": {
+    "uz": "«P p» — oʻqish mashqi",
+    "ru": "Буква «P p» — чтение",
+    "en": "Letter “P p” — reading"
+  },
+  "recall": {
+    "uz": "«P» harfini oʻrgandik. Endi matn oʻqiymiz: piyoz, poyabzal, palov. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «P». Теперь читаем текст: piyoz, poyabzal, palov. Тренируем чтение!",
+    "en": "We learned the letter “P”. Now we read a text: piyoz, poyabzal, palov. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🧅 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🧅 Прочитай и нажми верно написанное слово!",
+        "en": "🧅 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «piyoz».",
+        "ru": "Прочитай: «piyoz».",
+        "en": "Read it: “piyoz”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «piyoz».",
+        "ru": "Верно — «piyoz».",
+        "en": "Correct — “piyoz”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🧅",
+          "options": [
+            {
+              "id": "ok",
+              "word": "piyoz",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "biyoz"
+            },
+            {
+              "id": "w2",
+              "word": "piyos"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «piyoz» soʻzini tuz!",
+        "ru": "Составь слово «piyoz»!",
+        "en": "Build the word “piyoz”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «piyoz» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «piyoz».",
+        "en": "Great! You read “piyoz”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🧅",
+          "word": "piyoz",
+          "label": {
+            "uz": "piyoz",
+            "ru": "лук",
+            "en": "onion"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь на вопрос.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение внимательно.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «piyoz».",
+        "ru": "Верный ответ — «piyoz».",
+        "en": "The right answer is “piyoz”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🧅",
+          "text": {
+            "uz": "Ota palov oldi.\nParvina piyoz oldi.",
+            "ru": "Ota palov oldi.\nParvina piyoz oldi.",
+            "en": "Ota palov oldi.\nParvina piyoz oldi."
+          },
+          "question": {
+            "uz": "Parvina nima oldi?",
+            "ru": "Parvina nima oldi?",
+            "en": "Parvina nima oldi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "piyoz",
+                "ru": "piyoz",
+                "en": "piyoz"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "palov",
+                "ru": "palov",
+                "en": "palov"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "👞 «poyabzal» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "👞 Похлопай слово «poyabzal» по слогам!",
+        "en": "👞 Clap the word “poyabzal” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«poyabzal» — 3 boʻgʻin.",
+        "ru": "«poyabzal» — 3 слога.",
+        "en": "“poyabzal” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "👞",
+          "word": {
+            "uz": "poyabzal",
+            "ru": "poyabzal",
+            "en": "poyabzal"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«P» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «P»!",
+        "en": "Tap the words with the “P” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «p» tovushi bor.",
+        "ru": "В них есть звук «p».",
+        "en": "They have the “p” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🧅",
+              "label": {
+                "uz": "piyoz",
+                "ru": "piyoz",
+                "en": "piyoz"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👞",
+              "label": {
+                "uz": "poyabzal",
+                "ru": "poyabzal",
+                "en": "poyabzal"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍚",
+              "label": {
+                "uz": "palov",
+                "ru": "palov",
+                "en": "palov"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«piyoz» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «piyoz». Найди картинку!",
+        "en": "Read “piyoz”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«piyoz» — 🧅.",
+        "ru": "«piyoz» — 🧅.",
+        "en": "“piyoz” is 🧅."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🧅",
+              "label": {
+                "uz": "piyoz",
+                "ru": "лук",
+                "en": "onion"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "👞",
+              "label": {
+                "uz": "poyabzal",
+                "ru": "poyabzal",
+                "en": "poyabzal"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🍚",
+              "label": {
+                "uz": "palov",
+                "ru": "palov",
+                "en": "palov"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🧅"
+              },
+              "right": {
+                "label": {
+                  "uz": "piyoz",
+                  "ru": "piyoz",
+                  "en": "piyoz"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👞"
+              },
+              "right": {
+                "label": {
+                  "uz": "poyabzal",
+                  "ru": "poyabzal",
+                  "en": "poyabzal"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍚"
+              },
+              "right": {
+                "label": {
+                  "uz": "palov",
+                  "ru": "palov",
+                  "en": "palov"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ota … oldi.",
+        "ru": "Составь предложение: Ota … oldi.",
+        "en": "Order the words: Ota … oldi."
+      },
+      "hint": {
+        "uz": "Ota — palov — oldi.",
+        "ru": "Ota — palov — oldi.",
+        "en": "Ota — palov — oldi."
+      },
+      "explanation": {
+        "uz": "«Ota palov oldi.» — gap oʻqiding!",
+        "ru": "«Ota palov oldi.» — предложение!",
+        "en": "“Ota palov oldi.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ota",
+                "ru": "Ota",
+                "en": "Ota"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "palov",
+                "ru": "palov",
+                "en": "palov"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🧅"
+              },
+              "b": {
+                "label": {
+                  "uz": "piyoz",
+                  "ru": "piyoz",
+                  "en": "piyoz"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👞"
+              },
+              "b": {
+                "label": {
+                  "uz": "poyabzal",
+                  "ru": "poyabzal",
+                  "en": "poyabzal"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍚"
+              },
+              "b": {
+                "label": {
+                  "uz": "palov",
+                  "ru": "palov",
+                  "en": "palov"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«piyoz» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «piyoz»?",
+        "en": "How many sounds are in “piyoz”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana. (harflab sana)",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«piyoz»da 5 ta tovush bor.",
+        "ru": "В «piyoz» 5 звука.",
+        "en": "“piyoz” has 5 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

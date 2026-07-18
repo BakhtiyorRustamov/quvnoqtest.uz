@@ -1,0 +1,430 @@
+{
+  "topicId": "g1-oqish-10",
+  "subjectKey": "g1-oqish",
+  "emojis": "🌨️✨💎",
+  "title": {
+    "uz": "Kumushrang qish",
+    "ru": "Серебристая зима",
+    "en": "The silvery winter"
+  },
+  "recall": {
+    "uz": "Bugun qish fasli haqidagi matnni oʻqiymiz: nega odamlar qishni «kumush qish» deb atashadi? Qor aslida nima ekanini bilib olamiz, topishmoq yechamiz va qish oylarini takrorlaymiz.",
+    "ru": "Сегодня читаем текст о зиме: почему её называют «серебряной»? Узнаем, что такое снег на самом деле, разгадаем загадку и повторим зимние месяцы.",
+    "en": "Today we read a text about winter: why do people call it “silver winter”? We learn what snow really is, solve a riddle and review the winter months."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Kumushrang qish",
+          "variant": "story",
+          "audio": "g1-oqish-10-q1",
+          "lines": [
+            "Har faslning oʻz koʻrki bor.",
+            "Qish esa oʻzgacha goʻzal fasl: u dekabr, yanvar va fevral oylarini oʻz ichiga oladi.",
+            "Qishda atrof qorga burkanadi.",
+            "Quyosh nurida qor mayda zarralardek jimirlab, xuddi kumushdek tovlanadi.",
+            "Shu bois odamlar qishni «kumush qish» deb atashadi.",
+            "Bilasizmi, qor — sovuqda qotib qolgan suv bugʻi.",
+            "Qiziqki, ikkita bir xil qor parchasi uchramaydi: ularning har biri oʻziga xos naqshga ega.",
+            "Qorning ohista yogʻishini kuzatish juda maroqli!"
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Matnni diqqat bilan oʻqing!",
+        "ru": "Внимательно прочитай текст!",
+        "en": "Read the text carefully!"
+      },
+      "hint": {
+        "uz": "Har bir xatboshini alohida oʻqing.",
+        "ru": "Читай каждый абзац отдельно.",
+        "en": "Read each paragraph separately."
+      },
+      "explanation": {
+        "uz": "Matn qish fasli va qorning sirlari haqida.",
+        "ru": "Текст о зиме и тайнах снега.",
+        "en": "The text is about winter and the secrets of snow."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Dekabr, yanvar, fevral",
+              "ru": "Декабрь, январь, февраль",
+              "en": "December, January, February"
+            },
+            {
+              "uz": "Mart, aprel, may",
+              "ru": "Март, апрель, май",
+              "en": "March, April, May"
+            },
+            {
+              "uz": "Iyun, iyul, avgust",
+              "ru": "Июнь, июль, август",
+              "en": "June, July, August"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qish fasli qaysi oylardan iborat?",
+        "ru": "Из каких месяцев состоит зима?",
+        "en": "Which months make up winter?"
+      },
+      "hint": {
+        "uz": "Javob matnning birinchi xatboshisida.",
+        "ru": "Ответ в первом абзаце.",
+        "en": "The answer is in the first paragraph."
+      },
+      "explanation": {
+        "uz": "Qish — dekabr, yanvar va fevral oylaridan iborat.",
+        "ru": "Зима состоит из декабря, января и февраля.",
+        "en": "Winter consists of December, January and February."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Qor kumushdek yaltiragani uchun",
+              "ru": "Потому что снег блестит, как серебро",
+              "en": "Because snow sparkles like silver"
+            },
+            {
+              "uz": "Qishda kumush arzon boʻlgani uchun",
+              "ru": "Потому что зимой серебро дешевле",
+              "en": "Because silver is cheap in winter"
+            },
+            {
+              "uz": "Qish oylari kumushdan yasalgani uchun",
+              "ru": "Потому что месяцы сделаны из серебра",
+              "en": "Because the months are made of silver"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Nega odamlar qishni «kumush qish» deyishadi?",
+        "ru": "Почему люди называют зиму «серебряной»?",
+        "en": "Why do people call winter “silver winter”?"
+      },
+      "hint": {
+        "uz": "Quyoshda qor qanday tovlanadi?",
+        "ru": "Как переливается снег на солнце?",
+        "en": "How does snow shimmer in the sun?"
+      },
+      "explanation": {
+        "uz": "Quyosh nurida qor zarralari kumushdek jimirlab tovlanadi.",
+        "ru": "На солнце снежинки переливаются, как серебро.",
+        "en": "In sunlight, snow sparkles just like silver."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Sovuqda qotib qolgan suv bugʻi",
+              "ru": "Замёрзший водяной пар",
+              "en": "Frozen water vapour"
+            },
+            {
+              "uz": "Osmondan tushgan paxta",
+              "ru": "Вата, упавшая с неба",
+              "en": "Cotton fallen from the sky"
+            },
+            {
+              "uz": "Maydalangan oq qogʻoz",
+              "ru": "Измельчённая белая бумага",
+              "en": "Shredded white paper"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Matnga koʻra, qor aslida nima?",
+        "ru": "Что такое снег, согласно тексту?",
+        "en": "According to the text, what is snow really?"
+      },
+      "hint": {
+        "uz": "Javob oxirgi xatboshida.",
+        "ru": "Ответ в последнем абзаце.",
+        "en": "The answer is in the last paragraph."
+      },
+      "explanation": {
+        "uz": "Qor — sovuqda qotib qolgan suv bugʻi.",
+        "ru": "Снег — это замёрзший на морозе водяной пар.",
+        "en": "Snow is water vapour frozen by the cold."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yoʻq, har biri oʻziga xos",
+              "ru": "Нет, каждая — особенная",
+              "en": "No, each one is unique"
+            },
+            {
+              "uz": "Ha, hammasi bir xil",
+              "ru": "Да, все одинаковые",
+              "en": "Yes, they are all the same"
+            },
+            {
+              "uz": "Faqat kechasi bir xil boʻladi",
+              "ru": "Одинаковые только ночью",
+              "en": "They match only at night"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Ikkita bir xil qor parchasi uchraydimi?",
+        "ru": "Бывают ли две одинаковые снежинки?",
+        "en": "Can two snowflakes be exactly alike?"
+      },
+      "hint": {
+        "uz": "Har bir qor parchasining naqshi qanday?",
+        "ru": "Какой узор у каждой снежинки?",
+        "en": "What kind of pattern does each snowflake have?"
+      },
+      "explanation": {
+        "uz": "Ikkita bir xil qor parchasi uchramaydi — har birining naqshi oʻziga xos.",
+        "ru": "Двух одинаковых снежинок не бывает — у каждой свой узор.",
+        "en": "No two snowflakes are alike — each has its own pattern."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "fazilat",
+              "right": "yaxshi xislat"
+            },
+            {
+              "left": "zarra",
+              "right": "mayda boʻlak"
+            },
+            {
+              "left": "burkanmoq",
+              "right": "oʻranmoq"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«zarra» — juda mayda boʻlak.",
+        "ru": "«zarra» — очень мелкая частица.",
+        "en": "“zarra” is a tiny particle."
+      },
+      "explanation": {
+        "uz": "fazilat = yaxshi xislat; zarra = mayda boʻlak; burkanmoq = oʻranmoq.",
+        "ru": "fazilat = достоинство; zarra = частица; burkanmoq = укутаться.",
+        "en": "fazilat = a good quality; zarra = a tiny particle; burkanmoq = to wrap oneself."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Qor",
+              "ru": "Снег",
+              "en": "Snow"
+            },
+            {
+              "uz": "Paxta",
+              "ru": "Вата",
+              "en": "Cotton"
+            },
+            {
+              "uz": "Barg",
+              "ru": "Листья",
+              "en": "Leaves"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Topishmoq: «Osmondan oq par yogʻar, kaftingda suv boʻlib qolar». Bu nima?",
+        "ru": "Загадка: «С неба падает белый пух, а на ладони становится водой». Что это?",
+        "en": "Riddle: “White down falls from the sky, but turns to water on your palm.” What is it?"
+      },
+      "hint": {
+        "uz": "U sovuqda yogʻadi, issiqda erib ketadi.",
+        "ru": "Он идёт в мороз и тает в тепле.",
+        "en": "It falls in the cold and melts in warmth."
+      },
+      "explanation": {
+        "uz": "Bu — qor: kaftga qoʻnsa, erib suvga aylanadi.",
+        "ru": "Это снег: на ладони он тает и превращается в воду.",
+        "en": "It is snow: it melts into water on your palm."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Qor — sovuqda qotib qolgan suv ",
+          "after": ".",
+          "choices": [
+            "bugʻi",
+            "toshi",
+            "guli"
+          ],
+          "answer": "bugʻi",
+          "emoji": "💨",
+          "clue": {
+            "uz": "Qaynagan choynakdan nima chiqadi?",
+            "ru": "Что поднимается из кипящего чайника?",
+            "en": "What rises from a boiling kettle?"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Matnda: «qor — sovuqda qotib qolgan suv ...».",
+        "ru": "В тексте: «снег — замёрзший водяной ...».",
+        "en": "The text says snow is frozen water …"
+      },
+      "explanation": {
+        "uz": "Qor — sovuqda qotib qolgan suv bugʻi.",
+        "ru": "Снег — это замёрзший водяной пар.",
+        "en": "Snow is frozen water vapour."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "syllable_build",
+        "props": {
+          "syllables": [
+            "ku",
+            "mush"
+          ],
+          "emoji": "💎",
+          "clue": {
+            "uz": "Oq-yaltiroq qimmatbaho metall",
+            "ru": "Белый блестящий драгоценный металл",
+            "en": "A shiny white precious metal"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻgʻinlardan soʻz tuz!",
+        "ru": "Собери слово из слогов!",
+        "en": "Build the word from syllables!"
+      },
+      "hint": {
+        "uz": "Qish shu metall nomi bilan ataladi.",
+        "ru": "Зиму называют именем этого металла.",
+        "en": "Winter is named after this metal."
+      },
+      "explanation": {
+        "uz": "ku-mush → «kumush». Qor kumushdek tovlanadi.",
+        "ru": "ku-mush → «kumush» (серебро). Снег блестит, как серебро.",
+        "en": "ku-mush → “kumush” (silver). Snow sparkles like silver."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "tiles": [
+            {
+              "text": "dekabr"
+            },
+            {
+              "text": "yanvar"
+            },
+            {
+              "text": "iyun",
+              "odd": true
+            },
+            {
+              "text": "fevral"
+            }
+          ],
+          "emoji": "🗓️",
+          "clue": {
+            "uz": "Qish oylari",
+            "ru": "Зимние месяцы",
+            "en": "Winter months"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi oy qish fasliga tegishli emas? Ortiqchasini bos!",
+        "ru": "Какой месяц не зимний? Нажми лишнее!",
+        "en": "Which month is not a winter month? Tap the odd one!"
+      },
+      "hint": {
+        "uz": "Iyun — yoz oyi.",
+        "ru": "Июнь — летний месяц.",
+        "en": "June is a summer month."
+      },
+      "explanation": {
+        "uz": "Dekabr, yanvar, fevral — qish oylari; iyun esa yozga tegishli.",
+        "ru": "Декабрь, январь, февраль — зимние месяцы, а июнь — летний.",
+        "en": "December, January and February are winter months; June belongs to summer."
+      }
+    }
+  ],
+  "skipRecall": true
+}

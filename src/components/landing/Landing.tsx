@@ -1,18 +1,18 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { AnimatePresence, LayoutGroup, motion, useReducedMotion, useSpring } from 'framer-motion';
 import AnimatedLogo from './AnimatedLogo';
 import LangSwitcher from '@/components/ui/LangSwitcher';
-import { GRADES, isUnlockedSubject, type SubjectDef } from '@/content/taxonomy';
+import { GRADES, isUnlockedSubject, unlockedSubjectHref, type SubjectDef } from '@/content/taxonomy';
 import { pick } from '@/lib/i18n-config';
 import { useSound } from '@/components/providers/SoundProvider';
 import GlassCard from './GlassCard';
 import { ParticleField } from './Science';
 import ScrollScene from './ScrollScene';
-import Sections from './Sections';
 import FlashlightDiscovery from './FlashlightDiscovery';
 import FaqSection from './FaqSection';
 import Marquee from './Marquee';
@@ -69,7 +69,7 @@ function SubjectChip({
       }}
       onClick={() => onPick(s)}
       aria-label={pick(s.name, locale)}
-      className={`glass relative block aspect-[5/4] w-full overflow-hidden rounded-2xl text-white shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/70 ${
+      className={`glass relative block h-full min-h-[64px] w-full overflow-hidden rounded-xl text-white shadow-lg focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/70 ${
         unlocked ? 'ring-2 ring-brand-green/80' : ''
       }`}
       style={{ rotateX: rx, rotateY: ry, transformPerspective: 700 }}
@@ -78,32 +78,62 @@ function SubjectChip({
       <span aria-hidden className="absolute inset-0" style={{ background: `radial-gradient(120% 110% at 50% 0%, ${s.color}66, transparent 60%)` }} />
       <span aria-hidden className="absolute -right-5 -top-6 h-20 w-20 rounded-full blur-2xl" style={{ background: s.color, opacity: 0.5 }} />
 
-      {/* illustration + name */}
-      <span className="relative z-10 flex h-full flex-col items-center justify-center gap-2 px-2 py-3">
-        <motion.img
-          layoutId={`subj-art-${grade}-${s.key}`}
-          src={`/sketches/subj-${s.sketch}.svg`}
-          alt=""
-          aria-hidden
-          draggable={false}
-          className="h-11 w-11 shrink-0 pointer-events-none drop-shadow-[0_2px_6px_rgba(0,0,0,0.45)] sm:h-12 sm:w-12"
-        />
-        <span className="line-clamp-2 rounded-lg border border-white/20 bg-white/10 px-2 py-1 text-center text-[11px] font-extrabold leading-tight backdrop-blur-sm">
+      {/* subject NAME — big and centred (the little sketch icon is intentionally
+          dropped so the name is the clear, readable focus of each card) */}
+      <span className="relative z-10 flex h-full items-center justify-center px-2 py-2.5">
+        <span className="line-clamp-3 text-center text-[11.5px] font-black leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] sm:text-[13.5px]">
           {pick(s.name, locale)}
         </span>
       </span>
 
       {/* status badge */}
       {unlocked ? (
-        <span aria-hidden className="absolute right-1.5 top-1.5 z-10 grid h-6 w-6 place-items-center rounded-full bg-brand-green text-[11px] font-black text-white shadow">
+        <span aria-hidden className="absolute right-1 top-1 z-10 grid h-4 w-4 place-items-center rounded-full bg-brand-green text-[8px] font-black text-white shadow">
           ▶
         </span>
       ) : (
-        <span aria-hidden className="absolute right-1.5 top-1.5 z-10 rounded-full border border-amber-300/70 bg-amber-100/90 px-1.5 py-0.5 text-[10px] leading-none shadow">
+        <span aria-hidden className="absolute right-1 top-1 z-10 rounded-full border border-amber-300/70 bg-amber-100/90 px-1 py-px text-[8px] leading-none shadow">
           🚧
         </span>
       )}
     </motion.button>
+  );
+}
+
+/** Always-visible page scroll indicator: a progress bar across the very top and
+ *  a slim rail with a moving thumb on the right edge (hidden on small phones so
+ *  it never covers content). Updates on scroll + resize. */
+function PageScrollIndicator() {
+  const [p, setP] = useState(0);
+  useEffect(() => {
+    const onScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      setP(max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
+  return (
+    <>
+      <div aria-hidden className="fixed inset-x-0 top-0 z-[60] h-1.5 bg-white/10">
+        <div
+          className="h-full origin-left rounded-r-full transition-transform duration-100 ease-out"
+          style={{ transform: `scaleX(${p})`, background: 'linear-gradient(90deg,#f39a1f,#1fa7e0,#8dc63f)' }}
+        />
+      </div>
+      <div aria-hidden className="fixed right-2 top-1/2 z-[60] hidden h-40 w-1.5 -translate-y-1/2 rounded-full bg-white/12 sm:block">
+        <div
+          className="w-full rounded-full bg-white/85 transition-[top] duration-100 ease-out"
+          style={{ height: 28, position: 'relative', top: `calc(${p} * (100% - 28px))` }}
+        />
+      </div>
+    </>
   );
 }
 
@@ -159,6 +189,24 @@ export default function Landing() {
 
   const openDef = useMemo(() => GRADES.find((g) => g.grade === openGrade) ?? null, [openGrade]);
 
+  /* subject grid scroll indicator — hidden once the list can't scroll further */
+  const gridRef = useRef<HTMLDivElement | null>(null);
+  const [gridAtEnd, setGridAtEnd] = useState(true);
+
+  function measureGrid(el: HTMLDivElement | null) {
+    if (!el) return;
+    setGridAtEnd(el.scrollTop + el.clientHeight >= el.scrollHeight - 8);
+  }
+  function onGridScroll(e: React.UIEvent<HTMLDivElement>) {
+    measureGrid(e.currentTarget);
+  }
+  // re-measure whenever a grade book opens (content height changes)
+  useEffect(() => {
+    if (!openDef) return;
+    const id = setTimeout(() => measureGrid(gridRef.current), 500);
+    return () => clearTimeout(id);
+  }, [openDef]);
+
   function startDemo() {
     play('win');
     router.push('/lesson/g1-math-01');
@@ -166,18 +214,27 @@ export default function Landing() {
 
   function pickSubject(s: SubjectDef) {
     if (!openDef) return;
-    const unlocked = isUnlockedSubject(openDef.grade, s.key);
-    play(unlocked ? 'win' : 'pop');
+    const dest = isUnlockedSubject(openDef.grade, s.key)
+      ? unlockedSubjectHref(openDef.grade, s.key)
+      : null;
+    // Locked subjects have no page yet — the tile just gives a soft "not yet"
+    // tap instead of routing to a dead "coming soon" stub.
+    if (!dest) {
+      play('pop');
+      return;
+    }
+    play('win');
     setFlight({ s, grade: openDef.grade });
-    // Each unlocked subject opens its OWN first lesson (not always maths).
-    const demoLesson = s.key === 'ona-tili-savod' ? '/lesson/g1-ona-01' : '/lesson/g1-math-01';
-    const dest = unlocked ? demoLesson : `/subject/${openDef.grade}/${s.key}`;
     setTimeout(() => router.push(dest), reduce ? 0 : 700);
   }
 
   return (
     <LayoutGroup>
       <main className="relative min-h-screen overflow-x-clip" style={{ background: 'linear-gradient(180deg,#0a0a2e 0%,#0d1b4b 42%,#071a35 100%)' }}>
+        {/* ---- Page-wide scroll indicator: a progress bar pinned to the very top,
+               plus a slim rail on the right so there is always a visible cue. ---- */}
+        {active && <PageScrollIndicator />}
+
         {/* ---- Sticky header ---- */}
         {active && (
           <motion.header
@@ -191,9 +248,15 @@ export default function Landing() {
             {/* On mobile the wide wordmark and the language switch used to collide,
                so we stack them: switcher on top, logo dropped just below it. */}
             <div className="mx-auto flex max-w-6xl flex-col gap-1.5 px-4 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
-              <div className="order-2 w-[150px] sm:order-1 sm:w-[180px]">
+              {/* plain logo (no button chrome) — still routes to the dashboard */}
+              <Link
+                href="/dashboard"
+                aria-label={t('landing.goToDashboard')}
+                title={t('landing.goToDashboard')}
+                className="order-2 block w-[150px] sm:order-1 sm:w-[180px]"
+              >
                 <AnimatedLogo onDark />
-              </div>
+              </Link>
               <div className="order-1 self-end sm:order-2 sm:self-auto">
                 <LangSwitcher />
               </div>
@@ -207,10 +270,7 @@ export default function Landing() {
             <ParticleField count={40} />
 
             <div className="relative z-10 mx-auto max-w-3xl text-center">
-              <span className="anim-first-hit -delay-1 inline-block rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-extrabold uppercase tracking-wide text-white/75 backdrop-blur-sm">
-                {t('landing.kicker')}
-              </span>
-              <h1 className="mt-5 font-black leading-[1.05] text-white text-[clamp(30px,7vw,58px)]">
+              <h1 className="font-black leading-[1.05] text-white text-[clamp(30px,7vw,58px)]">
                 <span className="anim-first-hit -delay-1 block">{t('landing.chooseGrade')}</span>
                 <span className="anim-first-hit -delay-2 block bg-gradient-to-r from-brand-orange via-amber-300 to-brand-blue bg-clip-text text-transparent">
                   {t('landing.tagline')}
@@ -254,19 +314,30 @@ export default function Landing() {
         {/* ---- Scroll-pinned scene (Task 3) ---- */}
         {active && <ScrollScene />}
 
-        {/* ---- Reveal sections A–E (Task 4) ---- */}
-        {active && <Sections onStart={startDemo} />}
-
-        {/* ---- Flashlight discovery (learn, devices, pricing) ---- */}
+        {/* ---- Flashlight discovery ---- */}
         {active && <FlashlightDiscovery />}
 
-        {/* ---- FAQ (moved out of the flashlight zone) ---- */}
+        {/* ---- FAQ ---- */}
         {active && <FaqSection />}
 
-        {/* ---- Subject marquee (Task 5) ---- */}
+        {/* ---- Subject marquee ---- */}
         {active && <Marquee />}
 
-        {/* ---- Footer (Task 6) ---- */}
+        {/* ---- Start CTA — moved down here, right before the footer ---- */}
+        {active && (
+          <section className="px-5 pb-20 pt-4 text-center">
+            <div data-scroll-offset>
+              <h2 className="mx-auto max-w-2xl text-3xl font-black leading-tight text-white sm:text-4xl">
+                {t('landing.banner.title')}
+              </h2>
+              <button onClick={startDemo} className="cta-pulse btn-primary mt-8 text-xl" aria-label={t('landing.banner.cta')}>
+                {t('landing.banner.cta')}
+              </button>
+            </div>
+          </section>
+        )}
+
+        {/* ---- Footer ---- */}
         {active && <SiteFooter />}
 
         {/* ---- Grade → subjects book (existing flow preserved) ---- */}
@@ -286,14 +357,14 @@ export default function Landing() {
                 animate={{ scale: 1, y: 0, opacity: 1 }}
                 exit={{ scale: 0.9, y: 10, opacity: 0 }}
                 transition={{ type: 'spring', stiffness: 200, damping: 24 }}
-                className="relative w-full max-w-3xl overflow-hidden shadow-2xl"
+                className="relative flex h-[94vh] w-full max-w-5xl flex-col overflow-hidden shadow-2xl sm:h-[92vh]"
                 style={{ borderRadius: 24, background: gradeColor(openDef.grade) }}
               >
                 {/* opening front cover */}
                 {!reduce && (
                   <motion.div
                     aria-hidden
-                    className="absolute inset-0 z-20"
+                    className="pointer-events-none absolute inset-0 z-20"
                     style={{ background: gradeColor(openDef.grade), transformOrigin: 'left center', borderRadius: 24 }}
                     initial={{ rotateY: 0 }}
                     animate={{ rotateY: -92, opacity: [1, 1, 0] }}
@@ -307,31 +378,57 @@ export default function Landing() {
                   </motion.div>
                 )}
 
-                {/* inside of the book: dark glass pages with the subjects */}
+                {/* inside of the book: dark glass pages with the subjects.
+                    The panel is near-fullscreen and the tiles are compact so the
+                    whole list fits without scrolling on normal screens. */}
                 <div
-                  className="relative p-4 sm:p-6"
+                  className="relative flex min-h-0 flex-1 flex-col p-3 sm:p-5"
                   style={{ background: `radial-gradient(100% 55% at 50% 0%, ${gradeColor(openDef.grade)}33, transparent 62%), linear-gradient(180deg, #101f4a, #0a1330)` }}
                 >
-                  <div className="flex items-center justify-between mb-4">
-                    <h2 className="font-black text-white text-lg sm:text-2xl drop-shadow">📚 {t('landing.subjectsOf', { grade: openDef.grade })}</h2>
+                  <div className="mb-3 flex shrink-0 items-center justify-between">
+                    <h2 className="font-black text-white text-base sm:text-2xl drop-shadow">📚 {t('landing.subjectsOf', { grade: openDef.grade })}</h2>
                     <button
                       onClick={() => setOpenGrade(null)}
                       aria-label={t('common.close')}
-                      className="grid h-11 w-11 place-items-center rounded-full border border-white/20 bg-white/10 font-black text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+                      className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white/20 bg-white/10 font-black text-white backdrop-blur-sm transition-colors hover:bg-white/20"
                     >
                       ✕
                     </button>
                   </div>
-                  <motion.div
-                    initial="hidden"
-                    animate="show"
-                    variants={{ hidden: {}, show: { transition: { staggerChildren: 0.05, delayChildren: reduce ? 0 : 0.45 } } }}
-                    className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 sm:gap-3 max-h-[62vh] overflow-y-auto px-1 pt-3 pb-2"
-                  >
-                    {openDef.subjects.map((s) => (
-                      <SubjectChip key={s.key} grade={openDef.grade} s={s} locale={locale} onPick={pickSubject} />
-                    ))}
-                  </motion.div>
+
+                  {/* subject grid — fills the panel; only scrolls on very short screens */}
+                  <div className="relative min-h-0 flex-1">
+                    <motion.div
+                      ref={gridRef}
+                      onScroll={onGridScroll}
+                      initial="hidden"
+                      animate="show"
+                      variants={{ hidden: {}, show: { transition: { staggerChildren: 0.04, delayChildren: reduce ? 0 : 0.45 } } }}
+                      className="grid h-full auto-rows-fr grid-cols-3 gap-2 overflow-y-auto overscroll-contain px-0.5 pb-2 sm:grid-cols-4 sm:gap-2.5"
+                      style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
+                    >
+                      {openDef.subjects.map((s) => (
+                        <SubjectChip key={s.key} grade={openDef.grade} s={s} locale={locale} onPick={pickSubject} />
+                      ))}
+                    </motion.div>
+
+                    {/* bottom fade + hint — only appears if the list actually overflows */}
+                    <div
+                      aria-hidden
+                      className="pointer-events-none absolute inset-x-0 bottom-0 flex h-14 items-end justify-center pb-1 transition-opacity duration-300"
+                      style={{
+                        opacity: gridAtEnd ? 0 : 1,
+                        background: 'linear-gradient(to top, #0a1330 12%, rgba(10,19,48,0.75) 45%, transparent 100%)'
+                      }}
+                    >
+                      <span className="flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-white/75">
+                        {t('landing.moreSubjects')}
+                        <svg className="scroll-chevron h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M6 9l6 6 6-6" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             </motion.div>

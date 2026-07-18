@@ -28,6 +28,9 @@ Treat these as authoritative. If registry and this skill disagree, registry wins
 | race_to_answer        | gamified addition drill       | { steps, maxSum } — activity, not 1 graded item |
 | mcq                   | FALLBACK only                 | { prompt, choices[3-4], answerIndex } |
 
+**Oʻqish savodxonligi (reading) has its own component set — see the dedicated
+section "Oʻqish savodxonligi …" below before building any reading lesson.**
+
 ## Mandatory workflow
 
 ### Phase 1 — Read the topic & build a CONCEPT CHECKLIST (REQUIRED, do this FIRST)
@@ -151,6 +154,81 @@ no per-topic tables, no separate report files): the concept checklist with each
 box ticked, total count (should be 10), types used + count of each, any new
 component built, any mcq fallbacks with their componentProposal, and any
 i18nGaps.
+
+## Oʻqish savodxonligi (reading literacy) — components, patterns & wiring
+Reading lessons are NOT math. Each lesson is built around ONE text (poem or
+story) and follows: PRESENT the text → CHECK comprehension → EXPLORE words &
+ideas. Item q1 is the reading passage; the rest are comprehension. Prefer the
+reading components below over `mcq`.
+
+### Reading components (registry keys)
+| type            | use it for                                              | key props |
+|-----------------|---------------------------------------------------------|-----------|
+| karaoke_reading | present a poem/story WITH read-along audio + highlight   | { title, author?, source?, lines:[…], variant:'poem'\|'story', audio:"<topicId>-<itemId>" } |
+| poem_reading    | present a poem, no audio                                 | { title, author?, lines:[…] } |
+| story_reading   | present prose, no audio                                  | { title, paragraphs:[…] } |
+| true_false_ng   | close reading: Toʻgʻri / Notoʻgʻri / Matnda yoʻq         | { statement:{uz,ru,en}, answer:'true'\|'false'\|'ng', why?:{…} } |
+| what_next       | event ORDER — "Keyin nima boʻldi?"                      | { before:{…}, options:[{text:{…}, next?:true}] } — EXACTLY ONE next:true |
+| open_response   | open-ended reflection (UNGRADED, always completes)      | { sample:{…}, starters?:[{…}] } |
+| letter_sequence | "Harflarni toʻgʻri ketma-ketlikda oʻqing" curve puzzle  | { letters:[…], words?:[n,…], phrase, meaning?:{…} } |
+| size_order      | words at growing font sizes → tap smallest→largest to read a proverb | { words:[reading order], phrase, meaning?:{…} } |
+| story_sequence  | "voqealar ketma-ketligini aniqlang" — order event cards | { events:[{text:{…}}] } IN CORRECT ORDER |
+| word_forge      | build words from a letter bank ("KUTUBXONA harflaridan…") | { letters:[…], accept:[words], goal?:N } |
+| book_care       | sort actions as good/bad for a book (happy/sad book faces) | { actions:[{text:{…}, good:boolean}] } |
+| fill_blanks     | multi-blank cloze with a word bank                      | { segments:[{text}|{blank:'answer'}], bank?:[…] } (sentence stays uz) |
+| first_letters   | picture objects → take each first letter → spell a word | { objects:[{emoji, letter, name?:{…}}], word, meaning?:{…} } |
+| cinquain        | "sinkveyn" word-web: pick adjectives/verbs/synonym      | { topic, lines:[{label:{…}, need:N, bank:[…]}] } (ungraded builder) |
+
+`size_order` also does LETTERS by size (pass single letters as `words`, e.g. K,Oʻ,K,L,A,M → KOʻKLAM); `syllable_build` handles scrambled bird/word syllables.
+
+Reuse from the shared registry too: `match_pairs` (izohli lugʻat / glossary),
+`tap_match` (hidden real words in a letter string), `sentence_cloze` &
+`letter_complete` (maqol / word-building), `sentence_order` (make a sentence),
+`odd_one_out` (ortiqcha soʻz). `mcq` stays the last resort.
+
+### Patterns the textbook expects
+- FIRST item = the passage. Use `karaoke_reading` when a uz read-along clip will
+  exist; else `poem_reading` / `story_reading`.
+- Force CAREFUL reading with `true_false_ng` (the "Matnda yoʻq / Not given"
+  option especially) and `what_next` — both punish keyword-guessing.
+- Put an `open_response` DIRECTLY AFTER the related closed-ended question: the
+  child first recalls a fact (mcq / true_false_ng), then reflects in their own
+  words. It is ungraded and always completes, so it never dents the /10.
+- Recreate a curved-letter book task with `letter_sequence`: `letters` are in
+  READING order, `words` splits them into words for display, `meaning` reveals
+  the sense (e.g. K,i,t,o,b,a,q,l,q,a,y,r,o,gʻ,i → "Kitob — aql qayrogʻi").
+- "Read the text again" needs NO authoring: every comprehension item auto-shows a
+  button that reopens the lesson's passage (first reading item), audio and all.
+  Override with `item.reference` (a WidgetSpec) only to point at a different text.
+
+### Read-along audio (karaoke) — keeping the highlight in sync
+`karaoke_reading` needs a per-line timings file. Set `props.audio` to the key
+`"<topicId>-<itemId>"` (e.g. "g1-oqish-19-q1"). Then `npm run seed:tts`
+synthesizes EACH `lines[]` entry as its own Gemini (voice Charon) clip, measures
+its exact duration, concatenates them into
+`public/audio/tts/passages/<key>.uz.wav`, and writes `<key>.uz.json` with
+per-line start/duration. The component highlights line-by-line from that file —
+NO word-timepoints are needed (Gemini returns none; per-line durations are
+exact, so there is zero drift). Uzbek only; ru/en show the text without audio.
+Keep each `lines[]` entry short (one poetic line / one sentence); empty "" lines
+are stanza gaps (0-duration). Audio is the USER's job to (re)generate; a passage
+re-synthesizes only when its lines change (or `TTS_FORCE_ONA=1`).
+
+### Wiring an Oʻqish lesson (differs from math)
+1. Create `src/content/g1-oqish/topicNN.json` (subjectKey `"g1-oqish"`), shaped
+   like `topic18.json`: { topicId:"g1-oqish-NN", subjectKey, emojis, title{},
+   recall{}, items:[…] }. Make exactly 10 items (q1 = passage + 9 comprehension).
+2. `src/content/index.ts` — add `import oqishTopicNNJson from
+   '@/content/g1-oqish/topicNN.json'` and a
+   `'g1-oqish-NN': oqishTopicNNJson as unknown as Lesson,` entry.
+3. `src/content/g1-oqish/structure.ts` — add the paraphrased title to
+   `BUILT_TITLES` under key `g1-oqish-NN` (flips the lesson from 🔒 to open).
+   The book numbers lessons per SECTION and the UI shows "N-boʻlim · M-dars"
+   (section · lesson); the global 1..34 index is internal only. To find NN, count
+   lessons across parts/sections in `PLAN` (Part I sections = 8,7,9,10; Part II =
+   8,8,10,7). E.g. Part I · Section 3 · Lesson 4 → 8+7+3 = lesson 19 → topic19 /
+   g1-oqish-19.
+- Recall clips are Gemini (Charon), uz only, like Ona tili; keep `recall` ≤ 300 chars.
 
 ## Anti-monotony summary (the point of this skill)
 Monotony comes from over-using mcq and repeating prop sets. Beat it by:

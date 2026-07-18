@@ -24,6 +24,8 @@
     "startDemo": "Sinov darsini boshlash",
     "kicker": "1–11-sinf · Fan olamiga sayohat",
     "scrollHint": "Pastga aylantir",
+    "goToDashboard": "Kabinetimga oʻtish",
+    "moreSubjects": "Yana fanlar bor — pastga aylantir",
     "why": {
       "title": "Nega QuvnoqTest?",
       "counterLabel": "quvnoq oʻquvchi biz bilan oʻrganmoqda",
@@ -58,7 +60,7 @@
     },
     "footer": {
       "big": "Birga oʻrganamiz!",
-      "tagline": "Oʻzbekiston maktab oʻquvchilari uchun quvnoq test-darslar.",
+      "tagline": "Maktab oʻquvchilari uchun quvnoq test-darslar.",
       "product": "Mahsulot",
       "company": "Kompaniya",
       "contact": "Aloqa",
@@ -81,7 +83,7 @@
       "c1": "Qiziqarli va koʻrgazmali savollar",
       "c2": "Qayta-qayta mashgʻulot qilish uchun misollardagi sonlar oʻzgarib, istalgancha cheksiz mashq qilish mumkin",
       "c3": "Jumboq boʻlaklarini yigʻish va boshqa oʻyinli qismlar",
-      "c4": "Kontent sunʼiy intellekt yordamida yaratilib, jamoamiz tomonidan birma-bir tekshirilgan",
+      "c4": "Savollar uchun Sunʼiy Intellekt yordamchi tayyor!",
       "devTitle": "Istalgan qurilmadan kiring",
       "devBody": "Kompyuter, planshet yoki telefon brauzeriga QuvnoqTest.uz deb yozing va saytdan foydalaning.",
       "faqTitle": "Savol-javoblar",
@@ -103,7 +105,16 @@
       "p2t": "Sinov testlar",
       "p2b": "Testlarimiz va saytni bepul sinab koʻring",
       "p2price": "Bepul",
-      "p2cta": "Quvnoq testlarni boshlash!"
+      "p2cta": "Quvnoq testlarni boshlash!",
+      "contactModalTitle": "Biz bilan bogʻlaning"
+    },
+    "scene": {
+      "t1": "Fanlar",
+      "b1": "Matematikadan Ingliz tiligacha, 1-sinf uchun",
+      "t2": "Mantiqiy fikrlash",
+      "b2": "Fikrlash qobiliyatini rivojlantiruvchi mashqlar",
+      "t3": "Onlayn musobaqalar",
+      "b3": "Oʻquvchilar oʻrtasida bellashuv va sertifikatlar"
     }
   },
   "dashboard": {

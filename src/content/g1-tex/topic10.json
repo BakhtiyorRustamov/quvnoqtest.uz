@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-10",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Xonaqizi",
+    "ru": "Божья коровка",
+    "en": "A ladybug"
+  },
+  "recall": {
+    "uz": "Bugun qogʻozdan chiroyli xonaqizi yasaymiz.",
+    "ru": "Сегодня из бумаги сделаем красивую божью коровку.",
+    "en": "Today we make a pretty ladybug from paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xonaqizi yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай божью коровку. Выполняй каждый этап по рисунку!",
+        "en": "Make the ladybug. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Qora dogʻlarni unutma.",
+        "ru": "Не забудь чёрные точки.",
+        "en": "Don't forget the black spots."
+      },
+      "explanation": {
+        "uz": "Chiroyli xonaqizi!",
+        "ru": "Красивая божья коровка!",
+        "en": "A pretty ladybug!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "qizil qogʻoz",
+              "ru": "красная бумага",
+              "en": "red paper"
+            },
+            {
+              "uz": "qora qogʻoz",
+              "ru": "чёрная бумага",
+              "en": "black paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Qizil qogʻozdan doira qirq, qora yarim doira boshni yopishtir.",
+              "ru": "Вырежь красный круг, приклей чёрную голову-полукруг.",
+              "en": "Cut a red circle, glue a black half-circle head."
+            },
+            {
+              "uz": "Oʻrtasidan qora chiziq chiz — qanotlarni ajrat.",
+              "ru": "Проведи чёрную линию по центру — раздели крылья.",
+              "en": "Draw a black line down the middle to split the wings."
+            },
+            {
+              "uz": "Qora dogʻlar, oyoq va moʻylovni qoʻsh.",
+              "ru": "Добавь чёрные точки, лапки и усики.",
+              "en": "Add black spots, legs and antennae."
+            }
+          ],
+          "art": "ladybug",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

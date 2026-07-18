@@ -1,0 +1,512 @@
+{
+  "topicId": "g1-alifbe-12",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🐕🐍👅",
+  "title": {
+    "uz": "«I i» — oʻqish mashqi",
+    "ru": "Буква «I i» — чтение",
+    "en": "Letter “I i” — reading"
+  },
+  "recall": {
+    "uz": "«I» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: it, ilon, til. «I» — unli tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «I». Теперь читаем слова: it, ilon, til. «I» — гласный звук. Тренируем чтение!",
+    "en": "We learned the letter “I”. Now we read words: it, ilon, til. “I” is a vowel. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐕 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🐕 Прочитай и нажми верно написанное слово!",
+        "en": "🐕 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «it».",
+        "ru": "Прочитай: «it».",
+        "en": "Read it: “it”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «it».",
+        "ru": "Верно — «it».",
+        "en": "Correct — “it”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🐕",
+          "options": [
+            {
+              "id": "ok",
+              "word": "it",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "id"
+            },
+            {
+              "id": "w2",
+              "word": "itt"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «it» soʻzini tuz!",
+        "ru": "Составь слово «it»!",
+        "en": "Build the word “it”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «it» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «it».",
+        "en": "Great! You read “it”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🐕",
+          "word": "it",
+          "label": {
+            "uz": "it",
+            "ru": "собака",
+            "en": "dog"
+          },
+          "extra": [
+            "o"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐕 «it»da «i» tovushi qaysi katakchada?",
+        "ru": "🐕 В какой клетке звук «i» в слове «it»?",
+        "en": "🐕 Which box has the “i” sound in “it”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«it»da «i» tovushi toʻgʻri joyda.",
+        "ru": "В «it» звук «i» на верном месте.",
+        "en": "In “it” the “i” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🐕",
+          "word": {
+            "uz": "it",
+            "ru": "it",
+            "en": "it"
+          },
+          "sound": "i",
+          "cells": [
+            "i",
+            "t"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐍 «ilon» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🐍 Похлопай слово «ilon» по слогам!",
+        "en": "🐍 Clap the word “ilon” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«ilon» — 2 boʻgʻin.",
+        "ru": "«ilon» — 2 слога.",
+        "en": "“ilon” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🐍",
+          "word": {
+            "uz": "ilon",
+            "ru": "ilon",
+            "en": "ilon"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«I» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «I»!",
+        "en": "Tap the words that have the “I” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «i» tovushi bor.",
+        "ru": "Верно! В них есть звук «i».",
+        "en": "Right! They have the “i” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐕",
+              "label": {
+                "uz": "it",
+                "ru": "it",
+                "en": "it"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐍",
+              "label": {
+                "uz": "ilon",
+                "ru": "ilon",
+                "en": "ilon"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "til",
+                "en": "til"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "👩",
+              "label": {
+                "uz": "ona",
+                "ru": "ona",
+                "en": "ona"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«it» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «it». Найди картинку!",
+        "en": "Read “it”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«it» — 🐕.",
+        "ru": "«it» — 🐕.",
+        "en": "“it” is 🐕."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🐕",
+              "label": {
+                "uz": "it",
+                "ru": "собака",
+                "en": "dog"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🐍",
+              "label": {
+                "uz": "ilon",
+                "ru": "ilon",
+                "en": "ilon"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "til",
+                "en": "til"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🐕"
+              },
+              "right": {
+                "label": {
+                  "uz": "it",
+                  "ru": "it",
+                  "en": "it"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐍"
+              },
+              "right": {
+                "label": {
+                  "uz": "ilon",
+                  "ru": "ilon",
+                  "en": "ilon"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👅"
+              },
+              "right": {
+                "label": {
+                  "uz": "til",
+                  "ru": "til",
+                  "en": "til"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: It … ot.",
+        "ru": "Составь предложение: It … ot.",
+        "en": "Order the words: It … ot."
+      },
+      "hint": {
+        "uz": "It — ana — ot.",
+        "ru": "It — ana — ot.",
+        "en": "It — ana — ot."
+      },
+      "explanation": {
+        "uz": "«It ana ot.» — gap oʻqiding!",
+        "ru": "«It ana ot.» — предложение!",
+        "en": "“It ana ot.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "It",
+                "ru": "It",
+                "en": "It"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "ana",
+                "ru": "ana",
+                "en": "ana"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐕"
+              },
+              "b": {
+                "label": {
+                  "uz": "it",
+                  "ru": "it",
+                  "en": "it"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐍"
+              },
+              "b": {
+                "label": {
+                  "uz": "ilon",
+                  "ru": "ilon",
+                  "en": "ilon"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👅"
+              },
+              "b": {
+                "label": {
+                  "uz": "til",
+                  "ru": "til",
+                  "en": "til"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«it» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «it»?",
+        "en": "How many sounds are in “it”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«it»da 2 ta tovush bor.",
+        "ru": "В «it» 2 звука.",
+        "en": "“it” has 2 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "2",
+            "1",
+            "3"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

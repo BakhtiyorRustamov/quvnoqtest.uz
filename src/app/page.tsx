@@ -5,17 +5,14 @@ import Landing from '@/components/landing/Landing';
 export const dynamic = 'force-dynamic';
 
 /**
- * Landing page. Returning visitors who already went through the demo lesson
- * (g1-math-01) skip the marketing landing and go straight to the subject-picker
- * dashboard.
+ * Landing page. Returning visitors — anyone who already has an account (a user
+ * record is created the moment they start any lesson) — skip the marketing
+ * landing and go straight to the subject-picker dashboard. Brand-new, anonymous
+ * visitors still see the landing page.
  */
 export default async function Home() {
   const store = getStore();
   const user = await store.getCurrent();
-  if (user) {
-    const progress = await store.listProgress();
-    const didDemo = progress.some((p) => p.topicKey === 'g1-math-01');
-    if (didDemo) redirect('/dashboard');
-  }
+  if (user) redirect('/dashboard');
   return <Landing />;
 }

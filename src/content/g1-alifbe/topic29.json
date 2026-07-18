@@ -1,0 +1,109 @@
+{
+  "topicId": "g1-alifbe-29",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤📦⛵📖",
+  "title": { "uz": "«Y y» harfi", "ru": "Буква «Y y»", "en": "The letter “Y y”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «Y y». U undosh tovush. Uni aytganda til oʻrtasi yuqoriga koʻtariladi. «Y» bilan: yuk, yelkan, yil, yem. Endi «yuk» soʻzini oʻqiy olamiz va koʻp harflarni takrorlaymiz!",
+    "ru": "Сегодня наша буква — «Y y». Это согласный звук. Средняя часть языка поднимается вверх. Слова: yuk, yelkan, yil, yem. Теперь читаем слово «yuk» и повторяем буквы!",
+    "en": "Today's letter is “Y y”. It is a consonant. The middle of the tongue rises up. Words: yuk, yelkan, yil, yem. Now we read the word “yuk” and review our letters!"
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Y» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «Y»!", "en": "Find the word that starts with “Y”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: y-y-yuk.", "ru": "Протяни начало: й-й-yuk.", "en": "Stretch the start: y-y-yuk." },
+      "explanation": { "uz": "«yuk» «Y» tovushi bilan boshlanadi.", "ru": "«yuk» начинается со звука «Y».", "en": "“yuk” (load) starts with the sound “Y”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "box", "emoji": "📦", "label": { "uz": "yuk", "ru": "yuk", "en": "yuk" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Y» harfini topib, hammasini bos!", "ru": "Найди букву «Y» и нажми на все!", "en": "Find the letter “Y” and tap them all!" },
+      "hint": { "uz": "Katta «Y» ham, kichik «y» ham.", "ru": "Считаются «Y» и «y».", "en": "Both “Y” and “y” count." },
+      "explanation": { "uz": "«Y» harfini topding!", "ru": "Ты нашёл букву «Y»!", "en": "You found the letter “Y”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "Y", "cols": 3, "grid": ["Y", "u", "y", "E", "Y", "k", "y", "l", "Y"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "📦 «yuk»da «y» tovushi qaysi katakchada?", "ru": "📦 В какой клетке звук «y» в слове «yuk»?", "en": "📦 Which box has the “y” sound in “yuk”?" },
+      "hint": { "uz": "«yuk» «y» bilan boshlanadi.", "ru": "«yuk» начинается с «y».", "en": "“yuk” starts with “y”." },
+      "explanation": { "uz": "«yuk»da «y» — birinchi katakda.", "ru": "В «yuk» звук «y» — первая клетка.", "en": "In “yuk” the “y” is in the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "📦", "word": { "uz": "yuk", "ru": "yuk", "en": "yuk" }, "sound": "y", "cells": ["y", "u", "k"], "answer": 0 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "📦 «yuk» soʻzining tovush chizmasini rangla!", "ru": "📦 Раскрась схему звуков слова «yuk»!", "en": "📦 Colour the sound scheme of “yuk”!" },
+      "hint": { "uz": "y — undosh, u — unli, k — undosh.", "ru": "y — согласный, u — гласный, k — согласный.", "en": "y consonant, u vowel, k consonant." },
+      "explanation": { "uz": "«yuk»: y, u, k — undosh, unli, undosh.", "ru": "«yuk»: согласный, гласный, согласный.", "en": "“yuk”: consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "📦", "word": { "uz": "yuk", "ru": "yuk", "en": "yuk" }, "scheme": ["c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Y» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «Y»!", "en": "Tap the words that have the “Y” sound!" },
+      "hint": { "uz": "yuk, yelkan — «y» tovushi bor.", "ru": "yuk, yelkan — есть звук «y».", "en": "yuk, yelkan have the “y” sound." },
+      "explanation": { "uz": "yuk, yelkan — «y» bor. ot, olmada yoʻq.", "ru": "yuk, yelkan — есть «y». В ot, olma нет.", "en": "yuk, yelkan have “y”. ot, olma do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "box", "emoji": "📦", "label": { "uz": "yuk", "ru": "yuk", "en": "yuk" }, "correct": true },
+        { "id": "sail", "emoji": "⛵", "label": { "uz": "yelkan", "ru": "yelkan", "en": "yelkan" }, "correct": true },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «yuk» soʻzini tuz!", "ru": "Составь слово «yuk» из букв!", "en": "Build the word “yuk” from letters!" },
+      "hint": { "uz": "y — u — k tartibida bos.", "ru": "Нажимай по порядку: y — u — k.", "en": "Tap in order: y — u — k." },
+      "explanation": { "uz": "y + u + k = «yuk».", "ru": "y + u + k = «yuk».", "en": "y + u + k = “yuk” (load)." },
+      "widget": { "type": "build_word", "props": { "emoji": "📦", "word": "yuk", "label": { "uz": "yuk", "ru": "груз", "en": "load" } } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Y» — undosh tovush.", "ru": "«Y» — согласный звук.", "en": "“Y” is a consonant sound." },
+      "hint": { "uz": "«Y»da til oʻrtasi yuqoriga koʻtariladi.", "ru": "При «Y» средняя часть языка поднимается.", "en": "For “Y” the middle of the tongue rises." },
+      "explanation": { "uz": "Toʻgʻri! «Y» — undosh tovush.", "ru": "Верно! «Y» — согласный.", "en": "True! “Y” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflarni unli yoki undoshga ajrat!", "ru": "Разложи буквы: гласная или согласная!", "en": "Sort the letters: vowel or consonant!" },
+      "hint": { "uz": "Unli: E, Oʻ, I. Undosh: K, B, Y.", "ru": "Гласные: E, Oʻ, I. Согласные: K, B, Y.", "en": "Vowels: E, Oʻ, I. Consonants: K, B, Y." },
+      "explanation": { "uz": "Unli: E, Oʻ, I. Undosh: K, B, Y.", "ru": "Гласные: E, Oʻ, I. Согласные: K, B, Y.", "en": "Vowels: E, Oʻ, I. Consonants: K, B, Y." },
+      "widget": { "type": "sort_bins", "props": {
+        "bins": [
+          { "id": "vowel", "label": { "uz": "Unli", "ru": "Гласный", "en": "Vowel" }, "color": "#e14b4b" },
+          { "id": "cons", "label": { "uz": "Undosh", "ru": "Согласный", "en": "Consonant" }, "color": "#2f9fe0" }
+        ],
+        "items": [
+          { "id": "e", "emoji": "E", "label": { "uz": "e", "ru": "e", "en": "e" }, "bin": "vowel" },
+          { "id": "oq", "emoji": "Oʻ", "label": { "uz": "oʻ", "ru": "oʻ", "en": "oʻ" }, "bin": "vowel" },
+          { "id": "i", "emoji": "I", "label": { "uz": "i", "ru": "i", "en": "i" }, "bin": "vowel" },
+          { "id": "k", "emoji": "K", "label": { "uz": "k", "ru": "k", "en": "k" }, "bin": "cons" },
+          { "id": "b", "emoji": "B", "label": { "uz": "b", "ru": "b", "en": "b" }, "bin": "cons" },
+          { "id": "y", "emoji": "Y", "label": { "uz": "y", "ru": "y", "en": "y" }, "bin": "cons" }
+        ]
+      } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Soʻzlarni tartibla va gap tuz: Ota … oldi.", "ru": "Расставь слова и составь предложение: Ota … oldi.", "en": "Order the words into a sentence: Ota … oldi." },
+      "hint": { "uz": "Ota — yuk — oldi.", "ru": "Ota — yuk — oldi.", "en": "Ota — yuk — oldi." },
+      "explanation": { "uz": "«Ota yuk oldi.» — gapni oʻqiding!", "ru": "«Ota yuk oldi.» — ты прочитал предложение!", "en": "“Ota yuk oldi.” — you read the sentence!" },
+      "widget": { "type": "order_line", "props": { "items": [
+        { "id": "ota", "label": { "uz": "Ota", "ru": "Ota", "en": "Ota" } },
+        { "id": "yuk", "label": { "uz": "yuk", "ru": "yuk", "en": "yuk" } },
+        { "id": "oldi", "label": { "uz": "oldi", "ru": "oldi", "en": "oldi" } }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«yuk» soʻzida nechta tovush bor?", "ru": "Сколько звуков в слове «yuk»?", "en": "How many sounds are in the word “yuk”?" },
+      "hint": { "uz": "y — u — k, sanab koʻr.", "ru": "y — u — k, посчитай.", "en": "y — u — k, count them." },
+      "explanation": { "uz": "«yuk»da uchta tovush bor: y, u, k.", "ru": "В «yuk» три звука: y, u, k.", "en": "“yuk” has three sounds: y, u, k." },
+      "widget": { "type": "mcq", "props": { "choices": ["3", "2", "4"], "answerIndex": 0 } }
+    }
+  ]
+}

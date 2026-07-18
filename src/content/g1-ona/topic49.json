@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-49",
+  "subjectKey": "g1-ona",
+  "emojis": "🎨📏✍️",
+  "title": {
+    "uz": "Belgini bildirgan soʻzlar",
+    "ru": "Слова, обозначающие признак",
+    "en": "Words that name attributes"
+  },
+  "recall": {
+    "uz": "Shaxs va narsaning belgisini bildirgan soʻzlar «Qanday?», «Qanaqa?» soʻroqlariga javob boʻladi. Masalan: shirin gilos, baland bino, uzun yoʻl, xushboʻy gul. Belgi soʻzlari orasida qarama-qarshi maʼnolilari ham bor: uzun-qisqa, oq-qora, issiq-sovuq.",
+    "ru": "Слова, обозначающие признак лица или предмета, отвечают на вопросы «Какой?», «Какая?». Например: shirin gilos, baland bino, uzun yoʻl, xushboʻy gul. Среди слов-признаков есть противоположные по смыслу: uzun-qisqa, oq-qora, issiq-sovuq.",
+    "en": "Words that name the attribute of a person or thing answer the questions “What kind?”, “Which?”. For example: shirin gilos (sweet cherry), baland bino (tall building), uzun yoʻl (long road), xushboʻy gul (fragrant flower). Some attribute words are opposites: uzun-qisqa, oq-qora, issiq-sovuq."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "shirin", "bin": "belgi" }, { "id": "b", "label": "baland", "bin": "belgi" }, { "id": "c", "label": "uzun", "bin": "belgi" }, { "id": "d", "label": "yugurdi", "bin": "harakat" }, { "id": "e", "label": "oʻqidi", "bin": "harakat" }, { "id": "f", "label": "sakradi", "bin": "harakat" } ], "bins": [ { "id": "belgi", "label": "Belgi (qanday?)" }, { "id": "harakat", "label": "Harakat (nima qildi?)" } ] } },
+      "prompt": { "uz": "Ajrat: belgi soʻzi va harakat soʻzi!", "ru": "Раздели: слово-признак и слово-действие!", "en": "Sort: attribute word vs action word!" },
+      "hint": { "uz": "yugurdi, oʻqidi, sakradi — harakat soʻzlari.", "ru": "yugurdi, oʻqidi, sakradi — слова-действия.", "en": "yugurdi, oʻqidi, sakradi are action words." },
+      "explanation": { "uz": "Belgi soʻzlari «qanday?», harakat soʻzlari «nima qildi?» soʻrogʻiga javob.", "ru": "Признак — «какой?», действие — «что сделал?».", "en": "Attributes answer “what kind?”, actions answer “what did it do?”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "qizil", "match": true }, { "text": "yugurdi", "match": false }, { "text": "yumshoq", "match": true }, { "text": "kitob", "match": false }, { "text": "katta", "match": true }, { "text": "oʻqiyapti", "match": false } ] } },
+      "prompt": { "uz": "Belgini bildirgan soʻzlarni bos!", "ru": "Нажми слова, обозначающие признак!", "en": "Tap the words that name an attribute!" },
+      "hint": { "uz": "yugurdi, oʻqiyapti — harakat; kitob — narsa.", "ru": "yugurdi, oʻqiyapti — действия; kitob — предмет.", "en": "yugurdi, oʻqiyapti are actions; kitob is a thing." },
+      "explanation": { "uz": "qizil, yumshoq, katta — belgi soʻzlari («qanday?»).", "ru": "qizil, yumshoq, katta — слова-признаки («какой?»).", "en": "qizil, yumshoq, katta are attribute words (“what kind?”)." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "gilos", "right": "shirin" }, { "left": "bino", "right": "baland" }, { "left": "yoʻl", "right": "uzun" }, { "left": "gul", "right": "xushboʻy" } ] } },
+      "prompt": { "uz": "Narsani oʻz belgisiga ula!", "ru": "Соедини предмет с его признаком!", "en": "Match each thing to its attribute!" },
+      "hint": { "uz": "gilos — shirin, gul — xushboʻy.", "ru": "черешня — сладкая, цветок — душистый.", "en": "cherry — sweet, flower — fragrant." },
+      "explanation": { "uz": "Har bir narsaning oʻz belgisi bor: shirin gilos, baland bino.", "ru": "У каждого предмета свой признак: сладкая черешня, высокое здание.", "en": "Each thing has its attribute: sweet cherry, tall building." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "uzun", "right": "qisqa" }, { "left": "oq", "right": "qora" }, { "left": "issiq", "right": "sovuq" }, { "left": "katta", "right": "kichik" } ] } },
+      "prompt": { "uz": "Qarama-qarshi belgilarni ula!", "ru": "Соедини противоположные признаки!", "en": "Match the opposite attributes!" },
+      "hint": { "uz": "uzun — qisqa, issiq — sovuq.", "ru": "длинный — короткий, горячий — холодный.", "en": "long — short, hot — cold." },
+      "explanation": { "uz": "Qarama-qarshi maʼnoli belgilar: uzun-qisqa, oq-qora, issiq-sovuq, katta-kichik.", "ru": "Противоположные признаки: uzun-qisqa, oq-qora, issiq-sovuq, katta-kichik.", "en": "Opposite attributes: uzun-qisqa, oq-qora, issiq-sovuq, katta-kichik." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Maktabga boradigan bu yoʻl juda ", "after": ".", "choices": ["uzun", "shirin", "sovuq"], "answer": "uzun", "emoji": "🛣️", "clue": { "uz": "Yoʻl qanday?", "ru": "Дорога какая?", "en": "What kind of road?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Yoʻlning uzunligini bildiruvchi soʻz.", "ru": "Слово о длине дороги.", "en": "A word about the road's length." },
+      "explanation": { "uz": "Yoʻl uzun. «Uzun» — belgi soʻzi («qanday?»).", "ru": "Дорога длинная. «Uzun» — слово-признак.", "en": "The road is long. “Uzun” is an attribute word." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Asal juda ", "after": ".", "choices": ["shirin", "baland", "sovuq"], "answer": "shirin", "emoji": "🍯", "clue": { "uz": "Asal qanday taʼmga ega?", "ru": "Какой мёд на вкус?", "en": "What does honey taste like?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Asalning taʼmi qanday?", "ru": "Каков мёд на вкус?", "en": "How does honey taste?" },
+      "explanation": { "uz": "Asal shirin. «Shirin» — belgi soʻzi.", "ru": "Мёд сладкий. «Shirin» — слово-признак.", "en": "Honey is sweet. “Shirin” is an attribute word." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Qor ", "after": " rangda boʻladi.", "choices": ["oq", "qora", "qizil"], "answer": "oq", "emoji": "❄️", "clue": { "uz": "Qor qanday rangda?", "ru": "Какого цвета снег?", "en": "What colour is snow?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Qorning rangi — oppoq.", "ru": "Цвет снега — белый.", "en": "Snow's colour is white." },
+      "explanation": { "uz": "Qor oq rangda. «Oq» — belgi (rang) soʻzi.", "ru": "Снег белый. «Oq» — слово-признак (цвет).", "en": "Snow is white. “Oq” is an attribute (colour) word." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "sovuq", "match": true }, { "text": "maktab", "match": false }, { "text": "qattiq", "match": true }, { "text": "yozdi", "match": false }, { "text": "yumshoq", "match": true }, { "text": "qush", "match": false } ] } },
+      "prompt": { "uz": "«Qanaqa?» soʻrogʻiga javob boʻlganlarni bos!", "ru": "Нажми слова, отвечающие на «какой?»!", "en": "Tap the words that answer “what kind?”!" },
+      "hint": { "uz": "maktab, qush — narsa; yozdi — harakat.", "ru": "maktab, qush — предметы; yozdi — действие.", "en": "maktab, qush are things; yozdi is an action." },
+      "explanation": { "uz": "sovuq, qattiq, yumshoq — belgi soʻzlari.", "ru": "sovuq, qattiq, yumshoq — слова-признаки.", "en": "sovuq, qattiq, yumshoq are attribute words." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["xush", "boʻy"], "emoji": "🌸", "clue": { "uz": "Gulning belgisi (hidi yoqimli)", "ru": "Признак цветка (приятный запах)", "en": "A flower's attribute (a nice smell)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan belgi soʻzini tuz!", "ru": "Собери слово-признак из слогов!", "en": "Build the attribute word from syllables!" },
+      "hint": { "uz": "xush- … -boʻy.", "ru": "xush- … -boʻy.", "en": "xush- … -boʻy." },
+      "explanation": { "uz": "«Xushboʻy» — belgi soʻzi (xushboʻy gul).", "ru": "«Xushboʻy» — слово-признак (душистый цветок).", "en": "“Xushboʻy” is an attribute word (a fragrant flower)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "baland", "letters": ["b", "a", "l", "a", "n", "d"], "emoji": "🏢", "clue": { "uz": "Binoning belgisi (past emas)", "ru": "Признак здания (не низкое)", "en": "A building's attribute (not low)" } } },
+      "prompt": { "uz": "Harflardan belgi soʻzini yigʻ!", "ru": "Собери слово-признак из букв!", "en": "Build the attribute word from the letters!" },
+      "hint": { "uz": "Osmonoʻpar bino qanday boʻladi?", "ru": "Какое здание-небоскрёб?", "en": "What is a skyscraper like?" },
+      "explanation": { "uz": "«Baland» — belgi soʻzi (baland bino).", "ru": "«Baland» — слово-признак (высокое здание).", "en": "“Baland” is an attribute word (a tall building)." }
+    }
+  ]
+}

@@ -109,7 +109,7 @@ const S = {
   title: { margin: "4px 0 10px", fontSize: 26, fontWeight: 700, textAlign: "center" },
   choose: { textAlign: "center", margin: "0 0 12px", fontSize: 15, fontWeight: 600, color: "var(--mist)" },
   choices: { display: "grid", gap: 10, marginBottom: 6 },
-  choice: { border: "2px solid var(--line)", background: "#fff", cursor: "pointer", fontFamily: "inherit", fontSize: 19, fontWeight: 700, color: "var(--ink)", padding: "13px 16px", borderRadius: 16, minHeight: 52, boxShadow: "0 4px 0 rgba(0,0,0,.06)", textAlign: "center" },
+  choice: { border: "2px solid var(--line)", background: "#fff", cursor: "pointer", fontFamily: "inherit", fontSize: 19, fontWeight: 700, color: "var(--ink)", padding: "13px 16px", borderRadius: 16, minHeight: 52, boxShadow: "0 4px 0 rgba(0,0,0,.06)", textAlign: "center", whiteSpace: "pre-line", lineHeight: 1.25 },
   choiceOk: { background: "var(--grass)", borderColor: "var(--grass)", color: "#fff", boxShadow: "0 4px 0 #2f9b50" },
   choiceBad: { background: "#fdeceb", borderColor: "var(--primary2)", color: "var(--primary2)" },
   status: { minHeight: 32, display: "flex", alignItems: "center", justifyContent: "center", margin: "6px 0" },

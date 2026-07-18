@@ -1,0 +1,504 @@
+{
+  "topicId": "g1-alifbe-54",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🍵🐜💡",
+  "title": {
+    "uz": "«Ch ch» — oʻqish mashqi",
+    "ru": "Буква «Ch ch» — чтение",
+    "en": "Letter “Ch ch” — reading"
+  },
+  "recall": {
+    "uz": "«Ch» harfini oʻrgandik. Endi matn oʻqiymiz: choy, chumoli, chiroq. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «Ch». Теперь читаем текст: choy, chumoli, chiroq. Тренируем чтение!",
+    "en": "We learned the letter “Ch”. Now we read a text: choy, chumoli, chiroq. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍵 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🍵 Прочитай и нажми верно написанное слово!",
+        "en": "🍵 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «choy».",
+        "ru": "Прочитай: «choy».",
+        "en": "Read it: “choy”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «choy».",
+        "ru": "Верно — «choy».",
+        "en": "Correct — “choy”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🍵",
+          "options": [
+            {
+              "id": "ok",
+              "word": "choy",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "soy"
+            },
+            {
+              "id": "w2",
+              "word": "chay"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «choy» soʻzini tuz!",
+        "ru": "Составь слово «choy»!",
+        "en": "Build the word “choy”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «choy» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «choy».",
+        "en": "Great! You read “choy”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🍵",
+          "word": "choy",
+          "label": {
+            "uz": "choy",
+            "ru": "чай",
+            "en": "tea"
+          },
+          "letters": [
+            "ch",
+            "o",
+            "y"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «chiroq».",
+        "ru": "Верный ответ — «chiroq».",
+        "en": "The right answer is “chiroq”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🍵",
+          "text": {
+            "uz": "Ona choy damladi.\nCharos chiroq yoqdi.",
+            "ru": "Ona choy damladi.\nCharos chiroq yoqdi.",
+            "en": "Ona choy damladi.\nCharos chiroq yoqdi."
+          },
+          "question": {
+            "uz": "Charos nima yoqdi?",
+            "ru": "Charos nima yoqdi?",
+            "en": "Charos nima yoqdi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "chiroq",
+                "ru": "chiroq",
+                "en": "chiroq"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "choy",
+                "ru": "choy",
+                "en": "choy"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "xat",
+                "ru": "xat",
+                "en": "xat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐜 «chumoli» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🐜 Похлопай «chumoli» по слогам!",
+        "en": "🐜 Clap “chumoli” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«chumoli» — 3 boʻgʻin.",
+        "ru": "«chumoli» — 3 слога.",
+        "en": "“chumoli” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🐜",
+          "word": {
+            "uz": "chumoli",
+            "ru": "chumoli",
+            "en": "chumoli"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ch» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «Ch»!",
+        "en": "Tap the words with the “Ch” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «ch» tovushi bor.",
+        "ru": "В них есть звук «ch».",
+        "en": "They have the “ch” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍵",
+              "label": {
+                "uz": "choy",
+                "ru": "choy",
+                "en": "choy"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐜",
+              "label": {
+                "uz": "chumoli",
+                "ru": "chumoli",
+                "en": "chumoli"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💡",
+              "label": {
+                "uz": "chiroq",
+                "ru": "chiroq",
+                "en": "chiroq"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«choy» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «choy». Найди картинку!",
+        "en": "Read “choy”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«choy» — 🍵.",
+        "ru": "«choy» — 🍵.",
+        "en": "“choy” is 🍵."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🍵",
+              "label": {
+                "uz": "choy",
+                "ru": "чай",
+                "en": "tea"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🐜",
+              "label": {
+                "uz": "chumoli",
+                "ru": "chumoli",
+                "en": "chumoli"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "💡",
+              "label": {
+                "uz": "chiroq",
+                "ru": "chiroq",
+                "en": "chiroq"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil maʼnoli soʻzlarni ula!",
+        "ru": "Соедини слова с одинаковым значением!",
+        "en": "Link the words that mean the same!"
+      },
+      "hint": {
+        "uz": "Maʼnosi bir xil soʻzlarni top.",
+        "ru": "Найди слова с одинаковым смыслом.",
+        "en": "Find words with the same meaning."
+      },
+      "explanation": {
+        "uz": "Barakalla! Maʼnodosh soʻzlarni topding.",
+        "ru": "Молодец! Ты нашёл синонимы.",
+        "en": "Great! You found the synonyms."
+      },
+      "widget": {
+        "type": "synonym_match",
+        "props": {
+          "pairs": [
+            {
+              "a": "chiroyli",
+              "b": "goʻzal"
+            },
+            {
+              "a": "chaqqon",
+              "b": "tez"
+            },
+            {
+              "a": "katta",
+              "b": "ulkan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ona … oldi.",
+        "ru": "Составь предложение: Ona … oldi.",
+        "en": "Order the words: Ona … oldi."
+      },
+      "hint": {
+        "uz": "Ona — choy — oldi.",
+        "ru": "Ona — choy — oldi.",
+        "en": "Ona — choy — oldi."
+      },
+      "explanation": {
+        "uz": "«Ona choy oldi.» — gap oʻqiding!",
+        "ru": "«Ona choy oldi.» — предложение!",
+        "en": "“Ona choy oldi.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ona",
+                "ru": "Ona",
+                "en": "Ona"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "choy",
+                "ru": "choy",
+                "en": "choy"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🍵"
+              },
+              "b": {
+                "label": {
+                  "uz": "choy",
+                  "ru": "choy",
+                  "en": "choy"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐜"
+              },
+              "b": {
+                "label": {
+                  "uz": "chumoli",
+                  "ru": "chumoli",
+                  "en": "chumoli"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "💡"
+              },
+              "b": {
+                "label": {
+                  "uz": "chiroq",
+                  "ru": "chiroq",
+                  "en": "chiroq"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«choy» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «choy»?",
+        "en": "How many sounds are in “choy”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«choy»da 3 ta tovush bor.",
+        "ru": "В «choy» 3 звука.",
+        "en": "“choy” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

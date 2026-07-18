@@ -1,0 +1,448 @@
+{
+  "topicId": "g1-informatika-18",
+  "subjectKey": "g1-informatika",
+  "emojis": "🏃🎧💿💻",
+  "title": {
+    "uz": "Oldinda – orqada",
+    "ru": "Впереди – сзади",
+    "en": "In front – behind"
+  },
+  "recall": {
+    "uz": "Buyumlar oldinda yoki orqada boʻladi. Oldindagi narsa orqadagini toʻsib turadi. Poygada gʻolib bola oldinda boʻladi.",
+    "ru": "Предметы бывают впереди и сзади. Передний закрывает задний. В гонке победитель впереди.",
+    "en": "Things can be in front or behind. The front one hides the one behind. In a race the winner is in front."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yugurishda gʻolib bola qayerda boʻladi?",
+        "ru": "Где победитель в беге?",
+        "en": "Where is the winner in a race?"
+      },
+      "hint": {
+        "uz": "Birinchi keladi.",
+        "ru": "Приходит первым.",
+        "en": "Comes first."
+      },
+      "explanation": {
+        "uz": "Gʻolib oldinda boʻladi.",
+        "ru": "Победитель впереди.",
+        "en": "The winner is in front."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "oldinda",
+              "ru": "впереди",
+              "en": "in front"
+            },
+            {
+              "uz": "orqada",
+              "ru": "сзади",
+              "en": "behind"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oldindagi buyum orqadagini toʻsadi.",
+        "ru": "Передний предмет закрывает задний.",
+        "en": "The front object hides the back one."
+      },
+      "hint": {
+        "uz": "Bir-birining ustida.",
+        "ru": "Один за другим.",
+        "en": "One over the other."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔶",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Panjara orqasida 3 ta tovuq bor. Nechta tovuq?",
+        "ru": "За забором 3 курицы. Сколько их?",
+        "en": "3 hens behind a fence. How many?"
+      },
+      "hint": {
+        "uz": "Toʻsilsa ham, sanogʻi oʻzgarmaydi.",
+        "ru": "Даже скрытые — их столько же.",
+        "en": "Hidden, but still counted."
+      },
+      "explanation": {
+        "uz": "Ular 3 ta — toʻsilgan boʻlsa ham.",
+        "ru": "Их 3, даже если скрыты.",
+        "en": "There are 3, even if hidden."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "0",
+            "1"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Navbatni oldindan orqaga joyla!",
+        "ru": "Расставь очередь спереди назад!",
+        "en": "Order the queue front to back!"
+      },
+      "hint": {
+        "uz": "1-bola oldinda.",
+        "ru": "1-й ребёнок впереди.",
+        "en": "Child 1 is in front."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: 1, 2, 3.",
+        "ru": "Верно: 1, 2, 3.",
+        "en": "Correct: 1, 2, 3."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "1-bola (oldinda)",
+                "ru": "1-й (впереди)",
+                "en": "1st (front)"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "2-bola",
+                "ru": "2-й",
+                "en": "2nd"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "3-bola (orqada)",
+                "ru": "3-й (сзади)",
+                "en": "3rd (back)"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan qurilma nomini tuz! (💿)",
+        "ru": "Составь название устройства! (💿)",
+        "en": "Build the device's name! (💿)"
+      },
+      "hint": {
+        "uz": "D-I-S-K harflaridan.",
+        "ru": "Из букв D-I-S-K.",
+        "en": "From D-I-S-K."
+      },
+      "explanation": {
+        "uz": "Barakalla! «disk» soʻzini tuzding.",
+        "ru": "Молодец! «disk».",
+        "en": "Great! You built “disk”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "💿",
+          "word": "disk",
+          "label": {
+            "uz": "disk",
+            "ru": "диск",
+            "en": "disc"
+          },
+          "letters": [
+            "d",
+            "i",
+            "s",
+            "k"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir qurilmani nomi bilan juftla!",
+        "ru": "Соедини устройство с названием!",
+        "en": "Match each device to its name!"
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Смотри на картинку.",
+        "en": "Look."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🎧"
+              },
+              "b": {
+                "label": {
+                  "uz": "quloqchin",
+                  "ru": "наушники",
+                  "en": "headphones"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "💿"
+              },
+              "b": {
+                "label": {
+                  "uz": "disk",
+                  "ru": "диск",
+                  "en": "disc"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "💻"
+              },
+              "b": {
+                "label": {
+                  "uz": "kompyuter",
+                  "ru": "компьютер",
+                  "en": "computer"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Elektron qurilmalarni belgila!",
+        "ru": "Отметь электронные устройства!",
+        "en": "Tap the electronic devices!"
+      },
+      "hint": {
+        "uz": "Ular bilan maʼlumot saqlaymiz.",
+        "ru": "Хранят информацию.",
+        "en": "They store information."
+      },
+      "explanation": {
+        "uz": "Ular elektron qurilmalar.",
+        "ru": "Это электронные устройства.",
+        "en": "These are electronic devices."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🎧",
+              "label": {
+                "uz": "quloqchin",
+                "ru": "наушники",
+                "en": "headphones"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "💿",
+              "label": {
+                "uz": "disk",
+                "ru": "диск",
+                "en": "disc"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💻",
+              "label": {
+                "uz": "kompyuter",
+                "ru": "компьютер",
+                "en": "computer"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🌹",
+              "label": {
+                "uz": "gul",
+                "ru": "цветок",
+                "en": "flower"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oldingi partada oʻtirgan bola doskaga yaqinroq.",
+        "ru": "Сидящий за первой партой ближе к доске.",
+        "en": "A child at the front desk is closer to the board."
+      },
+      "hint": {
+        "uz": "Old — doskaga yaqin.",
+        "ru": "Перёд — ближе к доске.",
+        "en": "Front is near the board."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "💻",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sariq shakl oldinda, koʻk shakl orqada. Qaysi biri toʻsilgan?",
+        "ru": "Жёлтая впереди, синяя сзади. Какая скрыта?",
+        "en": "Yellow in front, blue behind. Which is hidden?"
+      },
+      "hint": {
+        "uz": "Orqadagisi toʻsiladi.",
+        "ru": "Задняя скрыта.",
+        "en": "The back one is hidden."
+      },
+      "explanation": {
+        "uz": "Orqadagi koʻk shakl toʻsilgan.",
+        "ru": "Скрыта синяя (задняя).",
+        "en": "The blue (back) shape is hidden."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "koʻk (orqadagi)",
+              "ru": "синяя (сзади)",
+              "en": "blue (behind)"
+            },
+            {
+              "uz": "sariq (oldingi)",
+              "ru": "жёлтая (впереди)",
+              "en": "yellow (front)"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Oldinda» va «orqada» — bu nima?",
+        "ru": "«Впереди» и «сзади» — что это?",
+        "en": "'In front' and 'behind' — what are these?"
+      },
+      "hint": {
+        "uz": "Joyni bildiradi.",
+        "ru": "Указывают место.",
+        "en": "They show place."
+      },
+      "explanation": {
+        "uz": "Ular joylashuvni bildiradi.",
+        "ru": "Указывают расположение.",
+        "en": "They show position."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "joylashuv",
+              "ru": "расположение",
+              "en": "position"
+            },
+            {
+              "uz": "rang",
+              "ru": "цвет",
+              "en": "colour"
+            },
+            {
+              "uz": "taʼm",
+              "ru": "вкус",
+              "en": "taste"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

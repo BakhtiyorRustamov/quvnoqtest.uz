@@ -1,0 +1,487 @@
+{
+  "topicId": "g1-ingliz-06",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🎨🌈🖌️✨",
+  "title": {
+    "uz": "Sanʼat: ranglarni aralashtiramiz",
+    "ru": "Искусство: смешиваем цвета",
+    "en": "Art: mixing colors"
+  },
+  "recall": {
+    "uz": "«What color is it?» — «Bu qaysi rang?» Boʻyoqlarni aralashtirib, yangi ranglar yasaymiz!",
+    "ru": "«What color is it?» — «Какой это цвет?» Смешиваем краски и получаем новые цвета!",
+    "en": "What color is it? Let's mix paints and make new colors!"
+  },
+  "ttsText": {
+    "uz": "Sanʼat: ranglarni aralashtiramiz.",
+    "en": "What color is it? Let's mix paints and make new colors!"
+  },
+  "recallAudioLang": "en",
+  "recallMedia": {
+    "gif": "/quiz-media/en-colors.gif",
+    "maxWidth": 260
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va qizil boʻyoqni bos!",
+        "ru": "Послушай и нажми красную краску!",
+        "en": "Listen and tap the red paint!"
+      },
+      "audio": {
+        "key": "ing06-q1",
+        "text": "Red! Tap the red paint.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«Red» — qizil.",
+        "ru": "«Red» — красный.",
+        "en": "\"Red\" — like a tomato."
+      },
+      "explanation": {
+        "uz": "Barakalla! Red — qizil.",
+        "ru": "Молодец! Red — красный.",
+        "en": "Great! Red!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🔴",
+              "label": "red",
+              "correct": true
+            },
+            {
+              "emoji": "🔵",
+              "label": "blue"
+            },
+            {
+              "emoji": "🟡",
+              "label": "yellow"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qizil va sariq aralashsa qaysi rang chiqadi?",
+        "ru": "Что получится, если смешать красный и жёлтый?",
+        "en": "Mix red and yellow — what do you get?"
+      },
+      "hint": {
+        "uz": "Sabzi rangini oʻyla!",
+        "ru": "Подумай про цвет морковки!",
+        "en": "Think of a carrot!"
+      },
+      "explanation": {
+        "uz": "Barakalla! Red + yellow = orange!",
+        "ru": "Молодец! Red + yellow = orange!",
+        "en": "Great! Red + yellow = orange!"
+      },
+      "widget": {
+        "type": "color_mix",
+        "props": {
+          "rounds": [
+            {
+              "a": "red",
+              "b": "yellow",
+              "result": "orange",
+              "options": [
+                "orange",
+                "green",
+                "purple"
+              ],
+              "audio": {
+                "key": "ing06-q2",
+                "text": "Orange! Red and yellow make orange!",
+                "voice": "teacher"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koʻk va sariq aralashsa qaysi rang chiqadi?",
+        "ru": "Что получится, если смешать синий и жёлтый?",
+        "en": "Mix blue and yellow — what do you get?"
+      },
+      "hint": {
+        "uz": "Barglar rangini oʻyla!",
+        "ru": "Подумай про цвет листьев!",
+        "en": "Think of leaves!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Blue + yellow = green!",
+        "ru": "Верно! Blue + yellow = green!",
+        "en": "Right! Blue + yellow = green!"
+      },
+      "widget": {
+        "type": "color_mix",
+        "props": {
+          "rounds": [
+            {
+              "a": "blue",
+              "b": "yellow",
+              "result": "green",
+              "options": [
+                "green",
+                "orange",
+                "pink"
+              ],
+              "audio": {
+                "key": "ing06-q3",
+                "text": "Green! Blue and yellow make green!",
+                "voice": "man"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qizil va koʻk aralashsa qaysi rang chiqadi?",
+        "ru": "Что получится, если смешать красный и синий?",
+        "en": "Mix red and blue — what do you get?"
+      },
+      "hint": {
+        "uz": "Uzum rangini oʻyla!",
+        "ru": "Подумай про цвет винограда!",
+        "en": "Think of grapes!"
+      },
+      "explanation": {
+        "uz": "Barakalla! Red + blue = purple!",
+        "ru": "Молодец! Red + blue = purple!",
+        "en": "Great! Red + blue = purple!"
+      },
+      "widget": {
+        "type": "color_mix",
+        "props": {
+          "rounds": [
+            {
+              "a": "red",
+              "b": "blue",
+              "result": "purple",
+              "options": [
+                "purple",
+                "orange",
+                "green"
+              ],
+              "audio": {
+                "key": "ing06-q4",
+                "text": "Purple! Red and blue make purple!",
+                "voice": "girl"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. Bu qaysi rang?",
+        "ru": "Послушай. Какой это цвет?",
+        "en": "Listen. What color is it?"
+      },
+      "audio": {
+        "key": "ing06-q5",
+        "text": "What color is it? It's orange!",
+        "voice": "boy"
+      },
+      "hint": {
+        "uz": "Oxirgi soʻzni tingla.",
+        "ru": "Слушай последнее слово.",
+        "en": "Listen to the last word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Orange — toʻq sariq.",
+        "ru": "Верно! Orange — оранжевый.",
+        "en": "Right! Orange!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "orange",
+            "purple",
+            "green"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va sariq narsani bos!",
+        "ru": "Послушай и нажми жёлтый предмет!",
+        "en": "Listen and tap the yellow thing!"
+      },
+      "audio": {
+        "key": "ing06-q6",
+        "text": "Yellow! Tap the yellow one.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«Yellow» — limon rangi.",
+        "ru": "«Yellow» — цвет лимона.",
+        "en": "\"Yellow\" — like a lemon."
+      },
+      "explanation": {
+        "uz": "Barakalla! Limon — yellow.",
+        "ru": "Молодец! Лимон — yellow.",
+        "en": "Great! The lemon is yellow."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🍅",
+              "label": {
+                "uz": "pomidor",
+                "ru": "помидор",
+                "en": "tomato"
+              }
+            },
+            {
+              "emoji": "🍆",
+              "label": {
+                "uz": "baqlajon",
+                "ru": "баклажан",
+                "en": "eggplant"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha rang soʻzini oʻz rangiga ula!",
+        "ru": "Соедини слово с его цветом!",
+        "en": "Match each color word to its color!"
+      },
+      "hint": {
+        "uz": "Orange — toʻq sariq, purple — binafsha, green — yashil, pink — pushti.",
+        "ru": "Orange — оранжевый, purple — фиолетовый, green — зелёный, pink — розовый.",
+        "en": "Say each word as you match."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Yangi ranglarni ham bilding!",
+        "ru": "Отлично! Ты знаешь и новые цвета!",
+        "en": "Awesome! You know the new colors too!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "orange"
+              },
+              "right": {
+                "emoji": "🟠"
+              }
+            },
+            {
+              "left": {
+                "label": "purple"
+              },
+              "right": {
+                "emoji": "🟣"
+              }
+            },
+            {
+              "left": {
+                "label": "green"
+              },
+              "right": {
+                "emoji": "🟢"
+              }
+            },
+            {
+              "left": {
+                "label": "pink"
+              },
+              "right": {
+                "emoji": "💗"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla! Kamalakda nechta rang bor?",
+        "ru": "Послушай! Сколько цветов у радуги?",
+        "en": "Listen! How many colors does a rainbow have?"
+      },
+      "audio": {
+        "key": "ing06-q8",
+        "text": "A rainbow! Count the colors: one, two, three, four, five, six, seven!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "Ovozdagi sanashni kuzatib bor.",
+        "ru": "Считай вместе с голосом.",
+        "en": "Count along with the voice."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Kamalakda 7 ta rang bor — seven!",
+        "ru": "Верно! У радуги 7 цветов — seven!",
+        "en": "Right! Seven colors!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "3",
+            "12"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qizil va oq aralashsa qaysi rang chiqadi?",
+        "ru": "Что получится, если смешать красный и белый?",
+        "en": "Mix red and white — what do you get?"
+      },
+      "hint": {
+        "uz": "Panda darsidagi rangni esla!",
+        "ru": "Вспомни цвет из урока про панду!",
+        "en": "Remember the panda's color!"
+      },
+      "explanation": {
+        "uz": "Barakalla! Red + white = pink!",
+        "ru": "Молодец! Red + white = pink!",
+        "en": "Great! Red + white = pink!"
+      },
+      "widget": {
+        "type": "color_mix",
+        "props": {
+          "rounds": [
+            {
+              "a": "red",
+              "b": "white",
+              "result": "pink",
+              "options": [
+                "pink",
+                "purple",
+                "orange"
+              ],
+              "audio": {
+                "key": "ing06-q9",
+                "text": "Pink! Red and white make pink!",
+                "voice": "boy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu qaysi rang ekan?",
+        "ru": "Послушай диалог. Какой это цвет?",
+        "en": "Listen to the dialog. What color is it?"
+      },
+      "hint": {
+        "uz": "Javob: «It's …» dan keyingi soʻz.",
+        "ru": "Ответ — слово после «It's …».",
+        "en": "The answer comes after \"It's…\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's green — yashil.",
+        "ru": "Верно! It's green — зелёный.",
+        "en": "Right! It's green."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What color is it?",
+              "audio": {
+                "key": "ing06-q10-a",
+                "text": "What color is it?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's green!",
+              "audio": {
+                "key": "ing06-q10-b",
+                "text": "It's green!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu qaysi rang?",
+              "ru": "Какой это цвет?",
+              "en": "What color is it?"
+            },
+            "choices": [
+              "green",
+              "red",
+              "blue"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    }
+  ]
+}

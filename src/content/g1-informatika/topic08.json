@@ -1,0 +1,558 @@
+{
+  "topicId": "g1-informatika-08",
+  "subjectKey": "g1-informatika",
+  "emojis": "🍎🍫👀👃",
+  "title": {
+    "uz": "Buyumlarga taʼrif beramiz",
+    "ru": "Описываем предметы",
+    "en": "We describe objects"
+  },
+  "recall": {
+    "uz": "Bir buyumni barcha sezgi aʼzolarimiz bilan oʻrganamiz. Masalan, olmani koʻramiz, hidlaymiz va taʼmini bilamiz.",
+    "ru": "Один предмет мы изучаем всеми органами чувств. Например, яблоко: видим, нюхаем и пробуем.",
+    "en": "We study one object with all our senses. For example, an apple: we see it, smell it and taste it."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sariq, yumaloq va nordon. Bu nima?",
+        "ru": "Жёлтый, круглый и кислый. Что это?",
+        "en": "Yellow, round and sour. What is it?"
+      },
+      "hint": {
+        "uz": "Nordon meva.",
+        "ru": "Кислый фрукт.",
+        "en": "A sour fruit."
+      },
+      "explanation": {
+        "uz": "Bu — limon.",
+        "ru": "Это лимон.",
+        "en": "It is a lemon."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "limon",
+              "ru": "лимон",
+              "en": "lemon"
+            },
+            {
+              "uz": "olma",
+              "ru": "яблоко",
+              "en": "apple"
+            },
+            {
+              "uz": "tarvuz",
+              "ru": "арбуз",
+              "en": "watermelon"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Olma haqida toʻgʻri gaplarni belgila!",
+        "ru": "Отметь верное о яблоке!",
+        "en": "Tap the true things about an apple!"
+      },
+      "hint": {
+        "uz": "Olma qanday?",
+        "ru": "Какое яблоко?",
+        "en": "What is an apple like?"
+      },
+      "explanation": {
+        "uz": "Olma qizil, yumaloq va shirin.",
+        "ru": "Яблоко красное, круглое и сладкое.",
+        "en": "An apple is red, round and sweet."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🔴",
+              "label": {
+                "uz": "qizil",
+                "ru": "красное",
+                "en": "red"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "⚪",
+              "label": {
+                "uz": "yumaloq",
+                "ru": "круглое",
+                "en": "round"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍯",
+              "label": {
+                "uz": "shirin",
+                "ru": "сладкое",
+                "en": "sweet"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍟",
+              "label": {
+                "uz": "shoʻr",
+                "ru": "солёное",
+                "en": "salty"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "⬛",
+              "label": {
+                "uz": "kvadrat",
+                "ru": "квадратное",
+                "en": "square"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir xususiyatni sezgi aʼzosi bilan ula!",
+        "ru": "Соедини свойство с органом чувств!",
+        "en": "Match each property to its sense organ!"
+      },
+      "hint": {
+        "uz": "Rangni koʻz, hidni burun biladi.",
+        "ru": "Цвет — глаз, запах — нос.",
+        "en": "Colour — eye, smell — nose."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "👀"
+              },
+              "right": {
+                "label": {
+                  "uz": "rang",
+                  "ru": "цвет",
+                  "en": "colour"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👃"
+              },
+              "right": {
+                "label": {
+                  "uz": "hid",
+                  "ru": "запах",
+                  "en": "smell"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👅"
+              },
+              "right": {
+                "label": {
+                  "uz": "taʼm",
+                  "ru": "вкус",
+                  "en": "taste"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani qaysi aʼzo bilan bilamiz?",
+        "ru": "Каким органом узнаём каждое?",
+        "en": "Which organ for each?"
+      },
+      "hint": {
+        "uz": "Diqqat bilan oʻyla.",
+        "ru": "Подумай внимательно.",
+        "en": "Think carefully."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "sense_match",
+        "props": {
+          "rounds": [
+            {
+              "emoji": "🍎",
+              "label": {
+                "uz": "olmaning rangi",
+                "ru": "цвет яблока",
+                "en": "apple's colour"
+              },
+              "organ": "eye"
+            },
+            {
+              "emoji": "🔔",
+              "label": {
+                "uz": "qoʻngʻiroq ovozi",
+                "ru": "звон колокольчика",
+                "en": "bell's sound"
+              },
+              "organ": "ear"
+            },
+            {
+              "emoji": "🍫",
+              "label": {
+                "uz": "shokolad taʼmi",
+                "ru": "вкус шоколада",
+                "en": "chocolate's taste"
+              },
+              "organ": "tongue"
+            },
+            {
+              "emoji": "🌹",
+              "label": {
+                "uz": "gul hidi",
+                "ru": "запах цветка",
+                "en": "flower's smell"
+              },
+              "organ": "nose"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir buyumni bir necha sezgi aʼzosi bilan bilib olamiz.",
+        "ru": "Один предмет узнаём несколькими чувствами.",
+        "en": "We know one object with several senses."
+      },
+      "hint": {
+        "uz": "Olmani koʻramiz va tatamiz.",
+        "ru": "Яблоко видим и пробуем.",
+        "en": "We see and taste an apple."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍎",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (rangi boshqa)",
+        "ru": "Нажми лишнее! (другого цвета)",
+        "en": "Tap the odd one! (different colour)"
+      },
+      "hint": {
+        "uz": "Qaysi biri qizil emas?",
+        "ru": "Что не красное?",
+        "en": "Which is not red?"
+      },
+      "explanation": {
+        "uz": "Limon sariq, qolganlari qizil.",
+        "ru": "Лимон жёлтый, остальные красные.",
+        "en": "The lemon is yellow, the rest are red."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "qizil narsalar",
+            "ru": "красное",
+            "en": "red things"
+          },
+          "tiles": [
+            {
+              "text": "olma"
+            },
+            {
+              "text": "sharcha"
+            },
+            {
+              "text": "shar"
+            },
+            {
+              "text": "limon",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Shokoladning taʼmi qanday?",
+        "ru": "Какой вкус у шоколада?",
+        "en": "What does chocolate taste like?"
+      },
+      "hint": {
+        "uz": "Shirinmi?",
+        "ru": "Сладкий?",
+        "en": "Sweet?"
+      },
+      "explanation": {
+        "uz": "Shokolad shirin.",
+        "ru": "Шоколад сладкий.",
+        "en": "Chocolate is sweet."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "shirin",
+              "ru": "сладкий",
+              "en": "sweet"
+            },
+            {
+              "uz": "nordon",
+              "ru": "кислый",
+              "en": "sour"
+            },
+            {
+              "uz": "shoʻr",
+              "ru": "солёный",
+              "en": "salty"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Yumaloq, qizil, daraxtda oʻsar.",
+        "ru": "Круглое, красное, растёт на дереве.",
+        "en": "Round, red, grows on a tree."
+      },
+      "explanation": {
+        "uz": "Javob — olma!",
+        "ru": "Ответ — яблоко!",
+        "en": "The answer is an apple!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Yumaloq va qizil,",
+              "ru": "Круглое и красное,",
+              "en": "Round and red,"
+            },
+            {
+              "uz": "Daraxtda oʻsar bir gul.",
+              "ru": "растёт на дереве.",
+              "en": "it grows on a tree."
+            }
+          ],
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              }
+            },
+            {
+              "emoji": "🥒",
+              "label": {
+                "uz": "bodring",
+                "ru": "огурец",
+                "en": "cucumber"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xususiyatni aʼzo bilan juftla!",
+        "ru": "Соедини свойство с органом!",
+        "en": "Match property to organ!"
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Смотри на картинку.",
+        "en": "Look."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "👀"
+              },
+              "b": {
+                "label": {
+                  "uz": "rang",
+                  "ru": "цвет",
+                  "en": "colour"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👂"
+              },
+              "b": {
+                "label": {
+                  "uz": "tovush",
+                  "ru": "звук",
+                  "en": "sound"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👃"
+              },
+              "b": {
+                "label": {
+                  "uz": "hid",
+                  "ru": "запах",
+                  "en": "smell"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Muzqaymoq taʼmini qaysi aʼzo biladi?",
+        "ru": "Каким органом узнаём вкус мороженого?",
+        "en": "Which organ tells ice cream's taste?"
+      },
+      "hint": {
+        "uz": "Taʼm — til bilan.",
+        "ru": "Вкус — языком.",
+        "en": "Taste — with the tongue."
+      },
+      "explanation": {
+        "uz": "Taʼmni til biladi.",
+        "ru": "Вкус узнаёт язык.",
+        "en": "The tongue tells taste."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "язык",
+                "en": "tongue"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

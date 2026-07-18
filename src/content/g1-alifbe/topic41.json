@@ -1,0 +1,484 @@
+{
+  "topicId": "g1-alifbe-41",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🧅👞🍚",
+  "title": {
+    "uz": "«P p» harfi",
+    "ru": "Буква «P p»",
+    "en": "The letter “P p”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «P p». U undosh tovush. «P» bilan: piyoz, poyabzal, palov. Endi «piyoz» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «P p». Это согласный звук. Слова: piyoz, poyabzal, palov. Теперь мы можем прочитать слово «piyoz»!",
+    "en": "Today's letter is “P p”. It is a consonant. Words: piyoz, poyabzal, palov. Now we can read and build the word “piyoz”!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«P» bilan boshlanadigan soʻzni top!",
+        "ru": "Найди слово на «P»!",
+        "en": "Find the word that starts with “P”!"
+      },
+      "hint": {
+        "uz": "Boshini choʻzib ayt: p-p-piyoz.",
+        "ru": "Протяни начало: piyoz.",
+        "en": "Stretch the start: piyoz."
+      },
+      "explanation": {
+        "uz": "«piyoz» «P» tovushi bilan boshlanadi.",
+        "ru": "«piyoz» начинается со звука «P».",
+        "en": "“piyoz” starts with the sound “P”."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🧅",
+              "label": {
+                "uz": "piyoz",
+                "ru": "лук",
+                "en": "onion"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«P» harfini topib, hammasini bos!",
+        "ru": "Найди букву «P» и нажми на все!",
+        "en": "Find the letter “P” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham boʻladi.",
+        "ru": "Считаются большая и маленькая.",
+        "en": "Both capital and small count."
+      },
+      "explanation": {
+        "uz": "«P» harfini topding!",
+        "ru": "Ты нашёл букву «P»!",
+        "en": "You found the letter “P”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "P",
+          "cols": 3,
+          "grid": [
+            "P",
+            "o",
+            "p",
+            "T",
+            "P",
+            "i",
+            "p",
+            "n",
+            "P"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🧅 «piyoz»da «p» tovushi qaysi katakchada?",
+        "ru": "🧅 В какой клетке звук «p» в слове «piyoz»?",
+        "en": "🧅 Which box has the “p” sound in “piyoz”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«piyoz»da «p» toʻgʻri joyda.",
+        "ru": "В «piyoz» звук «p» на верном месте.",
+        "en": "In “piyoz” the “p” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🧅",
+          "word": {
+            "uz": "piyoz",
+            "ru": "piyoz",
+            "en": "piyoz"
+          },
+          "sound": "p",
+          "cells": [
+            "p",
+            "i",
+            "y",
+            "o",
+            "z"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🧅 «piyoz» soʻzining tovush chizmasini rangla!",
+        "ru": "🧅 Раскрась схему звуков слова «piyoz»!",
+        "en": "🧅 Colour the sound scheme of “piyoz”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«piyoz» tovushlari ketma-ketligini rangladik.",
+        "ru": "Мы раскрасили схему звуков «piyoz».",
+        "en": "We coloured the sound scheme of “piyoz”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "🧅",
+          "word": {
+            "uz": "piyoz",
+            "ru": "piyoz",
+            "en": "piyoz"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c",
+            "v",
+            "c"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«P» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «P»!",
+        "en": "Tap the words that have the “P” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «p» tovushi bor.",
+        "ru": "В них есть звук «p».",
+        "en": "They have the “p” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🧅",
+              "label": {
+                "uz": "piyoz",
+                "ru": "piyoz",
+                "en": "piyoz"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👞",
+              "label": {
+                "uz": "poyabzal",
+                "ru": "poyabzal",
+                "en": "poyabzal"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍚",
+              "label": {
+                "uz": "palov",
+                "ru": "palov",
+                "en": "palov"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🧅 Yetishmayotgan harfni qoʻy!",
+        "ru": "🧅 Вставь недостающую букву!",
+        "en": "🧅 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz «p» bilan boshlanadi.",
+        "ru": "Слово начинается с «p».",
+        "en": "The word starts with “p”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «p». Soʻz: «piyoz».",
+        "ru": "Верная буква — «p». Слово: «piyoz».",
+        "en": "The right letter is “p”. Word: “piyoz”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🧅",
+          "label": {
+            "uz": "piyoz",
+            "ru": "лук",
+            "en": "onion"
+          },
+          "letters": [
+            "p",
+            "i",
+            "y",
+            "o",
+            "z"
+          ],
+          "blank": 0,
+          "choices": [
+            "p",
+            "b",
+            "t"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«P» — undosh tovush.",
+        "ru": "«P» — согласный звук.",
+        "en": "“P” is a consonant sound."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «P» — undosh tovush.",
+        "ru": "Верно! «P» — согласный.",
+        "en": "True! “P” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "👞 «poyabzal» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "👞 Похлопай слово «poyabzal» по слогам!",
+        "en": "👞 Clap the word “poyabzal” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«poyabzal» — 3 boʻgʻin.",
+        "ru": "«poyabzal» — 3 слога.",
+        "en": "“poyabzal” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "👞",
+          "word": {
+            "uz": "poyabzal",
+            "ru": "poyabzal",
+            "en": "poyabzal"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🧅"
+              },
+              "right": {
+                "label": {
+                  "uz": "piyoz",
+                  "ru": "piyoz",
+                  "en": "piyoz"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👞"
+              },
+              "right": {
+                "label": {
+                  "uz": "poyabzal",
+                  "ru": "poyabzal",
+                  "en": "poyabzal"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍚"
+              },
+              "right": {
+                "label": {
+                  "uz": "palov",
+                  "ru": "palov",
+                  "en": "palov"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«P» tovushida nima birdaniga ochiladi?",
+        "ru": "Что резко раскрывается при звуке «P»?",
+        "en": "What bursts open when saying “P”?"
+      },
+      "hint": {
+        "uz": "«p-p-p» deb ayt.",
+        "ru": "Скажи «p-p-p».",
+        "en": "Say “p-p-p”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — lablar.",
+        "ru": "Верный ответ — губы.",
+        "en": "The right answer is the lips."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "lablar",
+              "ru": "губы",
+              "en": "the lips"
+            },
+            {
+              "uz": "tishlar",
+              "ru": "зубы",
+              "en": "the teeth"
+            },
+            {
+              "uz": "koʻzlar",
+              "ru": "глаза",
+              "en": "the eyes"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

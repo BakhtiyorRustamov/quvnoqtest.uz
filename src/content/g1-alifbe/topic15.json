@@ -1,0 +1,142 @@
+{
+  "topicId": "g1-alifbe-15",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🍎🐱🏠",
+  "title": {
+    "uz": "«M m» harfi",
+    "ru": "Буква «M m»",
+    "en": "The letter “M m”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «M m». U undosh tovush. Uni aytganda lablar birlashadi, havo burundan chiqadi. «M» bilan: olma, mushuk, tom. Endi «olma» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «M m». Это согласный звук. Губы смыкаются, воздух выходит через нос. Слова: olma, mushuk, tom. Теперь мы можем прочитать слово «olma»!",
+    "en": "Today's letter is “M m”. It is a consonant. The lips join and air leaves through the nose. Words: olma, mushuk, tom. Now we can read and build the word “olma”!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«M» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «M»!", "en": "Find the word that starts with “M”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: m-m-mushuk.", "ru": "Протяни начало: м-м-mushuk.", "en": "Stretch the start: m-m-mushuk." },
+      "explanation": { "uz": "«mushuk» «M» tovushi bilan boshlanadi.", "ru": "«mushuk» начинается со звука «M».", "en": "“mushuk” (cat) starts with the sound “M”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "cat", "emoji": "🐱", "label": { "uz": "mushuk", "ru": "mushuk", "en": "mushuk" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«M» harfini topib, hammasini bos!", "ru": "Найди букву «M» и нажми на все!", "en": "Find the letter “M” and tap them all!" },
+      "hint": { "uz": "Katta «M» ham, kichik «m» ham.", "ru": "Считаются «M» и «m».", "en": "Both “M” and “m” count." },
+      "explanation": { "uz": "«M» harfini topding!", "ru": "Ты нашёл букву «M»!", "en": "You found the letter “M”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "M", "cols": 3, "grid": ["M", "l", "m", "T", "M", "o", "m", "i", "M"] } }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍎 «olma»da «m» tovushi qaysi katakchada?", "ru": "🍎 В какой клетке звук «m» в слове «olma»?", "en": "🍎 Which box has the “m” sound in “olma”?" },
+      "hint": { "uz": "«m» soʻzning oʻrtasida — uchinchi katak.", "ru": "«m» в середине — третья клетка.", "en": "“m” is in the middle — the third box." },
+      "explanation": { "uz": "«olma»da «m» — uchinchi katakda.", "ru": "В «olma» звук «m» — третья клетка.", "en": "In “olma” the “m” is in the third box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🍎", "word": { "uz": "olma", "ru": "olma", "en": "olma" }, "sound": "m", "cells": ["o", "l", "m", "a"], "answer": 2 } }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍎 «olma» soʻzining tovush chizmasini rangla!", "ru": "🍎 Раскрась схему звуков слова «olma»!", "en": "🍎 Colour the sound scheme of the word “olma”!" },
+      "hint": { "uz": "o — unli, l — undosh, m — undosh, a — unli.", "ru": "o — гласный, l — согласный, m — согласный, a — гласный.", "en": "o vowel, l consonant, m consonant, a vowel." },
+      "explanation": { "uz": "«olma»: o, l, m, a — unli, undosh, undosh, unli.", "ru": "«olma»: гласный, согласный, согласный, гласный.", "en": "“olma”: vowel, consonant, consonant, vowel." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🍎", "word": { "uz": "olma", "ru": "olma", "en": "olma" }, "scheme": ["v", "c", "c", "v"] } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«M» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «M»!", "en": "Tap the words that have the “M” sound!" },
+      "hint": { "uz": "olma, mushuk, tom — «m» tovushi bor.", "ru": "olma, mushuk, tom — есть звук «m».", "en": "olma, mushuk, tom have the “m” sound." },
+      "explanation": { "uz": "olma, mushuk, tom — «m» bor. ot, nonda yoʻq.", "ru": "olma, mushuk, tom — есть «m». В ot, non нет.", "en": "olma, mushuk, tom have “m”. ot, non do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" }, "correct": true },
+            { "id": "cat", "emoji": "🐱", "label": { "uz": "mushuk", "ru": "mushuk", "en": "mushuk" }, "correct": true },
+            { "id": "roof", "emoji": "🏠", "label": { "uz": "tom", "ru": "tom", "en": "tom" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Harflardan «olma» soʻzini tuz!", "ru": "Составь слово «olma» из букв!", "en": "Build the word “olma” from letters!" },
+      "hint": { "uz": "o — l — m — a tartibida bos.", "ru": "Нажимай по порядку: o — l — m — a.", "en": "Tap in order: o — l — m — a." },
+      "explanation": { "uz": "o + l + m + a = «olma».", "ru": "o + l + m + a = «olma».", "en": "o + l + m + a = “olma” (apple)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🍎", "word": "olma", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } } }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍎 «olma» soʻzini boʻgʻinlab qarsak chal!", "ru": "🍎 Похлопай слово «olma» по слогам!", "en": "🍎 Clap the word “olma” by syllables!" },
+      "hint": { "uz": "ol-ma — ikki marta qarsak.", "ru": "ol-ma — два хлопка.", "en": "ol-ma — two claps." },
+      "explanation": { "uz": "«olma» = ol-ma, ikki boʻgʻin.", "ru": "«olma» = ol-ma, два слога.", "en": "“olma” = ol-ma, two syllables." },
+      "widget": { "type": "syllable_clap", "props": { "emoji": "🍎", "word": { "uz": "olma", "ru": "olma", "en": "olma" }, "syllables": 2 } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«M» — undosh tovush.", "ru": "«M» — согласный звук.", "en": "“M” is a consonant sound." },
+      "hint": { "uz": "«M»da lablar birlashadi.", "ru": "При «M» смыкаются губы.", "en": "For “M” the lips join." },
+      "explanation": { "uz": "Toʻgʻri! «M» — undosh tovush.", "ru": "Верно! «M» — согласный.", "en": "True! “M” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Harflarni unli yoki undoshga ajrat!", "ru": "Разложи буквы: гласная или согласная!", "en": "Sort the letters: vowel or consonant!" },
+      "hint": { "uz": "Unli: O, I. Undosh: M, T, N, L.", "ru": "Гласные: O, I. Согласные: M, T, N, L.", "en": "Vowels: O, I. Consonants: M, T, N, L." },
+      "explanation": { "uz": "Unli: O, I. Undosh: M, T, L.", "ru": "Гласные: O, I. Согласные: M, T, L.", "en": "Vowels: O, I. Consonants: M, T, L." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "vowel", "label": { "uz": "Unli", "ru": "Гласный", "en": "Vowel" }, "color": "#e14b4b" },
+            { "id": "cons", "label": { "uz": "Undosh", "ru": "Согласный", "en": "Consonant" }, "color": "#2f9fe0" }
+          ],
+          "items": [
+            { "id": "o", "emoji": "O", "label": { "uz": "o", "ru": "o", "en": "o" }, "bin": "vowel" },
+            { "id": "i", "emoji": "I", "label": { "uz": "i", "ru": "i", "en": "i" }, "bin": "vowel" },
+            { "id": "m", "emoji": "M", "label": { "uz": "m", "ru": "m", "en": "m" }, "bin": "cons" },
+            { "id": "t", "emoji": "T", "label": { "uz": "t", "ru": "t", "en": "t" }, "bin": "cons" },
+            { "id": "l", "emoji": "L", "label": { "uz": "l", "ru": "l", "en": "l" }, "bin": "cons" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«M» tovushini aytganda nima birlashadi?", "ru": "Что смыкается при звуке «M»?", "en": "What comes together when saying “M”?" },
+      "hint": { "uz": "«M-m-m» deb ayt.", "ru": "Скажи «м-м-м».", "en": "Say “m-m-m”." },
+      "explanation": { "uz": "«M»da lablar birlashadi.", "ru": "При «M» смыкаются губы.", "en": "For “M” the lips come together." },
+      "widget": { "type": "mcq", "props": { "choices": [{ "uz": "lablar", "ru": "губы", "en": "the lips" }, { "uz": "tishlar", "ru": "зубы", "en": "the teeth" }, { "uz": "koʻzlar", "ru": "глаза", "en": "the eyes" }], "answerIndex": 0 } }
+    }
+  ]
+}

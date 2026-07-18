@@ -1,0 +1,616 @@
+{
+  "topicId": "g1-ingliz-60",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🏆🦁🏃🎉",
+  "title": {
+    "uz": "Yakuniy oʻyin",
+    "ru": "Финальная игра",
+    "en": "Final review game"
+  },
+  "recall": {
+    "uz": "Oxirgi dars! Barcha bilganlarimizni oʻйnab takrorlaymiz: harakatlar va hayvonlar. Sen ajoyib ish qilding!",
+    "ru": "Последний урок! Играя, повторяем всё: действия и животных. Ты отлично поработал!",
+    "en": "The last lesson! Let's play and review it all: actions and animals. You did a great job!"
+  },
+  "ttsText": {
+    "uz": "Yakuniy oʻyin.",
+    "en": "The final game! Actions and animals. Well done, you did it!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Oyogʻim yoʻq, «sss» deb sudralaman.",
+        "ru": "У меня нет ног, я ползу «ссс».",
+        "en": "I have no legs, I slither: sss."
+      },
+      "explanation": {
+        "uz": "Javob — snake (ilon)!",
+        "ru": "Ответ — snake (змея)!",
+        "en": "The answer is a snake!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Oyogʻim yoʻq, sudralaman,",
+              "ru": "У меня нет ног, я ползу,",
+              "en": "I have no legs, I slither around,"
+            },
+            {
+              "uz": "«sss» deyman. Men kimman?",
+              "ru": "я шиплю «ссс». Кто я?",
+              "en": "I hiss: sss. What am I?"
+            }
+          ],
+          "options": [
+            {
+              "emoji": "🐍",
+              "label": {
+                "uz": "ilon",
+                "ru": "змея",
+                "en": "snake"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🦁",
+              "label": {
+                "uz": "sher",
+                "ru": "лев",
+                "en": "lion"
+              }
+            },
+            {
+              "emoji": "🐦",
+              "label": {
+                "uz": "qush",
+                "ru": "птица",
+                "en": "bird"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Taqqosla va toʻgʻrisini bos!",
+        "ru": "Сравни и нажми верное!",
+        "en": "Compare and tap the correct one!"
+      },
+      "hint": {
+        "uz": "Katta va kichikni solishtir.",
+        "ru": "Сравни большое и маленькое.",
+        "en": "Compare big and small."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "compare_pick",
+        "props": {
+          "rounds": [
+            {
+              "prompt": {
+                "uz": "Qaysi biri kattaroq?",
+                "ru": "Кто больше?",
+                "en": "Which is bigger?"
+              },
+              "a": {
+                "emoji": "🐘",
+                "label": {
+                  "uz": "fil",
+                  "ru": "слон",
+                  "en": "elephant"
+                }
+              },
+              "b": {
+                "emoji": "🐜",
+                "label": {
+                  "uz": "chumoli",
+                  "ru": "муравей",
+                  "en": "ant"
+                }
+              },
+              "answer": "a"
+            },
+            {
+              "prompt": {
+                "uz": "Qaysi biri kichikroq?",
+                "ru": "Кто меньше?",
+                "en": "Which is smaller?"
+              },
+              "a": {
+                "emoji": "🦁",
+                "label": {
+                  "uz": "sher",
+                  "ru": "лев",
+                  "en": "lion"
+                }
+              },
+              "b": {
+                "emoji": "🐭",
+                "label": {
+                  "uz": "sichqon",
+                  "ru": "мышь",
+                  "en": "mouse"
+                }
+              },
+              "answer": "b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima qila oladi?",
+        "ru": "Послушай. Что умеет ребёнок?",
+        "en": "Listen. What can the child do?"
+      },
+      "hint": {
+        "uz": "Ikkita harakat.",
+        "ru": "Два действия.",
+        "en": "Two actions."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I can run and swim.",
+        "ru": "Верно! I can run and swim.",
+        "en": "Right! I can run and swim."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What can you do?",
+              "audio": {
+                "key": "ing60-q3-a",
+                "text": "What can you do?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I can run and swim!",
+              "audio": {
+                "key": "ing60-q3-b",
+                "text": "I can run and swim!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bola nima qila oladi?",
+              "ru": "Что умеет ребёнок?",
+              "en": "What can the child do?"
+            },
+            "choices": [
+              "fly and jump",
+              "read and write",
+              "run and swim"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni ajrat: harakat yoki hayvon!",
+        "ru": "Разложи слова: действие или животное!",
+        "en": "Sort the words: action or animal!"
+      },
+      "hint": {
+        "uz": "run — harakat, lion — hayvon.",
+        "ru": "run — действие, lion — животное.",
+        "en": "run — action, lion — animal."
+      },
+      "explanation": {
+        "uz": "Barakalla! Harakat va hayvonni ajratding!",
+        "ru": "Молодец! Ты разделил действия и животных!",
+        "en": "Great! You sorted actions and animals!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "act",
+              "label": {
+                "uz": "Action",
+                "ru": "Действие",
+                "en": "Action"
+              }
+            },
+            {
+              "id": "ani",
+              "label": {
+                "uz": "Animal",
+                "ru": "Животное",
+                "en": "Animal"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏃",
+              "label": "run",
+              "bin": "act"
+            },
+            {
+              "emoji": "🏊",
+              "label": "swim",
+              "bin": "act"
+            },
+            {
+              "emoji": "💃",
+              "label": "dance",
+              "bin": "act"
+            },
+            {
+              "emoji": "🦁",
+              "label": "lion",
+              "bin": "ani"
+            },
+            {
+              "emoji": "🐘",
+              "label": "elephant",
+              "bin": "ani"
+            },
+            {
+              "emoji": "🐍",
+              "label": "snake",
+              "bin": "ani"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Faqat hayvon soʻzlarini bos!",
+        "ru": "Нажми только животных!",
+        "en": "Tap only the animal words!"
+      },
+      "hint": {
+        "uz": "lion, monkey, snake.",
+        "ru": "lion, monkey, snake.",
+        "en": "lion, monkey, snake."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular hayvon!",
+        "ru": "Молодец! Это животные!",
+        "en": "Great! Those are animals!"
+      },
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "lion",
+              "match": true
+            },
+            {
+              "text": "monkey",
+              "match": true
+            },
+            {
+              "text": "run",
+              "match": false
+            },
+            {
+              "text": "snake",
+              "match": true
+            },
+            {
+              "text": "sing",
+              "match": false
+            },
+            {
+              "text": "elephant",
+              "match": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harakatlarni belgila!",
+        "ru": "Отметь действия!",
+        "en": "Tap the actions!"
+      },
+      "hint": {
+        "uz": "Yugur, suz, kuyla.",
+        "ru": "Бегай, плавай, пой.",
+        "en": "Run, swim, sing."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular harakat!",
+        "ru": "Молодец! Это действия!",
+        "en": "Great! Those are actions!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏃",
+              "label": "run",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🏊",
+              "label": "swim",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🎤",
+              "label": "sing",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🦁",
+              "label": "lion"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐘",
+              "label": "elephant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil juftni top!",
+        "ru": "Найди одинаковую пару!",
+        "en": "Find the matching pair!"
+      },
+      "hint": {
+        "uz": "Bir xil ikkitasini top.",
+        "ru": "Найди два одинаковых.",
+        "en": "Find the two that are the same."
+      },
+      "explanation": {
+        "uz": "Barakalla! Juftni topding!",
+        "ru": "Молодец! Ты нашёл пару!",
+        "en": "Great! You found the pair!"
+      },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            {
+              "id": "run1",
+              "emoji": "🏃",
+              "key": "run"
+            },
+            {
+              "id": "lion",
+              "emoji": "🦁",
+              "key": "lion"
+            },
+            {
+              "id": "run2",
+              "emoji": "🏃",
+              "key": "run"
+            },
+            {
+              "id": "swim",
+              "emoji": "🏊",
+              "key": "swim"
+            },
+            {
+              "id": "snake",
+              "emoji": "🐍",
+              "key": "snake"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni rasmga ula!",
+        "ru": "Соедини слово с картинкой!",
+        "en": "Match each word to its picture!"
+      },
+      "hint": {
+        "uz": "run 🏃, lion 🦁, swim 🏊, snake 🐍.",
+        "ru": "run 🏃, lion 🦁, swim 🏊, snake 🐍.",
+        "en": "run 🏃, lion 🦁, swim 🏊, snake 🐍."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "run"
+              },
+              "right": {
+                "emoji": "🏃"
+              }
+            },
+            {
+              "left": {
+                "label": "lion"
+              },
+              "right": {
+                "emoji": "🦁"
+              }
+            },
+            {
+              "left": {
+                "label": "swim"
+              },
+              "right": {
+                "emoji": "🏊"
+              }
+            },
+            {
+              "left": {
+                "label": "snake"
+              },
+              "right": {
+                "emoji": "🐍"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Doʻsting nima dedi?",
+        "ru": "Послушай. Что сказал друг?",
+        "en": "Listen. What did the friend say?"
+      },
+      "hint": {
+        "uz": "«Well done!» — barakalla.",
+        "ru": "«Well done!» — молодец.",
+        "en": "\"Well done!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Well done! You did it!»",
+        "ru": "Верно! «Well done! You did it!»",
+        "en": "Right! \"Well done! You did it!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I finished the game!",
+              "audio": {
+                "key": "ing60-q9-a",
+                "text": "I finished the game!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Well done! You did it!",
+              "audio": {
+                "key": "ing60-q9-b",
+                "text": "Well done! You did it!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "Well done!",
+              "How many?",
+              "Go away!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sen butun kursni tugatding! Doʻsting nima deydi?",
+        "ru": "Ты закончил весь курс! Что говорит друг?",
+        "en": "You finished the whole course! What does your friend say?"
+      },
+      "hint": {
+        "uz": "Tabrik va maqtov.",
+        "ru": "Поздравление и похвала.",
+        "en": "Praise and congratulations."
+      },
+      "explanation": {
+        "uz": "Barakalla! «Well done!» — sen uddalading!",
+        "ru": "Молодец! «Well done!» — у тебя получилось!",
+        "en": "Great! \"Well done!\" — you did it!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Well done!\nBarakalla!",
+              "ru": "Well done!\nМолодец!",
+              "en": "Well done!"
+            },
+            {
+              "uz": "Goodbye!\nXayr!",
+              "ru": "Goodbye!\nПока!",
+              "en": "Goodbye!"
+            },
+            {
+              "uz": "Sit down.\nOʻtir.",
+              "ru": "Sit down.\nСядь.",
+              "en": "Sit down."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

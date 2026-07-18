@@ -1,0 +1,169 @@
+{
+  "topicId": "g1-oqish-21",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "📚👑💡",
+  "title": {
+    "uz": "Kitob — dono maslahatchi",
+    "ru": "Книга — мудрый советчик",
+    "en": "The book — a wise adviser"
+  },
+  "recall": {
+    "uz": "Podsho va dono kishi haqidagi rivoyatni tinglab oʻqiymiz, voqealar tartibini topamiz va kitob nega kuchli ekanini bilib olamiz.",
+    "ru": "Слушаем предание о царе и мудреце, находим порядок событий и узнаём, почему книга сильна.",
+    "en": "We read a tale about a king and a wise man, put the events in order, and learn why a book is powerful."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Kitob — dono maslahatchi",
+        "variant": "story",
+        "audio": "g1-oqish-21-q1",
+        "lines": [
+          "Qadim zamonda bir podsho yashagan ekan.",
+          "U vazirlarini yigʻib soʻrabdi:",
+          "«Dunyodagi eng kuchli narsa nima?»",
+          "Vazirlar oʻylanib qolibdi — biri oltin, biri qilich debdi.",
+          "Podshoga bu javoblar yoqmabdi.",
+          "Shunda qoʻshni yurtdan bir dono kishini topib kelishibdi.",
+          "Dono kishi taraddudsiz javob beribdi:",
+          "«Eng kuchli narsa — kitob, chunki u bilim beradi.",
+          "Bilim esa butun dunyoni oʻzgartiradi.»",
+          "Podsho bu donolikka tan beribdi."
+        ]
+      } },
+      "prompt": { "uz": "Rivoyatni tinglab, ergashib oʻqing!", "ru": "Послушай и читай предание, следя за текстом!", "en": "Listen and follow along as you read the tale!" },
+      "hint": { "uz": "Dono kishi eng kuchli narsa deb nimani aytdi?", "ru": "Что мудрец назвал самым сильным?", "en": "What did the wise man call the most powerful thing?" },
+      "explanation": { "uz": "Rivoyatda kitob — bilim bergani uchun eng kuchli narsa deb koʻrsatiladi.", "ru": "В предании книга — самое сильное, ведь она даёт знания.", "en": "In the tale, a book is the most powerful thing because it gives knowledge." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Kitob", "ru": "Книга", "en": "A book" },
+        { "uz": "Televizor", "ru": "Телевизор", "en": "A television" },
+        { "uz": "Soat", "ru": "Часы", "en": "A clock" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Topishmoq: tili yoʻq, ammo dunyoni oʻrgatadi; javonda turadi, varaqlanadi. Bu nima?", "ru": "Загадка: без языка, а миру учит; стоит на полке, её листают. Что это?", "en": "Riddle: it has no tongue yet teaches the world; it sits on a shelf and you turn its pages. What is it?" },
+      "hint": { "uz": "Uni oʻqiysiz, undan bilim olasiz.", "ru": "Её читают и получают знания.", "en": "You read it and gain knowledge from it." },
+      "explanation": { "uz": "Bu — kitob: u gapirmaydi, lekin bilim beradi.", "ru": "Это книга: она молчит, но даёт знания.", "en": "It's a book: silent, yet it gives knowledge." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Podsho vazirlaridan eng kuchli narsa nima deb soʻrabdi.", "ru": "Царь спросил визирей, что самое сильное.", "en": "The king asked his viziers what is the most powerful thing." } },
+        { "text": { "uz": "Vazirlar turlicha javob berishibdi.", "ru": "Визири ответили по-разному.", "en": "The viziers answered differently." } },
+        { "text": { "uz": "Podshoga hech qaysi javob yoqmabdi.", "ru": "Царю не понравился ни один ответ.", "en": "The king liked none of the answers." } },
+        { "text": { "uz": "Qoʻshni yurtdan dono kishini topib kelishibdi.", "ru": "Из соседней страны привели мудреца.", "en": "They brought a wise man from a neighbouring land." } },
+        { "text": { "uz": "Dono kishi «Eng kuchlisi — kitob» debdi.", "ru": "Мудрец сказал: «Самое сильное — книга».", "en": "The wise man said, “The most powerful thing is a book.”" } }
+      ] } },
+      "prompt": { "uz": "Voqealarni roʻy bergan tartibida bosing!", "ru": "Нажимай события в порядке, как они произошли!", "en": "Tap the events in the order they happened!" },
+      "hint": { "uz": "Avval podsho savol berdi…", "ru": "Сначала царь задал вопрос…", "en": "First the king asked a question…" },
+      "explanation": { "uz": "Savol → turli javoblar → podsho norozi → dono kishi → «kitob» javobi.", "ru": "Вопрос → разные ответы → царь недоволен → мудрец → ответ «книга».", "en": "Question → different answers → king unhappy → wise man → the answer “a book”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Dono kishi eng kuchli narsa — kitob, dedi.", "ru": "Мудрец сказал, что самое сильное — книга.", "en": "The wise man said the most powerful thing is a book." },
+        "answer": "true",
+        "why": { "uz": "Matnda dono kishining aynan shu javobi keltirilgan.", "ru": "В тексте приведён именно этот ответ мудреца.", "en": "The text gives exactly this answer from the wise man." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Dono kishining javobini eslang.", "ru": "Вспомни ответ мудреца.", "en": "Recall the wise man's answer." },
+      "explanation": { "uz": "Toʻgʻri: dono kishi «eng kuchlisi — kitob» dedi.", "ru": "Верно: мудрец сказал «самое сильное — книга».", "en": "True: the wise man said “the most powerful is a book.”" },
+      "openEnd": { "uz": "Seningcha, dunyodagi eng kuchli narsa nima? Nega?", "ru": "Как ты думаешь, что самое сильное в мире? Почему?", "en": "What do you think is the most powerful thing in the world? Why?" }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Podsho vazirlariga oltin sovgʻa qildi.", "ru": "Царь подарил визирям золото.", "en": "The king gave the viziers gold." },
+        "answer": "ng",
+        "why": { "uz": "Rivoyatda bunday narsa aytilmagan.", "ru": "В предании об этом ничего не сказано.", "en": "The tale says nothing about this." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Matnda sovgʻa haqida gap bormi?", "ru": "Говорится ли о подарке?", "en": "Is a gift mentioned?" },
+      "explanation": { "uz": "«Matnda yoʻq»: sovgʻa haqida hech narsa aytilmagan.", "ru": "«Не сказано»: о подарке ничего нет.", "en": "“Not given”: no gift is mentioned." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "what_next", "props": {
+        "before": { "uz": "Vazirlar podshoning savoliga yaxshi javob bera olmadi.", "ru": "Визири не смогли хорошо ответить царю.", "en": "The viziers couldn't answer the king well." },
+        "options": [
+          { "text": { "uz": "Qoʻshni yurtdan dono kishini izlab topishdi.", "ru": "Нашли мудреца из соседней страны.", "en": "They found a wise man from a neighbouring land." }, "next": true },
+          { "text": { "uz": "Podsho bazm uyushtirdi.", "ru": "Царь устроил пир.", "en": "The king held a feast." } },
+          { "text": { "uz": "Vazirlar uyquga ketishdi.", "ru": "Визири легли спать.", "en": "The viziers went to sleep." } }
+        ]
+      } },
+      "prompt": { "uz": "Vazirlar javob topa olmagach, nima roʻy berdi?", "ru": "Что произошло, когда визири не нашли ответа?", "en": "What happened when the viziers had no answer?" },
+      "hint": { "uz": "Ular dono kishini qayerdan topishdi?", "ru": "Где они нашли мудреца?", "en": "Where did they find the wise man?" },
+      "explanation": { "uz": "Vazirlar qoʻshni yurtdan dono kishini topib kelishdi.", "ru": "Визири привели мудреца из соседней страны.", "en": "The viziers brought a wise man from a neighbouring land." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "donishmand", "right": "dono, aqlli kishi" },
+        { "left": "rivoyat", "right": "hikoya, naql" },
+        { "left": "taraddudsiz", "right": "ikkilanmasdan" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«donishmand» — koʻp biladigan dono odam.", "ru": "«donishmand» — мудрый, знающий человек.", "en": "“donishmand” means a wise, learned person." },
+      "explanation": { "uz": "donishmand = dono kishi; rivoyat = hikoya; taraddudsiz = ikkilanmay.", "ru": "donishmand = мудрец; rivoyat = предание; taraddudsiz = без колебаний.", "en": "donishmand = a sage; rivoyat = a tale; taraddudsiz = without hesitation." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Eng kuchli narsa — ", "after": ".", "choices": ["bilim", "oltin", "qilich"], "answer": "bilim", "emoji": "💪", "clue": { "uz": "Rivoyatning bosh gʻoyasi", "ru": "Главная мысль предания", "en": "The tale's main idea" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Kitob bizga nimani beradi?", "ru": "Что даёт нам книга?", "en": "What does a book give us?" },
+      "explanation": { "uz": "Eng kuchli narsa — bilim; kitob esa bilim beradi.", "ru": "Самое сильное — знания; а книга даёт знания.", "en": "The most powerful thing is knowledge; and a book gives knowledge." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "bilim beradi", "match": true },
+        { "text": "dono qiladi", "match": true },
+        { "text": "yaxshilikka oʻrgatadi", "match": true },
+        { "text": "och qoldiradi", "match": false },
+        { "text": "uxlatadi", "match": false }
+      ] } },
+      "prompt": { "uz": "Kitob nega kuchli? Toʻgʻri javoblarni bos!", "ru": "Почему книга сильна? Нажми верные ответы!", "en": "Why is a book powerful? Tap the correct answers!" },
+      "hint": { "uz": "Kitob aql va bilim beradi.", "ru": "Книга даёт ум и знания.", "en": "A book gives wisdom and knowledge." },
+      "explanation": { "uz": "Kitob bilim beradi, dono qiladi va yaxshilikka oʻrgatadi.", "ru": "Книга даёт знания, делает мудрым и учит добру.", "en": "A book gives knowledge, makes you wise, and teaches goodness." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Kitob — bilim" },
+          { "blank": "bulogʻi" },
+          { "text": ", dononing" },
+          { "blank": "doʻsti" },
+          { "text": "." }
+        ],
+        "bank": ["bulogʻi", "doʻsti", "dushmani"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Kitob — bilimning manbai va dononing yaqini.", "ru": "Книга — источник знаний и друг мудрого.", "en": "A book is a spring of knowledge and a friend of the wise." },
+      "explanation": { "uz": "«Kitob — bilim bulogʻi, dononing doʻsti».", "ru": "«Книга — источник знаний, друг мудрого».", "en": "“A book is a spring of knowledge, a friend of the wise.”" }
+    }
+  ]
+}

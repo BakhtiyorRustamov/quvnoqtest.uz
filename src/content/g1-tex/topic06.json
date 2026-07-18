@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-06",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Quyoncha",
+    "ru": "Зайчик",
+    "en": "A bunny"
+  },
+  "recall": {
+    "uz": "Bugun oq qogʻozdan uzun quloqli quyoncha yasaymiz.",
+    "ru": "Сегодня из белой бумаги сделаем зайчика.",
+    "en": "Today we make a long-eared bunny from white paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Quyoncha yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай зайчика. Выполняй каждый этап по рисунку!",
+        "en": "Make the bunny. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Bosh va tana — ikki doira.",
+        "ru": "Голова и тело — два кружка.",
+        "en": "Head and body — two circles."
+      },
+      "explanation": {
+        "uz": "Yumshoqqina quyoncha!",
+        "ru": "Мягкий зайчик!",
+        "en": "A soft little bunny!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "oq qogʻoz",
+              "ru": "белая бумага",
+              "en": "white paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            },
+            {
+              "uz": "qalam",
+              "ru": "карандаш",
+              "en": "a pencil"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Katta doira (tana) va kichik doira (bosh) qirq.",
+              "ru": "Вырежь большой круг (тело) и маленький (голову).",
+              "en": "Cut a big circle (body) and a small one (head)."
+            },
+            {
+              "uz": "Ikkita uzun quloq qirqib, boshga yopishtir.",
+              "ru": "Вырежь два длинных уха и приклей к голове.",
+              "en": "Cut two long ears and glue them on the head."
+            },
+            {
+              "uz": "Koʻz, burun va moʻylovni chiz.",
+              "ru": "Нарисуй глаза, нос и усики.",
+              "en": "Draw eyes, a nose and whiskers."
+            }
+          ],
+          "art": "bunny",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "topicId": "g1-ingliz-45",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🤝🚴😊🌳",
+  "title": {
+    "uz": "Doʻstingga yordam ber (hikoya)",
+    "ru": "Помоги друзьям (история)",
+    "en": "Help your friends (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bugungi qadriyat — «Help your friends» (doʻstlaringga yordam ber). Doʻstimiz qiynalsa, yordam beramiz.",
+    "ru": "Время истории! Ценность сегодня — «Help your friends» (помогай друзьям). Если другу трудно, мы помогаем.",
+    "en": "Story time! Today's value is \"Help your friends.\" When a friend is stuck, we help."
+  },
+  "ttsText": {
+    "uz": "Doʻstingga yordam ber.",
+    "en": "Story time! Help your friends. Can I help you? Yes, please!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: nima birinchi boʻldi?",
+        "ru": "Расставь историю по порядку!",
+        "en": "Put the story in order!"
+      },
+      "hint": {
+        "uz": "Avval bolalar velosiped haydaydi.",
+        "ru": "Сначала дети катаются на велосипедах.",
+        "en": "First the children ride bikes."
+      },
+      "explanation": {
+        "uz": "Barakalla! Doʻstga yordam berdik.",
+        "ru": "Молодец! Мы помогли другу.",
+        "en": "Great! We helped our friend."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🚴",
+          "events": [
+            {
+              "text": {
+                "uz": "Bolalar velosiped haydaydi.",
+                "ru": "Дети катаются на велосипедах.",
+                "en": "The children ride bikes."
+              }
+            },
+            {
+              "text": {
+                "uz": "Bir bola yiqilib tushadi.",
+                "ru": "Один ребёнок падает.",
+                "en": "One child falls down."
+              }
+            },
+            {
+              "text": {
+                "uz": "Doʻstlari yordamga keladi.",
+                "ru": "Друзья приходят на помощь.",
+                "en": "The friends come to help."
+              }
+            },
+            {
+              "text": {
+                "uz": "Endi hammasi birga haydaydi!",
+                "ru": "Теперь все едут вместе!",
+                "en": "Now they all ride together!"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻsting yiqildi. Keyin nima boʻladi?",
+        "ru": "Друг упал. Что случится дальше?",
+        "en": "Your friend fell. What happens next?"
+      },
+      "hint": {
+        "uz": "Yaxshi doʻst yordam beradi.",
+        "ru": "Добрый друг помогает.",
+        "en": "A good friend helps."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Doʻstga yordam beramiz.",
+        "ru": "Верно! Помогаем другу.",
+        "en": "Right! We help our friend."
+      },
+      "widget": {
+        "type": "what_next",
+        "props": {
+          "before": {
+            "uz": "Doʻstingiz yiqilib tushdi va turolmayapti.",
+            "ru": "Твой друг упал и не может встать.",
+            "en": "Your friend fell down and can't get up."
+          },
+          "options": [
+            {
+              "text": {
+                "uz": "Sen unga yordam berasan.",
+                "ru": "Ты помогаешь ему.",
+                "en": "You help your friend up."
+              },
+              "next": true
+            },
+            {
+              "text": {
+                "uz": "Sen kulasan va ketasan.",
+                "ru": "Ты смеёшься и уходишь.",
+                "en": "You laugh and walk away."
+              }
+            },
+            {
+              "text": {
+                "uz": "Sen uxlab qolasan.",
+                "ru": "Ты засыпаешь.",
+                "en": "You fall asleep."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima dedi?",
+        "ru": "Послушай. Что сказал ребёнок?",
+        "en": "Listen. What did the child say?"
+      },
+      "hint": {
+        "uz": "«Can I help you?» — yordam beraymi?",
+        "ru": "«Can I help you?» — тебе помочь?",
+        "en": "\"Can I help you?\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Can I help you?»",
+        "ru": "Верно! «Can I help you?»",
+        "en": "Right! \"Can I help you?\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can I help you?",
+              "audio": {
+                "key": "ing45-q3-a",
+                "text": "Can I help you?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes, please! Thank you!",
+              "audio": {
+                "key": "ing45-q3-b",
+                "text": "Yes, please! Thank you!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "Can I help you?",
+              "Go away!",
+              "How many?"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Yaxshi doʻstlar bir-biriga yordam beradi.",
+        "ru": "Верно? Хорошие друзья помогают друг другу.",
+        "en": "Is this right? Good friends help each other."
+      },
+      "hint": {
+        "uz": "Doʻstlik — yordam.",
+        "ru": "Дружба — это помощь.",
+        "en": "Friendship is helping."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Doʻstlar yordam beradi.",
+        "ru": "Верно! Друзья помогают.",
+        "en": "Right! Friends help each other."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🤝",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bolalar nima haydayapti? Bos!",
+        "ru": "На чём катаются дети? Нажми!",
+        "en": "What are the children riding? Tap it!"
+      },
+      "hint": {
+        "uz": "Ikki gʻildirakli.",
+        "ru": "На двух колёсах.",
+        "en": "It has two wheels."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A bike — velosiped.",
+        "ru": "Верно! A bike — велосипед.",
+        "en": "Right! A bike!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🚴",
+              "label": "bike",
+              "correct": true
+            },
+            {
+              "emoji": "🏊",
+              "label": "swim"
+            },
+            {
+              "emoji": "🎤",
+              "label": "sing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Mia nima deb javob berdi?",
+        "ru": "Послушай. Что ответила Мия?",
+        "en": "Listen. How did Mia answer?"
+      },
+      "hint": {
+        "uz": "«Yes, please!» — ha, iltimos.",
+        "ru": "«Yes, please!» — да, пожалуйста.",
+        "en": "\"Yes, please!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes, please! Thank you!»",
+        "ru": "Верно! «Yes, please! Thank you!»",
+        "en": "Right! \"Yes, please! Thank you!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can I help you?",
+              "audio": {
+                "key": "ing45-q6-a",
+                "text": "Can I help you?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes, please!",
+              "audio": {
+                "key": "ing45-q6-b",
+                "text": "Yes, please!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "Yes, please!",
+              "Stand up!",
+              "No, go away!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻstlar qiladigan yaxshi ishlarni belgila!",
+        "ru": "Отметь добрые дела друзей!",
+        "en": "Tap the kind things friends do!"
+      },
+      "hint": {
+        "uz": "Yordam, boʻlishish, tabassum.",
+        "ru": "Помогать, делиться, улыбаться.",
+        "en": "Help, share, smile."
+      },
+      "explanation": {
+        "uz": "Barakalla! Doʻstlar yordam beradi, boʻlishadi, tabassum qiladi!",
+        "ru": "Молодец! Друзья помогают, делятся, улыбаются!",
+        "en": "Great! Friends help, share and smile!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🤝",
+              "label": "help",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🙂",
+              "label": "smile",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💛",
+              "label": "share",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "😠",
+              "label": "shout"
+            },
+            {
+              "id": "d1",
+              "emoji": "😢",
+              "label": "cry"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, harakat juftlarini top!",
+        "ru": "Открывай карточки: пары действий!",
+        "en": "Flip the cards: match the action pairs!"
+      },
+      "hint": {
+        "uz": "ride 🚴, run 🏃, swim 🏊.",
+        "ru": "ride 🚴, run 🏃, swim 🏊.",
+        "en": "ride 🚴, run 🏃, swim 🏊."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🚴"
+              },
+              "b": {
+                "label": "ride"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🏃"
+              },
+              "b": {
+                "label": "run"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🏊"
+              },
+              "b": {
+                "label": "swim"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Doʻsting yiqilsa, kulish yaxshi. 😠",
+        "ru": "Верно? Если друг упал, смеяться — хорошо. 😠",
+        "en": "Is this right? Laughing when a friend falls is kind. 😠"
+      },
+      "hint": {
+        "uz": "Kulish yordam emas.",
+        "ru": "Смех — не помощь.",
+        "en": "Laughing is not helping."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Yordam berish kerak.",
+        "ru": "Неверно! Надо помочь.",
+        "en": "False! We should help."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "😠",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qadriyati nima?",
+        "ru": "Какая ценность у истории?",
+        "en": "What is the value of the story?"
+      },
+      "hint": {
+        "uz": "Doʻstlar haqida.",
+        "ru": "О друзьях.",
+        "en": "About friends."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Help your friends — doʻstingga yordam ber.",
+        "ru": "Верно! Help your friends — помогай друзьям.",
+        "en": "Right! Help your friends!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "help your friends\ndoʻstingga yordam ber",
+              "ru": "help your friends\nпомогай друзьям",
+              "en": "help your friends"
+            },
+            {
+              "uz": "laugh at friends\ndoʻstlaringni masxaralash",
+              "ru": "laugh at friends\nсмеяться над друзьями",
+              "en": "laugh at friends"
+            },
+            {
+              "uz": "stay alone\nyolgʻiz qol",
+              "ru": "stay alone\nбудь один",
+              "en": "stay alone"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

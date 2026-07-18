@@ -1,0 +1,167 @@
+{
+  "topicId": "g1-oqish-28",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🕊️🌤️🪺",
+  "title": {
+    "uz": "Uchib keladi qushlar",
+    "ru": "Прилетают птицы",
+    "en": "The birds fly back"
+  },
+  "recall": {
+    "uz": "Bahorda qaytadigan qushlar haqidagi hikoyani tinglab oʻqiymiz, voqealar tartibini topamiz va qush nomlarini yigʻamiz.",
+    "ru": "Слушаем рассказ о птицах, что возвращаются весной, находим порядок событий и собираем названия птиц.",
+    "en": "We read a story about the birds that return in spring, order the events, and build bird names."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Bahor elchilari",
+        "variant": "story",
+        "audio": "g1-oqish-28-q1",
+        "lines": [
+          "Ertalab Malika chugʻur-chugʻur ovozdan uygʻondi.",
+          "U derazadan tashqariga qaradi.",
+          "Osmonda turnalar qatorlashib uchib oʻtardi.",
+          "— Oyijon, bular qanaqa qushlar? — soʻradi Malika.",
+          "— Bular turnalar, ular bizga bahorni olib kelishdi.",
+          "— Bahor kelganini qanday bilamiz?",
+          "— Dalalar yashil boʻladi, daraxtlar gullaydi.",
+          "— Bahor juda yaxshi fasl ekan-da! — dedi Malika quvonib."
+        ]
+      } },
+      "prompt": { "uz": "Hikoyani tinglab, ergashib oʻqing!", "ru": "Послушай и читай рассказ, следя за текстом!", "en": "Listen and follow along as you read the story!" },
+      "hint": { "uz": "Malikani nima uygʻotib yubordi?", "ru": "Что разбудило Малику?", "en": "What woke Malika up?" },
+      "explanation": { "uz": "Hikoya bahorda qaytgan turnalar va ona-bola suhbati haqida.", "ru": "Рассказ о вернувшихся весной журавлях и разговоре мамы с дочкой.", "en": "The story is about cranes returning in spring and a mother-daughter chat." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Malika qushlar ovozidan uygʻondi.", "ru": "Малика проснулась от голосов птиц.", "en": "Malika woke up to the birds' calls." } },
+        { "text": { "uz": "U derazadan tashqariga qaradi.", "ru": "Она посмотрела в окно.", "en": "She looked out of the window." } },
+        { "text": { "uz": "Osmonda turnalar uchib oʻtardi.", "ru": "В небе летели журавли.", "en": "Cranes were flying across the sky." } },
+        { "text": { "uz": "U onasidan qushlar haqida soʻradi.", "ru": "Она спросила маму о птицах.", "en": "She asked her mother about the birds." } },
+        { "text": { "uz": "Ona bahor kelganini tushuntirdi.", "ru": "Мама объяснила, что пришла весна.", "en": "Mother explained that spring had come." } }
+      ] } },
+      "prompt": { "uz": "Voqealarni roʻy bergan tartibida bosing!", "ru": "Нажимай события в порядке, как они произошли!", "en": "Tap the events in the order they happened!" },
+      "hint": { "uz": "Avval Malika uygʻondi…", "ru": "Сначала Малика проснулась…", "en": "First Malika woke up…" },
+      "explanation": { "uz": "Uygʻonish → derazaga qarash → turnalar → savol → onaning javobi.", "ru": "Проснулась → посмотрела в окно → журавли → вопрос → ответ мамы.", "en": "Woke up → looked out → cranes → question → mother's answer." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "qaldirgʻoch", "syllables": ["qal", "dir", "gʻoch"], "emoji": "🐦", "clue": { "uz": "Bahor elchisi boʻlgan qush", "ru": "Птица — вестник весны", "en": "A bird that heralds spring" } } },
+      "prompt": { "uz": "Boʻgʻinlardan qush nomini yigʻ!", "ru": "Собери название птицы из слогов!", "en": "Build the bird's name from the syllables!" },
+      "hint": { "uz": "qal + dir + gʻoch = ?", "ru": "qal + dir + gʻoch = ?", "en": "qal + dir + gʻoch = ?" },
+      "explanation": { "uz": "qal-dir-gʻoch → qaldirgʻoch. Bahorda qaytadigan qush.", "ru": "qal-dir-gʻoch → qaldirgʻoch (ласточка).", "en": "qal-dir-gʻoch → qaldirgʻoch (swallow)." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Turnalar bahorni olib kelishdi.", "ru": "Журавли принесли весну.", "en": "The cranes brought spring." },
+        "answer": "true",
+        "why": { "uz": "Ona «ular bizga bahorni olib kelishdi» dedi.", "ru": "Мама сказала, что они принесли весну.", "en": "Mother said they brought spring to us." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Ona turnalar haqida nima dedi?", "ru": "Что мама сказала о журавлях?", "en": "What did mother say about the cranes?" },
+      "explanation": { "uz": "Toʻgʻri: turnalar bahorni olib kelishdi.", "ru": "Верно: журавли принесли весну.", "en": "True: the cranes brought spring." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Malikaning akasi ham derazaga keldi.", "ru": "Брат Малики тоже подошёл к окну.", "en": "Malika's brother also came to the window." },
+        "answer": "ng",
+        "why": { "uz": "Hikoyada aka haqida hech narsa aytilmagan.", "ru": "В рассказе о брате ничего не сказано.", "en": "The story says nothing about a brother." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Hikoyada aka tilga olinganmi?", "ru": "Упоминается ли брат?", "en": "Is a brother mentioned?" },
+      "explanation": { "uz": "«Matnda yoʻq»: aka haqida gap yoʻq.", "ru": "«Не сказано»: о брате речи нет.", "en": "“Not given”: no brother is mentioned." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "what_next", "props": {
+        "before": { "uz": "Malika osmonda uchayotgan turnalarni koʻrdi.", "ru": "Малика увидела в небе журавлей.", "en": "Malika saw cranes flying in the sky." },
+        "options": [
+          { "text": { "uz": "U onasidan «bular qanaqa qushlar?» deb soʻradi.", "ru": "Она спросила маму: «что это за птицы?»", "en": "She asked her mother, “what birds are those?”" }, "next": true },
+          { "text": { "uz": "U qaytib uxlab qoldi.", "ru": "Она снова заснула.", "en": "She fell back asleep." } },
+          { "text": { "uz": "U maktabga ketdi.", "ru": "Она ушла в школу.", "en": "She went to school." } }
+        ]
+      } },
+      "prompt": { "uz": "Turnalarni koʻrgach, Malika nima qildi?", "ru": "Что сделала Малика, увидев журавлей?", "en": "What did Malika do after seeing the cranes?" },
+      "hint": { "uz": "U kimdan soʻradi?", "ru": "У кого она спросила?", "en": "Whom did she ask?" },
+      "explanation": { "uz": "Malika onasidan qushlar haqida soʻradi.", "ru": "Малика спросила маму о птицах.", "en": "Malika asked her mother about the birds." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "qiygʻos", "right": "hammasi baravariga" },
+        { "left": "turna", "right": "uzoq uchadigan koʻchmanchi qush" },
+        { "left": "elchi", "right": "darak keltiruvchi" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«qiygʻos» — hammasi bir vaqtda, baravariga.", "ru": "«qiygʻos» — все разом, дружно.", "en": "“qiygʻos” means all at once, together." },
+      "explanation": { "uz": "qiygʻos = baravariga; turna = koʻchmanchi qush; elchi = darak keltiruvchi.", "ru": "qiygʻos = разом; turna = журавль; elchi = вестник.", "en": "qiygʻos = all at once; turna = crane; elchi = a herald." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Ularga in qurishga yordam berish, ozor bermaslik", "ru": "Помогать им и не обижать", "en": "Help them and never harm them" },
+        { "uz": "Uyalarini buzish", "ru": "Разрушать их гнёзда", "en": "Destroy their nests" },
+        { "uz": "Toshbron qilish", "ru": "Бросать в них камни", "en": "Throw stones at them" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qushlarga qanday gʻamxoʻrlik qilish kerak?", "ru": "Как нужно заботиться о птицах?", "en": "How should we care for birds?" },
+      "hint": { "uz": "«Qushlar — bizning qanotli doʻstlarimiz».", "ru": "«Птицы — наши крылатые друзья».", "en": "“Birds are our winged friends.”" },
+      "explanation": { "uz": "Qushlarga gʻamxoʻrlik qilamiz, ozor bermaymiz — ular bizning doʻstlarimiz.", "ru": "Заботимся о птицах и не обижаем — они наши друзья.", "en": "We care for birds and never harm them — they are our friends." },
+      "openEnd": { "uz": "Sen qushlarga qanday gʻamxoʻrlik qila olasan?", "ru": "Как ты можешь позаботиться о птицах?", "en": "How can you take care of birds?" }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "turna", "match": true },
+        { "text": "qaldirgʻoch", "match": true },
+        { "text": "laylak", "match": true },
+        { "text": "baliq", "match": false },
+        { "text": "kapalak", "match": false }
+      ] } },
+      "prompt": { "uz": "Bahorda uchib keladigan qushlarni bos!", "ru": "Нажми птиц, что прилетают весной!", "en": "Tap the birds that fly back in spring!" },
+      "hint": { "uz": "Qushlar qanotli va uchadi.", "ru": "Птицы крылатые и летают.", "en": "Birds have wings and fly." },
+      "explanation": { "uz": "Turna, qaldirgʻoch, laylak — qushlar; baliq va kapalak esa qush emas.", "ru": "Журавль, ласточка, аист — птицы; рыба и бабочка — нет.", "en": "Crane, swallow, stork are birds; a fish and a butterfly are not." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Qushlar — bizning" },
+          { "blank": "qanotli" },
+          { "text": "doʻstlarimiz, ularga" },
+          { "blank": "gʻamxoʻrlik" },
+          { "text": "qilaylik." }
+        ],
+        "bank": ["qanotli", "gʻamxoʻrlik", "ozor"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Qushlar uchadi va bizning doʻstimiz.", "ru": "Птицы летают и они наши друзья.", "en": "Birds fly and they are our friends." },
+      "explanation": { "uz": "«Qushlar — bizning qanotli doʻstlarimiz, ularga gʻamxoʻrlik qilaylik».", "ru": "«Птицы — наши крылатые друзья, давайте о них заботиться».", "en": "“Birds are our winged friends; let's take care of them.”" }
+    }
+  ]
+}

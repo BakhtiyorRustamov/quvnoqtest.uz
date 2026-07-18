@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-44",
+  "subjectKey": "g1-ona",
+  "emojis": "🐴🐱✍️",
+  "title": {
+    "uz": "Laqab va oddiy soʻz",
+    "ru": "Кличка и обычное слово",
+    "en": "Nickname vs. ordinary word"
+  },
+  "recall": {
+    "uz": "Bir xil soʻz laqab (bosh harf) yoki oddiy soʻz (kichik harf) boʻlishi mumkin. Masalan: «Mosh» — mushukning laqabi, «mosh» — don; «Ziyrak» — laqab, «ziyrak» — «aqlli» degani. Laqab bosh harf, oddiy soʻz kichik harf bilan yoziladi.",
+    "ru": "Одно и то же слово может быть кличкой (с заглавной) или обычным словом (со строчной). Например: «Mosh» — кличка кота, «mosh» — маш (крупа); «Ziyrak» — кличка, «ziyrak» — «сообразительный». Кличка — с заглавной, обычное слово — со строчной.",
+    "en": "The same word can be a nickname (capital) or an ordinary word (lowercase). For example: “Mosh” is a cat's nickname, “mosh” is mung bean; “Ziyrak” is a nickname, “ziyrak” means “clever”. A nickname takes a capital; an ordinary word is lowercase."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "It, mushuk, toychoq", "ru": "Собака, кот, жеребёнок", "en": "A dog, a cat, a colt" }, { "uz": "Fil va sher", "ru": "Слон и лев", "en": "An elephant and a lion" }, { "uz": "Baliq va quyon", "ru": "Рыба и заяц", "en": "A fish and a rabbit" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qiziqchi sahnaga qaysi hayvonlar bilan chiqdi?", "ru": "С какими животными вышел на сцену артист?", "en": "Which animals did the performer bring on stage?" },
+      "hint": { "uz": "Bim — it, Malla — mushuk, Qashqa — toychoq.", "ru": "Bim — собака, Malla — кот, Qashqa — жеребёнок.", "en": "Bim is a dog, Malla a cat, Qashqa a colt." },
+      "explanation": { "uz": "Qiziqchi iti Bim, mushugi Malla va toychogʻi Qashqa bilan chiqdi.", "ru": "Артист вышел с собакой Bim, котом Malla и жеребёнком Qashqa.", "en": "The performer came with the dog Bim, the cat Malla and the colt Qashqa." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "It", "right": "Bim" }, { "left": "Mushuk", "right": "Malla" }, { "left": "Toychoq", "right": "Qashqa" } ] } },
+      "prompt": { "uz": "Hayvonni oʻz laqabiga ula!", "ru": "Соедини животное с его кличкой!", "en": "Match each animal to its nickname!" },
+      "hint": { "uz": "It — Bim.", "ru": "Собака — Bim.", "en": "The dog — Bim." },
+      "explanation": { "uz": "Har bir hayvonning laqabi bosh harf bilan yoziladi.", "ru": "Кличка каждого животного пишется с заглавной.", "en": "Each animal's nickname is written with a capital." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Mosh", "bin": "laqab" }, { "id": "b", "label": "Ziyrak", "bin": "laqab" }, { "id": "c", "label": "Momiq", "bin": "laqab" }, { "id": "d", "label": "mosh", "bin": "oddiy" }, { "id": "e", "label": "ziyrak", "bin": "oddiy" }, { "id": "f", "label": "momiq", "bin": "oddiy" } ], "bins": [ { "id": "laqab", "label": "Laqab (bosh harf)" }, { "id": "oddiy", "label": "Oddiy soʻz (kichik harf)" } ] } },
+      "prompt": { "uz": "Ajrat: laqab va oddiy soʻz!", "ru": "Раздели: кличка и обычное слово!", "en": "Sort: nickname vs ordinary word!" },
+      "hint": { "uz": "Bosh harfli — laqab, kichik harfli — oddiy soʻz.", "ru": "С заглавной — кличка, со строчной — обычное слово.", "en": "Capital — a nickname; lowercase — an ordinary word." },
+      "explanation": { "uz": "Mosh, Ziyrak, Momiq — laqablar; mosh, ziyrak, momiq — oddiy soʻzlar.", "ru": "Mosh, Ziyrak, Momiq — клички; mosh, ziyrak, momiq — обычные слова.", "en": "Mosh, Ziyrak, Momiq are nicknames; mosh, ziyrak, momiq are ordinary words." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Don (oddiy soʻz)", "ru": "Крупа (обычное слово)", "en": "A grain (an ordinary word)" }, { "uz": "Mushukning laqabi", "ru": "Кличка кота", "en": "A cat's nickname" }, { "uz": "Shahar nomi", "ru": "Название города", "en": "A city name" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«mosh» (kichik harf bilan) — bu nima?", "ru": "«mosh» (со строчной) — что это?", "en": "“mosh” (lowercase) — what is it?" },
+      "hint": { "uz": "Kichik harf bilan yozilsa — oddiy soʻz.", "ru": "Со строчной — это обычное слово.", "en": "Lowercase means an ordinary word." },
+      "explanation": { "uz": "«mosh» — don (oddiy soʻz). «Mosh» esa laqab boʻladi.", "ru": "«mosh» — крупа (обычное слово). А «Mosh» — кличка.", "en": "“mosh” is a grain (an ordinary word). “Mosh” would be a nickname." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "oychibor", "choices": ["B", "b", "P"], "answer": "B", "emoji": "🐴", "clue": { "uz": "Otning laqabi", "ru": "Кличка коня", "en": "A horse's nickname" } } },
+      "prompt": { "uz": "Otning laqabini bosh harf bilan boshla!", "ru": "Начни кличку коня с заглавной!", "en": "Start the horse's nickname with a capital!" },
+      "hint": { "uz": "Laqab — «Boychibor».", "ru": "Кличка — «Boychibor».", "en": "The nickname is “Boychibor”." },
+      "explanation": { "uz": "«Boychibor» — otning laqabi, bosh «B» bilan.", "ru": "«Boychibor» — кличка коня, с заглавной «B».", "en": "“Boychibor” is a horse's nickname, with a capital “B”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Polvon", "match": true }, { "text": "mosh", "match": false }, { "text": "Momiq", "match": true }, { "text": "ziyrak", "match": false }, { "text": "Ziyrak", "match": true }, { "text": "it", "match": false } ] } },
+      "prompt": { "uz": "Laqablarni (bosh harfli soʻzlarni) bos!", "ru": "Нажми клички (слова с заглавной)!", "en": "Tap the nicknames (capitalized words)!" },
+      "hint": { "uz": "mosh, ziyrak, it — oddiy soʻzlar (kichik harf).", "ru": "mosh, ziyrak, it — обычные слова (со строчной).", "en": "mosh, ziyrak, it are ordinary words (lowercase)." },
+      "explanation": { "uz": "Polvon, Momiq, Ziyrak — laqablar, bosh harf bilan.", "ru": "Polvon, Momiq, Ziyrak — клички, с заглавной.", "en": "Polvon, Momiq, Ziyrak are nicknames — with a capital." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "Polvon", "letters": ["P", "o", "l", "v", "o", "n"], "emoji": "🐴", "clue": { "uz": "Otning laqabi", "ru": "Кличка коня", "en": "A horse's nickname" } } },
+      "prompt": { "uz": "Harflardan otning laqabini yigʻ!", "ru": "Собери кличку коня из букв!", "en": "Build the horse's nickname from the letters!" },
+      "hint": { "uz": "P- bilan boshlanadi.", "ru": "Начинается с P-.", "en": "It starts with P-." },
+      "explanation": { "uz": "«Polvon» — otning laqabi, bosh harf bilan.", "ru": "«Polvon» — кличка коня, с заглавной.", "en": "“Polvon” is a horse's nickname, with a capital." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["Boy", "chi", "bor"], "emoji": "🐴", "clue": { "uz": "Otning laqabi", "ru": "Кличка коня", "en": "A horse's nickname" } } },
+      "prompt": { "uz": "Boʻgʻinlardan otning laqabini tuz!", "ru": "Собери кличку коня из слогов!", "en": "Build the horse's nickname from syllables!" },
+      "hint": { "uz": "Boy- … -chi- … -bor.", "ru": "Boy- … -chi- … -bor.", "en": "Boy- … -chi- … -bor." },
+      "explanation": { "uz": "«Boychibor» — laqab, bosh harf bilan yoziladi.", "ru": "«Boychibor» — кличка, с заглавной.", "en": "“Boychibor” is a nickname, written with a capital." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Sobir", "itiga", "Polvon", "deb", "nom", "qoʻydi."], "emoji": "🐶", "clue": { "uz": "Sobir haqida gap", "ru": "Предложение о Собире", "en": "A sentence about Sobir" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Kim? — «Sobir». Laqab — «Polvon».", "ru": "Кто? — «Sobir». Кличка — «Polvon».", "en": "Who? — “Sobir”. Nickname — “Polvon”." },
+      "explanation": { "uz": "Sobir itiga Polvon deb nom qoʻydi. Ism va laqab bosh harf bilan.", "ru": "Sobir дал собаке кличку Polvon. Имя и кличка — с заглавной.", "en": "Sobir named his dog Polvon. The name and nickname take capitals." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "kichik harf bilan (u — don)", "ru": "со строчной (это крупа)", "en": "lowercase (it is a grain)" }, { "uz": "bosh harf bilan", "ru": "с заглавной", "en": "with a capital" }, { "uz": "yozib boʻlmaydi", "ru": "нельзя написать", "en": "it cannot be written" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Dalaga mosh ekdik.» Bu yerda «mosh» qanday yoziladi?", "ru": "«Dalaga mosh ekdik.» Как здесь пишется «mosh»?", "en": "“Dalaga mosh ekdik.” How is “mosh” written here?" },
+      "hint": { "uz": "Bu yerda «mosh» — ekiladigan don, laqab emas.", "ru": "Здесь «mosh» — крупа для посева, а не кличка.", "en": "Here “mosh” is a grain to sow, not a nickname." },
+      "explanation": { "uz": "«mosh» — oddiy soʻz (don), kichik harf bilan yoziladi.", "ru": "«mosh» — обычное слово (крупа), пишется со строчной.", "en": "“mosh” is an ordinary word (a grain), written lowercase." }
+    }
+  ]
+}

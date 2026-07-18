@@ -1,0 +1,158 @@
+{
+  "topicId": "g1-alifbe-05",
+  "subjectKey": "g1-alifbe",
+  "emojis": "⭕🍎🐎🔤",
+  "title": {
+    "uz": "«O o» — birinchi harfimiz",
+    "ru": "«O o» — наша первая буква",
+    "en": "“O o” — our first letter"
+  },
+  "recall": {
+    "uz": "Bugun birinchi harfimiz bilan tanishamiz — «O o». U unli tovush. Ogʻzimizni yumaloq ochib aytamiz: o-o-o. «O» tovushi bilan boshlanadigan soʻzlar: ona, ot, olma, olcha. Katta «O» va kichik «o» — bir harfning ikki koʻrinishi.",
+    "ru": "Сегодня знакомимся с первой буквой — «O o». Это гласный звук. Произносим с округлённым ртом: о-о-о. Слова, которые начинаются со звука «o»: ona, ot, olma, olcha. Большая «O» и маленькая «o» — два вида одной буквы.",
+    "en": "Today we meet our first letter — “O o”. It is a vowel sound. We say it with a round mouth: o-o-o. Words that start with the “o” sound: ona, ot, olma, olcha. Capital “O” and small “o” are two forms of one letter."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«O» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «O»!", "en": "Find the word that starts with “O”!" },
+      "hint": { "uz": "Soʻzning boshini choʻzib ayt: o-o-olma.", "ru": "Протяни начало: о-о-olma.", "en": "Stretch the start: o-o-olma." },
+      "explanation": { "uz": "«olma» «O» tovushi bilan boshlanadi.", "ru": "«olma» начинается со звука «O».", "en": "“olma” starts with the sound “O”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" }, "correct": true },
+            { "id": "cat", "emoji": "🐈", "label": { "uz": "mushuk", "ru": "кошка", "en": "cat" } },
+            { "id": "banana", "emoji": "🍌", "label": { "uz": "banan", "ru": "банан", "en": "banana" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«O» harfini topib, hammasini bos!", "ru": "Найди букву «O» и нажми на все!", "en": "Find the letter “O” and tap them all!" },
+      "hint": { "uz": "Katta «O» ham, kichik «o» ham boʻladi.", "ru": "Считаются и большая «O», и маленькая «o».", "en": "Both capital “O” and small “o” count." },
+      "explanation": { "uz": "«O» harfini boshqa harflar orasidan topding!", "ru": "Ты нашёл букву «O» среди других букв!", "en": "You found the letter “O” among the other letters!" },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "O",
+          "cols": 3,
+          "grid": ["O", "a", "o", "M", "O", "i", "o", "T", "O"]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍎 «olma»da «o» tovushi qaysi katakchada?", "ru": "🍎 В какой клетке звук «o» в слове «olma»?", "en": "🍎 Which box has the “o” sound in “olma”?" },
+      "hint": { "uz": "Soʻz «o» bilan boshlanadi — birinchi katak.", "ru": "Слово начинается с «o» — первая клетка.", "en": "The word starts with “o” — the first box." },
+      "explanation": { "uz": "«olma»da «o» boshida — birinchi katakda.", "ru": "В «olma» звук «o» в начале — первая клетка.", "en": "In “olma” the “o” is at the start — the first box." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "🍎", "word": { "uz": "olma", "ru": "olma", "en": "olma" }, "sound": "o", "cells": ["o", "l", "m", "a"], "answer": 0 }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🐎 «ot»da «o» tovushi qaysi katakchada?", "ru": "🐎 В какой клетке звук «o» в слове «ot»?", "en": "🐎 Which box has the “o” sound in “ot”?" },
+      "hint": { "uz": "«ot» «o» bilan boshlanadi.", "ru": "«ot» начинается с «o».", "en": "“ot” starts with “o”." },
+      "explanation": { "uz": "«ot»da «o» boshida — birinchi katakda.", "ru": "В «ot» звук «o» в начале — первая клетка.", "en": "In “ot” the “o” is at the start — the first box." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "🐎", "word": { "uz": "ot", "ru": "ot", "en": "ot" }, "sound": "o", "cells": ["o", "t"], "answer": 0 }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«O» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «O»!", "en": "Tap the words that have the “O” sound!" },
+      "hint": { "uz": "Har soʻzni sekin ayt va «o»ni eshit.", "ru": "Произнеси каждое слово медленно и услышь «o».", "en": "Say each word slowly and listen for “o”." },
+      "explanation": { "uz": "olma, ona, ot — «o» tovushi bor. banan va mushukda «o» yoʻq.", "ru": "olma, ona, ot — есть звук «o». В banan и mushuk «o» нет.", "en": "olma, ona, ot have the “o” sound. banan and mushuk do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" }, "correct": true },
+            { "id": "mother", "emoji": "👩", "label": { "uz": "ona", "ru": "ona", "en": "ona" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" }, "correct": true },
+            { "id": "banana", "emoji": "🍌", "label": { "uz": "banan", "ru": "banan", "en": "banan" } },
+            { "id": "cat", "emoji": "🐈", "label": { "uz": "mushuk", "ru": "mushuk", "en": "mushuk" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«O» qanday tovush?", "ru": "«O» — какой это звук?", "en": "What kind of sound is “O”?" },
+      "hint": { "uz": "Uni ogʻiz keng ochilib, erkin aytamiz.", "ru": "Его говорим свободно, широко открыв рот.", "en": "We say it freely with a wide open mouth." },
+      "explanation": { "uz": "«O» — unli tovush.", "ru": "«O» — гласный звук.", "en": "“O” is a vowel sound." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": [{ "uz": "unli", "ru": "гласный", "en": "vowel" }, { "uz": "undosh", "ru": "согласный", "en": "consonant" }], "answerIndex": 0 }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Katta «O» va kichik «o» — bir xil harf.", "ru": "Большая «O» и маленькая «o» — одна буква.", "en": "Capital “O” and small “o” are the same letter." },
+      "hint": { "uz": "Bitta harfning ikki koʻrinishi bor.", "ru": "У одной буквы два вида.", "en": "One letter has two forms." },
+      "explanation": { "uz": "Toʻgʻri! «O» va «o» — bir harfning ikki koʻrinishi.", "ru": "Верно! «O» и «o» — два вида одной буквы.", "en": "True! “O” and “o” are two forms of one letter." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔤", "answer": true } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍞 «non»da «o» tovushi qaysi katakchada?", "ru": "🍞 В какой клетке звук «o» в слове «non»?", "en": "🍞 Which box has the “o” sound in “non”?" },
+      "hint": { "uz": "«o» soʻzning oʻrtasida — ikkinchi katak.", "ru": "«o» в середине слова — вторая клетка.", "en": "“o” is in the middle — the second box." },
+      "explanation": { "uz": "«non»da «o» oʻrtada — ikkinchi katakda.", "ru": "В «non» звук «o» в середине — вторая клетка.", "en": "In “non” the “o” is in the middle — the second box." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "🍞", "word": { "uz": "non", "ru": "non", "en": "non" }, "sound": "o", "cells": ["n", "o", "n"], "answer": 1 }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Katta «O» harfini top!", "ru": "Найди большую букву «O»!", "en": "Find the capital letter “O”!" },
+      "hint": { "uz": "U toʻliq yumaloq halqa shaklida.", "ru": "Она в форме полного круглого кольца.", "en": "It is a full round ring shape." },
+      "explanation": { "uz": "«O» — yumaloq halqa. «C» ochiq, «Q» dumli.", "ru": "«O» — круглое кольцо. «C» открыта, «Q» с хвостиком.", "en": "“O” is a round ring. “C” is open, “Q” has a tail." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "o", "emoji": "O", "label": { "uz": "O", "ru": "O", "en": "O" }, "correct": true },
+            { "id": "c", "emoji": "C", "label": { "uz": "C", "ru": "C", "en": "C" } },
+            { "id": "q", "emoji": "Q", "label": { "uz": "Q", "ru": "Q", "en": "Q" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍎 «olma» soʻzini boʻgʻinlab qarsak chal!", "ru": "🍎 Похлопай слово «olma» по слогам!", "en": "🍎 Clap the word “olma” by syllables!" },
+      "hint": { "uz": "ol-ma — ikki marta qarsak.", "ru": "ol-ma — два хлопка.", "en": "ol-ma — two claps." },
+      "explanation": { "uz": "«olma» = ol-ma, ikki boʻgʻin. U «O» harfimiz bilan boshlanadi!", "ru": "«olma» = ol-ma, два слога. Начинается с нашей буквы «O»!", "en": "“olma” = ol-ma, two syllables. It starts with our letter “O”!" },
+      "widget": {
+        "type": "syllable_clap",
+        "props": { "emoji": "🍎", "word": { "uz": "olma", "ru": "olma", "en": "olma" }, "syllables": 2 }
+      }
+    }
+  ]
+}

@@ -24,6 +24,8 @@
     "startDemo": "Start the demo lesson",
     "kicker": "Grades 1–11 · A journey into science",
     "scrollHint": "Scroll to explore",
+    "goToDashboard": "Go to my dashboard",
+    "moreSubjects": "Scroll for more subjects",
     "why": {
       "title": "Why QuvnoqTest?",
       "counterLabel": "happy learners study with us",
@@ -58,7 +60,7 @@
     },
     "footer": {
       "big": "Let's learn together!",
-      "tagline": "Playful quiz-lessons for schoolchildren in Uzbekistan.",
+      "tagline": "Fun test-lessons for school pupils.",
       "product": "Product",
       "company": "Company",
       "contact": "Contact",
@@ -81,7 +83,7 @@
       "c1": "Engaging, visual questions",
       "c2": "The numbers in the examples change, so you can repeat and practise as much as you like — endless practice",
       "c3": "Collecting puzzle pieces and other game elements",
-      "c4": "Content created with AI and checked one by one by our team",
+      "c4": "An AI helper is ready for your questions!",
       "devTitle": "Use it on any device",
       "devBody": "Open a browser on your computer, tablet or phone, type QuvnoqTest.uz and start learning.",
       "faqTitle": "Questions & answers",
@@ -103,7 +105,16 @@
       "p2t": "Demo tests",
       "p2b": "Try our tests and the site for free",
       "p2price": "Free",
-      "p2cta": "Start the Quvnoq tests!"
+      "p2cta": "Start the Quvnoq tests!",
+      "contactModalTitle": "Get in touch"
+    },
+    "scene": {
+      "t1": "Subjects",
+      "b1": "From maths to English, for grade 1",
+      "t2": "Critical thinking",
+      "b2": "Exercises that build reasoning skills",
+      "t3": "Online competitions",
+      "b3": "Contests between pupils, with certificates"
     }
   },
   "dashboard": {

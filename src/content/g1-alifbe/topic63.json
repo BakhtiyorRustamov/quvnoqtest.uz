@@ -1,0 +1,447 @@
+{
+  "topicId": "g1-alifbe-63",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤📚✏️🎉",
+  "title": {
+    "uz": "Alifbo — takrorlash",
+    "ru": "Алфавит — повторение",
+    "en": "The alphabet — review"
+  },
+  "recall": {
+    "uz": "Alifboda 29 ta harf bor. Har bir harfning oʻz oʻrni bor! Unli va undosh tovushlarni takrorlaymiz.",
+    "ru": "В алфавите 29 букв. У каждой буквы своё место! Повторяем гласные и согласные.",
+    "en": "The alphabet has 29 letters. Each letter has its place! We review vowels and consonants."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Alifboda nechta harf bor?",
+        "ru": "Сколько букв в алфавите?",
+        "en": "How many letters are in the alphabet?"
+      },
+      "hint": {
+        "uz": "Barcha harflarni sana.",
+        "ru": "Посчитай все буквы.",
+        "en": "Count all the letters."
+      },
+      "explanation": {
+        "uz": "Alifboda 29 ta harf bor.",
+        "ru": "В алфавите 29 букв.",
+        "en": "The alphabet has 29 letters."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "29",
+            "26",
+            "33"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflarni unli va undoshga ajrat!",
+        "ru": "Раздели буквы на гласные и согласные!",
+        "en": "Sort the letters into vowels and consonants!"
+      },
+      "hint": {
+        "uz": "Unli: a, o, u. Undosh: b, s, t.",
+        "ru": "Гласные: a, o, u. Согласные: b, s, t.",
+        "en": "Vowels: a, o, u. Consonants: b, s, t."
+      },
+      "explanation": {
+        "uz": "Barakalla! Unli va undoshni ajratding.",
+        "ru": "Молодец! Ты разделил гласные и согласные.",
+        "en": "Great! You sorted vowels and consonants."
+      },
+      "widget": {
+        "type": "vowel_sort",
+        "props": {
+          "leftLabel": {
+            "uz": "Unli",
+            "ru": "Гласные",
+            "en": "Vowels"
+          },
+          "rightLabel": {
+            "uz": "Undosh",
+            "ru": "Согласные",
+            "en": "Consonants"
+          },
+          "items": [
+            {
+              "text": "a",
+              "side": "left"
+            },
+            {
+              "text": "o",
+              "side": "left"
+            },
+            {
+              "text": "u",
+              "side": "left"
+            },
+            {
+              "text": "b",
+              "side": "right"
+            },
+            {
+              "text": "s",
+              "side": "right"
+            },
+            {
+              "text": "t",
+              "side": "right"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflarni alifbo tartibida joyla!",
+        "ru": "Расставь буквы по алфавиту!",
+        "en": "Put the letters in alphabetical order!"
+      },
+      "hint": {
+        "uz": "A, keyin B, keyin D.",
+        "ru": "A, потом B, потом D.",
+        "en": "A, then B, then D."
+      },
+      "explanation": {
+        "uz": "To'g'ri: A, B, D.",
+        "ru": "Верно: A, B, D.",
+        "en": "Correct: A, B, D."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "A",
+                "ru": "A",
+                "en": "A"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "B",
+                "ru": "B",
+                "en": "B"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "D",
+                "ru": "D",
+                "en": "D"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«sh» harfini topib, hammasini bos!",
+        "ru": "Найди букву «sh» и нажми на все!",
+        "en": "Find the letter «sh» and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham.",
+        "ru": "Большая и маленькая тоже.",
+        "en": "Capital and small too."
+      },
+      "explanation": {
+        "uz": "«sh» harfini topding!",
+        "ru": "Ты нашёл букву «sh»!",
+        "en": "You found the letter «sh»!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "sh",
+          "cols": 3,
+          "grid": [
+            "sh",
+            "o",
+            "ch",
+            "sh",
+            "a",
+            "ng",
+            "t",
+            "sh",
+            "i"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻzbek tilida nechta unli tovush bor?",
+        "ru": "Сколько гласных звуков в узбекском?",
+        "en": "How many vowels are in Uzbek?"
+      },
+      "hint": {
+        "uz": "a, o, u, e, i, oʻ.",
+        "ru": "a, o, u, e, i, oʻ.",
+        "en": "a, o, u, e, i, oʻ."
+      },
+      "explanation": {
+        "uz": "Oʻzbek tilida 6 ta unli tovush bor.",
+        "ru": "В узбекском 6 гласных звуков.",
+        "en": "Uzbek has 6 vowels."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «alifbo» soʻzini tuz!",
+        "ru": "Составь слово «alifbo»!",
+        "en": "Build the word «alifbo»!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «alifbo» soʻzini tuzding.",
+        "ru": "Молодец! Ты собрал «alifbo».",
+        "en": "Great! You built «alifbo»."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "📖",
+          "word": "alifbo",
+          "label": {
+            "uz": "alifbo",
+            "ru": "алфавит",
+            "en": "alphabet"
+          },
+          "letters": [
+            "a",
+            "l",
+            "i",
+            "f",
+            "b",
+            "o"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir harfning alifboda oʻz oʻrni bor.",
+        "ru": "У каждой буквы своё место в алфавите.",
+        "en": "Every letter has its place in the alphabet."
+      },
+      "hint": {
+        "uz": "Tartibni eslab qol.",
+        "ru": "Запомни порядок.",
+        "en": "Remember the order."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔤",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«sh» harfi haqida toʻgʻri javobni tanla.",
+        "ru": "Выбери верное о букве «sh».",
+        "en": "Choose the right fact about «sh»."
+      },
+      "hint": {
+        "uz": "«sh»ni ayt: bitta tovush.",
+        "ru": "Скажи «sh»: один звук.",
+        "en": "Say «sh»: one sound."
+      },
+      "explanation": {
+        "uz": "«sh» — ikki harf, bitta tovush.",
+        "ru": "«sh» — две буквы, один звук.",
+        "en": "«sh» — two letters, one sound."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ikki harf, bitta tovush",
+              "ru": "две буквы, один звук",
+              "en": "two letters, one sound"
+            },
+            {
+              "uz": "ikki tovush",
+              "ru": "два звука",
+              "en": "two sounds"
+            },
+            {
+              "uz": "unli tovush",
+              "ru": "гласный",
+              "en": "a vowel"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🏫 Yetishmayotgan harfni qoʻy!",
+        "ru": "🏫 Вставь недостающую букву!",
+        "en": "🏫 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz: maktab.",
+        "ru": "Слово: maktab.",
+        "en": "The word: maktab."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «t».",
+        "ru": "Верная буква — «t».",
+        "en": "The right letter is «t»."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🏫",
+          "label": {
+            "uz": "maktab",
+            "ru": "школа",
+            "en": "school"
+          },
+          "letters": [
+            "m",
+            "a",
+            "k",
+            "t",
+            "a",
+            "b"
+          ],
+          "blank": 3,
+          "choices": [
+            "t",
+            "d",
+            "k"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani oʻqi.",
+        "ru": "Читай каждое предложение.",
+        "en": "Read each sentence."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — oʻqiy olamiz.",
+        "ru": "Верный ответ — oʻqiy olamiz.",
+        "en": "The right answer — oʻqiy olamiz."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "📚",
+          "text": {
+            "uz": "Alifbo — harflar uyi.\nHar kuni yangi harf oʻrgandik.\nEndi biz oʻqiy olamiz!",
+            "ru": "Alifbo — harflar uyi.\nHar kuni yangi harf oʻrgandik.\nEndi biz oʻqiy olamiz!",
+            "en": "Alifbo — harflar uyi.\nHar kuni yangi harf oʻrgandik.\nEndi biz oʻqiy olamiz!"
+          },
+          "question": {
+            "uz": "Biz endi nima qila olamiz?",
+            "ru": "Biz endi nima qila olamiz?",
+            "en": "Biz endi nima qila olamiz?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "oʻqiy olamiz",
+                "ru": "oʻqiy olamiz",
+                "en": "oʻqiy olamiz"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "ucha olamiz",
+                "ru": "ucha olamiz",
+                "en": "ucha olamiz"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "suza olamiz",
+                "ru": "suza olamiz",
+                "en": "suza olamiz"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

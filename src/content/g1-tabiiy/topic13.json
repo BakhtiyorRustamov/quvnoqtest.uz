@@ -1,0 +1,180 @@
+{
+  "topicId": "g1-tabiiy-13",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "💧🧊☁️🌧️",
+  "title": {
+    "uz": "Suv qanday oʻzgaradi?",
+    "ru": "Как изменяется вода?",
+    "en": "How does water change?"
+  },
+  "recall": {
+    "uz": "Suv uch holatda boʻladi. Sovuqda suv muzlab, qattiq muz yoki qor boʻladi. Muz erisa, yana suyuq suvga aylanadi. Suv qattiq qizdirilsa, bugʻlanib, bugʻga aylanadi. Bugʻ osmonga koʻtarilib, bulut hosil qiladi va yerga yomgʻir boʻlib qaytadi.",
+    "ru": "Вода бывает в трёх состояниях. На холоде вода замерзает и становится твёрдым льдом или снегом. Лёд тает и снова становится жидкой водой. При сильном нагреве вода испаряется и превращается в пар. Пар поднимается вверх, образует облако и возвращается на землю дождём.",
+    "en": "Water exists in three states. In the cold, water freezes into solid ice or snow. Ice melts back into liquid water. When strongly heated, water evaporates into steam. Steam rises up, forms a cloud and returns to the ground as rain."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir holatni oʻz rasmiga ula!", "ru": "Соедини каждое состояние с его картинкой!", "en": "Match each state to its picture!" },
+      "hint": { "uz": "Qattiq — muz, suyuq — suv, gaz — bugʻ.", "ru": "Твёрдое — лёд, жидкое — вода, газ — пар.", "en": "Solid — ice, liquid — water, gas — steam." },
+      "explanation": { "uz": "Suv uch holatda boʻladi: qattiq (muz), suyuq (suv) va bugʻ (gaz).", "ru": "Вода бывает в трёх состояниях: твёрдое (лёд), жидкое (вода) и пар (газ).", "en": "Water has three states: solid (ice), liquid (water) and steam (gas)." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "label": { "uz": "Qattiq", "ru": "Твёрдое", "en": "Solid" } }, "right": { "emoji": "🧊", "label": { "uz": "muz", "ru": "лёд", "en": "ice" } } },
+            { "left": { "label": { "uz": "Suyuq", "ru": "Жидкое", "en": "Liquid" } }, "right": { "emoji": "💧", "label": { "uz": "suv", "ru": "вода", "en": "water" } } },
+            { "left": { "label": { "uz": "Gaz", "ru": "Газ", "en": "Gas" } }, "right": { "emoji": "♨️", "label": { "uz": "bugʻ", "ru": "пар", "en": "steam" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Suv sovuganda nimaga aylanadi?", "ru": "Во что превращается вода на холоде?", "en": "What does water turn into when it gets cold?" },
+      "hint": { "uz": "Sovuqda suv qattiq boʻlib qotadi.", "ru": "На холоде вода застывает и твердеет.", "en": "In the cold, water hardens into a solid." },
+      "explanation": { "uz": "Suv sovuganda muzga aylanadi. Muz — suvning qattiq holati.", "ru": "На холоде вода превращается в лёд. Лёд — твёрдое состояние воды.", "en": "When water gets cold it turns to ice. Ice is the solid state of water." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "ice", "emoji": "🧊", "label": { "uz": "muz", "ru": "лёд", "en": "ice" }, "correct": true },
+            { "id": "steam", "emoji": "♨️", "label": { "uz": "bugʻ", "ru": "пар", "en": "steam" } },
+            { "id": "flower", "emoji": "🌸", "label": { "uz": "gul", "ru": "цветок", "en": "flower" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Suv qattiq qizdirilsa nimaga aylanadi?", "ru": "Во что превращается вода при сильном нагреве?", "en": "What does water turn into when strongly heated?" },
+      "hint": { "uz": "Qaynagan suvdan koʻtarilgan narsa.", "ru": "То, что поднимается от кипящей воды.", "en": "What rises from boiling water." },
+      "explanation": { "uz": "Qizdirilgan suv bugʻga aylanadi. Bugʻ osmonga koʻtariladi.", "ru": "Нагретая вода превращается в пар. Пар поднимается вверх.", "en": "Heated water turns into steam. Steam rises upward." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "steam", "emoji": "♨️", "label": { "uz": "bugʻ", "ru": "пар", "en": "steam" }, "correct": true },
+            { "id": "ice", "emoji": "🧊", "label": { "uz": "muz", "ru": "лёд", "en": "ice" } },
+            { "id": "snow", "emoji": "❄️", "label": { "uz": "qor", "ru": "снег", "en": "snow" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Muz erisa, yana suvga aylanadi.", "ru": "Верно? Лёд тает и снова становится водой.", "en": "True? Ice melts and becomes water again." },
+      "hint": { "uz": "Iliq joyda muz erib, suyuq boʻladi.", "ru": "В тепле лёд тает и становится жидким.", "en": "In a warm place ice melts and becomes liquid." },
+      "explanation": { "uz": "Toʻgʻri. Muz iliqda erib, yana suvga aylanadi.", "ru": "Верно. Лёд в тепле тает и снова становится водой.", "en": "True. Ice melts in the warmth and turns back into water." },
+      "widget": { "type": "true_false", "props": { "emoji": "🧊", "answer": true } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Suvning aylanishini toʻgʻri tartibda joyla!", "ru": "Расставь круговорот воды по порядку!", "en": "Put the water cycle in the right order!" },
+      "hint": { "uz": "Suv bugʻga aylanadi, bulut boʻladi, yomgʻir yogʻadi.", "ru": "Вода превращается в пар, становится облаком, идёт дождь.", "en": "Water turns to steam, becomes a cloud, then rain falls." },
+      "explanation": { "uz": "Suv bugʻlanadi, osmonda bulut boʻladi va yomgʻir boʻlib yerga qaytadi.", "ru": "Вода испаряется, в небе становится облаком и возвращается дождём.", "en": "Water evaporates, becomes a cloud in the sky and returns as rain." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "water", "emoji": "💧", "label": { "uz": "suv", "ru": "вода", "en": "water" } },
+            { "id": "steam", "emoji": "♨️", "label": { "uz": "bugʻ", "ru": "пар", "en": "steam" } },
+            { "id": "cloud", "emoji": "☁️", "label": { "uz": "bulut", "ru": "облако", "en": "cloud" } },
+            { "id": "rain", "emoji": "🌧️", "label": { "uz": "yomgʻir", "ru": "дождь", "en": "rain" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Suv qaysi holatlarga aylanishi mumkin?", "ru": "В какие состояния может превращаться вода?", "en": "Which states can water turn into?" },
+      "hint": { "uz": "Suv qor, muz va bugʻga aylanadi.", "ru": "Вода превращается в снег, лёд и пар.", "en": "Water turns into snow, ice and steam." },
+      "explanation": { "uz": "Suv qor, muz va bugʻga aylanadi. Tosh, daraxt va olovga aylanmaydi.", "ru": "Вода превращается в снег, лёд и пар. В камень, дерево и огонь — нет.", "en": "Water turns into snow, ice and steam. Not into stone, tree or fire." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "snow", "emoji": "❄️", "label": { "uz": "qor", "ru": "снег", "en": "snow" }, "correct": true },
+            { "id": "ice", "emoji": "🧊", "label": { "uz": "muz", "ru": "лёд", "en": "ice" }, "correct": true },
+            { "id": "steam", "emoji": "♨️", "label": { "uz": "bugʻ", "ru": "пар", "en": "steam" }, "correct": true },
+            { "id": "stone", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "stone" } },
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" } },
+            { "id": "fire", "emoji": "🔥", "label": { "uz": "olov", "ru": "огонь", "en": "fire" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Bugʻ osmonga koʻtarilib, bulutni hosil qiladi.", "ru": "Верно? Пар поднимается вверх и образует облако.", "en": "True? Steam rises up and forms a cloud." },
+      "hint": { "uz": "Yerdagi suv bugʻi baland osmonga koʻtariladi.", "ru": "Водяной пар поднимается высоко в небо.", "en": "Water vapor rises high into the sky." },
+      "explanation": { "uz": "Toʻgʻri. Bugʻ koʻtarilib, bir joyga toʻplanadi va bulut boʻladi.", "ru": "Верно. Пар поднимается, собирается вместе и образует облако.", "en": "True. Steam rises, gathers together and becomes a cloud." },
+      "widget": { "type": "true_false", "props": { "emoji": "☁️", "answer": true } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bulutdan yerga nima yogʻadi?", "ru": "Что выпадает из облака на землю?", "en": "What falls from the cloud to the ground?" },
+      "hint": { "uz": "Bulut sovisa, tomchilar boʻlib tushadi.", "ru": "Когда облако остывает, падают капли.", "en": "When the cloud cools, drops fall." },
+      "explanation": { "uz": "Bulutdan yomgʻir yogʻadi. Baʼzan qor yoki doʻl ham tushadi.", "ru": "Из облака идёт дождь. Иногда падает снег или град.", "en": "Rain falls from the cloud. Sometimes snow or hail falls too." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "rain", "emoji": "🌧️", "label": { "uz": "yomgʻir", "ru": "дождь", "en": "rain" }, "correct": true },
+            { "id": "sun", "emoji": "☀️", "label": { "uz": "quyosh", "ru": "солнце", "en": "sun" } },
+            { "id": "rainbow", "emoji": "🌈", "label": { "uz": "kamalak", "ru": "радуга", "en": "rainbow" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Suvning holatiga ajrat: qattiq yoki suyuq?", "ru": "Разложи по состоянию воды: твёрдое или жидкое?", "en": "Sort by water's state: solid or liquid?" },
+      "hint": { "uz": "Muz va qor — qattiq; suv va yomgʻir — suyuq.", "ru": "Лёд и снег — твёрдые; вода и дождь — жидкие.", "en": "Ice and snow are solid; water and rain are liquid." },
+      "explanation": { "uz": "Muz va qor qattiq holat. Suv, yomgʻir va dengiz suyuq holat.", "ru": "Лёд и снег — твёрдое состояние. Вода, дождь и море — жидкое.", "en": "Ice and snow are the solid state. Water, rain and sea are liquid." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "solid", "label": { "uz": "🧊 Qattiq", "ru": "🧊 Твёрдое", "en": "🧊 Solid" }, "color": "#2f9fe0" },
+            { "id": "liquid", "label": { "uz": "💧 Suyuq", "ru": "💧 Жидкое", "en": "💧 Liquid" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "ice", "emoji": "🧊", "label": { "uz": "muz", "ru": "лёд", "en": "ice" }, "bin": "solid" },
+            { "id": "snow", "emoji": "❄️", "label": { "uz": "qor", "ru": "снег", "en": "snow" }, "bin": "solid" },
+            { "id": "water", "emoji": "💧", "label": { "uz": "suv", "ru": "вода", "en": "water" }, "bin": "liquid" },
+            { "id": "rain", "emoji": "🌧️", "label": { "uz": "yomgʻir", "ru": "дождь", "en": "rain" }, "bin": "liquid" },
+            { "id": "sea", "emoji": "🌊", "label": { "uz": "dengiz", "ru": "море", "en": "sea" }, "bin": "liquid" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Tuman — bu havodagi mayda suv bugʻi.", "ru": "Верно? Туман — это мелкий водяной пар в воздухе.", "en": "True? Fog is tiny water vapor in the air." },
+      "hint": { "uz": "Tuman qaynagan choynakdan chiqqan bugʻga oʻxshaydi.", "ru": "Туман похож на пар из кипящего чайника.", "en": "Fog is like the steam from a boiling kettle." },
+      "explanation": { "uz": "Toʻgʻri. Tuman — havoda toʻplangan mayda suv bugʻi.", "ru": "Верно. Туман — это мелкий водяной пар, скопившийся в воздухе.", "en": "True. Fog is tiny water vapor gathered in the air." },
+      "widget": { "type": "true_false", "props": { "emoji": "🌫️", "answer": true } }
+    }
+  ]
+}

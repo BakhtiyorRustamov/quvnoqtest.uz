@@ -8,7 +8,8 @@
     "start": "next start",
     "gen:assets": "node scripts/gen-assets.mjs",
     "gen:sfx": "node scripts/gen-sfx.mjs",
-    "seed:tts": "node scripts/seed-tts.mjs"
+    "seed:tts": "node scripts/seed-tts.mjs",
+    "seed:passages": "node scripts/seed-tts.mjs --passages-only"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
@@ -24,6 +25,7 @@
     "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@google/genai": "^1.22.0",
     "@types/canvas-confetti": "^1.6.4",
     "@types/howler": "^2.2.11",
     "@types/node": "^20.14.0",

@@ -3,10 +3,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import type { LessonItem } from '@/content/types';
+import type { LessonItem, WidgetSpec } from '@/content/types';
 import { pick } from '@/lib/i18n-config';
 import { useSound } from '@/components/providers/SoundProvider';
 import { burstConfetti } from '@/lib/confetti';
+import ReadAgain from './ReadAgain';
+import AudioButton from './AudioButton';
 import ClickCorrect, { type ItemComponentProps } from './items/ClickCorrect';
 import MultiSelect from './items/MultiSelect';
 import Sequence from './items/Sequence';
@@ -32,6 +34,8 @@ export default function ItemShell({
   total,
   locale,
   priorResult,
+  passage,
+  passageItemId,
   onDone,
   onForward
 }: {
@@ -40,6 +44,8 @@ export default function ItemShell({
   total: number;
   locale: string;
   priorResult: boolean | null;
+  passage?: WidgetSpec;
+  passageItemId?: string;
   onDone: (correct: boolean) => void;
   onForward: () => void;
 }) {
@@ -73,6 +79,9 @@ export default function ItemShell({
 
   const Body = COMPONENTS[item.type] ?? ClickCorrect;
   const shown = done ? priorResult : result;
+  // "Read again" passage: an explicit per-item reference, else the lesson's
+  // passage — but never on the reading item itself.
+  const readRef = item.reference ?? (item.id !== passageItemId ? passage : undefined);
 
   return (
     <div className="w-full max-w-2xl mx-auto px-3">
@@ -92,6 +101,13 @@ export default function ItemShell({
       {/* prompt */}
       <h2 className="text-center font-black text-ink text-xl sm:text-2xl mt-4 text-balance">{pick(item.prompt, locale)}</h2>
 
+      {/* Ingliz tili: the question's English clip — big speaker button */}
+      {item.audio && (
+        <div className="flex justify-center mt-3">
+          <AudioButton audio={item.audio} label={t('listen')} />
+        </div>
+      )}
+
       {/* optional decorative GIF (cosmetic only) */}
       {item.media?.gif && (
         <div className="flex justify-center mt-3">
@@ -108,8 +124,8 @@ export default function ItemShell({
         </div>
       )}
 
-      {/* Help / Yordam (FR-QZ-5) */}
-      <div className="flex justify-center mt-3">
+      {/* Help / Yordam (FR-QZ-5) + optional "read the text again" (Oʻqish) */}
+      <div className="flex flex-wrap justify-center items-center gap-2 mt-3">
         <button
           onClick={() => setHelpOpen((o) => !o)}
           aria-expanded={helpOpen}
@@ -117,6 +133,7 @@ export default function ItemShell({
         >
           {t('help')} {helpOpen ? '▲' : '▼'}
         </button>
+        {readRef && <ReadAgain spec={readRef} locale={locale} />}
       </div>
       <AnimatePresence>
         {helpOpen && (
@@ -160,6 +177,15 @@ export default function ItemShell({
           )}
         </AnimatePresence>
       </div>
+
+      {/* open-ended discussion prompt (Oʻqish) — shown under the graded item,
+         no input; the child thinks / answers aloud. Ungraded. */}
+      {item.openEnd && (
+        <div className="mx-auto max-w-md -mt-1 mb-3 flex items-start gap-2 rounded-2xl bg-brand-purple/10 border border-brand-purple/25 px-4 py-3">
+          <span className="text-lg shrink-0" aria-hidden>💬</span>
+          <p className="font-bold text-ink/80 text-[15px] leading-snug">{pick(item.openEnd, locale)}</p>
+        </div>
+      )}
 
       {/* revisit mode: continue forward */}
       {done && (

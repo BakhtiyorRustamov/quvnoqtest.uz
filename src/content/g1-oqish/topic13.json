@@ -1,0 +1,426 @@
+{
+  "topicId": "g1-oqish-13",
+  "subjectKey": "g1-oqish",
+  "emojis": "⛄❄️🎒",
+  "title": {
+    "uz": "Qor toʻpi voqeasi",
+    "ru": "История со снежком",
+    "en": "The snowball incident"
+  },
+  "recall": {
+    "uz": "Bugun qishda boʻlib oʻtgan voqea haqidagi hikoyani oʻqiymiz. Hikoyada bosh qahramon kim ekanini aniqlaymiz, «izza boʻlish» soʻzining maʼnosini bilib olamiz va «qor» soʻzidan yangi soʻzlar yasaymiz.",
+    "ru": "Сегодня читаем рассказ о случае, который произошёл зимой. Определим главного героя, узнаем, что значит «izza boʻlish», и превратим слово «qor» в новые слова.",
+    "en": "Today we read a story about something that happened in winter. We find the main character, learn what “izza boʻlish” means, and turn the word “qor” into new words."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Qor toʻpi voqeasi",
+          "variant": "story",
+          "audio": "g1-oqish-13-q1",
+          "lines": [
+            "Katta tanaffusda hovlida qor oʻynadik.",
+            "Bir payt sinfdoshim Botir otgan qor toʻpi doʻppimni uchirib yubordi.",
+            "Men esa sirpanib, qorga yiqildim.",
+            "Bolalar rosa kulishdi.",
+            "Izza boʻlganimdan yuzim qizarib ketdi.",
+            "Ichimda alam qaynardi: «Shoshmay tur, Botirvoy!",
+            "Men ham seni hammaning oldida izza qilaman», — dedim.",
+            "Kechgacha turli rejalar oʻyladim: etigiga qor solsammikan?",
+            "Yoki partasiga...",
+            "Ertalab esa Botir oldimga oʻzi keldi.",
+            "U doʻppimni qoqib, menga uzatdi-da: «Kecha qattiq ketibman, meni kechir, doʻstim», — dedi.",
+            "Alamlarim bir zumda erigan qordek yoʻq boʻldi.",
+            "Biz yana birga oʻynagani yugurdik."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Hikoyani diqqat bilan oʻqing!",
+        "ru": "Внимательно прочитай рассказ!",
+        "en": "Read the story carefully!"
+      },
+      "hint": {
+        "uz": "Voqea kim tilidan aytilayotganiga eʼtibor bering.",
+        "ru": "Обрати внимание, от чьего лица идёт рассказ.",
+        "en": "Notice who is telling the story."
+      },
+      "explanation": {
+        "uz": "Hikoya qishdagi arazlash va yarashish haqida: samimiy uzr har qanday alamni eritadi.",
+        "ru": "Рассказ о зимней обиде и примирении: искреннее извинение растапливает обиду.",
+        "en": "The story is about a winter quarrel and making up: a sincere apology melts any grudge."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Hikoyani aytib berayotgan bola",
+              "ru": "Мальчик, который рассказывает историю",
+              "en": "The boy telling the story"
+            },
+            {
+              "uz": "Oʻqituvchi",
+              "ru": "Учитель",
+              "en": "The teacher"
+            },
+            {
+              "uz": "Qorboʻron",
+              "ru": "Снежная буря",
+              "en": "The snowstorm"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hikoyaning bosh qahramoni kim?",
+        "ru": "Кто главный герой рассказа?",
+        "en": "Who is the main character of the story?"
+      },
+      "hint": {
+        "uz": "Bosh qahramon — voqealar uning atrofida sodir boʻladigan shaxs.",
+        "ru": "Главный герой — тот, вокруг кого происходят события.",
+        "en": "The main character is the one the events happen around."
+      },
+      "explanation": {
+        "uz": "Voqealar «men» tilidan aytiladi — bosh qahramon hikoyachi bolaning oʻzi.",
+        "ru": "Рассказ ведётся от первого лица — главный герой сам рассказчик.",
+        "en": "The story is told in the first person — the narrator is the main character."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Qor toʻpi doʻppisini uchirib, u yiqildi — bolalar kuldi",
+              "ru": "Снежок сбил его тюбетейку, он упал, и все засмеялись",
+              "en": "A snowball knocked off his cap, he fell, and everyone laughed"
+            },
+            {
+              "uz": "U darsdan kech qoldi",
+              "ru": "Он опоздал на урок",
+              "en": "He was late for class"
+            },
+            {
+              "uz": "U kitobini yoʻqotib qoʻydi",
+              "ru": "Он потерял книгу",
+              "en": "He lost his book"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bola nega xafa boʻldi?",
+        "ru": "Почему мальчик обиделся?",
+        "en": "Why was the boy upset?"
+      },
+      "hint": {
+        "uz": "Voqea katta tanaffusda boʻldi.",
+        "ru": "Это случилось на большой перемене.",
+        "en": "It happened during the long break."
+      },
+      "explanation": {
+        "uz": "Botir otgan qor toʻpi doʻppisini uchirdi, bola yiqildi va bolalar kulgani uchun izza boʻldi.",
+        "ru": "Снежок Ботира сбил тюбетейку, мальчик упал, все засмеялись — ему стало стыдно.",
+        "en": "Botir's snowball knocked off his cap, he fell, everyone laughed, and he felt embarrassed."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Uzr soʻradi va doʻppisini qaytardi",
+              "ru": "Извинился и вернул тюбетейку",
+              "en": "He apologised and returned the cap"
+            },
+            {
+              "uz": "Yana qor toʻpi otdi",
+              "ru": "Бросил ещё один снежок",
+              "en": "He threw another snowball"
+            },
+            {
+              "uz": "Indamay oʻtib ketdi",
+              "ru": "Прошёл мимо молча",
+              "en": "He walked past in silence"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Ertasi kuni Botir nima qildi?",
+        "ru": "Что сделал Ботир на следующий день?",
+        "en": "What did Botir do the next day?"
+      },
+      "hint": {
+        "uz": "Javob oxirgi xatboshida.",
+        "ru": "Ответ в последнем абзаце.",
+        "en": "The answer is in the last paragraph."
+      },
+      "explanation": {
+        "uz": "Botir oʻzi kelib uzr soʻradi — shundan keyin alamlar erigan qordek yoʻqoldi.",
+        "ru": "Ботир сам подошёл и извинился — обида растаяла, как снег.",
+        "en": "Botir came and apologised — the grudge melted away like snow."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Samimiy uzr alamni eritadi",
+              "ru": "Искреннее извинение растапливает обиду",
+              "en": "A sincere apology melts a grudge"
+            },
+            {
+              "uz": "Alamdan chiqish uchun hazil qilish kerak",
+              "ru": "Нужно мстить шуткой",
+              "en": "You should get even with a prank"
+            },
+            {
+              "uz": "Qishda hovlida oʻynamaslik kerak",
+              "ru": "Зимой нельзя играть во дворе",
+              "en": "You should not play outside in winter"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hikoyadan qanday xulosa chiqarasiz?",
+        "ru": "Какой вывод можно сделать из рассказа?",
+        "en": "What lesson does the story teach?"
+      },
+      "hint": {
+        "uz": "Bolaning rejalari kerak boʻldimi?",
+        "ru": "Пригодились ли мальчику его планы мести?",
+        "en": "Did the boy end up needing his revenge plans?"
+      },
+      "explanation": {
+        "uz": "Alam saqlash va qasd olish oʻrniga kechirimli boʻlish yaxshi: uzr hammasini hal qildi.",
+        "ru": "Лучше прощать, чем мстить: извинение всё решило.",
+        "en": "Forgiving beats revenge: an apology solved everything."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "izza boʻlish",
+              "right": "uyalish"
+            },
+            {
+              "left": "bosh qahramon",
+              "right": "asosiy ishtirokchi"
+            },
+            {
+              "left": "alam",
+              "right": "ichdagi xafalik"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«izza boʻlish» — hammaning oldida uyalib qolish.",
+        "ru": "«izza boʻlish» — опозориться, застыдиться.",
+        "en": "“izza boʻlish” means to feel ashamed in front of everyone."
+      },
+      "explanation": {
+        "uz": "izza boʻlish = uyalish; bosh qahramon = voqealar markazidagi asosiy ishtirokchi; alam = ichdagi xafalik.",
+        "ru": "izza boʻlish = стыд; bosh qahramon = главный участник событий; alam = обида.",
+        "en": "izza boʻlish = shame; bosh qahramon = the central participant; alam = a grudge."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "letter_complete",
+        "props": {
+          "before": "",
+          "after": "or",
+          "choices": [
+            "t",
+            "v",
+            "j"
+          ],
+          "answer": "t",
+          "emoji": "🎻",
+          "clue": {
+            "uz": "«qor» soʻzining birinchi harfini almashtir — musiqa asbobi chiqsin",
+            "ru": "Замени первую букву слова «qor» — получится музыкальный инструмент",
+            "en": "Change the first letter of “qor” to get a musical instrument"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "«Qor» soʻzidagi bitta harfni oʻzgartirib, yangi soʻz hosil qil!",
+        "ru": "Измени одну букву в слове «qor» и получи новое слово!",
+        "en": "Change one letter in “qor” to make a new word!"
+      },
+      "hint": {
+        "uz": "Bu asbobning torlari bor.",
+        "ru": "У этого инструмента есть струны.",
+        "en": "This instrument has strings."
+      },
+      "explanation": {
+        "uz": "q → t: qor → tor. Bitta harf oʻzgarsa, soʻzning maʼnosi butunlay oʻzgaradi.",
+        "ru": "q → t: qor → tor. Одна буква меняет весь смысл слова.",
+        "en": "q → t: qor → tor. One letter changes the whole meaning."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "letter_complete",
+        "props": {
+          "before": "q",
+          "after": "r",
+          "choices": [
+            "i",
+            "u",
+            "e"
+          ],
+          "answer": "i",
+          "emoji": "⛰️",
+          "clue": {
+            "uz": "«qor» soʻzining unlisini almashtir — tepalik chiqsin",
+            "ru": "Замени гласную в слове «qor» — получится холм",
+            "en": "Change the vowel in “qor” to get a hill"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Endi unli harfni oʻzgartirib, yana yangi soʻz hosil qil!",
+        "ru": "Теперь измени гласную и получи ещё одно слово!",
+        "en": "Now change the vowel to make another word!"
+      },
+      "hint": {
+        "uz": "Adir, tepalik degan maʼnodagi soʻz.",
+        "ru": "Слово означает возвышенность.",
+        "en": "The word means a hill or upland."
+      },
+      "explanation": {
+        "uz": "o → i: qor → qir. Unli harf ham soʻz maʼnosini oʻzgartiradi.",
+        "ru": "o → i: qor → qir. Гласная тоже меняет смысл слова.",
+        "en": "o → i: qor → qir. A vowel also changes the meaning."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Doʻstlar bir-birini ",
+          "after": " biladi.",
+          "choices": [
+            "kechira",
+            "urisha",
+            "chalgʻita"
+          ],
+          "answer": "kechira",
+          "emoji": "💛",
+          "clue": {
+            "uz": "Hikoyaning bosh gʻoyasi",
+            "ru": "Главная мысль рассказа",
+            "en": "The story's main idea"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Botir uzr soʻradi, bola esa uni ... oldi.",
+        "ru": "Ботир извинился, а мальчик его … простил.",
+        "en": "Botir apologised, and the boy … him."
+      },
+      "explanation": {
+        "uz": "Doʻstlar bir-birini kechira biladi — hikoya shunga oʻrgatadi.",
+        "ru": "Друзья умеют прощать друг друга — этому учит рассказ.",
+        "en": "Friends know how to forgive each other — that is the story's lesson."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Botir",
+            "doʻstidan",
+            "kechirim",
+            "soʻradi."
+          ],
+          "emoji": "💛",
+          "clue": {
+            "uz": "Hikoyadagi eng muhim voqea",
+            "ru": "Самое важное событие рассказа",
+            "en": "The most important event in the story"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan gap tuz!",
+        "ru": "Составь предложение из слов!",
+        "en": "Build the sentence from the words!"
+      },
+      "hint": {
+        "uz": "Gap «Botir» soʻzi bilan boshlanadi.",
+        "ru": "Предложение начинается со слова «Botir».",
+        "en": "The sentence starts with “Botir”."
+      },
+      "explanation": {
+        "uz": "Botir doʻstidan kechirim soʻradi — bu voqea hammasini yaxshilikka burdi.",
+        "ru": "Ботир попросил прощения у друга — это всё исправило.",
+        "en": "Botir asked his friend for forgiveness — and that set everything right."
+      }
+    }
+  ],
+  "skipRecall": true
+}

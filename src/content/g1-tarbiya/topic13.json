@@ -1,0 +1,252 @@
+{
+  "topicId": "g1-tarbiya-13",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🌟🛏️📚🧦",
+  "title": {
+    "uz": "Men mustaqil boʻlaman",
+    "ru": "Я стану самостоятельным",
+    "en": "I will be independent"
+  },
+  "recall": {
+    "uz": "Mustaqil bola oʻz ishini oʻzi bajaradi: oʻrnini yigʻishtiradi, kiyimini taxlaydi, uy vazifasini oʻzi qiladi va idish yuvishga yordam beradi. Kun tartibiga amal qiladi, shaxsiy gigiyenaga rioya qiladi. Oʻzi bajara oladigan ish uchun boshqalarni ovora qilmaydi.",
+    "ru": "Самостоятельный ребёнок сам делает свои дела: убирает постель, складывает одежду, сам выполняет домашнее задание и помогает мыть посуду. Он соблюдает режим дня и правила гигиены. То, что может сделать сам, не перекладывает на других.",
+    "en": "An independent child does his own tasks: makes the bed, folds clothes, does homework himself and helps wash the dishes. He follows a daily routine and personal hygiene, and doesn't trouble others with what he can do himself."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Mustaqil bajarsa boʻladigan ishlarni belgila!",
+        "ru": "Отметь дела, которые можно сделать самому!",
+        "en": "Tap the things you can do by yourself!"
+      },
+      "hint": {
+        "uz": "Oʻrin yigʻish, kiyim taxlash, uy vazifasi.",
+        "ru": "Убрать постель, сложить одежду, домашка.",
+        "en": "Make the bed, fold clothes, do homework."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bularni oʻzing bajara olasan.",
+        "ru": "Молодец! Это ты можешь сам.",
+        "en": "Great! You can do these yourself."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🛏️",
+              "label": {
+                "uz": "oʻrinni yigʻishtirish",
+                "ru": "убрать постель",
+                "en": "make the bed"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🧦",
+              "label": {
+                "uz": "kiyimni taxlash",
+                "ru": "сложить одежду",
+                "en": "fold clothes"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "📚",
+              "label": {
+                "uz": "uy vazifasini qilish",
+                "ru": "сделать домашку",
+                "en": "do homework"
+              },
+              "correct": true
+            },
+            {
+              "id": "c3",
+              "emoji": "🍽️",
+              "label": {
+                "uz": "idish yuvishga yordam",
+                "ru": "помочь мыть посуду",
+                "en": "help wash dishes"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🚗",
+              "label": {
+                "uz": "mashina haydash",
+                "ru": "водить машину",
+                "en": "drive a car"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kun tartibiga amal qilish nima uchun foydali?",
+        "ru": "Чем полезен режим дня?",
+        "en": "Why is a daily routine good for you?"
+      },
+      "hint": {
+        "uz": "Sogʻliq uchun.",
+        "ru": "Для здоровья.",
+        "en": "For your health."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Vaqtida uxlagan bola bardam boʻladi.",
+        "ru": "Верно! Кто вовремя спит, тот бодрый.",
+        "en": "Right! A child who sleeps on time stays energetic."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "salomatlik uchun foydali",
+              "ru": "полезен для здоровья",
+              "en": "it is good for health"
+            },
+            {
+              "uz": "hech qanday foydasi yoʻq",
+              "ru": "нет никакой пользы",
+              "en": "it has no benefit"
+            },
+            {
+              "uz": "faqat kattalar uchun",
+              "ru": "только для взрослых",
+              "en": "only for adults"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ertalabki ishlarni toʻgʻri tartibga sol!",
+        "ru": "Расставь утренние дела по порядку!",
+        "en": "Put the morning steps in order!"
+      },
+      "hint": {
+        "uz": "Uygʻonish → yuvinish → nonushta → maktab.",
+        "ru": "Проснуться → умыться → завтрак → школа.",
+        "en": "Wake up → wash → breakfast → school."
+      },
+      "explanation": {
+        "uz": "Barakalla! Kun tartibi shunday.",
+        "ru": "Молодец! Вот режим дня.",
+        "en": "Great! That's the routine."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "emoji": "⏰",
+              "label": {
+                "uz": "uygʻonish",
+                "ru": "проснуться",
+                "en": "wake up"
+              }
+            },
+            {
+              "emoji": "🚿",
+              "label": {
+                "uz": "yuvinish",
+                "ru": "умыться",
+                "en": "wash up"
+              }
+            },
+            {
+              "emoji": "🍽️",
+              "label": {
+                "uz": "nonushta",
+                "ru": "завтрак",
+                "en": "breakfast"
+              }
+            },
+            {
+              "emoji": "🏫",
+              "label": {
+                "uz": "maktabga borish",
+                "ru": "идти в школу",
+                "en": "go to school"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Oʻzim bajara oladigan ishni ham doim boshqalardan soʻrayveraman.",
+        "ru": "Верно? То, что могу сам, всегда прошу сделать других.",
+        "en": "Is this right? I always ask others to do even what I can do myself."
+      },
+      "hint": {
+        "uz": "Mustaqil bola oʻzi bajaradi.",
+        "ru": "Самостоятельный делает сам.",
+        "en": "An independent child does it himself."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Oʻz ishimni oʻzim qilaman.",
+        "ru": "Неверно! Своё дело делаю сам.",
+        "en": "False! I do my own tasks myself."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🙅",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyda qaysi ishlarni mustaqil bajarasan?",
+        "ru": "Какие дела дома ты делаешь сам?",
+        "en": "Which tasks do you do by yourself at home?"
+      },
+      "hint": {
+        "uz": "Oʻrin, kiyim, vazifa, yordam — nima qilasan?",
+        "ru": "Постель, одежда, уроки, помощь — что делаешь?",
+        "en": "Bed, clothes, homework, helping — what do you do?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen mustaqil bolasan.",
+        "ru": "Отлично! Ты самостоятельный.",
+        "en": "Great! You are independent."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men oʻrnimni oʻzim yigʻishtiraman, uy vazifamni mustaqil bajaraman va onamga idish yuvishda yordam beraman.",
+            "ru": "Я сам убираю постель, сам делаю уроки и помогаю маме мыть посуду.",
+            "en": "I make my own bed, do my homework myself and help my mother wash the dishes."
+          }
+        }
+      }
+    }
+  ]
+}

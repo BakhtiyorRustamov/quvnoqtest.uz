@@ -1,0 +1,143 @@
+{
+  "topicId": "g1-alifbe-11",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🐍👅🍎",
+  "title": {
+    "uz": "«I i» harfi",
+    "ru": "Буква «I i»",
+    "en": "The letter “I i”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «I i». U unli tovush. Uni aytganda tishlar bir-biriga yaqinlashadi, lablar jilmaymaydi: i-i-i. «I» tovushi bor soʻzlar: til, ilon, in. Endi O, T, A, N, I harflarini bilamiz.",
+    "ru": "Сегодня наша буква — «I i». Это гласный звук. Зубы сближаются, губы не улыбаются: и-и-и. Слова с «I»: til, ilon, in. Теперь мы знаем O, T, A, N, I.",
+    "en": "Today's letter is “I i”. It is a vowel. The teeth come close and the lips do not smile: i-i-i. Words with “I”: til, ilon, in. Now we know O, T, A, N, I."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«I» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «I»!", "en": "Find the word that starts with “I”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: i-i-ilon.", "ru": "Протяни начало: и-и-ilon.", "en": "Stretch the start: i-i-ilon." },
+      "explanation": { "uz": "«ilon» «I» tovushi bilan boshlanadi.", "ru": "«ilon» начинается со звука «I».", "en": "“ilon” (snake) starts with the sound “I”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "snake", "emoji": "🐍", "label": { "uz": "ilon", "ru": "ilon", "en": "ilon" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«I» harfini topib, hammasini bos!", "ru": "Найди букву «I» и нажми на все!", "en": "Find the letter “I” and tap them all!" },
+      "hint": { "uz": "Katta «I» ham, kichik «i» ham.", "ru": "Считаются «I» и «i».", "en": "Both “I” and “i” count." },
+      "explanation": { "uz": "«I» harfini topding!", "ru": "Ты нашёл букву «I»!", "en": "You found the letter “I”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "I", "cols": 3, "grid": ["I", "o", "i", "T", "I", "a", "i", "n", "I"] } }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "👅 «til»da «i» tovushi qaysi katakchada?", "ru": "👅 В какой клетке звук «i» в слове «til»?", "en": "👅 Which box has the “i” sound in “til”?" },
+      "hint": { "uz": "«i» soʻzning oʻrtasida.", "ru": "«i» в середине слова.", "en": "“i” is in the middle." },
+      "explanation": { "uz": "«til»da «i» oʻrtada — ikkinchi katakda.", "ru": "В «til» звук «i» в середине.", "en": "In “til” the “i” is in the middle." },
+      "widget": { "type": "sound_position", "props": { "emoji": "👅", "word": { "uz": "til", "ru": "til", "en": "til" }, "sound": "i", "cells": ["t", "i", "l"], "answer": 1 } }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«I» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «I»!", "en": "Tap the words that have the “I” sound!" },
+      "hint": { "uz": "til, ilon — «i» tovushi bor.", "ru": "til, ilon — есть звук «i».", "en": "til, ilon have the “i” sound." },
+      "explanation": { "uz": "til, ilon — «i» bor. ot, ona, nonda «i» yoʻq.", "ru": "til, ilon — есть «i». В ot, ona, non «i» нет.", "en": "til, ilon have “i”. ot, ona, non do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "tongue", "emoji": "👅", "label": { "uz": "til", "ru": "til", "en": "til" }, "correct": true },
+            { "id": "snake", "emoji": "🐍", "label": { "uz": "ilon", "ru": "ilon", "en": "ilon" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+            { "id": "mother", "emoji": "👩", "label": { "uz": "ona", "ru": "ona", "en": "ona" } },
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "👅 «til» soʻzining tovush chizmasini rangla!", "ru": "👅 Раскрась схему звуков слова «til»!", "en": "👅 Colour the sound scheme of the word “til”!" },
+      "hint": { "uz": "t — undosh, i — unli, l — undosh.", "ru": "t — согласный, i — гласный, l — согласный.", "en": "t consonant, i vowel, l consonant." },
+      "explanation": { "uz": "«til»: t, i, l — undosh, unli, undosh.", "ru": "«til»: согласный, гласный, согласный.", "en": "“til”: consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "👅", "word": { "uz": "til", "ru": "til", "en": "til" }, "scheme": ["c", "v", "c"] } }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«I» — unli tovush.", "ru": "«I» — гласный звук.", "en": "“I” is a vowel sound." },
+      "hint": { "uz": "Unlilarni erkin, choʻzib aytamiz.", "ru": "Гласные говорим свободно, протяжно.", "en": "Vowels are said freely and long." },
+      "explanation": { "uz": "Toʻgʻri! «I» — unli tovush.", "ru": "Верно! «I» — гласный.", "en": "True! “I” is a vowel." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔴", "answer": true } }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🐍 «ilon» soʻzini boʻgʻinlab qarsak chal!", "ru": "🐍 Похлопай слово «ilon» по слогам!", "en": "🐍 Clap the word “ilon” by syllables!" },
+      "hint": { "uz": "i-lon — ikki marta qarsak.", "ru": "i-lon — два хлопка.", "en": "i-lon — two claps." },
+      "explanation": { "uz": "«ilon» = i-lon, ikki boʻgʻin.", "ru": "«ilon» = i-lon, два слога.", "en": "“ilon” = i-lon, two syllables." },
+      "widget": { "type": "syllable_clap", "props": { "emoji": "🐍", "word": { "uz": "ilon", "ru": "ilon", "en": "ilon" }, "syllables": 2 } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«i» tovushi yoʻq ortiqcha soʻzni top!", "ru": "Найди лишнее слово — без звука «i»!", "en": "Tap the odd word — the one without the “i” sound!" },
+      "hint": { "uz": "til, ilon, inda «i» bor; birida yoʻq.", "ru": "В til, ilon, in есть «i»; в одном — нет.", "en": "til, ilon, in have “i”; one does not." },
+      "explanation": { "uz": "«ot»da «i» yoʻq — u ortiqcha.", "ru": "В «ot» нет «i» — оно лишнее.", "en": "“ot” has no “i” — it is the odd one." },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": { "uz": "«i» tovushi bor soʻzlar", "ru": "слова со звуком «i»", "en": "words with the “i” sound" },
+          "tiles": [{ "text": "til" }, { "text": "ilon" }, { "text": "in" }, { "text": "ot", "odd": true }]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir rasmni soʻzi bilan ula!", "ru": "Соедини каждую картинку с её словом!", "en": "Match each picture to its word!" },
+      "hint": { "uz": "til — 👅, ilon — 🐍, olma — 🍎, ot — 🐎.", "ru": "til — 👅, ilon — 🐍, olma — 🍎, ot — 🐎.", "en": "til — 👅, ilon — 🐍, olma — 🍎, ot — 🐎." },
+      "explanation": { "uz": "Rasm va soʻzni toʻgʻri ulading!", "ru": "Ты верно соединил картинку и слово!", "en": "You matched picture and word correctly!" },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "👅" }, "right": { "label": { "uz": "til", "ru": "til", "en": "til" } } },
+            { "left": { "emoji": "🐍" }, "right": { "label": { "uz": "ilon", "ru": "ilon", "en": "ilon" } } },
+            { "left": { "emoji": "🍎" }, "right": { "label": { "uz": "olma", "ru": "olma", "en": "olma" } } },
+            { "left": { "emoji": "🐎" }, "right": { "label": { "uz": "ot", "ru": "ot", "en": "ot" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi harf «I»?", "ru": "Какая буква «I»?", "en": "Which letter is “I”?" },
+      "hint": { "uz": "U tik chiziq shaklida.", "ru": "Она в виде вертикальной палочки.", "en": "It is a straight vertical line." },
+      "explanation": { "uz": "«I» — tik chiziqcha.", "ru": "«I» — вертикальная палочка.", "en": "“I” is a straight vertical line." },
+      "widget": { "type": "mcq", "props": { "choices": ["I", "T", "N"], "answerIndex": 0 } }
+    }
+  ]
+}

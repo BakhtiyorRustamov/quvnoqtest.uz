@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-56",
+  "subjectKey": "g1-ona",
+  "emojis": "🔁🧩⭐",
+  "title": {
+    "uz": "Takrorlash — soʻz turlari",
+    "ru": "Повторение — виды слов",
+    "en": "Review — kinds of words"
+  },
+  "recall": {
+    "uz": "Takrorlaymiz! Narsani bildirgan soʻzlar «Kim?», «Nima?» (oʻquvchi, stol), harakatni bildirgan soʻzlar «Nima qildi?» (yugurdi), belgini bildirgan soʻzlar «Qanday?» (mehribon), son soʻzlari «Necha?», «Nechta?», «Nechanchi?» soʻrogʻiga javob boʻladi.",
+    "ru": "Повторяем! Слова-предметы отвечают на «Кто?», «Что?» (oʻquvchi, stol), действия — на «Что сделал?» (yugurdi), признаки — на «Какой?» (mehribon), числа — на «Сколько?», «Который?».",
+    "en": "Let's review! Thing words answer “Who?”, “What?” (oʻquvchi, stol); action words answer “What did it do?” (yugurdi); attribute words answer “What kind?” (mehribon); number words answer “How many?”, “Which one?”."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "oʻqituvchi" }, { "text": "musiqachi" }, { "text": "haydovchi" }, { "text": "daftar", "odd": true } ], "clue": { "uz": "Kasb egalari — bittasi narsa", "ru": "Профессии — одно из них предмет", "en": "Professions — one is a thing" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Qaysi biri odam (kasb) emas?", "ru": "Какое из них не человек (профессия)?", "en": "Which one is not a person (a profession)?" },
+      "explanation": { "uz": "«Daftar» — narsa; qolganlari kasb egalari (odam).", "ru": "«Daftar» — предмет; остальные — профессии (люди).", "en": "“Daftar” is a thing; the rest are professions (people)." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "mushuk" }, { "text": "it" }, { "text": "toychoq" }, { "text": "tarvuz", "odd": true } ], "clue": { "uz": "Hayvonlar — bittasi narsa", "ru": "Животные — одно из них предмет", "en": "Animals — one is a thing" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Qaysi biri hayvon emas?", "ru": "Какое из них не животное?", "en": "Which one is not an animal?" },
+      "explanation": { "uz": "«Tarvuz» — meva (narsa); qolganlari hayvon.", "ru": "«Tarvuz» — арбуз (предмет); остальные — животные.", "en": "“Tarvuz” is a watermelon (a thing); the rest are animals." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "sholgʻom" }, { "text": "lavlagi" }, { "text": "sabzi" }, { "text": "handalak", "odd": true } ], "clue": { "uz": "Ildizmevalar — bittasi poliz ekini", "ru": "Корнеплоды — один из них бахчевой", "en": "Root vegetables — one is a melon" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Qaysi biri yer ostida oʻsmaydi?", "ru": "Что из них не растёт под землёй?", "en": "Which one does not grow underground?" },
+      "explanation": { "uz": "«Handalak» — poliz ekini; qolganlari ildizmeva.", "ru": "«Handalak» — дыня; остальные — корнеплоды.", "en": "“Handalak” is a melon; the rest are root vegetables." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "mehribon", "match": true }, { "text": "favvora", "match": false }, { "text": "qudratli", "match": true }, { "text": "stol", "match": false }, { "text": "quvnoq", "match": true }, { "text": "kitob", "match": false } ] } },
+      "prompt": { "uz": "Belgini bildirgan soʻzlarni bos!", "ru": "Нажми слова-признаки!", "en": "Tap the attribute words!" },
+      "hint": { "uz": "favvora, stol, kitob — narsa nomlari.", "ru": "favvora, stol, kitob — предметы.", "en": "favvora, stol, kitob are things." },
+      "explanation": { "uz": "mehribon, qudratli, quvnoq — belgi soʻzlari.", "ru": "mehribon, qudratli, quvnoq — слова-признаки.", "en": "mehribon, qudratli, quvnoq are attribute words." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "oʻquvchi", "bin": "kim" }, { "id": "b", "label": "shifokor", "bin": "kim" }, { "id": "c", "label": "rassom", "bin": "kim" }, { "id": "d", "label": "stol", "bin": "nima" }, { "id": "e", "label": "divan", "bin": "nima" }, { "id": "f", "label": "stakan", "bin": "nima" } ], "bins": [ { "id": "kim", "label": "Kim? (shaxs)" }, { "id": "nima", "label": "Nima? (narsa)" } ] } },
+      "prompt": { "uz": "Ajrat: «Kim?» va «Nima?» soʻzlari!", "ru": "Раздели: слова «Кто?» и «Что?»!", "en": "Sort: “Who?” words vs “What?” words!" },
+      "hint": { "uz": "oʻquvchi, shifokor, rassom — odam.", "ru": "oʻquvchi, shifokor, rassom — люди.", "en": "oʻquvchi, shifokor, rassom are people." },
+      "explanation": { "uz": "Shaxs «Kim?», narsa «Nima?» soʻrogʻiga javob boʻladi.", "ru": "Человек — «Кто?», предмет — «Что?».", "en": "A person answers “Who?”; a thing answers “What?”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "yugurdi", "bin": "harakat" }, { "id": "b", "label": "kuyladi", "bin": "harakat" }, { "id": "c", "label": "shirin", "bin": "belgi" }, { "id": "d", "label": "baland", "bin": "belgi" }, { "id": "e", "label": "stol", "bin": "narsa" }, { "id": "f", "label": "kitob", "bin": "narsa" } ], "bins": [ { "id": "harakat", "label": "Harakat" }, { "id": "belgi", "label": "Belgi" }, { "id": "narsa", "label": "Narsa" } ] } },
+      "prompt": { "uz": "Soʻzlarni uch turkumga ajrat!", "ru": "Раздели слова на три группы!", "en": "Sort the words into three kinds!" },
+      "hint": { "uz": "yugurdi — harakat, shirin — belgi, stol — narsa.", "ru": "yugurdi — действие, shirin — признак, stol — предмет.", "en": "yugurdi — action, shirin — attribute, stol — thing." },
+      "explanation": { "uz": "Harakat, belgi va narsa — soʻzlarning uch turkumi.", "ru": "Действие, признак и предмет — три вида слов.", "en": "Action, attribute and thing are three kinds of words." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "bir", "right": "birinchi" }, { "left": "uch", "right": "uchinchi" }, { "left": "besh", "right": "beshinchi" } ] } },
+      "prompt": { "uz": "Sanoq sonini tartib soniga ula!", "ru": "Соедини число с порядковым!", "en": "Match each count to its ordinal!" },
+      "hint": { "uz": "-inchi qoʻshimchasiga eʼtibor ber.", "ru": "Обрати внимание на суффикс -inchi.", "en": "Watch the -inchi suffix." },
+      "explanation": { "uz": "bir — birinchi, uch — uchinchi, besh — beshinchi.", "ru": "один — первый, три — третий, пять — пятый.", "en": "one — first, three — third, five — fifth." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Bizning oila besh ", "after": " dan iborat.", "choices": ["nafar", "ta", "inchi"], "answer": "nafar", "emoji": "👨‍👩‍👧‍👦", "clue": { "uz": "Odamlar qaysi soʻz bilan sanaladi?", "ru": "Каким словом считают людей?", "en": "Which word counts people?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos soʻzni qoʻy!", "ru": "Вставь подходящее слово!", "en": "Fill the gap with the right word!" },
+      "hint": { "uz": "Oila aʼzolari — odam, «nafar».", "ru": "Члены семьи — люди, «nafar».", "en": "Family members are people, “nafar”." },
+      "explanation": { "uz": "Oila besh nafardan iborat. Odam «nafar» bilan sanaladi.", "ru": "Семья из пяти человек. Людей считают с «nafar».", "en": "A family of five. People are counted with “nafar”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Men", "birinchi", "sinfda", "oʻqiyman."], "emoji": "🏫", "clue": { "uz": "Sinf haqida gap", "ru": "Предложение о классе", "en": "A sentence about grade" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Nechanchi sinf? — birinchi.", "ru": "Который класс? — первый.", "en": "Which grade? — first." },
+      "explanation": { "uz": "Men birinchi sinfda oʻqiyman. «Birinchi» — tartib soni.", "ru": "Я учусь в первом классе. «Birinchi» — порядковое.", "en": "I study in the first grade. “Birinchi” is an ordinal." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "oʻquvchi", "match": true }, { "text": "stol", "match": false }, { "text": "shifokor", "match": true }, { "text": "quyon", "match": false }, { "text": "rassom", "match": true }, { "text": "stakan", "match": false } ] } },
+      "prompt": { "uz": "«Kim?» soʻrogʻiga javob boʻlgan (odam) soʻzlarni bos!", "ru": "Нажми слова-люди (отвечают на «Кто?»)!", "en": "Tap the people words (that answer “Who?”)!" },
+      "hint": { "uz": "stol, stakan — narsa; quyon — hayvon (Nima?).", "ru": "stol, stakan — предметы; quyon — животное (Что?).", "en": "stol, stakan are things; quyon is an animal (What?)." },
+      "explanation": { "uz": "oʻquvchi, shifokor, rassom — shaxs (Kim?).", "ru": "oʻquvchi, shifokor, rassom — люди (Кто?).", "en": "oʻquvchi, shifokor, rassom are people (Who?)." }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "topicId": "g1-art-11", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Uzum", "ru": "Виноград", "en": "Grapes" },
+  "recall": {
+    "uz": "Uzum shirin va foydali meva. U shingil boʻlib oʻsadi, donalari yashil yoki koʻk boʻladi. Keling, uzum shingilini boʻyaymiz.",
+    "ru": "Виноград — сладкая и полезная ягода. Он растёт гроздью, ягоды бывают зелёными или синими. Давай раскрасим гроздь винограда.",
+    "en": "Grapes are a sweet, healthy fruit. They grow in a bunch; the berries can be green or purple. Let's colour a bunch of grapes."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Uzum shingilini boʻya.", "ru": "Раскрась гроздь винограда.", "en": "Colour the bunch of grapes." },
+      "hint": { "uz": "Donalar — yashil yoki koʻk, barg — yashil.", "ru": "Ягоды — зелёные или синие, лист — зелёный.", "en": "Berries green or purple, leaf green." },
+      "explanation": { "uz": "Shirin uzum!", "ru": "Сладкий виноград!", "en": "Sweet grapes!" },
+      "widget": { "type": "color_fill", "props": { "picture": "grapes" } }
+    }
+  ]
+}

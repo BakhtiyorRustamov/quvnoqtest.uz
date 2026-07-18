@@ -1,0 +1,439 @@
+{
+  "topicId": "g1-oqish-01",
+  "subjectKey": "g1-oqish",
+  "emojis": "📖✨📚",
+  "title": {
+    "uz": "Oʻqishni bilsang oʻzing",
+    "ru": "Если умеешь читать сам",
+    "en": "When you can read yourself"
+  },
+  "recall": {
+    "uz": "Bugun «Oʻqishni bilsang oʻzing» sheʼrini oʻqiymiz. Sheʼr mustaqil oʻqishni bilish naqadar yaxshi ekani haqida. Avval sheʼrni ifodali oʻqing, soʻng savollarga javob bering.",
+    "ru": "Сегодня читаем стихотворение «Если умеешь читать сам». Оно о том, как хорошо уметь читать самостоятельно. Сначала прочитай выразительно, потом ответь на вопросы.",
+    "en": "Today we read the poem “When you can read yourself”. It is about how good it is to be able to read on your own. First read it aloud, then answer the questions."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Oʻqishni bilsang oʻzing",
+          "variant": "poem",
+          "audio": "g1-oqish-01-q1",
+          "lines": [
+            "Alifboni bilaman,",
+            "Harflarni tanidim.",
+            "Kitobimni oʻzim ochib,",
+            "Ertakni oʻqidim.",
+            "",
+            "Endi kutib turmayman,",
+            "Oyimni chorlamayman.",
+            "Buvimdan ham soʻramay,",
+            "Oʻzim varaq ochaman.",
+            "",
+            "Qanday yaxshi, qanday soz —",
+            "Oʻqishni bilsang oʻzing!",
+            "Kitob — sirli bir olam,",
+            "Unga termilar koʻzing."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrni ifodali oʻqing!",
+        "ru": "Прочитай стихотворение выразительно!",
+        "en": "Read the poem aloud!"
+      },
+      "hint": {
+        "uz": "Har bir satrni ohang bilan oʻqing.",
+        "ru": "Читай каждую строку с выражением.",
+        "en": "Read each line with feeling."
+      },
+      "explanation": {
+        "uz": "Sheʼr mustaqil oʻqishni ulugʻlaydi: oʻzi oʻqiy oladigan bola hech kimni kutmaydi.",
+        "ru": "Стихотворение прославляет самостоятельное чтение: тот, кто умеет читать сам, никого не ждёт.",
+        "en": "The poem praises reading on your own: a child who can read waits for nobody."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Mustaqil oʻqishni bilish haqida",
+              "ru": "О том, как уметь читать самому",
+              "en": "About being able to read yourself"
+            },
+            {
+              "uz": "Sport haqida",
+              "ru": "О спорте",
+              "en": "About sport"
+            },
+            {
+              "uz": "Ovqat haqida",
+              "ru": "О еде",
+              "en": "About food"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼr nima haqida?",
+        "ru": "О чём стихотворение?",
+        "en": "What is the poem about?"
+      },
+      "hint": {
+        "uz": "«Oʻqishni bilsang oʻzing» — asosiy fikr shu.",
+        "ru": "«Если умеешь читать сам» — вот главная мысль.",
+        "en": "“When you can read yourself” — that's the main idea."
+      },
+      "explanation": {
+        "uz": "Sheʼr mustaqil, oʻzi oʻqiy oladigan bola haqida.",
+        "ru": "Стихотворение о ребёнке, который умеет читать сам.",
+        "en": "The poem is about a child who can read on their own."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Oyisi va buvisini",
+              "ru": "Маму и бабушку",
+              "en": "Mum and grandma"
+            },
+            {
+              "uz": "Doʻstlarini",
+              "ru": "Друзей",
+              "en": "Friends"
+            },
+            {
+              "uz": "Qoʻshnisini",
+              "ru": "Соседа",
+              "en": "The neighbour"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Oʻqishni bilgan bola kimlarni kutib oʻtirmaydi?",
+        "ru": "Кого не ждёт ребёнок, который умеет читать?",
+        "en": "Whom does a child who can read no longer wait for?"
+      },
+      "hint": {
+        "uz": "Sheʼrda oyi, buvi va opa tilga olingan.",
+        "ru": "В стихе упомянуты мама, бабушка и сестра.",
+        "en": "The poem mentions mother, grandma and sister."
+      },
+      "explanation": {
+        "uz": "Bola oʻzi oʻqiganidan oyisi, buvisi, opasidan yolvorib soʻramaydi.",
+        "ru": "Ребёнок читает сам, поэтому не умоляет маму, бабушку и сестру.",
+        "en": "The child reads alone, so does not beg mother, grandma or sister."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "soz",
+              "right": "yaxshi"
+            },
+            {
+              "left": "chorlamoq",
+              "right": "chaqirmoq"
+            },
+            {
+              "left": "termilmoq",
+              "right": "tikilmoq"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«soz» — yaxshi, «chorlamoq» — chaqirmoq.",
+        "ru": "«soz» — хороший, «chorlamoq» — звать.",
+        "en": "“soz” means good; “chorlamoq” means to call."
+      },
+      "explanation": {
+        "uz": "soz = yaxshi/tuzuk; chorlamoq = chaqirmoq; jovdiramoq = iltijo bilan qaramoq.",
+        "ru": "soz = хорошо; chorlamoq = звать; jovdiramoq = смотреть с мольбой.",
+        "en": "soz = good; chorlamoq = to call; jovdiramoq = to look pleadingly."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yaxshi, tuzuk",
+              "ru": "Хороший, добротный",
+              "en": "Good, fine"
+            },
+            {
+              "uz": "Yomon",
+              "ru": "Плохой",
+              "en": "Bad"
+            },
+            {
+              "uz": "Katta",
+              "ru": "Большой",
+              "en": "Big"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrdagi «soz» soʻzi qanday maʼnoni bildiradi?",
+        "ru": "Что означает слово «soz» в стихе?",
+        "en": "What does the word “soz” mean in the poem?"
+      },
+      "hint": {
+        "uz": "«Qanday yaxshi, qanday soz…»",
+        "ru": "«Qanday yaxshi, qanday soz…»",
+        "en": "“Qanday yaxshi, qanday soz…”"
+      },
+      "explanation": {
+        "uz": "«Soz» — yaxshi, tuzuk degani.",
+        "ru": "«Soz» значит хороший, добротный.",
+        "en": "“Soz” means good, fine."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Ertakni",
+              "ru": "Сказку",
+              "en": "A fairy tale"
+            },
+            {
+              "uz": "Xatni",
+              "ru": "Письмо",
+              "en": "A letter"
+            },
+            {
+              "uz": "Daftarni",
+              "ru": "Тетрадь",
+              "en": "A notebook"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bola kitobini ochib nimani oʻqidi?",
+        "ru": "Что прочитал ребёнок, открыв книгу?",
+        "en": "What did the child read when the book was opened?"
+      },
+      "hint": {
+        "uz": "Birinchi bandga qara.",
+        "ru": "Посмотри на первую строфу.",
+        "en": "Look at the first verse."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bola kitobni oʻzi ochib, ertak oʻqidi.",
+        "ru": "Верно! Ребёнок сам открыл книгу и прочитал сказку.",
+        "en": "Right! The child opened the book and read a fairy tale."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Kitob",
+            "—",
+            "bilim",
+            "xazinasi."
+          ],
+          "emoji": "📚",
+          "clue": {
+            "uz": "Kitob haqida maqol",
+            "ru": "Пословица о книге",
+            "en": "A proverb about books"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan maqol tuz!",
+        "ru": "Составь пословицу из слов!",
+        "en": "Build the proverb from the words!"
+      },
+      "hint": {
+        "uz": "Kitob nimaning xazinasi?",
+        "ru": "Сокровищница чего книга?",
+        "en": "A treasure of what is a book?"
+      },
+      "explanation": {
+        "uz": "«Kitob — bilim xazinasi». Kitob bilim beradi.",
+        "ru": "«Книга — сокровищница знаний».",
+        "en": "“A book is a treasure of knowledge.”"
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Kitob — bilim ",
+          "after": ".",
+          "choices": [
+            "xazinasi",
+            "koʻchasi",
+            "olmasi"
+          ],
+          "answer": "xazinasi",
+          "emoji": "💎",
+          "clue": {
+            "uz": "Maqolni toʻldir",
+            "ru": "Дополни пословицу",
+            "en": "Complete the proverb"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Bilimning boyligi — xazina.",
+        "ru": "Богатство знаний — сокровище.",
+        "en": "The wealth of knowledge is a treasure."
+      },
+      "explanation": {
+        "uz": "Kitob — bilim xazinasi.",
+        "ru": "Книга — сокровищница знаний.",
+        "en": "A book is a treasure of knowledge."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "kitob",
+          "letters": [
+            "k",
+            "i",
+            "t",
+            "o",
+            "b"
+          ],
+          "emoji": "📕",
+          "clue": {
+            "uz": "Oʻqiladigan narsa",
+            "ru": "То, что читают",
+            "en": "A thing you read"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Harflardan soʻzni yigʻ!",
+        "ru": "Собери слово из букв!",
+        "en": "Build the word from the letters!"
+      },
+      "hint": {
+        "uz": "Ichida sahifalar bor.",
+        "ru": "В нём есть страницы.",
+        "en": "It has pages inside."
+      },
+      "explanation": {
+        "uz": "«Kitob» — bilim manbai.",
+        "ru": "«Kitob» (книга) — источник знаний.",
+        "en": "“Kitob” (a book) is a source of knowledge."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "kitob",
+              "match": true
+            },
+            {
+              "text": "olma",
+              "match": false
+            },
+            {
+              "text": "oʻqish",
+              "match": true
+            },
+            {
+              "text": "stol",
+              "match": false
+            },
+            {
+              "text": "bilim",
+              "match": true
+            },
+            {
+              "text": "koʻcha",
+              "match": false
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Oʻqish va bilimga oid soʻzlarni bos!",
+        "ru": "Нажми слова про чтение и знания!",
+        "en": "Tap the words about reading and knowledge!"
+      },
+      "hint": {
+        "uz": "olma, stol, koʻcha — boshqa soʻzlar.",
+        "ru": "olma, stol, koʻcha — другие слова.",
+        "en": "olma, stol, koʻcha are other words."
+      },
+      "explanation": {
+        "uz": "kitob, oʻqish, bilim — oʻqish savodxonligiga oid soʻzlar.",
+        "ru": "kitob, oʻqish, bilim — слова о чтении и знаниях.",
+        "en": "kitob, oʻqish, bilim are words about reading and knowledge."
+      }
+    }
+  ],
+  "skipRecall": true
+}

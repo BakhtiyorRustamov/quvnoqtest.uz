@@ -1,0 +1,563 @@
+{
+  "topicId": "g1-ingliz-28",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🤲📖🚲🎒",
+  "title": {
+    "uz": "Narsalarni asra!",
+    "ru": "Береги вещи!",
+    "en": "Take care of things!"
+  },
+  "recall": {
+    "uz": "Suhbat vaqti! Bugun aytamiz: «Take care of things!» — «Narsalarni asra!» Va: «Be careful!» — «Ehtiyot boʻl!»",
+    "ru": "Время беседы! Сегодня говорим: «Take care of things!» — «Береги вещи!» И: «Be careful!» — «Будь осторожен!»",
+    "en": "Talk time! Today we say \"Take care of things!\" And \"Be careful!\""
+  },
+  "ttsText": {
+    "uz": "Narsalarni asra!",
+    "en": "Talk time! Take care of things! Be careful! OK, I will!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima deb javob berdi?",
+        "ru": "Послушай. Что ответил ребёнок?",
+        "en": "Listen. What did the child answer?"
+      },
+      "hint": {
+        "uz": "«OK, I will!» — mayli, shunday qilaman.",
+        "ru": "«OK, I will!» — хорошо, буду.",
+        "en": "\"OK, I will!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «OK, I will!»",
+        "ru": "Верно! «OK, I will!»",
+        "en": "Right! \"OK, I will!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "Take care of your toys!",
+              "audio": {
+                "key": "ing28-q1-a",
+                "text": "Take care of your toys!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "OK, I will!",
+              "audio": {
+                "key": "ing28-q1-b",
+                "text": "OK, I will!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "No, I won't!",
+              "OK, I will!",
+              "How many?"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Oyisi nimadan ogohlantirdi?",
+        "ru": "Послушай. О чём предупредила мама?",
+        "en": "Listen. What did Mom warn about?"
+      },
+      "hint": {
+        "uz": "«Be careful!» — ehtiyot boʻl.",
+        "ru": "«Be careful!» — осторожно.",
+        "en": "\"Be careful with the glass!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Be careful!»",
+        "ru": "Верно! «Be careful!»",
+        "en": "Right! \"Be careful!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "Be careful with the glass!",
+              "audio": {
+                "key": "ing28-q2-a",
+                "text": "Be careful with the glass!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "OK, Mom!",
+              "audio": {
+                "key": "ing28-q2-b",
+                "text": "OK, Mom!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Oyisi nima dedi?",
+              "ru": "Что сказала мама?",
+              "en": "What did Mom say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Be careful!",
+              "Happy birthday!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻyinchoqni ehtiyotlab ushlashni bos!",
+        "ru": "Нажми бережное обращение с игрушкой!",
+        "en": "Tap the careful way to hold a toy!"
+      },
+      "hint": {
+        "uz": "Yumshoq, ehtiyotkor qoʻl.",
+        "ru": "Мягкие, бережные руки.",
+        "en": "Gentle, caring hands."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 🤲 — ehtiyotkorlik.",
+        "ru": "Верно! 🤲 — бережно.",
+        "en": "Right! 🤲 gentle care!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🤲",
+              "label": "hold gently",
+              "correct": true
+            },
+            {
+              "emoji": "👊",
+              "label": "hit it"
+            },
+            {
+              "emoji": "🦶",
+              "label": "kick it"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «Take care!» — ehtiyot boʻl degani.",
+        "ru": "Верно? «Take care!» значит «будь осторожен».",
+        "en": "Is this right? \"Take care!\" means be careful."
+      },
+      "hint": {
+        "uz": "Ehtiyotkorlik haqida.",
+        "ru": "Об осторожности.",
+        "en": "About being careful."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Take care — ehtiyot boʻl.",
+        "ru": "Верно! Take care — будь осторожен.",
+        "en": "Right! \"Take care!\""
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🤲",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola oxirida nima dedi?",
+        "ru": "Послушай. Что ребёнок сказал в конце?",
+        "en": "Listen. What did the child say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Thank you! I will!»",
+        "ru": "Верно! «Thank you! I will!»",
+        "en": "Right! \"Thank you! I will!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Where's my book?",
+              "audio": {
+                "key": "ing28-q5-a",
+                "text": "Where's my book?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Here you are! Take care of it.",
+              "audio": {
+                "key": "ing28-q5-b",
+                "text": "Here you are! Take care of it.",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Thank you! I will!",
+              "audio": {
+                "key": "ing28-q5-c",
+                "text": "Thank you! I will!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam oxirida nima dedi?",
+              "ru": "Что Сэм сказал в конце?",
+              "en": "What did Sam say at the end?"
+            },
+            "choices": [
+              "No, it isn't!",
+              "How many?",
+              "Thank you! I will!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyda asraydigan narsalarni belgila!",
+        "ru": "Отметь вещи, которые бережём дома!",
+        "en": "Tap the things to take care of at home!"
+      },
+      "hint": {
+        "uz": "Kitob, velosiped, sumka.",
+        "ru": "Книга, велосипед, сумка.",
+        "en": "A book, a bike, a bag."
+      },
+      "explanation": {
+        "uz": "Barakalla! Kitob, velosiped, sumkani asraymiz!",
+        "ru": "Молодец! Бережём книгу, велосипед, сумку!",
+        "en": "Great! We care for a book, a bike, a bag!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "📖",
+              "label": "book",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🚲",
+              "label": "bike",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🎒",
+              "label": "bag",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🌧️",
+              "label": "rain"
+            },
+            {
+              "id": "d1",
+              "emoji": "☀️",
+              "label": "sun"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harakatlarni ajrat: ehtiyotkor yoki beparvo!",
+        "ru": "Разложи: осторожно или небрежно!",
+        "en": "Sort the actions: careful or careless!"
+      },
+      "hint": {
+        "uz": "Yumshoq — ehtiyotkor.",
+        "ru": "Мягко — осторожно.",
+        "en": "Gentle — careful."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ehtiyotkorlik yaxshi.",
+        "ru": "Молодец! Осторожность — хорошо.",
+        "en": "Great! Being careful is good."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "c",
+              "label": {
+                "uz": "Careful",
+                "ru": "Осторожно",
+                "en": "Careful"
+              }
+            },
+            {
+              "id": "x",
+              "label": {
+                "uz": "Careless",
+                "ru": "Небрежно",
+                "en": "Careless"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🤲",
+              "label": "hold gently",
+              "bin": "c"
+            },
+            {
+              "emoji": "📚",
+              "label": "put back",
+              "bin": "c"
+            },
+            {
+              "emoji": "🧽",
+              "label": "wipe it",
+              "bin": "c"
+            },
+            {
+              "emoji": "💥",
+              "label": "drop it",
+              "bin": "x"
+            },
+            {
+              "emoji": "✂️",
+              "label": "tear it",
+              "bin": "x"
+            },
+            {
+              "emoji": "🦶",
+              "label": "kick it",
+              "bin": "x"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, asraydigan narsalarni juftla!",
+        "ru": "Открывай карточки: вещи, которые бережём!",
+        "en": "Flip the cards: match the things we take care of!"
+      },
+      "hint": {
+        "uz": "book 📖, bike 🚲, bag 🎒.",
+        "ru": "book 📖, bike 🚲, bag 🎒.",
+        "en": "book 📖, bike 🚲, bag 🎒."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "📖"
+              },
+              "b": {
+                "label": "book"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🚲"
+              },
+              "b": {
+                "label": "bike"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎒"
+              },
+              "b": {
+                "label": "bag"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima deb vaʼda berdi?",
+        "ru": "Послушай. Что ребёнок пообещал?",
+        "en": "Listen. What did the child promise?"
+      },
+      "hint": {
+        "uz": "«I'll be careful!» — ehtiyot boʻlaman.",
+        "ru": "«I'll be careful!» — буду осторожен.",
+        "en": "\"I'll be careful!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes, I'll be careful!»",
+        "ru": "Верно! «Yes, I'll be careful!»",
+        "en": "Right! \"Yes, I'll be careful!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👵",
+              "name": "Grandma",
+              "text": "Take care of Grandma's book!",
+              "audio": {
+                "key": "ing28-q9-a",
+                "text": "Take care of Grandma's book!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes, I'll be careful!",
+              "audio": {
+                "key": "ing28-q9-b",
+                "text": "Yes, I'll be careful!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "I'll be careful!",
+              "Go away!",
+              "Three books!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻsting senga oʻyinchoq berdi. Nima deysan?",
+        "ru": "Друг дал тебе игрушку. Что скажешь?",
+        "en": "A friend gives you a toy. What do you say?"
+      },
+      "hint": {
+        "uz": "Rahmat ayt va asrashga vaʼda ber.",
+        "ru": "Поблагодари и пообещай беречь.",
+        "en": "Say thanks and promise to care."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Thank you! I'll take care of it.»",
+        "ru": "Верно! «Thank you! I'll take care of it.»",
+        "en": "Right! \"Thank you! I'll take care of it.\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Thank you! I'll take care of it.\nRahmat! Uni asrayman.",
+              "ru": "Thank you! I'll take care of it.\nСпасибо! Буду беречь.",
+              "en": "Thank you! I'll take care of it."
+            },
+            {
+              "uz": "Give me more!\nYana ber!",
+              "ru": "Give me more!\nДай ещё!",
+              "en": "Give me more!"
+            },
+            {
+              "uz": "No! Go away!\nYoʻq! Ket!",
+              "ru": "No! Go away!\nНет! Уходи!",
+              "en": "No! Go away!"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "topicId": "g1-oqish-16",
+  "subjectKey": "g1-oqish",
+  "emojis": "📖☀️💛",
+  "title": {
+    "uz": "Kitob — bilim quyoshi",
+    "ru": "Книга — солнце знаний",
+    "en": "The book — a sun of knowledge"
+  },
+  "recall": {
+    "uz": "Yangi boʻlimni boshlaymiz — u kitob va bilim haqida! Bugun kitob haqidagi sheʼrni oʻqiymiz, kitob topishmogʻini yechamiz va kitob ichida nimalar yashirinishini bilib olamiz.",
+    "ru": "Начинаем новый раздел — о книге и знаниях! Сегодня читаем стихотворение о книге, разгадываем загадку про книгу и узнаём, что прячется внутри книг.",
+    "en": "We start a new section — about books and knowledge! Today we read a poem about books, solve a book riddle, and find out what hides inside books."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Kitob — bilim quyoshi",
+          "variant": "poem",
+          "audio": "g1-oqish-16-q1",
+          "lines": [
+            "Bilim uyi — kitobim,",
+            "Har savolga javobim.",
+            "Unda ertak, sheʼr, doston,",
+            "Oʻtmish hamda bu zamon.",
+            "",
+            "Muallim boʻlmasa ham,",
+            "Oʻrgatar odob, bilim.",
+            "Yoʻlimni yoritguvchi",
+            "Quyoshimdir — kitobim."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrni ifodali oʻqing!",
+        "ru": "Прочитай стихотворение выразительно!",
+        "en": "Read the poem aloud with feeling!"
+      },
+      "hint": {
+        "uz": "Kitob nimalarga oʻxshatilayotganiga eʼtibor bering.",
+        "ru": "Обрати внимание, с чем сравнивается книга.",
+        "en": "Notice what the book is compared to."
+      },
+      "explanation": {
+        "uz": "Sheʼrda kitob bilim uyiga, muallimga va yoʻlni yorituvchi quyoshga oʻxshatiladi.",
+        "ru": "В стихотворении книга сравнивается с домом знаний, учителем и солнцем, освещающим путь.",
+        "en": "The poem compares the book to a house of knowledge, a teacher, and a sun that lights the way."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Kitob",
+              "ru": "Книга",
+              "en": "A book"
+            },
+            {
+              "uz": "Televizor",
+              "ru": "Телевизор",
+              "en": "A television"
+            },
+            {
+              "uz": "Qoʻgʻirchoq",
+              "ru": "Кукла",
+              "en": "A doll"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Topishmoq: oʻzi muallim emas, ammo hammaga taʼlim beradi. Mazmuni xilma-xil, biz uni juda sevamiz. Bu nima?",
+        "ru": "Загадка: сам не учитель, а учит всех. Содержание разное, и мы его очень любим. Что это?",
+        "en": "Riddle: it is not a teacher, yet it teaches everyone. Its contents vary, and we love it dearly. What is it?"
+      },
+      "hint": {
+        "uz": "Topishmoqdagi «taʼlim beradi» va «mazmuni» soʻzlari yordam beradi.",
+        "ru": "Помогут слова «учит» и «содержание».",
+        "en": "The words “teaches” and “contents” will help you."
+      },
+      "explanation": {
+        "uz": "Bu — kitob. U muallim boʻlmasa ham, bizga bilim va odob oʻrgatadi.",
+        "ru": "Это книга. Она не учитель, но учит нас знаниям и хорошим манерам.",
+        "en": "It is a book. Though not a teacher, it teaches us knowledge and good manners."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Quyoshga",
+              "ru": "С солнцем",
+              "en": "To the sun"
+            },
+            {
+              "uz": "Oyga",
+              "ru": "С луной",
+              "en": "To the moon"
+            },
+            {
+              "uz": "Daraxtga",
+              "ru": "С деревом",
+              "en": "To a tree"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrda kitob nimaga oʻxshatiladi?",
+        "ru": "С чем сравнивается книга в стихотворении?",
+        "en": "What is the book compared to in the poem?"
+      },
+      "hint": {
+        "uz": "«Yoʻlimni yoritguvchi...» degan misrani eslang.",
+        "ru": "Вспомни строку «Yoʻlimni yoritguvchi…».",
+        "en": "Remember the line “Yoʻlimni yoritguvchi…”."
+      },
+      "explanation": {
+        "uz": "Kitob yoʻlni yorituvchi quyoshga oʻxshatiladi: u bilim yoʻlimizni yoritadi.",
+        "ru": "Книга сравнивается с солнцем: она освещает наш путь к знаниям.",
+        "en": "The book is compared to the sun: it lights our path to knowledge."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Odob va bilim",
+              "ru": "Хорошим манерам и знаниям",
+              "en": "Good manners and knowledge"
+            },
+            {
+              "uz": "Ovqat pishirishni",
+              "ru": "Готовить еду",
+              "en": "How to cook food"
+            },
+            {
+              "uz": "Tez yugurishni",
+              "ru": "Быстро бегать",
+              "en": "How to run fast"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrga koʻra, kitob bizga nimalarni oʻrgatadi?",
+        "ru": "Чему, по стихотворению, учит нас книга?",
+        "en": "According to the poem, what does the book teach us?"
+      },
+      "hint": {
+        "uz": "«Oʻrgatar ...» degan misrani toping.",
+        "ru": "Найди строку «Oʻrgatar…».",
+        "en": "Find the line “Oʻrgatar…”."
+      },
+      "explanation": {
+        "uz": "Sheʼrda kitob odob va bilim oʻrgatishi aytiladi.",
+        "ru": "В стихотворении сказано, что книга учит манерам и знаниям.",
+        "en": "The poem says the book teaches manners and knowledge."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "ertak",
+              "match": true
+            },
+            {
+              "text": "sheʼr",
+              "match": true
+            },
+            {
+              "text": "doston",
+              "match": true
+            },
+            {
+              "text": "muzqaymoq",
+              "match": false
+            },
+            {
+              "text": "chana",
+              "match": false
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrga koʻra, kitob ichida nimalar bor? Mos soʻzlarni bos!",
+        "ru": "Что, по стихотворению, есть в книге? Нажми подходящие слова!",
+        "en": "According to the poem, what is inside a book? Tap the right words!"
+      },
+      "hint": {
+        "uz": "«Unda ertak, sheʼr...» misrasini eslang.",
+        "ru": "Вспомни строку «Unda ertak, sheʼr…».",
+        "en": "Remember the line “Unda ertak, sheʼr…”."
+      },
+      "explanation": {
+        "uz": "Kitobda ertak, sheʼr va doston bor; muzqaymoq va chana esa kitob ichida boʻlmaydi.",
+        "ru": "В книге есть сказки, стихи и дастаны; мороженого и санок в книге нет.",
+        "en": "A book holds tales, poems, and epics; ice cream and sledges are not inside books."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "doston",
+              "right": "uzun sheʼriy asar"
+            },
+            {
+              "left": "odob",
+              "right": "yaxshi xulq"
+            },
+            {
+              "left": "muallim",
+              "right": "oʻqituvchi"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«muallim» soʻzini darsda tez-tez eshitasiz.",
+        "ru": "Слово «muallim» ты часто слышишь на уроке.",
+        "en": "You hear “muallim” at school every day."
+      },
+      "explanation": {
+        "uz": "doston = uzun sheʼriy asar; odob = yaxshi xulq; muallim = oʻqituvchi.",
+        "ru": "doston = длинное поэтическое произведение; odob = хорошее поведение; muallim = учитель.",
+        "en": "doston = a long poetic work; odob = good conduct; muallim = a teacher."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "kitob",
+          "letters": [
+            "k",
+            "i",
+            "t",
+            "o",
+            "b"
+          ],
+          "emoji": "📚",
+          "clue": {
+            "uz": "Jadval ichida yashiringan soʻz",
+            "ru": "Слово, спрятанное в таблице букв",
+            "en": "The word hidden in the letter grid"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Harflardan yashiringan soʻzni yigʻ!",
+        "ru": "Собери спрятанное слово из букв!",
+        "en": "Build the hidden word from the letters!"
+      },
+      "hint": {
+        "uz": "Bu — bugungi darsimizning bosh qahramoni.",
+        "ru": "Это главный герой нашего урока.",
+        "en": "It is the hero of today's lesson."
+      },
+      "explanation": {
+        "uz": "k-i-t-o-b — kitob! Harflar orasidan soʻz topa oldingiz.",
+        "ru": "k-i-t-o-b — книга! Ты нашёл слово среди букв.",
+        "en": "k-i-t-o-b — book! You found the word among the letters."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "syllable_build",
+        "props": {
+          "syllables": [
+            "ku",
+            "tub",
+            "xo",
+            "na"
+          ],
+          "clue": {
+            "uz": "Kitoblar saqlanadigan va oʻqiladigan joy",
+            "ru": "Место, где хранят и читают книги",
+            "en": "The place where books are kept and read"
+          },
+          "emoji": "🏛️"
+        }
+      },
+      "prompt": {
+        "uz": "Boʻgʻinlardan soʻz tuz!",
+        "ru": "Собери слово из слогов!",
+        "en": "Build the word from syllables!"
+      },
+      "hint": {
+        "uz": "Soʻz «ku» boʻgʻini bilan boshlanadi.",
+        "ru": "Слово начинается со слога «ku».",
+        "en": "The word starts with the syllable “ku”."
+      },
+      "explanation": {
+        "uz": "ku-tub-xo-na — kutubxona. U yerda minglab kitoblar saqlanadi.",
+        "ru": "ku-tub-xo-na — библиотека. Там хранятся тысячи книг.",
+        "en": "ku-tub-xo-na — a library. Thousands of books are kept there."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Kitob — bilim ",
+          "after": ".",
+          "choices": [
+            "chirogʻi",
+            "qopi",
+            "derazasi"
+          ],
+          "answer": "chirogʻi",
+          "emoji": "🪔",
+          "clue": {
+            "uz": "Boʻlimimizning nomini eslang",
+            "ru": "Вспомни название нашего раздела",
+            "en": "Remember our section's name"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Chiroq nima qiladi? Yoritadi!",
+        "ru": "Что делает светильник? Светит!",
+        "en": "What does a lamp do? It gives light!"
+      },
+      "explanation": {
+        "uz": "Kitob — bilim chirogʻi: u aqlimizni chiroqdek yoritadi.",
+        "ru": "Книга — светоч знаний: она освещает ум, как лампа.",
+        "en": "The book is the lamp of knowledge: it lights up our mind."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Kitob",
+            "har",
+            "savolga",
+            "javob",
+            "beradi."
+          ],
+          "emoji": "📖",
+          "clue": {
+            "uz": "Sheʼrning bosh gʻoyasi",
+            "ru": "Главная мысль стихотворения",
+            "en": "The poem's main idea"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan gap tuz!",
+        "ru": "Составь предложение из слов!",
+        "en": "Build the sentence from the words!"
+      },
+      "hint": {
+        "uz": "Gap «Kitob» soʻzi bilan boshlanadi.",
+        "ru": "Предложение начинается со слова «Kitob».",
+        "en": "The sentence starts with “Kitob”."
+      },
+      "explanation": {
+        "uz": "Kitob har savolga javob beradi — shuning uchun u eng yaqin doʻstimiz.",
+        "ru": "Книга отвечает на каждый вопрос — поэтому она наш лучший друг.",
+        "en": "A book answers every question — that is why it is our closest friend."
+      }
+    }
+  ],
+  "skipRecall": true
+}

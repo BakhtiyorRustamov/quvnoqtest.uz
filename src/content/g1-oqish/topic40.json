@@ -1,0 +1,157 @@
+{
+  "topicId": "g1-oqish-40",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🚀🪐⭐",
+  "title": {
+    "uz": "Koinotga parvozlar",
+    "ru": "Полёты в космос",
+    "en": "Flights to space"
+  },
+  "recall": {
+    "uz": "Koinot va Quyosh sistemasi haqidagi sheʼrni tinglab oʻqiymiz, sayyoralarni Quyoshdan uzoqligi boʻyicha tartiblaymiz.",
+    "ru": "Слушаем стихотворение о космосе и Солнечной системе и расставляем планеты по удалённости от Солнца.",
+    "en": "We read a poem about space and the Solar System and order the planets by distance from the Sun."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Koinot",
+        "variant": "poem",
+        "audio": "g1-oqish-40-q1",
+        "lines": [
+          "Koinot — cheksiz fazo,",
+          "Yulduzlar porlab turar.",
+          "Sayyoralar aylanar,",
+          "Kometalar suzib yurar.",
+          "",
+          "Yer — bizning uyimiz,",
+          "Quyosh atrofin aylanar.",
+          "Kelajakda bolalar",
+          "Fazoga parvoz qilar."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Bizning uyimiz — qaysi sayyora?", "ru": "Какая планета — наш дом?", "en": "Which planet is our home?" },
+      "explanation": { "uz": "Sheʼr koinot, sayyoralar va kelajakdagi fazo parvozlari haqida.", "ru": "Стихотворение о космосе, планетах и будущих полётах.", "en": "The poem is about space, the planets and future flights." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Merkuriy", "ru": "Меркурий", "en": "Mercury" } },
+        { "text": { "uz": "Venera", "ru": "Венера", "en": "Venus" } },
+        { "text": { "uz": "Yer", "ru": "Земля", "en": "Earth" } },
+        { "text": { "uz": "Mars", "ru": "Марс", "en": "Mars" } },
+        { "text": { "uz": "Yupiter", "ru": "Юпитер", "en": "Jupiter" } }
+      ] } },
+      "prompt": { "uz": "Sayyoralarni Quyoshga yaqinidan uzogʻiga qarab tartiblang!", "ru": "Расставь планеты от ближней к дальней от Солнца!", "en": "Order the planets from nearest to farthest from the Sun!" },
+      "hint": { "uz": "Quyoshga eng yaqini — Merkuriy.", "ru": "Ближайшая к Солнцу — Меркурий.", "en": "The closest to the Sun is Mercury." },
+      "explanation": { "uz": "Merkuriy → Venera → Yer → Mars → Yupiter.", "ru": "Меркурий → Венера → Земля → Марс → Юпитер.", "en": "Mercury → Venus → Earth → Mars → Jupiter." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Yer — Quyoshdan uchinchi sayyora.", "ru": "Земля — третья планета от Солнца.", "en": "Earth is the third planet from the Sun." },
+        "answer": "true",
+        "why": { "uz": "Merkuriy, Venera dan keyin uchinchi boʻlib Yer keladi.", "ru": "После Меркурия и Венеры третьей идёт Земля.", "en": "After Mercury and Venus, Earth comes third." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Tartibni sanang: 1-Merkuriy, 2-Venera, 3-?", "ru": "Посчитай: 1-Меркурий, 2-Венера, 3-?", "en": "Count: 1-Mercury, 2-Venus, 3-?" },
+      "explanation": { "uz": "Toʻgʻri: Yer — Quyoshdan uchinchi oʻrinda.", "ru": "Верно: Земля — третья от Солнца.", "en": "True: Earth is third from the Sun." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Koinotda avtobuslar qatnaydi.", "ru": "В космосе ходят автобусы.", "en": "Buses run in space." },
+        "answer": "false",
+        "why": { "uz": "Koinotda yulduzlar, sayyoralar va kometalar boʻladi, avtobus emas.", "ru": "В космосе звёзды, планеты и кометы, а не автобусы.", "en": "In space there are stars, planets and comets, not buses." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Koinotda nimalar uchadi?", "ru": "Что летает в космосе?", "en": "What flies in space?" },
+      "explanation": { "uz": "Notoʻgʻri: koinotda avtobus emas, osmon jismlari boʻladi.", "ru": "Неверно: в космосе не автобусы, а небесные тела.", "en": "False: space has heavenly bodies, not buses." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "yulduz", "match": true },
+        { "text": "sayyora", "match": true },
+        { "text": "kometa", "match": true },
+        { "text": "stul", "match": false },
+        { "text": "qalam", "match": false }
+      ] } },
+      "prompt": { "uz": "Koinotdagi jismlarni bos!", "ru": "Нажми космические тела!", "en": "Tap the objects found in space!" },
+      "hint": { "uz": "Koinotda nimalar boʻladi?", "ru": "Что есть в космосе?", "en": "What is in space?" },
+      "explanation": { "uz": "Yulduz, sayyora, kometa — koinot jismlari; stul va qalam — yoʻq.", "ru": "Звезда, планета, комета — в космосе; стул и карандаш — нет.", "en": "Star, planet, comet are in space; a chair and a pencil are not." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "Zuhro", "right": "Venera sayyorasi" },
+        { "left": "fazo", "right": "koinot" },
+        { "left": "fazogir", "right": "fazoviy sayohatchi" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«fazogir» — koinotga uchadigan kishi.", "ru": "«fazogir» — космонавт.", "en": "“fazogir” is a space traveller." },
+      "explanation": { "uz": "Zuhro = Venera; fazo = koinot; fazogir = fazoviy sayohatchi.", "ru": "Zuhro = Венера; fazo = космос; fazogir = космонавт.", "en": "Zuhro = Venus; fazo = space; fazogir = an astronaut." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Kosmik kema", "ru": "Космический корабль", "en": "A spaceship" },
+        { "uz": "Velosiped", "ru": "Велосипед", "en": "A bicycle" },
+        { "uz": "Qayiq", "ru": "Лодка", "en": "A boat" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Fazogirlar koinotga nima yordamida uchadi?", "ru": "На чём космонавты летят в космос?", "en": "What do astronauts fly to space in?" },
+      "hint": { "uz": "U raketaga oʻxshaydi.", "ru": "Он похож на ракету.", "en": "It looks like a rocket." },
+      "explanation": { "uz": "Fazogirlar koinotga kosmik kema yordamida parvoz qiladi.", "ru": "Космонавты летят в космос на космическом корабле.", "en": "Astronauts fly to space in a spaceship." },
+      "openEnd": { "uz": "Sen koinotga uchishni xohlaysanmi? Nega?", "ru": "Ты хочешь полететь в космос? Почему?", "en": "Would you like to fly to space? Why?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Yer — biz yashaydigan ", "after": ".", "choices": ["sayyora", "yulduz", "kometa"], "answer": "sayyora", "emoji": "🌍", "clue": { "uz": "Bizning uyimiz", "ru": "Наш дом", "en": "Our home" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Yer — yulduz emas, u Quyosh atrofida aylanadi.", "ru": "Земля не звезда, она вращается вокруг Солнца.", "en": "Earth is not a star; it orbits the Sun." },
+      "explanation": { "uz": "Yer — biz yashaydigan sayyora.", "ru": "Земля — планета, на которой мы живём.", "en": "Earth is the planet we live on." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "Mars" },
+        { "text": "Venera" },
+        { "text": "Yupiter" },
+        { "text": "avtobus", "odd": true }
+      ], "clue": { "uz": "Qaysi biri sayyora emas?", "ru": "Что из этого не планета?", "en": "Which one is not a planet?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi sayyora, biri esa transport.", "ru": "Три — планеты, одно — транспорт.", "en": "Three are planets, one is transport." },
+      "explanation": { "uz": "Avtobus — transport; Mars, Venera, Yupiter — sayyoralar.", "ru": "Автобус — транспорт; Марс, Венера, Юпитер — планеты.", "en": "A bus is transport; Mars, Venus, Jupiter are planets." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "koinot", "syllables": ["ko", "i", "not"], "emoji": "🌌", "clue": { "uz": "Yulduzlar va sayyoralar makoni", "ru": "Обитель звёзд и планет", "en": "The home of stars and planets" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "ko + i + not = ?", "ru": "ko + i + not = ?", "en": "ko + i + not = ?" },
+      "explanation": { "uz": "ko-i-not → koinot. Cheksiz fazo.", "ru": "ko-i-not → koinot (космос).", "en": "ko-i-not → koinot (the cosmos)." }
+    }
+  ]
+}

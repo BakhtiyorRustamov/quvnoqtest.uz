@@ -1,0 +1,136 @@
+{
+  "topicId": "g1-alifbe-17",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🍇🌙🐱",
+  "title": {
+    "uz": "«U u» harfi",
+    "ru": "Буква «U u»",
+    "en": "The letter “U u”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «U u». U unli tovush. Uni aytganda lablar oldinga choʻchchayadi: u-u-u. «U» bilan: uzum, tun, un, mushuk. Endi O, T, A, N, I, L, M, U harflarini bilamiz.",
+    "ru": "Сегодня наша буква — «U u». Это гласный звук. Губы вытягиваются вперёд: у-у-у. Слова: uzum, tun, un, mushuk. Теперь мы знаем O, T, A, N, I, L, M, U.",
+    "en": "Today's letter is “U u”. It is a vowel. The lips push forward: u-u-u. Words: uzum, tun, un, mushuk. Now we know O, T, A, N, I, L, M, U."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«U» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «U»!", "en": "Find the word that starts with “U”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: u-u-uzum.", "ru": "Протяни начало: у-у-uzum.", "en": "Stretch the start: u-u-uzum." },
+      "explanation": { "uz": "«uzum» «U» tovushi bilan boshlanadi.", "ru": "«uzum» начинается со звука «U».", "en": "“uzum” (grapes) starts with the sound “U”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "grapes", "emoji": "🍇", "label": { "uz": "uzum", "ru": "uzum", "en": "uzum" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«U» harfini topib, hammasini bos!", "ru": "Найди букву «U» и нажми на все!", "en": "Find the letter “U” and tap them all!" },
+      "hint": { "uz": "Katta «U» ham, kichik «u» ham.", "ru": "Считаются «U» и «u».", "en": "Both “U” and “u” count." },
+      "explanation": { "uz": "«U» harfini topding!", "ru": "Ты нашёл букву «U»!", "en": "You found the letter “U”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "U", "cols": 3, "grid": ["U", "o", "u", "M", "U", "i", "u", "l", "U"] } }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🌙 «tun»da «u» tovushi qaysi katakchada?", "ru": "🌙 В какой клетке звук «u» в слове «tun»?", "en": "🌙 Which box has the “u” sound in “tun”?" },
+      "hint": { "uz": "«u» soʻzning oʻrtasida.", "ru": "«u» в середине слова.", "en": "“u” is in the middle." },
+      "explanation": { "uz": "«tun»da «u» oʻrtada — ikkinchi katakda.", "ru": "В «tun» звук «u» в середине.", "en": "In “tun” the “u” is in the middle." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🌙", "word": { "uz": "tun", "ru": "tun", "en": "tun" }, "sound": "u", "cells": ["t", "u", "n"], "answer": 1 } }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🌙 «tun» soʻzining tovush chizmasini rangla!", "ru": "🌙 Раскрась схему звуков слова «tun»!", "en": "🌙 Colour the sound scheme of the word “tun”!" },
+      "hint": { "uz": "t — undosh, u — unli, n — undosh.", "ru": "t — согласный, u — гласный, n — согласный.", "en": "t consonant, u vowel, n consonant." },
+      "explanation": { "uz": "«tun»: t, u, n — undosh, unli, undosh.", "ru": "«tun»: согласный, гласный, согласный.", "en": "“tun”: consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🌙", "word": { "uz": "tun", "ru": "tun", "en": "tun" }, "scheme": ["c", "v", "c"] } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«U» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «U»!", "en": "Tap the words that have the “U” sound!" },
+      "hint": { "uz": "uzum, tun, mushuk — «u» tovushi bor.", "ru": "uzum, tun, mushuk — есть звук «u».", "en": "uzum, tun, mushuk have the “u” sound." },
+      "explanation": { "uz": "uzum, tun, mushuk — «u» bor. ot, olmada yoʻq.", "ru": "uzum, tun, mushuk — есть «u». В ot, olma нет.", "en": "uzum, tun, mushuk have “u”. ot, olma do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "grapes", "emoji": "🍇", "label": { "uz": "uzum", "ru": "uzum", "en": "uzum" }, "correct": true },
+            { "id": "night", "emoji": "🌙", "label": { "uz": "tun", "ru": "tun", "en": "tun" }, "correct": true },
+            { "id": "cat", "emoji": "🐱", "label": { "uz": "mushuk", "ru": "mushuk", "en": "mushuk" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«U» — unli tovush.", "ru": "«U» — гласный звук.", "en": "“U” is a vowel sound." },
+      "hint": { "uz": "«U»da lablar oldinga choʻchchayadi.", "ru": "При «U» губы вытягиваются вперёд.", "en": "For “U” the lips push forward." },
+      "explanation": { "uz": "Toʻgʻri! «U» — unli tovush.", "ru": "Верно! «U» — гласный.", "en": "True! “U” is a vowel." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔴", "answer": true } }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Harflardan «tun» soʻzini tuz!", "ru": "Составь слово «tun» из букв!", "en": "Build the word “tun” from letters!" },
+      "hint": { "uz": "t — u — n tartibida bos.", "ru": "Нажимай по порядку: t — u — n.", "en": "Tap in order: t — u — n." },
+      "explanation": { "uz": "t + u + n = «tun».", "ru": "t + u + n = «tun».", "en": "t + u + n = “tun” (night)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🌙", "word": "tun", "label": { "uz": "tun", "ru": "ночь", "en": "night" } } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍇 «uzum» soʻzini boʻgʻinlab qarsak chal!", "ru": "🍇 Похлопай слово «uzum» по слогам!", "en": "🍇 Clap the word “uzum” by syllables!" },
+      "hint": { "uz": "u-zum — ikki marta qarsak.", "ru": "u-zum — два хлопка.", "en": "u-zum — two claps." },
+      "explanation": { "uz": "«uzum» = u-zum, ikki boʻgʻin.", "ru": "«uzum» = u-zum, два слога.", "en": "“uzum” = u-zum, two syllables." },
+      "widget": { "type": "syllable_clap", "props": { "emoji": "🍇", "word": { "uz": "uzum", "ru": "uzum", "en": "uzum" }, "syllables": 2 } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!", "ru": "Открой карточки и соедини картинку со словом!", "en": "Flip the cards and match each picture to its word!" },
+      "hint": { "uz": "uzum — 🍇, tun — 🌙, olma — 🍎.", "ru": "uzum — 🍇, tun — 🌙, olma — 🍎.", "en": "uzum — 🍇, tun — 🌙, olma — 🍎." },
+      "explanation": { "uz": "Rasm va soʻzni toʻgʻri juftlading!", "ru": "Ты верно соединил картинку и слово!", "en": "You matched picture and word correctly!" },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            { "a": { "emoji": "🍇" }, "b": { "label": { "uz": "uzum", "ru": "uzum", "en": "uzum" } } },
+            { "a": { "emoji": "🌙" }, "b": { "label": { "uz": "tun", "ru": "tun", "en": "tun" } } },
+            { "a": { "emoji": "🍎" }, "b": { "label": { "uz": "olma", "ru": "olma", "en": "olma" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«U»ni aytganda lablar qanday boʻladi?", "ru": "Что происходит с губами при звуке «U»?", "en": "What do the lips do when saying “U”?" },
+      "hint": { "uz": "«U-u-u» deb ayt.", "ru": "Скажи «у-у-у».", "en": "Say “u-u-u”." },
+      "explanation": { "uz": "«U»da lablar oldinga choʻchchayadi.", "ru": "При «U» губы вытягиваются вперёд.", "en": "For “U” the lips push forward." },
+      "widget": { "type": "mcq", "props": { "choices": [{ "uz": "oldinga choʻchchayadi", "ru": "вытягиваются вперёд", "en": "push forward" }, { "uz": "yopiladi", "ru": "смыкаются", "en": "close" }, { "uz": "kuladi", "ru": "улыбаются", "en": "smile" }], "answerIndex": 0 } }
+    }
+  ]
+}

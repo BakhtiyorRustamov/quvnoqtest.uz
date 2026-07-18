@@ -1,0 +1,157 @@
+{
+  "topicId": "g1-oqish-26",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌿🌼🐝",
+  "title": {
+    "uz": "Koʻklam — yashnaydi olam",
+    "ru": "Весна — расцветает мир",
+    "en": "Spring — the world blossoms"
+  },
+  "recall": {
+    "uz": "Bahor taʼrifi haqidagi matnni tinglab oʻqiymiz, harflarni kattaligi boʻyicha tartiblab bahorning yana bir nomini topamiz.",
+    "ru": "Слушаем описание весны и по размеру букв узнаём ещё одно название весны.",
+    "en": "We read a description of spring and, by ordering letters by size, discover another name for spring."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Bahor taʼrifi",
+        "variant": "story",
+        "audio": "g1-oqish-26-q1",
+        "lines": [
+          "Bahor — eng koʻrkam fasl.",
+          "Uni «fasllar kelinchagi» deb ataydilar.",
+          "Bahorda quyosh iliq nurlarini sochadi.",
+          "Koʻkda oppoq bulutlar suzib yuradi.",
+          "Daraxtlar kurtak yozib, gullaydi.",
+          "Ilk gullar — boychechak va binafsha ochiladi.",
+          "Bahorning elchilari — qaldirgʻochlar uchib keladi."
+        ]
+      } },
+      "prompt": { "uz": "Matnni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Bahorni yana qanday nom bilan atashadi?", "ru": "Как ещё называют весну?", "en": "What else is spring called?" },
+      "explanation": { "uz": "Matn bahor fasli va uning goʻzalligi haqida.", "ru": "Текст о весне и её красоте.", "en": "The text is about spring and its beauty." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "size_order", "props": {
+        "words": ["K", "Oʻ", "K", "L", "A", "M"],
+        "phrase": "KOʻKLAM",
+        "meaning": { "uz": "Koʻklam — bahorning yana bir nomi.", "ru": "Koʻklam — ещё одно название весны.", "en": "Koʻklam — another word for spring." }
+      } },
+      "prompt": { "uz": "Harflarni kichigidan kattasi tomon bosib, bahorning yana bir nomini oʻqing!", "ru": "Нажимай буквы от маленькой к большой и прочитай ещё одно название весны!", "en": "Tap the letters smallest to largest to read another name for spring!" },
+      "hint": { "uz": "Eng kichkina harfdan boshla.", "ru": "Начни с самой маленькой буквы.", "en": "Start with the smallest letter." },
+      "explanation": { "uz": "Harflar kattalashib borsa — KOʻKLAM soʻzi chiqadi.", "ru": "По росту букв получается слово KOʻKLAM.", "en": "Ordered by size, the letters spell KOʻKLAM." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Bahorda daraxtlar kurtak yozib gullaydi.", "ru": "Весной деревья дают почки и цветут.", "en": "In spring trees bud and blossom." },
+        "answer": "true",
+        "why": { "uz": "Matnda «daraxtlar kurtak yozib, gullaydi» deyilgan.", "ru": "В тексте сказано, что деревья дают почки и цветут.", "en": "The text says trees bud and blossom." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Daraxtlar bahorda nima qiladi?", "ru": "Что делают деревья весной?", "en": "What do trees do in spring?" },
+      "explanation": { "uz": "Toʻgʻri: daraxtlar kurtak yozib gullaydi.", "ru": "Верно: деревья дают почки и цветут.", "en": "True: trees bud and blossom." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Matnda bahorda qor odam yasash aytiladi.", "ru": "В тексте говорится, что весной лепят снеговика.", "en": "The text says people build a snowman in spring." },
+        "answer": "ng",
+        "why": { "uz": "Matn bahor haqida; qor odam haqida gap yoʻq.", "ru": "Текст о весне; о снеговике ничего нет.", "en": "The text is about spring; a snowman is not mentioned." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Matnda qor odam tilga olinganmi?", "ru": "Упоминается ли снеговик?", "en": "Is a snowman mentioned?" },
+      "explanation": { "uz": "«Matnda yoʻq»: qor odam haqida gap yoʻq.", "ru": "«Не сказано»: о снеговике речи нет.", "en": "“Not given”: no snowman is mentioned." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "boychechak", "match": true },
+        { "text": "binafsha", "match": true },
+        { "text": "qaldirgʻoch", "match": true },
+        { "text": "chana", "match": false },
+        { "text": "muzlik", "match": false }
+      ] } },
+      "prompt": { "uz": "Bahorga oid soʻzlarni bos!", "ru": "Нажми слова, связанные с весной!", "en": "Tap the words linked to spring!" },
+      "hint": { "uz": "Bahorda qanday gullar ochiladi, qanday qushlar keladi?", "ru": "Какие цветы и птицы появляются весной?", "en": "Which flowers bloom and which birds arrive in spring?" },
+      "explanation": { "uz": "Boychechak, binafsha — bahor gullari; qaldirgʻoch — bahor qushi. Chana va muzlik — qishga oid.", "ru": "Подснежник, фиалка — весенние цветы; ласточка — весенняя птица; санки и лёд — зимние.", "en": "Snowdrop, violet are spring flowers; the swallow is a spring bird; sled and ice belong to winter." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "koʻrkam", "right": "chiroyli" },
+        { "left": "elchi", "right": "darak beruvchi belgi" },
+        { "left": "koʻklam", "right": "bahor" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«koʻrkam» — chiroyli, goʻzal.", "ru": "«koʻrkam» — красивый.", "en": "“koʻrkam” means beautiful." },
+      "explanation": { "uz": "koʻrkam = chiroyli; elchi = darak beruvchi belgi; koʻklam = bahor.", "ru": "koʻrkam = красивый; elchi = вестник; koʻklam = весна.", "en": "koʻrkam = beautiful; elchi = a herald/sign; koʻklam = spring." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Qaldirgʻochlar", "ru": "Ласточки", "en": "Swallows" },
+        { "uz": "Ayiqlar", "ru": "Медведи", "en": "Bears" },
+        { "uz": "Baliqlar", "ru": "Рыбы", "en": "Fish" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Matnga koʻra bahorning elchilari kimlar?", "ru": "Кто, по тексту, вестники весны?", "en": "According to the text, who are the heralds of spring?" },
+      "hint": { "uz": "Ular koʻkda uchib keladi.", "ru": "Они прилетают в небе.", "en": "They fly in across the sky." },
+      "explanation": { "uz": "Bahorning elchilari — qaldirgʻochlar.", "ru": "Вестники весны — ласточки.", "en": "The heralds of spring are the swallows." },
+      "openEnd": { "uz": "Sen bahorni nimasi uchun yaxshi koʻrasan?", "ru": "За что ты любишь весну?", "en": "What do you love about spring?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Bahorning ilk guli — ", "after": ".", "choices": ["boychechak", "tarvuz", "bodring"], "answer": "boychechak", "emoji": "🌸", "clue": { "uz": "Bahorda birinchi ochiladigan gul", "ru": "Первый весенний цветок", "en": "The first flower of spring" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Qor ostidan birinchi boʻlib qaysi gul chiqadi?", "ru": "Какой цветок первым выходит из-под снега?", "en": "Which flower first pushes up through the snow?" },
+      "explanation": { "uz": "Bahorning ilk guli — boychechak.", "ru": "Первый весенний цветок — подснежник.", "en": "The first flower of spring is the snowdrop (boychechak)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Bahorda tabiat" },
+          { "blank": "uygʻonadi" },
+          { "text": ", hamma yoq" },
+          { "blank": "yashnaydi" },
+          { "text": "." }
+        ],
+        "bank": ["uygʻonadi", "yashnaydi", "muzlaydi"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Bahorda tabiat jonlanadi va gullaydi.", "ru": "Весной природа оживает и расцветает.", "en": "In spring nature comes alive and blooms." },
+      "explanation": { "uz": "«Bahorda tabiat uygʻonadi, hamma yoq yashnaydi».", "ru": "«Весной природа просыпается, всё расцветает».", "en": "“In spring nature wakes up, everything blossoms.”" }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bahor", "mehnat", "bilan", "koʻrkam."], "emoji": "🌾", "clue": { "uz": "Bahor haqidagi hikmat", "ru": "Мудрость о весне", "en": "A saying about spring" } } },
+      "prompt": { "uz": "Soʻzlardan hikmatli gap tuzing!", "ru": "Составь мудрое предложение из слов!", "en": "Build the wise sentence from the words!" },
+      "hint": { "uz": "Gap «Bahor» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Bahor».", "en": "The sentence starts with “Bahor”." },
+      "explanation": { "uz": "«Bahor mehnat bilan koʻrkam»: bahor mehnat qilgan kishiga goʻzal koʻrinadi.", "ru": "«Весна красна трудом»: весна прекрасна для тех, кто трудится.", "en": "“Spring is beautiful through labour”: spring is lovely to those who work." }
+    }
+  ]
+}

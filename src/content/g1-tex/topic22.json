@@ -1,0 +1,74 @@
+{
+  "topicId": "g1-tex-22",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Plastilindan yeguliklar",
+    "ru": "Еда из пластилина",
+    "en": "Foods from plastilin"
+  },
+  "recall": {
+    "uz": "Bugun plastilindan mazali keks yasaymiz.",
+    "ru": "Сегодня из пластилина слепим вкусный кекс.",
+    "en": "Today we make a tasty cupcake from plastilin."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Keks yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Слепи кекс. Выполняй каждый этап по рисунку!",
+        "en": "Make a cupcake. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Ustiga krem qoʻy.",
+        "ru": "Добавь сверху крем.",
+        "en": "Add frosting on top."
+      },
+      "explanation": {
+        "uz": "Mazali keks!",
+        "ru": "Вкусный кекс!",
+        "en": "A tasty cupcake!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rang-barang plastilin",
+              "ru": "разноцветный пластилин",
+              "en": "colourful plastilin"
+            },
+            {
+              "uz": "taxtakach",
+              "ru": "дощечка",
+              "en": "a work board"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Plastilindan asos (kubik) yasa.",
+              "ru": "Слепи основу кекса.",
+              "en": "Make the cupcake base."
+            },
+            {
+              "uz": "Ustiga pushti krem qoʻy.",
+              "ru": "Добавь сверху розовый крем.",
+              "en": "Add pink frosting on top."
+            },
+            {
+              "uz": "Gilos va shirin parchalarni qoʻsh.",
+              "ru": "Добавь вишенку и посыпку.",
+              "en": "Add a cherry and sprinkles."
+            }
+          ],
+          "art": "food",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

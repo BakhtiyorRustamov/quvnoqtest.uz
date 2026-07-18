@@ -1,0 +1,432 @@
+{
+  "topicId": "g1-ingliz-48",
+  "subjectKey": "g1-ingliz",
+  "emojis": "➕➖🔢🎯",
+  "title": {
+    "uz": "Matematika: qoʻshish va ayirish",
+    "ru": "Математика: плюс и минус",
+    "en": "Math: plus and minus"
+  },
+  "recall": {
+    "uz": "Kashfiyot darsi (matematika)! Bugun inglizcha sanaymiz: «four plus three equals seven» — 4 + 3 = 7. «eight minus two equals six» — 8 − 2 = 6.",
+    "ru": "Урок-открытие (математика)! Сегодня считаем по-английски: «four plus three equals seven» — 4 + 3 = 7. «eight minus two equals six» — 8 − 2 = 6.",
+    "en": "Discovery lesson (math)! Today we count in English: \"four plus three equals seven\" and \"eight minus two equals six\"."
+  },
+  "ttsText": {
+    "uz": "Qoʻshish va ayirish.",
+    "en": "Math! Four plus three equals seven. Eight minus two equals six."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Toʻrt qoʻshuv uch nechchi?",
+        "ru": "Послушай. Сколько четыре плюс три?",
+        "en": "Listen. What is four plus three?"
+      },
+      "hint": {
+        "uz": "4 + 3 = ?",
+        "ru": "4 + 3 = ?",
+        "en": "4 + 3 = ?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Four plus three equals seven.",
+        "ru": "Верно! Four plus three equals seven.",
+        "en": "Right! Four plus three equals seven."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What's four plus three?",
+              "audio": {
+                "key": "ing48-q1-a",
+                "text": "What's four plus three?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Seven!",
+              "audio": {
+                "key": "ing48-q1-b",
+                "text": "Seven!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "4 + 3 = ?",
+              "ru": "4 + 3 = ?",
+              "en": "4 + 3 = ?"
+            },
+            "choices": [
+              "eight",
+              "seven",
+              "six"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sonlar chizigʻida qoʻsh: 4 + 3.",
+        "ru": "Сложи на числовой прямой: 4 + 3.",
+        "en": "Add on the number line: 4 + 3."
+      },
+      "hint": {
+        "uz": "4 dan 3 ta oldinga yur.",
+        "ru": "От 4 сделай 3 шага вперёд.",
+        "en": "From 4, jump 3 forward."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 4 + 3 = 7 (seven).",
+        "ru": "Верно! 4 + 3 = 7 (seven).",
+        "en": "Right! 4 + 3 = 7 (seven)."
+      },
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 4,
+          "b": 3,
+          "maxSum": 10
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sana: nechta koptok? ⚽⚽⚽",
+        "ru": "Посчитай: сколько мячей? ⚽⚽⚽",
+        "en": "Count: how many balls? ⚽⚽⚽"
+      },
+      "hint": {
+        "uz": "«three» — uch.",
+        "ru": "«three» — три.",
+        "en": "\"three\" = 3."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Three — uch.",
+        "ru": "Верно! Three — три.",
+        "en": "Right! Three!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "3️⃣",
+              "label": "three",
+              "correct": true
+            },
+            {
+              "emoji": "2️⃣",
+              "label": "two"
+            },
+            {
+              "emoji": "4️⃣",
+              "label": "four"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ayir: 8 − 2 = ?",
+        "ru": "Вычти: 8 − 2 = ?",
+        "en": "Subtract: 8 − 2 = ?"
+      },
+      "hint": {
+        "uz": "8 dan 2 ta olib tashla.",
+        "ru": "От 8 отними 2.",
+        "en": "Take 2 away from 8."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 8 − 2 = 6 (six).",
+        "ru": "Верно! 8 − 2 = 6 (six).",
+        "en": "Right! 8 − 2 = 6 (six)."
+      },
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "8 - 2 = m",
+          "answer": 6,
+          "choices": [
+            6,
+            4,
+            7
+          ],
+          "unknown": "m"
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sonlarni 1 dan 5 gacha tartibla!",
+        "ru": "Расставь числа от 1 до 5!",
+        "en": "Put the numbers in order 1 to 5!"
+      },
+      "hint": {
+        "uz": "one, two, three, four, five.",
+        "ru": "one, two, three, four, five.",
+        "en": "one, two, three, four, five."
+      },
+      "explanation": {
+        "uz": "Ajoyib! 1–2–3–4–5!",
+        "ru": "Отлично! 1–2–3–4–5!",
+        "en": "Awesome! 1–2–3–4–5!"
+      },
+      "widget": {
+        "type": "number_order",
+        "props": {
+          "numbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "direction": "asc"
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? 4 + 3 = 7. ➕",
+        "ru": "Верно? 4 + 3 = 7. ➕",
+        "en": "Is this right? 4 + 3 = 7. ➕"
+      },
+      "hint": {
+        "uz": "Barmoqda sana.",
+        "ru": "Посчитай на пальцах.",
+        "en": "Count on your fingers."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 4 + 3 = 7.",
+        "ru": "Верно! 4 + 3 = 7.",
+        "en": "Right! 4 + 3 = 7."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "➕",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? 8 − 2 = 5. ➖",
+        "ru": "Верно? 8 − 2 = 5. ➖",
+        "en": "Is this right? 8 − 2 = 5. ➖"
+      },
+      "hint": {
+        "uz": "8 dan 2 ta ayir.",
+        "ru": "От 8 отними 2.",
+        "en": "Take 2 from 8."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! 8 − 2 = 6.",
+        "ru": "Неверно! 8 − 2 = 6.",
+        "en": "False! 8 − 2 = 6."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "➖",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha sonni raqamiga ula!",
+        "ru": "Соедини английское число с цифрой!",
+        "en": "Match each number word to its digit!"
+      },
+      "hint": {
+        "uz": "two=2, four=4, six=6, seven=7.",
+        "ru": "two=2, four=4, six=6, seven=7.",
+        "en": "two=2, four=4, six=6, seven=7."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sonlarni bilding!",
+        "ru": "Молодец! Ты знаешь числа!",
+        "en": "Great! You know the numbers!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "two"
+              },
+              "right": {
+                "emoji": "2️⃣"
+              }
+            },
+            {
+              "left": {
+                "label": "four"
+              },
+              "right": {
+                "emoji": "4️⃣"
+              }
+            },
+            {
+              "left": {
+                "label": "six"
+              },
+              "right": {
+                "emoji": "6️⃣"
+              }
+            },
+            {
+              "left": {
+                "label": "seven"
+              },
+              "right": {
+                "emoji": "7️⃣"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sakkiz ayirish ikki nechchi?",
+        "ru": "Послушай. Сколько восемь минус два?",
+        "en": "Listen. What is eight minus two?"
+      },
+      "hint": {
+        "uz": "8 − 2 = ?",
+        "ru": "8 − 2 = ?",
+        "en": "8 − 2 = ?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Eight minus two equals six.",
+        "ru": "Верно! Eight minus two equals six.",
+        "en": "Right! Eight minus two equals six."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "What's eight minus two?",
+              "audio": {
+                "key": "ing48-q9-a",
+                "text": "What's eight minus two?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Six!",
+              "audio": {
+                "key": "ing48-q9-b",
+                "text": "Six!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "8 − 2 = ?",
+              "ru": "8 − 2 = ?",
+              "en": "8 − 2 = ?"
+            },
+            "choices": [
+              "seven",
+              "six",
+              "five"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻrt qoʻshuv uch nechchiga teng?",
+        "ru": "Чему равно четыре плюс три?",
+        "en": "Four plus three equals…?"
+      },
+      "hint": {
+        "uz": "4 + 3.",
+        "ru": "4 + 3.",
+        "en": "4 + 3."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Seven — yetti.",
+        "ru": "Верно! Seven — семь.",
+        "en": "Right! Seven!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "seven\nyetti",
+              "ru": "seven\nсемь",
+              "en": "seven"
+            },
+            {
+              "uz": "six\nolti",
+              "ru": "six\nшесть",
+              "en": "six"
+            },
+            {
+              "uz": "eight\nsakkiz",
+              "ru": "eight\nвосемь",
+              "en": "eight"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

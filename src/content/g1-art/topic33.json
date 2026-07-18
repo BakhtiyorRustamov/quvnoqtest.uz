@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-33", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Qogʻoz rasmini chizamiz", "ru": "Рисуем узор на бумаге", "en": "A paper pattern" },
+  "recall": {
+    "uz": "Qogʻozga chiziqlar, nuqtalar va shakllar chizib, chiroyli bezak — naqsh yasaymiz. Keling, oʻz naqshingni chiz.",
+    "ru": "Рисуя на бумаге линии, точки и фигуры, мы создаём красивый узор. Давай нарисуем свой узор.",
+    "en": "By drawing lines, dots and shapes on paper, we make a pretty pattern. Let's draw your own pattern."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Oʻzing xohlagan naqshni chiz.", "ru": "Нарисуй свой узор.", "en": "Draw your own pattern." },
+      "hint": { "uz": "Chiziq, nuqta va shakllardan foydalan.", "ru": "Используй линии, точки и фигуры.", "en": "Use lines, dots and shapes." },
+      "explanation": { "uz": "Chiroyli naqsh!", "ru": "Красивый узор!", "en": "A lovely pattern!" },
+      "widget": { "type": "free_draw", "props": {} } }
+  ]
+}

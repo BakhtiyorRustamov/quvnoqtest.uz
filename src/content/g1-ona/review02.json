@@ -1,0 +1,39 @@
+{
+  "topicId": "g1-ona-review-2",
+  "subjectKey": "g1-ona",
+  "skipRecall": true,
+  "emojis": "🐘🥜🏁",
+  "title": {
+    "uz": "Takrorlash oʻyini: Fillar oʻyini",
+    "ru": "Игра-повторение: Игра со слонами",
+    "en": "Review game: Elephant Game"
+  },
+  "recall": {
+    "uz": "Takrorlash oʻyini. Maʼnodosh va zid maʼnoli soʻzlarni oʻynab mashq qilamiz. Sen koʻk filsan: toʻgʻri soʻzli yongʻoqni boshqa fillardan oldin yeb ol. Sekin boʻlsang yoki adashsang, fillar yongʻoqni yeb qoʻyadi. Diqqat, tayyor, boshladik.",
+    "ru": "Игра-повторение. Тренируем синонимы и антонимы в игре. Ты — синий слон: съешь орех с верным словом раньше других слонов. Будешь медлить или ошибаться — слоны съедят орех. Внимание, приготовились, поехали.",
+    "en": "A review game. We practice synonyms and opposites through play. You are the blue elephant: eat the nut with the right word before the other elephants do. If you are slow or wrong, they will eat it. Ready, set, go."
+  },
+  "items": [
+    {
+      "id": "g1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "elephant_game", "completeOn": "finish" },
+      "prompt": {
+        "uz": "Fillar oʻyini: toʻgʻri soʻzli yongʻoqni fillardan oldin yeb ol!",
+        "ru": "Игра со слонами: съешь орех с верным словом раньше слонов!",
+        "en": "Elephant game: eat the nut with the right word before the elephants!"
+      },
+      "hint": {
+        "uz": "Maʼnodosh — maʼnosi yaqin soʻz, zid maʼnoli — maʼnosi teskari soʻz. Vaqt tugamasidan bos!",
+        "ru": "Синоним — близкое по смыслу слово, антоним — противоположное. Нажимай, пока не вышло время!",
+        "en": "A synonym means nearly the same; an opposite means the reverse. Tap before the time runs out!"
+      },
+      "explanation": {
+        "uz": "Maʼnodosh va zid maʼnoli soʻzlarni oʻyin orqali mashq qildik. Fillardan oldin toʻgʻri soʻzni topganing uchun barakalla!",
+        "ru": "Мы потренировали синонимы и антонимы в игре. Молодец, что находил верные слова раньше слонов!",
+        "en": "We practiced synonyms and opposites through a game. Well done for beating the elephants to the right words!"
+      }
+    }
+  ]
+}

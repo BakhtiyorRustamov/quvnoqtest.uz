@@ -1,0 +1,488 @@
+{
+  "topicId": "g1-informatika-22",
+  "subjectKey": "g1-informatika",
+  "emojis": "📏🐍🚂🐜",
+  "title": {
+    "uz": "Uzun – qisqa",
+    "ru": "Длинный – короткий",
+    "en": "Long – short"
+  },
+  "recall": {
+    "uz": "Yoʻllar uzun yoki qisqa boʻladi. Qisqa yoʻldan tezroq yetib boramiz. Uzunlikni chizgʻich bilan oʻlchash mumkin.",
+    "ru": "Дороги бывают длинные и короткие. По короткой доберёшься быстрее. Длину можно измерить линейкой.",
+    "en": "Paths can be long or short. A short path gets you there faster. Length can be measured with a ruler."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi yoʻldan tezroq yetib boramiz?",
+        "ru": "По какой дороге быстрее?",
+        "en": "Which path is faster?"
+      },
+      "hint": {
+        "uz": "Qisqasi tezroq.",
+        "ru": "Короткая быстрее.",
+        "en": "The short one is faster."
+      },
+      "explanation": {
+        "uz": "Qisqa yoʻldan tezroq yetamiz.",
+        "ru": "По короткой — быстрее.",
+        "en": "We arrive faster by the short path."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qisqa yoʻldan",
+              "ru": "по короткой",
+              "en": "the short path"
+            },
+            {
+              "uz": "uzun yoʻldan",
+              "ru": "по длинной",
+              "en": "the long path"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yoʻllarni qisqadan uzunga joyla!",
+        "ru": "Расставь пути от короткого к длинному!",
+        "en": "Order the paths short to long!"
+      },
+      "hint": {
+        "uz": "2m, 5m, 10m.",
+        "ru": "2м, 5м, 10м.",
+        "en": "2m, 5m, 10m."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: 2m, 5m, 10m.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "2 metr",
+                "ru": "2 м",
+                "en": "2 m"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "5 metr",
+                "ru": "5 м",
+                "en": "5 m"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "10 metr",
+                "ru": "10 м",
+                "en": "10 m"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "10 metrli yoʻl 5 metrli yoʻldan qanday?",
+        "ru": "10 м путь по сравнению с 5 м?",
+        "en": "How is a 10 m path vs a 5 m path?"
+      },
+      "hint": {
+        "uz": "Kattaroq son — uzunroq.",
+        "ru": "Больше число — длиннее.",
+        "en": "Bigger number, longer."
+      },
+      "explanation": {
+        "uz": "10 metrli yoʻl uzunroq.",
+        "ru": "10 м путь длиннее.",
+        "en": "The 10 m path is longer."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "uzunroq",
+              "ru": "длиннее",
+              "en": "longer"
+            },
+            {
+              "uz": "qisqaroq",
+              "ru": "короче",
+              "en": "shorter"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri uzun?",
+        "ru": "Кто длинный?",
+        "en": "Which one is long?"
+      },
+      "hint": {
+        "uz": "Choʻzilib yotadi.",
+        "ru": "Длинное тело.",
+        "en": "A long body."
+      },
+      "explanation": {
+        "uz": "Ilon uzun.",
+        "ru": "Змея длинная.",
+        "en": "A snake is long."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🐍",
+              "label": {
+                "uz": "ilon",
+                "ru": "змея",
+                "en": "snake"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🐜",
+              "label": {
+                "uz": "chumoli",
+                "ru": "муравей",
+                "en": "ant"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🐞",
+              "label": {
+                "uz": "qoʻngʻiz",
+                "ru": "божья коровка",
+                "en": "ladybug"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan transport nomini tuz! (🚂)",
+        "ru": "Составь слово! (🚂)",
+        "en": "Build the word! (🚂)"
+      },
+      "hint": {
+        "uz": "P-O-Y-E-Z-D harflaridan.",
+        "ru": "Из букв P-O-Y-E-Z-D.",
+        "en": "From P-O-Y-E-Z-D."
+      },
+      "explanation": {
+        "uz": "Barakalla! «poyezd» soʻzini tuzding.",
+        "ru": "Молодец! «poyezd».",
+        "en": "Great! You built “poyezd”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🚂",
+          "word": "poyezd",
+          "label": {
+            "uz": "poyezd",
+            "ru": "поезд",
+            "en": "train"
+          },
+          "letters": [
+            "p",
+            "o",
+            "y",
+            "e",
+            "z",
+            "d"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Poygada oʻrinlarni tartibda joyla!",
+        "ru": "Расставь места в гонке!",
+        "en": "Order the race places!"
+      },
+      "hint": {
+        "uz": "1, 2, 3-oʻrin.",
+        "ru": "1, 2, 3 место.",
+        "en": "1st, 2nd, 3rd."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: 1, 2, 3-oʻrin.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "1-oʻrin",
+                "ru": "1 место",
+                "en": "1st"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "2-oʻrin",
+                "ru": "2 место",
+                "en": "2nd"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "3-oʻrin",
+                "ru": "3 место",
+                "en": "3rd"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qisqa yoʻl uzun yoʻldan tezroq bosib oʻtiladi.",
+        "ru": "Короткий путь проходят быстрее.",
+        "en": "A short path is crossed faster."
+      },
+      "hint": {
+        "uz": "Kamroq yurasan.",
+        "ru": "Меньше идти.",
+        "en": "Less to walk."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🏁",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qisqa yoʻldan yurgan bola uyga qachon yetadi?",
+        "ru": "Когда дойдёт по короткой дороге?",
+        "en": "When does the child on the short path arrive?"
+      },
+      "hint": {
+        "uz": "Vaqtni solishtir.",
+        "ru": "Сравни время.",
+        "en": "Compare the time."
+      },
+      "explanation": {
+        "uz": "Qisqa yoʻldan tezroq yetadi.",
+        "ru": "По короткой — быстрее.",
+        "en": "Sooner, by the short path."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "tezroq",
+              "ru": "быстрее",
+              "en": "sooner"
+            },
+            {
+              "uz": "kechroq",
+              "ru": "позже",
+              "en": "later"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni ajrat: uzun va qisqa!",
+        "ru": "Раздели: длинное и короткое!",
+        "en": "Sort them: long and short!"
+      },
+      "hint": {
+        "uz": "Choʻzilganmi, kaltami?",
+        "ru": "Длинное или короткое?",
+        "en": "Long or short?"
+      },
+      "explanation": {
+        "uz": "Barakalla! Uzun va qisqaga ajratding.",
+        "ru": "Молодец!",
+        "en": "Great! Sorted long and short."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "u",
+              "label": {
+                "uz": "Uzun",
+                "ru": "Длинный",
+                "en": "Long"
+              }
+            },
+            {
+              "id": "q",
+              "label": {
+                "uz": "Qisqa",
+                "ru": "Короткий",
+                "en": "Short"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐍",
+              "label": {
+                "uz": "ilon",
+                "ru": "змея",
+                "en": "snake"
+              },
+              "bin": "u"
+            },
+            {
+              "emoji": "🚂",
+              "label": {
+                "uz": "poyezd",
+                "ru": "поезд",
+                "en": "train"
+              },
+              "bin": "u"
+            },
+            {
+              "emoji": "🚌",
+              "label": {
+                "uz": "avtobus",
+                "ru": "автобус",
+                "en": "bus"
+              },
+              "bin": "u"
+            },
+            {
+              "emoji": "🐜",
+              "label": {
+                "uz": "chumoli",
+                "ru": "муравей",
+                "en": "ant"
+              },
+              "bin": "q"
+            },
+            {
+              "emoji": "🔑",
+              "label": {
+                "uz": "kalit",
+                "ru": "ключ",
+                "en": "key"
+              },
+              "bin": "q"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uzunlikni nima bilan oʻlchaymiz?",
+        "ru": "Чем измеряем длину?",
+        "en": "What do we measure length with?"
+      },
+      "hint": {
+        "uz": "Chiziqli asbob.",
+        "ru": "Прямой инструмент.",
+        "en": "A straight tool."
+      },
+      "explanation": {
+        "uz": "Uzunlikni chizgʻich bilan oʻlchaymiz.",
+        "ru": "Длину измеряем линейкой.",
+        "en": "We measure length with a ruler."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "chizgʻich bilan",
+              "ru": "линейкой",
+              "en": "with a ruler"
+            },
+            {
+              "uz": "tarozi bilan",
+              "ru": "весами",
+              "en": "with scales"
+            },
+            {
+              "uz": "soat bilan",
+              "ru": "часами",
+              "en": "with a clock"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

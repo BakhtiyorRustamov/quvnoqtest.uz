@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-26",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Bahorgi bogʻ",
+    "ru": "Весенний сад",
+    "en": "A spring garden"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻozdan gullab turgan bahorgi bogʻ yasaymiz.",
+    "ru": "Сегодня из цветной бумаги сделаем цветущий весенний сад.",
+    "en": "Today we make a blooming spring garden from coloured paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bahorgi bogʻ yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай весенний сад. Выполняй каждый этап по рисунку!",
+        "en": "Make a spring garden. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Daraxt va gullarni qoʻsh.",
+        "ru": "Добавь дерево и цветы.",
+        "en": "Add a tree and flowers."
+      },
+      "explanation": {
+        "uz": "Goʻzal bahorgi bogʻ!",
+        "ru": "Прекрасный весенний сад!",
+        "en": "A beautiful spring garden!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Yer chizigʻi va daraxt tanasini yopishtir.",
+              "ru": "Приклей линию земли и ствол дерева.",
+              "en": "Glue the ground line and a tree trunk."
+            },
+            {
+              "uz": "Yashil daraxt shoxini qoʻsh.",
+              "ru": "Добавь зелёную крону дерева.",
+              "en": "Add a green tree canopy."
+            },
+            {
+              "uz": "Gullar va quyoshni qoʻsh.",
+              "ru": "Добавь цветы и солнце.",
+              "en": "Add flowers and the sun."
+            }
+          ],
+          "art": "garden",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

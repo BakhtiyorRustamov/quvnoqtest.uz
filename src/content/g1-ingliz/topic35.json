@@ -1,0 +1,500 @@
+{
+  "topicId": "g1-ingliz-35",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🦎🐛🖋️🍏",
+  "title": {
+    "uz": "«i» tovushi: iguana",
+    "ru": "Звук «i»: игуана",
+    "en": "The 'i' sound: an iguana"
+  },
+  "recall": {
+    "uz": "Hayvon tovushlari! Bugun «i» tovushini mashq qilamiz: iguana — iguana, insect — hasharot, ink — siyoh. I-i-iguana!",
+    "ru": "Звуки животных! Сегодня тренируем звук «i»: iguana — игуана, insect — насекомое, ink — чернила. I-i-iguana!",
+    "en": "Animal sounds! Today we practise the /i/ sound: iguana, insect and ink. I-i-iguana!"
+  },
+  "ttsText": {
+    "uz": "«i» tovushi.",
+    "en": "Animal sounds! The i sound. I-i-iguana! An iguana with pink ink!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «i» bilan boshlanadigan hayvonni bos!",
+        "ru": "Послушай и нажми животное на «i»!",
+        "en": "Listen and tap the animal that starts with /i/!"
+      },
+      "audio": {
+        "key": "ing35-q1",
+        "text": "Iguana! I-i-iguana!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«iguana» — kaltakesakka oʻxshash hayvon.",
+        "ru": "«iguana» — похожа на ящерицу.",
+        "en": "\"iguana\" starts with /i/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Iguana!",
+        "ru": "Верно! Iguana!",
+        "en": "Right! Iguana!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🦎",
+              "label": "iguana",
+              "correct": true
+            },
+            {
+              "emoji": "🐢",
+              "label": "turtle"
+            },
+            {
+              "emoji": "🐜",
+              "label": "ant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«i» bilan boshlanadigan hasharotni bos!",
+        "ru": "Нажми насекомое на «i»!",
+        "en": "Tap the insect that starts with /i/!"
+      },
+      "audio": {
+        "key": "ing35-q2",
+        "text": "Insect! I-i-insect!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«insect» — hasharot.",
+        "ru": "«insect» — насекомое.",
+        "en": "\"insect\" starts with /i/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Insect — hasharot.",
+        "ru": "Верно! Insect — насекомое.",
+        "en": "Right! Insect!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐛",
+              "label": "insect",
+              "correct": true
+            },
+            {
+              "emoji": "🐟",
+              "label": "fish"
+            },
+            {
+              "emoji": "🐰",
+              "label": "rabbit"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«i» tovushi bilan boshlanadigan hammasini belgila!",
+        "ru": "Отметь всё на «i»!",
+        "en": "Tap everything that starts with /i/!"
+      },
+      "hint": {
+        "uz": "iguana, insect, ink.",
+        "ru": "iguana, insect, ink.",
+        "en": "iguana, insect, ink."
+      },
+      "explanation": {
+        "uz": "Barakalla! Iguana, insect, ink — hammasi «i»!",
+        "ru": "Молодец! Iguana, insect, ink — всё на «i»!",
+        "en": "Great! Iguana, insect, ink — all /i/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🦎",
+              "label": "iguana",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐛",
+              "label": "insect",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🖋️",
+              "label": "ink",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«i» bilan boshlanadigan narsani bos!",
+        "ru": "Нажми предмет на «i»!",
+        "en": "Tap the thing that starts with /i/!"
+      },
+      "audio": {
+        "key": "ing35-q4",
+        "text": "Ink! I-i-ink!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«ink» — siyoh (ruchkada).",
+        "ru": "«ink» — чернила (в ручке).",
+        "en": "\"ink\" is in a pen."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ink — siyoh.",
+        "ru": "Верно! Ink — чернила.",
+        "en": "Right! Ink!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🖋️",
+              "label": "ink",
+              "correct": true
+            },
+            {
+              "emoji": "✏️",
+              "label": "pencil"
+            },
+            {
+              "emoji": "📖",
+              "label": "book"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va birga ayt. Qaysi tovush takrorlanadi?",
+        "ru": "Послушай и повтори. Какой звук повторяется?",
+        "en": "Listen and say it. Which sound repeats?"
+      },
+      "hint": {
+        "uz": "Iguana, ink, insect — bir tovush.",
+        "ru": "Iguana, ink, insect — один звук.",
+        "en": "iguana, ink, insect — the same sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «i» tovushi takrorlanadi.",
+        "ru": "Верно! Повторяется звук «i».",
+        "en": "Right! The /i/ sound repeats."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🦎",
+              "name": "Iguana",
+              "text": "An iguana with pink ink!",
+              "audio": {
+                "key": "ing35-q5-a",
+                "text": "An iguana with pink ink!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "You",
+              "text": "I-i-iguana! I-i-ink!",
+              "audio": {
+                "key": "ing35-q5-b",
+                "text": "I! I! I! Iguana, ink, insect!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qaysi tovush?",
+              "ru": "Какой звук?",
+              "en": "Which sound?"
+            },
+            "choices": [
+              "/a/",
+              "/i/",
+              "/t/"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «insect» soʻzi «i» tovushi bilan boshlanadi.",
+        "ru": "Верно? Слово «insect» начинается на «i».",
+        "en": "Is this right? \"insect\" starts with the /i/ sound."
+      },
+      "hint": {
+        "uz": "I-i-insect!",
+        "ru": "I-i-insect!",
+        "en": "I-i-insect!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Insect — «i» tovushi.",
+        "ru": "Верно! Insect — звук «i».",
+        "en": "Right! \"insect\" starts with /i/."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐛",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil juftni top!",
+        "ru": "Найди одинаковую пару!",
+        "en": "Find the matching pair!"
+      },
+      "hint": {
+        "uz": "Bir xil ikkita rasmni top.",
+        "ru": "Найди два одинаковых.",
+        "en": "Find the two that are the same."
+      },
+      "explanation": {
+        "uz": "Barakalla! Juftni topding!",
+        "ru": "Молодец! Ты нашёл пару!",
+        "en": "Great! You found the pair!"
+      },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            {
+              "id": "ig1",
+              "emoji": "🦎",
+              "key": "iguana"
+            },
+            {
+              "id": "ink",
+              "emoji": "🖋️",
+              "key": "ink"
+            },
+            {
+              "id": "ig2",
+              "emoji": "🦎",
+              "key": "iguana"
+            },
+            {
+              "id": "insect",
+              "emoji": "🐛",
+              "key": "insect"
+            },
+            {
+              "id": "apple",
+              "emoji": "🍏",
+              "key": "apple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yana «i» bilan boshlanadigan hammasini belgila!",
+        "ru": "Снова отметь всё на «i»!",
+        "en": "Tap all the /i/ words again!"
+      },
+      "hint": {
+        "uz": "iguana, insect, ink.",
+        "ru": "iguana, insect, ink.",
+        "en": "iguana, insect, ink."
+      },
+      "explanation": {
+        "uz": "Barakalla! Iguana, insect, ink — «i»!",
+        "ru": "Молодец! Iguana, insect, ink — «i»!",
+        "en": "Great! Iguana, insect, ink — /i/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🦎",
+              "label": "iguana",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐛",
+              "label": "insect",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🖋️",
+              "label": "ink",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "☀️",
+              "label": "sun"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐱",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, «i» soʻzlarini juftla!",
+        "ru": "Открывай карточки: слова на «i»!",
+        "en": "Flip the cards: match the /i/ words!"
+      },
+      "hint": {
+        "uz": "iguana 🦎, insect 🐛, ink 🖋️.",
+        "ru": "iguana 🦎, insect 🐛, ink 🖋️.",
+        "en": "iguana 🦎, insect 🐛, ink 🖋️."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🦎"
+              },
+              "b": {
+                "label": "iguana"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐛"
+              },
+              "b": {
+                "label": "insect"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🖋️"
+              },
+              "b": {
+                "label": "ink"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «i» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «i»?",
+        "en": "Which word starts with the /i/ sound?"
+      },
+      "hint": {
+        "uz": "I-i-iguana!",
+        "ru": "I-i-iguana!",
+        "en": "I-i-iguana!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «iguana» — «i» tovushi.",
+        "ru": "Верно! «iguana» — звук «i».",
+        "en": "Right! \"iguana\" starts with /i/."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "iguana\niguana",
+              "ru": "iguana\nигуана",
+              "en": "iguana"
+            },
+            {
+              "uz": "dog\nit",
+              "ru": "dog\nсобака",
+              "en": "dog"
+            },
+            {
+              "uz": "ball\nkoptok",
+              "ru": "ball\nмяч",
+              "en": "ball"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

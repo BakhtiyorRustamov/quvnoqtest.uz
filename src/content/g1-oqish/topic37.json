@@ -1,0 +1,159 @@
+{
+  "topicId": "g1-oqish-37",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🕊️📮📞",
+  "title": {
+    "uz": "Xabar qanday yetadi?",
+    "ru": "Как доходит весть?",
+    "en": "How does a message travel?"
+  },
+  "recall": {
+    "uz": "Odamlar qadimdan bugungacha xabarni qanday yetkazganini tinglab oʻqiymiz va usullarni tartibga solamiz.",
+    "ru": "Слушаем, как люди передавали весть от древности до наших дней, и расставляем способы по порядку.",
+    "en": "We read how people sent messages from ancient times to today, and put the methods in order."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Xabarlarni yetkazamiz",
+        "variant": "story",
+        "audio": "g1-oqish-37-q1",
+        "lines": [
+          "Bugun uyali telefon orqali dunyoning har burchagiga xabar yuboramiz.",
+          "Ammo qadimda odamlar boshqacha xabarlashgan.",
+          "Avval kabutarlar xat tashib bergan.",
+          "Shoshilinch xabarlarni otliq choparlar yetkazgan.",
+          "Keyinchalik odamlar xat yozib, pochta orqali joʻnatishgan.",
+          "Olimlar telegrafni ixtiro qilgach, xabarlar tezroq yetadigan boʻldi.",
+          "Telefon paydo boʻlgach, ovozli gaplashish imkoni tugʻildi."
+        ]
+      } },
+      "prompt": { "uz": "Matnni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Telefon boʻlmagan davrda xabar qanday yuborilgan?", "ru": "Как отправляли весть без телефона?", "en": "How were messages sent before the telephone?" },
+      "explanation": { "uz": "Matn xabar yuborishning qadimdan bugungacha boʻlgan usullari haqida.", "ru": "Текст о способах передачи вести от древности до наших дней.", "en": "The text is about ways of sending messages from ancient times to today." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Kabutarlar xat tashigan.", "ru": "Голуби носили письма.", "en": "Pigeons carried letters." } },
+        { "text": { "uz": "Otliq choparlar xabar yetkazgan.", "ru": "Конные гонцы доставляли весть.", "en": "Horse messengers delivered news." } },
+        { "text": { "uz": "Xatlar pochta orqali joʻnatilgan.", "ru": "Письма отправляли по почте.", "en": "Letters were sent by post." } },
+        { "text": { "uz": "Telegraf ixtiro qilingan.", "ru": "Изобрели телеграф.", "en": "The telegraph was invented." } },
+        { "text": { "uz": "Telefon paydo boʻlgan.", "ru": "Появился телефон.", "en": "The telephone appeared." } }
+      ] } },
+      "prompt": { "uz": "Xabar usullarini eng qadimgidan yangigacha tartibga soling!", "ru": "Расставь способы от самого древнего к новому!", "en": "Order the methods from oldest to newest!" },
+      "hint": { "uz": "Avval kabutarlar, oxirida telefon.", "ru": "Сначала голуби, в конце телефон.", "en": "Pigeons first, the telephone last." },
+      "explanation": { "uz": "Kabutar → chopar → pochta → telegraf → telefon.", "ru": "Голуби → гонцы → почта → телеграф → телефон.", "en": "Pigeons → messengers → post → telegraph → telephone." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Qadimda kabutarlar xat tashib bergan.", "ru": "В древности голуби носили письма.", "en": "In ancient times pigeons carried letters." },
+        "answer": "true",
+        "why": { "uz": "Matnda «avval kabutarlar xat tashib bergan» deyilgan.", "ru": "В тексте сказано, что сначала письма носили голуби.", "en": "The text says pigeons first carried the letters." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Telefon boʻlmagan davrda kim xat tashigan?", "ru": "Кто носил письма без телефона?", "en": "Who carried letters before the telephone?" },
+      "explanation": { "uz": "Toʻgʻri: qadimda kabutarlar xat tashigan.", "ru": "Верно: в древности письма носили голуби.", "en": "True: long ago pigeons carried letters." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Qadimda odamlar internet orqali xabarlashgan.", "ru": "В древности люди переписывались через интернет.", "en": "In ancient times people messaged over the internet." },
+        "answer": "false",
+        "why": { "uz": "Internet keyin paydo boʻlgan; qadimda kabutar, chopar, pochta boʻlgan.", "ru": "Интернет появился позже; раньше были голуби, гонцы, почта.", "en": "The internet came later; long ago there were pigeons, messengers, post." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Qadimgi usullarni eslang.", "ru": "Вспомни древние способы.", "en": "Recall the ancient methods." },
+      "explanation": { "uz": "Notoʻgʻri: qadimda internet boʻlmagan.", "ru": "Неверно: в древности не было интернета.", "en": "False: there was no internet in ancient times." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "xatjild", "right": "xat solinadigan qogʻoz paket" },
+        { "left": "qurilma", "right": "texnik moslama" },
+        { "left": "chopar", "right": "otliq xabarchi" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«chopar» — ot bilan xabar yetkazuvchi.", "ru": "«chopar» — конный гонец.", "en": "“chopar” is a horse messenger." },
+      "explanation": { "uz": "xatjild = qogʻoz paket; qurilma = texnik moslama; chopar = otliq xabarchi.", "ru": "xatjild = конверт; qurilma = устройство; chopar = гонец.", "en": "xatjild = an envelope; qurilma = a device; chopar = a messenger." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "kabutar", "match": true },
+        { "text": "chopar", "match": true },
+        { "text": "telegraf", "match": true },
+        { "text": "qoshiq", "match": false },
+        { "text": "koʻrpa", "match": false }
+      ] } },
+      "prompt": { "uz": "Xabar yetkazish vositalarini bos!", "ru": "Нажми средства передачи вести!", "en": "Tap the ways of sending a message!" },
+      "hint": { "uz": "Xabarni kim yoki nima yetkazgan?", "ru": "Кто или что доставляло весть?", "en": "Who or what delivered a message?" },
+      "explanation": { "uz": "Kabutar, chopar, telegraf — xabar vositalari; qoshiq va koʻrpa — yoʻq.", "ru": "Голубь, гонец, телеграф — средства связи; ложка и одеяло — нет.", "en": "Pigeon, messenger, telegraph carry messages; a spoon and a blanket don't." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Uyali telefon orqali", "ru": "По мобильному телефону", "en": "By mobile phone" },
+        { "uz": "Kabutar orqali", "ru": "Через голубя", "en": "By pigeon" },
+        { "uz": "Otliq chopar orqali", "ru": "Через конного гонца", "en": "By horse messenger" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Bugungi kunda xabar koʻpincha qanday yuboriladi?", "ru": "Как сегодня чаще всего отправляют весть?", "en": "How is a message most often sent today?" },
+      "hint": { "uz": "Hozir hammaning qoʻlida nima bor?", "ru": "Что сейчас у каждого в руках?", "en": "What does everyone hold today?" },
+      "explanation": { "uz": "Bugun xabar koʻpincha uyali telefon orqali yuboriladi.", "ru": "Сегодня весть чаще отправляют по мобильному телефону.", "en": "Today messages are usually sent by mobile phone." },
+      "openEnd": { "uz": "Sen xabarni qanday yoʻllar bilan joʻnatasan?", "ru": "Какими способами ты отправляешь весть?", "en": "In what ways do you send messages?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Otliq xabarchini ", "after": " deb atashgan.", "choices": ["chopar", "chevar", "duradgor"], "answer": "chopar", "emoji": "🐎", "clue": { "uz": "Izohli lugʻatdagi soʻz", "ru": "Слово из словарика", "en": "A glossary word" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Ot minib, tez xabar yetkazuvchi.", "ru": "Тот, кто на коне быстро доставляет весть.", "en": "The one who rides fast to deliver news." },
+      "explanation": { "uz": "Otliq xabarchini «chopar» deb atashgan.", "ru": "Конного гонца называли «чопар».", "en": "A horse messenger was called “chopar”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Telegraf ixtiro qilingach, xabarlar" },
+          { "blank": "tezroq" },
+          { "text": "yetadigan boʻldi; telefon esa" },
+          { "blank": "ovozli" },
+          { "text": "gaplashish imkonini berdi." }
+        ],
+        "bank": ["tezroq", "ovozli", "sekinroq"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Telegraf — tez; telefon — ovoz.", "ru": "Телеграф — быстро; телефон — голос.", "en": "Telegraph — fast; telephone — voice." },
+      "explanation": { "uz": "Telegraf xabarni tezroq, telefon ovozli aloqani berdi.", "ru": "Телеграф ускорил весть, телефон дал голосовую связь.", "en": "The telegraph made messages faster; the phone gave voice contact." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "telefon", "syllables": ["te", "le", "fon"], "emoji": "📞", "clue": { "uz": "Ovozli gaplashish qurilmasi", "ru": "Устройство для голосового разговора", "en": "A device for talking by voice" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "te + le + fon = ?", "ru": "te + le + fon = ?", "en": "te + le + fon = ?" },
+      "explanation": { "uz": "te-le-fon → telefon. Ovozli aloqa qurilmasi.", "ru": "te-le-fon → telefon (телефон).", "en": "te-le-fon → telefon (telephone)." }
+    }
+  ]
+}

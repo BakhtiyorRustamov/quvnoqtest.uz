@@ -1,0 +1,180 @@
+{
+  "topicId": "g1-alifbe-04",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔊🅰️🅱️🎵",
+  "title": {
+    "uz": "Tovushlar sirlari: unli va undosh",
+    "ru": "Секреты звуков: гласные и согласные",
+    "en": "Sound secrets: vowels and consonants"
+  },
+  "recall": {
+    "uz": "Nutqimiz tovushlardan iborat. Tovushlar ikki xil: unli va undosh. Unli tovushlar — a, o, i, u, e, oʻ — ogʻiz erkin ochilib aytiladi. Undosh tovushlar ogʻizda toʻsiqqa uchraydi. Har bir boʻgʻinda bitta unli tovush boʻladi.",
+    "ru": "Наша речь состоит из звуков. Звуки бывают двух видов: гласные и согласные. Гласные — а, о, и, у, э, оʻ — говорятся свободно, с открытым ртом. Согласные встречают преграду во рту. В каждом слоге есть один гласный звук.",
+    "en": "Our speech is made of sounds. Sounds are of two kinds: vowels and consonants. Vowels — a, o, i, u, e, oʻ — are said freely with an open mouth. Consonants meet a block in the mouth. Every syllable has one vowel sound."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Nutqimiz nimalardan tuziladi?", "ru": "Из чего состоит наша речь?", "en": "What is our speech made of?" },
+      "hint": { "uz": "Ularni quloq bilan eshitamiz va til bilan aytamiz.", "ru": "Их слышим ухом и произносим языком.", "en": "We hear them with the ear and say them with the tongue." },
+      "explanation": { "uz": "Nutqimiz tovushlardan tuziladi.", "ru": "Наша речь состоит из звуков.", "en": "Our speech is made of sounds." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": [{ "uz": "tovushlardan", "ru": "из звуков", "en": "of sounds" }, { "uz": "ranglardan", "ru": "из цветов", "en": "of colors" }, { "uz": "sonlardan", "ru": "из чисел", "en": "of numbers" }], "answerIndex": 0 }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Unli tovushlarni belgila!", "ru": "Отметь гласные звуки!", "en": "Tap the vowel sounds!" },
+      "hint": { "uz": "Unlilar: a, o, i, u, e, oʻ.", "ru": "Гласные: а, о, и, у, э, оʻ.", "en": "Vowels: a, o, i, u, e, oʻ." },
+      "explanation": { "uz": "A, O, I — unli tovushlar. B, M, T — undosh.", "ru": "A, O, I — гласные. B, M, T — согласные.", "en": "A, O, I are vowels. B, M, T are consonants." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "a", "emoji": "A", "label": { "uz": "a", "ru": "а", "en": "a" }, "correct": true },
+            { "id": "o", "emoji": "O", "label": { "uz": "o", "ru": "о", "en": "o" }, "correct": true },
+            { "id": "i", "emoji": "I", "label": { "uz": "i", "ru": "и", "en": "i" }, "correct": true },
+            { "id": "b", "emoji": "B", "label": { "uz": "b", "ru": "б", "en": "b" } },
+            { "id": "m", "emoji": "M", "label": { "uz": "m", "ru": "м", "en": "m" } },
+            { "id": "t", "emoji": "T", "label": { "uz": "t", "ru": "т", "en": "t" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Tovushlarni ajrat: unli yoki undosh!", "ru": "Разложи звуки: гласный или согласный!", "en": "Sort the sounds: vowel or consonant!" },
+      "hint": { "uz": "Unlini erkin, undoshni toʻsiq bilan aytamiz.", "ru": "Гласный — свободно, согласный — с преградой.", "en": "A vowel is said freely, a consonant with a block." },
+      "explanation": { "uz": "Unli: A, O, U. Undosh: M, B, T.", "ru": "Гласные: A, O, U. Согласные: M, B, T.", "en": "Vowels: A, O, U. Consonants: M, B, T." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "vowel", "label": { "uz": "Unli", "ru": "Гласный", "en": "Vowel" }, "color": "#f4693b" },
+            { "id": "cons", "label": { "uz": "Undosh", "ru": "Согласный", "en": "Consonant" }, "color": "#2f9fe0" }
+          ],
+          "items": [
+            { "id": "a", "emoji": "A", "label": { "uz": "a", "ru": "а", "en": "a" }, "bin": "vowel" },
+            { "id": "o", "emoji": "O", "label": { "uz": "o", "ru": "о", "en": "o" }, "bin": "vowel" },
+            { "id": "u", "emoji": "U", "label": { "uz": "u", "ru": "у", "en": "u" }, "bin": "vowel" },
+            { "id": "m", "emoji": "M", "label": { "uz": "m", "ru": "м", "en": "m" }, "bin": "cons" },
+            { "id": "b", "emoji": "B", "label": { "uz": "b", "ru": "б", "en": "b" }, "bin": "cons" },
+            { "id": "t", "emoji": "T", "label": { "uz": "t", "ru": "т", "en": "t" }, "bin": "cons" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍎 «olma» qaysi tovush bilan boshlanadi?", "ru": "🍎 С какого звука начинается «olma» (яблоко)?", "en": "🍎 Which sound does “olma” (apple) start with?" },
+      "hint": { "uz": "Soʻzning boshini choʻzib ayt: o-o-olma.", "ru": "Протяни начало слова: о-о-olma.", "en": "Stretch the start: o-o-olma." },
+      "explanation": { "uz": "«olma» «o» tovushi bilan boshlanadi. «o» — unli.", "ru": "«olma» начинается со звука «o». «o» — гласный.", "en": "“olma” starts with the sound “o”. “o” is a vowel." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "o", "emoji": "O", "label": { "uz": "o", "ru": "о", "en": "o" }, "correct": true },
+            { "id": "l", "emoji": "L", "label": { "uz": "l", "ru": "л", "en": "l" } },
+            { "id": "m", "emoji": "M", "label": { "uz": "m", "ru": "м", "en": "m" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«A» — unli tovush.", "ru": "«A» — гласный звук.", "en": "“A” is a vowel sound." },
+      "hint": { "uz": "«A»ni aytganda ogʻiz keng ochiladi.", "ru": "При «A» рот широко открывается.", "en": "When saying “A” the mouth opens wide." },
+      "explanation": { "uz": "Toʻgʻri! «A» — unli tovush.", "ru": "Верно! «A» — гласный звук.", "en": "True! “A” is a vowel sound." },
+      "widget": { "type": "true_false", "props": { "emoji": "🅰️", "answer": true } }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Mevalarni va sabzavotlarni ajrat!", "ru": "Разложи фрукты и овощи!", "en": "Sort the fruits and the vegetables!" },
+      "hint": { "uz": "Meva — shirin, daraxtda; sabzavot — bogʻda oʻsadi.", "ru": "Фрукты сладкие, на дереве; овощи растут на грядке.", "en": "Fruit is sweet, on a tree; vegetables grow in a garden bed." },
+      "explanation": { "uz": "Meva: olma, uzum, gilos. Sabzavot: sabzi, bodring, piyoz.", "ru": "Фрукты: яблоко, виноград, вишня. Овощи: морковь, огурец, лук.", "en": "Fruit: apple, grapes, cherry. Vegetables: carrot, cucumber, onion." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "fruit", "label": { "uz": "🍎 Meva", "ru": "🍎 Фрукт", "en": "🍎 Fruit" }, "color": "#f4693b" },
+            { "id": "veg", "label": { "uz": "🥕 Sabzavot", "ru": "🥕 Овощ", "en": "🥕 Vegetable" }, "color": "#5aa02a" }
+          ],
+          "items": [
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" }, "bin": "fruit" },
+            { "id": "grape", "emoji": "🍇", "label": { "uz": "uzum", "ru": "виноград", "en": "grapes" }, "bin": "fruit" },
+            { "id": "cherry", "emoji": "🍒", "label": { "uz": "gilos", "ru": "вишня", "en": "cherry" }, "bin": "fruit" },
+            { "id": "carrot", "emoji": "🥕", "label": { "uz": "sabzi", "ru": "морковь", "en": "carrot" }, "bin": "veg" },
+            { "id": "cucumber", "emoji": "🥒", "label": { "uz": "bodring", "ru": "огурец", "en": "cucumber" }, "bin": "veg" },
+            { "id": "onion", "emoji": "🧅", "label": { "uz": "piyoz", "ru": "лук", "en": "onion" }, "bin": "veg" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Topishmoq: Yer tagida oʻsaman, palovga tushaman. Men kim?", "ru": "Загадка: Расту под землёй, попадаю в плов. Кто я?", "en": "Riddle: I grow underground and end up in pilaf. Who am I?" },
+      "hint": { "uz": "Toʻq sariq rangli, quyonlar yaxshi koʻradi.", "ru": "Оранжевого цвета, любят зайцы.", "en": "Orange colored, rabbits love it." },
+      "explanation": { "uz": "Bu — sabzi! U yer tagida oʻsadi.", "ru": "Это морковь! Она растёт под землёй.", "en": "It is a carrot! It grows underground." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": [{ "uz": "sabzi 🥕", "ru": "морковь 🥕", "en": "carrot 🥕" }, { "uz": "olma 🍎", "ru": "яблоко 🍎", "en": "apple 🍎" }, { "uz": "kitob 📚", "ru": "книга 📚", "en": "book 📚" }], "answerIndex": 0 }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍍 «ananas» soʻzini boʻgʻinlab qarsak chal!", "ru": "🍍 Похлопай слово «ananas» по слогам!", "en": "🍍 Clap the word “ananas” by syllables!" },
+      "hint": { "uz": "a-na-nas — uch marta qarsak. Har boʻgʻinda bitta unli.", "ru": "а-на-нас — три хлопка. В каждом слоге один гласный.", "en": "a-na-nas — three claps. One vowel in each syllable." },
+      "explanation": { "uz": "«ananas» = a-na-nas, uch boʻgʻin. Har boʻgʻinda bitta unli tovush bor.", "ru": "«ananas» = а-на-нас, три слога. В каждом слоге один гласный.", "en": "“ananas” = a-na-nas, three syllables. Each syllable has one vowel." },
+      "widget": {
+        "type": "syllable_clap",
+        "props": { "emoji": "🍍", "word": { "uz": "ananas", "ru": "ананас", "en": "pineapple" }, "syllables": 3 }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Undosh tovushni aytganda ogʻizda toʻsiq boʻladi.", "ru": "При произнесении согласного во рту есть преграда.", "en": "When saying a consonant there is a block in the mouth." },
+      "hint": { "uz": "«M», «B»ni ayt — lablar yopiladi.", "ru": "Скажи «М», «Б» — губы смыкаются.", "en": "Say “M”, “B” — the lips close." },
+      "explanation": { "uz": "Toʻgʻri! Undosh tovushda ogʻizda toʻsiq boʻladi.", "ru": "Верно! У согласного во рту есть преграда.", "en": "True! A consonant has a block in the mouth." },
+      "widget": { "type": "true_false", "props": { "emoji": "🅱️", "answer": true } }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Undosh tovushlarni belgila!", "ru": "Отметь согласные звуки!", "en": "Tap the consonant sounds!" },
+      "hint": { "uz": "Undoshlar: m, b, t. Unlilar emas.", "ru": "Согласные: м, б, т. Не гласные.", "en": "Consonants: m, b, t. Not vowels." },
+      "explanation": { "uz": "M, B, T — undosh tovushlar. A va O — unli.", "ru": "M, B, T — согласные. A и O — гласные.", "en": "M, B, T are consonants. A and O are vowels." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "m", "emoji": "M", "label": { "uz": "m", "ru": "м", "en": "m" }, "correct": true },
+            { "id": "b", "emoji": "B", "label": { "uz": "b", "ru": "б", "en": "b" }, "correct": true },
+            { "id": "t", "emoji": "T", "label": { "uz": "t", "ru": "т", "en": "t" }, "correct": true },
+            { "id": "a", "emoji": "A", "label": { "uz": "a", "ru": "а", "en": "a" } },
+            { "id": "o", "emoji": "O", "label": { "uz": "o", "ru": "о", "en": "o" } }
+          ]
+        }
+      }
+    }
+  ]
+}

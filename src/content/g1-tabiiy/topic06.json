@@ -1,0 +1,216 @@
+{
+  "topicId": "g1-tabiiy-06",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🌲🌼🦋🐻",
+  "title": {
+    "uz": "Oʻrmon va oʻtloq sirlari",
+    "ru": "Тайны леса и луга",
+    "en": "Secrets of the forest and meadow"
+  },
+  "recall": {
+    "uz": "Oʻtloq — ochiq, gulli maydon. Unda arilar va kapalaklar uchadi. Oʻrmonda baland daraxtlar oʻsadi, havo toza, qushlar sayraydi. Oʻrmonda ayiq, kiyik, quyon yashaydi. Tabiatni asraymiz: gul yulmaymiz, olov yoqmaymiz, jonivorlarga zarar bermaymiz.",
+    "ru": "Луг — открытое поле с цветами. Там летают пчёлы и бабочки. В лесу растут высокие деревья, воздух чистый, поют птицы. В лесу живут медведь, косуля, заяц. Берегём природу: не рвём цветы, не разжигаем огонь, не вредим животным.",
+    "en": "A meadow is an open, flowery field. Bees and butterflies fly there. In the forest tall trees grow, the air is clean, birds sing. Bear, deer and rabbit live in the forest. We protect nature: we don't pick flowers, light fires, or harm animals."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻtloqdagi gullar ustida uchadigan jonivorni bos!", "ru": "Нажми, кто летает над цветами луга!", "en": "Tap the creature that flies over meadow flowers!" },
+      "hint": { "uz": "Uning rangli qanotlari bor, u guldan gulga uchadi.", "ru": "У неё цветные крылья, она летает с цветка на цветок.", "en": "It has colorful wings and flies from flower to flower." },
+      "explanation": { "uz": "Kapalak oʻtloqda gullar ustida uchadi. Ayiq oʻrmonda, baliq suvda yashaydi.", "ru": "Бабочка летает над цветами луга. Медведь — в лесу, рыба — в воде.", "en": "A butterfly flies over the meadow flowers. A bear lives in the forest, a fish in water." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "butterfly", "emoji": "🦋", "label": { "uz": "kapalak", "ru": "бабочка", "en": "butterfly" }, "correct": true },
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" } },
+            { "id": "fish", "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻrmonda baland oʻsadigan narsani bos!", "ru": "Нажми то, что высоко растёт в лесу!", "en": "Tap what grows tall in the forest!" },
+      "hint": { "uz": "Oʻrmon baland daraxtlardan iborat.", "ru": "Лес состоит из высоких деревьев.", "en": "A forest is made of tall trees." },
+      "explanation": { "uz": "Oʻrmonda baland daraxtlar oʻsadi. Gul va qoʻziqorin past boʻladi.", "ru": "В лесу растут высокие деревья. Цветок и гриб низкие.", "en": "Tall trees grow in the forest. A flower and a mushroom are low." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "tree", "emoji": "🌲", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" }, "correct": true },
+            { "id": "flower", "emoji": "🌼", "label": { "uz": "gul", "ru": "цветок", "en": "flower" } },
+            { "id": "mushroom", "emoji": "🍄", "label": { "uz": "qoʻziqorin", "ru": "гриб", "en": "mushroom" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻrmon hayvoni va oʻtloq hasharotiga ajrat!", "ru": "Разложи: лесные звери и насекомые луга!", "en": "Sort into forest animals and meadow insects!" },
+      "hint": { "uz": "Ayiq, kiyik, quyon — oʻrmonda; ari, kapalak, xonqizi — oʻtloqda.", "ru": "Медведь, косуля, заяц — в лесу; пчела, бабочка, божья коровка — на лугу.", "en": "Bear, deer, rabbit in the forest; bee, butterfly, ladybug in the meadow." },
+      "explanation": { "uz": "Katta hayvonlar oʻrmonda, mayda hasharotlar gulli oʻtloqda yashaydi.", "ru": "Крупные звери — в лесу, мелкие насекомые — на цветущем лугу.", "en": "Big animals live in the forest; small insects live in the flowery meadow." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "forest", "label": { "uz": "🌲 Oʻrmon hayvoni", "ru": "🌲 Лесные звери", "en": "🌲 Forest animals" }, "color": "#46c06a" },
+            { "id": "meadow", "label": { "uz": "🌼 Oʻtloq hasharoti", "ru": "🌼 Насекомые луга", "en": "🌼 Meadow insects" }, "color": "#f39a1f" }
+          ],
+          "items": [
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" }, "bin": "forest" },
+            { "id": "deer", "emoji": "🦌", "label": { "uz": "kiyik", "ru": "косуля", "en": "deer" }, "bin": "forest" },
+            { "id": "rabbit", "emoji": "🐰", "label": { "uz": "quyon", "ru": "заяц", "en": "rabbit" }, "bin": "forest" },
+            { "id": "bee", "emoji": "🐝", "label": { "uz": "ari", "ru": "пчела", "en": "bee" }, "bin": "meadow" },
+            { "id": "butterfly", "emoji": "🦋", "label": { "uz": "kapalak", "ru": "бабочка", "en": "butterfly" }, "bin": "meadow" },
+            { "id": "ladybug", "emoji": "🐞", "label": { "uz": "xonqizi", "ru": "божья коровка", "en": "ladybug" }, "bin": "meadow" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir jonivorni yashash joyiga ula!", "ru": "Соедини каждое существо с его домом!", "en": "Match each creature to its home!" },
+      "hint": { "uz": "Ayiq — oʻrmon, ari — oʻtloq, baliq — suv, qush — osmon.", "ru": "Медведь — лес, пчела — луг, рыба — вода, птица — небо.", "en": "Bear — forest, bee — meadow, fish — water, bird — sky." },
+      "explanation": { "uz": "Har bir jonivorning oʻz yashash joyi bor.", "ru": "У каждого существа своё место обитания.", "en": "Each creature has its own home." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" } }, "right": { "emoji": "🌲", "label": { "uz": "oʻrmon", "ru": "лес", "en": "forest" } } },
+            { "left": { "emoji": "🐝", "label": { "uz": "ari", "ru": "пчела", "en": "bee" } }, "right": { "emoji": "🌼", "label": { "uz": "oʻtloq", "ru": "луг", "en": "meadow" } } },
+            { "left": { "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" } }, "right": { "emoji": "🌊", "label": { "uz": "suv", "ru": "вода", "en": "water" } } },
+            { "left": { "emoji": "🐦", "label": { "uz": "qush", "ru": "птица", "en": "bird" } }, "right": { "emoji": "☁️", "label": { "uz": "osmon", "ru": "небо", "en": "sky" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻrmonda yashaydigan hayvonlarni belgila!", "ru": "Отметь животных, живущих в лесу!", "en": "Tap the animals that live in the forest!" },
+      "hint": { "uz": "Ayiq, kiyik, boʻri — oʻrmon hayvonlari.", "ru": "Медведь, косуля, волк — лесные звери.", "en": "Bear, deer, wolf are forest animals." },
+      "explanation": { "uz": "Ayiq, kiyik va boʻri oʻrmonda yashaydi. Baliq, sigir, ari — yoʻq.", "ru": "Медведь, косуля и волк живут в лесу. Рыба, корова, пчела — нет.", "en": "Bear, deer and wolf live in the forest. Fish, cow, bee do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" }, "correct": true },
+            { "id": "deer", "emoji": "🦌", "label": { "uz": "kiyik", "ru": "косуля", "en": "deer" }, "correct": true },
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" }, "correct": true },
+            { "id": "fish", "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" } },
+            { "id": "cow", "emoji": "🐄", "label": { "uz": "sigir", "ru": "корова", "en": "cow" } },
+            { "id": "bee", "emoji": "🐝", "label": { "uz": "ari", "ru": "пчела", "en": "bee" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻtloq oʻrmondan nimasi bilan farq qiladi?", "ru": "Чем луг отличается от леса?", "en": "How is a meadow different from a forest?" },
+      "hint": { "uz": "Oʻtloq — ochiq maydon, unda gullar koʻp.", "ru": "Луг — открытое поле, там много цветов.", "en": "A meadow is an open field with many flowers." },
+      "explanation": { "uz": "Oʻtloqda gullar va oʻtlar koʻp. Oʻrmonda esa baland daraxtlar boʻladi.", "ru": "На лугу много цветов и трав. А в лесу — высокие деревья.", "en": "A meadow has many flowers and grasses. A forest has tall trees." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "flowers", "emoji": "🌼", "label": { "uz": "gullar (oʻtloq)", "ru": "цветы (луг)", "en": "flowers (meadow)" }, "correct": true },
+            { "id": "trees", "emoji": "🌲", "label": { "uz": "baland daraxtlar", "ru": "высокие деревья", "en": "tall trees" } },
+            { "id": "buildings", "emoji": "🏢", "label": { "uz": "binolar", "ru": "дома", "en": "buildings" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Tabiatga zarar beradigan ishlarni belgila!", "ru": "Отметь то, что вредит природе!", "en": "Tap the things that harm nature!" },
+      "hint": { "uz": "Olov yoqish, gul yulish, daraxt shoxini sindirish — zararli.", "ru": "Разжигать огонь, рвать цветы, ломать ветки — вредно.", "en": "Lighting a fire, picking flowers, breaking branches — harmful." },
+      "explanation": { "uz": "Olov yoqish, gul yulish va shox sindirish tabiatga zarar. Sayr va suratga olish zararsiz.", "ru": "Огонь, срывание цветов и поломка веток вредят природе. Прогулка и фото — нет.", "en": "Fire, picking flowers and breaking branches harm nature. Walking and taking photos do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "fire", "emoji": "🔥", "label": { "uz": "olov yoqish", "ru": "разжигать огонь", "en": "light a fire" }, "correct": true },
+            { "id": "pick", "emoji": "🌷", "label": { "uz": "gul yulish", "ru": "рвать цветы", "en": "pick flowers" }, "correct": true },
+            { "id": "break", "emoji": "🪓", "label": { "uz": "shox sindirish", "ru": "ломать ветки", "en": "break branches" }, "correct": true },
+            { "id": "walk", "emoji": "🚶", "label": { "uz": "sayr qilish", "ru": "гулять", "en": "walk" } },
+            { "id": "photo", "emoji": "📷", "label": { "uz": "suratga olish", "ru": "фотографировать", "en": "take photos" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Tabiatni asrash uchun toʻgʻri ishni bos!", "ru": "Нажми правильное действие, чтобы беречь природу!", "en": "Tap the right action to protect nature!" },
+      "hint": { "uz": "Chiqindini axlat qutisiga tashlaymiz.", "ru": "Мусор бросаем в урну.", "en": "We put trash in the bin." },
+      "explanation": { "uz": "Chiqindini axlat qutisiga tashlash — toʻgʻri. Olov yoqish va gul yulish — notoʻgʻri.", "ru": "Бросать мусор в урну — правильно. Огонь и срывание цветов — нет.", "en": "Putting trash in the bin is right. Fire and picking flowers are wrong." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "bin", "emoji": "🗑️", "label": { "uz": "chiqindini qutiga tashlash", "ru": "мусор в урну", "en": "trash in the bin" }, "correct": true },
+            { "id": "fire", "emoji": "🔥", "label": { "uz": "olov yoqish", "ru": "разжигать огонь", "en": "light a fire" } },
+            { "id": "pick", "emoji": "🌷", "label": { "uz": "gul yulish", "ru": "рвать цветы", "en": "pick flowers" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi joyning havosi toza va sogʻlom?", "ru": "Где воздух чистый и полезный?", "en": "Where is the air clean and healthy?" },
+      "hint": { "uz": "Oʻrmonda daraxtlar koʻp — havo toza boʻladi.", "ru": "В лесу много деревьев — воздух чистый.", "en": "The forest has many trees — the air is clean." },
+      "explanation": { "uz": "Oʻrmon havosi toza va sogʻlom. Zavod va tirbandlik havoni ifloslaydi.", "ru": "Воздух леса чистый и полезный. Завод и пробки загрязняют воздух.", "en": "Forest air is clean and healthy. A factory and traffic dirty the air." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "forest", "emoji": "🌲", "label": { "uz": "oʻrmon", "ru": "лес", "en": "forest" }, "correct": true },
+            { "id": "factory", "emoji": "🏭", "label": { "uz": "zavod", "ru": "завод", "en": "factory" } },
+            { "id": "traffic", "emoji": "🚗", "label": { "uz": "tirbandlik", "ru": "пробка", "en": "traffic" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻrmon va oʻtloqda mumkin va mumkin emas ishlarga ajrat!", "ru": "Разложи: что можно и что нельзя в лесу и на лугу!", "en": "Sort what is allowed and not allowed in the forest and meadow!" },
+      "hint": { "uz": "Zarar beradiganlar — mumkin emas; zararsizlari — mumkin.", "ru": "Что вредит — нельзя; что безвредно — можно.", "en": "Harmful things are not allowed; harmless ones are allowed." },
+      "explanation": { "uz": "Sayr qilish va suratga olish mumkin. Olov yoqish, gul yulish, kapalak tutish — mumkin emas.", "ru": "Гулять и фотографировать можно. Огонь, срывать цветы, ловить бабочек — нельзя.", "en": "Walking and taking photos are fine. Fire, picking flowers, catching butterflies are not." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "ok", "label": { "uz": "✅ Mumkin", "ru": "✅ Можно", "en": "✅ Allowed" }, "color": "#46c06a" },
+            { "id": "no", "label": { "uz": "🚫 Mumkin emas", "ru": "🚫 Нельзя", "en": "🚫 Not allowed" }, "color": "#e14b4b" }
+          ],
+          "items": [
+            { "id": "walk", "emoji": "🚶", "label": { "uz": "sayr qilish", "ru": "гулять", "en": "walk" }, "bin": "ok" },
+            { "id": "photo", "emoji": "📷", "label": { "uz": "suratga olish", "ru": "фото", "en": "photo" }, "bin": "ok" },
+            { "id": "fire", "emoji": "🔥", "label": { "uz": "olov yoqish", "ru": "огонь", "en": "fire" }, "bin": "no" },
+            { "id": "pick", "emoji": "🌷", "label": { "uz": "gul yulish", "ru": "рвать цветы", "en": "pick flowers" }, "bin": "no" },
+            { "id": "catch", "emoji": "🦋", "label": { "uz": "kapalak tutish", "ru": "ловить бабочек", "en": "catch butterflies" }, "bin": "no" }
+          ]
+        }
+      }
+    }
+  ]
+}

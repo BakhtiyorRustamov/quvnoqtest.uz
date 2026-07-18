@@ -1,0 +1,507 @@
+{
+  "topicId": "g1-ingliz-32",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🤖👀👂✋",
+  "title": {
+    "uz": "Menda ... bor",
+    "ru": "У меня есть...",
+    "en": "I have..."
+  },
+  "recall": {
+    "uz": "Bugun oʻzimizni taʼriflaymiz: «I have green eyes» — «Menda yashil koʻzlar bor». Robotlar ham shunday: «I have a red head».",
+    "ru": "Сегодня описываем себя: «I have green eyes» — «У меня зелёные глаза». Роботы тоже: «I have a red head».",
+    "en": "Today we describe ourselves: \"I have green eyes.\" The robots too: \"I have a red head.\""
+  },
+  "ttsText": {
+    "uz": "Menda bor.",
+    "en": "I have green eyes! I have a red head! What do you have?"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Robotda nima bor?",
+        "ru": "Послушай. Что есть у робота?",
+        "en": "Listen. What does the robot have?"
+      },
+      "hint": {
+        "uz": "«I have red hair» — menda qizil soch bor.",
+        "ru": "«I have red hair» — у меня рыжие волосы.",
+        "en": "\"I have red hair.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I have red hair — qizil soch.",
+        "ru": "Верно! I have red hair — рыжие волосы.",
+        "en": "Right! I have red hair."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What do you have?",
+              "audio": {
+                "key": "ing32-q1-a",
+                "text": "What do you have?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "🤖",
+              "name": "i-Lin",
+              "text": "I have red hair!",
+              "audio": {
+                "key": "ing32-q1-b",
+                "text": "I have red hair!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Robotda nima bor?",
+              "ru": "Что у робота?",
+              "en": "What does the robot have?"
+            },
+            "choices": [
+              "big ears",
+              "red hair",
+              "green eyes"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Robotda qanday koʻz bor?",
+        "ru": "Послушай. Какие глаза у робота?",
+        "en": "Listen. What eyes does the robot have?"
+      },
+      "hint": {
+        "uz": "«green eyes» — yashil koʻzlar.",
+        "ru": "«green eyes» — зелёные глаза.",
+        "en": "\"green eyes\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I have green eyes.",
+        "ru": "Верно! I have green eyes.",
+        "en": "Right! I have green eyes."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🤖",
+              "name": "i-Tex",
+              "text": "I have green eyes!",
+              "audio": {
+                "key": "ing32-q2-a",
+                "text": "I have green eyes!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Cool!",
+              "audio": {
+                "key": "ing32-q2-b",
+                "text": "Cool!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qanday koʻz?",
+              "ru": "Какие глаза?",
+              "en": "What eyes?"
+            },
+            "choices": [
+              "green eyes",
+              "red eyes",
+              "blue hair"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«I have a big nose.» Burunni bos!",
+        "ru": "«I have a big nose.» Нажми нос!",
+        "en": "\"I have a big nose.\" Tap the nose!"
+      },
+      "hint": {
+        "uz": "«nose» — burun.",
+        "ru": "«nose» — нос.",
+        "en": "\"nose\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Nose — burun.",
+        "ru": "Верно! Nose — нос.",
+        "en": "Right! Nose!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👃",
+              "label": "nose",
+              "correct": true
+            },
+            {
+              "emoji": "👀",
+              "label": "eyes"
+            },
+            {
+              "emoji": "👂",
+              "label": "ears"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Biz koʻz bilan koʻramiz. 👀",
+        "ru": "Верно? Мы видим глазами. 👀",
+        "en": "Is this right? We see with our eyes. 👀"
+      },
+      "hint": {
+        "uz": "Koʻrish — koʻz bilan.",
+        "ru": "Зрение — глазами.",
+        "en": "Seeing is with eyes."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Koʻz bilan koʻramiz.",
+        "ru": "Верно! Видим глазами.",
+        "en": "Right! We see with our eyes."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👀",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Senda ikkita burun bor. 👃",
+        "ru": "Верно? У тебя два носа. 👃",
+        "en": "Is this right? You have two noses. 👃"
+      },
+      "hint": {
+        "uz": "Nechta burun?",
+        "ru": "Сколько носов?",
+        "en": "How many noses?"
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Bitta burun bor.",
+        "ru": "Неверно! Один нос.",
+        "en": "False! You have one nose."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👃",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Senda ikkitadan boʻlgan aʼzolarni belgila!",
+        "ru": "Отметь части, которых по две!",
+        "en": "Tap the parts you have TWO of!"
+      },
+      "hint": {
+        "uz": "Koʻzlar, quloqlar, qoʻllar.",
+        "ru": "Глаза, уши, руки.",
+        "en": "Eyes, ears, hands."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ikkita koʻz, quloq, qoʻl bor!",
+        "ru": "Молодец! Два глаза, уши, руки!",
+        "en": "Great! Two eyes, two ears, two hands!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👀",
+              "label": "eyes",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👂",
+              "label": "ears",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "✋",
+              "label": "hands",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "👃",
+              "label": "nose"
+            },
+            {
+              "id": "d1",
+              "emoji": "👄",
+              "label": "mouth"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soyaga qarab tana aʼzosini top!",
+        "ru": "Угадай часть тела по тени!",
+        "en": "Guess the body part by its shadow!"
+      },
+      "hint": {
+        "uz": "Yuramiz — u bilan.",
+        "ru": "Ходим — ими.",
+        "en": "We walk with them."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Feet — oyoqlar.",
+        "ru": "Верно! Feet — ноги.",
+        "en": "Right! Feet!"
+      },
+      "widget": {
+        "type": "shadow_guess",
+        "props": {
+          "shadow": "👣",
+          "options": [
+            {
+              "id": "feet",
+              "emoji": "👣",
+              "label": "feet",
+              "correct": true
+            },
+            {
+              "id": "hands",
+              "emoji": "✋",
+              "label": "hands"
+            },
+            {
+              "id": "ears",
+              "emoji": "👂",
+              "label": "ears"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Robot oxirida nima dedi?",
+        "ru": "Послушай. Что робот сказал в конце?",
+        "en": "Listen. What did the robot say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «I have green eyes!»",
+        "ru": "Верно! «I have green eyes!»",
+        "en": "Right! \"I have green eyes!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🤖",
+              "name": "i-Zak",
+              "text": "I'm a robot!",
+              "audio": {
+                "key": "ing32-q8-a",
+                "text": "I'm a robot!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "🤖",
+              "name": "i-Zak",
+              "text": "I have a red head.",
+              "audio": {
+                "key": "ing32-q8-b",
+                "text": "I have a red head.",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "🤖",
+              "name": "i-Zak",
+              "text": "I have green eyes!",
+              "audio": {
+                "key": "ing32-q8-c",
+                "text": "I have green eyes!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Robot nima dedi?",
+              "ru": "Что сказал робот?",
+              "en": "What did the robot say?"
+            },
+            "choices": [
+              "I have green eyes!",
+              "How many?",
+              "Goodbye!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni aʼzoga ula!",
+        "ru": "Соедини слово с частью тела!",
+        "en": "Match each word to its body part!"
+      },
+      "hint": {
+        "uz": "eyes 👀, ears 👂, hands ✋, feet 👣.",
+        "ru": "eyes 👀, ears 👂, hands ✋, feet 👣.",
+        "en": "eyes 👀, ears 👂, hands ✋, feet 👣."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "eyes"
+              },
+              "right": {
+                "emoji": "👀"
+              }
+            },
+            {
+              "left": {
+                "label": "ears"
+              },
+              "right": {
+                "emoji": "👂"
+              }
+            },
+            {
+              "left": {
+                "label": "hands"
+              },
+              "right": {
+                "emoji": "✋"
+              }
+            },
+            {
+              "left": {
+                "label": "feet"
+              },
+              "right": {
+                "emoji": "👣"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Robot koʻzlarini koʻrsatib «I have green ___» deydi. Qaysi soʻz?",
+        "ru": "Робот показывает на глаза: «I have green ___». Какое слово?",
+        "en": "A robot points to its eyes: \"I have green ___.\" Which word?"
+      },
+      "hint": {
+        "uz": "Koʻrish aʼzosi.",
+        "ru": "Орган зрения.",
+        "en": "The seeing organ."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I have green eyes.",
+        "ru": "Верно! I have green eyes.",
+        "en": "Right! I have green eyes."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "eyes\nkoʻzlar",
+              "ru": "eyes\nглаза",
+              "en": "eyes"
+            },
+            {
+              "uz": "ears\nquloqlar",
+              "ru": "ears\nуши",
+              "en": "ears"
+            },
+            {
+              "uz": "hair\nsochlar",
+              "ru": "hair\nволосы",
+              "en": "hair"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

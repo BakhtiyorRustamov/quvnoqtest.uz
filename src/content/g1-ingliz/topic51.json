@@ -1,0 +1,516 @@
+{
+  "topicId": "g1-ingliz-51",
+  "subjectKey": "g1-ingliz",
+  "emojis": "❤️🦁🐘🤲",
+  "title": {
+    "uz": "Hayvonlarni hurmat qil (hikoya)",
+    "ru": "Уважай животных (история)",
+    "en": "Respect animals (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bugungi qadriyat — «Respect animals» (hayvonlarni hurmat qil). Hayvonlarga ehtiyotkor va mehribon boʻlamiz.",
+    "ru": "Время истории! Ценность сегодня — «Respect animals» (уважай животных). Мы бережны и добры к животным.",
+    "en": "Story time! Today's value is \"Respect animals.\" We are gentle and kind to animals."
+  },
+  "ttsText": {
+    "uz": "Hayvonlarni hurmat qil.",
+    "en": "Story time! Respect animals. Be gentle. Be kind."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: nima birinchi boʻldi?",
+        "ru": "Расставь историю по порядку!",
+        "en": "Put the story in order!"
+      },
+      "hint": {
+        "uz": "Avval bolalar hayvonot bogʻiga boradi.",
+        "ru": "Сначала дети идут в зоопарк.",
+        "en": "First the children go to the zoo."
+      },
+      "explanation": {
+        "uz": "Barakalla! Hayvonlarni hurmat qildik.",
+        "ru": "Молодец! Мы уважали животных.",
+        "en": "Great! We respected the animals."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🦁",
+          "events": [
+            {
+              "text": {
+                "uz": "Bolalar hayvonot bogʻiga boradi.",
+                "ru": "Дети идут в зоопарк.",
+                "en": "The children go to the zoo."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ular hayvonlarni koʻradi.",
+                "ru": "Они смотрят на животных.",
+                "en": "They see the animals."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ular ehtiyotkor va sokin.",
+                "ru": "Они бережны и тихи.",
+                "en": "They are gentle and quiet."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ular hayvonlarni hurmat qiladi!",
+                "ru": "Они уважают животных!",
+                "en": "They respect the animals!"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima dedi?",
+        "ru": "Послушай. Что сказал ребёнок?",
+        "en": "Listen. What did the child say?"
+      },
+      "hint": {
+        "uz": "«I'll be gentle» — ehtiyot boʻlaman.",
+        "ru": "«I'll be gentle» — буду бережным.",
+        "en": "\"I'll be gentle.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «OK, I'll be gentle.»",
+        "ru": "Верно! «OK, I'll be gentle.»",
+        "en": "Right! \"OK, I'll be gentle.\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Guide",
+              "text": "Be gentle with the animals!",
+              "audio": {
+                "key": "ing51-q2-a",
+                "text": "Be gentle with the animals!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "OK, I'll be gentle.",
+              "audio": {
+                "key": "ing51-q2-b",
+                "text": "OK, I'll be gentle.",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "Go away!",
+              "How many?",
+              "I'll be gentle."
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Hayvonlarni hurmat qilishimiz kerak.",
+        "ru": "Верно? Мы должны уважать животных.",
+        "en": "Is this right? We should respect animals."
+      },
+      "hint": {
+        "uz": "Mehribon boʻlamiz.",
+        "ru": "Быть добрыми.",
+        "en": "Be kind."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Hayvonlarni hurmat qilamiz.",
+        "ru": "Верно! Уважаем животных.",
+        "en": "Right! We respect animals."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "❤️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri yovvoyi hayvon? Bos!",
+        "ru": "Что из этого — дикое животное? Нажми!",
+        "en": "Which is a wild animal? Tap it!"
+      },
+      "hint": {
+        "uz": "Hayvonot bogʻida yashaydi.",
+        "ru": "Живёт в зоопарке.",
+        "en": "It lives in a zoo."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Lion — yovvoyi hayvon.",
+        "ru": "Верно! Lion — дикое животное.",
+        "en": "Right! A lion is a wild animal."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🦁",
+              "label": "lion",
+              "correct": true
+            },
+            {
+              "emoji": "🐕",
+              "label": "dog"
+            },
+            {
+              "emoji": "🐈",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hayvonlarga munosabatni ajrat: mehribon yoki qoʻpol!",
+        "ru": "Разложи отношение к животным: доброе или грубое!",
+        "en": "Sort the behavior: kind or unkind to animals!"
+      },
+      "hint": {
+        "uz": "Ehtiyotkorlik — mehribonlik.",
+        "ru": "Бережность — доброта.",
+        "en": "Gentle — kind."
+      },
+      "explanation": {
+        "uz": "Barakalla! Mehribonlik — hurmat.",
+        "ru": "Молодец! Доброта — уважение.",
+        "en": "Great! Kindness is respect."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "k",
+              "label": {
+                "uz": "Kind",
+                "ru": "Доброе",
+                "en": "Kind"
+              }
+            },
+            {
+              "id": "u",
+              "label": {
+                "uz": "Unkind",
+                "ru": "Грубое",
+                "en": "Unkind"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🤲",
+              "label": "be gentle",
+              "bin": "k"
+            },
+            {
+              "emoji": "💧",
+              "label": "give water",
+              "bin": "k"
+            },
+            {
+              "emoji": "🤫",
+              "label": "watch quietly",
+              "bin": "k"
+            },
+            {
+              "emoji": "😠",
+              "label": "shout at it",
+              "bin": "u"
+            },
+            {
+              "emoji": "😝",
+              "label": "tease it",
+              "bin": "u"
+            },
+            {
+              "emoji": "👻",
+              "label": "scare it",
+              "bin": "u"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola sherni ushlay oladimi?",
+        "ru": "Послушай. Можно ли трогать льва?",
+        "en": "Listen. Can the child touch the lion?"
+      },
+      "hint": {
+        "uz": "«Just watch» — faqat tomosha qil.",
+        "ru": "«Just watch» — просто смотри.",
+        "en": "\"Just watch.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «No! Be safe. Just watch.»",
+        "ru": "Верно! «No! Be safe. Just watch.»",
+        "en": "Right! \"No! Be safe. Just watch.\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can I touch the lion?",
+              "audio": {
+                "key": "ing51-q6-a",
+                "text": "Can I touch the lion?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👩",
+              "name": "Guide",
+              "text": "No! Be safe. Just watch.",
+              "audio": {
+                "key": "ing51-q6-b",
+                "text": "No! Be safe. Just watch.",
+                "voice": "teacher"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Guide nima dedi?",
+              "ru": "Что сказал гид?",
+              "en": "What did the guide say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Just watch.",
+              "Yes, touch it!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, hayvonot bogʻi juftlarini top!",
+        "ru": "Открывай карточки: пары зоопарка!",
+        "en": "Flip the cards: match the zoo pairs!"
+      },
+      "hint": {
+        "uz": "lion 🦁, monkey 🐵, elephant 🐘.",
+        "ru": "lion 🦁, monkey 🐵, elephant 🐘.",
+        "en": "lion 🦁, monkey 🐵, elephant 🐘."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🦁"
+              },
+              "b": {
+                "label": "lion"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐵"
+              },
+              "b": {
+                "label": "monkey"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐘"
+              },
+              "b": {
+                "label": "elephant"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hayvonlarni hurmat qilish usullarini belgila!",
+        "ru": "Отметь способы уважать животных!",
+        "en": "Tap the ways to respect animals!"
+      },
+      "hint": {
+        "uz": "Ehtiyotkorlik, suv berish, sokinlik.",
+        "ru": "Бережность, дать воды, тишина.",
+        "en": "Be gentle, give water, be quiet."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ehtiyotkorlik, suv, sokinlik — hurmat!",
+        "ru": "Молодец! Бережность, вода, тишина — уважение!",
+        "en": "Great! Gentle, water, quiet — respect!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🤲",
+              "label": "be gentle",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "💧",
+              "label": "give water",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🤫",
+              "label": "be quiet",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "😠",
+              "label": "shout"
+            },
+            {
+              "id": "d1",
+              "emoji": "👻",
+              "label": "scare"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Hayvonlarni qoʻrqitish — hurmat. 👻",
+        "ru": "Верно? Пугать животных — уважение. 👻",
+        "en": "Is this right? Scaring animals is respecting them. 👻"
+      },
+      "hint": {
+        "uz": "Qoʻrqitish — hurmat emas.",
+        "ru": "Пугать — не уважение.",
+        "en": "Scaring is not respect."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Qoʻrqitmaymiz.",
+        "ru": "Неверно! Мы не пугаем.",
+        "en": "False! We don't scare them."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👻",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qadriyati nima?",
+        "ru": "Какая ценность у истории?",
+        "en": "What is the value of the story?"
+      },
+      "hint": {
+        "uz": "Hayvonlarga munosabat.",
+        "ru": "Отношение к животным.",
+        "en": "How we treat animals."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Respect animals — hayvonlarni hurmat qil.",
+        "ru": "Верно! Respect animals — уважай животных.",
+        "en": "Right! Respect animals!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "respect animals\nhayvonlarni hurmat qil",
+              "ru": "respect animals\nуважай животных",
+              "en": "respect animals"
+            },
+            {
+              "uz": "scare animals\nhayvonlarni qoʻrqit",
+              "ru": "scare animals\nпугай животных",
+              "en": "scare animals"
+            },
+            {
+              "uz": "ignore animals\nhayvonlarga eʼtibor berma",
+              "ru": "ignore animals\nигнорируй животных",
+              "en": "ignore animals"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

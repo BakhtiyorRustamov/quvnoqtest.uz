@@ -46,7 +46,10 @@ export default function GlassCard({
         onPointerMove={onMove}
         onPointerLeave={reset}
         aria-label={label}
-        className="grade-card glass relative block w-full aspect-[5/4] rounded-3xl overflow-hidden text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/80"
+        className={`grade-card glass relative block w-full aspect-[5/4] rounded-3xl overflow-hidden text-white transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/80 ${
+          // grades that aren't ready yet are dimmed right down so grade 1 stands out
+          locked ? 'opacity-25 saturate-50 hover:opacity-40' : ''
+        }`}
         style={{ '--card-accent': accent } as React.CSSProperties}
       >
         {/* accent wash + glow blob */}

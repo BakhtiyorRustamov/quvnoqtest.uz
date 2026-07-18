@@ -1,0 +1,183 @@
+{
+  "topicId": "g1-tabiiy-11",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🐻🦔🦊🐿️",
+  "title": {
+    "uz": "Jonivorlar qishga tayyorlanadi",
+    "ru": "Как животные готовятся к зиме",
+    "en": "How animals get ready for winter"
+  },
+  "recall": {
+    "uz": "Sovuq qish kelishidan oldin jonivorlar tayyorgarlik koʻradi. Ayiq va tipratikan qishki uyquga ketadi. Baʼzi qushlar issiq oʻlkalarga uchib ketadi. Boʻri, tulki va olmaxon esa uygʻoq yuradi. Olmaxon kuzda oziq gʻamlaydi, quyon oq tusga kiradi.",
+    "ru": "Перед приходом холодной зимы животные готовятся. Медведь и ёж впадают в зимнюю спячку. Некоторые птицы улетают в тёплые края. Волк, лиса и белка остаются активными. Белка запасает корм осенью, заяц становится белым.",
+    "en": "Before the cold winter comes, animals get ready. The bear and hedgehog go into winter sleep. Some birds fly to warm lands. The wolf, fox and squirrel stay active. The squirrel stores food in autumn, the hare turns white."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qishki uyquga ketadigan hayvonlarni belgila!", "ru": "Отметь животных, впадающих в спячку!", "en": "Tap the animals that hibernate!" },
+      "hint": { "uz": "Ayiq va tipratikan butun qish uxlaydi.", "ru": "Медведь и ёж спят всю зиму.", "en": "The bear and hedgehog sleep all winter." },
+      "explanation": { "uz": "Ayiq va tipratikan qishki uyquga ketadi. Olmaxon, tulki va boʻri uxlamaydi.", "ru": "Медведь и ёж впадают в спячку. Белка, лиса и волк не спят.", "en": "The bear and hedgehog hibernate. The squirrel, fox and wolf do not sleep." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" }, "correct": true },
+            { "id": "hedgehog", "emoji": "🦔", "label": { "uz": "tipratikan", "ru": "ёж", "en": "hedgehog" }, "correct": true },
+            { "id": "squirrel", "emoji": "🐿️", "label": { "uz": "olmaxon", "ru": "белка", "en": "squirrel" } },
+            { "id": "fox", "emoji": "🦊", "label": { "uz": "tulki", "ru": "лиса", "en": "fox" } },
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Ayiq qishda uzoq uyquga ketadi.", "ru": "Верно? Медведь зимой впадает в долгую спячку.", "en": "True? A bear goes into a long sleep in winter." },
+      "hint": { "uz": "Ayiq kuzda semirib, gʻorda uxlab yotadi.", "ru": "Медведь осенью толстеет и спит в берлоге.", "en": "The bear fattens up in autumn and sleeps in a den." },
+      "explanation": { "uz": "Toʻgʻri. Ayiq butun qish gʻorida uxlab chiqadi.", "ru": "Верно. Медведь всю зиму спит в берлоге.", "en": "True. The bear sleeps in its den all winter." },
+      "widget": { "type": "true_false", "props": { "emoji": "🐻", "answer": true } }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi qush qishda issiq oʻlkalarga uchib ketadi?", "ru": "Какая птица улетает в тёплые края зимой?", "en": "Which bird flies to warm lands in winter?" },
+      "hint": { "uz": "Suvda suzadigan qush sovuqdan uchib ketadi.", "ru": "Водоплавающая птица улетает от холода.", "en": "The water bird flies away from the cold." },
+      "explanation": { "uz": "Oʻrdak issiq oʻlkalarga uchib ketadi. Tovuq va kaptar shu yerda qoladi.", "ru": "Утка улетает в тёплые края. Курица и голубь остаются.", "en": "The duck flies to warm lands. The hen and pigeon stay here." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "duck", "emoji": "🦆", "label": { "uz": "oʻrdak", "ru": "утка", "en": "duck" }, "correct": true },
+            { "id": "hen", "emoji": "🐔", "label": { "uz": "tovuq", "ru": "курица", "en": "hen" } },
+            { "id": "pigeon", "emoji": "🕊️", "label": { "uz": "kaptar", "ru": "голубь", "en": "pigeon" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir hayvonni qishdagi holatiga ajrat!", "ru": "Разложи каждое животное по тому, что делает зимой!", "en": "Sort each animal by what it does in winter!" },
+      "hint": { "uz": "Kimdir uxlaydi, kimdir uchib ketadi, kimdir shu yerda qoladi.", "ru": "Кто-то спит, кто-то улетает, кто-то остаётся.", "en": "Some sleep, some fly away, some stay here." },
+      "explanation": { "uz": "Ayiq va tipratikan uxlaydi, oʻrdak uchib ketadi, boʻri va tulki shu yerda qoladi.", "ru": "Медведь и ёж спят, утка улетает, волк и лиса остаются.", "en": "Bear and hedgehog sleep, the duck flies away, wolf and fox stay here." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "sleep", "label": { "uz": "😴 Uxlaydi", "ru": "😴 Спит", "en": "😴 Sleeps" }, "color": "#5a2d82" },
+            { "id": "fly", "label": { "uz": "✈️ Uchib ketadi", "ru": "✈️ Улетает", "en": "✈️ Flies away" }, "color": "#2f9fe0" },
+            { "id": "stay", "label": { "uz": "❄️ Shu yerda", "ru": "❄️ Остаётся", "en": "❄️ Stays" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" }, "bin": "sleep" },
+            { "id": "hedgehog", "emoji": "🦔", "label": { "uz": "tipratikan", "ru": "ёж", "en": "hedgehog" }, "bin": "sleep" },
+            { "id": "duck", "emoji": "🦆", "label": { "uz": "oʻrdak", "ru": "утка", "en": "duck" }, "bin": "fly" },
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" }, "bin": "stay" },
+            { "id": "fox", "emoji": "🦊", "label": { "uz": "tulki", "ru": "лиса", "en": "fox" }, "bin": "stay" },
+            { "id": "squirrel", "emoji": "🐿️", "label": { "uz": "olmaxon", "ru": "белка", "en": "squirrel" }, "bin": "stay" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir hayvonni qishlash joyiga ula!", "ru": "Соедини каждое животное с его зимним жильём!", "en": "Match each animal to its winter home!" },
+      "hint": { "uz": "Ayiq gʻorda, olmaxon daraxt kovagida qishlaydi.", "ru": "Медведь в берлоге, белка в дупле дерева.", "en": "The bear winters in a den, the squirrel in a tree hollow." },
+      "explanation": { "uz": "Har bir hayvonning oʻz qishlash joyi bor: gʻor, kovak, in yoki tuynuk.", "ru": "У каждого животного своё зимнее жильё: берлога, дупло, нора или норка.", "en": "Each animal has its own winter home: a den, a hollow, a burrow or a hole." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" } }, "right": { "label": { "uz": "gʻor", "ru": "берлога", "en": "den" } } },
+            { "left": { "emoji": "🐿️", "label": { "uz": "olmaxon", "ru": "белка", "en": "squirrel" } }, "right": { "label": { "uz": "daraxt kovagi", "ru": "дупло", "en": "tree hollow" } } },
+            { "left": { "emoji": "🦊", "label": { "uz": "tulki", "ru": "лиса", "en": "fox" } }, "right": { "label": { "uz": "yer ini", "ru": "нора", "en": "burrow" } } },
+            { "left": { "emoji": "🐭", "label": { "uz": "sichqon", "ru": "мышь", "en": "mouse" } }, "right": { "label": { "uz": "tuynuk", "ru": "норка", "en": "little hole" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi hayvon qishda oq tusga kiradi?", "ru": "Какое животное зимой становится белым?", "en": "Which animal turns white in winter?" },
+      "hint": { "uz": "Oq qorda koʻrinmasligi uchun rangini oʻzgartiradi.", "ru": "Меняет цвет, чтобы быть незаметным на снегу.", "en": "It changes color to hide in the white snow." },
+      "explanation": { "uz": "Quyon qishda oq tusga kiradi va qorda koʻrinmaydi. Bu uni himoya qiladi.", "ru": "Заяц зимой белеет и незаметен на снегу. Это его защищает.", "en": "The hare turns white in winter and hides in the snow. This protects it." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "hare", "emoji": "🐇", "label": { "uz": "quyon", "ru": "заяц", "en": "hare" }, "correct": true },
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" } },
+            { "id": "crow", "emoji": "🐦", "label": { "uz": "qargʻa", "ru": "ворона", "en": "crow" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qishda uygʻoq yuradigan hayvonlarni belgila!", "ru": "Отметь животных, которые зимой не спят!", "en": "Tap the animals that stay awake in winter!" },
+      "hint": { "uz": "Boʻri, tulki va olmaxon qishda ham harakatda boʻladi.", "ru": "Волк, лиса и белка зимой активны.", "en": "The wolf, fox and squirrel stay active in winter." },
+      "explanation": { "uz": "Boʻri, tulki va olmaxon uxlamaydi. Ayiq va tipratikan esa uyquga ketadi.", "ru": "Волк, лиса и белка не спят. Медведь и ёж впадают в спячку.", "en": "Wolf, fox and squirrel do not sleep. The bear and hedgehog hibernate." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" }, "correct": true },
+            { "id": "fox", "emoji": "🦊", "label": { "uz": "tulki", "ru": "лиса", "en": "fox" }, "correct": true },
+            { "id": "squirrel", "emoji": "🐿️", "label": { "uz": "olmaxon", "ru": "белка", "en": "squirrel" }, "correct": true },
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" } },
+            { "id": "hedgehog", "emoji": "🦔", "label": { "uz": "tipratikan", "ru": "ёж", "en": "hedgehog" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Olmaxon kuzda qishga oziq gʻamlaydi.", "ru": "Верно? Белка осенью запасает корм на зиму.", "en": "True? The squirrel stores food for winter in autumn." },
+      "hint": { "uz": "Olmaxon yongʻoq va urugʻlarni yigʻib qoʻyadi.", "ru": "Белка собирает орехи и семена.", "en": "The squirrel gathers nuts and seeds." },
+      "explanation": { "uz": "Toʻgʻri. Olmaxon kuzda yongʻoq gʻamlab, qishda yeydi.", "ru": "Верно. Белка запасает орехи осенью и ест их зимой.", "en": "True. The squirrel stores nuts in autumn and eats them in winter." },
+      "widget": { "type": "true_false", "props": { "emoji": "🐿️", "answer": true } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi hayvon qishda UXLAMAYDI?", "ru": "Какое животное зимой НЕ спит?", "en": "Which animal does NOT sleep in winter?" },
+      "hint": { "uz": "U qishda ham ov qiladi va harakatda boʻladi.", "ru": "Он и зимой охотится и активен.", "en": "It hunts and stays active in winter too." },
+      "explanation": { "uz": "Boʻri qishda uxlamaydi, u ov qiladi. Ayiq va tipratikan uxlaydi.", "ru": "Волк зимой не спит, он охотится. Медведь и ёж спят.", "en": "The wolf does not sleep in winter, it hunts. The bear and hedgehog sleep." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" }, "correct": true },
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "медведь", "en": "bear" } },
+            { "id": "hedgehog", "emoji": "🦔", "label": { "uz": "tipratikan", "ru": "ёж", "en": "hedgehog" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Hamma qushlar qishda issiq oʻlkalarga uchib ketadi.", "ru": "Верно? Все птицы улетают зимой в тёплые края.", "en": "True? All birds fly to warm lands in winter." },
+      "hint": { "uz": "Chumchuq va kaptar qishda shu yerda qoladi.", "ru": "Воробей и голубь остаются на зиму.", "en": "The sparrow and pigeon stay for winter." },
+      "explanation": { "uz": "Notoʻgʻri. Hamma qush ham uchib ketmaydi — chumchuq va kaptar qoladi.", "ru": "Неверно. Не все птицы улетают — воробей и голубь остаются.", "en": "False. Not all birds fly away — the sparrow and pigeon stay." },
+      "widget": { "type": "true_false", "props": { "emoji": "🐦", "answer": false } }
+    }
+  ]
+}

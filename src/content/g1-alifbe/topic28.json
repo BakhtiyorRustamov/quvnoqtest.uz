@@ -1,0 +1,510 @@
+{
+  "topicId": "g1-alifbe-28",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🥾🐐🍎",
+  "title": {
+    "uz": "«E e» — oʻqish mashqi",
+    "ru": "Буква «E e» — чтение",
+    "en": "Letter “E e” — reading"
+  },
+  "recall": {
+    "uz": "«E» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: etik, echki. «E» — unli tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «E». Теперь читаем слова: etik, echki. «E» — гласный звук. Тренируем чтение!",
+    "en": "We learned the letter “E”. Now we read words: etik, echki. “E” is a vowel. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🥾 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🥾 Прочитай и нажми верно написанное слово!",
+        "en": "🥾 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «etik».",
+        "ru": "Прочитай: «etik».",
+        "en": "Read it: “etik”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «etik».",
+        "ru": "Верно — «etik».",
+        "en": "Correct — “etik”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🥾",
+          "options": [
+            {
+              "id": "ok",
+              "word": "etik",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "itik"
+            },
+            {
+              "id": "w2",
+              "word": "etek"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «etik» soʻzini tuz!",
+        "ru": "Составь слово «etik»!",
+        "en": "Build the word “etik”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «etik» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «etik».",
+        "en": "Great! You read “etik”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🥾",
+          "word": "etik",
+          "label": {
+            "uz": "etik",
+            "ru": "сапог",
+            "en": "boot"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🥾 «etik»da «e» tovushi qaysi katakchada?",
+        "ru": "🥾 В какой клетке звук «e» в слове «etik»?",
+        "en": "🥾 Which box has the “e” sound in “etik”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«etik»da «e» tovushi toʻgʻri joyda.",
+        "ru": "В «etik» звук «e» на верном месте.",
+        "en": "In “etik” the “e” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🥾",
+          "word": {
+            "uz": "etik",
+            "ru": "etik",
+            "en": "etik"
+          },
+          "sound": "e",
+          "cells": [
+            "e",
+            "t",
+            "i",
+            "k"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐐 «echki» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🐐 Похлопай слово «echki» по слогам!",
+        "en": "🐐 Clap the word “echki” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«echki» — 2 boʻgʻin.",
+        "ru": "«echki» — 2 слога.",
+        "en": "“echki” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🐐",
+          "word": {
+            "uz": "echki",
+            "ru": "echki",
+            "en": "echki"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«E» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «E»!",
+        "en": "Tap the words that have the “E” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «e» tovushi bor.",
+        "ru": "Верно! В них есть звук «e».",
+        "en": "Right! They have the “e” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🥾",
+              "label": {
+                "uz": "etik",
+                "ru": "etik",
+                "en": "etik"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐐",
+              "label": {
+                "uz": "echki",
+                "ru": "echki",
+                "en": "echki"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            },
+            {
+              "id": "d2",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«etik» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «etik». Найди картинку!",
+        "en": "Read “etik”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«etik» — 🥾.",
+        "ru": "«etik» — 🥾.",
+        "en": "“etik” is 🥾."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🥾",
+              "label": {
+                "uz": "etik",
+                "ru": "сапог",
+                "en": "boot"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🐐",
+              "label": {
+                "uz": "echki",
+                "ru": "echki",
+                "en": "echki"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🥾"
+              },
+              "right": {
+                "label": {
+                  "uz": "etik",
+                  "ru": "etik",
+                  "en": "etik"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐐"
+              },
+              "right": {
+                "label": {
+                  "uz": "echki",
+                  "ru": "echki",
+                  "en": "echki"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍞"
+              },
+              "right": {
+                "label": {
+                  "uz": "non",
+                  "ru": "non",
+                  "en": "non"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Bek … oldi.",
+        "ru": "Составь предложение: Bek … oldi.",
+        "en": "Order the words: Bek … oldi."
+      },
+      "hint": {
+        "uz": "Bek — etik — oldi.",
+        "ru": "Bek — etik — oldi.",
+        "en": "Bek — etik — oldi."
+      },
+      "explanation": {
+        "uz": "«Bek etik oldi.» — gap oʻqiding!",
+        "ru": "«Bek etik oldi.» — предложение!",
+        "en": "“Bek etik oldi.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Bek",
+                "ru": "Bek",
+                "en": "Bek"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "etik",
+                "ru": "etik",
+                "en": "etik"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🥾"
+              },
+              "b": {
+                "label": {
+                  "uz": "etik",
+                  "ru": "etik",
+                  "en": "etik"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐐"
+              },
+              "b": {
+                "label": {
+                  "uz": "echki",
+                  "ru": "echki",
+                  "en": "echki"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«etik» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «etik»?",
+        "en": "How many sounds are in “etik”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«etik»da 4 ta tovush bor.",
+        "ru": "В «etik» 4 звука.",
+        "en": "“etik” has 4 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

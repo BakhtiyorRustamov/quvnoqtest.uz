@@ -1,0 +1,162 @@
+{
+  "topicId": "g1-oqish-57",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌾🌟📖",
+  "title": {
+    "uz": "Maqtanchoq boʻlmang",
+    "ru": "Не будьте хвастливыми",
+    "en": "Don't be boastful"
+  },
+  "recall": {
+    "uz": "«Maqtanchoq quyon» ertagini tinglab oʻqiymiz va maqtanchoqlik yomon odat ekanini bilib olamiz.",
+    "ru": "Слушаем сказку «Хвастливый заяц» и узнаём, что хвастовство — дурная привычка.",
+    "en": "We read “The boastful hare” and learn that boasting is a bad habit."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Maqtanchoq quyon",
+        "variant": "story",
+        "audio": "g1-oqish-57-q1",
+        "lines": [
+          "Bir kuni maqtanchoq ola quyon sheriklariga maqtanibdi:",
+          "«Boʻridan qoʻrqmayman, tulkini bir puflab uchiraman!»",
+          "Birdan boʻri kelib qolibdi.",
+          "Ola quyon hammadan oldin qochib, uyasiga bekinibdi.",
+          "Kechqurun zoʻrgʻa qutulib, uyga qaytibdi.",
+          "«Xayriyat, omon ekansan!» — debdi sheriklari.",
+          "Ammo ola quyon yana kerilib maqtana boshlabdi."
+        ]
+      } },
+      "prompt": { "uz": "Ertakni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Boʻri kelganda ola quyon nima qildi?", "ru": "Что сделал заяц, когда пришёл волк?", "en": "What did the hare do when the wolf came?" },
+      "explanation": { "uz": "Ertak maqtanchoqlik yomon odat ekani haqida.", "ru": "Сказка о том, что хвастовство — дурная привычка.", "en": "The tale shows that boasting is a bad habit." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "hidden_words", "props": {
+        "words": ["maqtanchoq", "quyon"],
+        "clue": { "uz": "Ertak qahramonlari yashiringan", "ru": "Здесь спрятаны герои сказки", "en": "The tale's characters are hidden here" }
+      } },
+      "prompt": { "uz": "Yashiringan soʻzlarni ajrating!", "ru": "Раздели спрятанные слова!", "en": "Split the hidden words apart!" },
+      "hint": { "uz": "Har soʻz tugagan joyga chiziq qoʻy.", "ru": "Ставь черту там, где кончается слово.", "en": "Place a divider where each word ends." },
+      "explanation": { "uz": "Yashiringan soʻzlar: maqtanchoq, quyon.", "ru": "Спрятанные слова: maqtanchoq, quyon.", "en": "The hidden words: maqtanchoq, quyon." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "who_said", "props": {
+        "characters": [
+          { "name": { "uz": "Maqtanchoq quyon", "ru": "Хвастливый заяц", "en": "The boastful hare" } },
+          { "name": { "uz": "Sheriklari", "ru": "Товарищи", "en": "His friends" } }
+        ],
+        "quotes": [
+          { "text": { "uz": "Boʻridan qoʻrqmayman, tulkini puflab uchiraman!", "ru": "Не боюсь волка, лису сдую одним дыханием!", "en": "I don't fear the wolf; I'll blow the fox away!" }, "speaker": 0 },
+          { "text": { "uz": "Xayriyat, omon ekansan!", "ru": "Слава богу, ты жив!", "en": "Thank goodness you're safe!" }, "speaker": 1 },
+          { "text": { "uz": "Boʻriga yem boʻlmadim, qochib qutuldim!", "ru": "Не стал добычей волка, убежал!", "en": "I didn't become the wolf's meal; I escaped!" }, "speaker": 0 }
+        ],
+        "clue": { "uz": "Bu gap maqtanchoq quyonniki yoki sheriklariniki?", "ru": "Чьи это слова?", "en": "Whose line is it?" }
+      } },
+      "prompt": { "uz": "Bu gapni kim aytdi?", "ru": "Кто это сказал?", "en": "Who said this line?" },
+      "hint": { "uz": "Maqtangan gap kimga tegishli?", "ru": "Чьи это хвастливые слова?", "en": "Whose boastful words are these?" },
+      "explanation": { "uz": "Maqtanish — quyonniki; xavotir — sheriklariniki.", "ru": "Хвастовство — зайца; тревога — товарищей.", "en": "The boasting is the hare's; the worry is his friends'." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Ola quyon boʻridan qoʻrqmasligini aytib maqtandi.", "ru": "Заяц хвастался, что не боится волка.", "en": "The hare boasted that he did not fear the wolf." },
+        "answer": "true",
+        "why": { "uz": "Ertak boshida quyon aynan shunday maqtanadi.", "ru": "В начале сказки заяц так и хвастается.", "en": "At the start the hare boasts exactly this." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Quyon nima deb maqtandi?", "ru": "Чем хвастался заяц?", "en": "What did the hare boast about?" },
+      "explanation": { "uz": "Toʻgʻri: quyon boʻridan qoʻrqmasligini aytdi.", "ru": "Верно: заяц хвастался бесстрашием.", "en": "True: the hare boasted he wasn't afraid." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Boʻri kelganda ola quyon jasorat koʻrsatdi.", "ru": "Когда пришёл волк, заяц проявил храбрость.", "en": "When the wolf came, the hare showed courage." },
+        "answer": "false",
+        "why": { "uz": "Aksincha, u hammadan oldin qochib bekinib oldi.", "ru": "Наоборот, он первым убежал и спрятался.", "en": "On the contrary, he ran and hid first of all." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Quyon boʻridan qochdimi yoki jang qildimi?", "ru": "Заяц убежал или сразился?", "en": "Did the hare flee or fight?" },
+      "explanation": { "uz": "Notoʻgʻri: quyon jasorat emas, qoʻrquv koʻrsatib qochdi.", "ru": "Неверно: заяц не храбрился, а убежал в страхе.", "en": "False: the hare fled in fear, not courage." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "kerilmoq", "right": "maqtanmoq" },
+        { "left": "sherik", "right": "doʻst, oʻrtoq" },
+        { "left": "zoʻrgʻa", "right": "qiyinchilik bilan" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«kerilmoq» — maqtanmoq degani.", "ru": "«kerilmoq» — хвастаться.", "en": "“kerilmoq” means to boast." },
+      "explanation": { "uz": "kerilmoq = maqtanmoq; sherik = doʻst; zoʻrgʻa = qiyinchilik bilan.", "ru": "kerilmoq = хвастаться; sherik = друг; zoʻrgʻa = еле-еле.", "en": "kerilmoq = to boast; sherik = a friend; zoʻrgʻa = barely." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Maqtanchoq boʻlmaslik, kamtar boʻlish kerak", "ru": "Не быть хвастливым, быть скромным", "en": "Not to boast, but to be modest" },
+        { "uz": "Koʻproq maqtanish kerak", "ru": "Нужно больше хвастаться", "en": "One should boast more" },
+        { "uz": "Doim qochib yurish kerak", "ru": "Нужно всё время убегать", "en": "One should always run away" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Ertak nimaga oʻrgatadi?", "ru": "Чему учит сказка?", "en": "What does the tale teach?" },
+      "hint": { "uz": "Maqtanchoq — pand yeydi, kamtar — qand yeydi.", "ru": "Хвастун беду наживёт, скромный — награду.", "en": "The boaster suffers; the modest one thrives." },
+      "explanation": { "uz": "Ertak maqtanchoq emas, kamtar boʻlishga oʻrgatadi.", "ru": "Сказка учит быть скромным, а не хвастливым.", "en": "The tale teaches modesty, not boasting." },
+      "openEnd": { "uz": "Maqtanchoq odam bilan doʻstlashish yoqadimi? Nega?", "ru": "Приятно ли дружить с хвастуном? Почему?", "en": "Is it pleasant to befriend a boaster? Why?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "kamtarin", "match": true },
+        { "text": "muloyim", "match": true },
+        { "text": "kamgap", "match": true },
+        { "text": "maqtanchoq", "match": false },
+        { "text": "kerilgan", "match": false }
+      ] } },
+      "prompt": { "uz": "Kamtar bolaga xos soʻzlarni bos!", "ru": "Нажми слова о скромном ребёнке!", "en": "Tap the words that describe a modest child!" },
+      "hint": { "uz": "Kamtar bola oʻzini maqtamaydi.", "ru": "Скромный ребёнок себя не хвалит.", "en": "A modest child doesn't boast." },
+      "explanation": { "uz": "kamtarin, muloyim, kamgap — kamtarlik; maqtanchoq, kerilgan — yoʻq.", "ru": "скромный, кроткий, немногословный — скромность; хвастливый — нет.", "en": "modest, gentle, soft-spoken are modesty; boastful is not." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": {
+        "words": ["Maqtanchoq", "pand", "yeydi,", "kamtarin", "qand", "yeydi."],
+        "emoji": "🌟",
+        "clue": { "uz": "Ertak mazmuniga mos maqol", "ru": "Пословица по смыслу сказки", "en": "A proverb matching the tale" }
+      } },
+      "prompt": { "uz": "Soʻzlarni tartibla va maqolni oʻqing!", "ru": "Расставь слова и прочитай пословицу!", "en": "Order the words to read the proverb!" },
+      "hint": { "uz": "«Maqtanchoq» soʻzidan boshlanadi.", "ru": "Начинается со слова «Maqtanchoq».", "en": "It starts with the word “Maqtanchoq”." },
+      "explanation": { "uz": "«Maqtanchoq — pand yeydi, kamtarin — qand yeydi.»", "ru": "«Хвастун беду наживёт, скромный — сладость».", "en": "“The boaster reaps trouble; the modest one reaps sweetness.”" }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "kamtar", "syllables": ["kam", "tar"], "emoji": "🌾", "clue": { "uz": "Oʻzini maqtamaydigan, kamsuqum odam", "ru": "Скромный человек", "en": "A modest person" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "kam + tar = ?", "ru": "kam + tar = ?", "en": "kam + tar = ?" },
+      "explanation": { "uz": "kam-tar → kamtar. Maqtanchoqning aksi.", "ru": "kam-tar → kamtar (скромный).", "en": "kam-tar → kamtar (modest)." }
+    }
+  ]
+}

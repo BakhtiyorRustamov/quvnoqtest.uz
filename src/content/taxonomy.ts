@@ -26,16 +26,18 @@ const S = (key: string, uz: string, ru: string, en: string, sketch: string, colo
 
 /** Master subject registry (names per §7.1, trilingual). */
 export const SUBJECTS: Record<string, SubjectDef> = {
+  alifbe: S('alifbe', 'Alifbe', 'Алифбе (букварь)', 'Alphabet primer', 'lang', '#F4693B'),
   'ona-tili-savod': S('ona-tili-savod', 'Ona tili', 'Родной язык', 'Native language', 'lang', '#1FA7E0'),
   'oqish-savodxonligi': S('oqish-savodxonligi', 'Oʻqish savodxonligi', 'Читательская грамотность', 'Reading literacy', 'lit', '#C2298A'),
   matematika: S('matematika', 'Matematika', 'Математика', 'Mathematics', 'math', '#F39A1F'),
+  fikrlash: S('fikrlash', 'Fikrlash qobiliyati mashqlari', 'Упражнения на мышление', 'Thinking skills practice', 'info', '#5A2D82'),
   'tabiiy-fanlar': S('tabiiy-fanlar', 'Tabiiy fanlar', 'Естественные науки', 'Natural science', 'nature', '#8DC63F'),
   tarbiya: S('tarbiya', 'Tarbiya', 'Воспитание', 'Character education', 'heart', '#C2298A'),
   'tasviriy-sanat': S('tasviriy-sanat', 'Tasviriy sanʼat', 'Изобразительное искусство', 'Visual arts', 'art', '#E14B4B'),
   musiqa: S('musiqa', 'Musiqa', 'Музыка', 'Music', 'music', '#5A2D82'),
   texnologiya: S('texnologiya', 'Texnologiya', 'Технология', 'Technology', 'tech', '#1E3A5F'),
   'ingliz-tili': S('ingliz-tili', 'Ingliz tili', 'Английский язык', 'English', 'english', '#1FA7E0'),
-  informatika: S('informatika', 'Informatika va axborot texnologiyalari', 'Информатика и ИТ', 'Informatics & IT', 'info', '#5A2D82'),
+  informatika: S('informatika', 'Informatika va axborot texnologiyalari', 'Информатика и ИТ', 'Informatics & IT', 'info', '#12A6A0'),
   'ona-tili': S('ona-tili', 'Ona tili', 'Родной язык', 'Native language', 'lang', '#1FA7E0'),
   adabiyot: S('adabiyot', 'Adabiyot', 'Литература', 'Literature', 'lit', '#C2298A'),
   'rus-tili': S('rus-tili', 'Rus tili', 'Русский язык', 'Russian', 'rus', '#E14B4B'),
@@ -66,7 +68,7 @@ const G = (grade: number, tier: GradeDef['tier'], keys: string[]): GradeDef => (
 
 /** Grade → subject map, order preserved exactly per SRS §7.1. */
 export const GRADES: GradeDef[] = [
-  G(1, 1, ['ona-tili-savod', 'oqish-savodxonligi', 'matematika', 'tabiiy-fanlar', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
+  G(1, 1, ['alifbe', 'ona-tili-savod', 'oqish-savodxonligi', 'matematika', 'fikrlash', 'tabiiy-fanlar', 'informatika', 'tarbiya', 'tasviriy-sanat', 'texnologiya', 'ingliz-tili']),
   G(2, 1, ['ona-tili-savod', 'matematika', 'tabiiy-fanlar', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
   G(3, 2, ['ona-tili-savod', 'matematika', 'tabiiy-fanlar', 'informatika', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
   G(4, 2, ['ona-tili-savod', 'matematika', 'tabiiy-fanlar', 'informatika', 'tarbiya', 'tasviriy-sanat', 'musiqa', 'texnologiya', 'ingliz-tili']),
@@ -87,21 +89,52 @@ export function getSubject(gradeNum: number, subjectKey: string): SubjectDef | u
   return getGrade(gradeNum)?.subjects.find((s) => s.key === subjectKey);
 }
 
-/** Interactive subjects in v1.0: grade-1 Matematika and grade-1 Ona tili. */
+/** Interactive subjects in v1.0: grade-1 Matematika, Ona tili, Fikrlash, Oʻqish, Tabiiy fanlar. */
 export function isUnlockedSubject(gradeNum: number, subjectKey: string): boolean {
-  return gradeNum === 1 && (subjectKey === 'matematika' || subjectKey === 'ona-tili-savod');
+  return (
+    gradeNum === 1 &&
+    (subjectKey === 'matematika' ||
+      subjectKey === 'ona-tili-savod' ||
+      subjectKey === 'fikrlash' ||
+      subjectKey === 'oqish-savodxonligi' ||
+      subjectKey === 'tabiiy-fanlar' ||
+      subjectKey === 'alifbe' ||
+      subjectKey === 'informatika' ||
+      subjectKey === 'tarbiya' ||
+      subjectKey === 'tasviriy-sanat' ||
+      subjectKey === 'texnologiya' ||
+      subjectKey === 'ingliz-tili')
+  );
 }
 
 /** Route to the built subject view for an unlocked subject (else null). */
 export function unlockedSubjectHref(gradeNum: number, subjectKey: string): string | null {
+  if (gradeNum === 1 && subjectKey === 'alifbe') return '/dashboard/g1-alifbe';
+  if (gradeNum === 1 && subjectKey === 'informatika') return '/dashboard/g1-informatika';
+  if (gradeNum === 1 && subjectKey === 'tarbiya') return '/dashboard/g1-tarbiya';
+  if (gradeNum === 1 && subjectKey === 'tasviriy-sanat') return '/dashboard/g1-art';
+  if (gradeNum === 1 && subjectKey === 'texnologiya') return '/dashboard/g1-tex';
   if (gradeNum === 1 && subjectKey === 'matematika') return '/dashboard/g1-math';
   if (gradeNum === 1 && subjectKey === 'ona-tili-savod') return '/dashboard/g1-ona';
+  if (gradeNum === 1 && subjectKey === 'fikrlash') return '/dashboard/g1-fikr';
+  if (gradeNum === 1 && subjectKey === 'oqish-savodxonligi') return '/dashboard/g1-oqish';
+  if (gradeNum === 1 && subjectKey === 'tabiiy-fanlar') return '/dashboard/g1-tabiiy';
+  if (gradeNum === 1 && subjectKey === 'ingliz-tili') return '/dashboard/g1-ingliz';
   return null;
 }
 
 /** progress subject key, e.g. `g1-math` for grade-1 Matematika. */
 export function progressSubjectKey(gradeNum: number, subjectKey: string): string {
+  if (gradeNum === 1 && subjectKey === 'alifbe') return 'g1-alifbe';
+  if (gradeNum === 1 && subjectKey === 'informatika') return 'g1-informatika';
+  if (gradeNum === 1 && subjectKey === 'tarbiya') return 'g1-tarbiya';
+  if (gradeNum === 1 && subjectKey === 'tasviriy-sanat') return 'g1-art';
+  if (gradeNum === 1 && subjectKey === 'texnologiya') return 'g1-tex';
   if (gradeNum === 1 && subjectKey === 'matematika') return 'g1-math';
   if (gradeNum === 1 && subjectKey === 'ona-tili-savod') return 'g1-ona';
+  if (gradeNum === 1 && subjectKey === 'fikrlash') return 'g1-fikr';
+  if (gradeNum === 1 && subjectKey === 'oqish-savodxonligi') return 'g1-oqish';
+  if (gradeNum === 1 && subjectKey === 'tabiiy-fanlar') return 'g1-tabiiy';
+  if (gradeNum === 1 && subjectKey === 'ingliz-tili') return 'g1-ingliz';
   return `g${gradeNum}-${subjectKey}`;
 }

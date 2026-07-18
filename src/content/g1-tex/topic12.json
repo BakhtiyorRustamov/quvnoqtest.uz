@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-12",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Qirqib, yelimlaymiz",
+    "ru": "Вырезаем и клеим",
+    "en": "Cut and glue"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻoz boʻlaklaridan mozaika rasm yasaymiz.",
+    "ru": "Сегодня из кусочков цветной бумаги сделаем мозаику.",
+    "en": "Today we make a mosaic picture from pieces of coloured paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Mozaika yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай мозаику. Выполняй каждый этап по рисунку!",
+        "en": "Make a mosaic. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Boʻlaklarni yaqin joyla.",
+        "ru": "Клей кусочки близко друг к другу.",
+        "en": "Place the pieces close together."
+      },
+      "explanation": {
+        "uz": "Ajoyib mozaika!",
+        "ru": "Замечательная мозаика!",
+        "en": "A wonderful mosaic!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            },
+            {
+              "uz": "karton",
+              "ru": "картон",
+              "en": "cardboard"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Rang-barang qogʻozlarni tanla.",
+              "ru": "Выбери разноцветную бумагу.",
+              "en": "Choose colourful paper."
+            },
+            {
+              "uz": "Ularni kichik boʻlaklarga qirq.",
+              "ru": "Разрежь её на маленькие кусочки.",
+              "en": "Cut it into small pieces."
+            },
+            {
+              "uz": "Boʻlaklardan kartonga rasm yasab yopishtir.",
+              "ru": "Из кусочков наклей картинку на картон.",
+              "en": "Glue the pieces onto the card to make a picture."
+            }
+          ],
+          "art": "cutglue",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

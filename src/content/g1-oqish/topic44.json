@@ -1,0 +1,167 @@
+{
+  "topicId": "g1-oqish-44",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "📜🏛️✅",
+  "title": {
+    "uz": "Boʻlim yuzasidan takrorlash",
+    "ru": "Повторение по разделу",
+    "en": "Section review"
+  },
+  "recall": {
+    "uz": "«Ajdodlar — bizning faxrimiz» boʻlimini takrorlaymiz: buyuk allomalar, ularning kashfiyotlari va hikmatli soʻzlarni eslaymiz.",
+    "ru": "Повторяем раздел «Предки — наша гордость»: великих учёных, их открытия и мудрые слова.",
+    "en": "We review the section “Ancestors — our pride”: the great scholars, their discoveries and wise sayings."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Ajdodlar — faxrimiz",
+        "variant": "poem",
+        "audio": "g1-oqish-44-q1",
+        "lines": [
+          "Ajdodlar — faxrimiz,",
+          "Ilm bilan dovrugʻli.",
+          "Beruniy-yu Ibn Sino,",
+          "Ulugʻbek — nomi ulugʻ.",
+          "",
+          "Ilm — eng katta boylik,",
+          "Kel, oʻrganaylik biz ham.",
+          "Ajdodga munosib boʻlib,",
+          "Yurtni ulugʻlaylik ham."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Ajdodlarimiz nima bilan mashhur boʻlgan?", "ru": "Чем прославились наши предки?", "en": "What made our ancestors famous?" },
+      "explanation": { "uz": "Sheʼr boʻlim gʻoyasini — ajdodlar va ilm qadrini takrorlaydi.", "ru": "Стихотворение повторяет идею раздела — предков и ценность знаний.", "en": "The poem reviews the section's idea — ancestors and the value of knowledge." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "Buyuk sarkarda", "right": "Amir Temur" },
+        { "left": "Tibbiyot ilmi", "right": "Ibn Sino" },
+        { "left": "Globusni yaratgan", "right": "Beruniy" }
+      ] } },
+      "prompt": { "uz": "Maʼlumotni tegishli ajdodga ula!", "ru": "Соедини сведение с нужным предком!", "en": "Match each fact to the right ancestor!" },
+      "hint": { "uz": "Har bir alloma bir ish bilan mashhur.", "ru": "Каждый учёный известен своим делом.", "en": "Each scholar is famous for one thing." },
+      "explanation": { "uz": "Sarkarda — Amir Temur; tibbiyot — Ibn Sino; globus — Beruniy.", "ru": "Полководец — Амир Темур; медицина — Ибн Сина; глобус — Беруни.", "en": "Commander — Amir Temur; medicine — Ibn Sina; the globe — Beruniy." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "cinquain", "props": {
+        "topic": { "uz": "Alloma", "ru": "Учёный", "en": "Scholar" },
+        "lines": [
+          { "label": { "uz": "Qanday?", "ru": "Какой?", "en": "What is he like?" }, "need": 2, "bank": ["dono", "bilimli", "mashhur", "zukko", "tirishqoq"] },
+          { "label": { "uz": "Nima qilgan?", "ru": "Что сделал?", "en": "What did he do?" }, "need": 2, "bank": ["kashfiyot qilgan", "kitob yozgan", "ilm bergan", "dunyoni oʻrgatgan"] },
+          { "label": { "uz": "Maʼnodosh soʻz", "ru": "Синоним", "en": "A synonym" }, "need": 1, "bank": ["olim", "donishmand", "bilimdon"] }
+        ]
+      } },
+      "prompt": { "uz": "«Alloma» soʻziga sinkveyn tuzing — mos soʻzlarni tanlang!", "ru": "Составь синквейн к слову «учёный»!", "en": "Build a cinquain for “scholar”!" },
+      "hint": { "uz": "Allomani taʼriflaydigan va u qilgan ishlar soʻzlarini tanla.", "ru": "Выбери, какой учёный и что он сделал.", "en": "Choose what a scholar is like and what he did." },
+      "explanation": { "uz": "Sinkveyn allomani sifat, ishlari va maʼnodosh soʻz bilan taʼriflaydi.", "ru": "Синквейн описывает учёного признаками, делами и синонимом.", "en": "The cinquain describes a scholar with qualities, deeds and a synonym." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Mirzo Ulugʻbek yulduzlar ilmini oʻrgangan.", "ru": "Мирзо Улугбек изучал науку о звёздах.", "en": "Mirzo Ulugbek studied the science of the stars." },
+        "answer": "true",
+        "why": { "uz": "Boʻlimda Ulugʻbek astronomiyani oʻrganib, rasadxona qurgani aytilgan.", "ru": "В разделе сказано, что Улугбек изучал астрономию и построил обсерваторию.", "en": "In the section, Ulugbek studied astronomy and built an observatory." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Ulugʻbek rasadxonada nimani kuzatgan?", "ru": "Что Улугбек наблюдал в обсерватории?", "en": "What did Ulugbek observe at the observatory?" },
+      "explanation": { "uz": "Toʻgʻri: Ulugʻbek yulduzlar ilmi — astronomiya bilan shugʻullangan.", "ru": "Верно: Улугбек занимался астрономией.", "en": "True: Ulugbek studied astronomy." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Bobur", "ru": "Бабур", "en": "Bobur" },
+        { "uz": "Al-Xorazmiy", "ru": "Аль-Хорезми", "en": "Al-Khwarizmi" },
+        { "uz": "Ibn Sino", "ru": "Ибн Сина", "en": "Ibn Sina" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "«12 yoshida taxtga oʻtirgan» — bu qaysi ajdodimiz?", "ru": "«Сел на трон в 12 лет» — кто это из предков?", "en": "“Took the throne at 12” — which ancestor is this?" },
+      "hint": { "uz": "U Andijonda tugʻilgan, Amir Temur avlodi.", "ru": "Он родился в Андижане, потомок Амира Темура.", "en": "He was born in Andijan, a descendant of Amir Temur." },
+      "explanation": { "uz": "Bu — Zahiriddin Muhammad Bobur; u 12 yoshida taxtga oʻtirgan.", "ru": "Это Захириддин Мухаммад Бабур; он сел на трон в 12 лет.", "en": "This is Zahiriddin Muhammad Bobur; he took the throne at 12." },
+      "openEnd": { "uz": "Boʻlimdagi qaysi ajdod haqida koʻproq bilishni xohlaysan?", "ru": "О каком предке раздела ты хочешь узнать больше?", "en": "Which ancestor from this section would you like to know more about?" }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Al-Xorazmiy", "match": true },
+        { "text": "Beruniy", "match": true },
+        { "text": "Bobur", "match": true },
+        { "text": "kompyuter", "match": false },
+        { "text": "avtomobil", "match": false }
+      ] } },
+      "prompt": { "uz": "Buyuk ajdodlarimizni bos!", "ru": "Нажми наших великих предков!", "en": "Tap our great ancestors!" },
+      "hint": { "uz": "Ular ilm va davlat arboblari boʻlgan.", "ru": "Они были учёными и государственными деятелями.", "en": "They were scholars and statesmen." },
+      "explanation": { "uz": "Al-Xorazmiy, Beruniy, Bobur — ajdodlar; kompyuter va avtomobil — narsalar.", "ru": "Аль-Хорезми, Беруни, Бабур — предки; компьютер и авто — вещи.", "en": "Al-Khwarizmi, Beruniy, Bobur are ancestors; a computer and a car are objects." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Ilm — eng katta" },
+          { "blank": "boylik" },
+          { "text": ", uni" },
+          { "blank": "oʻrganib" },
+          { "text": "ulgʻayamiz." }
+        ],
+        "bank": ["boylik", "oʻrganib", "unutib"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Bilim — bebaho xazina; uni egallash kerak.", "ru": "Знание — бесценное богатство; его нужно осваивать.", "en": "Knowledge is priceless wealth; we must gain it." },
+      "explanation": { "uz": "«Ilm — eng katta boylik, uni oʻrganib ulgʻayamiz».", "ru": "«Знание — величайшее богатство, изучая его, мы растём».", "en": "“Knowledge is the greatest wealth; learning it, we grow.”" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Ilm", "—", "eng", "katta", "boylik."], "emoji": "💎", "clue": { "uz": "Boʻlimning bosh gʻoyasi", "ru": "Главная мысль раздела", "en": "The section's main idea" } } },
+      "prompt": { "uz": "Soʻzlardan hikmatli gap tuzing!", "ru": "Составь мудрое предложение из слов!", "en": "Build the wise sentence from the words!" },
+      "hint": { "uz": "Gap «Ilm» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Ilm».", "en": "The sentence starts with “Ilm”." },
+      "explanation": { "uz": "«Ilm — eng katta boylik»: bilim insonni ulugʻ qiladi.", "ru": "«Знание — величайшее богатство»: оно возвышает человека.", "en": "“Knowledge is the greatest wealth”: it makes a person great." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "first_letters", "props": {
+        "objects": [
+          { "emoji": "🍎", "letter": "O", "name": { "uz": "olma", "ru": "яблоко", "en": "apple" } },
+          { "emoji": "🍋", "letter": "L", "name": { "uz": "limon", "ru": "лимон", "en": "lemon" } },
+          { "emoji": "🪡", "letter": "I", "name": { "uz": "igna", "ru": "игла", "en": "needle" } },
+          { "emoji": "🚗", "letter": "M", "name": { "uz": "mashina", "ru": "машина", "en": "car" } }
+        ],
+        "word": "OLIM",
+        "meaning": { "uz": "Olim — ilm bilan shugʻullanuvchi bilimdon inson.", "ru": "Olim — учёный.", "en": "Olim — a scholar." }
+      } },
+      "prompt": { "uz": "Rasmlarni chapdan oʻngga bosib, soʻzni oching!", "ru": "Нажимай картинки слева направо и открой слово!", "en": "Tap the pictures left to right to reveal the word!" },
+      "hint": { "uz": "Har bir rasm nomining birinchi harfini ol.", "ru": "Возьми первую букву каждого названия.", "en": "Take the first letter of each name." },
+      "explanation": { "uz": "olma, limon, igna, mashina → O-L-I-M → OLIM.", "ru": "яблоко, лимон, игла, машина → O-L-I-M → OLIM.", "en": "apple, lemon, needle, car → O-L-I-M → OLIM." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "Vatan", "syllables": ["Va", "tan"], "emoji": "🏞️", "clue": { "uz": "Ajdodlarimiz ulugʻlagan tugʻilgan yurt", "ru": "Родная земля, которую возвеличили предки", "en": "The homeland our ancestors made great" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "Va + tan = ?", "ru": "Va + tan = ?", "en": "Va + tan = ?" },
+      "explanation": { "uz": "Va-tan → Vatan. Ajdodlar ulugʻlagan yurt.", "ru": "Va-tan → Vatan (Родина).", "en": "Va-tan → Vatan (the Homeland)." }
+    }
+  ]
+}

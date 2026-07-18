@@ -1,0 +1,204 @@
+{
+  "topicId": "g1-tabiiy-10",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🌷☀️🍂❄️",
+  "title": {
+    "uz": "Toʻrt fasl olami",
+    "ru": "Мир четырёх сезонов",
+    "en": "The world of four seasons"
+  },
+  "recall": {
+    "uz": "Bir yilda toʻrt fasl bor: bahor, yoz, kuz va qish. Bahorda daraxtlar gullaydi, yozda issiq va meva koʻp, kuzda barglar toʻkiladi va hosil pishadi, qishda qor yogʻadi va sovuq boʻladi. Har faslga mos kiyim va ish bor.",
+    "ru": "В году четыре сезона: весна, лето, осень и зима. Весной деревья цветут, летом жарко и много фруктов, осенью опадают листья и созревает урожай, зимой идёт снег и холодно. Для каждого сезона своя одежда и дела.",
+    "en": "A year has four seasons: spring, summer, autumn and winter. In spring trees bloom, in summer it is hot with lots of fruit, in autumn leaves fall and the harvest ripens, in winter it snows and is cold. Each season has its own clothes and activities."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Fasllarni tartib bilan joyla — bahordan boshla!", "ru": "Расставь сезоны по порядку — начни с весны!", "en": "Put the seasons in order — start with spring!" },
+      "hint": { "uz": "Bahor, yoz, kuz, qish — shu tartibda.", "ru": "Весна, лето, осень, зима — в этом порядке.", "en": "Spring, summer, autumn, winter — in this order." },
+      "explanation": { "uz": "Fasllar tartibi: bahor, yoz, kuz, qish. Soʻng yana bahor keladi.", "ru": "Порядок сезонов: весна, лето, осень, зима. Потом снова весна.", "en": "Season order: spring, summer, autumn, winter. Then spring comes again." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "spring", "emoji": "🌷", "label": { "uz": "bahor", "ru": "весна", "en": "spring" } },
+            { "id": "summer", "emoji": "☀️", "label": { "uz": "yoz", "ru": "лето", "en": "summer" } },
+            { "id": "autumn", "emoji": "🍂", "label": { "uz": "kuz", "ru": "осень", "en": "autumn" } },
+            { "id": "winter", "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir faslni oʻz belgisiga ula!", "ru": "Соедини каждый сезон с его признаком!", "en": "Match each season to its sign!" },
+      "hint": { "uz": "Qish — qor odam, bahor — gullar, yoz — muzqaymoq, kuz — barg.", "ru": "Зима — снеговик, весна — цветы, лето — мороженое, осень — лист.", "en": "Winter — snowman, spring — flowers, summer — ice cream, autumn — leaf." },
+      "explanation": { "uz": "Har faslning oʻz belgisi bor: qor, gul, muzqaymoq, sarg'aygan barg.", "ru": "У каждого сезона свой признак: снег, цветы, мороженое, жёлтый лист.", "en": "Each season has its sign: snow, flowers, ice cream, a yellow leaf." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" } }, "right": { "emoji": "⛄", "label": { "uz": "qor odam", "ru": "снеговик", "en": "snowman" } } },
+            { "left": { "emoji": "🌷", "label": { "uz": "bahor", "ru": "весна", "en": "spring" } }, "right": { "emoji": "🌸", "label": { "uz": "gullash", "ru": "цветение", "en": "blossom" } } },
+            { "left": { "emoji": "☀️", "label": { "uz": "yoz", "ru": "лето", "en": "summer" } }, "right": { "emoji": "🍦", "label": { "uz": "muzqaymoq", "ru": "мороженое", "en": "ice cream" } } },
+            { "left": { "emoji": "🍂", "label": { "uz": "kuz", "ru": "осень", "en": "autumn" } }, "right": { "emoji": "🍁", "label": { "uz": "barg toʻkilishi", "ru": "листопад", "en": "falling leaves" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi fasl eng sovuq?", "ru": "Какое время года самое холодное?", "en": "Which season is the coldest?" },
+      "hint": { "uz": "Qor yogʻadigan, muzlaydigan fasl.", "ru": "Сезон, когда идёт снег и замерзает.", "en": "The season when it snows and freezes." },
+      "explanation": { "uz": "Qish eng sovuq fasl. Yoz esa eng issiq.", "ru": "Зима — самое холодное время года. Лето — самое тёплое.", "en": "Winter is the coldest season. Summer is the warmest." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "winter", "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" }, "correct": true },
+            { "id": "summer", "emoji": "☀️", "label": { "uz": "yoz", "ru": "лето", "en": "summer" } },
+            { "id": "spring", "emoji": "🌷", "label": { "uz": "bahor", "ru": "весна", "en": "spring" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi faslda daraxtlar gullaydi?", "ru": "В каком сезоне деревья цветут?", "en": "In which season do trees bloom?" },
+      "hint": { "uz": "Qishdan keyingi iliq fasl.", "ru": "Тёплый сезон после зимы.", "en": "The warm season after winter." },
+      "explanation": { "uz": "Bahorda daraxtlar gullaydi va yangi barg chiqaradi.", "ru": "Весной деревья цветут и распускают новые листья.", "en": "In spring trees bloom and grow new leaves." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "spring", "emoji": "🌸", "label": { "uz": "bahor", "ru": "весна", "en": "spring" }, "correct": true },
+            { "id": "autumn", "emoji": "🍂", "label": { "uz": "kuz", "ru": "осень", "en": "autumn" } },
+            { "id": "winter", "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kiyimlarni faslga ajrat: qish yoki yoz?", "ru": "Разложи одежду: зима или лето?", "en": "Sort the clothes: winter or summer?" },
+      "hint": { "uz": "Issiq kiyim — qishga; yengil kiyim — yozga.", "ru": "Тёплая одежда — зимой; лёгкая — летом.", "en": "Warm clothes for winter; light clothes for summer." },
+      "explanation": { "uz": "Palto, qoʻlqop, sharf — qish kiyimi. Futbolka, shlyapa, koʻzoynak — yoz kiyimi.", "ru": "Пальто, перчатки, шарф — зимняя одежда. Футболка, шляпа, очки — летняя.", "en": "Coat, mittens, scarf are winter clothes. T-shirt, hat, sunglasses are summer." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "winter", "label": { "uz": "❄️ Qish", "ru": "❄️ Зима", "en": "❄️ Winter" }, "color": "#2f9fe0" },
+            { "id": "summer", "label": { "uz": "☀️ Yoz", "ru": "☀️ Лето", "en": "☀️ Summer" }, "color": "#f39a1f" }
+          ],
+          "items": [
+            { "id": "coat", "emoji": "🧥", "label": { "uz": "palto", "ru": "пальто", "en": "coat" }, "bin": "winter" },
+            { "id": "mittens", "emoji": "🧤", "label": { "uz": "qoʻlqop", "ru": "перчатки", "en": "mittens" }, "bin": "winter" },
+            { "id": "scarf", "emoji": "🧣", "label": { "uz": "sharf", "ru": "шарф", "en": "scarf" }, "bin": "winter" },
+            { "id": "tshirt", "emoji": "👕", "label": { "uz": "futbolka", "ru": "футболка", "en": "t-shirt" }, "bin": "summer" },
+            { "id": "hat", "emoji": "👒", "label": { "uz": "shlyapa", "ru": "шляпа", "en": "sun hat" }, "bin": "summer" },
+            { "id": "sunglasses", "emoji": "🕶️", "label": { "uz": "koʻzoynak", "ru": "очки", "en": "sunglasses" }, "bin": "summer" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yozda nimalardan foydalanamiz? Belgila!", "ru": "Чем мы пользуемся летом? Отметь!", "en": "What do we use in summer? Tap them!" },
+      "hint": { "uz": "Muzqaymoq, shlyapa, koʻzoynak — yozda kerak.", "ru": "Мороженое, шляпа, очки — нужны летом.", "en": "Ice cream, hat, sunglasses are for summer." },
+      "explanation": { "uz": "Yozda muzqaymoq, shlyapa va koʻzoynakdan foydalanamiz. Qoʻlqop va palto — qishda.", "ru": "Летом нужны мороженое, шляпа и очки. Перчатки и пальто — зимой.", "en": "In summer we use ice cream, a hat and sunglasses. Mittens and a coat are for winter." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "icecream", "emoji": "🍦", "label": { "uz": "muzqaymoq", "ru": "мороженое", "en": "ice cream" }, "correct": true },
+            { "id": "hat", "emoji": "👒", "label": { "uz": "shlyapa", "ru": "шляпа", "en": "sun hat" }, "correct": true },
+            { "id": "sunglasses", "emoji": "🕶️", "label": { "uz": "koʻzoynak", "ru": "очки", "en": "sunglasses" }, "correct": true },
+            { "id": "mittens", "emoji": "🧤", "label": { "uz": "qoʻlqop", "ru": "перчатки", "en": "mittens" } },
+            { "id": "coat", "emoji": "🧥", "label": { "uz": "palto", "ru": "пальто", "en": "coat" } },
+            { "id": "snowman", "emoji": "⛄", "label": { "uz": "qor odam", "ru": "снеговик", "en": "snowman" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi faslda qor yogʻadi?", "ru": "В каком сезоне идёт снег?", "en": "In which season does it snow?" },
+      "hint": { "uz": "Eng sovuq faslda qor yogʻadi.", "ru": "Снег идёт в самое холодное время года.", "en": "It snows in the coldest season." },
+      "explanation": { "uz": "Qishda qor yogʻadi va hamma yoq oppoq boʻladi.", "ru": "Зимой идёт снег, и всё становится белым.", "en": "In winter it snows and everything turns white." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "winter", "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" }, "correct": true },
+            { "id": "summer", "emoji": "☀️", "label": { "uz": "yoz", "ru": "лето", "en": "summer" } },
+            { "id": "autumn", "emoji": "🍂", "label": { "uz": "kuz", "ru": "осень", "en": "autumn" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir faslni mos ishga ula!", "ru": "Соедини каждый сезон с его делом!", "en": "Match each season to its activity!" },
+      "hint": { "uz": "Bahor — ekin ekish, yoz — suzish, kuz — hosil, qish — changʻi.", "ru": "Весна — посадка, лето — купание, осень — урожай, зима — лыжи.", "en": "Spring — planting, summer — swimming, autumn — harvest, winter — skiing." },
+      "explanation": { "uz": "Har faslda oʻziga xos ish bor: ekin ekamiz, suzamiz, hosil yigʻamiz, changʻi uchamiz.", "ru": "В каждом сезоне свои дела: сажаем, купаемся, собираем урожай, катаемся на лыжах.", "en": "Each season has its own activity: planting, swimming, harvesting, skiing." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🌷", "label": { "uz": "bahor", "ru": "весна", "en": "spring" } }, "right": { "emoji": "🌱", "label": { "uz": "ekin ekish", "ru": "посадка", "en": "planting" } } },
+            { "left": { "emoji": "☀️", "label": { "uz": "yoz", "ru": "лето", "en": "summer" } }, "right": { "emoji": "🏊", "label": { "uz": "suzish", "ru": "купание", "en": "swimming" } } },
+            { "left": { "emoji": "🍂", "label": { "uz": "kuz", "ru": "осень", "en": "autumn" } }, "right": { "emoji": "🍎", "label": { "uz": "hosil yigʻish", "ru": "сбор урожая", "en": "harvest" } } },
+            { "left": { "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" } }, "right": { "emoji": "⛷️", "label": { "uz": "changʻi uchish", "ru": "лыжи", "en": "skiing" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Muzqaymoq yeyish va daryoda suzish qaysi faslga mos?", "ru": "Есть мороженое и купаться — какой это сезон?", "en": "Eating ice cream and swimming — which season?" },
+      "hint": { "uz": "Eng issiq, quyoshli fasl.", "ru": "Самый жаркий, солнечный сезон.", "en": "The hottest, sunniest season." },
+      "explanation": { "uz": "Yozda issiq boʻladi, shuning uchun suzamiz va muzqaymoq yeymiz.", "ru": "Летом жарко, поэтому купаемся и едим мороженое.", "en": "In summer it is hot, so we swim and eat ice cream." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "summer", "emoji": "☀️", "label": { "uz": "yoz", "ru": "лето", "en": "summer" }, "correct": true },
+            { "id": "winter", "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" } },
+            { "id": "autumn", "emoji": "🍂", "label": { "uz": "kuz", "ru": "осень", "en": "autumn" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bir yilda nechta fasl bor?", "ru": "Сколько сезонов в году?", "en": "How many seasons are in a year?" },
+      "hint": { "uz": "Bahor, yoz, kuz, qishni sana.", "ru": "Посчитай: весна, лето, осень, зима.", "en": "Count: spring, summer, autumn, winter." },
+      "explanation": { "uz": "Bir yilda toʻrt fasl bor: bahor, yoz, kuz va qish.", "ru": "В году четыре сезона: весна, лето, осень и зима.", "en": "A year has four seasons: spring, summer, autumn and winter." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": ["4", "2", "12"], "answerIndex": 0 }
+      }
+    }
+  ]
+}

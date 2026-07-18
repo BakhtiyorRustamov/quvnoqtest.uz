@@ -1,0 +1,530 @@
+{
+  "topicId": "g1-ingliz-19",
+  "subjectKey": "g1-ingliz",
+  "emojis": "👨‍👩‍👧‍👦👵👴👶",
+  "title": {
+    "uz": "Mening oilam",
+    "ru": "Моя семья",
+    "en": "My family"
+  },
+  "recall": {
+    "uz": "3-boʻlim: Oila! Bugun oila aʼzolarini inglizcha oʻrganamiz: mom — oyi, dad — dada, grandma — buvi, grandpa — bobo.",
+    "ru": "Раздел 3: Семья! Сегодня учим членов семьи по-английски: mom — мама, dad — папа, grandma — бабушка, grandpa — дедушка.",
+    "en": "Unit 3: Family! Today we learn family words in English: mom, dad, grandma and grandpa."
+  },
+  "ttsText": {
+    "uz": "Mening oilam.",
+    "en": "Unit 3: My family! Mom, dad, grandma and grandpa."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu kim?",
+        "ru": "Послушай. Кто это?",
+        "en": "Listen. Who is it?"
+      },
+      "hint": {
+        "uz": "«This is my …» — «Bu mening …».",
+        "ru": "«This is my …» — «Это мой(я) …».",
+        "en": "\"This is my mom.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! This is my mom — oyim.",
+        "ru": "Верно! This is my mom — мама.",
+        "en": "Right! This is my mom."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Who's this?",
+              "audio": {
+                "key": "ing19-q1-a",
+                "text": "Who's this?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "This is my mom!",
+              "audio": {
+                "key": "ing19-q1-b",
+                "text": "This is my mom!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu kim?",
+              "ru": "Кто это?",
+              "en": "Who is it?"
+            },
+            "choices": [
+              "grandma",
+              "dad",
+              "mom"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va buvini bos!",
+        "ru": "Послушай и нажми бабушку!",
+        "en": "Listen and tap grandma!"
+      },
+      "audio": {
+        "key": "ing19-q2",
+        "text": "Grandma! Tap grandma.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«grandma» — buvi.",
+        "ru": "«grandma» — бабушка.",
+        "en": "\"grandma\" is mom's mom."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Grandma — buvi.",
+        "ru": "Верно! Grandma — бабушка.",
+        "en": "Right! Grandma!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👵",
+              "label": "grandma",
+              "correct": true
+            },
+            {
+              "emoji": "👴",
+              "label": "grandpa"
+            },
+            {
+              "emoji": "👩",
+              "label": "mom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va boboni bos!",
+        "ru": "Послушай и нажми дедушку!",
+        "en": "Listen and tap grandpa!"
+      },
+      "audio": {
+        "key": "ing19-q3",
+        "text": "Grandpa! Tap grandpa.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«grandpa» — bobo.",
+        "ru": "«grandpa» — дедушка.",
+        "en": "\"grandpa\" is dad's dad."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Grandpa — bobo.",
+        "ru": "Верно! Grandpa — дедушка.",
+        "en": "Right! Grandpa!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👴",
+              "label": "grandpa",
+              "correct": true
+            },
+            {
+              "emoji": "👵",
+              "label": "grandma"
+            },
+            {
+              "emoji": "👨",
+              "label": "dad"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va dadani bos!",
+        "ru": "Послушай и нажми папу!",
+        "en": "Listen and tap dad!"
+      },
+      "audio": {
+        "key": "ing19-q4",
+        "text": "Dad! Tap dad.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«dad» — dada.",
+        "ru": "«dad» — папа.",
+        "en": "\"dad\" is your father."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Dad — dada.",
+        "ru": "Верно! Dad — папа.",
+        "en": "Right! Dad!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👨",
+              "label": "dad",
+              "correct": true
+            },
+            {
+              "emoji": "👦",
+              "label": "brother"
+            },
+            {
+              "emoji": "👴",
+              "label": "grandpa"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va oyini bos!",
+        "ru": "Послушай и нажми маму!",
+        "en": "Listen and tap mom!"
+      },
+      "audio": {
+        "key": "ing19-q5",
+        "text": "Mom! Tap mom.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«mom» — oyi.",
+        "ru": "«mom» — мама.",
+        "en": "\"mom\" is your mother."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Mom — oyi.",
+        "ru": "Верно! Mom — мама.",
+        "en": "Right! Mom!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👩",
+              "label": "mom",
+              "correct": true
+            },
+            {
+              "emoji": "👧",
+              "label": "sister"
+            },
+            {
+              "emoji": "👵",
+              "label": "grandma"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni oila aʼzosiga ula!",
+        "ru": "Соедини слово с членом семьи!",
+        "en": "Match each word to the family member!"
+      },
+      "hint": {
+        "uz": "mom, dad, brother, sister.",
+        "ru": "mom, dad, brother, sister.",
+        "en": "mom, dad, brother, sister."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Oila aʼzolarini bilding!",
+        "ru": "Отлично! Ты знаешь членов семьи!",
+        "en": "Awesome! You know the family!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "mom"
+              },
+              "right": {
+                "emoji": "👩"
+              }
+            },
+            {
+              "left": {
+                "label": "dad"
+              },
+              "right": {
+                "emoji": "👨"
+              }
+            },
+            {
+              "left": {
+                "label": "brother"
+              },
+              "right": {
+                "emoji": "👦"
+              }
+            },
+            {
+              "left": {
+                "label": "sister"
+              },
+              "right": {
+                "emoji": "👧"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, soʻz va rasm juftini top!",
+        "ru": "Открывай карточки: слово и картинка!",
+        "en": "Flip the cards: match each word to its picture!"
+      },
+      "hint": {
+        "uz": "grandma — 👵, grandpa — 👴, baby — 👶.",
+        "ru": "grandma — 👵, grandpa — 👴, baby — 👶.",
+        "en": "grandma — 👵, grandpa — 👴, baby — 👶."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "👵"
+              },
+              "b": {
+                "label": "grandma"
+              }
+            },
+            {
+              "a": {
+                "emoji": "👴"
+              },
+              "b": {
+                "label": "grandpa"
+              }
+            },
+            {
+              "a": {
+                "emoji": "👶"
+              },
+              "b": {
+                "label": "baby"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«brother»ning tarjimasi nima?",
+        "ru": "Что значит «brother»?",
+        "en": "What does \"brother\" mean?"
+      },
+      "hint": {
+        "uz": "Oʻgʻil bola — oilada.",
+        "ru": "Мальчик в семье.",
+        "en": "A boy in the family."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Brother — aka yoki uka.",
+        "ru": "Верно! Brother — брат.",
+        "en": "Right! A brother."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "aka / uka",
+              "ru": "брат",
+              "en": "a brother"
+            },
+            {
+              "uz": "opa / singil",
+              "ru": "сестра",
+              "en": "a sister"
+            },
+            {
+              "uz": "buvi",
+              "ru": "бабушка",
+              "en": "a grandma"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu kim?",
+        "ru": "Послушай. Кто это?",
+        "en": "Listen. Who is it?"
+      },
+      "hint": {
+        "uz": "«sister» — opa yoki singil.",
+        "ru": "«sister» — сестра.",
+        "en": "\"sister\" is a girl in the family."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! This is my sister.",
+        "ru": "Верно! This is my sister.",
+        "en": "Right! This is my sister."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Who's this?",
+              "audio": {
+                "key": "ing19-q9-a",
+                "text": "Who's this?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "This is my sister!",
+              "audio": {
+                "key": "ing19-q9-b",
+                "text": "This is my sister!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu kim?",
+              "ru": "Кто это?",
+              "en": "Who is it?"
+            },
+            "choices": [
+              "sister",
+              "dad",
+              "brother"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oila aʼzolarini belgila!",
+        "ru": "Отметь членов семьи!",
+        "en": "Tap the family members!"
+      },
+      "hint": {
+        "uz": "Buvi, dada, singil.",
+        "ru": "Бабушка, папа, сестра.",
+        "en": "Grandma, dad, sister."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular oila, robot va koptok esa yoʻq!",
+        "ru": "Молодец! Это семья, а робот и мяч — нет!",
+        "en": "Great! Those are family; a robot and a ball are not!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👵",
+              "label": "grandma",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👨",
+              "label": "dad",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👧",
+              "label": "sister",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🤖",
+              "label": "robot"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

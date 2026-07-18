@@ -17,6 +17,9 @@ import { api } from '@/lib/client';
 import { pick } from '@/lib/i18n-config';
 import { SUBJECT_HOME } from '@/lib/subjectHome';
 
+/** Reading-passage widget types (Oʻqish savodxonligi). */
+const READING_TYPES = new Set(['poem_reading', 'story_reading', 'karaoke_reading']);
+
 /**
  * Flow (SRS §6.2): Recall → 10 items one at a time → Completion.
  * step 0 = recall · steps 1..N = items · step N+1 = completion.
@@ -27,6 +30,13 @@ export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
   const { ensureUser } = useUser();
   const total = lesson.items.length;
   const home = SUBJECT_HOME[lesson.subjectKey];
+  // Oʻqish: the lesson's reading passage (first poem/story/karaoke item), reused
+  // by the "read again" button on every comprehension question.
+  const passageItem = lesson.items.find(
+    (it) => it.type === 'widget' && it.widget && READING_TYPES.has(it.widget.type)
+  );
+  const passage = passageItem?.widget;
+  const passageItemId = passageItem?.id;
   // Game/review lessons skip the read-aloud intro and start on the first item.
   const startStep = lesson.skipRecall ? 1 : 0;
   const [step, setStep] = useState(startStep);
@@ -117,6 +127,8 @@ export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
                 total={total}
                 locale={locale}
                 priorResult={results[step - 1]}
+                passage={passage}
+                passageItemId={passageItemId}
                 onDone={(c) => onItemDone(step - 1, c)}
                 onForward={() => setStep(step + 1 > total ? (results.every((r) => r !== null) ? total + 1 : step) : step + 1)}
               />

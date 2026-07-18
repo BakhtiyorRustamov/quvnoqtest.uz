@@ -1,0 +1,170 @@
+{
+  "topicId": "g1-alifbe-03",
+  "subjectKey": "g1-alifbe",
+  "emojis": "👨‍👩‍👧‍👦👏👵👴",
+  "title": {
+    "uz": "Oilam va boʻgʻinlar",
+    "ru": "Моя семья и слоги",
+    "en": "My family and syllables"
+  },
+  "recall": {
+    "uz": "Oila — eng aziz odamlarimiz: ota, ona, buvi, bobo, aka, uka, opa, singil. Har bir soʻzni boʻgʻinlarga boʻlish mumkin. Boʻgʻin — bir zarb bilan aytiladigan qism. Masalan: o-na — ikki boʻgʻin. Qarsak chalib boʻgʻinlarni sanaymiz.",
+    "ru": "Семья — самые близкие люди: папа, мама, бабушка, дедушка, брат, сестра. Каждое слово можно разделить на слоги. Слог — часть, которую говорим одним хлопком. Например: ма-ма — два слога. Считаем слоги, хлопая в ладоши.",
+    "en": "The family is our dearest people: father, mother, grandmother, grandfather, brother, sister. Every word can be split into syllables. A syllable is a part said in one beat. For example: mo-ther — two syllables. We count syllables by clapping."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Buvingni top!", "ru": "Найди бабушку!", "en": "Find the grandmother!" },
+      "hint": { "uz": "Otangning yoki onangning onasi — buving.", "ru": "Мама твоих папы или мамы — это бабушка.", "en": "Your parent's mother is your grandmother." },
+      "explanation": { "uz": "👵 — buvijon. U oilaning kattasi.", "ru": "👵 — бабушка, старший член семьи.", "en": "👵 is grandmother, an elder of the family." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "grandma", "emoji": "👵", "label": { "uz": "buvi", "ru": "бабушка", "en": "grandmother" }, "correct": true },
+            { "id": "baby", "emoji": "👶", "label": { "uz": "chaqaloq", "ru": "малыш", "en": "baby" } },
+            { "id": "boy", "emoji": "👦", "label": { "uz": "bola", "ru": "мальчик", "en": "boy" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«ona» soʻzini boʻgʻinlab qarsak chal!", "ru": "Похлопай слово «мама» по слогам!", "en": "Clap the word “mother” by syllables!" },
+      "hint": { "uz": "o-na — ikki marta qarsak.", "ru": "ма-ма — два хлопка.", "en": "mo-ther — two claps." },
+      "explanation": { "uz": "«ona» = o-na, ikki boʻgʻin.", "ru": "«мама» = ма-ма, два слога.", "en": "“mother” = mo-ther, two syllables." },
+      "widget": {
+        "type": "syllable_clap",
+        "props": { "emoji": "👩", "word": { "uz": "ona", "ru": "мама", "en": "mother" }, "syllables": 2 }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«oila» soʻzini boʻgʻinlab qarsak chal!", "ru": "Похлопай слово «семья» по слогам!", "en": "Clap the word “family” by syllables!" },
+      "hint": { "uz": "o-i-la — uch marta qarsak.", "ru": "се-мь-я — три хлопка.", "en": "fa-mi-ly — three claps." },
+      "explanation": { "uz": "«oila» = o-i-la, uch boʻgʻin.", "ru": "«семья» — три слога.", "en": "“family” = fa-mi-ly, three syllables." },
+      "widget": {
+        "type": "syllable_clap",
+        "props": { "emoji": "👨‍👩‍👧‍👦", "word": { "uz": "oila", "ru": "семья", "en": "family" }, "syllables": 3 }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«bobo» soʻzida nechta boʻgʻin bor?", "ru": "Сколько слогов в слове «дедушка»?", "en": "How many syllables are in the word “bobo” (grandfather)?" },
+      "hint": { "uz": "bo-bo — sanab qarsak chal.", "ru": "бо-бо — посчитай, хлопая.", "en": "bo-bo — count by clapping." },
+      "explanation": { "uz": "«bobo» = bo-bo, ikki boʻgʻin.", "ru": "«bobo» = бо-бо, два слога.", "en": "“bobo” = bo-bo, two syllables." },
+      "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir soʻzni boʻgʻinlarga boʻlish mumkin.", "ru": "Каждое слово можно разделить на слоги.", "en": "Every word can be split into syllables." },
+      "hint": { "uz": "Qarsak chalib tekshirib koʻr.", "ru": "Проверь, хлопая в ладоши.", "en": "Check by clapping." },
+      "explanation": { "uz": "Toʻgʻri! Har bir soʻz boʻgʻinlardan tuziladi.", "ru": "Верно! Каждое слово состоит из слогов.", "en": "True! Every word is made of syllables." },
+      "widget": { "type": "true_false", "props": { "emoji": "👏", "answer": true } }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Soʻzlarni boʻgʻin soniga ajrat!", "ru": "Разложи слова по числу слогов!", "en": "Sort the words by the number of syllables!" },
+      "hint": { "uz": "Qarsak chal: ona (2), buvijon (3).", "ru": "Хлопай: мама (2), бабушка (3).", "en": "Clap it out: ona (2), buvijon (3)." },
+      "explanation": { "uz": "Ikki boʻgʻin: ona, ota. Uch boʻgʻin: buvijon, oila.", "ru": "Два слога: ona, ota. Три слога: buvijon, oila.", "en": "Two syllables: ona, ota. Three syllables: buvijon, oila." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "two", "label": { "uz": "👏👏 2 boʻgʻin", "ru": "👏👏 2 слога", "en": "👏👏 2 syllables" }, "color": "#f4693b" },
+            { "id": "three", "label": { "uz": "👏👏👏 3 boʻgʻin", "ru": "👏👏👏 3 слога", "en": "👏👏👏 3 syllables" }, "color": "#5aa02a" }
+          ],
+          "items": [
+            { "id": "ona", "emoji": "👩", "label": { "uz": "ona", "ru": "мама", "en": "mother" }, "bin": "two" },
+            { "id": "ota", "emoji": "👨", "label": { "uz": "ota", "ru": "папа", "en": "father" }, "bin": "two" },
+            { "id": "buvijon", "emoji": "👵", "label": { "uz": "buvijon", "ru": "бабушка", "en": "granny" }, "bin": "three" },
+            { "id": "oila", "emoji": "👨‍👩‍👧‍👦", "label": { "uz": "oila", "ru": "семья", "en": "family" }, "bin": "three" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oila aʼzosini nomiga ula!", "ru": "Соедини члена семьи с его словом!", "en": "Match each family member to its word!" },
+      "hint": { "uz": "Rasmga qarab, kim ekanini ayt.", "ru": "Посмотри на картинку и скажи, кто это.", "en": "Look at the picture and say who it is." },
+      "explanation": { "uz": "Ota, ona, bobo, buvi — oila aʼzolari.", "ru": "Папа, мама, дедушка, бабушка — члены семьи.", "en": "Father, mother, grandfather, grandmother are family members." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "👨" }, "right": { "label": { "uz": "ota", "ru": "папа", "en": "father" } } },
+            { "left": { "emoji": "👩" }, "right": { "label": { "uz": "ona", "ru": "мама", "en": "mother" } } },
+            { "left": { "emoji": "👴" }, "right": { "label": { "uz": "bobo", "ru": "дедушка", "en": "grandfather" } } },
+            { "left": { "emoji": "👵" }, "right": { "label": { "uz": "buvi", "ru": "бабушка", "en": "grandmother" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Soʻzlarni boʻgʻin soni boʻyicha tartibla (kamdan koʻpga)!", "ru": "Расставь слова по числу слогов (от меньшего к большему)!", "en": "Order the words by syllable count (fewest to most)!" },
+      "hint": { "uz": "ot (1), buvi (2), buvijon (3).", "ru": "конь (1), бабуля (2), бабушка (3).", "en": "ot (1), buvi (2), buvijon (3)." },
+      "explanation": { "uz": "ot — 1 boʻgʻin, buvi — 2, buvijon — 3.", "ru": "ot — 1 слог, buvi — 2, buvijon — 3.", "en": "ot — 1 syllable, buvi — 2, buvijon — 3." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "ot", "emoji": "🐎", "label": { "uz": "ot", "ru": "конь", "en": "horse" } },
+            { "id": "buvi", "emoji": "👵", "label": { "uz": "buvi", "ru": "бабуля", "en": "granny" } },
+            { "id": "buvijon", "emoji": "👵", "label": { "uz": "buvijon", "ru": "бабушка", "en": "grandmother" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oila aʼzolarini belgila!", "ru": "Отметь всех членов семьи!", "en": "Tap all the family members!" },
+      "hint": { "uz": "Ota, ona, buvi, chaqaloq — oiladan.", "ru": "Папа, мама, бабушка, малыш — из семьи.", "en": "Father, mother, grandmother, baby are family." },
+      "explanation": { "uz": "Oila aʼzolari: ota, ona, buvi, chaqaloq. It va robot — emas.", "ru": "Члены семьи: папа, мама, бабушка, малыш. Собака и робот — нет.", "en": "Family members: father, mother, grandmother, baby. A dog and a robot are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "father", "emoji": "👨", "label": { "uz": "ota", "ru": "папа", "en": "father" }, "correct": true },
+            { "id": "mother", "emoji": "👩", "label": { "uz": "ona", "ru": "мама", "en": "mother" }, "correct": true },
+            { "id": "grandma", "emoji": "👵", "label": { "uz": "buvi", "ru": "бабушка", "en": "grandmother" }, "correct": true },
+            { "id": "baby", "emoji": "👶", "label": { "uz": "chaqaloq", "ru": "малыш", "en": "baby" }, "correct": true },
+            { "id": "dog", "emoji": "🐕", "label": { "uz": "it", "ru": "собака", "en": "dog" } },
+            { "id": "robot", "emoji": "🤖", "label": { "uz": "robot", "ru": "робот", "en": "robot" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«Madina» ismini boʻgʻinlab qarsak chal!", "ru": "Похлопай имя «Мадина» по слогам!", "en": "Clap the name “Madina” by syllables!" },
+      "hint": { "uz": "Ma-di-na — uch marta qarsak.", "ru": "Ма-ди-на — три хлопка.", "en": "Ma-di-na — three claps." },
+      "explanation": { "uz": "«Madina» = Ma-di-na, uch boʻgʻin. Ismlarni ham boʻgʻinlarga boʻlamiz.", "ru": "«Мадина» = Ма-ди-на, три слога. Имена тоже делятся на слоги.", "en": "“Madina” = Ma-di-na, three syllables. Names also split into syllables." },
+      "widget": {
+        "type": "syllable_clap",
+        "props": { "emoji": "👧", "word": { "uz": "Madina", "ru": "Мадина", "en": "Madina" }, "syllables": 3 }
+      }
+    }
+  ]
+}

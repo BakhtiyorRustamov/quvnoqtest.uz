@@ -1,0 +1,181 @@
+{
+  "topicId": "g1-tabiiy-15",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🌳📄📖📰",
+  "title": {
+    "uz": "Qogʻoz qanday paydo boʻladi?",
+    "ru": "Как появляется бумага?",
+    "en": "How is paper made?"
+  },
+  "recall": {
+    "uz": "Qadimda odamlar toshga, teriga va daraxt poʻstlogʻiga yozgan. Hozir qogʻoz koʻpincha daraxtdan tayyorlanadi. Yogʻoch maydalanadi, qaynatiladi, quritiladi va silliq qogʻozga aylanadi. Ishlatilgan qogʻozni qayta ishlab, daftar yoki karton olish mumkin.",
+    "ru": "В древности люди писали на камне, коже и коре деревьев. Сейчас бумагу чаще делают из дерева. Древесину измельчают, варят, сушат — и получается гладкая бумага. Использованную бумагу перерабатывают в тетради или картон.",
+    "en": "Long ago people wrote on stone, leather and tree bark. Today paper is mostly made from trees. Wood is ground, boiled, dried and turned into smooth paper. Used paper is recycled into notebooks or cardboard."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qogʻoz asosan nimadan tayyorlanadi?", "ru": "Из чего в основном делают бумагу?", "en": "What is paper mostly made from?" },
+      "hint": { "uz": "Uning asosiy xomashyosi oʻrmonda oʻsadi.", "ru": "Его основное сырьё растёт в лесу.", "en": "Its main material grows in the forest." },
+      "explanation": { "uz": "Qogʻoz koʻpincha daraxt yogʻochidan tayyorlanadi. Tosh va suvdan emas.", "ru": "Бумагу чаще делают из древесины. Не из камня и воды.", "en": "Paper is mostly made from wood. Not from stone or water." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" }, "correct": true },
+            { "id": "stone", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "stone" } },
+            { "id": "water", "emoji": "💧", "label": { "uz": "suv", "ru": "вода", "en": "water" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qogʻoz qanday tayyorlanadi? Toʻgʻri tartibda joyla!", "ru": "Как делают бумагу? Расставь по порядку!", "en": "How is paper made? Put it in order!" },
+      "hint": { "uz": "Avval daraxt, keyin qipiq, xamir, soʻng qogʻoz.", "ru": "Сначала дерево, потом щепа, масса, затем бумага.", "en": "First a tree, then wood chips, pulp, then paper." },
+      "explanation": { "uz": "Daraxt maydalanib qipiq boʻladi, qaynatilib xamir boʻladi, quritilib qogʻozga aylanadi.", "ru": "Дерево измельчают в щепу, варят в массу, сушат в бумагу.", "en": "The tree is ground into chips, boiled into pulp, dried into paper." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" } },
+            { "id": "chips", "emoji": "🪵", "label": { "uz": "qipiq", "ru": "щепа", "en": "wood chips" } },
+            { "id": "pulp", "emoji": "🥣", "label": { "uz": "xamir", "ru": "масса", "en": "pulp" } },
+            { "id": "paper", "emoji": "📄", "label": { "uz": "qogʻoz", "ru": "бумага", "en": "paper" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qogʻozdan yasalgan narsalarni belgila!", "ru": "Отметь предметы из бумаги!", "en": "Tap the things made of paper!" },
+      "hint": { "uz": "Kitob, gazeta va karton qutini qogʻozdan qiladi.", "ru": "Книгу, газету и картонную коробку делают из бумаги.", "en": "A book, a newspaper and a cardboard box are made of paper." },
+      "explanation": { "uz": "Kitob, gazeta va karton quti qogʻozdan. Stakan, bolgʻa va olma — yoʻq.", "ru": "Книга, газета и коробка — из бумаги. Стакан, молоток и яблоко — нет.", "en": "Book, newspaper and box are paper. A glass, a hammer and an apple are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" }, "correct": true },
+            { "id": "news", "emoji": "📰", "label": { "uz": "gazeta", "ru": "газета", "en": "newspaper" }, "correct": true },
+            { "id": "box", "emoji": "📦", "label": { "uz": "karton quti", "ru": "коробка", "en": "cardboard box" }, "correct": true },
+            { "id": "glass", "emoji": "🥛", "label": { "uz": "stakan", "ru": "стакан", "en": "glass" } },
+            { "id": "hammer", "emoji": "🔨", "label": { "uz": "bolgʻa", "ru": "молоток", "en": "hammer" } },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Qadimda odamlar toshga ham yozgan.", "ru": "Верно? В древности люди писали и на камне.", "en": "True? Long ago people also wrote on stone." },
+      "hint": { "uz": "Togʻ qoyalaridagi qadimiy rasmlar hozirgacha saqlangan.", "ru": "Древние рисунки на скалах сохранились до наших дней.", "en": "Ancient drawings on rocks have survived to this day." },
+      "explanation": { "uz": "Toʻgʻri. Qadimda odamlar tosh, teri va suyakka yozgan.", "ru": "Верно. В древности люди писали на камне, коже и кости.", "en": "True. Long ago people wrote on stone, leather and bone." },
+      "widget": { "type": "true_false", "props": { "emoji": "🪨", "answer": true } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qadimda odamlar nimaga yozgan?", "ru": "На чём писали люди в древности?", "en": "What did people write on long ago?" },
+      "hint": { "uz": "Ular qattiq va tabiiy narsalarga yozgan.", "ru": "Они писали на твёрдых природных предметах.", "en": "They wrote on hard, natural surfaces." },
+      "explanation": { "uz": "Qadimda odamlar toshga yozgan. Kompyuter va telefon zamonaviy.", "ru": "В древности писали на камне. Компьютер и телефон — современные.", "en": "Long ago people wrote on stone. Computers and phones are modern." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "stone", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "stone" }, "correct": true },
+            { "id": "computer", "emoji": "💻", "label": { "uz": "kompyuter", "ru": "компьютер", "en": "computer" } },
+            { "id": "phone", "emoji": "📱", "label": { "uz": "telefon", "ru": "телефон", "en": "phone" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Ishlatilgan qogʻozni qayta ishlab nima olamiz?", "ru": "Что получают из переработанной бумаги?", "en": "What do we get from recycled paper?" },
+      "hint": { "uz": "Eski qogʻozdan yangi daftar tayyorlash mumkin.", "ru": "Из старой бумаги можно сделать новую тетрадь.", "en": "Old paper can be made into a new notebook." },
+      "explanation": { "uz": "Qayta ishlangan qogʻozdan daftar va karton olamiz. Bu tabiatni asraydi.", "ru": "Из переработанной бумаги получают тетради и картон. Это бережёт природу.", "en": "Recycled paper becomes notebooks and cardboard. This protects nature." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "notebook", "emoji": "📓", "label": { "uz": "daftar", "ru": "тетрадь", "en": "notebook" }, "correct": true },
+            { "id": "glass", "emoji": "🥛", "label": { "uz": "stakan", "ru": "стакан", "en": "glass" } },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Qogʻoz plastmassadan tayyorlanadi.", "ru": "Верно? Бумагу делают из пластмассы.", "en": "True? Paper is made from plastic." },
+      "hint": { "uz": "Qogʻozning asosiy xomashyosi — yogʻoch.", "ru": "Основное сырьё бумаги — древесина.", "en": "The main material of paper is wood." },
+      "explanation": { "uz": "Notoʻgʻri. Qogʻoz plastmassadan emas, yogʻochdan tayyorlanadi.", "ru": "Неверно. Бумагу делают не из пластмассы, а из дерева.", "en": "False. Paper is made from wood, not plastic." },
+      "widget": { "type": "true_false", "props": { "emoji": "📄", "answer": false } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qadimiy va zamonaviy yozuv yuzalariga ajrat!", "ru": "Разложи на древние и современные поверхности для письма!", "en": "Sort into ancient and modern writing surfaces!" },
+      "hint": { "uz": "Tosh va suyak — qadimiy; daftar va kompyuter — zamonaviy.", "ru": "Камень и кость — древние; тетрадь и компьютер — современные.", "en": "Stone and bone are ancient; notebook and computer are modern." },
+      "explanation": { "uz": "Tosh, teri va suyakka qadimda yozgan. Daftar, kompyuter va telefon — zamonaviy.", "ru": "На камне, коже и кости писали в древности. Тетрадь, компьютер, телефон — современные.", "en": "Stone, leather and bone were used long ago. Notebook, computer and phone are modern." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "old", "label": { "uz": "🏺 Qadimiy", "ru": "🏺 Древние", "en": "🏺 Ancient" }, "color": "#a9743e" },
+            { "id": "new", "label": { "uz": "💻 Zamonaviy", "ru": "💻 Современные", "en": "💻 Modern" }, "color": "#2f9fe0" }
+          ],
+          "items": [
+            { "id": "stone", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "stone" }, "bin": "old" },
+            { "id": "scroll", "emoji": "📜", "label": { "uz": "teri varaq", "ru": "кожаный свиток", "en": "leather scroll" }, "bin": "old" },
+            { "id": "bone", "emoji": "🦴", "label": { "uz": "suyak", "ru": "кость", "en": "bone" }, "bin": "old" },
+            { "id": "notebook", "emoji": "📓", "label": { "uz": "daftar", "ru": "тетрадь", "en": "notebook" }, "bin": "new" },
+            { "id": "computer", "emoji": "💻", "label": { "uz": "kompyuter", "ru": "компьютер", "en": "computer" }, "bin": "new" },
+            { "id": "phone", "emoji": "📱", "label": { "uz": "telefon", "ru": "телефон", "en": "phone" }, "bin": "new" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kitobga qanday munosabatda boʻlamiz? Toʻgʻri ishni bos!", "ru": "Как обращаться с книгой? Нажми правильное!", "en": "How should we treat a book? Tap the right one!" },
+      "hint": { "uz": "Kitobni avaylab, ozoda tutamiz.", "ru": "Книгу берегут и держат в чистоте.", "en": "We keep a book carefully and clean." },
+      "explanation": { "uz": "Kitobni avaylab varaqlaymiz. Uni yirtmaymiz va axlatga tashlamaymiz.", "ru": "Книгу листаем аккуратно. Её не рвут и не выбрасывают.", "en": "We turn the pages carefully. We do not tear it or throw it away." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "care", "emoji": "📖", "label": { "uz": "avaylab oʻqish", "ru": "бережно читать", "en": "read carefully" }, "correct": true },
+            { "id": "tear", "emoji": "🗑️", "label": { "uz": "axlatga tashlash", "ru": "выбросить", "en": "throw away" } },
+            { "id": "scribble", "emoji": "🖍️", "label": { "uz": "chizib tashlash", "ru": "исчиркать", "en": "scribble on it" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Ishlatilgan qogʻozni qayta ishlatish mumkin.", "ru": "Верно? Использованную бумагу можно переработать.", "en": "True? Used paper can be recycled." },
+      "hint": { "uz": "Eski qogʻoz — makulatura, undan yangi qogʻoz olinadi.", "ru": "Старая бумага — макулатура, из неё делают новую.", "en": "Old paper is recyclable and becomes new paper." },
+      "explanation": { "uz": "Toʻgʻri. Ishlatilgan qogʻozni qayta ishlab, daftar va karton olamiz.", "ru": "Верно. Использованную бумагу перерабатывают в тетради и картон.", "en": "True. Used paper is recycled into notebooks and cardboard." },
+      "widget": { "type": "true_false", "props": { "emoji": "♻️", "answer": true } }
+    }
+  ]
+}

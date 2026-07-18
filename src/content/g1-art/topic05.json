@@ -1,0 +1,32 @@
+{
+  "topicId": "g1-art-05",
+  "subjectKey": "g1-art",
+  "emojis": "",
+  "hideAudio": true,
+  "title": { "uz": "Shtamplar bilan ishlaymiz", "ru": "Работаем со штампами", "en": "Working with stamps" },
+  "recall": {
+    "uz": "Bargni boʻyoqqa botirib, qogʻozga bossak, chiroyli iz qoladi. Bu — shtamp usuli. Shu usulda qiziqarli rasmlar chizamiz.",
+    "ru": "Если обмакнуть лист в краску и прижать к бумаге, останется красивый отпечаток. Это приём штампа. Так мы рисуем интересные картинки.",
+    "en": "If we dip a leaf in paint and press it on paper, a lovely print stays. This is the stamp technique. We make fun pictures this way."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Shtamp usulida barglardan qanday foydalanamiz?", "ru": "Как мы используем листья в приёме штампа?", "en": "How do we use leaves in the stamp technique?" },
+      "hint": { "uz": "Boʻyoqqa botirib bosamiz.", "ru": "Обмакиваем в краску и прижимаем.", "en": "Dip in paint and press." },
+      "explanation": { "uz": "Toʻgʻri! Boʻyoqqa botirib, qogʻozga bosamiz.", "ru": "Верно! Обмакиваем в краску и прижимаем к бумаге.", "en": "Right! We dip it in paint and press it on paper." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "boʻyoqqa botirib, qogʻozga bosamiz", "ru": "обмакиваем в краску и прижимаем", "en": "dip in paint and press on paper" },
+        { "uz": "yeb qoʻyamiz", "ru": "съедаем", "en": "we eat them" },
+        { "uz": "suvga tashlaymiz", "ru": "бросаем в воду", "en": "throw them in water" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Barg izlaridan chiroyli naqsh chiz.", "ru": "Нарисуй красивый узор из отпечатков листьев.", "en": "Draw a lovely pattern from leaf prints." },
+      "hint": { "uz": "Bir nechta barg shaklini chiz va boʻya.", "ru": "Нарисуй несколько листьев и раскрась.", "en": "Draw a few leaf shapes and colour them." },
+      "explanation": { "uz": "Zoʻr naqsh!", "ru": "Отличный узор!", "en": "A great pattern!" },
+      "widget": { "type": "free_draw", "props": { "example": "leaf" } }
+    }
+  ]
+}

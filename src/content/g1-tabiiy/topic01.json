@@ -1,0 +1,201 @@
+{
+  "topicId": "g1-tabiiy-01",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "👂👀👃👅🤚",
+  "title": {
+    "uz": "Men va besh sezgim",
+    "ru": "Я и мои пять чувств",
+    "en": "Me and my five senses"
+  },
+  "recall": {
+    "uz": "Odam atrofdagi olamni beshta sezgi aʼzosi bilan biladi. Quloq bilan eshitamiz, koʻz bilan koʻramiz, burun bilan hidni bilamiz, til bilan taʼmni sezamiz, teri va qoʻl bilan issiq-sovuqni his qilamiz.",
+    "ru": "Человек познаёт мир пятью органами чувств. Ухом слышим, глазом видим, носом чувствуем запах, языком — вкус, кожей и рукой ощущаем тепло и холод.",
+    "en": "We learn about the world with five sense organs. We hear with the ear, see with the eye, smell with the nose, taste with the tongue, and feel warm and cold with the skin and hand."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Biz nima bilan eshitamiz? Toʻgʻri aʼzoni bos!", "ru": "Чем мы слышим? Нажми верный орган!", "en": "What do we hear with? Tap the right organ!" },
+      "hint": { "uz": "Ovozni, kuyni ushbu aʼzo bilan eshitamiz.", "ru": "Звук и музыку слышим этим органом.", "en": "We hear sound and music with this organ." },
+      "explanation": { "uz": "Quloq — eshitish aʼzosi. Ovoz va kuyni quloq bilan eshitamiz.", "ru": "Ухо — орган слуха. Звук и музыку слышим ухом.", "en": "The ear is the organ of hearing. We hear sound and music with the ear." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "ear", "emoji": "👂", "label": { "uz": "quloq", "ru": "ухо", "en": "ear" }, "correct": true },
+            { "id": "eye", "emoji": "👁️", "label": { "uz": "koʻz", "ru": "глаз", "en": "eye" } },
+            { "id": "nose", "emoji": "👃", "label": { "uz": "burun", "ru": "нос", "en": "nose" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Rangin kamalakni nima bilan koʻramiz?", "ru": "Чем мы видим яркую радугу?", "en": "What do we see the bright rainbow with?" },
+      "hint": { "uz": "Rasm va ranglarni shu aʼzo bilan koʻramiz.", "ru": "Картинки и цвета видим этим органом.", "en": "We see pictures and colors with this organ." },
+      "explanation": { "uz": "Koʻz — koʻrish aʼzosi. Ranglar va shakllarni koʻz bilan koʻramiz.", "ru": "Глаз — орган зрения. Цвета и формы видим глазом.", "en": "The eye is the organ of sight. We see colors and shapes with the eye." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "eye", "emoji": "👁️", "label": { "uz": "koʻz", "ru": "глаз", "en": "eye" }, "correct": true },
+            { "id": "ear", "emoji": "👂", "label": { "uz": "quloq", "ru": "ухо", "en": "ear" } },
+            { "id": "hand", "emoji": "✋", "label": { "uz": "qoʻl", "ru": "рука", "en": "hand" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Gulning hidini nima bilan bilamiz?", "ru": "Чем мы чувствуем запах цветка?", "en": "What do we smell the flower with?" },
+      "hint": { "uz": "Yoqimli hidni shu aʼzo bilan sezamiz.", "ru": "Приятный запах чувствуем этим органом.", "en": "We sense a pleasant smell with this organ." },
+      "explanation": { "uz": "Burun — hid bilish aʼzosi. Gul va taomlarning hidini burun bilan bilamiz.", "ru": "Нос — орган обоняния. Запах цветов и еды чувствуем носом.", "en": "The nose is the organ of smell. We smell flowers and food with the nose." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "nose", "emoji": "👃", "label": { "uz": "burun", "ru": "нос", "en": "nose" }, "correct": true },
+            { "id": "tongue", "emoji": "👅", "label": { "uz": "til", "ru": "язык", "en": "tongue" } },
+            { "id": "ear", "emoji": "👂", "label": { "uz": "quloq", "ru": "ухо", "en": "ear" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Muzqaymoqning taʼmini nima bilan bilamiz?", "ru": "Чем мы чувствуем вкус мороженого?", "en": "What do we taste the ice cream with?" },
+      "hint": { "uz": "Shirin, nordon taʼmni shu aʼzo bilan sezamiz.", "ru": "Сладкий и кислый вкус чувствуем этим органом.", "en": "We taste sweet and sour with this organ." },
+      "explanation": { "uz": "Til — taʼm bilish aʼzosi. Shirin va nordon taʼmni til bilan bilamiz.", "ru": "Язык — орган вкуса. Сладкое и кислое чувствуем языком.", "en": "The tongue is the organ of taste. We taste sweet and sour with the tongue." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "tongue", "emoji": "👅", "label": { "uz": "til", "ru": "язык", "en": "tongue" }, "correct": true },
+            { "id": "eye", "emoji": "👁️", "label": { "uz": "koʻz", "ru": "глаз", "en": "eye" } },
+            { "id": "nose", "emoji": "👃", "label": { "uz": "burun", "ru": "нос", "en": "nose" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Suv issiqmi yoki sovuqmi — nima bilan bilamiz?", "ru": "Вода тёплая или холодная — чем мы это чувствуем?", "en": "Is the water warm or cold — what do we feel it with?" },
+      "hint": { "uz": "Issiq-sovuqni terimiz va qoʻlimiz bilan his qilamiz.", "ru": "Тепло и холод ощущаем кожей и рукой.", "en": "We feel warm and cold with our skin and hand." },
+      "explanation": { "uz": "Teri va qoʻl — his qilish aʼzosi. Issiq, sovuq, silliq va gadirlikni ular bilan sezamiz.", "ru": "Кожа и рука — орган осязания. Тепло, холод, гладкое и шершавое чувствуем ими.", "en": "The skin and hand are the organs of touch. We feel warm, cold, smooth and rough with them." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "hand", "emoji": "✋", "label": { "uz": "qoʻl / teri", "ru": "рука / кожа", "en": "hand / skin" }, "correct": true },
+            { "id": "eye", "emoji": "👁️", "label": { "uz": "koʻz", "ru": "глаз", "en": "eye" } },
+            { "id": "ear", "emoji": "👂", "label": { "uz": "quloq", "ru": "ухо", "en": "ear" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir aʼzoni oʻz ishiga ula!", "ru": "Соедини каждый орган с его работой!", "en": "Match each organ to its job!" },
+      "hint": { "uz": "Quloq — eshitish, koʻz — koʻrish, burun — hid, til — taʼm, qoʻl — his qilish.", "ru": "Ухо — слышать, глаз — видеть, нос — запах, язык — вкус, рука — осязание.", "en": "Ear — hearing, eye — sight, nose — smell, tongue — taste, hand — touch." },
+      "explanation": { "uz": "Har bir sezgi aʼzosining oʻz vazifasi bor. Ular birga olamni bilishga yordam beradi.", "ru": "У каждого органа чувств своя работа. Вместе они помогают познавать мир.", "en": "Each sense organ has its own job. Together they help us learn about the world." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "👂", "label": { "uz": "quloq", "ru": "ухо", "en": "ear" } }, "right": { "emoji": "🔔", "label": { "uz": "eshitish", "ru": "слух", "en": "hearing" } } },
+            { "left": { "emoji": "👁️", "label": { "uz": "koʻz", "ru": "глаз", "en": "eye" } }, "right": { "emoji": "🌈", "label": { "uz": "koʻrish", "ru": "зрение", "en": "sight" } } },
+            { "left": { "emoji": "👃", "label": { "uz": "burun", "ru": "нос", "en": "nose" } }, "right": { "emoji": "🌸", "label": { "uz": "hid bilish", "ru": "запах", "en": "smell" } } },
+            { "left": { "emoji": "👅", "label": { "uz": "til", "ru": "язык", "en": "tongue" } }, "right": { "emoji": "🍭", "label": { "uz": "taʼm bilish", "ru": "вкус", "en": "taste" } } },
+            { "left": { "emoji": "✋", "label": { "uz": "qoʻl", "ru": "рука", "en": "hand" } }, "right": { "emoji": "🧊", "label": { "uz": "his qilish", "ru": "осязание", "en": "touch" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Barcha sezgi aʼzolarini belgila!", "ru": "Отметь все органы чувств!", "en": "Tap all the sense organs!" },
+      "hint": { "uz": "Sezgi aʼzolari beshta: quloq, koʻz, burun, til, teri (qoʻl).", "ru": "Органов чувств пять: ухо, глаз, нос, язык, кожа (рука).", "en": "There are five sense organs: ear, eye, nose, tongue, skin (hand)." },
+      "explanation": { "uz": "Beshta sezgi aʼzosini topding. Tish esa sezgi aʼzosi emas.", "ru": "Ты нашёл пять органов чувств. А зуб — не орган чувств.", "en": "You found the five sense organs. A tooth is not a sense organ." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "ear", "emoji": "👂", "label": { "uz": "quloq", "ru": "ухо", "en": "ear" }, "correct": true },
+            { "id": "eye", "emoji": "👁️", "label": { "uz": "koʻz", "ru": "глаз", "en": "eye" }, "correct": true },
+            { "id": "nose", "emoji": "👃", "label": { "uz": "burun", "ru": "нос", "en": "nose" }, "correct": true },
+            { "id": "tongue", "emoji": "👅", "label": { "uz": "til", "ru": "язык", "en": "tongue" }, "correct": true },
+            { "id": "hand", "emoji": "✋", "label": { "uz": "teri (qoʻl)", "ru": "кожа (рука)", "en": "skin (hand)" }, "correct": true },
+            { "id": "tooth", "emoji": "🦷", "label": { "uz": "tish", "ru": "зуб", "en": "tooth" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qiz gulni hidlayapti 🌷. U qaysi sezgidan foydalanyapti?", "ru": "Девочка нюхает цветок 🌷. Какое чувство она использует?", "en": "The girl is smelling a flower 🌷. Which sense is she using?" },
+      "hint": { "uz": "Hidni burun bilan bilamiz — bu hid bilish.", "ru": "Запах чувствуем носом — это обоняние.", "en": "We smell with the nose — that is the sense of smell." },
+      "explanation": { "uz": "Gulni hidlaganda hid bilish sezgisidan foydalanamiz.", "ru": "Нюхая цветок, мы используем обоняние.", "en": "When smelling a flower we use the sense of smell." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "smell", "emoji": "👃", "label": { "uz": "hid bilish", "ru": "обоняние", "en": "smell" }, "correct": true },
+            { "id": "hear", "emoji": "👂", "label": { "uz": "eshitish", "ru": "слух", "en": "hearing" } },
+            { "id": "see", "emoji": "👁️", "label": { "uz": "koʻrish", "ru": "зрение", "en": "sight" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir ishni toʻgʻri sezgi aʼzosiga ajrat!", "ru": "Разложи каждое дело к нужному органу чувств!", "en": "Sort each thing to the right sense!" },
+      "hint": { "uz": "Kamalak va kitobni koʻz bilan, kuy va qoʻngʻiroqni quloq bilan.", "ru": "Радугу и книгу — глазом, музыку и звонок — ухом.", "en": "Rainbow and book with the eye; music and bell with the ear." },
+      "explanation": { "uz": "Koʻriladigan narsalar koʻz bilan, eshitiladiganlar quloq bilan bogʻliq.", "ru": "Что видим — с глазом, что слышим — с ухом.", "en": "Things we see go with the eye; things we hear go with the ear." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "eye", "label": { "uz": "👁️ Koʻrish", "ru": "👁️ Зрение", "en": "👁️ Sight" }, "color": "#2f9fe0" },
+            { "id": "ear", "label": { "uz": "👂 Eshitish", "ru": "👂 Слух", "en": "👂 Hearing" }, "color": "#f39a1f" }
+          ],
+          "items": [
+            { "id": "rainbow", "emoji": "🌈", "label": { "uz": "kamalak", "ru": "радуга", "en": "rainbow" }, "bin": "eye" },
+            { "id": "music", "emoji": "🎵", "label": { "uz": "kuy", "ru": "музыка", "en": "music" }, "bin": "ear" },
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" }, "bin": "eye" },
+            { "id": "bell", "emoji": "🔔", "label": { "uz": "qoʻngʻiroq", "ru": "звонок", "en": "bell" }, "bin": "ear" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Insonda nechta sezgi aʼzosi bor?", "ru": "Сколько у человека органов чувств?", "en": "How many sense organs does a person have?" },
+      "hint": { "uz": "Quloq, koʻz, burun, til, teri — sanab koʻr.", "ru": "Ухо, глаз, нос, язык, кожа — посчитай.", "en": "Ear, eye, nose, tongue, skin — count them." },
+      "explanation": { "uz": "Insonda beshta sezgi aʼzosi bor. Ular bizga sodiq yordamchi.", "ru": "У человека пять органов чувств. Они наши верные помощники.", "en": "A person has five sense organs. They are our faithful helpers." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": ["5", "3", "10"], "answerIndex": 0 }
+      }
+    }
+  ]
+}

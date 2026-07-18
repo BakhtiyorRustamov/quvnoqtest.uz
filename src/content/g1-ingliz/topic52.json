@@ -1,0 +1,587 @@
+{
+  "topicId": "g1-ingliz-52",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐭🤲🐜🕷️",
+  "title": {
+    "uz": "U kichkina. Hayvonlarni asra!",
+    "ru": "Он маленький. Береги животных!",
+    "en": "It's small. Respect animals!"
+  },
+  "recall": {
+    "uz": "Suhbat vaqti! Bugun aytamiz: «It's small. Be gentle.» — «U kichkina. Ehtiyot boʻl.» Kichik hayvonlarga mehribon boʻlamiz.",
+    "ru": "Время беседы! Сегодня говорим: «It's small. Be gentle.» — «Он маленький. Будь бережным.» Мы добры к маленьким животным.",
+    "en": "Talk time! Today we say \"It's small. Be gentle.\" We are kind to small animals."
+  },
+  "ttsText": {
+    "uz": "U kichkina. Ehtiyot boʻl.",
+    "en": "Talk time! It's small. Be gentle. Respect animals!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Kichik hayvon haqida nima deyildi?",
+        "ru": "Послушай. Что сказали о маленьком животном?",
+        "en": "Listen. What did they say about the small animal?"
+      },
+      "hint": {
+        "uz": "«It's small. Be gentle.»",
+        "ru": "«It's small. Be gentle.»",
+        "en": "\"It's small. Be gentle.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «It's small. Be gentle.»",
+        "ru": "Верно! «It's small. Be gentle.»",
+        "en": "Right! \"It's small. Be gentle.\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Look! A small hedgehog.",
+              "audio": {
+                "key": "ing52-q1-a",
+                "text": "Look! A small hedgehog.",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "It's small. Be gentle.",
+              "audio": {
+                "key": "ing52-q1-b",
+                "text": "It's small. Be gentle.",
+                "voice": "teacher"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Oyisi nima dedi?",
+              "ru": "Что сказала мама?",
+              "en": "What did Mom say?"
+            },
+            "choices": [
+              "How many?",
+              "Run away!",
+              "Be gentle."
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima soʻradi?",
+        "ru": "Послушай. О чём спросил ребёнок?",
+        "en": "Listen. What did the child ask?"
+      },
+      "hint": {
+        "uz": "«Can I hold it?» — ushlashim mumkinmi?",
+        "ru": "«Can I hold it?» — можно подержать?",
+        "en": "\"Can I hold it?\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes, but be gentle.»",
+        "ru": "Верно! «Yes, but be gentle.»",
+        "en": "Right! \"Yes, but be gentle.\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can I hold it?",
+              "audio": {
+                "key": "ing52-q2-a",
+                "text": "Can I hold it?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "Yes, but be gentle.",
+              "audio": {
+                "key": "ing52-q2-b",
+                "text": "Yes, but be gentle.",
+                "voice": "teacher"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Oyisi nima dedi?",
+              "ru": "Что сказала мама?",
+              "en": "What did Mom say?"
+            },
+            "choices": [
+              "Throw it!",
+              "Be gentle.",
+              "Goodbye!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kichik hayvonni bos!",
+        "ru": "Нажми маленькое животное!",
+        "en": "Tap the small animal!"
+      },
+      "hint": {
+        "uz": "«small» — kichkina.",
+        "ru": "«small» — маленький.",
+        "en": "\"small\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A mouse is small.",
+        "ru": "Верно! A mouse is small.",
+        "en": "Right! A mouse is small."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐭",
+              "label": "mouse (small)",
+              "correct": true
+            },
+            {
+              "emoji": "🐘",
+              "label": "elephant"
+            },
+            {
+              "emoji": "🐊",
+              "label": "crocodile"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Kichik hayvonlarga ehtiyot boʻlamiz.",
+        "ru": "Верно? С маленькими животными мы бережны.",
+        "en": "Is this right? We are gentle with small animals."
+      },
+      "hint": {
+        "uz": "Ehtiyotkorlik — hurmat.",
+        "ru": "Бережность — уважение.",
+        "en": "Gentle is respectful."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ehtiyot boʻlamiz.",
+        "ru": "Верно! Мы бережны.",
+        "en": "Right! We are gentle."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🤲",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola oxirida nima dedi?",
+        "ru": "Послушай. Что ребёнок сказал в конце?",
+        "en": "Listen. What did the child say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «OK, I'll be gentle.»",
+        "ru": "Верно! «OK, I'll be gentle.»",
+        "en": "Right! \"OK, I'll be gentle.\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "A tiny bird!",
+              "audio": {
+                "key": "ing52-q5-a",
+                "text": "A tiny bird!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "It's small. Be gentle.",
+              "audio": {
+                "key": "ing52-q5-b",
+                "text": "It's small. Be gentle.",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "OK, I'll be gentle.",
+              "audio": {
+                "key": "ing52-q5-c",
+                "text": "OK, I'll be gentle.",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia oxirida nima dedi?",
+              "ru": "Что Мия сказала в конце?",
+              "en": "What did Mia say at the end?"
+            },
+            "choices": [
+              "Three books!",
+              "I'll be gentle.",
+              "No, it isn't!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Taqqosla va toʻgʻri hayvonni bos!",
+        "ru": "Сравни и нажми верное животное!",
+        "en": "Compare and tap the correct animal!"
+      },
+      "hint": {
+        "uz": "Kichikroq va kattaroqni solishtir.",
+        "ru": "Сравни меньшего и большего.",
+        "en": "Compare the smaller and bigger one."
+      },
+      "explanation": {
+        "uz": "Barakalla! Kichik va kattani bilding!",
+        "ru": "Молодец! Ты знаешь маленькое и большое!",
+        "en": "Great! You know small and big!"
+      },
+      "widget": {
+        "type": "compare_pick",
+        "props": {
+          "rounds": [
+            {
+              "prompt": {
+                "uz": "Qaysi biri kichikroq?",
+                "ru": "Кто меньше?",
+                "en": "Which is smaller?"
+              },
+              "a": {
+                "emoji": "🐭",
+                "label": {
+                  "uz": "sichqon",
+                  "ru": "мышь",
+                  "en": "mouse"
+                }
+              },
+              "b": {
+                "emoji": "🐘",
+                "label": {
+                  "uz": "fil",
+                  "ru": "слон",
+                  "en": "elephant"
+                }
+              },
+              "answer": "a"
+            },
+            {
+              "prompt": {
+                "uz": "Qaysi biri kichikroq?",
+                "ru": "Кто меньше?",
+                "en": "Which is smaller?"
+              },
+              "a": {
+                "emoji": "🐈",
+                "label": {
+                  "uz": "mushuk",
+                  "ru": "кот",
+                  "en": "cat"
+                }
+              },
+              "b": {
+                "emoji": "🐜",
+                "label": {
+                  "uz": "chumoli",
+                  "ru": "муравей",
+                  "en": "ant"
+                }
+              },
+              "answer": "b"
+            },
+            {
+              "prompt": {
+                "uz": "Qaysi biri kattaroq?",
+                "ru": "Кто больше?",
+                "en": "Which is bigger?"
+              },
+              "a": {
+                "emoji": "🦁",
+                "label": {
+                  "uz": "sher",
+                  "ru": "лев",
+                  "en": "lion"
+                }
+              },
+              "b": {
+                "emoji": "🐭",
+                "label": {
+                  "uz": "sichqon",
+                  "ru": "мышь",
+                  "en": "mouse"
+                }
+              },
+              "answer": "a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kichik hayvonlarni belgila!",
+        "ru": "Отметь маленьких животных!",
+        "en": "Tap the small animals!"
+      },
+      "hint": {
+        "uz": "Sichqon, chumoli, oʻrgimchak.",
+        "ru": "Мышь, муравей, паук.",
+        "en": "Mouse, ant, spider."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sichqon, chumoli, oʻrgimchak — kichkina!",
+        "ru": "Молодец! Мышь, муравей, паук — маленькие!",
+        "en": "Great! Mouse, ant, spider are small!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐭",
+              "label": "mouse",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐜",
+              "label": "ant",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🕷️",
+              "label": "spider",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐘",
+              "label": "elephant"
+            },
+            {
+              "id": "d1",
+              "emoji": "🦁",
+              "label": "lion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sifatni hayvonga ula!",
+        "ru": "Соедини прилагательное с животным!",
+        "en": "Match each adjective to an animal!"
+      },
+      "hint": {
+        "uz": "small 🐭, big 🐘, long 🐍.",
+        "ru": "small 🐭, big 🐘, long 🐍.",
+        "en": "small 🐭, big 🐘, long 🐍."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "small"
+              },
+              "right": {
+                "emoji": "🐭"
+              }
+            },
+            {
+              "left": {
+                "label": "big"
+              },
+              "right": {
+                "emoji": "🐘"
+              }
+            },
+            {
+              "left": {
+                "label": "long"
+              },
+              "right": {
+                "emoji": "🐍"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bolalar nima dedi?",
+        "ru": "Послушай. Что сказали дети?",
+        "en": "Listen. What did the children say?"
+      },
+      "hint": {
+        "uz": "«Be gentle» — ehtiyot boʻl.",
+        "ru": "«Be gentle» — будь бережным.",
+        "en": "\"Be gentle.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes! Be gentle.»",
+        "ru": "Верно! «Yes! Be gentle.»",
+        "en": "Right! \"Yes! Be gentle.\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's small and cute!",
+              "audio": {
+                "key": "ing52-q9-a",
+                "text": "It's small and cute!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes! Be gentle.",
+              "audio": {
+                "key": "ing52-q9-b",
+                "text": "Yes! Be gentle.",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Chase it!",
+              "Be gentle."
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kichkina hayvonni koʻrding. Nima deysan?",
+        "ru": "Ты увидел маленькое животное. Что скажешь?",
+        "en": "You see a tiny animal. What do you say?"
+      },
+      "hint": {
+        "uz": "Ehtiyotkorlik haqida ayt.",
+        "ru": "Скажи о бережности.",
+        "en": "Say something gentle."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «It's small. Be gentle.»",
+        "ru": "Верно! «It's small. Be gentle.»",
+        "en": "Right! \"It's small. Be gentle.\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "It's small. Be gentle.\nU kichkina. Ehtiyot boʻl.",
+              "ru": "It's small. Be gentle.\nОн маленький. Будь бережным.",
+              "en": "It's small. Be gentle."
+            },
+            {
+              "uz": "It's big! Run!\nU katta! Yugur!",
+              "ru": "It's big! Run!\nОн большой! Беги!",
+              "en": "It's big! Run!"
+            },
+            {
+              "uz": "Go away!\nKet!",
+              "ru": "Go away!\nУходи!",
+              "en": "Go away!"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

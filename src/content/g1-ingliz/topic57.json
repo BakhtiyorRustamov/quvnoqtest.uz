@@ -1,0 +1,509 @@
+{
+  "topicId": "g1-ingliz-57",
+  "subjectKey": "g1-ingliz",
+  "emojis": "⭐💪🚴🐟",
+  "title": {
+    "uz": "Takrorlash: I can",
+    "ru": "Повторение: I can",
+    "en": "Review: I can..."
+  },
+  "recall": {
+    "uz": "Takrorlash! Qobiliyatni eslaymiz: «I can swim» — suza olaman. «A bird can fly» — qush ucha oladi. «A fish can swim» — baliq suza oladi.",
+    "ru": "Повторение! Вспоминаем умения: «I can swim» — умею плавать. «A bird can fly» — птица летает. «A fish can swim» — рыба плавает.",
+    "en": "Review! Let's remember abilities: \"I can swim.\" \"A bird can fly.\" \"A fish can swim.\""
+  },
+  "ttsText": {
+    "uz": "Takrorlash: I can.",
+    "en": "Review! I can swim! A bird can fly! A fish can swim!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima qila oladi?",
+        "ru": "Послушай. Что умеет ребёнок?",
+        "en": "Listen. What can the child do?"
+      },
+      "hint": {
+        "uz": "«I can ride a bike!»",
+        "ru": "«I can ride a bike!»",
+        "en": "\"I can ride a bike!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I can ride a bike.",
+        "ru": "Верно! I can ride a bike.",
+        "en": "Right! I can ride a bike."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "What can you do?",
+              "audio": {
+                "key": "ing57-q1-a",
+                "text": "What can you do?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "I can ride a bike!",
+              "audio": {
+                "key": "ing57-q1-b",
+                "text": "I can ride a bike!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima qila oladi?",
+              "ru": "Что умеет Мия?",
+              "en": "What can Mia do?"
+            },
+            "choices": [
+              "sing",
+              "swim",
+              "ride a bike"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Velosiped haydashni bos!",
+        "ru": "Нажми велосипед!",
+        "en": "Tap 'ride a bike'!"
+      },
+      "hint": {
+        "uz": "«ride a bike» — velosiped haydash.",
+        "ru": "«ride a bike» — кататься на велосипеде.",
+        "en": "\"ride a bike\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ride a bike.",
+        "ru": "Верно! Ride a bike.",
+        "en": "Right! Ride a bike!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🚴",
+              "label": "ride a bike",
+              "correct": true
+            },
+            {
+              "emoji": "🏊",
+              "label": "swim"
+            },
+            {
+              "emoji": "🎨",
+              "label": "paint"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Baliq suza oladi. 🐟",
+        "ru": "Верно? Рыба умеет плавать. 🐟",
+        "en": "Is this right? A fish can swim. 🐟"
+      },
+      "hint": {
+        "uz": "Baliq suvda.",
+        "ru": "Рыба в воде.",
+        "en": "A fish is in water."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A fish can swim.",
+        "ru": "Верно! A fish can swim.",
+        "en": "Right! A fish can swim."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐟",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Baliq yugura oladi. 🐟",
+        "ru": "Верно? Рыба умеет бегать. 🐟",
+        "en": "Is this right? A fish can run. 🐟"
+      },
+      "hint": {
+        "uz": "Baliqda oyoq yoʻq.",
+        "ru": "У рыбы нет ног.",
+        "en": "A fish has no legs."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Baliq suzadi.",
+        "ru": "Неверно! Рыба плавает.",
+        "en": "False! A fish swims."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐟",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Faqat harakat soʻzlarini bos!",
+        "ru": "Нажми только слова-действия!",
+        "en": "Tap only the action words!"
+      },
+      "hint": {
+        "uz": "paint, draw, run.",
+        "ru": "paint, draw, run.",
+        "en": "paint, draw, run."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular harakat!",
+        "ru": "Молодец! Это действия!",
+        "en": "Great! Those are actions!"
+      },
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "paint",
+              "match": true
+            },
+            {
+              "text": "draw",
+              "match": true
+            },
+            {
+              "text": "lion",
+              "match": false
+            },
+            {
+              "text": "run",
+              "match": true
+            },
+            {
+              "text": "snake",
+              "match": false
+            },
+            {
+              "text": "sing",
+              "match": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola oxirida nima dedi?",
+        "ru": "Послушай. Что ребёнок сказал в конце?",
+        "en": "Listen. What did the child say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes, I can!»",
+        "ru": "Верно! «Yes, I can!»",
+        "en": "Right! \"Yes, I can!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can you dance?",
+              "audio": {
+                "key": "ing57-q6-a",
+                "text": "Can you dance?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Let me try!",
+              "audio": {
+                "key": "ing57-q6-b",
+                "text": "Let me try!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes, I can!",
+              "audio": {
+                "key": "ing57-q6-c",
+                "text": "Yes, I can!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "How many?",
+              "Yes, I can!",
+              "No, I can't!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sen qila oladigan harakatlarni belgila!",
+        "ru": "Отметь действия, которые ты умеешь!",
+        "en": "Tap the actions YOU can do!"
+      },
+      "hint": {
+        "uz": "Yugur, suz, kuyla.",
+        "ru": "Бегай, плавай, пой.",
+        "en": "Run, swim, sing."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sen buni qila olasan!",
+        "ru": "Молодец! Ты это умеешь!",
+        "en": "Great! You can do these!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏃",
+              "label": "run",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🏊",
+              "label": "swim",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🎤",
+              "label": "sing",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🌙",
+              "label": "moon"
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": "apple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni harakatga ula!",
+        "ru": "Соедини слово с действием!",
+        "en": "Match each word to its action!"
+      },
+      "hint": {
+        "uz": "run 🏃, swim 🏊, ride 🚴, paint 🎨.",
+        "ru": "run 🏃, swim 🏊, ride 🚴, paint 🎨.",
+        "en": "run 🏃, swim 🏊, ride 🚴, paint 🎨."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "run"
+              },
+              "right": {
+                "emoji": "🏃"
+              }
+            },
+            {
+              "left": {
+                "label": "swim"
+              },
+              "right": {
+                "emoji": "🏊"
+              }
+            },
+            {
+              "left": {
+                "label": "ride"
+              },
+              "right": {
+                "emoji": "🚴"
+              }
+            },
+            {
+              "left": {
+                "label": "paint"
+              },
+              "right": {
+                "emoji": "🎨"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Poygani tartibla!",
+        "ru": "Расставь гонку по порядку!",
+        "en": "Put the race in order!"
+      },
+      "hint": {
+        "uz": "Avval start, oxirida marra.",
+        "ru": "Сначала старт, в конце финиш.",
+        "en": "First start, at the end finish."
+      },
+      "explanation": {
+        "uz": "Barakalla! Start → yugur → marra!",
+        "ru": "Молодец! Старт → беги → финиш!",
+        "en": "Great! Start → run → finish!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "vertical": true,
+          "items": [
+            {
+              "id": "start",
+              "emoji": "🚦",
+              "label": {
+                "uz": "start",
+                "ru": "старт",
+                "en": "start"
+              }
+            },
+            {
+              "id": "run",
+              "emoji": "🏃",
+              "label": {
+                "uz": "yugur",
+                "ru": "беги",
+                "en": "run"
+              }
+            },
+            {
+              "id": "finish",
+              "emoji": "🏁",
+              "label": {
+                "uz": "marra",
+                "ru": "финиш",
+                "en": "finish"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sen ucha olmaysan, lekin qush ___.",
+        "ru": "Ты не умеешь летать, но птица ___.",
+        "en": "You can't fly, but a bird ___."
+      },
+      "hint": {
+        "uz": "Qush qanoti bilan…",
+        "ru": "Птица крыльями…",
+        "en": "A bird with its wings…"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A bird can fly.",
+        "ru": "Верно! A bird can fly.",
+        "en": "Right! A bird can fly."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "can fly\nucha oladi",
+              "ru": "can fly\nумеет летать",
+              "en": "can fly"
+            },
+            {
+              "uz": "can swim\nsuza oladi",
+              "ru": "can swim\nумеет плавать",
+              "en": "can swim"
+            },
+            {
+              "uz": "can read\noʻqiy oladi",
+              "ru": "can read\nумеет читать",
+              "en": "can read"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

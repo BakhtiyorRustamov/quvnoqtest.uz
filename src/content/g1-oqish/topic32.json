@@ -1,0 +1,159 @@
+{
+  "topicId": "g1-oqish-32",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌼🐦🌞",
+  "title": {
+    "uz": "Butun borliq seni der",
+    "ru": "Весь мир зовёт тебя",
+    "en": "The whole world calls you"
+  },
+  "recall": {
+    "uz": "Tabiat bolani chorlaydigan sheʼrni tinglab oʻqiymiz, tezkor savollarga javob topamiz va tabiatga mehr qoʻyamiz.",
+    "ru": "Слушаем стихотворение о том, как природа зовёт ребёнка, отвечаем на быстрые вопросы и учимся любить природу.",
+    "en": "We read a poem in which nature calls to a child, answer quick questions, and learn to love nature."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Butun borliq seni der",
+        "variant": "poem",
+        "audio": "g1-oqish-32-q1",
+        "lines": [
+          "Bogʻda gullar ochilar,",
+          "«Kel!» deb seni chorlagay.",
+          "Tong sahardan bulbullar",
+          "Sayrab, seni ardoqlar.",
+          "",
+          "Quyosh nurin sochadi,",
+          "Yoʻlingga yorugʻ solar.",
+          "Qirlar, bogʻlar seni der,",
+          "Butun borliq seni chorlar."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Sheʼrda tabiat bolani nimaga chorlaydi?", "ru": "К чему природа зовёт ребёнка?", "en": "What does nature call the child to?" },
+      "explanation": { "uz": "Sheʼr tabiatning insonga mehri va uni chorlashi haqida.", "ru": "Стихотворение о любви природы к человеку и её зове.", "en": "The poem is about nature's love for a person and its call." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "Sayroqi qush", "right": "bulbul" },
+        { "left": "Olamga nur sochadi", "right": "quyosh" },
+        { "left": "Toʻrt harfli bahor guli", "right": "lola" }
+      ] } },
+      "prompt": { "uz": "Tezkor savol: har bir topqirlikni javobiga ula!", "ru": "Быстрый вопрос: соедини подсказку с ответом!", "en": "Quick question: match each clue to its answer!" },
+      "hint": { "uz": "Har bir izoh bitta soʻzni bildiradi.", "ru": "Каждая подсказка — одно слово.", "en": "Each clue points to one word." },
+      "explanation": { "uz": "Sayroqi qush = bulbul; olamga nur sochadi = quyosh; toʻrt harfli gul = lola.", "ru": "Певчая птица = соловей; светит миру = солнце; цветок из четырёх букв = тюльпан.", "en": "The songbird = nightingale; it lights the world = the sun; a four-letter flower = tulip." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrda bulbullar tong sahardan sayraydi.", "ru": "В стихотворении соловьи поют с раннего утра.", "en": "In the poem, nightingales sing from early morning." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «Tong sahardan bulbullar sayrab…» deyilgan.", "ru": "В стихотворении сказано, что соловьи поют с рассвета.", "en": "The poem says nightingales sing from dawn." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Bulbullar qachondan sayraydi?", "ru": "С какого времени поют соловьи?", "en": "From when do the nightingales sing?" },
+      "explanation": { "uz": "Toʻgʻri: bulbullar tong sahardan sayraydi.", "ru": "Верно: соловьи поют с раннего утра.", "en": "True: the nightingales sing from early morning." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrda dengiz toʻlqinlari tasvirlangan.", "ru": "В стихотворении описаны морские волны.", "en": "The poem describes ocean waves." },
+        "answer": "ng",
+        "why": { "uz": "Sheʼr bogʻ, gul, quyosh haqida; dengiz haqida gap yoʻq.", "ru": "Стихотворение о саде, цветах, солнце; о море нет.", "en": "The poem is about gardens, flowers, the sun; not the sea." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Sheʼrda dengiz tilga olinganmi?", "ru": "Упоминается ли море?", "en": "Is the sea mentioned?" },
+      "explanation": { "uz": "«Matnda yoʻq»: dengiz haqida gap yoʻq.", "ru": "«Не сказано»: о море речи нет.", "en": "“Not given”: the sea is not mentioned." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "first_letters", "props": {
+        "objects": [
+          { "emoji": "🍒", "letter": "G", "name": { "uz": "gilos", "ru": "черешня", "en": "cherry" } },
+          { "emoji": "🍇", "letter": "U", "name": { "uz": "uzum", "ru": "виноград", "en": "grapes" } },
+          { "emoji": "🍋", "letter": "L", "name": { "uz": "limon", "ru": "лимон", "en": "lemon" } }
+        ],
+        "word": "GUL",
+        "meaning": { "uz": "Gul — oʻsimlikning chiroyli qismi.", "ru": "Gul — цветок.", "en": "Gul — a flower." }
+      } },
+      "prompt": { "uz": "Rasmlarni chapdan oʻngga bosib, soʻzni oching!", "ru": "Нажимай картинки слева направо и открой слово!", "en": "Tap the pictures left to right to reveal the word!" },
+      "hint": { "uz": "Har bir rasm nomining birinchi harfini ol.", "ru": "Возьми первую букву каждого названия.", "en": "Take the first letter of each name." },
+      "explanation": { "uz": "gilos, uzum, limon → G-U-L → GUL.", "ru": "черешня, виноград, лимон → G-U-L → GUL.", "en": "cherry, grapes, lemon → G-U-L → GUL." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "quyosh", "match": true },
+        { "text": "bulbul", "match": true },
+        { "text": "bogʻ", "match": true },
+        { "text": "muzlatgich", "match": false },
+        { "text": "televizor", "match": false }
+      ] } },
+      "prompt": { "uz": "Tabiatga oid soʻzlarni bos!", "ru": "Нажми слова о природе!", "en": "Tap the nature words!" },
+      "hint": { "uz": "Tabiat — quyosh, qushlar, bogʻ-rogʻ.", "ru": "Природа — солнце, птицы, сады.", "en": "Nature — the sun, birds, gardens." },
+      "explanation": { "uz": "Quyosh, bulbul, bogʻ — tabiat; muzlatgich va televizor — jihoz.", "ru": "Солнце, соловей, сад — природа; холодильник и телевизор — техника.", "en": "Sun, nightingale, garden are nature; a fridge and TV are appliances." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Tabiatni sevish va asrash kerak", "ru": "Природу нужно любить и беречь", "en": "We should love and protect nature" },
+        { "uz": "Gullarni uzib tashlash kerak", "ru": "Цветы нужно рвать", "en": "We should pluck the flowers" },
+        { "uz": "Qushlarni quvish kerak", "ru": "Птиц нужно прогонять", "en": "We should chase away birds" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Shoir sheʼr orqali nima demoqchi?", "ru": "Что хочет сказать поэт стихотворением?", "en": "What is the poet trying to say?" },
+      "hint": { "uz": "Butun borliq bolani mehr bilan chorlaydi.", "ru": "Весь мир с любовью зовёт ребёнка.", "en": "The whole world lovingly calls the child." },
+      "explanation": { "uz": "Shoir tabiatni sevish, uni asrash kerakligini aytadi.", "ru": "Поэт говорит, что природу нужно любить и беречь.", "en": "The poet says we should love and protect nature." },
+      "openEnd": { "uz": "Sen tabiatni asrash uchun nima qila olasan?", "ru": "Что ты можешь сделать, чтобы беречь природу?", "en": "What can you do to protect nature?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Tabiatni", "seving", "va", "asrang."], "emoji": "🌍", "clue": { "uz": "Sheʼrning chaqirigʻi", "ru": "Призыв стихотворения", "en": "The poem's call" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuzing!", "ru": "Составь предложение из слов!", "en": "Build the sentence from the words!" },
+      "hint": { "uz": "Gap «Tabiatni» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Tabiatni».", "en": "The sentence starts with “Tabiatni”." },
+      "explanation": { "uz": "«Tabiatni seving va asrang»: u bizning uyimiz.", "ru": "«Любите и берегите природу»: это наш дом.", "en": "“Love and protect nature”: it is our home." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "bulbul" },
+        { "text": "chumchuq" },
+        { "text": "qaldirgʻoch" },
+        { "text": "quyon", "odd": true }
+      ], "clue": { "uz": "Qaysi biri qush emas?", "ru": "Кто из них не птица?", "en": "Which one is not a bird?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi qush, biri esa hayvon.", "ru": "Три — птицы, одно — зверёк.", "en": "Three are birds, one is an animal." },
+      "explanation": { "uz": "Quyon — hayvon; bulbul, chumchuq, qaldirgʻoch — qushlar.", "ru": "Заяц — зверь; соловей, воробей, ласточка — птицы.", "en": "A rabbit is an animal; nightingale, sparrow, swallow are birds." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "bulbul", "syllables": ["bul", "bul"], "emoji": "🐦", "clue": { "uz": "Eng chiroyli sayraydigan qush", "ru": "Птица с самым красивым пением", "en": "The bird with the loveliest song" } } },
+      "prompt": { "uz": "Boʻgʻinlardan qush nomini yigʻ!", "ru": "Собери название птицы из слогов!", "en": "Build the bird's name from the syllables!" },
+      "hint": { "uz": "bul + bul = ?", "ru": "bul + bul = ?", "en": "bul + bul = ?" },
+      "explanation": { "uz": "bul-bul → bulbul. Sayroqi qush.", "ru": "bul-bul → bulbul (соловей).", "en": "bul-bul → bulbul (nightingale)." }
+    }
+  ]
+}

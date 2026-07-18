@@ -1,0 +1,74 @@
+{
+  "topicId": "g1-tex-13",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Qogʻozdan qor parchasi",
+    "ru": "Снежинка из бумаги",
+    "en": "A paper snowflake"
+  },
+  "recall": {
+    "uz": "Bugun oq qogʻozni buklab, qirqib qor parchasi yasaymiz.",
+    "ru": "Сегодня сложим и вырежем снежинку из белой бумаги.",
+    "en": "Today we fold and cut a snowflake from white paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qor parchasi yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай снежинку. Выполняй каждый этап по рисунку!",
+        "en": "Make a snowflake. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Avval qogʻozni bukla.",
+        "ru": "Сначала сложи бумагу.",
+        "en": "First fold the paper."
+      },
+      "explanation": {
+        "uz": "Chiroyli qor parchasi!",
+        "ru": "Красивая снежинка!",
+        "en": "A pretty snowflake!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "oq qogʻoz",
+              "ru": "белая бумага",
+              "en": "white paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Qogʻozni uchburchak qilib bukla.",
+              "ru": "Сложи бумагу в треугольник.",
+              "en": "Fold the paper into a triangle."
+            },
+            {
+              "uz": "Chetlaridan kichik shakllar kesib ol.",
+              "ru": "Вырежь по краям маленькие фигурки.",
+              "en": "Cut small shapes from the edges."
+            },
+            {
+              "uz": "Qogʻozni och — qor parchasi tayyor.",
+              "ru": "Разверни бумагу — снежинка готова.",
+              "en": "Unfold the paper — the snowflake is ready."
+            }
+          ],
+          "art": "papersnowflake",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

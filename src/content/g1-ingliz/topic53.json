@@ -1,0 +1,500 @@
+{
+  "topicId": "g1-ingliz-53",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐙🍊🐂📦",
+  "title": {
+    "uz": "«o» tovushi: sakkizoyoq",
+    "ru": "Звук «o»: осьминог",
+    "en": "The 'o' sound: an octopus"
+  },
+  "recall": {
+    "uz": "Hayvon tovushlari! Bugun «o» tovushini mashq qilamiz: octopus — sakkizoyoq, orange — apelsin, ox — hoʻkiz. O-o-octopus!",
+    "ru": "Звуки животных! Сегодня тренируем звук «o»: octopus — осьминог, orange — апельсин, ox — вол. O-o-octopus!",
+    "en": "Animal sounds! Today we practise the /o/ sound: octopus, orange and ox. O-o-octopus!"
+  },
+  "ttsText": {
+    "uz": "«o» tovushi.",
+    "en": "Animal sounds! The o sound. O-o-octopus! An octopus in an orange box!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «o» bilan boshlanadigan hayvonni bos!",
+        "ru": "Послушай и нажми животное на «o»!",
+        "en": "Listen and tap the animal that starts with /o/!"
+      },
+      "audio": {
+        "key": "ing53-q1",
+        "text": "Octopus! O-o-octopus!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«octopus» — sakkizoyoq (dengizda).",
+        "ru": "«octopus» — осьминог (в море).",
+        "en": "\"octopus\" starts with /o/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Octopus — sakkizoyoq.",
+        "ru": "Верно! Octopus — осьминог.",
+        "en": "Right! Octopus!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐙",
+              "label": "octopus",
+              "correct": true
+            },
+            {
+              "emoji": "🐟",
+              "label": "fish"
+            },
+            {
+              "emoji": "🦁",
+              "label": "lion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«o» bilan boshlanadigan mevani bos!",
+        "ru": "Нажми фрукт на «o»!",
+        "en": "Tap the fruit that starts with /o/!"
+      },
+      "audio": {
+        "key": "ing53-q2",
+        "text": "Orange! O-o-orange!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«orange» — apelsin.",
+        "ru": "«orange» — апельсин.",
+        "en": "\"orange\" starts with /o/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Orange — apelsin.",
+        "ru": "Верно! Orange — апельсин.",
+        "en": "Right! Orange!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍊",
+              "label": "orange",
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🍌",
+              "label": "banana"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«o» tovushi bilan boshlanadigan hammasini belgila!",
+        "ru": "Отметь всё на «o»!",
+        "en": "Tap everything that starts with /o/!"
+      },
+      "hint": {
+        "uz": "octopus, orange, ox.",
+        "ru": "octopus, orange, ox.",
+        "en": "octopus, orange, ox."
+      },
+      "explanation": {
+        "uz": "Barakalla! Octopus, orange, ox — hammasi «o»!",
+        "ru": "Молодец! Octopus, orange, ox — всё на «o»!",
+        "en": "Great! Octopus, orange, ox — all /o/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐙",
+              "label": "octopus",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍊",
+              "label": "orange",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐂",
+              "label": "ox",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«o» bilan boshlanadigan hayvonni bos!",
+        "ru": "Нажми животное на «o»!",
+        "en": "Tap the animal that starts with /o/!"
+      },
+      "audio": {
+        "key": "ing53-q4",
+        "text": "Ox! O-o-ox!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«ox» — hoʻkiz.",
+        "ru": "«ox» — вол.",
+        "en": "\"ox\" starts with /o/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ox — hoʻkiz.",
+        "ru": "Верно! Ox — вол.",
+        "en": "Right! Ox!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐂",
+              "label": "ox",
+              "correct": true
+            },
+            {
+              "emoji": "🐴",
+              "label": "horse"
+            },
+            {
+              "emoji": "🐑",
+              "label": "sheep"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va birga ayt. Qaysi tovush takrorlanadi?",
+        "ru": "Послушай и повтори. Какой звук повторяется?",
+        "en": "Listen and say it. Which sound repeats?"
+      },
+      "hint": {
+        "uz": "Octopus, orange, box — bir tovush.",
+        "ru": "Octopus, orange, box — один звук.",
+        "en": "octopus, orange, box — the same sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «o» tovushi takrorlanadi.",
+        "ru": "Верно! Повторяется звук «o».",
+        "en": "Right! The /o/ sound repeats."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🐙",
+              "name": "Octopus",
+              "text": "An octopus in an orange box!",
+              "audio": {
+                "key": "ing53-q5-a",
+                "text": "An octopus in an orange box!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "You",
+              "text": "O-o-octopus! O-o-orange!",
+              "audio": {
+                "key": "ing53-q5-b",
+                "text": "O! O! O! Octopus, orange, ox!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qaysi tovush?",
+              "ru": "Какой звук?",
+              "en": "Which sound?"
+            },
+            "choices": [
+              "/o/",
+              "/e/",
+              "/u/"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «orange» soʻzi «o» tovushi bilan boshlanadi.",
+        "ru": "Верно? Слово «orange» начинается на «o».",
+        "en": "Is this right? \"orange\" starts with the /o/ sound."
+      },
+      "hint": {
+        "uz": "O-o-orange!",
+        "ru": "O-o-orange!",
+        "en": "O-o-orange!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Orange — «o» tovushi.",
+        "ru": "Верно! Orange — звук «o».",
+        "en": "Right! \"orange\" starts with /o/."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍊",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil juftni top!",
+        "ru": "Найди одинаковую пару!",
+        "en": "Find the matching pair!"
+      },
+      "hint": {
+        "uz": "Bir xil ikkita rasmni top.",
+        "ru": "Найди два одинаковых.",
+        "en": "Find the two that are the same."
+      },
+      "explanation": {
+        "uz": "Barakalla! Juftni topding!",
+        "ru": "Молодец! Ты нашёл пару!",
+        "en": "Great! You found the pair!"
+      },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            {
+              "id": "oct1",
+              "emoji": "🐙",
+              "key": "octopus"
+            },
+            {
+              "id": "orange",
+              "emoji": "🍊",
+              "key": "orange"
+            },
+            {
+              "id": "oct2",
+              "emoji": "🐙",
+              "key": "octopus"
+            },
+            {
+              "id": "ox",
+              "emoji": "🐂",
+              "key": "ox"
+            },
+            {
+              "id": "apple",
+              "emoji": "🍎",
+              "key": "apple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yana «o» bilan boshlanadigan hammasini belgila!",
+        "ru": "Снова отметь всё на «o»!",
+        "en": "Tap all the /o/ words again!"
+      },
+      "hint": {
+        "uz": "octopus, orange, ox.",
+        "ru": "octopus, orange, ox.",
+        "en": "octopus, orange, ox."
+      },
+      "explanation": {
+        "uz": "Barakalla! Octopus, orange, ox — «o»!",
+        "ru": "Молодец! Octopus, orange, ox — «o»!",
+        "en": "Great! Octopus, orange, ox — /o/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐙",
+              "label": "octopus",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍊",
+              "label": "orange",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐂",
+              "label": "ox",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "☀️",
+              "label": "sun"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐱",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, «o» soʻzlarini juftla!",
+        "ru": "Открывай карточки: слова на «o»!",
+        "en": "Flip the cards: match the /o/ words!"
+      },
+      "hint": {
+        "uz": "octopus 🐙, orange 🍊, ox 🐂.",
+        "ru": "octopus 🐙, orange 🍊, ox 🐂.",
+        "en": "octopus 🐙, orange 🍊, ox 🐂."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐙"
+              },
+              "b": {
+                "label": "octopus"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍊"
+              },
+              "b": {
+                "label": "orange"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐂"
+              },
+              "b": {
+                "label": "ox"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «o» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «o»?",
+        "en": "Which word starts with the /o/ sound?"
+      },
+      "hint": {
+        "uz": "O-o-octopus!",
+        "ru": "O-o-octopus!",
+        "en": "O-o-octopus!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «octopus» — «o» tovushi.",
+        "ru": "Верно! «octopus» — звук «o».",
+        "en": "Right! \"octopus\" starts with /o/."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "octopus\nsakkizoyoq",
+              "ru": "octopus\nосьминог",
+              "en": "octopus"
+            },
+            {
+              "uz": "dog\nit",
+              "ru": "dog\nсобака",
+              "en": "dog"
+            },
+            {
+              "uz": "ball\nkoptok",
+              "ru": "ball\nмяч",
+              "en": "ball"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

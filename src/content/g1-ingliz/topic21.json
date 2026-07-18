@@ -1,0 +1,509 @@
+{
+  "topicId": "g1-ingliz-21",
+  "subjectKey": "g1-ingliz",
+  "emojis": "❤️👨‍👩‍👧‍👦🎨🖼️",
+  "title": {
+    "uz": "Oilangni sev (hikoya)",
+    "ru": "Люби свою семью (история)",
+    "en": "Love your family (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bugungi qadriyat — «Love your family» (oilangni sev). Oilamizni sevamiz va gʻamxoʻrlik qilamiz.",
+    "ru": "Время истории! Ценность сегодня — «Love your family» (люби свою семью). Мы любим и заботимся о семье.",
+    "en": "Story time! Today's value is \"Love your family.\" We love and care for our family."
+  },
+  "ttsText": {
+    "uz": "Oilangni sev.",
+    "en": "Story time! Love your family. I love my family!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: nima birinchi boʻldi?",
+        "ru": "Расставь историю по порядку!",
+        "en": "Put the story in order!"
+      },
+      "hint": {
+        "uz": "Avval Sofia rasm chizadi.",
+        "ru": "Сначала София рисует.",
+        "en": "First Sofia draws."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sofia oilasini sevadi.",
+        "ru": "Молодец! София любит свою семью.",
+        "en": "Great! Sofia loves her family."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🎨",
+          "events": [
+            {
+              "text": {
+                "uz": "Sofia oilasining rasmini chizadi.",
+                "ru": "София рисует свою семью.",
+                "en": "Sofia draws her family."
+              }
+            },
+            {
+              "text": {
+                "uz": "U rasmni sanʼat koʻrgazmasiga olib boradi.",
+                "ru": "Она несёт рисунок на выставку.",
+                "en": "She takes it to the art show."
+              }
+            },
+            {
+              "text": {
+                "uz": "Hamma rasmga qoyil qoladi.",
+                "ru": "Все любуются рисунком.",
+                "en": "Everyone loves her picture."
+              }
+            },
+            {
+              "text": {
+                "uz": "Sofia: «Men oilamni sevaman!»",
+                "ru": "София: «Я люблю свою семью!»",
+                "en": "Sofia says \"I love my family!\""
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sofia nima dedi?",
+        "ru": "Послушай. Что сказала София?",
+        "en": "Listen. What did Sofia say?"
+      },
+      "hint": {
+        "uz": "«I love my family» — oilamni sevaman.",
+        "ru": "«I love my family» — люблю семью.",
+        "en": "\"I love my family.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes! I love my family!»",
+        "ru": "Верно! «Yes! I love my family!»",
+        "en": "Right! \"Yes! I love my family!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "Is this your family?",
+              "audio": {
+                "key": "ing21-q2-a",
+                "text": "Is this your family?",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Sofia",
+              "text": "Yes! I love my family!",
+              "audio": {
+                "key": "ing21-q2-b",
+                "text": "Yes! I love my family!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sofia nima dedi?",
+              "ru": "Что сказала София?",
+              "en": "What did Sofia say?"
+            },
+            "choices": [
+              "I love my family!",
+              "How many?",
+              "Go away!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qadriyati nima?",
+        "ru": "Какая ценность у истории?",
+        "en": "What is the value of the story?"
+      },
+      "hint": {
+        "uz": "Oilamizga boʻlgan his.",
+        "ru": "Чувство к семье.",
+        "en": "How we feel about family."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Love your family — oilangni sev.",
+        "ru": "Верно! Love your family — люби семью.",
+        "en": "Right! Love your family!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "oilangni sevish",
+              "ru": "любить семью",
+              "en": "love your family"
+            },
+            {
+              "uz": "jahl qilish",
+              "ru": "злиться",
+              "en": "be angry"
+            },
+            {
+              "uz": "yolgʻiz qolish",
+              "ru": "быть одному",
+              "en": "stay alone"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Butun oilani bos!",
+        "ru": "Нажми всю семью!",
+        "en": "Tap the whole family!"
+      },
+      "hint": {
+        "uz": "Hamma birga.",
+        "ru": "Все вместе.",
+        "en": "Everyone together."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 👨‍👩‍👧‍👦 — family.",
+        "ru": "Верно! 👨‍👩‍👧‍👦 — family.",
+        "en": "Right! 👨‍👩‍👧‍👦 a family!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👨‍👩‍👧‍👦",
+              "label": "family",
+              "correct": true
+            },
+            {
+              "emoji": "🤖",
+              "label": "robot"
+            },
+            {
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Oilamizni sevamiz va yordam beramiz.",
+        "ru": "Верно? Мы любим семью и помогаем.",
+        "en": "Is this right? We love and help our family."
+      },
+      "hint": {
+        "uz": "Oila — mehr.",
+        "ru": "Семья — это любовь.",
+        "en": "Family is love."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Oilamizni sevamiz.",
+        "ru": "Верно! Мы любим семью.",
+        "en": "Right! We love our family."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "❤️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Rasmda kimlar bor?",
+        "ru": "Послушай. Кто на рисунке?",
+        "en": "Listen. Who is in the picture?"
+      },
+      "hint": {
+        "uz": "Oila aʼzolari.",
+        "ru": "Члены семьи.",
+        "en": "Family members."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «My mom, dad and me!»",
+        "ru": "Верно! «My mom, dad and me!»",
+        "en": "Right! \"My mom, dad and me!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Who's in the picture?",
+              "audio": {
+                "key": "ing21-q6-a",
+                "text": "Who's in the picture?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Sofia",
+              "text": "My mom, dad and me!",
+              "audio": {
+                "key": "ing21-q6-b",
+                "text": "My mom, dad and me!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Rasmda kimlar bor?",
+              "ru": "Кто на рисунке?",
+              "en": "Who is in the picture?"
+            },
+            "choices": [
+              "A robot!",
+              "Mom, dad and me!",
+              "A ball!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oilamizga qanday munosabatda boʻlamiz?",
+        "ru": "Как мы относимся к семье?",
+        "en": "How do we treat our family?"
+      },
+      "hint": {
+        "uz": "Mehr va gʻamxoʻrlik bilan.",
+        "ru": "С любовью и заботой.",
+        "en": "With love and care."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Mehr bilan.",
+        "ru": "Верно! С любовью.",
+        "en": "Right! With love."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "mehr bilan",
+              "ru": "с любовью",
+              "en": "with love"
+            },
+            {
+              "uz": "qoʻpol",
+              "ru": "грубо",
+              "en": "rudely"
+            },
+            {
+              "uz": "beparvo",
+              "ru": "равнодушно",
+              "en": "carelessly"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Rasmdagi oila aʼzolarini belgila!",
+        "ru": "Отметь членов семьи на рисунке!",
+        "en": "Tap the family members in the picture!"
+      },
+      "hint": {
+        "uz": "Oyi, dada, singil.",
+        "ru": "Мама, папа, сестра.",
+        "en": "Mom, dad, sister."
+      },
+      "explanation": {
+        "uz": "Barakalla! Oyi, dada, singil — oila!",
+        "ru": "Молодец! Мама, папа, сестра — семья!",
+        "en": "Great! Mom, dad, sister — family!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👩",
+              "label": "mom",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👨",
+              "label": "dad",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👧",
+              "label": "sister",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🤖",
+              "label": "robot"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐟",
+              "label": "fish"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«family»ning tarjimasi nima?",
+        "ru": "Что значит «family»?",
+        "en": "What does \"family\" mean?"
+      },
+      "hint": {
+        "uz": "Oyi, dada, bola…",
+        "ru": "Мама, папа, дети…",
+        "en": "Mom, dad, children…"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Family — oila.",
+        "ru": "Верно! Family — семья.",
+        "en": "Right! A family."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "oila",
+              "ru": "семья",
+              "en": "a family"
+            },
+            {
+              "uz": "maktab",
+              "ru": "школа",
+              "en": "a school"
+            },
+            {
+              "uz": "oʻyinchoq",
+              "ru": "игрушка",
+              "en": "a toy"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Buvi nima deb javob berdi?",
+        "ru": "Послушай. Что ответила бабушка?",
+        "en": "Listen. What did grandma answer?"
+      },
+      "hint": {
+        "uz": "«I love you too!» — men ham seni sevaman.",
+        "ru": "«I love you too!» — я тоже тебя люблю.",
+        "en": "\"I love you too!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «I love you too!»",
+        "ru": "Верно! «I love you too!»",
+        "en": "Right! \"I love you too!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Sofia",
+              "text": "I love you, Grandma!",
+              "audio": {
+                "key": "ing21-q10-a",
+                "text": "I love you, Grandma!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👵",
+              "name": "Grandma",
+              "text": "I love you too!",
+              "audio": {
+                "key": "ing21-q10-b",
+                "text": "I love you too!",
+                "voice": "teacher"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Buvi nima dedi?",
+              "ru": "Что сказала бабушка?",
+              "en": "What did grandma say?"
+            },
+            "choices": [
+              "How many?",
+              "Goodbye!",
+              "I love you too!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    }
+  ]
+}

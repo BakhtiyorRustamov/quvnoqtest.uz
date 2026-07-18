@@ -1,0 +1,42 @@
+{
+  "topicId": "g1-tex-24",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Erkin mavzu",
+    "ru": "Свободная тема",
+    "en": "Free topic"
+  },
+  "recall": {
+    "uz": "Bugun erkin mavzu! Oʻrgangan usullaringdan foydalanib, xohlagan buyumingni yasa.",
+    "ru": "Сегодня свободная тема! Используя изученные приёмы, сделай что хочешь.",
+    "en": "Today is a free topic! Using the techniques you've learned, make anything you like."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xohlagan narsangni yasa, soʻng suratga ol.",
+        "ru": "Сделай что хочешь и сфотографируй.",
+        "en": "Make anything you like, then take a photo."
+      },
+      "hint": {
+        "uz": "Qogʻoz, plastilin — istagan ashyodan foydalan.",
+        "ru": "Используй бумагу, пластилин — что хочешь.",
+        "en": "Use paper, plastilin — whatever you like."
+      },
+      "explanation": {
+        "uz": "Ajoyib ijod!",
+        "ru": "Замечательное творчество!",
+        "en": "Wonderful creativity!"
+      },
+      "widget": {
+        "type": "photo_upload",
+        "props": {}
+      }
+    }
+  ]
+}

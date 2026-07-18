@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-05",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Olma",
+    "ru": "Яблоко",
+    "en": "An apple"
+  },
+  "recall": {
+    "uz": "Bugun plastilindan mazali olma yasaymiz.",
+    "ru": "Сегодня слепим из пластилина яблоко.",
+    "en": "Today we make an apple from plastilin."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Plastilindan olma yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Слепи яблоко. Выполняй каждый этап по рисунку!",
+        "en": "Make an apple. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Avval yumaloq shar yasa.",
+        "ru": "Сначала скатай шарик.",
+        "en": "First roll a round ball."
+      },
+      "explanation": {
+        "uz": "Mazali olma!",
+        "ru": "Вкусное яблоко!",
+        "en": "A tasty apple!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "qizil plastilin",
+              "ru": "красный пластилин",
+              "en": "red plastilin"
+            },
+            {
+              "uz": "yashil plastilin",
+              "ru": "зелёный пластилин",
+              "en": "green plastilin"
+            },
+            {
+              "uz": "jigarrang plastilin",
+              "ru": "коричневый пластилин",
+              "en": "brown plastilin"
+            },
+            {
+              "uz": "taxtakach",
+              "ru": "дощечка",
+              "en": "a work board"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Qizil plastilindan yumaloq shar yasa.",
+              "ru": "Скатай шарик из красного пластилина.",
+              "en": "Roll a ball from red plastilin."
+            },
+            {
+              "uz": "Ustiga jigarrang bandak qoʻy.",
+              "ru": "Сверху прикрепи коричневый черешок.",
+              "en": "Add a brown stem on top."
+            },
+            {
+              "uz": "Yashil plastilindan barg yasab yopishtir.",
+              "ru": "Сделай зелёный листик и прикрепи.",
+              "en": "Make a green leaf and attach it."
+            }
+          ],
+          "art": "apple",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

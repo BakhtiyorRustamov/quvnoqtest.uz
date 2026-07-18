@@ -1,0 +1,241 @@
+{
+  "topicId": "g1-tarbiya-01",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🏡🌳🕌❤️",
+  "title": {
+    "uz": "Men yashaydigan Oʻzbekiston",
+    "ru": "Узбекистан, где я живу",
+    "en": "The Uzbekistan I live in"
+  },
+  "recall": {
+    "uz": "Oʻzbekiston — bizning Vatanimiz. Toshkent shahri mamlakatimiz poytaxtidir. Buxoro, Samarqand, Xiva va Qoʻqon — dunyoga mashhur tarixiy shaharlar. Vatanni sevish — uni asrash va obodonlashtirish demakdir.",
+    "ru": "Узбекистан — наша Родина. Ташкент — столица нашей страны. Бухара, Самарканд, Хива и Коканд — всемирно известные исторические города. Любить Родину — значит беречь её и делать краше.",
+    "en": "Uzbekistan is our homeland. Tashkent is the capital of our country. Bukhara, Samarkand, Khiva and Kokand are world-famous historic cities. To love the homeland means to care for it and make it greener."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Vatanimizning poytaxti qaysi shahar?",
+        "ru": "Какой город — столица нашей Родины?",
+        "en": "Which city is the capital of our homeland?"
+      },
+      "hint": {
+        "uz": "Eng katta shahrimiz.",
+        "ru": "Наш самый большой город.",
+        "en": "Our biggest city."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Toshkent — poytaxt.",
+        "ru": "Верно! Ташкент — столица.",
+        "en": "Right! Tashkent is the capital."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Toshkent",
+              "ru": "Ташкент",
+              "en": "Tashkent"
+            },
+            {
+              "uz": "Samarqand",
+              "ru": "Самарканд",
+              "en": "Samarkand"
+            },
+            {
+              "uz": "Buxoro",
+              "ru": "Бухара",
+              "en": "Bukhara"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻzbekistonning mashhur shaharlarini belgila!",
+        "ru": "Отметь знаменитые города Узбекистана!",
+        "en": "Tap the famous cities of Uzbekistan!"
+      },
+      "hint": {
+        "uz": "Tarixiy shaharlarimiz.",
+        "ru": "Наши исторические города.",
+        "en": "Our historic cities."
+      },
+      "explanation": {
+        "uz": "Barakalla! Samarqand, Buxoro, Xiva — oʻzimizning shaharlar.",
+        "ru": "Молодец! Самарканд, Бухара, Хива — наши города.",
+        "en": "Great! Samarkand, Bukhara, Khiva are our cities."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "label": {
+                "uz": "Samarqand",
+                "ru": "Самарканд",
+                "en": "Samarkand"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "label": {
+                "uz": "Buxoro",
+                "ru": "Бухара",
+                "en": "Bukhara"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "label": {
+                "uz": "Xiva",
+                "ru": "Хива",
+                "en": "Khiva"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "label": {
+                "uz": "Parij",
+                "ru": "Париж",
+                "en": "Paris"
+              }
+            },
+            {
+              "id": "d1",
+              "label": {
+                "uz": "London",
+                "ru": "Лондон",
+                "en": "London"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Siz qaysi qishloq yoki shaharda yashaysiz?",
+        "ru": "В каком селе или городе ты живёшь?",
+        "en": "Which village or city do you live in?"
+      },
+      "hint": {
+        "uz": "Oʻz shahring yoki qishlogʻing nomini yoz.",
+        "ru": "Напиши название своего города или села.",
+        "en": "Write the name of your own town or village."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen oʻz yurtingni yaxshi bilasan.",
+        "ru": "Отлично! Ты хорошо знаешь свой край.",
+        "en": "Great! You know your home place well."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men Toshkent shahrida yashayman. Bu — mening tugʻilib oʻsgan shahrim.",
+            "ru": "Я живу в городе Ташкенте. Это город, где я родился и вырос.",
+            "en": "I live in Tashkent. This is the city where I was born and grew up."
+          },
+          "placeholder": {
+            "uz": "Men ... da yashayman.",
+            "ru": "Я живу в ...",
+            "en": "I live in ..."
+          },
+          "starters": [
+            {
+              "uz": "Men ... da yashayman.",
+              "ru": "Я живу в ...",
+              "en": "I live in ..."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Toshkent — Oʻzbekistonning poytaxti.",
+        "ru": "Верно? Ташкент — столица Узбекистана.",
+        "en": "Is this right? Tashkent is the capital of Uzbekistan."
+      },
+      "hint": {
+        "uz": "Poytaxtni esla.",
+        "ru": "Вспомни столицу.",
+        "en": "Remember the capital."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Toshkent — poytaxtimiz.",
+        "ru": "Верно! Ташкент — наша столица.",
+        "en": "Right! Tashkent is our capital."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🏙️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Vatanni sevish siz uchun nimani anglatadi? Oʻz fikringizni yozing.",
+        "ru": "Что для тебя значит любить Родину? Напиши своё мнение.",
+        "en": "What does loving your homeland mean to you? Write your own thoughts."
+      },
+      "hint": {
+        "uz": "Vatanni asrash, obodonlashtirish, hurmat qilish haqida oʻyla.",
+        "ru": "Подумай о бережности, озеленении, уважении к Родине.",
+        "en": "Think about caring for, greening and respecting the homeland."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har bir fikring qadrli.",
+        "ru": "Молодец! Каждая твоя мысль ценна.",
+        "en": "Great! Every thought of yours matters."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Vatanni sevish — uni toza saqlash, daraxt ekish va yurtim bilan faxrlanish demakdir.",
+            "ru": "Любить Родину — значит беречь её чистоту, сажать деревья и гордиться своим краем.",
+            "en": "Loving my homeland means keeping it clean, planting trees and being proud of my land."
+          },
+          "placeholder": {
+            "uz": "Menimcha, Vatanni sevish — ...",
+            "ru": "По-моему, любить Родину — ...",
+            "en": "I think loving the homeland means ..."
+          },
+          "starters": [
+            {
+              "uz": "Menimcha, Vatanni sevish —",
+              "ru": "По-моему, любить Родину —",
+              "en": "I think loving the homeland means —"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

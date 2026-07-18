@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { useTranslations } from 'next-intl';
-import { Atom, Dna, Rocket, Flask, Planet, Microscope, LightningIcon, TestTubes, Gear, Comet, StarIcon } from './Science';
+import { Atom, Dna, Rocket, Flask, Planet, Microscope, LightningIcon, TestTubes, Gear, Comet, StarIcon, Lightbulb, Trophy } from './Science';
 import { CountUp } from './scroll';
 
 /* =============================================================================
@@ -147,26 +147,33 @@ export default function ScrollScene() {
         </TE>
 
         {/* content cards that pop in at scroll thresholds */}
+        {/* 1 — how many subjects are actually live for grade 1 */}
         <SceneCard at={0.04} span={0.34}>
           <div className="text-cyan-300">
             <span className="text-6xl font-black sm:text-7xl">
-              <CountUp to={28} suffix="+" />
+              <CountUp to={10} suffix="+" />
             </span>
           </div>
-          <h3 className="mt-2 text-2xl font-black">{t('why.f2t')}</h3>
-          <p className="mt-1 text-white/80">{t('why.f2b')}</p>
+          <h3 className="mt-2 text-2xl font-black">{t('scene.t1')}</h3>
+          <p className="mt-1 text-white/80">{t('scene.b1')}</p>
         </SceneCard>
 
+        {/* 2 — thinking / reasoning practice */}
         <SceneCard at={0.38} span={0.32}>
           <div className="mx-auto mb-3 h-14 w-14 text-yellow-300">
-            <Atom className="h-full w-full" />
+            <Lightbulb className="h-full w-full" />
           </div>
-          <h3 className="text-2xl font-black">{t('why.f3t')}</h3>
-          <p className="mt-1 text-white/80">{t('why.f3b')}</p>
+          <h3 className="text-2xl font-black">{t('scene.t2')}</h3>
+          <p className="mt-1 text-white/80">{t('scene.b2')}</p>
         </SceneCard>
 
+        {/* 3 — online contests between pupils, with certificates */}
         <SceneCard at={0.7} span={0.4}>
-          <h3 className="text-3xl font-black leading-tight sm:text-4xl">{t('banner.title')}</h3>
+          <div className="mx-auto mb-3 h-14 w-14 text-yellow-300">
+            <Trophy className="h-full w-full" />
+          </div>
+          <h3 className="text-2xl font-black">{t('scene.t3')}</h3>
+          <p className="mt-1 text-white/80">{t('scene.b3')}</p>
           <div className="mt-4 flex justify-center gap-2 text-yellow-300">
             <span className="h-6 w-6">
               <StarIcon className="h-full w-full" />

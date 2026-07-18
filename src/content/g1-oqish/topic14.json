@@ -1,0 +1,434 @@
+{
+  "topicId": "g1-oqish-14",
+  "subjectKey": "g1-oqish",
+  "emojis": "🧴✏️🏫",
+  "title": {
+    "uz": "Yelim voqeasi",
+    "ru": "История с клеем",
+    "en": "The glue incident"
+  },
+  "recall": {
+    "uz": "Bugun qishki hazil haqidagi hikoyaning davomini oʻqiymiz. Voqealar ketma-ketligini aniqlaymiz, «hovliqmoq» va «jovdiramoq» soʻzlarining maʼnosini bilib olamiz va yomon hazil nimaga olib kelishini muhokama qilamiz.",
+    "ru": "Сегодня читаем продолжение рассказа о зимней шутке. Определим порядок событий, узнаем значения слов «hovliqmoq» и «jovdiramoq» и обсудим, к чему приводит злая шутка.",
+    "en": "Today we read the next part of a story about a winter prank. We put the events in order, learn the words “hovliqmoq” and “jovdiramoq”, and discuss where a mean prank leads."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Yelim voqeasi",
+          "variant": "story",
+          "audio": "g1-oqish-14-q1",
+          "lines": [
+            "Anvar meni hovlida chalib, qorga yiqitgan edi.",
+            "Alam qilib, undan oʻch olmoqchi boʻldim.",
+            "Ertalab maktabga uydan yelim olib bordim.",
+            "Anvar deraza yonidagi partada yolgʻiz oʻtiradi.",
+            "Uning joyiga bemalol koʻp qilib yelim quydim.",
+            "Anvar har doim qoʻngʻiroqqa hovliqib, zoʻrgʻa yetib keladi.",
+            "Bugun ham shoshib kirdi-da, joyiga oʻtirdi.",
+            "Birinchi soat — matematika.",
+            "Ustoz uni doskaga chaqirdilar.",
+            "Anvar turaman dedi-yu, turolmadi: u partaga yopishib qolgan edi!",
+            "Butun sinf kulib yubordi.",
+            "Anvar atrofga jovdirab qaradi.",
+            "Uning koʻzlariga qarab, kulgim birdan yoʻqoldi.",
+            "Ichimda nimadir «chirt» etib uzilgandek boʻldi.",
+            "Men uni izza qilmoqchi edim, ammo oʻzim uyalib ketdim.",
+            "Darsdan soʻng yoniga borib, hammasini boʻynimga oldim va uzr soʻradim."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Hikoyani diqqat bilan oʻqing!",
+        "ru": "Внимательно прочитай рассказ!",
+        "en": "Read the story carefully!"
+      },
+      "hint": {
+        "uz": "Bola nima uchun yelim olib kelganiga eʼtibor bering.",
+        "ru": "Обрати внимание, зачем мальчик принёс клей.",
+        "en": "Notice why the boy brought glue."
+      },
+      "explanation": {
+        "uz": "Hikoya oʻch olish uchun qilingan hazil haqida: birovni izza qilgan odam oxirida oʻzi uyaladi.",
+        "ru": "Рассказ о шутке ради мести: кто позорит другого, в конце сам чувствует стыд.",
+        "en": "The story is about a revenge prank: whoever shames another ends up ashamed himself."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yelim",
+              "ru": "Клей",
+              "en": "Glue"
+            },
+            {
+              "uz": "Qor kuragi",
+              "ru": "Лопату для снега",
+              "en": "A snow shovel"
+            },
+            {
+              "uz": "Kitob",
+              "ru": "Книгу",
+              "en": "A book"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bola uydan nima olib keldi?",
+        "ru": "Что мальчик принёс из дома?",
+        "en": "What did the boy bring from home?"
+      },
+      "hint": {
+        "uz": "Javob birinchi xatboshida.",
+        "ru": "Ответ в первом абзаце.",
+        "en": "The answer is in the first paragraph."
+      },
+      "explanation": {
+        "uz": "Bola oʻch olish uchun uydan yelim olib keldi va Anvarning joyiga quydi.",
+        "ru": "Мальчик принёс из дома клей и налил его на место Анвара.",
+        "en": "The boy brought glue from home and poured it on Anvar's seat."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Deraza yonidagi partada",
+              "ru": "За партой у окна",
+              "en": "At the desk by the window"
+            },
+            {
+              "uz": "Eshik oldida",
+              "ru": "У двери",
+              "en": "By the door"
+            },
+            {
+              "uz": "Doska yonida",
+              "ru": "У доски",
+              "en": "Next to the blackboard"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Anvar sinfda qayerda oʻtiradi?",
+        "ru": "Где сидит Анвар в классе?",
+        "en": "Where does Anvar sit in class?"
+      },
+      "hint": {
+        "uz": "U partada yolgʻiz oʻtiradi.",
+        "ru": "Он сидит за партой один.",
+        "en": "He sits alone at his desk."
+      },
+      "explanation": {
+        "uz": "Anvar deraza yonidagi partada yolgʻiz oʻtiradi — shuning uchun bola yelimni bemalol quya oldi.",
+        "ru": "Анвар сидит один за партой у окна — поэтому мальчик легко налил клей.",
+        "en": "Anvar sits alone by the window — that is why the boy could pour the glue easily."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Partaga yopishib qolib, turolmadi",
+              "ru": "Прилип к парте и не смог встать",
+              "en": "He was stuck to the desk and could not stand up"
+            },
+            {
+              "uz": "Doskaga chiqib, masalani yechdi",
+              "ru": "Вышел к доске и решил задачу",
+              "en": "He went to the board and solved the problem"
+            },
+            {
+              "uz": "Sinfdan chiqib ketdi",
+              "ru": "Вышел из класса",
+              "en": "He left the classroom"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Ustoz Anvarni doskaga chaqirganda nima boʻldi?",
+        "ru": "Что случилось, когда учитель вызвал Анвара к доске?",
+        "en": "What happened when the teacher called Anvar to the board?"
+      },
+      "hint": {
+        "uz": "Yelimni eslang!",
+        "ru": "Вспомни про клей!",
+        "en": "Remember the glue!"
+      },
+      "explanation": {
+        "uz": "Anvar partaga yopishib qolgani uchun oʻrnidan turolmadi va butun sinf kulib yubordi.",
+        "ru": "Анвар прилип к парте, не смог встать, и весь класс засмеялся.",
+        "en": "Anvar was stuck to the desk, could not stand up, and the whole class laughed."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Bola Anvarning joyiga yelim quydi",
+              "ru": "Мальчик налил клей на место Анвара",
+              "en": "The boy poured glue on Anvar's seat"
+            },
+            {
+              "uz": "Anvar partaga yopishib qoldi",
+              "ru": "Анвар прилип к парте",
+              "en": "Anvar got stuck to the desk"
+            },
+            {
+              "uz": "Bola uzr soʻradi",
+              "ru": "Мальчик извинился",
+              "en": "The boy apologised"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi voqea BIRINCHI yuz berdi?",
+        "ru": "Какое событие случилось ПЕРВЫМ?",
+        "en": "Which event happened FIRST?"
+      },
+      "hint": {
+        "uz": "Voqealar tartibini eslang: avval sabab, keyin natija.",
+        "ru": "Вспомни порядок: сначала причина, потом следствие.",
+        "en": "Remember the order: first the cause, then the result."
+      },
+      "explanation": {
+        "uz": "Avval bola yelim quydi, keyin Anvar yopishib qoldi, oxirida bola uyalib uzr soʻradi.",
+        "ru": "Сначала мальчик налил клей, потом Анвар прилип, а в конце мальчик извинился.",
+        "en": "First the boy poured the glue, then Anvar got stuck, and finally the boy apologised."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "hovliqmoq",
+              "right": "shoshqaloqlik qilmoq"
+            },
+            {
+              "left": "jovdiramoq",
+              "right": "najot izlab qaramoq"
+            },
+            {
+              "left": "yelim",
+              "right": "yopishtiruvchi modda"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«jovdiramoq» — yordam kutib atrofga qaramoq.",
+        "ru": "«jovdiramoq» — растерянно искать помощи взглядом.",
+        "en": "“jovdiramoq” means to look around pleadingly for help."
+      },
+      "explanation": {
+        "uz": "hovliqmoq = shoshqaloqlik bilan harakat qilmoq; jovdiramoq = najot izlab qaramoq; yelim = yopishtiruvchi modda.",
+        "ru": "hovliqmoq = действовать второпях; jovdiramoq = искать спасения взглядом; yelim = клей.",
+        "en": "hovliqmoq = to act in a hasty rush; jovdiramoq = to look for rescue; yelim = a sticky substance, glue."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Uyalib ketdi va uzr soʻradi",
+              "ru": "Ему стало стыдно, и он извинился",
+              "en": "He felt ashamed and apologised"
+            },
+            {
+              "uz": "Yana bir hazil oʻyladi",
+              "ru": "Придумал новую шутку",
+              "en": "He planned another prank"
+            },
+            {
+              "uz": "Xursand boʻlib kuldi",
+              "ru": "Радостно смеялся",
+              "en": "He laughed happily"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hikoya oxirida bola oʻzini qanday his qildi?",
+        "ru": "Что почувствовал мальчик в конце рассказа?",
+        "en": "How did the boy feel at the end of the story?"
+      },
+      "hint": {
+        "uz": "Anvarning jovdiragan koʻzlari unga taʼsir qildi.",
+        "ru": "На него подействовал растерянный взгляд Анвара.",
+        "en": "Anvar's pleading eyes changed something in him."
+      },
+      "explanation": {
+        "uz": "Doʻstining jovdiragan koʻzlarini koʻrib, bola oʻz qilmishidan uyaldi va uzr soʻradi.",
+        "ru": "Увидев растерянные глаза друга, мальчик устыдился и извинился.",
+        "en": "Seeing his friend's pleading eyes, the boy felt ashamed and apologised."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "yelim",
+          "letters": [
+            "y",
+            "e",
+            "l",
+            "i",
+            "m"
+          ],
+          "emoji": "🧴",
+          "clue": {
+            "uz": "Hikoyadagi yopishtiruvchi modda",
+            "ru": "Липкое вещество из рассказа",
+            "en": "The sticky stuff from the story"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Harflardan soʻz yigʻ!",
+        "ru": "Собери слово из букв!",
+        "en": "Build the word from the letters!"
+      },
+      "hint": {
+        "uz": "Soʻz «ye» bilan boshlanadi.",
+        "ru": "Слово начинается с «ye».",
+        "en": "The word starts with “ye”."
+      },
+      "explanation": {
+        "uz": "y-e-l-i-m — yelim. Bola aynan shu narsa bilan yomon hazil qildi.",
+        "ru": "y-e-l-i-m — клей. Именно с ним мальчик устроил злую шутку.",
+        "en": "y-e-l-i-m — glue. That is what the boy used for his mean prank."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Yomon hazil doʻstga ",
+          "after": " yetkazadi.",
+          "choices": [
+            "ozor",
+            "quvonch",
+            "sovgʻa"
+          ],
+          "answer": "ozor",
+          "emoji": "💔",
+          "clue": {
+            "uz": "Hikoyaning bosh gʻoyasi",
+            "ru": "Главная мысль рассказа",
+            "en": "The story's main idea"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Anvar hazildan xursand boʻldimi yoki xafa?",
+        "ru": "Анвар обрадовался шутке или огорчился?",
+        "en": "Did the prank make Anvar happy or hurt?"
+      },
+      "explanation": {
+        "uz": "Yomon hazil doʻstga ozor yetkazadi — hikoya bizga shuni oʻrgatadi.",
+        "ru": "Злая шутка причиняет другу боль — этому учит рассказ.",
+        "en": "A mean prank hurts a friend — that is what the story teaches."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Bola",
+            "qilmishidan",
+            "uyalib,",
+            "uzr",
+            "soʻradi."
+          ],
+          "emoji": "💛",
+          "clue": {
+            "uz": "Hikoyaning oxirgi voqeasi",
+            "ru": "Последнее событие рассказа",
+            "en": "The last event of the story"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan gap tuz!",
+        "ru": "Составь предложение из слов!",
+        "en": "Build the sentence from the words!"
+      },
+      "hint": {
+        "uz": "Gap «Bola» soʻzi bilan boshlanadi.",
+        "ru": "Предложение начинается со слова «Bola».",
+        "en": "The sentence starts with “Bola”."
+      },
+      "explanation": {
+        "uz": "Bola qilmishidan uyalib, uzr soʻradi — xatoni tan olish mardlik belgisidir.",
+        "ru": "Мальчик устыдился и извинился — признать ошибку смело.",
+        "en": "The boy felt ashamed and apologised — owning a mistake takes courage."
+      }
+    }
+  ],
+  "skipRecall": true
+}

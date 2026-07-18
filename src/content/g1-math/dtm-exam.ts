@@ -15,15 +15,15 @@ export const DTM_MINUTES = 60;
 export const DTM_COUNT = 30;
 
 export const DTM_TITLE: L10n = {
-  uz: 'DTM ga tayyorgarlik',
-  ru: 'Подготовка к DTM',
-  en: 'DTM preparation'
+  uz: 'Milliy sertifikat imtihoniga tayyorgarlik',
+  ru: 'Подготовка к экзамену на национальный сертификат',
+  en: 'National certificate exam preparation'
 };
 
 export const DTM_INTRO: L10n = {
-  uz: 'DTM (Davlat test markazi) imtihonlari odatda 5–11-sinf va oliygohga kirish uchun boʻladi. Bu — haqiqiy DTM testi EMAS, balki DTM testlarida uchraydigan, 1-sinfda oʻrganilgan mavzular (juft-toq sonlar, taqqoslash, tenglamalar, tengsizliklar, geometriya, oʻlchov) asosidagi tayyorgarlik testi. 30 ta savol, 60 daqiqa. Har safar sonlar oʻzgaradi. Test soʻngida qaysi darslarni takrorlash kerakligi tavsiya qilinadi.',
-  ru: 'Экзамены DTM (Государственного центра тестирования) обычно для 5–11 классов и поступления в вуз. Это НЕ настоящий тест DTM, а тренировочный тест по темам 1 класса, которые встречаются в тестах DTM (чётные/нечётные числа, сравнение, уравнения, неравенства, геометрия, измерения). 30 вопросов, 60 минут. Числа меняются каждый раз. В конце будет рекомендовано, какие уроки повторить.',
-  en: 'DTM (State Test Centre) exams are usually for grades 5–11 and university entry. This is NOT a real DTM test — it is a practice test built from the grade-1 topics that appear in DTM tests (even/odd numbers, comparison, equations, inequalities, geometry, measurement). 30 questions, 60 minutes. The numbers change every time. At the end it recommends which lessons to review.'
+  uz: 'Milliy sertifikat imtihonlari odatda 5–11-sinf va oliygohga kirish uchun boʻladi. Bu — haqiqiy imtihon EMAS, balki shunday imtihonlarda uchraydigan, 1-sinfda oʻrganilgan mavzular (juft-toq sonlar, taqqoslash, tenglamalar, tengsizliklar, geometriya, oʻlchov) asosidagi tayyorgarlik testi. 30 ta savol, 60 daqiqa. Har safar sonlar oʻzgaradi. Test soʻngida qaysi darslarni takrorlash kerakligi tavsiya qilinadi.',
+  ru: 'Экзамены на национальный сертификат обычно для 5–11 классов и поступления в вуз. Это НЕ настоящий экзамен, а тренировочный тест по темам 1 класса, которые встречаются в таких экзаменах (чётные/нечётные числа, сравнение, уравнения, неравенства, геометрия, измерения). 30 вопросов, 60 минут. Числа меняются каждый раз. В конце будет рекомендовано, какие уроки повторить.',
+  en: 'DTM (State Test Centre) exams are usually for grades 5–11 and university entry. This is NOT a real DTM test — it is a practice test built from the grade-1 topics that appear in such exams (even/odd numbers, comparison, equations, inequalities, geometry, measurement). 30 questions, 60 minutes. The numbers change every time. At the end it recommends which lessons to review.'
 };
 
 /* ----------------------------- helpers ----------------------------- */

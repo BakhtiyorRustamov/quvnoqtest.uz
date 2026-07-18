@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-04",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Kamalak",
+    "ru": "Радуга",
+    "en": "A rainbow"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻoz va paxtadan kamalak yasaymiz.",
+    "ru": "Сегодня из цветной бумаги и ваты сделаем радугу.",
+    "en": "Today we make a rainbow from coloured paper and cotton."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kamalak yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай радугу. Выполняй каждый этап по рисунку!",
+        "en": "Make the rainbow. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Yoylarni katta-kichik qilib joyla.",
+        "ru": "Располагай дуги от большой к маленькой.",
+        "en": "Arrange the arcs big to small."
+      },
+      "explanation": {
+        "uz": "Rang-barang kamalak!",
+        "ru": "Разноцветная радуга!",
+        "en": "A colourful rainbow!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "oq karton",
+              "ru": "белый картон",
+              "en": "white cardboard"
+            },
+            {
+              "uz": "paxta",
+              "ru": "вата",
+              "en": "cotton"
+            },
+            {
+              "uz": "yelim va qaychi",
+              "ru": "клей и ножницы",
+              "en": "glue and scissors"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Rangli qogʻozdan yetti rangli yoy qirqib ol.",
+              "ru": "Вырежь семь разноцветных дуг.",
+              "en": "Cut seven coloured arcs."
+            },
+            {
+              "uz": "Yoylarni kartonga kamalak shaklida yopishtir.",
+              "ru": "Наклей дуги на картон радугой.",
+              "en": "Glue the arcs onto the card as a rainbow."
+            },
+            {
+              "uz": "Ikki uchiga paxtadan bulut yasa.",
+              "ru": "На концах сделай облака из ваты.",
+              "en": "Add cotton clouds at both ends."
+            }
+          ],
+          "art": "rainbow",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

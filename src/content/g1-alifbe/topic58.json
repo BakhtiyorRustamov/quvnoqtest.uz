@@ -1,0 +1,535 @@
+{
+  "topicId": "g1-alifbe-58",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖✉️🚪👥",
+  "title": {
+    "uz": "«X x» — oʻqish mashqi",
+    "ru": "Буква «X x» — чтение",
+    "en": "Letter “X x” — reading"
+  },
+  "recall": {
+    "uz": "«X» harfini oʻrgandik. Endi matn oʻqiymiz: xat, xona, xalq. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «X». Теперь читаем текст: xat, xona, xalq. Тренируем чтение!",
+    "en": "We learned the letter “X”. Now we read a text: xat, xona, xalq. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "✉️ Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "✉️ Прочитай и нажми верно написанное слово!",
+        "en": "✉️ Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «xat».",
+        "ru": "Прочитай: «xat».",
+        "en": "Read it: “xat”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «xat».",
+        "ru": "Верно — «xat».",
+        "en": "Correct — “xat”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "✉️",
+          "options": [
+            {
+              "id": "ok",
+              "word": "xat",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "hat"
+            },
+            {
+              "id": "w2",
+              "word": "xot"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «xat» soʻzini tuz!",
+        "ru": "Составь слово «xat»!",
+        "en": "Build the word “xat”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «xat» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «xat».",
+        "en": "Great! You read “xat”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "✉️",
+          "word": "xat",
+          "label": {
+            "uz": "xat",
+            "ru": "письмо",
+            "en": "letter"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «xat».",
+        "ru": "Верный ответ — «xat».",
+        "en": "The right answer is “xat”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "✉️",
+          "text": {
+            "uz": "Xolida xat yozdi.\nXonada gul bor.",
+            "ru": "Xolida xat yozdi.\nXonada gul bor.",
+            "en": "Xolida xat yozdi.\nXonada gul bor."
+          },
+          "question": {
+            "uz": "Xolida nima yozdi?",
+            "ru": "Xolida nima yozdi?",
+            "en": "Xolida nima yozdi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "xat",
+                "ru": "xat",
+                "en": "xat"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "gul",
+                "ru": "gul",
+                "en": "gul"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "choy",
+                "ru": "choy",
+                "en": "choy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🚪 «xona» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🚪 Похлопай «xona» по слогам!",
+        "en": "🚪 Clap “xona” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«xona» — 2 boʻgʻin.",
+        "ru": "«xona» — 2 слога.",
+        "en": "“xona” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🚪",
+          "word": {
+            "uz": "xona",
+            "ru": "xona",
+            "en": "xona"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«X» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «X»!",
+        "en": "Tap the words with the “X” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «x» tovushi bor.",
+        "ru": "В них есть звук «x».",
+        "en": "They have the “x” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "✉️",
+              "label": {
+                "uz": "xat",
+                "ru": "xat",
+                "en": "xat"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🚪",
+              "label": {
+                "uz": "xona",
+                "ru": "xona",
+                "en": "xona"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👥",
+              "label": {
+                "uz": "xalq",
+                "ru": "xalq",
+                "en": "xalq"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«xat» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «xat». Найди картинку!",
+        "en": "Read “xat”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«xat» — ✉️.",
+        "ru": "«xat» — ✉️.",
+        "en": "“xat” is ✉️."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "✉️",
+              "label": {
+                "uz": "xat",
+                "ru": "письмо",
+                "en": "letter"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🚪",
+              "label": {
+                "uz": "xona",
+                "ru": "xona",
+                "en": "xona"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "👥",
+              "label": {
+                "uz": "xalq",
+                "ru": "xalq",
+                "en": "xalq"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "✉️"
+              },
+              "right": {
+                "label": {
+                  "uz": "xat",
+                  "ru": "xat",
+                  "en": "xat"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🚪"
+              },
+              "right": {
+                "label": {
+                  "uz": "xona",
+                  "ru": "xona",
+                  "en": "xona"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👥"
+              },
+              "right": {
+                "label": {
+                  "uz": "xalq",
+                  "ru": "xalq",
+                  "en": "xalq"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Xolida … oldi.",
+        "ru": "Составь предложение: Xolida … oldi.",
+        "en": "Order the words: Xolida … oldi."
+      },
+      "hint": {
+        "uz": "Xolida — xat — oldi.",
+        "ru": "Xolida — xat — oldi.",
+        "en": "Xolida — xat — oldi."
+      },
+      "explanation": {
+        "uz": "«Xolida xat oldi.» — gap oʻqiding!",
+        "ru": "«Xolida xat oldi.» — предложение!",
+        "en": "“Xolida xat oldi.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Xolida",
+                "ru": "Xolida",
+                "en": "Xolida"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "xat",
+                "ru": "xat",
+                "en": "xat"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "✉️"
+              },
+              "b": {
+                "label": {
+                  "uz": "xat",
+                  "ru": "xat",
+                  "en": "xat"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🚪"
+              },
+              "b": {
+                "label": {
+                  "uz": "xona",
+                  "ru": "xona",
+                  "en": "xona"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👥"
+              },
+              "b": {
+                "label": {
+                  "uz": "xalq",
+                  "ru": "xalq",
+                  "en": "xalq"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«xat» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «xat»?",
+        "en": "How many sounds are in “xat”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«xat»da 3 ta tovush bor.",
+        "ru": "В «xat» 3 звука.",
+        "en": "“xat” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "topicId": "g1-oqish-19",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🎁📖💡",
+  "title": {
+    "uz": "Eng yaxshi sovgʻa — kitob",
+    "ru": "Лучший подарок — книга",
+    "en": "The best gift is a book"
+  },
+  "recall": {
+    "uz": "Tugʻilgan kun sovgʻalari haqidagi hikoyani tinglab oʻqiymiz va kitob nega eng yaxshi sovgʻa ekanini bilib olamiz.",
+    "ru": "Слушаем рассказ о подарках на день рождения и узнаём, почему книга — лучший подарок.",
+    "en": "We listen to a story about birthday gifts and find out why a book is the best gift."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Eng yaxshi sovgʻa",
+        "variant": "story",
+        "audio": "g1-oqish-19-q1",
+        "lines": [
+          "Bugun Doniyorning tugʻilgan kuni.",
+          "Doʻstlari qutichalarga solingan sovgʻalar bilan kelishdi.",
+          "Stol usti rang-barang oʻyinchoqlarga toʻldi:",
+          "yuradigan robot, sayraydigan qushcha, gʻildirakli mashina.",
+          "Bolalar oʻyinchoqlarni birma-bir sinab koʻrishdi.",
+          "Ammo koʻp oʻtmay, hammasi zerikdi.",
+          "Shu payt kimdir sovgʻalar orasidan rasmli kitobchani topib oldi.",
+          "— Menga ber, oʻzim oʻqiyman! — dedi biri.",
+          "— Rasmlariga qara, juda chiroyli-ya! — dedi ikkinchisi.",
+          "— Sekin, yirtib qoʻyasan! — deyishdi boshqalari.",
+          "Kitob qoʻldan-qoʻlga oʻtar, hamma uni koʻrmoqchi edi.",
+          "Doniyor bu manzarani kuzatib, oʻylanib qoldi.",
+          "«Eng qiziq sovgʻa — mana shu yagona kitob ekan-ku», dedi ichida.",
+          "Oʻsha kundan u doʻstlariga faqat kitob sovgʻa qilishni qatʼiy niyat qildi."
+        ]
+      } },
+      "prompt": { "uz": "Hikoyani tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Play tugmasini bosing — soʻzlar oʻqilgan sari yoritiladi.", "ru": "Нажми play — слова подсвечиваются по мере чтения.", "en": "Press play — each word lights up as it is read." },
+      "explanation": { "uz": "Hikoya tugʻilgan kunda kitobcha eng qadrli sovgʻaga aylangani haqida.", "ru": "Рассказ о том, как на дне рождения книжка стала самым ценным подарком.", "en": "The story is about how, at a birthday, a little book became the most precious gift." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sovgʻalar orasidan rasmli kitobcha chiqdi.", "ru": "Среди подарков оказалась книжка с картинками.", "en": "A picture book turned up among the gifts." },
+        "answer": "true",
+        "why": { "uz": "Matnda kimdir sovgʻalar orasidan rasmli kitobchani topgani aytiladi.", "ru": "В тексте кто-то находит среди подарков книжку с картинками.", "en": "In the text, someone finds a picture book among the gifts." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Bolalar zerikkanidan keyingi qismni eslang.", "ru": "Вспомни, что было после того, как детям стало скучно.", "en": "Recall what happens right after the children get bored." },
+      "explanation": { "uz": "Toʻgʻri: sovgʻalar orasidan rasmli kitobcha topilgan.", "ru": "Верно: среди подарков нашлась книжка с картинками.", "en": "True: a picture book was found among the gifts." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Bazmda tugʻilgan kun torti ham bor edi.", "ru": "На празднике был и торт.", "en": "There was a birthday cake at the party too." },
+        "answer": "ng",
+        "why": { "uz": "Hikoyada tort haqida hech narsa aytilmagan — buni bilib boʻlmaydi.", "ru": "В рассказе про торт ничего не сказано — этого не узнать.", "en": "The story says nothing about a cake — we cannot know." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Matnda tort soʻzi uchraydimi? Boʻlmasa — «Matnda yoʻq».", "ru": "Встречается ли слово «торт»? Если нет — «Не сказано».", "en": "Does the word “cake” appear? If not — “Not given”." },
+      "explanation": { "uz": "«Matnda yoʻq»: hikoya tort haqida na tasdiq, na inkor beradi.", "ru": "«Не сказано»: рассказ ни подтверждает, ни отрицает торт.", "en": "“Not given”: the story neither confirms nor denies a cake." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "what_next", "props": {
+        "before": { "uz": "Bolalar oʻyinchoqlardan zerikib boʻlishdi.", "ru": "Детям надоели игрушки.", "en": "The children grew tired of the toys." },
+        "options": [
+          { "text": { "uz": "Kimdir sovgʻalar orasidan rasmli kitobchani topib oldi.", "ru": "Кто-то нашёл среди подарков книжку с картинками.", "en": "Someone found a picture book among the gifts." }, "next": true },
+          { "text": { "uz": "Mehmonlar tarqala boshladi.", "ru": "Гости начали расходиться.", "en": "The guests began to leave." } },
+          { "text": { "uz": "Doniyor sovgʻalarni umuman ochmadi.", "ru": "Данияр вообще не открыл подарки.", "en": "Doniyor didn't open the gifts at all." } }
+        ]
+      } },
+      "prompt": { "uz": "Bolalar zerikkanidan keyin nima roʻy berdi?", "ru": "Что произошло после того, как детям стало скучно?", "en": "What happened after the children got bored?" },
+      "hint": { "uz": "Voqealar tartibiga eʼtibor bering.", "ru": "Обрати внимание на порядок событий.", "en": "Pay attention to the order of events." },
+      "explanation": { "uz": "Zerikkanidan soʻng bir bola kitobchani topdi va u talash boʻldi.", "ru": "После скуки один ребёнок нашёл книжку, и из-за неё заспорили.", "en": "After the boredom, a child found the book and it was fought over." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Rasmlari chiroyli", "match": true },
+        { "text": "Oʻqish qiziq", "match": true },
+        { "text": "Hamma koʻrmoqchi", "match": true },
+        { "text": "Juda ogʻir", "match": false },
+        { "text": "Rangi oʻchgan", "match": false }
+      ] } },
+      "prompt": { "uz": "Kitobcha bolalarga nega yoqdi? Toʻgʻrilarini bos!", "ru": "Почему книжка понравилась детям? Нажми верные!", "en": "Why did the children like the book? Tap the correct ones!" },
+      "hint": { "uz": "Kitob qiziq va rasmli edi, hamma uni koʻrmoqchi boʻldi.", "ru": "Книжка была интересной и с картинками, все хотели её посмотреть.", "en": "The book was interesting and had pictures, and everyone wanted to see it." },
+      "explanation": { "uz": "Kitobcha rasmli, qiziqarli boʻlgani va hamma koʻrmoqchi boʻlgani uchun yoqdi.", "ru": "Книжка понравилась, потому что была с картинками, интересной, и все хотели её посмотреть.", "en": "The book was liked because it had pictures, was interesting, and everyone wanted to see it." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Kitob eng qiziq va aziz sovgʻa ekani", "ru": "Что книга — самый интересный и ценный подарок", "en": "That a book is the most interesting and precious gift" },
+        { "uz": "Oʻyinchoqlar juda kam ekani", "ru": "Что игрушек слишком мало", "en": "That there were too few toys" },
+        { "uz": "Bazm tez tugagani", "ru": "Что праздник быстро кончился", "en": "That the party ended quickly" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Doniyorning xayolidan qanday fikr oʻtdi?", "ru": "Какая мысль пришла Данияру?", "en": "What thought crossed Doniyor's mind?" },
+      "hint": { "uz": "U kitob talashayotgan bolalarga qarab nima dedi?", "ru": "Что он подумал, глядя на споривших детей?", "en": "What did he think as he watched the children argue?" },
+      "explanation": { "uz": "Doniyor bitta kitob shunchalik qadrli sovgʻa ekanini his qildi.", "ru": "Данияр почувствовал, что одна книжка — очень ценный подарок.", "en": "Doniyor felt that a single book is a very precious gift." },
+      "openEnd": { "uz": "Sen uchun eng yaxshi sovgʻa qanaqa boʻlgan? Nega aynan shu yoqadi?", "ru": "А какой подарок был лучшим для тебя? Почему именно он?", "en": "What's the best gift you've ever had? Why that one?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Eng yaxshi sovgʻa — ", "after": ".", "choices": ["kitob", "oʻyinchoq", "konfet"], "answer": "kitob", "emoji": "🎁", "clue": { "uz": "Hikoyaning bosh gʻoyasi", "ru": "Главная мысль рассказа", "en": "The story's main idea" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Doniyor doʻstlariga nima sovgʻa qilmoqchi boʻldi?", "ru": "Что Данияр решил дарить друзьям?", "en": "What did Doniyor decide to give his friends?" },
+      "explanation": { "uz": "Eng yaxshi sovgʻa — kitob: u zeriktirmaydi, bilim va zavq beradi.", "ru": "Лучший подарок — книга: она не надоедает, даёт знания и радость.", "en": "The best gift is a book: it never gets boring and gives knowledge and joy." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Kitob", "bilim", "va", "zavq", "beradi."], "emoji": "📚", "clue": { "uz": "Kitob nega yaxshi sovgʻa?", "ru": "Почему книга — хороший подарок?", "en": "Why is a book a good gift?" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuzing!", "ru": "Составь предложение из слов!", "en": "Build a sentence from the words!" },
+      "hint": { "uz": "Gap «Kitob» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Kitob».", "en": "The sentence starts with “Kitob”." },
+      "explanation": { "uz": "«Kitob bilim va zavq beradi» — shuning uchun ham u eng yaxshi sovgʻa.", "ru": "«Книга даёт знания и радость» — поэтому она и лучший подарок.", "en": "“A book gives knowledge and joy” — that's why it's the best gift." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "birma-bir", "right": "bittalab, navbat bilan" },
+        { "left": "oʻylanib qoldi", "right": "xayolga toldi" },
+        { "left": "qatʼiy niyat qildi", "right": "mahkam ahd qildi" }
+      ] } },
+      "prompt": { "uz": "Soʻz va iborani maʼnosiga ulang! (izohli lugʻat)", "ru": "Соедини слово и выражение с их значением!", "en": "Match each word/phrase to its meaning!" },
+      "hint": { "uz": "Bu soʻzlarni hikoyada uchratdik.", "ru": "Эти слова мы встречали в рассказе.", "en": "We met these words in the story." },
+      "explanation": { "uz": "birma-bir = navbat bilan; oʻylanib qoldi = xayolga toldi; qatʼiy niyat qildi = mahkam ahd qildi.", "ru": "birma-bir = по очереди; oʻylanib qoldi = задумался; qatʼiy niyat qildi = твёрдо решил.", "en": "birma-bir = one by one; oʻylanib qoldi = fell into thought; qatʼiy niyat qildi = firmly resolved." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_sequence", "props": {
+        "letters": ["K", "i", "t", "o", "b", "a", "q", "l", "q", "a", "y", "r", "o", "gʻ", "i"],
+        "words": [5, 3, 7],
+        "phrase": "Kitob — aql qayrogʻi",
+        "meaning": { "uz": "Kitob aqlni charxlaydi, oʻtkir qiladi — qayroq (charxtosh) kabi.", "ru": "Книга точит ум, делает его острым — как точильный камень.", "en": "A book sharpens the mind — like a whetstone." }
+      } },
+      "prompt": { "uz": "Harflarni toʻgʻri ketma-ketlikda bosib, naqlni oʻqing!", "ru": "Нажимай буквы по порядку и прочитай изречение!", "en": "Tap the letters in the right order and read the saying!" },
+      "hint": { "uz": "Birinchi soʻz — «Kitob».", "ru": "Первое слово — «Kitob».", "en": "The first word is “Kitob”." },
+      "explanation": { "uz": "«Kitob — aql qayrogʻi»: kitob oʻqigan odamning aqli oʻtkirlashadi.", "ru": "«Kitob — aql qayrogʻi»: у того, кто читает, ум становится острым.", "en": "“Kitob — aql qayrogʻi”: reading sharpens the mind." }
+    }
+  ]
+}

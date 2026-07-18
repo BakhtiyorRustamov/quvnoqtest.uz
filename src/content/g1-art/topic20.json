@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-20", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Ajoyib hayvonlar", "ru": "Удивительные животные", "en": "Wonderful animals" },
+  "recall": {
+    "uz": "Hayvonlar turli-tuman: joʻja kichkina va sariq, fil katta va kulrang. Keling, joʻjani boʻyaymiz.",
+    "ru": "Животные разные: цыплёнок маленький и жёлтый, слон большой и серый. Давай раскрасим цыплёнка.",
+    "en": "Animals are all different: a chick is small and yellow, an elephant is big and grey. Let's colour the chick."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Joʻjani boʻya.", "ru": "Раскрась цыплёнка.", "en": "Colour the chick." },
+      "hint": { "uz": "Joʻja — sariq, tumshugʻi — toʻq sariq.", "ru": "Цыплёнок — жёлтый, клюв — оранжевый.", "en": "The chick is yellow, the beak is orange." },
+      "explanation": { "uz": "Kichkina joʻja!", "ru": "Маленький цыплёнок!", "en": "A little chick!" },
+      "widget": { "type": "color_fill", "props": { "picture": "chick" } } }
+  ]
+}

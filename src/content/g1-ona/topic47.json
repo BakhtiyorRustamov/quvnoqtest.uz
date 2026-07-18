@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-47",
+  "subjectKey": "g1-ona",
+  "emojis": "🔊🐝✍️",
+  "title": {
+    "uz": "Harakatni bildirgan soʻzlarni aniqlash",
+    "ru": "Определяем слова-действия",
+    "en": "Identifying action words"
+  },
+  "recall": {
+    "uz": "Baʼzi soʻzlar harakat yoki tovushni bildiradi: chirilladi, vizillaydi, gumburladi, chirqilladi. Bunday soʻzlardan kim yoki nima bu harakatni bajarayotganini bilib olish mumkin. Harakat soʻzlari sekindan balandga — kuchayib borishi ham mumkin: pichirlaydi, gapiradi, qichqiradi.",
+    "ru": "Некоторые слова обозначают действие или звук: chirilladi, vizillaydi, gumburladi, chirqilladi. По таким словам можно определить, кто или что выполняет действие. Действия могут усиливаться: pichirlaydi, gapiradi, qichqiradi.",
+    "en": "Some words name an action or a sound: chirilladi, vizillaydi, gumburladi, chirqilladi. From such words we can tell who or what performs the action. Actions can grow stronger: pichirlaydi (whispers), gapiradi (speaks), qichqiradi (shouts)."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "chirilladi", "match": true }, { "text": "stol", "match": false }, { "text": "vizillaydi", "match": true }, { "text": "uzun", "match": false }, { "text": "gumburladi", "match": true }, { "text": "gul", "match": false } ] } },
+      "prompt": { "uz": "Harakat (tovush) soʻzlarini bos!", "ru": "Нажми слова-действия (звуки)!", "en": "Tap the action (sound) words!" },
+      "hint": { "uz": "stol, gul — narsa; uzun — belgi.", "ru": "stol, gul — предметы; uzun — признак.", "en": "stol, gul are things; uzun is an attribute." },
+      "explanation": { "uz": "chirilladi, vizillaydi, gumburladi — harakat/tovush soʻzlari.", "ru": "chirilladi, vizillaydi, gumburladi — слова-действия/звуки.", "en": "chirilladi, vizillaydi, gumburladi are action/sound words." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Ari", "right": "vizillaydi" }, { "left": "Momaqaldiroq", "right": "gumburladi" }, { "left": "Chumchuq", "right": "chirqilladi" } ] } },
+      "prompt": { "uz": "Kim yoki nima shunday tovush chiqaradi? Ula!", "ru": "Кто или что издаёт такой звук? Соедини!", "en": "Who or what makes that sound? Match!" },
+      "hint": { "uz": "Ari — vizillaydi (v-v-v).", "ru": "Пчела — жужжит (в-в-в).", "en": "A bee buzzes (v-v-v)." },
+      "explanation": { "uz": "Harakat soʻzidan uni bajaruvchini aniqlash mumkin.", "ru": "По слову-действию можно определить, кто его выполняет.", "en": "From the action word we can tell who performs it." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "pichirlaydi", "bin": "odam" }, { "id": "b", "label": "kuladi", "bin": "odam" }, { "id": "c", "label": "gapiradi", "bin": "odam" }, { "id": "d", "label": "tomchiladi", "bin": "tabiat" }, { "id": "e", "label": "yogʻdi", "bin": "tabiat" }, { "id": "f", "label": "quydi", "bin": "tabiat" } ], "bins": [ { "id": "odam", "label": "Odam qiladi" }, { "id": "tabiat", "label": "Yomgʻir qiladi" } ] } },
+      "prompt": { "uz": "Bu harakatni kim bajaradi? Ajrat!", "ru": "Кто выполняет это действие? Раздели!", "en": "Who does this action? Sort them!" },
+      "hint": { "uz": "tomchiladi, yogʻdi, quydi — yomgʻir haqida.", "ru": "tomchiladi, yogʻdi, quydi — про дождь.", "en": "tomchiladi, yogʻdi, quydi are about rain." },
+      "explanation": { "uz": "Odam gapiradi, kuladi; yomgʻir yogʻadi, tomchilaydi.", "ru": "Человек говорит, смеётся; дождь идёт, капает.", "en": "A person speaks and laughs; rain falls and drips." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["pichirlaydi", "gapiradi", "qichqiradi"], "emoji": "🗣️", "clue": { "uz": "Sekindan balandga — kuchayib borish tartibida", "ru": "От тихого к громкому — по нарастанию", "en": "From quiet to loud — in growing order" } } },
+      "prompt": { "uz": "Soʻzlarni ovoz kuchayib borish tartibida joyla!", "ru": "Расставь слова по нарастанию громкости!", "en": "Order the words from quietest to loudest!" },
+      "hint": { "uz": "Eng sekin — pichirlaydi, eng baland — qichqiradi.", "ru": "Тише всех — шепчет, громче всех — кричит.", "en": "Quietest is whispers, loudest is shouts." },
+      "explanation": { "uz": "pichirlaydi → gapiradi → qichqiradi: ovoz kuchayib boradi.", "ru": "pichirlaydi → gapiradi → qichqiradi: звук усиливается.", "en": "pichirlaydi → gapiradi → qichqiradi: the sound grows." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["jilmayadi", "kuladi", "xaxolaydi"], "emoji": "😄", "clue": { "uz": "Kuchayib borish tartibida", "ru": "По нарастанию", "en": "In growing order" } } },
+      "prompt": { "uz": "Soʻzlarni kuchayib borish tartibida joyla!", "ru": "Расставь слова по нарастанию!", "en": "Order the words from gentlest to strongest!" },
+      "hint": { "uz": "Eng yengil — jilmayadi, eng kuchli — xaxolaydi.", "ru": "Самое лёгкое — улыбается, самое сильное — хохочет.", "en": "Gentlest is smiles, strongest is guffaws." },
+      "explanation": { "uz": "jilmayadi → kuladi → xaxolaydi: harakat kuchayadi.", "ru": "jilmayadi → kuladi → xaxolaydi: действие усиливается.", "en": "jilmayadi → kuladi → xaxolaydi: the action grows stronger." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Ari gulda ", "after": ".", "choices": ["vizillaydi", "yugurdi", "oʻqiydi"], "answer": "vizillaydi", "emoji": "🐝", "clue": { "uz": "Ari qanday tovush chiqaradi?", "ru": "Какой звук издаёт пчела?", "en": "What sound does a bee make?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "Ari «v-v-v» qiladi.", "ru": "Пчела делает «ж-ж-ж».", "en": "A bee goes “bzzz”." },
+      "explanation": { "uz": "Ari vizillaydi. «Vizillaydi» — harakat/tovush soʻzi.", "ru": "Пчела жужжит. «Vizillaydi» — слово-действие.", "en": "A bee buzzes. “Vizillaydi” is an action/sound word." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "gapiradi", "match": true }, { "text": "vizillaydi", "match": false }, { "text": "kuladi", "match": true }, { "text": "gumburladi", "match": false }, { "text": "pichirlaydi", "match": true }, { "text": "tomchiladi", "match": false } ] } },
+      "prompt": { "uz": "Faqat odam bajaradigan harakatlarni bos!", "ru": "Нажми только действия, которые делает человек!", "en": "Tap only the actions a person does!" },
+      "hint": { "uz": "vizillaydi — ari, gumburladi — momaqaldiroq, tomchiladi — yomgʻir.", "ru": "vizillaydi — пчела, gumburladi — гром, tomchiladi — дождь.", "en": "vizillaydi is a bee, gumburladi is thunder, tomchiladi is rain." },
+      "explanation": { "uz": "Odam gapiradi, kuladi, pichirlaydi.", "ru": "Человек говорит, смеётся, шепчет.", "en": "A person speaks, laughs and whispers." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["qich", "qi", "ra", "di"], "emoji": "📢", "clue": { "uz": "Baland ovoz (harakat soʻzi)", "ru": "Громкий голос (слово-действие)", "en": "A loud voice (an action word)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan harakat soʻzini tuz!", "ru": "Собери слово-действие из слогов!", "en": "Build the action word from syllables!" },
+      "hint": { "uz": "qich- … -qi- … -ra- … -di.", "ru": "qich- … -qi- … -ra- … -di.", "en": "qich- … -qi- … -ra- … -di." },
+      "explanation": { "uz": "«Qichqiradi» — baland ovoz chiqarish (harakat soʻzi).", "ru": "«Qichqiradi» — кричит громко (слово-действие).", "en": "“Qichqiradi” means shouts loudly (an action word)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Kuz kuni yomgʻir tinmay ", "after": ".", "choices": ["yogʻdi", "sakradi", "pishirdi"], "answer": "yogʻdi", "emoji": "🌧️", "clue": { "uz": "Yomgʻir nima qildi?", "ru": "Что сделал дождь?", "en": "What did the rain do?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "Yomgʻir osmondan tushadi — yogʻadi.", "ru": "Дождь идёт с неба.", "en": "Rain comes down from the sky." },
+      "explanation": { "uz": "Yomgʻir yogʻdi. «Yogʻdi» — harakat soʻzi.", "ru": "Дождь шёл. «Yogʻdi» — слово-действие.", "en": "The rain fell. “Yogʻdi” is an action word." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "kuladi", "letters": ["k", "u", "l", "a", "d", "i"], "emoji": "😄", "clue": { "uz": "Xursand boʻlganda (harakat soʻzi)", "ru": "Когда весело (слово-действие)", "en": "When happy (an action word)" } } },
+      "prompt": { "uz": "Harflardan harakat soʻzini yigʻ!", "ru": "Собери слово-действие из букв!", "en": "Build the action word from the letters!" },
+      "hint": { "uz": "Kulgili narsadan odam nima qiladi?", "ru": "Что делает человек от смешного?", "en": "What does a person do at something funny?" },
+      "explanation": { "uz": "«Kuladi» — harakat soʻzi (odam kuladi).", "ru": "«Kuladi» — слово-действие (человек смеётся).", "en": "“Kuladi” is an action word (a person laughs)." }
+    }
+  ]
+}

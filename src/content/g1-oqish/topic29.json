@@ -1,0 +1,155 @@
+{
+  "topicId": "g1-oqish-29",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌷❄️🌱",
+  "title": {
+    "uz": "Koʻklamni boshlab kelding",
+    "ru": "Ты открыл весну",
+    "en": "You brought the spring"
+  },
+  "recall": {
+    "uz": "Bahorning ilk guli boychechak haqidagi sheʼrni tinglab oʻqiymiz, topishmoqlar yechamiz va gul nomlarini yigʻamiz.",
+    "ru": "Слушаем стихотворение о подснежнике, разгадываем загадки и собираем названия цветов.",
+    "en": "We read a poem about the snowdrop, solve riddles, and build the names of flowers."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Boychechak",
+        "variant": "poem",
+        "audio": "g1-oqish-29-q1",
+        "lines": [
+          "Qorlar erib boʻlmasdan,",
+          "Boychechak koʻz ochadi.",
+          "Yashil bargin koʻrsatib,",
+          "Bahor kelganin aytadi.",
+          "",
+          "Kichkina, nozik gulcha,",
+          "Ammo juda jasur u.",
+          "Sovuqdan qoʻrqmay chiqar,",
+          "Ilk bahorning belgisi u."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Boychechak qachon koʻz ochadi?", "ru": "Когда распускается подснежник?", "en": "When does the snowdrop open up?" },
+      "explanation": { "uz": "Sheʼr bahorni birinchi boʻlib eʼlon qiladigan boychechak haqida.", "ru": "Стихотворение о подснежнике, который первым объявляет весну.", "en": "The poem is about the snowdrop, the first to announce spring." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Boychechak", "ru": "Подснежник", "en": "Snowdrop" },
+        { "uz": "Kaktus", "ru": "Кактус", "en": "Cactus" },
+        { "uz": "Tarvuz", "ru": "Арбуз", "en": "Watermelon" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Topishmoq: qor erimasdan chiqadi, bahordan birinchi darak beradi. Bu qaysi gul?", "ru": "Загадка: выходит, пока не растаял снег, первым вестит весну. Что за цветок?", "en": "Riddle: it appears before the snow melts and first announces spring. Which flower is it?" },
+      "hint": { "uz": "Bu — bahorning ilk guli.", "ru": "Это первый весенний цветок.", "en": "It is the first flower of spring." },
+      "explanation": { "uz": "Bu — boychechak: qor ostidan birinchi boʻlib chiqadi.", "ru": "Это подснежник: первым выходит из-под снега.", "en": "It's the snowdrop: the first to emerge from under the snow." },
+      "openEnd": { "uz": "Sen qaysi bahor gulini yaxshi koʻrasan? Nega?", "ru": "Какой весенний цветок тебе нравится? Почему?", "en": "Which spring flower do you like? Why?" }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Boychechak qorlar erimasdan koʻz ochadi.", "ru": "Подснежник распускается, пока не растаял снег.", "en": "The snowdrop opens before the snow melts." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «Qorlar erib boʻlmasdan, boychechak koʻz ochadi» deyilgan.", "ru": "В стихотворении сказано, что он распускается до таяния снега.", "en": "The poem says it opens before the snow melts." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Boychechak qachon chiqadi?", "ru": "Когда появляется подснежник?", "en": "When does the snowdrop appear?" },
+      "explanation": { "uz": "Toʻgʻri: boychechak qor erimasdan chiqadi.", "ru": "Верно: подснежник выходит до таяния снега.", "en": "True: the snowdrop appears before the snow melts." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrda boychechak yozda ochiladi deyiladi.", "ru": "В стихотворении сказано, что подснежник цветёт летом.", "en": "The poem says the snowdrop blooms in summer." },
+        "answer": "ng",
+        "why": { "uz": "Aksincha, u ilk bahorda chiqadi; yoz haqida gap yoʻq.", "ru": "Наоборот, он появляется ранней весной; о лете нет.", "en": "On the contrary, it appears in early spring; summer is not mentioned." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Boychechak qaysi faslda chiqadi?", "ru": "В какое время года появляется подснежник?", "en": "In which season does the snowdrop appear?" },
+      "explanation": { "uz": "«Matnda yoʻq»: sheʼr uni ilk bahor belgisi deydi, yoz haqida emas.", "ru": "«Не сказано»: он назван приметой ранней весны, не лета.", "en": "“Not given”: it is called a sign of early spring, not summer." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "boychechak", "match": true },
+        { "text": "lola", "match": true },
+        { "text": "binafsha", "match": true },
+        { "text": "bodring", "match": false },
+        { "text": "kartoshka", "match": false }
+      ] } },
+      "prompt": { "uz": "Bahor gullarini bos!", "ru": "Нажми весенние цветы!", "en": "Tap the spring flowers!" },
+      "hint": { "uz": "Gullar bahorda ochiladi.", "ru": "Цветы распускаются весной.", "en": "Flowers bloom in spring." },
+      "explanation": { "uz": "Boychechak, lola, binafsha — bahor gullari; bodring va kartoshka — sabzavot.", "ru": "Подснежник, тюльпан, фиалка — цветы; огурец и картофель — овощи.", "en": "Snowdrop, tulip, violet are flowers; cucumber and potato are vegetables." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "nozik", "right": "nafis, mayin" },
+        { "left": "jasur", "right": "botir, qoʻrqmas" },
+        { "left": "belgi", "right": "darak, alomat" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«jasur» — qoʻrqmas, botir.", "ru": "«jasur» — смелый, храбрый.", "en": "“jasur” means brave, fearless." },
+      "explanation": { "uz": "nozik = nafis; jasur = qoʻrqmas; belgi = darak, alomat.", "ru": "nozik = нежный; jasur = смелый; belgi = признак.", "en": "nozik = delicate; jasur = brave; belgi = a sign." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "first_letters", "props": {
+        "objects": [
+          { "emoji": "🍋", "letter": "L", "name": { "uz": "limon", "ru": "лимон", "en": "lemon" } },
+          { "emoji": "🍎", "letter": "O", "name": { "uz": "olma", "ru": "яблоко", "en": "apple" } },
+          { "emoji": "💡", "letter": "L", "name": { "uz": "lampa", "ru": "лампа", "en": "lamp" } },
+          { "emoji": "🍯", "letter": "A", "name": { "uz": "asal", "ru": "мёд", "en": "honey" } }
+        ],
+        "word": "LOLA",
+        "meaning": { "uz": "Lola — bahorda ton tortadigan qizil gul.", "ru": "Lola — тюльпан, красный весенний цветок.", "en": "Lola — the tulip, a red spring flower." }
+      } },
+      "prompt": { "uz": "Rasmlarni chapdan oʻngga bosib, gul nomini oching!", "ru": "Нажимай картинки слева направо и открой название цветка!", "en": "Tap the pictures left to right to reveal a flower's name!" },
+      "hint": { "uz": "Har bir rasm nomining birinchi harfini ol.", "ru": "Возьми первую букву каждого названия.", "en": "Take the first letter of each picture's name." },
+      "explanation": { "uz": "limon, olma, lampa, asal → L-O-L-A → LOLA.", "ru": "лимон, яблоко, лампа, мёд → L-O-L-A → LOLA.", "en": "lemon, apple, lamp, honey → L-O-L-A → LOLA." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Boychechak — bahorning ilk ", "after": ".", "choices": ["guli", "qori", "shamoli"], "answer": "guli", "emoji": "🌷", "clue": { "uz": "Sheʼrning bosh gʻoyasi", "ru": "Главная мысль стихотворения", "en": "The poem's main idea" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Boychechak nima — qormi yoki gul?", "ru": "Подснежник — это снег или цветок?", "en": "Is a snowdrop snow or a flower?" },
+      "explanation": { "uz": "Boychechak — bahorning ilk guli.", "ru": "Подснежник — первый весенний цветок.", "en": "The snowdrop is the first flower of spring." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Boychechak", "koʻklamni", "boshlab", "keldi."], "emoji": "🌱", "clue": { "uz": "Sheʼrning xulosasi", "ru": "Вывод стихотворения", "en": "The poem's message" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuzing!", "ru": "Составь предложение из слов!", "en": "Build the sentence from the words!" },
+      "hint": { "uz": "Gap «Boychechak» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Boychechak».", "en": "The sentence starts with “Boychechak”." },
+      "explanation": { "uz": "«Boychechak koʻklamni boshlab keldi»: u bahorni birinchi eʼlon qiladi.", "ru": "«Подснежник открыл весну»: он первым возвещает весну.", "en": "“The snowdrop brought the spring”: it announces spring first." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "boychechak", "syllables": ["boy", "che", "chak"], "emoji": "🌼", "clue": { "uz": "Bahorning ilk guli", "ru": "Первый цветок весны", "en": "The first flower of spring" } } },
+      "prompt": { "uz": "Boʻgʻinlardan gul nomini yigʻ!", "ru": "Собери название цветка из слогов!", "en": "Build the flower's name from the syllables!" },
+      "hint": { "uz": "boy + che + chak = ?", "ru": "boy + che + chak = ?", "en": "boy + che + chak = ?" },
+      "explanation": { "uz": "boy-che-chak → boychechak. Bahorning ilk guli.", "ru": "boy-che-chak → boychechak (подснежник).", "en": "boy-che-chak → boychechak (snowdrop)." }
+    }
+  ]
+}

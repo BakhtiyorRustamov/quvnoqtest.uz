@@ -1,0 +1,421 @@
+{
+  "topicId": "g1-oqish-06",
+  "subjectKey": "g1-oqish",
+  "emojis": "🕌🏙️🇺🇿",
+  "title": {
+    "uz": "Oʻzbekiston — jonajon yurtim",
+    "ru": "Узбекистан — мой родной край",
+    "en": "Uzbekistan — my dear land"
+  },
+  "recall": {
+    "uz": "Bugun yurtimizning goʻzal shaharlari haqida oʻqiymiz: Toshkent, Samarqand, Buxoro va Xiva. Matnni oʻqib, har bir shahar nimasi bilan mashhurligini bilib olamiz, soʻng topshiriqlarni bajaramiz.",
+    "ru": "Сегодня читаем о красивых городах нашей страны: Ташкенте, Самарканде, Бухаре и Хиве. Прочитаем текст, узнаем, чем знаменит каждый город, потом выполним задания.",
+    "en": "Today we read about our country's beautiful cities: Tashkent, Samarkand, Bukhara and Khiva. We read the text, learn what each city is famous for, then do the tasks."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Jonajon yurtim shaharlari",
+          "variant": "story",
+          "audio": "g1-oqish-06-q1",
+          "lines": [
+            "Toshkent — Oʻzbekiston Respublikasining poytaxti.",
+            "Bu shaharda goʻzal binolar, koʻm-koʻk bogʻlar va keng xiyobonlar bor.",
+            "Samarqand Sharq moʻjizasi deb ataladi.",
+            "Uning eng mashhur joyi — Registon maydoni.",
+            "Maydon atrofida uchta qadimiy madrasa qad koʻtarib turadi.",
+            "Buxoroda turli davrlarning noyob obidalari saqlanib qolgan.",
+            "Xiva esa qadimiy koʻrinishini yoʻqotmagan shahar — unga kelgan har bir mehmon minoralaridan hayratga tushadi."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Matnni ifodali oʻqing!",
+        "ru": "Прочитай текст выразительно!",
+        "en": "Read the text aloud!"
+      },
+      "hint": {
+        "uz": "Har bir xatboshini alohida oʻqing.",
+        "ru": "Читай каждый абзац отдельно.",
+        "en": "Read each paragraph separately."
+      },
+      "explanation": {
+        "uz": "Matn Oʻzbekistonning toʻrtta mashhur shahri haqida.",
+        "ru": "Текст о четырёх знаменитых городах Узбекистана.",
+        "en": "The text is about four famous cities of Uzbekistan."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "Toshkent",
+            "Samarqand",
+            "Xiva"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Oʻzbekistonning poytaxti qaysi shahar?",
+        "ru": "Какой город — столица Узбекистана?",
+        "en": "Which city is the capital of Uzbekistan?"
+      },
+      "hint": {
+        "uz": "Matnning birinchi xatboshisida aytilgan.",
+        "ru": "Сказано в первом абзаце.",
+        "en": "It is said in the first paragraph."
+      },
+      "explanation": {
+        "uz": "Toshkent — Oʻzbekistonning poytaxti.",
+        "ru": "Ташкент — столица Узбекистана.",
+        "en": "Tashkent is the capital of Uzbekistan."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Samarqandda",
+              "ru": "В Самарканде",
+              "en": "In Samarkand"
+            },
+            {
+              "uz": "Toshkentda",
+              "ru": "В Ташкенте",
+              "en": "In Tashkent"
+            },
+            {
+              "uz": "Buxoroda",
+              "ru": "В Бухаре",
+              "en": "In Bukhara"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Registon maydoni qaysi shaharda joylashgan?",
+        "ru": "В каком городе находится площадь Регистан?",
+        "en": "In which city is Registan Square?"
+      },
+      "hint": {
+        "uz": "Bu shahar «Sharq moʻjizasi» deb ataladi.",
+        "ru": "Этот город называют «чудом Востока».",
+        "en": "This city is called “the wonder of the East”."
+      },
+      "explanation": {
+        "uz": "Registon maydoni — Samarqandda; atrofida uchta madrasa bor.",
+        "ru": "Площадь Регистан — в Самарканде; вокруг неё три медресе.",
+        "en": "Registan Square is in Samarkand, surrounded by three madrasas."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Qadimiy koʻrinishini saqlab qolgani bilan",
+              "ru": "Тем, что сохранила древний облик",
+              "en": "For keeping its ancient look"
+            },
+            {
+              "uz": "Baland osmonoʻpar binolari bilan",
+              "ru": "Небоскрёбами",
+              "en": "For its skyscrapers"
+            },
+            {
+              "uz": "Dengizi bilan",
+              "ru": "Морем",
+              "en": "For its sea"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Xiva shahri nimasi bilan mashhur?",
+        "ru": "Чем знаменита Хива?",
+        "en": "What is Khiva famous for?"
+      },
+      "hint": {
+        "uz": "«Xiva — qadimiy koʻrinishini yoʻqotmagan shahar…»",
+        "ru": "«Хива не потеряла свой древний облик…»",
+        "en": "“Khiva has not lost its ancient look…”"
+      },
+      "explanation": {
+        "uz": "Xiva qadimiy koʻrinishini saqlab qolgan, minoralari mehmonlarni hayratga soladi.",
+        "ru": "Хива сохранила древний облик, её минареты восхищают гостей.",
+        "en": "Khiva kept its ancient look; its minarets amaze visitors."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "Toshkent",
+              "right": "poytaxt"
+            },
+            {
+              "left": "Samarqand",
+              "right": "Registon maydoni"
+            },
+            {
+              "left": "Xiva",
+              "right": "qadimiy minoralar"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Shaharni mashhur joyi bilan bogʻla!",
+        "ru": "Соедини город с его достопримечательностью!",
+        "en": "Match each city with what it is known for!"
+      },
+      "hint": {
+        "uz": "Registon — Samarqandda.",
+        "ru": "Регистан — в Самарканде.",
+        "en": "Registan is in Samarkand."
+      },
+      "explanation": {
+        "uz": "Toshkent — poytaxt; Samarqandda Registon; Xivada qadimiy minoralar.",
+        "ru": "Ташкент — столица; в Самарканде Регистан; в Хиве древние минареты.",
+        "en": "Tashkent is the capital; Registan is in Samarkand; ancient minarets are in Khiva."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "poytaxt",
+              "right": "davlatning bosh shahri"
+            },
+            {
+              "left": "obida",
+              "right": "qadimiy yodgorlik"
+            },
+            {
+              "left": "minora",
+              "right": "baland, ingichka bino"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«obida» — qadim zamonlardan qolgan yodgorlik.",
+        "ru": "«obida» — древний памятник.",
+        "en": "“obida” is an ancient monument."
+      },
+      "explanation": {
+        "uz": "poytaxt = bosh shahar; obida = qadimiy yodgorlik; minora = baland ingichka bino.",
+        "ru": "poytaxt = столица; obida = древний памятник; minora = башня.",
+        "en": "poytaxt = capital; obida = ancient monument; minora = tower."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "syllable_build",
+        "props": {
+          "syllables": [
+            "poy",
+            "taxt"
+          ],
+          "emoji": "🏙️",
+          "clue": {
+            "uz": "Davlatning bosh shahri",
+            "ru": "Главный город страны",
+            "en": "The main city of a country"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻgʻinlardan soʻz tuz!",
+        "ru": "Собери слово из слогов!",
+        "en": "Build the word from syllables!"
+      },
+      "hint": {
+        "uz": "Toshkent — Oʻzbekistonning …",
+        "ru": "Ташкент — … Узбекистана.",
+        "en": "Tashkent is the … of Uzbekistan."
+      },
+      "explanation": {
+        "uz": "poy-taxt → poytaxt. Toshkent — yurtimiz poytaxti.",
+        "ru": "poy-taxt → poytaxt (столица). Ташкент — столица страны.",
+        "en": "poy-taxt → poytaxt (capital). Tashkent is our capital."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "Toshkent",
+              "match": true
+            },
+            {
+              "text": "Moskva",
+              "match": false
+            },
+            {
+              "text": "Buxoro",
+              "match": true
+            },
+            {
+              "text": "Parij",
+              "match": false
+            },
+            {
+              "text": "Samarqand",
+              "match": true
+            },
+            {
+              "text": "Tokio",
+              "match": false
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Oʻzbekiston shaharlarini bos!",
+        "ru": "Нажми города Узбекистана!",
+        "en": "Tap the cities of Uzbekistan!"
+      },
+      "hint": {
+        "uz": "Moskva, Parij, Tokio — boshqa davlatlarning shaharlari.",
+        "ru": "Москва, Париж, Токио — города других стран.",
+        "en": "Moscow, Paris and Tokyo are cities of other countries."
+      },
+      "explanation": {
+        "uz": "Toshkent, Buxoro, Samarqand — Oʻzbekiston shaharlari.",
+        "ru": "Ташкент, Бухара, Самарканд — города Узбекистана.",
+        "en": "Tashkent, Bukhara and Samarkand are cities of Uzbekistan."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "tiles": [
+            {
+              "text": "Toshkent"
+            },
+            {
+              "text": "Xiva"
+            },
+            {
+              "text": "Buxoro"
+            },
+            {
+              "text": "olma",
+              "odd": true
+            }
+          ],
+          "clue": {
+            "uz": "Shahar nomlari",
+            "ru": "Названия городов",
+            "en": "City names"
+          },
+          "emoji": "🏙️"
+        }
+      },
+      "prompt": {
+        "uz": "Ortiqcha soʻzni top!",
+        "ru": "Найди лишнее слово!",
+        "en": "Tap the odd one out!"
+      },
+      "hint": {
+        "uz": "Uchtasi — shahar, bittasi — meva.",
+        "ru": "Три — города, одно — фрукт.",
+        "en": "Three are cities, one is a fruit."
+      },
+      "explanation": {
+        "uz": "Toshkent, Xiva, Buxoro — shaharlar; olma — meva.",
+        "ru": "Ташкент, Хива, Бухара — города; яблоко — фрукт.",
+        "en": "Tashkent, Khiva and Bukhara are cities; an apple is a fruit."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Samarqand — Sharq ",
+          "after": "si.",
+          "choices": [
+            "moʻjiza",
+            "daraxt",
+            "koʻcha"
+          ],
+          "answer": "moʻjiza",
+          "emoji": "🕌",
+          "clue": {
+            "uz": "Samarqand nima deb ataladi?",
+            "ru": "Как называют Самарканд?",
+            "en": "What is Samarkand called?"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Matnda «Sharq moʻjizasi» deyilgan.",
+        "ru": "В тексте сказано «чудо Востока».",
+        "en": "The text says “the wonder of the East”."
+      },
+      "explanation": {
+        "uz": "Samarqand — Sharq moʻjizasi.",
+        "ru": "Самарканд — чудо Востока.",
+        "en": "Samarkand is the wonder of the East."
+      }
+    }
+  ],
+  "skipRecall": true
+}

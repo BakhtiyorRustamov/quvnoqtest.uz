@@ -49,8 +49,21 @@ export default function SubjectProgressCard({
     rx.set(-((e.clientY - r.top) / r.height - 0.5) * 10);
   }
 
+  // Locked subjects have no page yet — the tile renders as a plain, non-clickable
+  // card instead of routing to a dead "coming soon" stub.
+  const Wrapper = ({ children }: { children: React.ReactNode }) =>
+    unlocked ? (
+      <Link href={href} className="block h-full">
+        {children}
+      </Link>
+    ) : (
+      <div className="block h-full cursor-default" aria-disabled title={soonLabel}>
+        {children}
+      </div>
+    );
+
   return (
-    <Link href={href} className="block h-full">
+    <Wrapper>
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
@@ -113,6 +126,6 @@ export default function SubjectProgressCard({
           )}
         </div>
       </motion.div>
-    </Link>
+    </Wrapper>
   );
 }

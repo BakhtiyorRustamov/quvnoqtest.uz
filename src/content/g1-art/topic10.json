@@ -1,0 +1,29 @@
+{
+  "topicId": "g1-art-10", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Sabzavotlar", "ru": "Овощи", "en": "Vegetables" },
+  "recall": {
+    "uz": "Sabzavotlar juda foydali — ularda koʻp vitaminlar bor. Sabzi, bodring va pomidor mazali va sogʻlom. Keling, sabzini boʻyaymiz.",
+    "ru": "Овощи очень полезны — в них много витаминов. Морковь, огурец и помидор вкусные и полезные. Давай раскрасим морковь.",
+    "en": "Vegetables are very healthy — they have many vitamins. Carrots, cucumbers and tomatoes are tasty and good for you. Let's colour a carrot."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Sabzavotlar nima uchun foydali?", "ru": "Чем полезны овощи?", "en": "Why are vegetables good for us?" },
+      "hint": { "uz": "Ularda … bor.", "ru": "В них есть …", "en": "They contain …" },
+      "explanation": { "uz": "Toʻgʻri! Ularda koʻp vitaminlar bor.", "ru": "Верно! В них много витаминов.", "en": "Right! They have many vitamins." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "ularda koʻp vitaminlar bor", "ru": "в них много витаминов", "en": "they have many vitamins" },
+        { "uz": "ular shirinlik", "ru": "это конфеты", "en": "they are sweets" },
+        { "uz": "ular oʻyinchoq", "ru": "это игрушки", "en": "they are toys" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Sabzini boʻya.", "ru": "Раскрась морковь.", "en": "Colour the carrot." },
+      "hint": { "uz": "Sabzi — toʻq sariq, bargi — yashil.", "ru": "Морковь — оранжевая, ботва — зелёная.", "en": "The carrot is orange, the tops are green." },
+      "explanation": { "uz": "Mazali sabzi!", "ru": "Вкусная морковь!", "en": "A tasty carrot!" },
+      "widget": { "type": "color_fill", "props": { "picture": "carrot" } }
+    }
+  ]
+}

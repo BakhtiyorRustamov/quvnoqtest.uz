@@ -1,0 +1,167 @@
+{
+  "topicId": "g1-oqish-59",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "💧🔥🌟",
+  "title": {
+    "uz": "Yaxshilik qilish — odob-axloqdandir",
+    "ru": "Творить добро — часть нравственности",
+    "en": "Doing good is part of good character"
+  },
+  "recall": {
+    "uz": "«Axloq» rivoyatini tinglab oʻqiymiz va yaxshi axloqning qadri haqida bilib olamiz.",
+    "ru": "Слушаем предание «Нрав» и узнаём о ценности доброго нрава.",
+    "en": "We read the legend “Character” and learn the worth of good character."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Axloq",
+        "variant": "story",
+        "audio": "g1-oqish-59-q1",
+        "lines": [
+          "Suv, Olov va Axloq — uchovi doʻst boʻlishibdi.",
+          "Bir kuni birga sayrga chiqishibdi.",
+          "«Agar yoʻqolib qolsang, seni qayerdan topamiz?» — deyishibdi.",
+          "Suv: «Sharillagan ovozni eshitsangiz, men oʻshandaman.»",
+          "Olov: «Tutun koʻrsangiz, men oʻsha yerdaman.»",
+          "Axloq esa debdi:",
+          "«Meni yoʻqotsangiz, izlamang — hech qayerdan topolmaysiz.»"
+        ]
+      } },
+      "prompt": { "uz": "Rivoyatni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Axloqni yoʻqotsang, qayta topib boʻladimi?", "ru": "Можно ли вернуть потерянный нрав?", "en": "Can lost character be found again?" },
+      "explanation": { "uz": "Rivoyat yaxshi axloqni bir marta yoʻqotsang, qaytarish qiyinligi haqida.", "ru": "Предание о том, что утраченный нрав трудно вернуть.", "en": "The legend shows that lost good character is hard to regain." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "who_said", "props": {
+        "characters": [
+          { "name": { "uz": "Suv", "ru": "Вода", "en": "Water" }, "emoji": "💧" },
+          { "name": { "uz": "Olov", "ru": "Огонь", "en": "Fire" }, "emoji": "🔥" },
+          { "name": { "uz": "Axloq", "ru": "Нрав", "en": "Character" }, "emoji": "🌟" }
+        ],
+        "quotes": [
+          { "text": { "uz": "Sharillagan ovozni eshitsangiz, men oʻshandaman.", "ru": "Услышите журчание — я там.", "en": "If you hear splashing, that's where I am." }, "speaker": 0 },
+          { "text": { "uz": "Tutun koʻrsangiz, men oʻsha yerdaman.", "ru": "Увидите дым — я там.", "en": "If you see smoke, that's where I am." }, "speaker": 1 },
+          { "text": { "uz": "Meni yoʻqotsangiz, izlamang — topolmaysiz.", "ru": "Потеряете меня — не ищите, не найдёте.", "en": "If you lose me, don't search — you won't find me." }, "speaker": 2 }
+        ],
+        "clue": { "uz": "Bu gap Suv, Olov yoki Axloqniki?", "ru": "Чьи это слова — Воды, Огня или Нрава?", "en": "Whose line — Water, Fire or Character?" }
+      } },
+      "prompt": { "uz": "Bu gapni kim aytdi?", "ru": "Кто это сказал?", "en": "Who said this line?" },
+      "hint": { "uz": "Har biri oʻzini qayerdan topishni aytadi.", "ru": "Каждый говорит, где его найти.", "en": "Each says where it can be found." },
+      "explanation": { "uz": "Suv — sharillash; Olov — tutun; Axloq — yoʻqolsa topilmaydi.", "ru": "Вода — журчание; Огонь — дым; Нрав — не найти.", "en": "Water — splashing; Fire — smoke; Character — cannot be found." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Yaxshi axloqni bir marta yoʻqotsang, uni qayta topish qiyin.", "ru": "Утраченный добрый нрав трудно вернуть.", "en": "Once good character is lost, it is hard to regain." },
+        "answer": "true",
+        "why": { "uz": "Axloq «meni yoʻqotsangiz, topolmaysiz» deydi.", "ru": "Нрав говорит: «потеряете — не найдёте».", "en": "Character says: “if you lose me, you won't find me.”" }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Axloqning soʻzlarini eslang.", "ru": "Вспомни слова Нрава.", "en": "Recall Character's words." },
+      "explanation": { "uz": "Toʻgʻri: yoʻqolgan axloqni qaytarish qiyin.", "ru": "Верно: утраченный нрав трудно вернуть.", "en": "True: lost character is hard to regain." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_forge", "props": {
+        "letters": ["S", "U", "V", "O", "L", "O", "V", "A", "X", "Q"],
+        "accept": ["suv", "olov", "axloq", "ol", "ov"],
+        "goal": 3,
+        "emoji": "🌟",
+        "clue": { "uz": "Rivoyat qahramonlari — 3 ta soʻz tuzing", "ru": "Составь 3 слова — героев предания", "en": "Build the 3 words — the legend's characters" }
+      } },
+      "prompt": { "uz": "Harflardan rivoyat qahramonlarini tuzing!", "ru": "Составь из букв героев предания!", "en": "Build the legend's characters from the letters!" },
+      "hint": { "uz": "Masalan, uch harfdan — «suv».", "ru": "Например, из трёх букв — «suv».", "en": "For example, three letters make “suv”." },
+      "explanation": { "uz": "Harflardan suv, olov, axloq soʻzlari chiqadi.", "ru": "Из букв выходят suv, olov, axloq.", "en": "The letters make suv, olov, axloq." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Suvni sharillagan ovozidan topish mumkin.", "ru": "Воду можно найти по журчанию.", "en": "Water can be found by its splashing sound." },
+        "answer": "true",
+        "why": { "uz": "Suv: «sharillagan ovozni eshitsangiz, men oʻshandaman», — deydi.", "ru": "Вода говорит: «услышите журчание — я там».", "en": "Water says: “if you hear splashing, I'm there.”" }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Suv oʻzini qanday topishni aytdi?", "ru": "Как Вода велела себя искать?", "en": "How did Water say to find it?" },
+      "explanation": { "uz": "Toʻgʻri: suv sharillagan ovozidan topiladi.", "ru": "Верно: воду находят по журчанию.", "en": "True: water is found by its splashing." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "xavotirlanmoq", "right": "tashvishlanmoq" },
+        { "left": "axloq", "right": "xulq, odob" },
+        { "left": "sayr", "right": "aylanish, sayohat" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«xavotirlanmoq» — tashvishlanmoq.", "ru": "«xavotirlanmoq» — тревожиться.", "en": "“xavotirlanmoq” means to worry." },
+      "explanation": { "uz": "xavotirlanmoq = tashvishlanmoq; axloq = xulq; sayr = aylanish.", "ru": "xavotirlanmoq = тревожиться; axloq = нрав; sayr = прогулка.", "en": "xavotirlanmoq = to worry; axloq = character; sayr = a walk." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Yaxshi axloqni bir marta yoʻqotsang, qaytarish qiyin", "ru": "Утраченный добрый нрав трудно вернуть", "en": "Lost good character is hard to regain" },
+        { "uz": "Axloq keraksiz narsa", "ru": "Нрав — ненужная вещь", "en": "Character is unnecessary" },
+        { "uz": "Axloqni oson topib olsa boʻladi", "ru": "Нрав легко вернуть", "en": "Character is easy to get back" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Axloqning soʻzidan qanday xulosa chiqadi?", "ru": "Какой вывод из слов Нрава?", "en": "What conclusion follows from Character's words?" },
+      "hint": { "uz": "«Meni yoʻqotsangiz topolmaysiz» — nima demoqchi?", "ru": "«Потеряете — не найдёте» — о чём это?", "en": "“If you lose me, you won't find me” — what does it mean?" },
+      "explanation": { "uz": "Yaxshi axloqni asrash kerak — bir marta yoʻqotsang, qaytarish qiyin.", "ru": "Добрый нрав надо беречь — вернуть его трудно.", "en": "Guard good character — once lost, it is hard to regain." },
+      "openEnd": { "uz": "Yaxshi axloqni saqlash uchun nima qilish kerak deb oʻylaysan?", "ru": "Что нужно, чтобы сохранить добрый нрав, как думаешь?", "en": "What is needed to keep good character, do you think?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "mehribonlik", "match": true },
+        { "text": "halollik", "match": true },
+        { "text": "yordam berish", "match": true },
+        { "text": "yolgʻon", "match": false },
+        { "text": "qoʻpollik", "match": false }
+      ] } },
+      "prompt": { "uz": "Yaxshi axloq belgilarini bos!", "ru": "Нажми признаки доброго нрава!", "en": "Tap the signs of good character!" },
+      "hint": { "uz": "Yaxshi axloq — boshqalarga yaxshilik.", "ru": "Добрый нрав — это добро к другим.", "en": "Good character means kindness to others." },
+      "explanation": { "uz": "Mehribonlik, halollik, yordam — yaxshi axloq; yolgʻon, qoʻpollik — yoʻq.", "ru": "Доброта, честность, помощь — добрый нрав; ложь, грубость — нет.", "en": "Kindness, honesty, helping are good character; lying, rudeness are not." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Bir marta yoʻqolgan yaxshi ", "after": "ni qaytarish qiyin.", "choices": ["axloq", "olov", "suv"], "answer": "axloq", "emoji": "🌟", "clue": { "uz": "Rivoyat saboqi", "ru": "Урок предания", "en": "The legend's lesson" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Suv va olovni topsa boʻladi, buni esa yoʻq.", "ru": "Воду и огонь можно найти, а это — нет.", "en": "Water and fire can be found; this one cannot." },
+      "explanation": { "uz": "Yoʻqolgan yaxshi axloqni qaytarish qiyin.", "ru": "Утраченный добрый нрав трудно вернуть.", "en": "Lost good character is hard to regain." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_sequence", "props": {
+        "letters": ["a", "x", "l", "o", "q"],
+        "words": [5],
+        "phrase": "axloq",
+        "meaning": { "uz": "Axloq — insonning xulqi, odobi.", "ru": "Нрав — характер и вежливость человека.", "en": "Character — a person's conduct and manners." }
+      } },
+      "prompt": { "uz": "Harflarni toʻgʻri ketma-ketlikda bosib, soʻzni oʻqing!", "ru": "Нажимай буквы по порядку и прочитай слово!", "en": "Tap the letters in the right order to read the word!" },
+      "hint": { "uz": "Rivoyatning uchinchi doʻsti — «a» harfidan boshlanadi.", "ru": "Третий друг предания — начинается с «a».", "en": "The legend's third friend starts with “a”." },
+      "explanation": { "uz": "a-x-l-o-q → axloq.", "ru": "a-x-l-o-q → axloq.", "en": "a-x-l-o-q → axloq (character)." }
+    }
+  ]
+}

@@ -15,8 +15,14 @@ import { useSound } from '@/components/providers/SoundProvider';
 export default function Recall({ lesson, locale, onStart }: { lesson: Lesson; locale: string; onStart: () => void }) {
   const t = useTranslations('lesson');
   const { play } = useSound();
-  const text = `${pick(lesson.title, locale)}. ${pick(lesson.recall, locale)}`;
-  const { state, toggle } = useRecallAudio(lesson.topicId, locale, text);
+  // Ingliz tili: the clip is ENGLISH for every UI language (recallAudioLang='en').
+  const audioLang = lesson.recallAudioLang ?? 'uz';
+  const text =
+    audioLang === 'en'
+      ? `${lesson.title.en}. ${lesson.recall.en}`
+      : `${pick(lesson.title, locale)}. ${pick(lesson.recall, locale)}`;
+  const { state, toggle } = useRecallAudio(lesson.topicId, audioLang === 'en' ? 'en' : locale, text);
+  const showPlay = !lesson.hideAudio && (audioLang === 'en' || locale === 'uz');
 
   return (
     <motion.div
@@ -37,10 +43,27 @@ export default function Recall({ lesson, locale, onStart }: { lesson: Lesson; lo
         {lesson.emojis.slice(0, 2)} {pick(lesson.title, locale)} {lesson.emojis.slice(-2)}
       </h1>
 
+      {/* Ingliz tili: an animated GIF replaces the explanatory paragraph */}
+      {lesson.recallMedia?.gif && (
+        <div className="flex justify-center mt-5">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <motion.img
+            src={lesson.recallMedia.gif}
+            alt={lesson.recallMedia.alt ? pick(lesson.recallMedia.alt, locale) : ''}
+            aria-hidden={lesson.recallMedia.alt ? undefined : true}
+            draggable={false}
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="rounded-3xl shadow-card border border-ink/10 select-none"
+            style={{ maxWidth: lesson.recallMedia.maxWidth ?? 280, width: '100%' }}
+          />
+        </div>
+      )}
+
       <div className="card mt-5 p-5 sm:p-7 flex flex-col sm:flex-row items-center gap-5 text-left">
-        {/* big play button = the read-aloud control — Uzbek only.
-           Russian and English have no read-aloud (text is shown without audio). */}
-        {locale === 'uz' && (
+        {/* big play button = the read-aloud control — Uzbek only, EXCEPT the
+           English subject where an English clip plays for every UI language. */}
+        {showPlay && (
         <button
           onClick={() => {
             play('click');
@@ -81,8 +104,11 @@ export default function Recall({ lesson, locale, onStart }: { lesson: Lesson; lo
         )}
 
         <div className="flex-1">
-          <p className="text-ink text-lg sm:text-xl font-bold leading-relaxed">{pick(lesson.recall, locale)}</p>
-          {locale === 'uz' && state === 'error' && (
+          {/* with a recall GIF the paragraph is replaced by a single short line */}
+          <p className="text-ink text-lg sm:text-xl font-bold leading-relaxed">
+            {lesson.recallMedia?.gif && audioLang === 'en' ? lesson.recall.en : pick(lesson.recall, locale)}
+          </p>
+          {showPlay && state === 'error' && (
             <p className="mt-3 text-sm font-semibold text-ink/60 bg-amber-50 border border-amber-200 rounded-xl px-3 py-2">
               {t('audioUnavailable')}
             </p>

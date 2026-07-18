@@ -1,0 +1,159 @@
+{
+  "topicId": "g1-oqish-54",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🦁🐦✅",
+  "title": {
+    "uz": "Rostgoʻylik — inson koʻrki",
+    "ru": "Правдивость — украшение человека",
+    "en": "Truthfulness adorns a person"
+  },
+  "recall": {
+    "uz": "«Sher bilan Durroj» hikoyasini tinglab oʻqiymiz va yolgʻonning oqibati haqida bilib olamiz.",
+    "ru": "Слушаем рассказ «Лев и Дуррож» и узнаём о последствиях лжи.",
+    "en": "We read “The lion and the francolin” and learn where lying leads."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Sher bilan Durroj",
+        "variant": "story",
+        "audio": "g1-oqish-54-q1",
+        "lines": [
+          "Toʻqayda Sher bilan Durroj ahil yashar ekan.",
+          "Ammo Durroj yolgʻonchi edi — doʻstini koʻp aldardi.",
+          "Sher unga yolgʻonni tashlashni maslahat berardi.",
+          "Bir kuni Durroj ovchining toʻriga tushib qolibdi.",
+          "U doʻstini yordamga chaqiribdi.",
+          "Sher «yana aldayapti» deb, yordamga bormabdi.",
+          "Shunday qilib, Durroj oʻz yolgʻonining qurboni boʻlibdi."
+        ]
+      } },
+      "prompt": { "uz": "Hikoyani tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Durrojning qanday yomon odati bor edi?", "ru": "Какая дурная привычка была у Дуррожа?", "en": "What bad habit did the francolin have?" },
+      "explanation": { "uz": "Hikoya yolgʻonchilik yomon oqibatga olib kelishi haqida.", "ru": "Рассказ о том, что ложь ведёт к беде.", "en": "The story shows that lying leads to trouble." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Sher bilan Durroj ahil yashardi", "ru": "Лев и Дуррож жили дружно", "en": "The lion and francolin lived in friendship" } },
+        { "text": { "uz": "Durroj doʻstini koʻp aldardi", "ru": "Дуррож часто обманывал друга", "en": "The francolin often deceived his friend" } },
+        { "text": { "uz": "Durroj toʻrga tushib qoldi", "ru": "Дуррож попал в силок", "en": "The francolin fell into a trap" } },
+        { "text": { "uz": "Yordam soʻradi, Sher kelmadi", "ru": "Позвал на помощь — лев не пришёл", "en": "He called for help — the lion didn't come" } },
+        { "text": { "uz": "Durroj yolgʻoni qurboni boʻldi", "ru": "Дуррож стал жертвой своей лжи", "en": "The francolin fell victim to his own lie" } }
+      ] } },
+      "prompt": { "uz": "Hikoya voqealarini toʻgʻri tartibda joylang!", "ru": "Расставь события рассказа по порядку!", "en": "Put the story's events in order!" },
+      "hint": { "uz": "Avval ular ahil yashaydi.", "ru": "Сначала они живут дружно.", "en": "First they live in friendship." },
+      "explanation": { "uz": "Ahil yashadi → aldardi → toʻrga tushdi → yordam soʻradi → qurbon boʻldi.", "ru": "Дружили → обманывал → попал в силок → звал на помощь → погиб.", "en": "Friends → deceived → trapped → called for help → perished." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Durroj yolgʻonchi edi.", "ru": "Дуррож был лжецом.", "en": "The francolin was a liar." },
+        "answer": "true",
+        "why": { "uz": "Hikoyada u doʻstini koʻp marta aldagani aytiladi.", "ru": "В рассказе сказано, что он часто обманывал друга.", "en": "The story says he often deceived his friend." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Durroj doʻstiga nima qilardi?", "ru": "Что Дуррож делал с другом?", "en": "What did the francolin do to his friend?" },
+      "explanation": { "uz": "Toʻgʻri: Durroj koʻp aldaydigan yolgʻonchi edi.", "ru": "Верно: Дуррож был лжецом.", "en": "True: the francolin was a liar." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sher Durrojga yordamga keldi.", "ru": "Лев пришёл на помощь Дуррожу.", "en": "The lion came to the francolin's aid." },
+        "answer": "false",
+        "why": { "uz": "Sher «yana aldayapti» deb yordamga bormadi.", "ru": "Лев решил, что он снова лжёт, и не пришёл.", "en": "The lion thought he was lying again and did not come." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Sher nega kelmadi?", "ru": "Почему лев не пришёл?", "en": "Why didn't the lion come?" },
+      "explanation": { "uz": "Notoʻgʻri: Sher, yana aldayapti deb, yordamga bormadi.", "ru": "Неверно: лев не пришёл, думая, что тот лжёт.", "en": "False: the lion didn't come, thinking it was another lie." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": {
+        "words": ["Rost", "soʻz", "ayt,", "yolgʻon", "soʻzdan", "qayt."],
+        "emoji": "✅",
+        "clue": { "uz": "Tartibsiz soʻzlardan maqol tuzing", "ru": "Составь пословицу из слов", "en": "Build the proverb from the words" }
+      } },
+      "prompt": { "uz": "Soʻzlarni tartibla va maqolni oʻqing!", "ru": "Расставь слова и прочитай пословицу!", "en": "Order the words to read the proverb!" },
+      "hint": { "uz": "«Rost» soʻzidan boshlanadi.", "ru": "Начинается со слова «Rost».", "en": "It starts with the word “Rost”." },
+      "explanation": { "uz": "«Rost soʻz ayt, yolgʻon soʻzdan qayt» — doim rost gapir.", "ru": "«Говори правду, отвернись ото лжи».", "en": "“Speak the truth, turn away from lies.”" }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "«Yolgʻon» soʻzining aksi — ", "after": ".", "choices": ["rost", "katta", "sekin"], "answer": "rost", "emoji": "✅", "clue": { "uz": "Qarama-qarshi maʼnoli soʻz", "ru": "Слово-антоним", "en": "An antonym" } } },
+      "prompt": { "uz": "Qarama-qarshi maʼnoli soʻzni tanlang!", "ru": "Выбери слово-антоним!", "en": "Choose the opposite word!" },
+      "hint": { "uz": "Yolgʻonning teskarisi — haqiqat.", "ru": "Противоположность лжи — правда.", "en": "The opposite of a lie is the truth." },
+      "explanation": { "uz": "«Yolgʻon»ning aksi — «rost» (haqiqat).", "ru": "Антоним «yolgʻon» — «rost» (правда).", "en": "The opposite of “yolgʻon” is “rost” (truth)." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Chunki doimo aldagani uchun unga ishonishmadi", "ru": "Потому что из-за постоянной лжи ему не поверили", "en": "Because his constant lying made no one believe him" },
+        { "uz": "Chunki juda kichkina edi", "ru": "Потому что был очень маленьким", "en": "Because he was very small" },
+        { "uz": "Chunki toʻqayda yashardi", "ru": "Потому что жил в лесу", "en": "Because he lived in the forest" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Nega Durroj oʻz yolgʻonining qurboni boʻldi?", "ru": "Почему Дуррож стал жертвой своей лжи?", "en": "Why did the francolin fall victim to his own lie?" },
+      "hint": { "uz": "Koʻp aldagan odamga oxiri kim ishonadi?", "ru": "Верят ли тому, кто постоянно лжёт?", "en": "Does anyone trust a constant liar?" },
+      "explanation": { "uz": "Doim aldagani uchun rost aytganda ham unga ishonishmadi.", "ru": "Из-за постоянной лжи ему не поверили и в правде.", "en": "His constant lying meant no one believed him even when true." },
+      "openEnd": { "uz": "Nega har doim rost gapirish kerak, deb oʻylaysan?", "ru": "Почему всегда нужно говорить правду, как думаешь?", "en": "Why should we always tell the truth, do you think?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "ahil", "right": "inoq" },
+        { "left": "Durroj", "right": "qirgʻovul" },
+        { "left": "toʻr", "right": "ovchi tuzogʻi" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«ahil» — inoq, ittifoq degani.", "ru": "«ahil» — дружный.", "en": "“ahil” means close, in harmony." },
+      "explanation": { "uz": "ahil = inoq; Durroj = qirgʻovul; toʻr = ovchi tuzogʻi.", "ru": "ahil = дружный; Durroj = фазан; toʻr = силок.", "en": "ahil = in harmony; Durroj = a francolin; toʻr = a hunter's trap." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "rostgoʻy", "match": true },
+        { "text": "halol", "match": true },
+        { "text": "ishonchli", "match": true },
+        { "text": "yolgʻonchi", "match": false },
+        { "text": "aldoqchi", "match": false }
+      ] } },
+      "prompt": { "uz": "Rostgoʻy odamga xos soʻzlarni bos!", "ru": "Нажми слова о правдивом человеке!", "en": "Tap the words that describe a truthful person!" },
+      "hint": { "uz": "Rostgoʻy — hech qachon aldamaydi.", "ru": "Правдивый никогда не лжёт.", "en": "A truthful person never lies." },
+      "explanation": { "uz": "rostgoʻy, halol, ishonchli — ijobiy; yolgʻonchi, aldoqchi — salbiy.", "ru": "правдивый, честный, надёжный — хорошие; лжец, обманщик — плохие.", "en": "truthful, honest, reliable are good; liar, deceiver are bad." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_sequence", "props": {
+        "letters": ["r", "o", "s", "t", "g", "oʻ", "y"],
+        "words": [7],
+        "phrase": "rostgoʻy",
+        "meaning": { "uz": "Rostgoʻy — doim rost gapiradigan odam.", "ru": "Правдивый — тот, кто всегда говорит правду.", "en": "Truthful — one who always tells the truth." }
+      } },
+      "prompt": { "uz": "Harflarni toʻgʻri ketma-ketlikda bosib, soʻzni oʻqing!", "ru": "Нажимай буквы по порядку и прочитай слово!", "en": "Tap the letters in the right order to read the word!" },
+      "hint": { "uz": "Doim rost gapiradigan odam — «r» harfidan boshlanadi.", "ru": "Тот, кто всегда правдив — начинается с «r».", "en": "The always-truthful one starts with “r”." },
+      "explanation": { "uz": "r-o-s-t-g-oʻ-y → rostgoʻy.", "ru": "r-o-s-t-g-oʻ-y → rostgoʻy.", "en": "r-o-s-t-g-oʻ-y → rostgoʻy (truthful)." }
+    }
+  ]
+}

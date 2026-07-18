@@ -1,0 +1,515 @@
+{
+  "topicId": "g1-ingliz-05",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐼🎨🔤👂",
+  "title": {
+    "uz": "«P» tovushi: pushti panda",
+    "ru": "Звук «p»: розовая панда",
+    "en": "The “p” sound: a pink panda"
+  },
+  "recall": {
+    "uz": "P-p-panda! Bugun inglizcha «p» tovushini oʻrganamiz.",
+    "ru": "P-p-panda! Сегодня учим английский звук «p».",
+    "en": "P! P! Panda! Listen and say the \"p\" sound!"
+  },
+  "ttsText": {
+    "uz": "«P» tovushi: pushti panda.",
+    "en": "P! P! Panda! Listen and say the p sound!"
+  },
+  "recallAudioLang": "en",
+  "recallMedia": {
+    "gif": "/quiz-media/en-panda.gif",
+    "maxWidth": 260
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri hayvonni bos!",
+        "ru": "Послушай и нажми нужное животное!",
+        "en": "Listen and tap the right animal!"
+      },
+      "audio": {
+        "key": "ing05-q1",
+        "text": "A pink and purple panda!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«Panda» — oq-qora ayiqcha.",
+        "ru": "«Panda» — чёрно-белый мишка.",
+        "en": "A panda is a black-and-white bear."
+      },
+      "explanation": {
+        "uz": "Barakalla! Panda — panda!",
+        "ru": "Молодец! Panda — панда!",
+        "en": "Great! A panda!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐼",
+              "label": "panda",
+              "correct": true
+            },
+            {
+              "emoji": "🐨",
+              "label": "koala"
+            },
+            {
+              "emoji": "🐻",
+              "label": "bear"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«P» bilan boshlanadigan narsalarni belgila!",
+        "ru": "Отметь всё, что начинается на «p»!",
+        "en": "Tap everything that starts with \"p\"!"
+      },
+      "audio": {
+        "key": "ing05-q2",
+        "text": "P! P! P! Panda, pen, pizza!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "Panda, pen, pizza — hammasi «p» bilan!",
+        "ru": "Panda, pen, pizza — все на «p»!",
+        "en": "Say each word: does it start with \"p\"?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Panda, pen va pizza «p» bilan boshlanadi.",
+        "ru": "Отлично! Panda, pen и pizza начинаются на «p».",
+        "en": "Awesome! Panda, pen and pizza start with \"p\"."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐼",
+              "label": "panda",
+              "correct": true
+            },
+            {
+              "emoji": "🖊️",
+              "label": "pen",
+              "correct": true
+            },
+            {
+              "emoji": "🍕",
+              "label": "pizza",
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🐶",
+              "label": "dog"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. Qaysi soʻzni eshitding?",
+        "ru": "Послушай. Какое слово ты услышал?",
+        "en": "Listen. Which word did you hear?"
+      },
+      "audio": {
+        "key": "ing05-q3",
+        "text": "P… p… pink!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«Pink» — pushti rang.",
+        "ru": "«Pink» — розовый цвет.",
+        "en": "It's a color word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Pink — pushti.",
+        "ru": "Верно! Pink — розовый.",
+        "en": "Right! Pink!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "pink",
+            "blue",
+            "green"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri narsani bos!",
+        "ru": "Послушай и нажми нужный предмет!",
+        "en": "Listen and tap the right thing!"
+      },
+      "audio": {
+        "key": "ing05-q4",
+        "text": "Pen! P-p-pen!",
+        "voice": "boy"
+      },
+      "hint": {
+        "uz": "«Pen» — yozadigan qalamcha (ruchka).",
+        "ru": "«Pen» — то, чем пишут (ручка).",
+        "en": "You write with a pen."
+      },
+      "explanation": {
+        "uz": "Barakalla! Pen — ruchka.",
+        "ru": "Молодец! Pen — ручка.",
+        "en": "Great! A pen!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🖊️",
+              "label": "pen",
+              "correct": true
+            },
+            {
+              "emoji": "📏",
+              "label": "ruler"
+            },
+            {
+              "emoji": "✂️",
+              "label": "scissors"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. Panda qanaqa rangda edi?",
+        "ru": "Послушай. Какого цвета была панда?",
+        "en": "Listen. What colors was the panda?"
+      },
+      "hint": {
+        "uz": "Ikkita rang aytiladi: pink va purple.",
+        "ru": "Названы два цвета: pink и purple.",
+        "en": "Two colors are named."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Pushti va binafsha panda!",
+        "ru": "Верно! Розовая и фиолетовая панда!",
+        "en": "Right! A pink and purple panda!"
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩‍🏫",
+              "name": "Teacher",
+              "text": "Say it with me: a pink and purple panda!",
+              "audio": {
+                "key": "ing05-q5-a",
+                "text": "Say it with me: a pink and purple panda!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "A pink and purple panda!",
+              "audio": {
+                "key": "ing05-q5-b",
+                "text": "A pink and purple panda!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Panda qanaqa rangda?",
+              "ru": "Какого цвета панда?",
+              "en": "What colors is the panda?"
+            },
+            "choices": [
+              {
+                "uz": "Pushti va binafsha",
+                "ru": "Розовая и фиолетовая",
+                "en": "Pink and purple"
+              },
+              {
+                "uz": "Qizil va koʻk",
+                "ru": "Красная и синяя",
+                "en": "Red and blue"
+              },
+              {
+                "uz": "Sariq va yashil",
+                "ru": "Жёлтая и зелёная",
+                "en": "Yellow and green"
+              }
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri taomni bos!",
+        "ru": "Послушай и нажми нужную еду!",
+        "en": "Listen and tap the right food!"
+      },
+      "audio": {
+        "key": "ing05-q6",
+        "text": "Pizza! P-p-pizza!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«Pizza» — yumaloq, boʻlakli taom.",
+        "ru": "«Pizza» — круглая еда, режут на куски.",
+        "en": "It's round and cut into slices."
+      },
+      "explanation": {
+        "uz": "Barakalla! Pizza!",
+        "ru": "Молодец! Пицца!",
+        "en": "Great! Pizza!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍕",
+              "label": "pizza",
+              "correct": true
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread"
+            },
+            {
+              "emoji": "🍚",
+              "label": "rice"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, «p» soʻzlarining juftini top!",
+        "ru": "Открывай карточки — пары слов на «p»!",
+        "en": "Flip the cards: match the \"p\" words!"
+      },
+      "hint": {
+        "uz": "🐼 — panda, 🖊 — pen, 🍕 — pizza.",
+        "ru": "🐼 — panda, 🖊 — pen, 🍕 — pizza.",
+        "en": "🐼 — panda, 🖊 — pen, 🍕 — pizza."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Hamma «p» soʻzlarini topding!",
+        "ru": "Отлично! Все слова на «p» найдены!",
+        "en": "Awesome! All \"p\" words found!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐼"
+              },
+              "b": {
+                "label": "panda"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🖊️"
+              },
+              "b": {
+                "label": "pen"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍕"
+              },
+              "b": {
+                "label": "pizza"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «p» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается со звука «p»?",
+        "en": "Which word starts with the \"p\" sound?"
+      },
+      "audio": {
+        "key": "ing05-q8",
+        "text": "P! P! P!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "Har bir soʻzni ovoz chiqarib ayt.",
+        "ru": "Произнеси каждое слово вслух.",
+        "en": "Say each word aloud."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Panda — «p» bilan boshlanadi.",
+        "ru": "Верно! Panda начинается на «p».",
+        "en": "Right! Panda starts with \"p\"."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "panda",
+            "apple",
+            "dog"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va binafsha doirani bos!",
+        "ru": "Послушай и нажми фиолетовый круг!",
+        "en": "Listen and tap the purple circle!"
+      },
+      "audio": {
+        "key": "ing05-q9",
+        "text": "Purple! P-p-purple!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«Purple» — binafsha rang.",
+        "ru": "«Purple» — фиолетовый.",
+        "en": "\"Purple\" is the color of grapes."
+      },
+      "explanation": {
+        "uz": "Barakalla! Purple — binafsha.",
+        "ru": "Молодец! Purple — фиолетовый.",
+        "en": "Great! Purple!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🟣",
+              "label": {
+                "uz": "binafsha",
+                "ru": "фиолетовый",
+                "en": "purple"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🟡",
+              "label": {
+                "uz": "sariq",
+                "ru": "жёлтый",
+                "en": "yellow"
+              }
+            },
+            {
+              "emoji": "🔴",
+              "label": {
+                "uz": "qizil",
+                "ru": "красный",
+                "en": "red"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tez aytishni tingla va birga ayt!",
+        "ru": "Послушай скороговорку и скажи вместе!",
+        "en": "Listen to the chant and say it together!"
+      },
+      "hint": {
+        "uz": "Sekin boshla, keyin tezlash!",
+        "ru": "Начни медленно, потом быстрее!",
+        "en": "Start slowly, then speed up!"
+      },
+      "explanation": {
+        "uz": "Barakalla! «P» tovushini zoʻr aytding!",
+        "ru": "Молодец! Отлично произносишь звук «p»!",
+        "en": "Great! Your \"p\" sound is perfect!"
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🐼",
+              "name": "Panda",
+              "text": "A pink panda paints purple pots!",
+              "audio": {
+                "key": "ing05-q10-a",
+                "text": "A pink panda paints purple pots!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "A pink panda paints purple pots!",
+              "audio": {
+                "key": "ing05-q10-b",
+                "text": "A pink panda paints purple pots!",
+                "voice": "boy"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "topicId": "g1-alifbe-51",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🐘🎬⚽",
+  "title": {
+    "uz": "«F f» harfi",
+    "ru": "Буква «F f»",
+    "en": "The letter “F f”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «F f». U undosh tovush. «F» bilan: fil, film, futbol. Ism va joy nomlari bosh harf bilan yoziladi!",
+    "ru": "Сегодня наша буква — «F f». Это согласный звук. Слова: fil, film, futbol. Имена и названия пишутся с заглавной буквы!",
+    "en": "Today's letter is “F f”. It is a consonant. Words: fil, film, futbol. Names and places are written with a capital letter!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«F» bilan boshlanadigan soʻzni top!",
+        "ru": "Найди слово на «F»!",
+        "en": "Find the word that starts with “F”!"
+      },
+      "hint": {
+        "uz": "Boshini choʻzib ayt: fil.",
+        "ru": "Протяни начало: fil.",
+        "en": "Stretch the start: fil."
+      },
+      "explanation": {
+        "uz": "«fil» «F» tovushi bilan boshlanadi.",
+        "ru": "«fil» начинается со звука «F».",
+        "en": "“fil” starts with the sound “F”."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🐘",
+              "label": {
+                "uz": "fil",
+                "ru": "слон",
+                "en": "elephant"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«F» harfini topib, hammasini bos!",
+        "ru": "Найди букву «F» и нажми на все!",
+        "en": "Find the letter “F” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham.",
+        "ru": "Большая и маленькая тоже.",
+        "en": "Capital and small too."
+      },
+      "explanation": {
+        "uz": "«F» harfini topding!",
+        "ru": "Ты нашёл букву «F»!",
+        "en": "You found the letter “F”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "F",
+          "cols": 3,
+          "grid": [
+            "F",
+            "o",
+            "f",
+            "T",
+            "F",
+            "i",
+            "f",
+            "n",
+            "F"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐘 «fil»da «f» tovushi qaysi katakchada?",
+        "ru": "🐘 В какой клетке звук «f» в слове «fil»?",
+        "en": "🐘 Which box has the “f” sound in “fil”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«fil»da «f» toʻgʻri joyda.",
+        "ru": "В «fil» звук «f» на верном месте.",
+        "en": "In “fil” the “f” is right."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🐘",
+          "word": {
+            "uz": "fil",
+            "ru": "fil",
+            "en": "fil"
+          },
+          "sound": "f",
+          "cells": [
+            "f",
+            "i",
+            "l"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐘 «fil» soʻzining tovush chizmasini rangla!",
+        "ru": "🐘 Раскрась схему звуков «fil»!",
+        "en": "🐘 Colour the sound scheme of “fil”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«fil» chizmasini rangladik.",
+        "ru": "Мы раскрасили схему «fil».",
+        "en": "We coloured the scheme of “fil”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "🐘",
+          "word": {
+            "uz": "fil",
+            "ru": "fil",
+            "en": "fil"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«F» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «F»!",
+        "en": "Tap the words with the “F” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «f» tovushi bor.",
+        "ru": "В них есть звук «f».",
+        "en": "They have the “f” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐘",
+              "label": {
+                "uz": "fil",
+                "ru": "fil",
+                "en": "fil"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🎬",
+              "label": {
+                "uz": "film",
+                "ru": "film",
+                "en": "film"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "⚽",
+              "label": {
+                "uz": "futbol",
+                "ru": "futbol",
+                "en": "futbol"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐘 Yetishmayotgan harfni qoʻy!",
+        "ru": "🐘 Вставь недостающую букву!",
+        "en": "🐘 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz: «fil».",
+        "ru": "Слово: «fil».",
+        "en": "The word: “fil”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «f».",
+        "ru": "Верная буква — «f».",
+        "en": "The right letter is “f”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🐘",
+          "label": {
+            "uz": "fil",
+            "ru": "слон",
+            "en": "elephant"
+          },
+          "letters": [
+            "f",
+            "i",
+            "l"
+          ],
+          "blank": 0,
+          "choices": [
+            "f",
+            "v",
+            "p"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bosh harf bilan yoziladigan soʻzlarni belgila!",
+        "ru": "Отметь слова с заглавной буквы!",
+        "en": "Tap the words that need a capital letter!"
+      },
+      "hint": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия — с заглавной.",
+        "en": "Names and places take a capital."
+      },
+      "explanation": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия пишутся с заглавной буквы.",
+        "en": "Names and place names are written with a capital."
+      },
+      "widget": {
+        "type": "capital_pick",
+        "props": {
+          "words": [
+            {
+              "word": "Farhod",
+              "capital": true
+            },
+            {
+              "word": "Feruza",
+              "capital": true
+            },
+            {
+              "word": "fil",
+              "capital": false
+            },
+            {
+              "word": "film",
+              "capital": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«F» — undosh tovush.",
+        "ru": "«F» — согласный звук.",
+        "en": "“F” is a consonant."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «F» — undosh.",
+        "ru": "Верно! «F» — согласный.",
+        "en": "True! “F” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "⚽ «futbol» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "⚽ Похлопай «futbol» по слогам!",
+        "en": "⚽ Clap “futbol” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«futbol» — 2 boʻgʻin.",
+        "ru": "«futbol» — 2 слога.",
+        "en": "“futbol” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "⚽",
+          "word": {
+            "uz": "futbol",
+            "ru": "futbol",
+            "en": "futbol"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«F»da pastki lab qayerga yaqinlashadi?",
+        "ru": "К чему приближается нижняя губа при «F»?",
+        "en": "Where does the lower lip go for “F”?"
+      },
+      "hint": {
+        "uz": "«f» tovushini ayt.",
+        "ru": "Скажи звук «f».",
+        "en": "Say the “f” sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — yuqori tishga.",
+        "ru": "Верно — к верхним зубам.",
+        "en": "Right — to the upper teeth."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yuqori tishga",
+              "ru": "к верхним зубам",
+              "en": "to the upper teeth"
+            },
+            {
+              "uz": "tilga",
+              "ru": "к языку",
+              "en": "to the tongue"
+            },
+            {
+              "uz": "burunga",
+              "ru": "к носу",
+              "en": "to the nose"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

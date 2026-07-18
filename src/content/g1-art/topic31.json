@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-31", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Sponj yordamida chizamiz", "ru": "Рисуем губкой", "en": "Painting with a sponge" },
+  "recall": {
+    "uz": "Sponj yoki paxta boʻlakchasini boʻyoqqa botirib bossak, ajoyib gʻubor izlar chiqadi. Shu usulda rasm chiz, soʻng suratga olib yukla.",
+    "ru": "Если обмакнуть губку или кусочек ваты в краску и прижать, получатся пушистые отпечатки. Нарисуй так рисунок и сфотографируй.",
+    "en": "If you dip a sponge or a piece of cotton in paint and press, you get soft fluffy prints. Make a picture this way, then take a photo."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Sponj usulida rasm chiz va suratga ol.", "ru": "Нарисуй губкой и сфотографируй.", "en": "Paint with a sponge, then photograph it." },
+      "hint": { "uz": "Sponjni boʻyoqqa botirib, qogʻozga bos.", "ru": "Обмакни губку в краску и прижми к бумаге.", "en": "Dip the sponge in paint and press on paper." },
+      "explanation": { "uz": "Gʻubor izlar ajoyib!", "ru": "Пушистые отпечатки — здорово!", "en": "Lovely fluffy prints!" },
+      "widget": { "type": "photo_upload", "props": {} } }
+  ]
+}

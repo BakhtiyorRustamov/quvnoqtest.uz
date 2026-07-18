@@ -1,0 +1,531 @@
+{
+  "topicId": "g1-ingliz-26",
+  "subjectKey": "g1-ingliz",
+  "emojis": "❓🏠🛏️🍳",
+  "title": {
+    "uz": "Qayerdasan? — Men ...daman",
+    "ru": "Где ты? — Я в...",
+    "en": "Where are you? I'm in the..."
+  },
+  "recall": {
+    "uz": "Bugun soʻraymiz: «Where are you?» — «Qayerdasan?» Javob: «I'm in the kitchen» — «Men oshxonadaman». Va: «Where's Mom? She's in the bedroom».",
+    "ru": "Сегодня спрашиваем: «Where are you?» — «Где ты?» Ответ: «I'm in the kitchen» — «Я на кухне». И: «Where's Mom? She's in the bedroom».",
+    "en": "Today we ask \"Where are you?\" and answer \"I'm in the kitchen.\" And \"Where's Mom? She's in the bedroom.\""
+  },
+  "ttsText": {
+    "uz": "Qayerdasan?",
+    "en": "Where are you? I'm in the kitchen! Where's Mom? She's in the bedroom."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola qayerda?",
+        "ru": "Послушай. Где ребёнок?",
+        "en": "Listen. Where is the child?"
+      },
+      "hint": {
+        "uz": "«in the yard» — hovlida.",
+        "ru": "«in the yard» — во дворе.",
+        "en": "\"in the yard\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! In the yard — hovlida.",
+        "ru": "Верно! In the yard — во дворе.",
+        "en": "Right! In the yard."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Where are you?",
+              "audio": {
+                "key": "ing26-q1-a",
+                "text": "Where are you?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I'm in the yard!",
+              "audio": {
+                "key": "ing26-q1-b",
+                "text": "I'm in the yard!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam qayerda?",
+              "ru": "Где Сэм?",
+              "en": "Where is Sam?"
+            },
+            "choices": [
+              "in the yard",
+              "in the bathroom",
+              "in the kitchen"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Oyisi qayerda?",
+        "ru": "Послушай. Где мама?",
+        "en": "Listen. Where is Mom?"
+      },
+      "hint": {
+        "uz": "«She's in the bedroom» — u yotoqxonada.",
+        "ru": "«She's in the bedroom» — она в спальне.",
+        "en": "\"She's in the bedroom.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! She's in the bedroom.",
+        "ru": "Верно! She's in the bedroom.",
+        "en": "Right! She's in the bedroom."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Where's Mom?",
+              "audio": {
+                "key": "ing26-q2-a",
+                "text": "Where's Mom?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "She's in the bedroom.",
+              "audio": {
+                "key": "ing26-q2-b",
+                "text": "She's in the bedroom.",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Oyisi qayerda?",
+              "ru": "Где мама?",
+              "en": "Where is Mom?"
+            },
+            "choices": [
+              "in the bedroom",
+              "in the kitchen",
+              "in the yard"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Ovqat pishiryapti — 🍳 «in the kitchen».",
+        "ru": "Верно? Готовит — 🍳 «in the kitchen».",
+        "en": "Is this right? Cooking — 🍳 \"in the kitchen.\""
+      },
+      "hint": {
+        "uz": "Oshxonada pishiramiz.",
+        "ru": "Готовим на кухне.",
+        "en": "We cook in the kitchen."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! In the kitchen.",
+        "ru": "Верно! In the kitchen.",
+        "en": "Right! In the kitchen."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍳",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? 🛁 = «in the kitchen».",
+        "ru": "Верно? 🛁 = «in the kitchen».",
+        "en": "Is this right? 🛁 = \"in the kitchen.\""
+      },
+      "hint": {
+        "uz": "🛁 — hammom.",
+        "ru": "🛁 — ванная.",
+        "en": "🛁 is a bathroom."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Bu hammom (bathroom).",
+        "ru": "Неверно! Это ванная (bathroom).",
+        "en": "False! It's the bathroom."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🛁",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "U uxlayapti. U qaysi xonada?",
+        "ru": "Она спит. В какой комнате?",
+        "en": "She is sleeping. Which room is she in?"
+      },
+      "hint": {
+        "uz": "Uxlaydigan xona.",
+        "ru": "Комната для сна.",
+        "en": "The room for sleeping."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! In the bedroom.",
+        "ru": "Верно! In the bedroom.",
+        "en": "Right! In the bedroom."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🛏️",
+              "label": "bedroom",
+              "correct": true
+            },
+            {
+              "emoji": "🍳",
+              "label": "kitchen"
+            },
+            {
+              "emoji": "🛋️",
+              "label": "living room"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "U yuvinyapti. U qaysi xonada?",
+        "ru": "Он моется. В какой комнате?",
+        "en": "He is washing. Which room is he in?"
+      },
+      "hint": {
+        "uz": "Yuvinadigan xona.",
+        "ru": "Комната для мытья.",
+        "en": "The room for washing."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! In the bathroom.",
+        "ru": "Верно! In the bathroom.",
+        "en": "Right! In the bathroom."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🛁",
+              "label": "bathroom",
+              "correct": true
+            },
+            {
+              "emoji": "🛏️",
+              "label": "bedroom"
+            },
+            {
+              "emoji": "🍽️",
+              "label": "dining room"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Dada qayerda ekan?",
+        "ru": "Послушай. Где же папа?",
+        "en": "Listen. Where is Dad, in the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! He's in the kitchen.",
+        "ru": "Верно! He's in the kitchen.",
+        "en": "Right! He's in the kitchen."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Where's Dad?",
+              "audio": {
+                "key": "ing26-q7-a",
+                "text": "Where's Dad?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Is he in the living room?",
+              "audio": {
+                "key": "ing26-q7-b",
+                "text": "Is he in the living room?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "No. He's in the kitchen!",
+              "audio": {
+                "key": "ing26-q7-c",
+                "text": "No. He's in the kitchen!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Dada qayerda?",
+              "ru": "Где папа?",
+              "en": "Where is Dad?"
+            },
+            "choices": [
+              "in the living room",
+              "in the yard",
+              "in the kitchen"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishlarni xonalarga qarab ajrat!",
+        "ru": "Разложи занятия по комнатам!",
+        "en": "Sort the activities by their room!"
+      },
+      "hint": {
+        "uz": "Pishirish — oshxona, uxlash — yotoqxona.",
+        "ru": "Готовить — кухня, спать — спальня.",
+        "en": "Cook — kitchen, sleep — bedroom."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har ish oʻz xonasida.",
+        "ru": "Молодец! Каждое занятие в своей комнате.",
+        "en": "Great! Each activity in its room!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "k",
+              "label": {
+                "uz": "Kitchen",
+                "ru": "Кухня",
+                "en": "Kitchen"
+              }
+            },
+            {
+              "id": "ba",
+              "label": {
+                "uz": "Bathroom",
+                "ru": "Ванная",
+                "en": "Bathroom"
+              }
+            },
+            {
+              "id": "be",
+              "label": {
+                "uz": "Bedroom",
+                "ru": "Спальня",
+                "en": "Bedroom"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍳",
+              "label": "cook",
+              "bin": "k"
+            },
+            {
+              "emoji": "🍽️",
+              "label": "eat",
+              "bin": "k"
+            },
+            {
+              "emoji": "🚿",
+              "label": "shower",
+              "bin": "ba"
+            },
+            {
+              "emoji": "🧼",
+              "label": "wash",
+              "bin": "ba"
+            },
+            {
+              "emoji": "🛏️",
+              "label": "sleep",
+              "bin": "be"
+            },
+            {
+              "emoji": "💤",
+              "label": "rest",
+              "bin": "be"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni xonaga ula!",
+        "ru": "Соедини слово с комнатой!",
+        "en": "Match each word to its room!"
+      },
+      "hint": {
+        "uz": "kitchen 🍳, bedroom 🛏️, bathroom 🛁, dining room 🍽️.",
+        "ru": "kitchen 🍳, bedroom 🛏️, bathroom 🛁, dining room 🍽️.",
+        "en": "kitchen 🍳, bedroom 🛏️, bathroom 🛁, dining room 🍽️."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "kitchen"
+              },
+              "right": {
+                "emoji": "🍳"
+              }
+            },
+            {
+              "left": {
+                "label": "bedroom"
+              },
+              "right": {
+                "emoji": "🛏️"
+              }
+            },
+            {
+              "left": {
+                "label": "bathroom"
+              },
+              "right": {
+                "emoji": "🛁"
+              }
+            },
+            {
+              "left": {
+                "label": "dining room"
+              },
+              "right": {
+                "emoji": "🍽️"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oyisi kechki ovqat pishiryapti. U qayerda?",
+        "ru": "Мама готовит ужин. Где она?",
+        "en": "Mom is cooking dinner. Where is she?"
+      },
+      "hint": {
+        "uz": "Ovqat oshxonada.",
+        "ru": "Еда на кухне.",
+        "en": "Food is in the kitchen."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! She's in the kitchen.",
+        "ru": "Верно! She's in the kitchen.",
+        "en": "Right! She's in the kitchen."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "She's in the kitchen.\nU oshxonada.",
+              "ru": "She's in the kitchen.\nОна на кухне.",
+              "en": "She's in the kitchen."
+            },
+            {
+              "uz": "She's in the bedroom.\nU yotoqxonada.",
+              "ru": "She's in the bedroom.\nОна в спальне.",
+              "en": "She's in the bedroom."
+            },
+            {
+              "uz": "She's in the yard.\nU hovlida.",
+              "ru": "She's in the yard.\nОна во дворе.",
+              "en": "She's in the yard."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

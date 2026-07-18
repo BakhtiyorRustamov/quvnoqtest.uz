@@ -2,6 +2,7 @@
 
 import { useLocale } from 'next-intl';
 import { pick, type L10n } from '@/lib/i18n-config';
+import { GRADES, type SubjectDef } from '@/content/taxonomy';
 
 /* Task 5 — infinite subject pill strip. Two rows scrolling in opposite
    directions. Each row's items are duplicated so the -50% keyframe loops
@@ -9,22 +10,12 @@ import { pick, type L10n } from '@/lib/i18n-config';
 
 type Pill = { label: L10n; color: string };
 
-const ROW1: Pill[] = [
-  { label: { uz: 'Matematika', ru: 'Математика', en: 'Maths' }, color: '#f39a1f' },
-  { label: { uz: 'Fizika', ru: 'Физика', en: 'Physics' }, color: '#7c3aed' },
-  { label: { uz: 'Kimyo', ru: 'Химия', en: 'Chemistry' }, color: '#10b981' },
-  { label: { uz: 'Biologiya', ru: 'Биология', en: 'Biology' }, color: '#c2298a' },
-  { label: { uz: 'Tarix', ru: 'История', en: 'History' }, color: '#06b6d4' },
-  { label: { uz: 'Geografiya', ru: 'География', en: 'Geography' }, color: '#1fa7e0' }
-];
-
-const ROW2: Pill[] = [
-  { label: { uz: 'Ingliz tili', ru: 'Английский', en: 'English' }, color: '#1fa7e0' },
-  { label: { uz: 'Ona tili', ru: 'Родной язык', en: 'Native language' }, color: '#f39a1f' },
-  { label: { uz: 'Informatika', ru: 'Информатика', en: 'Informatics' }, color: '#06b6d4' },
-  { label: { uz: 'Musiqa', ru: 'Музыка', en: 'Music' }, color: '#5a2d82' },
-  { label: { uz: 'Chizmachilik', ru: 'Черчение', en: 'Tech drawing' }, color: '#10b981' }
-];
+/* The pills mirror exactly the grade-1 subjects that are live in the app, so the
+   strip never advertises something a child cannot open. Split into two rows. */
+const GRADE1 = GRADES[0].subjects;
+const toPill = (s: SubjectDef): Pill => ({ label: s.name, color: s.color });
+const ROW1: Pill[] = GRADE1.slice(0, 6).map(toPill);
+const ROW2: Pill[] = GRADE1.slice(6).map(toPill);
 
 function Row({ items, dir }: { items: Pill[]; dir: 'left' | 'right' }) {
   const locale = useLocale();

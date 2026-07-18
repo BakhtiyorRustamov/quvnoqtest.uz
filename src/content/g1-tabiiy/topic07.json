@@ -1,0 +1,222 @@
+{
+  "topicId": "g1-tabiiy-07",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🦁🐘🦓🐢",
+  "title": {
+    "uz": "Hayvonot bogʻiga tashrif",
+    "ru": "Визит в зоопарк",
+    "en": "A visit to the zoo"
+  },
+  "recall": {
+    "uz": "Hayvonot bogʻi — jonli muzey. Hayvonlar bu yerda saqlanadi, odamlar kelib tomosha qiladi. Yirtqich hayvonlar goʻsht yeydi, oʻtxoʻrlar oʻt yeydi. Sudralib yuruvchilar, qushlar ham bor. Hayvonlarga ovqat bermaymiz va shovqin solmaymiz.",
+    "ru": "Зоопарк — живой музей. Здесь содержат животных, люди приходят смотреть. Хищники едят мясо, травоядные — траву. Есть пресмыкающиеся и птицы. Не кормим животных и не шумим.",
+    "en": "A zoo is a living museum. Animals are kept here, and people come to watch. Predators eat meat, herbivores eat grass. There are reptiles and birds too. We do not feed the animals or make noise."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yirtqich va oʻtxoʻr hayvonlarga ajrat!", "ru": "Разложи на хищников и травоядных!", "en": "Sort into predators and herbivores!" },
+      "hint": { "uz": "Goʻsht yeydiganlar — yirtqich; oʻt yeydiganlar — oʻtxoʻr.", "ru": "Кто ест мясо — хищник; кто ест траву — травоядное.", "en": "Meat-eaters are predators; grass-eaters are herbivores." },
+      "explanation": { "uz": "Sher, yoʻlbars, boʻri — yirtqich. Kiyik, fil, zebra — oʻtxoʻr hayvon.", "ru": "Лев, тигр, волк — хищники. Косуля, слон, зебра — травоядные.", "en": "Lion, tiger, wolf are predators. Deer, elephant, zebra are herbivores." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "pred", "label": { "uz": "🦁 Yirtqich", "ru": "🦁 Хищники", "en": "🦁 Predators" }, "color": "#e14b4b" },
+            { "id": "herb", "label": { "uz": "🌿 Oʻtxoʻr", "ru": "🌿 Травоядные", "en": "🌿 Herbivores" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "lion", "emoji": "🦁", "label": { "uz": "sher", "ru": "лев", "en": "lion" }, "bin": "pred" },
+            { "id": "tiger", "emoji": "🐯", "label": { "uz": "yoʻlbars", "ru": "тигр", "en": "tiger" }, "bin": "pred" },
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" }, "bin": "pred" },
+            { "id": "deer", "emoji": "🦌", "label": { "uz": "kiyik", "ru": "косуля", "en": "deer" }, "bin": "herb" },
+            { "id": "elephant", "emoji": "🐘", "label": { "uz": "fil", "ru": "слон", "en": "elephant" }, "bin": "herb" },
+            { "id": "zebra", "emoji": "🦓", "label": { "uz": "zebra", "ru": "зебра", "en": "zebra" }, "bin": "herb" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir boʻlimga mos hayvonni ula!", "ru": "Соедини каждый отдел с его животным!", "en": "Match each section to its animal!" },
+      "hint": { "uz": "Toshbaqa — sudralib yuruvchilar, burgut — qushlar boʻlimida.", "ru": "Черепаха — пресмыкающиеся, орёл — птицы.", "en": "Turtle — reptiles, eagle — birds." },
+      "explanation": { "uz": "Hayvonot bogʻi boʻlimlarga boʻlingan: sudralib yuruvchilar, qushlar, yirtqichlar, oʻtxoʻrlar.", "ru": "Зоопарк разделён на отделы: пресмыкающиеся, птицы, хищники, травоядные.", "en": "The zoo is split into sections: reptiles, birds, predators, herbivores." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "label": { "uz": "Sudralib yuruvchilar", "ru": "Пресмыкающиеся", "en": "Reptiles" } }, "right": { "emoji": "🐢", "label": { "uz": "toshbaqa", "ru": "черепаха", "en": "turtle" } } },
+            { "left": { "label": { "uz": "Qushlar", "ru": "Птицы", "en": "Birds" } }, "right": { "emoji": "🦅", "label": { "uz": "burgut", "ru": "орёл", "en": "eagle" } } },
+            { "left": { "label": { "uz": "Yirtqichlar", "ru": "Хищники", "en": "Predators" } }, "right": { "emoji": "🦁", "label": { "uz": "sher", "ru": "лев", "en": "lion" } } },
+            { "left": { "label": { "uz": "Oʻtxoʻrlar", "ru": "Травоядные", "en": "Herbivores" } }, "right": { "emoji": "🐘", "label": { "uz": "fil", "ru": "слон", "en": "elephant" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Sudralib yuruvchilarni belgila!", "ru": "Отметь пресмыкающихся!", "en": "Tap the reptiles!" },
+      "hint": { "uz": "Toshbaqa, kaltakesak, ilon — sudralib yuruvchilar.", "ru": "Черепаха, ящерица, змея — пресмыкающиеся.", "en": "Turtle, lizard, snake are reptiles." },
+      "explanation": { "uz": "Toshbaqa, kaltakesak va ilon sudralib yuruvchilar. Qush, fil, ari — boshqa guruh.", "ru": "Черепаха, ящерица и змея — пресмыкающиеся. Птица, слон, пчела — другие.", "en": "Turtle, lizard and snake are reptiles. Bird, elephant, bee are other groups." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "turtle", "emoji": "🐢", "label": { "uz": "toshbaqa", "ru": "черепаха", "en": "turtle" }, "correct": true },
+            { "id": "lizard", "emoji": "🦎", "label": { "uz": "kaltakesak", "ru": "ящерица", "en": "lizard" }, "correct": true },
+            { "id": "snake", "emoji": "🐍", "label": { "uz": "ilon", "ru": "змея", "en": "snake" }, "correct": true },
+            { "id": "bird", "emoji": "🐦", "label": { "uz": "qush", "ru": "птица", "en": "bird" } },
+            { "id": "elephant", "emoji": "🐘", "label": { "uz": "fil", "ru": "слон", "en": "elephant" } },
+            { "id": "bee", "emoji": "🐝", "label": { "uz": "ari", "ru": "пчела", "en": "bee" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qushlarni belgila!", "ru": "Отметь птиц!", "en": "Tap the birds!" },
+      "hint": { "uz": "Burgut, ukki, toʻtiqush — qushlar.", "ru": "Орёл, сова, попугай — птицы.", "en": "Eagle, owl, parrot are birds." },
+      "explanation": { "uz": "Burgut, ukki va toʻtiqush qushlardir. Toshbaqa, sher, ilon — yoʻq.", "ru": "Орёл, сова и попугай — птицы. Черепаха, лев, змея — нет.", "en": "Eagle, owl and parrot are birds. Turtle, lion, snake are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "eagle", "emoji": "🦅", "label": { "uz": "burgut", "ru": "орёл", "en": "eagle" }, "correct": true },
+            { "id": "owl", "emoji": "🦉", "label": { "uz": "ukki", "ru": "сова", "en": "owl" }, "correct": true },
+            { "id": "parrot", "emoji": "🦜", "label": { "uz": "toʻtiqush", "ru": "попугай", "en": "parrot" }, "correct": true },
+            { "id": "turtle", "emoji": "🐢", "label": { "uz": "toshbaqa", "ru": "черепаха", "en": "turtle" } },
+            { "id": "lion", "emoji": "🦁", "label": { "uz": "sher", "ru": "лев", "en": "lion" } },
+            { "id": "snake", "emoji": "🐍", "label": { "uz": "ilon", "ru": "змея", "en": "snake" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri yirtqich hayvon?", "ru": "Кто из них хищник?", "en": "Which one is a predator?" },
+      "hint": { "uz": "Yirtqich boshqa hayvonlarni ovlaydi.", "ru": "Хищник охотится на других животных.", "en": "A predator hunts other animals." },
+      "explanation": { "uz": "Qoplon — yirtqich hayvon. Zebra va fil — oʻtxoʻr.", "ru": "Леопард — хищник. Зебра и слон — травоядные.", "en": "A leopard is a predator. Zebra and elephant are herbivores." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "leopard", "emoji": "🐆", "label": { "uz": "qoplon", "ru": "леопард", "en": "leopard" }, "correct": true },
+            { "id": "zebra", "emoji": "🦓", "label": { "uz": "zebra", "ru": "зебра", "en": "zebra" } },
+            { "id": "elephant", "emoji": "🐘", "label": { "uz": "fil", "ru": "слон", "en": "elephant" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Hayvonot bogʻida noyob hayvonlar saqlanadi. Yoʻlbarsni bos!", "ru": "В зоопарке берегут редких животных. Нажми тигра!", "en": "The zoo protects rare animals. Tap the tiger!" },
+      "hint": { "uz": "Yoʻlbars — katta, chiziqli mushuksimon yirtqich.", "ru": "Тигр — большой полосатый хищник кошачьих.", "en": "A tiger is a big striped cat-like predator." },
+      "explanation": { "uz": "Yoʻlbars — noyob yirtqich hayvon. Uy mushugi va it kichik uy hayvonlari.", "ru": "Тигр — редкий хищник. Кошка и собака — маленькие домашние.", "en": "The tiger is a rare predator. The cat and dog are small pets." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "tiger", "emoji": "🐯", "label": { "uz": "yoʻlbars", "ru": "тигр", "en": "tiger" }, "correct": true },
+            { "id": "cat", "emoji": "🐱", "label": { "uz": "mushuk", "ru": "кошка", "en": "cat" } },
+            { "id": "dog", "emoji": "🐶", "label": { "uz": "it", "ru": "собака", "en": "dog" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Hayvonot bogʻida mumkin va mumkin emas ishlarga ajrat!", "ru": "Разложи: что можно и что нельзя в зоопарке!", "en": "Sort what is allowed and not allowed at the zoo!" },
+      "hint": { "uz": "Tomosha va suratga olish mumkin; ovqat berish va shovqin — mumkin emas.", "ru": "Смотреть и фотографировать можно; кормить и шуметь — нельзя.", "en": "Watching and photos are fine; feeding and noise are not." },
+      "explanation": { "uz": "Jim tomosha qilamiz, suratga olamiz. Hayvonga ovqat bermaymiz, chiqindi tashlamaymiz, shovqin solmaymiz.", "ru": "Тихо смотрим, фотографируем. Не кормим, не мусорим, не шумим.", "en": "We watch quietly and take photos. We don't feed, litter or make noise." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "ok", "label": { "uz": "✅ Mumkin", "ru": "✅ Можно", "en": "✅ Allowed" }, "color": "#46c06a" },
+            { "id": "no", "label": { "uz": "🚫 Mumkin emas", "ru": "🚫 Нельзя", "en": "🚫 Not allowed" }, "color": "#e14b4b" }
+          ],
+          "items": [
+            { "id": "watch", "emoji": "👀", "label": { "uz": "tomosha qilish", "ru": "смотреть", "en": "watch" }, "bin": "ok" },
+            { "id": "photo", "emoji": "📷", "label": { "uz": "suratga olish", "ru": "фото", "en": "photo" }, "bin": "ok" },
+            { "id": "quiet", "emoji": "🤫", "label": { "uz": "jim yurish", "ru": "тихо ходить", "en": "stay quiet" }, "bin": "ok" },
+            { "id": "feed", "emoji": "🍎", "label": { "uz": "ovqat berish", "ru": "кормить", "en": "feed" }, "bin": "no" },
+            { "id": "litter", "emoji": "🗑️", "label": { "uz": "chiqindi tashlash", "ru": "мусорить", "en": "litter" }, "bin": "no" },
+            { "id": "noise", "emoji": "🔊", "label": { "uz": "shovqin solish", "ru": "шуметь", "en": "make noise" }, "bin": "no" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Hayvonot bogʻida qaysi ish MUMKIN EMAS?", "ru": "Что в зоопарке делать НЕЛЬЗЯ?", "en": "Which action is NOT allowed at the zoo?" },
+      "hint": { "uz": "Jonivorlarga ovqat berish mumkin emas.", "ru": "Кормить животных нельзя.", "en": "Feeding the animals is not allowed." },
+      "explanation": { "uz": "Jonivorlarga ovqat berish mumkin emas. Tomosha qilish va suratga olish mumkin.", "ru": "Кормить животных нельзя. Смотреть и фотографировать можно.", "en": "Feeding the animals is not allowed. Watching and photos are fine." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "feed", "emoji": "🍎", "label": { "uz": "ovqat berish", "ru": "кормить", "en": "feed" }, "correct": true },
+            { "id": "watch", "emoji": "👀", "label": { "uz": "tomosha qilish", "ru": "смотреть", "en": "watch" } },
+            { "id": "photo", "emoji": "📷", "label": { "uz": "suratga olish", "ru": "фото", "en": "photo" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻtxoʻr hayvonlarni belgila!", "ru": "Отметь травоядных животных!", "en": "Tap the herbivores!" },
+      "hint": { "uz": "Kiyik, fil, zebra — oʻt yeydi.", "ru": "Косуля, слон, зебра — едят траву.", "en": "Deer, elephant, zebra eat grass." },
+      "explanation": { "uz": "Kiyik, fil va zebra oʻtxoʻr. Sher, yoʻlbars, qoplon — yirtqich.", "ru": "Косуля, слон и зебра — травоядные. Лев, тигр, леопард — хищники.", "en": "Deer, elephant and zebra are herbivores. Lion, tiger, leopard are predators." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "deer", "emoji": "🦌", "label": { "uz": "kiyik", "ru": "косуля", "en": "deer" }, "correct": true },
+            { "id": "elephant", "emoji": "🐘", "label": { "uz": "fil", "ru": "слон", "en": "elephant" }, "correct": true },
+            { "id": "zebra", "emoji": "🦓", "label": { "uz": "zebra", "ru": "зебра", "en": "zebra" }, "correct": true },
+            { "id": "lion", "emoji": "🦁", "label": { "uz": "sher", "ru": "лев", "en": "lion" } },
+            { "id": "tiger", "emoji": "🐯", "label": { "uz": "yoʻlbars", "ru": "тигр", "en": "tiger" } },
+            { "id": "leopard", "emoji": "🐆", "label": { "uz": "qoplon", "ru": "леопард", "en": "leopard" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bu soya qaysi hayvonniki?", "ru": "Чья это тень?", "en": "Whose shadow is this?" },
+      "hint": { "uz": "U juda katta, uzun xartumi bor.", "ru": "Он очень большой, с длинным хоботом.", "en": "It is very big and has a long trunk." },
+      "explanation": { "uz": "Soya filniki. Filning uzun xartumi va katta quloqlari bor.", "ru": "Это тень слона. У слона длинный хобот и большие уши.", "en": "The shadow belongs to an elephant. An elephant has a long trunk and big ears." },
+      "widget": {
+        "type": "shadow_guess",
+        "props": {
+          "shadow": "🐘",
+          "options": [
+            { "id": "elephant", "emoji": "🐘", "label": { "uz": "fil", "ru": "слон", "en": "elephant" }, "correct": true },
+            { "id": "zebra", "emoji": "🦓", "label": { "uz": "zebra", "ru": "зебра", "en": "zebra" } },
+            { "id": "monkey", "emoji": "🐒", "label": { "uz": "maymun", "ru": "обезьяна", "en": "monkey" } }
+          ]
+        }
+      }
+    }
+  ]
+}

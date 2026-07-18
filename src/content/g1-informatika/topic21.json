@@ -1,0 +1,495 @@
+{
+  "topicId": "g1-informatika-21",
+  "subjectKey": "g1-informatika",
+  "emojis": "🚦➡️⬅️🚗",
+  "title": {
+    "uz": "Yoʻl va yoʻnalish",
+    "ru": "Дорога и направление",
+    "en": "Path and direction"
+  },
+  "recall": {
+    "uz": "Yoʻlda harakat qilganda yoʻnalishni tanlaymiz: oʻngga yoki chapga burilamiz. Yoʻnalishlarni oʻqlar bilan koʻrsatamiz: oʻng, chap, yuqori, past.",
+    "ru": "В пути мы выбираем направление: поворачиваем налево или направо. Направления показываем стрелками: право, лево, вверх, вниз.",
+    "en": "On the road we choose a direction: turn left or right. We show directions with arrows: right, left, up, down."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Mashina yoʻlini tartib bilan joyla!",
+        "ru": "Расставь путь машины!",
+        "en": "Order the car's route!"
+      },
+      "hint": {
+        "uz": "1, 2, 3-qadam.",
+        "ru": "Шаг 1, 2, 3.",
+        "en": "Step 1, 2, 3."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri tartib!",
+        "ru": "Верный порядок!",
+        "en": "Correct order!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "1) toʻgʻriga",
+                "ru": "1) прямо",
+                "en": "1) straight"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "2) oʻngga buriladi",
+                "ru": "2) направо",
+                "en": "2) turn right"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "3) chapga buriladi",
+                "ru": "3) налево",
+                "en": "3) turn left"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«oʻngga» oʻqi qaysi tomonni koʻrsatadi?",
+        "ru": "Куда указывает стрелка «направо»?",
+        "en": "Which way does the right arrow point?"
+      },
+      "hint": {
+        "uz": "Oʻng qoʻling tomoni.",
+        "ru": "Сторона правой руки.",
+        "en": "Your right-hand side."
+      },
+      "explanation": {
+        "uz": "U oʻng tomonni koʻrsatadi.",
+        "ru": "Она указывает направо.",
+        "en": "It points to the right."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "oʻng",
+              "ru": "право",
+              "en": "right"
+            },
+            {
+              "uz": "chap",
+              "ru": "лево",
+              "en": "left"
+            },
+            {
+              "uz": "past",
+              "ru": "вниз",
+              "en": "down"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yuqoriga qaragan oʻq qaysi tomonni bildiradi?",
+        "ru": "Куда указывает стрелка вверх?",
+        "en": "Which way does the up arrow point?"
+      },
+      "hint": {
+        "uz": "Tepaga.",
+        "ru": "Наверх.",
+        "en": "Upward."
+      },
+      "explanation": {
+        "uz": "U yuqori (tepa) tomonni bildiradi.",
+        "ru": "Она указывает вверх.",
+        "en": "It points up."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yuqori",
+              "ru": "вверх",
+              "en": "up"
+            },
+            {
+              "uz": "past",
+              "ru": "вниз",
+              "en": "down"
+            },
+            {
+              "uz": "oʻng",
+              "ru": "право",
+              "en": "right"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir oʻqni yoʻnalishi bilan ula!",
+        "ru": "Соедини стрелку с направлением!",
+        "en": "Match each arrow to its direction!"
+      },
+      "hint": {
+        "uz": "Oʻqqa qarab yoʻnalishni ayt.",
+        "ru": "Назови направление по стрелке.",
+        "en": "Name the direction."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "➡️"
+              },
+              "right": {
+                "label": {
+                  "uz": "oʻngga",
+                  "ru": "направо",
+                  "en": "right"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬅️"
+              },
+              "right": {
+                "label": {
+                  "uz": "chapga",
+                  "ru": "налево",
+                  "en": "left"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬆️"
+              },
+              "right": {
+                "label": {
+                  "uz": "yuqoriga",
+                  "ru": "вверх",
+                  "en": "up"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬇️"
+              },
+              "right": {
+                "label": {
+                  "uz": "pastga",
+                  "ru": "вниз",
+                  "en": "down"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan yoʻl belgisini tuz! (🚦)",
+        "ru": "Составь слово! (🚦)",
+        "en": "Build the word! (🚦)"
+      },
+      "hint": {
+        "uz": "S-V-E-T-O-F-O-R harflaridan.",
+        "ru": "Из букв S-V-E-T-O-F-O-R.",
+        "en": "From S-V-E-T-O-F-O-R."
+      },
+      "explanation": {
+        "uz": "Barakalla! «svetofor» soʻzini tuzding.",
+        "ru": "Молодец! «svetofor».",
+        "en": "Great! You built “svetofor”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🚦",
+          "word": "svetofor",
+          "label": {
+            "uz": "svetofor",
+            "ru": "светофор",
+            "en": "traffic light"
+          },
+          "letters": [
+            "s",
+            "v",
+            "e",
+            "t",
+            "o",
+            "f",
+            "o",
+            "r"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Eng oʻngdagi shaklni bos!",
+        "ru": "Нажми крайнюю правую фигуру!",
+        "en": "Tap the rightmost shape!"
+      },
+      "hint": {
+        "uz": "Oʻng chekkadagi.",
+        "ru": "Крайняя справа.",
+        "en": "The one on the far right."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bu eng oʻngdagi.",
+        "ru": "Молодец! Это крайняя правая.",
+        "en": "Great! That's the rightmost."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 1,
+          "cols": 3,
+          "answer": "r",
+          "prompt": {
+            "uz": "Eng oʻngdagi shaklni bos",
+            "ru": "Нажми крайнюю правую",
+            "en": "Tap the rightmost"
+          },
+          "cells": [
+            {
+              "id": "l",
+              "kind": "circle",
+              "color": "blue",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "m",
+              "kind": "star",
+              "color": "orange",
+              "r": 0,
+              "c": 1
+            },
+            {
+              "id": "r",
+              "kind": "square",
+              "color": "green",
+              "r": 0,
+              "c": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toshbaqa 2 katak oʻngga yurdi. U qaysi tomonga bordi?",
+        "ru": "Черепаха прошла 2 клетки вправо. Куда?",
+        "en": "The turtle moved 2 cells right. Which way?"
+      },
+      "hint": {
+        "uz": "Oʻq oʻngni koʻrsatadi.",
+        "ru": "Стрелка вправо.",
+        "en": "Arrow points right."
+      },
+      "explanation": {
+        "uz": "U oʻng tomonga bordi.",
+        "ru": "Она пошла направо.",
+        "en": "It went to the right."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "oʻngga",
+              "ru": "направо",
+              "en": "right"
+            },
+            {
+              "uz": "chapga",
+              "ru": "налево",
+              "en": "left"
+            },
+            {
+              "uz": "orqaga",
+              "ru": "назад",
+              "en": "back"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻngga qaragan oʻq oʻng tomonni bildiradi.",
+        "ru": "Стрелка вправо означает право.",
+        "en": "The right arrow means right."
+      },
+      "hint": {
+        "uz": "Oʻqqa qara.",
+        "ru": "Смотри на стрелку.",
+        "en": "Look at the arrow."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "➡️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yoʻlda yoʻnalishni qaysi belgi koʻrsatadi?",
+        "ru": "Что показывает направление?",
+        "en": "Which sign shows direction?"
+      },
+      "hint": {
+        "uz": "Uchi bir tomonga qaragan.",
+        "ru": "Указывает в сторону.",
+        "en": "Points one way."
+      },
+      "explanation": {
+        "uz": "Yoʻnalishni oʻq (strelka) koʻrsatadi.",
+        "ru": "Направление показывает стрелка.",
+        "en": "An arrow shows direction."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "➡️",
+              "label": {
+                "uz": "oʻq",
+                "ru": "стрелка",
+                "en": "arrow"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "⭐",
+              "label": {
+                "uz": "yulduz",
+                "ru": "звезда",
+                "en": "star"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yoʻnalishni nima bilan koʻrsatamiz?",
+        "ru": "Чем показываем направление?",
+        "en": "How do we show direction?"
+      },
+      "hint": {
+        "uz": "Chizmada belgilaymiz.",
+        "ru": "Отмечаем на схеме.",
+        "en": "We mark it on a map."
+      },
+      "explanation": {
+        "uz": "Yoʻnalishni oʻqlar bilan koʻrsatamiz.",
+        "ru": "Направление показываем стрелками.",
+        "en": "We show direction with arrows."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "oʻqlar bilan",
+              "ru": "стрелками",
+              "en": "with arrows"
+            },
+            {
+              "uz": "ranglar bilan",
+              "ru": "цветами",
+              "en": "with colours"
+            },
+            {
+              "uz": "sonlar bilan",
+              "ru": "числами",
+              "en": "with numbers"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

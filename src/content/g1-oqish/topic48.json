@@ -1,0 +1,182 @@
+{
+  "topicId": "g1-oqish-48",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🐜🔥🌳",
+  "title": {
+    "uz": "Rivoyatda ibrat bor",
+    "ru": "В предании — назидание",
+    "en": "A legend holds a lesson"
+  },
+  "recall": {
+    "uz": "«Harakatda barakat» rivoyatini tinglab oʻqiymiz va oʻz hissangni qoʻshish nima ekanini bilib olamiz.",
+    "ru": "Слушаем предание «В действии — благо» и узнаём, что значит вносить свой вклад.",
+    "en": "We read the legend “Blessing is in action” and learn what it means to do your part."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Harakatda barakat",
+        "variant": "story",
+        "audio": "g1-oqish-48-q1",
+        "lines": [
+          "Bir oʻrmonga oʻt tushibdi.",
+          "Jonivorlarning bir qismi suv tashib, olovni oʻchirmoqchi boʻlibdi.",
+          "Boshqalari esa chetda tomosha qilib turibdi.",
+          "Kichkina chumoli hovuchida suv tashibdi.",
+          "Qargʻa uning ustidan kulibdi:",
+          "«Shu suv bilan olovni oʻchiraman deb oʻylaysanmi?»",
+          "Chumoli javob beribdi:",
+          "«Bilaman, oʻchira olmayman. Lekin qaysi tomonda ekanimni bilaman.»"
+        ]
+      } },
+      "prompt": { "uz": "Rivoyatni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Chumoli nima uchun suv tashidi?", "ru": "Зачем муравей носил воду?", "en": "Why did the ant carry water?" },
+      "explanation": { "uz": "Rivoyat kichik boʻlsa ham, oʻz hissangni qoʻshish haqida.", "ru": "Предание о том, что даже малым делом нужно вносить свой вклад.", "en": "The legend is about doing your part, however small." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": {
+        "tiles": [
+          { "id": "t1", "label": "Oʻrmonga oʻt tushdi", "bin": "b1" },
+          { "id": "t2", "label": "Jonivorlar suv tashidi", "bin": "b1" },
+          { "id": "t3", "label": "Chumoli hovuchda suv tashidi", "bin": "b2" },
+          { "id": "t4", "label": "Qargʻa chumolidan kuldi", "bin": "b2" }
+        ],
+        "bins": [
+          { "id": "b1", "label": "1-qism" },
+          { "id": "b2", "label": "2-qism" }
+        ]
+      } },
+      "prompt": { "uz": "Voqealarni 1-qism va 2-qismga ajrating!", "ru": "Раздели события на 1-ю и 2-ю части!", "en": "Sort the events into part 1 and part 2!" },
+      "hint": { "uz": "2-qism chumoli va qargʻa suhbati haqida.", "ru": "2-я часть — о разговоре муравья и вороны.", "en": "Part 2 is the ant-and-crow dialogue." },
+      "explanation": { "uz": "1-qism — yongʻin va jonivorlar; 2-qism — chumoli bilan qargʻa.", "ru": "1-я — пожар и звери; 2-я — муравей и ворона.", "en": "Part 1 — the fire and the animals; part 2 — the ant and the crow." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "who_said", "props": {
+        "characters": [
+          { "name": { "uz": "Qargʻa", "ru": "Ворона", "en": "Crow" }, "emoji": "🐦" },
+          { "name": { "uz": "Chumoli", "ru": "Муравей", "en": "Ant" }, "emoji": "🐜" }
+        ],
+        "quotes": [
+          { "text": { "uz": "Shu suv bilan olovni oʻchirasanmi?", "ru": "Этой водой ты потушишь огонь?", "en": "Will you put out the fire with that water?" }, "speaker": 0 },
+          { "text": { "uz": "Bilaman, oʻchira olmayman, lekin qaysi tomondaligimni bilaman.", "ru": "Знаю, не потушу, но знаю, на чьей я стороне.", "en": "I know I can't, but I know which side I'm on." }, "speaker": 1 },
+          { "text": { "uz": "Men ham yordam beraman!", "ru": "Я тоже помогу!", "en": "I will help too!" }, "speaker": 1 }
+        ],
+        "clue": { "uz": "Bu gap qargʻaniki yoki chumoliniki?", "ru": "Чьи это слова — вороны или муравья?", "en": "Whose line is it — the crow's or the ant's?" }
+      } },
+      "prompt": { "uz": "Bu gapni kim aytdi?", "ru": "Кто это сказал?", "en": "Who said this line?" },
+      "hint": { "uz": "Kim kuldi, kim harakat qildi?", "ru": "Кто смеялся, а кто действовал?", "en": "Who laughed, and who acted?" },
+      "explanation": { "uz": "Qargʻa kuldi; chumoli esa yordam berishga harakat qildi.", "ru": "Ворона смеялась; муравей старался помочь.", "en": "The crow laughed; the ant tried to help." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Chumoli olovni oʻchirishga harakat qildi.", "ru": "Муравей старался потушить огонь.", "en": "The ant tried to put out the fire." },
+        "answer": "true",
+        "why": { "uz": "Chumoli hovuchida suv tashib, yordam bermoqchi boʻldi.", "ru": "Муравей носил воду в лапках, чтобы помочь.", "en": "The ant carried water in its palm to help." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Chumoli nima qildi?", "ru": "Что делал муравей?", "en": "What did the ant do?" },
+      "explanation": { "uz": "Toʻgʻri: chumoli suv tashib harakat qildi.", "ru": "Верно: муравей носил воду и действовал.", "en": "True: the ant carried water and acted." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Qargʻa chumoliga yordam berdi.", "ru": "Ворона помогла муравью.", "en": "The crow helped the ant." },
+        "answer": "false",
+        "why": { "uz": "Qargʻa yordam bermadi, faqat kuldi.", "ru": "Ворона не помогла, только смеялась.", "en": "The crow did not help, it only laughed." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Qargʻa nima qildi?", "ru": "Что делала ворона?", "en": "What did the crow do?" },
+      "explanation": { "uz": "Notoʻgʻri: qargʻa yordam bermay, kuldi.", "ru": "Неверно: ворона не помогала, а смеялась.", "en": "False: the crow laughed instead of helping." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "riddle_solve", "props": {
+        "lines": [
+          { "uz": "Kichkina mitti bir jonzot,", "ru": "Крохотное существо,", "en": "A tiny little creature," },
+          { "uz": "Dondan ogʻir yuk tortar.", "ru": "тащит груз тяжелее зерна.", "en": "hauls a load heavier than a grain." },
+          { "uz": "Uyasi — yer ostida,", "ru": "Дом его — под землёй,", "en": "Its home is underground," },
+          { "uz": "Mehnatkash, hech tinmaydi.", "ru": "трудяга, не знает покоя.", "en": "hardworking, never resting." }
+        ],
+        "options": [
+          { "emoji": "🐜", "label": { "uz": "Chumoli", "ru": "Муравей", "en": "Ant" }, "correct": true },
+          { "emoji": "🐘", "label": { "uz": "Fil", "ru": "Слон", "en": "Elephant" } },
+          { "emoji": "🐢", "label": { "uz": "Toshbaqa", "ru": "Черепаха", "en": "Tortoise" } }
+        ]
+      } },
+      "prompt": { "uz": "Topishmoqni yeching: bu qaysi jonivor?", "ru": "Отгадай загадку: что за существо?", "en": "Solve the riddle: which creature is it?" },
+      "hint": { "uz": "Rivoyatdagi kichik qahramon.", "ru": "Маленький герой предания.", "en": "The little hero of the legend." },
+      "explanation": { "uz": "Javob — chumoli: kichkina, ammo juda mehnatkash.", "ru": "Ответ — муравей: маленький, но очень трудолюбивый.", "en": "The answer is an ant: tiny but very hardworking." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Har kim yaxshilik uchun oʻz hissasini qoʻshishi kerak", "ru": "Каждый должен внести свой вклад в доброе дело", "en": "Everyone should do their part for good" },
+        { "uz": "Chetda tomosha qilgan maʼqul", "ru": "Лучше смотреть со стороны", "en": "It is better to watch from the side" },
+        { "uz": "Kuchsizlar hech narsa qilmasin", "ru": "Пусть слабые ничего не делают", "en": "Let the weak do nothing" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Rivoyatdan qanday saboq olamiz?", "ru": "Какой урок из предания?", "en": "What lesson do we take from the legend?" },
+      "hint": { "uz": "Chumolining javobini eslang.", "ru": "Вспомни ответ муравья.", "en": "Recall the ant's answer." },
+      "explanation": { "uz": "Har kim, kichik boʻlsa ham, yaxshilik uchun harakat qilishi kerak.", "ru": "Каждый, пусть и малый, должен действовать ради добра.", "en": "Everyone, however small, should act for good." },
+      "openEnd": { "uz": "Sen chumolining oʻrnida boʻlsang, nima qilarding? Nega?", "ru": "Что бы ты сделал на месте муравья? Почему?", "en": "What would you do in the ant's place? Why?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "chumoli", "right": "qumursqa" },
+        { "left": "hovuch", "right": "kaftning ichi" },
+        { "left": "rivoyat", "right": "ibratli hikoya" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«chumoli» — yana «qumursqa» ham deyiladi.", "ru": "«chumoli» также называют «qumursqa».", "en": "“chumoli” is also called “qumursqa”." },
+      "explanation": { "uz": "chumoli = qumursqa; hovuch = kaft ichi; rivoyat = ibratli hikoya.", "ru": "chumoli = муравей; hovuch = пригоршня; rivoyat = поучительный рассказ.", "en": "chumoli = ant; hovuch = a cupped palm; rivoyat = an instructive tale." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Har bir" },
+          { "blank": "harakatda" },
+          { "text": "" },
+          { "blank": "barakat" },
+          { "text": "bor." }
+        ],
+        "bank": ["harakatda", "barakat", "dangasada"]
+      } },
+      "prompt": { "uz": "Maqolni soʻzlar bilan toʻldiring!", "ru": "Дополни пословицу словами!", "en": "Complete the proverb with the words!" },
+      "hint": { "uz": "Rivoyat sarlavhasini eslang.", "ru": "Вспомни название предания.", "en": "Recall the legend's title." },
+      "explanation": { "uz": "«Harakatda barakat bor» — harakat qilgan natijaga erishadi.", "ru": "«В действии — благо»: кто действует, тот и достигает.", "en": "“Blessing is in action” — who acts, achieves." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "chumoli", "syllables": ["chu", "mo", "li"], "emoji": "🐜", "clue": { "uz": "Rivoyatdagi mehnatkash qahramon", "ru": "Трудолюбивый герой предания", "en": "The hardworking hero of the legend" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "chu + mo + li = ?", "ru": "chu + mo + li = ?", "en": "chu + mo + li = ?" },
+      "explanation": { "uz": "chu-mo-li → chumoli. Kichik, ammo mehnatkash jonivor.", "ru": "chu-mo-li → chumoli (муравей).", "en": "chu-mo-li → chumoli (an ant)." }
+    }
+  ]
+}

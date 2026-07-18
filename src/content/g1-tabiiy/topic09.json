@@ -1,0 +1,195 @@
+{
+  "topicId": "g1-tabiiy-09",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "📅🕐🌙☀️",
+  "title": {
+    "uz": "Vaqt va hafta kunlari",
+    "ru": "Время и дни недели",
+    "en": "Time and the days of the week"
+  },
+  "recall": {
+    "uz": "Vaqt toʻxtamay oʻtadi. Boʻlib oʻtgan voqealar — oʻtmish, hali boʻlmaganlari — kelajak, biz esa bugun yashaymiz. Bir haftada yetti kun bor. Dushanba, seshanba, chorshanba, payshanba, juma — ish kunlari. Shanba va yakshanba — dam olish kunlari.",
+    "ru": "Время идёт без остановки. Прошедшие события — прошлое, ещё не наступившие — будущее, а мы живём сегодня. В неделе семь дней. Понедельник, вторник, среда, четверг, пятница — рабочие дни. Суббота и воскресенье — выходные.",
+    "en": "Time flows without stopping. Past events are the past, events not yet happened are the future, and we live today. A week has seven days. Monday to Friday are workdays. Saturday and Sunday are the weekend."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Vaqtni toʻgʻri tartibda joyla!", "ru": "Расставь время по порядку!", "en": "Put time in the right order!" },
+      "hint": { "uz": "Avval oʻtmish, keyin bugun, soʻng kelajak.", "ru": "Сначала прошлое, потом сегодня, затем будущее.", "en": "First the past, then today, then the future." },
+      "explanation": { "uz": "Vaqt oʻtmishdan bugunga, bugundan kelajakka oqadi.", "ru": "Время течёт из прошлого в сегодня, из сегодня в будущее.", "en": "Time flows from the past to today, and from today to the future." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "past", "emoji": "🏺", "label": { "uz": "oʻtmish", "ru": "прошлое", "en": "past" } },
+            { "id": "today", "emoji": "🏙️", "label": { "uz": "bugun", "ru": "сегодня", "en": "today" } },
+            { "id": "future", "emoji": "🚀", "label": { "uz": "kelajak", "ru": "будущее", "en": "future" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Boʻlib oʻtgan voqea qanday ataladi?", "ru": "Как называется прошедшее событие?", "en": "What is a past event called?" },
+      "hint": { "uz": "Ilgari boʻlgan narsa — oʻtmish.", "ru": "То, что было раньше, — прошлое.", "en": "What happened before is the past." },
+      "explanation": { "uz": "Boʻlib oʻtgan voqealar oʻtmish deyiladi. Hali boʻlmaganlari — kelajak.", "ru": "Прошедшие события называют прошлым. Ещё не наступившие — будущим.", "en": "Past events are called the past. Events not yet happened are the future." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "past", "emoji": "🏺", "label": { "uz": "oʻtmish", "ru": "прошлое", "en": "past" }, "correct": true },
+            { "id": "future", "emoji": "🚀", "label": { "uz": "kelajak", "ru": "будущее", "en": "future" } },
+            { "id": "today", "emoji": "🏙️", "label": { "uz": "bugun", "ru": "сегодня", "en": "today" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kunlarni ish va dam olish kunlariga ajrat!", "ru": "Разложи дни на рабочие и выходные!", "en": "Sort the days into workdays and weekend!" },
+      "hint": { "uz": "Dushanba va juma — ish kuni; shanba va yakshanba — dam olish.", "ru": "Понедельник и пятница — рабочие; суббота и воскресенье — выходные.", "en": "Monday and Friday are workdays; Saturday and Sunday are weekend." },
+      "explanation": { "uz": "Dushanba–juma ish kunlari. Shanba va yakshanba dam olish kunlari.", "ru": "Понедельник–пятница — рабочие дни. Суббота и воскресенье — выходные.", "en": "Monday–Friday are workdays. Saturday and Sunday are the weekend." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "work", "label": { "uz": "💼 Ish kunlari", "ru": "💼 Рабочие", "en": "💼 Workdays" }, "color": "#2f9fe0" },
+            { "id": "rest", "label": { "uz": "🎉 Dam olish", "ru": "🎉 Выходные", "en": "🎉 Weekend" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "mon", "emoji": "📅", "label": { "uz": "Dushanba", "ru": "Понедельник", "en": "Monday" }, "bin": "work" },
+            { "id": "fri", "emoji": "📅", "label": { "uz": "Juma", "ru": "Пятница", "en": "Friday" }, "bin": "work" },
+            { "id": "sat", "emoji": "📅", "label": { "uz": "Shanba", "ru": "Суббота", "en": "Saturday" }, "bin": "rest" },
+            { "id": "sun", "emoji": "📅", "label": { "uz": "Yakshanba", "ru": "Воскресенье", "en": "Sunday" }, "bin": "rest" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Hafta kunlarini toʻgʻri tartibda joyla!", "ru": "Расставь дни недели по порядку!", "en": "Put the weekdays in order!" },
+      "hint": { "uz": "Dushanbadan boshlanadi, jumagacha davom etadi.", "ru": "Начинается с понедельника, до пятницы.", "en": "It starts on Monday and goes to Friday." },
+      "explanation": { "uz": "Ish kunlari tartibi: dushanba, seshanba, chorshanba, payshanba, juma.", "ru": "Порядок рабочих дней: понедельник, вторник, среда, четверг, пятница.", "en": "Workday order: Monday, Tuesday, Wednesday, Thursday, Friday." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "mon", "emoji": "1️⃣", "label": { "uz": "Dushanba", "ru": "Понедельник", "en": "Monday" } },
+            { "id": "tue", "emoji": "2️⃣", "label": { "uz": "Seshanba", "ru": "Вторник", "en": "Tuesday" } },
+            { "id": "wed", "emoji": "3️⃣", "label": { "uz": "Chorshanba", "ru": "Среда", "en": "Wednesday" } },
+            { "id": "thu", "emoji": "4️⃣", "label": { "uz": "Payshanba", "ru": "Четверг", "en": "Thursday" } },
+            { "id": "fri", "emoji": "5️⃣", "label": { "uz": "Juma", "ru": "Пятница", "en": "Friday" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bir haftada nechta kun bor?", "ru": "Сколько дней в неделе?", "en": "How many days are in a week?" },
+      "hint": { "uz": "Dushanbadan yakshanbagacha sanab koʻr.", "ru": "Посчитай с понедельника до воскресенья.", "en": "Count from Monday to Sunday." },
+      "explanation": { "uz": "Bir haftada yetti kun bor.", "ru": "В неделе семь дней.", "en": "A week has seven days." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": ["7", "5", "10"], "answerIndex": 0 }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Dushanbadan keyin qaysi kun keladi?", "ru": "Какой день после понедельника?", "en": "Which day comes after Monday?" },
+      "hint": { "uz": "Dushanba — birinchi kun, undan keyingisi ikkinchi.", "ru": "Понедельник — первый день, следующий — второй.", "en": "Monday is the first day; the next is the second." },
+      "explanation": { "uz": "Dushanbadan keyin seshanba keladi.", "ru": "После понедельника наступает вторник.", "en": "After Monday comes Tuesday." },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            { "uz": "Seshanba", "ru": "Вторник", "en": "Tuesday" },
+            { "uz": "Payshanba", "ru": "Четверг", "en": "Thursday" },
+            { "uz": "Shanba", "ru": "Суббота", "en": "Saturday" }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Dam olish kunlarini belgila!", "ru": "Отметь выходные дни!", "en": "Tap the weekend days!" },
+      "hint": { "uz": "Maktabga bormaydigan kunlar — shanba va yakshanba.", "ru": "Дни без школы — суббота и воскресенье.", "en": "The no-school days are Saturday and Sunday." },
+      "explanation": { "uz": "Shanba va yakshanba dam olish kunlari. Qolganlari — ish kunlari.", "ru": "Суббота и воскресенье — выходные. Остальные — рабочие.", "en": "Saturday and Sunday are the weekend. The rest are workdays." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "sat", "emoji": "📅", "label": { "uz": "Shanba", "ru": "Суббота", "en": "Saturday" }, "correct": true },
+            { "id": "sun", "emoji": "📅", "label": { "uz": "Yakshanba", "ru": "Воскресенье", "en": "Sunday" }, "correct": true },
+            { "id": "mon", "emoji": "📅", "label": { "uz": "Dushanba", "ru": "Понедельник", "en": "Monday" } },
+            { "id": "wed", "emoji": "📅", "label": { "uz": "Chorshanba", "ru": "Среда", "en": "Wednesday" } },
+            { "id": "fri", "emoji": "📅", "label": { "uz": "Juma", "ru": "Пятница", "en": "Friday" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bobongning bolaligi qaysi zamon?", "ru": "Детство дедушки — какое это время?", "en": "Grandpa's childhood — which time is it?" },
+      "hint": { "uz": "U ancha oldin boʻlib oʻtgan.", "ru": "Это было давно.", "en": "It happened long ago." },
+      "explanation": { "uz": "Bobongning bolaligi oʻtmishda boʻlgan. U allaqachon oʻtib ketgan.", "ru": "Детство дедушки было в прошлом. Оно уже прошло.", "en": "Grandpa's childhood was in the past. It has already passed." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "past", "emoji": "🏺", "label": { "uz": "oʻtmish", "ru": "прошлое", "en": "past" }, "correct": true },
+            { "id": "today", "emoji": "🏙️", "label": { "uz": "bugun", "ru": "сегодня", "en": "today" } },
+            { "id": "future", "emoji": "🚀", "label": { "uz": "kelajak", "ru": "будущее", "en": "future" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kelajakni qaysi rasm koʻrsatadi?", "ru": "Какая картинка показывает будущее?", "en": "Which picture shows the future?" },
+      "hint": { "uz": "Kelajak — hali boʻlmagan, yangi zamon.", "ru": "Будущее — то, что ещё не наступило.", "en": "The future is what has not happened yet." },
+      "explanation": { "uz": "Kelajak — hali kelmagan zamon. Uni raketa va yangi shaharlar bilan tasavvur qilamiz.", "ru": "Будущее — время, которое ещё не наступило. Его представляют ракетой и новыми городами.", "en": "The future is time that has not come yet. We imagine it with rockets and new cities." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "future", "emoji": "🚀", "label": { "uz": "kelajak", "ru": "будущее", "en": "future" }, "correct": true },
+            { "id": "past", "emoji": "🏺", "label": { "uz": "oʻtmish", "ru": "прошлое", "en": "past" } },
+            { "id": "cart", "emoji": "🐴", "label": { "uz": "eski arava", "ru": "старая повозка", "en": "old cart" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bir haftada nechta dam olish kuni bor?", "ru": "Сколько выходных в неделе?", "en": "How many weekend days are in a week?" },
+      "hint": { "uz": "Shanba va yakshanbani sana.", "ru": "Посчитай субботу и воскресенье.", "en": "Count Saturday and Sunday." },
+      "explanation": { "uz": "Bir haftada ikkita dam olish kuni bor: shanba va yakshanba.", "ru": "В неделе два выходных: суббота и воскресенье.", "en": "A week has two weekend days: Saturday and Sunday." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": ["2", "5", "7"], "answerIndex": 0 }
+      }
+    }
+  ]
+}

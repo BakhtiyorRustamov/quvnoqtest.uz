@@ -1,0 +1,320 @@
+{
+  "topicId": "g1-tarbiya-16",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "⭐🤝💛🌱",
+  "title": {
+    "uz": "Mustahkamlash",
+    "ru": "Закрепление",
+    "en": "Consolidation"
+  },
+  "recall": {
+    "uz": "Bu darsda fazilatlarni takrorlaymiz: ishonch, mustaqillik, halollik va asrab-avaylash. Yaxshi fazilatli inson atrofdagilarning hurmatiga sazovor boʻladi.",
+    "ru": "На этом уроке мы повторяем качества: доверие, самостоятельность, честность и бережливость. Человек с добрыми качествами заслуживает уважения окружающих.",
+    "en": "In this lesson we review the qualities: trust, independence, honesty and thriftiness. A person with good qualities earns the respect of those around them."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Fazilatlarni ajrat: yaxshi yoki yomon!",
+        "ru": "Разложи качества: хорошее или плохое!",
+        "en": "Sort the traits: good or bad!"
+      },
+      "hint": {
+        "uz": "Rostgoʻylik, mustaqillik — yaxshi.",
+        "ru": "Правдивость, самостоятельность — хорошо.",
+        "en": "Truthfulness, independence — good."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yaxshi fazilatlarni tanla.",
+        "ru": "Молодец! Выбирай добрые качества.",
+        "en": "Great! Choose the good traits."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "Yaxshi",
+                "ru": "Хорошее",
+                "en": "Good"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "uz": "Yomon",
+                "ru": "Плохое",
+                "en": "Bad"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "💬",
+              "label": {
+                "uz": "rostgoʻylik",
+                "ru": "правдивость",
+                "en": "truthfulness"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🌟",
+              "label": {
+                "uz": "mustaqillik",
+                "ru": "самостоятельность",
+                "en": "independence"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🤝",
+              "label": {
+                "uz": "ishonch",
+                "ru": "доверие",
+                "en": "trust"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🙈",
+              "label": {
+                "uz": "yolgʻonchilik",
+                "ru": "лживость",
+                "en": "lying"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "😴",
+              "label": {
+                "uz": "dangasalik",
+                "ru": "лень",
+                "en": "laziness"
+              },
+              "bin": "no"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir fazilatni mos ta'rifiga ula!",
+        "ru": "Соедини каждое качество с его смыслом!",
+        "en": "Match each trait to its meaning!"
+      },
+      "hint": {
+        "uz": "halollik — rostgoʻylik.",
+        "ru": "честность — правдивость.",
+        "en": "honesty — truthfulness."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": {
+                  "uz": "halollik",
+                  "ru": "честность",
+                  "en": "honesty"
+                }
+              },
+              "right": {
+                "label": {
+                  "uz": "rostgoʻylik",
+                  "ru": "правдивость",
+                  "en": "truthfulness"
+                }
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "mustaqillik",
+                  "ru": "самостоятельность",
+                  "en": "independence"
+                }
+              },
+              "right": {
+                "label": {
+                  "uz": "oʻzi bajarish",
+                  "ru": "делать самому",
+                  "en": "doing it yourself"
+                }
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "asrab-avaylash",
+                  "ru": "бережливость",
+                  "en": "thrift"
+                }
+              },
+              "right": {
+                "label": {
+                  "uz": "tejamkorlik",
+                  "ru": "экономность",
+                  "en": "saving carefully"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi fazilatlar orasidan ortiqchasini top!",
+        "ru": "Найди лишнее среди добрых качеств!",
+        "en": "Find the odd one out among the good traits!"
+      },
+      "hint": {
+        "uz": "Qaysi biri yaxshi emas?",
+        "ru": "Что не является хорошим?",
+        "en": "Which one is not good?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yolgʻon» — yaxshi fazilat emas.",
+        "ru": "Верно! «Ложь» — не доброе качество.",
+        "en": "Right! \"Lying\" is not a good trait."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "yaxshi fazilatlar",
+            "ru": "добрые качества",
+            "en": "good traits"
+          },
+          "tiles": [
+            {
+              "text": "ishonch"
+            },
+            {
+              "text": "halollik"
+            },
+            {
+              "text": "mustaqillik"
+            },
+            {
+              "text": "yolgʻon",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, fazilat juftlarini top!",
+        "ru": "Открывай карточки: пары качеств!",
+        "en": "Flip the cards: match the trait pairs!"
+      },
+      "hint": {
+        "uz": "ishonch 🤝, halollik 💬, mustaqillik 🌟.",
+        "ru": "доверие 🤝, честность 💬, самостоятельность 🌟.",
+        "en": "trust 🤝, honesty 💬, independence 🌟."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🤝"
+              },
+              "b": {
+                "label": {
+                  "uz": "ishonch",
+                  "ru": "доверие",
+                  "en": "trust"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "💬"
+              },
+              "b": {
+                "label": {
+                  "uz": "halollik",
+                  "ru": "честность",
+                  "en": "honesty"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🌟"
+              },
+              "b": {
+                "label": {
+                  "uz": "mustaqillik",
+                  "ru": "самостоятельность",
+                  "en": "independence"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi fazilatni oʻzingda koʻproq rivojlantirmoqchisan?",
+        "ru": "Какое качество ты хочешь развить в себе больше всего?",
+        "en": "Which quality do you most want to grow in yourself?"
+      },
+      "hint": {
+        "uz": "Halollik, mustaqillik, ishonch — qaysi biri?",
+        "ru": "Честность, самостоятельность, доверие — какое?",
+        "en": "Honesty, independence, trust — which one?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Fazilatlar seni goʻzal qiladi.",
+        "ru": "Отлично! Качества делают тебя прекрасным.",
+        "en": "Great! Good qualities make you wonderful."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men mustaqillikni rivojlantirmoqchiman, chunki oʻz ishimni oʻzim bajarganim yoqadi.",
+            "ru": "Я хочу развить самостоятельность, ведь мне нравится делать всё самому.",
+            "en": "I want to grow my independence, because I like doing my tasks myself."
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "topicId": "g1-oqish-49",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌷❄️🎵",
+  "title": {
+    "uz": "Qoʻshiqqa boʻlamiz joʻr",
+    "ru": "Подпоём песне",
+    "en": "Let's join the song"
+  },
+  "recall": {
+    "uz": "«Boychechak» qoʻshigʻini tinglab oʻqiymiz, bahor va ilk chechak haqida bilib olamiz.",
+    "ru": "Слушаем песню «Подснежник» и узнаём о весне и первом цветке.",
+    "en": "We read the song “Snowdrop” and learn about spring and the first flower."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Boychechak",
+        "variant": "poem",
+        "audio": "g1-oqish-49-q1",
+        "lines": [
+          "Boychechagim boylandi,",
+          "Bahor keldi oʻlkamga.",
+          "Qorlar erib, kun isib,",
+          "Gullar undi dalada.",
+          "",
+          "Boychechak — ilk chechak,",
+          "Qishni quvib chiqargan.",
+          "Yashil maysa ichidan",
+          "Oppoq boshin koʻtargan."
+        ]
+      } },
+      "prompt": { "uz": "Qoʻshiqni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Boychechak qaysi faslda ochiladi?", "ru": "В какое время года распускается подснежник?", "en": "In which season does the snowdrop bloom?" },
+      "explanation": { "uz": "Qoʻshiq bahorning ilk guli — boychechak haqida.", "ru": "Песня о первом цветке весны — подснежнике.", "en": "The song is about the snowdrop, spring's first flower." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_forge", "props": {
+        "letters": ["B", "A", "H", "O", "R", "G", "U", "L"],
+        "accept": ["bahor", "gul", "bola", "bor", "ola", "hol", "rol"],
+        "goal": 3,
+        "emoji": "🌷",
+        "clue": { "uz": "Bahorga oid soʻzlar tuzing", "ru": "Составь весенние слова", "en": "Build spring-related words" }
+      } },
+      "prompt": { "uz": "Pufakchalardagi harflardan soʻzlar tuzing!", "ru": "Составь слова из букв на шариках!", "en": "Build words from the balloon letters!" },
+      "hint": { "uz": "Kichik soʻzlardan boshlang — harflarni birlashtiring.", "ru": "Начни с коротких слов — соединяй буквы.", "en": "Start with short words — join the letters." },
+      "explanation": { "uz": "Bu harflardan bahorga oid bir nechta soʻz hosil boʻladi.", "ru": "Из этих букв можно составить несколько весенних слов.", "en": "These letters can form several spring words." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "vayron", "right": "xarob" },
+        { "left": "yumalab", "right": "dumalab" },
+        { "left": "qattiq", "right": "mustahkam" }
+      ] } },
+      "prompt": { "uz": "Maʼnodosh soʻzlarni bir-biriga ulang!", "ru": "Соедини слова-синонимы!", "en": "Match the synonyms!" },
+      "hint": { "uz": "«vayron» va «xarob» — bir maʼnoda.", "ru": "«vayron» и «xarob» — об одном.", "en": "“vayron” and “xarob” mean the same." },
+      "explanation": { "uz": "vayron = xarob; yumalab = dumalab; qattiq = mustahkam.", "ru": "vayron = xarob; yumalab = dumalab; qattiq = mustahkam.", "en": "vayron = xarob; yumalab = dumalab; qattiq = mustahkam." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Boychechak — bahorda ochiladigan ilk gul.", "ru": "Подснежник — первый цветок весны.", "en": "The snowdrop is the first flower of spring." },
+        "answer": "true",
+        "why": { "uz": "Qoʻshiqda boychechak qishni quvib, ilk boʻlib ochiladi.", "ru": "В песне подснежник первым распускается, прогоняя зиму.", "en": "In the song the snowdrop blooms first, chasing away winter." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Boychechak qaysi faslning guli?", "ru": "Цветок какого сезона подснежник?", "en": "Which season's flower is the snowdrop?" },
+      "explanation": { "uz": "Toʻgʻri: boychechak bahorning ilk guli.", "ru": "Верно: подснежник — первый цветок весны.", "en": "True: the snowdrop is spring's first flower." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Bahorda", "ru": "Весной", "en": "In spring" },
+        { "uz": "Yozda", "ru": "Летом", "en": "In summer" },
+        { "uz": "Qishda", "ru": "Зимой", "en": "In winter" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Boychechak qaysi faslda gullaydi?", "ru": "В какое время года цветёт подснежник?", "en": "In which season does the snowdrop bloom?" },
+      "hint": { "uz": "Qorlar erigach, ilk boʻlib ochiladi.", "ru": "Распускается первым, когда тает снег.", "en": "It blooms first when the snow melts." },
+      "explanation": { "uz": "Boychechak bahorda, qor erigach ochiladi.", "ru": "Подснежник цветёт весной, когда тает снег.", "en": "The snowdrop blooms in spring as the snow melts." },
+      "openEnd": { "uz": "Sen qoʻshiq aytishni yoqtirasanmi? Qaysi qoʻshiqni bilasan?", "ru": "Ты любишь петь? Какую песню знаешь?", "en": "Do you like singing? Which song do you know?" }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "«Baxmal» — yumshoq ", "after": " mato.", "choices": ["duxoba", "temir", "shisha"], "answer": "duxoba", "emoji": "🧵", "clue": { "uz": "Izohli lugʻat", "ru": "Словарик", "en": "Glossary" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Baxmal — silliq, yumshoq mato.", "ru": "Бархат — мягкая гладкая ткань.", "en": "Velvet is a soft, smooth fabric." },
+      "explanation": { "uz": "«Baxmal» — duxoba, yumshoq va silliq mato.", "ru": "«Baxmal» — бархат, мягкая ткань.", "en": "“Baxmal” is velvet, a soft fabric." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Qorlar eriydi", "match": true },
+        { "text": "Gullar ochiladi", "match": true },
+        { "text": "Qushlar qaytadi", "match": true },
+        { "text": "Barglar toʻkiladi", "match": false },
+        { "text": "Kunlar qisqaradi", "match": false }
+      ] } },
+      "prompt": { "uz": "Bahor belgilarini bos!", "ru": "Нажми признаки весны!", "en": "Tap the signs of spring!" },
+      "hint": { "uz": "Bahorda tabiat uygʻonadi.", "ru": "Весной природа пробуждается.", "en": "In spring nature awakens." },
+      "explanation": { "uz": "Qor erishi, gul ochilishi, qush qaytishi — bahor belgilari; qolganlari — kuz.", "ru": "Таяние снега, цветение, возвращение птиц — весна; остальное — осень.", "en": "Melting snow, blooming, returning birds are spring; the rest are autumn." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "boychechak" },
+        { "text": "lola" },
+        { "text": "binafsha" },
+        { "text": "avtomobil", "odd": true }
+      ], "clue": { "uz": "Qaysi biri gul emas?", "ru": "Что из этого не цветок?", "en": "Which one is not a flower?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi — bahor gullari.", "ru": "Три — весенние цветы.", "en": "Three are spring flowers." },
+      "explanation": { "uz": "Avtomobil — transport; boychechak, lola, binafsha — gullar.", "ru": "Автомобиль — транспорт; остальные — цветы.", "en": "A car is transport; the rest are flowers." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "" },
+          { "blank": "Bahor" },
+          { "text": "keldi," },
+          { "blank": "gullar" },
+          { "text": "ochildi." }
+        ],
+        "bank": ["Bahor", "gullar", "Qish", "qorlar"]
+      } },
+      "prompt": { "uz": "Gapni mos soʻzlar bilan toʻldiring!", "ru": "Дополни предложение словами!", "en": "Complete the sentence with the words!" },
+      "hint": { "uz": "Qoʻshiq nima haqida edi?", "ru": "О чём была песня?", "en": "What was the song about?" },
+      "explanation": { "uz": "Bahor keldi, gullar ochildi — qoʻshiqning asosiy fikri.", "ru": "Пришла весна, распустились цветы — главная мысль песни.", "en": "Spring came, flowers bloomed — the song's main idea." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_sequence", "props": {
+        "letters": ["b", "o", "y", "ch", "e", "ch", "a", "k"],
+        "words": [8],
+        "phrase": "boychechak",
+        "meaning": { "uz": "Boychechak — bahorda ochiladigan ilk oppoq gul.", "ru": "Подснежник — первый белый цветок весны.", "en": "The snowdrop — the first white flower of spring." }
+      } },
+      "prompt": { "uz": "Harflarni toʻgʻri ketma-ketlikda bosib, soʻzni oʻqing!", "ru": "Нажимай буквы по порядку и прочитай слово!", "en": "Tap the letters in the right order to read the word!" },
+      "hint": { "uz": "«b» harfidan boshlanadi.", "ru": "Начинается с «b».", "en": "It starts with “b”." },
+      "explanation": { "uz": "b-o-y-ch-e-ch-a-k → boychechak.", "ru": "b-o-y-ch-e-ch-a-k → boychechak.", "en": "b-o-y-ch-e-ch-a-k → boychechak (snowdrop)." }
+    }
+  ]
+}

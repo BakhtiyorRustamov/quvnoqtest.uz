@@ -1,0 +1,488 @@
+{
+  "topicId": "g1-ingliz-29",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐜🍎🐊🚑",
+  "title": {
+    "uz": "«a» tovushi: chumoli",
+    "ru": "Звук «a»: муравей",
+    "en": "The 'a' sound: an ant"
+  },
+  "recall": {
+    "uz": "Hayvon tovushlari! Bugun «a» tovushini mashq qilamiz: ant — chumoli, apple — olma, alligator — allig'ator. A-a-ant!",
+    "ru": "Звуки животных! Сегодня тренируем звук «a»: ant — муравей, apple — яблоко, alligator — аллигатор. A-a-ant!",
+    "en": "Animal sounds! Today we practise the /a/ sound: ant, apple and alligator. A-a-ant!"
+  },
+  "ttsText": {
+    "uz": "«a» tovushi.",
+    "en": "Animal sounds! The a sound. A-a-ant! An ant with an apple!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «a» bilan boshlanadigan hasharotni bos!",
+        "ru": "Послушай и нажми насекомое на «a»!",
+        "en": "Listen and tap the insect that starts with /a/!"
+      },
+      "audio": {
+        "key": "ing29-q1",
+        "text": "Ant! A-a-ant!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«ant» — chumoli.",
+        "ru": "«ant» — муравей.",
+        "en": "\"ant\" starts with /a/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ant — chumoli.",
+        "ru": "Верно! Ant — муравей.",
+        "en": "Right! Ant!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐜",
+              "label": "ant",
+              "correct": true
+            },
+            {
+              "emoji": "🐝",
+              "label": "bee"
+            },
+            {
+              "emoji": "🐢",
+              "label": "turtle"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«a» bilan boshlanadigan mevani bos!",
+        "ru": "Нажми фрукт на «a»!",
+        "en": "Tap the fruit that starts with /a/!"
+      },
+      "audio": {
+        "key": "ing29-q2",
+        "text": "Apple! A-a-apple!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«apple» — olma.",
+        "ru": "«apple» — яблоко.",
+        "en": "\"apple\" starts with /a/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Apple — olma.",
+        "ru": "Верно! Apple — яблоко.",
+        "en": "Right! Apple!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "emoji": "🍌",
+              "label": "banana"
+            },
+            {
+              "emoji": "🍇",
+              "label": "grapes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«a» tovushi bilan boshlanadigan hammasini belgila!",
+        "ru": "Отметь всё на «a»!",
+        "en": "Tap everything that starts with /a/!"
+      },
+      "hint": {
+        "uz": "ant, apple, alligator.",
+        "ru": "ant, apple, alligator.",
+        "en": "ant, apple, alligator."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ant, apple, alligator — hammasi «a»!",
+        "ru": "Молодец! Ant, apple, alligator — всё на «a»!",
+        "en": "Great! Ant, apple, alligator — all /a/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐜",
+              "label": "ant",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐊",
+              "label": "alligator",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«a» bilan boshlanadigan hayvonni bos!",
+        "ru": "Нажми животное на «a»!",
+        "en": "Tap the animal that starts with /a/!"
+      },
+      "audio": {
+        "key": "ing29-q4",
+        "text": "Alligator! A-a-alligator!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«alligator» — allig'ator.",
+        "ru": "«alligator» — аллигатор.",
+        "en": "\"alligator\" starts with /a/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Alligator!",
+        "ru": "Верно! Alligator!",
+        "en": "Right! Alligator!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐊",
+              "label": "alligator",
+              "correct": true
+            },
+            {
+              "emoji": "🦆",
+              "label": "duck"
+            },
+            {
+              "emoji": "🐰",
+              "label": "rabbit"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va birga ayt. Qaysi tovush takrorlanadi?",
+        "ru": "Послушай и повтори. Какой звук повторяется?",
+        "en": "Listen and say it. Which sound repeats?"
+      },
+      "hint": {
+        "uz": "Ant, apple, and — bir tovush.",
+        "ru": "Ant, apple, and — один звук.",
+        "en": "ant, apple, and — the same sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «a» tovushi takrorlanadi.",
+        "ru": "Верно! Повторяется звук «a».",
+        "en": "Right! The /a/ sound repeats."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🐜",
+              "name": "Ant",
+              "text": "An ant and an apple!",
+              "audio": {
+                "key": "ing29-q5-a",
+                "text": "An ant and an apple!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "You",
+              "text": "A-a-ant! A-a-apple!",
+              "audio": {
+                "key": "ing29-q5-b",
+                "text": "A! A! A! Ant, apple, and!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qaysi tovush?",
+              "ru": "Какой звук?",
+              "en": "Which sound?"
+            },
+            "choices": [
+              "/d/",
+              "/a/",
+              "/t/"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «apple» soʻzi «a» tovushi bilan boshlanadi.",
+        "ru": "Верно? Слово «apple» начинается на «a».",
+        "en": "Is this right? \"apple\" starts with the /a/ sound."
+      },
+      "hint": {
+        "uz": "A-a-apple!",
+        "ru": "A-a-apple!",
+        "en": "A-a-apple!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Apple — «a» tovushi.",
+        "ru": "Верно! Apple — звук «a».",
+        "en": "Right! \"apple\" starts with /a/."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍎",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yana «a» bilan boshlanadigan hammasini belgila!",
+        "ru": "Снова отметь всё на «a»!",
+        "en": "Tap all the /a/ words again!"
+      },
+      "hint": {
+        "uz": "ant, apple, ambulance.",
+        "ru": "ant, apple, ambulance.",
+        "en": "ant, apple, ambulance."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ant, apple, ambulance — «a»!",
+        "ru": "Молодец! Ant, apple, ambulance — «a»!",
+        "en": "Great! Ant, apple, ambulance — /a/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐜",
+              "label": "ant",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🚑",
+              "label": "ambulance",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "☀️",
+              "label": "sun"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐱",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Chumolini bos!",
+        "ru": "Нажми муравья!",
+        "en": "Tap the ant!"
+      },
+      "hint": {
+        "uz": "An ant with an apple.",
+        "ru": "Муравей с яблоком.",
+        "en": "An ant with an apple."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ant — chumoli!",
+        "ru": "Верно! Ant — муравей!",
+        "en": "Right! An ant!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐜",
+              "label": "ant",
+              "correct": true
+            },
+            {
+              "emoji": "🐛",
+              "label": "caterpillar"
+            },
+            {
+              "emoji": "🐌",
+              "label": "snail"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, «a» soʻzlarini juftla!",
+        "ru": "Открывай карточки: слова на «a»!",
+        "en": "Flip the cards: match the /a/ words!"
+      },
+      "hint": {
+        "uz": "ant 🐜, apple 🍎, alligator 🐊.",
+        "ru": "ant 🐜, apple 🍎, alligator 🐊.",
+        "en": "ant 🐜, apple 🍎, alligator 🐊."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐜"
+              },
+              "b": {
+                "label": "ant"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": "apple"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐊"
+              },
+              "b": {
+                "label": "alligator"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «a» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «a»?",
+        "en": "Which word starts with the /a/ sound?"
+      },
+      "hint": {
+        "uz": "Ogʻzingni ochib «a» de.",
+        "ru": "Открой рот и скажи «a».",
+        "en": "Open your mouth and say /a/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «ant» — «a» tovushi.",
+        "ru": "Верно! «ant» — звук «a».",
+        "en": "Right! \"ant\" starts with /a/."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ant\nchumoli",
+              "ru": "ant\nмуравей",
+              "en": "ant"
+            },
+            {
+              "uz": "dog\nit",
+              "ru": "dog\nсобака",
+              "en": "dog"
+            },
+            {
+              "uz": "ball\nkoptok",
+              "ru": "ball\nмяч",
+              "en": "ball"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

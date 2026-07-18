@@ -1,0 +1,154 @@
+{
+  "topicId": "g1-oqish-33",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🎉🌷🍲",
+  "title": {
+    "uz": "Kulib keldi Navroʻzim",
+    "ru": "Пришёл, смеясь, мой Навруз",
+    "en": "My Navruz came smiling"
+  },
+  "recall": {
+    "uz": "Navroʻz bayrami haqidagi matnni tinglab oʻqiymiz, uning maʼnosi va odatlarini bilib olamiz.",
+    "ru": "Слушаем текст о празднике Навруз, узнаём его значение и обычаи.",
+    "en": "We read a text about the Navruz holiday and learn its meaning and customs."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Xush kelibsan, Navroʻz",
+        "variant": "story",
+        "audio": "g1-oqish-33-q1",
+        "lines": [
+          "Navroʻz — bahordagi eng chiroyli bayram.",
+          "U har yili 21-mart, kun bilan tun tenglashgan kunda nishonlanadi.",
+          "«Navroʻz» soʻzi «yangi kun» degan maʼnoni bildiradi.",
+          "Bu bayramga katta tayyorgarlik koʻriladi.",
+          "Koʻchalar tozalanadi, daraxtlar oqlanadi, gullar ekiladi.",
+          "Odamlar bir-biriga yaxshi tilaklar bildiradi.",
+          "Sumalak, halim va koʻk somsalar pishiriladi.",
+          "Navroʻz — doʻstlik va birlik bayramidir."
+        ]
+      } },
+      "prompt": { "uz": "Matnni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Navroʻz qachon nishonlanadi?", "ru": "Когда отмечают Навруз?", "en": "When is Navruz celebrated?" },
+      "explanation": { "uz": "Matn Navroʻz bayrami, uning maʼnosi va odatlari haqida.", "ru": "Текст о празднике Навруз, его значении и обычаях.", "en": "The text is about Navruz — its meaning and customs." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Navroʻz 21-martda nishonlanadi.", "ru": "Навруз отмечают 21 марта.", "en": "Navruz is celebrated on 21 March." },
+        "answer": "true",
+        "why": { "uz": "Matnda «har yili 21-mart… nishonlanadi» deyilgan.", "ru": "В тексте сказано, что его отмечают 21 марта.", "en": "The text says it is celebrated on 21 March." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Kun bilan tun qachon tenglashadi?", "ru": "Когда день равен ночи?", "en": "When are day and night equal?" },
+      "explanation": { "uz": "Toʻgʻri: Navroʻz 21-martda nishonlanadi.", "ru": "Верно: Навруз отмечают 21 марта.", "en": "True: Navruz is on 21 March." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Navroʻzda odamlar qor odam yasashadi.", "ru": "На Навруз лепят снеговиков.", "en": "On Navruz people build snowmen." },
+        "answer": "ng",
+        "why": { "uz": "Matnda qor odam haqida hech narsa aytilmagan.", "ru": "В тексте про снеговика ничего нет.", "en": "The text says nothing about a snowman." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Matnda qor odam tilga olinganmi?", "ru": "Упоминается ли снеговик?", "en": "Is a snowman mentioned?" },
+      "explanation": { "uz": "«Matnda yoʻq»: qor odam haqida gap yoʻq.", "ru": "«Не сказано»: о снеговике речи нет.", "en": "“Not given”: no snowman is mentioned." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "«Yangi kun»", "ru": "«Новый день»", "en": "“New day”" },
+        { "uz": "«Uzun tun»", "ru": "«Длинная ночь»", "en": "“Long night”" },
+        { "uz": "«Sovuq qish»", "ru": "«Холодная зима»", "en": "“Cold winter”" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Navroʻz» soʻzi nimani anglatadi?", "ru": "Что означает слово «Навруз»?", "en": "What does the word “Navruz” mean?" },
+      "hint": { "uz": "Nav — yangi, roʻz — kun.", "ru": "Nav — новый, roʻz — день.", "en": "Nav — new, roʻz — day." },
+      "explanation": { "uz": "«Navroʻz» — «yangi kun» degani; bahorning boshlanishini bildiradi.", "ru": "«Навруз» — «новый день»; означает начало весны.", "en": "“Navruz” means “new day”; it marks the start of spring." },
+      "openEnd": { "uz": "Sizning oilangizda Navroʻz qanday nishonlanadi?", "ru": "Как в вашей семье отмечают Навруз?", "en": "How does your family celebrate Navruz?" }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Koʻchalar tozalanadi", "match": true },
+        { "text": "Daraxtlar oqlanadi", "match": true },
+        { "text": "Sumalak pishiriladi", "match": true },
+        { "text": "Qor kuraladi", "match": false },
+        { "text": "Muzda uchiladi", "match": false }
+      ] } },
+      "prompt": { "uz": "Navroʻzga tayyorgarlik ishlarini bos!", "ru": "Нажми, как готовятся к Наврузу!", "en": "Tap how people prepare for Navruz!" },
+      "hint": { "uz": "Navroʻz oldidan hamma yoq ozoda qilinadi.", "ru": "Перед Наврузом всё убирают и украшают.", "en": "Before Navruz everything is cleaned and made ready." },
+      "explanation": { "uz": "Koʻchalar tozalanadi, daraxtlar oqlanadi, sumalak pishiriladi.", "ru": "Улицы убирают, деревья белят, варят сумаляк.", "en": "Streets are cleaned, trees whitewashed, sumalak cooked." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "sayil", "right": "tantanali sayr-tomosha" },
+        { "left": "tenglashmoq", "right": "teng boʻlmoq, barobar boʻlmoq" },
+        { "left": "birlik", "right": "hamjihatlik, ittifoq" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«sayil» — tantanali sayr-tomosha.", "ru": "«sayil» — праздничное гуляние.", "en": "“sayil” means a festive fair." },
+      "explanation": { "uz": "sayil = tantanali sayr; tenglashmoq = barobar boʻlmoq; birlik = hamjihatlik.", "ru": "sayil = гуляние; tenglashmoq = сравняться; birlik = единство.", "en": "sayil = a festive fair; tenglashmoq = to become equal; birlik = unity." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Navroʻzda ", "after": " pishiriladi.", "choices": ["sumalak", "muzqaymoq", "chipsa"], "answer": "sumalak", "emoji": "🍯", "clue": { "uz": "Navroʻzning asosiy taomi", "ru": "Главное блюдо Навруза", "en": "The main dish of Navruz" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Bugʻdoydan tayyorlanadigan shirin taom.", "ru": "Сладкое блюдо из пшеницы.", "en": "A sweet dish made from wheat." },
+      "explanation": { "uz": "Navroʻzda sumalak pishiriladi — bayramning asosiy taomi.", "ru": "На Навруз варят сумаляк — главное блюдо праздника.", "en": "At Navruz, sumalak is cooked — the holiday's main dish." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "«Navroʻz» soʻzi" },
+          { "blank": "yangi" },
+          { "text": "kun degani; u" },
+          { "blank": "bahor" },
+          { "text": "boshlanishini bildiradi." }
+        ],
+        "bank": ["yangi", "bahor", "qish"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Navroʻz — yangi kun, bahor bayrami.", "ru": "Навруз — новый день, праздник весны.", "en": "Navruz — a new day, a spring holiday." },
+      "explanation": { "uz": "«Navroʻz — yangi kun degani; u bahor boshlanishini bildiradi».", "ru": "«Навруз — новый день; он означает начало весны».", "en": "“Navruz means a new day; it marks the start of spring.”" }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Navroʻz", "—", "doʻstlik", "bayrami."], "emoji": "🌷", "clue": { "uz": "Matnning xulosasi", "ru": "Вывод текста", "en": "The text's conclusion" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuzing!", "ru": "Составь предложение из слов!", "en": "Build the sentence from the words!" },
+      "hint": { "uz": "Gap «Navroʻz» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Navroʻz».", "en": "The sentence starts with “Navroʻz”." },
+      "explanation": { "uz": "«Navroʻz — doʻstlik bayrami»: u odamlarni birlashtiradi.", "ru": "«Навруз — праздник дружбы»: он объединяет людей.", "en": "“Navruz is a holiday of friendship”: it brings people together." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "Navroʻz", "syllables": ["Nav", "roʻz"], "emoji": "🎉", "clue": { "uz": "Bahordagi yangi kun bayrami", "ru": "Весенний праздник нового дня", "en": "The spring “new day” holiday" } } },
+      "prompt": { "uz": "Boʻgʻinlardan bayram nomini yigʻ!", "ru": "Собери название праздника из слогов!", "en": "Build the holiday's name from the syllables!" },
+      "hint": { "uz": "Nav + roʻz = ?", "ru": "Nav + roʻz = ?", "en": "Nav + roʻz = ?" },
+      "explanation": { "uz": "Nav-roʻz → Navroʻz. «Yangi kun» — bahor bayrami.", "ru": "Nav-roʻz → Navroʻz («новый день»).", "en": "Nav-roʻz → Navroʻz (“new day”)." }
+    }
+  ]
+}

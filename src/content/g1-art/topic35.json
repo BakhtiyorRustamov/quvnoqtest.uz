@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-35", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Monotipiya", "ru": "Монотипия", "en": "Monotype" },
+  "recall": {
+    "uz": "Monotipiya usulida qogʻozni buklab, simmetrik — ikki tomoni bir xil naqshlar chizamiz. Keling, yana bir simmetrik rasm chizamiz.",
+    "ru": "В технике монотипии, складывая бумагу, мы получаем симметричные узоры — обе стороны одинаковы. Давай нарисуем ещё один симметричный рисунок.",
+    "en": "In the monotype technique, by folding the paper we make symmetrical patterns — both sides match. Let's draw one more symmetrical picture."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Namunaga qarab, simmetrik kapalak chiz.", "ru": "Глядя на образец, нарисуй симметричную бабочку.", "en": "Looking at the model, draw a symmetrical butterfly." },
+      "hint": { "uz": "Ikki tomonni bir xil qil.", "ru": "Сделай обе стороны одинаковыми.", "en": "Make both sides the same." },
+      "explanation": { "uz": "Barakalla!", "ru": "Молодец!", "en": "Great!" },
+      "widget": { "type": "free_draw", "props": { "example": "butterfly" } } }
+  ]
+}

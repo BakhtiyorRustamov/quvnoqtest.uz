@@ -1,0 +1,508 @@
+{
+  "topicId": "g1-ingliz-16",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🎂🎉🎁🕯️",
+  "title": {
+    "uz": "Tugʻilgan kun muborak!",
+    "ru": "С днём рождения!",
+    "en": "Happy birthday!"
+  },
+  "recall": {
+    "uz": "Suhbat vaqti! Bugun tabriklaymiz: «Happy birthday!» — «Tugʻilgan kuning muborak!» Sovgʻa berganda «Here you are!» deymiz.",
+    "ru": "Время беседы! Сегодня поздравляем: «Happy birthday!» — «С днём рождения!» Даря подарок, говорим «Here you are!».",
+    "en": "Talk time! Today we celebrate: \"Happy birthday!\" When we give a gift we say \"Here you are!\""
+  },
+  "ttsText": {
+    "uz": "Tugʻilgan kun muborak!",
+    "en": "Talk time! Happy birthday! Here you are! Thank you!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Mia nima dedi?",
+        "ru": "Послушай. Что сказала Мия?",
+        "en": "Listen. What did Mia say?"
+      },
+      "hint": {
+        "uz": "«Happy birthday» — tabrik.",
+        "ru": "«Happy birthday» — поздравление.",
+        "en": "\"Happy birthday\" is a wish."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Happy birthday!»",
+        "ru": "Верно! «Happy birthday!»",
+        "en": "Right! \"Happy birthday!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Happy birthday, Sam!",
+              "audio": {
+                "key": "ing16-q1-a",
+                "text": "Happy birthday, Sam!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Thank you!",
+              "audio": {
+                "key": "ing16-q1-b",
+                "text": "Thank you!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "Sit down!",
+              "Happy birthday!",
+              "How many?"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sovgʻa berganda nima deydi?",
+        "ru": "Послушай. Что говорят, даря подарок?",
+        "en": "Listen. What do you say when you give a gift?"
+      },
+      "hint": {
+        "uz": "«Here you are!» — mana, ol.",
+        "ru": "«Here you are!» — вот, держи.",
+        "en": "\"Here you are!\" means take it."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Here you are!»",
+        "ru": "Верно! «Here you are!»",
+        "en": "Right! \"Here you are!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Here you are, Sam!",
+              "audio": {
+                "key": "ing16-q2-a",
+                "text": "Here you are, Sam!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Thank you, Mia!",
+              "audio": {
+                "key": "ing16-q2-b",
+                "text": "Thank you, Mia!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "Here you are!",
+              "Goodbye!",
+              "How many?"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tugʻilgan kunda nima deymiz?",
+        "ru": "Что говорят в день рождения?",
+        "en": "What do you say on a birthday?"
+      },
+      "hint": {
+        "uz": "Baxtli tabrik.",
+        "ru": "Радостное поздравление.",
+        "en": "A happy wish."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Happy birthday!»",
+        "ru": "Верно! «Happy birthday!»",
+        "en": "Right! \"Happy birthday!\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«Happy birthday!»",
+              "ru": "«Happy birthday!»",
+              "en": "\"Happy birthday!\""
+            },
+            {
+              "uz": "«Stand up!»",
+              "ru": "«Stand up!»",
+              "en": "\"Stand up!\""
+            },
+            {
+              "uz": "«How many books?»",
+              "ru": "«How many books?»",
+              "en": "\"How many books?\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tugʻilgan kun tortini bos!",
+        "ru": "Нажми праздничный торт!",
+        "en": "Tap the birthday cake!"
+      },
+      "hint": {
+        "uz": "Shamli shirinlik.",
+        "ru": "Сладость со свечами.",
+        "en": "A sweet with candles."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 🎂 — cake.",
+        "ru": "Верно! 🎂 — cake.",
+        "en": "Right! 🎂 a cake!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🎂",
+              "label": "cake",
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🚗",
+              "label": "car"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «Happy birthday» tugʻilgan kunda aytiladi.",
+        "ru": "Верно? «Happy birthday» говорят в день рождения.",
+        "en": "Is this right? \"Happy birthday\" is for a birthday."
+      },
+      "hint": {
+        "uz": "Tort va shamlar.",
+        "ru": "Торт и свечи.",
+        "en": "Cake and candles."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tugʻilgan kunda aytamiz.",
+        "ru": "Верно! Говорят в день рождения.",
+        "en": "Right! It's for a birthday."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🎂",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Oxirida Sam nima dedi?",
+        "ru": "Послушай. Что Сэм сказал в конце?",
+        "en": "Listen. What did Sam say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yum! Thank you!»",
+        "ru": "Верно! «Yum! Thank you!»",
+        "en": "Right! \"Yum! Thank you!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Happy birthday! Here's some cake.",
+              "audio": {
+                "key": "ing16-q6-a",
+                "text": "Happy birthday! Here's some cake.",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Cake! For me?",
+              "audio": {
+                "key": "ing16-q6-b",
+                "text": "Cake! For me?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Yum! Thank you!",
+              "audio": {
+                "key": "ing16-q6-c",
+                "text": "Yum! Thank you!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam oxirida nima dedi?",
+              "ru": "Что Сэм сказал в конце?",
+              "en": "What did Sam say at the end?"
+            },
+            "choices": [
+              "Goodbye!",
+              "No, it isn't!",
+              "Thank you!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Happy birthday»ning tarjimasi nima?",
+        "ru": "Что значит «Happy birthday»?",
+        "en": "What does \"Happy birthday\" mean?"
+      },
+      "hint": {
+        "uz": "Tugʻilgan kun tabrigi.",
+        "ru": "Поздравление с днём рождения.",
+        "en": "A birthday wish."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tugʻilgan kuning muborak!",
+        "ru": "Верно! С днём рождения!",
+        "en": "Right! \"Happy birthday!\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Tugʻilgan kuning muborak!",
+              "ru": "С днём рождения!",
+              "en": "Happy birthday!"
+            },
+            {
+              "uz": "Xayrli tun!",
+              "ru": "Спокойной ночи!",
+              "en": "Good night!"
+            },
+            {
+              "uz": "Rahmat!",
+              "ru": "Спасибо!",
+              "en": "Thank you!"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tugʻilgan kunda nima sovgʻa qilamiz? Bos!",
+        "ru": "Что дарят на день рождения? Нажми!",
+        "en": "What do you give on a birthday? Tap it!"
+      },
+      "hint": {
+        "uz": "Lentali quti.",
+        "ru": "Коробка с лентой.",
+        "en": "A box with a ribbon."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 🎁 — sovgʻa.",
+        "ru": "Верно! 🎁 — подарок.",
+        "en": "Right! 🎁 a gift!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🎁",
+              "label": "gift",
+              "correct": true
+            },
+            {
+              "emoji": "📏",
+              "label": "ruler"
+            },
+            {
+              "emoji": "🔑",
+              "label": "key"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bugun sening tugʻilgan kuning. Doʻsting «Happy birthday!» dedi. Nima deysan?",
+        "ru": "Сегодня твой день рождения. Друг сказал «Happy birthday!». Что ответишь?",
+        "en": "It's your birthday. A friend says \"Happy birthday!\" What do you say?"
+      },
+      "hint": {
+        "uz": "Odob bilan javob ber.",
+        "ru": "Ответь вежливо.",
+        "en": "Answer politely."
+      },
+      "explanation": {
+        "uz": "Barakalla! «Thank you!»",
+        "ru": "Молодец! «Thank you!»",
+        "en": "Great! \"Thank you!\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«Thank you!»",
+              "ru": "«Thank you!»",
+              "en": "\"Thank you!\""
+            },
+            {
+              "uz": "«No, it isn't!»",
+              "ru": "«No, it isn't!»",
+              "en": "\"No, it isn't!\""
+            },
+            {
+              "uz": "«How many?»",
+              "ru": "«How many?»",
+              "en": "\"How many?\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sam hammaga nima dedi?",
+        "ru": "Послушай. Что Сэм сказал всем?",
+        "en": "Listen. What did Sam say to everyone?"
+      },
+      "hint": {
+        "uz": "Shamlarni puflagach.",
+        "ru": "Задув свечи.",
+        "en": "After the candles."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Thank you, everyone!»",
+        "ru": "Верно! «Thank you, everyone!»",
+        "en": "Right! \"Thank you, everyone!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Friends",
+              "text": "Happy birthday to you!",
+              "audio": {
+                "key": "ing16-q10-a",
+                "text": "Happy birthday to you!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Thank you, everyone!",
+              "audio": {
+                "key": "ing16-q10-b",
+                "text": "Thank you, everyone!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "Stand up!",
+              "Thank you, everyone!",
+              "Goodbye!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-29", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Rang-barang kapalaklar", "ru": "Разноцветные бабочки", "en": "Colourful butterflies" },
+  "recall": {
+    "uz": "Kapalaklar rang-barang va goʻzal. Ularning ikki qanoti bir xil naqshli boʻladi. Keling, kapalakni boʻyaymiz.",
+    "ru": "Бабочки разноцветные и красивые. Их два крыла с одинаковым узором. Давай раскрасим бабочку.",
+    "en": "Butterflies are colourful and beautiful. Their two wings have the same pattern. Let's colour the butterfly."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kapalakni boʻya. Ikki qanotni bir xil rangla!", "ru": "Раскрась бабочку. Оба крыла — одинаково!", "en": "Colour the butterfly. Make both wings the same!" },
+      "hint": { "uz": "Chap va oʻng tomon bir xil boʻlsin.", "ru": "Левая и правая стороны одинаковые.", "en": "Left and right sides match." },
+      "explanation": { "uz": "Chiroyli kapalak!", "ru": "Красивая бабочка!", "en": "A beautiful butterfly!" },
+      "widget": { "type": "color_fill", "props": { "picture": "butterfly" } } }
+  ]
+}

@@ -1,0 +1,571 @@
+{
+  "topicId": "g1-ingliz-40",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🛒🍎🍞🥛",
+  "title": {
+    "uz": "Menga ... bering",
+    "ru": "Можно мне...",
+    "en": "Can I have..., please?"
+  },
+  "recall": {
+    "uz": "Suhbat vaqti! Bugun doʻkonda soʻraymiz: «Can I have four apples, please?» — «Menga toʻrtta olma bering.» Javob: «Here you are!»",
+    "ru": "Время беседы! Сегодня просим в магазине: «Can I have four apples, please?» — «Можно мне четыре яблока?» Ответ: «Here you are!»",
+    "en": "Talk time! Today we ask at a shop: \"Can I have four apples, please?\" Answer: \"Here you are!\""
+  },
+  "ttsText": {
+    "uz": "Menga bering.",
+    "en": "Talk time! Can I have four apples, please? Here you are!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sotuvchi nima dedi?",
+        "ru": "Послушай. Что сказал продавец?",
+        "en": "Listen. What did the shopkeeper say?"
+      },
+      "hint": {
+        "uz": "«Here you are!» — mana, oling.",
+        "ru": "«Here you are!» — вот, возьмите.",
+        "en": "\"Here you are!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Here you are!»",
+        "ru": "Верно! «Here you are!»",
+        "en": "Right! \"Here you are!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can I have an apple, please?",
+              "audio": {
+                "key": "ing40-q1-a",
+                "text": "Can I have an apple, please?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👨",
+              "name": "Shopkeeper",
+              "text": "Here you are!",
+              "audio": {
+                "key": "ing40-q1-b",
+                "text": "Here you are!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sotuvchi nima dedi?",
+              "ru": "Что сказал продавец?",
+              "en": "What did the shopkeeper say?"
+            },
+            "choices": [
+              "Go away!",
+              "How many?",
+              "Here you are!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nechta olma soʻradi?",
+        "ru": "Послушай. Сколько яблок попросил ребёнок?",
+        "en": "Listen. How many apples did the child ask for?"
+      },
+      "hint": {
+        "uz": "«four» — toʻrt.",
+        "ru": "«four» — четыре.",
+        "en": "\"four apples\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Four apples — toʻrtta olma.",
+        "ru": "Верно! Four apples — четыре яблока.",
+        "en": "Right! Four apples."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Can I have four apples, please?",
+              "audio": {
+                "key": "ing40-q2-a",
+                "text": "Can I have four apples, please?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👨",
+              "name": "Shopkeeper",
+              "text": "Yes! Four apples.",
+              "audio": {
+                "key": "ing40-q2-b",
+                "text": "Yes! Four apples.",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Nechta olma?",
+              "ru": "Сколько яблок?",
+              "en": "How many apples?"
+            },
+            "choices": [
+              "two",
+              "four",
+              "ten"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Can I have milk?» Sutni bos!",
+        "ru": "«Can I have milk?» Нажми молоко!",
+        "en": "\"Can I have milk?\" Tap the milk!"
+      },
+      "hint": {
+        "uz": "«milk» — sut.",
+        "ru": "«milk» — молоко.",
+        "en": "\"milk\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Milk — sut.",
+        "ru": "Верно! Milk — молоко.",
+        "en": "Right! Milk!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🥛",
+              "label": "milk",
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «Can I have ...?» — odob bilan soʻrash.",
+        "ru": "Верно? «Can I have ...?» — вежливая просьба.",
+        "en": "Is this right? \"Can I have ...?\" asks politely."
+      },
+      "hint": {
+        "uz": "«please» — iltimos.",
+        "ru": "«please» — пожалуйста.",
+        "en": "\"please\" is polite."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Odob bilan soʻraymiz.",
+        "ru": "Верно! Просим вежливо.",
+        "en": "Right! We ask politely."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🛒",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sotuvchi oxirida nima dedi?",
+        "ru": "Послушай. Что продавец сказал в конце?",
+        "en": "Listen. What did the shopkeeper say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Here you are!»",
+        "ru": "Верно! «Here you are!»",
+        "en": "Right! \"Here you are!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👨",
+              "name": "Shopkeeper",
+              "text": "Can I help you?",
+              "audio": {
+                "key": "ing40-q5-a",
+                "text": "Can I help you?",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Can I have bread, please?",
+              "audio": {
+                "key": "ing40-q5-b",
+                "text": "Can I have bread, please?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👨",
+              "name": "Shopkeeper",
+              "text": "Here you are!",
+              "audio": {
+                "key": "ing40-q5-c",
+                "text": "Here you are!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sotuvchi oxirida nima dedi?",
+              "ru": "Что продавец сказал в конце?",
+              "en": "What did the shopkeeper say at the end?"
+            },
+            "choices": [
+              "Stand up!",
+              "Here you are!",
+              "No, it isn't!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻkondan olsa boʻladigan taomlarni belgila!",
+        "ru": "Отметь еду, которую можно купить!",
+        "en": "Tap the food you can buy at a shop!"
+      },
+      "hint": {
+        "uz": "Olma, non, sut.",
+        "ru": "Яблоко, хлеб, молоко.",
+        "en": "Apple, bread, milk."
+      },
+      "explanation": {
+        "uz": "Barakalla! Olma, non, sut — taom!",
+        "ru": "Молодец! Яблоко, хлеб, молоко — еда!",
+        "en": "Great! Apple, bread, milk are food!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍞",
+              "label": "bread",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🥛",
+              "label": "milk",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🚗",
+              "label": "car"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni taomga ula!",
+        "ru": "Соедини слово с едой!",
+        "en": "Match each word to its food!"
+      },
+      "hint": {
+        "uz": "apple 🍎, bread 🍞, milk 🥛, egg 🥚.",
+        "ru": "apple 🍎, bread 🍞, milk 🥛, egg 🥚.",
+        "en": "apple 🍎, bread 🍞, milk 🥛, egg 🥚."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "apple"
+              },
+              "right": {
+                "emoji": "🍎"
+              }
+            },
+            {
+              "left": {
+                "label": "bread"
+              },
+              "right": {
+                "emoji": "🍞"
+              }
+            },
+            {
+              "left": {
+                "label": "milk"
+              },
+              "right": {
+                "emoji": "🥛"
+              }
+            },
+            {
+              "left": {
+                "label": "egg"
+              },
+              "right": {
+                "emoji": "🥚"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Taomlarni ajrat: ovqat yoki ichimlik!",
+        "ru": "Разложи: еда или напиток!",
+        "en": "Sort them: food or drink!"
+      },
+      "hint": {
+        "uz": "Yeymiz — ovqat, ichamiz — ichimlik.",
+        "ru": "Едим — еда, пьём — напиток.",
+        "en": "We eat food, we drink drinks."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har biri oʻz guruhida.",
+        "ru": "Молодец! Каждое в своей группе.",
+        "en": "Great! Each in its group!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "f",
+              "label": {
+                "uz": "Food",
+                "ru": "Еда",
+                "en": "Food"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "Drink",
+                "ru": "Напиток",
+                "en": "Drink"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "label": "apple",
+              "bin": "f"
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread",
+              "bin": "f"
+            },
+            {
+              "emoji": "🥚",
+              "label": "egg",
+              "bin": "f"
+            },
+            {
+              "emoji": "🥛",
+              "label": "milk",
+              "bin": "d"
+            },
+            {
+              "emoji": "💧",
+              "label": "water",
+              "bin": "d"
+            },
+            {
+              "emoji": "🍹",
+              "label": "juice",
+              "bin": "d"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima soʻradi?",
+        "ru": "Послушай. О чём попросил ребёнок?",
+        "en": "Listen. What did the child ask for?"
+      },
+      "hint": {
+        "uz": "«juice» — sharbat.",
+        "ru": "«juice» — сок.",
+        "en": "\"juice\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Can I have juice, please?»",
+        "ru": "Верно! «Can I have juice, please?»",
+        "en": "Right! \"Can I have juice, please?\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can I have juice, please?",
+              "audio": {
+                "key": "ing40-q9-a",
+                "text": "Can I have juice, please?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👨",
+              "name": "Shopkeeper",
+              "text": "Sure! Here you are.",
+              "audio": {
+                "key": "ing40-q9-b",
+                "text": "Sure! Here you are.",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima soʻradi?",
+              "ru": "О чём попросил Сэм?",
+              "en": "What did Sam ask for?"
+            },
+            "choices": [
+              "an egg",
+              "juice",
+              "bread"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻkonda ikkita olma olmoqchisan. Nima deysan?",
+        "ru": "В магазине хочешь два яблока. Что скажешь?",
+        "en": "You want two apples at a shop. What do you say?"
+      },
+      "hint": {
+        "uz": "Odob bilan soʻra.",
+        "ru": "Попроси вежливо.",
+        "en": "Ask politely."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Can I have two apples, please?»",
+        "ru": "Верно! «Can I have two apples, please?»",
+        "en": "Right! \"Can I have two apples, please?\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Can I have two apples, please?\nMenga ikkita olma bering.",
+              "ru": "Can I have two apples, please?\nМожно мне два яблока?",
+              "en": "Can I have two apples, please?"
+            },
+            {
+              "uz": "Go away!\nKet!",
+              "ru": "Go away!\nУходи!",
+              "en": "Go away!"
+            },
+            {
+              "uz": "I don't know.\nBilmayman.",
+              "ru": "I don't know.\nНе знаю.",
+              "en": "I don't know."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

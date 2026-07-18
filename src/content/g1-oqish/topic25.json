@@ -1,0 +1,161 @@
+{
+  "topicId": "g1-oqish-25",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌸☀️🕊️",
+  "title": {
+    "uz": "Salom senga, gulbahor",
+    "ru": "Здравствуй, весна!",
+    "en": "Hello to you, spring!"
+  },
+  "recall": {
+    "uz": "Bahor haqidagi sheʼrni tinglab oʻqiymiz, rasmlarning birinchi harfidan soʻz tuzamiz va bahor belgilarini topamiz.",
+    "ru": "Слушаем стихотворение о весне, составляем слово из первых букв картинок и находим приметы весны.",
+    "en": "We read a poem about spring, build a word from the pictures' first letters, and find the signs of spring."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Salom senga, gulbahor",
+        "variant": "poem",
+        "audio": "g1-oqish-25-q1",
+        "lines": [
+          "Bahor keldi yurtimga,",
+          "Gullar ochildi bogʻda.",
+          "Chumchuqlar sayrab yurar,",
+          "Quyosh kular osmonda.",
+          "",
+          "Dalada dehqon ishlar,",
+          "Yerga urugʻ ekilar.",
+          "«Salom senga, gulbahor!»",
+          "Deb bolalar kulishar."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Bahorda dalada kimlar ishlaydi?", "ru": "Кто работает весной в поле?", "en": "Who works in the field in spring?" },
+      "explanation": { "uz": "Sheʼr bahor kelishi va tabiatning uygʻonishi haqida.", "ru": "Стихотворение о приходе весны и пробуждении природы.", "en": "The poem is about the arrival of spring and nature waking up." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "first_letters", "props": {
+        "objects": [
+          { "emoji": "🥁", "letter": "B", "name": { "uz": "baraban", "ru": "барабан", "en": "drum" } },
+          { "emoji": "🍯", "letter": "A", "name": { "uz": "asal", "ru": "мёд", "en": "honey" } },
+          { "emoji": "🦅", "letter": "H", "name": { "uz": "humo", "ru": "хумо", "en": "humo bird" } },
+          { "emoji": "🔥", "letter": "O", "name": { "uz": "olov", "ru": "огонь", "en": "fire" } },
+          { "emoji": "🤖", "letter": "R", "name": { "uz": "robot", "ru": "робот", "en": "robot" } }
+        ],
+        "word": "BAHOR",
+        "meaning": { "uz": "Bahor — yilning eng koʻrkam fasli.", "ru": "Bahor — весна, самое красивое время года.", "en": "Bahor — spring, the loveliest season." }
+      } },
+      "prompt": { "uz": "Rasmlarni chapdan oʻngga bosib, yashiringan soʻzni oching!", "ru": "Нажимай картинки слева направо и открой спрятанное слово!", "en": "Tap the pictures left to right to reveal the hidden word!" },
+      "hint": { "uz": "Har bir rasm nomining birinchi harfini ol.", "ru": "Возьми первую букву названия каждой картинки.", "en": "Take the first letter of each picture's name." },
+      "explanation": { "uz": "baraban, asal, humo, olov, robot → B-A-H-O-R → BAHOR.", "ru": "барабан, мёд, хумо, огонь, робот → B-A-H-O-R → BAHOR.", "en": "drum, honey, humo, fire, robot → B-A-H-O-R → BAHOR." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Bahorda dehqon dalada urugʻ ekadi.", "ru": "Весной крестьянин сеет в поле.", "en": "In spring the farmer sows seeds in the field." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «yerga urugʻ ekilar» deyilgan.", "ru": "В стихотворении сказано, что сеют семена.", "en": "The poem says seeds are sown into the ground." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Dalada nima ekiladi?", "ru": "Что сеют в поле?", "en": "What is sown in the field?" },
+      "explanation": { "uz": "Toʻgʻri: bahorda dehqon yerga urugʻ ekadi.", "ru": "Верно: весной крестьянин сеет семена.", "en": "True: in spring the farmer sows seeds." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrda qor yogʻayotgani aytiladi.", "ru": "В стихотворении говорится, что идёт снег.", "en": "The poem says it is snowing." },
+        "answer": "ng",
+        "why": { "uz": "Sheʼr bahor haqida; qor haqida gap yoʻq.", "ru": "Стихотворение о весне; о снеге ничего нет.", "en": "The poem is about spring; snow is not mentioned." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Sheʼrda qor soʻzi bormi?", "ru": "Есть ли слово «снег»?", "en": "Is the word “snow” in the poem?" },
+      "explanation": { "uz": "«Matnda yoʻq»: qor tilga olinmagan.", "ru": "«Не сказано»: снег не упоминается.", "en": "“Not given”: snow is not mentioned." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Gullar ochiladi", "match": true },
+        { "text": "Chumchuqlar sayraydi", "match": true },
+        { "text": "Daraxtlar kurtak yozadi", "match": true },
+        { "text": "Qor yogʻadi", "match": false },
+        { "text": "Kunlar qisqaradi", "match": false }
+      ] } },
+      "prompt": { "uz": "Bahor belgilarini bos!", "ru": "Нажми приметы весны!", "en": "Tap the signs of spring!" },
+      "hint": { "uz": "Bahorda tabiat uygʻonadi.", "ru": "Весной природа пробуждается.", "en": "In spring nature wakes up." },
+      "explanation": { "uz": "Bahorda gullar ochiladi, qushlar sayraydi, daraxtlar kurtak yozadi.", "ru": "Весной цветут цветы, поют птицы, деревья дают почки.", "en": "In spring flowers bloom, birds sing, trees bud." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "chechan", "right": "chaqqon, uddaburon" },
+        { "left": "borliq", "right": "olam, tabiat" },
+        { "left": "toʻlgʻanmoq", "right": "toʻlqinlanmoq" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«chechan» — chaqqon, epchil.", "ru": "«chechan» — ловкий, шустрый.", "en": "“chechan” means nimble, quick." },
+      "explanation": { "uz": "chechan = chaqqon; borliq = olam; toʻlgʻanmoq = toʻlqinlanmoq.", "ru": "chechan = ловкий; borliq = мир; toʻlgʻanmoq = волноваться.", "en": "chechan = nimble; borliq = the world; toʻlgʻanmoq = to ripple/surge." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Tabiat uygʻonadigan, gullaydigan fasl", "ru": "Пора, когда природа просыпается и цветёт", "en": "The season when nature wakes and blooms" },
+        { "uz": "Qor yogʻadigan sovuq fasl", "ru": "Холодная пора со снегом", "en": "A cold, snowy season" },
+        { "uz": "Barglar toʻkiladigan fasl", "ru": "Пора листопада", "en": "The season when leaves fall" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Sheʼrga koʻra bahor qanday fasl?", "ru": "Какая пора весна по стихотворению?", "en": "What kind of season is spring, according to the poem?" },
+      "hint": { "uz": "Sheʼrda tabiat nima qiladi?", "ru": "Что делает природа в стихотворении?", "en": "What does nature do in the poem?" },
+      "explanation": { "uz": "Bahor — tabiat uygʻonadigan, gullaydigan koʻrkam fasl.", "ru": "Весна — пора, когда природа просыпается и расцветает.", "en": "Spring is the season when nature wakes up and blooms." },
+      "openEnd": { "uz": "Sen bahorni qanday soʻzlar bilan taʼriflagan boʻlarding?", "ru": "Какими словами ты описал бы весну?", "en": "What words would you use to describe spring?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Yilning", "kelishi", "bahordan", "maʼlum."], "emoji": "🌱", "clue": { "uz": "Xalq maqoli", "ru": "Народная пословица", "en": "A folk proverb" } } },
+      "prompt": { "uz": "Soʻzlardan maqol tuzing!", "ru": "Составь пословицу из слов!", "en": "Build the proverb from the words!" },
+      "hint": { "uz": "Maqol «Yilning» soʻzi bilan boshlanadi.", "ru": "Пословица начинается со слова «Yilning».", "en": "The proverb starts with “Yilning”." },
+      "explanation": { "uz": "«Yilning kelishi bahordan maʼlum»: yaxshi boshlanish yaxshi natija belgisi.", "ru": "«Каким будет год — видно по весне»: доброе начало — залог доброго конца.", "en": "“How the year will be is seen from spring”: a good start foretells a good result." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "bahor" },
+        { "text": "yoz" },
+        { "text": "kuz" },
+        { "text": "kitob", "odd": true }
+      ], "clue": { "uz": "Qaysi biri fasl emas?", "ru": "Что из этого не время года?", "en": "Which one is not a season?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi fasl, biri esa yoʻq.", "ru": "Три — времена года, одно — нет.", "en": "Three are seasons, one is not." },
+      "explanation": { "uz": "Kitob — fasl emas; bahor, yoz, kuz esa fasllar.", "ru": "Книга — не время года; весна, лето, осень — да.", "en": "A book is not a season; spring, summer, autumn are." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "bahor", "syllables": ["ba", "hor"], "emoji": "🌷", "clue": { "uz": "Yilning birinchi fasli", "ru": "Первое время года", "en": "The first season of the year" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "ba + hor = ?", "ru": "ba + hor = ?", "en": "ba + hor = ?" },
+      "explanation": { "uz": "ba-hor → bahor. Yilning ilk fasli.", "ru": "ba-hor → bahor (весна).", "en": "ba-hor → bahor (spring)." }
+    }
+  ]
+}

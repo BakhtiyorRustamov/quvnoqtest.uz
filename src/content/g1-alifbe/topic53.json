@@ -1,0 +1,446 @@
+{
+  "topicId": "g1-alifbe-53",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🍵🐜💡",
+  "title": {
+    "uz": "«Ch ch» harfi",
+    "ru": "Буква «Ch ch»",
+    "en": "The letter “Ch ch”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «Ch ch». U undosh tovush. «Ch» bilan: choy, chumoli, chiroq. Ism va joy nomlari bosh harf bilan yoziladi!",
+    "ru": "Сегодня наша буква — «Ch ch». Это согласный звук. Слова: choy, chumoli, chiroq. Имена и названия пишутся с заглавной буквы!",
+    "en": "Today's letter is “Ch ch”. It is a consonant. Words: choy, chumoli, chiroq. Names and places are written with a capital letter!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ch» bilan boshlanadigan soʻzni top!",
+        "ru": "Найди слово на «Ch»!",
+        "en": "Find the word that starts with “Ch”!"
+      },
+      "hint": {
+        "uz": "Boshini choʻzib ayt: choy.",
+        "ru": "Протяни начало: choy.",
+        "en": "Stretch the start: choy."
+      },
+      "explanation": {
+        "uz": "«choy» «Ch» tovushi bilan boshlanadi.",
+        "ru": "«choy» начинается со звука «Ch».",
+        "en": "“choy” starts with the sound “Ch”."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🍵",
+              "label": {
+                "uz": "choy",
+                "ru": "чай",
+                "en": "tea"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ch» harfini topib, hammasini bos!",
+        "ru": "Найди букву «Ch» и нажми на все!",
+        "en": "Find the letter “Ch” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham.",
+        "ru": "Большая и маленькая тоже.",
+        "en": "Capital and small too."
+      },
+      "explanation": {
+        "uz": "«Ch» harfini topding!",
+        "ru": "Ты нашёл букву «Ch»!",
+        "en": "You found the letter “Ch”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "Ch",
+          "cols": 3,
+          "grid": [
+            "Ch",
+            "o",
+            "ch",
+            "T",
+            "Ch",
+            "i",
+            "ch",
+            "n",
+            "Ch"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍵 «choy»da «ch» tovushi qaysi katakchada?",
+        "ru": "🍵 В какой клетке звук «ch» в слове «choy»?",
+        "en": "🍵 Which box has the “ch” sound in “choy”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«choy»da «ch» toʻgʻri joyda.",
+        "ru": "В «choy» звук «ch» на верном месте.",
+        "en": "In “choy” the “ch” is right."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🍵",
+          "word": {
+            "uz": "choy",
+            "ru": "choy",
+            "en": "choy"
+          },
+          "sound": "ch",
+          "cells": [
+            "ch",
+            "o",
+            "y"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍵 «choy» soʻzining tovush chizmasini rangla!",
+        "ru": "🍵 Раскрась схему звуков «choy»!",
+        "en": "🍵 Colour the sound scheme of “choy”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«choy» chizmasini rangladik.",
+        "ru": "Мы раскрасили схему «choy».",
+        "en": "We coloured the scheme of “choy”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "🍵",
+          "word": {
+            "uz": "choy",
+            "ru": "choy",
+            "en": "choy"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ch» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «Ch»!",
+        "en": "Tap the words with the “Ch” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «ch» tovushi bor.",
+        "ru": "В них есть звук «ch».",
+        "en": "They have the “ch” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍵",
+              "label": {
+                "uz": "choy",
+                "ru": "choy",
+                "en": "choy"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐜",
+              "label": {
+                "uz": "chumoli",
+                "ru": "chumoli",
+                "en": "chumoli"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💡",
+              "label": {
+                "uz": "chiroq",
+                "ru": "chiroq",
+                "en": "chiroq"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍵 Yetishmayotgan harfni qoʻy!",
+        "ru": "🍵 Вставь недостающую букву!",
+        "en": "🍵 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz: «choy».",
+        "ru": "Слово: «choy».",
+        "en": "The word: “choy”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «ch».",
+        "ru": "Верная буква — «ch».",
+        "en": "The right letter is “ch”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🍵",
+          "label": {
+            "uz": "choy",
+            "ru": "чай",
+            "en": "tea"
+          },
+          "letters": [
+            "ch",
+            "o",
+            "y"
+          ],
+          "blank": 0,
+          "choices": [
+            "ch",
+            "s",
+            "h"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bosh harf bilan yoziladigan soʻzlarni belgila!",
+        "ru": "Отметь слова с заглавной буквы!",
+        "en": "Tap the words that need a capital letter!"
+      },
+      "hint": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия — с заглавной.",
+        "en": "Names and places take a capital."
+      },
+      "explanation": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия пишутся с заглавной буквы.",
+        "en": "Names and place names are written with a capital."
+      },
+      "widget": {
+        "type": "capital_pick",
+        "props": {
+          "words": [
+            {
+              "word": "Chimyon",
+              "capital": true
+            },
+            {
+              "word": "Chirchiq",
+              "capital": true
+            },
+            {
+              "word": "choy",
+              "capital": false
+            },
+            {
+              "word": "chumoli",
+              "capital": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ch» — undosh tovush.",
+        "ru": "«Ch» — согласный звук.",
+        "en": "“Ch” is a consonant."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Ch» — undosh.",
+        "ru": "Верно! «Ch» — согласный.",
+        "en": "True! “Ch” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐜 «chumoli» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🐜 Похлопай «chumoli» по слогам!",
+        "en": "🐜 Clap “chumoli” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«chumoli» — 3 boʻgʻin.",
+        "ru": "«chumoli» — 3 слога.",
+        "en": "“chumoli” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🐜",
+          "word": {
+            "uz": "chumoli",
+            "ru": "chumoli",
+            "en": "chumoli"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ch» necha harfdan iborat?",
+        "ru": "Из скольких букв «Ch»?",
+        "en": "How many letters is “Ch”?"
+      },
+      "hint": {
+        "uz": "«ch» tovushini ayt.",
+        "ru": "Скажи звук «ch».",
+        "en": "Say the “ch” sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — ikki (c va h).",
+        "ru": "Верно — две (c и h).",
+        "en": "Right — two (c and h)."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ikki (c va h)",
+              "ru": "две (c и h)",
+              "en": "two (c and h)"
+            },
+            {
+              "uz": "bir",
+              "ru": "одна",
+              "en": "one"
+            },
+            {
+              "uz": "uch",
+              "ru": "три",
+              "en": "three"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

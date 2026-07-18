@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
    Native <details> accordion with a prominent round +/× toggle. */
 export default function FaqSection() {
   const t = useTranslations('landing');
+  const [open, setOpen] = React.useState(false);
   const items = [
     { q: t('discovery.q1'), a: t('discovery.fa1') },
     { q: t('discovery.q2'), a: t('discovery.fa2') },
@@ -42,10 +43,69 @@ export default function FaqSection() {
         <span className="text-white/80">
           <span className="font-extrabold text-white">{t('discovery.contactTitle')}</span> — {t('discovery.contactBody')}
         </span>
-        <a href="mailto:info@quvnoqtest.uz" className="btn-blue">
+        <button type="button" onClick={() => setOpen(true)} className="btn-blue">
           {t('discovery.contactCta')}
-        </a>
+        </button>
       </div>
+
+      {/* contact popup — Telegram channel + phone */}
+      {open && (
+        <div
+          className="fixed inset-0 z-[90] grid place-items-center p-4"
+          role="dialog"
+          aria-modal="true"
+          aria-label={t('discovery.contactModalTitle')}
+        >
+          <div className="absolute inset-0 bg-ink/70 backdrop-blur-sm" onClick={() => setOpen(false)} />
+          <div className="relative w-full max-w-sm rounded-3xl border border-white/15 bg-[#101f4a] p-6 text-white shadow-2xl">
+            <div className="flex items-start justify-between gap-4">
+              <h3 className="text-xl font-black">{t('discovery.contactModalTitle')}</h3>
+              <button
+                type="button"
+                onClick={() => setOpen(false)}
+                aria-label="✕"
+                className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/20 bg-white/10 font-black transition-colors hover:bg-white/20"
+              >
+                ✕
+              </button>
+            </div>
+
+            <div className="mt-5 space-y-3">
+              <a
+                href="https://t.me/QuvnoqTest"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 rounded-2xl border border-white/12 bg-white/[0.06] px-4 py-3.5 font-extrabold transition-colors hover:bg-white/[0.12]"
+              >
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[#2AABEE] text-white">
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden>
+                    <path d="M21.9 4.3 18.6 20c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9-8.1c.4-.3-.1-.5-.6-.2L6.4 13.6l-4.8-1.5c-1-.3-1-1 .2-1.5l18.7-7.2c.9-.3 1.6.2 1.4 1z" />
+                  </svg>
+                </span>
+                <span>
+                  <span className="block text-xs font-bold uppercase tracking-wide text-white/55">Telegram</span>
+                  @QuvnoqTest
+                </span>
+              </a>
+
+              <a
+                href="tel:+998951407707"
+                className="flex items-center gap-3 rounded-2xl border border-white/12 bg-white/[0.06] px-4 py-3.5 font-extrabold transition-colors hover:bg-white/[0.12]"
+              >
+                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-brand-green text-white">
+                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden>
+                    <path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.7.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.7.1.3 0 .7-.2 1l-2.2 2.1z" />
+                  </svg>
+                </span>
+                <span>
+                  <span className="block text-xs font-bold uppercase tracking-wide text-white/55">Telefon</span>
+                  +998 95 140 77 07
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

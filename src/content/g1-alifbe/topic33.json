@@ -1,0 +1,100 @@
+{
+  "topicId": "g1-alifbe-33",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🐰❄️👂",
+  "title": { "uz": "«Q q» harfi", "ru": "Буква «Q q»", "en": "The letter “Q q”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «Q q». U undosh tovush. Uni aytganda havo toʻsiqqa uchraydi va shovqin bilan chiqadi. «Q» «O» va «Oʻ»ga oʻxshaydi, ammo dumi bor. «Q» bilan: quyon, qor, quloq, qalam.",
+    "ru": "Сегодня наша буква — «Q q». Это согласный звук. Воздух встречает преграду и выходит с шумом. «Q» похожа на «O» и «Oʻ», но с хвостиком. Слова: quyon, qor, quloq, qalam.",
+    "en": "Today's letter is “Q q”. It is a consonant. The air meets a block and leaves with a burst. “Q” looks like “O” and “Oʻ” but has a tail. Words: quyon, qor, quloq, qalam."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Q» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «Q»!", "en": "Find the word that starts with “Q”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: q-q-quyon.", "ru": "Протяни начало: қ-қ-quyon.", "en": "Stretch the start: q-q-quyon." },
+      "explanation": { "uz": "«quyon» «Q» tovushi bilan boshlanadi.", "ru": "«quyon» начинается со звука «Q».", "en": "“quyon” (rabbit) starts with the sound “Q”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "rabbit", "emoji": "🐰", "label": { "uz": "quyon", "ru": "quyon", "en": "quyon" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Q» harfini topib, hammasini bos!", "ru": "Найди букву «Q» и нажми на все!", "en": "Find the letter “Q” and tap them all!" },
+      "hint": { "uz": "«Q»ning dumi bor — «O»dan farqi shu.", "ru": "У «Q» есть хвостик — этим она отличается от «O».", "en": "“Q” has a tail — that is how it differs from “O”." },
+      "explanation": { "uz": "«Q»ni «O»dan dumi bilan ajratding!", "ru": "Ты отличил «Q» от «O» по хвостику!", "en": "You told “Q” apart from “O” by its tail!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "Q", "cols": 3, "grid": ["Q", "o", "q", "O", "Q", "u", "q", "a", "Q"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "❄️ «qor»da «q» tovushi qaysi katakchada?", "ru": "❄️ В какой клетке звук «q» в слове «qor»?", "en": "❄️ Which box has the “q” sound in “qor”?" },
+      "hint": { "uz": "«qor» «q» bilan boshlanadi.", "ru": "«qor» начинается с «q».", "en": "“qor” starts with “q”." },
+      "explanation": { "uz": "«qor»da «q» — birinchi katakda.", "ru": "В «qor» звук «q» — первая клетка.", "en": "In “qor” the “q” is in the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "❄️", "word": { "uz": "qor", "ru": "qor", "en": "qor" }, "sound": "q", "cells": ["q", "o", "r"], "answer": 0 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "❄️ «qor» soʻzining tovush chizmasini rangla!", "ru": "❄️ Раскрась схему звуков слова «qor»!", "en": "❄️ Colour the sound scheme of “qor”!" },
+      "hint": { "uz": "q — undosh, o — unli, r — undosh.", "ru": "q — согласный, o — гласный, r — согласный.", "en": "q consonant, o vowel, r consonant." },
+      "explanation": { "uz": "«qor»: q, o, r — undosh, unli, undosh.", "ru": "«qor»: согласный, гласный, согласный.", "en": "“qor”: consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "❄️", "word": { "uz": "qor", "ru": "qor", "en": "qor" }, "scheme": ["c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Q» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «Q»!", "en": "Tap the words that have the “Q” sound!" },
+      "hint": { "uz": "quyon, qor, quloq — «q» tovushi bor.", "ru": "quyon, qor, quloq — есть звук «q».", "en": "quyon, qor, quloq have the “q” sound." },
+      "explanation": { "uz": "quyon, qor, quloq — «q» bor. ot, olmada yoʻq.", "ru": "quyon, qor, quloq — есть «q». В ot, olma нет.", "en": "quyon, qor, quloq have “q”. ot, olma do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "rabbit", "emoji": "🐰", "label": { "uz": "quyon", "ru": "quyon", "en": "quyon" }, "correct": true },
+        { "id": "snow", "emoji": "❄️", "label": { "uz": "qor", "ru": "qor", "en": "qor" }, "correct": true },
+        { "id": "ear", "emoji": "👂", "label": { "uz": "quloq", "ru": "quloq", "en": "quloq" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "👂 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!", "ru": "👂 Прочитай и нажми верно написанное слово!", "en": "👂 Read and tap the correctly spelled word!" },
+      "hint": { "uz": "Soʻz «q» bilan boshlanadi: qu-loq.", "ru": "Слово начинается с «q»: qu-loq.", "en": "The word starts with “q”: qu-loq." },
+      "explanation": { "uz": "Toʻgʻri yozilishi — «quloq».", "ru": "Верное написание — «quloq».", "en": "The correct spelling is “quloq”." },
+      "widget": { "type": "read_word", "props": { "emoji": "👂", "options": [
+        { "id": "ok", "word": "quloq", "correct": true },
+        { "id": "w1", "word": "kuloq" },
+        { "id": "w2", "word": "guloq" }
+      ] } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «quyon» soʻzini tuz!", "ru": "Составь слово «quyon» из букв!", "en": "Build the word “quyon” from letters!" },
+      "hint": { "uz": "q — u — y — o — n tartibida bos.", "ru": "Нажимай: q — u — y — o — n.", "en": "Tap in order: q — u — y — o — n." },
+      "explanation": { "uz": "q + u + y + o + n = «quyon».", "ru": "q + u + y + o + n = «quyon».", "en": "q + u + y + o + n = “quyon” (rabbit)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🐰", "word": "quyon", "label": { "uz": "quyon", "ru": "заяц", "en": "rabbit" } } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Q» — undosh tovush.", "ru": "«Q» — согласный звук.", "en": "“Q” is a consonant sound." },
+      "hint": { "uz": "«Q»da havo toʻsiqqa uchraydi.", "ru": "При «Q» воздух встречает преграду.", "en": "For “Q” the air meets a block." },
+      "explanation": { "uz": "Toʻgʻri! «Q» — undosh tovush.", "ru": "Верно! «Q» — согласный.", "en": "True! “Q” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«q» tovushi yoʻq ortiqcha soʻzni top!", "ru": "Найди лишнее слово — без звука «q»!", "en": "Tap the odd word — the one without the “q” sound!" },
+      "hint": { "uz": "quyon, qor, quloqda «q» bor; birida yoʻq.", "ru": "В quyon, qor, quloq есть «q»; в одном — нет.", "en": "quyon, qor, quloq have “q”; one does not." },
+      "explanation": { "uz": "«ot»da «q» yoʻq — u ortiqcha.", "ru": "В «ot» нет «q» — оно лишнее.", "en": "“ot” has no “q” — it is the odd one." },
+      "widget": { "type": "odd_one_out", "props": {
+        "clue": { "uz": "«q» tovushi bor soʻzlar", "ru": "слова со звуком «q»", "en": "words with the “q” sound" },
+        "tiles": [{ "text": "quyon" }, { "text": "qor" }, { "text": "quloq" }, { "text": "ot", "odd": true }]
+      } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Q» harfi qaysi harflarga oʻxshaydi?", "ru": "На какие буквы похожа «Q»?", "en": "Which letters does “Q” look like?" },
+      "hint": { "uz": "U yumaloq, ammo dumi bor.", "ru": "Она круглая, но с хвостиком.", "en": "It is round but has a tail." },
+      "explanation": { "uz": "«Q» «O» va «Oʻ»ga oʻxshaydi, dumi bilan farq qiladi.", "ru": "«Q» похожа на «O» и «Oʻ», отличается хвостиком.", "en": "“Q” resembles “O” and “Oʻ”, differing by its tail." },
+      "widget": { "type": "mcq", "props": { "choices": ["O va Oʻ", "T va N", "I va L"], "answerIndex": 0 } }
+    }
+  ]
+}

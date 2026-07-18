@@ -2,10 +2,8 @@
 
 import * as React from 'react';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { useReducedMotion } from 'framer-motion';
-import { useSound } from '@/components/providers/SoundProvider';
 import { Atom, Dna } from './Science';
 
 /* =============================================================================
@@ -69,44 +67,37 @@ function GoldenSpiral() {
     </svg>
   );
 }
-function DeviceTrio() {
-  return (
-    <svg viewBox="0 0 200 110" className="h-24 w-auto" fill="none" stroke="currentColor" strokeWidth="3" aria-hidden>
-      <rect x="40" y="14" width="110" height="68" rx="6" />
-      <line x1="30" y1="90" x2="160" y2="90" strokeWidth="5" strokeLinecap="round" />
-      <rect x="158" y="40" width="34" height="58" rx="6" />
-      <circle cx="175" cy="90" r="2.4" fill="currentColor" />
-      <circle cx="95" cy="48" r="13" />
-      <path d="M88 48a7 7 0 0 1 14 0" />
-    </svg>
-  );
-}
-
 /* ---- hidden science scattered across the dark space ---- */
 type Sci = { x: string; y: string; node: React.ReactNode; cls?: string };
+/* Positioned in a RING around the centred hero box — the top/bottom bands and the
+   left/right margins — so a lit formula never sits behind the headline text. */
 const SCIENCE: Sci[] = [
-  { x: '5%', y: '6%', node: 'E = mc²', cls: 'text-3xl font-black' },
+  // top band
+  { x: '5%', y: '5%', node: 'E = mc²', cls: 'text-3xl font-black' },
   { x: '68%', y: '4%', node: 'a² + b² = c²', cls: 'text-2xl font-bold' },
-  { x: '30%', y: '11%', node: 'πr²', cls: 'text-2xl font-bold text-cyan-200' },
-  { x: '85%', y: '14%', node: <BarChart />, cls: 'text-emerald-300' },
-  { x: '8%', y: '20%', node: 'F = ma', cls: 'text-xl font-bold' },
-  { x: '52%', y: '17%', node: 'x = (−b ± √(b²−4ac)) / 2a', cls: 'text-lg font-semibold text-violet-200' },
-  { x: '74%', y: '24%', node: 'φ = (1 + √5) / 2', cls: 'text-xl font-bold text-yellow-200' },
-  { x: '12%', y: '33%', node: <SineWave />, cls: 'text-sky-300' },
-  { x: '60%', y: '31%', node: 'PV = nRT', cls: 'text-xl font-bold' },
-  { x: '34%', y: '40%', node: '1 1 2 3 5 8 13 21 34 55', cls: 'text-base font-semibold text-cyan-200' },
-  { x: '82%', y: '38%', node: <GoldenSpiral />, cls: 'text-amber-200' },
-  { x: '6%', y: '48%', node: 'H₂O · CO₂ · NaCl', cls: 'text-lg font-bold text-emerald-200' },
-  { x: '55%', y: '47%', node: 'v = λf', cls: 'text-xl font-bold' },
-  { x: '24%', y: '56%', node: 'E = hf', cls: 'text-xl font-bold text-violet-200' },
-  { x: '70%', y: '57%', node: '∑ n = n(n+1)/2', cls: 'text-lg font-semibold' },
-  { x: '88%', y: '63%', node: <Atom className="h-16 w-16" />, cls: 'text-fuchsia-300' },
-  { x: '10%', y: '66%', node: '∫ f(x) dx', cls: 'text-2xl font-bold text-cyan-200' },
-  { x: '44%', y: '70%', node: 'sin²θ + cos²θ = 1', cls: 'text-lg font-semibold' },
-  { x: '74%', y: '76%', node: <Dna className="h-16 w-16" />, cls: 'text-emerald-300' },
-  { x: '16%', y: '80%', node: 'c = 299 792 458 m/s', cls: 'text-base font-semibold text-yellow-200' },
-  { x: '52%', y: '85%', node: 'p = mv', cls: 'text-xl font-bold' },
-  { x: '30%', y: '90%', node: 'λ = h / p', cls: 'text-lg font-semibold text-violet-200' }
+  { x: '33%', y: '8%', node: 'πr²', cls: 'text-2xl font-bold text-cyan-200' },
+  { x: '87%', y: '11%', node: <BarChart />, cls: 'text-emerald-300' },
+  { x: '15%', y: '13%', node: 'F = ma', cls: 'text-xl font-bold' },
+  { x: '50%', y: '13%', node: 'x = (−b ± √(b²−4ac)) / 2a', cls: 'text-lg font-semibold text-violet-200' },
+  // left margin
+  { x: '3%', y: '30%', node: <SineWave />, cls: 'text-sky-300' },
+  { x: '2%', y: '46%', node: 'H₂O · CO₂ · NaCl', cls: 'text-lg font-bold text-emerald-200' },
+  { x: '4%', y: '58%', node: 'E = hf', cls: 'text-xl font-bold text-violet-200' },
+  { x: '2%', y: '70%', node: '∫ f(x) dx', cls: 'text-2xl font-bold text-cyan-200' },
+  // right margin
+  { x: '86%', y: '28%', node: 'φ = (1 + √5) / 2', cls: 'text-xl font-bold text-yellow-200' },
+  { x: '88%', y: '40%', node: <GoldenSpiral />, cls: 'text-amber-200' },
+  { x: '87%', y: '55%', node: 'PV = nRT', cls: 'text-xl font-bold' },
+  { x: '89%', y: '66%', node: <Atom className="h-16 w-16" />, cls: 'text-fuchsia-300' },
+  // bottom band
+  { x: '10%', y: '84%', node: 'c = 299 792 458 m/s', cls: 'text-base font-semibold text-yellow-200' },
+  { x: '34%', y: '88%', node: '1 1 2 3 5 8 13 21 34 55', cls: 'text-base font-semibold text-cyan-200' },
+  { x: '46%', y: '80%', node: 'sin²θ + cos²θ = 1', cls: 'text-lg font-semibold' },
+  { x: '64%', y: '88%', node: 'p = mv', cls: 'text-xl font-bold' },
+  { x: '76%', y: '80%', node: <Dna className="h-16 w-16" />, cls: 'text-emerald-300' },
+  { x: '22%', y: '92%', node: 'λ = h / p', cls: 'text-lg font-semibold text-violet-200' },
+  { x: '58%', y: '94%', node: '∑ n = n(n+1)/2', cls: 'text-lg font-semibold' },
+  { x: '80%', y: '94%', node: 'v = λf', cls: 'text-xl font-bold' }
 ];
 
 /* periodic-table style cell used inside the hidden layer */
@@ -124,8 +115,6 @@ function PeriodicCell({ x, y }: { x: string; y: string }) {
 
 export default function FlashlightDiscovery() {
   const t = useTranslations('landing');
-  const router = useRouter();
-  const { play } = useSound();
   const reduce = useReducedMotion();
 
   const ref = useRef<HTMLElement>(null);
@@ -171,14 +160,6 @@ export default function FlashlightDiscovery() {
 
   const interactive = !reduce;
 
-  const goUpgrade = () => {
-    play('pop');
-    router.push('/upgrade');
-  };
-  const goDemo = () => {
-    play('win');
-    router.push('/lesson/g1-math-01');
-  };
 
   return (
     <section
@@ -213,8 +194,8 @@ export default function FlashlightDiscovery() {
             {s.node}
           </span>
         ))}
-        <PeriodicCell x="62%" y="66%" />
-        <div className="sci-item" style={{ left: '40%', top: '24%' }} aria-hidden>
+        <PeriodicCell x="92%" y="76%" />
+        <div className="sci-item" style={{ left: '6%', top: '18%' }} aria-hidden>
           <table className="border-collapse text-xs text-cyan-200/90">
             <tbody>
               <tr>
@@ -234,64 +215,25 @@ export default function FlashlightDiscovery() {
         </div>
       </div>
 
-      {/* content boxes */}
-      <div className="relative z-10 mx-auto max-w-6xl px-5 py-24">
-        <div data-scroll-offset className="text-center">
-          <h2 className="text-3xl font-black text-white sm:text-4xl">{t('discovery.title')}</h2>
-          <p className="mt-2 text-sm font-semibold text-white/55">{interactive ? t('discovery.hint') : t('discovery.hintTap')}</p>
-        </div>
-
-        <div className="mt-16 space-y-24">
-          {/* learning is fun (left) */}
-          <div className="flex justify-start">
-            <div data-scroll-offset className="from-left discovery-box glass relative z-10 w-full max-w-2xl rounded-3xl p-6 text-white sm:p-8">
-              <h3 className="text-2xl font-black text-brand-orange">{t('discovery.learnTitle')}</h3>
-              <p className="mt-4 leading-relaxed text-white/80">{t('discovery.learnBody')}</p>
-              <ul className="mt-5 space-y-2.5">
-                {[t('discovery.c1'), t('discovery.c2'), t('discovery.c3'), t('discovery.c4')].map((c, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-sm text-white/85">
-                    <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-brand-green/25 text-brand-green">✓</span>
-                    {c}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* devices (right) */}
-          <div className="flex justify-end">
-            <div data-scroll-offset className="from-right discovery-box glass relative z-10 flex w-full max-w-xl flex-col items-start gap-5 rounded-3xl p-6 text-white sm:flex-row sm:items-center sm:p-8">
-              <div className="text-cyan-300">
-                <DeviceTrio />
-              </div>
-              <div>
-                <h3 className="text-2xl font-black">{t('discovery.devTitle')}</h3>
-                <p className="mt-2 text-sm text-white/75">{t('discovery.devBody')}</p>
-              </div>
-            </div>
-          </div>
-
-          {/* pricing (left) */}
-          <div className="flex justify-start">
-            <div data-scroll-offset className="from-left relative z-10 grid w-full max-w-2xl gap-4 sm:grid-cols-2">
-              <div className="discovery-box glass rounded-3xl p-6 text-white">
-                <h3 className="text-lg font-black">{t('discovery.p1t')}</h3>
-                <p className="mt-1 text-sm text-white/70">{t('discovery.p1b')}</p>
-                <div className="mt-5 text-3xl font-black text-brand-orange">{t('discovery.p1price')}</div>
-                <button onClick={goUpgrade} className="btn-primary mt-5 w-full text-base">
-                  {t('discovery.p1cta')}
-                </button>
-              </div>
-              <div className="discovery-box glass rounded-3xl border-brand-green/30 p-6 text-white">
-                <h3 className="text-lg font-black">{t('discovery.p2t')}</h3>
-                <p className="mt-1 text-sm text-white/70">{t('discovery.p2b')}</p>
-                <div className="mt-5 text-3xl font-black text-brand-green">{t('discovery.p2price')}</div>
-                <button onClick={goDemo} className="btn-blue mt-5 w-full text-base">
-                  {t('discovery.p2cta')}
-                </button>
-              </div>
-            </div>
-          </div>
+      {/* single hero box, centred — the science elements live AROUND it (see the
+          `sci-item` positions above), never behind the text. */}
+      <div className="relative z-10 mx-auto grid min-h-[86vh] max-w-4xl place-items-center px-5 py-24">
+        <div
+          data-scroll-offset
+          className="discovery-box glass relative z-10 w-full rounded-[28px] p-7 text-center text-white shadow-2xl sm:p-12"
+        >
+          <h3 className="text-3xl font-black leading-tight text-brand-orange sm:text-5xl">{t('discovery.learnTitle')}</h3>
+          <p className="mx-auto mt-6 max-w-2xl text-base font-semibold leading-relaxed text-white/85 sm:text-lg">
+            {t('discovery.learnBody')}
+          </p>
+          <ul className="mx-auto mt-8 max-w-2xl space-y-3.5 text-left">
+            {[t('discovery.c1'), t('discovery.c2'), t('discovery.c3'), t('discovery.c4')].map((c, i) => (
+              <li key={i} className="flex items-start gap-3 text-[15px] font-semibold text-white/90 sm:text-base">
+                <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-brand-green/25 text-brand-green">✓</span>
+                {c}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 

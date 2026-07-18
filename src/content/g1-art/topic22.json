@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-22", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Guldondagi gul — sachratish", "ru": "Цветы в вазе — разбрызгивание", "en": "Flowers in a vase — splatter" },
+  "recall": {
+    "uz": "Sachratish usulida choʻtkadan boʻyoqni sachratib, gullar hosil qilamiz. Bu qiziqarli usul bilan rang-barang gullarni chizamiz.",
+    "ru": "В приёме разбрызгивания мы стряхиваем краску с кисти и получаем цветы. Этим приёмом рисуем разноцветные цветы.",
+    "en": "In the splatter technique we flick paint off the brush to make flowers. Let's draw colourful flowers this way."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Namunaga qarab, rang-barang gullar chiz.", "ru": "Глядя на образец, нарисуй разноцветные цветы.", "en": "Looking at the model, draw colourful flowers." },
+      "hint": { "uz": "Koʻp mayda nuqta va dogʻlar — gullar.", "ru": "Много точек и пятен — это цветы.", "en": "Many dots and blobs are flowers." },
+      "explanation": { "uz": "Rang-barang gullar!", "ru": "Разноцветные цветы!", "en": "Colourful flowers!" },
+      "widget": { "type": "free_draw", "props": { "example": "flower" } } }
+  ]
+}

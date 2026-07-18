@@ -1,0 +1,510 @@
+{
+  "topicId": "g1-alifbe-36",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🕐🥛🍎",
+  "title": {
+    "uz": "«S s» — oʻqish mashqi",
+    "ru": "Буква «S s» — чтение",
+    "en": "Letter “S s” — reading"
+  },
+  "recall": {
+    "uz": "«S» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: soat, sut. «S» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «S». Теперь читаем слова: soat, sut. «S» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “S”. Now we read words: soat, sut. “S” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🕐 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🕐 Прочитай и нажми верно написанное слово!",
+        "en": "🕐 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «soat».",
+        "ru": "Прочитай: «soat».",
+        "en": "Read it: “soat”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «soat».",
+        "ru": "Верно — «soat».",
+        "en": "Correct — “soat”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🕐",
+          "options": [
+            {
+              "id": "ok",
+              "word": "soat",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "zoat"
+            },
+            {
+              "id": "w2",
+              "word": "soad"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «soat» soʻzini tuz!",
+        "ru": "Составь слово «soat»!",
+        "en": "Build the word “soat”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «soat» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «soat».",
+        "en": "Great! You read “soat”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🕐",
+          "word": "soat",
+          "label": {
+            "uz": "soat",
+            "ru": "часы",
+            "en": "clock"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🕐 «soat»da «s» tovushi qaysi katakchada?",
+        "ru": "🕐 В какой клетке звук «s» в слове «soat»?",
+        "en": "🕐 Which box has the “s” sound in “soat”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«soat»da «s» tovushi toʻgʻri joyda.",
+        "ru": "В «soat» звук «s» на верном месте.",
+        "en": "In “soat” the “s” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🕐",
+          "word": {
+            "uz": "soat",
+            "ru": "soat",
+            "en": "soat"
+          },
+          "sound": "s",
+          "cells": [
+            "s",
+            "o",
+            "a",
+            "t"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🕐 «soat» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🕐 Похлопай слово «soat» по слогам!",
+        "en": "🕐 Clap the word “soat” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«soat» — 2 boʻgʻin.",
+        "ru": "«soat» — 2 слога.",
+        "en": "“soat” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🕐",
+          "word": {
+            "uz": "soat",
+            "ru": "soat",
+            "en": "soat"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«S» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «S»!",
+        "en": "Tap the words that have the “S” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «s» tovushi bor.",
+        "ru": "Верно! В них есть звук «s».",
+        "en": "Right! They have the “s” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🕐",
+              "label": {
+                "uz": "soat",
+                "ru": "soat",
+                "en": "soat"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🥛",
+              "label": {
+                "uz": "sut",
+                "ru": "sut",
+                "en": "sut"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            },
+            {
+              "id": "d2",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«soat» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «soat». Найди картинку!",
+        "en": "Read “soat”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«soat» — 🕐.",
+        "ru": "«soat» — 🕐.",
+        "en": "“soat” is 🕐."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🕐",
+              "label": {
+                "uz": "soat",
+                "ru": "часы",
+                "en": "clock"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🥛",
+              "label": {
+                "uz": "sut",
+                "ru": "sut",
+                "en": "sut"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🕐"
+              },
+              "right": {
+                "label": {
+                  "uz": "soat",
+                  "ru": "soat",
+                  "en": "soat"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🥛"
+              },
+              "right": {
+                "label": {
+                  "uz": "sut",
+                  "ru": "sut",
+                  "en": "sut"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍞"
+              },
+              "right": {
+                "label": {
+                  "uz": "non",
+                  "ru": "non",
+                  "en": "non"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Sara … oldi.",
+        "ru": "Составь предложение: Sara … oldi.",
+        "en": "Order the words: Sara … oldi."
+      },
+      "hint": {
+        "uz": "Sara — sut — oldi.",
+        "ru": "Sara — sut — oldi.",
+        "en": "Sara — sut — oldi."
+      },
+      "explanation": {
+        "uz": "«Sara sut oldi.» — gap oʻqiding!",
+        "ru": "«Sara sut oldi.» — предложение!",
+        "en": "“Sara sut oldi.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Sara",
+                "ru": "Sara",
+                "en": "Sara"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "sut",
+                "ru": "sut",
+                "en": "sut"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🕐"
+              },
+              "b": {
+                "label": {
+                  "uz": "soat",
+                  "ru": "soat",
+                  "en": "soat"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🥛"
+              },
+              "b": {
+                "label": {
+                  "uz": "sut",
+                  "ru": "sut",
+                  "en": "sut"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«soat» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «soat»?",
+        "en": "How many sounds are in “soat”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«soat»da 4 ta tovush bor.",
+        "ru": "В «soat» 4 звука.",
+        "en": "“soat” has 4 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

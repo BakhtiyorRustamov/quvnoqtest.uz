@@ -1,0 +1,165 @@
+{
+  "topicId": "g1-oqish-41",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "☁️💧📖",
+  "title": {
+    "uz": "Zahiriddin Muhammad Bobur",
+    "ru": "Захириддин Мухаммад Бабур",
+    "en": "Zahiriddin Muhammad Bobur"
+  },
+  "recall": {
+    "uz": "Yosh Bobur va onasining bulutlar haqidagi suhbatini tinglab oʻqiymiz va qaysi gap kimga tegishli ekanini topamiz.",
+    "ru": "Слушаем разговор юного Бабура с мамой о облаках и определяем, кому принадлежит каждая реплика.",
+    "en": "We read a talk between young Bobur and his mother about clouds and find out who says each line."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Ona sabogʻi",
+        "variant": "story",
+        "audio": "g1-oqish-41-q1",
+        "lines": [
+          "Yoz oxirlab borar edi, osmon musaffo edi.",
+          "Yetti yashar Zahiriddin onasi yonida oʻtirardi.",
+          "U osmondagi paxtaday oq bulutlarga tikilib qoldi.",
+          "— Onajon, bulutlarni qoʻl bilan tutib boʻladimi? — soʻradi u.",
+          "— Yoʻq, bolajonim, — kuldi onasi.",
+          "— Ular momiqday koʻrinsa ham, aslida suv zarralari.",
+          "— Ular faqat bugʻ holatida boʻladi.",
+          "— Yomgʻir yoki qor boʻlib yoqqandagina qoʻlingga tegadi.",
+          "— Haa, endi angladim! — dedi Zahiriddin."
+        ]
+      } },
+      "prompt": { "uz": "Suhbatni tinglab, ergashib oʻqing!", "ru": "Послушай и читай разговор, следя за текстом!", "en": "Listen and follow along as you read the talk!" },
+      "hint": { "uz": "Bobur onasidan nimani soʻradi?", "ru": "О чём Бабур спросил маму?", "en": "What did Bobur ask his mother?" },
+      "explanation": { "uz": "Suhbatda yosh Bobur bulutlar nima ekanini onasidan oʻrganadi.", "ru": "В разговоре юный Бабур узнаёт у мамы, что такое облака.", "en": "In the talk, young Bobur learns from his mother what clouds are." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "who_said", "props": {
+        "characters": [
+          { "name": { "uz": "Zahiriddin", "ru": "Захириддин", "en": "Zahiriddin" }, "emoji": "☁️" },
+          { "name": { "uz": "Onasi", "ru": "Мама", "en": "Mother" }, "emoji": "💗" }
+        ],
+        "quotes": [
+          { "text": { "uz": "Bulutlarni qoʻl bilan tutib boʻladimi?", "ru": "Можно ли поймать облака рукой?", "en": "Can you catch clouds with your hand?" }, "speaker": 0 },
+          { "text": { "uz": "Ular aslida suv zarralari.", "ru": "На самом деле это капельки воды.", "en": "They are really water droplets." }, "speaker": 1 },
+          { "text": { "uz": "Haa, endi angladim!", "ru": "Аа, теперь понял!", "en": "Ah, now I understand!" }, "speaker": 0 }
+        ]
+      } },
+      "prompt": { "uz": "Bu gaplarni kim aytdi? Qahramonni tanla!", "ru": "Кто это сказал? Выбери героя!", "en": "Who said each line? Pick the character!" },
+      "hint": { "uz": "Bola savol beradi, ona tushuntiradi.", "ru": "Ребёнок спрашивает, мама объясняет.", "en": "The child asks; the mother explains." },
+      "explanation": { "uz": "Savol va «angladim» — Zahiriddinniki; tushuntirish — onasiniki.", "ru": "Вопрос и «понял» — Захириддина; объяснение — мамы.", "en": "The question and “I understand” are Zahiriddin's; the explanation is his mother's." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Bulutlar aslida suv zarralaridan iborat.", "ru": "Облака состоят из капелек воды.", "en": "Clouds are made of water droplets." },
+        "answer": "true",
+        "why": { "uz": "Ona «ular aslida suv zarralari» dedi.", "ru": "Мама сказала, что это капельки воды.", "en": "The mother said they are water droplets." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Ona bulutlar nima deb tushuntirdi?", "ru": "Как мама объяснила, что такое облака?", "en": "How did the mother explain clouds?" },
+      "explanation": { "uz": "Toʻgʻri: bulutlar suv zarralaridan iborat.", "ru": "Верно: облака состоят из капелек воды.", "en": "True: clouds are made of water droplets." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Bobur qishda qorbobo yasadi.", "ru": "Бабур зимой слепил снеговика.", "en": "Bobur built a snowman in winter." },
+        "answer": "ng",
+        "why": { "uz": "Suhbat yoz oxirida boʻlgan; qorbobo haqida gap yoʻq.", "ru": "Разговор был в конце лета; о снеговике ничего нет.", "en": "The talk was in late summer; a snowman is not mentioned." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Suhbat qaysi faslda boʻldi?", "ru": "В какое время года был разговор?", "en": "In which season did the talk happen?" },
+      "explanation": { "uz": "«Matnda yoʻq»: qorbobo haqida gap yoʻq.", "ru": "«Не сказано»: о снеговике речи нет.", "en": "“Not given”: no snowman is mentioned." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "momiq", "right": "yumshoq" },
+        { "left": "javdirab qaradi", "right": "termilib qaradi" },
+        { "left": "angladim", "right": "tushundim" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«momiq» — yumshoq, paxtaday.", "ru": "«momiq» — мягкий, как вата.", "en": "“momiq” means soft, like cotton." },
+      "explanation": { "uz": "momiq = yumshoq; javdirab qaradi = termilib qaradi; angladim = tushundim.", "ru": "momiq = мягкий; javdirab qaradi = засмотрелся; angladim = понял.", "en": "momiq = soft; javdirab qaradi = gazed; angladim = I understood." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "suv zarralaridan iborat", "match": true },
+        { "text": "bugʻdan hosil boʻladi", "match": true },
+        { "text": "yomgʻir boʻlib yogʻadi", "match": true },
+        { "text": "toshdan yasalgan", "match": false },
+        { "text": "qoʻl bilan ushlanadi", "match": false }
+      ] } },
+      "prompt": { "uz": "Bulut haqidagi toʻgʻri gaplarni bos!", "ru": "Нажми верные утверждения об облаке!", "en": "Tap the true facts about a cloud!" },
+      "hint": { "uz": "Ona bulut haqida nima dedi?", "ru": "Что мама сказала об облаке?", "en": "What did the mother say about clouds?" },
+      "explanation": { "uz": "Bulut — suv zarralaridan, bugʻdan hosil boʻladi va yomgʻir boʻlib yogʻadi.", "ru": "Облако из капелек воды, образуется из пара и выпадает дождём.", "en": "A cloud is water droplets, forms from vapour and falls as rain." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Bulut", "ru": "Облако", "en": "A cloud" },
+        { "uz": "Tosh", "ru": "Камень", "en": "A stone" },
+        { "uz": "Kitob", "ru": "Книга", "en": "A book" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Topishmoq: makoni osmon-u dengiz, kemadek suzar izsiz. Bu nima?", "ru": "Загадка: дом — небо и море, плывёт как корабль без следа. Что это?", "en": "Riddle: it lives in sky and sea, and drifts like a ship without a trace. What is it?" },
+      "hint": { "uz": "U osmonda suzadi va yomgʻir beradi.", "ru": "Оно плывёт по небу и даёт дождь.", "en": "It floats in the sky and brings rain." },
+      "explanation": { "uz": "Bu — bulut: osmonda suzadi, yomgʻir yogʻdiradi.", "ru": "Это облако: плывёт по небу и приносит дождь.", "en": "It's a cloud: it drifts in the sky and brings rain." },
+      "openEnd": { "uz": "Sen bulutlarni qanday shakllarga oʻxshatasan?", "ru": "На что похожи облака, по-твоему?", "en": "What shapes do clouds remind you of?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Bulut — ", "after": " zarralaridan iborat.", "choices": ["suv", "tosh", "qum"], "answer": "suv", "emoji": "💧", "clue": { "uz": "Bulut nimadan?", "ru": "Из чего облако?", "en": "What clouds are made of" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Ular yomgʻir boʻlib yogʻadi.", "ru": "Они выпадают дождём.", "en": "They fall as rain." },
+      "explanation": { "uz": "Bulut suv zarralaridan iborat, shuning uchun yomgʻir yogʻadi.", "ru": "Облако из капелек воды, поэтому идёт дождь.", "en": "A cloud is water droplets, so it rains." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Suv qizib," },
+          { "blank": "bugʻ" },
+          { "text": "ga aylanadi va yuqoriga koʻtarilib," },
+          { "blank": "bulut" },
+          { "text": "hosil qiladi." }
+        ],
+        "bank": ["bugʻ", "bulut", "muz"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Suv qizsa nima boʻladi, koʻkda nima paydo boʻladi?", "ru": "Что происходит при нагреве воды, что появляется в небе?", "en": "What happens when water heats, and what appears in the sky?" },
+      "explanation": { "uz": "«Suv qizib, bugʻga aylanadi va koʻtarilib, bulut hosil qiladi».", "ru": "«Вода нагревается, превращается в пар и, поднимаясь, образует облако».", "en": "“Water heats, turns to vapour and, rising, forms a cloud.”" }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "bulut", "syllables": ["bu", "lut"], "emoji": "☁️", "clue": { "uz": "Osmonda suzadigan suv zarralari", "ru": "Плывущие в небе капельки воды", "en": "Water droplets drifting in the sky" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "bu + lut = ?", "ru": "bu + lut = ?", "en": "bu + lut = ?" },
+      "explanation": { "uz": "bu-lut → bulut. Osmondagi suv zarralari.", "ru": "bu-lut → bulut (облако).", "en": "bu-lut → bulut (a cloud)." }
+    }
+  ]
+}

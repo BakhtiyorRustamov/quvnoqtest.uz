@@ -1,0 +1,421 @@
+{
+  "topicId": "g1-oqish-02",
+  "subjectKey": "g1-oqish",
+  "emojis": "🏡🇺🇿📖",
+  "title": {
+    "uz": "Vatan — eng aziz makon",
+    "ru": "Родина — самое дорогое место",
+    "en": "Homeland — the dearest place"
+  },
+  "recall": {
+    "uz": "Bugun «Vatan» haqidagi matnni oʻqiymiz. Vatan — inson tugʻilib oʻsgan yurt; uy, mahalla, qishloq va shahar ham kichik Vatandir. Avval alifbo yordamida bitta soʻzni ochamiz, soʻng matnni oʻqib, savollarga javob beramiz.",
+    "ru": "Сегодня читаем текст о Родине. Родина — это край, где человек родился и вырос; дом, махалля, кишлак и город — тоже малая Родина. Сначала с помощью алфавита разгадаем слово, потом прочитаем текст и ответим на вопросы.",
+    "en": "Today we read a text about the Homeland. The homeland is where a person is born and grows up; a home, neighbourhood, village and city are little homelands too. First we decode a word using the alphabet, then read the text and answer questions."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Vatan — eng aziz makon",
+          "variant": "story",
+          "audio": "g1-oqish-02-q1",
+          "lines": [
+            "Vatan — bu inson tugʻilib, voyaga yetgan yurt.",
+            "Sen yashaydigan uy, koʻcha, mahalla, qishloq yoki shahar ham kichik Vatandir.",
+            "Ularning barchasi birlashib, katta Vatan — mamlakatimizni tashkil etadi.",
+            "Vatan ona tuproqdan boshlanadi.",
+            "Uning har bir qarich yeri biz uchun qadrli.",
+            "Suv, havo va ota-ona qanchalik aziz boʻlsa, Vatan ham shunchalik aziz.",
+            "Dunyoda shaharu mamlakatlar koʻp.",
+            "Ammo har bir inson uchun oʻz Vatani — xuddi onasidek yagona va bebaho."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Matnni ifodali oʻqing!",
+        "ru": "Прочитай текст выразительно!",
+        "en": "Read the text aloud!"
+      },
+      "hint": {
+        "uz": "Har bir xatboshini alohida oʻqing.",
+        "ru": "Читай каждый абзац отдельно.",
+        "en": "Read each paragraph separately."
+      },
+      "explanation": {
+        "uz": "Matn Vatan naqadar aziz ekani haqida.",
+        "ru": "Текст о том, как дорога Родина.",
+        "en": "The text is about how dear the homeland is."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "VATAN",
+            "MAKON",
+            "ONA",
+            "UYIM"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Har bir raqam alifbodagi harf tartibiga mos: 21, 1, 19, 1, 13. Qaysi soʻz hosil boʻladi?",
+        "ru": "Каждое число — порядковый номер буквы в алфавите: 21, 1, 19, 1, 13. Какое слово получится?",
+        "en": "Each number is a letter's position in the alphabet: 21, 1, 19, 1, 13. Which word do they spell?"
+      },
+      "hint": {
+        "uz": "Alifbo tartibi: A=1, T=19, V=21, N=13.",
+        "ru": "Алфавит: A=1, T=19, V=21, N=13.",
+        "en": "Alphabet: A=1, T=19, V=21, N=13."
+      },
+      "explanation": {
+        "uz": "21=V, 1=A, 19=T, 1=A, 13=N → VATAN.",
+        "ru": "21=V, 1=A, 19=T, 1=A, 13=N → VATAN.",
+        "en": "21=V, 1=A, 19=T, 1=A, 13=N → VATAN."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Vatan haqida",
+              "ru": "О Родине",
+              "en": "About the homeland"
+            },
+            {
+              "uz": "Sport haqida",
+              "ru": "О спорте",
+              "en": "About sport"
+            },
+            {
+              "uz": "Ovqat haqida",
+              "ru": "О еде",
+              "en": "About food"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Matn nima haqida?",
+        "ru": "О чём текст?",
+        "en": "What is the text about?"
+      },
+      "hint": {
+        "uz": "Sarlavhaga eʼtibor ber.",
+        "ru": "Обрати внимание на заголовок.",
+        "en": "Look at the title."
+      },
+      "explanation": {
+        "uz": "Matn — Vatan haqida.",
+        "ru": "Текст — о Родине.",
+        "en": "The text is about the homeland."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Ona tuproqdan",
+              "ru": "С родной земли",
+              "en": "From the native soil"
+            },
+            {
+              "uz": "Doʻkondan",
+              "ru": "С магазина",
+              "en": "From a shop"
+            },
+            {
+              "uz": "Osmondan",
+              "ru": "С неба",
+              "en": "From the sky"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Matnga koʻra, Vatan nimadan boshlanadi?",
+        "ru": "С чего начинается Родина по тексту?",
+        "en": "According to the text, where does the homeland begin?"
+      },
+      "hint": {
+        "uz": "«Vatan ona tuproqdan boshlanadi.»",
+        "ru": "«Родина начинается с родной земли.»",
+        "en": "“The homeland begins from the native soil.”"
+      },
+      "explanation": {
+        "uz": "Vatan ona tuproqdan — ona yerdan boshlanadi.",
+        "ru": "Родина начинается с родной земли.",
+        "en": "The homeland begins from the native soil."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Boshqa davlat",
+              "ru": "Другая страна",
+              "en": "Another country"
+            },
+            {
+              "uz": "Uy",
+              "ru": "Дом",
+              "en": "A home"
+            },
+            {
+              "uz": "Mahalla",
+              "ru": "Махалля",
+              "en": "A neighbourhood"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Quyidagilardan qaysi biri «kichik Vatan» emas?",
+        "ru": "Что из перечисленного НЕ является «малой Родиной»?",
+        "en": "Which of these is NOT a “little homeland”?"
+      },
+      "hint": {
+        "uz": "Uy, mahalla, qishloq — kichik Vatan.",
+        "ru": "Дом, махалля, кишлак — малая Родина.",
+        "en": "Home, neighbourhood, village are little homelands."
+      },
+      "explanation": {
+        "uz": "Uy, mahalla, qishloq — kichik Vatan; boshqa davlat esa oʻzganiki.",
+        "ru": "Дом, махалля, кишлак — малая Родина; другая страна — чужая.",
+        "en": "Home, neighbourhood, village are little homelands; another country is not yours."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "aziz",
+              "right": "qadrli"
+            },
+            {
+              "left": "makon",
+              "right": "yashash joyi"
+            },
+            {
+              "left": "yagona",
+              "right": "tengsiz"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«makon» — yashash joyi.",
+        "ru": "«makon» — место жительства.",
+        "en": "“makon” means a dwelling place."
+      },
+      "explanation": {
+        "uz": "aziz = qadrli; makon = yashash joyi; yagona = tengsiz, bir dona.",
+        "ru": "aziz = дорогой; makon = место жительства; yagona = единственный.",
+        "en": "aziz = dear; makon = dwelling place; yagona = unique."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Har bir inson uchun Vatan — ",
+          "after": "dek yagona.",
+          "choices": [
+            "ona",
+            "olma",
+            "shahar"
+          ],
+          "answer": "ona",
+          "emoji": "🌟",
+          "clue": {
+            "uz": "Vatan nimaga oʻxshatilgan?",
+            "ru": "С чем сравнивают Родину?",
+            "en": "What is the homeland compared to?"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Matnda Vatan onaga oʻxshatilgan.",
+        "ru": "В тексте Родину сравнивают с мамой.",
+        "en": "The text compares the homeland to a mother."
+      },
+      "explanation": {
+        "uz": "Vatan — onadek yagona va bebaho.",
+        "ru": "Родина — единственная, как мама.",
+        "en": "The homeland is unique, like a mother."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "vatan",
+          "letters": [
+            "v",
+            "a",
+            "t",
+            "a",
+            "n"
+          ],
+          "emoji": "🇺🇿",
+          "clue": {
+            "uz": "Tugʻilib oʻsgan yurt",
+            "ru": "Край, где ты родился",
+            "en": "The land where you were born"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Harflardan soʻzni yigʻ!",
+        "ru": "Собери слово из букв!",
+        "en": "Build the word from the letters!"
+      },
+      "hint": {
+        "uz": "21, 1, 19, 1, 13 raqamlari shu soʻzni berardi.",
+        "ru": "Это слово из цифр 21, 1, 19, 1, 13.",
+        "en": "The numbers 21, 1, 19, 1, 13 spelled this word."
+      },
+      "explanation": {
+        "uz": "«Vatan» — eng aziz makon.",
+        "ru": "«Vatan» (Родина) — самое дорогое место.",
+        "en": "“Vatan” (homeland) is the dearest place."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "uy",
+              "match": true
+            },
+            {
+              "text": "okean",
+              "match": false
+            },
+            {
+              "text": "mahalla",
+              "match": true
+            },
+            {
+              "text": "sayyora",
+              "match": false
+            },
+            {
+              "text": "shahar",
+              "match": true
+            },
+            {
+              "text": "yulduz",
+              "match": false
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "«Kichik Vatan» boʻla oladigan soʻzlarni bos!",
+        "ru": "Нажми слова, которые могут быть «малой Родиной»!",
+        "en": "Tap the words that can be a “little homeland”!"
+      },
+      "hint": {
+        "uz": "okean, sayyora, yulduz — Vatan emas.",
+        "ru": "океан, планета, звезда — не Родина.",
+        "en": "an ocean, a planet, a star are not a homeland."
+      },
+      "explanation": {
+        "uz": "Uy, mahalla, shahar — kichik Vatan boʻla oladi.",
+        "ru": "Дом, махалля, город — это малая Родина.",
+        "en": "A home, neighbourhood and city can be a little homeland."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Vatan",
+            "onadek",
+            "yagona."
+          ],
+          "emoji": "🏡",
+          "clue": {
+            "uz": "Vatan haqida hikmatli gap",
+            "ru": "Мудрая мысль о Родине",
+            "en": "A wise saying about the homeland"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan hikmatli gap tuz!",
+        "ru": "Составь мудрое предложение!",
+        "en": "Build the wise saying!"
+      },
+      "hint": {
+        "uz": "Vatan nimaga oʻxshaydi? — onaga.",
+        "ru": "На что похожа Родина? — на маму.",
+        "en": "What is the homeland like? — a mother."
+      },
+      "explanation": {
+        "uz": "Vatan onadek yagona — u bitta va bebaho.",
+        "ru": "Родина единственная, как мама.",
+        "en": "The homeland is unique like a mother — one and priceless."
+      }
+    }
+  ],
+  "skipRecall": true
+}

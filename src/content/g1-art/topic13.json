@@ -1,0 +1,18 @@
+{
+  "topicId": "g1-art-13", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Qor parchasi", "ru": "Снежинка", "en": "The snowflake" },
+  "recall": {
+    "uz": "Qor parchasi oppoq va olti qirrali boʻladi. Har bir qor parchasi betakror va goʻzal. Keling, qor parchasini chizamiz.",
+    "ru": "Снежинка белая и шестиугольная. Каждая снежинка неповторима и красива. Давай нарисуем снежинку.",
+    "en": "A snowflake is white and six-sided. Every snowflake is unique and beautiful. Let's draw a snowflake."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Namunaga qarab, qor parchasini chiz.", "ru": "Глядя на образец, нарисуй снежинку.", "en": "Looking at the model, draw a snowflake." },
+      "hint": { "uz": "Oltita bir xil shoxcha chiz.", "ru": "Нарисуй шесть одинаковых лучей.", "en": "Draw six matching arms." },
+      "explanation": { "uz": "Chiroyli qor parchasi!", "ru": "Красивая снежинка!", "en": "A lovely snowflake!" },
+      "widget": { "type": "free_draw", "props": { "example": "snowflake" } }
+    }
+  ]
+}

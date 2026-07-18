@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-54",
+  "subjectKey": "g1-ona",
+  "emojis": "🍎🧮✍️",
+  "title": {
+    "uz": "Miqdor — -ta va nafar",
+    "ru": "Количество — -ta и nafar",
+    "en": "Quantity — -ta and nafar"
+  },
+  "recall": {
+    "uz": "Sanoq soʻziga -ta qoʻshimchasini qoʻshib narsa miqdorini bildirgan soʻz yasaladi: toʻrt — toʻrtta, oʻn — oʻnta. Ammo shaxs (odam) sanog‘ida -ta ishlatilmaydi; uning oʻrniga «nafar» soʻzi qoʻllanadi: besh nafar bola, oʻttiz nafar oʻquvchi.",
+    "ru": "К слову-числу добавляют суффикс -ta, чтобы получить количество предметов: toʻrt — toʻrtta, oʻn — oʻnta. Но при счёте людей -ta не используют; вместо него ставят слово «nafar»: besh nafar bola, oʻttiz nafar oʻquvchi.",
+    "en": "Adding the suffix -ta to a number makes a quantity word for things: toʻrt — toʻrtta, oʻn — oʻnta. But for counting people, -ta is not used; instead the word “nafar” is used: besh nafar bola, oʻttiz nafar oʻquvchi."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "oʻn", "after": "", "choices": ["ta", "nchi", "lar"], "answer": "ta", "emoji": "🥜", "clue": { "uz": "Miqdor: Nechta yongʻoq?", "ru": "Количество: сколько орехов?", "en": "Quantity: how many nuts?" } } },
+      "prompt": { "uz": "Miqdor qoʻshimchasini qoʻy!", "ru": "Добавь суффикс количества!", "en": "Add the quantity suffix!" },
+      "hint": { "uz": "Narsa miqdori -ta bilan yasaladi.", "ru": "Количество предметов образуется суффиксом -ta.", "en": "The quantity of things is made with -ta." },
+      "explanation": { "uz": "oʻn + ta = «oʻnta» (Nechta? — oʻnta yongʻoq).", "ru": "oʻn + ta = «oʻnta» (сколько? — oʻnta орехов).", "en": "oʻn + ta = “oʻnta” (how many? — oʻnta nuts)." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "uch", "after": "", "choices": ["ta", "inchi", "dan"], "answer": "ta", "emoji": "🍎", "clue": { "uz": "Miqdor: Nechta olma?", "ru": "Количество: сколько яблок?", "en": "Quantity: how many apples?" } } },
+      "prompt": { "uz": "Miqdor qoʻshimchasini qoʻy!", "ru": "Добавь суффикс количества!", "en": "Add the quantity suffix!" },
+      "hint": { "uz": "Nechta? soʻrogʻiga javob — -ta.", "ru": "Ответ на «сколько штук?» — -ta.", "en": "The answer to “how many items?” is -ta." },
+      "explanation": { "uz": "uch + ta = «uchta» (Nechta? — uchta olma).", "ru": "uch + ta = «uchta» (сколько? — uchta яблока).", "en": "uch + ta = “uchta” (how many? — uchta apples)." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "nok", "bin": "ta" }, { "id": "b", "label": "olma", "bin": "ta" }, { "id": "c", "label": "kitob", "bin": "ta" }, { "id": "d", "label": "bola", "bin": "nafar" }, { "id": "e", "label": "oʻquvchi", "bin": "nafar" }, { "id": "f", "label": "ishchi", "bin": "nafar" } ], "bins": [ { "id": "ta", "label": "Narsa: -ta" }, { "id": "nafar", "label": "Odam: nafar" } ] } },
+      "prompt": { "uz": "Qaysi soʻz -ta, qaysi nafar bilan sanaladi?", "ru": "Что считается с -ta, а что с nafar?", "en": "Which take -ta and which take nafar?" },
+      "hint": { "uz": "Odamlar «nafar» bilan sanaladi.", "ru": "Людей считают со словом «nafar».", "en": "People are counted with “nafar”." },
+      "explanation": { "uz": "Narsa: uchta olma; odam: besh nafar bola.", "ru": "Предмет: uchta яблока; человек: besh nafar ребёнка.", "en": "Thing: uchta apples; person: besh nafar children." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Sinfda oʻttiz ", "after": " oʻquvchi bor.", "choices": ["nafar", "ta", "inchi"], "answer": "nafar", "emoji": "🧒", "clue": { "uz": "Odam sanog‘i qaysi soʻz bilan?", "ru": "Каким словом считают людей?", "en": "Which word counts people?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos soʻzni qoʻy!", "ru": "Вставь подходящее слово!", "en": "Fill the gap with the right word!" },
+      "hint": { "uz": "Oʻquvchi — odam, demak «nafar».", "ru": "Ученик — человек, значит «nafar».", "en": "A pupil is a person, so “nafar”." },
+      "explanation": { "uz": "Oʻttiz nafar oʻquvchi. Odamga -ta emas, «nafar» qoʻshiladi.", "ru": "Тридцать nafar учеников. К людям добавляют «nafar», а не -ta.", "en": "Thirty nafar pupils. People take “nafar”, not -ta." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Bogʻda beshta ", "after": " oʻsadi.", "choices": ["olma", "bola", "ishchi"], "answer": "olma", "emoji": "🌳", "clue": { "uz": "«-ta» qaysi soʻz bilan keladi?", "ru": "С каким словом идёт «-ta»?", "en": "Which word goes with “-ta”?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos soʻzni qoʻy!", "ru": "Вставь подходящее слово!", "en": "Fill the gap with the right word!" },
+      "hint": { "uz": "«-ta» narsa bilan keladi, odam bilan emas.", "ru": "«-ta» идёт с предметом, не с человеком.", "en": "“-ta” goes with a thing, not a person." },
+      "explanation": { "uz": "Beshta olma. «-ta» narsa (olma) miqdorini bildiradi.", "ru": "Пять яблок. «-ta» указывает количество предмета.", "en": "Five apples. “-ta” marks the quantity of a thing." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "olma" }, { "text": "nok" }, { "text": "kitob" }, { "text": "bola", "odd": true } ], "clue": { "uz": "Bularga -ta qoʻshiladi — bittasiga nafar", "ru": "К этим добавляют -ta — к одному nafar", "en": "These take -ta — one takes nafar" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Qaysi biri odam?", "ru": "Какое из них человек?", "en": "Which one is a person?" },
+      "explanation": { "uz": "«Bola» — odam, u «nafar» bilan sanaladi; qolganlari -ta bilan.", "ru": "«Bola» — человек, считается с «nafar»; остальные с -ta.", "en": "“Bola” is a person (counted with nafar); the rest take -ta." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "toʻrt", "right": "toʻrtta" }, { "left": "oʻn", "right": "oʻnta" }, { "left": "olti", "right": "oltita" }, { "left": "yetti", "right": "yettita" } ] } },
+      "prompt": { "uz": "Sanoq sonini miqdor soniga ula!", "ru": "Соедини число с количеством!", "en": "Match each count to its quantity form!" },
+      "hint": { "uz": "toʻrt — toʻrtta, oʻn — oʻnta.", "ru": "toʻrt — toʻrtta, oʻn — oʻnta.", "en": "toʻrt — toʻrtta, oʻn — oʻnta." },
+      "explanation": { "uz": "-ta qoʻshilib miqdor soni hosil boʻladi.", "ru": "С суффиксом -ta получается количество.", "en": "Adding -ta forms the quantity word." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Akam oʻn uchta ", "after": " sotib oldi.", "choices": ["kabutar", "bola", "oʻquvchi"], "answer": "kabutar", "emoji": "🕊️", "clue": { "uz": "«-ta» qaysi soʻz bilan keladi?", "ru": "С каким словом «-ta»?", "en": "Which word goes with “-ta”?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos soʻzni qoʻy!", "ru": "Вставь подходящее слово!", "en": "Fill the gap with the right word!" },
+      "hint": { "uz": "Kabutar — narsa (jonivor), -ta bilan sanaladi.", "ru": "Голубь считается с -ta.", "en": "A pigeon is counted with -ta." },
+      "explanation": { "uz": "Oʻn uchta kabutar. «-ta» narsa/jonivor bilan keladi.", "ru": "Тринадцать голубей. «-ta» — с предметом/животным.", "en": "Thirteen pigeons. “-ta” goes with a thing/animal." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["oʻn", "ta"], "emoji": "🔢", "clue": { "uz": "Miqdor soʻzi (Nechta?)", "ru": "Слово количества (Сколько штук?)", "en": "A quantity word (How many items?)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan miqdor soʻzini tuz!", "ru": "Собери слово количества из слогов!", "en": "Build the quantity word from syllables!" },
+      "hint": { "uz": "oʻn- … -ta.", "ru": "oʻn- … -ta.", "en": "oʻn- … -ta." },
+      "explanation": { "uz": "«Oʻnta» — miqdor soʻzi (Nechta? — oʻnta).", "ru": "«Oʻnta» — количество (Сколько? — oʻnta).", "en": "“Oʻnta” is a quantity word (How many? — oʻnta)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "bola", "match": true }, { "text": "olma", "match": false }, { "text": "oʻquvchi", "match": true }, { "text": "kitob", "match": false }, { "text": "ishchi", "match": true }, { "text": "nok", "match": false } ] } },
+      "prompt": { "uz": "«Nafar» bilan sanaladigan (odam) soʻzlarni bos!", "ru": "Нажми слова-люди (считаются с nafar)!", "en": "Tap the people words (counted with nafar)!" },
+      "hint": { "uz": "olma, kitob, nok — narsa, -ta bilan.", "ru": "olma, kitob, nok — предметы, с -ta.", "en": "olma, kitob, nok are things, with -ta." },
+      "explanation": { "uz": "bola, oʻquvchi, ishchi — odam, «nafar» bilan sanaladi.", "ru": "bola, oʻquvchi, ishchi — люди, считаются с «nafar».", "en": "bola, oʻquvchi, ishchi are people, counted with “nafar”." }
+    }
+  ]
+}

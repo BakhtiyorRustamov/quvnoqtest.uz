@@ -178,6 +178,16 @@ export function StarIcon({ className }: IconProps) {
   );
 }
 
+export function Trophy({ className }: IconProps) {
+  return (
+    <svg {...svg(className)}>
+      <path d="M20 10h24v14a12 12 0 0 1-24 0z" />
+      <path d="M20 14h-8v4a8 8 0 0 0 8 8M44 14h8v4a8 8 0 0 1-8 8" />
+      <path d="M32 36v10M24 54h16l-2-8H26z" />
+    </svg>
+  );
+}
+
 /* Per-grade icon + its hover behaviour (consumed by GlassCard). */
 export const GRADE_ICONS: Record<number, { Comp: React.FC<IconProps>; anim: string }> = {
   1: { Comp: Flask, anim: 'wobble' },

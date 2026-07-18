@@ -1,0 +1,21 @@
+{
+  "topicId": "g1-art-06",
+  "subjectKey": "g1-art",
+  "emojis": "",
+  "hideAudio": true,
+  "title": { "uz": "Kuzgi oʻrmon", "ru": "Осенний лес", "en": "The autumn forest" },
+  "recall": {
+    "uz": "Kuzgi oʻrmonda sariq daraxtlar, qoʻziqorinlar va toʻkilgan barglar boʻladi. Keling, oʻrmondagi qoʻziqorinni boʻyaymiz.",
+    "ru": "В осеннем лесу жёлтые деревья, грибы и опавшие листья. Давай раскрасим лесной гриб.",
+    "en": "In the autumn forest there are yellow trees, mushrooms and fallen leaves. Let's colour a forest mushroom."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Oʻrmondagi qoʻziqorinni boʻya.", "ru": "Раскрась лесной гриб.", "en": "Colour the forest mushroom." },
+      "hint": { "uz": "Qalpogʻini va oyogʻini boʻya.", "ru": "Раскрась шляпку и ножку.", "en": "Colour the cap and the stem." },
+      "explanation": { "uz": "Chiroyli qoʻziqorin!", "ru": "Красивый гриб!", "en": "A lovely mushroom!" },
+      "widget": { "type": "color_fill", "props": { "picture": "mushroom" } }
+    }
+  ]
+}

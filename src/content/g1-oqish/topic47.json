@@ -1,0 +1,170 @@
+{
+  "topicId": "g1-oqish-47",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🧩✏️📖",
+  "title": {
+    "uz": "Zukko boʻlgin, bolajon",
+    "ru": "Будь смекалистым, малыш",
+    "en": "Be clever, little one"
+  },
+  "recall": {
+    "uz": "Topishmoq va tez aytishlar bilan tanishamiz, zehnimizni oʻtkir qilamiz.",
+    "ru": "Знакомимся с загадками и скороговорками, тренируем сообразительность.",
+    "en": "We meet riddles and tongue-twisters and sharpen our wits."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Zukko bolajon",
+        "variant": "poem",
+        "audio": "g1-oqish-47-q1",
+        "lines": [
+          "Zehnimiz oʻtkir boʻlar,",
+          "Topishmoq topsak agar.",
+          "Har bir jumboq ichida",
+          "Bir sirli javob yashar.",
+          "",
+          "Tez aytishni aytaylik,",
+          "Tilni burro qilaylik."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Topishmoq zehnni qanday qiladi?", "ru": "Что делает загадка с умом?", "en": "What does a riddle do to the mind?" },
+      "explanation": { "uz": "Sheʼr topishmoq va tez aytish zehnni oʻtkir qilishi haqida.", "ru": "Стихотворение о том, как загадки и скороговорки развивают ум.", "en": "The poem is about how riddles and tongue-twisters sharpen the mind." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "riddle_solve", "props": {
+        "lines": [
+          { "uz": "Ongimizga nur sochar,", "ru": "Дарит свет нашему уму,", "en": "It sheds light on our mind," },
+          { "uz": "Sirlar eshigin ochar.", "ru": "Открывает двери тайн.", "en": "and opens the door to secrets." },
+          { "uz": "Uni koʻp oʻqigan bola", "ru": "Кто много его читает,", "en": "The child who reads it a lot" },
+          { "uz": "Dono boʻlib ulgʻayar.", "ru": "растёт мудрым.", "en": "grows up wise." }
+        ],
+        "options": [
+          { "emoji": "📖", "label": { "uz": "Kitob", "ru": "Книга", "en": "Book" }, "correct": true },
+          { "emoji": "⚽", "label": { "uz": "Toʻp", "ru": "Мяч", "en": "Ball" } },
+          { "emoji": "🍎", "label": { "uz": "Olma", "ru": "Яблоко", "en": "Apple" } }
+        ]
+      } },
+      "prompt": { "uz": "Topishmoqni yeching: bu nima?", "ru": "Отгадай загадку: что это?", "en": "Solve the riddle: what is it?" },
+      "hint": { "uz": "Uni oʻqib bilim olamiz.", "ru": "Читая его, получаем знания.", "en": "We gain knowledge by reading it." },
+      "explanation": { "uz": "Javob — kitob: u bilim va nur beradi.", "ru": "Ответ — книга: она даёт знания и свет.", "en": "The answer is a book: it gives knowledge and light." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tongue_twister", "props": {
+        "text": { "uz": "Tohir tongda toʻpni tez tepdi.", "ru": "Тохир утром быстро пнул мяч.", "en": "Tohir kicked the ball fast at dawn." },
+        "sound": "T",
+        "options": ["T", "S", "Q"],
+        "clue": { "uz": "Har bir soʻz qaysi tovushdan boshlanadi?", "ru": "С какого звука начинается каждое слово?", "en": "Which sound does each word start with?" }
+      } },
+      "prompt": { "uz": "Tez ayting! Qaysi tovush koʻp takrorlanadi?", "ru": "Скажи быстро! Какой звук повторяется?", "en": "Say it fast! Which sound repeats?" },
+      "hint": { "uz": "Tohir... tongda... toʻpni...", "ru": "Тохир... утром... мяч...", "en": "Tohir... at dawn... the ball..." },
+      "explanation": { "uz": "Har bir soʻz «T» tovushi bilan boshlanadi.", "ru": "Каждое слово начинается со звука «T».", "en": "Every word begins with the sound “T”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Topishmoq — javobini oʻylab topadigan jumboq.", "ru": "Загадка — это вопрос, ответ на который надо придумать.", "en": "A riddle is a puzzle whose answer you must figure out." },
+        "answer": "true",
+        "why": { "uz": "Topishmoqda narsa nomi aytilmay, belgilari beriladi.", "ru": "В загадке не называют предмет, а описывают его признаки.", "en": "A riddle hides the name and gives clues instead." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Topishmoqda narsaning nomi aytiladimi?", "ru": "Называют ли в загадке сам предмет?", "en": "Does a riddle name the thing itself?" },
+      "explanation": { "uz": "Toʻgʻri: topishmoq belgilari orqali javob topiladi.", "ru": "Верно: ответ ищут по признакам.", "en": "True: you find the answer from the clues." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "riddle_solve", "props": {
+        "lines": [
+          { "uz": "Oʻzi bir kichik narsa,", "ru": "Маленькая вещица,", "en": "A tiny little thing," },
+          { "uz": "Kerak boʻlar har darsda.", "ru": "нужна на каждом уроке.", "en": "needed in every lesson." },
+          { "uz": "Chizib qoʻysang notoʻgʻri,", "ru": "Если начертил не так,", "en": "If you draw it wrong," },
+          { "uz": "Yoʻq qiladi birpasda.", "ru": "мигом всё сотрёт.", "en": "it wipes it in a blink." }
+        ],
+        "options": [
+          { "emoji": "🩹", "label": { "uz": "Oʻchirgʻich", "ru": "Ластик", "en": "Eraser" }, "correct": true },
+          { "emoji": "✏️", "label": { "uz": "Qalam", "ru": "Карандаш", "en": "Pencil" } },
+          { "emoji": "📏", "label": { "uz": "Chizgʻich", "ru": "Линейка", "en": "Ruler" } }
+        ]
+      } },
+      "prompt": { "uz": "Topishmoqni yeching: bu nima?", "ru": "Отгадай загадку: что это?", "en": "Solve the riddle: what is it?" },
+      "hint": { "uz": "Notoʻgʻri chizilganni oʻchiradi.", "ru": "Стирает то, что нарисовано неверно.", "en": "It rubs out what is drawn wrong." },
+      "explanation": { "uz": "Javob — oʻchirgʻich: xatoni oʻchiradi.", "ru": "Ответ — ластик: стирает ошибку.", "en": "The answer is an eraser: it wipes mistakes." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Zehnni oʻtkir qiladi", "ru": "Развивает сообразительность", "en": "It sharpens the mind" },
+        { "uz": "Uxlashga yordam beradi", "ru": "Помогает уснуть", "en": "It helps you sleep" },
+        { "uz": "Qorinni toʻydiradi", "ru": "Насыщает желудок", "en": "It fills the belly" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Topishmoq yechish nima uchun foydali?", "ru": "Чем полезны загадки?", "en": "Why is solving riddles useful?" },
+      "hint": { "uz": "Sheʼrni eslang: «Zehnimiz oʻtkir boʻlar».", "ru": "Вспомни стих: «ум становится острым».", "en": "Recall the poem: “our wits grow sharp”." },
+      "explanation": { "uz": "Topishmoq oʻylashga oʻrgatadi, zehnni oʻtkir qiladi.", "ru": "Загадки учат думать и развивают ум.", "en": "Riddles teach us to think and sharpen the mind." },
+      "openEnd": { "uz": "Sen bilgan topishmoqni doʻstlaringga aytib berasanmi?", "ru": "Расскажешь друзьям загадку, которую знаешь?", "en": "Will you tell your friends a riddle you know?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Gapning oxiriga qoʻyiladigan kichik belgi — ", "after": ".", "choices": ["nuqta", "harf", "rasm"], "answer": "nuqta", "emoji": "⚫", "clue": { "uz": "«Tariqday kichkina xol, gapni tugatar darhol»", "ru": "«Крошечная точка завершает предложение»", "en": "“A tiny dot ends the sentence”" } } },
+      "prompt": { "uz": "Topishmoq javobini tanlang!", "ru": "Выбери ответ на загадку!", "en": "Choose the riddle's answer!" },
+      "hint": { "uz": "U gapni tugatadi.", "ru": "Она завершает предложение.", "en": "It ends the sentence." },
+      "explanation": { "uz": "Javob — nuqta: gap oxiriga qoʻyiladi.", "ru": "Ответ — точка: ставится в конце предложения.", "en": "The answer is a full stop: it ends the sentence." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "qalam" },
+        { "text": "daftar" },
+        { "text": "oʻchirgʻich" },
+        { "text": "koʻrpa", "odd": true }
+      ], "clue": { "uz": "Qaysi biri maktab buyumi emas?", "ru": "Что из этого не школьная вещь?", "en": "Which one is not a school item?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi darsda kerak boʻladi.", "ru": "Три нужны на уроке.", "en": "Three are needed in class." },
+      "explanation": { "uz": "Koʻrpa — uy buyumi; qalam, daftar, oʻchirgʻich — maktab buyumlari.", "ru": "Одеяло — домашняя вещь; остальные — школьные.", "en": "A blanket is for home; the rest are school items." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "qalam", "match": true },
+        { "text": "oʻchirgʻich", "match": true },
+        { "text": "chizgʻich", "match": true },
+        { "text": "qozon", "match": false },
+        { "text": "yostiq", "match": false }
+      ] } },
+      "prompt": { "uz": "Penalda boʻladigan narsalarni bos!", "ru": "Нажми то, что лежит в пенале!", "en": "Tap the things found in a pencil-case!" },
+      "hint": { "uz": "Ular bilan yozamiz va chizamiz.", "ru": "Ими пишут и чертят.", "en": "We write and draw with them." },
+      "explanation": { "uz": "Qalam, oʻchirgʻich, chizgʻich — penalda; qozon va yostiq — yoʻq.", "ru": "Карандаш, ластик, линейка — в пенале; казан и подушка — нет.", "en": "Pencil, eraser, ruler are in a pencil-case; a pot and a pillow are not." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "topishmoq", "syllables": ["to", "pish", "moq"], "emoji": "🧩", "clue": { "uz": "Javobini oʻylab topadigan jumboq", "ru": "Загадка, ответ которой надо отгадать", "en": "A puzzle whose answer you guess" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "to + pish + moq = ?", "ru": "to + pish + moq = ?", "en": "to + pish + moq = ?" },
+      "explanation": { "uz": "to-pish-moq → topishmoq. Zehnni sinaydigan jumboq.", "ru": "to-pish-moq → topishmoq (загадка).", "en": "to-pish-moq → topishmoq (a riddle)." }
+    }
+  ]
+}

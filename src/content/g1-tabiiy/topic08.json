@@ -1,0 +1,219 @@
+{
+  "topicId": "g1-tabiiy-08",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🍂🍎🎃🌰",
+  "title": {
+    "uz": "Kuz — hosil fasli",
+    "ru": "Осень — пора урожая",
+    "en": "Autumn — the harvest season"
+  },
+  "recall": {
+    "uz": "Kuzda daraxt barglari sariq, toʻq sariq va qizil tusga kiradi, soʻng toʻkiladi. Kuz — hosil fasli. Mevalar, sabzavotlar va yongʻoqlar pishadi. Havo salqinlashadi, yomgʻir yogʻadi. Kuzdan keyin qish keladi.",
+    "ru": "Осенью листья деревьев становятся жёлтыми, оранжевыми и красными, потом опадают. Осень — пора урожая. Созревают фрукты, овощи и орехи. Становится прохладно, идут дожди. После осени приходит зима.",
+    "en": "In autumn tree leaves turn yellow, orange and red, then fall. Autumn is the harvest season. Fruits, vegetables and nuts ripen. The air gets cool and it rains. After autumn comes winter."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kuzda daraxtdan nima toʻkiladi? Toʻgʻri rasmni bos!", "ru": "Что осенью опадает с дерева? Нажми верную картинку!", "en": "What falls from the tree in autumn? Tap the right picture!" },
+      "hint": { "uz": "Kuzda sarg'aygan barglar toʻkiladi.", "ru": "Осенью опадают пожелтевшие листья.", "en": "In autumn the yellowed leaves fall." },
+      "explanation": { "uz": "Kuzda barglar sariq-qizil tusga kirib toʻkiladi. Gul va qor kuz belgisi emas.", "ru": "Осенью листья желтеют и опадают. Цветок и снег — не признаки осени.", "en": "In autumn leaves turn yellow-red and fall. A flower and snow are not autumn signs." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "leaf", "emoji": "🍂", "label": { "uz": "sarg'aygan barg", "ru": "жёлтый лист", "en": "yellow leaf" }, "correct": true },
+            { "id": "flower", "emoji": "🌸", "label": { "uz": "gul", "ru": "цветок", "en": "flower" } },
+            { "id": "snow", "emoji": "❄️", "label": { "uz": "qor", "ru": "снег", "en": "snow" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kuz belgilarini belgila!", "ru": "Отметь признаки осени!", "en": "Tap the signs of autumn!" },
+      "hint": { "uz": "Barg toʻkilishi, yomgʻir va hosil — kuz belgilari.", "ru": "Листопад, дождь и урожай — признаки осени.", "en": "Falling leaves, rain and harvest are autumn signs." },
+      "explanation": { "uz": "Barg toʻkilishi, yomgʻir va mevalar pishishi kuz belgilari. Qor va jazirama — yoʻq.", "ru": "Листопад, дождь и созревание плодов — признаки осени. Снег и жара — нет.", "en": "Falling leaves, rain and ripening fruit are autumn signs. Snow and heat are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "leaves", "emoji": "🍂", "label": { "uz": "barg toʻkilishi", "ru": "листопад", "en": "falling leaves" }, "correct": true },
+            { "id": "rain", "emoji": "🌧️", "label": { "uz": "yomgʻir", "ru": "дождь", "en": "rain" }, "correct": true },
+            { "id": "harvest", "emoji": "🍎", "label": { "uz": "hosil pishishi", "ru": "урожай", "en": "harvest" }, "correct": true },
+            { "id": "heat", "emoji": "☀️", "label": { "uz": "jazirama issiq", "ru": "жара", "en": "heat" } },
+            { "id": "bloom", "emoji": "🌷", "label": { "uz": "gullash", "ru": "цветение", "en": "blossom" } },
+            { "id": "snowman", "emoji": "⛄", "label": { "uz": "qor odam", "ru": "снеговик", "en": "snowman" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Hosilni guruhlarga ajrat: sabzavot, meva, yongʻoq!", "ru": "Разложи урожай: овощи, фрукты, орехи!", "en": "Sort the harvest into vegetables, fruits and nuts!" },
+      "hint": { "uz": "Sabzi-pomidor — sabzavot; olma-uzum — meva; yongʻoq-yeryongʻoq — yongʻoq.", "ru": "Морковь-помидор — овощи; яблоко-виноград — фрукты; орехи — орехи.", "en": "Carrot-tomato are vegetables; apple-grapes are fruits; walnut-peanut are nuts." },
+      "explanation": { "uz": "Kuz hosilini uch guruhga ajratdik: sabzavotlar, mevalar va yongʻoqlar.", "ru": "Осенний урожай разделили на три группы: овощи, фрукты и орехи.", "en": "We sorted the autumn harvest into three groups: vegetables, fruits and nuts." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "veg", "label": { "uz": "🥕 Sabzavot", "ru": "🥕 Овощи", "en": "🥕 Vegetables" }, "color": "#f39a1f" },
+            { "id": "fruit", "label": { "uz": "🍎 Meva", "ru": "🍎 Фрукты", "en": "🍎 Fruits" }, "color": "#e14b4b" },
+            { "id": "nut", "label": { "uz": "🌰 Yongʻoq", "ru": "🌰 Орехи", "en": "🌰 Nuts" }, "color": "#a9743e" }
+          ],
+          "items": [
+            { "id": "carrot", "emoji": "🥕", "label": { "uz": "sabzi", "ru": "морковь", "en": "carrot" }, "bin": "veg" },
+            { "id": "tomato", "emoji": "🍅", "label": { "uz": "pomidor", "ru": "помидор", "en": "tomato" }, "bin": "veg" },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" }, "bin": "fruit" },
+            { "id": "grapes", "emoji": "🍇", "label": { "uz": "uzum", "ru": "виноград", "en": "grapes" }, "bin": "fruit" },
+            { "id": "walnut", "emoji": "🌰", "label": { "uz": "yongʻoq", "ru": "орех", "en": "walnut" }, "bin": "nut" },
+            { "id": "peanut", "emoji": "🥜", "label": { "uz": "yeryongʻoq", "ru": "арахис", "en": "peanut" }, "bin": "nut" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bogʻda yoki polizda pishadi? Ajrat!", "ru": "Созревает в саду или на бахче? Разложи!", "en": "Ripens in the orchard or the vegetable patch? Sort!" },
+      "hint": { "uz": "Daraxtdagi mevalar — bogʻda; yerdagi ekinlar — polizda.", "ru": "Плоды на деревьях — в саду; на грядке — на бахче.", "en": "Tree fruits ripen in the orchard; ground crops in the patch." },
+      "explanation": { "uz": "Olma, nok, uzum bogʻda pishadi. Qovoq, pomidor, sabzi polizda yetiladi.", "ru": "Яблоко, груша, виноград — в саду. Тыква, помидор, морковь — на бахче.", "en": "Apple, pear, grapes ripen in the orchard. Pumpkin, tomato, carrot in the patch." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "orchard", "label": { "uz": "🌳 Bogʻ", "ru": "🌳 Сад", "en": "🌳 Orchard" }, "color": "#46c06a" },
+            { "id": "patch", "label": { "uz": "🥕 Poliz", "ru": "🥕 Бахча", "en": "🥕 Patch" }, "color": "#f39a1f" }
+          ],
+          "items": [
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" }, "bin": "orchard" },
+            { "id": "pear", "emoji": "🍐", "label": { "uz": "nok", "ru": "груша", "en": "pear" }, "bin": "orchard" },
+            { "id": "grapes", "emoji": "🍇", "label": { "uz": "uzum", "ru": "виноград", "en": "grapes" }, "bin": "orchard" },
+            { "id": "pumpkin", "emoji": "🎃", "label": { "uz": "qovoq", "ru": "тыква", "en": "pumpkin" }, "bin": "patch" },
+            { "id": "tomato", "emoji": "🍅", "label": { "uz": "pomidor", "ru": "помидор", "en": "tomato" }, "bin": "patch" },
+            { "id": "carrot", "emoji": "🥕", "label": { "uz": "sabzi", "ru": "морковь", "en": "carrot" }, "bin": "patch" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri meva?", "ru": "Что из них фрукт?", "en": "Which one is a fruit?" },
+      "hint": { "uz": "Meva daraxtda pishadi, shirin boʻladi.", "ru": "Фрукт зреет на дереве, сладкий.", "en": "A fruit ripens on a tree and is sweet." },
+      "explanation": { "uz": "Nok — meva. Sabzi — sabzavot, yongʻoq — yongʻoq.", "ru": "Груша — фрукт. Морковь — овощ, орех — орех.", "en": "A pear is a fruit. A carrot is a vegetable, a walnut is a nut." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "pear", "emoji": "🍐", "label": { "uz": "nok", "ru": "груша", "en": "pear" }, "correct": true },
+            { "id": "carrot", "emoji": "🥕", "label": { "uz": "sabzi", "ru": "морковь", "en": "carrot" } },
+            { "id": "walnut", "emoji": "🌰", "label": { "uz": "yongʻoq", "ru": "орех", "en": "walnut" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri sabzavot?", "ru": "Что из них овощ?", "en": "Which one is a vegetable?" },
+      "hint": { "uz": "Sabzavot yerda yoki polizda oʻsadi.", "ru": "Овощ растёт на земле, на грядке.", "en": "A vegetable grows in the ground, in the patch." },
+      "explanation": { "uz": "Pomidor — sabzavot. Uzum — meva, yongʻoq — yongʻoq.", "ru": "Помидор — овощ. Виноград — фрукт, орех — орех.", "en": "A tomato is a vegetable. Grapes are a fruit, a walnut is a nut." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "tomato", "emoji": "🍅", "label": { "uz": "pomidor", "ru": "помидор", "en": "tomato" }, "correct": true },
+            { "id": "grapes", "emoji": "🍇", "label": { "uz": "uzum", "ru": "виноград", "en": "grapes" } },
+            { "id": "walnut", "emoji": "🌰", "label": { "uz": "yongʻoq", "ru": "орех", "en": "walnut" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Barcha mevalarni belgila!", "ru": "Отметь все фрукты!", "en": "Tap all the fruits!" },
+      "hint": { "uz": "Olma, nok, uzum — meva.", "ru": "Яблоко, груша, виноград — фрукты.", "en": "Apple, pear, grapes are fruits." },
+      "explanation": { "uz": "Olma, nok va uzum meva. Sabzi, pomidor, yongʻoq — meva emas.", "ru": "Яблоко, груша и виноград — фрукты. Морковь, помидор, орех — нет.", "en": "Apple, pear and grapes are fruits. Carrot, tomato, walnut are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" }, "correct": true },
+            { "id": "pear", "emoji": "🍐", "label": { "uz": "nok", "ru": "груша", "en": "pear" }, "correct": true },
+            { "id": "grapes", "emoji": "🍇", "label": { "uz": "uzum", "ru": "виноград", "en": "grapes" }, "correct": true },
+            { "id": "carrot", "emoji": "🥕", "label": { "uz": "sabzi", "ru": "морковь", "en": "carrot" } },
+            { "id": "tomato", "emoji": "🍅", "label": { "uz": "pomidor", "ru": "помидор", "en": "tomato" } },
+            { "id": "walnut", "emoji": "🌰", "label": { "uz": "yongʻoq", "ru": "орех", "en": "walnut" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi hosil daraxtda pishadi?", "ru": "Какой урожай зреет на дереве?", "en": "Which crop ripens on a tree?" },
+      "hint": { "uz": "Gilos daraxtda oʻsadi, kartoshka yer tagida.", "ru": "Черешня растёт на дереве, картофель — под землёй.", "en": "Cherries grow on a tree, potatoes underground." },
+      "explanation": { "uz": "Gilos daraxtda, bogʻda pishadi. Kartoshka va pomidor yerda oʻsadi.", "ru": "Черешня зреет на дереве, в саду. Картофель и помидор — в земле.", "en": "Cherries ripen on a tree in the orchard. Potato and tomato grow in the ground." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "cherry", "emoji": "🍒", "label": { "uz": "gilos", "ru": "черешня", "en": "cherries" }, "correct": true },
+            { "id": "potato", "emoji": "🥔", "label": { "uz": "kartoshka", "ru": "картофель", "en": "potato" } },
+            { "id": "tomato", "emoji": "🍅", "label": { "uz": "pomidor", "ru": "помидор", "en": "tomato" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kuzdan keyin qaysi fasl keladi?", "ru": "Какое время года наступает после осени?", "en": "Which season comes after autumn?" },
+      "hint": { "uz": "Kuzdan soʻng eng sovuq fasl boshlanadi.", "ru": "После осени начинается самое холодное время года.", "en": "After autumn the coldest season begins." },
+      "explanation": { "uz": "Kuzdan keyin qish keladi. Shuning uchun kuzda qishga tayyorlanamiz.", "ru": "После осени приходит зима. Поэтому осенью готовимся к зиме.", "en": "After autumn comes winter. That is why in autumn we prepare for winter." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "winter", "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" }, "correct": true },
+            { "id": "spring", "emoji": "🌷", "label": { "uz": "bahor", "ru": "весна", "en": "spring" } },
+            { "id": "summer", "emoji": "☀️", "label": { "uz": "yoz", "ru": "лето", "en": "summer" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Hosil qanday yetiladi? Toʻgʻri tartibda joyla!", "ru": "Как созревает урожай? Расставь по порядку!", "en": "How does a crop grow? Put it in order!" },
+      "hint": { "uz": "Avval urugʻ, soʻng nihol, gul, keyin meva.", "ru": "Сначала семя, потом росток, цветок, затем плод.", "en": "First a seed, then a sprout, a flower, then the fruit." },
+      "explanation": { "uz": "Urugʻ unadi, nihol oʻsadi, gullaydi, soʻng meva beradi. Shunday hosil yetiladi.", "ru": "Семя прорастает, росток растёт, цветёт, затем даёт плод. Так созревает урожай.", "en": "A seed sprouts, the plant grows, blooms, then bears fruit. That is how a crop ripens." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "seed", "emoji": "🌰", "label": { "uz": "urugʻ", "ru": "семя", "en": "seed" } },
+            { "id": "sprout", "emoji": "🌱", "label": { "uz": "nihol", "ru": "росток", "en": "sprout" } },
+            { "id": "bloom", "emoji": "🌸", "label": { "uz": "gul", "ru": "цветок", "en": "flower" } },
+            { "id": "fruit", "emoji": "🍎", "label": { "uz": "meva", "ru": "плод", "en": "fruit" } }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "topicId": "g1-tarbiya-09",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🤝✏️💛🧩",
+  "title": {
+    "uz": "Oʻzaro yordam",
+    "ru": "Взаимопомощь",
+    "en": "Helping each other"
+  },
+  "recall": {
+    "uz": "Doʻstlar bir-biriga yordam beradi. Kimdir qiynalsa, yordam qoʻlini choʻzamiz. Yordam berish — kuchsizlik emas, balki mehribonlik va doʻstlik belgisidir.",
+    "ru": "Друзья помогают друг другу. Если кому-то трудно, мы протягиваем руку помощи. Помощь — это не слабость, а признак доброты и дружбы.",
+    "en": "Friends help one another. When someone is in trouble, we lend a hand. Helping is not weakness — it is a sign of kindness and friendship."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: Malika Azamatga qanday yordam berdi?",
+        "ru": "Расставь историю: как Малика помогла Азамату?",
+        "en": "Put the story in order: how did Malika help Azamat?"
+      },
+      "hint": {
+        "uz": "Avval qalam sinadi, oxirida chizishda davom etadi.",
+        "ru": "Сначала ломается карандаш, в конце он продолжает рисовать.",
+        "en": "First the pencil breaks, at the end he keeps drawing."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yordam ish bitkazdi.",
+        "ru": "Молодец! Помощь помогла завершить дело.",
+        "en": "Great! Help got the job done."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "✏️",
+          "events": [
+            {
+              "text": {
+                "uz": "Azamatning qalami sinib qoldi.",
+                "ru": "У Азамата сломался карандаш.",
+                "en": "Azamat's pencil broke."
+              }
+            },
+            {
+              "text": {
+                "uz": "U chiza olmay qoldi.",
+                "ru": "Он не мог рисовать.",
+                "en": "He couldn't draw."
+              }
+            },
+            {
+              "text": {
+                "uz": "Malika qalam ochqichini uzatdi.",
+                "ru": "Малика протянула точилку.",
+                "en": "Malika handed him a sharpener."
+              }
+            },
+            {
+              "text": {
+                "uz": "Azamat chizishda davom etdi.",
+                "ru": "Азамат продолжил рисовать.",
+                "en": "Azamat kept on drawing."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻstingiz qiynalyapti. Nima qilasiz?",
+        "ru": "Твоему другу трудно. Что ты сделаешь?",
+        "en": "Your friend is struggling. What do you do?"
+      },
+      "hint": {
+        "uz": "Yaxshi doʻst nima qiladi?",
+        "ru": "Что делает хороший друг?",
+        "en": "What does a good friend do?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Yordam beramiz.",
+        "ru": "Верно! Мы помогаем.",
+        "en": "Right! We help."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yordam beraman",
+              "ru": "помогаю",
+              "en": "I help"
+            },
+            {
+              "uz": "kulaman",
+              "ru": "смеюсь",
+              "en": "I laugh"
+            },
+            {
+              "uz": "eʼtibor bermayman",
+              "ru": "не обращаю внимания",
+              "en": "I ignore it"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yordam berish yoʻllarini belgila!",
+        "ru": "Отметь способы помочь!",
+        "en": "Tap the ways to help!"
+      },
+      "hint": {
+        "uz": "Narsa berish, koʻtarishish, tushuntirish.",
+        "ru": "Поделиться, нести вместе, объяснить.",
+        "en": "Share, carry together, explain."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bular chin yordam.",
+        "ru": "Молодец! Это настоящая помощь.",
+        "en": "Great! Those are real help."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "✏️",
+              "label": {
+                "uz": "qalam berish",
+                "ru": "дать карандаш",
+                "en": "share a pencil"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🤝",
+              "label": {
+                "uz": "birga koʻtarishish",
+                "ru": "нести вместе",
+                "en": "carry together"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💡",
+              "label": {
+                "uz": "tushuntirib berish",
+                "ru": "объяснить",
+                "en": "explain it"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "😆",
+              "label": {
+                "uz": "ustidan kulish",
+                "ru": "смеяться над ним",
+                "en": "laugh at him"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🙈",
+              "label": {
+                "uz": "eʼtibor bermaslik",
+                "ru": "не замечать",
+                "en": "look away"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Yordam berish — kuchsizlik belgisi.",
+        "ru": "Верно? Помощь — признак слабости.",
+        "en": "Is this right? Helping is a sign of weakness."
+      },
+      "hint": {
+        "uz": "Yordam — mehribonlik.",
+        "ru": "Помощь — это доброта.",
+        "en": "Help is kindness."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Yordam — mehribonlik va kuch.",
+        "ru": "Неверно! Помощь — это доброта и сила.",
+        "en": "False! Help is kindness and strength."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "💛",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bugun kimga yordam berdingiz? Aytib bering.",
+        "ru": "Кому ты сегодня помог? Расскажи.",
+        "en": "Whom did you help today? Tell about it."
+      },
+      "hint": {
+        "uz": "Oila, doʻst, sinfdosh — kimga yordam berding?",
+        "ru": "Семья, друг, одноклассник — кому ты помог?",
+        "en": "Family, a friend, a classmate — whom did you help?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Yordam — chiroyli odat.",
+        "ru": "Отлично! Помощь — прекрасная привычка.",
+        "en": "Great! Helping is a lovely habit."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Bugun men sinfdoshimga vazifani tushuntirdim, chunki u tushunmagan edi.",
+            "ru": "Сегодня я объяснил однокласснику задание, ведь он не понял его.",
+            "en": "Today I explained the task to my classmate, because he did not understand it."
+          }
+        }
+      }
+    }
+  ]
+}

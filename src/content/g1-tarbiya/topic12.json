@@ -1,0 +1,282 @@
+{
+  "topicId": "g1-tarbiya-12",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "📜🤝💬🔑",
+  "title": {
+    "uz": "Ishonch nima?",
+    "ru": "Что такое доверие?",
+    "en": "What is trust?"
+  },
+  "recall": {
+    "uz": "Ishonch — rostgoʻylik va vaʼdaga vafo bilan quriladi. Yolgʻon gapirmasak, bergan vaʼdamizda tursak, bizga ishonishadi. Ishonch — doʻstlikning mustahkam tayanchi.",
+    "ru": "Доверие строится на правдивости и верности слову. Если мы не лжём и держим обещание, нам доверяют. Доверие — крепкая опора дружбы.",
+    "en": "Trust is built on honesty and keeping your word. If we don't lie and we keep our promises, people trust us. Trust is the firm foundation of friendship."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishonch nimadan quriladi?",
+        "ru": "На чём строится доверие?",
+        "en": "What is trust built on?"
+      },
+      "hint": {
+        "uz": "Rostgoʻylik va vaʼda.",
+        "ru": "Правдивость и обещание.",
+        "en": "Honesty and promises."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Rostgoʻylik va vaʼdaga vafo.",
+        "ru": "Верно! Правдивость и верность слову.",
+        "en": "Right! Honesty and keeping your word."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "rostgoʻylik va vaʼdaga vafo",
+              "ru": "правдивость и верность слову",
+              "en": "honesty and keeping your word"
+            },
+            {
+              "uz": "yolgʻon va aldov",
+              "ru": "ложь и обман",
+              "en": "lies and deceit"
+            },
+            {
+              "uz": "qoʻrquv",
+              "ru": "страх",
+              "en": "fear"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xatti-harakatlarni ajrat: ishonchni mustahkamlaydi yoki buzadi!",
+        "ru": "Разложи поступки: укрепляют или разрушают доверие!",
+        "en": "Sort the actions: build or break trust!"
+      },
+      "hint": {
+        "uz": "Rost gapirish mustahkamlaydi, yolgʻon buzadi.",
+        "ru": "Правда укрепляет, ложь разрушает.",
+        "en": "Truth builds, lying breaks."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ishonchni asragan yaxshi.",
+        "ru": "Молодец! Беречь доверие — хорошо.",
+        "en": "Great! Protecting trust is good."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "build",
+              "label": {
+                "uz": "Mustahkamlaydi",
+                "ru": "Укрепляет",
+                "en": "Builds"
+              }
+            },
+            {
+              "id": "break",
+              "label": {
+                "uz": "Buzadi",
+                "ru": "Разрушает",
+                "en": "Breaks"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🤝",
+              "label": {
+                "uz": "rost gapirish",
+                "ru": "говорить правду",
+                "en": "tell the truth"
+              },
+              "bin": "build"
+            },
+            {
+              "emoji": "📜",
+              "label": {
+                "uz": "vaʼdada turish",
+                "ru": "держать слово",
+                "en": "keep a promise"
+              },
+              "bin": "build"
+            },
+            {
+              "emoji": "🔒",
+              "label": {
+                "uz": "sirni saqlash",
+                "ru": "хранить секрет",
+                "en": "keep a secret"
+              },
+              "bin": "build"
+            },
+            {
+              "emoji": "🚫",
+              "label": {
+                "uz": "yolgʻon gapirish",
+                "ru": "лгать",
+                "en": "tell a lie"
+              },
+              "bin": "break"
+            },
+            {
+              "emoji": "💔",
+              "label": {
+                "uz": "vaʼdani buzish",
+                "ru": "нарушить обещание",
+                "en": "break a promise"
+              },
+              "bin": "break"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Yolgʻon gapirish ishonchni mustahkamlaydi.",
+        "ru": "Верно? Ложь укрепляет доверие.",
+        "en": "Is this right? Lying builds trust."
+      },
+      "hint": {
+        "uz": "Yolgʻon nima qiladi?",
+        "ru": "Что делает ложь?",
+        "en": "What does lying do?"
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Yolgʻon ishonchni buzadi.",
+        "ru": "Неверно! Ложь разрушает доверие.",
+        "en": "False! Lying breaks trust."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🚫",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishonchli doʻstning belgilarini belgila!",
+        "ru": "Отметь признаки надёжного друга!",
+        "en": "Tap the marks of a trustworthy friend!"
+      },
+      "hint": {
+        "uz": "Rostgoʻy, vaʼdada turadi, sirni saqlaydi.",
+        "ru": "Правдивый, держит слово, хранит секрет.",
+        "en": "Honest, keeps promises, keeps secrets."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bunday doʻstga ishonish oson.",
+        "ru": "Молодец! Такому другу легко доверять.",
+        "en": "Great! Such a friend is easy to trust."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🤝",
+              "label": {
+                "uz": "rostgoʻy",
+                "ru": "правдивый",
+                "en": "honest"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "📜",
+              "label": {
+                "uz": "vaʼdada turadi",
+                "ru": "держит слово",
+                "en": "keeps promises"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🔒",
+              "label": {
+                "uz": "sirni saqlaydi",
+                "ru": "хранит секрет",
+                "en": "keeps secrets"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🗣️",
+              "label": {
+                "uz": "gʻiybat qiladi",
+                "ru": "сплетничает",
+                "en": "gossips"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🚫",
+              "label": {
+                "uz": "aldaydi",
+                "ru": "обманывает",
+                "en": "deceives"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Nega doʻstlar bir-biriga ishonishi kerak? Fikringizni ayting.",
+        "ru": "Почему друзья должны доверять друг другу? Выскажи мнение.",
+        "en": "Why should friends trust each other? Share your thoughts."
+      },
+      "hint": {
+        "uz": "Ishonch doʻstlikni qanday saqlaydi?",
+        "ru": "Как доверие сохраняет дружбу?",
+        "en": "How does trust keep friendship strong?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Ishonch — doʻstlikning tayanchi.",
+        "ru": "Отлично! Доверие — опора дружбы.",
+        "en": "Great! Trust is the foundation of friendship."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Doʻstlar bir-biriga ishonishi kerak, chunki ishonch boʻlmasa doʻstlik buziladi.",
+            "ru": "Друзья должны доверять друг другу, ведь без доверия дружба рушится.",
+            "en": "Friends should trust each other, because without trust friendship falls apart."
+          }
+        }
+      }
+    }
+  ]
+}

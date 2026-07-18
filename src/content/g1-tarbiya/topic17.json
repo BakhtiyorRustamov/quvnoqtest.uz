@@ -1,0 +1,258 @@
+{
+  "topicId": "g1-tarbiya-17",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "👣⛲🌳🌟",
+  "title": {
+    "uz": "Mening xatti-harakatlarim",
+    "ru": "Мои поступки",
+    "en": "My actions"
+  },
+  "recall": {
+    "uz": "Inson qilgan har bir ishdan iz qoladi — yaxshi yoki yomon. Baʼzi izlar koʻrinadi, masalan, qumdagi oyoq izi. Baʼzilari koʻrinmaydi, lekin his qilinadi: yaxshilik yoki yomonlik izi. Biz odamlar yodida yaxshi iz qoldirishga harakat qilamiz.",
+    "ru": "От каждого дела человека остаётся след — хороший или плохой. Одни следы видны, например, след на песке. Другие не видны, но чувствуются: след добра или зла. Мы стараемся оставить о себе добрый след.",
+    "en": "Every action a person does leaves a trace — good or bad. Some traces are seen, like a footprint in the sand. Others are unseen but felt: a trace of goodness or unkindness. We try to leave a good trace in people's hearts."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inson qilgan har bir ishdan nima qoladi?",
+        "ru": "Что остаётся от каждого дела человека?",
+        "en": "What does every action a person does leave behind?"
+      },
+      "hint": {
+        "uz": "Yaxshi yoki yomon boʻlishi mumkin.",
+        "ru": "Может быть хорошим или плохим.",
+        "en": "It can be good or bad."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Har ishdan iz qoladi.",
+        "ru": "Верно! От каждого дела остаётся след.",
+        "en": "Right! Every action leaves a trace."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "iz — yaxshi yoki yomon",
+              "ru": "след — хороший или плохой",
+              "en": "a trace — good or bad"
+            },
+            {
+              "uz": "hech narsa",
+              "ru": "ничего",
+              "en": "nothing"
+            },
+            {
+              "uz": "faqat pul",
+              "ru": "только деньги",
+              "en": "only money"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xatti-harakatlarni ajrat: yaxshi iz yoki yomon iz!",
+        "ru": "Разложи поступки: добрый или плохой след!",
+        "en": "Sort the actions: a good trace or a bad trace!"
+      },
+      "hint": {
+        "uz": "Yaxshilik — yaxshi iz, yomonlik — yomon iz.",
+        "ru": "Добро — добрый след, зло — плохой.",
+        "en": "Kindness leaves a good trace, unkindness a bad one."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yaxshi iz qoldiraylik.",
+        "ru": "Молодец! Оставим добрый след.",
+        "en": "Great! Let's leave a good trace."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "good",
+              "label": {
+                "uz": "Yaxshi iz",
+                "ru": "Добрый след",
+                "en": "Good trace"
+              }
+            },
+            {
+              "id": "bad",
+              "label": {
+                "uz": "Yomon iz",
+                "ru": "Плохой след",
+                "en": "Bad trace"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "⛲",
+              "label": {
+                "uz": "favvora qurish",
+                "ru": "построить фонтан",
+                "en": "build a fountain"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "🌳",
+              "label": {
+                "uz": "daraxt ekish",
+                "ru": "посадить дерево",
+                "en": "plant a tree"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "🤝",
+              "label": {
+                "uz": "yordam berish",
+                "ru": "помогать",
+                "en": "help others"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "😠",
+              "label": {
+                "uz": "doim shikoyat qilish",
+                "ru": "всё время жаловаться",
+                "en": "always complain"
+              },
+              "bin": "bad"
+            },
+            {
+              "emoji": "🗑️",
+              "label": {
+                "uz": "atrofni iflos qilish",
+                "ru": "мусорить вокруг",
+                "en": "litter around"
+              },
+              "bin": "bad"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Baʼzi izlar koʻrinmaydi, lekin his qilinadi.",
+        "ru": "Верно? Некоторые следы не видны, но чувствуются.",
+        "en": "Is this right? Some traces are unseen but felt."
+      },
+      "hint": {
+        "uz": "Yaxshilik izi — koʻngilda.",
+        "ru": "След добра — в сердце.",
+        "en": "The trace of kindness is in the heart."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Yaxshilik izi koʻngilda qoladi.",
+        "ru": "Верно! След добра остаётся в сердце.",
+        "en": "Right! Kindness leaves a trace in the heart."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👣",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Taqqosla: kim odamlar yodida yaxshi iz qoldirdi?",
+        "ru": "Сравни: кто оставил добрый след в памяти людей?",
+        "en": "Compare: who left a good trace in people's memory?"
+      },
+      "hint": {
+        "uz": "Yaxshilik qilgan kishini tanla.",
+        "ru": "Выбери того, кто делал добро.",
+        "en": "Choose the one who did good."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Favvora qurgan kishi yaxshi iz qoldirdi.",
+        "ru": "Верно! Тот, кто построил фонтан, оставил добрый след.",
+        "en": "Right! The one who built the fountain left a good trace."
+      },
+      "widget": {
+        "type": "compare_pick",
+        "props": {
+          "rounds": [
+            {
+              "prompt": {
+                "uz": "Kim yaxshi iz qoldirdi?",
+                "ru": "Кто оставил добрый след?",
+                "en": "Who left a good trace?"
+              },
+              "a": {
+                "emoji": "⛲",
+                "label": {
+                  "uz": "favvora qurgan kishi",
+                  "ru": "построивший фонтан",
+                  "en": "the fountain builder"
+                }
+              },
+              "b": {
+                "emoji": "😠",
+                "label": {
+                  "uz": "doim norozi kishi",
+                  "ru": "вечно недовольный",
+                  "en": "the grumpy one"
+                }
+              },
+              "answer": "a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Siz odamlar yodida qanday yaxshi iz qoldirmoqchisiz?",
+        "ru": "Какой добрый след ты хочешь оставить в памяти людей?",
+        "en": "What good trace do you want to leave in people's memory?"
+      },
+      "hint": {
+        "uz": "Yaxshi ish, yordam, mehribonlik — nima qilasan?",
+        "ru": "Доброе дело, помощь, доброта — что сделаешь?",
+        "en": "A good deed, help, kindness — what will you do?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Yaxshi niyat — yaxshi izning boshi.",
+        "ru": "Отлично! Доброе намерение — начало доброго следа.",
+        "en": "Great! A good intention is the start of a good trace."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men doʻstlarimga koʻp yordam berib, mehribon bola sifatida yaxshi iz qoldirmoqchiman.",
+            "ru": "Я хочу оставить добрый след как добрый ребёнок, много помогая друзьям.",
+            "en": "I want to leave a good trace as a kind child by helping my friends a lot."
+          }
+        }
+      }
+    }
+  ]
+}

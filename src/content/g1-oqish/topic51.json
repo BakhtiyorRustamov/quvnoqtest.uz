@@ -1,0 +1,161 @@
+{
+  "topicId": "g1-oqish-51",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "💬🌸✨",
+  "title": {
+    "uz": "Odobning boshi — til",
+    "ru": "Начало вежливости — речь",
+    "en": "Manners begin with speech"
+  },
+  "recall": {
+    "uz": "«Soʻz sehri» sheʼrini tinglab oʻqiymiz va sehrli, odobli soʻzlarni oʻrganamiz.",
+    "ru": "Слушаем стихотворение «Волшебство слова» и учим вежливые слова.",
+    "en": "We read the poem “The magic of words” and learn polite words."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Soʻz sehri",
+        "variant": "poem",
+        "audio": "g1-oqish-51-q1",
+        "lines": [
+          "Har bir soʻzimiz bizni",
+          "Oynadek koʻrsatadi.",
+          "Chiroyli, shirin soʻzlar",
+          "Doʻstlarni koʻpaytiradi.",
+          "",
+          "«Assalom» — odob boshi,",
+          "«Rahmat» — koʻngil quvonchi.",
+          "«Marhamat», «Xayr, sogʻ boʻling» —",
+          "Sehrli soʻzlar guli."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Odob qaysi soʻzdan boshlanadi?", "ru": "С какого слова начинается вежливость?", "en": "Which word do manners begin with?" },
+      "explanation": { "uz": "Sheʼr sehrli, odobli soʻzlar haqida.", "ru": "Стихотворение о вежливых, волшебных словах.", "en": "The poem is about polite, magic words." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Assalom", "match": true },
+        { "text": "Rahmat", "match": true },
+        { "text": "Marhamat", "match": true },
+        { "text": "Yoʻqol", "match": false },
+        { "text": "Bermayman", "match": false }
+      ] } },
+      "prompt": { "uz": "Sehrli (odobli) soʻzlarni bos!", "ru": "Нажми вежливые слова!", "en": "Tap the polite (magic) words!" },
+      "hint": { "uz": "Odobli soʻz koʻngilni koʻtaradi.", "ru": "Вежливое слово радует.", "en": "A polite word lifts the heart." },
+      "explanation": { "uz": "Assalom, Rahmat, Marhamat — sehrli soʻzlar; qolganlari qoʻpol.", "ru": "Assalom, Rahmat, Marhamat — вежливые; остальные грубые.", "en": "Assalom, Rahmat, Marhamat are polite; the rest are rude." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "Uchrashganda", "right": "Assalom" },
+        { "left": "Yordam olganda", "right": "Rahmat" },
+        { "left": "Xayrlashganda", "right": "Xayr, sogʻ boʻling" }
+      ] } },
+      "prompt": { "uz": "Vaziyatni mos soʻzga ula!", "ru": "Соедини ситуацию с нужным словом!", "en": "Match each situation to the right word!" },
+      "hint": { "uz": "Har bir holatda oʻz sehrli soʻzi bor.", "ru": "У каждого случая своё слово.", "en": "Each moment has its own word." },
+      "explanation": { "uz": "Uchrashganda — Assalom; yordam olganda — Rahmat; xayrlashganda — Xayr.", "ru": "Встреча — Assalom; помощь — Rahmat; прощание — Xayr.", "en": "Meeting — Assalom; help — Rahmat; parting — Xayr." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrga koʻra, chiroyli soʻzlar doʻstlarni koʻpaytiradi.", "ru": "По стихотворению, добрые слова умножают друзей.", "en": "According to the poem, kind words multiply friends." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «chiroyli soʻzlar doʻstlarni koʻpaytiradi» deyilgan.", "ru": "В стихотворении так и сказано.", "en": "The poem says exactly this." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Shirin soʻz nima keltiradi?", "ru": "Что приносит доброе слово?", "en": "What do kind words bring?" },
+      "explanation": { "uz": "Toʻgʻri: chiroyli soʻz doʻstlarni koʻpaytiradi.", "ru": "Верно: добрые слова умножают друзей.", "en": "True: kind words bring more friends." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Kishini koʻrganda avval ", "after": " deymiz.", "choices": ["assalom", "xayr", "yoʻqol"], "answer": "assalom", "emoji": "✨", "clue": { "uz": "Odob boshi", "ru": "Начало вежливости", "en": "The start of manners" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Uchrashganda aytiladigan soʻz.", "ru": "Слово при встрече.", "en": "The word we say when we meet." },
+      "explanation": { "uz": "Kishini koʻrganda avval «assalom» deymiz.", "ru": "При встрече сначала говорим «assalom».", "en": "When we meet someone, we first say “assalom”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Chiroyli, shirin soʻzda", "ru": "В добром, красивом слове", "en": "In kind, beautiful words" },
+        { "uz": "Baland ovozda", "ru": "В громком голосе", "en": "In a loud voice" },
+        { "uz": "Jahl chiqarishda", "ru": "В злости", "en": "In getting angry" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Odobning boshi nimada?", "ru": "В чём начало вежливости?", "en": "Where do manners begin?" },
+      "hint": { "uz": "Sarlavhani eslang: «Odobning boshi — til».", "ru": "Вспомни заголовок: «Начало вежливости — речь».", "en": "Recall the title: “Manners begin with speech”." },
+      "explanation": { "uz": "Odobning boshi — chiroyli, shirin soʻzda, yaʼni tilda.", "ru": "Начало вежливости — в добром слове, в речи.", "en": "Manners begin with kind words — with speech." },
+      "openEnd": { "uz": "Bugun kimga «rahmat» ayting? Nima uchun?", "ru": "Кому ты сегодня сказал «спасибо»? За что?", "en": "Who did you thank today? What for?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "salom", "syllables": ["sa", "lom"], "emoji": "💬", "clue": { "uz": "Uchrashganda aytiladigan soʻz", "ru": "Слово при встрече", "en": "A greeting word" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "sa + lom = ?", "ru": "sa + lom = ?", "en": "sa + lom = ?" },
+      "explanation": { "uz": "sa-lom → salom. Odobli kishining ilk soʻzi.", "ru": "sa-lom → salom (приветствие).", "en": "sa-lom → salom (a greeting)." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "Assalom" },
+        { "text": "Rahmat" },
+        { "text": "Marhamat" },
+        { "text": "Baqirish", "odd": true }
+      ], "clue": { "uz": "Qaysi biri odobli soʻz emas?", "ru": "Что из этого не вежливое слово?", "en": "Which one is not a polite word?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi — sehrli soʻz.", "ru": "Три — вежливые слова.", "en": "Three are polite words." },
+      "explanation": { "uz": "Baqirish — qoʻpollik; qolganlari odobli soʻzlar.", "ru": "Крик — грубость; остальные вежливы.", "en": "Shouting is rude; the rest are polite." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_sequence", "props": {
+        "letters": ["a", "s", "s", "a", "l", "o", "m"],
+        "words": [7],
+        "phrase": "assalom",
+        "meaning": { "uz": "Assalom — odobli kishining ilk salomi.", "ru": "Assalom — первое приветствие вежливого человека.", "en": "Assalom — a polite person's first greeting." }
+      } },
+      "prompt": { "uz": "Harflarni toʻgʻri ketma-ketlikda bosib, soʻzni oʻqing!", "ru": "Нажимай буквы по порядку и прочитай слово!", "en": "Tap the letters in the right order to read the word!" },
+      "hint": { "uz": "Salomlashish soʻzi — «a» harfidan boshlanadi.", "ru": "Слово приветствия начинается с «a».", "en": "The greeting word starts with “a”." },
+      "explanation": { "uz": "a-s-s-a-l-o-m → assalom.", "ru": "a-s-s-a-l-o-m → assalom.", "en": "a-s-s-a-l-o-m → assalom." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Yaxshi" },
+          { "blank": "soʻz" },
+          { "text": "— jonga" },
+          { "blank": "ozuqa" },
+          { "text": "." }
+        ],
+        "bank": ["soʻz", "ozuqa", "tosh"]
+      } },
+      "prompt": { "uz": "Maqolni soʻzlar bilan toʻldiring!", "ru": "Дополни пословицу словами!", "en": "Complete the proverb with the words!" },
+      "hint": { "uz": "Shirin gap koʻngilga oziq beradi.", "ru": "Доброе слово питает душу.", "en": "A kind word feeds the soul." },
+      "explanation": { "uz": "«Yaxshi soʻz — jonga ozuqa» — shirin soʻz koʻngilni quvontiradi.", "ru": "«Доброе слово — пища для души».", "en": "“A kind word is food for the soul.”" }
+    }
+  ]
+}

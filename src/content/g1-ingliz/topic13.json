@@ -1,0 +1,530 @@
+{
+  "topicId": "g1-ingliz-13",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🧸⚽🤖🚲",
+  "title": {
+    "uz": "Mening oʻyinchoqlarim",
+    "ru": "Мои игрушки",
+    "en": "My toys"
+  },
+  "recall": {
+    "uz": "2-boʻlim: Oʻyinchoqlar! Bugun oʻyinchoq nomlarini inglizcha oʻrganamiz: ball — koptok, robot — robot, teddy bear — ayiqcha, bike — velosiped.",
+    "ru": "Раздел 2: Игрушки! Сегодня учим названия игрушек по-английски: ball — мяч, robot — робот, teddy bear — мишка, bike — велосипед.",
+    "en": "Unit 2: Toys! Today we learn toy words in English: a ball, a robot, a teddy bear and a bike."
+  },
+  "ttsText": {
+    "uz": "Mening oʻyinchoqlarim.",
+    "en": "Unit 2: My toys! A ball, a robot, a teddy bear and a bike."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu qanday oʻyinchoq?",
+        "ru": "Послушай. Какая это игрушка?",
+        "en": "Listen. What toy is it?"
+      },
+      "hint": {
+        "uz": "«It's a …» — «Bu …».",
+        "ru": "«It's a …» — «Это …».",
+        "en": "\"It's a …\" means \"It is a …\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a ball — koptok.",
+        "ru": "Верно! It's a ball — мяч.",
+        "en": "Right! It's a ball."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What's this?",
+              "audio": {
+                "key": "ing13-q1-a",
+                "text": "What's this?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's a ball!",
+              "audio": {
+                "key": "ing13-q1-b",
+                "text": "It's a ball!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu nima?",
+              "ru": "Что это?",
+              "en": "What is it?"
+            },
+            "choices": [
+              "a robot",
+              "a bike",
+              "a ball"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va koptokni bos!",
+        "ru": "Послушай и нажми мяч!",
+        "en": "Listen and tap the ball!"
+      },
+      "audio": {
+        "key": "ing13-q2",
+        "text": "Ball! Tap the ball.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«ball» — koptok.",
+        "ru": "«ball» — мяч.",
+        "en": "A \"ball\" is round."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ball — koptok.",
+        "ru": "Верно! Ball — мяч.",
+        "en": "Right! Ball!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "⚽",
+              "label": "ball",
+              "correct": true
+            },
+            {
+              "emoji": "🐻",
+              "label": "teddy bear"
+            },
+            {
+              "emoji": "🤖",
+              "label": "robot"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va robotni bos!",
+        "ru": "Послушай и нажми робота!",
+        "en": "Listen and tap the robot!"
+      },
+      "audio": {
+        "key": "ing13-q3",
+        "text": "Robot! Tap the robot.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«robot» — robot oʻyinchoq.",
+        "ru": "«robot» — робот.",
+        "en": "A \"robot\" is a metal toy."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Robot!",
+        "ru": "Верно! Robot!",
+        "en": "Right! Robot!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🤖",
+              "label": "robot",
+              "correct": true
+            },
+            {
+              "emoji": "📷",
+              "label": "camera"
+            },
+            {
+              "emoji": "🚲",
+              "label": "bike"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va ayiqchani bos!",
+        "ru": "Послушай и нажми мишку!",
+        "en": "Listen and tap the teddy bear!"
+      },
+      "audio": {
+        "key": "ing13-q4",
+        "text": "Teddy bear! Tap the teddy bear.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«teddy bear» — ayiqcha.",
+        "ru": "«teddy bear» — мишка.",
+        "en": "A \"teddy bear\" is soft."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Teddy bear — ayiqcha.",
+        "ru": "Верно! Teddy bear — мишка.",
+        "en": "Right! Teddy bear!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐻",
+              "label": "teddy bear",
+              "correct": true
+            },
+            {
+              "emoji": "🚗",
+              "label": "car"
+            },
+            {
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va velosipedni bos!",
+        "ru": "Послушай и нажми велосипед!",
+        "en": "Listen and tap the bike!"
+      },
+      "audio": {
+        "key": "ing13-q5",
+        "text": "Bike! Tap the bike.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«bike» — velosiped.",
+        "ru": "«bike» — велосипед.",
+        "en": "A \"bike\" has two wheels."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bike — velosiped.",
+        "ru": "Верно! Bike — велосипед.",
+        "en": "Right! Bike!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🚲",
+              "label": "bike",
+              "correct": true
+            },
+            {
+              "emoji": "🤖",
+              "label": "robot"
+            },
+            {
+              "emoji": "📷",
+              "label": "camera"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni oʻyinchoqqa ula!",
+        "ru": "Соедини английское слово с игрушкой!",
+        "en": "Match each word to its toy!"
+      },
+      "hint": {
+        "uz": "ball, robot, bike, camera.",
+        "ru": "ball, robot, bike, camera.",
+        "en": "ball, robot, bike, camera."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Toʻrtta oʻyinchoqni bilding!",
+        "ru": "Отлично! Ты знаешь четыре игрушки!",
+        "en": "Awesome! You know four toys!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "ball"
+              },
+              "right": {
+                "emoji": "⚽"
+              }
+            },
+            {
+              "left": {
+                "label": "robot"
+              },
+              "right": {
+                "emoji": "🤖"
+              }
+            },
+            {
+              "left": {
+                "label": "bike"
+              },
+              "right": {
+                "emoji": "🚲"
+              }
+            },
+            {
+              "left": {
+                "label": "camera"
+              },
+              "right": {
+                "emoji": "📷"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, soʻz va oʻyinchoq juftini top!",
+        "ru": "Открывай карточки: слово и игрушка!",
+        "en": "Flip the cards: match each word to its toy!"
+      },
+      "hint": {
+        "uz": "ball — ⚽, teddy — 🐻, car — 🚗.",
+        "ru": "ball — ⚽, teddy — 🐻, car — 🚗.",
+        "en": "ball — ⚽, teddy — 🐻, car — 🚗."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "⚽"
+              },
+              "b": {
+                "label": "ball"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐻"
+              },
+              "b": {
+                "label": "teddy bear"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🚗"
+              },
+              "b": {
+                "label": "car"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«teddy bear»ning tarjimasi nima?",
+        "ru": "Что значит «teddy bear»?",
+        "en": "What does \"teddy bear\" mean?"
+      },
+      "hint": {
+        "uz": "Yumshoq oʻyinchoq hayvon.",
+        "ru": "Мягкая игрушка-зверь.",
+        "en": "A soft toy animal."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Teddy bear — ayiqcha.",
+        "ru": "Верно! Teddy bear — мишка.",
+        "en": "Right! A teddy bear."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ayiqcha",
+              "ru": "мишка",
+              "en": "a teddy bear"
+            },
+            {
+              "uz": "koptok",
+              "ru": "мяч",
+              "en": "a ball"
+            },
+            {
+              "uz": "mashina",
+              "ru": "машинка",
+              "en": "a car"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu qanday oʻyinchoq?",
+        "ru": "Послушай. Какая это игрушка?",
+        "en": "Listen. What toy is it?"
+      },
+      "hint": {
+        "uz": "«camera» — fotoapparat.",
+        "ru": "«camera» — фотоаппарат.",
+        "en": "A \"camera\" takes photos."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a camera.",
+        "ru": "Верно! It's a camera.",
+        "en": "Right! It's a camera."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "What's this?",
+              "audio": {
+                "key": "ing13-q9-a",
+                "text": "What's this?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "It's a camera!",
+              "audio": {
+                "key": "ing13-q9-b",
+                "text": "It's a camera!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu nima?",
+              "ru": "Что это?",
+              "en": "What is it?"
+            },
+            "choices": [
+              "a ball",
+              "a teddy bear",
+              "a camera"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Faqat oʻyinchoqlarni belgila!",
+        "ru": "Отметь только игрушки!",
+        "en": "Tap only the toys!"
+      },
+      "hint": {
+        "uz": "Koptok, robot, ayiqcha — oʻyinchoq.",
+        "ru": "Мяч, робот, мишка — игрушки.",
+        "en": "A ball, a robot, a teddy bear are toys."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular oʻyinchoq, kitob va qalam esa yoʻq!",
+        "ru": "Молодец! Это игрушки, а книга и карандаш — нет!",
+        "en": "Great! Those are toys; a book and a pencil are not!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "⚽",
+              "label": "ball",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🤖",
+              "label": "robot",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐻",
+              "label": "teddy bear",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "📖",
+              "label": "book"
+            },
+            {
+              "id": "d1",
+              "emoji": "✏️",
+              "label": "pencil"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

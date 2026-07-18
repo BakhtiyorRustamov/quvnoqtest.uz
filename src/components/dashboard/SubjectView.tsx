@@ -16,6 +16,7 @@ import { G1_MATH_PART2_START, G1_MATH_PART3_START, G1_MATH_PART4_START } from '@
 import { EXAM_TITLE } from '@/content/g1-math/exam';
 import { DTM_TITLE } from '@/content/g1-math/dtm-exam';
 import { pick } from '@/lib/i18n-config';
+import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
 
 /**
@@ -104,7 +105,7 @@ export default function SubjectView() {
       <div className="max-w-3xl mx-auto px-3">
         <div className="flex items-center gap-3 mt-4">
           <h1 className="font-black text-ink text-2xl sm:text-3xl">
-            {t('common.grade', { n: 1 })} · Matematika
+            {t('common.grade', { n: 1 })} · {pick(SUBJECTS.matematika.name, locale)}
           </h1>
         </div>
 
@@ -361,12 +362,7 @@ export default function SubjectView() {
             className="block rounded-3xl border-2 border-brand-orange/60 bg-gradient-to-br from-brand-orange/15 to-brand-magenta/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
           >
             <div className="flex items-center gap-4">
-              <img
-                src="/prezident-logo.png"
-                alt=""
-                aria-hidden
-                className="shrink-0 w-14 h-14 rounded-full bg-white object-cover shadow-card"
-              />
+              <span aria-hidden className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card">📝</span>
               <div className="flex-1 leading-snug">
                 <span className="block font-black text-ink text-lg">{pick(EXAM_TITLE, locale)}</span>
                 <span className="block font-bold text-ink/50 text-[13px]">
@@ -394,12 +390,7 @@ export default function SubjectView() {
             className="block rounded-3xl border-2 border-brand-blue/60 bg-gradient-to-br from-brand-blue/15 to-brand-green/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
           >
             <div className="flex items-center gap-4">
-              <img
-                src="/dtm-logo.png"
-                alt=""
-                aria-hidden
-                className="shrink-0 w-14 h-14 rounded-full bg-white object-cover shadow-card"
-              />
+              <span aria-hidden className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card">🎓</span>
               <div className="flex-1 leading-snug">
                 <span className="block font-black text-ink text-lg">{pick(DTM_TITLE, locale)}</span>
                 <span className="block font-bold text-ink/50 text-[13px]">

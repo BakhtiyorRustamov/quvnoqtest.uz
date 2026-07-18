@@ -1,0 +1,585 @@
+{
+  "topicId": "g1-informatika-01",
+  "subjectKey": "g1-informatika",
+  "emojis": "👀👂👃👅",
+  "title": {
+    "uz": "Bizning sezgi aʼzolarimiz",
+    "ru": "Наши органы чувств",
+    "en": "Our sense organs"
+  },
+  "recall": {
+    "uz": "Insonda beshta sezgi aʼzosi bor: koʻz, quloq, burun, til va teri. Ular orqali biz atrofdagi olamni bilib olamiz.",
+    "ru": "У человека пять органов чувств: глаза, уши, нос, язык и кожа. С их помощью мы познаём мир.",
+    "en": "A person has five sense organs: eyes, ears, nose, tongue and skin. Through them we come to know the world."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani qaysi sezgi aʼzosi bilan bilamiz?",
+        "ru": "Каким органом чувств узнаём каждое?",
+        "en": "Which sense organ do we use for each?"
+      },
+      "hint": {
+        "uz": "Koʻz koʻradi, quloq eshitadi.",
+        "ru": "Глаз видит, ухо слышит.",
+        "en": "Eyes see, ears hear."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har bir aʼzo oʻz ishini qiladi.",
+        "ru": "Молодец! Каждый орган делает своё дело.",
+        "en": "Great! Each organ does its job."
+      },
+      "widget": {
+        "type": "sense_match",
+        "props": {
+          "rounds": [
+            {
+              "emoji": "🌈",
+              "label": {
+                "uz": "kamalak",
+                "ru": "радуга",
+                "en": "rainbow"
+              },
+              "organ": "eye"
+            },
+            {
+              "emoji": "🥁",
+              "label": {
+                "uz": "nogʻora",
+                "ru": "барабан",
+                "en": "drum"
+              },
+              "organ": "ear"
+            },
+            {
+              "emoji": "🌹",
+              "label": {
+                "uz": "atirgul",
+                "ru": "роза",
+                "en": "rose"
+              },
+              "organ": "nose"
+            },
+            {
+              "emoji": "🍦",
+              "label": {
+                "uz": "muzqaymoq",
+                "ru": "мороженое",
+                "en": "ice cream"
+              },
+              "organ": "tongue"
+            },
+            {
+              "emoji": "💧",
+              "label": {
+                "uz": "suv",
+                "ru": "вода",
+                "en": "water"
+              },
+              "organ": "hand"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sezgi aʼzosini oʻz ishi bilan ula!",
+        "ru": "Соедини орган с его действием!",
+        "en": "Match each organ to what it does!"
+      },
+      "hint": {
+        "uz": "Koʻz — koʻrish, quloq — eshitish.",
+        "ru": "Глаз — видеть, ухо — слышать.",
+        "en": "Eye — see, ear — hear."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "👀"
+              },
+              "right": {
+                "label": {
+                  "uz": "koʻrish",
+                  "ru": "зрение",
+                  "en": "seeing"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👂"
+              },
+              "right": {
+                "label": {
+                  "uz": "eshitish",
+                  "ru": "слух",
+                  "en": "hearing"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👃"
+              },
+              "right": {
+                "label": {
+                  "uz": "hidlash",
+                  "ru": "обоняние",
+                  "en": "smelling"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👅"
+              },
+              "right": {
+                "label": {
+                  "uz": "taʼm bilish",
+                  "ru": "вкус",
+                  "en": "tasting"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Insonda nechta sezgi aʼzosi bor?",
+        "ru": "Сколько органов чувств у человека?",
+        "en": "How many sense organs does a person have?"
+      },
+      "hint": {
+        "uz": "Barmoqlaringda sana.",
+        "ru": "Посчитай на пальцах.",
+        "en": "Count on your fingers."
+      },
+      "explanation": {
+        "uz": "Insonda 5 ta sezgi aʼzosi bor.",
+        "ru": "У человека 5 органов чувств.",
+        "en": "A person has 5 sense organs."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "3",
+            "2"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi aʼzo bilan koʻramiz?",
+        "ru": "Каким органом мы видим?",
+        "en": "Which organ do we see with?"
+      },
+      "hint": {
+        "uz": "U yuzimizda joylashgan.",
+        "ru": "Он на лице.",
+        "en": "It is on our face."
+      },
+      "explanation": {
+        "uz": "Biz koʻz bilan koʻramiz.",
+        "ru": "Мы видим глазами.",
+        "en": "We see with our eyes."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "👃",
+              "label": {
+                "uz": "burun",
+                "ru": "нос",
+                "en": "nose"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech: bu qaysi aʼzo?",
+        "ru": "Отгадай загадку: какой это орган?",
+        "en": "Solve the riddle: which organ?"
+      },
+      "hint": {
+        "uz": "Ular yuzingda, juft boʻlib turadi.",
+        "ru": "Их два, они на лице.",
+        "en": "There are two, on your face."
+      },
+      "explanation": {
+        "uz": "Javob — koʻz!",
+        "ru": "Ответ — глаза!",
+        "en": "The answer is eyes!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Ikki ogʻa-ini,",
+              "ru": "Два братца,",
+              "en": "Two little brothers,"
+            },
+            {
+              "uz": "Bir-birini koʻrmaydi.",
+              "ru": "друг друга не видят.",
+              "en": "never see each other."
+            }
+          ],
+          "options": [
+            {
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            },
+            {
+              "emoji": "👃",
+              "label": {
+                "uz": "burun",
+                "ru": "нос",
+                "en": "nose"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sezgi aʼzolarini belgila!",
+        "ru": "Отметь органы чувств!",
+        "en": "Tap the sense organs!"
+      },
+      "hint": {
+        "uz": "Faqat tana aʼzolarini tanla.",
+        "ru": "Выбери только органы тела.",
+        "en": "Pick only body organs."
+      },
+      "explanation": {
+        "uz": "Ular sezgi aʼzolari.",
+        "ru": "Это органы чувств.",
+        "en": "These are sense organs."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "язык",
+                "en": "tongue"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🚗",
+              "label": {
+                "uz": "mashina",
+                "ru": "машина",
+                "en": "car"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": {
+                "uz": "koptok",
+                "ru": "мяч",
+                "en": "ball"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani qaysi aʼzo bilan bilamiz?",
+        "ru": "Каким органом узнаём каждое?",
+        "en": "Which organ for each?"
+      },
+      "hint": {
+        "uz": "Diqqat bilan oʻyla.",
+        "ru": "Подумай внимательно.",
+        "en": "Think carefully."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "sense_match",
+        "props": {
+          "rounds": [
+            {
+              "emoji": "📖",
+              "label": {
+                "uz": "kitob",
+                "ru": "книга",
+                "en": "book"
+              },
+              "organ": "eye"
+            },
+            {
+              "emoji": "🔔",
+              "label": {
+                "uz": "qoʻngʻiroq",
+                "ru": "звонок",
+                "en": "bell"
+              },
+              "organ": "ear"
+            },
+            {
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              },
+              "organ": "tongue"
+            },
+            {
+              "emoji": "🌸",
+              "label": {
+                "uz": "gul",
+                "ru": "цветок",
+                "en": "flower"
+              },
+              "organ": "nose"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Biz burun bilan hid bilamiz.",
+        "ru": "Мы чувствуем запах носом.",
+        "en": "We smell with our nose."
+      },
+      "hint": {
+        "uz": "Gulni hidlab koʻr.",
+        "ru": "Понюхай цветок.",
+        "en": "Smell a flower."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Burun — hid aʼzosi.",
+        "ru": "Верно! Нос — орган обоняния.",
+        "en": "True! The nose is for smelling."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👃",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Aʼzoni nomi bilan juftla!",
+        "ru": "Соедини орган с названием!",
+        "en": "Match the organ to its name!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab nomini top.",
+        "ru": "Найди название по картинке.",
+        "en": "Find the name by the picture."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "👀"
+              },
+              "b": {
+                "label": {
+                  "uz": "koʻz",
+                  "ru": "глаза",
+                  "en": "eyes"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👂"
+              },
+              "b": {
+                "label": {
+                  "uz": "quloq",
+                  "ru": "уши",
+                  "en": "ears"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👃"
+              },
+              "b": {
+                "label": {
+                  "uz": "burun",
+                  "ru": "нос",
+                  "en": "nose"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sezgi aʼzolari nima uchun kerak?",
+        "ru": "Зачем нужны органы чувств?",
+        "en": "Why do we need sense organs?"
+      },
+      "hint": {
+        "uz": "Ular yordamida nima qilamiz?",
+        "ru": "Что мы с ними делаем?",
+        "en": "What do we do with them?"
+      },
+      "explanation": {
+        "uz": "Ular olamni bilish uchun kerak.",
+        "ru": "Они нужны, чтобы познавать мир.",
+        "en": "They help us know the world."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "olamni bilish uchun",
+              "ru": "чтобы познавать мир",
+              "en": "to know the world"
+            },
+            {
+              "uz": "yugurish uchun",
+              "ru": "чтобы бегать",
+              "en": "to run"
+            },
+            {
+              "uz": "uxlash uchun",
+              "ru": "чтобы спать",
+              "en": "to sleep"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

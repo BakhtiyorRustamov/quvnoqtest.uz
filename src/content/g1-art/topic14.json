@@ -1,0 +1,18 @@
+{
+  "topicId": "g1-art-14", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Sumalaklar manzarasi", "ru": "Сосульки", "en": "Icicles" },
+  "recall": {
+    "uz": "Qishda tomlardagi suv muzlab, sumalakka aylanadi. Sumalaklar uchli va yaltiroq boʻladi. Keling, sumalaklarni chizamiz.",
+    "ru": "Зимой вода на крышах замерзает и превращается в сосульки. Сосульки острые и блестящие. Давай нарисуем сосульки.",
+    "en": "In winter the water on roofs freezes into icicles. Icicles are pointed and shiny. Let's draw icicles."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Tomdan osilgan sumalaklarni chiz.", "ru": "Нарисуй сосульки, свисающие с крыши.", "en": "Draw icicles hanging from a roof." },
+      "hint": { "uz": "Uchli, pastga qarab ingichkalashadigan shakllar.", "ru": "Острые формы, сужающиеся книзу.", "en": "Pointed shapes that get thinner downward." },
+      "explanation": { "uz": "Yaltiroq sumalaklar!", "ru": "Блестящие сосульки!", "en": "Shiny icicles!" },
+      "widget": { "type": "free_draw", "props": {} }
+    }
+  ]
+}

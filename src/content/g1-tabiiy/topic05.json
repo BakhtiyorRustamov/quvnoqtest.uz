@@ -1,0 +1,218 @@
+{
+  "topicId": "g1-tabiiy-05",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🐄🦌🐟🦋",
+  "title": {
+    "uz": "Hayvonlar dunyosiga sayohat",
+    "ru": "Путешествие в мир животных",
+    "en": "A journey into the animal world"
+  },
+  "recall": {
+    "uz": "Hayvonlar uy va yovvoyi hayvonlarga boʻlinadi. Sigir va qoʻy — uy hayvoni, boʻri va kiyik — yovvoyi. Hayvonot olamini yana baliqlar, qushlar, hayvonlar va hasharotlarga ajratamiz.",
+    "ru": "Животные делятся на домашних и диких. Корова и овца — домашние, волк и косуля — дикие. Мир животных также делят на рыб, птиц, зверей и насекомых.",
+    "en": "Animals are divided into domestic and wild. A cow and a sheep are domestic, a wolf and a deer are wild. The animal world is also split into fish, birds, animals and insects."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri uy hayvoni?", "ru": "Какое животное домашнее?", "en": "Which one is a domestic animal?" },
+      "hint": { "uz": "Uy hayvonini odam boqadi va parvarishlaydi.", "ru": "Домашнее животное человек кормит и содержит.", "en": "A domestic animal is fed and kept by people." },
+      "explanation": { "uz": "Sigir — uy hayvoni, u odamga sut beradi. Boʻri va kiyik — yovvoyi.", "ru": "Корова — домашнее животное, даёт молоко. Волк и косуля — дикие.", "en": "A cow is a domestic animal that gives milk. A wolf and a deer are wild." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "cow", "emoji": "🐄", "label": { "uz": "sigir", "ru": "корова", "en": "cow" }, "correct": true },
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" } },
+            { "id": "deer", "emoji": "🦌", "label": { "uz": "kiyik", "ru": "косуля", "en": "deer" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri yovvoyi hayvon?", "ru": "Какое животное дикое?", "en": "Which one is a wild animal?" },
+      "hint": { "uz": "Yovvoyi hayvon oʻrmon va dalada oʻzi yashaydi.", "ru": "Дикое животное живёт само в лесу и в поле.", "en": "A wild animal lives on its own in the forest and field." },
+      "explanation": { "uz": "Boʻri — yovvoyi hayvon. Qoʻy va mushuk — uy hayvoni.", "ru": "Волк — дикое животное. Овца и кошка — домашние.", "en": "A wolf is a wild animal. A sheep and a cat are domestic." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" }, "correct": true },
+            { "id": "sheep", "emoji": "🐑", "label": { "uz": "qoʻy", "ru": "овца", "en": "sheep" } },
+            { "id": "cat", "emoji": "🐈", "label": { "uz": "mushuk", "ru": "кошка", "en": "cat" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Uy va yovvoyi hayvonlarga ajrat!", "ru": "Разложи на домашних и диких животных!", "en": "Sort into domestic and wild animals!" },
+      "hint": { "uz": "Odam boqadiganlar — uy; oʻzi yashaydiganlar — yovvoyi.", "ru": "Кого содержит человек — домашние; кто сам по себе — дикие.", "en": "Kept by people → domestic; living on their own → wild." },
+      "explanation": { "uz": "Sigir, qoʻy, it — uy hayvoni. Boʻri, kiyik, tulki — yovvoyi hayvon.", "ru": "Корова, овца, собака — домашние. Волк, косуля, лиса — дикие.", "en": "Cow, sheep, dog are domestic. Wolf, deer, fox are wild." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "home", "label": { "uz": "🏠 Uy hayvoni", "ru": "🏠 Домашние", "en": "🏠 Domestic" }, "color": "#f39a1f" },
+            { "id": "wild", "label": { "uz": "🌲 Yovvoyi", "ru": "🌲 Дикие", "en": "🌲 Wild" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "cow", "emoji": "🐄", "label": { "uz": "sigir", "ru": "корова", "en": "cow" }, "bin": "home" },
+            { "id": "sheep", "emoji": "🐑", "label": { "uz": "qoʻy", "ru": "овца", "en": "sheep" }, "bin": "home" },
+            { "id": "dog", "emoji": "🐕", "label": { "uz": "it", "ru": "собака", "en": "dog" }, "bin": "home" },
+            { "id": "wolf", "emoji": "🐺", "label": { "uz": "boʻri", "ru": "волк", "en": "wolf" }, "bin": "wild" },
+            { "id": "deer", "emoji": "🦌", "label": { "uz": "kiyik", "ru": "косуля", "en": "deer" }, "bin": "wild" },
+            { "id": "fox", "emoji": "🦊", "label": { "uz": "tulki", "ru": "лиса", "en": "fox" }, "bin": "wild" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir jonivorni oʻz guruhiga ula!", "ru": "Соедини каждое животное с его группой!", "en": "Match each creature to its group!" },
+      "hint": { "uz": "Baliq — baliqlar, burgut — qushlar, ari — hasharotlar, kiyik — hayvonlar.", "ru": "Рыба — рыбы, орёл — птицы, пчела — насекомые, косуля — звери.", "en": "Fish — fish, eagle — birds, bee — insects, deer — animals." },
+      "explanation": { "uz": "Hayvonot olami baliqlar, qushlar, hasharotlar va hayvonlarga boʻlinadi.", "ru": "Мир животных делится на рыб, птиц, насекомых и зверей.", "en": "The animal world is divided into fish, birds, insects and animals." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" } }, "right": { "label": { "uz": "baliqlar", "ru": "рыбы", "en": "fish" } } },
+            { "left": { "emoji": "🦅", "label": { "uz": "burgut", "ru": "орёл", "en": "eagle" } }, "right": { "label": { "uz": "qushlar", "ru": "птицы", "en": "birds" } } },
+            { "left": { "emoji": "🐝", "label": { "uz": "ari", "ru": "пчела", "en": "bee" } }, "right": { "label": { "uz": "hasharotlar", "ru": "насекомые", "en": "insects" } } },
+            { "left": { "emoji": "🦌", "label": { "uz": "kiyik", "ru": "косуля", "en": "deer" } }, "right": { "label": { "uz": "hayvonlar", "ru": "звери", "en": "animals" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Barcha qushlarni belgila!", "ru": "Отметь всех птиц!", "en": "Tap all the birds!" },
+      "hint": { "uz": "Qushning pati va qanoti bor, u tuxum qoʻyadi.", "ru": "У птицы перья и крылья, она несёт яйца.", "en": "A bird has feathers and wings, and lays eggs." },
+      "explanation": { "uz": "Burgut, qaldirgʻoch va tovuq — qushlar. Baliq, ilon, qurbaqa — yoʻq.", "ru": "Орёл, ласточка и курица — птицы. Рыба, змея, лягушка — нет.", "en": "Eagle, swallow and chicken are birds. Fish, snake, frog are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "eagle", "emoji": "🦅", "label": { "uz": "burgut", "ru": "орёл", "en": "eagle" }, "correct": true },
+            { "id": "swallow", "emoji": "🐦", "label": { "uz": "qaldirgʻoch", "ru": "ласточка", "en": "swallow" }, "correct": true },
+            { "id": "hen", "emoji": "🐔", "label": { "uz": "tovuq", "ru": "курица", "en": "hen" }, "correct": true },
+            { "id": "fish", "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" } },
+            { "id": "snake", "emoji": "🐍", "label": { "uz": "ilon", "ru": "змея", "en": "snake" } },
+            { "id": "frog", "emoji": "🐸", "label": { "uz": "qurbaqa", "ru": "лягушка", "en": "frog" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bu soya qaysi jonivorniki?", "ru": "Чья это тень?", "en": "Whose shadow is this?" },
+      "hint": { "uz": "Uzun boʻyni va oʻrkachi bor — choʻl kemasi.", "ru": "Длинная шея и горб — корабль пустыни.", "en": "A long neck and a hump — the ship of the desert." },
+      "explanation": { "uz": "Soya tuyaniki. Tuyaning oʻrkachi bor.", "ru": "Это тень верблюда. У верблюда есть горб.", "en": "The shadow belongs to a camel. A camel has a hump." },
+      "widget": {
+        "type": "shadow_guess",
+        "props": {
+          "shadow": "🐫",
+          "options": [
+            { "id": "camel", "emoji": "🐫", "label": { "uz": "tuya", "ru": "верблюд", "en": "camel" }, "correct": true },
+            { "id": "horse", "emoji": "🐴", "label": { "uz": "ot", "ru": "конь", "en": "horse" } },
+            { "id": "deer", "emoji": "🦌", "label": { "uz": "kiyik", "ru": "косуля", "en": "deer" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri hasharot?", "ru": "Кто из них насекомое?", "en": "Which one is an insect?" },
+      "hint": { "uz": "Hasharotning oltita oyogʻi bor, koʻpi uchadi.", "ru": "У насекомого шесть ножек, многие летают.", "en": "An insect has six legs, and many can fly." },
+      "explanation": { "uz": "Kapalak — hasharot. Baliq va qush boshqa guruhga kiradi.", "ru": "Бабочка — насекомое. Рыба и птица — из других групп.", "en": "A butterfly is an insect. A fish and a bird belong to other groups." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "butterfly", "emoji": "🦋", "label": { "uz": "kapalak", "ru": "бабочка", "en": "butterfly" }, "correct": true },
+            { "id": "fish", "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" } },
+            { "id": "bird", "emoji": "🐦", "label": { "uz": "qush", "ru": "птица", "en": "bird" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir jonivorni yashash joyiga ajrat!", "ru": "Разложи животных по месту обитания!", "en": "Sort each creature by where it lives!" },
+      "hint": { "uz": "Baliq suvda, qush va ari havoda, sigir va quyon quruqlikda.", "ru": "Рыба в воде, птица и пчела в воздухе, корова и заяц на суше.", "en": "Fish in water, bird and bee in the air, cow and rabbit on land." },
+      "explanation": { "uz": "Jonivorlar suvda, havoda yoki quruqlikda yashaydi.", "ru": "Животные живут в воде, в воздухе или на суше.", "en": "Creatures live in water, in the air, or on land." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "water", "label": { "uz": "💧 Suvda", "ru": "💧 В воде", "en": "💧 Water" }, "color": "#2f9fe0" },
+            { "id": "air", "label": { "uz": "🌤️ Havoda", "ru": "🌤️ В воздухе", "en": "🌤️ Air" }, "color": "#f39a1f" },
+            { "id": "land", "label": { "uz": "🌍 Quruqlikda", "ru": "🌍 На суше", "en": "🌍 Land" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "fish", "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" }, "bin": "water" },
+            { "id": "shark", "emoji": "🦈", "label": { "uz": "akula", "ru": "акула", "en": "shark" }, "bin": "water" },
+            { "id": "eagle", "emoji": "🦅", "label": { "uz": "burgut", "ru": "орёл", "en": "eagle" }, "bin": "air" },
+            { "id": "butterfly", "emoji": "🦋", "label": { "uz": "kapalak", "ru": "бабочка", "en": "butterfly" }, "bin": "air" },
+            { "id": "cow", "emoji": "🐄", "label": { "uz": "sigir", "ru": "корова", "en": "cow" }, "bin": "land" },
+            { "id": "rabbit", "emoji": "🐇", "label": { "uz": "quyon", "ru": "заяц", "en": "rabbit" }, "bin": "land" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri baliq — suvda suzuvchi jonivor?", "ru": "Кто из них рыба — плавает в воде?", "en": "Which one is a fish — it swims in water?" },
+      "hint": { "uz": "Baliqning suzgichi bor, u suvda yashaydi.", "ru": "У рыбы есть плавники, она живёт в воде.", "en": "A fish has fins and lives in water." },
+      "explanation": { "uz": "Baliq suvda suzadi. Qush havoda uchadi, mushuk quruqlikda yuradi.", "ru": "Рыба плавает в воде. Птица летает, кошка ходит по суше.", "en": "A fish swims in water. A bird flies, a cat walks on land." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "fish", "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" }, "correct": true },
+            { "id": "bird", "emoji": "🐦", "label": { "uz": "qush", "ru": "птица", "en": "bird" } },
+            { "id": "cat", "emoji": "🐈", "label": { "uz": "mushuk", "ru": "кошка", "en": "cat" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bu soya qaysi jonivorniki?", "ru": "Чья это тень?", "en": "Whose shadow is this?" },
+      "hint": { "uz": "U tez chopadi, odamga minish uchun yordam beradi.", "ru": "Он быстро бегает, на нём можно ездить.", "en": "It runs fast and people can ride it." },
+      "explanation": { "uz": "Soya otniki. Ot uy hayvoni boʻlib, tez chopadi.", "ru": "Это тень коня. Конь — домашнее животное, быстро бегает.", "en": "The shadow belongs to a horse. A horse is a domestic animal that runs fast." },
+      "widget": {
+        "type": "shadow_guess",
+        "props": {
+          "shadow": "🐴",
+          "options": [
+            { "id": "horse", "emoji": "🐴", "label": { "uz": "ot", "ru": "конь", "en": "horse" }, "correct": true },
+            { "id": "cow", "emoji": "🐄", "label": { "uz": "sigir", "ru": "корова", "en": "cow" } },
+            { "id": "goat", "emoji": "🐐", "label": { "uz": "echki", "ru": "коза", "en": "goat" } }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,530 @@
+{
+  "topicId": "g1-ingliz-25",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🏠🛏️🍳🛁",
+  "title": {
+    "uz": "Mening uyim",
+    "ru": "Мой дом",
+    "en": "My home"
+  },
+  "recall": {
+    "uz": "4-boʻlim: Uy! Bugun uy xonalarini inglizcha oʻrganamiz: kitchen — oshxona, bedroom — yotoqxona, bathroom — hammom, living room — mehmonxona.",
+    "ru": "Раздел 4: Дом! Сегодня учим комнаты по-английски: kitchen — кухня, bedroom — спальня, bathroom — ванная, living room — гостиная.",
+    "en": "Unit 4: Home! Today we learn the rooms in English: kitchen, bedroom, bathroom and living room."
+  },
+  "ttsText": {
+    "uz": "Mening uyim.",
+    "en": "Unit 4: My home! The kitchen, the bedroom, the bathroom and the living room."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola qaysi xonada?",
+        "ru": "Послушай. В какой комнате ребёнок?",
+        "en": "Listen. Which room is the child in?"
+      },
+      "hint": {
+        "uz": "«in the kitchen» — oshxonada.",
+        "ru": "«in the kitchen» — на кухне.",
+        "en": "\"in the kitchen\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! In the kitchen — oshxonada.",
+        "ru": "Верно! In the kitchen — на кухне.",
+        "en": "Right! In the kitchen."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Where are you?",
+              "audio": {
+                "key": "ing25-q1-a",
+                "text": "Where are you?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I'm in the kitchen!",
+              "audio": {
+                "key": "ing25-q1-b",
+                "text": "I'm in the kitchen!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam qayerda?",
+              "ru": "Где Сэм?",
+              "en": "Where is Sam?"
+            },
+            "choices": [
+              "bathroom",
+              "kitchen",
+              "bedroom"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va oshxonani bos!",
+        "ru": "Послушай и нажми кухню!",
+        "en": "Listen and tap the kitchen!"
+      },
+      "audio": {
+        "key": "ing25-q2",
+        "text": "Kitchen! Tap the kitchen.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«kitchen» — oshxona (ovqat pishiramiz).",
+        "ru": "«kitchen» — кухня (готовим еду).",
+        "en": "The \"kitchen\" is where we cook."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Kitchen — oshxona.",
+        "ru": "Верно! Kitchen — кухня.",
+        "en": "Right! Kitchen!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍳",
+              "label": "kitchen",
+              "correct": true
+            },
+            {
+              "emoji": "🛏️",
+              "label": "bedroom"
+            },
+            {
+              "emoji": "🛁",
+              "label": "bathroom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va yotoqxonani bos!",
+        "ru": "Послушай и нажми спальню!",
+        "en": "Listen and tap the bedroom!"
+      },
+      "audio": {
+        "key": "ing25-q3",
+        "text": "Bedroom! Tap the bedroom.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«bedroom» — yotoqxona (uxlaymiz).",
+        "ru": "«bedroom» — спальня (спим).",
+        "en": "The \"bedroom\" is where we sleep."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bedroom — yotoqxona.",
+        "ru": "Верно! Bedroom — спальня.",
+        "en": "Right! Bedroom!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🛏️",
+              "label": "bedroom",
+              "correct": true
+            },
+            {
+              "emoji": "🛋️",
+              "label": "living room"
+            },
+            {
+              "emoji": "🍽️",
+              "label": "dining room"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va hammomni bos!",
+        "ru": "Послушай и нажми ванную!",
+        "en": "Listen and tap the bathroom!"
+      },
+      "audio": {
+        "key": "ing25-q4",
+        "text": "Bathroom! Tap the bathroom.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«bathroom» — hammom (yuvinamiz).",
+        "ru": "«bathroom» — ванная (моемся).",
+        "en": "The \"bathroom\" is where we wash."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bathroom — hammom.",
+        "ru": "Верно! Bathroom — ванная.",
+        "en": "Right! Bathroom!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🛁",
+              "label": "bathroom",
+              "correct": true
+            },
+            {
+              "emoji": "🍳",
+              "label": "kitchen"
+            },
+            {
+              "emoji": "🛏️",
+              "label": "bedroom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va mehmonxonani bos!",
+        "ru": "Послушай и нажми гостиную!",
+        "en": "Listen and tap the living room!"
+      },
+      "audio": {
+        "key": "ing25-q5",
+        "text": "Living room! Tap the living room.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«living room» — mehmonxona (dam olamiz).",
+        "ru": "«living room» — гостиная (отдыхаем).",
+        "en": "The \"living room\" is where we relax."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Living room — mehmonxona.",
+        "ru": "Верно! Living room — гостиная.",
+        "en": "Right! Living room!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🛋️",
+              "label": "living room",
+              "correct": true
+            },
+            {
+              "emoji": "🛁",
+              "label": "bathroom"
+            },
+            {
+              "emoji": "🍳",
+              "label": "kitchen"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni xonaga ula!",
+        "ru": "Соедини слово с комнатой!",
+        "en": "Match each word to its room!"
+      },
+      "hint": {
+        "uz": "kitchen, bedroom, bathroom, living room.",
+        "ru": "kitchen, bedroom, bathroom, living room.",
+        "en": "kitchen, bedroom, bathroom, living room."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Xonalarni bilding!",
+        "ru": "Отлично! Ты знаешь комнаты!",
+        "en": "Awesome! You know the rooms!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "kitchen"
+              },
+              "right": {
+                "emoji": "🍳"
+              }
+            },
+            {
+              "left": {
+                "label": "bedroom"
+              },
+              "right": {
+                "emoji": "🛏️"
+              }
+            },
+            {
+              "left": {
+                "label": "bathroom"
+              },
+              "right": {
+                "emoji": "🛁"
+              }
+            },
+            {
+              "left": {
+                "label": "living room"
+              },
+              "right": {
+                "emoji": "🛋️"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, soʻz va xona juftini top!",
+        "ru": "Открывай карточки: слово и комната!",
+        "en": "Flip the cards: match each word to its room!"
+      },
+      "hint": {
+        "uz": "house — 🏠, kitchen — 🍳, bedroom — 🛏️.",
+        "ru": "house — 🏠, kitchen — 🍳, bedroom — 🛏️.",
+        "en": "house — 🏠, kitchen — 🍳, bedroom — 🛏️."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🏠"
+              },
+              "b": {
+                "label": "house"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍳"
+              },
+              "b": {
+                "label": "kitchen"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🛏️"
+              },
+              "b": {
+                "label": "bedroom"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uydagi xonalarni belgila!",
+        "ru": "Отметь комнаты в доме!",
+        "en": "Tap the rooms in a house!"
+      },
+      "hint": {
+        "uz": "Oshxona, yotoqxona, hammom.",
+        "ru": "Кухня, спальня, ванная.",
+        "en": "Kitchen, bedroom, bathroom."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular xona, mashina va koptok esa yoʻq!",
+        "ru": "Молодец! Это комнаты, а машина и мяч — нет!",
+        "en": "Great! Those are rooms; a car and a ball are not!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍳",
+              "label": "kitchen",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🛏️",
+              "label": "bedroom",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🛁",
+              "label": "bathroom",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🚗",
+              "label": "car"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola qaysi xonada?",
+        "ru": "Послушай. В какой комнате ребёнок?",
+        "en": "Listen. Which room is the child in?"
+      },
+      "hint": {
+        "uz": "«in the bedroom» — yotoqxonada.",
+        "ru": "«in the bedroom» — в спальне.",
+        "en": "\"in the bedroom\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! In the bedroom — yotoqxonada.",
+        "ru": "Верно! In the bedroom — в спальне.",
+        "en": "Right! In the bedroom."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Where are you?",
+              "audio": {
+                "key": "ing25-q9-a",
+                "text": "Where are you?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "I'm in the bedroom!",
+              "audio": {
+                "key": "ing25-q9-b",
+                "text": "I'm in the bedroom!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia qayerda?",
+              "ru": "Где Мия?",
+              "en": "Where is Mia?"
+            },
+            "choices": [
+              "kitchen",
+              "bedroom",
+              "bathroom"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Mia ovqat pishirmoqda. U qayerda?",
+        "ru": "Мия готовит еду. Где она?",
+        "en": "Mia is cooking food. Where is she?"
+      },
+      "hint": {
+        "uz": "Ovqat oshxonada pishiriladi.",
+        "ru": "Еду готовят на кухне.",
+        "en": "We cook in the kitchen."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! She's in the kitchen.",
+        "ru": "Верно! She's in the kitchen.",
+        "en": "Right! She's in the kitchen."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "in the kitchen\noshxonada",
+              "ru": "in the kitchen\nна кухне",
+              "en": "in the kitchen"
+            },
+            {
+              "uz": "in the bedroom\nyotoqxonada",
+              "ru": "in the bedroom\nв спальне",
+              "en": "in the bedroom"
+            },
+            {
+              "uz": "in the bathroom\nhammomda",
+              "ru": "in the bathroom\nв ванной",
+              "en": "in the bathroom"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

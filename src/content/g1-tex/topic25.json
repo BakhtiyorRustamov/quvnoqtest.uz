@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-25",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "\"Domino\" oʻyini",
+    "ru": "Игра «Домино»",
+    "en": "The \"Domino\" game"
+  },
+  "recall": {
+    "uz": "Bugun kartondan oʻzimizga domino oʻyinini yasaymiz.",
+    "ru": "Сегодня сделаем из картона игру «Домино».",
+    "en": "Today we make our own domino game from cardboard."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Domino yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай домино. Выполняй каждый этап по рисунку!",
+        "en": "Make dominoes. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Har plitkani chiziq bilan boʻl.",
+        "ru": "Раздели каждую плитку линией.",
+        "en": "Split each tile with a line."
+      },
+      "explanation": {
+        "uz": "Endi oʻynasa boʻladi!",
+        "ru": "Теперь можно играть!",
+        "en": "Now you can play!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "oq karton",
+              "ru": "белый картон",
+              "en": "white cardboard"
+            },
+            {
+              "uz": "qora flomaster",
+              "ru": "чёрный фломастер",
+              "en": "a black marker"
+            },
+            {
+              "uz": "chizgʻich",
+              "ru": "линейка",
+              "en": "a ruler"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Kartondan bir xil toʻrtburchak plitkalar qirq.",
+              "ru": "Вырежь из картона одинаковые прямоугольные плитки.",
+              "en": "Cut equal rectangular tiles from cardboard."
+            },
+            {
+              "uz": "Har plitkani oʻrtasidan chiziq bilan boʻl.",
+              "ru": "Раздели каждую плитку линией посередине.",
+              "en": "Divide each tile with a line in the middle."
+            },
+            {
+              "uz": "Ikki tomoniga nuqtalar chiz.",
+              "ru": "Нарисуй точки на обеих половинах.",
+              "en": "Draw dots on both halves."
+            }
+          ],
+          "art": "domino",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

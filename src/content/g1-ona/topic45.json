@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-45",
+  "subjectKey": "g1-ona",
+  "emojis": "⭐📝✨",
+  "title": {
+    "uz": "Takrorlash — bosh harf",
+    "ru": "Повторение — заглавная буква",
+    "en": "Review — capital letters"
+  },
+  "recall": {
+    "uz": "Takrorlaymiz! Joy nomlari (Toshkent, Buxoro, Chirchiq), kishilar ismi va familiyasi (Akmal, Olimova), hayvon laqablari (Boychibor, Uchqur) — barchasi bosh harf bilan yoziladi. Oddiy soʻzlar esa kichik harf bilan yoziladi.",
+    "ru": "Повторяем! Названия мест (Toshkent, Buxoro, Chirchiq), имена и фамилии людей (Akmal, Olimova), клички животных (Boychibor, Uchqur) — всё пишется с заглавной буквы. А обычные слова — со строчной.",
+    "en": "Let's review! Place names (Toshkent, Buxoro, Chirchiq), people's names and surnames (Akmal, Olimova), and animal nicknames (Boychibor, Uchqur) are all written with a capital letter. Ordinary words are written lowercase."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Bosh harf bilan", "ru": "С заглавной буквы", "en": "With a capital letter" }, { "uz": "Kichik harf bilan", "ru": "Со строчной буквы", "en": "With a small letter" }, { "uz": "Gap oxirida bosh harf bilan", "ru": "С заглавной в конце предложения", "en": "With a capital at the end of a sentence" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Joy nomlari qanday harf bilan yoziladi?", "ru": "С какой буквы пишутся названия мест?", "en": "Which letter do place names begin with?" },
+      "hint": { "uz": "Toshkent, Buxoro, Chirchiq.", "ru": "Toshkent, Buxoro, Chirchiq.", "en": "Toshkent, Buxoro, Chirchiq." },
+      "explanation": { "uz": "Joy nomlari doim bosh harf bilan yoziladi.", "ru": "Названия мест всегда пишутся с заглавной буквы.", "en": "Place names are always written with a capital letter." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Buxoro, Andijon, Xiva, Qoʻqon", "ru": "Buxoro, Andijon, Xiva, Qoʻqon", "en": "Buxoro, Andijon, Xiva, Qoʻqon" }, { "uz": "Namangan, Bahrom, Ziyrak, Chirchiq", "ru": "Namangan, Bahrom, Ziyrak, Chirchiq", "en": "Namangan, Bahrom, Ziyrak, Chirchiq" }, { "uz": "Toshkent, Gulasal, Momiq, Bekobod", "ru": "Toshkent, Gulasal, Momiq, Bekobod", "en": "Toshkent, Gulasal, Momiq, Bekobod" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi qatorda faqat joy nomlari bor?", "ru": "В каком ряду только названия мест?", "en": "Which row has only place names?" },
+      "hint": { "uz": "Bahrom, Gulasal — kishi ismi; Ziyrak, Momiq — laqab.", "ru": "Bahrom, Gulasal — имена; Ziyrak, Momiq — клички.", "en": "Bahrom, Gulasal are names; Ziyrak, Momiq are nicknames." },
+      "explanation": { "uz": "Buxoro, Andijon, Xiva, Qoʻqon — barchasi shahar (joy) nomlari.", "ru": "Buxoro, Andijon, Xiva, Qoʻqon — все названия городов.", "en": "Buxoro, Andijon, Xiva, Qoʻqon are all city (place) names." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Sattorova", "ru": "Sattorova", "en": "Sattorova" }, { "uz": "Alimov", "ru": "Alimov", "en": "Alimov" }, { "uz": "Saidov", "ru": "Saidov", "en": "Saidov" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi biri ortiqcha? Alimov, Rahimov, Sattorova, Mahmudov, Saidov", "ru": "Какое слово лишнее? Alimov, Rahimov, Sattorova, Mahmudov, Saidov", "en": "Which one is the odd one out? Alimov, Rahimov, Sattorova, Mahmudov, Saidov" },
+      "hint": { "uz": "-ova bilan tugagan familiya kimniki?", "ru": "Чья фамилия оканчивается на -ova?", "en": "Whose surname ends in -ova?" },
+      "explanation": { "uz": "«Sattorova» — qiz familiyasi (-ova), qolganlari oʻgʻil familiyasi (-ov).", "ru": "«Sattorova» — женская фамилия (-ova), остальные — мужские (-ov).", "en": "“Sattorova” is a girl's surname (-ova); the rest are boys' (-ov)." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Chirchiq", "match": true }, { "text": "Bahrom", "match": false }, { "text": "Namangan", "match": true }, { "text": "Momiq", "match": false }, { "text": "Buxoro", "match": true }, { "text": "Ziyrak", "match": false } ] } },
+      "prompt": { "uz": "Faqat joy nomlarini bos!", "ru": "Нажми только названия мест!", "en": "Tap only the place names!" },
+      "hint": { "uz": "Bahrom — ism, Momiq va Ziyrak — laqab.", "ru": "Bahrom — имя, Momiq и Ziyrak — клички.", "en": "Bahrom is a name; Momiq and Ziyrak are nicknames." },
+      "explanation": { "uz": "Chirchiq, Namangan, Buxoro — joy nomlari.", "ru": "Chirchiq, Namangan, Buxoro — названия мест.", "en": "Chirchiq, Namangan, Buxoro are place names." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Toshkent", "bin": "joy" }, { "id": "b", "label": "Xiva", "bin": "joy" }, { "id": "c", "label": "Akmal", "bin": "kishi" }, { "id": "d", "label": "Nodira", "bin": "kishi" }, { "id": "e", "label": "Uchqur", "bin": "hayvon" }, { "id": "f", "label": "Boychibor", "bin": "hayvon" } ], "bins": [ { "id": "joy", "label": "Joy nomi" }, { "id": "kishi", "label": "Kishi ismi" }, { "id": "hayvon", "label": "Hayvon laqabi" } ] } },
+      "prompt": { "uz": "Nomlarni uch guruhga ajrat!", "ru": "Раздели названия на три группы!", "en": "Sort the names into three groups!" },
+      "hint": { "uz": "Toshkent, Xiva — joy; Akmal, Nodira — kishi; Uchqur, Boychibor — hayvon.", "ru": "Toshkent, Xiva — места; Akmal, Nodira — люди; Uchqur, Boychibor — животные.", "en": "Toshkent, Xiva — places; Akmal, Nodira — people; Uchqur, Boychibor — animals." },
+      "explanation": { "uz": "Joy nomi, kishi ismi va hayvon laqabi — barchasi bosh harf bilan yoziladi.", "ru": "Названия мест, имена людей и клички животных — всё с заглавной.", "en": "Place names, people's names and animal nicknames are all capitalized." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Olmazor", "right": "Tuman" }, { "left": "Boʻrijar", "right": "Kanal" }, { "left": "Yakkatut", "right": "Mahalla" }, { "left": "Kattabogʻ", "right": "Qishloq" } ] } },
+      "prompt": { "uz": "Joy nomini uning turiga ula!", "ru": "Соедини название с видом места!", "en": "Match each name to its kind of place!" },
+      "hint": { "uz": "Olmazor — Toshkentdagi tuman.", "ru": "Olmazor — район в Ташкенте.", "en": "Olmazor is a district in Toshkent." },
+      "explanation": { "uz": "Olmazor — tuman, Boʻrijar — kanal, Yakkatut — mahalla, Kattabogʻ — qishloq.", "ru": "Olmazor — район, Boʻrijar — канал, Yakkatut — махалля, Kattabogʻ — кишлак.", "en": "Olmazor is a district, Boʻrijar a canal, Yakkatut a neighbourhood, Kattabogʻ a village." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "lola (2-soʻz, qizning ismi)", "ru": "lola (2-е слово, имя девочки)", "en": "lola (word 2, the girl's name)" }, { "uz": "togʻdan", "ru": "togʻdan", "en": "togʻdan" }, { "uz": "terdi", "ru": "terdi", "en": "terdi" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Singlim lola togʻdan lola terdi.» Qaysi soʻz bosh harf bilan yozilishi kerak?", "ru": "«Singlim lola togʻdan lola terdi.» Какое слово нужно писать с заглавной?", "en": "“Singlim lola togʻdan lola terdi.” Which word should be capitalized?" },
+      "hint": { "uz": "Ikkinchi soʻz — singilning ismi, oxirgisi esa gul.", "ru": "Второе слово — имя сестры, последнее — цветок.", "en": "The second word is the sister's name; the last is a flower." },
+      "explanation": { "uz": "2-soʻz «lola» — qizning ismi, «Lola» boʻlib bosh harf bilan yozilishi kerak.", "ru": "2-е «lola» — имя девочки, нужно писать «Lola» с заглавной.", "en": "The 2nd “lola” is the girl's name and should be “Lola”, capitalized." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Doston", "va", "Akmal", "Buxoroga", "sayohat", "qilishdi."], "emoji": "✈️", "clue": { "uz": "Sayohat haqida gap", "ru": "Предложение о путешествии", "en": "A sentence about a trip" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Kimlar? — «Doston va Akmal». Qayerga? — «Buxoroga».", "ru": "Кто? — «Doston va Akmal». Куда? — «Buxoroga».", "en": "Who? — “Doston va Akmal”. Where to? — “Buxoroga”." },
+      "explanation": { "uz": "Doston va Akmal Buxoroga sayohat qilishdi. Ism va joy nomi bosh harf bilan.", "ru": "Doston и Akmal съездили в Buxoro. Имена и название места — с заглавной.", "en": "Doston and Akmal travelled to Buxoro. Names and the place name take capitals." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "olmos", "match": true }, { "text": "olib", "match": false }, { "text": "rayhon", "match": true }, { "text": "keldi", "match": false } ] } },
+      "prompt": { "uz": "«olmos rayhon olib keldi.» Bosh harf bilan yozilishi kerak boʻlgan soʻzlarni bos!", "ru": "«olmos rayhon olib keldi.» Нажми слова, которые нужно писать с заглавной!", "en": "“olmos rayhon olib keldi.” Tap the words that must be capitalized!" },
+      "hint": { "uz": "«Olmos» — gap boshi va ism; «Rayhon» — ism.", "ru": "«Olmos» — начало предложения и имя; «Rayhon» — имя.", "en": "“Olmos” starts the sentence and is a name; “Rayhon” is a name." },
+      "explanation": { "uz": "Olmos va Rayhon — ismlar, bosh harf bilan yozilishi kerak.", "ru": "Olmos и Rayhon — имена, их нужно писать с заглавной.", "en": "Olmos and Rayhon are names and must be capitalized." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "Andijon", "letters": ["A", "n", "d", "i", "j", "o", "n"], "emoji": "🏙️", "clue": { "uz": "Shahar (joy) nomi", "ru": "Название города", "en": "A city (place) name" } } },
+      "prompt": { "uz": "Harflardan shahar nomini yigʻ!", "ru": "Собери название города из букв!", "en": "Build the city's name from the letters!" },
+      "hint": { "uz": "A- bilan boshlanadi, Oʻzbekistondagi shahar.", "ru": "Начинается с A-, город в Узбекистане.", "en": "Starts with A-, a city in Uzbekistan." },
+      "explanation": { "uz": "«Andijon» — shahar nomi, bosh «A» bilan yoziladi.", "ru": "«Andijon» — название города, с заглавной «A».", "en": "“Andijon” is a city name, written with a capital “A”." }
+    }
+  ]
+}

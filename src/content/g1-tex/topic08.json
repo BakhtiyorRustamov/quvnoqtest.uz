@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-08",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Fotosurat uchun ramka",
+    "ru": "Рамка для фото",
+    "en": "A photo frame"
+  },
+  "recall": {
+    "uz": "Bugun kartondan chiroyli fotosurat ramkasini yasaymiz.",
+    "ru": "Сегодня из картона сделаем рамку для фото.",
+    "en": "Today we make a photo frame from cardboard."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ramka yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай рамку. Выполняй каждый этап по рисунку!",
+        "en": "Make the frame. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Oʻrtasidan teshik kes.",
+        "ru": "Вырежь отверстие в центре.",
+        "en": "Cut a hole in the middle."
+      },
+      "explanation": {
+        "uz": "Ajoyib ramka!",
+        "ru": "Замечательная рамка!",
+        "en": "A wonderful frame!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "karton",
+              "ru": "картон",
+              "en": "cardboard"
+            },
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi va yelim",
+              "ru": "ножницы и клей",
+              "en": "scissors and glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Kartondan toʻrtburchak ramka qirq.",
+              "ru": "Вырежь прямоугольную рамку.",
+              "en": "Cut a rectangular frame from cardboard."
+            },
+            {
+              "uz": "Oʻrtasidan rasm sigʻadigan teshik kes.",
+              "ru": "Вырежь в центре отверстие для фото.",
+              "en": "Cut a hole in the middle for the photo."
+            },
+            {
+              "uz": "Ramkani rangli qogʻoz va bezaklar bilan bezat.",
+              "ru": "Укрась рамку цветной бумагой.",
+              "en": "Decorate the frame with coloured paper."
+            }
+          ],
+          "art": "frame",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

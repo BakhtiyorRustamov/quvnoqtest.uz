@@ -1,0 +1,155 @@
+{
+  "topicId": "g1-oqish-36",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "👑⚔️🏰",
+  "title": {
+    "uz": "Olamga mashhur Sohibqiron",
+    "ru": "Всемирно известный Сохибкиран",
+    "en": "The world-famous Sohibqiron"
+  },
+  "recall": {
+    "uz": "Amir Temur haqidagi sheʼrni tinglab oʻqiymiz, uning hikmatli oʻgitlarini oʻrganamiz va soʻzlar maʼnosini topamiz.",
+    "ru": "Слушаем стихотворение об Амире Темуре, изучаем его мудрые наставления и значения слов.",
+    "en": "We read a poem about Amir Temur, learn his wise maxims, and explore word meanings."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Sohibqiron bobom",
+        "variant": "poem",
+        "audio": "g1-oqish-36-q1",
+        "lines": [
+          "Amir Temur — dono shoh,",
+          "Adolat-la hukm surar.",
+          "«Birlik — buyuk kuch», deb u",
+          "Elni birga chorlar edi.",
+          "",
+          "Sohibqiron nomi-la",
+          "Yurtni dunyo tanidi.",
+          "Bugun biz ham bobomdan",
+          "Jasorat, faxr olamiz."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Amir Temur qanday shoh boʻlgan?", "ru": "Каким правителем был Амир Темур?", "en": "What kind of ruler was Amir Temur?" },
+      "explanation": { "uz": "Sheʼr Amir Temur — adolatli, botir Sohibqiron haqida.", "ru": "Стихотворение об Амире Темуре — справедливом, храбром Сохибкиране.", "en": "The poem is about Amir Temur — the just, brave Sohibqiron." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Kuch — adolatda", "match": true },
+        { "text": "Birliksiz kuch boʻlmas", "match": true },
+        { "text": "Yaxshini yomon kunda sina", "match": true },
+        { "text": "Dangasalik — baxt", "match": false },
+        { "text": "Yolgʻon — goʻzallik", "match": false }
+      ] } },
+      "prompt": { "uz": "Amir Temurning haqiqiy oʻgitlarini bos!", "ru": "Нажми настоящие наставления Амира Темура!", "en": "Tap Amir Temur's real maxims!" },
+      "hint": { "uz": "Temur adolat, birlik va jasoratni ulugʻlagan.", "ru": "Темур ценил справедливость, единство и смелость.", "en": "Temur valued justice, unity and courage." },
+      "explanation": { "uz": "«Kuch — adolatda», «Birliksiz kuch boʻlmas» — Temur oʻgitlari; qolganlari notoʻgʻri.", "ru": "«Сила — в справедливости», «Без единства нет силы» — наставления Темура; остальные — нет.", "en": "“Strength is in justice”, “No strength without unity” are Temur's maxims; the rest are not." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Amir Temur adolatli shoh boʻlgan.", "ru": "Амир Темур был справедливым правителем.", "en": "Amir Temur was a just ruler." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda u adolat bilan hukm surgani aytiladi.", "ru": "В стихотворении сказано, что он правил справедливо.", "en": "The poem says he ruled with justice." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Temur qanday hukm surgan?", "ru": "Как правил Темур?", "en": "How did Temur rule?" },
+      "explanation": { "uz": "Toʻgʻri: Amir Temur adolat bilan hukm surgan.", "ru": "Верно: Амир Темур правил справедливо.", "en": "True: Amir Temur ruled with justice." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Amir Temur dengizchi boʻlgan.", "ru": "Амир Темур был моряком.", "en": "Amir Temur was a sailor." },
+        "answer": "false",
+        "why": { "uz": "Aksincha, u sarkarda va adolatli shoh boʻlgan.", "ru": "Наоборот, он был полководцем и справедливым правителем.", "en": "On the contrary, he was a commander and a just ruler." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Temur kim boʻlgan?", "ru": "Кем был Темур?", "en": "Who was Temur?" },
+      "explanation": { "uz": "Notoʻgʻri: Amir Temur sarkarda va shoh boʻlgan.", "ru": "Неверно: Амир Темур был полководцем и правителем.", "en": "False: Amir Temur was a commander and a ruler." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "sohibqiron", "right": "qudratli hukmdor" },
+        { "left": "shon", "right": "hurmat, obroʻ" },
+        { "left": "adolat", "right": "haqqoniylik, insof" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«sohibqiron» — Amir Temurning sharafli unvoni.", "ru": "«sohibqiron» — почётный титул Амира Темура.", "en": "“sohibqiron” is Amir Temur's honorary title." },
+      "explanation": { "uz": "sohibqiron = qudratli hukmdor; shon = hurmat; adolat = haqqoniylik.", "ru": "sohibqiron = могущественный правитель; shon = почёт; adolat = справедливость.", "en": "sohibqiron = a mighty ruler; shon = honour; adolat = justice." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Adolat, jasorat va birlik", "ru": "Справедливость, смелость и единство", "en": "Justice, courage and unity" },
+        { "uz": "Dangasalik va qoʻrqoqlik", "ru": "Лень и трусость", "en": "Laziness and cowardice" },
+        { "uz": "Beparvolik", "ru": "Беспечность", "en": "Carelessness" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Amir Temurni olamga mashhur qilgan xislatlar qaysilar?", "ru": "Какие качества прославили Амира Темура?", "en": "Which qualities made Amir Temur famous?" },
+      "hint": { "uz": "Uning oʻgitlarini eslang.", "ru": "Вспомни его наставления.", "en": "Recall his maxims." },
+      "explanation": { "uz": "Adolat, jasorat va birlik uni olamga mashhur qilgan.", "ru": "Справедливость, смелость и единство прославили его.", "en": "Justice, courage and unity made him famous." },
+      "openEnd": { "uz": "Amir Temur haqida yana nima bilasan? Bir gap ayt.", "ru": "Что ещё ты знаешь об Амире Темуре? Скажи одно предложение.", "en": "What else do you know about Amir Temur? Say one sentence." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Kuch — ", "after": "da.", "choices": ["adolat", "dangasalik", "yolgʻon"], "answer": "adolat", "emoji": "⚖️", "clue": { "uz": "Amir Temurning oʻgiti", "ru": "Наставление Амира Темура", "en": "Amir Temur's maxim" } } },
+      "prompt": { "uz": "Oʻgitni toʻgʻri soʻz bilan toʻldiring!", "ru": "Дополни наставление подходящим словом!", "en": "Complete the maxim with the right word!" },
+      "hint": { "uz": "Haqiqiy kuch nimada?", "ru": "В чём настоящая сила?", "en": "In what lies true strength?" },
+      "explanation": { "uz": "«Kuch — adolatda»: haqiqiy kuch adolatdan keladi.", "ru": "«Сила — в справедливости»: истинная сила от справедливости.", "en": "“Strength is in justice”: true strength comes from justice." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Birliksiz", "kuch", "boʻlmas."], "emoji": "🔗", "clue": { "uz": "Amir Temurning hikmatli soʻzi", "ru": "Мудрое слово Амира Темура", "en": "Amir Temur's wise saying" } } },
+      "prompt": { "uz": "Soʻzlardan oʻgit tuzing!", "ru": "Составь наставление из слов!", "en": "Build the maxim from the words!" },
+      "hint": { "uz": "Gap «Birliksiz» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Birliksiz».", "en": "The sentence starts with “Birliksiz”." },
+      "explanation": { "uz": "«Birliksiz kuch boʻlmas»: hamjihatlik kuch beradi.", "ru": "«Без единства нет силы»: сплочённость даёт силу.", "en": "“No strength without unity”: togetherness gives strength." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Amir Temur —" },
+          { "blank": "adolatli" },
+          { "text": "shoh va" },
+          { "blank": "sarkarda" },
+          { "text": "boʻlgan." }
+        ],
+        "bank": ["adolatli", "sarkarda", "dangasa"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Temur qanday shoh va kim boʻlgan?", "ru": "Каким правителем и кем был Темур?", "en": "What kind of ruler and what was Temur?" },
+      "explanation": { "uz": "«Amir Temur — adolatli shoh va sarkarda boʻlgan».", "ru": "«Амир Темур был справедливым правителем и полководцем».", "en": "“Amir Temur was a just ruler and a commander.”" }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "adolat", "syllables": ["a", "do", "lat"], "emoji": "⚖️", "clue": { "uz": "Temur eng ulugʻlagan xislat", "ru": "Качество, которое Темур ценил больше всего", "en": "The quality Temur valued most" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "a + do + lat = ?", "ru": "a + do + lat = ?", "en": "a + do + lat = ?" },
+      "explanation": { "uz": "a-do-lat → adolat. Haqqoniylik, insof.", "ru": "a-do-lat → adolat (справедливость).", "en": "a-do-lat → adolat (justice)." }
+    }
+  ]
+}

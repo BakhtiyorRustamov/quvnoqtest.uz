@@ -1,0 +1,503 @@
+{
+  "topicId": "g1-informatika-29",
+  "subjectKey": "g1-informatika",
+  "emojis": "🔥❄️⬆️⬇️",
+  "title": {
+    "uz": "Qarama-qarshi belgilar",
+    "ru": "Противоположные признаки",
+    "en": "Opposite features"
+  },
+  "recall": {
+    "uz": "Narsalarning qarama-qarshi belgilari bor. Muz sovuq, olov issiq. Eshik ochiq yoki yopiq boʻladi. Bular bir-biriga qarama-qarshi.",
+    "ru": "У предметов есть противоположные признаки. Лёд холодный, огонь горячий. Дверь открыта или закрыта. Это противоположности.",
+    "en": "Things have opposite features. Ice is cold, fire is hot. A door is open or closed. These are opposites."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani qarama-qarshisi bilan ula!",
+        "ru": "Соедини с противоположностью!",
+        "en": "Match each to its opposite!"
+      },
+      "hint": {
+        "uz": "Issiqning teskarisi — sovuq.",
+        "ru": "Противоположность горячего — холодное.",
+        "en": "The opposite of hot is cold."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🔥"
+              },
+              "right": {
+                "label": {
+                  "uz": "sovuq",
+                  "ru": "холодный",
+                  "en": "cold"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬆️"
+              },
+              "right": {
+                "label": {
+                  "uz": "past",
+                  "ru": "низ",
+                  "en": "down"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "☀️"
+              },
+              "right": {
+                "label": {
+                  "uz": "tun",
+                  "ru": "ночь",
+                  "en": "night"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Muzning qarama-qarshisi (issiqlik boʻyicha) nima?",
+        "ru": "Противоположность льда (по теплу)?",
+        "en": "Ice's opposite (in heat)?"
+      },
+      "hint": {
+        "uz": "Issiq narsa.",
+        "ru": "Горячее.",
+        "en": "A hot thing."
+      },
+      "explanation": {
+        "uz": "Muz sovuq, olov issiq.",
+        "ru": "Лёд холодный, огонь горячий.",
+        "en": "Ice is cold, fire is hot."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "olov (issiq)",
+              "ru": "огонь (горячий)",
+              "en": "fire (hot)"
+            },
+            {
+              "uz": "qor",
+              "ru": "снег",
+              "en": "snow"
+            },
+            {
+              "uz": "suv",
+              "ru": "вода",
+              "en": "water"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ochiq»ning qarama-qarshisi nima?",
+        "ru": "Противоположность «открытого»?",
+        "en": "Opposite of 'open'?"
+      },
+      "hint": {
+        "uz": "Eshik holati.",
+        "ru": "Состояние двери.",
+        "en": "A door's state."
+      },
+      "explanation": {
+        "uz": "«Ochiq»ning teskarisi — «yopiq».",
+        "ru": "Противоположность — «закрытый».",
+        "en": "The opposite of open is closed."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yopiq",
+              "ru": "закрытый",
+              "en": "closed"
+            },
+            {
+              "uz": "katta",
+              "ru": "большой",
+              "en": "big"
+            },
+            {
+              "uz": "baland",
+              "ru": "высокий",
+              "en": "tall"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni ajrat: issiq va sovuq!",
+        "ru": "Раздели: горячее и холодное!",
+        "en": "Sort them: hot and cold!"
+      },
+      "hint": {
+        "uz": "Avval rasmni, keyin qutini bos.",
+        "ru": "Сначала картинку, потом ящик.",
+        "en": "Tap a picture, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Issiq va sovuqqa ajratding.",
+        "ru": "Молодец!",
+        "en": "Great! Sorted hot and cold."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "i",
+              "label": {
+                "uz": "Issiq",
+                "ru": "Горячий",
+                "en": "Hot"
+              }
+            },
+            {
+              "id": "s",
+              "label": {
+                "uz": "Sovuq",
+                "ru": "Холодный",
+                "en": "Cold"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔥",
+              "label": {
+                "uz": "olov",
+                "ru": "огонь",
+                "en": "fire"
+              },
+              "bin": "i"
+            },
+            {
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              },
+              "bin": "i"
+            },
+            {
+              "emoji": "❄️",
+              "label": {
+                "uz": "muz",
+                "ru": "лёд",
+                "en": "ice"
+              },
+              "bin": "s"
+            },
+            {
+              "emoji": "⛄",
+              "label": {
+                "uz": "qorbobo",
+                "ru": "снеговик",
+                "en": "snowman"
+              },
+              "bin": "s"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (sovuq)",
+        "ru": "Нажми лишнее! (холодное)",
+        "en": "Tap the odd one! (cold)"
+      },
+      "hint": {
+        "uz": "Qaysi biri issiq emas?",
+        "ru": "Что не горячее?",
+        "en": "Which is not hot?"
+      },
+      "explanation": {
+        "uz": "Muz sovuq, qolganlari issiq.",
+        "ru": "Лёд холодный, остальные горячие.",
+        "en": "Ice is cold, the rest are hot."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "issiq narsalar",
+            "ru": "горячее",
+            "en": "hot things"
+          },
+          "tiles": [
+            {
+              "text": "olov"
+            },
+            {
+              "text": "quyosh"
+            },
+            {
+              "text": "choy"
+            },
+            {
+              "text": "muz",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Katta»ning qarama-qarshisi nima?",
+        "ru": "Противоположность «большого»?",
+        "en": "Opposite of 'big'?"
+      },
+      "hint": {
+        "uz": "Oʻlcham boʻyicha.",
+        "ru": "По размеру.",
+        "en": "By size."
+      },
+      "explanation": {
+        "uz": "«Katta»ning teskarisi — «kichik».",
+        "ru": "Противоположность — «маленький».",
+        "en": "The opposite of big is small."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "kichik",
+              "ru": "маленький",
+              "en": "small"
+            },
+            {
+              "uz": "uzun",
+              "ru": "длинный",
+              "en": "long"
+            },
+            {
+              "uz": "qizil",
+              "ru": "красный",
+              "en": "red"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri sovuq?",
+        "ru": "Что холодное?",
+        "en": "Which one is cold?"
+      },
+      "hint": {
+        "uz": "Muzdek.",
+        "ru": "Как лёд.",
+        "en": "Like ice."
+      },
+      "explanation": {
+        "uz": "Muz sovuq.",
+        "ru": "Лёд холодный.",
+        "en": "Ice is cold."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "❄️",
+              "label": {
+                "uz": "muz",
+                "ru": "лёд",
+                "en": "ice"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🔥",
+              "label": {
+                "uz": "olov",
+                "ru": "огонь",
+                "en": "fire"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Issiq va sovuq — qarama-qarshi belgilar.",
+        "ru": "Горячее и холодное — противоположности.",
+        "en": "Hot and cold are opposite features."
+      },
+      "hint": {
+        "uz": "Bir-biriga teskari.",
+        "ru": "Обратны друг другу.",
+        "en": "They are opposites."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔥",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Uzun»ning qarama-qarshisi nima?",
+        "ru": "Противоположность «длинного»?",
+        "en": "Opposite of 'long'?"
+      },
+      "hint": {
+        "uz": "Yoʻl boʻyicha.",
+        "ru": "О длине.",
+        "en": "About length."
+      },
+      "explanation": {
+        "uz": "«Uzun»ning teskarisi — «qisqa».",
+        "ru": "Противоположность — «короткий».",
+        "en": "The opposite of long is short."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qisqa",
+              "ru": "короткий",
+              "en": "short"
+            },
+            {
+              "uz": "keng",
+              "ru": "широкий",
+              "en": "wide"
+            },
+            {
+              "uz": "baland",
+              "ru": "высокий",
+              "en": "tall"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi juftlik qarama-qarshi belgilar?",
+        "ru": "Какая пара — противоположности?",
+        "en": "Which pair are opposites?"
+      },
+      "hint": {
+        "uz": "Teskari maʼnoli.",
+        "ru": "Обратные по смыслу.",
+        "en": "Opposite in meaning."
+      },
+      "explanation": {
+        "uz": "«Issiq – sovuq» qarama-qarshi.",
+        "ru": "«Горячий – холодный» — противоположности.",
+        "en": "'Hot – cold' are opposites."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "issiq – sovuq",
+              "ru": "горячий – холодный",
+              "en": "hot – cold"
+            },
+            {
+              "uz": "olma – nok",
+              "ru": "яблоко – груша",
+              "en": "apple – pear"
+            },
+            {
+              "uz": "koʻk – koʻk",
+              "ru": "синий – синий",
+              "en": "blue – blue"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "topicId": "g1-ingliz-08",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🔢📚✏️✋",
+  "title": {
+    "uz": "Nechta? Sanaymiz",
+    "ru": "Сколько? Считаем",
+    "en": "How many? Counting"
+  },
+  "recall": {
+    "uz": "Bugun «How many …?» — «Nechta …?» degan savolni oʻrganamiz. Narsalarni sanaymiz: one, two, three… Va buyruqlar: «Stand up» — oʻrningdan tur, «Sit down» — oʻtir.",
+    "ru": "Сегодня учим вопрос «How many …?» — «Сколько …?». Считаем предметы: one, two, three… И команды: «Stand up» — встань, «Sit down» — сядь.",
+    "en": "Today we learn the question \"How many …?\" We count things: one, two, three… And commands: \"Stand up\" and \"Sit down\"."
+  },
+  "ttsText": {
+    "uz": "Nechta? Sanaymiz.",
+    "en": "How many? Let's count: one, two, three! And stand up, sit down!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Nechta kitob bor?",
+        "ru": "Послушай. Сколько книг?",
+        "en": "Listen. How many books are there?"
+      },
+      "hint": {
+        "uz": "«three» — uch.",
+        "ru": "«three» — три.",
+        "en": "\"three\" = 3."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Three books — uchta kitob.",
+        "ru": "Верно! Three books — три книги.",
+        "en": "Right! Three books."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "How many books?",
+              "audio": {
+                "key": "ing08-q1-a",
+                "text": "How many books?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Three books!",
+              "audio": {
+                "key": "ing08-q1-b",
+                "text": "Three books!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Nechta kitob?",
+              "ru": "Сколько книг?",
+              "en": "How many books?"
+            },
+            "choices": [
+              "five",
+              "three",
+              "two"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sana: nechta kitob? 📚📚📚📚",
+        "ru": "Посчитай: сколько книг? 📚📚📚📚",
+        "en": "Count: how many books? 📚📚📚📚"
+      },
+      "hint": {
+        "uz": "Barmoq bilan sana.",
+        "ru": "Посчитай пальцем.",
+        "en": "Count with your finger."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Four — toʻrt.",
+        "ru": "Верно! Four — четыре.",
+        "en": "Right! Four!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "four",
+            "three",
+            "five"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sana: nechta qalam? ✏️✏️",
+        "ru": "Посчитай: сколько карандашей? ✏️✏️",
+        "en": "Count: how many pencils? ✏️✏️"
+      },
+      "hint": {
+        "uz": "«two» — ikki.",
+        "ru": "«two» — два.",
+        "en": "\"two\" = 2."
+      },
+      "explanation": {
+        "uz": "Barakalla! Two — ikki.",
+        "ru": "Молодец! Two — два.",
+        "en": "Great! Two!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "two",
+            "one",
+            "four"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sonlarni 1 dan 5 gacha tartibla!",
+        "ru": "Расставь числа от 1 до 5!",
+        "en": "Put the numbers in order 1 to 5!"
+      },
+      "hint": {
+        "uz": "one, two, three, four, five.",
+        "ru": "one, two, three, four, five.",
+        "en": "one, two, three, four, five."
+      },
+      "explanation": {
+        "uz": "Ajoyib! 1–2–3–4–5!",
+        "ru": "Отлично! 1–2–3–4–5!",
+        "en": "Awesome! 1–2–3–4–5!"
+      },
+      "widget": {
+        "type": "number_order",
+        "props": {
+          "numbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "direction": "asc"
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «three» ni bos!",
+        "ru": "Послушай и нажми «three»!",
+        "en": "Listen and tap \"three\"!"
+      },
+      "audio": {
+        "key": "ing08-q5",
+        "text": "Three! Tap number three.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«three» — 3.",
+        "ru": "«three» — 3.",
+        "en": "\"three\" = 3."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 3 — three.",
+        "ru": "Верно! 3 — three.",
+        "en": "Right! 3 is three."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "3️⃣",
+              "label": "three",
+              "correct": true
+            },
+            {
+              "emoji": "5️⃣",
+              "label": "five"
+            },
+            {
+              "emoji": "2️⃣",
+              "label": "two"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha sonni raqamiga ula!",
+        "ru": "Соедини английское число с цифрой!",
+        "en": "Match each number word to its digit!"
+      },
+      "hint": {
+        "uz": "one=1, two=2, three=3, four=4.",
+        "ru": "one=1, two=2, three=3, four=4.",
+        "en": "one=1, two=2, three=3, four=4."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sonlarni bilding!",
+        "ru": "Молодец! Ты знаешь числа!",
+        "en": "Great! You know the numbers!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "one"
+              },
+              "right": {
+                "emoji": "1️⃣"
+              }
+            },
+            {
+              "left": {
+                "label": "two"
+              },
+              "right": {
+                "emoji": "2️⃣"
+              }
+            },
+            {
+              "left": {
+                "label": "three"
+              },
+              "right": {
+                "emoji": "3️⃣"
+              }
+            },
+            {
+              "left": {
+                "label": "four"
+              },
+              "right": {
+                "emoji": "4️⃣"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sana: nechta ruchka? 🖊️🖊️🖊️🖊️🖊️",
+        "ru": "Посчитай: сколько ручек? 🖊️🖊️🖊️🖊️🖊️",
+        "en": "Count: how many pens? 🖊️🖊️🖊️🖊️🖊️"
+      },
+      "hint": {
+        "uz": "«five» — besh.",
+        "ru": "«five» — пять.",
+        "en": "\"five\" = 5."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Five — besh.",
+        "ru": "Верно! Five — пять.",
+        "en": "Right! Five!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "five",
+            "four",
+            "six"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Nima qilishing kerak?",
+        "ru": "Послушай. Что нужно сделать?",
+        "en": "Listen. What should you do?"
+      },
+      "hint": {
+        "uz": "«Stand up» — oʻrningdan tur.",
+        "ru": "«Stand up» — встань.",
+        "en": "\"Stand up\" means get up."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Stand up — oʻrningdan tur.",
+        "ru": "Верно! Stand up — встань.",
+        "en": "Right! Stand up!"
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Teacher",
+              "text": "Stand up, please!",
+              "audio": {
+                "key": "ing08-q8-a",
+                "text": "Stand up, please!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "OK, Miss!",
+              "audio": {
+                "key": "ing08-q8-b",
+                "text": "OK, Miss!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Nima qilasan?",
+              "ru": "Что ты делаешь?",
+              "en": "What do you do?"
+            },
+            "choices": [
+              "sit down",
+              "stand up",
+              "open a book"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Ikki ruchka: 🖊️🖊️ = «two pens».",
+        "ru": "Верно? Две ручки: 🖊️🖊️ = «two pens».",
+        "en": "Is this right? Two pens: 🖊️🖊️ = \"two pens\"."
+      },
+      "hint": {
+        "uz": "Ruchkalarni sana.",
+        "ru": "Посчитай ручки.",
+        "en": "Count the pens."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 🖊️🖊️ — two pens.",
+        "ru": "Верно! 🖊️🖊️ — two pens.",
+        "en": "Right! Two pens!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🖊️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sana: nechta sumka? 🎒🎒🎒",
+        "ru": "Посчитай: сколько сумок? 🎒🎒🎒",
+        "en": "Count: how many bags? 🎒🎒🎒"
+      },
+      "hint": {
+        "uz": "«three» — uch.",
+        "ru": "«three» — три.",
+        "en": "\"three\" = 3."
+      },
+      "explanation": {
+        "uz": "Barakalla! Three bags — uchta sumka.",
+        "ru": "Молодец! Three bags — три сумки.",
+        "en": "Great! Three bags!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "three",
+            "two",
+            "four"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

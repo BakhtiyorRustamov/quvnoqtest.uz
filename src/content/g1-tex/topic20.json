@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-20",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Kemacha",
+    "ru": "Кораблик",
+    "en": "A little boat"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻozdan yelkanli kemacha yasaymiz.",
+    "ru": "Сегодня из цветной бумаги сделаем кораблик с парусом.",
+    "en": "Today we make a little sailboat from coloured paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kemacha yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай кораблик. Выполняй каждый этап по рисунку!",
+        "en": "Make a boat. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Yelkan — uchburchak.",
+        "ru": "Парус — треугольник.",
+        "en": "The sail is a triangle."
+      },
+      "explanation": {
+        "uz": "Suzayotgan kemacha!",
+        "ru": "Плывущий кораблик!",
+        "en": "A sailing boat!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Kema tagini (trapetsiya) qirq.",
+              "ru": "Вырежь дно кораблика (трапецию).",
+              "en": "Cut the boat's hull (a trapezoid)."
+            },
+            {
+              "uz": "Ustuncha va uchburchak yelkanni qoʻsh.",
+              "ru": "Добавь мачту и треугольный парус.",
+              "en": "Add a mast and a triangular sail."
+            },
+            {
+              "uz": "Bayroq va toʻlqinlarni qoʻsh.",
+              "ru": "Добавь флажок и волны.",
+              "en": "Add a flag and waves."
+            }
+          ],
+          "art": "boat",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "topicId": "g1-tabiiy-04",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🌱🌸🍃🍎",
+  "title": {
+    "uz": "Yashil doʻstlar: oʻsimliklar",
+    "ru": "Зелёные друзья: растения",
+    "en": "Green friends: plants"
+  },
+  "recall": {
+    "uz": "Oʻsimlikning ildizi, poyasi, bargi, guli va mevasi bor. Oʻsimliklar yovvoyi va madaniy boʻladi: momaqaymoq yovvoyi, karam va piyoz madaniy. Odamlar madaniy oʻsimliklarni tomorqa va bogʻda oʻstiradi.",
+    "ru": "У растения есть корень, стебель, лист, цветок и плод. Растения бывают дикие и культурные: одуванчик дикий, капуста и лук — культурные. Люди выращивают культурные растения на грядке и в саду.",
+    "en": "A plant has a root, a stem, a leaf, a flower and a fruit. Plants are either wild or cultivated: a dandelion is wild, cabbage and onion are cultivated. People grow cultivated plants in the garden bed and orchard."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻsimlikning qismlarini nomla!", "ru": "Назови части растения!", "en": "Label the parts of the plant!" },
+      "hint": { "uz": "Yuqorida gul, yon tomonda barg, pastda ildiz.", "ru": "Наверху цветок, сбоку лист, внизу корень.", "en": "The flower is on top, the leaf on the side, the root at the bottom." },
+      "explanation": { "uz": "Oʻsimlikda ildiz, poya, barg, gul va meva bor. Har biri oʻz vazifasini bajaradi.", "ru": "У растения есть корень, стебель, лист, цветок и плод. У каждого своя работа.", "en": "A plant has a root, stem, leaf, flower and fruit. Each does its own job." },
+      "widget": {
+        "type": "label_diagram",
+        "props": {
+          "parts": [
+            { "id": "flower", "label": { "uz": "guli", "ru": "цветок", "en": "flower" } },
+            { "id": "leaf", "label": { "uz": "bargi", "ru": "лист", "en": "leaf" } },
+            { "id": "fruit", "label": { "uz": "mevasi", "ru": "плод", "en": "fruit" } },
+            { "id": "stem", "label": { "uz": "poyasi", "ru": "стебель", "en": "stem" } },
+            { "id": "root", "label": { "uz": "ildizi", "ru": "корень", "en": "root" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻsimlikning gulini bos!", "ru": "Нажми цветок растения!", "en": "Tap the flower of the plant!" },
+      "hint": { "uz": "Gul rangli va chiroyli boʻladi.", "ru": "Цветок яркий и красивый.", "en": "The flower is colorful and pretty." },
+      "explanation": { "uz": "Gul — oʻsimlikning eng rangli qismi. Undan keyin meva paydo boʻladi.", "ru": "Цветок — самая яркая часть. Из него потом появляется плод.", "en": "The flower is the plant's brightest part. The fruit grows from it." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "flower", "emoji": "🌸", "label": { "uz": "gul", "ru": "цветок", "en": "flower" }, "correct": true },
+            { "id": "leaf", "emoji": "🍃", "label": { "uz": "barg", "ru": "лист", "en": "leaf" } },
+            { "id": "fruit", "emoji": "🍎", "label": { "uz": "meva", "ru": "плод", "en": "fruit" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri yovvoyi oʻsimlik?", "ru": "Какое растение дикое?", "en": "Which plant is wild?" },
+      "hint": { "uz": "Yovvoyi oʻsimlik oʻzi oʻsadi, uni odam ekmaydi.", "ru": "Дикое растение растёт само, его не сажают.", "en": "A wild plant grows on its own; no one plants it." },
+      "explanation": { "uz": "Momaqaymoq — yovvoyi oʻsimlik, oʻzi oʻsadi. Karam va piyoz — madaniy.", "ru": "Одуванчик — дикое растение, растёт сам. Капуста и лук — культурные.", "en": "The dandelion is a wild plant, it grows on its own. Cabbage and onion are cultivated." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "dandelion", "emoji": "🌼", "label": { "uz": "momaqaymoq", "ru": "одуванчик", "en": "dandelion" }, "correct": true },
+            { "id": "cabbage", "emoji": "🥬", "label": { "uz": "karam", "ru": "капуста", "en": "cabbage" } },
+            { "id": "onion", "emoji": "🧅", "label": { "uz": "piyoz", "ru": "лук", "en": "onion" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri madaniy oʻsimlik? (odam ekadi)", "ru": "Какое растение культурное? (сажает человек)", "en": "Which plant is cultivated? (planted by people)" },
+      "hint": { "uz": "Madaniy oʻsimlikni odam ekib parvarish qiladi.", "ru": "Культурное растение сажает и растит человек.", "en": "A cultivated plant is planted and tended by people." },
+      "explanation": { "uz": "Karam — madaniy oʻsimlik, uni odam ekadi. Momaqaymoq va yovvoyi oʻt — yovvoyi.", "ru": "Капуста — культурное растение, её сажают. Одуванчик и сорняк — дикие.", "en": "Cabbage is a cultivated plant that people plant. Dandelion and weeds are wild." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "cabbage", "emoji": "🥬", "label": { "uz": "karam", "ru": "капуста", "en": "cabbage" }, "correct": true },
+            { "id": "dandelion", "emoji": "🌼", "label": { "uz": "momaqaymoq", "ru": "одуванчик", "en": "dandelion" } },
+            { "id": "weed", "emoji": "🌿", "label": { "uz": "yovvoyi oʻt", "ru": "сорняк", "en": "weed" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yovvoyi va madaniy oʻsimliklarga ajrat!", "ru": "Разложи на дикие и культурные растения!", "en": "Sort into wild and cultivated plants!" },
+      "hint": { "uz": "Oʻzi oʻsganlar — yovvoyi; odam ekkanlar — madaniy.", "ru": "Что растёт само — дикое; что сажают — культурное.", "en": "What grows on its own is wild; what people plant is cultivated." },
+      "explanation": { "uz": "Momaqaymoq va yovvoyi oʻt — yovvoyi. Karam va sabzi — madaniy oʻsimlik.", "ru": "Одуванчик и сорняк — дикие. Капуста и морковь — культурные.", "en": "Dandelion and weeds are wild. Cabbage and carrot are cultivated." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "wild", "label": { "uz": "🌿 Yovvoyi", "ru": "🌿 Дикие", "en": "🌿 Wild" }, "color": "#f39a1f" },
+            { "id": "grown", "label": { "uz": "🌽 Madaniy", "ru": "🌽 Культурные", "en": "🌽 Cultivated" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "dandelion", "emoji": "🌼", "label": { "uz": "momaqaymoq", "ru": "одуванчик", "en": "dandelion" }, "bin": "wild" },
+            { "id": "weed", "emoji": "🌿", "label": { "uz": "yovvoyi oʻt", "ru": "сорняк", "en": "weed" }, "bin": "wild" },
+            { "id": "cabbage", "emoji": "🥬", "label": { "uz": "karam", "ru": "капуста", "en": "cabbage" }, "bin": "grown" },
+            { "id": "carrot", "emoji": "🥕", "label": { "uz": "sabzi", "ru": "морковь", "en": "carrot" }, "bin": "grown" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bu oʻsimliklarning qaysi qismini yeymiz? Ula!", "ru": "Какую часть этих растений мы едим? Соедини!", "en": "Which part of these plants do we eat? Match!" },
+      "hint": { "uz": "Sabzida ildizni, olmada mevani, karamda bargni yeymiz.", "ru": "У моркови едим корень, у яблони — плод, у капусты — лист.", "en": "We eat the carrot's root, the apple's fruit, the cabbage's leaf." },
+      "explanation": { "uz": "Har xil oʻsimlikning har xil qismini iste'mol qilamiz: ildiz, meva, barg yoki gul.", "ru": "У разных растений едим разные части: корень, плод, лист или цветок.", "en": "From different plants we eat different parts: root, fruit, leaf or flower." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🥕", "label": { "uz": "sabzi", "ru": "морковь", "en": "carrot" } }, "right": { "label": { "uz": "ildiz", "ru": "корень", "en": "root" } } },
+            { "left": { "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } }, "right": { "label": { "uz": "meva", "ru": "плод", "en": "fruit" } } },
+            { "left": { "emoji": "🥬", "label": { "uz": "karam", "ru": "капуста", "en": "cabbage" } }, "right": { "label": { "uz": "barg", "ru": "лист", "en": "leaf" } } },
+            { "left": { "emoji": "🥦", "label": { "uz": "brokkoli", "ru": "брокколи", "en": "broccoli" } }, "right": { "label": { "uz": "gul", "ru": "цветок", "en": "flower" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Sabzining qaysi qismini yeymiz?", "ru": "Какую часть моркови мы едим?", "en": "Which part of the carrot do we eat?" },
+      "hint": { "uz": "Sabzi yer tagida oʻsadi — bu ildiz.", "ru": "Морковь растёт под землёй — это корень.", "en": "The carrot grows underground — it is the root." },
+      "explanation": { "uz": "Sabzida biz ildizni yeymiz. U yer ostida oʻsadi.", "ru": "У моркови мы едим корень. Он растёт под землёй.", "en": "In the carrot we eat the root. It grows underground." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "root", "emoji": "🫚", "label": { "uz": "ildiz", "ru": "корень", "en": "root" }, "correct": true },
+            { "id": "leaf", "emoji": "🍃", "label": { "uz": "barg", "ru": "лист", "en": "leaf" } },
+            { "id": "flower", "emoji": "🌸", "label": { "uz": "gul", "ru": "цветок", "en": "flower" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Barcha oʻsimliklarni belgila!", "ru": "Отметь все растения!", "en": "Tap all the plants!" },
+      "hint": { "uz": "Oʻsimlik yerda oʻsadi. Hayvon, tosh, mashina oʻsimlik emas.", "ru": "Растение растёт из земли. Животное, камень, машина — нет.", "en": "A plant grows from the soil. An animal, a rock, a car are not plants." },
+      "explanation": { "uz": "Daraxt, gul va karam — oʻsimlik. It, tosh va mashina oʻsimlik emas.", "ru": "Дерево, цветок и капуста — растения. Собака, камень и машина — нет.", "en": "Tree, flower and cabbage are plants. Dog, rock and car are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" }, "correct": true },
+            { "id": "flower", "emoji": "🌷", "label": { "uz": "gul", "ru": "цветок", "en": "flower" }, "correct": true },
+            { "id": "cabbage", "emoji": "🥬", "label": { "uz": "karam", "ru": "капуста", "en": "cabbage" }, "correct": true },
+            { "id": "dog", "emoji": "🐕", "label": { "uz": "it", "ru": "собака", "en": "dog" } },
+            { "id": "rock", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "rock" } },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "mashina", "ru": "машина", "en": "car" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qayerda oʻsadi? Tomorqada yoki bogʻ daraxtida?", "ru": "Где растёт? На грядке или на дереве в саду?", "en": "Where does it grow? In the garden bed or on an orchard tree?" },
+      "hint": { "uz": "Sabzi-piyoz tomorqada, olma-uzum daraxt va tokda oʻsadi.", "ru": "Морковь и лук на грядке, яблоко и виноград — на дереве и лозе.", "en": "Carrot and onion in the bed; apple and grapes on the tree and vine." },
+      "explanation": { "uz": "Tomorqada sabzi va piyoz, bogʻda olma va uzum oʻsadi.", "ru": "На грядке — морковь и лук, в саду — яблоко и виноград.", "en": "In the bed grow carrot and onion; in the orchard grow apple and grapes." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "bed", "label": { "uz": "🥕 Tomorqa", "ru": "🥕 Грядка", "en": "🥕 Garden bed" }, "color": "#f39a1f" },
+            { "id": "orchard", "label": { "uz": "🌳 Bogʻ", "ru": "🌳 Сад", "en": "🌳 Orchard" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "carrot", "emoji": "🥕", "label": { "uz": "sabzi", "ru": "морковь", "en": "carrot" }, "bin": "bed" },
+            { "id": "onion", "emoji": "🧅", "label": { "uz": "piyoz", "ru": "лук", "en": "onion" }, "bin": "bed" },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" }, "bin": "orchard" },
+            { "id": "grapes", "emoji": "🍇", "label": { "uz": "uzum", "ru": "виноград", "en": "grapes" }, "bin": "orchard" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Oʻsimlikni tik ushlab, suvni yuqoriga olib chiqadigan qism qaysi?", "ru": "Какая часть держит растение прямо и поднимает воду вверх?", "en": "Which part holds the plant upright and carries water up?" },
+      "hint": { "uz": "Ildiz bilan barg orasidagi qism — poya.", "ru": "Часть между корнем и листом — стебель.", "en": "The part between the root and the leaf is the stem." },
+      "explanation": { "uz": "Poya oʻsimlikni tik tutadi va ildizdan suvni bargga olib chiqadi.", "ru": "Стебель держит растение прямо и несёт воду от корня к листу.", "en": "The stem holds the plant upright and carries water from the root to the leaf." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "stem", "emoji": "🌱", "label": { "uz": "poya", "ru": "стебель", "en": "stem" }, "correct": true },
+            { "id": "flower", "emoji": "🌸", "label": { "uz": "gul", "ru": "цветок", "en": "flower" } },
+            { "id": "fruit", "emoji": "🍎", "label": { "uz": "meva", "ru": "плод", "en": "fruit" } }
+          ]
+        }
+      }
+    }
+  ]
+}

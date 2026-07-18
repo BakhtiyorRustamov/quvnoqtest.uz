@@ -1,0 +1,101 @@
+{
+  "topicId": "g1-alifbe-23",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🌿🌊🦜",
+  "title": { "uz": "«Oʻ oʻ» harfi", "ru": "Буква «Oʻ oʻ»", "en": "The letter “Oʻ oʻ”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «Oʻ oʻ». U unli tovush. Uni aytganda lablar biroz ochiq, oldinga choʻziladi: oʻ-oʻ-oʻ. «Oʻ»ning «O»dan farqi — ustidagi belgisi. «Oʻ» bilan: oʻt, koʻl, toʻti.",
+    "ru": "Сегодня наша буква — «Oʻ oʻ». Это гласный звук. Губы чуть приоткрыты и вытянуты вперёд: ў-ў-ў. «Oʻ» отличается от «O» значком сверху. Слова: oʻt, koʻl, toʻti.",
+    "en": "Today's letter is “Oʻ oʻ”. It is a vowel. The lips open a little and push forward: oʻ-oʻ-oʻ. “Oʻ” differs from “O” by the mark on top. Words: oʻt, koʻl, toʻti."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Oʻ» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «Oʻ»!", "en": "Find the word that starts with “Oʻ”!" },
+      "hint": { "uz": "«Oʻ» — belgili «O». Boshini choʻzib ayt: oʻ-oʻ-oʻt.", "ru": "«Oʻ» — «O» со значком: ў-ў-oʻt.", "en": "“Oʻ” is “O” with a mark: oʻ-oʻ-oʻt." },
+      "explanation": { "uz": "«oʻt» «Oʻ» tovushi bilan boshlanadi.", "ru": "«oʻt» начинается со звука «Oʻ».", "en": "“oʻt” (grass) starts with the sound “Oʻ”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "grass", "emoji": "🌿", "label": { "uz": "oʻt", "ru": "oʻt", "en": "oʻt" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Oʻ» harfini topib, hammasini bos! («O»ni bosma.)", "ru": "Найди букву «Oʻ» и нажми на все! («O» не нажимай.)", "en": "Find the letter “Oʻ” and tap them all! (Not plain “O”.)" },
+      "hint": { "uz": "Faqat belgili «Oʻ» va «oʻ».", "ru": "Только «Oʻ» и «oʻ» со значком.", "en": "Only “Oʻ” and “oʻ” with the mark." },
+      "explanation": { "uz": "«Oʻ»ni «O»dan belgisi bilan ajratding!", "ru": "Ты отличил «Oʻ» от «O» по значку!", "en": "You told “Oʻ” apart from “O” by its mark!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "Oʻ", "cols": 3, "grid": ["Oʻ", "o", "oʻ", "O", "Oʻ", "k", "oʻ", "l", "Oʻ"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🌊 «koʻl»da «oʻ» tovushi qaysi katakchada?", "ru": "🌊 В какой клетке звук «oʻ» в слове «koʻl»?", "en": "🌊 Which box has the “oʻ” sound in “koʻl”?" },
+      "hint": { "uz": "«oʻ» soʻzning oʻrtasida.", "ru": "«oʻ» в середине слова.", "en": "“oʻ” is in the middle." },
+      "explanation": { "uz": "«koʻl»da «oʻ» — ikkinchi katakda.", "ru": "В «koʻl» звук «oʻ» — вторая клетка.", "en": "In “koʻl” the “oʻ” is in the second box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🌊", "word": { "uz": "koʻl", "ru": "koʻl", "en": "koʻl" }, "sound": "oʻ", "cells": ["k", "oʻ", "l"], "answer": 1 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🌊 «koʻl» soʻzining tovush chizmasini rangla!", "ru": "🌊 Раскрась схему звуков слова «koʻl»!", "en": "🌊 Colour the sound scheme of “koʻl”!" },
+      "hint": { "uz": "k — undosh, oʻ — unli, l — undosh.", "ru": "k — согласный, oʻ — гласный, l — согласный.", "en": "k consonant, oʻ vowel, l consonant." },
+      "explanation": { "uz": "«koʻl»: k, oʻ, l — undosh, unli, undosh.", "ru": "«koʻl»: согласный, гласный, согласный.", "en": "“koʻl”: consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🌊", "word": { "uz": "koʻl", "ru": "koʻl", "en": "koʻl" }, "scheme": ["c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Oʻ» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «Oʻ»!", "en": "Tap the words that have the “Oʻ” sound!" },
+      "hint": { "uz": "oʻt, koʻl, toʻti — «oʻ» tovushi bor.", "ru": "oʻt, koʻl, toʻti — есть звук «oʻ».", "en": "oʻt, koʻl, toʻti have the “oʻ” sound." },
+      "explanation": { "uz": "oʻt, koʻl, toʻti — «oʻ» bor. ot, olmada «o» bor, «oʻ» emas.", "ru": "oʻt, koʻl, toʻti — есть «oʻ». В ot, olma — «o», не «oʻ».", "en": "oʻt, koʻl, toʻti have “oʻ”. ot, olma have “o”, not “oʻ”." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "grass", "emoji": "🌿", "label": { "uz": "oʻt", "ru": "oʻt", "en": "oʻt" }, "correct": true },
+        { "id": "lake", "emoji": "🌊", "label": { "uz": "koʻl", "ru": "koʻl", "en": "koʻl" }, "correct": true },
+        { "id": "parrot", "emoji": "🦜", "label": { "uz": "toʻti", "ru": "toʻti", "en": "toʻti" }, "correct": true },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «koʻl» soʻzini tuz!", "ru": "Составь слово «koʻl» из букв!", "en": "Build the word “koʻl” from letters!" },
+      "hint": { "uz": "k — oʻ — l tartibida bos.", "ru": "Нажимай по порядку: k — oʻ — l.", "en": "Tap in order: k — oʻ — l." },
+      "explanation": { "uz": "k + oʻ + l = «koʻl».", "ru": "k + oʻ + l = «koʻl».", "en": "k + oʻ + l = “koʻl” (lake)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🌊", "word": "koʻl", "letters": ["k", "oʻ", "l"], "label": { "uz": "koʻl", "ru": "озеро", "en": "lake" } } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Oʻ» — unli tovush.", "ru": "«Oʻ» — гласный звук.", "en": "“Oʻ” is a vowel sound." },
+      "hint": { "uz": "«Oʻ»ni choʻzib, erkin aytamiz.", "ru": "«Oʻ» говорим протяжно и свободно.", "en": "We say “Oʻ” long and freely." },
+      "explanation": { "uz": "Toʻgʻri! «Oʻ» — unli tovush.", "ru": "Верно! «Oʻ» — гласный.", "en": "True! “Oʻ” is a vowel." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔴", "answer": true } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«oʻ» tovushi yoʻq ortiqcha soʻzni top!", "ru": "Найди лишнее слово — без звука «oʻ»!", "en": "Tap the odd word — the one without the “oʻ” sound!" },
+      "hint": { "uz": "oʻt, koʻl, toʻtida «oʻ» bor; birida yoʻq.", "ru": "В oʻt, koʻl, toʻti есть «oʻ»; в одном — нет.", "en": "oʻt, koʻl, toʻti have “oʻ”; one does not." },
+      "explanation": { "uz": "«ot»da «oʻ» emas, «o» bor — u ortiqcha.", "ru": "В «ot» — «o», а не «oʻ» — оно лишнее.", "en": "“ot” has “o”, not “oʻ” — it is the odd one." },
+      "widget": { "type": "odd_one_out", "props": {
+        "clue": { "uz": "«oʻ» tovushi bor soʻzlar", "ru": "слова со звуком «oʻ»", "en": "words with the “oʻ” sound" },
+        "tiles": [{ "text": "oʻt" }, { "text": "koʻl" }, { "text": "toʻti" }, { "text": "ot", "odd": true }]
+      } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Har bir rasmni soʻzi bilan ula!", "ru": "Соедини каждую картинку с её словом!", "en": "Match each picture to its word!" },
+      "hint": { "uz": "oʻt — 🌿, koʻl — 🌊, toʻti — 🦜, olma — 🍎.", "ru": "oʻt — 🌿, koʻl — 🌊, toʻti — 🦜, olma — 🍎.", "en": "oʻt — 🌿, koʻl — 🌊, toʻti — 🦜, olma — 🍎." },
+      "explanation": { "uz": "Barcha «oʻ» soʻzlarini toʻgʻri ulading!", "ru": "Ты верно соединил слова с «oʻ»!", "en": "You matched the “oʻ” words correctly!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "emoji": "🌿" }, "right": { "label": { "uz": "oʻt", "ru": "oʻt", "en": "oʻt" } } },
+        { "left": { "emoji": "🌊" }, "right": { "label": { "uz": "koʻl", "ru": "koʻl", "en": "koʻl" } } },
+        { "left": { "emoji": "🦜" }, "right": { "label": { "uz": "toʻti", "ru": "toʻti", "en": "toʻti" } } },
+        { "left": { "emoji": "🍎" }, "right": { "label": { "uz": "olma", "ru": "olma", "en": "olma" } } }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Oʻ» harfi «O»dan nimasi bilan farq qiladi?", "ru": "Чем буква «Oʻ» отличается от «O»?", "en": "How does the letter “Oʻ” differ from “O”?" },
+      "hint": { "uz": "Uning ustiga qara.", "ru": "Посмотри на её верх.", "en": "Look at the top of it." },
+      "explanation": { "uz": "«Oʻ»ning ustida belgisi (ʻ) bor.", "ru": "У «Oʻ» есть значок (ʻ) сверху.", "en": "“Oʻ” has a mark (ʻ) on top." },
+      "widget": { "type": "mcq", "props": { "choices": [{ "uz": "ustida belgisi bor", "ru": "есть значок сверху", "en": "it has a mark on top" }, { "uz": "rangi boshqa", "ru": "другого цвета", "en": "a different color" }, { "uz": "kattaligi boshqa", "ru": "другого размера", "en": "a different size" }], "answerIndex": 0 } }
+    }
+  ]
+}

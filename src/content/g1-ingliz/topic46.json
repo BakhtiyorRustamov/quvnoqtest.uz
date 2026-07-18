@@ -1,0 +1,522 @@
+{
+  "topicId": "g1-ingliz-46",
+  "subjectKey": "g1-ingliz",
+  "emojis": "💪😊🎉🏅",
+  "title": {
+    "uz": "Sen uddalaysan!",
+    "ru": "У тебя получится!",
+    "en": "You can do it!"
+  },
+  "recall": {
+    "uz": "Suhbat vaqti! Bugun dalda beramiz: «You can do it!» — «Sen uddalaysan!» Va: «Well done!» — «Barakalla!»",
+    "ru": "Время беседы! Сегодня подбадриваем: «You can do it!» — «У тебя получится!» И: «Well done!» — «Молодец!»",
+    "en": "Talk time! Today we encourage: \"You can do it!\" And \"Well done!\""
+  },
+  "ttsText": {
+    "uz": "Sen uddalaysan!",
+    "en": "Talk time! You can do it! Try again! Well done!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Dada nima dedi?",
+        "ru": "Послушай. Что сказал папа?",
+        "en": "Listen. What did Dad say?"
+      },
+      "hint": {
+        "uz": "«You can do it!» — sen uddalaysan.",
+        "ru": "«You can do it!» — у тебя получится.",
+        "en": "\"You can do it!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «You can do it!»",
+        "ru": "Верно! «You can do it!»",
+        "en": "Right! \"You can do it!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "I can't climb the tree.",
+              "audio": {
+                "key": "ing46-q1-a",
+                "text": "I can't climb the tree.",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👨",
+              "name": "Dad",
+              "text": "You can do it!",
+              "audio": {
+                "key": "ing46-q1-b",
+                "text": "You can do it!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Dada nima dedi?",
+              "ru": "Что сказал папа?",
+              "en": "What did Dad say?"
+            },
+            "choices": [
+              "How many?",
+              "Go away!",
+              "You can do it!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola muvaffaqiyat qozongach nima eshitdi?",
+        "ru": "Послушай. Что услышал ребёнок после успеха?",
+        "en": "Listen. What did the child hear after succeeding?"
+      },
+      "hint": {
+        "uz": "«Well done!» — barakalla.",
+        "ru": "«Well done!» — молодец.",
+        "en": "\"Well done!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Well done!»",
+        "ru": "Верно! «Well done!»",
+        "en": "Right! \"Well done!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "I did it! I can climb!",
+              "audio": {
+                "key": "ing46-q2-a",
+                "text": "I did it! I can climb!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👨",
+              "name": "Dad",
+              "text": "Well done!",
+              "audio": {
+                "key": "ing46-q2-b",
+                "text": "Well done!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Dada nima dedi?",
+              "ru": "Что сказал папа?",
+              "en": "What did Dad say?"
+            },
+            "choices": [
+              "Sit down!",
+              "Goodbye!",
+              "Well done!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Gʻalaba nishonini bos!",
+        "ru": "Нажми медаль победы!",
+        "en": "Tap the winning medal!"
+      },
+      "hint": {
+        "uz": "Yutuq belgisi.",
+        "ru": "Знак успеха.",
+        "en": "A sign of success."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 🏅 — medal!",
+        "ru": "Верно! 🏅 — медаль!",
+        "en": "Right! 🏅 a medal!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🏅",
+              "label": "medal",
+              "correct": true
+            },
+            {
+              "emoji": "😢",
+              "label": "sad"
+            },
+            {
+              "emoji": "🗑️",
+              "label": "trash"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «You can do it!» — dalda beruvchi gap.",
+        "ru": "Верно? «You can do it!» — ободряющая фраза.",
+        "en": "Is this right? \"You can do it!\" is an encouraging phrase."
+      },
+      "hint": {
+        "uz": "Doʻstni ruhlantiramiz.",
+        "ru": "Подбадриваем друга.",
+        "en": "We cheer a friend on."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Dalda beradi.",
+        "ru": "Верно! Ободряет.",
+        "en": "Right! It encourages."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "💪",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola oxirida nima dedi?",
+        "ru": "Послушай. Что ребёнок сказал в конце?",
+        "en": "Listen. What did the child say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Thank you! I did it!»",
+        "ru": "Верно! «Thank you! I did it!»",
+        "en": "Right! \"Thank you! I did it!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I can't jump.",
+              "audio": {
+                "key": "ing46-q5-a",
+                "text": "I can't jump.",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Try again! You can do it!",
+              "audio": {
+                "key": "ing46-q5-b",
+                "text": "Try again! You can do it!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Thank you! I did it!",
+              "audio": {
+                "key": "ing46-q5-c",
+                "text": "Thank you! I did it!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam oxirida nima dedi?",
+              "ru": "Что Сэм сказал в конце?",
+              "en": "What did Sam say at the end?"
+            },
+            "choices": [
+              "I did it!",
+              "No, it isn't!",
+              "How many?"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Dalda beruvchi gaplarni belgila!",
+        "ru": "Отметь ободряющие фразы!",
+        "en": "Tap the encouraging phrases!"
+      },
+      "hint": {
+        "uz": "«You can do it!», «Try again!», «Well done!»",
+        "ru": "«You can do it!», «Try again!», «Well done!»",
+        "en": "\"You can do it!\", \"Try again!\", \"Well done!\""
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular dalda beradi!",
+        "ru": "Молодец! Они ободряют!",
+        "en": "Great! Those encourage!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "💪",
+              "label": "You can do it!",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🔁",
+              "label": "Try again!",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🎉",
+              "label": "Well done!",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "😠",
+              "label": "Go away!"
+            },
+            {
+              "id": "d1",
+              "emoji": "🚫",
+              "label": "You can't!"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha gapni top — qaysi biri dalda emas?",
+        "ru": "Найди лишнее — что не ободряет?",
+        "en": "Find the odd one — which is not encouraging?"
+      },
+      "hint": {
+        "uz": "Yomon gapni top.",
+        "ru": "Найди недобрую фразу.",
+        "en": "Find the unkind phrase."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Go away!» — dalda emas.",
+        "ru": "Верно! «Go away!» — не ободрение.",
+        "en": "Right! \"Go away!\" is not encouraging."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "dalda beruvchi gaplar",
+            "ru": "ободряющие фразы",
+            "en": "encouraging phrases"
+          },
+          "tiles": [
+            {
+              "text": "You can do it!"
+            },
+            {
+              "text": "Try again!"
+            },
+            {
+              "text": "Well done!"
+            },
+            {
+              "text": "Go away!",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Doʻsti nima dedi?",
+        "ru": "Послушай. Что сказал друг?",
+        "en": "Listen. What did the friend say?"
+      },
+      "hint": {
+        "uz": "«Try again!» — yana urin.",
+        "ru": "«Try again!» — попробуй ещё.",
+        "en": "\"Try again!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Try again! You can do it!»",
+        "ru": "Верно! «Try again! You can do it!»",
+        "en": "Right! \"Try again! You can do it!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "I can't do it!",
+              "audio": {
+                "key": "ing46-q8-a",
+                "text": "I can't do it!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Try again! You can do it!",
+              "audio": {
+                "key": "ing46-q8-b",
+                "text": "Try again! You can do it!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Try again!",
+              "No! Stop!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Baxtli, gʻururli chehrani bos!",
+        "ru": "Нажми радостное, гордое лицо!",
+        "en": "Tap the happy, proud face!"
+      },
+      "hint": {
+        "uz": "«I did it!» degan chehra.",
+        "ru": "Лицо «I did it!».",
+        "en": "An \"I did it!\" face."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 😊 — xursand!",
+        "ru": "Верно! 😊 — радостный!",
+        "en": "Right! 😊 happy!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "😊",
+              "label": "happy",
+              "correct": true
+            },
+            {
+              "emoji": "😢",
+              "label": "sad"
+            },
+            {
+              "emoji": "😠",
+              "label": "angry"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻsting qiynalyapti. Uni qanday ruhlantirasan?",
+        "ru": "Другу трудно. Как его подбодрить?",
+        "en": "Your friend is struggling. How do you encourage them?"
+      },
+      "hint": {
+        "uz": "Ijobiy gap tanla.",
+        "ru": "Выбери добрые слова.",
+        "en": "Choose kind words."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «You can do it!»",
+        "ru": "Верно! «You can do it!»",
+        "en": "Right! \"You can do it!\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "You can do it!\nSen uddalaysan!",
+              "ru": "You can do it!\nУ тебя получится!",
+              "en": "You can do it!"
+            },
+            {
+              "uz": "You can't do it.\nSen uddalay olmaysan.",
+              "ru": "You can't do it.\nУ тебя не получится.",
+              "en": "You can't do it."
+            },
+            {
+              "uz": "Go home.\nUyingga bor.",
+              "ru": "Go home.\nИди домой.",
+              "en": "Go home."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}
