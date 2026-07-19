@@ -16,3 +16,10 @@ gcloud-tts.json.json
 
 .vercel
 .env*
+
+# Local raw media / working assets (kept out of the repo)
+videolar/
+language button images/
+# Windows folder metadata
+desktop.ini
+**/desktop.ini

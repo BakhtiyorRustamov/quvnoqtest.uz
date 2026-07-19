@@ -3,9 +3,9 @@ export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = 'uz';
 
 export const LOCALE_LABELS: Record<Locale, string> = {
-  uz: "O'z",
-  ru: 'Ру',
-  en: 'En'
+  uz: 'UZ',
+  ru: 'RU',
+  en: 'EN'
 };
 
 /** Pick a localized string out of a {uz,ru,en} record. */

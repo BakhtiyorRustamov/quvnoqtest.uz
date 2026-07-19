@@ -299,17 +299,6 @@ export default function TabiiySubjectView() {
           </div>
         </section>
 
-        {/* subscribe / more coming hint */}
-        <section className="card p-5 mt-8 text-center">
-          <div className="text-3xl" aria-hidden>🔜</div>
-          <p className="font-bold text-ink/70 mt-1">
-            {s(
-              'Yangi darslar tez orada qoʻshiladi. Hozircha 1–5-darslar bepul ochiq!',
-              'Новые уроки скоро появятся. Пока уроки 1–5 доступны бесплатно!',
-              'New lessons are coming soon. For now, lessons 1–5 are free!'
-            )}
-          </p>
-        </section>
       
 
         {/* personalized focused-review recommendation (same as maths) */}
@@ -318,6 +307,7 @@ export default function TabiiySubjectView() {
           name={user?.name ?? null}
           isPaid={user?.isPaid ?? false}
           locale={locale}
+          subjectName={pick(SUBJECTS['tabiiy-fanlar'].name, locale)}
           getTopicMeta={getTabiiyTopic}
           startHref="/lesson/g1-tabiiy-01"
         />

@@ -154,9 +154,9 @@
     "topicReco": {
       "friend": "друг",
       "title": "Твой персональный план",
-      "greetStart": "{name}, начнём с первого урока? Задания уже ждут тебя! 🚀",
-      "greetLow": "{name}, эти темы дались тебе непросто. Повтори их — и результат станет лучше:",
-      "greetAllGood": "{name}, все уроки идут на отлично! Так держать 🌟",
+      "greetStart": "Начнём с предмета «{subject}», {name}? Первый урок ждёт тебя! 🚀",
+      "greetLow": "{name}, повтори по предмету «{subject}» эти темы — и результат станет ещё лучше:",
+      "greetAllGood": "По предмету «{subject}» всё отлично, {name}! Так держать 🌟",
       "reviewCta": "Повторить",
       "startReview": "Начать повторение",
       "startCta": "Начать первый урок",
@@ -167,7 +167,19 @@
     "part4": "Часть 4",
     "video": "Видеоурок",
     "showMore": "Показать все",
-    "showLess": "Свернуть"
+    "showLess": "Свернуть",
+    "landingLink": "Главная страница",
+    "leaderboardTitle": "Лучшие ученики",
+    "leaderboardAll": "Все",
+    "lbPrevOlympiad": "Прошлая олимпиада",
+    "lbYourPosition": "Ваша позиция",
+    "lbYou": "Вы",
+    "lbRank": "Место",
+    "lbStudent": "Ученик",
+    "lbScore": "Результат",
+    "lbNext": "Дальше",
+    "lbPrev": "Назад",
+    "lbLessons": "ур."
   },
   "lesson": {
     "letsStart": "Начинаем!",

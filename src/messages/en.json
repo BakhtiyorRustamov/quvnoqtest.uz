@@ -154,9 +154,9 @@
     "topicReco": {
       "friend": "friend",
       "title": "Your learning pathway",
-      "greetStart": "{name}, shall we start with the first lesson? Practice is waiting for you! 🚀",
-      "greetLow": "{name}, these topics were a little tricky. Practising them again will boost your score:",
-      "greetAllGood": "{name}, all your lessons are going great! Keep it up 🌟",
+      "greetStart": "Shall we start {subject}, {name}? The first lesson is waiting! 🚀",
+      "greetLow": "{name}, revise these {subject} topics and your results will get even better:",
+      "greetAllGood": "Everything in {subject} is going great, {name}! Keep it up 🌟",
       "reviewCta": "Practice again",
       "startReview": "Start review",
       "startCta": "Start the first lesson",
@@ -167,7 +167,19 @@
     "part4": "Part 4",
     "video": "Video lesson",
     "showMore": "Show all",
-    "showLess": "Show less"
+    "showLess": "Show less",
+    "landingLink": "Home page",
+    "leaderboardTitle": "Top students",
+    "leaderboardAll": "View all",
+    "lbPrevOlympiad": "Previous olympiad",
+    "lbYourPosition": "Your position",
+    "lbYou": "You",
+    "lbRank": "Rank",
+    "lbStudent": "Student",
+    "lbScore": "Score",
+    "lbNext": "Next",
+    "lbPrev": "Back",
+    "lbLessons": "lessons"
   },
   "lesson": {
     "letsStart": "Let's start!",

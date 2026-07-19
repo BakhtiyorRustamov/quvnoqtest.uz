@@ -338,17 +338,6 @@ export default function InglizSubjectView() {
           </div>
         </section>
 
-        {/* more coming hint */}
-        <section className="card p-5 mt-8 text-center">
-          <div className="text-3xl" aria-hidden>🔜</div>
-          <p className="font-bold text-ink/70 mt-1">
-            {s(
-              '«Salom!» boʻlimining barcha 6 darsi ochiq! Qolgan boʻlimlar tez orada qoʻshiladi.',
-              'Все 6 уроков раздела «Привет!» открыты! Остальные разделы скоро появятся.',
-              'All 6 lessons of the Hello unit are open! More units are coming soon.'
-            )}
-          </p>
-        </section>
       
 
         {/* personalized focused-review recommendation (same as maths) */}
@@ -357,6 +346,7 @@ export default function InglizSubjectView() {
           name={user?.name ?? null}
           isPaid={user?.isPaid ?? false}
           locale={locale}
+          subjectName={pick(SUBJECTS['ingliz-tili'].name, locale)}
           getTopicMeta={getInglizLesson}
           startHref="/lesson/g1-ingliz-01"
         />

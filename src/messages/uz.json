@@ -154,9 +154,9 @@
     "topicReco": {
       "friend": "doʻstim",
       "title": "Shaxsiy mashq yoʻnalishing",
-      "greetStart": "{name}, birinchi darsdan boshlaymizmi? Mashqlar seni kutmoqda! 🚀",
-      "greetLow": "{name}, quyidagi mavzularda biroz qiynalding. Ularni qaytadan mashq qilsang, natijang yanada yaxshilanadi:",
-      "greetAllGood": "{name}, barcha darslaring aʼlo ketyapti! Shu zaylda davom et 🌟",
+      "greetStart": "{subject}dan boshlaymizmi, {name}? Birinchi dars seni kutmoqda! 🚀",
+      "greetLow": "{name}, {subject}dan quyidagi mavzularni qayta mashq qilsang, natijang yanada yaxshilanadi:",
+      "greetAllGood": "{subject}dan barchasi aʼlo ketyapti, {name}! Shu zaylda davom et 🌟",
       "reviewCta": "Qaytadan mashq qilish",
       "startReview": "Mashqni boshlash",
       "startCta": "Birinchi darsni boshlash",
@@ -167,7 +167,19 @@
     "part4": "4-qism",
     "video": "Video dars",
     "showMore": "Barchasini koʻrsatish",
-    "showLess": "Yigʻish"
+    "showLess": "Yigʻish",
+    "landingLink": "Ilk sahifa",
+    "leaderboardTitle": "Eng yaxshi oʻquvchilar",
+    "leaderboardAll": "Barchasi",
+    "lbPrevOlympiad": "Oʻtgan olimpiada",
+    "lbYourPosition": "Sizning oʻrningiz",
+    "lbYou": "Siz",
+    "lbRank": "Oʻrin",
+    "lbStudent": "Oʻquvchi",
+    "lbScore": "Natija",
+    "lbNext": "Keyingisi",
+    "lbPrev": "Orqaga",
+    "lbLessons": "dars"
   },
   "lesson": {
     "letsStart": "Boshlaymiz!",

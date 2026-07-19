@@ -27,6 +27,7 @@ export default function TopicRecommendation({
   name,
   isPaid,
   locale,
+  subjectName = 'Matematika',
   getTopicMeta = getTopic,
   startHref = '/lesson/g1-math-01'
 }: {
@@ -34,6 +35,8 @@ export default function TopicRecommendation({
   name: string | null;
   isPaid: boolean;
   locale: string;
+  /** localized subject name shown in the greeting (e.g. "Matematika"). */
+  subjectName?: string;
   /** topic-meta lookup for this subject (defaults to grade-1 maths). */
   getTopicMeta?: (key: string) => TopicMeta | undefined;
   /** where the "start" CTA points when nothing is completed yet. */
@@ -55,10 +58,10 @@ export default function TopicRecommendation({
 
   const hasStarted = completed.length > 0;
   const greeting = !hasStarted
-    ? t('greetStart', { name: displayName })
+    ? t('greetStart', { name: displayName, subject: subjectName })
     : lowScore.length > 0
-      ? t('greetLow', { name: displayName })
-      : t('greetAllGood', { name: displayName });
+      ? t('greetLow', { name: displayName, subject: subjectName })
+      : t('greetAllGood', { name: displayName, subject: subjectName });
 
   return (
     <section className="mt-8">

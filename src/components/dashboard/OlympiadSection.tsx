@@ -30,22 +30,11 @@ const L = {
   seconds: { uz: 'soniya', ru: 'сек', en: 'sec' },
   q: { uz: 'savol', ru: 'вопросов', en: 'questions' },
   totalNote: {
-    uz: 'Jami 60 savol · barcha fanlar boʻyicha',
-    ru: 'Всего 60 вопросов · по всем предметам',
-    en: '60 questions in total · across all subjects'
+    uz: 'Jami 30 savol: Matematika — 10, Ona tili — 5, Oʻqish savodxonligi — 5, Ingliz tili — 5, Tabiiy fanlar — 5',
+    ru: 'Всего 30 вопросов: Математика — 10, Родной язык — 5, Читательская грамотность — 5, Английский язык — 5, Естественные науки — 5',
+    en: '30 questions in total: Maths — 10, Native language — 5, Reading literacy — 5, English — 5, Natural science — 5'
   }
 };
-
-const SUBJECTS: { icon: string; count: number; name: { uz: string; ru: string; en: string } }[] = [
-  { icon: '🔢', count: 10, name: { uz: 'Matematika', ru: 'Математика', en: 'Maths' } },
-  { icon: '📖', count: 10, name: { uz: 'Ona tili', ru: 'Родной язык', en: 'Native language' } },
-  { icon: '📚', count: 5, name: { uz: 'Oʻqish savodxonligi', ru: 'Читательская грамотность', en: 'Reading literacy' } },
-  { icon: '🔤', count: 10, name: { uz: 'Ingliz tili', ru: 'Английский', en: 'English' } },
-  { icon: '🌿', count: 10, name: { uz: 'Tabiiy fanlar', ru: 'Естествознание', en: 'Natural science' } },
-  { icon: '❤️', count: 5, name: { uz: 'Tarbiya', ru: 'Воспитание', en: 'Upbringing' } },
-  { icon: '🎨', count: 5, name: { uz: 'Tasviriy sanʼat', ru: 'ИЗО', en: 'Art' } },
-  { icon: '🛠️', count: 5, name: { uz: 'Texnologiya', ru: 'Технология', en: 'Technology' } }
-];
 
 function remaining(): { d: number; h: number; m: number; s: number; over: boolean } {
   const ms = START_AT - Date.now();
@@ -78,43 +67,39 @@ export default function OlympiadSection({ locale }: { locale: string }) {
   ];
 
   return (
-    <section className="max-w-4xl mx-auto px-3 mt-12">
+    <section className="max-w-2xl mx-auto px-3 mt-10">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: '-60px' }}
-        className="relative overflow-hidden rounded-[28px] border-4 border-brand-purple/50 bg-gradient-to-br from-brand-purple via-[#6d3a99] to-brand-magenta text-white shadow-2xl px-5 py-8 sm:px-10 sm:py-10 text-center"
+        className="relative overflow-hidden rounded-3xl border-2 border-brand-purple/50 bg-gradient-to-br from-brand-purple via-[#6d3a99] to-brand-magenta text-white shadow-xl px-4 py-5 sm:px-6 sm:py-6 text-center"
       >
         {/* decorative sparkles */}
-        <div aria-hidden className="absolute -top-6 -left-6 text-7xl opacity-20 rotate-12">🏆</div>
-        <div aria-hidden className="absolute -bottom-8 -right-6 text-8xl opacity-15 -rotate-12">🎓</div>
+        <div aria-hidden className="absolute -top-4 -left-4 text-4xl opacity-20 rotate-12">🏆</div>
+        <div aria-hidden className="absolute -bottom-5 -right-4 text-5xl opacity-15 -rotate-12">🎓</div>
 
-        <span className="inline-block px-4 py-1.5 rounded-full bg-white/20 border border-white/40 text-xs font-black uppercase tracking-widest">
-          🚧 {pick(L.soon, locale)}
-        </span>
-
-        <h2 className="mt-3 font-black text-[clamp(30px,6vw,52px)] leading-tight drop-shadow">
+        <h2 className="font-black text-[clamp(20px,4.5vw,30px)] leading-tight drop-shadow">
           🏆 {pick(L.title, locale)}
         </h2>
-        <p className="mt-2 font-bold text-white/85 max-w-xl mx-auto">{pick(L.lead, locale)}</p>
+        <p className="mt-1 text-[13px] font-bold text-white/85 max-w-md mx-auto text-balance">{pick(L.lead, locale)}</p>
 
-        <div className="mt-4 inline-flex items-center gap-2 px-5 py-2 rounded-full bg-brand-yellow text-ink font-black text-lg shadow-lg">
+        <div className="mt-2.5 inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-brand-yellow text-ink font-black text-[13px] shadow">
           📅 {pick(L.date, locale)}
         </div>
 
-        {/* big countdown */}
-        <div className="mt-7">
-          <div className="text-sm font-black uppercase tracking-widest text-white/70">
+        {/* compact countdown */}
+        <div className="mt-4">
+          <div className="text-[11px] font-black uppercase tracking-widest text-white/70">
             {t?.over ? pick(L.started, locale) : pick(L.countdownTitle, locale)}
           </div>
           {!t?.over && (
-            <div className="mt-3 grid grid-cols-4 gap-2 sm:gap-4 max-w-xl mx-auto" role="timer" aria-live="off">
+            <div className="mt-2 grid grid-cols-4 gap-1.5 sm:gap-2.5 max-w-sm mx-auto" role="timer" aria-live="off">
               {cells.map((c, i) => (
-                <div key={i} className="rounded-2xl bg-white/15 border-2 border-white/25 backdrop-blur px-1 py-3 sm:py-5">
-                  <div className="font-black tabular-nums text-[clamp(28px,7vw,56px)] leading-none drop-shadow">
+                <div key={i} className="rounded-xl bg-white/15 border border-white/25 backdrop-blur px-1 py-1.5 sm:py-2.5">
+                  <div className="font-black tabular-nums text-[clamp(18px,5vw,32px)] leading-none drop-shadow">
                     {String(c.v).padStart(2, '0')}
                   </div>
-                  <div className="mt-1.5 text-[11px] sm:text-xs font-extrabold uppercase tracking-wide text-white/75">
+                  <div className="mt-1 text-[9px] sm:text-[10px] font-extrabold uppercase tracking-wide text-white/75">
                     {c.label}
                   </div>
                 </div>
@@ -123,25 +108,9 @@ export default function OlympiadSection({ locale }: { locale: string }) {
           )}
         </div>
 
-        {/* subjects + question counts */}
-        <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 text-left">
-          {SUBJECTS.map((s) => (
-            <div key={s.name.uz} className="flex items-center gap-2.5 rounded-2xl bg-white/12 border border-white/20 px-3 py-2.5">
-              <span className="text-2xl" aria-hidden>{s.icon}</span>
-              <span className="leading-tight">
-                <span className="block font-extrabold text-[13px]">{pick(s.name, locale)}</span>
-                <span className="block text-[12px] font-bold text-brand-yellow">
-                  {s.count} {pick(L.q, locale)}
-                </span>
-              </span>
-            </div>
-          ))}
-          <div className="flex items-center justify-center rounded-2xl border-2 border-dashed border-white/30 px-3 py-2.5 font-black text-white/85 text-[13px]">
-            = 60 {pick(L.q, locale)}
-          </div>
-        </div>
-
-        <p className="mt-4 text-[13px] font-bold text-white/65">{pick(L.totalNote, locale)}</p>
+        <p className="mt-3 mx-auto max-w-md text-[12px] font-bold text-white/70 text-balance">
+          🚧 {pick(L.totalNote, locale)}
+        </p>
       </motion.div>
     </section>
   );

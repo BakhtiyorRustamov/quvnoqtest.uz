@@ -175,17 +175,6 @@ export default function OqishSubjectView() {
           ))}
         </section>
 
-        {/* subscribe / more coming hint */}
-        <section className="card p-5 mt-8 text-center">
-          <div className="text-3xl" aria-hidden>🔜</div>
-          <p className="font-bold text-ink/70 mt-1">
-            {s(
-              'Yangi darslar tez orada qoʻshiladi. Hozircha 1-dars bepul ochiq!',
-              'Новые уроки скоро появятся. Пока урок 1 доступен бесплатно!',
-              'New lessons are coming soon. For now, lesson 1 is free!'
-            )}
-          </p>
-        </section>
       
 
         {/* personalized focused-review recommendation (same as maths) */}
@@ -194,6 +183,7 @@ export default function OqishSubjectView() {
           name={user?.name ?? null}
           isPaid={user?.isPaid ?? false}
           locale={locale}
+          subjectName={pick(SUBJECTS['oqish-savodxonligi'].name, locale)}
           getTopicMeta={getOqishLesson}
           startHref="/lesson/g1-oqish-01"
         />

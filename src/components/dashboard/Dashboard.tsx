@@ -16,12 +16,12 @@ import { G1_TABIIY_TOPICS } from '@/content/g1-tabiiy/topics';
 import { api } from '@/lib/client';
 import type { ProgressRow } from '@/lib/store/types';
 import LangSwitcher from '@/components/ui/LangSwitcher';
-import MuteToggle from '@/components/ui/MuteToggle';
 import AIMascotButton from '@/components/ui/AIMascotButton';
 import AnimatedLogo from '@/components/landing/AnimatedLogo';
 import ProfileDrawer from './ProfileDrawer';
 import SubjectProgressCard from './SubjectProgressCard';
 import DashboardStats from './DashboardStats';
+import Leaderboard from './Leaderboard';
 import OlympiadSection from './OlympiadSection';
 
 /** Free + paid dashboard (SRS §6.3 / §6.4) — same layout, labels/locks differ. */
@@ -57,28 +57,35 @@ export default function Dashboard() {
 
   return (
     <main className="min-h-screen pb-16">
-      {/* brand logo (top) */}
-      <div className="flex justify-center pt-4">
-        <Link href="/" aria-label="QuvnoqTest.uz" className="block w-[140px] sm:w-[160px]">
-          <AnimatedLogo />
-        </Link>
-      </div>
+      {/* collapsed-sidebar frame: a thin hairline down the left edge (hidden while
+          the sidebar is open, when the drawer itself provides the edge) */}
+      {!profileOpen && <div aria-hidden className="fixed left-0 top-0 bottom-0 z-30 w-[3px] bg-ink/12" />}
 
-      {/* top bar: profile (left) · language (right); AI entry lives on the mascot */}
-      <header className="flex items-center justify-between gap-2 max-w-5xl mx-auto px-3 pt-3 flex-wrap">
-        <button
-          onClick={() => setProfileOpen(true)}
-          className="rounded-2xl bg-white/90 border-2 border-ink/15 shadow-card px-4 py-1.5 flex flex-col items-center leading-tight"
-          aria-label={t('dashboard.profile')}
-        >
-          <span className="text-[11px] font-extrabold uppercase tracking-wide text-ink/55">
-            {t('dashboard.profile')}
-          </span>
-          <span className="font-medium text-base text-ink">{user?.publicId ?? '…'}</span>
-        </button>
-        <div className="flex items-center gap-2 flex-wrap">
+      {/* sidebar open/close handle — attached to the edge; slides to the drawer's
+          right edge when open. ">" opens, "<" closes. */}
+      <button
+        onClick={() => setProfileOpen((o) => !o)}
+        aria-label={t('dashboard.profile')}
+        aria-expanded={profileOpen}
+        style={{ left: profileOpen ? 'min(370px, 93vw)' : 0 }}
+        className="fixed top-1/2 z-[55] grid h-16 w-7 -translate-y-1/2 place-items-center rounded-r-xl border border-l-0 border-ink/15 bg-white text-ink shadow-card transition-[left] duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40"
+      >
+        <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+          {profileOpen ? <path d="M15 18l-6-6 6-6" /> : <path d="M9 6l6 6-6 6" />}
+        </svg>
+      </button>
+
+      {/* top bar — logo TRULY centred (absolute), language pinned right so its
+          width can never nudge the logo off-centre. */}
+      <header className="relative max-w-5xl mx-auto px-3 pt-4 h-14">
+        <div className="pointer-events-none absolute inset-x-0 top-4 flex justify-center">
+          {/* logo — a plain visual, not a link/button */}
+          <div className="select-none" aria-label="QuvnoqTest.uz">
+            <AnimatedLogo compact />
+          </div>
+        </div>
+        <div className="absolute right-3 top-4">
           <LangSwitcher />
-          <MuteToggle />
         </div>
       </header>
 
@@ -138,14 +145,17 @@ export default function Dashboard() {
       {/* progress stats & charts (real /api/progress data) */}
       <DashboardStats progress={progress} grade={grade} subjects={gradeDef.subjects} name={user?.name ?? null} locale={locale} />
 
+      {/* top students on the site — total learned lessons; links to full board */}
+      <Leaderboard />
+
       {/* Quvnoq Olimpiada — big announcement + countdown (dummy, under results) */}
       <OlympiadSection locale={locale} />
 
-      {/* parents' corner */}
-      <div className="max-w-4xl mx-auto px-3 mt-6 text-center">
+      {/* parents' corner — a clear, prominent button */}
+      <div className="max-w-4xl mx-auto px-3 mt-8 flex justify-center">
         <Link
           href="/parent"
-          className="inline-flex items-center gap-2 rounded-2xl bg-white/90 border-2 border-ink/15 shadow-card px-5 py-3 font-extrabold text-ink hover:-translate-y-0.5 transition-transform"
+          className="inline-flex items-center gap-2 rounded-full bg-brand-blue px-8 py-3.5 text-lg font-black text-white shadow-lg shadow-brand-blue/30 hover:-translate-y-0.5 active:translate-y-0 transition-transform focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40"
         >
           {pick(
             { uz: 'Ota-onalar sahifasi', ru: 'Страница для родителей', en: 'Parents’ page' },

@@ -325,6 +325,7 @@ export default function OnaSubjectView() {
           name={user?.name ?? null}
           isPaid={user?.isPaid ?? false}
           locale={locale}
+          subjectName={pick(SUBJECTS['ona-tili-savod'].name, locale)}
           getTopicMeta={getOnaTopic}
           startHref="/lesson/g1-ona-01"
         />

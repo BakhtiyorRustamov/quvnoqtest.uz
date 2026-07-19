@@ -302,17 +302,6 @@ export default function InformatikaSubjectView() {
           </div>
         </section>
 
-        {/* subscribe / more coming hint */}
-        <section className="card p-5 mt-8 text-center">
-          <div className="text-3xl" aria-hidden>🔜</div>
-          <p className="font-bold text-ink/70 mt-1">
-            {s(
-              'Barcha 1–33-darslar bepul ochiq! Butun 1-sinf Informatika kursi tayyor.',
-              'Все уроки 1–33 доступны бесплатно! Весь курс информатики 1-го класса готов.',
-              'All lessons 1–33 are free! The full Grade 1 Informatics course is ready.'
-            )}
-          </p>
-        </section>
       
 
         {/* personalized focused-review recommendation (same as maths) */}
@@ -321,6 +310,7 @@ export default function InformatikaSubjectView() {
           name={user?.name ?? null}
           isPaid={user?.isPaid ?? false}
           locale={locale}
+          subjectName={pick(SUBJECTS.informatika.name, locale)}
           getTopicMeta={getInformatikaTopic}
           startHref="/lesson/g1-informatika-01"
         />

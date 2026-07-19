@@ -6,13 +6,11 @@ import { motion } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import AIMascotButton from '@/components/ui/AIMascotButton';
-import TopicRecommendation from './TopicRecommendation';
 import CollapsibleGrid from './CollapsibleGrid';
 import { useUser } from '@/components/providers/UserProvider';
 import { api } from '@/lib/client';
 import { isBuiltTopic } from '@/content';
 import { G1_TARBIYA_TOPICS } from '@/content/g1-tarbiya/topics';
-import { getTarbiyaTopic } from '@/content/g1-tarbiya/topics';
 import { pick } from '@/lib/i18n-config';
 import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
@@ -50,7 +48,7 @@ const SECTIONS: { title: { uz: string; ru: string; en: string }; from: number; t
 export default function TarbiyaSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
-  const { user, ensureUser } = useUser();
+  const { ensureUser } = useUser();
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
   useEffect(() => {
@@ -313,28 +311,8 @@ export default function TarbiyaSubjectView() {
           })}
         </section>
 
-        {/* subscribe / more coming hint */}
-        <section className="card p-5 mt-8 text-center">
-          <div className="text-3xl" aria-hidden>🔜</div>
-          <p className="font-bold text-ink/70 mt-1">
-            {s(
-              'Barcha 21 ta dars bepul ochiq! Yaxshi tarbiya — goʻzal kelajak.',
-              'Все 21 урок доступны бесплатно! Хорошее воспитание — прекрасное будущее.',
-              'All 21 lessons are free! Good character shapes a bright future.'
-            )}
-          </p>
-        </section>
       
 
-        {/* personalized focused-review recommendation (same as maths) */}
-        <TopicRecommendation
-          progress={progress}
-          name={user?.name ?? null}
-          isPaid={user?.isPaid ?? false}
-          locale={locale}
-          getTopicMeta={getTarbiyaTopic}
-          startHref="/lesson/g1-tarbiya-01"
-        />
       </div>
 
       <AIMascotButton />

@@ -5,6 +5,10 @@ import { Analytics } from '@vercel/analytics/next';
 import { UserProvider } from '@/components/providers/UserProvider';
 import { SoundProvider } from '@/components/providers/SoundProvider';
 import './globals.css';
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
   title: 'QuvnoqTest.uz — Quvnoq darslar!',
@@ -23,7 +27,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning className={cn("font-sans", geist.variable)}>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

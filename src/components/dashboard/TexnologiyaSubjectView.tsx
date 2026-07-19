@@ -156,16 +156,6 @@ export default function TexnologiyaSubjectView() {
           <CollapsibleGrid>{G1_TEX_TOPICS.map((tp, i) => renderEntry(tp, i))}</CollapsibleGrid>
         </section>
 
-        {/* more coming hint */}
-        <section className="card p-5 mt-8 text-center">
-          <p className="font-bold text-ink/70">
-            {s(
-              'Barcha 30 ta dars bepul ochiq! Oʻrgan va yarat!',
-              'Все 30 уроков доступны бесплатно! Учись и твори!',
-              'All 30 lessons are free! Learn and create!'
-            )}
-          </p>
-        </section>
       
 
       </div>

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { useUser } from '@/components/providers/UserProvider';
+import { useSound } from '@/components/providers/SoundProvider';
 import { api } from '@/lib/client';
 
 type MagicState =
@@ -19,7 +20,9 @@ type MagicState =
 export default function ProfileDrawer({ open, onClose }: { open: boolean; onClose: () => void }) {
   const t = useTranslations('profile');
   const tc = useTranslations('common');
+  const td = useTranslations('dashboard');
   const { user, update } = useUser();
+  const { muted, toggleMuted } = useSound();
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -70,11 +73,29 @@ export default function ProfileDrawer({ open, onClose }: { open: boolean; onClos
             exit={{ x: -400 }}
             transition={{ type: 'spring', stiffness: 260, damping: 28 }}
           >
-            <div className="flex items-center justify-between mb-5">
+            {/* close via the edge handle "<" — no X button here */}
+            <div className="mb-5">
               <h2 className="font-black text-ink text-2xl">{t('title')}</h2>
-              <button onClick={onClose} aria-label={tc('close')} className="w-11 h-11 rounded-full bg-white border border-ink/10 shadow-card font-black">
-                ✕
+            </div>
+
+            {/* quick settings: sound toggle + go to the landing page */}
+            <div className="flex items-center gap-2 mb-4">
+              <button
+                onClick={toggleMuted}
+                aria-label={muted ? tc('soundOff') : tc('soundOn')}
+                className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-white border-2 border-ink/12 shadow-card px-3 py-2.5 font-extrabold text-ink"
+              >
+                <span aria-hidden className="text-lg">{muted ? '🔇' : '🔊'}</span>
+                {muted ? tc('soundOff') : tc('soundOn')}
               </button>
+              <Link
+                href="/?home=1"
+                onClick={onClose}
+                className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-white border-2 border-ink/12 shadow-card px-3 py-2.5 font-extrabold text-ink"
+              >
+                <span aria-hidden className="text-lg">🏠</span>
+                {td('landingLink')}
+              </Link>
             </div>
 
             {/* visible public ID (FR-PRF-1) */}

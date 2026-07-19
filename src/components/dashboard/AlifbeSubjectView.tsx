@@ -302,17 +302,6 @@ export default function AlifbeSubjectView() {
           </div>
         </section>
 
-        {/* subscribe / more coming hint */}
-        <section className="card p-5 mt-8 text-center">
-          <div className="text-3xl" aria-hidden>🔜</div>
-          <p className="font-bold text-ink/70 mt-1">
-            {s(
-              'Barcha 1–64-darslar bepul ochiq! Yangi harflar va darslar tez orada qoʻshiladi.',
-              'Все уроки 1–64 доступны бесплатно! Новые буквы и уроки скоро появятся.',
-              'All lessons 1–64 are free! New letters and lessons are coming soon.'
-            )}
-          </p>
-        </section>
       
 
         {/* personalized focused-review recommendation (same as maths) */}
@@ -321,6 +310,7 @@ export default function AlifbeSubjectView() {
           name={user?.name ?? null}
           isPaid={user?.isPaid ?? false}
           locale={locale}
+          subjectName={pick(SUBJECTS.alifbe.name, locale)}
           getTopicMeta={getAlifbeTopic}
           startHref="/lesson/g1-alifbe-01"
         />

@@ -413,6 +413,7 @@ export default function SubjectView() {
 
         {/* personalized "focused review" — practise low-score topics + subscribe */}
         <TopicRecommendation
+          subjectName={pick(SUBJECTS.matematika.name, locale)}
           progress={progress}
           name={user?.name ?? null}
           isPaid={user?.isPaid ?? false}

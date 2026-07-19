@@ -1,16 +1,16 @@
 {
   "topicId": "g1-alifbe-64",
   "subjectKey": "g1-alifbe",
-  "emojis": "❄️🎄⛄📅",
+  "emojis": "❄️⛄📅",
   "title": {
     "uz": "Oʻlkamizda qish",
     "ru": "Зима в нашем краю",
     "en": "Winter in our land"
   },
   "recall": {
-    "uz": "Qish — yilning sovuq fasli. Qishda qor yogʻadi. Yangi yil bayrami keladi! Oylar: dekabr, yanvar, fevral.",
-    "ru": "Зима — холодное время года. Зимой идёт снег. Приходит Новый год! Месяцы: dekabr, yanvar, fevral.",
-    "en": "Winter is the cold season. In winter it snows. New Year comes! Months: dekabr, yanvar, fevral."
+    "uz": "Qish — yilning sovuq fasli. Qishda qor yogʻadi, bolalar qorbobo yasaydi. Oylar: dekabr, yanvar, fevral.",
+    "ru": "Зима — холодное время года. Зимой идёт снег, дети лепят снеговика. Месяцы: dekabr, yanvar, fevral.",
+    "en": "Winter is the cold season. In winter it snows and children build a snowman. Months: dekabr, yanvar, fevral."
   },
   "items": [
     {
@@ -23,53 +23,53 @@
         "en": "Read the text, then answer."
       },
       "hint": {
-        "uz": "Yangi yil haqida.",
-        "ru": "О Новом годе.",
-        "en": "About New Year."
+        "uz": "Qor haqida.",
+        "ru": "О снеге.",
+        "en": "About the snow."
       },
       "explanation": {
-        "uz": "Toʻgʻri javob — archa.",
-        "ru": "Верный ответ — archa.",
-        "en": "The right answer — archa."
+        "uz": "Toʻgʻri javob — qorbobo.",
+        "ru": "Верный ответ — qorbobo.",
+        "en": "The right answer — qorbobo."
       },
       "widget": {
         "type": "read_text",
         "props": {
-          "emoji": "🎄",
+          "emoji": "⛄",
           "text": {
-            "uz": "Yangi yil keldi.\nHamma xursand.\nArcha bezatildi va bolalarga sovgʻa berildi.",
-            "ru": "Yangi yil keldi.\nHamma xursand.\nArcha bezatildi va bolalarga sovgʻa berildi.",
-            "en": "Yangi yil keldi.\nHamma xursand.\nArcha bezatildi va bolalarga sovgʻa berildi."
+            "uz": "Qish keldi.\nOsmondan qor yogʻdi.\nBolalar hovlida qorbobo yasadi.",
+            "ru": "Qish keldi.\nOsmondan qor yogʻdi.\nBolalar hovlida qorbobo yasadi.",
+            "en": "Qish keldi.\nOsmondan qor yogʻdi.\nBolalar hovlida qorbobo yasadi."
           },
           "question": {
-            "uz": "Nima bezatildi?",
-            "ru": "Nima bezatildi?",
-            "en": "Nima bezatildi?"
+            "uz": "Bolalar nima yasadi?",
+            "ru": "Bolalar nima yasadi?",
+            "en": "Bolalar nima yasadi?"
           },
           "options": [
             {
               "id": "ok",
               "label": {
-                "uz": "archa",
-                "ru": "archa",
-                "en": "archa"
+                "uz": "qorbobo",
+                "ru": "qorbobo",
+                "en": "qorbobo"
               },
               "correct": true
             },
             {
               "id": "o1",
               "label": {
-                "uz": "maktab",
-                "ru": "maktab",
-                "en": "maktab"
+                "uz": "kitob",
+                "ru": "kitob",
+                "en": "kitob"
               }
             },
             {
               "id": "o2",
               "label": {
-                "uz": "koʻcha",
-                "ru": "koʻcha",
-                "en": "koʻcha"
+                "uz": "stol",
+                "ru": "stol",
+                "en": "stol"
               }
             }
           ]

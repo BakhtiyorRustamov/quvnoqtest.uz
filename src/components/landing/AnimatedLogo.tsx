@@ -21,19 +21,22 @@ function arcPath(cx: number, cy: number, r: number, a0: number, a1: number) {
 export default function AnimatedLogo({
   drawIn = false,
   className = '',
-  onDark = false
+  onDark = false,
+  compact = false
 }: {
   drawIn?: boolean;
   className?: string;
   /** Light wordmark for use over the dark landing theme. */
   onDark?: boolean;
+  /** fixed, small, self-contained size (used in the centred dashboard header) */
+  compact?: boolean;
 }) {
   const reduce = useReducedMotion();
   const animate = drawIn && !reduce;
 
   return (
-    <div className={`flex items-center gap-3 sm:gap-4 ${className}`}>
-      <svg viewBox="0 0 124 124" className="w-[34%] max-w-[120px] shrink-0" aria-hidden>
+    <div className={`flex items-center ${compact ? 'gap-2 w-fit' : 'gap-3 sm:gap-4'} ${className}`}>
+      <svg viewBox="0 0 124 124" className={`${compact ? 'w-7 h-7' : 'w-[34%] max-w-[120px]'} shrink-0`} aria-hidden>
         {ARCS.map(([a0, a1, color], i) => (
           <motion.path
             key={i}
@@ -78,7 +81,7 @@ export default function AnimatedLogo({
         className="leading-none"
       >
         <span
-          className={`block font-black text-[clamp(26px,7vw,44px)] tracking-tight ${
+          className={`block font-black tracking-tight ${compact ? 'text-2xl' : 'text-[clamp(26px,7vw,44px)]'} ${
             onDark ? 'text-white' : 'text-ink'
           }`}
         >

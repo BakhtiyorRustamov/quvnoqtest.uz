@@ -6,7 +6,13 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { pick } from '@/lib/i18n-config';
 import { progressSubjectKey, type SubjectDef } from '@/content/taxonomy';
-import { G1_MATH_TOPICS } from '@/content';
+import { G1_MATH_TOPICS, G1_ONA_TOPICS, G1_ALIFBE_TOPICS, G1_INGLIZ_LESSONS } from '@/content';
+import { G1_OQISH_LESSONS } from '@/content/g1-oqish/structure';
+import { G1_INFORMATIKA_TOPICS } from '@/content/g1-informatika/topics';
+import { G1_TARBIYA_TOPICS } from '@/content/g1-tarbiya/topics';
+import { G1_ART_TOPICS } from '@/content/g1-art/topics';
+import { G1_TEX_TOPICS } from '@/content/g1-tex/topics';
+import { G1_TABIIY_TOPICS } from '@/content/g1-tabiiy/topics';
 import type { ProgressRow } from '@/lib/store/types';
 
 /* =============================================================================
@@ -26,8 +32,21 @@ const MONTH_LABELS: Record<string, string[]> = {
 };
 const pickLabels = (m: Record<string, string[]>, locale: string) => m[locale] ?? m.en;
 
-/** Topics that actually exist for a progress key (only grade-1 math today). */
-const topicTotal = (pk: string) => (pk === 'g1-math' ? G1_MATH_TOPICS.length : 0);
+/** Real lesson count per grade-1 subject progress key (0 = no lessons yet, e.g.
+ *  Fikrlash is exam-based). Keeps the stats totals correct for every subject. */
+const LESSON_TOTAL: Record<string, number> = {
+  'g1-math': G1_MATH_TOPICS.length,
+  'g1-ona': G1_ONA_TOPICS.length,
+  'g1-alifbe': G1_ALIFBE_TOPICS.length,
+  'g1-oqish': G1_OQISH_LESSONS.length,
+  'g1-ingliz': G1_INGLIZ_LESSONS.length,
+  'g1-informatika': G1_INFORMATIKA_TOPICS.length,
+  'g1-tarbiya': G1_TARBIYA_TOPICS.length,
+  'g1-art': G1_ART_TOPICS.length,
+  'g1-tex': G1_TEX_TOPICS.length,
+  'g1-tabiiy': G1_TABIIY_TOPICS.length
+};
+const topicTotal = (pk: string) => LESSON_TOTAL[pk] ?? 0;
 
 function mondayStart(d: Date) {
   const x = new Date(d);

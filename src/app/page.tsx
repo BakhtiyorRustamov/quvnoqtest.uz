@@ -10,7 +10,16 @@ export const dynamic = 'force-dynamic';
  * landing and go straight to the subject-picker dashboard. Brand-new, anonymous
  * visitors still see the landing page.
  */
-export default async function Home() {
+export default async function Home({
+  searchParams
+}: {
+  searchParams: Promise<{ home?: string }>;
+}) {
+  // A returning visitor who deliberately opens the landing page from the
+  // dashboard ("Ilk sahifa") passes ?home=1 and is NOT bounced back.
+  const { home } = await searchParams;
+  if (home === '1') return <Landing />;
+
   const store = getStore();
   const user = await store.getCurrent();
   if (user) redirect('/dashboard');

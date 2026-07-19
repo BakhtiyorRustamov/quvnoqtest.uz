@@ -243,16 +243,6 @@ export default function ArtSubjectView() {
           <CollapsibleGrid>{G1_ART_TOPICS.map((tp, i) => renderEntry(tp, i))}</CollapsibleGrid>
         </section>
 
-        {/* more coming hint */}
-        <section className="card p-5 mt-8 text-center">
-          <p className="font-bold text-ink/70">
-            {s(
-              'Barcha 36 ta dars bepul ochiq! Tasavvur qil va yarat!',
-              'Все 36 уроков доступны бесплатно! Представляй и твори!',
-              'All 36 lessons are free! Imagine and create!'
-            )}
-          </p>
-        </section>
       
 
       </div>
