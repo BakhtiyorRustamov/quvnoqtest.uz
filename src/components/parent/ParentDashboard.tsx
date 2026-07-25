@@ -10,6 +10,7 @@ import { api } from '@/lib/client';
 import { pick } from '@/lib/i18n-config';
 import { G1_MATH_TOPICS, getTopic } from '@/content';
 import type { ProgressRow } from '@/lib/store/types';
+import ContactButton from '@/components/ui/ContactButton';
 
 /**
  * Parents' dashboard. Two modes:
@@ -413,6 +414,11 @@ export default function ParentDashboard() {
             })}
           </div>
         </section>
+
+        {/* support contact — parents are the ones who pay, so they need this most */}
+        <div className="mt-8 flex justify-center">
+          <ContactButton variant="card" className="w-full max-w-xl" />
+        </div>
       </div>
     </main>
   );

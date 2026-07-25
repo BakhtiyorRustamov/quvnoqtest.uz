@@ -348,15 +348,16 @@ function ReceiptsTab() {
               </button>
             </div>
             <button
-              onClick={() => act('reject', { revoke: true, strike: true })}
+              onClick={() => act('reject', { revoke: true })}
               disabled={busy}
               className="w-full rounded-xl border border-red-300 text-red-700 font-semibold py-2 text-sm disabled:opacity-40"
             >
-              Reject + revoke access + strike
+              Reject + revoke access
             </button>
             <p className="text-xs text-slate-400 leading-relaxed">
               Plain reject notifies the user and leaves their current access alone. The second button also rolls
-              their subscription back to what it was before this payment.
+              their subscription back to what it was before this payment. Strikes are only set manually, from the
+              Users tab.
             </p>
           </div>
         </div>

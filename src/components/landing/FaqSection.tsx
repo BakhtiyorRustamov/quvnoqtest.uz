@@ -2,6 +2,12 @@
 
 import * as React from 'react';
 import { useTranslations } from 'next-intl';
+import {
+  CONTACT_PHONE_DISPLAY,
+  CONTACT_PHONE_TEL,
+  CONTACT_TELEGRAM_HANDLE,
+  CONTACT_TELEGRAM_URL
+} from '@/lib/contact';
 
 /* Savol-javoblar — a standalone FAQ section (moved out of the flashlight zone).
    Native <details> accordion with a prominent round +/× toggle. */
@@ -72,7 +78,7 @@ export default function FaqSection() {
 
             <div className="mt-5 space-y-3">
               <a
-                href="https://t.me/QuvnoqTest"
+                href={CONTACT_TELEGRAM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 rounded-2xl border border-white/12 bg-white/[0.06] px-4 py-3.5 font-extrabold transition-colors hover:bg-white/[0.12]"
@@ -84,12 +90,12 @@ export default function FaqSection() {
                 </span>
                 <span>
                   <span className="block text-xs font-bold uppercase tracking-wide text-white/55">Telegram</span>
-                  @QuvnoqTest
+                  {CONTACT_TELEGRAM_HANDLE}
                 </span>
               </a>
 
               <a
-                href="tel:+998951407707"
+                href={`tel:${CONTACT_PHONE_TEL}`}
                 className="flex items-center gap-3 rounded-2xl border border-white/12 bg-white/[0.06] px-4 py-3.5 font-extrabold transition-colors hover:bg-white/[0.12]"
               >
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-brand-green text-white">
@@ -99,7 +105,7 @@ export default function FaqSection() {
                 </span>
                 <span>
                   <span className="block text-xs font-bold uppercase tracking-wide text-white/55">Telefon</span>
-                  +998 95 140 77 07
+                  {CONTACT_PHONE_DISPLAY}
                 </span>
               </a>
             </div>

@@ -23,6 +23,7 @@ import SubjectProgressCard from './SubjectProgressCard';
 import DashboardStats from './DashboardStats';
 import Leaderboard from './Leaderboard';
 import OlympiadSection from './OlympiadSection';
+import ContactButton from '@/components/ui/ContactButton';
 
 /** Free + paid dashboard (SRS §6.3 / §6.4) — same layout, labels/locks differ. */
 export default function Dashboard() {
@@ -162,6 +163,11 @@ export default function Dashboard() {
             locale
           )}
         </Link>
+      </div>
+
+      {/* support contact */}
+      <div className="max-w-4xl mx-auto px-3 mt-4 flex justify-center">
+        <ContactButton />
       </div>
 
       {/* brand logo (bottom) */}

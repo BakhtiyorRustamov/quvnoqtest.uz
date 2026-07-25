@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 import { useUser } from '@/components/providers/UserProvider';
 import { useSound } from '@/components/providers/SoundProvider';
 import { api } from '@/lib/client';
+import ContactButton from '@/components/ui/ContactButton';
 
 type MagicState =
   | { kind: 'idle' }
@@ -181,6 +182,11 @@ export default function ProfileDrawer({ open, onClose }: { open: boolean; onClos
                 ✅ {new Date(user.paidUntil).toLocaleDateString()} ⏳
               </p>
             )}
+
+            {/* support contact */}
+            <div className="mt-6 pt-5 border-t border-ink/10 flex justify-center">
+              <ContactButton />
+            </div>
           </motion.aside>
         </>
       )}

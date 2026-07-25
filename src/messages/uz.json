@@ -289,5 +289,13 @@
   "notices": {
     "rejectedTitle": "Chek tasdiqlanmadi",
     "dismiss": "Yopish"
+  },
+  "contact": {
+    "title": "Savolingiz bormi?",
+    "body": "Biz bilan bogʻlaning — tez javob beramiz.",
+    "cta": "Aloqa",
+    "modalTitle": "Biz bilan bogʻlaning",
+    "phone": "Telefon",
+    "close": "Yopish"
   }
 }

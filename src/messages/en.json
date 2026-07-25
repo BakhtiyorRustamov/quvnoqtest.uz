@@ -289,5 +289,13 @@
   "notices": {
     "rejectedTitle": "Receipt not confirmed",
     "dismiss": "Dismiss"
+  },
+  "contact": {
+    "title": "Have a question?",
+    "body": "Get in touch — we reply quickly.",
+    "cta": "Contact",
+    "modalTitle": "Get in touch",
+    "phone": "Phone",
+    "close": "Close"
   }
 }

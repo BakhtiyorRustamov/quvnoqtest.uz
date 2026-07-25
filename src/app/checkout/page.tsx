@@ -9,6 +9,7 @@ import { useUser } from '@/components/providers/UserProvider';
 import { useSound } from '@/components/providers/SoundProvider';
 import { bigCelebration } from '@/lib/confetti';
 import { CARDS, CARD_HOLDER, MAX_UPLOAD_BYTES } from '@/lib/pricing';
+import ContactButton from '@/components/ui/ContactButton';
 
 /**
  * Checkout: manual card transfer + receipt upload (there is no payment gateway).
@@ -119,6 +120,9 @@ export default function CheckoutPage() {
             <p className="font-bold text-ink/60 mt-2">{t('successBody')}</p>
             <div className="mt-5 rounded-2xl bg-brand-green/10 border border-brand-green/25 px-4 py-3 text-sm font-bold text-ink/70">
               🔎 {t('reviewNote')}
+            </div>
+            <div className="mt-5 flex justify-center">
+              <ContactButton />
             </div>
           </motion.div>
         </div>
@@ -283,6 +287,11 @@ export default function CheckoutPage() {
           <p className="text-center text-[12.5px] font-bold text-ink/45 mt-3 leading-relaxed">
             {t('afterNote')}
           </p>
+
+          {/* if a transfer or receipt goes wrong, reaching a human must be one tap away */}
+          <div className="mt-5">
+            <ContactButton variant="card" />
+          </div>
 
           {/* promo code */}
           <div className="mt-5 pt-4 border-t border-ink/10">
