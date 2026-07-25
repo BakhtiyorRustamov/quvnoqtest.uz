@@ -20,15 +20,15 @@ export const ONA_DTM_MINUTES = 30;
 export const ONA_DTM_COUNT = 20;
 
 export const ONA_DTM_TITLE: L10n = {
-  uz: 'DTM ga tayyorgarlik (Ona tili)',
-  ru: 'Подготовка к DTM (Родной язык)',
-  en: 'DTM preparation (Native language)'
+  uz: 'Milliy sertifikatga tayyorgarlik - Ona tili',
+  ru: 'Подготовка к национальному сертификату - Родной язык',
+  en: 'National certificate preparation - Native language'
 };
 
 export const ONA_DTM_INTRO: L10n = {
-  uz: 'DTM (Davlat test markazi) imtihonlari odatda 5–11-sinf va oliygohga kirish uchun boʻladi. Bu — haqiqiy DTM testi EMAS, balki DTM testlarida uchraydigan, 1-sinfda oʻrganilgan ona tili mavzulari (bosh harf va atoqli otlar, soʻz turkumlari — narsa, harakat, belgi, unli-undosh tovushlar, boʻgʻin, tinish belgilari, son soʻzlari) asosidagi tayyorgarlik testi. 20 ta savol, 30 daqiqa. Har safar soʻzlar va savollar oʻzgaradi — qayta ishlaganda boshqa test chiqadi. Test soʻngida qaysi darslarni takrorlash kerakligi tavsiya qilinadi.',
-  ru: 'Экзамены DTM (Государственного центра тестирования) обычно для 5–11 классов и поступления в вуз. Это НЕ настоящий тест DTM, а тренировочный тест по темам родного языка 1 класса, встречающимся в тестах DTM (заглавная буква и имена собственные, части речи — предмет, действие, признак, гласные-согласные, слоги, знаки препинания, слова-числа). 20 вопросов, 30 минут. Слова и вопросы меняются каждый раз — при повторе будет другой тест. В конце рекомендуется, какие уроки повторить.',
-  en: 'DTM (State Test Centre) exams are usually for grades 5–11 and university entry. This is NOT a real DTM test — it is a practice test built from the grade-1 native-language topics that appear in DTM tests (capital letters & proper nouns, word classes — thing/action/attribute, vowels & consonants, syllables, punctuation, number words). 20 questions, 30 minutes. The words and questions change every time — a retake gives a different test. At the end it recommends which lessons to review.'
+  uz: 'Milliy sertifikat imtihonlari odatda katta yoshdagi oʻquvchilar uchun boʻladi. Bu — haqiqiy milliy sertifikat testi EMAS, balki bunday testlarda uchraydigan, 1-sinfda oʻrganilgan ona tili mavzulari (bosh harf va atoqli otlar, soʻz turkumlari — narsa, harakat, belgi, unli-undosh tovushlar, boʻgʻin, tinish belgilari, son soʻzlari) asosidagi tayyorgarlik testi. 20 ta savol, 30 daqiqa. Har safar soʻzlar va savollar oʻzgaradi — qayta ishlaganda boshqa test chiqadi. Test soʻngida qaysi darslarni takrorlash kerakligi tavsiya qilinadi.',
+  ru: 'Экзамены на национальный сертификат обычно сдают ученики старших классов. Это НЕ настоящий тест национального сертификата, а тренировочный тест по темам родного языка 1 класса, встречающимся в таких тестах (заглавная буква и имена собственные, части речи — предмет, действие, признак, гласные-согласные, слоги, знаки препинания, слова-числа). 20 вопросов, 30 минут. Слова и вопросы меняются каждый раз — при повторе будет другой тест. В конце рекомендуется, какие уроки повторить.',
+  en: 'National certificate exams are usually taken by older students. This is NOT a real national certificate test — it is a practice test built from the grade-1 native-language topics that appear in such tests (capital letters & proper nouns, word classes — thing/action/attribute, vowels & consonants, syllables, punctuation, number words). 20 questions, 30 minutes. The words and questions change every time — a retake gives a different test. At the end it recommends which lessons to review.'
 };
 
 /* ----------------------------- helpers ----------------------------- */

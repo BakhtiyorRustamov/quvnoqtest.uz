@@ -6,6 +6,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import AIMascotButton from '@/components/ui/AIMascotButton';
 import { api } from '@/lib/client';
+import { useUser } from '@/components/providers/UserProvider';
 import { FIKR_TITLE, FIKR_TEST1_TITLE, FIKR_COUNT, FIKR_MINUTES, G1_FIKR_EXAM_KEY } from '@/content/g1-fikr/exam';
 import { FIKR2_TITLE, FIKR2_COUNT, FIKR2_MINUTES, G1_FIKR2_EXAM_KEY } from '@/content/g1-fikr/exam2';
 import { FIKR3_TITLE, FIKR3_COUNT, FIKR3_MINUTES, G1_FIKR3_EXAM_KEY } from '@/content/g1-fikr/exam3';
@@ -20,7 +21,13 @@ import type { ProgressRow } from '@/lib/store/types';
 export default function FikrSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
+  const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
   const [progress, setProgress] = useState<ProgressRow[]>([]);
+
+  useEffect(() => {
+    ensureUser(1);
+  }, [ensureUser]);
 
   useEffect(() => {
     api<{ progress: ProgressRow[] }>('/api/progress').then(({ data }) => setProgress(data?.progress ?? []));
@@ -57,7 +64,7 @@ export default function FikrSubjectView() {
         <section className="mt-5 space-y-4">
           {/* Test 1 */}
           <Link
-            href="/exam/g1-fikr"
+            href={isPaid ? '/exam/g1-fikr' : '/upgrade'}
             className="block rounded-3xl border-2 border-brand-purple/60 bg-gradient-to-br from-brand-purple/15 to-brand-blue/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
           >
             <div className="flex items-center gap-4">
@@ -72,13 +79,13 @@ export default function FikrSubjectView() {
                   )}
                 </span>
               </div>
-              <span className="shrink-0 text-brand-purple font-black text-xl" aria-hidden>▶</span>
+              <span className={isPaid ? 'shrink-0 text-brand-purple font-black text-xl' : 'shrink-0 text-xl'} aria-hidden>{isPaid ? '▶' : '🔒'}</span>
             </div>
           </Link>
 
           {/* Test 2 — logical reasoning */}
           <Link
-            href="/exam/g1-fikr-2"
+            href={isPaid ? '/exam/g1-fikr-2' : '/upgrade'}
             className="block rounded-3xl border-2 border-brand-blue/60 bg-gradient-to-br from-brand-blue/15 to-brand-green/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
           >
             <div className="flex items-center gap-4">
@@ -93,13 +100,13 @@ export default function FikrSubjectView() {
                   )}
                 </span>
               </div>
-              <span className="shrink-0 text-brand-blue font-black text-xl" aria-hidden>▶</span>
+              <span className={isPaid ? 'shrink-0 text-brand-blue font-black text-xl' : 'shrink-0 text-xl'} aria-hidden>{isPaid ? '▶' : '🔒'}</span>
             </div>
           </Link>
 
           {/* Test 3 — figures + generative value logic */}
           <Link
-            href="/exam/g1-fikr-3"
+            href={isPaid ? '/exam/g1-fikr-3' : '/upgrade'}
             className="block rounded-3xl border-2 border-brand-green/60 bg-gradient-to-br from-brand-green/15 to-brand-orange/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
           >
             <div className="flex items-center gap-4">
@@ -114,7 +121,7 @@ export default function FikrSubjectView() {
                   )}
                 </span>
               </div>
-              <span className="shrink-0 text-brand-green font-black text-xl" aria-hidden>▶</span>
+              <span className={isPaid ? 'shrink-0 text-brand-green font-black text-xl' : 'shrink-0 text-xl'} aria-hidden>{isPaid ? '▶' : '🔒'}</span>
             </div>
           </Link>
         </section>

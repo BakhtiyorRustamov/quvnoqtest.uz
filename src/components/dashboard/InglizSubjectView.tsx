@@ -12,6 +12,7 @@ import { api } from '@/lib/client';
 import { isBuiltTopic, G1_INGLIZ_UNITS, G1_INGLIZ_LESSONS } from '@/content';
 import { getInglizLesson } from '@/content/g1-ingliz/structure';
 import { pick } from '@/lib/i18n-config';
+import VideoLightbox from '@/components/ui/VideoLightbox';
 import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
 
@@ -28,6 +29,7 @@ export default function InglizSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
   const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
   useEffect(() => {
@@ -41,9 +43,10 @@ export default function InglizSubjectView() {
   const s = (uz: string, ru: string, en: string) => pick({ uz, ru, en }, locale);
   const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
   const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
   const learned = G1_INGLIZ_LESSONS.filter((l) => completedKeys.has(l.key));
-  const firstBuilt = G1_INGLIZ_LESSONS.find((l) => isBuiltTopic(l.key)) ?? G1_INGLIZ_LESSONS[0];
-  const nextLesson = G1_INGLIZ_LESSONS.find((l) => isBuiltTopic(l.key) && !completedKeys.has(l.key)) ?? firstBuilt;
 
   /* ---------------- pen drawing (same as Matematika, blue ink) ---------------- */
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -110,18 +113,6 @@ export default function InglizSubjectView() {
           </h1>
         </div>
 
-        {/* what this subject is */}
-        <section
-          className="card p-5 mt-5 text-[15px] leading-relaxed font-semibold text-ink/80"
-          style={{ borderColor: 'rgba(31,167,224,0.3)' }}
-        >
-          {s(
-            'Ingliz tili — dunyo bolalari bilan doʻstlashish tili! Bu yerda salomlashamiz, ranglar, sonlar va soʻzlarni tinglab oʻrganamiz. Har bir boʻlimda oltita qiziqarli dars bor: yangi soʻzlar, gap qurish, hikoya, suhbat, tovushlar va kashfiyot.',
-            'Английский — язык дружбы с детьми всего мира! Здесь мы здороваемся, слушаем и учим цвета, числа и слова. В каждом разделе шесть весёлых уроков: новые слова, фразы, история, беседа, звуки и открытие.',
-            'English is the language of making friends around the world! Here we say hello, listen and learn colors, numbers and words. Every unit has six fun parts: new words, sentences, a story, talk time, sounds and a discovery lesson.'
-          )}
-        </section>
-
         {/* ------- blue notebook: "Hozirgacha o'rganganlarim" ------- */}
         <section className="mt-6 relative">
           <h2 className="font-black text-ink/70 text-lg mb-2">🇬🇧 {t('dashboard.learnedTitle')}</h2>
@@ -144,14 +135,14 @@ export default function InglizSubjectView() {
                 {learned.map((l) => (
                   <Link
                     key={l.key}
-                    href={`/lesson/${l.key}`}
+                    href={isPaid || l.n === 1 ? `/lesson/${l.key}` : '/upgrade'}
                     className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 font-extrabold text-ink transition-colors"
                     style={{ background: 'rgba(31,167,224,0.14)', border: '2px solid rgba(31,167,224,0.5)' }}
                     title={t('dashboard.replay')}
                   >
                     ✅ {pick(l.title, locale)}
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white text-brand-purple border border-brand-purple/30">
-                      ⭐ {scoreOf(l.key) ?? 0}/10
+                      ⭐ {scoreOf(l.key) ?? 0}/{totalOf(l.key)}
                     </span>
                   </Link>
                 ))}
@@ -215,29 +206,12 @@ export default function InglizSubjectView() {
           </div>
         </section>
 
-        {/* recommendation / continue */}
-        <section className="mt-6">
-          <Link
-            href={`/lesson/${nextLesson.key}`}
-            className="block rounded-3xl px-5 py-5 hover:-translate-y-0.5 transition-transform"
-            style={{ border: '2px solid rgba(31,167,224,0.6)', background: 'linear-gradient(135deg, rgba(31,167,224,0.15), rgba(124,92,255,0.12))' }}
-          >
-            <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>🤖</span>
-              <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
-                  {learned.length ? s('Davom etish', 'Продолжить', 'Continue') : s('Birinchi darsdan boshlash', 'Начать с первого урока', 'Start with lesson 1')}
-                </span>
-                <span className="block font-bold text-ink/55 text-[13px]">{pick(nextLesson.title, locale)}</span>
-              </div>
-              <span className="shrink-0 font-black text-xl" style={{ color: BLUE }} aria-hidden>▶</span>
-            </div>
-          </Link>
-        </section>
-
         {/* ------- Units (Mavzular) ------- */}
         <section className="mt-8">
-          <h2 className="font-black text-ink/70 text-lg mb-3">📚 {t('dashboard.topicsTitle')}</h2>
+          <div className="mb-3 flex flex-wrap items-center gap-3">
+            <h2 className="font-black text-ink/70 text-lg">📚 {t('dashboard.topicsTitle')}</h2>
+            <VideoLightbox src="/videos/ingliz.mp4" poster="/videos/ingliz.jpg" label="" title={pick(SUBJECTS['ingliz-tili'].name, locale)} />
+          </div>
           <div className="flex flex-col gap-4">
             {G1_INGLIZ_UNITS.map((unit, ui) => {
               const unitBuilt = unit.lessons.some((l) => isBuiltTopic(l.key));
@@ -280,8 +254,8 @@ export default function InglizSubjectView() {
                         return (
                           <Link
                             key={l.key}
-                            href={`/lesson/${l.key}`}
-                            className="card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform"
+                            href={isPaid || l.n === 1 ? `/lesson/${l.key}` : '/upgrade'}
+                            className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && l.n === 1 ? ' free-ring' : ''}`}
                           >
                             <span
                               className="shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm"
@@ -290,7 +264,7 @@ export default function InglizSubjectView() {
                               {done ? '✓' : PART_ICONS[pi]}
                             </span>
                             <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(l.title, locale)}</span>
-                            <span className="shrink-0 font-black" style={{ color: BLUE }} aria-hidden>▶</span>
+                            <span className="shrink-0 font-black" style={{ color: BLUE }} aria-hidden>{isPaid || l.n === 1 ? '▶' : '🔒'}</span>
                           </Link>
                         );
                       }
@@ -316,26 +290,34 @@ export default function InglizSubjectView() {
           </div>
         </section>
 
-        {/* dummy practice-test card (coming soon) */}
+        {/* Multilevel-style practice exam (much easier, grade-1 topics only) */}
         <section className="mt-8">
-          <div
-            aria-label={t('common.comingSoon')}
-            className="block rounded-3xl px-5 py-5 opacity-80 cursor-default"
-            style={{ border: '2px solid rgba(31,167,224,0.5)', background: 'linear-gradient(135deg, rgba(31,167,224,0.15), rgba(124,92,255,0.1))' }}
+          <Link
+            href={isPaid ? '/exam/g1-ingliz-multilevel' : '/upgrade'}
+            className="block rounded-3xl px-5 py-5 hover:-translate-y-0.5 transition-transform"
+            style={{ border: '2px solid rgba(31,167,224,0.6)', background: 'linear-gradient(135deg, rgba(31,167,224,0.15), rgba(124,92,255,0.1))' }}
           >
             <div className="flex items-center gap-4">
               <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>📝</span>
               <div className="flex-1 leading-snug">
                 <span className="block font-black text-ink text-lg">
-                  {s('Ingliz tili sinovi', 'Тест по английскому', 'English quiz')}
+                  {s(
+                    'Milliy Sertifikat Multilevelga tayyorlanish',
+                    'Подготовка к Multilevel (национальный сертификат)',
+                    'National Certificate Multilevel preparation'
+                  )}
                 </span>
                 <span className="block font-bold text-ink/50 text-[13px]">
-                  {s('Tez orada', 'Скоро', 'Coming soon')}
+                  {s(
+                    'Listening · Reading · Writing · Speaking — 40 daqiqa, savollar har safar oʻzgaradi',
+                    'Listening · Reading · Writing · Speaking — 40 минут, вопросы меняются каждый раз',
+                    'Listening · Reading · Writing · Speaking — 40 minutes, questions change every time'
+                  )}
                 </span>
               </div>
-              <span className="shrink-0 text-base" aria-hidden>🔒</span>
+              <span className={isPaid ? 'shrink-0 font-black text-xl' : 'shrink-0 text-xl'} style={{ color: BLUE }} aria-hidden>{isPaid ? '▶' : '🔒'}</span>
             </div>
-          </div>
+          </Link>
         </section>
 
       

@@ -6309,5 +6309,165 @@
     "voice": "Algenib",
     "bytes": 1434284,
     "at": "2026-07-18T01:53:31.505Z"
+  },
+  "en/ml-listen-01.wav": {
+    "hash": "146dad9e5481236e5ae6d3f3c745df58be091b440e5100c8dfa130a8a0576924",
+    "provider": "gemini",
+    "voice": "Kore",
+    "role": "teacher",
+    "bytes": 215084,
+    "at": "2026-07-22T19:12:59.099Z"
+  },
+  "en/ml-listen-02.wav": {
+    "hash": "c19031ef75c87e4dc184e9b11f47c7db80304ce18505af10d89fa518338a4280",
+    "provider": "gemini",
+    "voice": "Leda",
+    "role": "girl",
+    "bytes": 153644,
+    "at": "2026-07-22T19:13:01.433Z"
+  },
+  "en/ml-listen-03.wav": {
+    "hash": "acc74d8b6646606f886d9c0605f5887b06d95990ee2a159bd1b4c002ac8b302e",
+    "provider": "gemini",
+    "voice": "Puck",
+    "role": "boy",
+    "bytes": 165164,
+    "at": "2026-07-22T19:13:03.849Z"
+  },
+  "en/ml-listen-04.wav": {
+    "hash": "9fccea62bc43c673b5086286c726be58d48cae4d572636db0c2ba8e1a54b9737",
+    "provider": "gemini",
+    "voice": "Leda",
+    "role": "girl",
+    "bytes": 96044,
+    "at": "2026-07-22T19:13:05.739Z"
+  },
+  "en/ml-listen-05.wav": {
+    "hash": "413c4b286f298286edc0d26fda16a994c6ffd419f14cd58276df964d4ead9e27",
+    "provider": "gemini",
+    "voice": "Puck",
+    "role": "boy",
+    "bytes": 113324,
+    "at": "2026-07-22T19:13:07.673Z"
+  },
+  "en/ml-listen-06.wav": {
+    "hash": "d0f02867f4cf37825e735311566ea702360b85d711fe1175dc9f4aaae0ece88a",
+    "provider": "gemini",
+    "voice": "Kore",
+    "role": "teacher",
+    "bytes": 161324,
+    "at": "2026-07-22T19:13:10.336Z"
+  },
+  "en/ml-listen-07.wav": {
+    "hash": "df38ed4e292ac0f1f8ac5cc7726f00f46745e74c09819874b760e54d33388497",
+    "provider": "gemini",
+    "voice": "Leda",
+    "role": "girl",
+    "bytes": 224684,
+    "at": "2026-07-22T19:13:13.118Z"
+  },
+  "en/ml-listen-08.wav": {
+    "hash": "c46fe3abb74de5b4c17a1e4910e0d92d7d4336dfab30d28f8c2a5d227b076977",
+    "provider": "gemini",
+    "voice": "Leda",
+    "role": "girl",
+    "bytes": 184364,
+    "at": "2026-07-22T19:13:15.492Z"
+  },
+  "en/ml-listen-09.wav": {
+    "hash": "30a79cae5b08ea3bdf42d66e30e22554bb50006025b717c8466bfc535c280755",
+    "provider": "gemini",
+    "voice": "Kore",
+    "role": "teacher",
+    "bytes": 226604,
+    "at": "2026-07-22T19:13:18.060Z"
+  },
+  "en/ml-listen-10.wav": {
+    "hash": "7b93a6b07e1fbe3e393a514890edd5e0ff6b7c7d6d0acc0c45428da1db588dd0",
+    "provider": "gemini",
+    "voice": "Puck",
+    "role": "boy",
+    "bytes": 209324,
+    "at": "2026-07-22T19:13:20.762Z"
+  },
+  "en/ml-listen-11.wav": {
+    "hash": "4eb53551c2b0c78378032e5fc6f4e82afee750dec7e46d12835ac870a7dd4d7a",
+    "provider": "gemini",
+    "voice": "Leda",
+    "role": "girl",
+    "bytes": 161324,
+    "at": "2026-07-22T19:13:23.161Z"
+  },
+  "en/ml-listen-12.wav": {
+    "hash": "b18ec66fc3baecb4dde5f7f15fc414f3c71fa1a19b5b62be9034f3ddecc483e7",
+    "provider": "gemini",
+    "voice": "Puck",
+    "role": "boy",
+    "bytes": 259244,
+    "at": "2026-07-22T19:13:26.685Z"
+  },
+  "en/ml-speak-01.wav": {
+    "hash": "04a3c61900c22cab64eb136cbb9ff397c32db97724d9befede5feabc5aff1300",
+    "provider": "gemini",
+    "voice": "Kore",
+    "role": "teacher",
+    "bytes": 147884,
+    "at": "2026-07-22T19:13:28.778Z"
+  },
+  "en/ml-speak-02.wav": {
+    "hash": "8ed10c9e75725152c2a1bdfaf263133d39ccd0ca0dbed0a8582301aa4c274f84",
+    "provider": "gemini",
+    "voice": "Kore",
+    "role": "teacher",
+    "bytes": 163244,
+    "at": "2026-07-22T19:13:31.290Z"
+  },
+  "en/ml-speak-03.wav": {
+    "hash": "d37f13f2a2f33724e79b7e3c71415ec11f5e5d6f72411247d03cfe96cf6406c8",
+    "provider": "gemini",
+    "voice": "Leda",
+    "role": "girl",
+    "bytes": 172844,
+    "at": "2026-07-22T19:13:33.697Z"
+  },
+  "en/ml-speak-04.wav": {
+    "hash": "f20869b5ec67613a7625041687d3a2ba33e416ae4700387429b28b839d870af0",
+    "provider": "gemini",
+    "voice": "Puck",
+    "role": "boy",
+    "bytes": 184364,
+    "at": "2026-07-22T19:13:36.204Z"
+  },
+  "en/ml-speak-05.wav": {
+    "hash": "af549fe8d242f6cd07e0f980d596b660140e55b7db592d8107fe904ecd1ac977",
+    "provider": "gemini",
+    "voice": "Kore",
+    "role": "teacher",
+    "bytes": 266924,
+    "at": "2026-07-22T19:13:41.269Z"
+  },
+  "en/ml-speak-06.wav": {
+    "hash": "214be120154ea364863583029be3b3a8e914e3bb680e17ec26f751fd0e195885",
+    "provider": "gemini",
+    "voice": "Leda",
+    "role": "girl",
+    "bytes": 197804,
+    "at": "2026-07-22T19:13:43.919Z"
+  },
+  "en/ml-speak-07.wav": {
+    "hash": "c303d8e7be4f1df12b51a920f2fdd15e3726dfc29fc865f6a4328a386fa5b2af",
+    "provider": "gemini",
+    "voice": "Kore",
+    "role": "teacher",
+    "bytes": 182444,
+    "at": "2026-07-22T19:13:46.188Z"
+  },
+  "en/ml-speak-08.wav": {
+    "hash": "7276051275878035f6cfa8ba716393c022bf2fe78d9e530c14b646dccea7a3de",
+    "provider": "gemini",
+    "voice": "Puck",
+    "role": "boy",
+    "bytes": 186284,
+    "at": "2026-07-22T19:13:48.488Z"
   }
 }

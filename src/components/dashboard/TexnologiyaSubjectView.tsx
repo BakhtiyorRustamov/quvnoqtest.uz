@@ -12,6 +12,7 @@ import { api } from '@/lib/client';
 import { isBuiltTopic } from '@/content';
 import { G1_TEX_TOPICS } from '@/content/g1-tex/topics';
 import { pick } from '@/lib/i18n-config';
+import VideoLightbox from '@/components/ui/VideoLightbox';
 import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
 
@@ -36,7 +37,8 @@ const IconLock = () => (
 export default function TexnologiyaSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
-  const { ensureUser } = useUser();
+  const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
   useEffect(() => { ensureUser(1); }, [ensureUser]);
@@ -44,12 +46,12 @@ export default function TexnologiyaSubjectView() {
     api<{ progress: ProgressRow[] }>('/api/progress').then(({ data }) => setProgress(data?.progress ?? []));
   }, []);
 
-  const s = (uz: string, ru: string, en: string) => pick({ uz, ru, en }, locale);
   const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
   const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
   const learned = G1_TEX_TOPICS.filter((tp) => completedKeys.has(tp.key));
-  const firstBuilt = G1_TEX_TOPICS.find((tp) => isBuiltTopic(tp.key)) ?? G1_TEX_TOPICS[0];
-  const nextLesson = G1_TEX_TOPICS.find((tp) => isBuiltTopic(tp.key) && !completedKeys.has(tp.key)) ?? firstBuilt;
 
   const renderEntry = (tp: (typeof G1_TEX_TOPICS)[number], i: number) => {
     const delay = Math.min(i * 0.02, 0.4);
@@ -58,12 +60,12 @@ export default function TexnologiyaSubjectView() {
     if (built) {
       return (
         <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
-          <Link href={`/lesson/${tp.key}`} className="card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform">
+          <Link href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'} className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}>
             <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm" style={{ background: done ? 'var(--brand-green)' : NAVY }}>
               {done ? '✓' : tp.n}
             </span>
             <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
-            <span className="shrink-0 font-black" style={{ color: NAVY }} aria-hidden>▶</span>
+            <span className="shrink-0 font-black" style={{ color: NAVY }} aria-hidden>{isPaid || tp.n === 1 ? '▶' : '🔒'}</span>
           </Link>
         </motion.div>
       );
@@ -96,37 +98,6 @@ export default function TexnologiyaSubjectView() {
           </h1>
         </div>
 
-        {/* what this subject is */}
-        <section className="card p-5 mt-5 text-[15px] leading-relaxed font-semibold text-ink/80" style={{ borderColor: 'rgba(30,58,95,0.3)' }}>
-          {s(
-            'Texnologiya — yasash va ijod qilish darsi! Qogʻoz, plastilin va tabiiy materiallardan qiziqarli buyumlar yasaymiz. Har darsda kerakli ashyolar va bosqichlar koʻrsatiladi. Buyumni yasab, "Tayyor" tugmasini bos yoki ishingni suratga olib yukla.',
-            'Технология — урок труда и творчества! Из бумаги, пластилина и природных материалов мы делаем интересные поделки. В каждом уроке показаны материалы и этапы. Сделав поделку, нажми «Готово» или загрузи фото своей работы.',
-            'Technology — a lesson of making and creating! We make fun crafts from paper, plastilin and natural materials. Each lesson shows the materials and steps. After making it, tap "I made it" or upload a photo of your work.'
-          )}
-        </section>
-
-        {/* recommendation / continue */}
-        <section className="mt-6">
-          <Link
-            href={`/lesson/${nextLesson.key}`}
-            className="block rounded-3xl px-5 py-5 hover:-translate-y-0.5 transition-transform"
-            style={{ border: '2px solid rgba(30,58,95,0.55)', background: 'linear-gradient(135deg, rgba(30,58,95,0.14), rgba(31,167,224,0.12))' }}
-          >
-            <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center shadow-card" aria-hidden><IconTools c={NAVY} /></span>
-              <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
-                  {learned.length ? s('Davom etish', 'Продолжить', 'Continue') : s('Birinchi darsdan boshlash', 'Начать с первого урока', 'Start with lesson 1')}
-                </span>
-                <span className="block font-bold text-ink/55 text-[13px]">
-                  {nextLesson.n}-dars · {pick(nextLesson.title, locale)}
-                </span>
-              </div>
-              <span className="shrink-0 font-black text-xl" style={{ color: NAVY }} aria-hidden>▶</span>
-            </div>
-          </Link>
-        </section>
-
         {/* learned list */}
         {learned.length > 0 && (
           <section className="mt-6">
@@ -135,14 +106,14 @@ export default function TexnologiyaSubjectView() {
               {learned.map((tp) => (
                 <Link
                   key={tp.key}
-                  href={`/lesson/${tp.key}`}
+                  href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
                   className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 font-extrabold text-ink transition-colors"
                   style={{ background: 'rgba(30,58,95,0.12)', border: '2px solid rgba(30,58,95,0.5)' }}
                   title={t('dashboard.replay')}
                 >
                   <span aria-hidden style={{ color: '#2f9e54' }}>✓</span> {tp.n}. {pick(tp.title, locale)}
                   <span className="text-xs px-2 py-0.5 rounded-full bg-white border" style={{ color: NAVY, borderColor: 'rgba(30,58,95,0.3)' }}>
-                    <span aria-hidden>★</span> {scoreOf(tp.key) ?? 0}/10
+                    <span aria-hidden>★</span> {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
                   </span>
                 </Link>
               ))}
@@ -152,7 +123,10 @@ export default function TexnologiyaSubjectView() {
 
         {/* ------- Darslar ------- */}
         <section className="mt-8">
-          <h2 className="font-black text-ink/70 text-lg mb-3">{t('dashboard.topicsTitle')}</h2>
+          <div className="mb-3 flex flex-wrap items-center gap-3">
+            <h2 className="font-black text-ink/70 text-lg">{t('dashboard.topicsTitle')}</h2>
+            <VideoLightbox src="/videos/tex.mp4" poster="/videos/tex.jpg" label="" title={pick(SUBJECTS.texnologiya.name, locale)} />
+          </div>
           <CollapsibleGrid>{G1_TEX_TOPICS.map((tp, i) => renderEntry(tp, i))}</CollapsibleGrid>
         </section>
 

@@ -14,6 +14,7 @@ import { isBuiltTopic } from '@/content';
 import { G1_INFORMATIKA_TOPICS } from '@/content/g1-informatika/topics';
 import { getInformatikaTopic } from '@/content/g1-informatika/topics';
 import { pick } from '@/lib/i18n-config';
+import VideoLightbox from '@/components/ui/VideoLightbox';
 import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
 
@@ -27,6 +28,7 @@ export default function InformatikaSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
   const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
   useEffect(() => {
@@ -37,13 +39,12 @@ export default function InformatikaSubjectView() {
     api<{ progress: ProgressRow[] }>('/api/progress').then(({ data }) => setProgress(data?.progress ?? []));
   }, []);
 
-  const s = (uz: string, ru: string, en: string) => pick({ uz, ru, en }, locale);
   const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
   const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
   const learned = G1_INFORMATIKA_TOPICS.filter((tp) => completedKeys.has(tp.key));
-  const firstBuilt = G1_INFORMATIKA_TOPICS.find((tp) => isBuiltTopic(tp.key)) ?? G1_INFORMATIKA_TOPICS[0];
-  const nextLesson =
-    G1_INFORMATIKA_TOPICS.find((tp) => isBuiltTopic(tp.key) && !completedKeys.has(tp.key)) ?? firstBuilt;
 
   /* ---------------- pen drawing (same as Matematika, teal ink) ---------------- */
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -104,8 +105,8 @@ export default function InformatikaSubjectView() {
       return (
         <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
           <Link
-            href={`/lesson/${tp.key}`}
-            className="card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform"
+            href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
+            className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}
           >
             <span
               className="shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm"
@@ -114,7 +115,7 @@ export default function InformatikaSubjectView() {
               {done ? '✓' : tp.n}
             </span>
             <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
-            <span className="shrink-0 font-black" style={{ color: '#12a6a0' }} aria-hidden>▶</span>
+            <span className="shrink-0 font-black" style={{ color: '#12a6a0' }} aria-hidden>{isPaid || tp.n === 1 ? '▶' : '🔒'}</span>
           </Link>
         </motion.div>
       );
@@ -147,18 +148,6 @@ export default function InformatikaSubjectView() {
           </h1>
         </div>
 
-        {/* what this subject is */}
-        <section
-          className="card p-5 mt-5 text-[15px] leading-relaxed font-semibold text-ink/80"
-          style={{ borderColor: 'rgba(18,166,160,0.3)' }}
-        >
-          {s(
-            'Informatika — olamni qanday bilib olishimiz haqida. Biz beshta sezgi aʼzomiz — koʻz, quloq, burun, til va teri — orqali maʼlumot yigʻamiz. Bu yerda rang, shakl, tovush, hid va taʼmni farqlaymiz, voqealarni tartibga solamiz.',
-            'Информатика — о том, как мы познаём мир. Мы собираем информацию пятью органами чувств — глаза, уши, нос, язык и кожа. Здесь мы различаем цвет, форму, звук, запах и вкус, выстраиваем события по порядку.',
-            'Informatics — about how we come to know the world. We gather information through five senses — eyes, ears, nose, tongue and skin. Here we tell colour, shape, sound, smell and taste apart, and put events in order.'
-          )}
-        </section>
-
         {/* ------- teal notebook: "Hozirgacha o'rganganlarim" ------- */}
         <section className="mt-6 relative">
           <h2 className="font-black text-ink/70 text-lg mb-2">💻 {t('dashboard.learnedTitle')}</h2>
@@ -181,14 +170,14 @@ export default function InformatikaSubjectView() {
                 {learned.map((tp) => (
                   <Link
                     key={tp.key}
-                    href={`/lesson/${tp.key}`}
+                    href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
                     className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 font-extrabold text-ink transition-colors"
                     style={{ background: 'rgba(18,166,160,0.16)', border: '2px solid rgba(18,166,160,0.55)' }}
                     title={t('dashboard.replay')}
                   >
                     ✅ {tp.n}. {pick(tp.title, locale)}
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white text-brand-purple border border-brand-purple/30">
-                      ⭐ {scoreOf(tp.key) ?? 0}/10
+                      ⭐ {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
                     </span>
                   </Link>
                 ))}
@@ -252,54 +241,13 @@ export default function InformatikaSubjectView() {
           </div>
         </section>
 
-        {/* recommendation / continue */}
-        <section className="mt-6">
-          <Link
-            href={`/lesson/${nextLesson.key}`}
-            className="block rounded-3xl px-5 py-5 hover:-translate-y-0.5 transition-transform"
-            style={{ border: '2px solid rgba(18,166,160,0.6)', background: 'linear-gradient(135deg, rgba(18,166,160,0.15), rgba(31,167,224,0.15))' }}
-          >
-            <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>💻</span>
-              <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
-                  {learned.length ? s('Davom etish', 'Продолжить', 'Continue') : s('Birinchi darsdan boshlash', 'Начать с первого урока', 'Start with lesson 1')}
-                </span>
-                <span className="block font-bold text-ink/55 text-[13px]">
-                  {nextLesson.n}-dars · {pick(nextLesson.title, locale)}
-                </span>
-              </div>
-              <span className="shrink-0 font-black text-xl" style={{ color: '#12a6a0' }} aria-hidden>▶</span>
-            </div>
-          </Link>
-        </section>
-
         {/* ------- Mavzular ------- */}
         <section className="mt-8">
-          <h2 className="font-black text-ink/70 text-lg mb-3">📚 {t('dashboard.topicsTitle')}</h2>
-          <CollapsibleGrid>{G1_INFORMATIKA_TOPICS.map(renderEntry)}</CollapsibleGrid>
-        </section>
-
-        {/* dummy practice-test card (coming soon) */}
-        <section className="mt-8">
-          <div
-            aria-label={t('common.comingSoon')}
-            className="block rounded-3xl px-5 py-5 opacity-80 cursor-default"
-            style={{ border: '2px solid rgba(18,166,160,0.5)', background: 'linear-gradient(135deg, rgba(18,166,160,0.15), rgba(31,167,224,0.1))' }}
-          >
-            <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>📝</span>
-              <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
-                  {s('Informatika sinovi', 'Тест по информатике', 'Informatics quiz')}
-                </span>
-                <span className="block font-bold text-ink/50 text-[13px]">
-                  {s('Tez orada', 'Скоро', 'Coming soon')}
-                </span>
-              </div>
-              <span className="shrink-0 text-base" aria-hidden>🔒</span>
-            </div>
+          <div className="mb-3 flex flex-wrap items-center gap-3">
+            <h2 className="font-black text-ink/70 text-lg">📚 {t('dashboard.topicsTitle')}</h2>
+            <VideoLightbox src="/videos/informatika.mp4" poster="/videos/informatika.jpg" label="" title={pick(SUBJECTS.informatika.name, locale)} />
           </div>
+          <CollapsibleGrid>{G1_INFORMATIKA_TOPICS.map(renderEntry)}</CollapsibleGrid>
         </section>
 
       

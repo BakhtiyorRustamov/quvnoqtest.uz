@@ -3,20 +3,19 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
-import { LEADERBOARD, PREV_OLYMPIAD, TOTAL_LESSONS, USER_RANK } from '@/lib/leaderboardData';
+import { LEADERBOARD, PREV_OLYMPIAD, USER_RANK } from '@/lib/leaderboardData';
 
 const MEDAL = ['🥇', '🥈', '🥉'];
 const PAGE = 30;
 
-function Row({ rank, name, score, denom, me = false }: { rank: number; name: string; score: number; denom?: number; me?: boolean }) {
+/** Placeholder row — names and scores are dashes until a real leaderboard
+ *  backend exists. Ranks/medals still render so the layout reads as a board. */
+function Row({ rank, me = false }: { rank: number; me?: boolean }) {
   return (
     <tr className={me ? 'bg-brand-blue/10 ring-2 ring-brand-blue/40' : rank % 2 === 0 ? 'bg-ink/[0.025]' : ''}>
       <td className="w-12 py-2.5 pl-4 text-center font-black text-ink/70">{rank <= 3 ? MEDAL[rank - 1] : rank}</td>
-      <td className="py-2.5 px-2 font-extrabold text-ink">{name}</td>
-      <td className="w-28 py-2.5 pr-4 text-right font-black text-brand-green tabular-nums">
-        {score}
-        {denom != null && <span className="text-ink/35">/{denom}</span>}
-      </td>
+      <td className="py-2.5 px-2 font-extrabold text-ink/40">- - -</td>
+      <td className="w-28 py-2.5 pr-4 text-right font-black text-ink/35 tabular-nums">- - -</td>
     </tr>
   );
 }
@@ -24,13 +23,13 @@ function Row({ rank, name, score, denom, me = false }: { rank: number; name: str
 export default function LeaderboardPage() {
   const t = useTranslations('dashboard');
   const [page, setPage] = useState(0); // 0,1,2 → up to 90 rows in 30s
-  const shown = LEADERBOARD.slice(0, (page + 1) * PAGE);
-  const hasMore = shown.length < LEADERBOARD.length;
+  const shownCount = Math.min((page + 1) * PAGE, LEADERBOARD.length);
+  const hasMore = shownCount < LEADERBOARD.length;
 
   // "your position" window: 5 ahead + you + 5 after (11 rows)
   const meIdx = USER_RANK - 1;
-  const around = LEADERBOARD.slice(Math.max(0, meIdx - 5), meIdx + 6);
-  const meName = t('lbYou');
+  const aroundStart = Math.max(0, meIdx - 5);
+  const aroundCount = Math.min(LEADERBOARD.length, meIdx + 6) - aroundStart;
 
   return (
     <main className="min-h-screen pb-16">
@@ -50,8 +49,8 @@ export default function LeaderboardPage() {
               </tr>
             </thead>
             <tbody>
-              {shown.map((r, i) => (
-                <Row key={i} rank={i + 1} name={r.name} score={r.score} denom={TOTAL_LESSONS} />
+              {Array.from({ length: shownCount }, (_, i) => (
+                <Row key={i} rank={i + 1} />
               ))}
             </tbody>
           </table>
@@ -75,10 +74,9 @@ export default function LeaderboardPage() {
         <div className="overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-card">
           <table className="w-full text-[14px]">
             <tbody>
-              {around.map((r, i) => {
-                const rank = Math.max(0, meIdx - 5) + i + 1;
-                const isMe = rank === USER_RANK;
-                return <Row key={i} rank={rank} name={isMe ? meName : r.name} score={r.score} denom={TOTAL_LESSONS} me={isMe} />;
+              {Array.from({ length: aroundCount }, (_, i) => {
+                const rank = aroundStart + i + 1;
+                return <Row key={i} rank={rank} me={rank === USER_RANK} />;
               })}
             </tbody>
           </table>
@@ -89,8 +87,8 @@ export default function LeaderboardPage() {
         <div className="overflow-hidden rounded-3xl border border-ink/10 bg-white shadow-card">
           <table className="w-full text-[14px]">
             <tbody>
-              {PREV_OLYMPIAD.map((r, i) => (
-                <Row key={i} rank={i + 1} name={r.name} score={r.score} />
+              {Array.from({ length: PREV_OLYMPIAD.length }, (_, i) => (
+                <Row key={i} rank={i + 1} />
               ))}
             </tbody>
           </table>

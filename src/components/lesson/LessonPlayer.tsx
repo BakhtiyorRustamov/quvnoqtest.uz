@@ -4,9 +4,11 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import type { Lesson } from '@/content/types';
-import BackBar from '@/components/ui/BackBar';
+import MuteToggle from '@/components/ui/MuteToggle';
+import LangSwitcher from '@/components/ui/LangSwitcher';
+import { IMG_BTN_CLASS } from '@/components/ui/BackBar';
 import AnimatedLogo from '@/components/landing/AnimatedLogo';
 import Recall from './Recall';
 import ItemShell from './ItemShell';
@@ -14,8 +16,6 @@ import Completion from './Completion';
 import DrawOverlay from './DrawOverlay';
 import { useUser } from '@/components/providers/UserProvider';
 import { api } from '@/lib/client';
-import { pick } from '@/lib/i18n-config';
-import { SUBJECT_HOME } from '@/lib/subjectHome';
 
 /** Reading-passage widget types (Oʻqish savodxonligi). */
 const READING_TYPES = new Set(['poem_reading', 'story_reading', 'karaoke_reading']);
@@ -27,9 +27,9 @@ const READING_TYPES = new Set(['poem_reading', 'story_reading', 'karaoke_reading
 export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
   const router = useRouter();
   const locale = useLocale();
+  const t = useTranslations('common');
   const { ensureUser } = useUser();
   const total = lesson.items.length;
-  const home = SUBJECT_HOME[lesson.subjectKey];
   // Oʻqish: the lesson's reading passage (first poem/story/karaoke item), reused
   // by the "read again" button on every comprehension question.
   const passageItem = lesson.items.find(
@@ -85,25 +85,34 @@ export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
 
   return (
     <main className="min-h-screen flex flex-col pb-8">
-      {/* usual brand logo at the top — hidden on the topic-explanation step,
-         where the lesson's own topic image is shown at the top instead */}
-      {step !== 0 && (
-        <div className="flex justify-center pt-3">
-          <Link href="/" aria-label="QuvnoqTest.uz" className="block w-[120px] sm:w-[140px]">
-            <AnimatedLogo />
-          </Link>
+      {/* Top bar (FR-QZ-12 / FR-NAV-1): Back top-left · framed brand logo
+         truly centred (hidden on the topic-explanation step, where the
+         lesson's own topic image is shown instead) · language + sound
+         top-right (stacked with sound underneath on mobile, side by side on
+         desktop). */}
+      <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-2 w-full max-w-5xl mx-auto px-3 pt-3">
+        <div className="justify-self-start">
+          <button onClick={onBack} aria-label={t('back')} title={t('back')}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/buttons/goBackButton.png" alt="" className={IMG_BTN_CLASS} draggable={false} />
+          </button>
         </div>
-      )}
-
-      {/* Back + Sound + Subject-home + Language on every step (FR-QZ-12 / FR-NAV-1).
-         The home button shows the subject (e.g. "Matematika 1") and returns to
-         that subject's page instead of the global dashboard. */}
-      <BackBar
-        onBack={onBack}
-        showLang
-        homeHref={home?.href}
-        homeLabel={home ? pick(home.label, locale) : undefined}
-      />
+        <div className="justify-self-center">
+          {step !== 0 && (
+            <Link
+              href="/"
+              aria-label="QuvnoqTest.uz"
+              className="block w-fit rounded-2xl border-2 border-ink/15 bg-white/80 px-3 py-1 shadow-card transition duration-150 opacity-60 hover:opacity-100 focus-visible:opacity-100 hover:-translate-y-0.5"
+            >
+              <AnimatedLogo compact />
+            </Link>
+          )}
+        </div>
+        <div className="justify-self-end flex flex-col-reverse items-center gap-2 sm:flex-row">
+          <MuteToggle />
+          <LangSwitcher />
+        </div>
+      </div>
 
       <div className="flex-1 relative mt-2">
         <AnimatePresence mode="wait">

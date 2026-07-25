@@ -14,6 +14,7 @@ import { G1_ONA_TOPICS, G1_ONA_REVIEWS, getOnaTopic, isBuiltTopic } from '@/cont
 import { G1_ONA_PART2_START } from '@/content/g1-ona/topics';
 import { ONA_DTM_TITLE } from '@/content/g1-ona/dtm-exam';
 import { pick } from '@/lib/i18n-config';
+import VideoLightbox from '@/components/ui/VideoLightbox';
 import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
 
@@ -27,6 +28,7 @@ export default function OnaSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
   const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
   useEffect(() => {
@@ -39,6 +41,9 @@ export default function OnaSubjectView() {
 
   const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
   const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
   const learned = G1_ONA_TOPICS.filter((tp) => completedKeys.has(tp.key));
 
   /* ---------------- pen drawing (same as Math view) ---------------- */
@@ -102,15 +107,15 @@ export default function OnaSubjectView() {
       return (
         <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
           <Link
-            href={`/lesson/${tp.key}`}
-            className="card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform"
+            href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
+            className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}
           >
             <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm bg-brand-blue">
               {tp.n}
             </span>
             <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
-            <span className="shrink-0 text-brand-orange font-black" aria-hidden>
-              ▶
+            <span className={isPaid || tp.n === 1 ? 'shrink-0 text-brand-orange font-black' : 'shrink-0 text-base'} aria-hidden>
+              {isPaid || tp.n === 1 ? '▶' : '🔒'}
             </span>
           </Link>
         </motion.div>
@@ -146,7 +151,7 @@ export default function OnaSubjectView() {
     return (
       <motion.div key={r.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
         <Link
-          href={`/lesson/${r.key}`}
+          href={isPaid ? `/lesson/${r.key}` : '/upgrade'}
           className="h-full flex items-center gap-2 px-3 py-2.5 rounded-2xl border-2 border-brand-purple/60 bg-gradient-to-br from-brand-purple/15 to-brand-magenta/15 hover:-translate-y-0.5 transition-transform"
         >
           <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center text-base bg-brand-purple/20" aria-hidden>
@@ -156,8 +161,8 @@ export default function OnaSubjectView() {
             <span className="block font-black text-brand-purple text-[12.5px]">{pick(r.title, locale)}</span>
             <span className="block font-bold text-ink/45 text-[10.5px]">{t('dashboard.review')}</span>
           </span>
-          <span className="shrink-0 text-brand-orange font-black" aria-hidden>
-            ▶
+          <span className={isPaid ? 'shrink-0 text-brand-orange font-black' : 'shrink-0 text-base'} aria-hidden>
+            {isPaid ? '▶' : '🔒'}
           </span>
         </Link>
       </motion.div>
@@ -209,13 +214,13 @@ export default function OnaSubjectView() {
                 {learned.map((tp) => (
                   <Link
                     key={tp.key}
-                    href={`/lesson/${tp.key}`}
+                    href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
                     className="inline-flex items-center gap-2 rounded-xl bg-brand-green/15 border-2 border-brand-green/50 px-3 py-1.5 font-extrabold text-ink hover:bg-brand-green/25 transition-colors"
                     title={t('dashboard.replay')}
                   >
                     ✅ {tp.n}. {pick(tp.title, locale)}
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white text-brand-purple border border-brand-purple/30">
-                      ⭐ {scoreOf(tp.key) ?? 0}/10
+                      ⭐ {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
                     </span>
                   </Link>
                 ))}
@@ -279,13 +284,15 @@ export default function OnaSubjectView() {
         <section className="mt-8">
           <h2 className="font-black text-ink/70 text-lg mb-3">📚 {t('dashboard.topicsTitle')}</h2>
 
-          <div className="mb-2">
+          <div className="mb-2 flex flex-wrap items-center gap-3">
             <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part1')}</h3>
+            <VideoLightbox src="/videos/ona1.mp4" poster="/videos/ona1.jpg" label={t('dashboard.part1')} title={`${pick(SUBJECTS['ona-tili-savod'].name, locale)} · ${t('dashboard.part1')}`} />
           </div>
           <CollapsibleGrid>{part1}</CollapsibleGrid>
 
-          <div className="mt-6 mb-2">
+          <div className="mt-6 mb-2 flex flex-wrap items-center gap-3">
             <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part2')}</h3>
+            <VideoLightbox src="/videos/ona2.mp4" poster="/videos/ona2.jpg" label={t('dashboard.part2')} title={`${pick(SUBJECTS['ona-tili-savod'].name, locale)} · ${t('dashboard.part2')}`} />
           </div>
           <CollapsibleGrid>{part2.map(renderTile)}</CollapsibleGrid>
         </section>
@@ -294,7 +301,7 @@ export default function OnaSubjectView() {
             Words/items and order re-randomize every attempt. */}
         <section className="mt-8">
           <Link
-            href="/exam/g1-ona-dtm"
+            href={isPaid ? '/exam/g1-ona-dtm' : '/upgrade'}
             className="block rounded-3xl border-2 border-brand-blue/60 bg-gradient-to-br from-brand-blue/15 to-brand-green/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
           >
             <div className="flex items-center gap-4">
@@ -312,8 +319,8 @@ export default function OnaSubjectView() {
                   )}
                 </span>
               </div>
-              <span className="shrink-0 text-brand-blue font-black text-xl" aria-hidden>
-                ▶
+              <span className={isPaid ? 'shrink-0 text-brand-blue font-black text-xl' : 'shrink-0 text-xl'} aria-hidden>
+                {isPaid ? '▶' : '🔒'}
               </span>
             </div>
           </Link>

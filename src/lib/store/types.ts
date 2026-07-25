@@ -7,6 +7,8 @@ export type UserRecord = {
   phone: string | null;
   email: string | null;
   paidUntil: string | null; // ISO
+  /** Set when an admin shuts the account down; blocks access regardless of paidUntil. */
+  disabledAt?: string | null;
   createdAt: string;
 };
 
@@ -68,6 +70,19 @@ export function namesMatch(a: string | null | undefined, b: string | null | unde
 
 export function isPaid(user: UserRecord | null): boolean {
   return !!user?.paidUntil && new Date(user.paidUntil).getTime() > Date.now();
+}
+
+export function isDisabled(user: UserRecord | null): boolean {
+  return !!user?.disabledAt;
+}
+
+/**
+ * The check that actually gates content: a paid subscription AND an account
+ * that has not been shut down. Always prefer this over `isPaid` at an access
+ * boundary — `isPaid` alone would let a disabled account keep its content.
+ */
+export function isActive(user: UserRecord | null): boolean {
+  return isPaid(user) && !isDisabled(user);
 }
 
 export function makePublicId(): string {

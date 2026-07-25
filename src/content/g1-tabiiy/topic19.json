@@ -98,8 +98,8 @@
         "props": {
           "options": [
             { "id": "call", "emoji": "📞", "label": { "uz": "kattalarni chaqiramiz", "ru": "зовём взрослых", "en": "call an adult" }, "correct": true },
-            { "id": "self", "emoji": "🔥", "label": { "uz": "oʻzimiz tegamiz", "ru": "трогаем сами", "en": "touch it ourselves" } },
-            { "id": "hide", "emoji": "🙈", "label": { "uz": "yashiringamiz", "ru": "прячемся", "en": "hide" } }
+            { "id": "dontknow", "emoji": "🤷", "label": { "uz": "bilmaymiz", "ru": "не знаем", "en": "we don't know" } },
+            { "id": "wrong", "emoji": "❌", "label": { "uz": "notoʻgʻri ish qilamiz", "ru": "поступаем неправильно", "en": "do the wrong thing" } }
           ]
         }
       }

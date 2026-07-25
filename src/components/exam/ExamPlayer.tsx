@@ -5,17 +5,20 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
-import { G1_MATH_TOPICS, G1_ONA_TOPICS } from '@/content';
+import { G1_MATH_TOPICS, G1_ONA_TOPICS, G1_TABIIY_TOPICS } from '@/content';
 import { pick, type L10n } from '@/lib/i18n-config';
 import { api } from '@/lib/client';
 import { PRESIDENT_EXAM_CONFIG, type ExamQuestion } from '@/content/g1-math/exam';
 import { DTM_EXAM_CONFIG } from '@/content/g1-math/dtm-exam';
 import { ONA_DTM_EXAM_CONFIG } from '@/content/g1-ona/dtm-exam';
+import { OQISH_DTM_EXAM_CONFIG } from '@/content/g1-oqish/dtm-exam';
+import { G1_OQISH_LESSONS } from '@/content/g1-oqish/structure';
 import { FIKR_EXAM_CONFIG } from '@/content/g1-fikr/exam';
 import { FIKR2_EXAM_CONFIG } from '@/content/g1-fikr/exam2';
 import { FIKR3_EXAM_CONFIG } from '@/content/g1-fikr/exam3';
+import { FIZIKA_EXAM_CONFIG, KIMYO_EXAM_CONFIG, BIO_EXAM_CONFIG } from '@/content/g1-tabiiy/dtm-exams';
 
-export type ExamVariant = 'president' | 'dtm' | 'ona' | 'fikr' | 'fikr2' | 'fikr3';
+export type ExamVariant = 'president' | 'dtm' | 'ona' | 'adabiyot' | 'fikr' | 'fikr2' | 'fikr3' | 'fizika' | 'kimyo' | 'bio';
 
 type Phase = 'intro' | 'quiz' | 'done';
 
@@ -121,19 +124,38 @@ export default function ExamPlayer({ variant = 'president' }: { variant?: ExamVa
   // Pick the config on the client — passing the config object (which holds a
   // function) across the Server→Client boundary is not allowed by Next.js.
   const config =
-    variant === 'fikr3' ? FIKR3_EXAM_CONFIG
+    variant === 'fizika' ? FIZIKA_EXAM_CONFIG
+    : variant === 'kimyo' ? KIMYO_EXAM_CONFIG
+    : variant === 'bio' ? BIO_EXAM_CONFIG
+    : variant === 'fikr3' ? FIKR3_EXAM_CONFIG
     : variant === 'fikr2' ? FIKR2_EXAM_CONFIG
     : variant === 'fikr' ? FIKR_EXAM_CONFIG
     : variant === 'ona' ? ONA_DTM_EXAM_CONFIG
+    : variant === 'adabiyot' ? OQISH_DTM_EXAM_CONFIG
     : variant === 'dtm' ? DTM_EXAM_CONFIG
     : PRESIDENT_EXAM_CONFIG;
   const { title, intro, minutes, count, build, logoSrc, topicKey } = config;
   // Which subject's lessons the results screen links to for review, and where
   // "Back"/"Dashboard" return to. Fikrlash is a pure practice area — it has no
   // lessons of its own, so its results screen skips the review-topics card.
-  const reviewTopicsList = variant === 'ona' ? G1_ONA_TOPICS : G1_MATH_TOPICS;
+  const isTabiiy = variant === 'fizika' || variant === 'kimyo' || variant === 'bio';
+  const reviewTopicsList = isTabiiy
+    ? G1_TABIIY_TOPICS
+    : variant === 'ona'
+      ? G1_ONA_TOPICS
+      : variant === 'adabiyot'
+        ? G1_OQISH_LESSONS
+        : G1_MATH_TOPICS;
   const isFikr = variant === 'fikr' || variant === 'fikr2' || variant === 'fikr3';
-  const backHref = isFikr ? '/dashboard/g1-fikr' : variant === 'ona' ? '/dashboard/g1-ona' : '/dashboard/g1-math';
+  const backHref = isFikr
+    ? '/dashboard/g1-fikr'
+    : isTabiiy
+      ? '/dashboard/g1-tabiiy'
+      : variant === 'ona'
+        ? '/dashboard/g1-ona'
+        : variant === 'adabiyot'
+          ? '/dashboard/g1-oqish'
+          : '/dashboard/g1-math';
   const hasLessonReco = !isFikr;
   const locale = useLocale();
   const t = S[locale] || S.uz;

@@ -1,0 +1,105 @@
+{
+  "comment": "Listening + speaking audio bank for the Multilevel prep exam. Each item's `audio` spec ({key, text, voice}) is seeded to public/audio/tts/en/<key>.wav by `npm run seed:tts` (multilevel pass); the player falls back to browser en-US speech synthesis while a clip is missing. `kind`: reply = hear a sentence, choose the correct reply (like the real Listening Part 1); question = hear a sentence, answer a comprehension question.",
+  "listening": [
+    {
+      "kind": "reply",
+      "audio": { "key": "ml-listen-01", "text": "Hello! How are you?", "voice": "teacher" },
+      "correct": "I'm fine, thank you.",
+      "wrong": ["It is a cat.", "Good night.", "I am in the kitchen."],
+      "topics": [4, 22]
+    },
+    {
+      "kind": "reply",
+      "audio": { "key": "ml-listen-02", "text": "What's your name?", "voice": "girl" },
+      "correct": "My name is Sam.",
+      "wrong": ["I like milk.", "It is blue.", "Yes, please."],
+      "topics": [2, 10]
+    },
+    {
+      "kind": "reply",
+      "audio": { "key": "ml-listen-03", "text": "How old are you?", "voice": "boy" },
+      "correct": "I am seven.",
+      "wrong": ["I am a doll.", "It is a lizard.", "Thank you."],
+      "topics": [2, 10]
+    },
+    {
+      "kind": "reply",
+      "audio": { "key": "ml-listen-04", "text": "Thank you!", "voice": "girl" },
+      "correct": "You are welcome.",
+      "wrong": ["I am nine.", "It is red.", "I can jump."],
+      "topics": [15, 16]
+    },
+    {
+      "kind": "reply",
+      "audio": { "key": "ml-listen-05", "text": "Goodbye!", "voice": "boy" },
+      "correct": "Bye-bye!",
+      "wrong": ["Yes, I do.", "It is a ball.", "She is my sister."],
+      "topics": [1, 10]
+    },
+    {
+      "kind": "reply",
+      "audio": { "key": "ml-listen-06", "text": "Do you like apples?", "voice": "teacher" },
+      "correct": "Yes, I do.",
+      "wrong": ["I am an apple.", "It is a kite.", "This is my mother."],
+      "topics": [38]
+    },
+    {
+      "kind": "question",
+      "audio": { "key": "ml-listen-07", "text": "Look! The ball is red.", "voice": "girl" },
+      "question": "What color is the ball?",
+      "correct": "red",
+      "wrong": ["blue", "green", "yellow"],
+      "topics": [1, 6, 13]
+    },
+    {
+      "kind": "question",
+      "audio": { "key": "ml-listen-08", "text": "I have three dolls.", "voice": "girl" },
+      "question": "How many dolls?",
+      "correct": "three",
+      "wrong": ["two", "five", "ten"],
+      "topics": [2, 13]
+    },
+    {
+      "kind": "question",
+      "audio": { "key": "ml-listen-09", "text": "The cat is in the kitchen.", "voice": "teacher" },
+      "question": "Where is the cat?",
+      "correct": "in the kitchen",
+      "wrong": ["in the bedroom", "in the bathroom", "at school"],
+      "topics": [25, 26]
+    },
+    {
+      "kind": "question",
+      "audio": { "key": "ml-listen-10", "text": "I can jump and run.", "voice": "boy" },
+      "question": "What can I do?",
+      "correct": "jump and run",
+      "wrong": ["swim and fly", "cook and read", "sing and write"],
+      "topics": [43, 44]
+    },
+    {
+      "kind": "question",
+      "audio": { "key": "ml-listen-11", "text": "This is my grandma.", "voice": "girl" },
+      "question": "Who is this?",
+      "correct": "my grandma",
+      "wrong": ["my brother", "my teacher", "my dog"],
+      "topics": [19, 20]
+    },
+    {
+      "kind": "question",
+      "audio": { "key": "ml-listen-12", "text": "Wow! The elephant is big!", "voice": "boy" },
+      "question": "Is the elephant big or small?",
+      "correct": "big",
+      "wrong": ["small", "pink", "ten"],
+      "topics": [49, 50]
+    }
+  ],
+  "speaking": [
+    { "audio": { "key": "ml-speak-01", "text": "What is your name?", "voice": "teacher" }, "sample": "My name is Aziza." },
+    { "audio": { "key": "ml-speak-02", "text": "How old are you?", "voice": "teacher" }, "sample": "I am seven." },
+    { "audio": { "key": "ml-speak-03", "text": "What is your favorite color?", "voice": "girl" }, "sample": "My favorite color is blue." },
+    { "audio": { "key": "ml-speak-04", "text": "What food do you like?", "voice": "boy" }, "sample": "I like plov and apples." },
+    { "audio": { "key": "ml-speak-05", "text": "Can you jump? Show and say!", "voice": "teacher" }, "sample": "Yes, I can jump!" },
+    { "audio": { "key": "ml-speak-06", "text": "What animals do you like?", "voice": "girl" }, "sample": "I like lions and pandas." },
+    { "audio": { "key": "ml-speak-07", "text": "Who is in your family?", "voice": "teacher" }, "sample": "My mother, my father and me." },
+    { "audio": { "key": "ml-speak-08", "text": "What is in your school bag?", "voice": "boy" }, "sample": "A book and a pencil." }
+  ]
+}

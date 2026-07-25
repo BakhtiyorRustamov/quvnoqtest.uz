@@ -48,12 +48,12 @@ export default function ClickCorrect({ item, locale, cue, done, onResult }: Item
             transition={{ duration: 0.45 }}
             aria-label={artLabel(o.art, locale)}
             disabled={revealed}
-            className={`rounded-2xl p-3 sm:p-4 bg-white shadow-card border-2 transition-colors min-w-[84px] min-h-[84px] grid place-items-center ${
+            className={`rounded-2xl p-3 sm:p-4 bg-white border-2 transition-colors min-w-[84px] min-h-[84px] grid place-items-center ${
               revealed && isAnswer
-                ? 'border-brand-green ring-4 ring-brand-green/40'
+                ? 'border-brand-green ring-4 ring-brand-green/40 shadow-[0_5px_0_#6fa22f]'
                 : revealed && isPicked
-                  ? 'border-error ring-4 ring-error/30'
-                  : 'border-ink/10 hover:border-brand-blue/50'
+                  ? 'border-error ring-4 ring-error/30 shadow-[0_5px_0_#b23636]'
+                  : 'border-ink/10 hover:border-brand-blue/50 shadow-[0_5px_0_rgba(30,58,95,.14)]'
             }`}
           >
             <ShapeArt art={o.art} size={82} />

@@ -372,11 +372,11 @@
             },
             {
               "id": "b",
-              "emoji": "🚬",
+              "emoji": "🥤",
               "label": {
-                "uz": "tamaki",
-                "ru": "табак",
-                "en": "tobacco"
+                "uz": "gazli ichimlik",
+                "ru": "газировка",
+                "en": "fizzy drink"
               }
             }
           ]
@@ -421,7 +421,7 @@
               "text": "gigiyena"
             },
             {
-              "text": "tamaki",
+              "text": "gazli ichimlik",
               "odd": true
             }
           ]

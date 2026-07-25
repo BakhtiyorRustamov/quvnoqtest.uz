@@ -1,67 +1,330 @@
 'use client';
 
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import { useUser } from '@/components/providers/UserProvider';
 import { useSound } from '@/components/providers/SoundProvider';
 import { bigCelebration } from '@/lib/confetti';
+import { CARDS, CARD_HOLDER, MAX_UPLOAD_BYTES } from '@/lib/pricing';
 
-/** Dummy checkout (SRS §6.8): no gateway, no card capture — just "I PAID". */
+/**
+ * Checkout: manual card transfer + receipt upload (there is no payment gateway).
+ *
+ * The user transfers 15 000 so'm to one of the cards, uploads the screenshot
+ * their banking app produced, and access opens immediately once the automated
+ * plausibility check passes. Receipts are reconciled against the card balances
+ * later, in the admin panel.
+ */
+
+type Step = 'form' | 'sending' | 'done';
+
 export default function CheckoutPage() {
   const t = useTranslations('checkout');
   const router = useRouter();
-  const { pay } = useUser();
+  const { submitReceipt, redeemPromo } = useUser();
   const { play } = useSound();
-  const [busy, setBusy] = useState(false);
 
-  async function paid() {
-    setBusy(true);
-    const u = await pay(); // sets paid_until = now() + 30 days (FR-CHK-2)
-    if (u?.isPaid) {
-      play('win');
-      bigCelebration();
-      setTimeout(() => router.push('/dashboard'), 900);
-    } else {
-      setBusy(false);
+  const [card, setCard] = useState<string>('humo');
+  const [file, setFile] = useState<File | null>(null);
+  const [preview, setPreview] = useState<string | null>(null);
+  const [step, setStep] = useState<Step>('form');
+  const [error, setError] = useState<string | null>(null);
+  const [copied, setCopied] = useState<string | null>(null);
+  const [dragging, setDragging] = useState(false);
+
+  const [promoOpen, setPromoOpen] = useState(false);
+  const [promo, setPromo] = useState('');
+  const [promoBusy, setPromoBusy] = useState(false);
+
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  async function copy(text: string, key: string) {
+    try {
+      await navigator.clipboard.writeText(text.replace(/\s/g, ''));
+      setCopied(key);
+      setTimeout(() => setCopied(null), 1600);
+    } catch {
+      /* clipboard blocked — the number is visible on screen anyway */
     }
   }
 
+  function pick(f: File | null) {
+    setError(null);
+    if (!f) return;
+    if (!f.type.startsWith('image/')) return setError(t('errNotImage'));
+    if (f.size > MAX_UPLOAD_BYTES) return setError(t('errTooLarge'));
+    setFile(f);
+    if (preview) URL.revokeObjectURL(preview);
+    setPreview(URL.createObjectURL(f));
+  }
+
+  function celebrate() {
+    play('win');
+    bigCelebration();
+    setStep('done');
+    setTimeout(() => router.push('/dashboard'), 2600);
+  }
+
+  async function send() {
+    if (!file || step === 'sending') return;
+    setStep('sending');
+    setError(null);
+
+    const res = await submitReceipt(file, card);
+    if (res.ok) return celebrate();
+
+    setStep('form');
+    const map: Record<string, string> = {
+      not_a_receipt: t('errNotReceipt'),
+      duplicate: t('errDuplicate'),
+      rate_limited: t('errTooMany'),
+      file_too_large: t('errTooLarge'),
+      no_file: t('errNoFile'),
+      account_disabled: t('errDisabled'),
+      no_user: t('errNoUser'),
+      not_configured: t('errServer'),
+      server_error: t('errServer')
+    };
+    setError(map[res.error ?? ''] ?? t('errServer'));
+  }
+
+  async function applyPromo() {
+    if (!promo.trim() || promoBusy) return;
+    setPromoBusy(true);
+    setError(null);
+    const res = await redeemPromo(promo);
+    setPromoBusy(false);
+    if (res.ok) return celebrate();
+    setError(res.error === 'already_redeemed' ? t('errPromoUsed') : t('errPromoInvalid'));
+  }
+
+  /* ----------------------------- success screen ---------------------------- */
+  if (step === 'done') {
+    return (
+      <main className="min-h-screen flex flex-col">
+        <BackBar backHref="/dashboard" />
+        <div className="flex-1 grid place-items-center px-4 py-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="card max-w-md w-full p-8 text-center"
+          >
+            <div className="text-6xl" aria-hidden>
+              🎉
+            </div>
+            <h1 className="font-black text-ink text-3xl mt-3">{t('successTitle')}</h1>
+            <p className="font-bold text-ink/60 mt-2">{t('successBody')}</p>
+            <div className="mt-5 rounded-2xl bg-brand-green/10 border border-brand-green/25 px-4 py-3 text-sm font-bold text-ink/70">
+              🔎 {t('reviewNote')}
+            </div>
+          </motion.div>
+        </div>
+      </main>
+    );
+  }
+
+  /* -------------------------------- main form ------------------------------ */
   return (
     <main className="min-h-screen flex flex-col">
       <BackBar backHref="/upgrade" />
       <div className="flex-1 grid place-items-center px-4 py-8">
-        <motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="card max-w-md w-full p-7">
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="card max-w-md w-full p-6 sm:p-7"
+        >
           <h1 className="font-black text-ink text-3xl text-center">💳 {t('title')}</h1>
 
-          <div className="mt-4 rounded-2xl bg-amber-50 border border-amber-200 px-4 py-3 text-[13px] font-bold text-ink/70">
-            ⚠️ {t('testNote')}
+          {/* price */}
+          <div className="mt-5 rounded-2xl border-2 border-ink/10 overflow-hidden">
+            <div className="px-4 py-3 font-extrabold text-ink bg-ink/[0.03]">{t('product')}</div>
+            <div className="flex items-baseline justify-between px-4 py-3.5">
+              <span className="font-bold text-ink/55 text-sm">{t('perMonth')}</span>
+              <span className="font-black text-3xl text-brand-purple">15 000 {t('sum')}</span>
+            </div>
+            <ul className="px-4 pb-4 space-y-1.5 text-[13px] font-bold text-ink/60">
+              <li>✓ {t('inc1')}</li>
+              <li>✓ {t('inc2')}</li>
+              <li>✓ {t('inc3')}</li>
+            </ul>
           </div>
 
-          <div className="mt-5 rounded-2xl border-2 border-ink/10 divide-y divide-ink/10">
-            <div className="flex items-center justify-between px-4 py-3.5 font-extrabold text-ink">
-              <span>{t('product')}</span>
-            </div>
-            <div className="flex items-center justify-between px-4 py-3.5">
-              <span className="font-bold text-ink/60">Σ</span>
-              <span className="font-black text-2xl text-brand-purple">{t('price')}</span>
-            </div>
+          {/* step 1 — transfer */}
+          <StepLabel n={1} text={t('step1')} />
+
+          <div className="space-y-2.5">
+            {CARDS.map((c) => {
+              const active = card === c.key;
+              return (
+                <div
+                  key={c.key}
+                  onClick={() => setCard(c.key)}
+                  className={`rounded-2xl border-2 p-3.5 cursor-pointer transition ${
+                    active ? 'border-brand-purple bg-brand-purple/[0.06]' : 'border-ink/10 hover:border-ink/25'
+                  }`}
+                >
+                  <div className="flex items-center gap-2.5">
+                    <span
+                      className={`shrink-0 w-5 h-5 rounded-full border-2 grid place-items-center ${
+                        active ? 'border-brand-purple' : 'border-ink/25'
+                      }`}
+                      aria-hidden
+                    >
+                      {active && <span className="w-2.5 h-2.5 rounded-full bg-brand-purple" />}
+                    </span>
+                    <span className="font-extrabold text-ink">
+                      {c.emoji} {c.label}
+                    </span>
+                  </div>
+                  <div className="mt-2 flex items-center gap-2 pl-7">
+                    <code className="font-black text-ink tracking-wide text-[15px] sm:text-base">{c.number}</code>
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        copy(c.number, c.key);
+                      }}
+                      className="ml-auto shrink-0 text-xs font-black px-2.5 py-1.5 rounded-lg bg-ink/[0.07] hover:bg-ink/[0.12] transition"
+                    >
+                      {copied === c.key ? `✓ ${t('copied')}` : t('copy')}
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+            <p className="text-[13px] font-bold text-ink/50 pl-1">
+              {t('holder')}: <span className="text-ink/75">{CARD_HOLDER}</span>
+            </p>
           </div>
+
+          {/* step 2 — receipt */}
+          <StepLabel n={2} text={t('step2')} />
+
+          <input
+            ref={inputRef}
+            type="file"
+            accept="image/png,image/jpeg,image/webp,image/heic,image/heif"
+            className="hidden"
+            onChange={(e) => pick(e.target.files?.[0] ?? null)}
+          />
+
+          <div
+            onClick={() => inputRef.current?.click()}
+            onDragOver={(e) => {
+              e.preventDefault();
+              setDragging(true);
+            }}
+            onDragLeave={() => setDragging(false)}
+            onDrop={(e) => {
+              e.preventDefault();
+              setDragging(false);
+              pick(e.dataTransfer.files?.[0] ?? null);
+            }}
+            className={`rounded-2xl border-2 border-dashed p-5 text-center cursor-pointer transition ${
+              dragging
+                ? 'border-brand-purple bg-brand-purple/10'
+                : file
+                  ? 'border-brand-green bg-brand-green/[0.06]'
+                  : 'border-ink/20 hover:border-ink/35'
+            }`}
+          >
+            {preview ? (
+              <div className="flex items-center gap-3 text-left">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={preview}
+                  alt=""
+                  className="w-16 h-16 rounded-xl object-cover border border-ink/10 shrink-0"
+                />
+                <div className="min-w-0">
+                  <div className="font-extrabold text-ink truncate">{file?.name}</div>
+                  <div className="text-[12px] font-bold text-ink/50">
+                    {((file?.size ?? 0) / 1024).toFixed(0)} KB — {t('tapToChange')}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <>
+                <div className="text-4xl" aria-hidden>
+                  🧾
+                </div>
+                <div className="font-extrabold text-ink mt-1.5">{t('dropTitle')}</div>
+                <div className="text-[13px] font-bold text-ink/50 mt-0.5">{t('dropHint')}</div>
+              </>
+            )}
+          </div>
+
+          <AnimatePresence>
+            {error && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                className="mt-3 rounded-2xl bg-red-50 border border-red-200 px-4 py-3 text-[13px] font-bold text-red-700"
+              >
+                {error}
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           <motion.button
-            onClick={paid}
-            disabled={busy}
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            className="btn-primary w-full text-2xl py-5 mt-6 disabled:opacity-60"
+            onClick={send}
+            disabled={!file || step === 'sending'}
+            whileHover={file ? { scale: 1.02 } : undefined}
+            whileTap={file ? { scale: 0.98 } : undefined}
+            className="btn-primary w-full text-xl py-4 mt-5 disabled:opacity-45 disabled:cursor-not-allowed"
           >
-            {busy ? '…' : t('iPaid')}
+            {step === 'sending' ? `${t('checking')}…` : t('submit')}
           </motion.button>
-          <p className="text-center text-[13px] font-bold text-ink/45 mt-3">{t('afterNote')}</p>
+
+          <p className="text-center text-[12.5px] font-bold text-ink/45 mt-3 leading-relaxed">
+            {t('afterNote')}
+          </p>
+
+          {/* promo code */}
+          <div className="mt-5 pt-4 border-t border-ink/10">
+            {promoOpen ? (
+              <div className="flex gap-2">
+                <input
+                  value={promo}
+                  onChange={(e) => setPromo(e.target.value.toUpperCase())}
+                  placeholder={t('promoPlaceholder')}
+                  maxLength={32}
+                  className="flex-1 min-w-0 rounded-xl border-2 border-ink/15 px-3 py-2.5 font-black tracking-wider text-ink outline-none focus:border-brand-purple"
+                />
+                <button
+                  onClick={applyPromo}
+                  disabled={promoBusy}
+                  className="shrink-0 px-4 rounded-xl bg-ink text-white font-black disabled:opacity-50"
+                >
+                  {promoBusy ? '…' : t('promoApply')}
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => setPromoOpen(true)}
+                className="w-full text-center text-[13px] font-bold text-ink/45 hover:text-ink/70 transition"
+              >
+                {t('promoToggle')}
+              </button>
+            )}
+          </div>
         </motion.div>
       </div>
     </main>
+  );
+}
+
+function StepLabel({ n, text }: { n: number; text: string }) {
+  return (
+    <div className="flex items-center gap-2 mt-6 mb-2.5">
+      <span className="shrink-0 w-6 h-6 rounded-full bg-ink text-white grid place-items-center text-xs font-black">
+        {n}
+      </span>
+      <span className="font-extrabold text-ink">{text}</span>
+    </div>
   );
 }

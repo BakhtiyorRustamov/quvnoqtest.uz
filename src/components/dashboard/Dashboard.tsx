@@ -61,16 +61,16 @@ export default function Dashboard() {
           the sidebar is open, when the drawer itself provides the edge) */}
       {!profileOpen && <div aria-hidden className="fixed left-0 top-0 bottom-0 z-30 w-[3px] bg-ink/12" />}
 
-      {/* sidebar open/close handle — attached to the edge; slides to the drawer's
-          right edge when open. ">" opens, "<" closes. */}
+      {/* sidebar open/close handle — attached to the edge near the top; slides
+          to the drawer's right edge when open. ">" opens, "<" closes. */}
       <button
         onClick={() => setProfileOpen((o) => !o)}
         aria-label={t('dashboard.profile')}
         aria-expanded={profileOpen}
         style={{ left: profileOpen ? 'min(370px, 93vw)' : 0 }}
-        className="fixed top-1/2 z-[55] grid h-16 w-7 -translate-y-1/2 place-items-center rounded-r-xl border border-l-0 border-ink/15 bg-white text-ink shadow-card transition-[left] duration-300 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40"
+        className="fixed top-5 z-[55] grid h-16 w-10 place-items-center rounded-r-2xl border-2 border-l-0 border-white/40 bg-brand-blue text-white shadow-lg shadow-brand-blue/40 transition-[left] duration-300 hover:bg-brand-blue/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40"
       >
-        <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
           {profileOpen ? <path d="M15 18l-6-6 6-6" /> : <path d="M9 6l6 6-6 6" />}
         </svg>
       </button>

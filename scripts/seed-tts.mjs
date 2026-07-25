@@ -711,6 +711,49 @@ for (const lpath of lessonPaths) {
   }
 }
 
+// ---- Multilevel prep-exam clip pass -----------------------------------------
+// The "Milliy Sertifikat Multilevelga tayyorlanish" exam keeps its Listening +
+// Speaking audio bank in src/content/g1-ingliz/multilevel-listening.json —
+// every `audio: {key, text, voice}` spec there becomes public/audio/tts/en/
+// <key>.wav, exactly like the lesson clips above. (Runs with the ingliz pass;
+// the player falls back to browser speech synthesis until these are seeded.)
+if (!PASSAGES_ONLY && !RECALL_ONLY && (!ONLY_SUBJECT || ONLY_SUBJECT === 'g1-ingliz')) {
+  const mlPath = join(contentRoot, 'g1-ingliz', 'multilevel-listening.json');
+  if (existsSync(mlPath)) {
+    const ml = JSON.parse(readFileSync(mlPath, 'utf8'));
+    const specs = [...(ml.listening ?? []), ...(ml.speaking ?? [])]
+      .map((item) => item?.audio)
+      .filter((a) => a && typeof a.key === 'string' && typeof a.text === 'string');
+    for (const spec of specs) {
+      const role = spec.voice && EN_VOICES[spec.voice] ? spec.voice : 'teacher';
+      const voice = EN_VOICES[role];
+      const style = spec.style || EN_STYLES[role];
+      const text = spec.text;
+      const file = `${spec.key}.wav`;
+      const manKey = `en/${file}`;
+      const hash = createHash('sha256').update(`en|gemini|${voice}|${GEMINI_MODEL}|${style}|${text}`).digest('hex');
+      const exists = existsSync(join(enDir, file));
+      const m = manifest[manKey];
+      if (exists && m?.hash === hash && !FORCE_INGLIZ) {
+        eKept++;
+        continue;
+      }
+      try {
+        console.log(`🎙  en/${file} · gemini(${voice} · ${role}) · multilevel · ${!exists ? 'missing' : 'changed/forced'}…`);
+        const wav = await geminiSynth(text, voice, style);
+        writeFileSync(join(enDir, file), wav);
+        manifest[manKey] = { hash, provider: 'gemini', voice, role, bytes: wav.length, at: new Date().toISOString() };
+        console.log(`   ✓ ${(wav.length / 1024).toFixed(0)} KB`);
+        eMade++;
+      } catch (e) {
+        console.error(`   ✗ en/${file}: ${e.message}`);
+        eFailed++;
+        process.exitCode = 1;
+      }
+    }
+  }
+}
+
 writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
 console.log(
   `✅ TTS seed finished · recall: ${made} made / ${kept} kept / ${failed} failed · ` +

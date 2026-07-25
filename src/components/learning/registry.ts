@@ -48,7 +48,9 @@ import WhoSaid from './WhoSaid';
 import RiddleSolve from './RiddleSolve';
 import TongueTwister from './TongueTwister';
 import HiddenWords from './HiddenWords';
-import Mcq from './Mcq';
+// Text multiple-choice now uses the shadcn/ui-styled card+buttons restyle.
+// (The original plain Mcq.jsx is kept for the /shadcn-demo comparison page.)
+import Mcq from './McqCard';
 // Tasviriy sanʼat (Visual arts) — vector drawing/colouring widgets (no emoji).
 import ColorFill from './ColorFill';
 import FreeDraw from './FreeDraw';

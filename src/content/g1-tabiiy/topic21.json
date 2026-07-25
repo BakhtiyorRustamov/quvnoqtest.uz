@@ -145,7 +145,7 @@
           "options": [
             { "id": "wait", "emoji": "⏳", "label": { "uz": "kutamiz", "ru": "ждём", "en": "we wait" }, "correct": true },
             { "id": "go", "emoji": "🚶", "label": { "uz": "yuramiz", "ru": "идём", "en": "we go" } },
-            { "id": "run", "emoji": "🏃", "label": { "uz": "yuguramiz", "ru": "бежим", "en": "we run" } }
+            { "id": "dontknow", "emoji": "🤷", "label": { "uz": "bilmaymiz", "ru": "не знаем", "en": "we don't know" } }
           ]
         }
       }
@@ -171,8 +171,8 @@
         "props": {
           "options": [
             { "id": "wait", "emoji": "⏳", "label": { "uz": "keyingi chiroqni kutamiz", "ru": "ждём следующий свет", "en": "wait for the next light" }, "correct": true },
-            { "id": "run", "emoji": "🏃", "label": { "uz": "yugurib oʻtamiz", "ru": "перебегаем", "en": "run across" } },
-            { "id": "stopmid", "emoji": "🛑", "label": { "uz": "yoʻl oʻrtasida toʻxtaymiz", "ru": "стоим посреди дороги", "en": "stop in the middle" } }
+            { "id": "dontknow", "emoji": "🤷", "label": { "uz": "bilmaymiz", "ru": "не знаем", "en": "we don't know" } },
+            { "id": "wrong", "emoji": "❌", "label": { "uz": "notoʻgʻri oʻtamiz", "ru": "переходим неправильно", "en": "cross the wrong way" } }
           ]
         }
       }

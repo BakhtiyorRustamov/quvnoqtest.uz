@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { Analytics } from '@vercel/analytics/next';
 import { UserProvider } from '@/components/providers/UserProvider';
 import { SoundProvider } from '@/components/providers/SoundProvider';
+import NoticeBanner from '@/components/ui/NoticeBanner';
 import './globals.css';
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -40,7 +41,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body className="min-h-screen font-round" suppressHydrationWarning>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <UserProvider>
-            <SoundProvider>{children}</SoundProvider>
+            <SoundProvider>
+              <NoticeBanner />
+              {children}
+            </SoundProvider>
           </UserProvider>
         </NextIntlClientProvider>
         <Analytics />

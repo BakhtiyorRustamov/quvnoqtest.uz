@@ -82,7 +82,7 @@ export default function McqCard({
                 variant={variant}
                 onClick={() => choose(i)}
                 disabled={status === "correct"}
-                className="h-auto min-h-[3.25rem] whitespace-pre-line py-3 text-lg leading-snug"
+                className="h-auto min-h-[3.25rem] whitespace-pre-line py-3 text-lg leading-snug disabled:opacity-100"
               >
                 {c}
               </Button>

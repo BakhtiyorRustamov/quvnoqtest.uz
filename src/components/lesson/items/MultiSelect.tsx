@@ -50,16 +50,16 @@ export default function MultiSelect({ item, locale, cue, done, onResult }: ItemC
               aria-pressed={isSel}
               aria-label={artLabel(o.art, locale)}
               disabled={checked || done}
-              className={`relative rounded-2xl p-2.5 bg-white shadow-card border-[3px] min-w-[76px] min-h-[76px] grid place-items-center transition-all ${
+              className={`relative rounded-2xl p-2.5 bg-white border-[3px] min-w-[76px] min-h-[76px] grid place-items-center transition-all ${
                 checked
                   ? isAns
-                    ? 'border-brand-green ring-4 ring-brand-green/30'
+                    ? 'border-brand-green ring-4 ring-brand-green/30 shadow-[0_5px_0_#48701c]'
                     : isSel
-                      ? 'border-error'
-                      : 'border-ink/10 opacity-60'
+                      ? 'border-error shadow-[0_5px_0_#9e2e2e]'
+                      : 'border-ink/10 opacity-60 shadow-[0_4px_0_rgba(30,58,95,.10)]'
                   : isSel
-                    ? 'border-brand-blue ring-4 ring-brand-blue/25 scale-105'
-                    : 'border-ink/10'
+                    ? 'border-brand-blue ring-4 ring-brand-blue/25 scale-105 shadow-[0_5px_0_#0f6a92]'
+                    : 'border-ink/10 shadow-[0_5px_0_rgba(30,58,95,.14)]'
               }`}
             >
               <ShapeArt art={o.art} size={64} />

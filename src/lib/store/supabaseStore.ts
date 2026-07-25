@@ -35,6 +35,7 @@ function rowToUser(r: any): UserRecord {
     phone: r.phone,
     email: r.email,
     paidUntil: r.paid_until,
+    disabledAt: r.disabled_at ?? null,
     createdAt: r.created_at
   };
 }

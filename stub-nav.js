@@ -1,0 +1,1 @@
+module.exports={redirect(){throw new Error("redirect")}}

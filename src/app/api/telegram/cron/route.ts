@@ -3,6 +3,9 @@ import { sendTelegramMessage, telegramConfigured } from '@/lib/telegram';
 import { parentsConfigured, listAllParentsWithChildren } from '@/lib/parents';
 import { isPaid } from '@/lib/store/types';
 import { G1_MATH_TOPICS } from '@/content';
+import { sendAdminDigest } from '@/lib/adminDigest';
+import { pruneAdminSessions } from '@/lib/admin';
+import { pruneRateLimits } from '@/lib/rateLimitDb';
 
 /**
  * Daily notification job — runs at 04:00 UTC (= 09:00 Tashkent) via Vercel
@@ -62,8 +65,13 @@ export async function GET(req: NextRequest) {
   if (!secret || (auth !== `Bearer ${secret}` && qs !== secret)) {
     return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   }
+  // Owner-facing housekeeping runs regardless of whether the parents' bot is
+  // set up: the daily money digest and expiry of stale sessions / rate buckets.
+  const digestSent = await sendAdminDigest().catch(() => false);
+  await Promise.all([pruneAdminSessions().catch(() => {}), pruneRateLimits().catch(() => {})]);
+
   if (!telegramConfigured() || !parentsConfigured()) {
-    return NextResponse.json({ error: 'not_configured' }, { status: 501 });
+    return NextResponse.json({ ok: true, digestSent, parents: 0, sent: 0, tasks: ['admin_digest'] });
   }
 
   const now = Date.now();
@@ -116,5 +124,5 @@ export async function GET(req: NextRequest) {
   if (isSunday) tasks.push('weekly_report');
   tasks.push('payment_check');
 
-  return NextResponse.json({ ok: true, parents: all.length, sent, tasks, olympiadDays });
+  return NextResponse.json({ ok: true, parents: all.length, sent, tasks, olympiadDays, digestSent });
 }

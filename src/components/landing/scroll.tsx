@@ -70,6 +70,10 @@ export function useScrollProgress(active: boolean) {
 
     const apply = () => {
       const vh = window.innerHeight;
+      // On small screens the drifting elements sit in narrow top/bottom bands
+      // around the text card — damp their travel so they stay there and never
+      // wander across the copy.
+      const drift = window.innerWidth < 640 ? 0.35 : 1;
 
       for (const section of sections) {
         const rect = section.getBoundingClientRect();
@@ -85,8 +89,8 @@ export function useScrollProgress(active: boolean) {
           const from = d.progFrom ? parseFloat(d.progFrom) : 0;
           const to = d.progTo ? parseFloat(d.progTo) : 1;
           const local = clamp((progress - from) / (to - from || 1));
-          const tx = lerp(parseFloat(d.txStart || '0'), parseFloat(d.txEnd || '0'), local);
-          const ty = lerp(parseFloat(d.tyStart || '0'), parseFloat(d.tyEnd || '0'), local);
+          const tx = lerp(parseFloat(d.txStart || '0'), parseFloat(d.txEnd || '0'), local) * drift;
+          const ty = lerp(parseFloat(d.tyStart || '0'), parseFloat(d.tyEnd || '0'), local) * drift;
           const rot = lerp(parseFloat(d.rotStart || '0'), parseFloat(d.rotEnd || '0'), local);
           const sc = lerp(parseFloat(d.scaleStart || '1'), parseFloat(d.scaleEnd || '1'), local);
           el.style.transform = `translate3d(${tx.toFixed(2)}px, ${ty.toFixed(2)}px, 0) rotate(${rot.toFixed(2)}deg) scale(${sc.toFixed(3)})`;

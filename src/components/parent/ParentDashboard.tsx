@@ -399,7 +399,7 @@ export default function ParentDashboard() {
                                   <span className="flex-1 truncate">
                                     {topic ? `${topic.n}. ${pick(topic.title, locale)}` : p.topicKey}
                                   </span>
-                                  <span className="text-brand-purple">{p.score}/10</span>
+                                  <span className="text-brand-purple">{p.score}/{p.answers?.length || 10}</span>
                                 </li>
                               );
                             })}

@@ -9,6 +9,7 @@ import { useSound } from '@/components/providers/SoundProvider';
 import { burstConfetti } from '@/lib/confetti';
 import ReadAgain from './ReadAgain';
 import AudioButton from './AudioButton';
+import { Button } from '@/components/ui/button';
 import ClickCorrect, { type ItemComponentProps } from './items/ClickCorrect';
 import MultiSelect from './items/MultiSelect';
 import Sequence from './items/Sequence';
@@ -126,13 +127,15 @@ export default function ItemShell({
 
       {/* Help / Yordam (FR-QZ-5) + optional "read the text again" (Oʻqish) */}
       <div className="flex flex-wrap justify-center items-center gap-2 mt-3">
-        <button
+        <Button
+          variant="outline"
+          size="sm"
           onClick={() => setHelpOpen((o) => !o)}
           aria-expanded={helpOpen}
-          className={`btn-ghost text-sm px-4 py-2 ${helpOpen ? 'ring-2 ring-brand-blue/50' : ''}`}
+          className={helpOpen ? 'border-brand-blue/60 bg-brand-blue/5' : ''}
         >
           {t('help')} {helpOpen ? '▲' : '▼'}
-        </button>
+        </Button>
         {readRef && <ReadAgain spec={readRef} locale={locale} />}
       </div>
       <AnimatePresence>
@@ -189,10 +192,10 @@ export default function ItemShell({
 
       {/* revisit mode: continue forward */}
       {done && (
-        <div className="text-center pb-4 -mt-2">
-          <button onClick={onForward} className="btn-blue">
+        <div className="flex justify-center pb-4 -mt-2">
+          <Button variant="brand" onClick={onForward}>
             {t('next')} ➡️
-          </button>
+          </Button>
         </div>
       )}
     </div>

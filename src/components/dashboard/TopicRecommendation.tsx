@@ -47,13 +47,20 @@ export default function TopicRecommendation({
 
   const completed = progress.filter((p) => p.status === 'completed');
   const lowScore = completed
-    .filter((p) => typeof p.score === 'number' && p.score <= REVIEW_THRESHOLD && isBuiltTopic(p.topicKey))
+    // Ratio-based threshold so short lessons (e.g. 2 questions) aren't flagged:
+    // a perfect 2/2 must not read as a "low" score against an assumed 10.
+    .filter((p) => {
+      if (typeof p.score !== 'number' || !isBuiltTopic(p.topicKey)) return false;
+      const total = p.answers?.length || 10;
+      return p.score / total <= REVIEW_THRESHOLD / 10;
+    })
     .map((p) => {
       const meta = getTopicMeta(p.topicKey);
-      return meta ? { key: p.topicKey, n: meta.n, title: pick(meta.title, locale), score: p.score ?? 0 } : null;
+      const total = p.answers?.length || 10;
+      return meta ? { key: p.topicKey, n: meta.n, title: pick(meta.title, locale), score: p.score ?? 0, total } : null;
     })
-    .filter((x): x is { key: string; n: number; title: string; score: number } => x !== null)
-    .sort((a, b) => a.score - b.score)
+    .filter((x): x is { key: string; n: number; title: string; score: number; total: number } => x !== null)
+    .sort((a, b) => a.score / a.total - b.score / b.total)
     .slice(0, MAX_TOPICS);
 
   const hasStarted = completed.length > 0;
@@ -110,7 +117,7 @@ export default function TopicRecommendation({
                       {tp.n}
                     </span>
                     <span className="text-[12.5px] leading-snug">{tp.title}</span>
-                    <span className="shrink-0 text-xs font-black text-brand-magenta">⭐{tp.score}/10</span>
+                    <span className="shrink-0 text-xs font-black text-brand-magenta">⭐{tp.score}/{tp.total}</span>
                   </Link>
                 </motion.div>
               ))}

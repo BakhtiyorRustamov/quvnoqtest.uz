@@ -7,7 +7,18 @@ import { useEffect, useState } from 'react';
  * play badge. Tapping it opens a fullscreen video player overlay (HTML5 video
  * with native controls). Esc or tapping the backdrop closes it.
  */
-export default function VideoLightbox({ src, poster, label }: { src: string; poster: string; label: string }) {
+export default function VideoLightbox({
+  src,
+  poster,
+  label,
+  title
+}: {
+  src: string;
+  poster: string;
+  label: string;
+  /** Localized caption shown above the player (e.g. subject + part). */
+  title?: string;
+}) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -29,7 +40,7 @@ export default function VideoLightbox({ src, poster, label }: { src: string; pos
       <button
         type="button"
         onClick={() => setOpen(true)}
-        aria-label={label}
+        aria-label={title || label}
         className="group card flex items-center gap-2 px-2 py-1.5 hover:-translate-y-0.5 transition-transform shrink-0"
       >
         <span className="relative block h-10 w-10 overflow-hidden rounded-lg ring-1 ring-ink/10">
@@ -43,7 +54,7 @@ export default function VideoLightbox({ src, poster, label }: { src: string; pos
             </span>
           </span>
         </span>
-        <span className="pr-1 text-[12px] font-extrabold text-ink/70">{label}</span>
+        {label && <span className="pr-1 text-[12px] font-extrabold text-ink/70">{label}</span>}
       </button>
 
       {open && (
@@ -64,14 +75,17 @@ export default function VideoLightbox({ src, poster, label }: { src: string; pos
           </button>
           {/* stop backdrop-close when interacting with the player */}
           {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events */}
-          <div onClick={(e) => e.stopPropagation()} className="flex max-h-full max-w-full items-center justify-center">
+          <div onClick={(e) => e.stopPropagation()} className="flex max-h-full max-w-full flex-col items-center justify-center gap-3">
+            {title && (
+              <h3 className="max-w-[95vw] px-10 text-center text-lg font-black text-white drop-shadow sm:text-xl">{title}</h3>
+            )}
             <video
               src={src}
               poster={poster}
               controls
               autoPlay
               playsInline
-              className="h-auto max-h-[88vh] w-auto max-w-[95vw] rounded-xl shadow-2xl"
+              className="h-auto max-h-[84vh] w-auto max-w-[95vw] rounded-xl shadow-2xl"
             />
           </div>
         </div>

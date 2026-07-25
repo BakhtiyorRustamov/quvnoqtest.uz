@@ -81,7 +81,7 @@ function SubjectChip({
       {/* subject NAME — big and centred (the little sketch icon is intentionally
           dropped so the name is the clear, readable focus of each card) */}
       <span className="relative z-10 flex h-full items-center justify-center px-2 py-2.5">
-        <span className="line-clamp-3 text-center text-[11.5px] font-black leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] sm:text-[13.5px]">
+        <span className="line-clamp-3 text-center text-[19px] font-black leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] sm:text-[13.5px]">
           {pick(s.name, locale)}
         </span>
       </span>
@@ -235,19 +235,19 @@ export default function Landing() {
                plus a slim rail on the right so there is always a visible cue. ---- */}
         {active && <PageScrollIndicator />}
 
-        {/* ---- Sticky header ---- */}
+        {/* ---- Hero + grade grid (Task 1 & 2) ---- */}
         {active && (
-          <motion.header
-            initial={{ opacity: 0, y: -12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className={`fixed inset-x-0 top-0 z-40 transition-colors duration-300 ${
-              scrolled ? 'bg-white/5 backdrop-blur-md border-b border-white/10' : ''
-            }`}
-          >
-            {/* On mobile the wide wordmark and the language switch used to collide,
-               so we stack them: switcher on top, logo dropped just below it. */}
-            <div className="mx-auto flex max-w-6xl flex-col gap-1.5 px-4 py-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-0">
+          <section className="relative z-10 px-4 pb-10 pt-3 sm:pt-4">
+            <ParticleField count={40} />
+
+            {/* logo + language toggle — plain, in the page flow (no bar).
+               On mobile they stack: switcher top-right, logo just below it. */}
+            <motion.div
+              initial={{ opacity: 0, y: -12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="relative z-10 mx-auto flex max-w-6xl flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between sm:gap-0"
+            >
               {/* plain logo (no button chrome) — still routes to the dashboard */}
               <Link
                 href="/dashboard"
@@ -260,16 +260,9 @@ export default function Landing() {
               <div className="order-1 self-end sm:order-2 sm:self-auto">
                 <LangSwitcher />
               </div>
-            </div>
-          </motion.header>
-        )}
+            </motion.div>
 
-        {/* ---- Hero + grade grid (Task 1 & 2) ---- */}
-        {active && (
-          <section className="relative z-10 px-4 pb-10 pt-24 sm:pt-28">
-            <ParticleField count={40} />
-
-            <div className="relative z-10 mx-auto max-w-3xl text-center">
+            <div className="relative z-10 mx-auto mt-12 max-w-3xl text-center sm:mt-10">
               <h1 className="font-black leading-[1.05] text-white text-[clamp(30px,7vw,58px)]">
                 <span className="anim-first-hit -delay-1 block">{t('landing.chooseGrade')}</span>
                 <span className="anim-first-hit -delay-2 block bg-gradient-to-r from-brand-orange via-amber-300 to-brand-blue bg-clip-text text-transparent">
@@ -404,7 +397,7 @@ export default function Landing() {
                       initial="hidden"
                       animate="show"
                       variants={{ hidden: {}, show: { transition: { staggerChildren: 0.04, delayChildren: reduce ? 0 : 0.45 } } }}
-                      className="grid h-full auto-rows-fr grid-cols-3 gap-2 overflow-y-auto overscroll-contain px-0.5 pb-2 sm:grid-cols-4 sm:gap-2.5"
+                      className="grid h-full auto-rows-fr grid-cols-2 gap-2 overflow-y-auto overscroll-contain px-0.5 pb-2 sm:grid-cols-4 sm:gap-2.5"
                       style={{ WebkitOverflowScrolling: 'touch', touchAction: 'pan-y' }}
                     >
                       {openDef.subjects.map((s) => (

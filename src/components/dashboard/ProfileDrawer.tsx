@@ -78,22 +78,27 @@ export default function ProfileDrawer({ open, onClose }: { open: boolean; onClos
               <h2 className="font-black text-ink text-2xl">{t('title')}</h2>
             </div>
 
-            {/* quick settings: sound toggle + go to the landing page */}
+            {/* quick settings: image sound toggle + go to the landing page */}
             <div className="flex items-center gap-2 mb-4">
               <button
                 onClick={toggleMuted}
                 aria-label={muted ? tc('soundOff') : tc('soundOn')}
-                className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-white border-2 border-ink/12 shadow-card px-3 py-2.5 font-extrabold text-ink"
+                title={muted ? tc('soundOff') : tc('soundOn')}
+                className="grid shrink-0 place-items-center rounded-2xl bg-white border-2 border-ink/12 shadow-card px-3 py-1.5"
               >
-                <span aria-hidden className="text-lg">{muted ? '🔇' : '🔊'}</span>
-                {muted ? tc('soundOff') : tc('soundOn')}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={muted ? '/buttons/soundOFF.png' : '/buttons/soundON.png'}
+                  alt=""
+                  className="block h-9 w-auto select-none transition duration-150 opacity-50 saturate-[0.25] hover:opacity-100 hover:saturate-100 active:opacity-100 active:saturate-100"
+                  draggable={false}
+                />
               </button>
               <Link
                 href="/?home=1"
                 onClick={onClose}
                 className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-white border-2 border-ink/12 shadow-card px-3 py-2.5 font-extrabold text-ink"
               >
-                <span aria-hidden className="text-lg">🏠</span>
                 {td('landingLink')}
               </Link>
             </div>
@@ -101,7 +106,7 @@ export default function ProfileDrawer({ open, onClose }: { open: boolean; onClos
             {/* visible public ID (FR-PRF-1) */}
             <div className="card p-4 text-center">
               <div className="text-xs font-extrabold text-ink/50 uppercase tracking-wide">{t('idLabel')}</div>
-              <div className="font-black text-3xl text-brand-purple mt-1 tracking-wider">{user?.publicId ?? '…'}</div>
+              <div className="font-semibold text-lg text-brand-purple mt-1 tracking-wider">{user?.publicId ?? '…'}</div>
               {user?.email && <div className="mt-1.5 text-sm font-bold text-brand-green">✉️ {user.email}</div>}
             </div>
 

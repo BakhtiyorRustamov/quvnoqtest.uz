@@ -41,6 +41,9 @@ export default function SubjectView() {
   const isPaid = user?.isPaid ?? false;
   const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
   const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
   const learned = G1_MATH_TOPICS.filter((tp) => completedKeys.has(tp.key));
   const notLearned = G1_MATH_TOPICS.filter((tp) => !completedKeys.has(tp.key));
 
@@ -132,13 +135,13 @@ export default function SubjectView() {
                 {learned.map((tp) => (
                   <Link
                     key={tp.key}
-                    href={`/lesson/${tp.key}`}
+                    href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
                     className="inline-flex items-center gap-2 rounded-xl bg-brand-green/15 border-2 border-brand-green/50 px-3 py-1.5 font-extrabold text-ink hover:bg-brand-green/25 transition-colors"
                     title={t('dashboard.replay')}
                   >
                     ✅ {tp.n}. {pick(tp.title, locale)}
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white text-brand-purple border border-brand-purple/30">
-                      ⭐ {scoreOf(tp.key) ?? 0}/10
+                      ⭐ {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
                     </span>
                   </Link>
                 ))}
@@ -229,14 +232,16 @@ export default function SubjectView() {
               if (e.kind === 'lesson') {
                 const tp = e.tp;
                 const isBuilt = isBuiltTopic(tp.key);
-                const openable = isBuilt || isPaid;
-                const href = isBuilt ? `/lesson/${tp.key}` : isPaid ? `/topic/${tp.key}` : '/upgrade';
+                // Paywall: only the subject's FIRST lesson is free.
+                const unlocked = isPaid || tp.n === 1;
+                const openable = isBuilt ? unlocked : isPaid;
+                const href = isBuilt ? (unlocked ? `/lesson/${tp.key}` : '/upgrade') : isPaid ? `/topic/${tp.key}` : '/upgrade';
                 return (
                   <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
                     <Link
                       href={href}
                       title={openable ? undefined : t('dashboard.lockedHint')}
-                      className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform ${openable ? '' : 'opacity-75'}`}
+                      className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform ${openable ? '' : 'opacity-75'}${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}
                     >
                       <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm ${openable ? 'bg-brand-blue' : 'bg-ink/30'}`}>
                         {tp.n}
@@ -254,8 +259,9 @@ export default function SubjectView() {
                 return (
                   <motion.div key={r.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
                     <Link
-                      href={`/lesson/${r.key}`}
-                      className="h-full flex items-center gap-2 px-3 py-2.5 rounded-2xl border-2 border-brand-purple/60 bg-gradient-to-br from-brand-purple/15 to-brand-magenta/15 hover:-translate-y-0.5 transition-transform"
+                      href={isPaid ? `/lesson/${r.key}` : '/upgrade'}
+                      title={isPaid ? undefined : t('dashboard.lockedHint')}
+                      className={`h-full flex items-center gap-2 px-3 py-2.5 rounded-2xl border-2 border-brand-purple/60 bg-gradient-to-br from-brand-purple/15 to-brand-magenta/15 hover:-translate-y-0.5 transition-transform ${isPaid ? '' : 'opacity-75'}`}
                     >
                       <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center text-base bg-brand-purple/20" aria-hidden>
                         🏁
@@ -264,8 +270,8 @@ export default function SubjectView() {
                         <span className="block font-black text-brand-purple text-[12.5px]">{pick(r.title, locale)}</span>
                         <span className="block font-bold text-ink/45 text-[10.5px]">{t('dashboard.review')}</span>
                       </span>
-                      <span className="shrink-0 text-brand-orange font-black" aria-hidden>
-                        ▶
+                      <span className={`shrink-0 ${isPaid ? 'text-brand-orange font-black' : 'text-base'}`} aria-hidden>
+                        {isPaid ? '▶' : '🔒'}
                       </span>
                     </Link>
                   </motion.div>
@@ -328,21 +334,22 @@ export default function SubjectView() {
                 </div>
                 <CollapsibleGrid>{part4.map(renderEntry)}</CollapsibleGrid>
 
-                {/* Final reviews (142–144) — bigger, on their own row */}
+                {/* Final reviews (142–144) — same small tiles as regular lessons */}
                 {finals.length > 0 && (
-                  <div className="mt-5 grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 gap-2.5">
                     {finals.map((tp, i) => (
                       <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.05 * i }}>
                         <Link
-                          href={`/lesson/${tp.key}`}
-                          className="h-full flex items-center gap-3 px-4 py-4 rounded-2xl border-2 border-brand-orange/60 bg-gradient-to-br from-brand-orange/15 to-brand-purple/15 hover:-translate-y-0.5 transition-transform"
+                          href={isPaid ? `/lesson/${tp.key}` : '/upgrade'}
+                          title={isPaid ? undefined : t('dashboard.lockedHint')}
+                          className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform ${isPaid ? '' : 'opacity-75'}`}
                         >
-                          <span className="shrink-0 w-11 h-11 rounded-full grid place-items-center font-black text-white text-base bg-brand-orange">
+                          <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm ${isPaid ? 'bg-brand-orange' : 'bg-ink/30'}`}>
                             {tp.n}
                           </span>
-                          <span className="flex-1 font-black text-ink text-[15px] leading-snug">{pick(tp.title, locale)}</span>
-                          <span className="shrink-0 text-brand-orange font-black text-lg" aria-hidden>
-                            ▶
+                          <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
+                          <span className={`shrink-0 ${isPaid ? 'text-brand-orange font-black' : 'text-base'}`} aria-hidden>
+                            {isPaid ? '▶' : '🔒'}
                           </span>
                         </Link>
                       </motion.div>
@@ -358,8 +365,9 @@ export default function SubjectView() {
             bottom of the subject. 30 randomized questions, 60-minute timer. */}
         <section className="mt-8">
           <Link
-            href="/exam/g1-math"
-            className="block rounded-3xl border-2 border-brand-orange/60 bg-gradient-to-br from-brand-orange/15 to-brand-magenta/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
+            href={isPaid ? '/exam/g1-math' : '/upgrade'}
+            title={isPaid ? undefined : t('dashboard.lockedHint')}
+            className={`block rounded-3xl border-2 border-brand-orange/60 bg-gradient-to-br from-brand-orange/15 to-brand-magenta/15 px-5 py-5 hover:-translate-y-0.5 transition-transform ${isPaid ? '' : 'opacity-80'}`}
           >
             <div className="flex items-center gap-4">
               <span aria-hidden className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card">📝</span>
@@ -376,8 +384,8 @@ export default function SubjectView() {
                   )}
                 </span>
               </div>
-              <span className="shrink-0 text-brand-orange font-black text-xl" aria-hidden>
-                ▶
+              <span className={`shrink-0 ${isPaid ? 'text-brand-orange font-black text-xl' : 'text-xl'}`} aria-hidden>
+                {isPaid ? '▶' : '🔒'}
               </span>
             </div>
           </Link>
@@ -386,8 +394,9 @@ export default function SubjectView() {
         {/* DTM-style practice exam — sits under the Presidential one. */}
         <section className="mt-4">
           <Link
-            href="/exam/g1-dtm"
-            className="block rounded-3xl border-2 border-brand-blue/60 bg-gradient-to-br from-brand-blue/15 to-brand-green/15 px-5 py-5 hover:-translate-y-0.5 transition-transform"
+            href={isPaid ? '/exam/g1-dtm' : '/upgrade'}
+            title={isPaid ? undefined : t('dashboard.lockedHint')}
+            className={`block rounded-3xl border-2 border-brand-blue/60 bg-gradient-to-br from-brand-blue/15 to-brand-green/15 px-5 py-5 hover:-translate-y-0.5 transition-transform ${isPaid ? '' : 'opacity-80'}`}
           >
             <div className="flex items-center gap-4">
               <span aria-hidden className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card">🎓</span>
@@ -404,8 +413,8 @@ export default function SubjectView() {
                   )}
                 </span>
               </div>
-              <span className="shrink-0 text-brand-blue font-black text-xl" aria-hidden>
-                ▶
+              <span className={`shrink-0 ${isPaid ? 'text-brand-blue font-black text-xl' : 'text-xl'}`} aria-hidden>
+                {isPaid ? '▶' : '🔒'}
               </span>
             </div>
           </Link>

@@ -20,7 +20,7 @@ const FLAG: Record<Locale, string> = {
  * it expands a popover with all three (UZ default). Choosing one sets the locale
  * cookie + user record and refreshes.
  */
-export default function LangSwitcher({ className = '' }: { className?: string }) {
+export default function LangSwitcher({ className = '', align = 'right' }: { className?: string; align?: 'left' | 'right' }) {
   const locale = (useLocale() as Locale) || 'uz';
   const router = useRouter();
   const { user } = useUser();
@@ -52,15 +52,21 @@ export default function LangSwitcher({ className = '' }: { className?: string })
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label={`Language: ${LOCALE_LABELS[locale]}`}
-        className="block rounded-2xl transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40"
+        className="block rounded-2xl transition hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40"
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={FLAG[locale]} alt="" height={36} className="h-9 w-auto rounded-lg shadow-card" draggable={false} />
+        <img
+          src={FLAG[locale]}
+          alt=""
+          height={36}
+          className="h-9 w-auto rounded-lg shadow-card select-none transition duration-150 opacity-50 saturate-[0.25] hover:opacity-100 hover:saturate-100 active:opacity-100 active:saturate-100"
+          draggable={false}
+        />
       </button>
 
       {/* popover with all three language graphics — roomy, not squished */}
       {open && (
-        <ul role="listbox" className="absolute right-0 z-50 mt-2 flex w-max flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-2.5 shadow-2xl">
+        <ul role="listbox" className={`absolute ${align === 'left' ? 'left-0' : 'right-0'} z-50 mt-2 flex w-max flex-col gap-2 rounded-2xl border border-ink/10 bg-white p-2.5 shadow-2xl`}>
           {LOCALES.map((l) => (
             <li key={l}>
               <button

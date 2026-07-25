@@ -13,8 +13,8 @@
       "explanation": { "uz": "Toʻgʻri! Ehtiyot boʻlib.", "ru": "Верно! Осторожно.", "en": "Right! Carefully." },
       "widget": { "type": "mcq", "props": { "choices": [
         { "uz": "ehtiyot boʻlib foydalanamiz", "ru": "пользуемся осторожно", "en": "we use them carefully" },
-        { "uz": "birovga uloqtiramiz", "ru": "бросаем в других", "en": "throw them at others" },
-        { "uz": "ogʻzimizga solamiz", "ru": "берём в рот", "en": "put them in our mouth" }
+        { "uz": "bilmayman", "ru": "не знаю", "en": "I don't know" },
+        { "uz": "notoʻgʻri foydalanamiz", "ru": "пользуемся неправильно", "en": "we use them incorrectly" }
       ], "answerIndex": 0 } } },
     { "id": "q2", "type": "widget", "visualHint": "none",
       "prompt": { "uz": "Ish tugagach, ortiqcha narsalarni nima qilamiz?", "ru": "Что делаем с мусором после работы?", "en": "What do we do with the scraps when we finish?" },

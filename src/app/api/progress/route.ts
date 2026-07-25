@@ -13,6 +13,7 @@ const EXAM_TOTALS: Record<string, { subjectKey: string; total: number }> = {
   'g1-math-exam': { subjectKey: 'g1-math', total: 30 },
   'g1-math-dtm': { subjectKey: 'g1-math', total: 30 },
   'g1-ona-dtm': { subjectKey: 'g1-ona', total: 20 },
+  'g1-oqish-dtm': { subjectKey: 'g1-oqish', total: 20 },
   'g1-fikr-exam': { subjectKey: 'g1-fikr', total: 10 }
 };
 

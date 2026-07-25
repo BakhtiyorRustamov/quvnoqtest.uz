@@ -43,16 +43,26 @@ function TE({
   className = '',
   motion,
   spin = false,
+  m,
   children
 }: {
   style: React.CSSProperties;
   className?: string;
   motion: Motion;
   spin?: boolean;
+  /** Mobile position — on small screens the element snaps here (a spot in the
+   *  top/bottom band, clear of the centred text card). */
+  m?: { left: string; top: string };
   children: React.ReactNode;
 }) {
+  const mStyle = m ? ({ '--m-left': m.left, '--m-top': m.top } as React.CSSProperties) : {};
   return (
-    <span className={`transform-element ${className}`} style={style} aria-hidden {...(dataProps(motion) as Record<string, string> as any)}>
+    <span
+      className={`transform-element ${m ? 'm-repos' : ''} ${className}`}
+      style={{ ...style, ...mStyle }}
+      aria-hidden
+      {...(dataProps(motion) as Record<string, string> as any)}
+    >
       {spin ? <span className="spin-slow block h-full w-full">{children}</span> : children}
     </span>
   );
@@ -83,66 +93,66 @@ export default function ScrollScene() {
         />
 
         {/* 1 — atom: drifts right, floats up, full spin */}
-        <TE style={{ left: '6%', top: '14%', width: 86 }} className="text-cyan-300" motion={{ 'tx-end': 200, 'ty-end': -150, 'rot-end': 360 }}>
+        <TE m={{ left: '3%', top: '4%' }} style={{ left: '6%', top: '14%', width: 86 }} className="text-cyan-300" motion={{ 'tx-end': 200, 'ty-end': -150, 'rot-end': 360 }}>
           <Atom className="h-full w-full" />
         </TE>
         {/* 2 — DNA helix */}
-        <TE style={{ left: '78%', top: '9%', width: 64 }} className="text-fuchsia-300" motion={{ 'tx-end': -150, 'ty-end': 100, 'rot-end': -20 }}>
+        <TE m={{ left: '76%', top: '4%' }} style={{ left: '78%', top: '9%', width: 64 }} className="text-fuchsia-300" motion={{ 'tx-end': -150, 'ty-end': 100, 'rot-end': -20 }}>
           <Dna className="h-full w-full" />
         </TE>
         {/* 3 — rocket: shoots up */}
-        <TE style={{ left: '11%', top: '54%', width: 76 }} className="text-orange-300" motion={{ 'ty-end': -300, 'tx-end': 80, 'rot-end': -15 }}>
+        <TE m={{ left: '5%', top: '84%' }} style={{ left: '11%', top: '54%', width: 76 }} className="text-orange-300" motion={{ 'ty-end': -300, 'tx-end': 80, 'rot-end': -15 }}>
           <Rocket className="h-full w-full" />
         </TE>
         {/* 4 — flask: bounces up + rotates */}
-        <TE style={{ left: '7%', top: '76%', width: 70 }} className="text-emerald-300" motion={{ 'ty-end': -250, 'rot-end': 45 }}>
+        <TE m={{ left: '10%', top: '92%' }} style={{ left: '7%', top: '76%', width: 70 }} className="text-emerald-300" motion={{ 'ty-end': -250, 'rot-end': 45 }}>
           <Flask className="h-full w-full" />
         </TE>
         {/* 5 — planet: drifts left */}
-        <TE style={{ left: '72%', top: '52%', width: 104 }} className="text-violet-300" motion={{ 'tx-end': -180, 'ty-end': -40 }}>
+        <TE m={{ left: '68%', top: '86%' }} style={{ left: '72%', top: '52%', width: 104 }} className="text-violet-300" motion={{ 'tx-end': -180, 'ty-end': -40 }}>
           <Planet className="h-full w-full" />
         </TE>
         {/* 6 — microscope: slides down */}
-        <TE style={{ left: '45%', top: '7%', width: 68 }} className="text-sky-200" motion={{ 'ty-end': 120, 'rot-end': 10 }}>
+        <TE m={{ left: '42%', top: '5%' }} style={{ left: '45%', top: '7%', width: 68 }} className="text-sky-200" motion={{ 'ty-end': 120, 'rot-end': 10 }}>
           <Microscope className="h-full w-full" />
         </TE>
         {/* 7 — lightning: zips across, fades */}
-        <TE style={{ left: '90%', top: '34%', width: 56 }} className="text-yellow-300" motion={{ 'tx-end': -320, 'op-start': 1, 'op-end': 0.3 }}>
+        <TE m={{ left: '86%', top: '14%' }} style={{ left: '90%', top: '34%', width: 56 }} className="text-yellow-300" motion={{ 'tx-end': -320, 'op-start': 1, 'op-end': 0.3 }}>
           <LightningIcon className="h-full w-full" />
         </TE>
         {/* 8 — star cluster: scatters outward from centre */}
-        <TE style={{ left: '49%', top: '46%', width: 20 }} className="text-white" motion={{ 'tx-end': -170, 'ty-end': -120, 'scale-end': 1.4 }}>
+        <TE m={{ left: '12%', top: '14%' }} style={{ left: '49%', top: '46%', width: 20 }} className="text-white" motion={{ 'tx-end': -170, 'ty-end': -120, 'scale-end': 1.4 }}>
           <StarIcon className="h-full w-full" />
         </TE>
-        <TE style={{ left: '50%', top: '47%', width: 16 }} className="text-yellow-200" motion={{ 'tx-end': 190, 'ty-end': -90, 'scale-end': 1.3 }}>
+        <TE m={{ left: '88%', top: '7%' }} style={{ left: '50%', top: '47%', width: 16 }} className="text-yellow-200" motion={{ 'tx-end': 190, 'ty-end': -90, 'scale-end': 1.3 }}>
           <StarIcon className="h-full w-full" />
         </TE>
-        <TE style={{ left: '50%', top: '48%', width: 14 }} className="text-cyan-200" motion={{ 'tx-end': -120, 'ty-end': 150, 'scale-end': 1.2 }}>
+        <TE m={{ left: '24%', top: '90%' }} style={{ left: '50%', top: '48%', width: 14 }} className="text-cyan-200" motion={{ 'tx-end': -120, 'ty-end': 150, 'scale-end': 1.2 }}>
           <StarIcon className="h-full w-full" />
         </TE>
-        <TE style={{ left: '51%', top: '46%', width: 18 }} className="text-fuchsia-200" motion={{ 'tx-end': 150, 'ty-end': 140, 'scale-end': 1.35 }}>
+        <TE m={{ left: '58%', top: '94%' }} style={{ left: '51%', top: '46%', width: 18 }} className="text-fuchsia-200" motion={{ 'tx-end': 150, 'ty-end': 140, 'scale-end': 1.35 }}>
           <StarIcon className="h-full w-full" />
         </TE>
         {/* 9 — math symbols: each drifts at its own speed */}
-        <TE style={{ left: '20%', top: '30%' }} className="font-black text-white/80 text-5xl" motion={{ 'ty-end': -120, 'tx-end': 60 }}>
+        <TE m={{ left: '16%', top: '10%' }} style={{ left: '20%', top: '30%' }} className="font-black text-white/80 text-5xl" motion={{ 'ty-end': -120, 'tx-end': 60 }}>
           π
         </TE>
-        <TE style={{ left: '62%', top: '22%' }} className="font-black text-white/70 text-6xl" motion={{ 'ty-end': 90, 'tx-end': -50 }}>
+        <TE m={{ left: '60%', top: '9%' }} style={{ left: '62%', top: '22%' }} className="font-black text-white/70 text-6xl" motion={{ 'ty-end': 90, 'tx-end': -50 }}>
           ∑
         </TE>
-        <TE style={{ left: '34%', top: '78%' }} className="font-black text-white/70 text-5xl" motion={{ 'ty-end': -200, 'rot-end': 20 }}>
+        <TE m={{ left: '34%', top: '91%' }} style={{ left: '34%', top: '78%' }} className="font-black text-white/70 text-5xl" motion={{ 'ty-end': -200, 'rot-end': 20 }}>
           ∫
         </TE>
         {/* 10 — test tube: big tumble */}
-        <TE style={{ left: '60%', top: '72%', width: 60 }} className="text-emerald-200" motion={{ 'rot-start': -180, 'rot-end': 180, 'ty-end': -40 }}>
+        <TE m={{ left: '48%', top: '87%' }} style={{ left: '60%', top: '72%', width: 60 }} className="text-emerald-200" motion={{ 'rot-start': -180, 'rot-end': 180, 'ty-end': -40 }}>
           <TestTubes className="h-full w-full" />
         </TE>
         {/* 11 — gear: continuous spin AND drift */}
-        <TE style={{ left: '85%', top: '70%', width: 72 }} className="text-sky-300" spin motion={{ 'tx-end': -120, 'ty-end': -70 }}>
+        <TE m={{ left: '85%', top: '90%' }} style={{ left: '85%', top: '70%', width: 72 }} className="text-sky-300" spin motion={{ 'tx-end': -120, 'ty-end': -70 }}>
           <Gear className="h-full w-full" />
         </TE>
         {/* 12 — comet: diagonal streak across the scene */}
-        <TE style={{ left: '66%', top: '10%', width: 92 }} className="text-white" motion={{ 'tx-start': 120, 'tx-end': -340, 'ty-start': -60, 'ty-end': 230 }}>
+        <TE m={{ left: '52%', top: '2%' }} style={{ left: '66%', top: '10%', width: 92 }} className="text-white" motion={{ 'tx-start': 120, 'tx-end': -340, 'ty-start': -60, 'ty-end': 230 }}>
           <Comet className="h-full w-full" />
         </TE>
 

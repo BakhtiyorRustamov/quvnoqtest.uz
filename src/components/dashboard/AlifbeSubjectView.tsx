@@ -14,6 +14,7 @@ import { isBuiltTopic } from '@/content';
 import { G1_ALIFBE_TOPICS } from '@/content/g1-alifbe/topics';
 import { getAlifbeTopic } from '@/content/g1-alifbe/topics';
 import { pick } from '@/lib/i18n-config';
+import VideoLightbox from '@/components/ui/VideoLightbox';
 import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
 
@@ -27,6 +28,7 @@ export default function AlifbeSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
   const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
   useEffect(() => {
@@ -37,13 +39,12 @@ export default function AlifbeSubjectView() {
     api<{ progress: ProgressRow[] }>('/api/progress').then(({ data }) => setProgress(data?.progress ?? []));
   }, []);
 
-  const s = (uz: string, ru: string, en: string) => pick({ uz, ru, en }, locale);
   const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
   const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
   const learned = G1_ALIFBE_TOPICS.filter((tp) => completedKeys.has(tp.key));
-  const firstBuilt = G1_ALIFBE_TOPICS.find((tp) => isBuiltTopic(tp.key)) ?? G1_ALIFBE_TOPICS[0];
-  const nextLesson =
-    G1_ALIFBE_TOPICS.find((tp) => isBuiltTopic(tp.key) && !completedKeys.has(tp.key)) ?? firstBuilt;
 
   /* ---------------- pen drawing (same as Matematika, coral ink) ---------------- */
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -104,8 +105,8 @@ export default function AlifbeSubjectView() {
       return (
         <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
           <Link
-            href={`/lesson/${tp.key}`}
-            className="card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform"
+            href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
+            className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}
           >
             <span
               className="shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm"
@@ -114,7 +115,7 @@ export default function AlifbeSubjectView() {
               {done ? '✓' : tp.n}
             </span>
             <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
-            <span className="shrink-0 text-brand-orange font-black" aria-hidden>▶</span>
+            <span className={isPaid || tp.n === 1 ? 'shrink-0 text-brand-orange font-black' : 'shrink-0 text-base'} aria-hidden>{isPaid || tp.n === 1 ? '▶' : '🔒'}</span>
           </Link>
         </motion.div>
       );
@@ -147,18 +148,6 @@ export default function AlifbeSubjectView() {
           </h1>
         </div>
 
-        {/* what this subject is */}
-        <section
-          className="card p-5 mt-5 text-[15px] leading-relaxed font-semibold text-ink/80"
-          style={{ borderColor: 'rgba(244,105,59,0.3)' }}
-        >
-          {s(
-            'Alifbe — oʻqish va yozishning birinchi qadamlari. Bu yerda tovushlar va harflar bilan tanishamiz, soʻzlarni boʻgʻinlarga boʻlamiz, unli va undoshlarni farqlaymiz. Har bir darsda tinglaymiz, oʻynab oʻqiymiz va yangi harflarni oʻrganamiz.',
-            'Алифбе — первые шаги в чтении и письме. Здесь мы знакомимся со звуками и буквами, делим слова на слоги, различаем гласные и согласные. На каждом уроке слушаем, играем и учим новые буквы.',
-            'The Alphabet primer — the first steps of reading and writing. Here we meet sounds and letters, split words into syllables, and tell vowels from consonants. In every lesson we listen, play and learn new letters.'
-          )}
-        </section>
-
         {/* ------- coral notebook: "Hozirgacha o'rganganlarim" ------- */}
         <section className="mt-6 relative">
           <h2 className="font-black text-ink/70 text-lg mb-2">🔤 {t('dashboard.learnedTitle')}</h2>
@@ -181,14 +170,14 @@ export default function AlifbeSubjectView() {
                 {learned.map((tp) => (
                   <Link
                     key={tp.key}
-                    href={`/lesson/${tp.key}`}
+                    href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
                     className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 font-extrabold text-ink transition-colors"
                     style={{ background: 'rgba(244,105,59,0.16)', border: '2px solid rgba(244,105,59,0.55)' }}
                     title={t('dashboard.replay')}
                   >
                     ✅ {tp.n}. {pick(tp.title, locale)}
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white text-brand-purple border border-brand-purple/30">
-                      ⭐ {scoreOf(tp.key) ?? 0}/10
+                      ⭐ {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
                     </span>
                   </Link>
                 ))}
@@ -252,54 +241,13 @@ export default function AlifbeSubjectView() {
           </div>
         </section>
 
-        {/* recommendation / continue */}
-        <section className="mt-6">
-          <Link
-            href={`/lesson/${nextLesson.key}`}
-            className="block rounded-3xl px-5 py-5 hover:-translate-y-0.5 transition-transform"
-            style={{ border: '2px solid rgba(244,105,59,0.6)', background: 'linear-gradient(135deg, rgba(244,105,59,0.15), rgba(243,154,31,0.15))' }}
-          >
-            <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>🔤</span>
-              <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
-                  {learned.length ? s('Davom etish', 'Продолжить', 'Continue') : s('Birinchi darsdan boshlash', 'Начать с первого урока', 'Start with lesson 1')}
-                </span>
-                <span className="block font-bold text-ink/55 text-[13px]">
-                  {nextLesson.n}-dars · {pick(nextLesson.title, locale)}
-                </span>
-              </div>
-              <span className="shrink-0 font-black text-xl" style={{ color: '#f4693b' }} aria-hidden>▶</span>
-            </div>
-          </Link>
-        </section>
-
         {/* ------- Mavzular ------- */}
         <section className="mt-8">
-          <h2 className="font-black text-ink/70 text-lg mb-3">📚 {t('dashboard.topicsTitle')}</h2>
-          <CollapsibleGrid>{G1_ALIFBE_TOPICS.map(renderEntry)}</CollapsibleGrid>
-        </section>
-
-        {/* dummy practice-test card (coming soon) — mirrors Matematika's exam card */}
-        <section className="mt-8">
-          <div
-            aria-label={t('common.comingSoon')}
-            className="block rounded-3xl px-5 py-5 opacity-80 cursor-default"
-            style={{ border: '2px solid rgba(244,105,59,0.5)', background: 'linear-gradient(135deg, rgba(244,105,59,0.15), rgba(243,154,31,0.1))' }}
-          >
-            <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>📝</span>
-              <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
-                  {s('Alifbe sinovi', 'Тест по алифбе', 'Alphabet primer quiz')}
-                </span>
-                <span className="block font-bold text-ink/50 text-[13px]">
-                  {s('Tez orada', 'Скоро', 'Coming soon')}
-                </span>
-              </div>
-              <span className="shrink-0 text-base" aria-hidden>🔒</span>
-            </div>
+          <div className="mb-3 flex flex-wrap items-center gap-3">
+            <h2 className="font-black text-ink/70 text-lg">📚 {t('dashboard.topicsTitle')}</h2>
+            <VideoLightbox src="/videos/alifbe.mp4" poster="/videos/alifbe.jpg" label="" title={pick(SUBJECTS.alifbe.name, locale)} />
           </div>
+          <CollapsibleGrid>{G1_ALIFBE_TOPICS.map(renderEntry)}</CollapsibleGrid>
         </section>
 
       

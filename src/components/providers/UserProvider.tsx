@@ -12,8 +12,18 @@ export type ClientUser = {
   phone: string | null;
   email: string | null;
   paidUntil: string | null;
+  /** Effective access: a paid subscription on an account that is not disabled. */
   isPaid: boolean;
+  isDisabled?: boolean;
   createdAt: string;
+};
+
+export type Notice = {
+  id: string;
+  kind: string;
+  title: string;
+  body: string | null;
+  created_at: string;
 };
 
 type Ctx = {
@@ -23,7 +33,20 @@ type Ctx = {
   /** Silent registration — creates the record if missing (SRS §6.6.1). */
   ensureUser: (grade?: number, locale?: string) => Promise<ClientUser | null>;
   update: (patch: Partial<Pick<ClientUser, 'grade' | 'locale' | 'name' | 'phone'>>) => Promise<ClientUser | null>;
-  pay: () => Promise<ClientUser | null>;
+  /** Uploads a payment receipt; unlocks the subscription when it passes the check. */
+  submitReceipt: (file: File, card: string) => Promise<SubmitReceiptResult>;
+  /** Redeems an admin-issued promo code. */
+  redeemPromo: (code: string) => Promise<{ ok: boolean; error?: string; days?: number }>;
+  /** Admin messages for this user (e.g. a rejected receipt). */
+  notices: Notice[];
+  dismissNotice: (id: string) => void;
+};
+
+export type SubmitReceiptResult = {
+  ok: boolean;
+  /** error code from the API, e.g. 'not_a_receipt' | 'duplicate' | 'rate_limited' */
+  error?: string;
+  score?: number;
 };
 
 const UserCtx = createContext<Ctx>({
@@ -32,17 +55,22 @@ const UserCtx = createContext<Ctx>({
   refresh: async () => null,
   ensureUser: async () => null,
   update: async () => null,
-  pay: async () => null
+  submitReceipt: async () => ({ ok: false, error: 'not_ready' }),
+  redeemPromo: async () => ({ ok: false, error: 'not_ready' }),
+  notices: [],
+  dismissNotice: () => {}
 });
 
 export function UserProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<ClientUser | null>(null);
+  const [notices, setNotices] = useState<Notice[]>([]);
   const [loading, setLoading] = useState(true);
   const inflight = useRef<Promise<ClientUser | null> | null>(null);
 
   const refresh = useCallback(async () => {
-    const { data } = await api<{ user: ClientUser | null }>('/api/me');
+    const { data } = await api<{ user: ClientUser | null; notices?: Notice[] }>('/api/me');
     setUser(data?.user ?? null);
+    setNotices(data?.notices ?? []);
     setLoading(false);
     return data?.user ?? null;
   }, []);
@@ -78,14 +106,64 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
     return ok ? data.user : null;
   }, []);
 
-  const pay = useCallback(async () => {
-    const { data, ok } = await api<{ user: ClientUser }>('/api/pay', { method: 'POST' });
-    if (ok && data?.user) setUser(data.user);
-    return ok ? data.user : null;
+  /**
+   * Uploads the receipt as multipart/form-data — not JSON — so the image is
+   * streamed rather than base64-inflated by a third.
+   */
+  const submitReceipt = useCallback(async (file: File, card: string): Promise<SubmitReceiptResult> => {
+    const body = new FormData();
+    body.append('receipt', file);
+    body.append('card', card);
+
+    const res = await fetch('/api/payments', { method: 'POST', body, cache: 'no-store' });
+    let data: { user?: ClientUser; error?: string; score?: number } = {};
+    try {
+      data = await res.json();
+    } catch {
+      /* empty body */
+    }
+    if (res.ok && data.user) {
+      setUser(data.user);
+      return { ok: true };
+    }
+    return { ok: false, error: data.error ?? 'server_error', score: data.score };
+  }, []);
+
+  const redeemPromo = useCallback(async (code: string) => {
+    const { data, ok } = await api<{ user: ClientUser; days: number; error?: string }>('/api/promo', {
+      method: 'POST',
+      json: { code }
+    });
+    if (ok && data?.user) {
+      setUser(data.user);
+      return { ok: true, days: data.days };
+    }
+    return { ok: false, error: data?.error ?? 'invalid_code' };
+  }, []);
+
+  const dismissNotice = useCallback((id: string) => {
+    setNotices((prev) => prev.filter((n) => n.id !== id));
+    fetch('/api/notices', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id })
+    }).catch(() => {});
   }, []);
 
   return (
-    <UserCtx.Provider value={{ user, loading, refresh, ensureUser, update, pay }}>
+    <UserCtx.Provider
+      value={{
+        user,
+        loading,
+        refresh,
+        ensureUser,
+        update,
+        submitReceipt,
+        redeemPromo,
+        notices,
+        dismissNotice
+      }}
+    >
       {children}
     </UserCtx.Provider>
   );

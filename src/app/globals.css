@@ -99,17 +99,17 @@ body {
   }
   .btn-primary {
     @apply text-white px-7 py-3.5 text-lg;
-    background: linear-gradient(180deg, #ffb347, var(--brand-orange));
+    background: linear-gradient(180deg, #ef971f, #d9820f);
     box-shadow:
-      0 5px 0 #c97c12,
-      0 10px 18px rgba(243, 154, 31, 0.35);
+      0 5px 0 #ad6709,
+      0 10px 18px rgba(173, 103, 9, 0.35);
   }
   .btn-blue {
     @apply text-white px-6 py-3;
-    background: linear-gradient(180deg, #4cc3f0, var(--brand-blue));
+    background: linear-gradient(180deg, #2098cb, #1583b3);
     box-shadow:
-      0 4px 0 #1379a5,
-      0 8px 14px rgba(31, 167, 224, 0.3);
+      0 5px 0 #0f6a92,
+      0 9px 15px rgba(15, 106, 146, 0.3);
   }
   .btn-ghost {
     @apply px-5 py-2.5 bg-white/90 border-2;
@@ -130,8 +130,13 @@ body {
 }
 .btn-primary:active {
   box-shadow:
-    0 2px 0 #c97c12,
-    0 5px 9px rgba(243, 154, 31, 0.35);
+    0 2px 0 #ad6709,
+    0 5px 9px rgba(173, 103, 9, 0.35);
+}
+.btn-blue:active {
+  box-shadow:
+    0 2px 0 #0f6a92,
+    0 5px 9px rgba(15, 106, 146, 0.3);
 }
 
 /* ---------- Notebook (dashboard subject view) ---------- */
@@ -760,4 +765,46 @@ html.lenis body {
   text-shadow: 0 0 12px rgba(120, 180, 255, 0.5);
   white-space: nowrap;
   user-select: none;
+}
+
+/* ---- free-lesson highlight: animated pulsing frame ----
+   Marks each subject's first (free) lesson tile for visitors without an active
+   subscription. A soft two-colour ring breathes around the card. */
+@keyframes freeRingPulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 2.5px rgba(31, 167, 224, 0.75),
+      0 0 14px rgba(31, 167, 224, 0.45);
+  }
+  50% {
+    box-shadow:
+      0 0 0 4px rgba(46, 196, 88, 0.8),
+      0 0 22px rgba(46, 196, 88, 0.55);
+  }
+}
+.free-ring {
+  animation: freeRingPulse 2.2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .free-ring {
+    animation: none;
+    box-shadow:
+      0 0 0 3px rgba(31, 167, 224, 0.75),
+      0 0 16px rgba(31, 167, 224, 0.45);
+  }
+}
+
+/* ---- mobile repositioning for decorative absolute elements ----
+   Elements with the `m-repos` class carry --m-left/--m-top custom properties:
+   on small screens they snap to those positions (top/bottom bands, clear of the
+   centred text card). `m-hide` elements are simply removed on small screens. */
+@media (max-width: 639px) {
+  .m-repos {
+    left: var(--m-left) !important;
+    top: var(--m-top) !important;
+  }
+  .m-hide {
+    display: none !important;
+  }
 }

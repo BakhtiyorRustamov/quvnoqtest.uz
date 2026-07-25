@@ -32,6 +32,22 @@ export default function CollapsibleGrid({ children }: { children: React.ReactNod
             </div>
           );
         })}
+        {/* collapsed hint that more lessons follow: "…" after the last visible
+            tile (6th on mobile, 12th on desktop) */}
+        {!expanded && hasMore && (
+          <>
+            {items.length > 6 && (
+              <div aria-hidden className="lg:hidden grid place-items-center font-black text-ink/40 text-2xl tracking-widest">
+                …
+              </div>
+            )}
+            {items.length > 12 && (
+              <div aria-hidden className="hidden lg:grid place-items-center font-black text-ink/40 text-2xl tracking-widest">
+                …
+              </div>
+            )}
+          </>
+        )}
       </div>
 
       {hasMore && (

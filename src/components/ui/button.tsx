@@ -19,16 +19,16 @@ const buttonVariants = cva(
         default:
           'bg-primary text-primary-foreground shadow-[0_5px_0_hsl(var(--primary)/.5)] hover:brightness-105 active:shadow-[0_2px_0_hsl(var(--primary)/.5)]',
         brand:
-          'bg-brand-blue text-white shadow-[0_5px_0_#1583b3,0_10px_18px_-8px_rgba(21,131,179,.6)] hover:brightness-105 active:shadow-[0_2px_0_#1583b3]',
+          'bg-[#1583b3] text-white shadow-[0_5px_0_#0f6a92,0_10px_18px_-8px_rgba(15,106,146,.6)] hover:brightness-110 active:shadow-[0_2px_0_#0f6a92]',
         success:
-          'bg-brand-green text-white shadow-[0_5px_0_#6fa22f,0_10px_18px_-8px_rgba(111,162,47,.6)] hover:brightness-105 active:shadow-[0_2px_0_#6fa22f]',
+          'bg-[#5f9127] text-white shadow-[0_5px_0_#48701c,0_10px_18px_-8px_rgba(72,112,28,.6)] hover:brightness-110 active:shadow-[0_2px_0_#48701c]',
         sunny:
-          'bg-brand-orange text-white shadow-[0_5px_0_#cf7d10,0_10px_18px_-8px_rgba(207,125,16,.6)] hover:brightness-105 active:shadow-[0_2px_0_#cf7d10]',
+          'bg-[#d9820f] text-white shadow-[0_5px_0_#ad6709,0_10px_18px_-8px_rgba(173,103,9,.6)] hover:brightness-110 active:shadow-[0_2px_0_#ad6709]',
         outline:
           'border-2 border-ink/15 bg-white text-ink shadow-[0_5px_0_rgba(30,58,95,.14)] hover:border-brand-blue/60 hover:bg-brand-blue/5 active:shadow-[0_2px_0_rgba(30,58,95,.14)]',
         ghost: 'text-ink hover:bg-ink/5 active:translate-y-0',
         destructive:
-          'bg-error text-white shadow-[0_5px_0_#b23636,0_10px_18px_-8px_rgba(178,54,54,.6)] hover:brightness-105 active:shadow-[0_2px_0_#b23636]',
+          'bg-[#c93b3b] text-white shadow-[0_5px_0_#9e2e2e,0_10px_18px_-8px_rgba(158,46,46,.6)] hover:brightness-110 active:shadow-[0_2px_0_#9e2e2e]',
       },
       size: {
         default: 'h-11 px-5 py-2',

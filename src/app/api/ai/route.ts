@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getStore, isPaid } from '@/lib/store';
+import { getStore, isActive, isDisabled } from '@/lib/store';
 import { tashkentToday } from '@/lib/tashkent';
+import { clientIp } from '@/lib/rateLimit';
+import { rateLimitStrict } from '@/lib/rateLimitDb';
 import { AI_LIMITS, FREE_AI_KEY, aiConfigured, callAi, estimateTokens, systemPrompt, type AiTurn } from '@/lib/ai';
 
 export async function GET() {
   const store = getStore();
   const user = await store.getCurrent();
-  const paid = isPaid(user);
+  const paid = isActive(user);
   // Paid users are metered daily (Tashkent reset); free users get a single
   // non-resetting free-trial bucket.
   const freeTrial = !!user && !paid;
@@ -29,8 +31,17 @@ export async function POST(req: NextRequest) {
   const store = getStore();
   const user = await store.getCurrent();
   if (!user) return NextResponse.json({ error: 'no_user' }, { status: 401 });
+  if (isDisabled(user)) return NextResponse.json({ error: 'account_disabled' }, { status: 403 });
   if (!aiConfigured()) return NextResponse.json({ error: 'not_configured' }, { status: 501 });
-  const paid = isPaid(user);
+
+  // Every call here spends AI credits, so it gets the cross-instance limiter
+  // in addition to the per-user daily quota below. This is the endpoint an
+  // attacker would target to run up a bill.
+  if (!(await rateLimitStrict(`ai:${clientIp(req)}`, 40, 3600))) {
+    return NextResponse.json({ error: 'rate_limited' }, { status: 429 });
+  }
+
+  const paid = isActive(user);
 
   const body = await req.json().catch(() => ({}));
   const message = String(body.message ?? '').trim().slice(0, 1000);

@@ -40,7 +40,8 @@ const IconLock = () => (
 export default function ArtSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
-  const { ensureUser } = useUser();
+  const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
   useEffect(() => { ensureUser(1); }, [ensureUser]);
@@ -51,9 +52,10 @@ export default function ArtSubjectView() {
   const s = (uz: string, ru: string, en: string) => pick({ uz, ru, en }, locale);
   const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
   const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
   const learned = G1_ART_TOPICS.filter((tp) => completedKeys.has(tp.key));
-  const firstBuilt = G1_ART_TOPICS.find((tp) => isBuiltTopic(tp.key)) ?? G1_ART_TOPICS[0];
-  const nextLesson = G1_ART_TOPICS.find((tp) => isBuiltTopic(tp.key) && !completedKeys.has(tp.key)) ?? firstBuilt;
 
   /* ---------------- pencil drawing (red ink) ---------------- */
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -113,12 +115,12 @@ export default function ArtSubjectView() {
     if (built) {
       return (
         <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
-          <Link href={`/lesson/${tp.key}`} className="card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform">
+          <Link href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'} className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}>
             <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm" style={{ background: done ? 'var(--brand-green)' : RED }}>
               {done ? '✓' : tp.n}
             </span>
             <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
-            <span className="shrink-0 font-black" style={{ color: RED }} aria-hidden>▶</span>
+            <span className="shrink-0 font-black" style={{ color: RED }} aria-hidden>{isPaid || tp.n === 1 ? '▶' : '🔒'}</span>
           </Link>
         </motion.div>
       );
@@ -151,15 +153,6 @@ export default function ArtSubjectView() {
           </h1>
         </div>
 
-        {/* what this subject is */}
-        <section className="card p-5 mt-5 text-[15px] leading-relaxed font-semibold text-ink/80" style={{ borderColor: 'rgba(225,75,75,0.3)' }}>
-          {s(
-            'Tasviriy sanʼat — ranglar va chizishlar olami! Bu yerda barglar, kamalak, mevalar, qor parchasi va kapalaklar chizamiz, rasmlarni boʻyaymiz hamda turli usullarni sinab koʻramiz. Har darsda oʻzing chizasan va boʻyaysan.',
-            'Изобразительное искусство — мир красок и рисования! Здесь мы рисуем листья, радугу, фрукты, снежинку и бабочек, раскрашиваем картинки и пробуем разные приёмы. На каждом уроке ты рисуешь и раскрашиваешь сам.',
-            'Visual arts — a world of colours and drawing! Here we draw leaves, rainbows, fruit, snowflakes and butterflies, colour pictures and try different techniques. In every lesson you draw and colour yourself.'
-          )}
-        </section>
-
         {/* ------- red sketchbook: "Hozirgacha o'rganganlarim" + free draw ------- */}
         <section className="mt-6 relative">
           <h2 className="font-black text-ink/70 text-lg mb-2 flex items-center gap-2"><IconPalette /> {t('dashboard.learnedTitle')}</h2>
@@ -178,14 +171,14 @@ export default function ArtSubjectView() {
                 {learned.map((tp) => (
                   <Link
                     key={tp.key}
-                    href={`/lesson/${tp.key}`}
+                    href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
                     className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 font-extrabold text-ink transition-colors"
                     style={{ background: 'rgba(225,75,75,0.14)', border: '2px solid rgba(225,75,75,0.5)' }}
                     title={t('dashboard.replay')}
                   >
                     <span aria-hidden style={{ color: '#2f9e54' }}>✓</span> {tp.n}. {pick(tp.title, locale)}
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white border" style={{ color: INK, borderColor: 'rgba(225,75,75,0.3)' }}>
-                      <span aria-hidden>★</span> {scoreOf(tp.key) ?? 0}/10
+                      <span aria-hidden>★</span> {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
                     </span>
                   </Link>
                 ))}
@@ -213,28 +206,6 @@ export default function ArtSubjectView() {
               </div>
             </div>
           </div>
-        </section>
-
-        {/* recommendation / continue */}
-        <section className="mt-6">
-          <Link
-            href={`/lesson/${nextLesson.key}`}
-            className="block rounded-3xl px-5 py-5 hover:-translate-y-0.5 transition-transform"
-            style={{ border: '2px solid rgba(225,75,75,0.6)', background: 'linear-gradient(135deg, rgba(225,75,75,0.15), rgba(244,154,31,0.12))' }}
-          >
-            <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center shadow-card" aria-hidden><IconPalette c={RED} /></span>
-              <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
-                  {learned.length ? s('Davom etish', 'Продолжить', 'Continue') : s('Birinchi darsdan boshlash', 'Начать с первого урока', 'Start with lesson 1')}
-                </span>
-                <span className="block font-bold text-ink/55 text-[13px]">
-                  {nextLesson.n}-dars · {pick(nextLesson.title, locale)}
-                </span>
-              </div>
-              <span className="shrink-0 font-black text-xl" style={{ color: RED }} aria-hidden>▶</span>
-            </div>
-          </Link>
         </section>
 
         {/* ------- Mavzular ------- */}

@@ -16,7 +16,7 @@ export type OqishLesson = {
   n: number;
   /** 1-based part number (qism) */
   partN: number;
-  /** 1-based section number within the part (boʻlim) */
+  /** 1-based section number, continuous across parts (boʻlim; part 2 starts at 5) */
   sectionN: number;
   /** 1-based lesson number within the section (dars) — how the book numbers it */
   lessonN: number;
@@ -124,11 +124,14 @@ const BUILT_TITLES: Record<string, L10n> = {
 
 function buildParts(): OqishPart[] {
   let n = 0;
+  let secN = 0; // continuous section numbering across parts (part 2 starts at 5)
   return PLAN.map((p, pi) => ({
     title: p.part,
-    sections: p.sections.map((sec, si) => ({
+    sections: p.sections.map((sec) => ({
       title: sec.title,
-      lessons: Array.from({ length: sec.count }, (_, i) => {
+      lessons: ((): OqishLesson[] => {
+        secN += 1;
+        return Array.from({ length: sec.count }, (_, i) => {
         n += 1;
         const key = `g1-oqish-${String(n).padStart(2, '0')}`;
         const isReview = i === sec.count - 1;
@@ -137,8 +140,9 @@ function buildParts(): OqishPart[] {
           (isReview
             ? L('Boʻlim yuzasidan takrorlash', 'Повторение по разделу', 'Section review')
             : L(`${i + 1}-dars`, `Урок ${i + 1}`, `Lesson ${i + 1}`));
-        return { key, n, partN: pi + 1, sectionN: si + 1, lessonN: i + 1, title, built: key in BUILT_TITLES };
-      })
+        return { key, n, partN: pi + 1, sectionN: secN, lessonN: i + 1, title, built: key in BUILT_TITLES };
+        });
+      })()
     }))
   }));
 }

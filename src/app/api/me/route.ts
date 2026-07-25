@@ -1,11 +1,21 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getStore, isPaid, type UserRecord } from '@/lib/store';
+import { getStore, isPaid, isActive, isDisabled, hasSupabase, type UserRecord } from '@/lib/store';
+import { getOpenNotices } from '@/lib/userNotify';
 
 export async function GET() {
   const store = getStore();
   const user = await store.getCurrent();
   if (!user) return NextResponse.json({ user: null });
-  return NextResponse.json({ user: { ...user, isPaid: isPaid(user) } });
+
+  // Admin-generated messages (e.g. a rejected receipt) ride along with the
+  // profile fetch the app already makes on every page load.
+  const notices = hasSupabase() ? await getOpenNotices(user.id).catch(() => []) : [];
+  // `isPaid` here reports *effective* access, so a disabled account loses its
+  // paid UI immediately rather than showing unlocked content it cannot open.
+  return NextResponse.json({
+    user: { ...user, isPaid: isActive(user), subscriptionPaid: isPaid(user), isDisabled: isDisabled(user) },
+    notices
+  });
 }
 
 export async function PATCH(req: NextRequest) {

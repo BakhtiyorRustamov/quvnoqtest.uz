@@ -68,42 +68,49 @@ function GoldenSpiral() {
   );
 }
 /* ---- hidden science scattered across the dark space ---- */
-type Sci = { x: string; y: string; node: React.ReactNode; cls?: string };
+type Sci = { x: string; y: string; mx?: string; my?: string; node: React.ReactNode; cls?: string };
 /* Positioned in a RING around the centred hero box — the top/bottom bands and the
-   left/right margins — so a lit formula never sits behind the headline text. */
+   left/right margins — so a lit formula never sits behind the headline text.
+   `mx`/`my` are MOBILE positions (the card spans nearly the full width there, so
+   everything is pushed into the top/bottom bands); items without them are hidden
+   on mobile via the `m-hide` class. */
 const SCIENCE: Sci[] = [
   // top band
-  { x: '5%', y: '5%', node: 'E = mc²', cls: 'text-3xl font-black' },
-  { x: '68%', y: '4%', node: 'a² + b² = c²', cls: 'text-2xl font-bold' },
-  { x: '33%', y: '8%', node: 'πr²', cls: 'text-2xl font-bold text-cyan-200' },
-  { x: '87%', y: '11%', node: <BarChart />, cls: 'text-emerald-300' },
-  { x: '15%', y: '13%', node: 'F = ma', cls: 'text-xl font-bold' },
+  { x: '5%', y: '5%', mx: '4%', my: '2%', node: 'E = mc²', cls: 'text-3xl font-black' },
+  { x: '68%', y: '4%', mx: '56%', my: '3%', node: 'a² + b² = c²', cls: 'text-2xl font-bold' },
+  { x: '33%', y: '8%', mx: '35%', my: '7%', node: 'πr²', cls: 'text-2xl font-bold text-cyan-200' },
+  { x: '87%', y: '11%', mx: '66%', my: '9%', node: <BarChart />, cls: 'text-emerald-300' },
+  { x: '15%', y: '13%', mx: '8%', my: '11%', node: 'F = ma', cls: 'text-xl font-bold' },
   { x: '50%', y: '13%', node: 'x = (−b ± √(b²−4ac)) / 2a', cls: 'text-lg font-semibold text-violet-200' },
   // left margin
-  { x: '3%', y: '30%', node: <SineWave />, cls: 'text-sky-300' },
-  { x: '2%', y: '46%', node: 'H₂O · CO₂ · NaCl', cls: 'text-lg font-bold text-emerald-200' },
-  { x: '4%', y: '58%', node: 'E = hf', cls: 'text-xl font-bold text-violet-200' },
-  { x: '2%', y: '70%', node: '∫ f(x) dx', cls: 'text-2xl font-bold text-cyan-200' },
+  { x: '3%', y: '30%', mx: '5%', my: '89%', node: <SineWave />, cls: 'text-sky-300' },
+  { x: '2%', y: '46%', mx: '38%', my: '12%', node: 'H₂O · CO₂ · NaCl', cls: 'text-lg font-bold text-emerald-200' },
+  { x: '4%', y: '58%', mx: '32%', my: '85%', node: 'E = hf', cls: 'text-xl font-bold text-violet-200' },
+  { x: '2%', y: '70%', mx: '6%', my: '84%', node: '∫ f(x) dx', cls: 'text-2xl font-bold text-cyan-200' },
   // right margin
   { x: '86%', y: '28%', node: 'φ = (1 + √5) / 2', cls: 'text-xl font-bold text-yellow-200' },
-  { x: '88%', y: '40%', node: <GoldenSpiral />, cls: 'text-amber-200' },
-  { x: '87%', y: '55%', node: 'PV = nRT', cls: 'text-xl font-bold' },
-  { x: '89%', y: '66%', node: <Atom className="h-16 w-16" />, cls: 'text-fuchsia-300' },
+  { x: '88%', y: '40%', mx: '72%', my: '88%', node: <GoldenSpiral />, cls: 'text-amber-200' },
+  { x: '87%', y: '55%', mx: '78%', my: '2%', node: 'PV = nRT', cls: 'text-xl font-bold' },
+  { x: '89%', y: '66%', mx: '82%', my: '11%', node: <Atom className="h-16 w-16" />, cls: 'text-fuchsia-300' },
   // bottom band
   { x: '10%', y: '84%', node: 'c = 299 792 458 m/s', cls: 'text-base font-semibold text-yellow-200' },
-  { x: '34%', y: '88%', node: '1 1 2 3 5 8 13 21 34 55', cls: 'text-base font-semibold text-cyan-200' },
-  { x: '46%', y: '80%', node: 'sin²θ + cos²θ = 1', cls: 'text-lg font-semibold' },
-  { x: '64%', y: '88%', node: 'p = mv', cls: 'text-xl font-bold' },
-  { x: '76%', y: '80%', node: <Dna className="h-16 w-16" />, cls: 'text-emerald-300' },
-  { x: '22%', y: '92%', node: 'λ = h / p', cls: 'text-lg font-semibold text-violet-200' },
+  { x: '34%', y: '88%', mx: '28%', my: '93%', node: '1 1 2 3 5 8 13 21 34 55', cls: 'text-base font-semibold text-cyan-200' },
+  { x: '46%', y: '80%', mx: '4%', my: '96%', node: 'sin²θ + cos²θ = 1', cls: 'text-lg font-semibold' },
+  { x: '64%', y: '88%', mx: '62%', my: '96%', node: 'p = mv', cls: 'text-xl font-bold' },
+  { x: '76%', y: '80%', mx: '84%', my: '92%', node: <Dna className="h-16 w-16" />, cls: 'text-emerald-300' },
+  { x: '22%', y: '92%', mx: '22%', my: '3%', node: 'λ = h / p', cls: 'text-lg font-semibold text-violet-200' },
   { x: '58%', y: '94%', node: '∑ n = n(n+1)/2', cls: 'text-lg font-semibold' },
-  { x: '80%', y: '94%', node: 'v = λf', cls: 'text-xl font-bold' }
+  { x: '80%', y: '94%', mx: '88%', my: '87%', node: 'v = λf', cls: 'text-xl font-bold' }
 ];
 
 /* periodic-table style cell used inside the hidden layer */
-function PeriodicCell({ x, y }: { x: string; y: string }) {
+function PeriodicCell({ x, y, mx, my }: { x: string; y: string; mx?: string; my?: string }) {
   return (
-    <div className="sci-item" style={{ left: x, top: y }} aria-hidden>
+    <div
+      className={`sci-item ${mx ? 'm-repos' : 'm-hide'}`}
+      style={{ left: x, top: y, ...(mx ? ({ '--m-left': mx, '--m-top': my } as React.CSSProperties) : {}) }}
+      aria-hidden
+    >
       <div className="rounded-md border border-cyan-300/50 px-3 py-1.5 text-center leading-tight">
         <div className="text-[10px] opacity-70">8</div>
         <div className="text-xl font-black">O</div>
@@ -190,12 +197,16 @@ export default function FlashlightDiscovery() {
       {/* hidden science layer */}
       <div className={`discovery-hidden absolute inset-0 z-0 ${interactive ? '' : 'always-on'}`} aria-hidden>
         {SCIENCE.map((s, i) => (
-          <span key={i} className={`sci-item ${s.cls ?? ''}`} style={{ left: s.x, top: s.y }}>
+          <span
+            key={i}
+            className={`sci-item ${s.mx ? 'm-repos' : 'm-hide'} ${s.cls ?? ''}`}
+            style={{ left: s.x, top: s.y, ...(s.mx ? ({ '--m-left': s.mx, '--m-top': s.my } as React.CSSProperties) : {}) }}
+          >
             {s.node}
           </span>
         ))}
-        <PeriodicCell x="92%" y="76%" />
-        <div className="sci-item" style={{ left: '6%', top: '18%' }} aria-hidden>
+        <PeriodicCell x="92%" y="76%" mx="46%" my="90%" />
+        <div className="sci-item m-hide" style={{ left: '6%', top: '18%' }} aria-hidden>
           <table className="border-collapse text-xs text-cyan-200/90">
             <tbody>
               <tr>
@@ -217,7 +228,7 @@ export default function FlashlightDiscovery() {
 
       {/* single hero box, centred — the science elements live AROUND it (see the
           `sci-item` positions above), never behind the text. */}
-      <div className="relative z-10 mx-auto grid min-h-[86vh] max-w-4xl place-items-center px-5 py-24">
+      <div className="relative z-10 mx-auto grid min-h-[112vh] max-w-4xl place-items-center px-5 py-32">
         <div
           data-scroll-offset
           className="discovery-box glass relative z-10 w-full rounded-[28px] p-7 text-center text-white shadow-2xl sm:p-12"

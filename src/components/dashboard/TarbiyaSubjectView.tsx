@@ -12,6 +12,7 @@ import { api } from '@/lib/client';
 import { isBuiltTopic } from '@/content';
 import { G1_TARBIYA_TOPICS } from '@/content/g1-tarbiya/topics';
 import { pick } from '@/lib/i18n-config';
+import VideoLightbox from '@/components/ui/VideoLightbox';
 import { SUBJECTS } from '@/content/taxonomy';
 import type { ProgressRow } from '@/lib/store/types';
 
@@ -48,7 +49,8 @@ const SECTIONS: { title: { uz: string; ru: string; en: string }; from: number; t
 export default function TarbiyaSubjectView() {
   const t = useTranslations();
   const locale = useLocale();
-  const { ensureUser } = useUser();
+  const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
   useEffect(() => {
@@ -62,10 +64,10 @@ export default function TarbiyaSubjectView() {
   const s = (uz: string, ru: string, en: string) => pick({ uz, ru, en }, locale);
   const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
   const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
   const learned = G1_TARBIYA_TOPICS.filter((tp) => completedKeys.has(tp.key));
-  const firstBuilt = G1_TARBIYA_TOPICS.find((tp) => isBuiltTopic(tp.key)) ?? G1_TARBIYA_TOPICS[0];
-  const nextLesson =
-    G1_TARBIYA_TOPICS.find((tp) => isBuiltTopic(tp.key) && !completedKeys.has(tp.key)) ?? firstBuilt;
 
   /* ---------------- pen drawing (rose ink) ---------------- */
   const wrapRef = useRef<HTMLDivElement | null>(null);
@@ -126,8 +128,8 @@ export default function TarbiyaSubjectView() {
       return (
         <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
           <Link
-            href={`/lesson/${tp.key}`}
-            className="card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform"
+            href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
+            className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}
           >
             <span
               className="shrink-0 min-w-8 h-8 px-2 rounded-full grid place-items-center font-black text-white text-[11px] whitespace-nowrap"
@@ -136,7 +138,7 @@ export default function TarbiyaSubjectView() {
               {done ? '✓' : bookNo(tp.n)}
             </span>
             <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
-            <span className="shrink-0 font-black" style={{ color: ROSE }} aria-hidden>▶</span>
+            <span className="shrink-0 font-black" style={{ color: ROSE }} aria-hidden>{isPaid || tp.n === 1 ? '▶' : '🔒'}</span>
           </Link>
         </motion.div>
       );
@@ -169,18 +171,6 @@ export default function TarbiyaSubjectView() {
           </h1>
         </div>
 
-        {/* what this subject is */}
-        <section
-          className="card p-5 mt-5 text-[15px] leading-relaxed font-semibold text-ink/80"
-          style={{ borderColor: 'rgba(194,41,138,0.3)' }}
-        >
-          {s(
-            'Tarbiya — yaxshi inson boʻlish haqida. Bu yerda Vatanni sevish, oʻzimizni tanishtirish, maktab qoidalari, tozalik, ustozni hurmat qilish va mehribonlik, sabr, halollik kabi fazilatlarni oʻrganamiz. Baʼzi savollar ochiq — oʻz fikringni bemalol yozasan.',
-            'Воспитание — о том, как быть хорошим человеком. Здесь мы учимся любить Родину, представлять себя, соблюдать школьные правила, чистоту, уважать учителя и такие качества, как доброта, терпение, честность. Некоторые вопросы открытые — ты свободно пишешь своё мнение.',
-            'Character education — about being a good person. Here we learn to love the homeland, introduce ourselves, follow school rules, stay clean, respect teachers and value kindness, patience and honesty. Some questions are open-ended — you write your own thoughts freely.'
-          )}
-        </section>
-
         {/* ------- rose notebook: "Hozirgacha o'rganganlarim" ------- */}
         <section className="mt-6 relative">
           <h2 className="font-black text-ink/70 text-lg mb-2">❤️ {t('dashboard.learnedTitle')}</h2>
@@ -203,14 +193,14 @@ export default function TarbiyaSubjectView() {
                 {learned.map((tp) => (
                   <Link
                     key={tp.key}
-                    href={`/lesson/${tp.key}`}
+                    href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
                     className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 font-extrabold text-ink transition-colors"
                     style={{ background: 'rgba(194,41,138,0.16)', border: '2px solid rgba(194,41,138,0.55)' }}
                     title={t('dashboard.replay')}
                   >
                     ✅ {bookNo(tp.n)}. {pick(tp.title, locale)}
                     <span className="text-xs px-2 py-0.5 rounded-full bg-white text-brand-purple border border-brand-purple/30">
-                      ⭐ {scoreOf(tp.key) ?? 0}/10
+                      ⭐ {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
                     </span>
                   </Link>
                 ))}
@@ -274,31 +264,12 @@ export default function TarbiyaSubjectView() {
           </div>
         </section>
 
-        {/* recommendation / continue */}
-        <section className="mt-6">
-          <Link
-            href={`/lesson/${nextLesson.key}`}
-            className="block rounded-3xl px-5 py-5 hover:-translate-y-0.5 transition-transform"
-            style={{ border: '2px solid rgba(194,41,138,0.6)', background: 'linear-gradient(135deg, rgba(194,41,138,0.15), rgba(244,105,59,0.12))' }}
-          >
-            <div className="flex items-center gap-4">
-              <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>❤️</span>
-              <div className="flex-1 leading-snug">
-                <span className="block font-black text-ink text-lg">
-                  {learned.length ? s('Davom etish', 'Продолжить', 'Continue') : s('Birinchi darsdan boshlash', 'Начать с первого урока', 'Start with lesson 1')}
-                </span>
-                <span className="block font-bold text-ink/55 text-[13px]">
-                  {bookNo(nextLesson.n)}-mavzu · {pick(nextLesson.title, locale)}
-                </span>
-              </div>
-              <span className="shrink-0 font-black text-xl" style={{ color: ROSE }} aria-hidden>▶</span>
-            </div>
-          </Link>
-        </section>
-
         {/* ------- Mavzular (boʻlimlarga ajratilgan) ------- */}
         <section className="mt-8">
-          <h2 className="font-black text-ink/70 text-lg mb-3">📚 {t('dashboard.topicsTitle')}</h2>
+          <div className="mb-3 flex flex-wrap items-center gap-3">
+            <h2 className="font-black text-ink/70 text-lg">📚 {t('dashboard.topicsTitle')}</h2>
+            <VideoLightbox src="/videos/tarbiya.mp4" poster="/videos/tarbiya.jpg" label="" title={pick(SUBJECTS.tarbiya.name, locale)} />
+          </div>
           {SECTIONS.map((sec) => {
             const topics = G1_TARBIYA_TOPICS.filter((tp) => tp.n >= sec.from && tp.n <= sec.to);
             if (!topics.length) return null;
