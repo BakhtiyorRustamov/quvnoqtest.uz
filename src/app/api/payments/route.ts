@@ -48,6 +48,7 @@ export async function POST(req: NextRequest) {
   }
 
   const card = String(form.get('card') ?? '');
+  const promoCode = String(form.get('promo') ?? '').trim().toUpperCase();
   const file = form.get('receipt');
   if (!(file instanceof File)) {
     return NextResponse.json({ error: 'no_file' }, { status: 400 });
@@ -69,6 +70,7 @@ export async function POST(req: NextRequest) {
     disabledAt: row?.disabled_at ?? null,
     cardTarget: card,
     file: buf,
+    promoCode: promoCode || undefined,
     ip,
     userAgent: req.headers.get('user-agent')
   });
