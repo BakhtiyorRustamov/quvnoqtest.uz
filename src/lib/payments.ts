@@ -98,10 +98,11 @@ export async function submitReceipt(params: {
   disabledAt: string | null;
   cardTarget: string;
   file: Buffer;
+  promoCode?: string;
   ip: string | null;
   userAgent: string | null;
 }): Promise<SubmitResult> {
-  const { userId, disabledAt, cardTarget, file, ip, userAgent } = params;
+  const { userId, disabledAt, cardTarget, file, promoCode, ip, userAgent } = params;
 
   if (disabledAt) return { ok: false, error: 'account_disabled' };
   if (!isCardTarget(cardTarget)) return { ok: false, error: 'bad_card' };
@@ -135,6 +136,8 @@ export async function submitReceipt(params: {
 
   const paymentId = randomUUID();
   const path = `${userId}/${paymentId}.jpg`;
+  const promoDays = await resolvePromoDays(userId, promoCode);
+  const grantedDays = promoDays ?? SUBSCRIPTION_DAYS;
 
   const { error: upErr } = await sb.storage.from(RECEIPTS_BUCKET).upload(path, normalised, {
     contentType: 'image/jpeg',
@@ -158,7 +161,7 @@ export async function submitReceipt(params: {
     check_score: verdict.score,
     check_reasons: { reasons: verdict.reasons, metrics: verdict.metrics },
     status: flagged ? 'needs_review' : 'auto_approved',
-    granted_days: SUBSCRIPTION_DAYS,
+    granted_days: grantedDays,
     paid_until_before: before?.paid_until ?? null,
     ip,
     user_agent: userAgent?.slice(0, 300) ?? null
@@ -173,11 +176,33 @@ export async function submitReceipt(params: {
 
   const { data: paidUntil, error: grantErr } = await sb.rpc('grant_days', {
     p_user: userId,
-    p_days: SUBSCRIPTION_DAYS
+    p_days: grantedDays
   });
   if (grantErr) return { ok: false, error: 'server_error' };
 
   await sb.from('payments').update({ paid_until_after: paidUntil }).eq('id', paymentId);
+
+  if (promoDays) {
+    const promoKey = promoCode!.trim().toUpperCase();
+    const { data: promoRow } = await sb
+      .from('promo_codes')
+      .select('used_count')
+      .eq('code', promoKey)
+      .maybeSingle();
+
+    try {
+      await sb.from('promo_redemptions').insert({
+        code: promoKey,
+        user_id: userId,
+        days: promoDays
+      });
+      await sb.from('promo_codes').update({
+        used_count: (promoRow?.used_count ?? 0) + 1
+      }).eq('code', promoKey);
+    } catch {
+      /* Ignore duplicate/redemption races; access was already granted for this payment. */
+    }
+  }
 
   return {
     ok: true,
@@ -189,20 +214,58 @@ export async function submitReceipt(params: {
   };
 }
 
-/** Redeems a promo code atomically (see the redeem_promo SQL function). */
+async function resolvePromoDays(userId: string, promoCode?: string): Promise<number | null> {
+  const code = promoCode?.trim().toUpperCase();
+  if (!code) return null;
+
+  const { data: promo, error } = await sbAdmin()
+    .from('promo_codes')
+    .select('code, days, max_uses, used_count, expires_at, disabled_at')
+    .eq('code', code)
+    .maybeSingle();
+
+  if (error || !promo) return null;
+  if (promo.disabled_at || (promo.expires_at && new Date(promo.expires_at).getTime() <= Date.now())) return null;
+  if ((promo.used_count ?? 0) >= (promo.max_uses ?? 1)) return null;
+
+  const { count: alreadyUsed } = await sbAdmin()
+    .from('promo_redemptions')
+    .select('id', { count: 'exact', head: true })
+    .eq('code', code)
+    .eq('user_id', userId);
+
+  if ((alreadyUsed ?? 0) > 0) return null;
+  return Number(promo.days ?? SUBSCRIPTION_DAYS);
+}
+
+/** Validates a promo code without granting access until the receipt is approved. */
 export async function redeemPromo(
   code: string,
   userId: string
-): Promise<{ ok: true; days: number; paidUntil: string } | { ok: false; error: string }> {
+): Promise<{ ok: true; days: number } | { ok: false; error: string }> {
   const normalised = code.trim().toUpperCase().slice(0, 32);
   if (!/^[A-Z0-9-]{4,32}$/.test(normalised)) return { ok: false, error: 'invalid_code' };
 
-  const { data, error } = await sbAdmin().rpc('redeem_promo', { p_code: normalised, p_user: userId });
-  if (error) return { ok: false, error: 'server_error' };
+  const { data: promo, error } = await sbAdmin()
+    .from('promo_codes')
+    .select('code, days, max_uses, used_count, expires_at, disabled_at')
+    .eq('code', normalised)
+    .maybeSingle();
 
-  const res = data as { ok: boolean; error?: string; days?: number; paid_until?: string };
-  if (!res?.ok) return { ok: false, error: res?.error ?? 'invalid_code' };
-  return { ok: true, days: res.days!, paidUntil: res.paid_until! };
+  if (error || !promo) return { ok: false, error: 'invalid_code' };
+  if (promo.disabled_at || (promo.expires_at && new Date(promo.expires_at).getTime() <= Date.now())) {
+    return { ok: false, error: 'expired_code' };
+  }
+  if ((promo.used_count ?? 0) >= (promo.max_uses ?? 1)) return { ok: false, error: 'used_up' };
+
+  const { count: alreadyUsed } = await sbAdmin()
+    .from('promo_redemptions')
+    .select('id', { count: 'exact', head: true })
+    .eq('code', normalised)
+    .eq('user_id', userId);
+
+  if ((alreadyUsed ?? 0) > 0) return { ok: false, error: 'already_redeemed' };
+  return { ok: true, days: Number(promo.days ?? SUBSCRIPTION_DAYS) };
 }
 
 /** Short-lived signed URL for viewing a receipt in the admin panel. */
