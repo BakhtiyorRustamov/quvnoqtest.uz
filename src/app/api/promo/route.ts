@@ -8,12 +8,12 @@ import { sameOrigin } from '@/lib/origin';
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
-/** Redeems a promo code (admin-generated free access: teachers, testers, refunds). */
+/** Validates a promo code without granting access early. The code is applied when the
+ * receipt is approved and the user still pays the monthly subscription amount. */
 export async function POST(req: NextRequest) {
   if (!sameOrigin(req)) return NextResponse.json({ error: 'bad_origin' }, { status: 403 });
   if (!hasSupabase()) return NextResponse.json({ error: 'not_configured' }, { status: 503 });
 
-  // Tight limit: codes are short, so this endpoint is brute-forceable.
   const ip = clientIp(req);
   if (!(await rateLimitStrict(`promo:${ip}`, 8, 3600))) {
     return NextResponse.json({ error: 'rate_limited' }, { status: 429 });
@@ -23,7 +23,7 @@ export async function POST(req: NextRequest) {
   if (!user) return NextResponse.json({ error: 'no_user' }, { status: 401 });
 
   const body = await req.json().catch(() => ({}));
-  const code = typeof body.code === 'string' ? body.code : '';
+  const code = typeof body.code === 'string' ? body.code.trim().toUpperCase() : '';
   if (!code) return NextResponse.json({ error: 'invalid_code' }, { status: 400 });
 
   const result = await redeemPromo(code, user.id);
@@ -31,10 +31,10 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: result.error }, { status: result.error === 'server_error' ? 500 : 422 });
   }
 
-  const fresh = await getStore().getCurrent();
   return NextResponse.json({
     ok: true,
     days: result.days,
-    user: fresh ? { ...fresh, isPaid: isPaid(fresh) } : null
+    message: 'You’ll get 2 months for the price of 1',
+    user: { ...user, isPaid: isPaid(user) }
   });
 }
