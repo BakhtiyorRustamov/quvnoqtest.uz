@@ -579,7 +579,8 @@ type Promo = {
 
 function PromosTab() {
   const [rows, setRows] = useState<Promo[] | null>(null);
-  const [days, setDays] = useState(30);
+  const [code, setCode] = useState('');
+  const [days, setDays] = useState(60);
   const [maxUses, setMaxUses] = useState(1);
   const [note, setNote] = useState('');
   const [created, setCreated] = useState<string | null>(null);
@@ -594,8 +595,15 @@ function PromosTab() {
   useEffect(load, [load]);
 
   async function create() {
-    const { data } = await post('promo.create', { days, maxUses, note });
+    const value = code.trim().toUpperCase();
+    const { data } = await post('promo.create', {
+      code: value || undefined,
+      days,
+      maxUses,
+      note
+    });
     if (data.code) setCreated(data.code);
+    setCode('');
     load();
   }
 
@@ -603,6 +611,15 @@ function PromosTab() {
     <div className="space-y-4">
       <Card title="New code" subtitle="For teachers, testers, refunds and giveaways.">
         <div className="flex flex-wrap items-end gap-3 text-sm">
+          <Field label="Code">
+            <input
+              value={code}
+              onChange={(e) => setCode(e.target.value.toUpperCase())}
+              placeholder="e.g. 55-MAKTAB"
+              maxLength={32}
+              className="w-44 rounded-lg border border-slate-300 px-2 py-1.5 uppercase"
+            />
+          </Field>
           <Field label="Days">
             <input
               type="number"
