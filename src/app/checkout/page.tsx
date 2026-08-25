@@ -38,6 +38,8 @@ export default function CheckoutPage() {
 
   const [promoOpen, setPromoOpen] = useState(false);
   const [promo, setPromo] = useState('');
+  const [promoCode, setPromoCode] = useState('');
+  const [promoMessage, setPromoMessage] = useState<string | null>(null);
   const [promoBusy, setPromoBusy] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
@@ -74,7 +76,7 @@ export default function CheckoutPage() {
     setStep('sending');
     setError(null);
 
-    const res = await submitReceipt(file, card);
+    const res = await submitReceipt(file, card, promoCode || undefined);
     if (res.ok) return celebrate();
 
     setStep('form');
@@ -98,8 +100,15 @@ export default function CheckoutPage() {
     setError(null);
     const res = await redeemPromo(promo);
     setPromoBusy(false);
-    if (res.ok) return celebrate();
-    setError(res.error === 'already_redeemed' ? t('errPromoUsed') : t('errPromoInvalid'));
+    if (!res.ok) {
+      setError(res.error === 'already_redeemed' ? t('errPromoUsed') : t('errPromoInvalid'));
+      return;
+    }
+
+    setPromoCode(promo.trim().toUpperCase());
+    setPromoMessage(res.message ?? t('promoOfferAccepted'));
+    setPromo('');
+    setPromoOpen(false);
   }
 
   /* ----------------------------- success screen ---------------------------- */
@@ -207,6 +216,12 @@ export default function CheckoutPage() {
           {/* step 2 — receipt */}
           <StepLabel n={2} text={t('step2')} />
 
+          {promoMessage && (
+            <div className="mb-4 rounded-2xl border border-brand-purple/30 bg-brand-purple/10 px-4 py-3 text-[13px] font-black text-brand-purple">
+              {promoMessage}
+            </div>
+          )}
+
           <input
             ref={inputRef}
             type="file"
@@ -294,7 +309,22 @@ export default function CheckoutPage() {
           </div>
 
           {/* promo code */}
-          <div className="mt-5 pt-4 border-t border-ink/10">
+          <div className="mt-5 rounded-2xl border-2 border-brand-purple/25 bg-gradient-to-r from-brand-purple/8 to-brand-purple/14 p-3.5">
+            <div className="mb-2 flex items-center justify-between gap-3">
+              <div>
+                <div className="text-[11px] font-black uppercase tracking-[0.14em] text-brand-purple/80">Promo</div>
+                <div className="text-[14px] font-extrabold text-ink">{t('promoOfferTitle')}</div>
+              </div>
+              {!promoOpen && !promoCode && (
+                <button
+                  onClick={() => setPromoOpen(true)}
+                  className="shrink-0 rounded-xl bg-brand-purple px-3 py-1.5 text-[12px] font-black text-white"
+                >
+                  {t('promoToggle')}
+                </button>
+              )}
+            </div>
+
             {promoOpen ? (
               <div className="flex gap-2">
                 <input
@@ -302,23 +332,22 @@ export default function CheckoutPage() {
                   onChange={(e) => setPromo(e.target.value.toUpperCase())}
                   placeholder={t('promoPlaceholder')}
                   maxLength={32}
-                  className="flex-1 min-w-0 rounded-xl border-2 border-ink/15 px-3 py-2.5 font-black tracking-wider text-ink outline-none focus:border-brand-purple"
+                  className="flex-1 min-w-0 rounded-xl border-2 border-ink/15 bg-white px-3 py-2.5 font-black tracking-wider text-ink outline-none focus:border-brand-purple"
                 />
                 <button
                   onClick={applyPromo}
                   disabled={promoBusy}
-                  className="shrink-0 px-4 rounded-xl bg-ink text-white font-black disabled:opacity-50"
+                  className="shrink-0 rounded-xl bg-ink px-4 py-2.5 text-white font-black disabled:opacity-50"
                 >
                   {promoBusy ? '…' : t('promoApply')}
                 </button>
               </div>
+            ) : promoCode ? (
+              <div className="rounded-xl border border-brand-purple/30 bg-white/70 px-3 py-2 text-[12px] font-bold text-ink/80">
+                {t('promoApplied')}: <span className="font-black tracking-wider">{promoCode}</span>
+              </div>
             ) : (
-              <button
-                onClick={() => setPromoOpen(true)}
-                className="w-full text-center text-[13px] font-bold text-ink/45 hover:text-ink/70 transition"
-              >
-                {t('promoToggle')}
-              </button>
+              <div className="text-[12px] font-bold text-ink/60">{t('promoOfferBody')}</div>
             )}
           </div>
         </motion.div>
