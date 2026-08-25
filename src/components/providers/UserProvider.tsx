@@ -33,10 +33,10 @@ type Ctx = {
   /** Silent registration — creates the record if missing (SRS §6.6.1). */
   ensureUser: (grade?: number, locale?: string) => Promise<ClientUser | null>;
   update: (patch: Partial<Pick<ClientUser, 'grade' | 'locale' | 'name' | 'phone'>>) => Promise<ClientUser | null>;
-  /** Uploads a payment receipt; unlocks the subscription when it passes the check. */
-  submitReceipt: (file: File, card: string) => Promise<SubmitReceiptResult>;
-  /** Redeems an admin-issued promo code. */
-  redeemPromo: (code: string) => Promise<{ ok: boolean; error?: string; days?: number }>;
+  /** Uploads a payment receipt; an applied promo may extend the paid period by 60 days instead of 30. */
+  submitReceipt: (file: File, card: string, promoCode?: string) => Promise<SubmitReceiptResult>;
+  /** Validates an admin-issued promo code without granting access early. */
+  redeemPromo: (code: string) => Promise<{ ok: boolean; error?: string; days?: number; message?: string }>;
   /** Admin messages for this user (e.g. a rejected receipt). */
   notices: Notice[];
   dismissNotice: (id: string) => void;
@@ -110,10 +110,11 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
    * Uploads the receipt as multipart/form-data — not JSON — so the image is
    * streamed rather than base64-inflated by a third.
    */
-  const submitReceipt = useCallback(async (file: File, card: string): Promise<SubmitReceiptResult> => {
+  const submitReceipt = useCallback(async (file: File, card: string, promoCode?: string): Promise<SubmitReceiptResult> => {
     const body = new FormData();
     body.append('receipt', file);
     body.append('card', card);
+    if (promoCode) body.append('promo', promoCode);
 
     const res = await fetch('/api/payments', { method: 'POST', body, cache: 'no-store' });
     let data: { user?: ClientUser; error?: string; score?: number } = {};
@@ -130,13 +131,15 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const redeemPromo = useCallback(async (code: string) => {
-    const { data, ok } = await api<{ user: ClientUser; days: number; error?: string }>('/api/promo', {
+    const { data, ok } = await api<{ user?: ClientUser; days?: number; error?: string; message?: string }>('/api/promo', {
       method: 'POST',
       json: { code }
     });
-    if (ok && data?.user) {
-      setUser(data.user);
+    if (ok && data?.days) {
       return { ok: true, days: data.days };
+    }
+    if (ok && data?.user) {
+      return { ok: true, days: data.days ?? 30 };
     }
     return { ok: false, error: data?.error ?? 'invalid_code' };
   }, []);
@@ -172,3 +175,4 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
 export function useUser() {
   return useContext(UserCtx);
 }
+
