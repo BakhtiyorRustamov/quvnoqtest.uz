@@ -220,7 +220,14 @@
     "magicNotConfigured": "Email sending is not configured yet. Please try later.",
     "openLink": "Open link",
     "claimed": "Account connected: {email}",
-    "upgradeEntry": "Upgrade now"
+    "upgradeEntry": "Upgrade now",
+    "changeAccount": "Change account"
+  },
+  "signin": {
+    "title": "Sign in",
+    "placeholder": "QT ID, email or phone",
+    "submit": "Sign in",
+    "chooseAccount": "Choose account"
   },
   "upgrade": {
     "title": "Unlock everything! 🚀",

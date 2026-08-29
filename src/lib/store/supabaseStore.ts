@@ -92,10 +92,12 @@ export function supabaseStore(): QTStore {
       if (patch.locale !== undefined) row.locale = patch.locale;
       if (patch.name !== undefined) row.name = patch.name;
       if (patch.phone !== undefined) row.phone = patch.phone;
+      if ((patch as any).email !== undefined) row.email = (patch as any).email;
       const { data, error } = await sb().from('users').update(row).eq('id', u.id).select('*').single();
       if (error) throw error;
       return rowToUser(data);
     },
+
 
     async setPaid(days) {
       const u = await currentUser();

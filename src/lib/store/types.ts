@@ -38,7 +38,7 @@ export interface QTStore {
   /** Silent registration (SRS §6.6.1) — creates the record if missing. */
   ensureUser(init: { grade: number; locale: string }): Promise<UserRecord>;
   updateUser(
-    patch: Partial<Pick<UserRecord, 'grade' | 'locale' | 'name' | 'phone'>>
+    patch: Partial<Pick<UserRecord, 'grade' | 'locale' | 'name' | 'phone' | 'email'>>
   ): Promise<UserRecord | null>;
   setPaid(days: number): Promise<UserRecord | null>;
   listProgress(): Promise<ProgressRow[]>;

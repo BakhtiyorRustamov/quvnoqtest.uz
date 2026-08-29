@@ -33,10 +33,11 @@ export default function ProfileDrawer({ open, onClose }: { open: boolean; onClos
   useEffect(() => {
     setName(user?.name ?? '');
     setPhone(user?.phone ?? '');
-  }, [user?.name, user?.phone, open]);
+    setEmail(user?.email ?? '');
+  }, [user?.name, user?.phone, user?.email, open]);
 
   async function saveDetails() {
-    await update({ name, phone });
+    await update({ name, phone, email });
     setSavedFlash(true);
     setTimeout(() => setSavedFlash(false), 1800);
   }
@@ -140,38 +141,22 @@ export default function ProfileDrawer({ open, onClose }: { open: boolean; onClos
               {savedFlash ? tc('saved') : tc('save')}
             </button>
 
-            {/* claim by email → magic link (FR-PRF-4) */}
-            {!user?.email && (
-              <div className="card p-4 mt-6">
-                <div className="font-extrabold text-ink text-sm">✉️ {t('emailLabel')}</div>
-                <p className="text-[13px] font-semibold text-ink/55 mt-1">{t('emailHint')}</p>
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className={`${inputCls} mt-2.5`}
-                  placeholder="aziza@example.uz"
-                />
-                <button
-                  onClick={sendMagic}
-                  disabled={magic.kind === 'sending' || !email.includes('@')}
-                  className="btn-primary w-full mt-3 text-base disabled:opacity-40"
-                >
-                  {magic.kind === 'sending' ? tc('loading') : t('sendMagic')}
-                </button>
-                {magic.kind === 'sent' && <p className="mt-2.5 text-sm font-bold text-brand-green">{t('magicSent')}</p>}
-                {magic.kind === 'dev' && (
-                  <div className="mt-2.5 text-sm font-semibold text-ink/70 bg-amber-50 border border-amber-200 rounded-xl p-3">
-                    {t('magicDevNote')}
-                    <a href={magic.link} className="btn-blue w-full mt-2 text-sm">
-                      🔗 {t('openLink')}
-                    </a>
-                  </div>
-                )}
-                {magic.kind === 'noconfig' && <p className="mt-2.5 text-sm font-bold text-error">{t('magicNotConfigured')}</p>}
-                {magic.kind === 'error' && <p className="mt-2.5 text-sm font-bold text-error">⚠️</p>}
-              </div>
-            )}
+            {/* simple email entry under phone (moved from separate card) */}
+            <label className="block mt-4">
+              <span className="font-extrabold text-ink/70 text-sm">{t('emailLabel')}</span>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className={`${inputCls} mt-1.5`}
+                placeholder="aziza@example.uz"
+              />
+            </label>
+
+            {/* Change account button */}
+            <Link href="/signin" onClick={onClose} className="btn-ghost w-full mt-4">
+              {t('changeAccount')}
+            </Link>
 
             {/* upgrade entry (FR-PRF-5) */}
             <Link href="/upgrade" onClick={onClose} className="btn-primary w-full mt-6">

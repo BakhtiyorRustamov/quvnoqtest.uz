@@ -32,7 +32,7 @@ type Ctx = {
   refresh: () => Promise<ClientUser | null>;
   /** Silent registration — creates the record if missing (SRS §6.6.1). */
   ensureUser: (grade?: number, locale?: string) => Promise<ClientUser | null>;
-  update: (patch: Partial<Pick<ClientUser, 'grade' | 'locale' | 'name' | 'phone'>>) => Promise<ClientUser | null>;
+  update: (patch: Partial<Pick<ClientUser, 'grade' | 'locale' | 'name' | 'phone' | 'email'>>) => Promise<ClientUser | null>;
   /** Uploads a payment receipt; an applied promo may extend the paid period by 60 days instead of 30. */
   submitReceipt: (file: File, card: string, promoCode?: string) => Promise<SubmitReceiptResult>;
   /** Validates an admin-issued promo code without granting access early. */
@@ -100,7 +100,7 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
     [user]
   );
 
-  const update = useCallback(async (patch: Partial<Pick<ClientUser, 'grade' | 'locale' | 'name' | 'phone'>>) => {
+  const update = useCallback(async (patch: Partial<Pick<ClientUser, 'grade' | 'locale' | 'name' | 'phone' | 'email'>>) => {
     const { data, ok } = await api<{ user: ClientUser }>('/api/me', { method: 'PATCH', json: patch });
     if (ok && data?.user) setUser(data.user);
     return ok ? data.user : null;

@@ -220,7 +220,14 @@
     "magicNotConfigured": "Email yuborish hali sozlanmagan. Keyinroq urinib koʻring.",
     "openLink": "Havolani ochish",
     "claimed": "Akkaunt ulangan: {email}",
-    "upgradeEntry": "Obuna boʻlish"
+    "upgradeEntry": "Obuna boʻlish",
+    "changeAccount": "Akkauntni almashtirish"
+  },
+  "signin": {
+    "title": "Kirish",
+    "placeholder": "QT-ID, email yoki telefon",
+    "submit": "Kirish",
+    "chooseAccount": "Hisobni tanlang"
   },
   "upgrade": {
     "title": "Hammasini oching! 🚀",

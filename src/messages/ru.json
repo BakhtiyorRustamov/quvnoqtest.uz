@@ -220,7 +220,14 @@
     "magicNotConfigured": "Отправка email ещё не настроена. Попробуйте позже.",
     "openLink": "Открыть ссылку",
     "claimed": "Аккаунт подключён: {email}",
-    "upgradeEntry": "Оформить подписку"
+    "upgradeEntry": "Оформить подписку",
+    "changeAccount": "Сменить аккаунт"
+  },
+  "signin": {
+    "title": "Вход",
+    "placeholder": "ID (QT), почта или телефон",
+    "submit": "Войти",
+    "chooseAccount": "Выберите аккаунт"
   },
   "upgrade": {
     "title": "Открой всё! 🚀",
