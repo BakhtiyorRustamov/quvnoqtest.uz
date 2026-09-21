@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { getLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { Analytics } from '@vercel/analytics/next';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { UserProvider } from '@/components/providers/UserProvider';
 import { SoundProvider } from '@/components/providers/SoundProvider';
 import NoticeBanner from '@/components/ui/NoticeBanner';
@@ -48,6 +49,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           </UserProvider>
         </NextIntlClientProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
