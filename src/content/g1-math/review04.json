@@ -1,0 +1,39 @@
+{
+  "topicId": "g1-math-review-4",
+  "subjectKey": "g1-math",
+  "skipRecall": true,
+  "emojis": "⚖️🍎🍊",
+  "title": {
+    "uz": "Takrorlash oʻyini: Tarozi",
+    "ru": "Игра-повторение: Весы",
+    "en": "Review game: Scale Game"
+  },
+  "recall": {
+    "uz": "Takrorlash oʻyini. Ikkita tarozida meva va sabzavotlar turadi. Gramlarni oʻqib, qaysi biri ogʻirroq yoki yengilroq ekanini top. Diqqat, tayyor, boshladik.",
+    "ru": "Игра-повторение. На двух весах лежат фрукты и овощи. Читай граммы и находи, что тяжелее или легче. Внимание, приготовились, поехали.",
+    "en": "A review game. Two scales hold fruits and vegetables. Read the grams and find which is heavier or lighter. Ready, set, go."
+  },
+  "items": [
+    {
+      "id": "g1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "scale_compare", "completeOn": "finish" },
+      "prompt": {
+        "uz": "Tarozi oʻyini: gramlarni oʻqib, ogʻirroq yoki yengilroq mevani bos!",
+        "ru": "Игра с весами: читай граммы и нажимай, что тяжелее или легче!",
+        "en": "Scale game: read the grams and tap the heavier or lighter one!"
+      },
+      "hint": {
+        "uz": "Ikkala tarozidagi sonlarni solishtir: katta son — ogʻirroq, kichik son — yengilroq.",
+        "ru": "Сравни числа на весах: большее число — тяжелее, меньшее — легче.",
+        "en": "Compare the numbers on the scales: the bigger number is heavier, the smaller is lighter."
+      },
+      "explanation": {
+        "uz": "Sonlarni solishtirishni tarozi oʻyinida mashq qildik. Gramlarni zoʻr oʻqiganing uchun barakalla!",
+        "ru": "Мы сравнивали числа в игре с весами. Молодец, отлично читаешь граммы!",
+        "en": "We practiced comparing numbers with the scale game. Well done reading the grams!"
+      }
+    }
+  ]
+}

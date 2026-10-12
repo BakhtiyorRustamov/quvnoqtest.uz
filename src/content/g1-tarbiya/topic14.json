@@ -1,0 +1,252 @@
+{
+  "topicId": "g1-tarbiya-14",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🌱👑💛🤝",
+  "title": {
+    "uz": "Halollik",
+    "ru": "Честность",
+    "en": "Honesty"
+  },
+  "recall": {
+    "uz": "Halollik — soʻzda ham, amalda ham rostgoʻy boʻlishdir. Bir podshoh bolalarga qaynatilgan urugʻ ekishga bergan. Faqat «hech narsa unmadi» deb rostini aytgan bola halolligi uchun merosxoʻr etib tanlangan. Biz yolgʻon gapirmaymiz, xatomizni ham rost aytamiz.",
+    "ru": "Честность — быть правдивым и на словах, и на деле. Один царь дал детям посеять варёные семена. Наследником он выбрал того мальчика, который честно сказал: «Ничего не выросло». Мы не лжём и честно признаём свои ошибки.",
+    "en": "Honesty means being truthful in both word and deed. A king gave children boiled seeds to plant. He chose as heir the boy who honestly said, \"Nothing grew.\" We do not lie, and we admit our mistakes truthfully."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Podshoh kimni merosxoʻr etib tanladi?",
+        "ru": "Кого царь выбрал наследником?",
+        "en": "Whom did the king choose as heir?"
+      },
+      "hint": {
+        "uz": "Rostini aytgan bolani.",
+        "ru": "Того, кто сказал правду.",
+        "en": "The boy who told the truth."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Halol bola merosxoʻr boʻldi.",
+        "ru": "Верно! Наследником стал честный мальчик.",
+        "en": "Right! The honest boy became heir."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "rostini aytgan bolani",
+              "ru": "того, кто сказал правду",
+              "en": "the boy who told the truth"
+            },
+            {
+              "uz": "eng koʻp gul olib kelganni",
+              "ru": "кто принёс больше цветов",
+              "en": "who brought the most flowers"
+            },
+            {
+              "uz": "eng baland boʻyli bolani",
+              "ru": "самого высокого",
+              "en": "the tallest boy"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xatti-harakatni ajrat: halol yoki nohalol!",
+        "ru": "Разложи поступки: честно или нечестно!",
+        "en": "Sort the actions: honest or dishonest!"
+      },
+      "hint": {
+        "uz": "Rost gapirish — halol, aldash — nohalol.",
+        "ru": "Говорить правду — честно, обманывать — нет.",
+        "en": "Telling the truth is honest, cheating is not."
+      },
+      "explanation": {
+        "uz": "Barakalla! Halollikni tanla.",
+        "ru": "Молодец! Выбирай честность.",
+        "en": "Great! Choose honesty."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "Halol",
+                "ru": "Честно",
+                "en": "Honest"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "uz": "Nohalol",
+                "ru": "Нечестно",
+                "en": "Dishonest"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "💬",
+              "label": {
+                "uz": "rost gapirish",
+                "ru": "говорить правду",
+                "en": "tell the truth"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "✋",
+              "label": {
+                "uz": "xatoni tan olish",
+                "ru": "признать ошибку",
+                "en": "admit a mistake"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🤝",
+              "label": {
+                "uz": "va'daga vafo",
+                "ru": "держать слово",
+                "en": "keep a promise"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🙈",
+              "label": {
+                "uz": "aybini yashirish",
+                "ru": "скрывать вину",
+                "en": "hide the fault"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "📄",
+              "label": {
+                "uz": "koʻchirib yozish",
+                "ru": "списывать",
+                "en": "copy someone's work"
+              },
+              "bin": "no"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Xatoyingni yashirish — halollik.",
+        "ru": "Верно? Скрывать свою ошибку — это честность.",
+        "en": "Is this right? Hiding your mistake is honesty."
+      },
+      "hint": {
+        "uz": "Halol bola rostini aytadi.",
+        "ru": "Честный говорит правду.",
+        "en": "An honest child tells the truth."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Xatoni yashirmay, rost aytamiz.",
+        "ru": "Неверно! Не скрываем, а честно признаём.",
+        "en": "False! We don't hide it — we admit it honestly."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🙈",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Halollikka yaqin soʻzlar orasidan ortiqchasini top!",
+        "ru": "Найди лишнее среди слов, близких к честности!",
+        "en": "Find the odd one out among words close to honesty!"
+      },
+      "hint": {
+        "uz": "Qaysi biri halollikka teskari?",
+        "ru": "Что противоположно честности?",
+        "en": "Which is the opposite of honesty?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yolgʻon» — halollikka teskari.",
+        "ru": "Верно! «Ложь» — противоположность честности.",
+        "en": "Right! \"Lie\" is the opposite of honesty."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "halollikka yaqin soʻzlar",
+            "ru": "слова, близкие к честности",
+            "en": "words close to honesty"
+          },
+          "tiles": [
+            {
+              "text": "haqiqat"
+            },
+            {
+              "text": "rostgoʻy"
+            },
+            {
+              "text": "adolat"
+            },
+            {
+              "text": "yolgʻon",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻstingiz yomon baho oldi va buni yaqinlaridan yashirmoqchi. Unga qanday maslahat berasiz?",
+        "ru": "Друг получил плохую оценку и хочет скрыть её от близких. Какой совет ты дашь?",
+        "en": "Your friend got a bad grade and wants to hide it from family. What advice would you give?"
+      },
+      "hint": {
+        "uz": "Rost gapirish — eng toʻgʻri yoʻl.",
+        "ru": "Сказать правду — самый верный путь.",
+        "en": "Telling the truth is the best way."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Halollik ishonch keltiradi.",
+        "ru": "Отлично! Честность рождает доверие.",
+        "en": "Great! Honesty builds trust."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men doʻstimga rostini aytishni maslahat beraman. Yashirish oʻrniga, darsni yaxshilab tayyorlab, keyingi safar yaxshi baho olsa boʻladi.",
+            "ru": "Я посоветую сказать правду. Вместо того чтобы скрывать, лучше подготовиться и в следующий раз получить хорошую оценку.",
+            "en": "I would tell my friend to be honest. Instead of hiding it, he can study well and get a good grade next time."
+          }
+        }
+      }
+    }
+  ]
+}

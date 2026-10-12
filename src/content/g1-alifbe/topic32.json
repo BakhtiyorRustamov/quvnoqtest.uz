@@ -1,0 +1,512 @@
+{
+  "topicId": "g1-alifbe-32",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖📻🦆🥁",
+  "title": {
+    "uz": "«R r» — oʻqish mashqi",
+    "ru": "Буква «R r» — чтение",
+    "en": "Letter “R r” — reading"
+  },
+  "recall": {
+    "uz": "«R» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: radio, oʻrdak, doira. «R» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «R». Теперь читаем слова: radio, oʻrdak, doira. «R» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “R”. Now we read words: radio, oʻrdak, doira. “R” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "📻 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "📻 Прочитай и нажми верно написанное слово!",
+        "en": "📻 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «radio».",
+        "ru": "Прочитай: «radio».",
+        "en": "Read it: “radio”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «radio».",
+        "ru": "Верно — «radio».",
+        "en": "Correct — “radio”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "📻",
+          "options": [
+            {
+              "id": "ok",
+              "word": "radio",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "ratio"
+            },
+            {
+              "id": "w2",
+              "word": "radyo"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «radio» soʻzini tuz!",
+        "ru": "Составь слово «radio»!",
+        "en": "Build the word “radio”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «radio» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «radio».",
+        "en": "Great! You read “radio”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "📻",
+          "word": "radio",
+          "label": {
+            "uz": "radio",
+            "ru": "радио",
+            "en": "radio"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "📻 «radio»da «r» tovushi qaysi katakchada?",
+        "ru": "📻 В какой клетке звук «r» в слове «radio»?",
+        "en": "📻 Which box has the “r” sound in “radio”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«radio»da «r» tovushi toʻgʻri joyda.",
+        "ru": "В «radio» звук «r» на верном месте.",
+        "en": "In “radio” the “r” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "📻",
+          "word": {
+            "uz": "radio",
+            "ru": "radio",
+            "en": "radio"
+          },
+          "sound": "r",
+          "cells": [
+            "r",
+            "a",
+            "d",
+            "i",
+            "o"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "📻 «radio» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "📻 Похлопай слово «radio» по слогам!",
+        "en": "📻 Clap the word “radio” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«radio» — 3 boʻgʻin.",
+        "ru": "«radio» — 3 слога.",
+        "en": "“radio” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "📻",
+          "word": {
+            "uz": "radio",
+            "ru": "radio",
+            "en": "radio"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«R» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «R»!",
+        "en": "Tap the words that have the “R” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «r» tovushi bor.",
+        "ru": "Верно! В них есть звук «r».",
+        "en": "Right! They have the “r” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "📻",
+              "label": {
+                "uz": "radio",
+                "ru": "radio",
+                "en": "radio"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🦆",
+              "label": {
+                "uz": "oʻrdak",
+                "ru": "oʻrdak",
+                "en": "oʻrdak"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🥁",
+              "label": {
+                "uz": "doira",
+                "ru": "doira",
+                "en": "doira"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«radio» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «radio». Найди картинку!",
+        "en": "Read “radio”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«radio» — 📻.",
+        "ru": "«radio» — 📻.",
+        "en": "“radio” is 📻."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "📻",
+              "label": {
+                "uz": "radio",
+                "ru": "радио",
+                "en": "radio"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🦆",
+              "label": {
+                "uz": "oʻrdak",
+                "ru": "oʻrdak",
+                "en": "oʻrdak"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🥁",
+              "label": {
+                "uz": "doira",
+                "ru": "doira",
+                "en": "doira"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "📻"
+              },
+              "right": {
+                "label": {
+                  "uz": "radio",
+                  "ru": "radio",
+                  "en": "radio"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🦆"
+              },
+              "right": {
+                "label": {
+                  "uz": "oʻrdak",
+                  "ru": "oʻrdak",
+                  "en": "oʻrdak"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🥁"
+              },
+              "right": {
+                "label": {
+                  "uz": "doira",
+                  "ru": "doira",
+                  "en": "doira"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ota … oldi.",
+        "ru": "Составь предложение: Ota … oldi.",
+        "en": "Order the words: Ota … oldi."
+      },
+      "hint": {
+        "uz": "Ota — radio — oldi.",
+        "ru": "Ota — radio — oldi.",
+        "en": "Ota — radio — oldi."
+      },
+      "explanation": {
+        "uz": "«Ota radio oldi.» — gap oʻqiding!",
+        "ru": "«Ota radio oldi.» — предложение!",
+        "en": "“Ota radio oldi.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ota",
+                "ru": "Ota",
+                "en": "Ota"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "radio",
+                "ru": "radio",
+                "en": "radio"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "📻"
+              },
+              "b": {
+                "label": {
+                  "uz": "radio",
+                  "ru": "radio",
+                  "en": "radio"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🦆"
+              },
+              "b": {
+                "label": {
+                  "uz": "oʻrdak",
+                  "ru": "oʻrdak",
+                  "en": "oʻrdak"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🥁"
+              },
+              "b": {
+                "label": {
+                  "uz": "doira",
+                  "ru": "doira",
+                  "en": "doira"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«radio» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «radio»?",
+        "en": "How many sounds are in “radio”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«radio»da 5 ta tovush bor.",
+        "ru": "В «radio» 5 звука.",
+        "en": "“radio” has 5 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

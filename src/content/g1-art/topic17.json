@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-17", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Samolyot", "ru": "Самолёт", "en": "The airplane" },
+  "recall": {
+    "uz": "Samolyot osmonda baland uchadi. Uning qanotlari, dumi va oynalari bor. Keling, samolyotni boʻyaymiz.",
+    "ru": "Самолёт летает высоко в небе. У него есть крылья, хвост и окна. Давай раскрасим самолёт.",
+    "en": "An airplane flies high in the sky. It has wings, a tail and windows. Let's colour the airplane."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Samolyotni boʻya.", "ru": "Раскрась самолёт.", "en": "Colour the airplane." },
+      "hint": { "uz": "Bulutlarni ham boʻyasang boʻladi.", "ru": "Можешь раскрасить и облака.", "en": "You can colour the clouds too." },
+      "explanation": { "uz": "Samolyot uchmoqda!", "ru": "Самолёт летит!", "en": "The airplane is flying!" },
+      "widget": { "type": "color_sheet", "props": { "sheet": "airplane" } } }
+  ]
+}

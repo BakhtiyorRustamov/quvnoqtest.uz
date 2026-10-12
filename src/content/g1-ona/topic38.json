@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-38",
+  "subjectKey": "g1-ona",
+  "emojis": "🧠🤝🏅",
+  "title": {
+    "uz": "Shaxs-narsa bellashuvi (takrorlash)",
+    "ru": "Состязание лиц и предметов (повторение)",
+    "en": "Persons-and-things contest (review)"
+  },
+  "recall": {
+    "uz": "Shaxs va narsa mavzularini takrorlaymiz: Kim?/Kimlar?, Nima?/Nimalar?. Nutq soʻzlardan tuziladi. Xushmuomalalik soʻzlarini ham eslaymiz: rahmat, marhamat, assalom, iltimos, uzr. Bilimingni sinab koʻr!",
+    "ru": "Повторяем лица и предметы: Кто?/Кто мн.?, Что?/Что мн.?. Речь состоит из слов. Вспомним вежливые слова: rahmat, marhamat, assalom, iltimos, uzr. Проверь себя!",
+    "en": "We review persons and things: Kim?/Kimlar?, Nima?/Nimalar?. Speech is made of words. We also recall polite words: rahmat, marhamat, assalom, iltimos, uzr. Test yourself!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Soʻzlardan", "ru": "Из слов", "en": "From words" }, { "uz": "Tovushlardan", "ru": "Из звуков", "en": "From sounds" }, { "uz": "Harflardan", "ru": "Из букв", "en": "From letters" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Nutq nimalardan tuziladi?", "ru": "Из чего состоит речь?", "en": "What is speech made of?" },
+      "hint": { "uz": "Gaplar soʻzlardan iborat.", "ru": "Предложения состоят из слов.", "en": "Sentences are made of words." },
+      "explanation": { "uz": "Nutq soʻzlardan tuziladi.", "ru": "Речь состоит из слов.", "en": "Speech is made of words." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["piyola, uzum, gul", "bola, xona, yoʻl", "choynak, aka, koptok"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi qatorda faqat narsa nomlari bor?", "ru": "В каком ряду только предметы?", "en": "Which row has only thing words?" },
+      "hint": { "uz": "Odam nomi boʻlmagan qatorni tanla.", "ru": "Выбери ряд без слов-лиц.", "en": "Choose the row with no person words." },
+      "explanation": { "uz": "piyola, uzum, gul — barchasi narsa (Nima?).", "ru": "piyola, uzum, gul — все предметы (Что?).", "en": "piyola, uzum, gul are all things (Nima?)." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "bola", "bin": "shaxs" }, { "id": "b", "label": "aka", "bin": "shaxs" }, { "id": "c", "label": "tikuvchi", "bin": "shaxs" }, { "id": "d", "label": "piyola", "bin": "narsa" }, { "id": "e", "label": "uzum", "bin": "narsa" }, { "id": "f", "label": "xona", "bin": "narsa" } ], "bins": [ { "id": "shaxs", "label": "Shaxs (Kim?)" }, { "id": "narsa", "label": "Narsa (Nima?)" } ] } },
+      "prompt": { "uz": "Shaxs va narsani ajrat!", "ru": "Раздели лицо и предмет!", "en": "Sort persons and things!" },
+      "hint": { "uz": "aka — odam, xona — buyum-joy.", "ru": "aka — человек, xona — предмет.", "en": "aka is a person, xona a thing." },
+      "explanation": { "uz": "bola, aka, tikuvchi — shaxs; piyola, uzum, xona — narsa.", "ru": "bola, aka, tikuvchi — лица; piyola, uzum, xona — предметы.", "en": "bola, aka, tikuvchi are people; piyola, uzum, xona are things." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "uzum", "match": true }, { "text": "bola", "match": false }, { "text": "gul", "match": true }, { "text": "aka", "match": false }, { "text": "xona", "match": true }, { "text": "tikuvchi", "match": false } ] } },
+      "prompt": { "uz": "Faqat narsa nomlarini bos!", "ru": "Нажми только слова-предметы!", "en": "Tap only the thing words!" },
+      "hint": { "uz": "Odam nomlarini bosma.", "ru": "Не нажимай слова-лица.", "en": "Don't tap person words." },
+      "explanation": { "uz": "uzum, gul, xona — narsa (Nima?).", "ru": "uzum, gul, xona — предметы (Что?).", "en": "uzum, gul, xona are things (Nima?)." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Rahmat aytish", "right": "Minnatdorman" }, { "left": "Uchrashuv", "right": "Assalom" }, { "left": "Bezovta qilganda", "right": "Iltimos" }, { "left": "Afv soʻrash", "right": "Uzr" } ] } },
+      "prompt": { "uz": "Vaziyatni mos soʻzga ula!", "ru": "Соедини ситуацию с нужным словом!", "en": "Match each situation to the right word!" },
+      "hint": { "uz": "Afv soʻrasak — «Uzr».", "ru": "Просим прощения — «Uzr».", "en": "To apologize — “Uzr”." },
+      "explanation": { "uz": "Xushmuomalalik soʻzlari muomalani goʻzal qiladi.", "ru": "Вежливые слова украшают общение.", "en": "Polite words make communication pleasant." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "rahmat", "emoji": "🙏", "clue": { "uz": "Minnatdorchilik bildiruvchi soʻz", "ru": "Слово благодарности", "en": "A word of thanks" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: r, a, h, m, a, t.", "ru": "Буквы: r, a, h, m, a, t.", "en": "Letters: r, a, h, m, a, t." },
+      "explanation": { "uz": "«rahmat» — xushmuomalalik soʻzi.", "ru": "«rahmat» (спасибо) — вежливое слово.", "en": "“rahmat” (thanks) is a polite word." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "rahmat", "match": true }, { "text": "kitob", "match": false }, { "text": "assalom", "match": true }, { "text": "stol", "match": false }, { "text": "iltimos", "match": true }, { "text": "uzum", "match": false } ] } },
+      "prompt": { "uz": "Xushmuomalalik soʻzlarini bos!", "ru": "Нажми вежливые слова!", "en": "Tap the polite words!" },
+      "hint": { "uz": "Odob soʻzlarini tanla.", "ru": "Выбери вежливые слова.", "en": "Choose the courtesy words." },
+      "explanation": { "uz": "rahmat, assalom, iltimos — xushmuomalalik soʻzlari.", "ru": "rahmat, assalom, iltimos — вежливые слова.", "en": "rahmat, assalom, iltimos are polite words." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Katta", "kishiga", "salom", "beramiz."], "emoji": "🤝", "clue": { "uz": "Odob haqida gap", "ru": "Предложение о вежливости", "en": "A sentence about good manners" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kimga? — «Katta kishiga».", "ru": "Кому? — «Katta kishiga».", "en": "To whom? — “Katta kishiga”." },
+      "explanation": { "uz": "Kattalarga salom berish — odob belgisi.", "ru": "Приветствовать старших — признак воспитанности.", "en": "Greeting elders is a sign of good manners." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "bola", "bin": "bir" }, { "id": "b", "label": "ona", "bin": "bir" }, { "id": "c", "label": "doʻst", "bin": "bir" }, { "id": "d", "label": "bolalar", "bin": "kop" }, { "id": "e", "label": "onalar", "bin": "kop" }, { "id": "f", "label": "doʻstlar", "bin": "kop" } ], "bins": [ { "id": "bir", "label": "Kim? (bitta)" }, { "id": "kop", "label": "Kimlar? (koʻp)" } ] } },
+      "prompt": { "uz": "Bitta va koʻp shaxsni ajrat!", "ru": "Раздели одно и много лиц!", "en": "Sort one person and many!" },
+      "hint": { "uz": "«-lar» boʻlsa — koʻp odam.", "ru": "Есть «-lar» — много людей.", "en": "With “-lar” — many people." },
+      "explanation": { "uz": "bola — Kim?, bolalar — Kimlar?.", "ru": "bola — Кто?, bolalar — Кто мн.?.", "en": "bola — Kim?, bolalar — Kimlar?." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "olma", "right": "Nima?" }, { "left": "bolalar", "right": "Kimlar?" }, { "left": "usta", "right": "Kim?" }, { "left": "kitoblar", "right": "Nimalar?" } ] } },
+      "prompt": { "uz": "Soʻzni mos savoliga ula!", "ru": "Соедини слово с его вопросом!", "en": "Match each word to its question!" },
+      "hint": { "uz": "«usta» — odam — «Kim?».", "ru": "«usta» — человек — «Кто?».", "en": "“usta” — a person — “Kim?”." },
+      "explanation": { "uz": "Shaxs/narsa va son savolni belgilaydi.", "ru": "Лицо/предмет и число определяют вопрос.", "en": "Person/thing and number decide the question." }
+    }
+  ]
+}

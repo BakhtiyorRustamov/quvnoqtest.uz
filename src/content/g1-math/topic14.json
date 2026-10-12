@@ -1,0 +1,144 @@
+{
+  "topicId": "g1-math-14",
+  "subjectKey": "g1-math",
+  "emojis": "1️⃣☀️🍎",
+  "title": { "uz": "Bir soni va raqami", "ru": "Число один", "en": "The number one" },
+  "recall": {
+    "uz": "Bir sonini oʻrganamiz. Bir — bu yagona narsa. Dunyoda yolgʻiz uchraydigan narsalarni topamiz. Bir sonini sanaymiz va raqamini yozishni mashq qilamiz.",
+    "ru": "Учим число один. Один — это единственный предмет. Находим то, что в мире встречается в одиночку. Считаем до одного и пишем цифру.",
+    "en": "We learn the number one. One means a single thing. We find things that are unique in the world. We count to one and practice writing the numeral."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Bitta olmani belgila!", "ru": "Отметь одно яблоко!", "en": "Tap the one apple!" },
+      "options": [
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "ap", "art": { "kind": "apple", "color": "red" } },
+        { "id": "b2", "art": { "kind": "ball", "color": "green" } }
+      ],
+      "answer": ["ap"],
+      "hint": { "uz": "Olma faqat bitta. Boshqalari koptok.", "ru": "Яблоко только одно. Остальные — мячи.", "en": "There is only one apple. The rest are balls." },
+      "explanation": { "uz": "Bitta olma bor edi. Bir — bu yagona, yolgʻiz narsa.", "ru": "Было одно яблоко. Один — это единственный предмет.", "en": "There was one apple. One means a single, lone thing." }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladiganini bos!", "ru": "Нажми на ту, что отличается!", "en": "Tap the one that is different!" },
+      "options": [
+        { "id": "c1", "art": { "kind": "square", "color": "blue" } },
+        { "id": "c2", "art": { "kind": "square", "color": "blue" } },
+        { "id": "df", "art": { "kind": "circle", "color": "red" } }
+      ],
+      "answer": ["df"],
+      "hint": { "uz": "Ikkitasi bir xil. Bittasi yolgʻiz, farqli.", "ru": "Две одинаковые. Одна — единственная, отличается.", "en": "Two are the same. One is unique and different." },
+      "explanation": { "uz": "Bitta doira boshqalardan farq qildi — u yagona edi.", "ru": "Один круг отличался от других — он был единственным.", "en": "One circle was different from the rest — it was the only one." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["1", "0", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 1 + 0 = ?", "ru": "Найди сумму: 1 + 0 = ?", "en": "Find the sum: 1 + 0 = ?" },
+      "hint": { "uz": "Bittaga hech narsa qoʻshmasak, bitta qoladi.", "ru": "Если к одному ничего не прибавить, останется один.", "en": "Adding nothing to one leaves one." },
+      "explanation": { "uz": "Bir qoʻshish nol — bir boʻladi. Nol hech narsa qoʻshmaydi.", "ru": "Один плюс ноль — один. Ноль ничего не добавляет.", "en": "One plus zero is one. Zero adds nothing." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["0", "1", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 1 - 1 = ?", "ru": "Найди разность: 1 - 1 = ?", "en": "Find the difference: 1 - 1 = ?" },
+      "hint": { "uz": "Bittasini olib tashlasang, hech narsa qolmaydi.", "ru": "Если убрать один, не останется ничего.", "en": "Take the one away and nothing is left." },
+      "explanation": { "uz": "Bir ayirish bir — nol boʻladi. Hech narsa qolmadi.", "ru": "Один минус один — ноль. Ничего не осталось.", "en": "One minus one is zero. Nothing is left." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 1, "y": 3 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son kichik?", "ru": "Посмотри на весы: какое число меньше?", "en": "Look at the scale: which number is smaller?" },
+      "hint": { "uz": "Kam boʻlgan tomon yengil, u yuqoriga koʻtariladi.", "ru": "Меньшая сторона легче и поднимается.", "en": "The smaller side is lighter and rises." },
+      "explanation": { "uz": "Bir uchdan kichik. Bir — eng kichik sanaladigan sonlardan.", "ru": "Один меньше трёх. Один — одно из самых малых чисел.", "en": "One is smaller than three. One is among the smallest counting numbers." }
+    },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "sun", "color": "yellow" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "sun", "color": "yellow" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "sun", "color": "yellow" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "su", "art": { "kind": "sun", "color": "yellow" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Quyosh, doira, quyosh, doira… navbat bilan keladi!", "ru": "Солнце, круг, солнце, круг… по очереди!", "en": "Sun, circle, sun, circle… they take turns!" },
+      "explanation": { "uz": "Quyoshdan keyin doim doira keladi. Keyingisi — doira.", "ru": "После солнца всегда идёт круг. Следующий — круг.", "en": "After the sun there is always a circle. The next one is a circle." }
+    },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Bitta yulduzni belgila!", "ru": "Отметь одну звезду!", "en": "Tap the one star!" },
+      "options": [
+        { "id": "ba", "art": { "kind": "ball", "color": "red" } },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "ap", "art": { "kind": "apple", "color": "green" } }
+      ],
+      "answer": ["st"],
+      "hint": { "uz": "Yulduz faqat bitta. Uni topib belgila.", "ru": "Звезда только одна. Найди и отметь её.", "en": "There is only one star. Find and tap it." },
+      "explanation": { "uz": "Bitta yulduz bor edi. Bir — bitta narsa.", "ru": "Была одна звезда. Один — это один предмет.", "en": "There was one star. One means a single object." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["1", "4", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Eng kichik son qaysi: 1, 4, 7?", "ru": "Какое число самое маленькое: 1, 4, 7?", "en": "Which number is the smallest: 1, 4, 7?" },
+      "hint": { "uz": "Sanashni boshlaganda birinchi aytiladigan sonni top.", "ru": "Найди число, которое называют первым при счёте.", "en": "Find the number you say first when counting." },
+      "explanation": { "uz": "Bir eng kichik son — sanashni undan boshlaymiz.", "ru": "Один — самое маленькое: со счёта один мы начинаем.", "en": "One is the smallest — we begin counting from it." }
+    },
+    {
+      "id": "q9",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir shaklni xuddi oʻshanga ula!", "ru": "Соедини каждую фигуру с такой же!", "en": "Connect each shape to the same one!" },
+      "left": [
+        { "id": "su", "art": { "kind": "sun", "color": "yellow" }, "match": "m-su" },
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" }, "match": "m-st" }
+      ],
+      "right": [
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } },
+        { "id": "m-su", "art": { "kind": "sun", "color": "gray" } }
+      ],
+      "hint": { "uz": "Avval rangli shaklni bos, keyin xuddi oʻshanday shaklni bos.", "ru": "Сначала нажми на цветную фигуру, потом на такую же.", "en": "First tap a colored shape, then tap the same shape." },
+      "explanation": { "uz": "Har bir shaklni oʻziga oʻxshashiga uladik.", "ru": "Мы соединили каждую фигуру с такой же.", "en": "We matched each shape to the same one." }
+    },
+    {
+      "id": "q10",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qaysi narsa yolgʻiz — bir marta uchraydi?", "ru": "Какой предмет встречается один раз?", "en": "Which thing appears only once?" },
+      "options": [
+        { "id": "ba1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "ap", "art": { "kind": "apple", "color": "red" } },
+        { "id": "ba2", "art": { "kind": "ball", "color": "blue" } }
+      ],
+      "answer": ["ap"],
+      "hint": { "uz": "Ikkita koptok bor, olma esa bitta.", "ru": "Мячей два, а яблоко одно.", "en": "There are two balls, but only one apple." },
+      "explanation": { "uz": "Olma bir marta — yolgʻiz uchradi. Koptoklar ikkita edi.", "ru": "Яблоко встретилось один раз. Мячей было два.", "en": "The apple appeared once — alone. There were two balls." }
+    }
+  ]
+}

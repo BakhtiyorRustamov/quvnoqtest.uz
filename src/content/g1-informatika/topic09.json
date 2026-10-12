@@ -1,0 +1,530 @@
+{
+  "topicId": "g1-informatika-09",
+  "subjectKey": "g1-informatika",
+  "emojis": "🏡🌳🌈🌷",
+  "title": {
+    "uz": "Bizning dunyoqarashimiz",
+    "ru": "Наш взгляд на мир",
+    "en": "Our view of the world"
+  },
+  "recall": {
+    "uz": "Biz atrofdagi olamni sezgi aʼzolarimiz bilan bilamiz. Toza va chiroyli dunyo hammaga yoqadi. Atrofimizga eʼtibor beramiz.",
+    "ru": "Мы познаём мир органами чувств. Чистый и красивый мир нравится всем. Мы заботимся об окружающем.",
+    "en": "We know the world through our senses. A clean and beautiful world pleases everyone. We care for our surroundings."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi rasm tinch va chiroyli dunyoni koʻrsatadi?",
+        "ru": "Какая картинка показывает мирный мир?",
+        "en": "Which picture shows a peaceful world?"
+      },
+      "hint": {
+        "uz": "Tinch va toza joyni top.",
+        "ru": "Найди мирное место.",
+        "en": "Find the calm place."
+      },
+      "explanation": {
+        "uz": "Uy va bogʻ — tinch dunyo.",
+        "ru": "Дом и сад — мирный мир.",
+        "en": "A home and garden — a peaceful world."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🏡",
+              "label": {
+                "uz": "tinch uy",
+                "ru": "мирный дом",
+                "en": "peaceful home"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🔥",
+              "label": {
+                "uz": "yongʻin",
+                "ru": "пожар",
+                "en": "fire"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "⛈️",
+              "label": {
+                "uz": "boʻron",
+                "ru": "буря",
+                "en": "storm"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toza va chiroyli dunyo hammaga nima qiladi?",
+        "ru": "Что делает чистый мир для всех?",
+        "en": "What does a clean world do for all?"
+      },
+      "hint": {
+        "uz": "Yoqadimi?",
+        "ru": "Нравится?",
+        "en": "Does it please?"
+      },
+      "explanation": {
+        "uz": "Toza dunyo hammaga yoqadi.",
+        "ru": "Чистый мир нравится всем.",
+        "en": "A clean world pleases everyone."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yoqadi",
+              "ru": "нравится",
+              "en": "pleases"
+            },
+            {
+              "uz": "yoqmaydi",
+              "ru": "не нравится",
+              "en": "displeases"
+            },
+            {
+              "uz": "qoʻrqitadi",
+              "ru": "пугает",
+              "en": "frightens"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani oʻz joyi bilan ula!",
+        "ru": "Соедини предмет с местом!",
+        "en": "Match each thing to its place!"
+      },
+      "hint": {
+        "uz": "Kitob — maktabda.",
+        "ru": "Книга — в школе.",
+        "en": "A book — at school."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "📚"
+              },
+              "right": {
+                "label": {
+                  "uz": "maktab",
+                  "ru": "школа",
+                  "en": "school"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "💊"
+              },
+              "right": {
+                "label": {
+                  "uz": "shifoxona",
+                  "ru": "больница",
+                  "en": "hospital"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍰"
+              },
+              "right": {
+                "label": {
+                  "uz": "bayram",
+                  "ru": "праздник",
+                  "en": "party"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Atrofni chiroyli qiladigan ishlarni belgila!",
+        "ru": "Отметь, что украшает мир!",
+        "en": "Tap what makes the world beautiful!"
+      },
+      "hint": {
+        "uz": "Yaxshi ishlarni tanla.",
+        "ru": "Выбери добрые дела.",
+        "en": "Pick the good deeds."
+      },
+      "explanation": {
+        "uz": "Ular atrofni chiroyli qiladi.",
+        "ru": "Они украшают мир.",
+        "en": "They make the world nice."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌳",
+              "label": {
+                "uz": "daraxt ekish",
+                "ru": "сажать дерево",
+                "en": "plant a tree"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🌷",
+              "label": {
+                "uz": "gul parvarishlash",
+                "ru": "ухаживать за цветами",
+                "en": "tend flowers"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💧",
+              "label": {
+                "uz": "suv sepish",
+                "ru": "поливать",
+                "en": "water plants"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🔥",
+              "label": {
+                "uz": "yongʻin",
+                "ru": "пожар",
+                "en": "fire"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🗑️",
+              "label": {
+                "uz": "axlat tashlash",
+                "ru": "мусорить",
+                "en": "litter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Biz atrofdagi olamni sezgi aʼzolarimiz bilan bilamiz.",
+        "ru": "Мы познаём мир органами чувств.",
+        "en": "We know the world through our senses."
+      },
+      "hint": {
+        "uz": "Koʻramiz, eshitamiz, hidlaymiz.",
+        "ru": "Видим, слышим, нюхаем.",
+        "en": "We see, hear, smell."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌍",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (chiroyli emas)",
+        "ru": "Нажми лишнее! (не красиво)",
+        "en": "Tap the odd one! (not beautiful)"
+      },
+      "hint": {
+        "uz": "Qaysi biri atrofni buzadi?",
+        "ru": "Что портит мир?",
+        "en": "Which spoils the world?"
+      },
+      "explanation": {
+        "uz": "Axlat atrofni buzadi.",
+        "ru": "Мусор портит мир.",
+        "en": "Litter spoils the world."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "chiroyli, tabiat",
+            "ru": "красивое в природе",
+            "en": "beautiful nature"
+          },
+          "tiles": [
+            {
+              "text": "gul"
+            },
+            {
+              "text": "daraxt"
+            },
+            {
+              "text": "quyosh"
+            },
+            {
+              "text": "axlat",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Yomgʻirdan soʻng chiqar, yetti rangli.",
+        "ru": "После дождя, семь цветов.",
+        "en": "After rain, seven colours."
+      },
+      "explanation": {
+        "uz": "Javob — kamalak!",
+        "ru": "Ответ — радуга!",
+        "en": "The answer is a rainbow!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Yomgʻirdan soʻng chiqar,",
+              "ru": "После дождя выходит,",
+              "en": "After the rain it comes,"
+            },
+            {
+              "uz": "Yetti rangli koʻprik.",
+              "ru": "семицветный мост.",
+              "en": "a seven-coloured bridge."
+            }
+          ],
+          "options": [
+            {
+              "emoji": "🌈",
+              "label": {
+                "uz": "kamalak",
+                "ru": "радуга",
+                "en": "rainbow"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              }
+            },
+            {
+              "emoji": "☁️",
+              "label": {
+                "uz": "bulut",
+                "ru": "облако",
+                "en": "cloud"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Odobli bola elga manzur». Odobli bola qanday?",
+        "ru": "«Вежливый ребёнок всем мил». Какой он?",
+        "en": "'A polite child is loved by all.' What is such a child?"
+      },
+      "hint": {
+        "uz": "Hammaga yoqadimi?",
+        "ru": "Всем нравится?",
+        "en": "Liked by all?"
+      },
+      "explanation": {
+        "uz": "Odobli bola hammaga yoqadi.",
+        "ru": "Вежливый ребёнок всем нравится.",
+        "en": "A polite child is liked by everyone."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "hammaga yoqadi",
+              "ru": "всем нравится",
+              "en": "liked by all"
+            },
+            {
+              "uz": "hech kimga yoqmaydi",
+              "ru": "никому не нравится",
+              "en": "liked by none"
+            },
+            {
+              "uz": "yolgʻiz qoladi",
+              "ru": "остаётся один",
+              "en": "stays alone"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi rasmda bolalar tabiatga gʻamxoʻrlik qilyapti?",
+        "ru": "Где дети заботятся о природе?",
+        "en": "Which shows children caring for nature?"
+      },
+      "hint": {
+        "uz": "Yaxshi ishni top.",
+        "ru": "Найди доброе дело.",
+        "en": "Find the good deed."
+      },
+      "explanation": {
+        "uz": "Daraxt ekish — gʻamxoʻrlik.",
+        "ru": "Сажать дерево — забота.",
+        "en": "Planting a tree is caring."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🌳",
+              "label": {
+                "uz": "daraxt ekish",
+                "ru": "сажать дерево",
+                "en": "planting a tree"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🔥",
+              "label": {
+                "uz": "yongʻin",
+                "ru": "пожар",
+                "en": "fire"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🗑️",
+              "label": {
+                "uz": "axlat",
+                "ru": "мусор",
+                "en": "litter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Atrofimizni qanday saqlashimiz kerak?",
+        "ru": "Каким должно быть окружение?",
+        "en": "How should we keep our surroundings?"
+      },
+      "hint": {
+        "uz": "Toza yoki iflos?",
+        "ru": "Чисто или грязно?",
+        "en": "Clean or dirty?"
+      },
+      "explanation": {
+        "uz": "Atrofimizni toza saqlaymiz.",
+        "ru": "Держим окружение в чистоте.",
+        "en": "We keep our surroundings clean."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "toza",
+              "ru": "чисто",
+              "en": "clean"
+            },
+            {
+              "uz": "iflos",
+              "ru": "грязно",
+              "en": "dirty"
+            },
+            {
+              "uz": "buzuq",
+              "ru": "сломанным",
+              "en": "broken"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

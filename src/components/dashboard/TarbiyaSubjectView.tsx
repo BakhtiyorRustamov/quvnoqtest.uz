@@ -1,0 +1,292 @@
+'use client';
+
+import { useCallback, useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { useLocale, useTranslations } from 'next-intl';
+import BackBar from '@/components/ui/BackBar';
+import AIMascotButton from '@/components/ui/AIMascotButton';
+import CollapsibleGrid from './CollapsibleGrid';
+import { useUser } from '@/components/providers/UserProvider';
+import { api } from '@/lib/client';
+import { isBuiltTopic } from '@/content';
+import { G1_TARBIYA_TOPICS } from '@/content/g1-tarbiya/topics';
+import { pick } from '@/lib/i18n-config';
+import VideoLightbox from '@/components/ui/VideoLightbox';
+import { SUBJECTS } from '@/content/taxonomy';
+import type { ProgressRow } from '@/lib/store/types';
+
+/**
+ * Grade-1 "Tarbiya" (Character education) subject view. Mirrors the Informatika
+ * layout — a rose "what I've learned" notebook strip (spiral + ruled lines + pen
+ * tool) on top, then the "Mavzular" list. The opening six lessons (homeland,
+ * self, school, hygiene, rules, teachers & good qualities) are real, playable
+ * lessons; each mixes closed questions with open-ended reflection.
+ */
+const ROSE = '#c2298a';
+
+/**
+ * Book "mavzu" numbers per lesson. Some topics span two mavzular in the pupil's
+ * book (e.g. "3-4-mavzular. Maktabga sayohat"), so the displayed number can be a
+ * range. Keyed by tp.n (our sequential slot); only the label shown changes.
+ */
+const BOOK_NO: Record<number, string> = {
+  1: '1', 2: '2', 3: '3-4', 4: '5-6', 5: '7', 6: '8', 7: '9',
+  8: '10-11', 9: '12-13', 10: '14-15', 11: '16',
+  12: '17-18', 13: '19-20', 14: '21-22', 15: '23-24', 16: '25',
+  17: '26-27', 18: '28-29', 19: '30-31', 20: '32', 21: '33'
+};
+const bookNo = (n: number): string => BOOK_NO[n] ?? String(n);
+
+/** Book sections (boʻlimlar) — the topics list is grouped like the pupil's book. */
+const SECTIONS: { title: { uz: string; ru: string; en: string }; from: number; to: number }[] = [
+  { title: { uz: '1-boʻlim · Mening Vatanim – Oʻzbekiston', ru: 'Раздел 1 · Моя Родина — Узбекистан', en: 'Unit 1 · My homeland — Uzbekistan' }, from: 1, to: 7 },
+  { title: { uz: '2-boʻlim · Men va doʻstlarim', ru: 'Раздел 2 · Я и мои друзья', en: 'Unit 2 · Me and my friends' }, from: 8, to: 11 },
+  { title: { uz: '3-boʻlim · Men va fazilatlarim', ru: 'Раздел 3 · Я и мои качества', en: 'Unit 3 · Me and my qualities' }, from: 12, to: 16 },
+  { title: { uz: '4-boʻlim · Bizning madaniyatimiz', ru: 'Раздел 4 · Наша культура', en: 'Unit 4 · Our culture' }, from: 17, to: 21 }
+];
+
+export default function TarbiyaSubjectView() {
+  const t = useTranslations();
+  const locale = useLocale();
+  const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
+  const [progress, setProgress] = useState<ProgressRow[]>([]);
+
+  useEffect(() => {
+    ensureUser(1);
+  }, [ensureUser]);
+
+  useEffect(() => {
+    api<{ progress: ProgressRow[] }>('/api/progress').then(({ data }) => setProgress(data?.progress ?? []));
+  }, []);
+
+  const s = (uz: string, ru: string, en: string) => pick({ uz, ru, en }, locale);
+  const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
+  const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
+  const learned = G1_TARBIYA_TOPICS.filter((tp) => completedKeys.has(tp.key));
+
+  /* ---------------- pen drawing (rose ink) ---------------- */
+  const wrapRef = useRef<HTMLDivElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const strokes = useRef<Array<Array<{ x: number; y: number }>>>([]);
+  const current = useRef<Array<{ x: number; y: number }> | null>(null);
+  const [penMode, setPenMode] = useState(false);
+
+  const redraw = useCallback(() => {
+    const canvas = canvasRef.current;
+    const wrap = wrapRef.current;
+    if (!canvas || !wrap) return;
+    const dpr = window.devicePixelRatio || 1;
+    const w = wrap.clientWidth;
+    const h = wrap.clientHeight;
+    if (canvas.width !== w * dpr || canvas.height !== h * dpr) {
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+    }
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    ctx.strokeStyle = '#9e1f70';
+    ctx.lineWidth = 3.4;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    const paths = current.current ? [...strokes.current, current.current] : strokes.current;
+    for (const path of paths) {
+      if (path.length < 2) continue;
+      ctx.beginPath();
+      ctx.moveTo(path[0].x, path[0].y);
+      for (let i = 1; i < path.length; i++) ctx.lineTo(path[i].x, path[i].y);
+      ctx.stroke();
+    }
+  }, []);
+
+  useEffect(() => {
+    const ro = new ResizeObserver(redraw);
+    if (wrapRef.current) ro.observe(wrapRef.current);
+    return () => ro.disconnect();
+  }, [redraw]);
+
+  function pt(e: React.PointerEvent): { x: number; y: number } {
+    const canvas = canvasRef.current!;
+    const r = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    const scaleX = r.width ? canvas.width / dpr / r.width : 1;
+    const scaleY = r.height ? canvas.height / dpr / r.height : 1;
+    return { x: (e.clientX - r.left) * scaleX, y: (e.clientY - r.top) * scaleY };
+  }
+
+  const renderEntry = (tp: (typeof G1_TARBIYA_TOPICS)[number], i: number) => {
+    const delay = Math.min(i * 0.02, 0.4);
+    const built = isBuiltTopic(tp.key);
+    const done = completedKeys.has(tp.key);
+    if (built) {
+      return (
+        <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
+          <Link
+            href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
+            className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}
+          >
+            <span
+              className="shrink-0 min-w-8 h-8 px-2 rounded-full grid place-items-center font-black text-white text-[11px] whitespace-nowrap"
+              style={{ background: done ? 'var(--brand-green)' : ROSE }}
+            >
+              {done ? '✓' : bookNo(tp.n)}
+            </span>
+            <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
+            <span className="shrink-0 font-black" style={{ color: ROSE }} aria-hidden>{isPaid || tp.n === 1 ? '▶' : '🔒'}</span>
+          </Link>
+        </motion.div>
+      );
+    }
+    return (
+      <motion.div
+        key={tp.key}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay }}
+        title={t('common.comingSoon')}
+        aria-label={t('common.comingSoon')}
+        className="card h-full flex items-center gap-2 px-3 py-2.5 opacity-70 cursor-default"
+      >
+        <span className="shrink-0 min-w-8 h-8 px-2 rounded-full grid place-items-center font-black text-white text-[11px] whitespace-nowrap bg-ink/30">{bookNo(tp.n)}</span>
+        <span className="flex-1 font-extrabold text-ink/70 text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
+        <span className="shrink-0 text-base" aria-hidden>🔒</span>
+      </motion.div>
+    );
+  };
+
+  return (
+    <main className="min-h-screen pb-16">
+      <BackBar backHref="/dashboard" showLang />
+
+      <div className="max-w-3xl mx-auto px-3">
+        <div className="flex items-center gap-3 mt-4">
+          <h1 className="font-black text-ink text-2xl sm:text-3xl">
+            {t('common.grade', { n: 1 })} · {pick(SUBJECTS.tarbiya.name, locale)}
+          </h1>
+        </div>
+
+        {/* ------- rose notebook: "Hozirgacha o'rganganlarim" ------- */}
+        <section className="mt-6 relative">
+          <h2 className="font-black text-ink/70 text-lg mb-2">❤️ {t('dashboard.learnedTitle')}</h2>
+          <div className="relative rounded-2xl shadow-card overflow-hidden" style={{ border: '1px solid rgba(194,41,138,0.25)' }}>
+            {/* spiral binding (rose-tinted) */}
+            <div
+              aria-hidden
+              className="absolute left-0 top-0 bottom-0 w-9 z-10"
+              style={{
+                background:
+                  'radial-gradient(circle at 14px 17px, #fff 0 4px, #e07db4 4px 6.5px, transparent 6.5px), linear-gradient(#f2c9dd,#f2c9dd)',
+                backgroundSize: '100% 34px, 100% 100%'
+              }}
+            />
+            <div ref={wrapRef} className="notebook notebook-rose relative pl-[72px] pr-4 pt-[10px] pb-[78px] min-h-[170px]">
+              <div className="relative z-[5] flex flex-wrap gap-2.5 items-start" style={{ minHeight: 'calc(var(--line-h) * 2)' }}>
+                {learned.length === 0 && (
+                  <span className="font-bold text-ink/45 pt-1">{t('dashboard.emptyLearned')}</span>
+                )}
+                {learned.map((tp) => (
+                  <Link
+                    key={tp.key}
+                    href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
+                    className="inline-flex items-center gap-2 rounded-xl px-3 py-1.5 font-extrabold text-ink transition-colors"
+                    style={{ background: 'rgba(194,41,138,0.16)', border: '2px solid rgba(194,41,138,0.55)' }}
+                    title={t('dashboard.replay')}
+                  >
+                    ✅ {bookNo(tp.n)}. {pick(tp.title, locale)}
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-white text-brand-purple border border-brand-purple/30">
+                      ⭐ {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+
+              {/* drawing canvas overlay (pen mode) */}
+              <canvas
+                ref={canvasRef}
+                className={`absolute inset-0 z-[8] ${penMode ? 'cursor-pencil' : 'pointer-events-none'}`}
+                style={{ touchAction: penMode ? 'none' : 'auto' }}
+                onPointerDown={(e) => {
+                  if (!penMode) return;
+                  (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
+                  current.current = [pt(e)];
+                  redraw();
+                }}
+                onPointerMove={(e) => {
+                  if (!penMode || !current.current) return;
+                  current.current.push(pt(e));
+                  redraw();
+                }}
+                onPointerUp={() => {
+                  if (current.current) {
+                    strokes.current.push(current.current);
+                    current.current = null;
+                    redraw();
+                  }
+                }}
+              />
+
+              {/* pen toolbar */}
+              <div className="absolute bottom-2.5 left-[72px] right-3 z-[12] flex items-center gap-2">
+                <button
+                  onClick={() => setPenMode(true)}
+                  aria-pressed={penMode}
+                  className="btn-ghost text-sm px-3.5 py-2"
+                  style={penMode ? { boxShadow: `0 0 0 2px ${ROSE} inset`, background: 'rgba(194,41,138,0.1)' } : undefined}
+                >
+                  ✏️ {t('dashboard.pen')}
+                </button>
+                <button
+                  onClick={() => setPenMode(false)}
+                  aria-pressed={!penMode}
+                  className="btn-ghost text-sm px-3.5 py-2"
+                  style={!penMode ? { boxShadow: `0 0 0 2px ${ROSE} inset`, background: 'rgba(194,41,138,0.1)' } : undefined}
+                >
+                  🖱️ {t('dashboard.cursor')}
+                </button>
+                <button
+                  onClick={() => {
+                    strokes.current = [];
+                    current.current = null;
+                    redraw();
+                  }}
+                  className="btn-ghost text-sm px-3.5 py-2 ml-auto"
+                >
+                  🧽 {t('dashboard.clearDrawing')}
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ------- Mavzular (boʻlimlarga ajratilgan) ------- */}
+        <section className="mt-8">
+          <div className="mb-3 flex flex-wrap items-center gap-3">
+            <h2 className="font-black text-ink/70 text-lg">📚 {t('dashboard.topicsTitle')}</h2>
+            <VideoLightbox src="/videos/tarbiya.mp4" poster="/videos/tarbiya.jpg" label="" title={pick(SUBJECTS.tarbiya.name, locale)} />
+          </div>
+          {SECTIONS.map((sec) => {
+            const topics = G1_TARBIYA_TOPICS.filter((tp) => tp.n >= sec.from && tp.n <= sec.to);
+            if (!topics.length) return null;
+            return (
+              <div key={sec.from} className="mt-5 first:mt-0">
+                <h3 className="font-black text-[14px] mb-2" style={{ color: ROSE }}>{pick(sec.title, locale)}</h3>
+                <CollapsibleGrid>{topics.map((tp, i) => renderEntry(tp, i))}</CollapsibleGrid>
+              </div>
+            );
+          })}
+        </section>
+
+      
+
+      </div>
+
+      <AIMascotButton />
+    </main>
+  );
+}

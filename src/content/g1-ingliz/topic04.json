@@ -1,0 +1,574 @@
+{
+  "topicId": "g1-ingliz-04",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🦎👀💬🌿",
+  "title": {
+    "uz": "Qara! Bu — kaltakesak!",
+    "ru": "Смотри! Это ящерица!",
+    "en": "Look! It's a lizard!"
+  },
+  "recall": {
+    "uz": "«Look! It's a lizard!» — «Qara! Bu kaltakesak!» Bugun inglizcha koʻrsatib gapiramiz.",
+    "ru": "«Look! It's a lizard!» — «Смотри! Это ящерица!» Сегодня учимся показывать и говорить.",
+    "en": "Look! It's a lizard! Let's point and say it in English!"
+  },
+  "ttsText": {
+    "uz": "Qara! Bu — kaltakesak!",
+    "en": "Look! It's a lizard! Let's point and say it in English!"
+  },
+  "recallAudioLang": "en",
+  "recallMedia": {
+    "gif": "/quiz-media/en-lizard.gif",
+    "maxWidth": 260
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bolalar nimani koʻrishdi?",
+        "ru": "Послушай диалог. Что увидели дети?",
+        "en": "Listen to the dialog. What did the children see?"
+      },
+      "hint": {
+        "uz": "«Lizard» — kaltakesak.",
+        "ru": "«Lizard» — ящерица.",
+        "en": "A lizard is a small green animal."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular kaltakesak koʻrishdi.",
+        "ru": "Молодец! Они увидели ящерицу.",
+        "en": "Great! They saw a lizard."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Zara",
+              "text": "Look! It's a lizard!",
+              "audio": {
+                "key": "ing04-q1-a",
+                "text": "Look! It's a lizard!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Wow! It's little!",
+              "audio": {
+                "key": "ing04-q1-b",
+                "text": "Wow! It's little!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👩‍🏫",
+              "name": "Teacher",
+              "text": "Be gentle, please.",
+              "audio": {
+                "key": "ing04-q1-c",
+                "text": "Be gentle, please.",
+                "voice": "teacher"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bolalar nimani koʻrishdi?",
+              "ru": "Что увидели дети?",
+              "en": "What did they see?"
+            },
+            "choices": [
+              {
+                "uz": "Kaltakesak",
+                "ru": "Ящерицу",
+                "en": "A lizard"
+              },
+              {
+                "uz": "Kuchuk",
+                "ru": "Собаку",
+                "en": "A dog"
+              },
+              {
+                "uz": "Panda",
+                "ru": "Панду",
+                "en": "A panda"
+              }
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri hayvonni bos!",
+        "ru": "Послушай и нажми нужное животное!",
+        "en": "Listen and tap the right animal!"
+      },
+      "audio": {
+        "key": "ing04-q2",
+        "text": "Look! It's a lizard!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«Lizard» — yashil, dumli kichkina jonivor.",
+        "ru": "«Lizard» — маленький зелёный зверёк с хвостом.",
+        "en": "A lizard is small and green with a tail."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Lizard — kaltakesak.",
+        "ru": "Верно! Lizard — ящерица.",
+        "en": "Right! A lizard!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🦎",
+              "label": "lizard",
+              "correct": true
+            },
+            {
+              "emoji": "🐼",
+              "label": "panda"
+            },
+            {
+              "emoji": "🐸",
+              "label": "frog"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri hayvonni bos!",
+        "ru": "Послушай и нажми нужное животное!",
+        "en": "Listen and tap the right animal!"
+      },
+      "audio": {
+        "key": "ing04-q3",
+        "text": "Look! It's a cat!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«Cat» — miyov deydigan uy hayvoni.",
+        "ru": "«Cat» — домашний зверь, который мяукает.",
+        "en": "A cat says \"meow\"."
+      },
+      "explanation": {
+        "uz": "Barakalla! Cat — mushuk.",
+        "ru": "Молодец! Cat — кошка.",
+        "en": "Great! A cat!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐱",
+              "label": "cat",
+              "correct": true
+            },
+            {
+              "emoji": "🐶",
+              "label": "dog"
+            },
+            {
+              "emoji": "🐭",
+              "label": "mouse"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Look!» soʻzi nima degani?",
+        "ru": "Что значит слово «Look!»?",
+        "en": "What does \"Look!\" mean?"
+      },
+      "audio": {
+        "key": "ing04-q4",
+        "text": "Look!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "Doʻstingga biror narsani koʻrsatmoqchi boʻlsang shu soʻzni aytasan.",
+        "ru": "Это слово говорят, когда хотят что-то показать другу.",
+        "en": "You say it when you point at something."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Look!» — «Qara!» degani.",
+        "ru": "Верно! «Look!» значит «Смотри!».",
+        "en": "Right! \"Look!\" means to see something."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Qara!",
+              "ru": "Смотри!",
+              "en": "See it!"
+            },
+            {
+              "uz": "Tingla!",
+              "ru": "Слушай!",
+              "en": "Hear it!"
+            },
+            {
+              "uz": "Yugur!",
+              "ru": "Беги!",
+              "en": "Run!"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu nima ekan?",
+        "ru": "Послушай. Что же это?",
+        "en": "Listen. What is it?"
+      },
+      "hint": {
+        "uz": "«It's a …» — «Bu — …» degani.",
+        "ru": "«It's a …» значит «Это — …».",
+        "en": "Listen for the word after \"It's a…\"."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bu robot ekan.",
+        "ru": "Молодец! Это робот.",
+        "en": "Great! It's a robot."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What is it?",
+              "audio": {
+                "key": "ing04-q5-a",
+                "text": "What is it?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's a robot!",
+              "audio": {
+                "key": "ing04-q5-b",
+                "text": "It's a robot!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu nima?",
+              "ru": "Что это?",
+              "en": "What is it?"
+            },
+            "choices": [
+              {
+                "uz": "Varrak",
+                "ru": "Воздушный змей",
+                "en": "A kite"
+              },
+              {
+                "uz": "Robot",
+                "ru": "Робот",
+                "en": "A robot"
+              },
+              {
+                "uz": "Toʻp",
+                "ru": "Мяч",
+                "en": "A ball"
+              }
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va toʻgʻri hayvonni bos!",
+        "ru": "Послушай и нажми нужное животное!",
+        "en": "Listen and tap the right animal!"
+      },
+      "audio": {
+        "key": "ing04-q6",
+        "text": "Look! It's a bird!",
+        "voice": "boy"
+      },
+      "hint": {
+        "uz": "«Bird» — uchadigan jonivor.",
+        "ru": "«Bird» — тот, кто летает.",
+        "en": "A bird can fly."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bird — qush.",
+        "ru": "Верно! Bird — птица.",
+        "en": "Right! A bird!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐦",
+              "label": "bird",
+              "correct": true
+            },
+            {
+              "emoji": "🐟",
+              "label": "fish"
+            },
+            {
+              "emoji": "🐢",
+              "label": "turtle"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni oʻz rasmiga ula!",
+        "ru": "Соедини английское слово с картинкой!",
+        "en": "Match each English word to its picture!"
+      },
+      "hint": {
+        "uz": "Lizard — kaltakesak, panda — panda, robot — robot, bird — qush.",
+        "ru": "Lizard — ящерица, panda — панда, robot — робот, bird — птица.",
+        "en": "Say each word aloud as you match."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Toʻrtta soʻzni bilding!",
+        "ru": "Отлично! Ты знаешь четыре слова!",
+        "en": "Awesome! Four words matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "lizard"
+              },
+              "right": {
+                "emoji": "🦎"
+              }
+            },
+            {
+              "left": {
+                "label": "panda"
+              },
+              "right": {
+                "emoji": "🐼"
+              }
+            },
+            {
+              "left": {
+                "label": "robot"
+              },
+              "right": {
+                "emoji": "🤖"
+              }
+            },
+            {
+              "left": {
+                "label": "bird"
+              },
+              "right": {
+                "emoji": "🐦"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla, takrorla va sahnalashtir!",
+        "ru": "Послушай, повтори и разыграй сценку!",
+        "en": "Listen, repeat and act it out!"
+      },
+      "hint": {
+        "uz": "Qoʻling bilan koʻrsatib «Look!» de.",
+        "ru": "Покажи рукой и скажи «Look!».",
+        "en": "Point with your hand and say \"Look!\"."
+      },
+      "explanation": {
+        "uz": "Barakalla! Endi buni doʻstingga ham ayt!",
+        "ru": "Молодец! Теперь скажи это другу!",
+        "en": "Great! Now say it to a friend!"
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Zara",
+              "text": "Look! It's a lizard!",
+              "audio": {
+                "key": "ing04-q8-a",
+                "text": "Look! It's a lizard!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Wow!",
+              "audio": {
+                "key": "ing04-q8-b",
+                "text": "Wow!",
+                "voice": "boy"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. «Big» nima degani?",
+        "ru": "Послушай. Что значит «big»?",
+        "en": "Listen. What does \"big\" mean?"
+      },
+      "audio": {
+        "key": "ing04-q9",
+        "text": "Look! It's big!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "Fil — big, chumoli — little.",
+        "ru": "Слон — big, муравей — little.",
+        "en": "An elephant is big, an ant is little."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Big — katta.",
+        "ru": "Верно! Big — большой.",
+        "en": "Right! Big!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Katta",
+              "ru": "Большой",
+              "en": "Very large"
+            },
+            {
+              "uz": "Kichkina",
+              "ru": "Маленький",
+              "en": "Very small"
+            },
+            {
+              "uz": "Tez",
+              "ru": "Быстрый",
+              "en": "Fast"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va kichkina jonivorni bos!",
+        "ru": "Послушай и нажми маленького зверька!",
+        "en": "Listen and tap the little animal!"
+      },
+      "audio": {
+        "key": "ing04-q10",
+        "text": "It's little! Tap the little one.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«Little» — kichkina.",
+        "ru": "«Little» — маленький.",
+        "en": "\"Little\" means small."
+      },
+      "explanation": {
+        "uz": "Barakalla! Chumoli — eng kichkinasi.",
+        "ru": "Молодец! Муравей — самый маленький.",
+        "en": "Great! The ant is the littlest."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐜",
+              "label": {
+                "uz": "chumoli",
+                "ru": "муравей",
+                "en": "ant"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🐘",
+              "label": {
+                "uz": "fil",
+                "ru": "слон",
+                "en": "elephant"
+              }
+            },
+            {
+              "emoji": "🐰",
+              "label": {
+                "uz": "quyon",
+                "ru": "кролик",
+                "en": "rabbit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

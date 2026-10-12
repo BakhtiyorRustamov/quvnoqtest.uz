@@ -1,0 +1,446 @@
+{
+  "topicId": "g1-alifbe-57",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤✉️🚪👥",
+  "title": {
+    "uz": "«X x» harfi",
+    "ru": "Буква «X x»",
+    "en": "The letter “X x”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «X x». U undosh tovush. «X» bilan: xat, xona, xalq. Ism va joy nomlari bosh harf bilan yoziladi!",
+    "ru": "Сегодня наша буква — «X x». Это согласный звук. Слова: xat, xona, xalq. Имена и названия пишутся с заглавной буквы!",
+    "en": "Today's letter is “X x”. It is a consonant. Words: xat, xona, xalq. Names and places are written with a capital letter!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«X» bilan boshlanadigan soʻzni top!",
+        "ru": "Найди слово на «X»!",
+        "en": "Find the word that starts with “X”!"
+      },
+      "hint": {
+        "uz": "Boshini choʻzib ayt: xat.",
+        "ru": "Протяни начало: xat.",
+        "en": "Stretch the start: xat."
+      },
+      "explanation": {
+        "uz": "«xat» «X» tovushi bilan boshlanadi.",
+        "ru": "«xat» начинается со звука «X».",
+        "en": "“xat” starts with the sound “X”."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "✉️",
+              "label": {
+                "uz": "xat",
+                "ru": "письмо",
+                "en": "letter"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«X» harfini topib, hammasini bos!",
+        "ru": "Найди букву «X» и нажми на все!",
+        "en": "Find the letter “X” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham.",
+        "ru": "Большая и маленькая тоже.",
+        "en": "Capital and small too."
+      },
+      "explanation": {
+        "uz": "«X» harfini topding!",
+        "ru": "Ты нашёл букву «X»!",
+        "en": "You found the letter “X”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "X",
+          "cols": 3,
+          "grid": [
+            "X",
+            "o",
+            "x",
+            "T",
+            "X",
+            "i",
+            "x",
+            "n",
+            "X"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "✉️ «xat»da «x» tovushi qaysi katakchada?",
+        "ru": "✉️ В какой клетке звук «x» в слове «xat»?",
+        "en": "✉️ Which box has the “x” sound in “xat”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«xat»da «x» toʻgʻri joyda.",
+        "ru": "В «xat» звук «x» на верном месте.",
+        "en": "In “xat” the “x” is right."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "✉️",
+          "word": {
+            "uz": "xat",
+            "ru": "xat",
+            "en": "xat"
+          },
+          "sound": "x",
+          "cells": [
+            "x",
+            "a",
+            "t"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "✉️ «xat» soʻzining tovush chizmasini rangla!",
+        "ru": "✉️ Раскрась схему звуков «xat»!",
+        "en": "✉️ Colour the sound scheme of “xat”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«xat» chizmasini rangladik.",
+        "ru": "Мы раскрасили схему «xat».",
+        "en": "We coloured the scheme of “xat”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "✉️",
+          "word": {
+            "uz": "xat",
+            "ru": "xat",
+            "en": "xat"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«X» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «X»!",
+        "en": "Tap the words with the “X” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «x» tovushi bor.",
+        "ru": "В них есть звук «x».",
+        "en": "They have the “x” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "✉️",
+              "label": {
+                "uz": "xat",
+                "ru": "xat",
+                "en": "xat"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🚪",
+              "label": {
+                "uz": "xona",
+                "ru": "xona",
+                "en": "xona"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👥",
+              "label": {
+                "uz": "xalq",
+                "ru": "xalq",
+                "en": "xalq"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "✉️ Yetishmayotgan harfni qoʻy!",
+        "ru": "✉️ Вставь недостающую букву!",
+        "en": "✉️ Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz: «xat».",
+        "ru": "Слово: «xat».",
+        "en": "The word: “xat”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «x».",
+        "ru": "Верная буква — «x».",
+        "en": "The right letter is “x”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "✉️",
+          "label": {
+            "uz": "xat",
+            "ru": "письмо",
+            "en": "letter"
+          },
+          "letters": [
+            "x",
+            "a",
+            "t"
+          ],
+          "blank": 0,
+          "choices": [
+            "x",
+            "h",
+            "k"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bosh harf bilan yoziladigan soʻzlarni belgila!",
+        "ru": "Отметь слова с заглавной буквы!",
+        "en": "Tap the words that need a capital letter!"
+      },
+      "hint": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия — с заглавной.",
+        "en": "Names and places take a capital."
+      },
+      "explanation": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия пишутся с заглавной буквы.",
+        "en": "Names and place names are written with a capital."
+      },
+      "widget": {
+        "type": "capital_pick",
+        "props": {
+          "words": [
+            {
+              "word": "Xolida",
+              "capital": true
+            },
+            {
+              "word": "Xonzoda",
+              "capital": true
+            },
+            {
+              "word": "xat",
+              "capital": false
+            },
+            {
+              "word": "xona",
+              "capital": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«X» — undosh tovush.",
+        "ru": "«X» — согласный звук.",
+        "en": "“X” is a consonant."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «X» — undosh.",
+        "ru": "Верно! «X» — согласный.",
+        "en": "True! “X” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🚪 «xona» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🚪 Похлопай «xona» по слогам!",
+        "en": "🚪 Clap “xona” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«xona» — 2 boʻgʻin.",
+        "ru": "«xona» — 2 слога.",
+        "en": "“xona” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🚪",
+          "word": {
+            "uz": "xona",
+            "ru": "xona",
+            "en": "xona"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«X» tovushi qayerdan chiqadi?",
+        "ru": "Откуда выходит звук «X»?",
+        "en": "Where does “X” come from?"
+      },
+      "hint": {
+        "uz": "«x» tovushini ayt.",
+        "ru": "Скажи звук «x».",
+        "en": "Say the “x” sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — tomoqdan.",
+        "ru": "Верно — из горла.",
+        "en": "Right — from the throat."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "tomoqdan",
+              "ru": "из горла",
+              "en": "from the throat"
+            },
+            {
+              "uz": "lablardan",
+              "ru": "из губ",
+              "en": "from the lips"
+            },
+            {
+              "uz": "burundan",
+              "ru": "из носа",
+              "en": "from the nose"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

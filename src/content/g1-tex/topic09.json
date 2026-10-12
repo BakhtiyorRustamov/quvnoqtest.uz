@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-09",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Olma koʻtargan tipratikan",
+    "ru": "Ёжик с яблоком",
+    "en": "A hedgehog carrying an apple"
+  },
+  "recall": {
+    "uz": "Bugun qogʻozdan orqasida olma koʻtargan tipratikan yasaymiz.",
+    "ru": "Сегодня из бумаги сделаем ёжика с яблоком на спине.",
+    "en": "Today we make a paper hedgehog carrying an apple."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tipratikan yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай ёжика. Выполняй каждый этап по рисунку!",
+        "en": "Make the hedgehog. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Ninalarni orqasiga yopishtir.",
+        "ru": "Приклей иголки на спину.",
+        "en": "Glue the spikes on the back."
+      },
+      "explanation": {
+        "uz": "Quvnoq tipratikan!",
+        "ru": "Весёлый ёжик!",
+        "en": "A cheerful hedgehog!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            },
+            {
+              "uz": "qalam",
+              "ru": "карандаш",
+              "en": "a pencil"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Jigarrang qogʻozdan oval tana va tumshuq qirq.",
+              "ru": "Вырежь из коричневой бумаги овальное тело и мордочку.",
+              "en": "Cut an oval body and snout from brown paper."
+            },
+            {
+              "uz": "Uchburchak ninalarni qirqib, orqasiga yopishtir.",
+              "ru": "Вырежь треугольные иголки и приклей на спину.",
+              "en": "Cut triangular spikes and glue them on the back."
+            },
+            {
+              "uz": "Qizil olma yopishtir, koʻz va burun chiz.",
+              "ru": "Приклей красное яблоко, нарисуй глаз и нос.",
+              "en": "Glue a red apple, draw an eye and a nose."
+            }
+          ],
+          "art": "hedgehog",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

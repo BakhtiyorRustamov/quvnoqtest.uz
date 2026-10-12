@@ -1,0 +1,368 @@
+{
+  "topicId": "g1-math-118",
+  "subjectKey": "g1-math",
+  "emojis": "📐🔢✨",
+  "title": {
+    "uz": "Perimetrni hisoblaymiz — mashq",
+    "ru": "Вычисляем периметр — практика",
+    "en": "Computing perimeter — practice"
+  },
+  "recall": {
+    "uz": "Koʻpburchak perimetri uning barcha tomonlari uzunliklari yigʻindisiga teng. Perimetr P harfi bilan belgilanadi. Tomonlarni ketma-ket qoʻshib, perimetrni topamiz.",
+    "ru": "Периметр многоугольника равен сумме длин всех его сторон. Периметр обозначается буквой P. Складываем стороны по очереди и находим периметр.",
+    "en": "A polygon's perimeter equals the sum of all its side lengths. Perimeter is written as P. We add the sides one by one to find it."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            3,
+            4,
+            5
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Uchburchak perimetrini top.",
+        "ru": "Найди периметр треугольника.",
+        "en": "Find the triangle's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 12 cm.",
+        "ru": "Периметр = 12 cm.",
+        "en": "Perimeter = 12 cm."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Beshburchak perimetrini top.",
+        "ru": "Найди периметр пятиугольника.",
+        "en": "Find the pentagon's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 10 cm.",
+        "ru": "Периметр = 10 cm.",
+        "en": "Perimeter = 10 cm."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            14,
+            2,
+            1,
+            2,
+            12
+          ],
+          "unit": "dm"
+        }
+      },
+      "prompt": {
+        "uz": "Stol chetining perimetrini top.",
+        "ru": "Найди периметр края стола.",
+        "en": "Find the table edge's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 31 dm.",
+        "ru": "Периметр = 31 dm.",
+        "en": "Perimeter = 31 dm."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "4",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Uchburchak perimetri 12 cm. Ikki tomoni 5 cm va 4 cm. Uchinchi tomoni necha cm?",
+        "ru": "Периметр треугольника 12 см. Две стороны 5 и 4 см. Какова третья?",
+        "en": "A triangle's perimeter is 12 cm. Two sides are 5 and 4 cm. What is the third?"
+      },
+      "hint": {
+        "uz": "12 dan 5 va 4 ni ayir.",
+        "ru": "Вычти из 12 числа 5 и 4.",
+        "en": "Take 5 and 4 from 12."
+      },
+      "explanation": {
+        "uz": "12 - 5 - 4 = 3 cm.",
+        "ru": "12 - 5 - 4 = 3 см.",
+        "en": "12 - 5 - 4 = 3 cm."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 15,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Tomonlari 5, 4, 6 cm. Perimetrni hisobla va bloklardan yasa.",
+        "ru": "Стороны 5, 4, 6 см. Вычисли периметр и собери из блоков.",
+        "en": "Sides are 5, 4, 6 cm. Compute the perimeter and build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "5 + 4 + 6 = 15.",
+        "ru": "5 + 4 + 6 = 15.",
+        "en": "5 + 4 + 6 = 15."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "3 + 4 + 5",
+              "right": "12"
+            },
+            {
+              "left": "6 + 6 + 6",
+              "right": "18"
+            },
+            {
+              "left": "4 + 4 + 4 + 4",
+              "right": "16"
+            },
+            {
+              "left": "5 + 5 + 5",
+              "right": "15"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            6,
+            6,
+            6
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Teng tomonli uchburchak perimetrini top.",
+        "ru": "Найди периметр равностороннего треугольника.",
+        "en": "Find the equilateral triangle's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 18 cm.",
+        "ru": "Периметр = 18 cm.",
+        "en": "Perimeter = 18 cm."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 7,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda shakl tomonining uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину стороны фигуры. Сколько см?",
+        "en": "Measure the side of the shape. How many cm?"
+      },
+      "hint": {
+        "uz": "Tomonning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается сторона.",
+        "en": "See which number the side ends on."
+      },
+      "explanation": {
+        "uz": "Tomon uzunligi 7 cm.",
+        "ru": "Длина стороны 7 см.",
+        "en": "The side is 7 cm long."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Ikki tomon: 9 cm va 8 cm. Yigʻindisi necha cm?",
+        "ru": "Две стороны: 9 см и 8 см. Сумма?",
+        "en": "Two sides: 9 cm and 8 cm. The sum?"
+      },
+      "hint": {
+        "uz": "9 dan boshla, 8 oldinga sur.",
+        "ru": "Встань на 9, продвинься на 8.",
+        "en": "Start at 9, move 8 forward."
+      },
+      "explanation": {
+        "uz": "9 + 8 = 17 cm.",
+        "ru": "9 + 8 = 17 см.",
+        "en": "9 + 8 = 17 cm."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "8 + 4",
+              "bin": "v12"
+            },
+            {
+              "id": "b",
+              "label": "6 + 6",
+              "bin": "v12"
+            },
+            {
+              "id": "c",
+              "label": "3 + 9",
+              "bin": "v12"
+            },
+            {
+              "id": "d",
+              "label": "8 + 8",
+              "bin": "v16"
+            },
+            {
+              "id": "e",
+              "label": "10 + 6",
+              "bin": "v16"
+            },
+            {
+              "id": "f",
+              "label": "9 + 7",
+              "bin": "v16"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v12",
+              "label": "12"
+            },
+            {
+              "id": "v16",
+              "label": "16"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir perimetrni qiymati boʻyicha qutiga sudra!",
+        "ru": "Перетащи каждый периметр в ящик его значения!",
+        "en": "Drag each perimeter into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в нужный ящик.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir perimetr oʻz qiymati qutisida.",
+        "ru": "Каждый периметр в ящике своего значения.",
+        "en": "Each perimeter is in the bucket of its value."
+      }
+    }
+  ]
+}

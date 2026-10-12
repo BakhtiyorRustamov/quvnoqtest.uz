@@ -1,0 +1,43 @@
+{
+  "topicId": "g1-art-01",
+  "subjectKey": "g1-art",
+  "emojis": "",
+  "hideAudio": true,
+  "title": { "uz": "Tasviriy sanʼat nima?", "ru": "Что такое изобразительное искусство?", "en": "What is visual art?" },
+  "recall": {
+    "uz": "Odamlar qadimdan atrofdagi olamni chizib kelishgan — avval qoya va gʻorlarga, keyin qogʻozga. Tasviriy sanʼat — bizni oʻrab turgan olamni ranglar va chiziqlar bilan tasvirlashdir.",
+    "ru": "С древности люди рисовали окружающий мир — сначала на скалах и в пещерах, потом на бумаге. Изобразительное искусство — это изображение окружающего мира красками и линиями.",
+    "en": "Since ancient times people have drawn the world around them — first on rocks and in caves, later on paper. Visual art is showing the world around us with colours and lines."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Qadimda odamlar avval qayerga rasm chizishgan?", "ru": "Где рисовали люди в древности?", "en": "Where did people first draw long ago?" },
+      "hint": { "uz": "Toshli joylarga.", "ru": "На камне.", "en": "On stone." },
+      "explanation": { "uz": "Toʻgʻri! Qoya va gʻorlarga chizishgan.", "ru": "Верно! На скалах и в пещерах.", "en": "Right! On rocks and in caves." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "qoya va gʻorlarga", "ru": "на скалах и в пещерах", "en": "on rocks and in caves" },
+        { "uz": "kompyuterga", "ru": "на компьютере", "en": "on a computer" },
+        { "uz": "telefonga", "ru": "на телефоне", "en": "on a phone" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Hozir biz nimalarga rasm chiza olamiz?", "ru": "На чём мы можем рисовать сейчас?", "en": "What can we draw on today?" },
+      "hint": { "uz": "Qogʻoz, mato, devor…", "ru": "Бумага, ткань, стена…", "en": "Paper, cloth, walls…" },
+      "explanation": { "uz": "Barakalla! Qogʻoz, mato va devorlarga ham chizsak boʻladi.", "ru": "Молодец! На бумаге, ткани и стенах.", "en": "Great! On paper, cloth and walls too." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "qogʻoz, mato va devorga", "ru": "на бумаге, ткани и стене", "en": "on paper, cloth and walls" },
+        { "uz": "faqat suvga", "ru": "только на воде", "en": "only on water" },
+        { "uz": "hech narsaga", "ru": "ни на чём", "en": "on nothing" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Endi oʻzing rassom boʻl! Xohlagan narsangni chiz.", "ru": "Теперь ты художник! Нарисуй что хочешь.", "en": "Now you are the artist! Draw anything you like." },
+      "hint": { "uz": "Rang tanla va erkin chiz.", "ru": "Выбери цвет и рисуй свободно.", "en": "Pick a colour and draw freely." },
+      "explanation": { "uz": "Ajoyib! Sen haqiqiy rassomsan.", "ru": "Отлично! Ты настоящий художник.", "en": "Great! You are a real artist." },
+      "widget": { "type": "free_draw", "props": {} }
+    }
+  ]
+}

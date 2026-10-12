@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-42",
+  "subjectKey": "g1-ona",
+  "emojis": "🗺️🧭✍️",
+  "title": {
+    "uz": "Joy nomlarini bildiruvchi soʻzlar",
+    "ru": "Слова, называющие места",
+    "en": "Words that name places"
+  },
+  "recall": {
+    "uz": "Joy nomlari buyuk kishilarning ism va shariflari bilan ham nomlanishi mumkin: Alisher Navoiy, Mirzo Ulugʻbek, Beruniy. Bunday nomlar ham bosh harf bilan yoziladi. Oʻzbekiston beshta davlat bilan chegaradosh: Qozogʻiston, Qirgʻiziston, Tojikiston, Turkmaniston, Afgʻoniston.",
+    "ru": "Названия мест могут даваться и по именам великих людей: Alisher Navoiy, Mirzo Ulugʻbek, Beruniy. Такие названия тоже пишутся с заглавной. Узбекистан граничит с пятью странами: Qozogʻiston, Qirgʻiziston, Tojikiston, Turkmaniston, Afgʻoniston.",
+    "en": "Places can also be named after great people: Alisher Navoiy, Mirzo Ulugʻbek, Beruniy. These names are capitalized too. Uzbekistan borders five countries: Qozogʻiston, Qirgʻiziston, Tojikiston, Turkmaniston, Afgʻoniston."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Buyuk kishilar nomi bilan", "ru": "Именами великих людей", "en": "After great people" }, { "uz": "Hayvonlar laqabi bilan", "ru": "Кличками животных", "en": "After animal nicknames" }, { "uz": "Oddiy narsalar nomi bilan", "ru": "Названиями обычных вещей", "en": "After ordinary things" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Joy nomlari yana kimlarning nomi bilan atalishi mumkin?", "ru": "Именами кого ещё могут называться места?", "en": "Places can also be named after whom?" },
+      "hint": { "uz": "Navoiy viloyati, Beruniy shahri.", "ru": "Navoiy viloyati, Beruniy shahri.", "en": "Navoiy viloyati, Beruniy shahri." },
+      "explanation": { "uz": "Joylar buyuk kishilar — Navoiy, Ulugʻbek, Beruniy nomi bilan ataladi.", "ru": "Места называют в честь великих людей — Navoiy, Ulugʻbek, Beruniy.", "en": "Places are named after great people — Navoiy, Ulugʻbek, Beruniy." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Alisher Navoiy", "right": "Navoiy viloyati" }, { "left": "Mirzo Ulugʻbek", "right": "Milliy universitet" }, { "left": "Beruniy", "right": "Beruniy shahri" } ] } },
+      "prompt": { "uz": "Buyuk kishini uning nomidagi joyga ula!", "ru": "Соедини великого человека с названным в его честь местом!", "en": "Match each great person to the place named after them!" },
+      "hint": { "uz": "Alisher Navoiy — Navoiy viloyati.", "ru": "Alisher Navoiy — Navoiy viloyati.", "en": "Alisher Navoiy — Navoiy viloyati." },
+      "explanation": { "uz": "Joylar buyuk kishilar sharafiga nomlangan.", "ru": "Места названы в честь великих людей.", "en": "The places are named in honour of great people." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Qozogʻiston", "match": true }, { "text": "Tojikiston", "match": true }, { "text": "Rossiya", "match": false }, { "text": "Qirgʻiziston", "match": true }, { "text": "Misr", "match": false }, { "text": "Turkmaniston", "match": true }, { "text": "Afgʻoniston", "match": true } ] } },
+      "prompt": { "uz": "Oʻzbekiston bilan chegaradosh davlatlarni bos!", "ru": "Нажми страны, граничащие с Узбекистаном!", "en": "Tap the countries that border Uzbekistan!" },
+      "hint": { "uz": "Rossiya va Misr — chegaradosh emas.", "ru": "Россия и Египет не граничат с Узбекистаном.", "en": "Russia and Egypt do not border Uzbekistan." },
+      "explanation": { "uz": "Chegaradosh davlatlar: Qozogʻiston, Qirgʻiziston, Tojikiston, Turkmaniston, Afgʻoniston.", "ru": "Соседние страны: Qozogʻiston, Qirgʻiziston, Tojikiston, Turkmaniston, Afgʻoniston.", "en": "The neighbours are: Qozogʻiston, Qirgʻiziston, Tojikiston, Turkmaniston, Afgʻoniston." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["5", "3", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻzbekiston nechta davlat bilan chegaradosh?", "ru": "Со сколькими странами граничит Узбекистан?", "en": "How many countries does Uzbekistan border?" },
+      "hint": { "uz": "Ularni sanab chiqamiz: 1, 2, 3, 4, 5.", "ru": "Сосчитаем их: 1, 2, 3, 4, 5.", "en": "Let's count them: 1, 2, 3, 4, 5." },
+      "explanation": { "uz": "Oʻzbekiston beshta davlat bilan chegaradosh.", "ru": "Узбекистан граничит с пятью странами.", "en": "Uzbekistan borders five countries." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Shahrisabz", "bin": "shahar" }, { "id": "b", "label": "Buxoro", "bin": "shahar" }, { "id": "c", "label": "Asaka", "bin": "shahar" }, { "id": "d", "label": "Amudaryo", "bin": "daryo" }, { "id": "e", "label": "Soʻx", "bin": "daryo" }, { "id": "f", "label": "Kosonsoy", "bin": "daryo" } ], "bins": [ { "id": "shahar", "label": "Shahar" }, { "id": "daryo", "label": "Daryo" } ] } },
+      "prompt": { "uz": "Joy nomlarini ajrat: shahar va daryo!", "ru": "Раздели названия: город и река!", "en": "Sort the names: city vs river!" },
+      "hint": { "uz": "Amudaryo, Soʻx, Kosonsoy — daryolar.", "ru": "Amudaryo, Soʻx, Kosonsoy — реки.", "en": "Amudaryo, Soʻx, Kosonsoy are rivers." },
+      "explanation": { "uz": "Shaharlar: Shahrisabz, Buxoro, Asaka. Daryolar: Amudaryo, Soʻx, Kosonsoy.", "ru": "Города: Shahrisabz, Buxoro, Asaka. Реки: Amudaryo, Soʻx, Kosonsoy.", "en": "Cities: Shahrisabz, Buxoro, Asaka. Rivers: Amudaryo, Soʻx, Kosonsoy." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "avoiy", "choices": ["N", "n", "M"], "answer": "N", "emoji": "📚", "clue": { "uz": "Buyuk shoir nomi", "ru": "Имя великого поэта", "en": "A great poet's name" } } },
+      "prompt": { "uz": "Buyuk shoir nomini bosh harf bilan boshla!", "ru": "Начни имя великого поэта с заглавной!", "en": "Start the great poet's name with a capital!" },
+      "hint": { "uz": "«Navoiy» — buyuk shoir.", "ru": "«Navoiy» — великий поэт.", "en": "“Navoiy” is a great poet." },
+      "explanation": { "uz": "«Navoiy» kishi nomi, bosh «N» bilan yoziladi.", "ru": "«Navoiy» — имя человека, с заглавной «N».", "en": "“Navoiy” is a person's name, with a capital “N”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["Chorvoq", "Baykal", "Nil"], "answerIndex": 0 } },
+      "prompt": { "uz": "Nuqtalar oʻrniga mos joy nomini qoʻy: «Toshkent viloyatida ... suv ombori bor.»", "ru": "Вставь подходящее название: «В Ташкентской области есть водохранилище ... .»", "en": "Fill in the place name: “In the Toshkent region there is the ... reservoir.”" },
+      "hint": { "uz": "Bu suv ombori Chirchiq daryosida qurilgan.", "ru": "Это водохранилище на реке Chirchiq.", "en": "This reservoir is on the Chirchiq river." },
+      "explanation": { "uz": "Toshkent viloyatida Chorvoq suv ombori bor.", "ru": "В Ташкентской области есть Чорвакское (Chorvoq) водохранилище.", "en": "The Toshkent region has the Chorvoq reservoir." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["A", "mu", "dar", "yo"], "emoji": "🌊", "clue": { "uz": "Katta daryo nomi", "ru": "Название большой реки", "en": "A big river's name" } } },
+      "prompt": { "uz": "Boʻgʻinlardan daryo nomini tuz!", "ru": "Собери название реки из слогов!", "en": "Build the river's name from syllables!" },
+      "hint": { "uz": "A- … -mu- … -dar- … -yo.", "ru": "A- … -mu- … -dar- … -yo.", "en": "A- … -mu- … -dar- … -yo." },
+      "explanation": { "uz": "«Amudaryo» — daryo nomi, bosh harf bilan yoziladi.", "ru": "«Amudaryo» — название реки, с заглавной.", "en": "“Amudaryo” is a river name, written with a capital." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Alisher", "Navoiy", "buyuk", "shoir."], "emoji": "📖", "clue": { "uz": "Shoir haqida gap", "ru": "Предложение о поэте", "en": "A sentence about the poet" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Kim? — «Alisher Navoiy».", "ru": "Кто? — «Alisher Navoiy».", "en": "Who? — “Alisher Navoiy”." },
+      "explanation": { "uz": "Alisher Navoiy buyuk shoir. Ism va sharif bosh harf bilan.", "ru": "Alisher Navoiy — великий поэт. Имя пишется с заглавной.", "en": "Alisher Navoiy is a great poet. The name takes a capital." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "Buxoro", "letters": ["B", "u", "x", "o", "r", "o"], "emoji": "🕌", "clue": { "uz": "Qadimiy shahar nomi", "ru": "Название древнего города", "en": "An ancient city's name" } } },
+      "prompt": { "uz": "Harflardan shahar nomini yigʻ!", "ru": "Собери название города из букв!", "en": "Build the city's name from the letters!" },
+      "hint": { "uz": "Bu qadimiy shahar Oʻzbekistonda joylashgan.", "ru": "Этот древний город находится в Узбекистане.", "en": "This ancient city is in Uzbekistan." },
+      "explanation": { "uz": "«Buxoro» — shahar nomi, bosh «B» bilan yoziladi.", "ru": "«Buxoro» — название города, с заглавной «B».", "en": "“Buxoro” is a city name, written with a capital “B”." }
+    }
+  ]
+}

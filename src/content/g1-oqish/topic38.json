@@ -1,0 +1,151 @@
+{
+  "topicId": "g1-oqish-38",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "⭐🌌🔭",
+  "title": {
+    "uz": "Yulduzlar siri",
+    "ru": "Тайна звёзд",
+    "en": "The secret of the stars"
+  },
+  "recall": {
+    "uz": "Yulduzlar haqidagi sheʼrni tinglab oʻqiymiz, ularning rangi va issiqligini bilib olamiz.",
+    "ru": "Слушаем стихотворение о звёздах и узнаём об их цвете и жаре.",
+    "en": "We read a poem about the stars and learn about their colours and heat."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Yulduzlar",
+        "variant": "poem",
+        "audio": "g1-oqish-38-q1",
+        "lines": [
+          "Oftob botdi, kun ketdi,",
+          "Osmon toʻldi yulduzga.",
+          "Ular jimir-jimir qilar,",
+          "Kulib boqar bizga-da.",
+          "",
+          "Yulduzlar — ulkan olov,",
+          "Uzoq-uzoq oʻlkada.",
+          "Eng yaqin yulduz — Quyosh,",
+          "Nur sochar bu olamga."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Yulduzlar aslida nima?", "ru": "Что такое звёзды на самом деле?", "en": "What are stars, really?" },
+      "explanation": { "uz": "Sheʼr osmondagi yulduzlar va bizga eng yaqin yulduz — Quyosh haqida.", "ru": "Стихотворение о звёздах и ближайшей к нам звезде — Солнце.", "en": "The poem is about the stars and the closest star to us — the Sun." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Ular ulkan olov shar", "match": true },
+        { "text": "Turli rangda boʻladi", "match": true },
+        { "text": "Quyosh ham yulduz", "match": true },
+        { "text": "Ular muzdan yasalgan", "match": false },
+        { "text": "Ular kichkina toshcha", "match": false }
+      ] } },
+      "prompt": { "uz": "Yulduzlar haqidagi toʻgʻri gaplarni bos!", "ru": "Нажми верные утверждения о звёздах!", "en": "Tap the true facts about stars!" },
+      "hint": { "uz": "Yulduzlar mitti koʻrinsa-da, aslida ulkan.", "ru": "Звёзды кажутся крошечными, но огромны.", "en": "Stars look tiny but are actually huge." },
+      "explanation": { "uz": "Yulduzlar — ulkan olov sharlar, turli rangda; Quyosh ham yulduz.", "ru": "Звёзды — огромные огненные шары, разного цвета; Солнце тоже звезда.", "en": "Stars are huge balls of fire in many colours; the Sun is a star too." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Quyosh — Yerga eng yaqin yulduz.", "ru": "Солнце — ближайшая к Земле звезда.", "en": "The Sun is the closest star to Earth." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «Eng yaqin yulduz — Quyosh» deyilgan.", "ru": "В стихотворении сказано, что ближайшая звезда — Солнце.", "en": "The poem says the nearest star is the Sun." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Kunduzi qaysi yulduzni koʻramiz?", "ru": "Какую звезду мы видим днём?", "en": "Which star do we see by day?" },
+      "explanation": { "uz": "Toʻgʻri: Quyosh — bizga eng yaqin yulduz.", "ru": "Верно: Солнце — ближайшая к нам звезда.", "en": "True: the Sun is the closest star to us." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Yulduzlar kunduzi yorqin porlab turadi.", "ru": "Звёзды ярко светят днём.", "en": "Stars shine brightly during the day." },
+        "answer": "ng",
+        "why": { "uz": "Sheʼrda yulduzlar kechasi koʻrinishi tasvirlangan; kunduz haqida bunday gap yoʻq.", "ru": "В стихотворении звёзды видны ночью; о дне такого нет.", "en": "The poem shows stars at night; it says no such thing about daytime." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Sheʼrda yulduzlar qachon koʻrinadi?", "ru": "Когда в стихотворении видны звёзды?", "en": "When are the stars seen in the poem?" },
+      "explanation": { "uz": "«Matnda yoʻq»: sheʼr yulduzlarni kechasi tasvirlaydi, kunduzni emas.", "ru": "«Не сказано»: стихотворение о ночных звёздах, не о дне.", "en": "“Not given”: the poem shows night stars, not daytime." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "oq-koʻkimtir yulduz", "right": "eng issiq" },
+        { "left": "sariq yulduz (Quyosh)", "right": "oʻrtacha issiq" },
+        { "left": "qizil yulduz", "right": "salqinroq" }
+      ] } },
+      "prompt": { "uz": "Yulduz rangini uning issiqligiga ula!", "ru": "Соедини цвет звезды с её жаром!", "en": "Match a star's colour to its heat!" },
+      "hint": { "uz": "Eng issiq yulduzlar oq-koʻkimtir boʻladi.", "ru": "Самые горячие звёзды — бело-голубые.", "en": "The hottest stars are whitish-blue." },
+      "explanation": { "uz": "Oq-koʻkimtir — eng issiq; sariq — oʻrtacha; qizil — salqinroq.", "ru": "Бело-голубые — горячее; жёлтые — средне; красные — прохладнее.", "en": "Whitish-blue — hottest; yellow — medium; red — cooler." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Yerga eng yaqin sariq yulduz", "ru": "Ближайшая к Земле жёлтая звезда", "en": "The nearest yellow star to Earth" },
+        { "uz": "Katta muz boʻlagi", "ru": "Большая глыба льда", "en": "A big block of ice" },
+        { "uz": "Osmondagi bulut", "ru": "Облако в небе", "en": "A cloud in the sky" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Quyosh nima?", "ru": "Что такое Солнце?", "en": "What is the Sun?" },
+      "hint": { "uz": "Quyosh ham yulduzlar oilasidan.", "ru": "Солнце — тоже звезда.", "en": "The Sun is a star too." },
+      "explanation": { "uz": "Quyosh — Yerga eng yaqin boʻlgan sariq rangdagi yulduz.", "ru": "Солнце — ближайшая к Земле жёлтая звезда.", "en": "The Sun is the nearest yellow star to Earth." },
+      "openEnd": { "uz": "Sen yulduzlar haqida yana nima bilishni xohlaysan?", "ru": "Что ещё ты хочешь узнать о звёздах?", "en": "What else would you like to know about stars?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Yulduzlar — ulkan ", "after": " sharlar.", "choices": ["olov", "muz", "tosh"], "answer": "olov", "emoji": "🔥", "clue": { "uz": "Yulduzlar aslida nima?", "ru": "Что такое звёзды на самом деле?", "en": "What stars really are" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Yulduzlar issiq, yorugʻ va yonib turadi.", "ru": "Звёзды горячие, яркие и горят.", "en": "Stars are hot, bright and burning." },
+      "explanation": { "uz": "Yulduzlar — ulkan olov sharlar, shuning uchun yorugʻ.", "ru": "Звёзды — огромные огненные шары, поэтому светят.", "en": "Stars are huge balls of fire, so they shine." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Quyosh", "—", "eng", "yaqin", "yulduz."], "emoji": "☀️", "clue": { "uz": "Matnning asosiy fikri", "ru": "Главная мысль текста", "en": "The main idea" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuzing!", "ru": "Составь предложение из слов!", "en": "Build the sentence from the words!" },
+      "hint": { "uz": "Gap «Quyosh» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Quyosh».", "en": "The sentence starts with “Quyosh”." },
+      "explanation": { "uz": "«Quyosh — eng yaqin yulduz»: shuning uchun u katta va yorugʻ koʻrinadi.", "ru": "«Солнце — ближайшая звезда»: поэтому оно большое и яркое.", "en": "“The Sun is the nearest star”: that's why it looks big and bright." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "yulduz" },
+        { "text": "oy" },
+        { "text": "quyosh" },
+        { "text": "stol", "odd": true }
+      ], "clue": { "uz": "Qaysi biri osmon jismi emas?", "ru": "Что не небесное тело?", "en": "Which one is not a heavenly body?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi osmonda, biri esa uyda.", "ru": "Три — на небе, одно — дома.", "en": "Three are in the sky, one is at home." },
+      "explanation": { "uz": "Stol — mebel; yulduz, oy, quyosh — osmon jismlari.", "ru": "Стол — мебель; звезда, луна, солнце — небесные тела.", "en": "A table is furniture; star, moon, sun are heavenly bodies." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "yulduz", "syllables": ["yul", "duz"], "emoji": "⭐", "clue": { "uz": "Kechasi osmonda porlaydigan jism", "ru": "Тело, что светит ночью в небе", "en": "A body that shines in the night sky" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "yul + duz = ?", "ru": "yul + duz = ?", "en": "yul + duz = ?" },
+      "explanation": { "uz": "yul-duz → yulduz. Osmondagi olov shar.", "ru": "yul-duz → yulduz (звезда).", "en": "yul-duz → yulduz (a star)." }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-41",
+  "subjectKey": "g1-ona",
+  "emojis": "🗺️🏙️✍️",
+  "title": {
+    "uz": "Joy nomlari — bosh harf",
+    "ru": "Названия мест — заглавная буква",
+    "en": "Place names — capital letters"
+  },
+  "recall": {
+    "uz": "Koʻcha, qishloq, shahar, mamlakat, qitʼa, daryo, koʻl, dengiz, okean, togʻ, choʻl va orol nomlari joy nomlaridir. Ular gapning boshida, oʻrtasida va oxirida — hamma joyda bosh harf bilan yoziladi. Masalan: Toshkent, Chirchiq daryosi, Baykal koʻli.",
+    "ru": "Названия улиц, кишлаков, городов, стран, континентов, рек, озёр, морей, океанов, гор, пустынь и островов — это названия мест. Они всегда пишутся с заглавной буквы: и в начале, и в середине, и в конце предложения. Например: Toshkent, река Chirchiq, озеро Baykal.",
+    "en": "The names of streets, villages, cities, countries, continents, rivers, lakes, seas, oceans, mountains, deserts and islands are place names. They are always written with a capital letter — at the start, middle or end of a sentence. For example: Toshkent, the Chirchiq river, lake Baykal."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Bosh harf bilan", "ru": "С заглавной буквы", "en": "With a capital letter" }, { "uz": "Kichik harf bilan", "ru": "Со строчной буквы", "en": "With a small letter" }, { "uz": "Faqat gap boshida", "ru": "Только в начале предложения", "en": "Only at the start of a sentence" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Joy nomlari qanday harf bilan yoziladi?", "ru": "С какой буквы пишутся названия мест?", "en": "Which letter do place names begin with?" },
+      "hint": { "uz": "Toshkent, Chirchiq — bularning boshiga qara.", "ru": "Посмотри на начало слов Toshkent, Chirchiq.", "en": "Look at the start of Toshkent, Chirchiq." },
+      "explanation": { "uz": "Joy nomlari doim bosh harf bilan yoziladi.", "ru": "Названия мест всегда пишутся с заглавной буквы.", "en": "Place names are always written with a capital letter." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Toshkent", "match": true }, { "text": "shahar", "match": false }, { "text": "Chirchiq", "match": true }, { "text": "daryo", "match": false }, { "text": "Baykal", "match": true }, { "text": "koʻl", "match": false } ] } },
+      "prompt": { "uz": "Joy nomlarini (bosh harfli soʻzlarni) bos!", "ru": "Нажми названия мест (слова с заглавной)!", "en": "Tap the place names (capitalized words)!" },
+      "hint": { "uz": "«shahar», «daryo», «koʻl» — oddiy soʻzlar, ular kichik harf bilan.", "ru": "«shahar», «daryo», «koʻl» — обычные слова, со строчной.", "en": "“shahar”, “daryo”, “koʻl” are ordinary words — lowercase." },
+      "explanation": { "uz": "Toshkent, Chirchiq, Baykal — joy nomlari, bosh harf bilan.", "ru": "Toshkent, Chirchiq, Baykal — названия мест, с заглавной.", "en": "Toshkent, Chirchiq, Baykal are place names — with a capital." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Nil", "bin": "joy" }, { "id": "b", "label": "Baykal", "bin": "joy" }, { "id": "c", "label": "Xumson", "bin": "joy" }, { "id": "d", "label": "daryo", "bin": "oddiy" }, { "id": "e", "label": "koʻl", "bin": "oddiy" }, { "id": "f", "label": "qishloq", "bin": "oddiy" } ], "bins": [ { "id": "joy", "label": "Joy nomi (bosh harf)" }, { "id": "oddiy", "label": "Oddiy soʻz (kichik harf)" } ] } },
+      "prompt": { "uz": "Soʻzlarni ajrat: joy nomi va oddiy soʻz!", "ru": "Раздели слова: название места и обычное слово!", "en": "Sort the words: place name vs ordinary word!" },
+      "hint": { "uz": "Nil, Baykal, Xumson — atab qoʻyilgan nomlar.", "ru": "Nil, Baykal, Xumson — собственные названия.", "en": "Nil, Baykal, Xumson are given names." },
+      "explanation": { "uz": "Joy nomlari bosh harf, oddiy soʻzlar kichik harf bilan.", "ru": "Названия мест — с заглавной, обычные слова — со строчной.", "en": "Place names take a capital; ordinary words are lowercase." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "oshkent", "choices": ["T", "t", "S"], "answer": "T", "emoji": "🏙️", "clue": { "uz": "Oʻzbekiston poytaxti", "ru": "Столица Узбекистана", "en": "The capital of Uzbekistan" } } },
+      "prompt": { "uz": "Shahar nomini bosh harf bilan boshla!", "ru": "Начни название города с заглавной буквы!", "en": "Start the city name with a capital!" },
+      "hint": { "uz": "Shahar nomi — «Toshkent».", "ru": "Название города — «Toshkent».", "en": "The city name is “Toshkent”." },
+      "explanation": { "uz": "«Toshkent» joy nomi, shuning uchun bosh «T» bilan.", "ru": "«Toshkent» — название места, поэтому заглавная «T».", "en": "“Toshkent” is a place name, so it takes a capital “T”." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Daryo", "right": "Chirchiq" }, { "left": "Koʻl", "right": "Baykal" }, { "left": "Shahar", "right": "Toshkent" }, { "left": "Choʻl", "right": "Sahroyi Kabir" } ] } },
+      "prompt": { "uz": "Joy turini oʻz nomiga ula!", "ru": "Соедини вид места с его названием!", "en": "Match each kind of place to its name!" },
+      "hint": { "uz": "Chirchiq — daryo, Baykal — koʻl.", "ru": "Chirchiq — река, Baykal — озеро.", "en": "Chirchiq is a river, Baykal is a lake." },
+      "explanation": { "uz": "Har bir joy turining oʻz atalgan nomi bor.", "ru": "У каждого вида места есть своё название.", "en": "Each kind of place has its own given name." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["Nil", "Chirchiq", "Ugom"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yer yuzidagi eng uzun daryo qaysi?", "ru": "Какая самая длинная река на Земле?", "en": "Which is the longest river on Earth?" },
+      "hint": { "uz": "U Misr davlati hududidan oqib oʻtadi.", "ru": "Она течёт через территорию Египта.", "en": "It flows through Egypt." },
+      "explanation": { "uz": "Eng uzun daryo — Nil daryosi.", "ru": "Самая длинная река — Нил (Nil).", "en": "The longest river is the Nil (Nile)." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["Tosh", "kent"], "emoji": "🏙️", "clue": { "uz": "Poytaxt shahar", "ru": "Столичный город", "en": "The capital city" } } },
+      "prompt": { "uz": "Boʻgʻinlardan shahar nomini tuz!", "ru": "Собери название города из слогов!", "en": "Build the city name from syllables!" },
+      "hint": { "uz": "Tosh- … -kent.", "ru": "Tosh- … -kent.", "en": "Tosh- … -kent." },
+      "explanation": { "uz": "«Toshkent» — joy nomi, bosh harf bilan yoziladi.", "ru": "«Toshkent» — название места, пишется с заглавной.", "en": "“Toshkent” is a place name, written with a capital." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "chirchiq (Chirchiq boʻlishi kerak)", "ru": "chirchiq (нужно Chirchiq)", "en": "chirchiq (should be Chirchiq)" }, { "uz": "daryosida", "ru": "daryosida", "en": "daryosida" }, { "uz": "choʻmildik", "ru": "choʻmildik", "en": "choʻmildik" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Biz chirchiq daryosida choʻmildik.» Qaysi soʻz notoʻgʻri yozilgan?", "ru": "«Biz chirchiq daryosida choʻmildik.» Какое слово написано неверно?", "en": "“Biz chirchiq daryosida choʻmildik.” Which word is written incorrectly?" },
+      "hint": { "uz": "Daryoning nomi — joy nomi.", "ru": "Название реки — это название места.", "en": "A river's name is a place name." },
+      "explanation": { "uz": "«Chirchiq» — daryo nomi, bosh harf bilan yozilishi kerak.", "ru": "«Chirchiq» — название реки, нужна заглавная буква.", "en": "“Chirchiq” is a river name and needs a capital letter." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Toshkent", "Oʻzbekiston", "poytaxtidir."], "emoji": "🏙️", "clue": { "uz": "Poytaxt haqida gap", "ru": "Предложение о столице", "en": "A sentence about the capital" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Nima? — «Toshkent».", "ru": "Что? — «Toshkent».", "en": "What? — “Toshkent”." },
+      "explanation": { "uz": "Toshkent — Oʻzbekiston poytaxtidir. Ikkala soʻz ham bosh harf bilan.", "ru": "Toshkent — столица Узбекистана. Оба слова с заглавной.", "en": "Toshkent is the capital of Oʻzbekiston. Both words take a capital." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "Baykal", "letters": ["B", "a", "y", "k", "a", "l"], "emoji": "🏞️", "clue": { "uz": "Yer yuzidagi eng chuqur koʻl", "ru": "Самое глубокое озеро на Земле", "en": "The deepest lake on Earth" } } },
+      "prompt": { "uz": "Harflardan koʻl nomini yigʻ!", "ru": "Собери название озера из букв!", "en": "Build the lake's name from the letters!" },
+      "hint": { "uz": "U Rossiya hududida joylashgan.", "ru": "Оно находится в России.", "en": "It is located in Russia." },
+      "explanation": { "uz": "«Baykal» — koʻl nomi, bosh «B» bilan yoziladi.", "ru": "«Baykal» — название озера, с заглавной «B».", "en": "“Baykal” is a lake name, written with a capital “B”." }
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "topicId": "g1-alifbe-01",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🎆❤️🕊️🏙️",
+  "title": {
+    "uz": "Vatanim — Oʻzbekiston",
+    "ru": "Моя Родина — Узбекистан",
+    "en": "My homeland — Uzbekistan"
+  },
+  "recall": {
+    "uz": "Bizning Vatanimiz — Oʻzbekiston. Uning bayrogʻi koʻk, oq va yashil rangli. Poytaxtimiz — Toshkent. Har yili 1-sentabrda Mustaqillik bayramini nishonlaymiz. Vatanni sevish — uni toza va obod saqlash demakdir.",
+    "ru": "Наша Родина — Узбекистан. Его флаг голубого, белого и зелёного цветов. Столица — Ташкент. Каждый год 1 сентября мы отмечаем День независимости. Любить Родину — беречь и украшать её.",
+    "en": "Our homeland is Uzbekistan. Its flag is blue, white and green. Our capital is Tashkent. Every year on 1 September we celebrate Independence Day. To love the homeland means to keep it clean and beautiful."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bizning Vatanimiz nomi nima?", "ru": "Как называется наша Родина?", "en": "What is our homeland called?" },
+      "hint": { "uz": "Poytaxti Toshkent boʻlgan mamlakat.", "ru": "Страна со столицей Ташкент.", "en": "The country whose capital is Tashkent." },
+      "explanation": { "uz": "Vatanimiz — Oʻzbekiston!", "ru": "Наша Родина — Узбекистан!", "en": "Our homeland is Uzbekistan!" },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": ["Oʻzbekiston", "Turkiya", "Rossiya"], "answerIndex": 0 }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Vatanimizning poytaxti qaysi shahar?", "ru": "Какой город — столица нашей Родины?", "en": "Which city is our homeland's capital?" },
+      "hint": { "uz": "Eng katta shahrimiz — u yerda Mustaqillik maydoni bor.", "ru": "Наш самый большой город, там площадь Независимости.", "en": "Our biggest city, home to Independence Square." },
+      "explanation": { "uz": "Poytaxtimiz — Toshkent shahri.", "ru": "Наша столица — город Ташкент.", "en": "Our capital is the city of Tashkent." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": ["Toshkent", "Samarqand", "Buxoro"], "answerIndex": 0 }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bayrogʻimizni yuqoridan pastga rangla: koʻk, oq, yashil.", "ru": "Собери флаг сверху вниз: голубой, белый, зелёный.", "en": "Build the flag top to bottom: blue, white, green." },
+      "hint": { "uz": "Eng tepada koʻk, oʻrtada oq, pastda yashil.", "ru": "Сверху голубой, в середине белый, снизу зелёный.", "en": "Blue on top, white in the middle, green at the bottom." },
+      "explanation": { "uz": "Bayrogʻimiz yuqoridan pastga: koʻk, oq, yashil.", "ru": "Наш флаг сверху вниз: голубой, белый, зелёный.", "en": "Our flag from top to bottom: blue, white, green." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "vertical": true,
+          "items": [
+            { "id": "blue", "emoji": "🟦", "label": { "uz": "koʻk", "ru": "голубой", "en": "blue" } },
+            { "id": "white", "emoji": "⬜", "label": { "uz": "oq", "ru": "белый", "en": "white" } },
+            { "id": "green", "emoji": "🟩", "label": { "uz": "yashil", "ru": "зелёный", "en": "green" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Vatan bilan bogʻliq narsalarni belgila!", "ru": "Отметь то, что связано с Родиной!", "en": "Tap the things linked to the homeland!" },
+      "hint": { "uz": "Shahar, madhiya, tinchlik — Vatanniki.", "ru": "Город, гимн, мир — про Родину.", "en": "City, anthem, peace belong to the homeland." },
+      "explanation": { "uz": "Shahar, madhiya va tinchlik — Vatan bilan bogʻliq.", "ru": "Город, гимн и мир связаны с Родиной.", "en": "City, anthem and peace are linked to the homeland." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "city", "emoji": "🏙️", "label": { "uz": "shahar", "ru": "город", "en": "city" }, "correct": true },
+            { "id": "anthem", "emoji": "🎼", "label": { "uz": "madhiya", "ru": "гимн", "en": "anthem" }, "correct": true },
+            { "id": "peace", "emoji": "🕊️", "label": { "uz": "tinchlik", "ru": "мир", "en": "peace" }, "correct": true },
+            { "id": "burger", "emoji": "🍔", "label": { "uz": "burger", "ru": "бургер", "en": "burger" } },
+            { "id": "game", "emoji": "🎮", "label": { "uz": "oʻyin", "ru": "игра", "en": "game" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bayrogʻimizda qaysi ranglar bor? Hammasini belgila!", "ru": "Какие цвета на нашем флаге? Отметь все!", "en": "Which colors are on our flag? Tap them all!" },
+      "hint": { "uz": "Koʻk, oq va yashil.", "ru": "Голубой, белый и зелёный.", "en": "Blue, white and green." },
+      "explanation": { "uz": "Bayrogʻimizda koʻk, oq va yashil ranglar bor.", "ru": "На флаге голубой, белый и зелёный цвета.", "en": "The flag has blue, white and green." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "blue", "emoji": "🟦", "label": { "uz": "koʻk", "ru": "голубой", "en": "blue" }, "correct": true },
+            { "id": "white", "emoji": "⬜", "label": { "uz": "oq", "ru": "белый", "en": "white" }, "correct": true },
+            { "id": "green", "emoji": "🟩", "label": { "uz": "yashil", "ru": "зелёный", "en": "green" }, "correct": true },
+            { "id": "purple", "emoji": "🟪", "label": { "uz": "binafsha", "ru": "фиолетовый", "en": "purple" } },
+            { "id": "orange", "emoji": "🟧", "label": { "uz": "sariq", "ru": "оранжевый", "en": "orange" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir soʻzni oʻz rasmiga ula!", "ru": "Соедини каждое слово с его картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "Shahar — 🏙️, bayram — 🎆, tinchlik — 🕊️, Vatan — ❤️.", "ru": "Город — 🏙️, праздник — 🎆, мир — 🕊️, Родина — ❤️.", "en": "City — 🏙️, holiday — 🎆, peace — 🕊️, homeland — ❤️." },
+      "explanation": { "uz": "Har bir soʻzning oʻz rasmi bor.", "ru": "У каждого слова своя картинка.", "en": "Each word has its own picture." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "label": { "uz": "shahar", "ru": "город", "en": "city" } }, "right": { "emoji": "🏙️" } },
+            { "left": { "label": { "uz": "bayram", "ru": "праздник", "en": "holiday" } }, "right": { "emoji": "🎆" } },
+            { "left": { "label": { "uz": "tinchlik", "ru": "мир", "en": "peace" } }, "right": { "emoji": "🕊️" } },
+            { "left": { "label": { "uz": "Vatan", "ru": "Родина", "en": "homeland" } }, "right": { "emoji": "❤️" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bayrogʻimizda koʻk, oq va yashil ranglar bor.", "ru": "На флаге есть голубой, белый и зелёный цвета.", "en": "The flag has blue, white and green colors." },
+      "hint": { "uz": "3-topshiriqdagi bayroqni esla.", "ru": "Вспомни флаг из задания 3.", "en": "Recall the flag from question 3." },
+      "explanation": { "uz": "Toʻgʻri! Bayrogʻimiz koʻk, oq va yashil.", "ru": "Верно! Наш флаг голубой, белый и зелёный.", "en": "True! Our flag is blue, white and green." },
+      "widget": { "type": "true_false", "props": { "emoji": "🟦", "answer": true } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bir xil ikkita rasmni topib, ikkalasini bos!", "ru": "Найди две одинаковые картинки и нажми обе!", "en": "Find the two identical pictures and tap them both!" },
+      "hint": { "uz": "Bayram chaqnashi — otashin gulchambar ikkita.", "ru": "Праздничный салют встречается дважды.", "en": "The festive fireworks appears twice." },
+      "explanation": { "uz": "Ikkita 🎆 bir xil — bu bayram chaqnashi.", "ru": "Два 🎆 одинаковы — это праздничный салют.", "en": "The two 🎆 are the same — festive fireworks." },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            { "id": "fw1", "emoji": "🎆", "key": "fw" },
+            { "id": "dove", "emoji": "🕊️", "key": "dove" },
+            { "id": "fw2", "emoji": "🎆", "key": "fw" },
+            { "id": "city", "emoji": "🏙️", "key": "city" },
+            { "id": "sun", "emoji": "☀️", "key": "sun" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!", "ru": "Открой карточки и соедини картинку со словом!", "en": "Flip the cards and match each picture to its word!" },
+      "hint": { "uz": "Shahar — shahar, bayram — bayram, tinchlik — tinchlik.", "ru": "Город — город, праздник — праздник, мир — мир.", "en": "City — city, holiday — holiday, peace — peace." },
+      "explanation": { "uz": "Rasm va soʻzni toʻgʻri juftlading!", "ru": "Ты верно соединил картинку и слово!", "en": "You matched the picture and the word correctly!" },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            { "a": { "emoji": "🏙️" }, "b": { "label": { "uz": "shahar", "ru": "город", "en": "city" } } },
+            { "a": { "emoji": "🎆" }, "b": { "label": { "uz": "bayram", "ru": "праздник", "en": "holiday" } } },
+            { "a": { "emoji": "🕊️" }, "b": { "label": { "uz": "tinchlik", "ru": "мир", "en": "peace" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Mustaqillik bayrami qachon nishonlanadi?", "ru": "Когда отмечают День независимости?", "en": "When is Independence Day celebrated?" },
+      "hint": { "uz": "Kuz faslining birinchi kuni.", "ru": "В первый день осени.", "en": "On the first day of autumn." },
+      "explanation": { "uz": "Mustaqillik bayrami — 1-sentabrda.", "ru": "День независимости — 1 сентября.", "en": "Independence Day is on 1 September." },
+      "widget": {
+        "type": "mcq",
+        "props": { "choices": [{ "uz": "1-sentabr", "ru": "1 сентября", "en": "1 September" }, { "uz": "1-yanvar", "ru": "1 января", "en": "1 January" }, { "uz": "8-mart", "ru": "8 марта", "en": "8 March" }], "answerIndex": 0 }
+      }
+    }
+  ]
+}

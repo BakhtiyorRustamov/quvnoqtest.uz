@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-27",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Rang-barang lolalar",
+    "ru": "Разноцветные тюльпаны",
+    "en": "Colourful tulips"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻozdan rang-barang lolalar yasaymiz.",
+    "ru": "Сегодня из цветной бумаги сделаем разноцветные тюльпаны.",
+    "en": "Today we make colourful tulips from paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Lolalar yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай тюльпаны. Выполняй каждый этап по рисунку!",
+        "en": "Make tulips. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Poya va barg — yashil.",
+        "ru": "Стебель и лист — зелёные.",
+        "en": "The stem and leaf are green."
+      },
+      "explanation": {
+        "uz": "Rang-barang lolalar!",
+        "ru": "Разноцветные тюльпаны!",
+        "en": "Colourful tulips!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Yashil poya va barglarni qirq.",
+              "ru": "Вырежь зелёный стебель и листья.",
+              "en": "Cut a green stem and leaves."
+            },
+            {
+              "uz": "Rangli lola gulini qoʻsh.",
+              "ru": "Добавь цветок тюльпана.",
+              "en": "Add a tulip flower."
+            },
+            {
+              "uz": "Yana ikki xil rangli lola qoʻsh.",
+              "ru": "Добавь ещё два разноцветных тюльпана.",
+              "en": "Add two more tulips of different colours."
+            }
+          ],
+          "art": "tulip",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

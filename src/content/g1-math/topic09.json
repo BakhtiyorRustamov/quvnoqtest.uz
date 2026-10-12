@@ -1,0 +1,142 @@
+{
+  "topicId": "g1-math-09",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🔟⭐",
+  "title": {
+    "uz": "Birdan oʻngacha sonlar",
+    "ru": "Числа от одного до десяти",
+    "en": "Numbers one to ten"
+  },
+  "recall": {
+    "uz": "Bir dan oʻn gacha sanaymiz. Har bir sonning oʻz oʻrni bor. Qatordan yetishmayotgan sonni topamiz. Keyingi sonni aytamiz. Sonlarni tartib bilan oʻrganamiz.",
+    "ru": "Считаем от одного до десяти. У каждого числа своё место. Находим пропущенное число в ряду. Называем следующее число. Учим числа по порядку.",
+    "en": "We count from one to ten. Each number has its place. We find the missing number in the row. We say the next number. We learn the numbers in order."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["5", "6", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Keyingi son qaysi? 2, 3, 4, ?", "ru": "Какое число следующее? 2, 3, 4, ?", "en": "Which number comes next? 2, 3, 4, ?" },
+      "hint": { "uz": "Har safar bittaga ortadi: toʻrtdan keyin nima keladi?", "ru": "Каждый раз прибавляется один: что после четырёх?", "en": "Each time it grows by one: what comes after four?" },
+      "explanation": { "uz": "Toʻrtdan keyin besh keladi. Sonlar bittadan ortib boradi.", "ru": "После четырёх идёт пять. Числа растут на один.", "en": "After four comes five. The numbers grow by one." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["6", "8", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmayotgan sonni top: 5, ?, 7", "ru": "Найди пропущенное число: 5, ?, 7", "en": "Find the missing number: 5, ?, 7" },
+      "hint": { "uz": "Besh bilan yetti orasida qaysi son turadi?", "ru": "Какое число стоит между пятью и семью?", "en": "Which number stands between five and seven?" },
+      "explanation": { "uz": "Besh bilan yetti orasida olti turadi. U yetishmayotgan son.", "ru": "Между пятью и семью стоит шесть. Это пропущенное число.", "en": "Between five and seven stands six. That is the missing number." }
+    },
+    {
+      "id": "q3",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma olmalarni sanab belgila!", "ru": "Сосчитай и отметь все яблоки!", "en": "Count and tap all the apples!" },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "a3", "art": { "kind": "apple", "color": "yellow" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } }
+      ],
+      "answer": ["a1", "a2", "a3"],
+      "hint": { "uz": "Faqat olmalarni sana: bir, ikki, uch.", "ru": "Считай только яблоки: один, два, три.", "en": "Count only the apples: one, two, three." },
+      "explanation": { "uz": "Uchta olma bor edi. Boshqa narsalarni sanamadik.", "ru": "Было три яблока. Другие предметы не считали.", "en": "There were three apples. We did not count the other things." }
+    },
+    {
+      "id": "q4",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma baliqlarni sanab belgila!", "ru": "Сосчитай и отметь всех рыбок!", "en": "Count and tap all the fish!" },
+      "options": [
+        { "id": "f1", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "f2", "art": { "kind": "fish", "color": "blue" } },
+        { "id": "c1", "art": { "kind": "circle", "color": "red" } },
+        { "id": "f3", "art": { "kind": "fish", "color": "magenta" } },
+        { "id": "f4", "art": { "kind": "fish", "color": "green" } }
+      ],
+      "answer": ["f1", "f2", "f3", "f4"],
+      "hint": { "uz": "Baliqlarni birma-bir sana: bir, ikki, uch, toʻrt.", "ru": "Считай рыбок по одной: один, два, три, четыре.", "en": "Count the fish one by one: one, two, three, four." },
+      "explanation": { "uz": "Toʻrtta baliq bor edi. Doira baliq emas.", "ru": "Было четыре рыбки. Круг — не рыбка.", "en": "There were four fish. The circle is not a fish." }
+    },
+    {
+      "id": "q5",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "star", "color": "magenta" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "magenta" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "sq", "art": { "kind": "square", "color": "orange" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Yulduz, doira, yulduz, doira… navbat bilan keladi!", "ru": "Звезда, круг, звезда, круг… по очереди!", "en": "Star, circle, star, circle… they take turns!" },
+      "explanation": { "uz": "Yulduzdan keyin doim doira keladi. Keyingisi — doira.", "ru": "После звезды всегда идёт круг. Следующий — круг.", "en": "After a star there is always a circle. The next one is a circle." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 8, "y": 3 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon katta son. Tarozi oʻsha tomonga ogʻadi.", "ru": "Где больше — там большее число. Весы наклоняются туда.", "en": "The side with more is the bigger number. The scale tips there." },
+      "explanation": { "uz": "Sakkiz uchdan katta. Tarozi katta son tomonga ogʻdi.", "ru": "Восемь больше трёх. Весы наклонились к большему числу.", "en": "Eight is bigger than three. The scale tipped toward the bigger number." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["9", "6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son katta: 9 yoki 6?", "ru": "Какое число больше: 9 или 6?", "en": "Which number is bigger: 9 or 6?" },
+      "hint": { "uz": "Sanaganda kechroq aytiladigan son kattaroq boʻladi.", "ru": "Число, которое называют позже при счёте, больше.", "en": "The number you say later when counting is the bigger one." },
+      "explanation": { "uz": "Toʻqqiz oltidan katta — uni sanaganda kechroq aytamiz.", "ru": "Девять больше шести — при счёте его называют позже.", "en": "Nine is bigger than six — we say it later when counting." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "race_to_answer", "props": { "steps": 4, "maxSum": 6 } },
+      "prompt": { "uz": "Sanash poygasi: toʻgʻri sonni tanlab, oldinga yur!", "ru": "Гонка со счётом: выбирай верное число и двигайся вперёд!", "en": "Counting race: pick the right number and move forward!" },
+      "hint": { "uz": "Har qadamda diqqat bilan sana, soʻng toʻgʻri sonni tanla.", "ru": "На каждом шаге внимательно считай и выбирай верное число.", "en": "Count carefully at each step, then choose the right number." },
+      "explanation": { "uz": "Toʻgʻri sanaganimizda oldinga yurdik. Sonlarni yaxshi bilamiz!", "ru": "При верном счёте мы двигались вперёд. Мы хорошо знаем числа!", "en": "Correct counting moved us forward. We know our numbers well!" }
+    },
+    {
+      "id": "q9",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Yulduzlarni kichikdan kattaga tartibla!", "ru": "Расставь звёзды от маленькой к большой!", "en": "Order the stars from small to big!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "star", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "star", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "star", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "birinchi", "ru": "первая", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "ikkinchi", "ru": "вторая", "en": "second" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "uchinchi", "ru": "третья", "en": "third" } }
+      ],
+      "hint": { "uz": "Eng kichkinasi birinchi, eng kattasi uchinchi.", "ru": "Самая маленькая первая, самая большая третья.", "en": "The smallest is first, the biggest is third." },
+      "explanation": { "uz": "Tartib: birinchi, ikkinchi, uchinchi. Oʻrinlarni tartibladik.", "ru": "Порядок: первая, вторая, третья. Мы упорядочили места.", "en": "Order: first, second, third. We arranged the places." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["10", "11", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Keyingi son qaysi? 7, 8, 9, ?", "ru": "Какое число следующее? 7, 8, 9, ?", "en": "Which number comes next? 7, 8, 9, ?" },
+      "hint": { "uz": "Toʻqqizdan keyin sanoq qaysi son bilan tugaydi?", "ru": "Каким числом заканчивается счёт после девяти?", "en": "Which number ends the count after nine?" },
+      "explanation": { "uz": "Toʻqqizdan keyin oʻn keladi. Bu — bir dan oʻn gacha sanoqning oxiri.", "ru": "После девяти идёт десять. Это конец счёта от одного до десяти.", "en": "After nine comes ten. That is the end of counting from one to ten." }
+    }
+  ]
+}

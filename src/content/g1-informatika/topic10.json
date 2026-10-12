@@ -1,0 +1,476 @@
+{
+  "topicId": "g1-informatika-10",
+  "subjectKey": "g1-informatika",
+  "emojis": "🔢🌱🌈⚽",
+  "title": {
+    "uz": "Ketma-ketlik",
+    "ru": "Последовательность",
+    "en": "Sequence"
+  },
+  "recall": {
+    "uz": "Voqealar maʼlum tartibda — ketma-ketlikda boʻladi. Avval nima, keyin nima boʻlishini aniqlaymiz. Masalan: urugʻ, nihol, daraxt.",
+    "ru": "События идут по порядку — в последовательности. Определяем, что сначала, что потом. Например: семя, росток, дерево.",
+    "en": "Events happen in order — in a sequence. We figure out what comes first and next. For example: seed, sprout, tree."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻri tartibda joyla: oʻsimlik oʻsishi",
+        "ru": "Расставь по порядку: рост растения",
+        "en": "Put in order: a plant growing"
+      },
+      "hint": {
+        "uz": "Avval urugʻ, keyin daraxt.",
+        "ru": "Сначала семя, потом дерево.",
+        "en": "First the seed, then the tree."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: urugʻ, nihol, daraxt.",
+        "ru": "Верно: семя, росток, дерево.",
+        "en": "Correct: seed, sprout, tree."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🌰 urugʻ",
+                "ru": "🌰 семя",
+                "en": "🌰 seed"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "🌱 nihol",
+                "ru": "🌱 росток",
+                "en": "🌱 sprout"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🌳 daraxt",
+                "ru": "🌳 дерево",
+                "en": "🌳 tree"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻri tartibda joyla: ob-havo",
+        "ru": "Расставь по порядку: погода",
+        "en": "Put in order: the weather"
+      },
+      "hint": {
+        "uz": "Quyosh, yomgʻir, kamalak.",
+        "ru": "Солнце, дождь, радуга.",
+        "en": "Sun, rain, rainbow."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: quyosh, yomgʻir, kamalak.",
+        "ru": "Верно: солнце, дождь, радуга.",
+        "en": "Correct: sun, rain, rainbow."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "☀️ quyosh",
+                "ru": "☀️ солнце",
+                "en": "☀️ sun"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "🌧️ yomgʻir",
+                "ru": "🌧️ дождь",
+                "en": "🌧️ rain"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🌈 kamalak",
+                "ru": "🌈 радуга",
+                "en": "🌈 rainbow"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Daraxt ekishda birinchi nima boʻladi?",
+        "ru": "Что первое при посадке дерева?",
+        "en": "What comes first when planting a tree?"
+      },
+      "hint": {
+        "uz": "Avval nima qilamiz?",
+        "ru": "Что сначала?",
+        "en": "What do we do first?"
+      },
+      "explanation": {
+        "uz": "Avval urugʻ ekiladi.",
+        "ru": "Сначала сажают семя.",
+        "en": "First the seed is planted."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "urugʻ ekiladi",
+              "ru": "сажают семя",
+              "en": "plant the seed"
+            },
+            {
+              "uz": "meva teriladi",
+              "ru": "собирают плоды",
+              "en": "pick the fruit"
+            },
+            {
+              "uz": "daraxt kesiladi",
+              "ru": "рубят дерево",
+              "en": "cut the tree"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻri tartibda joyla: kun qismlari",
+        "ru": "Расставь части дня по порядку!",
+        "en": "Put the parts of the day in order!"
+      },
+      "hint": {
+        "uz": "Ertalab, tush, kech.",
+        "ru": "Утро, день, вечер.",
+        "en": "Morning, noon, evening."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: ertalab, tush, kech.",
+        "ru": "Верно: утро, день, вечер.",
+        "en": "Correct: morning, noon, evening."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🌅 ertalab",
+                "ru": "🌅 утро",
+                "en": "🌅 morning"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "☀️ tush",
+                "ru": "☀️ день",
+                "en": "☀️ noon"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🌙 kech",
+                "ru": "🌙 вечер",
+                "en": "🌙 evening"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻri tartibda joyla: tovuq",
+        "ru": "Расставь по порядку: курица",
+        "en": "Put in order: the hen"
+      },
+      "hint": {
+        "uz": "Tuxum, joʻja, tovuq.",
+        "ru": "Яйцо, цыплёнок, курица.",
+        "en": "Egg, chick, hen."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: tuxum, joʻja, tovuq.",
+        "ru": "Верно: яйцо, цыплёнок, курица.",
+        "en": "Correct: egg, chick, hen."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🥚 tuxum",
+                "ru": "🥚 яйцо",
+                "en": "🥚 egg"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "🐣 joʻja",
+                "ru": "🐣 цыплёнок",
+                "en": "🐣 chick"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🐔 tovuq",
+                "ru": "🐔 курица",
+                "en": "🐔 hen"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Avval urugʻ ekiladi, keyin daraxt oʻsadi.",
+        "ru": "Сначала семя, потом растёт дерево.",
+        "en": "First the seed, then the tree grows."
+      },
+      "hint": {
+        "uz": "Tartibga qara.",
+        "ru": "Смотри на порядок.",
+        "en": "Look at the order."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tartib shunday.",
+        "ru": "Верно! Такой порядок.",
+        "en": "True! That is the order."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌱",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan buyum nomini tuz! (⚽)",
+        "ru": "Составь название предмета! (⚽)",
+        "en": "Build the object's name! (⚽)"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos: k-o-p-t-o-k.",
+        "ru": "Нажимай по порядку: k-o-p-t-o-k.",
+        "en": "Tap in order: k-o-p-t-o-k."
+      },
+      "explanation": {
+        "uz": "Barakalla! «koptok» soʻzini tuzding.",
+        "ru": "Молодец! Ты собрал «koptok».",
+        "en": "Great! You built “koptok”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "⚽",
+          "word": "koptok",
+          "label": {
+            "uz": "koptok",
+            "ru": "мяч",
+            "en": "ball"
+          },
+          "letters": [
+            "k",
+            "o",
+            "p",
+            "t",
+            "o",
+            "k"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sonlarni tartibda joyla!",
+        "ru": "Расставь числа по порядку!",
+        "en": "Put the numbers in order!"
+      },
+      "hint": {
+        "uz": "2, 3, 4, 5.",
+        "ru": "2, 3, 4, 5.",
+        "en": "2, 3, 4, 5."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: 2, 3, 4, 5.",
+        "ru": "Верно: 2, 3, 4, 5.",
+        "en": "Correct: 2, 3, 4, 5."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "2",
+                "ru": "2",
+                "en": "2"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "3",
+                "ru": "3",
+                "en": "3"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "4",
+                "ru": "4",
+                "en": "4"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "5",
+                "ru": "5",
+                "en": "5"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yomgʻirdan soʻng osmonda nima paydo boʻladi?",
+        "ru": "Что появляется на небе после дождя?",
+        "en": "What appears in the sky after rain?"
+      },
+      "hint": {
+        "uz": "Yetti rangli.",
+        "ru": "Семицветное.",
+        "en": "Seven colours."
+      },
+      "explanation": {
+        "uz": "Yomgʻirdan soʻng kamalak chiqadi.",
+        "ru": "После дождя появляется радуга.",
+        "en": "After rain a rainbow appears."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "kamalak",
+              "ru": "радуга",
+              "en": "rainbow"
+            },
+            {
+              "uz": "qor",
+              "ru": "снег",
+              "en": "snow"
+            },
+            {
+              "uz": "yulduz",
+              "ru": "звезда",
+              "en": "star"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Voqealar qanday boʻladi?",
+        "ru": "Как происходят события?",
+        "en": "How do events happen?"
+      },
+      "hint": {
+        "uz": "Tartib bilanmi?",
+        "ru": "По порядку?",
+        "en": "In order?"
+      },
+      "explanation": {
+        "uz": "Voqealar ketma-ket, tartib bilan boʻladi.",
+        "ru": "События идут по порядку.",
+        "en": "Events happen in order, one after another."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ketma-ket, tartib bilan",
+              "ru": "по порядку",
+              "en": "in order, one by one"
+            },
+            {
+              "uz": "aralash",
+              "ru": "вперемешку",
+              "en": "all mixed up"
+            },
+            {
+              "uz": "hech qachon",
+              "ru": "никогда",
+              "en": "never"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "topicId": "g1-tabiiy-14",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🌈⚡🍂🌸",
+  "title": {
+    "uz": "Tabiatdagi oʻzgarishlar",
+    "ru": "Изменения в природе",
+    "en": "Changes in nature"
+  },
+  "recall": {
+    "uz": "Tabiatda hamma narsa oʻzgarib turadi. Kuzdan keyin qish, qishdan keyin bahor keladi. Insonga bogʻliq boʻlmagan oʻzgarishlar tabiat hodisalari deyiladi. Chaqmoq, yomgʻir, qor, kamalak — jonsiz tabiat hodisalari. Gul ochilishi, meva tugishi — jonli tabiat hodisalari.",
+    "ru": "В природе всё меняется. После осени приходит зима, после зимы — весна. Изменения, не зависящие от человека, называют явлениями природы. Молния, дождь, снег, радуга — явления неживой природы. Цветение, появление плодов — явления живой природы.",
+    "en": "In nature everything changes. After autumn comes winter, after winter comes spring. Changes not caused by people are called natural phenomena. Lightning, rain, snow, rainbow are non-living phenomena. Blossoming and fruiting are living phenomena."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Hodisalarni jonli va jonsiz tabiatga ajrat!", "ru": "Разложи явления на живую и неживую природу!", "en": "Sort the phenomena into living and non-living nature!" },
+      "hint": { "uz": "Oʻsimlik va hayvon bilan bogʻliqlari — jonli; obu-havo — jonsiz.", "ru": "Связанные с растениями и животными — живые; погода — неживые.", "en": "Those with plants and animals are living; weather ones are non-living." },
+      "explanation": { "uz": "Gul ochilishi, meva tugishi, palapon ochilishi — jonli. Chaqmoq, qor va kamalak — jonsiz.", "ru": "Цветение, плоды, вылупление птенца — живое. Молния, снег и радуга — неживое.", "en": "Blossom, fruit, a hatching chick are living. Lightning, snow and rainbow are non-living." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "living", "label": { "uz": "🌱 Jonli", "ru": "🌱 Живое", "en": "🌱 Living" }, "color": "#46c06a" },
+            { "id": "nonliving", "label": { "uz": "🪨 Jonsiz", "ru": "🪨 Неживое", "en": "🪨 Non-living" }, "color": "#2f9fe0" }
+          ],
+          "items": [
+            { "id": "bloom", "emoji": "🌸", "label": { "uz": "gul ochilishi", "ru": "цветение", "en": "blossom" }, "bin": "living" },
+            { "id": "fruit", "emoji": "🍎", "label": { "uz": "meva tugishi", "ru": "плоды", "en": "fruit" }, "bin": "living" },
+            { "id": "chick", "emoji": "🐣", "label": { "uz": "palapon ochilishi", "ru": "вылупление", "en": "hatching" }, "bin": "living" },
+            { "id": "lightning", "emoji": "⚡", "label": { "uz": "chaqmoq", "ru": "молния", "en": "lightning" }, "bin": "nonliving" },
+            { "id": "snow", "emoji": "❄️", "label": { "uz": "qor yogʻishi", "ru": "снегопад", "en": "snowfall" }, "bin": "nonliving" },
+            { "id": "rainbow", "emoji": "🌈", "label": { "uz": "kamalak", "ru": "радуга", "en": "rainbow" }, "bin": "nonliving" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qorli bogʻda sayr uchun ortiqcha narsani bos!", "ru": "Нажми лишнюю вещь для прогулки в снежном парке!", "en": "Tap the extra item for a walk in the snowy park!" },
+      "hint": { "uz": "Yozgi narsa qishda kerak emas.", "ru": "Летняя вещь зимой не нужна.", "en": "A summer item is not needed in winter." },
+      "explanation": { "uz": "Shlyapa — yozgi narsa, u qishda ortiqcha. Palto, qoʻlqop va sharf kerak.", "ru": "Шляпа — летняя вещь, зимой лишняя. Пальто, перчатки и шарф нужны.", "en": "A sun hat is a summer item, extra in winter. Coat, mittens and scarf are needed." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "hat", "emoji": "👒", "label": { "uz": "shlyapa", "ru": "шляпа", "en": "sun hat" }, "correct": true },
+            { "id": "coat", "emoji": "🧥", "label": { "uz": "palto", "ru": "пальто", "en": "coat" } },
+            { "id": "mittens", "emoji": "🧤", "label": { "uz": "qoʻlqop", "ru": "перчатки", "en": "mittens" } },
+            { "id": "scarf", "emoji": "🧣", "label": { "uz": "sharf", "ru": "шарф", "en": "scarf" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qishda boʻladigan tabiat hodisalarini belgila!", "ru": "Отметь зимние явления природы!", "en": "Tap the winter natural phenomena!" },
+      "hint": { "uz": "Qor, boʻron va yaxmalak — qish hodisalari.", "ru": "Снег, буран и гололёд — зимние явления.", "en": "Snow, blizzard and black ice are winter events." },
+      "explanation": { "uz": "Qor yogʻishi, boʻron va yaxmalak qishda boʻladi. Kamalak va gullash — yoʻq.", "ru": "Снегопад, буран и гололёд бывают зимой. Радуга и цветение — нет.", "en": "Snowfall, blizzard and black ice happen in winter. Rainbow and blossom do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "snow", "emoji": "❄️", "label": { "uz": "qor yogʻishi", "ru": "снегопад", "en": "snowfall" }, "correct": true },
+            { "id": "storm", "emoji": "🌬️", "label": { "uz": "boʻron", "ru": "буран", "en": "blizzard" }, "correct": true },
+            { "id": "ice", "emoji": "🧊", "label": { "uz": "yaxmalak", "ru": "гололёд", "en": "black ice" }, "correct": true },
+            { "id": "rainbow", "emoji": "🌈", "label": { "uz": "kamalak", "ru": "радуга", "en": "rainbow" } },
+            { "id": "bloom", "emoji": "🌸", "label": { "uz": "gullash", "ru": "цветение", "en": "blossom" } },
+            { "id": "leaves", "emoji": "🍂", "label": { "uz": "xazonrezgi", "ru": "листопад", "en": "leaf fall" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir faslni oʻz hodisasiga ula!", "ru": "Соедини каждый сезон с его явлением!", "en": "Match each season to its phenomenon!" },
+      "hint": { "uz": "Bahor — qor erishi, yoz — momaqaldiroq, kuz — xazonrezgi, qish — qor.", "ru": "Весна — таяние снега, лето — гром, осень — листопад, зима — снег.", "en": "Spring — snow melt, summer — thunder, autumn — leaf fall, winter — snow." },
+      "explanation": { "uz": "Har faslning oʻz hodisasi bor: qor erishi, momaqaldiroq, xazonrezgi, qor yogʻishi.", "ru": "У каждого сезона своё явление: таяние снега, гром, листопад, снегопад.", "en": "Each season has its phenomenon: snow melt, thunder, leaf fall, snowfall." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🌷", "label": { "uz": "bahor", "ru": "весна", "en": "spring" } }, "right": { "label": { "uz": "qor erishi", "ru": "таяние снега", "en": "snow melt" } } },
+            { "left": { "emoji": "☀️", "label": { "uz": "yoz", "ru": "лето", "en": "summer" } }, "right": { "label": { "uz": "momaqaldiroq", "ru": "гром", "en": "thunder" } } },
+            { "left": { "emoji": "🍂", "label": { "uz": "kuz", "ru": "осень", "en": "autumn" } }, "right": { "label": { "uz": "xazonrezgi", "ru": "листопад", "en": "leaf fall" } } },
+            { "left": { "emoji": "❄️", "label": { "uz": "qish", "ru": "зима", "en": "winter" } }, "right": { "label": { "uz": "qor yogʻishi", "ru": "снегопад", "en": "snowfall" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Chaqmoq chaqishi — jonsiz tabiat hodisasi.", "ru": "Верно? Молния — явление неживой природы.", "en": "True? Lightning is a non-living natural phenomenon." },
+      "hint": { "uz": "Chaqmoq oʻsimlik yoki hayvon emas.", "ru": "Молния — не растение и не животное.", "en": "Lightning is not a plant or animal." },
+      "explanation": { "uz": "Toʻgʻri. Chaqmoq — jonsiz tabiat hodisasi, u obu-havoga tegishli.", "ru": "Верно. Молния — явление неживой природы, относится к погоде.", "en": "True. Lightning is a non-living phenomenon, part of the weather." },
+      "widget": { "type": "true_false", "props": { "emoji": "⚡", "answer": true } }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Gulning ochilishi — jonli tabiat hodisasi.", "ru": "Верно? Цветение — явление живой природы.", "en": "True? A flower blooming is a living phenomenon." },
+      "hint": { "uz": "Gul — oʻsimlik, u jonli tabiatga tegishli.", "ru": "Цветок — растение, относится к живой природе.", "en": "A flower is a plant, part of living nature." },
+      "explanation": { "uz": "Toʻgʻri. Gul ochilishi jonli tabiat hodisasi, chunki gul oʻsadi.", "ru": "Верно. Цветение — явление живой природы, ведь цветок растёт.", "en": "True. Blossoming is a living phenomenon, because a flower grows." },
+      "widget": { "type": "true_false", "props": { "emoji": "🌸", "answer": true } }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kuzgi tabiat hodisasini top!", "ru": "Найди осеннее явление природы!", "en": "Find the autumn natural phenomenon!" },
+      "hint": { "uz": "Kuzda daraxt barglari sarg'ayib toʻkiladi.", "ru": "Осенью листья желтеют и опадают.", "en": "In autumn leaves turn yellow and fall." },
+      "explanation": { "uz": "Xazonrezgi — kuzgi hodisa. Gullash bahorda, qor odam qishda boʻladi.", "ru": "Листопад — осеннее явление. Цветение весной, снеговик зимой.", "en": "Leaf fall is an autumn event. Blossom is in spring, a snowman in winter." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "leaves", "emoji": "🍂", "label": { "uz": "xazonrezgi", "ru": "листопад", "en": "leaf fall" }, "correct": true },
+            { "id": "bloom", "emoji": "🌸", "label": { "uz": "gullash", "ru": "цветение", "en": "blossom" } },
+            { "id": "snowman", "emoji": "⛄", "label": { "uz": "qor odam", "ru": "снеговик", "en": "snowman" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qish oylarini belgila!", "ru": "Отметь зимние месяцы!", "en": "Tap the winter months!" },
+      "hint": { "uz": "Qish oylari: dekabr, yanvar, fevral.", "ru": "Зимние месяцы: декабрь, январь, февраль.", "en": "Winter months: December, January, February." },
+      "explanation": { "uz": "Dekabr, yanvar va fevral — qish oylari. Mart, iyun va sentabr — boshqa fasllar.", "ru": "Декабрь, январь и февраль — зимние месяцы. Март, июнь и сентябрь — другие сезоны.", "en": "December, January and February are winter months. March, June and September are other seasons." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "dec", "emoji": "📅", "label": { "uz": "Dekabr", "ru": "Декабрь", "en": "December" }, "correct": true },
+            { "id": "jan", "emoji": "📅", "label": { "uz": "Yanvar", "ru": "Январь", "en": "January" }, "correct": true },
+            { "id": "feb", "emoji": "📅", "label": { "uz": "Fevral", "ru": "Февраль", "en": "February" }, "correct": true },
+            { "id": "mar", "emoji": "📅", "label": { "uz": "Mart", "ru": "Март", "en": "March" } },
+            { "id": "jun", "emoji": "📅", "label": { "uz": "Iyun", "ru": "Июнь", "en": "June" } },
+            { "id": "sep", "emoji": "📅", "label": { "uz": "Sentabr", "ru": "Сентябрь", "en": "September" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kun qanday oʻzgaradi? Toʻgʻri tartibda joyla!", "ru": "Как меняется день? Расставь по порядку!", "en": "How does the day change? Put it in order!" },
+      "hint": { "uz": "Tong, kunduz, kech, tun — shu tartibda.", "ru": "Утро, день, вечер, ночь — в этом порядке.", "en": "Morning, day, evening, night — in this order." },
+      "explanation": { "uz": "Tongda quyosh chiqadi, kunduz yorugʻ boʻladi, kech kiradi, keyin tun keladi.", "ru": "Утром встаёт солнце, днём светло, наступает вечер, потом ночь.", "en": "The sun rises in the morning, day is bright, evening comes, then night." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "morning", "emoji": "🌅", "label": { "uz": "tong", "ru": "утро", "en": "morning" } },
+            { "id": "day", "emoji": "☀️", "label": { "uz": "kunduz", "ru": "день", "en": "day" } },
+            { "id": "evening", "emoji": "🌆", "label": { "uz": "kech", "ru": "вечер", "en": "evening" } },
+            { "id": "night", "emoji": "🌙", "label": { "uz": "tun", "ru": "ночь", "en": "night" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Tabiatda oʻzgarishlar faqat yilda bir marta boʻladi.", "ru": "Верно? Изменения в природе бывают только раз в год.", "en": "True? Changes in nature happen only once a year." },
+      "hint": { "uz": "Havo bir kun ichida ham oʻzgaradi.", "ru": "Погода меняется даже за один день.", "en": "The weather changes even within a single day." },
+      "explanation": { "uz": "Notoʻgʻri. Oʻzgarishlar bir kun ichida ham boʻladi — havo ilishi yoki sovishi mumkin.", "ru": "Неверно. Изменения бывают и за один день — может теплеть или холодать.", "en": "False. Changes happen even in a day — it can get warmer or colder." },
+      "widget": { "type": "true_false", "props": { "emoji": "🌦️", "answer": false } }
+    }
+  ]
+}

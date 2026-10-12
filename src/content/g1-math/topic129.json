@@ -1,0 +1,351 @@
+{
+  "topicId": "g1-math-129",
+  "subjectKey": "g1-math",
+  "emojis": "⚖️➗✨",
+  "title": {
+    "uz": "Tenglik va tengsizliklar",
+    "ru": "Равенства и неравенства",
+    "en": "Equalities and inequalities"
+  },
+  "recall": {
+    "uz": "«=» belgili yozuv tenglik deyiladi: chap va oʻng tomon teng. «>» yoki «<» belgili yozuv tengsizlik deyiladi: bir tomon ikkinchisidan katta yoki kichik. Sonlarni taqqoslab, toʻgʻri belgini qoʻyamiz.",
+    "ru": "Запись со знаком «=» называется равенством: левая и правая части равны. Запись со знаком «>» или «<» — неравенство: одна часть больше или меньше другой. Сравниваем числа и ставим знак.",
+    "en": "A statement with «=» is an equality: both sides are equal. A statement with «>» or «<» is an inequality: one side is bigger or smaller. We compare numbers and place the sign."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 16,
+          "y": 15
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 16 va 15. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 16 и 15. Какой знак верный?",
+        "en": "Compare: 16 and 15. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "16 > 15.",
+        "ru": "16 > 15.",
+        "en": "16 > 15."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 14,
+          "y": 19
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 14 va 19. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 14 и 19. Какой знак верный?",
+        "en": "Compare: 14 and 19. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "14 < 19.",
+        "ru": "14 < 19.",
+        "en": "14 < 19."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 2
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 13 ... 13",
+        "ru": "Выбери знак: 13 ... 13",
+        "en": "Choose the sign: 13 ... 13"
+      },
+      "hint": {
+        "uz": "Katta son — katta qiymat.",
+        "ru": "Больше число — больше значение.",
+        "en": "A bigger number is greater."
+      },
+      "explanation": {
+        "uz": "13 = 13.",
+        "ru": "13 = 13.",
+        "en": "13 = 13."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 45,
+          "y": 54
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 45 va 54. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 45 и 54. Какой знак верный?",
+        "en": "Compare: 45 and 54. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "45 < 54.",
+        "ru": "45 < 54.",
+        "en": "45 < 54."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12 + 3 = 15",
+            "12 + 3 > 14",
+            "12 + 3 < 16"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi yozuv tenglik?",
+        "ru": "Какая запись — равенство?",
+        "en": "Which statement is an equality?"
+      },
+      "hint": {
+        "uz": "Tenglikda «=» belgisi boʻladi.",
+        "ru": "В равенстве есть знак «=».",
+        "en": "An equality has the «=» sign."
+      },
+      "explanation": {
+        "uz": "«12 + 3 = 15» — tenglik.",
+        "ru": "«12 + 3 = 15» — равенство.",
+        "en": "«12 + 3 = 15» is an equality."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 40,
+          "y": 50
+        }
+      },
+      "prompt": {
+        "uz": "Qizlar 50 marta, oʻgʻillar 40 marta sakradi. Taqqosla: 40 va 50.",
+        "ru": "Девочки прыгнули 50 раз, мальчики 40. Сравни: 40 и 50.",
+        "en": "Girls jumped 50 times, boys 40. Compare: 40 and 50."
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "40 < 50.",
+        "ru": "40 < 50.",
+        "en": "40 < 50."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 90,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Qizlar 50 marta, oʻgʻillar 40 marta sakradi. Jami necha marta? Bloklardan yasa.",
+        "ru": "Девочки 50, мальчики 40 прыжков. Сколько всего? Собери из блоков.",
+        "en": "Girls jumped 50, boys 40. How many in all? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "50 + 40 = 90.",
+        "ru": "50 + 40 = 90.",
+        "en": "50 + 40 = 90."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "40 + 10",
+              "right": "50"
+            },
+            {
+              "left": "17 - 11",
+              "right": "6"
+            },
+            {
+              "left": "12 + 23",
+              "right": "35"
+            },
+            {
+              "left": "80 - 20",
+              "right": "60"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 17,
+          "y": 11
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 17 va 11. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 17 и 11. Какой знак верный?",
+        "en": "Compare: 17 and 11. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "17 > 11.",
+        "ru": "17 > 11.",
+        "en": "17 > 11."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "25 + 25",
+              "bin": "v50"
+            },
+            {
+              "id": "b",
+              "label": "40 + 10",
+              "bin": "v50"
+            },
+            {
+              "id": "c",
+              "label": "30 + 20",
+              "bin": "v50"
+            },
+            {
+              "id": "d",
+              "label": "30 + 30",
+              "bin": "v60"
+            },
+            {
+              "id": "e",
+              "label": "50 + 10",
+              "bin": "v60"
+            },
+            {
+              "id": "f",
+              "label": "40 + 20",
+              "bin": "v60"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v50",
+              "label": "50"
+            },
+            {
+              "id": "v60",
+              "label": "60"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик его значения!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в нужный ящик.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    }
+  ]
+}

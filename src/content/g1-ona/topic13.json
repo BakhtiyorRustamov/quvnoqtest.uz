@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-13",
+  "subjectKey": "g1-ona",
+  "emojis": "🔡🗣️🧱",
+  "title": {
+    "uz": "Undoshlar — 24 tovush",
+    "ru": "Согласные — 24 звука",
+    "en": "Consonants — 24 sounds"
+  },
+  "recall": {
+    "uz": "Undosh tovushlar ovoz va shovqindan iborat. Ularni aytganda havo til, lab yoki tishlarga toʻsiladi. Oʻzbek tilida 24 ta undosh tovush bor, ular 23 ta harf bilan yoziladi.",
+    "ru": "Согласные состоят из голоса и шума. При их произношении воздух встречает преграду — язык, губы, зубы. В узбекском 24 согласных звука, они пишутся 23 буквами.",
+    "en": "Consonants are made of voice and noise. When we say them, air meets an obstruction — the tongue, lips or teeth. Uzbek has 24 consonant sounds, written with 23 letters."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Havo toʻsiqqa uchraydigan tovush", "ru": "Звук с преградой для воздуха", "en": "A sound where air meets an obstruction" }, { "uz": "Havo erkin chiqadigan tovush", "ru": "Звук со свободным воздухом", "en": "A sound where air flows freely" }, { "uz": "Ovozsiz belgi", "ru": "Беззвучный знак", "en": "A silent sign" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qanday tovush undosh deyiladi?", "ru": "Какой звук называется согласным?", "en": "Which sound is called a consonant?" },
+      "hint": { "uz": "Undoshda havo til yoki labga toʻsiladi.", "ru": "У согласного воздух встречает преграду.", "en": "For a consonant, air meets an obstruction." },
+      "explanation": { "uz": "Undosh — havo toʻsiqqa uchraganda hosil boʻladi.", "ru": "Согласный образуется при преграде для воздуха.", "en": "A consonant forms when air meets an obstruction." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "a", "bin": "unli" }, { "id": "b", "label": "o", "bin": "unli" }, { "id": "c", "label": "i", "bin": "unli" }, { "id": "d", "label": "b", "bin": "und" }, { "id": "e", "label": "d", "bin": "und" }, { "id": "f", "label": "k", "bin": "und" } ], "bins": [ { "id": "unli", "label": "Unli" }, { "id": "und", "label": "Undosh" } ] } },
+      "prompt": { "uz": "Tovushlarni ajrat!", "ru": "Раздели звуки!", "en": "Sort the sounds!" },
+      "hint": { "uz": "b, d, k — undosh.", "ru": "b, d, k — согласные.", "en": "b, d, k are consonants." },
+      "explanation": { "uz": "Undoshlarni aytganda havo toʻsiladi.", "ru": "При согласных воздух встречает преграду.", "en": "For consonants, air is obstructed." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "a", "match": false }, { "text": "b", "match": true }, { "text": "e", "match": false }, { "text": "s", "match": true }, { "text": "t", "match": true }, { "text": "o", "match": false }, { "text": "k", "match": true }, { "text": "n", "match": true } ] } },
+      "prompt": { "uz": "Barcha undosh harflarni bos!", "ru": "Нажми все согласные буквы!", "en": "Tap all the consonant letters!" },
+      "hint": { "uz": "a, e, o — unli; qolgani undosh.", "ru": "a, e, o — гласные; остальные — согласные.", "en": "a, e, o are vowels; the rest are consonants." },
+      "explanation": { "uz": "b, s, t, k, n — undosh harflar.", "ru": "b, s, t, k, n — согласные буквы.", "en": "b, s, t, k, n are consonant letters." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "undosh", "letters": ["u", "n", "d", "o", "sh"], "emoji": "🔡", "clue": { "uz": "Havo toʻsiladigan tovush", "ru": "Звук с преградой", "en": "A sound with an obstruction" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: u, n, d, o, sh.", "ru": "Части: u, n, d, o, sh.", "en": "Parts: u, n, d, o, sh." },
+      "explanation": { "uz": "«undosh» — ovoz va shovqindan iborat tovush.", "ru": "«undosh» (согласный) — звук из голоса и шума.", "en": "“undosh” (consonant) — a sound of voice and noise." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "to", "after": "", "choices": ["sh", "s", "ch"], "answer": "sh", "emoji": "🗿", "clue": { "uz": "Qattiq jism", "ru": "Твёрдый предмет", "en": "A hard object" } } },
+      "prompt": { "uz": "Oxirgi tovushni qoʻy!", "ru": "Вставь последний звук!", "en": "Add the last sound!" },
+      "hint": { "uz": "to … — «tosh».", "ru": "to … — «tosh» (камень).", "en": "to … — “tosh” (stone)." },
+      "explanation": { "uz": "«tosh» oxirida «sh» undoshi bor.", "ru": "«tosh» оканчивается на согласный «sh».", "en": "“tosh” ends with the consonant “sh”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "kitob", "right": "k" }, { "left": "non", "right": "n" }, { "left": "tosh", "right": "t" }, { "left": "bola", "right": "b" } ] } },
+      "prompt": { "uz": "Soʻzni birinchi undoshiga ula!", "ru": "Соедини слово с его первым согласным!", "en": "Match each word to its first consonant!" },
+      "hint": { "uz": "«kitob» — «k» bilan boshlanadi.", "ru": "«kitob» начинается с «k».", "en": "“kitob” starts with “k”." },
+      "explanation": { "uz": "Bu soʻzlar undosh tovush bilan boshlanadi.", "ru": "Эти слова начинаются с согласного.", "en": "These words start with a consonant." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "e", "bin": "unli" }, { "id": "b", "label": "u", "bin": "unli" }, { "id": "c", "label": "oʻ", "bin": "unli" }, { "id": "d", "label": "r", "bin": "und" }, { "id": "e", "label": "l", "bin": "und" }, { "id": "f", "label": "m", "bin": "und" } ], "bins": [ { "id": "unli", "label": "Unli" }, { "id": "und", "label": "Undosh" } ] } },
+      "prompt": { "uz": "Tovushlarni ajrat!", "ru": "Раздели звуки!", "en": "Sort the sounds!" },
+      "hint": { "uz": "r, l, m — undosh.", "ru": "r, l, m — согласные.", "en": "r, l, m are consonants." },
+      "explanation": { "uz": "Unli — e, u, oʻ; undosh — r, l, m.", "ru": "Гласные — e, u, oʻ; согласные — r, l, m.", "en": "Vowels — e, u, oʻ; consonants — r, l, m." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Undoshlar", "ovoz", "va", "shovqindan", "iborat."], "emoji": "🗣️", "clue": { "uz": "Undosh nima?", "ru": "Что такое согласный?", "en": "What is a consonant?" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nimadan iborat? — «ovoz va shovqin».", "ru": "Из чего? — «голос и шум».", "en": "Of what? — “voice and noise”." },
+      "explanation": { "uz": "Undosh tovushlar ovoz va shovqindan iborat.", "ru": "Согласные состоят из голоса и шума.", "en": "Consonants are made of voice and noise." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["24", "6", "29"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻzbek tilida nechta undosh tovush bor?", "ru": "Сколько согласных звуков в узбекском?", "en": "How many consonant sounds are there in Uzbek?" },
+      "hint": { "uz": "Ular 23 ta harf bilan yoziladi.", "ru": "Они пишутся 23 буквами.", "en": "They are written with 23 letters." },
+      "explanation": { "uz": "Oʻzbek tilida 24 ta undosh tovush bor.", "ru": "В узбекском 24 согласных звука.", "en": "Uzbek has 24 consonant sounds." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "ovoz", "emoji": "🔊", "clue": { "uz": "Undoshda ham shu bor", "ru": "Он есть и у согласного", "en": "A consonant has this too" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: o, v, o, z.", "ru": "Буквы: o, v, o, z.", "en": "Letters: o, v, o, z." },
+      "explanation": { "uz": "«ovoz» — undosh tovushda ovoz va shovqin boʻladi.", "ru": "«ovoz» (голос) — у согласного есть голос и шум.", "en": "“ovoz” (voice) — a consonant has voice and noise." }
+    }
+  ]
+}

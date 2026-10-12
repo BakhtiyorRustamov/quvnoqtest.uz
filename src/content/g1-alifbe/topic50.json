@@ -1,0 +1,540 @@
+{
+  "topicId": "g1-alifbe-50",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🎈👖🕯️",
+  "title": {
+    "uz": "«Sh sh» — oʻqish mashqi",
+    "ru": "Буква «Sh sh» — чтение",
+    "en": "Letter “Sh sh” — reading"
+  },
+  "recall": {
+    "uz": "«Sh» harfini oʻrgandik. Endi matn oʻqiymiz: shar, shim, sham. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «Sh». Теперь читаем текст: shar, shim, sham. Тренируем чтение!",
+    "en": "We learned the letter “Sh”. Now we read a text: shar, shim, sham. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🎈 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🎈 Прочитай и нажми верно написанное слово!",
+        "en": "🎈 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «shar».",
+        "ru": "Прочитай: «shar».",
+        "en": "Read it: “shar”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «shar».",
+        "ru": "Верно — «shar».",
+        "en": "Correct — “shar”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🎈",
+          "options": [
+            {
+              "id": "ok",
+              "word": "shar",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "sar"
+            },
+            {
+              "id": "w2",
+              "word": "shor"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «shar» soʻzini tuz!",
+        "ru": "Составь слово «shar»!",
+        "en": "Build the word “shar”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «shar» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «shar».",
+        "en": "Great! You read “shar”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🎈",
+          "word": "shar",
+          "label": {
+            "uz": "shar",
+            "ru": "шар",
+            "en": "balloon"
+          },
+          "letters": [
+            "sh",
+            "a",
+            "r"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь на вопрос.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение внимательно.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «sham».",
+        "ru": "Верный ответ — «sham».",
+        "en": "The right answer is “sham”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🎈",
+          "text": {
+            "uz": "Shohida sham oldi.\nSharim qizil.",
+            "ru": "Shohida sham oldi.\nSharim qizil.",
+            "en": "Shohida sham oldi.\nSharim qizil."
+          },
+          "question": {
+            "uz": "Shohida nima oldi?",
+            "ru": "Shohida nima oldi?",
+            "en": "Shohida nima oldi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "sham",
+                "ru": "sham",
+                "en": "sham"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "shar",
+                "ru": "shar",
+                "en": "shar"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "gul",
+                "ru": "gul",
+                "en": "gul"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍫 «shokolad» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🍫 Похлопай слово «shokolad» по слогам!",
+        "en": "🍫 Clap the word “shokolad” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«shokolad» — 3 boʻgʻin.",
+        "ru": "«shokolad» — 3 слога.",
+        "en": "“shokolad” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🍫",
+          "word": {
+            "uz": "shokolad",
+            "ru": "shokolad",
+            "en": "shokolad"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Sh» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «Sh»!",
+        "en": "Tap the words with the “Sh” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «sh» tovushi bor.",
+        "ru": "В них есть звук «sh».",
+        "en": "They have the “sh” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🎈",
+              "label": {
+                "uz": "shar",
+                "ru": "shar",
+                "en": "shar"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👖",
+              "label": {
+                "uz": "shim",
+                "ru": "shim",
+                "en": "shim"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🕯️",
+              "label": {
+                "uz": "sham",
+                "ru": "sham",
+                "en": "sham"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«shar» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «shar». Найди картинку!",
+        "en": "Read “shar”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«shar» — 🎈.",
+        "ru": "«shar» — 🎈.",
+        "en": "“shar” is 🎈."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🎈",
+              "label": {
+                "uz": "shar",
+                "ru": "шар",
+                "en": "balloon"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "👖",
+              "label": {
+                "uz": "shim",
+                "ru": "shim",
+                "en": "shim"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🕯️",
+              "label": {
+                "uz": "sham",
+                "ru": "sham",
+                "en": "sham"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🎈"
+              },
+              "right": {
+                "label": {
+                  "uz": "shar",
+                  "ru": "shar",
+                  "en": "shar"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👖"
+              },
+              "right": {
+                "label": {
+                  "uz": "shim",
+                  "ru": "shim",
+                  "en": "shim"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🕯️"
+              },
+              "right": {
+                "label": {
+                  "uz": "sham",
+                  "ru": "sham",
+                  "en": "sham"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Shohida … oldi.",
+        "ru": "Составь предложение: Shohida … oldi.",
+        "en": "Order the words: Shohida … oldi."
+      },
+      "hint": {
+        "uz": "Shohida — sham — oldi.",
+        "ru": "Shohida — sham — oldi.",
+        "en": "Shohida — sham — oldi."
+      },
+      "explanation": {
+        "uz": "«Shohida sham oldi.» — gap oʻqiding!",
+        "ru": "«Shohida sham oldi.» — предложение!",
+        "en": "“Shohida sham oldi.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Shohida",
+                "ru": "Shohida",
+                "en": "Shohida"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "sham",
+                "ru": "sham",
+                "en": "sham"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🎈"
+              },
+              "b": {
+                "label": {
+                  "uz": "shar",
+                  "ru": "shar",
+                  "en": "shar"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👖"
+              },
+              "b": {
+                "label": {
+                  "uz": "shim",
+                  "ru": "shim",
+                  "en": "shim"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🕯️"
+              },
+              "b": {
+                "label": {
+                  "uz": "sham",
+                  "ru": "sham",
+                  "en": "sham"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«shar» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «shar»?",
+        "en": "How many sounds are in “shar”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana. («sh» — bitta tovush)",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«shar»da 3 ta tovush bor.",
+        "ru": "В «shar» 3 звука.",
+        "en": "“shar” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

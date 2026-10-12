@@ -1,0 +1,371 @@
+{
+  "topicId": "g1-math-105",
+  "subjectKey": "g1-math",
+  "emojis": "⚖️🌾📐",
+  "title": {
+    "uz": "Kilogramm bilan masalalar",
+    "ru": "Задачи с килограммами",
+    "en": "Problems with kilograms"
+  },
+  "recall": {
+    "uz": "Massa masalalarida 'jami qancha', 'qancha ortiq', 'qancha kam' kabi savollarga javob beramiz. Kilogramm (kg) — massa birligi. Qoʻshish va ayirishni qulay tartibda bajaramiz.",
+    "ru": "В задачах на массу отвечаем на вопросы 'сколько всего', 'насколько больше', 'насколько меньше'. Килограмм (кг) — единица массы. Сложение и вычитание выполняем удобным способом.",
+    "en": "In mass problems we answer 'how much in total', 'how much more', 'how much fewer'. The kilogram (kg) is the unit of mass. We add and subtract in a convenient way."
+  },
+  "items": [
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 10,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Bir qopda 8 kg, ikkinchisida undan 2 kg ortiq bugʻdoy (10 kg) bor. Jami necha kg? Sonlar chizigʻida hisobla.",
+        "ru": "В одном мешке 8 кг, в другом на 2 кг больше пшеницы (10 кг). Сколько всего кг? Посчитай на числовой прямой.",
+        "en": "One sack has 8 kg, the other 2 kg more wheat (10 kg). How many kg in total? Use the number line."
+      },
+      "hint": {
+        "uz": "8 va 10 ni qoʻsh.",
+        "ru": "Сложи 8 и 10.",
+        "en": "Add 8 and 10."
+      },
+      "explanation": {
+        "uz": "8 + 10 = 18 kg.",
+        "ru": "8 + 10 = 18 кг.",
+        "en": "8 + 10 = 18 kg."
+      },
+      "id": "q1"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 14,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Qopdan 8 kg un olingach, unda 6 kg qoldi. Dastlab necha kg edi? Javobni bloklardan yasa.",
+        "ru": "Из мешка взяли 8 кг муки, осталось 6 кг. Сколько было сначала? Собери ответ из блоков.",
+        "en": "After 8 kg of flour was taken, 6 kg was left. How much was there at first? Build the answer."
+      },
+      "hint": {
+        "uz": "Olingan va qolganni qoʻsh: 8 + 6.",
+        "ru": "Сложи взятое и остаток: 8 + 6.",
+        "en": "Add taken and left: 8 + 6."
+      },
+      "explanation": {
+        "uz": "8 + 6 = 14 kg.",
+        "ru": "8 + 6 = 14 кг.",
+        "en": "8 + 6 = 14 kg."
+      },
+      "id": "q2"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 13,
+          "y": 11
+        }
+      },
+      "prompt": {
+        "uz": "13 kg qop va 11 kg qop. Qaysi ogʻirroq? Toʻgʻri belgini tanla.",
+        "ru": "Мешок 13 кг и мешок 11 кг. Какой тяжелее? Выбери знак.",
+        "en": "A 13 kg sack and an 11 kg sack. Which is heavier? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgani ogʻirroq.",
+        "ru": "Тяжелее с большим числом.",
+        "en": "The bigger number is heavier."
+      },
+      "explanation": {
+        "uz": "13 > 11.",
+        "ru": "13 > 11.",
+        "en": "13 > 11."
+      },
+      "id": "q3"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "12 + 6",
+              "right": "18"
+            },
+            {
+              "left": "24 - 4",
+              "right": "20"
+            },
+            {
+              "left": "7 + 8",
+              "right": "15"
+            },
+            {
+              "left": "19 - 6",
+              "right": "13"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir massa ifodasini (kg) javobi bilan ulang!",
+        "ru": "Соедини каждое выражение массы (кг) с его ответом!",
+        "en": "Match each mass expression (kg) with its answer!"
+      },
+      "hint": {
+        "uz": "Har ifodani hisoblab, tengini top.",
+        "ru": "Вычисли каждое и найди равное.",
+        "en": "Work each out and find its match."
+      },
+      "explanation": {
+        "uz": "18, 20, 15, 13 kg.",
+        "ru": "18, 20, 15, 13 кг.",
+        "en": "18, 20, 15, 13 kg."
+      },
+      "id": "q4"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "4",
+            "2"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Uchburchakning ikki tomoni 4 cm va 4 cm. Tomonlari yigʻindisi 11 cm. Uchinchi tomoni necha cm?",
+        "ru": "Две стороны треугольника 4 см и 4 см. Сумма сторон 11 см. Чему равна третья сторона?",
+        "en": "A triangle has two sides of 4 cm and 4 cm. The sides sum to 11 cm. How long is the third side?"
+      },
+      "hint": {
+        "uz": "Yigʻindidan ma'lum ikki tomonni ayir: 11 - 4 - 4.",
+        "ru": "Из суммы вычти известные стороны: 11 - 4 - 4.",
+        "en": "Subtract the known sides from the sum: 11 - 4 - 4."
+      },
+      "explanation": {
+        "uz": "11 - 8 = 3 cm.",
+        "ru": "11 - 8 = 3 см.",
+        "en": "11 - 8 = 3 cm."
+      },
+      "componentProposal": {
+        "suggestedType": "perimeter_solver",
+        "concept": "finding a missing side given the perimeter and other sides",
+        "interaction": "drag to set the missing side until the perimeter matches",
+        "props": "{ sides:(number|null)[], perimeter }",
+        "why": "no current component models a polygon perimeter with an unknown side"
+      },
+      "id": "q5"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "12 + 8",
+              "bin": "v20"
+            },
+            {
+              "id": "b",
+              "label": "15 + 5",
+              "bin": "v20"
+            },
+            {
+              "id": "c",
+              "label": "11 + 9",
+              "bin": "v20"
+            },
+            {
+              "id": "d",
+              "label": "12 + 10",
+              "bin": "v22"
+            },
+            {
+              "id": "e",
+              "label": "14 + 8",
+              "bin": "v22"
+            },
+            {
+              "id": "f",
+              "label": "16 + 6",
+              "bin": "v22"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v20",
+              "label": "20 kg"
+            },
+            {
+              "id": "v22",
+              "label": "22 kg"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir yukni umumiy massasi (kg) boʻyicha toʻgʻri qutiga sudra!",
+        "ru": "Перетащи каждый груз в нужный ящик по общей массе (кг)!",
+        "en": "Drag each load into the right bucket by its total mass (kg)!"
+      },
+      "hint": {
+        "uz": "Yigʻindini hisobla: 20 yoki 22.",
+        "ru": "Вычисли сумму: 20 или 22.",
+        "en": "Work out the sum: 20 or 22."
+      },
+      "explanation": {
+        "uz": "20 kg: 12+8, 15+5, 11+9. 22 kg: 12+10, 14+8, 16+6.",
+        "ru": "20 кг: 12+8, 15+5, 11+9. 22 кг: 12+10, 14+8, 16+6.",
+        "en": "20 kg: 12+8, 15+5, 11+9. 22 kg: 12+10, 14+8, 16+6."
+      },
+      "id": "q6"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Mashinaga 9 kg va 6 kg yuk ortildi. Jami necha kg? Sonlar chizigʻida hisobla.",
+        "ru": "В машину погрузили 9 кг и 6 кг. Сколько всего кг? Посчитай на числовой прямой.",
+        "en": "A car was loaded with 9 kg and 6 kg. How many kg in total? Use the number line."
+      },
+      "hint": {
+        "uz": "9 dan boshla va 6 oldinga sur.",
+        "ru": "Встань на 9 и продвинься на 6.",
+        "en": "Start at 9 and move 6 forward."
+      },
+      "explanation": {
+        "uz": "9 + 6 = 15 kg.",
+        "ru": "9 + 6 = 15 кг.",
+        "en": "9 + 6 = 15 kg."
+      },
+      "id": "q7"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 20,
+          "y": 18
+        }
+      },
+      "prompt": {
+        "uz": "Bir yuk 20 kg, boshqasi 18 kg. Qaysi ogʻirroq? Toʻgʻri belgini tanla.",
+        "ru": "Один груз 20 кг, другой 18 кг. Какой тяжелее? Выбери знак.",
+        "en": "One load is 20 kg, another 18 kg. Which is heavier? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgani ogʻirroq.",
+        "ru": "Тяжелее с большим числом.",
+        "en": "The bigger number is heavier."
+      },
+      "explanation": {
+        "uz": "20 > 18.",
+        "ru": "20 > 18.",
+        "en": "20 > 18."
+      },
+      "id": "q8"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 22
+        }
+      },
+      "prompt": {
+        "uz": "Ikki quti birga 22 kg keladi. Shu massani bloklardan yasa.",
+        "ru": "Две коробки вместе весят 22 кг. Собери эту массу из блоков.",
+        "en": "Two boxes together weigh 22 kg. Build that mass from blocks."
+      },
+      "hint": {
+        "uz": "2 ta oʻnlik (+10) va 2 ta birlik (+1).",
+        "ru": "2 десятка (+10) и 2 единицы (+1).",
+        "en": "2 tens (+10) and 2 ones (+1)."
+      },
+      "explanation": {
+        "uz": "22 = 20 + 2 kg.",
+        "ru": "22 = 20 + 2 кг.",
+        "en": "22 = 20 + 2 kg."
+      },
+      "id": "q9"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "18 - 9",
+              "right": "9"
+            },
+            {
+              "left": "6 + 8",
+              "right": "14"
+            },
+            {
+              "left": "20 - 7",
+              "right": "13"
+            },
+            {
+              "left": "11 + 5",
+              "right": "16"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir 'qancha ortiq/kam' amalini (kg) javobi bilan ulang!",
+        "ru": "Соедини каждое действие 'насколько больше/меньше' (кг) с ответом!",
+        "en": "Match each 'how much more/fewer' expression (kg) with its answer!"
+      },
+      "hint": {
+        "uz": "Ayirish va qoʻshishni diqqat bilan bajar.",
+        "ru": "Аккуратно выполни вычитание и сложение.",
+        "en": "Carefully do the subtraction and addition."
+      },
+      "explanation": {
+        "uz": "9, 14, 13, 16 kg.",
+        "ru": "9, 14, 13, 16 кг.",
+        "en": "9, 14, 13, 16 kg."
+      },
+      "id": "q10"
+    }
+  ]
+}

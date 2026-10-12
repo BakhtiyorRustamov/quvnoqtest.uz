@@ -1,0 +1,510 @@
+{
+  "topicId": "g1-alifbe-18",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🌙🍇🐱",
+  "title": {
+    "uz": "«U u» — oʻqish mashqi",
+    "ru": "Буква «U u» — чтение",
+    "en": "Letter “U u” — reading"
+  },
+  "recall": {
+    "uz": "«U» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: tun, uzum, mushuk. «U» — unli tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «U». Теперь читаем слова: tun, uzum, mushuk. «U» — гласный звук. Тренируем чтение!",
+    "en": "We learned the letter “U”. Now we read words: tun, uzum, mushuk. “U” is a vowel. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌙 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🌙 Прочитай и нажми верно написанное слово!",
+        "en": "🌙 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «tun».",
+        "ru": "Прочитай: «tun».",
+        "en": "Read it: “tun”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «tun».",
+        "ru": "Верно — «tun».",
+        "en": "Correct — “tun”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🌙",
+          "options": [
+            {
+              "id": "ok",
+              "word": "tun",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "ton"
+            },
+            {
+              "id": "w2",
+              "word": "tin"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «tun» soʻzini tuz!",
+        "ru": "Составь слово «tun»!",
+        "en": "Build the word “tun”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «tun» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «tun».",
+        "en": "Great! You read “tun”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🌙",
+          "word": "tun",
+          "label": {
+            "uz": "tun",
+            "ru": "ночь",
+            "en": "night"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌙 «tun»da «u» tovushi qaysi katakchada?",
+        "ru": "🌙 В какой клетке звук «u» в слове «tun»?",
+        "en": "🌙 Which box has the “u” sound in “tun”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«tun»da «u» tovushi toʻgʻri joyda.",
+        "ru": "В «tun» звук «u» на верном месте.",
+        "en": "In “tun” the “u” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🌙",
+          "word": {
+            "uz": "tun",
+            "ru": "tun",
+            "en": "tun"
+          },
+          "sound": "u",
+          "cells": [
+            "t",
+            "u",
+            "n"
+          ],
+          "answer": 1
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍇 «uzum» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🍇 Похлопай слово «uzum» по слогам!",
+        "en": "🍇 Clap the word “uzum” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«uzum» — 2 boʻgʻin.",
+        "ru": "«uzum» — 2 слога.",
+        "en": "“uzum” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🍇",
+          "word": {
+            "uz": "uzum",
+            "ru": "uzum",
+            "en": "uzum"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«U» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «U»!",
+        "en": "Tap the words that have the “U” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «u» tovushi bor.",
+        "ru": "Верно! В них есть звук «u».",
+        "en": "Right! They have the “u” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌙",
+              "label": {
+                "uz": "tun",
+                "ru": "tun",
+                "en": "tun"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍇",
+              "label": {
+                "uz": "uzum",
+                "ru": "uzum",
+                "en": "uzum"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐱",
+              "label": {
+                "uz": "mushuk",
+                "ru": "mushuk",
+                "en": "mushuk"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«tun» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «tun». Найди картинку!",
+        "en": "Read “tun”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«tun» — 🌙.",
+        "ru": "«tun» — 🌙.",
+        "en": "“tun” is 🌙."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🌙",
+              "label": {
+                "uz": "tun",
+                "ru": "ночь",
+                "en": "night"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🍇",
+              "label": {
+                "uz": "uzum",
+                "ru": "uzum",
+                "en": "uzum"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🐱",
+              "label": {
+                "uz": "mushuk",
+                "ru": "mushuk",
+                "en": "mushuk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🌙"
+              },
+              "right": {
+                "label": {
+                  "uz": "tun",
+                  "ru": "tun",
+                  "en": "tun"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍇"
+              },
+              "right": {
+                "label": {
+                  "uz": "uzum",
+                  "ru": "uzum",
+                  "en": "uzum"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐱"
+              },
+              "right": {
+                "label": {
+                  "uz": "mushuk",
+                  "ru": "mushuk",
+                  "en": "mushuk"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ona … un.",
+        "ru": "Составь предложение: Ona … un.",
+        "en": "Order the words: Ona … un."
+      },
+      "hint": {
+        "uz": "Ona — ana — un.",
+        "ru": "Ona — ana — un.",
+        "en": "Ona — ana — un."
+      },
+      "explanation": {
+        "uz": "«Ona ana un.» — gap oʻqiding!",
+        "ru": "«Ona ana un.» — предложение!",
+        "en": "“Ona ana un.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ona",
+                "ru": "Ona",
+                "en": "Ona"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "ana",
+                "ru": "ana",
+                "en": "ana"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "un",
+                "ru": "un",
+                "en": "un"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🌙"
+              },
+              "b": {
+                "label": {
+                  "uz": "tun",
+                  "ru": "tun",
+                  "en": "tun"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍇"
+              },
+              "b": {
+                "label": {
+                  "uz": "uzum",
+                  "ru": "uzum",
+                  "en": "uzum"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐱"
+              },
+              "b": {
+                "label": {
+                  "uz": "mushuk",
+                  "ru": "mushuk",
+                  "en": "mushuk"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«tun» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «tun»?",
+        "en": "How many sounds are in “tun”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«tun»da 3 ta tovush bor.",
+        "ru": "В «tun» 3 звука.",
+        "en": "“tun” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-50",
+  "subjectKey": "g1-ona",
+  "emojis": "🌸🎨❓",
+  "title": {
+    "uz": "Qanday? Qanaqa? soʻrogʻiga javob soʻzlar",
+    "ru": "Слова на вопрос «Какой? Какая?»",
+    "en": "Words that answer “What kind?”"
+  },
+  "recall": {
+    "uz": "Belgini bildirgan soʻzlar yordamida narsani tanib olish mumkin: yumshoq, oppoq narsa — bu qor; ayyor hayvon — bu tulki. Belgi soʻzlari «Qanday?», «Qanaqa?» soʻroqlariga javob boʻladi: koʻk osmon, yashil barg, iliq havo, goʻzal bogʻ.",
+    "ru": "По словам-признакам можно узнать предмет: мягкое, белое — это снег; хитрое животное — это лиса. Слова-признаки отвечают на вопросы «Какой?», «Какая?»: koʻk osmon, yashil barg, iliq havo, goʻzal bogʻ.",
+    "en": "Attribute words help us recognize a thing: soft and white means snow; a cunning animal means a fox. Attribute words answer “What kind?”: koʻk osmon (blue sky), yashil barg (green leaf), iliq havo (warm weather), goʻzal bogʻ (beautiful garden)."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Quyon", "right": "yumshoq" }, { "left": "Tulki", "right": "ayyor" }, { "left": "Ot", "right": "chaqqon" } ] } },
+      "prompt": { "uz": "Hayvonni unga xos belgiga ula!", "ru": "Соедини животное с его признаком!", "en": "Match each animal to its typical attribute!" },
+      "hint": { "uz": "Quyon — yumshoq, tulki — ayyor.", "ru": "Заяц — мягкий, лиса — хитрая.", "en": "A rabbit is soft; a fox is cunning." },
+      "explanation": { "uz": "Belgi soʻzlari orqali hayvonni tanib olamiz.", "ru": "По словам-признакам узнаём животное.", "en": "Attribute words help us recognize the animal." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "osmon", "right": "koʻk" }, { "left": "qor", "right": "oppoq" }, { "left": "limon", "right": "nordon" }, { "left": "asal", "right": "shirin" } ] } },
+      "prompt": { "uz": "Narsani unga mos belgiga ula!", "ru": "Соедини предмет с подходящим признаком!", "en": "Match each thing to its attribute!" },
+      "hint": { "uz": "osmon — koʻk, limon — nordon.", "ru": "небо — синее, лимон — кислый.", "en": "sky — blue, lemon — sour." },
+      "explanation": { "uz": "Koʻk osmon, oppoq qor, nordon limon, shirin asal.", "ru": "Синее небо, белый снег, кислый лимон, сладкий мёд.", "en": "Blue sky, white snow, sour lemon, sweet honey." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "koʻk", "match": true }, { "text": "bulut", "match": false }, { "text": "iliq", "match": true }, { "text": "qanot", "match": false }, { "text": "goʻzal", "match": true }, { "text": "qush", "match": false } ] } },
+      "prompt": { "uz": "Belgini bildirgan soʻzlarni bos!", "ru": "Нажми слова-признаки!", "en": "Tap the attribute words!" },
+      "hint": { "uz": "bulut, qanot, qush — narsa nomlari.", "ru": "bulut, qanot, qush — названия предметов.", "en": "bulut, qanot, qush are names of things." },
+      "explanation": { "uz": "koʻk, iliq, goʻzal — belgi soʻzlari.", "ru": "koʻk, iliq, goʻzal — слова-признаки.", "en": "koʻk, iliq, goʻzal are attribute words." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "yashil", "bin": "belgi" }, { "id": "b", "label": "moviy", "bin": "belgi" }, { "id": "c", "label": "goʻzal", "bin": "belgi" }, { "id": "d", "label": "bahor", "bin": "narsa" }, { "id": "e", "label": "qush", "bin": "narsa" }, { "id": "f", "label": "ariq", "bin": "narsa" } ], "bins": [ { "id": "belgi", "label": "Belgi (qanday?)" }, { "id": "narsa", "label": "Narsa (nima?)" } ] } },
+      "prompt": { "uz": "Ajrat: belgi soʻzi va narsa soʻzi!", "ru": "Раздели: слово-признак и слово-предмет!", "en": "Sort: attribute word vs thing word!" },
+      "hint": { "uz": "bahor, qush, ariq — narsa; yashil, moviy — belgi.", "ru": "bahor, qush, ariq — предметы; yashil, moviy — признаки.", "en": "bahor, qush, ariq are things; yashil, moviy are attributes." },
+      "explanation": { "uz": "yashil, moviy, goʻzal — belgi; bahor, qush, ariq — narsa.", "ru": "yashil, moviy, goʻzal — признаки; bahor, qush, ariq — предметы.", "en": "yashil, moviy, goʻzal are attributes; bahor, qush, ariq are things." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Bahorda osmon ", "after": " rangda boʻladi.", "choices": ["moviy", "shirin", "qattiq"], "answer": "moviy", "emoji": "☁️", "clue": { "uz": "Osmon qanday rangda?", "ru": "Какого цвета небо?", "en": "What colour is the sky?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Ochiq osmonning rangi — koʻk (moviy).", "ru": "Цвет ясного неба — голубой.", "en": "A clear sky's colour is blue." },
+      "explanation": { "uz": "Osmon moviy rangda. «Moviy» — belgi (rang) soʻzi.", "ru": "Небо голубое. «Moviy» — слово-признак (цвет).", "en": "The sky is blue. “Moviy” is an attribute (colour) word." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Ariq boʻyida ", "after": " koʻzli boychechak oʻsadi.", "choices": ["yashil", "qora", "uzun"], "answer": "yashil", "emoji": "🌱", "clue": { "uz": "Boychechakning koʻzi qanday rangda?", "ru": "Какого цвета глазок подснежника?", "en": "What colour is the snowdrop's eye?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Sheʼrda «yashil koʻzli boychechak» deyilgan.", "ru": "В стихе — «зеленоглазый подснежник».", "en": "The poem says “green-eyed snowdrop”." },
+      "explanation": { "uz": "Yashil koʻzli boychechak. «Yashil» — belgi (rang) soʻzi.", "ru": "Зеленоглазый подснежник. «Yashil» — слово-признак.", "en": "A green-eyed snowdrop. “Yashil” is an attribute word." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Bahor kunlari havo ", "after": " boʻladi.", "choices": ["iliq", "sovuq", "qattiq"], "answer": "iliq", "emoji": "🌤️", "clue": { "uz": "Bahorda havo qanday?", "ru": "Какая погода весной?", "en": "What is the weather like in spring?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos belgi soʻzini qoʻy!", "ru": "Вставь подходящее слово-признак!", "en": "Fill the gap with the right attribute word!" },
+      "hint": { "uz": "Bahorda havo issiq ham emas, sovuq ham emas — iliq.", "ru": "Весной не жарко и не холодно — тепло.", "en": "In spring it is neither hot nor cold — warm." },
+      "explanation": { "uz": "Bahorda havo iliq. «Iliq» — belgi soʻzi.", "ru": "Весной погода тёплая. «Iliq» — слово-признак.", "en": "In spring the weather is warm. “Iliq” is an attribute word." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bahorda", "havo", "iliq", "boʻladi."], "emoji": "🌸", "clue": { "uz": "Bahor haqida gap", "ru": "Предложение о весне", "en": "A sentence about spring" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Havo qanday? — iliq.", "ru": "Погода какая? — тёплая.", "en": "The weather is what kind? — warm." },
+      "explanation": { "uz": "Bahorda havo iliq boʻladi. «Iliq» — belgi soʻzi.", "ru": "Весной погода тёплая. «Iliq» — слово-признак.", "en": "In spring the weather is warm. “Iliq” is an attribute word." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["goʻ", "zal"], "emoji": "🌺", "clue": { "uz": "Chiroyli (belgi soʻzi)", "ru": "Красивый (слово-признак)", "en": "Beautiful (an attribute word)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan belgi soʻzini tuz!", "ru": "Собери слово-признак из слогов!", "en": "Build the attribute word from syllables!" },
+      "hint": { "uz": "goʻ- … -zal.", "ru": "goʻ- … -zal.", "en": "goʻ- … -zal." },
+      "explanation": { "uz": "«Goʻzal» — belgi soʻzi (goʻzal bogʻ).", "ru": "«Goʻzal» — слово-признак (красивый сад).", "en": "“Goʻzal” is an attribute word (a beautiful garden)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "yashil", "letters": ["y", "a", "sh", "i", "l"], "emoji": "🌿", "clue": { "uz": "Bargning rangi (belgi soʻzi)", "ru": "Цвет листа (слово-признак)", "en": "A leaf's colour (an attribute word)" } } },
+      "prompt": { "uz": "Harflardan belgi soʻzini yigʻ!", "ru": "Собери слово-признак из букв!", "en": "Build the attribute word from the letters!" },
+      "hint": { "uz": "Yozda barglar qanday rangda boʻladi?", "ru": "Какого цвета листья летом?", "en": "What colour are leaves in summer?" },
+      "explanation": { "uz": "«Yashil» — belgi (rang) soʻzi (yashil barg).", "ru": "«Yashil» — слово-признак (зелёный лист).", "en": "“Yashil” is an attribute (colour) word (a green leaf)." }
+    }
+  ]
+}

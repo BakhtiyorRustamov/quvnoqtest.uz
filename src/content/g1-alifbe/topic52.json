@@ -1,0 +1,503 @@
+{
+  "topicId": "g1-alifbe-52",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🐘🎬⚽",
+  "title": {
+    "uz": "«F f» — oʻqish mashqi",
+    "ru": "Буква «F f» — чтение",
+    "en": "Letter “F f” — reading"
+  },
+  "recall": {
+    "uz": "«F» harfini oʻrgandik. Endi matn oʻqiymiz: fil, film, futbol. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «F». Теперь читаем текст: fil, film, futbol. Тренируем чтение!",
+    "en": "We learned the letter “F”. Now we read a text: fil, film, futbol. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐘 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🐘 Прочитай и нажми верно написанное слово!",
+        "en": "🐘 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «fil».",
+        "ru": "Прочитай: «fil».",
+        "en": "Read it: “fil”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «fil».",
+        "ru": "Верно — «fil».",
+        "en": "Correct — “fil”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🐘",
+          "options": [
+            {
+              "id": "ok",
+              "word": "fil",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "vil"
+            },
+            {
+              "id": "w2",
+              "word": "fel"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «fil» soʻzini tuz!",
+        "ru": "Составь слово «fil»!",
+        "en": "Build the word “fil”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «fil» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «fil».",
+        "en": "Great! You read “fil”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🐘",
+          "word": "fil",
+          "label": {
+            "uz": "fil",
+            "ru": "слон",
+            "en": "elephant"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «film».",
+        "ru": "Верный ответ — «film».",
+        "en": "The right answer is “film”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🐘",
+          "text": {
+            "uz": "Ota futbol oʻynadi.\nFarhod film koʻrdi.",
+            "ru": "Ota futbol oʻynadi.\nFarhod film koʻrdi.",
+            "en": "Ota futbol oʻynadi.\nFarhod film koʻrdi."
+          },
+          "question": {
+            "uz": "Farhod nima koʻrdi?",
+            "ru": "Farhod nima koʻrdi?",
+            "en": "Farhod nima koʻrdi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "film",
+                "ru": "film",
+                "en": "film"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "futbol",
+                "ru": "futbol",
+                "en": "futbol"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "xat",
+                "ru": "xat",
+                "en": "xat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "⚽ «futbol» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "⚽ Похлопай «futbol» по слогам!",
+        "en": "⚽ Clap “futbol” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«futbol» — 2 boʻgʻin.",
+        "ru": "«futbol» — 2 слога.",
+        "en": "“futbol” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "⚽",
+          "word": {
+            "uz": "futbol",
+            "ru": "futbol",
+            "en": "futbol"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«F» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «F»!",
+        "en": "Tap the words with the “F” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «f» tovushi bor.",
+        "ru": "В них есть звук «f».",
+        "en": "They have the “f” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐘",
+              "label": {
+                "uz": "fil",
+                "ru": "fil",
+                "en": "fil"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🎬",
+              "label": {
+                "uz": "film",
+                "ru": "film",
+                "en": "film"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "⚽",
+              "label": {
+                "uz": "futbol",
+                "ru": "futbol",
+                "en": "futbol"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«fil» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «fil». Найди картинку!",
+        "en": "Read “fil”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«fil» — 🐘.",
+        "ru": "«fil» — 🐘.",
+        "en": "“fil” is 🐘."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🐘",
+              "label": {
+                "uz": "fil",
+                "ru": "слон",
+                "en": "elephant"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🎬",
+              "label": {
+                "uz": "film",
+                "ru": "film",
+                "en": "film"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "⚽",
+              "label": {
+                "uz": "futbol",
+                "ru": "futbol",
+                "en": "futbol"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil maʼnoli soʻzlarni ula!",
+        "ru": "Соедини слова с одинаковым значением!",
+        "en": "Link the words that mean the same!"
+      },
+      "hint": {
+        "uz": "Maʼnosi bir xil soʻzlarni top.",
+        "ru": "Найди слова с одинаковым смыслом.",
+        "en": "Find words with the same meaning."
+      },
+      "explanation": {
+        "uz": "Barakalla! Maʼnodosh soʻzlarni topding.",
+        "ru": "Молодец! Ты нашёл синонимы.",
+        "en": "Great! You found the synonyms."
+      },
+      "widget": {
+        "type": "synonym_match",
+        "props": {
+          "pairs": [
+            {
+              "a": "koinot",
+              "b": "fazo"
+            },
+            {
+              "a": "quyosh",
+              "b": "oftob"
+            },
+            {
+              "a": "film",
+              "b": "kino"
+            },
+            {
+              "a": "sof",
+              "b": "toza"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ota … oldi.",
+        "ru": "Составь предложение: Ota … oldi.",
+        "en": "Order the words: Ota … oldi."
+      },
+      "hint": {
+        "uz": "Ota — film — oldi.",
+        "ru": "Ota — film — oldi.",
+        "en": "Ota — film — oldi."
+      },
+      "explanation": {
+        "uz": "«Ota film oldi.» — gap oʻqiding!",
+        "ru": "«Ota film oldi.» — предложение!",
+        "en": "“Ota film oldi.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ota",
+                "ru": "Ota",
+                "en": "Ota"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "film",
+                "ru": "film",
+                "en": "film"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐘"
+              },
+              "b": {
+                "label": {
+                  "uz": "fil",
+                  "ru": "fil",
+                  "en": "fil"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎬"
+              },
+              "b": {
+                "label": {
+                  "uz": "film",
+                  "ru": "film",
+                  "en": "film"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "⚽"
+              },
+              "b": {
+                "label": {
+                  "uz": "futbol",
+                  "ru": "futbol",
+                  "en": "futbol"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«fil» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «fil»?",
+        "en": "How many sounds are in “fil”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«fil»da 3 ta tovush bor.",
+        "ru": "В «fil» 3 звука.",
+        "en": "“fil” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

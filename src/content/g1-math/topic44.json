@@ -1,0 +1,245 @@
+{
+  "topicId": "g1-math-44",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🧩✨",
+  "title": {
+    "uz": "11 va 12 sonlarining tarkibi",
+    "ru": "Состав чисел 11 и 12",
+    "en": "Making 11 and 12"
+  },
+  "recall": {
+    "uz": "Har bir sonni ikkita kichik sondan tuzish mumkin — bu sonning tarkibi. Masalan, 11 ni 10 + 1, 9 + 2 yoki 6 + 5 koʻrinishida tuzamiz. 12 ni esa 6 + 6 yoki 8 + 4 qilib. Keling, 11 va 12 ni har xil yoʻl bilan yigʻamiz!",
+    "ru": "Каждое число можно составить из двух меньших — это состав числа. Например, 11 это 10 + 1, 9 + 2 или 6 + 5. А 12 это 6 + 6 или 8 + 4. Давай собирать 11 и 12 разными способами!",
+    "en": "Every number can be made from two smaller ones — that's its make-up. For example, 11 is 10 + 1, 9 + 2 or 6 + 5. And 12 is 6 + 6 or 8 + 4. Let's build 11 and 12 in different ways!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["2", "3", "1"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "11 ni hosil qil: 9 + ? = 11",
+        "ru": "Составь 11: 9 + ? = 11",
+        "en": "Make 11: 9 + ? = 11"
+      },
+      "hint": {
+        "uz": "Toʻqqizdan oʻn birgacha yana nechta sanash kerak?",
+        "ru": "Сколько ещё досчитать от девяти до одиннадцати?",
+        "en": "How many more from nine up to eleven?"
+      },
+      "explanation": {
+        "uz": "9 + 2 = 11. Demak, 11 ning tarkibi — 9 va 2.",
+        "ru": "9 + 2 = 11. Значит, 11 состоит из 9 и 2.",
+        "en": "9 + 2 = 11. So 11 is made of 9 and 2."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/compose.gif",
+        "alt": {
+          "uz": "Olti va besh birlashib 11 ni hosil qiladi",
+          "ru": "Шесть и пять вместе дают 11",
+          "en": "Six and five together make 11"
+        },
+        "maxWidth": 220
+      },
+      "widget": { "type": "mcq", "props": { "choices": ["5", "6", "4"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Rasmga qara: 6 + ? = 11",
+        "ru": "Посмотри на картинку: 6 + ? = 11",
+        "en": "Look at the picture: 6 + ? = 11"
+      },
+      "hint": {
+        "uz": "Koʻk doirachalar — 6 ta. 11 ga yetish uchun yana nechta sariq kerak?",
+        "ru": "Синих кружков — 6. Сколько ещё жёлтых нужно до 11?",
+        "en": "There are 6 blue dots. How many more yellow ones to reach 11?"
+      },
+      "explanation": {
+        "uz": "6 + 5 = 11. 11 ning yana bir tarkibi — 6 va 5.",
+        "ru": "6 + 5 = 11. Ещё один состав числа 11 — это 6 и 5.",
+        "en": "6 + 5 = 11. Another way to make 11 is 6 and 5."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["6", "5", "7"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "12 ni hosil qil: 6 + ? = 12",
+        "ru": "Составь 12: 6 + ? = 12",
+        "en": "Make 12: 6 + ? = 12"
+      },
+      "hint": {
+        "uz": "Bir xil ikkita son qoʻshilsa 12 chiqadi. Qaysi son?",
+        "ru": "Какое число, сложенное само с собой, даёт 12?",
+        "en": "Which number added to itself makes 12?"
+      },
+      "explanation": {
+        "uz": "6 + 6 = 12. 12 ni ikkita teng songa — 6 va 6 ga ajratdik.",
+        "ru": "6 + 6 = 12. Мы разложили 12 на два равных числа — 6 и 6.",
+        "en": "6 + 6 = 12. We split 12 into two equal parts — 6 and 6."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["4", "3", "5"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "12 ni hosil qil: 8 + ? = 12",
+        "ru": "Составь 12: 8 + ? = 12",
+        "en": "Make 12: 8 + ? = 12"
+      },
+      "hint": {
+        "uz": "Sakkizdan oʻn ikkigacha nechta sanaymiz?",
+        "ru": "Сколько досчитать от восьми до двенадцати?",
+        "en": "How many to count from eight up to twelve?"
+      },
+      "explanation": {
+        "uz": "8 + 4 = 12. 12 ning tarkibi — 8 va 4.",
+        "ru": "8 + 4 = 12. Состав числа 12 — это 8 и 4.",
+        "en": "8 + 4 = 12. 12 is made of 8 and 4."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 11, "b": 5, "maxSum": 20 } },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 11 + 5!",
+        "ru": "Вычисли на числовой прямой: 11 + 5!",
+        "en": "Work it out on the number line: 11 + 5!"
+      },
+      "hint": {
+        "uz": "11 dan boshla va oldinga 5 qadam sakra.",
+        "ru": "Встань на 11 и прыгни на 5 шагов вперёд.",
+        "en": "Start at 11 and hop 5 steps forward."
+      },
+      "explanation": {
+        "uz": "11 + 5 = 16. Oʻnlik oʻzgarmadi, birliklar koʻpaydi.",
+        "ru": "11 + 5 = 16. Десяток не изменился, единиц стало больше.",
+        "en": "11 + 5 = 16. The ten stays; the ones grow."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/quiz-media/numberline-hop.gif",
+        "alt": {
+          "uz": "Sonlar chizigʻida 12 dan 3 qadam oldinga",
+          "ru": "На числовой прямой от 12 на 3 шага вперёд",
+          "en": "On the number line, three steps forward from 12"
+        },
+        "maxWidth": 240
+      },
+      "widget": { "type": "mcq", "props": { "choices": ["15", "14", "16"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Chizgʻich boʻylab sakra: 12 + 3 nechа boʻladi?",
+        "ru": "Прыгай по линейке: сколько будет 12 + 3?",
+        "en": "Hop along the ruler: what is 12 + 3?"
+      },
+      "hint": {
+        "uz": "12 dan keyin uchta sonni ayt: 13, 14, 15.",
+        "ru": "Назови три числа после 12: 13, 14, 15.",
+        "en": "Say the three numbers after 12: 13, 14, 15."
+      },
+      "explanation": {
+        "uz": "12 + 3 = 15. Uchta qadam bizni 15 ga olib keldi.",
+        "ru": "12 + 3 = 15. Три шага привели нас к 15.",
+        "en": "12 + 3 = 15. Three steps brought us to 15."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["8", "7", "9"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Ayirishni hisobla: 12 - 4 = ?",
+        "ru": "Вычисли: 12 - 4 = ?",
+        "en": "Subtract: 12 - 4 = ?"
+      },
+      "hint": {
+        "uz": "12 dan 4 ni orqaga sana: 11, 10, 9, 8.",
+        "ru": "Отсчитай от 12 назад 4: 11, 10, 9, 8.",
+        "en": "Count back 4 from 12: 11, 10, 9, 8."
+      },
+      "explanation": {
+        "uz": "12 - 4 = 8. Tarkibni bilsak — 12 = 8 + 4 — ayirish ham oson.",
+        "ru": "12 - 4 = 8. Зная состав 12 = 8 + 4, легко и вычесть.",
+        "en": "12 - 4 = 8. Knowing 12 = 8 + 4 makes subtracting easy too."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["10", "8", "9"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Tugʻilgan kunga 18 ta shar kerak. 8 tasi shishirildi. Yana nechta shar qoldi?",
+        "ru": "На день рождения нужно 18 шаров. 8 уже надули. Сколько шаров осталось надуть?",
+        "en": "A birthday needs 18 balloons. 8 are blown up. How many balloons are left?"
+      },
+      "hint": {
+        "uz": "18 tadan 8 tasini ayir.",
+        "ru": "Вычти из 18 число 8.",
+        "en": "Take 8 away from 18."
+      },
+      "explanation": {
+        "uz": "18 - 8 = 10. Yana 10 ta shar shishirish kerak.",
+        "ru": "18 - 8 = 10. Осталось надуть ещё 10 шаров.",
+        "en": "18 - 8 = 10. There are 10 balloons left to blow up."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "place_value_blocks", "props": { "target": 11 } },
+      "prompt": {
+        "uz": "Bloklardan 11 sonini yasa: 1 oʻnlik va 1 birlik!",
+        "ru": "Собери число 11 из блоков: 1 десяток и 1 единица!",
+        "en": "Build the number 11 from blocks: 1 ten and 1 one!"
+      },
+      "hint": {
+        "uz": "Bitta oʻnlik blok (+10) va bitta birlik (+1).",
+        "ru": "Один блок-десяток (+10) и одна единица (+1).",
+        "en": "One ten-block (+10) and one one (+1)."
+      },
+      "explanation": {
+        "uz": "11 = 10 + 1: bitta oʻnlik va bitta birlik.",
+        "ru": "11 = 10 + 1: один десяток и одна единица.",
+        "en": "11 = 10 + 1: one ten and one one."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["12", "10", "8"], "answerIndex": 0 } },
+      "prompt": {
+        "uz": "Har kuni hayvonlarning 6 turi yoʻqoladi. 2 kunda nechta tur yoʻqoladi?",
+        "ru": "Каждый день исчезает 6 видов животных. Сколько видов исчезнет за 2 дня?",
+        "en": "Each day 6 animal species vanish. How many vanish in 2 days?"
+      },
+      "hint": {
+        "uz": "Har kuni 6 tadan: 6 + 6.",
+        "ru": "По 6 каждый день: 6 + 6.",
+        "en": "Six each day: 6 + 6."
+      },
+      "explanation": {
+        "uz": "6 + 6 = 12. Ikki kunda 12 tur yoʻqoladi — bu 12 ning tarkibi.",
+        "ru": "6 + 6 = 12. За два дня исчезнет 12 видов — это состав числа 12.",
+        "en": "6 + 6 = 12. In two days 12 species vanish — that's the make-up of 12."
+      }
+    }
+  ]
+}

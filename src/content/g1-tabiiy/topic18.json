@@ -1,0 +1,197 @@
+{
+  "topicId": "g1-tabiiy-18",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🧹📺💡🛏️",
+  "title": {
+    "uz": "Uydagi yordamchilar",
+    "ru": "Домашние помощники",
+    "en": "Helpers around the home"
+  },
+  "recall": {
+    "uz": "Uyda bizga yordam beradigan jihozlar bor. Supurgi bilan tozalaymiz, kir mashinasida kir yuvamiz, televizordan maʼlumot olamiz. Uyda turli xonalar bor: yotoqxona, oshxona, mehmonxona, hammom. Jihozlar zamonaviy va qadimiy boʻladi.",
+    "ru": "Дома есть приборы, которые нам помогают. Веником убираем, в стиральной машине стираем, из телевизора узнаём новости. В доме есть разные комнаты: спальня, кухня, гостиная, ванная. Приборы бывают современные и старинные.",
+    "en": "At home there are appliances that help us. We clean with a broom, wash in a washing machine, and get information from the TV. A home has different rooms: a bedroom, kitchen, living room, bathroom. Appliances can be modern or old."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir jihozni oʻz vazifasiga ula!", "ru": "Соедини каждый прибор с его работой!", "en": "Match each appliance to its job!" },
+      "hint": { "uz": "Supurgi — tozalash, televizor — maʼlumot, chiroq — yorugʻlik.", "ru": "Веник — уборка, телевизор — информация, лампа — свет.", "en": "Broom — cleaning, TV — information, lamp — light." },
+      "explanation": { "uz": "Har bir jihozning oʻz ishi bor: tozalash, maʼlumot berish, ovqat sovutish, yoritish.", "ru": "У каждого прибора своя работа: уборка, информация, охлаждение еды, освещение.", "en": "Each appliance has its job: cleaning, information, keeping food cold, lighting." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🧹", "label": { "uz": "supurgi", "ru": "веник", "en": "broom" } }, "right": { "label": { "uz": "tozalash", "ru": "уборка", "en": "cleaning" } } },
+            { "left": { "emoji": "📺", "label": { "uz": "televizor", "ru": "телевизор", "en": "TV" } }, "right": { "label": { "uz": "maʼlumot olish", "ru": "информация", "en": "information" } } },
+            { "left": { "emoji": "🧊", "label": { "uz": "sovutgich", "ru": "холодильник", "en": "fridge" } }, "right": { "label": { "uz": "ovqat saqlash", "ru": "хранить еду", "en": "keep food" } } },
+            { "left": { "emoji": "💡", "label": { "uz": "chiroq", "ru": "лампа", "en": "lamp" } }, "right": { "label": { "uz": "yoritish", "ru": "освещение", "en": "lighting" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Uyni tozalash uchun nima kerak?", "ru": "Что нужно, чтобы убрать дом?", "en": "What do we need to clean the house?" },
+      "hint": { "uz": "U bilan pol va xonani supuramiz.", "ru": "Им подметают пол и комнату.", "en": "With it we sweep the floor and room." },
+      "explanation": { "uz": "Uyni supurgi bilan tozalaymiz. Televizor va krovat buning uchun emas.", "ru": "Дом убираем веником. Телевизор и кровать для этого не нужны.", "en": "We clean the house with a broom. A TV and a bed are not for that." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "broom", "emoji": "🧹", "label": { "uz": "supurgi", "ru": "веник", "en": "broom" }, "correct": true },
+            { "id": "tv", "emoji": "📺", "label": { "uz": "televizor", "ru": "телевизор", "en": "TV" } },
+            { "id": "bed", "emoji": "🛏️", "label": { "uz": "krovat", "ru": "кровать", "en": "bed" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Zamonaviy va qadimiy narsalarga ajrat!", "ru": "Разложи на современные и старинные предметы!", "en": "Sort into modern and old things!" },
+      "hint": { "uz": "Telefon va chiroq — zamonaviy; sham va koʻza — qadimiy.", "ru": "Телефон и лампа — современные; свеча и кувшин — старинные.", "en": "Phone and lamp are modern; candle and jug are old." },
+      "explanation": { "uz": "Telefon, elektr chiroq va mashina — zamonaviy. Sham, koʻza va ot-arava — qadimiy.", "ru": "Телефон, лампа и машина — современные. Свеча, кувшин и повозка — старинные.", "en": "Phone, electric lamp and car are modern. Candle, jug and cart are old." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "modern", "label": { "uz": "🔵 Zamonaviy", "ru": "🔵 Современные", "en": "🔵 Modern" }, "color": "#2f9fe0" },
+            { "id": "old", "label": { "uz": "🏺 Qadimiy", "ru": "🏺 Старинные", "en": "🏺 Old" }, "color": "#a9743e" }
+          ],
+          "items": [
+            { "id": "phone", "emoji": "📱", "label": { "uz": "telefon", "ru": "телефон", "en": "phone" }, "bin": "modern" },
+            { "id": "lamp", "emoji": "💡", "label": { "uz": "elektr chiroq", "ru": "лампа", "en": "electric lamp" }, "bin": "modern" },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "mashina", "ru": "машина", "en": "car" }, "bin": "modern" },
+            { "id": "candle", "emoji": "🕯️", "label": { "uz": "sham", "ru": "свеча", "en": "candle" }, "bin": "old" },
+            { "id": "jug", "emoji": "🏺", "label": { "uz": "koʻza", "ru": "кувшин", "en": "jug" }, "bin": "old" },
+            { "id": "cart", "emoji": "🐴", "label": { "uz": "ot-arava", "ru": "повозка", "en": "horse cart" }, "bin": "old" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Uyda ishimizga yordam beradigan jihozlarni belgila!", "ru": "Отметь домашних помощников!", "en": "Tap the appliances that help us at home!" },
+      "hint": { "uz": "Supurgi, televizor va chiroq — uy yordamchilari.", "ru": "Веник, телевизор и лампа — помощники по дому.", "en": "Broom, TV and lamp are home helpers." },
+      "explanation": { "uz": "Supurgi, televizor va chiroq bizga yordam beradi. Tosh, olma va daraxt — yoʻq.", "ru": "Веник, телевизор и лампа помогают нам. Камень, яблоко и дерево — нет.", "en": "Broom, TV and lamp help us. A stone, apple and tree do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "broom", "emoji": "🧹", "label": { "uz": "supurgi", "ru": "веник", "en": "broom" }, "correct": true },
+            { "id": "tv", "emoji": "📺", "label": { "uz": "televizor", "ru": "телевизор", "en": "TV" }, "correct": true },
+            { "id": "lamp", "emoji": "💡", "label": { "uz": "chiroq", "ru": "лампа", "en": "lamp" }, "correct": true },
+            { "id": "stone", "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "stone" } },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } },
+            { "id": "tree", "emoji": "🌳", "label": { "uz": "daraxt", "ru": "дерево", "en": "tree" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir xonani oʻz ishiga ula!", "ru": "Соедини каждую комнату с её делом!", "en": "Match each room to its purpose!" },
+      "hint": { "uz": "Yotoqxona — uxlash, oshxona — ovqat, hammom — yuvinish, garaj — mashina.", "ru": "Спальня — спать, кухня — готовить, ванная — мыться, гараж — машина.", "en": "Bedroom — sleep, kitchen — cook, bathroom — wash, garage — car." },
+      "explanation": { "uz": "Har bir xonaning oʻz vazifasi bor: uxlash, ovqat pishirish, yuvinish, mashina saqlash.", "ru": "У каждой комнаты своё назначение: спать, готовить, мыться, хранить машину.", "en": "Each room has its purpose: sleeping, cooking, washing, keeping a car." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🛏️", "label": { "uz": "yotoqxona", "ru": "спальня", "en": "bedroom" } }, "right": { "label": { "uz": "uxlash", "ru": "спать", "en": "sleep" } } },
+            { "left": { "emoji": "🍳", "label": { "uz": "oshxona", "ru": "кухня", "en": "kitchen" } }, "right": { "label": { "uz": "ovqat pishirish", "ru": "готовить", "en": "cook" } } },
+            { "left": { "emoji": "🛁", "label": { "uz": "hammom", "ru": "ванная", "en": "bathroom" } }, "right": { "label": { "uz": "yuvinish", "ru": "мыться", "en": "wash" } } },
+            { "left": { "emoji": "🚗", "label": { "uz": "garaj", "ru": "гараж", "en": "garage" } }, "right": { "label": { "uz": "mashina saqlash", "ru": "хранить машину", "en": "keep a car" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Ovqat qaysi xonada pishiriladi?", "ru": "В какой комнате готовят еду?", "en": "In which room is food cooked?" },
+      "hint": { "uz": "Bu yerda plita va idishlar boʻladi.", "ru": "Здесь есть плита и посуда.", "en": "Here there is a stove and dishes." },
+      "explanation": { "uz": "Ovqat oshxonada pishiriladi. Yotoqxonada uxlaymiz, hammomda yuvinamiz.", "ru": "Еду готовят на кухне. В спальне спят, в ванной моются.", "en": "Food is cooked in the kitchen. We sleep in the bedroom, wash in the bathroom." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "kitchen", "emoji": "🍳", "label": { "uz": "oshxona", "ru": "кухня", "en": "kitchen" }, "correct": true },
+            { "id": "bedroom", "emoji": "🛏️", "label": { "uz": "yotoqxona", "ru": "спальня", "en": "bedroom" } },
+            { "id": "bathroom", "emoji": "🛁", "label": { "uz": "hammom", "ru": "ванная", "en": "bathroom" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Televizordan maʼlumot va yangiliklar olamiz.", "ru": "Верно? Из телевизора мы получаем информацию и новости.", "en": "True? We get information and news from the TV." },
+      "hint": { "uz": "Televizor tasvir va ovoz orqali xabar beradi.", "ru": "Телевизор передаёт новости через изображение и звук.", "en": "The TV shares news through picture and sound." },
+      "explanation": { "uz": "Toʻgʻri. Televizor bizga maʼlumot, yangilik va koʻrsatuvlar beradi.", "ru": "Верно. Телевизор даёт нам информацию, новости и передачи.", "en": "True. The TV gives us information, news and shows." },
+      "widget": { "type": "true_false", "props": { "emoji": "📺", "answer": true } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri zamonaviy jihoz?", "ru": "Что из них современный прибор?", "en": "Which one is a modern appliance?" },
+      "hint": { "uz": "U elektr bilan ishlaydi.", "ru": "Он работает от электричества.", "en": "It works with electricity." },
+      "explanation": { "uz": "Telefon — zamonaviy jihoz. Sham va ot-arava — qadimiy.", "ru": "Телефон — современный прибор. Свеча и повозка — старинные.", "en": "A phone is a modern device. A candle and a cart are old." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "phone", "emoji": "📱", "label": { "uz": "telefon", "ru": "телефон", "en": "phone" }, "correct": true },
+            { "id": "candle", "emoji": "🕯️", "label": { "uz": "sham", "ru": "свеча", "en": "candle" } },
+            { "id": "cart", "emoji": "🐴", "label": { "uz": "ot-arava", "ru": "повозка", "en": "horse cart" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Buyumlarni xonaga ajrat: oshxona yoki yotoqxona?", "ru": "Разложи вещи по комнатам: кухня или спальня?", "en": "Sort the items by room: kitchen or bedroom?" },
+      "hint": { "uz": "Qozon va tovoq — oshxonada; krovat va yostiq — yotoqxonada.", "ru": "Казан и тарелка — на кухне; кровать и подушка — в спальне.", "en": "Cauldron and plate in the kitchen; bed and pillow in the bedroom." },
+      "explanation": { "uz": "Qozon, tovoq va qoshiq — oshxonada. Krovat, yostiq va kiyim — yotoqxonada.", "ru": "Казан, тарелка и ложка — на кухне. Кровать, подушка и одежда — в спальне.", "en": "Cauldron, plate and spoon are in the kitchen. Bed, pillow and clothes in the bedroom." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "kitchen", "label": { "uz": "🍳 Oshxona", "ru": "🍳 Кухня", "en": "🍳 Kitchen" }, "color": "#f39a1f" },
+            { "id": "bedroom", "label": { "uz": "🛏️ Yotoqxona", "ru": "🛏️ Спальня", "en": "🛏️ Bedroom" }, "color": "#5a2d82" }
+          ],
+          "items": [
+            { "id": "pot", "emoji": "🍲", "label": { "uz": "qozon", "ru": "казан", "en": "cauldron" }, "bin": "kitchen" },
+            { "id": "plate", "emoji": "🍽️", "label": { "uz": "tovoq", "ru": "тарелка", "en": "plate" }, "bin": "kitchen" },
+            { "id": "spoon", "emoji": "🥄", "label": { "uz": "qoshiq", "ru": "ложка", "en": "spoon" }, "bin": "kitchen" },
+            { "id": "bed", "emoji": "🛏️", "label": { "uz": "krovat", "ru": "кровать", "en": "bed" }, "bin": "bedroom" },
+            { "id": "clothes", "emoji": "👕", "label": { "uz": "kiyim", "ru": "одежда", "en": "clothes" }, "bin": "bedroom" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Uy — biz yashaydigan va dam oladigan joy.", "ru": "Верно? Дом — это место, где мы живём и отдыхаем.", "en": "True? A home is where we live and rest." },
+      "hint": { "uz": "Uyda oila aʼzolari birga vaqt oʻtkazadi.", "ru": "Дома семья проводит время вместе.", "en": "At home the family spends time together." },
+      "explanation": { "uz": "Toʻgʻri. Uy — bizning qulay maskanimiz, u yerda yashaymiz va dam olamiz.", "ru": "Верно. Дом — наше уютное место, где мы живём и отдыхаем.", "en": "True. A home is our cozy place where we live and rest." },
+      "widget": { "type": "true_false", "props": { "emoji": "🏠", "answer": true } }
+    }
+  ]
+}

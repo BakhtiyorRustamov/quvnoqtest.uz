@@ -1,0 +1,162 @@
+{
+  "topicId": "g1-math-30",
+  "subjectKey": "g1-math",
+  "emojis": "📍📏〰️",
+  "title": { "uz": "Nuqta, toʻgʻri va egri chiziqlar", "ru": "Точка, прямые и кривые линии", "en": "Points, straight and curved lines" },
+  "recall": {
+    "uz": "Nuqta va chiziqlarni oʻrganamiz. Chiziq toʻgʻri yoki egri boʻladi. Chizgʻich bilan toʻgʻri chiziq chizamiz. Burchakli shakllar toʻgʻri tomonli, dumaloqlari egri boʻladi.",
+    "ru": "Учим точку и линии. Линия бывает прямой или кривой. Прямую линию чертим по линейке. У угловатых фигур стороны прямые, у круглых — кривые.",
+    "en": "We learn points and lines. A line can be straight or curved. We draw a straight line with a ruler. Cornered shapes have straight sides, round shapes are curved."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "straight_curved", "props": { "target": "straight", "lines": [
+        { "id": "l1", "kind": "straight" },
+        { "id": "l2", "kind": "curved" },
+        { "id": "l3", "kind": "curved" },
+        { "id": "l4", "kind": "straight" }
+      ] } },
+      "prompt": { "uz": "Toʻgʻri chiziqlarni belgila!", "ru": "Отметь прямые линии!", "en": "Tap the straight lines!" },
+      "hint": { "uz": "Toʻgʻri chiziq egilmaydi — chizgʻich bilan chizsa boʻladi.", "ru": "Прямая линия не изгибается — её чертят по линейке.", "en": "A straight line does not bend — you can draw it with a ruler." },
+      "explanation": { "uz": "Toʻgʻri chiziqlar tekis va egilmaydi. Egrilari esa bukiladi.", "ru": "Прямые линии ровные и не изгибаются. Кривые — изгибаются.", "en": "Straight lines are flat and do not bend. Curved ones bend." }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Egri (dumaloq) shaklni bos!", "ru": "Нажми круглую фигуру!", "en": "Tap the round shape!" },
+      "options": [
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "red" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Egri shaklning burchagi yoʻq, cheti dumaloq.", "ru": "У круглой фигуры нет углов, край закруглён.", "en": "A round shape has no corners, its edge curves." },
+      "explanation": { "uz": "Doira — egri (dumaloq) shakl, burchagi yoʻq.", "ru": "Круг — круглая фигура, без углов.", "en": "A circle is round, with no corners." }
+    },
+    {
+      "id": "q3",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Toʻgʻri tomonli shaklni bos!", "ru": "Нажми фигуру с прямыми сторонами!", "en": "Tap the shape with straight sides!" },
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "red" } },
+        { "id": "su", "art": { "kind": "sun", "color": "yellow" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } }
+      ],
+      "answer": ["sq"],
+      "hint": { "uz": "Toʻgʻri tomonli shaklning chetlari tekis va burchakli.", "ru": "У такой фигуры стороны ровные и есть углы.", "en": "A straight-sided shape has flat sides and corners." },
+      "explanation": { "uz": "Kvadrat toʻgʻri tomonli — uning toʻrtta tekis tomoni bor.", "ru": "Квадрат с прямыми сторонами — у него четыре ровные стороны.", "en": "A square is straight-sided — it has four flat sides." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "straight_curved", "props": { "target": "curved", "lines": [
+        { "id": "l1", "kind": "curved" },
+        { "id": "l2", "kind": "straight" },
+        { "id": "l3", "kind": "curved" },
+        { "id": "l4", "kind": "straight" }
+      ] } },
+      "prompt": { "uz": "Egri chiziqlarni belgila!", "ru": "Отметь кривые линии!", "en": "Tap the curved lines!" },
+      "hint": { "uz": "Egri chiziq bukiladi, tekis emas.", "ru": "Кривая линия изгибается, она не ровная.", "en": "A curved line bends — it is not flat." },
+      "explanation": { "uz": "Egri chiziqlar bukiladi. Toʻgʻrilari esa tekis va egilmaydi.", "ru": "Кривые линии изгибаются. Прямые — ровные и не гнутся.", "en": "Curved lines bend. Straight ones are flat and do not bend." }
+    },
+    {
+      "id": "q5",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir narsani oʻz shakliga ula!", "ru": "Соедини каждый предмет с его формой!", "en": "Connect each object to its shape!" },
+      "left": [
+        { "id": "clock", "art": { "kind": "clock", "color": "blue" }, "match": "m-ci" },
+        { "id": "window", "art": { "kind": "window", "color": "orange" }, "match": "m-sq" },
+        { "id": "roof", "art": { "kind": "roof", "color": "red" }, "match": "m-tr" }
+      ],
+      "right": [
+        { "id": "m-sq", "art": { "kind": "square", "color": "gray" } },
+        { "id": "m-tr", "art": { "kind": "triangle", "color": "gray" } },
+        { "id": "m-ci", "art": { "kind": "circle", "color": "gray" } }
+      ],
+      "hint": { "uz": "Soat — doira (egri), deraza — kvadrat, tom — uchburchak.", "ru": "Часы — круг, окно — квадрат, крыша — треугольник.", "en": "Clock — circle, window — square, roof — triangle." },
+      "explanation": { "uz": "Soat egri chiziqli, deraza va tom toʻgʻri chiziqli shakllar.", "ru": "Часы из кривой линии, окно и крыша из прямых.", "en": "The clock is from a curved line; the window and roof from straight lines." }
+    },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "square", "color": "blue" },
+        { "kind": "circle", "color": "red" },
+        { "kind": "square", "color": "blue" },
+        { "kind": "circle", "color": "red" },
+        { "kind": "square", "color": "blue" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "red" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Kvadrat, doira, kvadrat, doira… navbat bilan keladi!", "ru": "Квадрат, круг, квадрат, круг… по очереди!", "en": "Square, circle, square, circle… they take turns!" },
+      "explanation": { "uz": "Kvadratdan keyin doim doira keladi. Keyingisi — doira.", "ru": "После квадрата всегда идёт круг. Следующий — круг.", "en": "After a square there is always a circle. The next one is a circle." }
+    },
+    {
+      "id": "q7",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Shakllarni rangi boʻyicha guruhla!", "ru": "Сгруппируй фигуры по цвету!", "en": "Group the shapes by color!" },
+      "items": [
+        { "id": "r1", "art": { "kind": "triangle", "color": "red" }, "bin": "red" },
+        { "id": "g1", "art": { "kind": "circle", "color": "green" }, "bin": "green" },
+        { "id": "r2", "art": { "kind": "circle", "color": "red" }, "bin": "red" },
+        { "id": "g2", "art": { "kind": "square", "color": "green" }, "bin": "green" }
+      ],
+      "bins": [
+        { "id": "red", "label": { "uz": "Qizil", "ru": "Красные", "en": "Red" }, "color": "red" },
+        { "id": "green", "label": { "uz": "Yashil", "ru": "Зелёные", "en": "Green" }, "color": "green" }
+      ],
+      "hint": { "uz": "Rangiga qara, shakliga emas.", "ru": "Смотри на цвет, не на форму.", "en": "Look at the color, not the shape." },
+      "explanation": { "uz": "Shakllarni rangiga qarab guruhladik.", "ru": "Сгруппировали фигуры по цвету.", "en": "We grouped the shapes by color." }
+    },
+    {
+      "id": "q8",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladigan shaklni bos!", "ru": "Нажми на фигуру, которая отличается!", "en": "Tap the shape that is different!" },
+      "options": [
+        { "id": "c1", "art": { "kind": "triangle", "color": "magenta" } },
+        { "id": "c2", "art": { "kind": "triangle", "color": "magenta" } },
+        { "id": "df", "art": { "kind": "circle", "color": "magenta" } }
+      ],
+      "answer": ["df"],
+      "hint": { "uz": "Ikkitasi toʻgʻri tomonli. Bittasi egri.", "ru": "Две с прямыми сторонами. Одна круглая.", "en": "Two are straight-sided. One is round." },
+      "explanation": { "uz": "Doira egri shakl — u uchburchaklardan farq qildi.", "ru": "Круг — круглая фигура, отличается от треугольников.", "en": "The circle is round — different from the triangles." }
+    },
+    {
+      "id": "q9",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Doiralarni kichikdan kattaga tartibla!", "ru": "Расставь круги от маленького к большому!", "en": "Order the circles from small to big!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "circle", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "circle", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "circle", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "circle", "color": "gray", "scale": 0.5 }, "label": { "uz": "kichik", "ru": "малый", "en": "small" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "circle", "color": "gray", "scale": 0.85 }, "label": { "uz": "oʻrta", "ru": "средний", "en": "medium" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "circle", "color": "gray", "scale": 1.25 }, "label": { "uz": "katta", "ru": "большой", "en": "big" } }
+      ],
+      "hint": { "uz": "Eng kichkinasi birinchi, eng kattasi oxirida.", "ru": "Самый маленький первый, самый большой последний.", "en": "Smallest first, biggest last." },
+      "explanation": { "uz": "Doiralarni oʻlchami boʻyicha tartibladik.", "ru": "Расставили круги по размеру.", "en": "We ordered the circles by size." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["3", "4", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Uchburchakning nechta toʻgʻri tomoni bor?", "ru": "Сколько прямых сторон у треугольника?", "en": "How many straight sides does a triangle have?" },
+      "hint": { "uz": "Uchburchakning tomonlarini sana.", "ru": "Сосчитай стороны треугольника.", "en": "Count the sides of a triangle." },
+      "explanation": { "uz": "Uchburchakning uchta toʻgʻri tomoni bor.", "ru": "У треугольника три прямые стороны.", "en": "A triangle has three straight sides." } }
+  ]
+}

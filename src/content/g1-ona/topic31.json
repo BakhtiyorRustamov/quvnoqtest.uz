@@ -1,0 +1,108 @@
+{
+  "topicId": "g1-ona-31",
+  "subjectKey": "g1-ona",
+  "emojis": "❓❗🔤",
+  "title": {
+    "uz": "Tinish belgilari — nuqta, soʻroq, undov",
+    "ru": "Знаки препинания — точка, вопрос, восклицание",
+    "en": "Punctuation — full stop, question, exclamation"
+  },
+  "recall": {
+    "uz": "Nuqta (.), soʻroq (?) va undov (!) — tinish belgilari deb ataladi. Yozma nutqda bir gap ikkinchisidan shu belgilar bilan ajratiladi. Vergul (,) — eng qisqa toʻxtashni (pauza) bildiradi.",
+    "ru": "Точка (.), вопрос (?) и восклицание (!) — это знаки препинания. На письме одно предложение отделяют от другого этими знаками. Запятая (,) — самая короткая пауза.",
+    "en": "The full stop (.), question mark (?) and exclamation mark (!) are punctuation marks. In writing they separate one sentence from another. The comma (,) marks the shortest pause."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "media": { "gif": "/quiz-media/ona-punctuation.gif", "alt": { "uz": "Nuqta, soʻroq va undov belgilari", "ru": "Точка, вопрос и восклицание", "en": "Full stop, question and exclamation marks" }, "maxWidth": 220 },
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Tinish belgilari", "ru": "Знаки препинания", "en": "Punctuation marks" }, { "uz": "Unli tovushlar", "ru": "Гласные звуки", "en": "Vowels" }, { "uz": "Raqamlar", "ru": "Цифры", "en": "Numbers" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Nuqta, soʻroq va undov qanday belgilar?", "ru": "Что такое точка, вопрос и восклицание?", "en": "What are the full stop, question and exclamation?" },
+      "hint": { "uz": ". ? ! — gap oxiriga qoʻyiladi.", "ru": ". ? ! — ставят в конце предложения.", "en": ". ? ! go at the end of a sentence." },
+      "explanation": { "uz": "Nuqta, soʻroq va undov — tinish belgilari.", "ru": "Точка, вопрос и восклицание — знаки препинания.", "en": "The full stop, question and exclamation are punctuation marks." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Darak gap", "right": "." }, { "left": "Soʻroq gap", "right": "?" }, { "left": "His-hayajon gap", "right": "!" }, { "left": "Sanash", "right": "," } ] } },
+      "prompt": { "uz": "Gap turini belgisiga ula!", "ru": "Соедини тип предложения со знаком!", "en": "Match each sentence type to its mark!" },
+      "hint": { "uz": "Soʻroq gap — «?».", "ru": "Вопрос — «?».", "en": "A question — “?”." },
+      "explanation": { "uz": "Har gap turi oʻz belgisiga ega: . ? ! , ", "ru": "У каждого типа свой знак: . ? ! ,", "en": "Each sentence type has its own mark: . ? ! ," }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Kun isidi.", "bin": "darak" }, { "id": "b", "label": "Bola keldi.", "bin": "darak" }, { "id": "c", "label": "Kim keldi?", "bin": "soroq" }, { "id": "d", "label": "Nima uchun?", "bin": "soroq" }, { "id": "e", "label": "Yashasin!", "bin": "undov" }, { "id": "f", "label": "Voy, ajoyib!", "bin": "undov" } ], "bins": [ { "id": "darak", "label": "Darak (.)" }, { "id": "soroq", "label": "Soʻroq (?)" }, { "id": "undov", "label": "His-hayajon (!)" } ] } },
+      "prompt": { "uz": "Gaplarni turiga ajrat!", "ru": "Раздели предложения по типу!", "en": "Sort the sentences by type!" },
+      "hint": { "uz": "Belgisiga qara: . ? !", "ru": "Смотри на знак: . ? !", "en": "Look at the mark: . ? !" },
+      "explanation": { "uz": "Gap oxiridagi belgi uning turini koʻrsatadi.", "ru": "Знак в конце показывает тип предложения.", "en": "The end mark shows the sentence type." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Bugun havo issiq", "after": "", "choices": [".", "?", "!"], "answer": ".", "emoji": "🌤️", "clue": { "uz": "Xabar beruvchi (darak) gap", "ru": "Повествовательное предложение", "en": "A statement sentence" } } },
+      "prompt": { "uz": "Toʻgʻri belgini qoʻy!", "ru": "Поставь верный знак!", "en": "Add the right mark!" },
+      "hint": { "uz": "Xabar gap nuqta bilan tugaydi.", "ru": "Повествование — с точкой.", "en": "A statement ends with a full stop." },
+      "explanation": { "uz": "«Bugun havo issiq.» — darak gap, nuqta qoʻyiladi.", "ru": "«Bugun havo issiq.» — повествование, точка.", "en": "“Bugun havo issiq.” — a statement, full stop." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Sen keldingmi", "after": "", "choices": ["?", ".", "!"], "answer": "?", "emoji": "🤔", "clue": { "uz": "Savol beruvchi (soʻroq) gap", "ru": "Вопросительное предложение", "en": "A question sentence" } } },
+      "prompt": { "uz": "Toʻgʻri belgini qoʻy!", "ru": "Поставь верный знак!", "en": "Add the right mark!" },
+      "hint": { "uz": "Soʻroq gap «?» bilan tugaydi.", "ru": "Вопрос — с «?».", "en": "A question ends with “?”." },
+      "explanation": { "uz": "«Sen keldingmi?» — soʻroq gap, soʻroq belgisi.", "ru": "«Sen keldingmi?» — вопрос, знак «?».", "en": "“Sen keldingmi?” — a question, mark “?”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Qanday chiroyli", "after": "", "choices": ["!", ".", "?"], "answer": "!", "emoji": "🎉", "clue": { "uz": "His-hayajon gap", "ru": "Восклицательное предложение", "en": "An exclamation sentence" } } },
+      "prompt": { "uz": "Toʻgʻri belgini qoʻy!", "ru": "Поставь верный знак!", "en": "Add the right mark!" },
+      "hint": { "uz": "His-hayajon gap «!» bilan tugaydi.", "ru": "Восклицание — с «!».", "en": "An exclamation ends with “!”." },
+      "explanation": { "uz": "«Qanday chiroyli!» — his-hayajon gap, undov belgisi.", "ru": "«Qanday chiroyli!» — восклицание, знак «!».", "en": "“Qanday chiroyli!” — an exclamation, mark “!”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "vergul", "emoji": "🔽", "clue": { "uz": "Eng qisqa toʻxtash belgisi (,)", "ru": "Знак самой короткой паузы (,)", "en": "The shortest-pause mark (,)" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: v, e, r, g, u, l.", "ru": "Буквы: v, e, r, g, u, l.", "en": "Letters: v, e, r, g, u, l." },
+      "explanation": { "uz": "«vergul» (,) — eng qisqa toʻxtashni bildiradi.", "ru": "«vergul» (,) — самая короткая пауза.", "en": "“vergul” (,) marks the shortest pause." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Qanday goʻzal!", "match": true }, { "text": "Tong otdi.", "match": false }, { "text": "Yashasin!", "match": true }, { "text": "Kim keldi?", "match": false }, { "text": "Voy, ajoyib!", "match": true }, { "text": "Kun isidi.", "match": false } ] } },
+      "prompt": { "uz": "His-hayajon gaplarni bos!", "ru": "Нажми восклицательные предложения!", "en": "Tap the exclamation sentences!" },
+      "hint": { "uz": "Ular «!» bilan tugaydi.", "ru": "Они кончаются на «!».", "en": "They end with “!”." },
+      "explanation": { "uz": "His-hayajon gaplar undov belgisi bilan tugaydi.", "ru": "Восклицательные предложения — со знаком «!».", "en": "Exclamation sentences end with “!”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bogʻda", "olma,", "uzum,", "nok", "pishdi."], "emoji": "🍎", "clue": { "uz": "Vergulli gap tuz", "ru": "Составь предложение с запятыми", "en": "Make a sentence with commas" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Sanashda vergul qoʻyiladi.", "ru": "При перечислении ставят запятую.", "en": "In a list we use commas." },
+      "explanation": { "uz": "Sanalgan soʻzlar orasiga vergul qoʻyiladi.", "ru": "Между перечисляемыми словами ставят запятые.", "en": "Commas go between listed words." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Eng qisqa toʻxtash (pauza)", "ru": "Самая короткая пауза", "en": "The shortest pause" }, { "uz": "Gap oxiri", "ru": "Конец предложения", "en": "The end of a sentence" }, { "uz": "Savol", "ru": "Вопрос", "en": "A question" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Vergul (,) nimani bildiradi?", "ru": "Что обозначает запятая (,)?", "en": "What does the comma (,) mean?" },
+      "hint": { "uz": "U gap ichida qisqa toʻxtatadi.", "ru": "Она делает короткую паузу внутри предложения.", "en": "It gives a short pause inside a sentence." },
+      "explanation": { "uz": "Vergul eng qisqa toʻxtashni (pauza) bildiradi.", "ru": "Запятая означает самую короткую паузу.", "en": "The comma marks the shortest pause." }
+    }
+  ]
+}

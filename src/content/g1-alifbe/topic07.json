@@ -1,0 +1,152 @@
+{
+  "topicId": "g1-alifbe-07",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🐝🍯🐻",
+  "title": {
+    "uz": "«A a» harfi",
+    "ru": "Буква «A a»",
+    "en": "The letter “A a”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «A a». U unli tovush. Uni aytganda ogʻiz katta ochiladi: a-a-a. «A» bilan boshlanadigan soʻzlar: ari, asal, archa, ayiq. «A» — alifbo boshidagi harf. Endi O, T, A harflarini bilamiz.",
+    "ru": "Сегодня наша буква — «A a». Это гласный звук, рот широко открывается: а-а-а. Слова на «A»: ari, asal, archa, ayiq. «A» — первая буква алфавита. Теперь мы знаем O, T, A.",
+    "en": "Today's letter is “A a”. It is a vowel, the mouth opens wide: a-a-a. Words with “A”: ari, asal, archa, ayiq. “A” is the first letter of the alphabet. Now we know O, T, A."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«A» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «A»!", "en": "Find the word that starts with “A”!" },
+      "hint": { "uz": "Soʻzning boshini choʻzib ayt: a-a-ari.", "ru": "Протяни начало: а-а-ari.", "en": "Stretch the start: a-a-ari." },
+      "explanation": { "uz": "«ari» «A» tovushi bilan boshlanadi.", "ru": "«ari» начинается со звука «A».", "en": "“ari” (bee) starts with the sound “A”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "bee", "emoji": "🐝", "label": { "uz": "ari", "ru": "ari", "en": "ari" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«A» harfini topib, hammasini bos!", "ru": "Найди букву «A» и нажми на все!", "en": "Find the letter “A” and tap them all!" },
+      "hint": { "uz": "Katta «A» ham, kichik «a» ham boʻladi.", "ru": "Считаются большая «A» и маленькая «a».", "en": "Both capital “A” and small “a” count." },
+      "explanation": { "uz": "«A» harfini topding!", "ru": "Ты нашёл букву «A»!", "en": "You found the letter “A”!" },
+      "widget": {
+        "type": "letter_hunt",
+        "props": { "target": "A", "cols": 3, "grid": ["A", "t", "a", "O", "A", "o", "a", "T", "A"] }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🐝 «ari»da «a» tovushi qaysi katakchada?", "ru": "🐝 В какой клетке звук «a» в слове «ari»?", "en": "🐝 Which box has the “a” sound in “ari”?" },
+      "hint": { "uz": "«ari» «a» bilan boshlanadi — birinchi katak.", "ru": "«ari» начинается с «a» — первая клетка.", "en": "“ari” starts with “a” — the first box." },
+      "explanation": { "uz": "«ari»da «a» boshida — birinchi katakda.", "ru": "В «ari» звук «a» в начале.", "en": "In “ari” the “a” is at the start." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "🐝", "word": { "uz": "ari", "ru": "ari", "en": "ari" }, "sound": "a", "cells": ["a", "r", "i"], "answer": 0 }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍎 «olma»da «a» tovushi qaysi katakchada?", "ru": "🍎 В какой клетке звук «a» в слове «olma»?", "en": "🍎 Which box has the “a” sound in “olma”?" },
+      "hint": { "uz": "«olma» «a» tovushi bilan tugaydi — oxirgi katak.", "ru": "«olma» заканчивается на «a» — последняя клетка.", "en": "“olma” ends with “a” — the last box." },
+      "explanation": { "uz": "«olma»da «a» oxirida — toʻrtinchi katakda.", "ru": "В «olma» звук «a» в конце.", "en": "In “olma” the “a” is at the end." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "🍎", "word": { "uz": "olma", "ru": "olma", "en": "olma" }, "sound": "a", "cells": ["o", "l", "m", "a"], "answer": 3 }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«A» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «A»!", "en": "Tap the words that have the “A” sound!" },
+      "hint": { "uz": "ari, ayiq, asal — «a» tovushi bor.", "ru": "ari, ayiq, asal — есть звук «a».", "en": "ari, ayiq, asal have the “a” sound." },
+      "explanation": { "uz": "ari, ayiq, asal — «a» bor. ot va nonda «a» yoʻq.", "ru": "ari, ayiq, asal — есть «a». В ot и non «a» нет.", "en": "ari, ayiq, asal have “a”. ot and non do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "bee", "emoji": "🐝", "label": { "uz": "ari", "ru": "ari", "en": "ari" }, "correct": true },
+            { "id": "bear", "emoji": "🐻", "label": { "uz": "ayiq", "ru": "ayiq", "en": "ayiq" }, "correct": true },
+            { "id": "honey", "emoji": "🍯", "label": { "uz": "asal", "ru": "asal", "en": "asal" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🍯 «asal» soʻzining tovush chizmasini rangla!", "ru": "🍯 Раскрась схему звуков слова «asal»!", "en": "🍯 Colour the sound scheme of the word “asal”!" },
+      "hint": { "uz": "a — unli (qizil), s — undosh (koʻk), a — unli, l — undosh.", "ru": "a — красный, s — синий, a — красный, l — синий.", "en": "a red, s blue, a red, l blue." },
+      "explanation": { "uz": "«asal»: a, s, a, l — unli, undosh, unli, undosh.", "ru": "«asal»: гласный, согласный, гласный, согласный.", "en": "“asal”: vowel, consonant, vowel, consonant." },
+      "widget": {
+        "type": "sound_scheme",
+        "props": { "emoji": "🍯", "word": { "uz": "asal", "ru": "asal", "en": "asal" }, "scheme": ["v", "c", "v", "c"] }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«A» — unli tovush.", "ru": "«A» — гласный звук.", "en": "“A” is a vowel sound." },
+      "hint": { "uz": "«A»ni aytganda ogʻiz keng ochiladi.", "ru": "При «A» рот широко открывается.", "en": "When saying “A” the mouth opens wide." },
+      "explanation": { "uz": "Toʻgʻri! «A» — unli tovush.", "ru": "Верно! «A» — гласный.", "en": "True! “A” is a vowel." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔴", "answer": true } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Harflardan «ota» soʻzini tuz!", "ru": "Составь слово «ota» из букв!", "en": "Build the word “ota” from letters!" },
+      "hint": { "uz": "o — t — a tartibida bos.", "ru": "Нажимай по порядку: o — t — a.", "en": "Tap in order: o — t — a." },
+      "explanation": { "uz": "o + t + a = «ota». Uchta harfimizdan soʻz chiqdi!", "ru": "o + t + a = «ota». Из наших трёх букв вышло слово!", "en": "o + t + a = “ota” (father). Our three letters made a word!" },
+      "widget": {
+        "type": "build_word",
+        "props": { "emoji": "👨", "word": "ota", "label": { "uz": "ota", "ru": "папа", "en": "father" } }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir rasmni soʻzi bilan ula!", "ru": "Соедини каждую картинку с её словом!", "en": "Match each picture to its word!" },
+      "hint": { "uz": "ari, ayiq, asal, archa — barchasi «a» bilan.", "ru": "ari, ayiq, asal, archa — все на «a».", "en": "ari, ayiq, asal, archa — all start with “a”." },
+      "explanation": { "uz": "Barcha soʻzlar «A» tovushi bilan boshlanadi.", "ru": "Все слова начинаются со звука «A».", "en": "All the words start with the sound “A”." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🐝" }, "right": { "label": { "uz": "ari", "ru": "ari", "en": "ari" } } },
+            { "left": { "emoji": "🐻" }, "right": { "label": { "uz": "ayiq", "ru": "ayiq", "en": "ayiq" } } },
+            { "left": { "emoji": "🍯" }, "right": { "label": { "uz": "asal", "ru": "asal", "en": "asal" } } },
+            { "left": { "emoji": "🌲" }, "right": { "label": { "uz": "archa", "ru": "archa", "en": "archa" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Akmal, Aziza, Ali ismlari qaysi harf bilan boshlanadi?", "ru": "С какой буквы начинаются имена Akmal, Aziza, Ali?", "en": "Which letter do the names Akmal, Aziza, Ali start with?" },
+      "hint": { "uz": "Har uch ism bir xil tovush bilan boshlanadi.", "ru": "Все три имени начинаются с одного звука.", "en": "All three names start with the same sound." },
+      "explanation": { "uz": "Akmal, Aziza, Ali — hammasi «A» bilan boshlanadi.", "ru": "Akmal, Aziza, Ali — все на «A».", "en": "Akmal, Aziza, Ali all start with “A”." },
+      "widget": { "type": "mcq", "props": { "choices": ["A", "T", "O"], "answerIndex": 0 } }
+    }
+  ]
+}

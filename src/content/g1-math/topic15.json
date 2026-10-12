@@ -1,0 +1,136 @@
+{
+  "topicId": "g1-math-15",
+  "subjectKey": "g1-math",
+  "emojis": "2️⃣🍎🍏",
+  "title": { "uz": "Ikki soni va raqami", "ru": "Число два", "en": "The number two" },
+  "recall": {
+    "uz": "Ikki sonini oʻrganamiz. Ikkita narsa juft boʻladi. Ikki birdan kattaroq. Bir va bir qoʻshilsa, ikki boʻladi. Ikki sonini sanaymiz va raqamini yozamiz.",
+    "ru": "Учим число два. Два предмета образуют пару. Два больше одного. Один и один вместе — это два. Считаем до двух и пишем цифру.",
+    "en": "We learn the number two. Two things make a pair. Two is bigger than one. One and one together make two. We count to two and write the numeral."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Ikkita olmani sanab belgila!", "ru": "Сосчитай и отметь два яблока!", "en": "Count and tap the two apples!" },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } }
+      ],
+      "answer": ["a1", "a2"],
+      "hint": { "uz": "Olmalarni sana: bir, ikki.", "ru": "Считай яблоки: один, два.", "en": "Count the apples: one, two." },
+      "explanation": { "uz": "Ikkita olma bor edi. Ikkita narsa — juft.", "ru": "Было два яблока. Два предмета — это пара.", "en": "There were two apples. Two things make a pair." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 1, "b": 1, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: bir va bir!", "ru": "Сложи на числовой прямой: один и один!", "en": "Add on the number line: one and one!" },
+      "hint": { "uz": "Birdan boshla, yana bir qadam oldinga sakra.", "ru": "Встань на один, прыгни ещё на один вперёд.", "en": "Start at one, hop one more step forward." },
+      "explanation": { "uz": "Bir va bir qoʻshilib, ikki boʻldi. Ikki shunday hosil boʻladi.", "ru": "Один и один дали два. Так получается два.", "en": "One and one made two. That is how two is formed." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 1 + 1 = ?", "ru": "Найди сумму: 1 + 1 = ?", "en": "Find the sum: 1 + 1 = ?" },
+      "hint": { "uz": "Bittaga yana bitta qoʻsh.", "ru": "К одному прибавь ещё один.", "en": "Add one more to one." },
+      "explanation": { "uz": "Bir qoʻshish bir — ikki boʻladi.", "ru": "Один плюс один — два.", "en": "One plus one is two." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["1", "2", "0"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 2 - 1 = ?", "ru": "Найди разность: 2 - 1 = ?", "en": "Find the difference: 2 - 1 = ?" },
+      "hint": { "uz": "Ikkitadan bittasini olib tashla.", "ru": "Убери от двух один.", "en": "Take one away from two." },
+      "explanation": { "uz": "Ikki ayirish bir — bir qoladi.", "ru": "Два минус один — остаётся один.", "en": "Two minus one leaves one." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 2, "y": 1 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Ikki birdan katta. Ikki — bittadan koʻp.", "ru": "Два больше одного. Двух — больше, чем одного.", "en": "Two is bigger than one. Two is more than one." }
+    },
+    {
+      "id": "q6",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Ikkita koʻk koptokni belgila!", "ru": "Отметь два синих мяча!", "en": "Tap the two blue balls!" },
+      "options": [
+        { "id": "bl1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "rd", "art": { "kind": "ball", "color": "red" } },
+        { "id": "bl2", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "yl", "art": { "kind": "ball", "color": "yellow" } }
+      ],
+      "answer": ["bl1", "bl2"],
+      "hint": { "uz": "Faqat koʻklarini sana: bir, ikki.", "ru": "Считай только синие: один, два.", "en": "Count only the blue ones: one, two." },
+      "explanation": { "uz": "Ikkita koʻk koptok bor edi. Ular juft.", "ru": "Было два синих мяча. Они образуют пару.", "en": "There were two blue balls. They make a pair." }
+    },
+    {
+      "id": "q7",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "apple", "color": "red" },
+        { "kind": "apple", "color": "red" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "apple", "color": "red" },
+        { "kind": "apple", "color": "red" }
+      ],
+      "options": [
+        { "id": "ba", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "ap", "art": { "kind": "apple", "color": "red" } },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" } }
+      ],
+      "answer": ["ba"],
+      "hint": { "uz": "Ikki olma, bir koptok, ikki olma… takrorni top.", "ru": "Два яблока, мяч, два яблока… найди повтор.", "en": "Two apples, a ball, two apples… find the repeat." },
+      "explanation": { "uz": "Har ikki olmadan keyin bitta koptok keladi. Keyingisi — koptok.", "ru": "После каждых двух яблок идёт мяч. Следующий — мяч.", "en": "After every two apples comes a ball. The next one is a ball." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["2", "1"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son katta: 2 yoki 1?", "ru": "Какое число больше: 2 или 1?", "en": "Which number is bigger: 2 or 1?" },
+      "hint": { "uz": "Sanaganda kechroq aytiladigani kattaroq.", "ru": "То, что называют позже при счёте, больше.", "en": "The one said later when counting is bigger." },
+      "explanation": { "uz": "Ikki birdan katta — uni keyin sanaymiz.", "ru": "Два больше одного — его называют позже.", "en": "Two is bigger than one — we count it later." }
+    },
+    {
+      "id": "q9",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir narsani juftiga ula!", "ru": "Соедини каждый предмет с его парой!", "en": "Connect each thing to its pair!" },
+      "left": [
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" },
+        { "id": "ba", "art": { "kind": "ball", "color": "blue" }, "match": "m-ba" },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" }, "match": "m-st" }
+      ],
+      "right": [
+        { "id": "m-ba", "art": { "kind": "ball", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } },
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } }
+      ],
+      "hint": { "uz": "Avval rangli narsani bos, keyin xuddi oʻshanday narsani bos.", "ru": "Сначала нажми на цветной предмет, потом на такой же.", "en": "First tap a colored thing, then tap the same one." },
+      "explanation": { "uz": "Har bir narsa oʻz juftini topdi.", "ru": "Каждый предмет нашёл свою пару.", "en": "Each thing found its pair." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["1", "2", "0"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 2 = 1 + ?", "ru": "Найди недостающее число: 2 = 1 + ?", "en": "Find the missing number: 2 = 1 + ?" },
+      "hint": { "uz": "Bittaga nechta qoʻshsak, ikki boʻladi?", "ru": "Сколько прибавить к одному, чтобы вышло два?", "en": "How much to add to one to make two?" },
+      "explanation": { "uz": "Bir qoʻshish bir — ikki. Yetishmagan son — bir.", "ru": "Один плюс один — два. Недостающее число — один.", "en": "One plus one is two. The missing number is one." }
+    }
+  ]
+}

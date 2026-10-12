@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-oqish-08",
+  "subjectKey": "g1-oqish",
+  "emojis": "🔁📚⭐",
+  "title": {
+    "uz": "Boʻlim yuzasidan takrorlash",
+    "ru": "Повторение по разделу",
+    "en": "Section review"
+  },
+  "recall": {
+    "uz": "Birinchi boʻlimni tugatdik! Unda oʻqish, Vatan, yurt himoyachilari, Oʻzbekiston shaharlari haqida oʻqidik. Endi oʻrganganlarimizni takrorlaymiz: maqollar, soʻzlar va matnlar boʻyicha topshiriqlarni bajaramiz.",
+    "ru": "Мы закончили первый раздел! В нём мы читали о чтении, Родине, защитниках страны и городах Узбекистана. Теперь повторим изученное: выполним задания по пословицам, словам и текстам.",
+    "en": "We finished the first section! We read about reading, the homeland, its defenders and the cities of Uzbekistan. Now let's review: tasks on proverbs, words and texts."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "na yurting omon boʻlsa, rangi roʻying somon boʻlmas.", "choices": ["O", "A", "U"], "answer": "O", "emoji": "🏡", "clue": { "uz": "Maqoldagi tushib qolgan unlini top", "ru": "Найди пропущенную гласную в пословице", "en": "Find the missing vowel in the proverb" } } },
+      "prompt": { "uz": "Nuqta oʻrniga mos unli harfni qoʻy va maqolni oʻqi!", "ru": "Вставь подходящую гласную и прочитай пословицу!", "en": "Put in the right vowel and read the proverb!" },
+      "hint": { "uz": "«…na yurting» — mehribon yurting.", "ru": "«…na yurting» — родная страна.", "en": "“…na yurting” — your dear motherland." },
+      "explanation": { "uz": "«Ona yurting omon boʻlsa, rangi roʻying somon boʻlmas» — yurt tinch boʻlsa, inson ham sogʻ-omon boʻladi.", "ru": "«Если родная страна цела, лицо твоё не пожелтеет» — когда страна в мире, и человек благополучен.", "en": "“If your motherland is safe, your face will not turn pale” — when the land is at peace, its people thrive." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "«Oʻqishni bilsang oʻzing» sheʼridan", "ru": "Из стиха «Если умеешь читать сам»", "en": "From “When you can read yourself”" }, { "uz": "«Yurt qalqonlari» sheʼridan", "ru": "Из стиха «Щиты страны»", "en": "From “Shields of the land”" }, { "uz": "«Vatan — eng aziz makon» matnidan", "ru": "Из текста «Родина — самое дорогое место»", "en": "From “Homeland — the dearest place”" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Yordam kutib oyingdan / Jovdirab turmas koʻzing» satrlari qaysi asardan?", "ru": "Из какого произведения строки «Yordam kutib oyingdan / Jovdirab turmas koʻzing»?", "en": "Which work are the lines “Yordam kutib oyingdan / Jovdirab turmas koʻzing” from?" },
+      "hint": { "uz": "Bu sheʼr mustaqil oʻqish haqida edi.", "ru": "Этот стих был о самостоятельном чтении.", "en": "That poem was about reading on your own." },
+      "explanation": { "uz": "Bu satrlar «Oʻqishni bilsang oʻzing» sheʼridan.", "ru": "Эти строки — из стиха «Если умеешь читать сам».", "en": "These lines are from “When you can read yourself”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Ona tuproqdan", "ru": "С родной земли", "en": "From the native soil" }, { "uz": "Doʻkondan", "ru": "С магазина", "en": "From a shop" }, { "uz": "Maktabdan", "ru": "Со школы", "en": "From school" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Esla: Vatan nimadan boshlanadi?", "ru": "Вспомни: с чего начинается Родина?", "en": "Remember: where does the homeland begin?" },
+      "hint": { "uz": "«Vatan — eng aziz makon» matnida oʻqigan edik.", "ru": "Мы читали это в тексте «Родина — самое дорогое место».", "en": "We read this in “Homeland — the dearest place”." },
+      "explanation": { "uz": "Vatan ona tuproqdan boshlanadi.", "ru": "Родина начинается с родной земли.", "en": "The homeland begins from the native soil." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Vatan himoyachilari kuni", "ru": "День защитников Родины", "en": "Defenders of the Homeland Day" }, { "uz": "Navroʻz bayrami", "ru": "Праздник Навруз", "en": "Navruz holiday" }, { "uz": "Bilim kuni", "ru": "День знаний", "en": "Knowledge Day" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Esla: 14-yanvar qanday kun?", "ru": "Вспомни: что за день 14 января?", "en": "Remember: what day is 14 January?" },
+      "hint": { "uz": "Shu kuni Qurolli Kuchlar tuzilgan.", "ru": "В этот день созданы Вооружённые силы.", "en": "The Armed Forces were founded that day." },
+      "explanation": { "uz": "14-yanvar — Vatan himoyachilari kuni.", "ru": "14 января — День защитников Родины.", "en": "14 January is Defenders of the Homeland Day." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "makon", "right": "yashash joyi" }, { "left": "qalqon", "right": "himoya vositasi" }, { "left": "poytaxt", "right": "bosh shahar" } ] } },
+      "prompt": { "uz": "Boʻlimda oʻrgangan soʻzlarni maʼnosiga ula!", "ru": "Соедини изученные слова с их значениями!", "en": "Match the words you learned to their meanings!" },
+      "hint": { "uz": "«poytaxt» — davlatning bosh shahri.", "ru": "«poytaxt» — главный город страны.", "en": "“poytaxt” is a country's main city." },
+      "explanation": { "uz": "makon = yashash joyi; qalqon = himoya vositasi; poytaxt = bosh shahar.", "ru": "makon = место жительства; qalqon = щит; poytaxt = столица.", "en": "makon = dwelling place; qalqon = shield; poytaxt = capital." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bahodir", "bayroqni", "Botirga", "berdi."], "emoji": "🚩", "clue": { "uz": "Tez aytish", "ru": "Скороговорка", "en": "A tongue twister" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz, soʻng uni tez ayt!", "ru": "Составь предложение, потом произнеси его быстро!", "en": "Build the sentence, then say it fast!" },
+      "hint": { "uz": "Kim? — Bahodir. Nimani? — bayroqni. Kimga? — Botirga.", "ru": "Кто? — Баходир. Что? — флаг. Кому? — Ботиру.", "en": "Who? — Bahodir. What? — the flag. To whom? — Botir." },
+      "explanation": { "uz": "«Bahodir bayroqni Botirga berdi» — b harfi koʻp tez aytish.", "ru": "«Баходир отдал флаг Ботиру» — скороговорка на букву «б».", "en": "“Bahodir gave the flag to Botir” — a tongue twister with many b's." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "uy", "match": true }, { "text": "yulduz", "match": false }, { "text": "mahalla", "match": true }, { "text": "okean", "match": false }, { "text": "qishloq", "match": true }, { "text": "sayyora", "match": false } ] } },
+      "prompt": { "uz": "Esla: «kichik Vatan» boʻla oladigan soʻzlarni bos!", "ru": "Вспомни: нажми слова, которые могут быть «малой Родиной»!", "en": "Remember: tap the words that can be a “little homeland”!" },
+      "hint": { "uz": "yulduz, okean, sayyora — Vatan emas.", "ru": "звезда, океан, планета — не Родина.", "en": "a star, an ocean, a planet are not a homeland." },
+      "explanation": { "uz": "Uy, mahalla, qishloq — kichik Vatan boʻla oladi.", "ru": "Дом, махалля, кишлак — это малая Родина.", "en": "A home, neighbourhood and village can be a little homeland." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["bay", "roq"], "emoji": "🚩", "clue": { "uz": "Davlat ramzi, hilpirab turadi", "ru": "Символ государства, развевается", "en": "A state symbol that waves" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "Bahodir uni Botirga bergan edi.", "ru": "Баходир отдал его Ботиру.", "en": "Bahodir gave it to Botir." },
+      "explanation": { "uz": "bay-roq → bayroq. Bayroq — davlat ramzi.", "ru": "bay-roq → bayroq (флаг) — символ государства.", "en": "bay-roq → bayroq (a flag), a state symbol." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "Toshkent" }, { "text": "Samarqand" }, { "text": "Xiva" }, { "text": "kitob", "odd": true } ], "clue": { "uz": "Boʻlimda oʻqigan shaharlarimiz", "ru": "Города из раздела", "en": "Cities from this section" }, "emoji": "🏙️" } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Tap the odd one out!" },
+      "hint": { "uz": "Uchtasi — shahar, bittasi — oʻqiladigan narsa.", "ru": "Три — города, одно — то, что читают.", "en": "Three are cities, one is a thing you read." },
+      "explanation": { "uz": "Toshkent, Samarqand, Xiva — shaharlar; kitob — oʻqiladigan narsa.", "ru": "Ташкент, Самарканд, Хива — города; книга — то, что читают.", "en": "Tashkent, Samarkand and Khiva are cities; a book is for reading." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Vatan ona ", "after": "dan boshlanadi.", "choices": ["tuproq", "shamol", "yomgʻir"], "answer": "tuproq", "emoji": "🌱", "clue": { "uz": "Boʻlimdagi matnni esla", "ru": "Вспомни текст из раздела", "en": "Recall the text from this section" } } },
+      "prompt": { "uz": "Boʻsh joyga mos soʻzni qoʻy!", "ru": "Вставь подходящее слово!", "en": "Fill the gap with the right word!" },
+      "hint": { "uz": "Yer, tuproq — Vatanning boshlanishi.", "ru": "Земля — начало Родины.", "en": "The soil is where the homeland begins." },
+      "explanation": { "uz": "Vatan ona tuproqdan boshlanadi.", "ru": "Родина начинается с родной земли.", "en": "The homeland begins from the native soil." }
+    }
+  ]
+}

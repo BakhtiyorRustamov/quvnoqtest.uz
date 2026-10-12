@@ -1,0 +1,164 @@
+{
+  "topicId": "g1-oqish-30",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "✈️☀️🍲",
+  "title": {
+    "uz": "Bahorning taomi",
+    "ru": "Блюдо весны",
+    "en": "The dish of spring"
+  },
+  "recall": {
+    "uz": "Sumalak tatib koʻrmoqchi boʻlgan kichik samolyot haqidagi ertakni tinglab oʻqiymiz va qaysi gap kimga tegishli ekanini topamiz.",
+    "ru": "Слушаем сказку о самолётике, который хочет попробовать сумаляк, и определяем, кому принадлежит каждая реплика.",
+    "en": "We read a tale about a little plane that wants to taste sumalak, and find out who says each line."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Sumalakxoʻr samolyot",
+        "variant": "story",
+        "audio": "g1-oqish-30-q1",
+        "lines": [
+          "Bahor kelib, Navroʻz yaqinlashdi.",
+          "Kichkina Samolyotjon osmonda uchib yurardi.",
+          "Pastda odamlar katta qozonda sumalak pishirardi.",
+          "Uning mazali hidi osmongacha koʻtarildi.",
+          "— Quyosh bobo, meni kichkina qilib qoʻying! — dedi Samolyotjon.",
+          "— Nega bunday deyapsan? — soʻradi Quyosh bobo.",
+          "— Men ham sumalakdan tatib koʻrmoqchiman!",
+          "Quyosh bobo kulib, unga sirni aytdi:",
+          "— Sumalak — mehnat va sabr taomi, u kuch beradi.",
+          "Samolyotjon bu gaplarni diliga tugib qoʻydi."
+        ]
+      } },
+      "prompt": { "uz": "Ertakni tinglab, ergashib oʻqing!", "ru": "Послушай и читай сказку, следя за текстом!", "en": "Listen and follow along as you read the tale!" },
+      "hint": { "uz": "Samolyotjon nimani tatib koʻrmoqchi boʻldi?", "ru": "Что самолётик хотел попробовать?", "en": "What did the little plane want to taste?" },
+      "explanation": { "uz": "Ertakda kichik samolyot Navroʻz taomi — sumalakni tatib koʻrmoqchi boʻladi.", "ru": "В сказке самолётик хочет попробовать сумаляк — блюдо Навруза.", "en": "In the tale, a little plane wants to taste sumalak — a Navruz dish." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "who_said", "props": {
+        "characters": [
+          { "name": { "uz": "Samolyotjon", "ru": "Самолётик", "en": "Little Plane" }, "emoji": "✈️" },
+          { "name": { "uz": "Quyosh bobo", "ru": "Дед Солнце", "en": "Grandfather Sun" }, "emoji": "☀️" }
+        ],
+        "quotes": [
+          { "text": { "uz": "Meni kichkina qilib qoʻying!", "ru": "Сделай меня маленьким!", "en": "Make me small!" }, "speaker": 0 },
+          { "text": { "uz": "Nega bunday deyapsan?", "ru": "Почему ты так говоришь?", "en": "Why do you say that?" }, "speaker": 1 },
+          { "text": { "uz": "Men ham sumalakdan tatib koʻrmoqchiman!", "ru": "Я тоже хочу попробовать сумаляк!", "en": "I want to taste sumalak too!" }, "speaker": 0 }
+        ]
+      } },
+      "prompt": { "uz": "Bu gaplarni kim aytdi? Har biriga qahramonni tanla!", "ru": "Кто это сказал? Выбери героя для каждой реплики!", "en": "Who said each line? Pick the character for each!" },
+      "hint": { "uz": "Samolyotjon iltimos qiladi, Quyosh bobo soʻraydi.", "ru": "Самолётик просит, Дед Солнце спрашивает.", "en": "The plane pleads; Grandfather Sun asks." },
+      "explanation": { "uz": "Iltimos va istak — Samolyotjonniki; savol — Quyosh boboniki.", "ru": "Просьбы — самолётика; вопрос — Деда Солнца.", "en": "The pleas are the plane's; the question is Grandfather Sun's." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Odamlar katta qozonda sumalak pishirishardi.", "ru": "Люди варили сумаляк в большом казане.", "en": "People were cooking sumalak in a big cauldron." },
+        "answer": "true",
+        "why": { "uz": "Matnda «katta qozonda sumalak pishirardi» deyilgan.", "ru": "В тексте сказано, что сумаляк варили в большом казане.", "en": "The text says sumalak was cooked in a big cauldron." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Pastda odamlar nima qilishardi?", "ru": "Что делали люди внизу?", "en": "What were the people below doing?" },
+      "explanation": { "uz": "Toʻgʻri: odamlar katta qozonda sumalak pishirardi.", "ru": "Верно: люди варили сумаляк в большом казане.", "en": "True: people cooked sumalak in a big cauldron." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Samolyotjon dengizga qoʻnib, baliq tutdi.", "ru": "Самолётик сел на море и поймал рыбу.", "en": "The little plane landed on the sea and caught a fish." },
+        "answer": "ng",
+        "why": { "uz": "Ertakda dengiz va baliq haqida hech narsa yoʻq.", "ru": "В сказке о море и рыбе ничего нет.", "en": "The tale says nothing about a sea or a fish." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Ertakda dengiz tilga olinganmi?", "ru": "Упоминается ли море?", "en": "Is a sea mentioned?" },
+      "explanation": { "uz": "«Matnda yoʻq»: dengiz va baliq haqida gap yoʻq.", "ru": "«Не сказано»: о море и рыбе речи нет.", "en": "“Not given”: no sea or fish is mentioned." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "what_next", "props": {
+        "before": { "uz": "Samolyotjon sumalakning mazali hidini sezdi.", "ru": "Самолётик почувствовал вкусный запах сумаляка.", "en": "The little plane smelled the tasty aroma of sumalak." },
+        "options": [
+          { "text": { "uz": "U Quyosh bobodan oʻzini kichkina qilishni soʻradi.", "ru": "Он попросил Деда Солнце сделать его маленьким.", "en": "It asked Grandfather Sun to make it small." }, "next": true },
+          { "text": { "uz": "U uyiga uchib ketdi.", "ru": "Он улетел домой.", "en": "It flew home." } },
+          { "text": { "uz": "U qorga aylandi.", "ru": "Он превратился в снег.", "en": "It turned into snow." } }
+        ]
+      } },
+      "prompt": { "uz": "Sumalak hidini sezgach, Samolyotjon nima qildi?", "ru": "Что сделал самолётик, почуяв запах сумаляка?", "en": "What did the plane do after smelling the sumalak?" },
+      "hint": { "uz": "U Quyosh bobodan nimani soʻradi?", "ru": "О чём он попросил Деда Солнце?", "en": "What did it ask Grandfather Sun?" },
+      "explanation": { "uz": "U oʻzini kichkina qilib, sumalakdan tatib koʻrishni soʻradi.", "ru": "Он попросил сделать его маленьким, чтобы попробовать сумаляк.", "en": "It asked to be made small so it could taste the sumalak." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "sumalak", "right": "Navroʻz taomi" },
+        { "left": "doshqozon", "right": "juda katta qozon" },
+        { "left": "ehson", "right": "xayr-saxovat, tarqatish" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«sumalak» — bugʻdoydan tayyorlanadigan Navroʻz taomi.", "ru": "«sumalak» — блюдо Навруза из пшеницы.", "en": "“sumalak” is a Navruz dish made from wheat." },
+      "explanation": { "uz": "sumalak = Navroʻz taomi; doshqozon = katta qozon; ehson = xayr-saxovat.", "ru": "sumalak = блюдо Навруза; doshqozon = большой казан; ehson = благотворительность.", "en": "sumalak = a Navruz dish; doshqozon = a big cauldron; ehson = a charitable offering." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Sumalak", "ru": "Сумаляк", "en": "Sumalak" },
+        { "uz": "Muzqaymoq", "ru": "Мороженое", "en": "Ice cream" },
+        { "uz": "Shokolad", "ru": "Шоколад", "en": "Chocolate" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Topishmoq: qozonga bugʻdoy solib, tinmay kovlab pishiraman; Navroʻzda tarqataman. Bu qaysi taom?", "ru": "Загадка: кладу в казан пшеницу, всё время мешаю; раздаю на Навруз. Что это?", "en": "Riddle: I put wheat in a cauldron and stir it for hours; I share it at Navruz. What dish is it?" },
+      "hint": { "uz": "U Navroʻz bayramining asosiy taomi.", "ru": "Это главное блюдо Навруза.", "en": "It is the main dish of Navruz." },
+      "explanation": { "uz": "Bu — sumalak: bugʻdoy undirib, uzoq vaqt qozonda pishiriladi.", "ru": "Это сумаляк: пшеницу проращивают и долго варят в казане.", "en": "It's sumalak: sprouted wheat slowly cooked in a cauldron." },
+      "openEnd": { "uz": "Sen sumalak yoki boshqa Navroʻz taomini tatib koʻrganmisan? Ayt.", "ru": "Ты пробовал сумаляк или другое блюдо Навруза? Расскажи.", "en": "Have you tasted sumalak or another Navruz dish? Tell us." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "sumalak", "match": true },
+        { "text": "halim", "match": true },
+        { "text": "koʻk somsa", "match": true },
+        { "text": "pitsa", "match": false },
+        { "text": "gamburger", "match": false }
+      ] } },
+      "prompt": { "uz": "Navroʻz taomlarini bos!", "ru": "Нажми блюда Навруза!", "en": "Tap the Navruz dishes!" },
+      "hint": { "uz": "Navroʻzda milliy taomlar tayyorlanadi.", "ru": "На Навруз готовят национальные блюда.", "en": "On Navruz, traditional dishes are made." },
+      "explanation": { "uz": "Sumalak, halim, koʻk somsa — Navroʻz taomlari; pitsa va gamburger — yoʻq.", "ru": "Сумаляк, халим, кук сомса — блюда Навруза; пицца и гамбургер — нет.", "en": "Sumalak, halim, green somsa are Navruz dishes; pizza and burger are not." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Sumalak", "—", "mehnat", "taomi."], "emoji": "🍯", "clue": { "uz": "Ertakning gʻoyasi", "ru": "Мысль сказки", "en": "The tale's idea" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuzing!", "ru": "Составь предложение из слов!", "en": "Build the sentence from the words!" },
+      "hint": { "uz": "Gap «Sumalak» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Sumalak».", "en": "The sentence starts with “Sumalak”." },
+      "explanation": { "uz": "«Sumalak — mehnat taomi»: uni sabr va mehnat bilan pishirishadi.", "ru": "«Сумаляк — блюдо труда»: его варят с терпением и трудом.", "en": "“Sumalak is a dish of labour”: it is made with patience and effort." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "sumalak", "syllables": ["su", "ma", "lak"], "emoji": "🍲", "clue": { "uz": "Navroʻzning asosiy taomi", "ru": "Главное блюдо Навруза", "en": "The main dish of Navruz" } } },
+      "prompt": { "uz": "Boʻgʻinlardan taom nomini yigʻ!", "ru": "Собери название блюда из слогов!", "en": "Build the dish's name from the syllables!" },
+      "hint": { "uz": "su + ma + lak = ?", "ru": "su + ma + lak = ?", "en": "su + ma + lak = ?" },
+      "explanation": { "uz": "su-ma-lak → sumalak. Navroʻz taomi.", "ru": "su-ma-lak → sumalak (блюдо Навруза).", "en": "su-ma-lak → sumalak (a Navruz dish)." }
+    }
+  ]
+}

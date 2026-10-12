@@ -1,0 +1,443 @@
+{
+  "topicId": "g1-informatika-11",
+  "subjectKey": "g1-informatika",
+  "emojis": "🌷☀️🍂❄️",
+  "title": {
+    "uz": "Oldin – keyin",
+    "ru": "Раньше – позже",
+    "en": "Before – after"
+  },
+  "recall": {
+    "uz": "Voqealar oldin va keyin boʻladi. Bahordan keyin yoz keladi. Harflar ham alifboda tartib bilan turadi: A, B, D, E, F, G, H.",
+    "ru": "События бывают раньше и позже. После весны наступает лето. Буквы в алфавите тоже идут по порядку.",
+    "en": "Events happen before and after. Summer comes after spring. Letters also go in order in the alphabet."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Fasllarni toʻgʻri tartibda joyla!",
+        "ru": "Расставь времена года!",
+        "en": "Put the seasons in order!"
+      },
+      "hint": {
+        "uz": "Bahor, yoz, kuz, qish.",
+        "ru": "Весна, лето, осень, зима.",
+        "en": "Spring, summer, autumn, winter."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: bahor, yoz, kuz, qish.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🌷 bahor",
+                "ru": "🌷 весна",
+                "en": "🌷 spring"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "☀️ yoz",
+                "ru": "☀️ лето",
+                "en": "☀️ summer"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🍂 kuz",
+                "ru": "🍂 осень",
+                "en": "🍂 autumn"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "❄️ qish",
+                "ru": "❄️ зима",
+                "en": "❄️ winter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bahordan keyin qaysi fasl keladi?",
+        "ru": "Что после весны?",
+        "en": "What comes after spring?"
+      },
+      "hint": {
+        "uz": "Issiq fasl.",
+        "ru": "Тёплое время.",
+        "en": "The warm season."
+      },
+      "explanation": {
+        "uz": "Bahordan keyin yoz keladi.",
+        "ru": "После весны — лето.",
+        "en": "Summer follows spring."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yoz",
+              "ru": "лето",
+              "en": "summer"
+            },
+            {
+              "uz": "qish",
+              "ru": "зима",
+              "en": "winter"
+            },
+            {
+              "uz": "kuz",
+              "ru": "осень",
+              "en": "autumn"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«G» harfidan oldingi harf qaysi?",
+        "ru": "Какая буква перед «G»?",
+        "en": "Which letter is before “G”?"
+      },
+      "hint": {
+        "uz": "Alifbo: E, F, G, H.",
+        "ru": "Алфавит: E, F, G, H.",
+        "en": "Alphabet: E, F, G, H."
+      },
+      "explanation": {
+        "uz": "«G» dan oldin «F» keladi.",
+        "ru": "Перед «G» стоит «F».",
+        "en": "“F” comes before “G”."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "F",
+            "H",
+            "D"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«D» harfidan keyingi harf qaysi?",
+        "ru": "Какая буква после «D»?",
+        "en": "Which letter is after “D”?"
+      },
+      "hint": {
+        "uz": "Alifbo: B, D, E, F.",
+        "ru": "Алфавит: B, D, E, F.",
+        "en": "Alphabet: B, D, E, F."
+      },
+      "explanation": {
+        "uz": "«D» dan keyin «E» keladi.",
+        "ru": "После «D» — «E».",
+        "en": "“E” comes after “D”."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "E",
+            "B",
+            "G"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sonlarni oʻsish tartibida joyla!",
+        "ru": "Расставь числа по возрастанию!",
+        "en": "Put the numbers in order!"
+      },
+      "hint": {
+        "uz": "3, 4, 5, 6.",
+        "ru": "3, 4, 5, 6.",
+        "en": "3, 4, 5, 6."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: 3, 4, 5, 6.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "3",
+                "ru": "3",
+                "en": "3"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "4",
+                "ru": "4",
+                "en": "4"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "5",
+                "ru": "5",
+                "en": "5"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "6",
+                "ru": "6",
+                "en": "6"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan buyum nomini tuz! (📖)",
+        "ru": "Составь название предмета! (📖)",
+        "en": "Build the object's name! (📖)"
+      },
+      "hint": {
+        "uz": "T-I-B-K-O harflaridan.",
+        "ru": "Из букв T-I-B-K-O.",
+        "en": "From the letters T-I-B-K-O."
+      },
+      "explanation": {
+        "uz": "Barakalla! «kitob» soʻzini tuzding.",
+        "ru": "Молодец! «kitob».",
+        "en": "Great! You built “kitob”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "📖",
+          "word": "kitob",
+          "label": {
+            "uz": "kitob",
+            "ru": "книга",
+            "en": "book"
+          },
+          "letters": [
+            "k",
+            "i",
+            "t",
+            "o",
+            "b"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«kitob» soʻzida «o» dan keyin qaysi harf keladi?",
+        "ru": "Какая буква после «o» в «kitob»?",
+        "en": "Which letter follows “o” in “kitob”?"
+      },
+      "hint": {
+        "uz": "k-i-t-o-b.",
+        "ru": "k-i-t-o-b.",
+        "en": "k-i-t-o-b."
+      },
+      "explanation": {
+        "uz": "«o» dan keyin «b» keladi.",
+        "ru": "После «o» — «b».",
+        "en": "“b” comes after “o”."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "b",
+            "t",
+            "k"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kundan keyin tun keladi.",
+        "ru": "После дня наступает ночь.",
+        "en": "Night comes after day."
+      },
+      "hint": {
+        "uz": "Kunduz, keyin tun.",
+        "ru": "День, потом ночь.",
+        "en": "Day, then night."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Kundan keyin tun.",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌙",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kun qismlarini tartibda joyla!",
+        "ru": "Расставь части дня!",
+        "en": "Order the parts of the day!"
+      },
+      "hint": {
+        "uz": "Ertalab, tush, kech.",
+        "ru": "Утро, день, вечер.",
+        "en": "Morning, noon, evening."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: ertalab, tush, kech.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🌅 ertalab",
+                "ru": "🌅 утро",
+                "en": "🌅 morning"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "☀️ tush",
+                "ru": "☀️ день",
+                "en": "☀️ noon"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🌙 kech",
+                "ru": "🌙 вечер",
+                "en": "🌙 evening"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yozdan keyin qaysi fasl keladi?",
+        "ru": "Что после лета?",
+        "en": "What comes after summer?"
+      },
+      "hint": {
+        "uz": "Barglar toʻkiladigan fasl.",
+        "ru": "Когда падают листья.",
+        "en": "When leaves fall."
+      },
+      "explanation": {
+        "uz": "Yozdan keyin kuz keladi.",
+        "ru": "После лета — осень.",
+        "en": "Autumn follows summer."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🍂",
+              "label": {
+                "uz": "kuz",
+                "ru": "осень",
+                "en": "autumn"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🌷",
+              "label": {
+                "uz": "bahor",
+                "ru": "весна",
+                "en": "spring"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "❄️",
+              "label": {
+                "uz": "qish",
+                "ru": "зима",
+                "en": "winter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

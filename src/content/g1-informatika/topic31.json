@@ -1,0 +1,324 @@
+{
+  "topicId": "g1-informatika-31",
+  "subjectKey": "g1-informatika",
+  "emojis": "✅❌💻🐟",
+  "title": {
+    "uz": "Rost va yolgʻon",
+    "ru": "Правда и ложь",
+    "en": "True and false"
+  },
+  "recall": {
+    "uz": "Har bir gap rost yoki yolgʻon boʻladi. Rost gap — haqiqatga mos keladi: «Quyosh kunduzi chiqadi». Yolgʻon gap — haqiqatga zid: «Baliq daraxtda yashaydi». Kompyuterda ham shunday: chiroq yonsa — «yoqilgan» rost, oʻchsa — «yoqilgan» yolgʻon. Gapni haqiqat bilan solishtirib tekshiramiz.",
+    "ru": "Каждое предложение бывает правдой или ложью. Правда совпадает с действительностью: «Солнце встаёт днём». Ложь противоречит ей: «Рыба живёт на дереве». В компьютере так же: если лампочка горит — «включён» правда, если нет — ложь. Мы проверяем предложение, сравнивая его с действительностью.",
+    "en": "Every sentence is either true or false. A true sentence matches reality: 'The sun rises by day.' A false one contradicts it: 'A fish lives in a tree.' A computer works the same way: if the light is on, 'switched on' is true; if not, it is false. We check a sentence by comparing it with reality."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kompyuter haqidagi gaplar: har birini «Rost» yoki «Yolgʻon» deb belgila!",
+        "ru": "Предложения о компьютере: отметь каждое «Верно» или «Неверно»!",
+        "en": "Sentences about the computer: mark each 'True' or 'False'!"
+      },
+      "hint": {
+        "uz": "Kompyuter oʻylab koʻr — nima qila oladi?",
+        "ru": "Подумай о компьютере — что он умеет?",
+        "en": "Think about a computer — what can it do?"
+      },
+      "explanation": {
+        "uz": "Kompyuter hisoblaydi, lekin ovqat yemaydi.",
+        "ru": "Компьютер считает, но не ест.",
+        "en": "A computer computes, but it does not eat."
+      },
+      "widget": {
+        "type": "statement_check",
+        "props": {
+          "scene": "💻",
+          "statements": [
+            { "text": { "uz": "Kompyuter — hisoblash mashinasi.", "ru": "Компьютер — вычислительная машина.", "en": "A computer is a computing machine." }, "value": true },
+            { "text": { "uz": "Kompyuter ovqat yeydi.", "ru": "Компьютер ест еду.", "en": "A computer eats food." }, "value": false },
+            { "text": { "uz": "Klaviaturada harflar bor.", "ru": "На клавиатуре есть буквы.", "en": "A keyboard has letters." }, "value": true },
+            { "text": { "uz": "Sichqoncha bilan yozamiz.", "ru": "Мышкой пишем.", "en": "We write with the mouse." }, "value": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Kompyuter yoqilsa, ekran yonadi.» Bu rostmi?",
+        "ru": "«Если включить компьютер, экран загорается.» Верно?",
+        "en": "'When the computer is switched on, the screen lights up.' Is this true?"
+      },
+      "hint": {
+        "uz": "Yoqilgan kompyuterni oʻyla.",
+        "ru": "Подумай о включённом компьютере.",
+        "en": "Think of a switched-on computer."
+      },
+      "explanation": {
+        "uz": "Rost — yoqilsa ekran yonadi.",
+        "ru": "Верно — экран загорается.",
+        "en": "True — the screen lights up."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": { "emoji": "🖥️", "answer": true }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Mushuk suvda yashaydi.» Bu rostmi?",
+        "ru": "«Кот живёт в воде.» Верно?",
+        "en": "'A cat lives in water.' Is this true?"
+      },
+      "hint": {
+        "uz": "Mushuk qayerda yashaydi?",
+        "ru": "Где живёт кот?",
+        "en": "Where does a cat live?"
+      },
+      "explanation": {
+        "uz": "Yolgʻon — mushuk uyda yashaydi.",
+        "ru": "Неверно — кот живёт дома.",
+        "en": "False — a cat lives at home."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": { "emoji": "🐱", "answer": false }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Baliq daraxtda oʻsadi» — bu qanday gap?",
+        "ru": "«Рыба растёт на дереве» — какое это предложение?",
+        "en": "'A fish grows on a tree' — what kind of sentence?"
+      },
+      "hint": {
+        "uz": "Baliq suvda yashaydi.",
+        "ru": "Рыба живёт в воде.",
+        "en": "A fish lives in water."
+      },
+      "explanation": {
+        "uz": "Bu — yolgʻon gap.",
+        "ru": "Это ложное предложение.",
+        "en": "This is a false sentence."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            { "uz": "yolgʻon", "ru": "ложь", "en": "false" },
+            { "uz": "rost", "ru": "правда", "en": "true" }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Suvda yashaydi» — bu qaysi hayvon uchun rost? Rasmni tanla!",
+        "ru": "«Живёт в воде» — для кого это правда? Выбери картинку!",
+        "en": "'Lives in water' — for which animal is it true? Tap the picture!"
+      },
+      "hint": {
+        "uz": "Suzuvchi hayvonni top.",
+        "ru": "Найди плавающее животное.",
+        "en": "Find the swimming animal."
+      },
+      "explanation": {
+        "uz": "Baliq suvda yashaydi — rost!",
+        "ru": "Рыба живёт в воде — правда!",
+        "en": "A fish lives in water — true!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "ok", "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" }, "correct": true },
+            { "id": "a", "emoji": "🐱", "label": { "uz": "mushuk", "ru": "кот", "en": "cat" } },
+            { "id": "b", "emoji": "🐦", "label": { "uz": "qush", "ru": "птица", "en": "bird" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Gaplarni ikki savatga ajrat: rost va yolgʻon!",
+        "ru": "Разложи предложения в две корзины: правда и ложь!",
+        "en": "Sort the sentences into two baskets: true and false!"
+      },
+      "hint": {
+        "uz": "Har gapni haqiqat bilan solishtir.",
+        "ru": "Сравни каждое с действительностью.",
+        "en": "Compare each with reality."
+      },
+      "explanation": {
+        "uz": "Rost gaplar haqiqatga mos keladi.",
+        "ru": "Правдивые совпадают с действительностью.",
+        "en": "True sentences match reality."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "r", "label": { "uz": "Rost", "ru": "Правда", "en": "True" } },
+            { "id": "y", "label": { "uz": "Yolgʻon", "ru": "Ложь", "en": "False" } }
+          ],
+          "items": [
+            { "emoji": "☀️", "label": { "uz": "Quyosh issiq", "ru": "Солнце тёплое", "en": "The sun is warm" }, "bin": "r" },
+            { "emoji": "🐦", "label": { "uz": "Qush ucha oladi", "ru": "Птица летает", "en": "A bird can fly" }, "bin": "r" },
+            { "emoji": "🐟", "label": { "uz": "Baliq suzadi", "ru": "Рыба плавает", "en": "A fish swims" }, "bin": "r" },
+            { "emoji": "🐘", "label": { "uz": "Fil ucha oladi", "ru": "Слон летает", "en": "An elephant can fly" }, "bin": "y" },
+            { "emoji": "❄️", "label": { "uz": "Qor issiq", "ru": "Снег тёплый", "en": "Snow is warm" }, "bin": "y" },
+            { "emoji": "🐢", "label": { "uz": "Toshbaqa tez yuguradi", "ru": "Черепаха бегает быстро", "en": "A tortoise runs fast" }, "bin": "y" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Robot pastki oʻng burchakdagi katakka borishi kerak. Oʻsha katakni bos!",
+        "ru": "Робот должен попасть в нижнюю правую клетку. Нажми её!",
+        "en": "The robot must reach the bottom-right cell. Tap that cell!"
+      },
+      "hint": {
+        "uz": "Past — eng ostki qator, oʻng — eng chekka.",
+        "ru": "Низ — нижний ряд, право — крайний.",
+        "en": "Bottom — last row, right — far edge."
+      },
+      "explanation": {
+        "uz": "Pastki oʻng burchak — toʻgʻri katak!",
+        "ru": "Нижний правый угол — верная клетка!",
+        "en": "The bottom-right corner is the right cell!"
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 3,
+          "cols": 3,
+          "answer": "br",
+          "prompt": {
+            "uz": "Pastki oʻng katakni bos",
+            "ru": "Нажми нижнюю правую",
+            "en": "Tap the bottom-right cell"
+          },
+          "cells": [
+            { "id": "a", "kind": "circle", "color": "blue", "r": 0, "c": 0 },
+            { "id": "b", "kind": "square", "color": "green", "r": 0, "c": 1 },
+            { "id": "c", "kind": "triangle", "color": "orange", "r": 0, "c": 2 },
+            { "id": "d", "kind": "star", "color": "magenta", "r": 1, "c": 0 },
+            { "id": "e", "kind": "circle", "color": "yellow", "r": 1, "c": 1 },
+            { "id": "f", "kind": "square", "color": "purple", "r": 1, "c": 2 },
+            { "id": "g", "kind": "triangle", "color": "red", "r": 2, "c": 0 },
+            { "id": "h", "kind": "star", "color": "blue", "r": 2, "c": 1 },
+            { "id": "br", "kind": "apple", "color": "green", "r": 2, "c": 2 }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ikki qoʻshuv ikki teng besh (2 + 2 = 5).» Bu rostmi?",
+        "ru": "«Два плюс два равно пять (2 + 2 = 5).» Верно?",
+        "en": "'Two plus two equals five (2 + 2 = 5).' Is this true?"
+      },
+      "hint": {
+        "uz": "Barmoqlaringda sana.",
+        "ru": "Посчитай на пальцах.",
+        "en": "Count on your fingers."
+      },
+      "explanation": {
+        "uz": "Yolgʻon — 2 + 2 = 4.",
+        "ru": "Неверно — 2 + 2 = 4.",
+        "en": "False — 2 + 2 = 4."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": { "emoji": "➕", "answer": false }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Chiroq oʻchsa, xona qorongʻi boʻladi» — bu qanday gap?",
+        "ru": "«Если свет погас, в комнате темно» — какое это предложение?",
+        "en": "'When the light goes off, the room becomes dark' — what kind of sentence?"
+      },
+      "hint": {
+        "uz": "Kechasi chiroqsiz xonani oʻyla.",
+        "ru": "Подумай о комнате без света.",
+        "en": "Think of a room with no light."
+      },
+      "explanation": {
+        "uz": "Rost gap — haqiqatga mos.",
+        "ru": "Правда — совпадает с действительностью.",
+        "en": "True — it matches reality."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            { "uz": "rost", "ru": "правда", "en": "true" },
+            { "uz": "yolgʻon", "ru": "ложь", "en": "false" },
+            { "uz": "savol", "ru": "вопрос", "en": "question" }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yakuniy tekshiruv: har gapni «Rost» yoki «Yolgʻon» deb belgila!",
+        "ru": "Итоговая проверка: отметь каждое «Верно» или «Неверно»!",
+        "en": "Final check: mark each 'True' or 'False'!"
+      },
+      "hint": {
+        "uz": "Rost — toʻgʻri, yolgʻon — notoʻgʻri.",
+        "ru": "Правда — верно, ложь — неверно.",
+        "en": "True — correct, false — incorrect."
+      },
+      "explanation": {
+        "uz": "Barakalla! Rost va yolgʻonni ajratding.",
+        "ru": "Молодец! Ты различаешь правду и ложь.",
+        "en": "Great! You told true from false."
+      },
+      "widget": {
+        "type": "statement_check",
+        "props": {
+          "scene": "✅",
+          "statements": [
+            { "text": { "uz": "Rost gap — toʻgʻri gap.", "ru": "Правда — верное предложение.", "en": "A true sentence is a correct sentence." }, "value": true },
+            { "text": { "uz": "Yolgʻon gap — toʻgʻri gap.", "ru": "Ложь — верное предложение.", "en": "A false sentence is a correct sentence." }, "value": false },
+            { "text": { "uz": "«Ha» — tasdiq javobi.", "ru": "«Да» — утвердительный ответ.", "en": "'Yes' is an affirming answer." }, "value": true }
+          ]
+        }
+      }
+    }
+  ]
+}

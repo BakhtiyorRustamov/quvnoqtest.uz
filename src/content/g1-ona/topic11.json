@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-11",
+  "subjectKey": "g1-ona",
+  "emojis": "🅾️🇪✍️",
+  "title": {
+    "uz": "Oʻ va E — nozik unlilar",
+    "ru": "Oʻ и E — тонкие гласные",
+    "en": "Oʻ and E — the fine vowels"
+  },
+  "recall": {
+    "uz": "Oʻ va E — unli tovushlar. Oʻ: koʻz, oʻrik, oʻrdak. E: eshik, echki, elak. Bu unlilarni soʻz boshida, oʻrtasida yoki oxirida uchratamiz.",
+    "ru": "Oʻ и E — гласные. Oʻ: koʻz, oʻrik, oʻrdak. E: eshik, echki, elak. Эти гласные бывают в начале, середине и конце слова.",
+    "en": "Oʻ and E are vowels. Oʻ: koʻz, oʻrik, oʻrdak. E: eshik, echki, elak. They appear at the start, middle or end of a word."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "koʻz", "letters": ["k", "oʻ", "z"], "emoji": "👁️", "clue": { "uz": "Koʻrish aʼzosi", "ru": "Орган зрения", "en": "The organ of sight" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: k, oʻ, z.", "ru": "Части: k, oʻ, z.", "en": "Parts: k, oʻ, z." },
+      "explanation": { "uz": "«koʻz» — «oʻ» unlisi bor.", "ru": "«koʻz» (глаз) — с гласной «oʻ».", "en": "“koʻz” (eye) has the vowel “oʻ”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "shik", "choices": ["e", "i", "a"], "answer": "e", "emoji": "🚪", "clue": { "uz": "Uyga kiriladigan joy", "ru": "Через что входят в дом", "en": "What you enter a house through" } } },
+      "prompt": { "uz": "Birinchi unlini qoʻy!", "ru": "Вставь первую гласную!", "en": "Add the first vowel!" },
+      "hint": { "uz": "… sh i k — «eshik».", "ru": "… sh i k — «eshik» (дверь).", "en": "… sh i k — “eshik” (door)." },
+      "explanation": { "uz": "«eshik» «e» unlisi bilan boshlanadi.", "ru": "«eshik» начинается с гласной «e».", "en": "“eshik” starts with the vowel “e”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "rik", "choices": ["oʻ", "o", "u"], "answer": "oʻ", "emoji": "🍑", "clue": { "uz": "Sariq, shirin bahor mevasi", "ru": "Жёлтый сладкий весенний плод", "en": "A yellow sweet spring fruit" } } },
+      "prompt": { "uz": "Birinchi unlini qoʻy!", "ru": "Вставь первую гласную!", "en": "Add the first vowel!" },
+      "hint": { "uz": "… r i k — «oʻrik».", "ru": "… r i k — «oʻrik» (абрикос).", "en": "… r i k — “oʻrik” (apricot)." },
+      "explanation": { "uz": "«oʻrik» «oʻ» unlisi bilan boshlanadi.", "ru": "«oʻrik» начинается с гласной «oʻ».", "en": "“oʻrik” starts with the vowel “oʻ”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "oʻrik", "bin": "oq" }, { "id": "b", "label": "oʻtin", "bin": "oq" }, { "id": "c", "label": "oʻrdak", "bin": "oq" }, { "id": "d", "label": "eshik", "bin": "e" }, { "id": "e", "label": "echki", "bin": "e" }, { "id": "f", "label": "elak", "bin": "e" } ], "bins": [ { "id": "oq", "label": "«Oʻ» bilan" }, { "id": "e", "label": "«E» bilan" } ] } },
+      "prompt": { "uz": "Soʻzni boshlanishiga qarab ajrat!", "ru": "Раздели по началу слова!", "en": "Sort by how the word begins!" },
+      "hint": { "uz": "«oʻrik» — oʻ, «eshik» — e bilan.", "ru": "«oʻrik» — с oʻ, «eshik» — с e.", "en": "“oʻrik” starts with oʻ, “eshik” with e." },
+      "explanation": { "uz": "Oʻ va E — ikki xil unli. Ularni farqlaymiz.", "ru": "Oʻ и E — разные гласные. Мы их различаем.", "en": "Oʻ and E are two different vowels. We tell them apart." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "koʻz", "match": true }, { "text": "oʻrik", "match": true }, { "text": "non", "match": false }, { "text": "koʻl", "match": true }, { "text": "tosh", "match": false }, { "text": "gul", "match": false } ] } },
+      "prompt": { "uz": "«Oʻ» unlisi bor soʻzlarni bos!", "ru": "Нажми слова с гласной «oʻ»!", "en": "Tap the words with the vowel “oʻ”!" },
+      "hint": { "uz": "koʻz, koʻl — «oʻ» bor.", "ru": "koʻz, koʻl — есть «oʻ».", "en": "koʻz, koʻl contain “oʻ”." },
+      "explanation": { "uz": "koʻz, oʻrik, koʻl soʻzlarida «oʻ» unlisi bor.", "ru": "В koʻz, oʻrik, koʻl есть гласная «oʻ».", "en": "koʻz, oʻrik, koʻl contain the vowel “oʻ”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "koʻz", "right": "👁️" }, { "left": "eshik", "right": "🚪" }, { "left": "oʻrdak", "right": "🦆" }, { "left": "echki", "right": "🐐" } ] } },
+      "prompt": { "uz": "Soʻzni rasmiga ula!", "ru": "Соедини слово с картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«oʻrdak» — 🦆, «echki» — 🐐.", "ru": "«oʻrdak» — 🦆, «echki» — 🐐.", "en": "“oʻrdak” — 🦆, “echki” — 🐐." },
+      "explanation": { "uz": "Har soʻzda «oʻ» yoki «e» unlisi bor.", "ru": "В каждом слове есть «oʻ» или «e».", "en": "Each word has the vowel “oʻ” or “e”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "echki", "letters": ["e", "ch", "k", "i"], "emoji": "🐐", "clue": { "uz": "Sut beradigan shoxli hayvon", "ru": "Рогатое животное, дающее молоко", "en": "A horned animal that gives milk" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: e, ch, k, i.", "ru": "Части: e, ch, k, i.", "en": "Parts: e, ch, k, i." },
+      "explanation": { "uz": "«echki» «e» unlisi bilan boshlanadi.", "ru": "«echki» начинается с гласной «e».", "en": "“echki” starts with the vowel “e”." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Eshik", "ochiq", "turibdi."], "emoji": "🚪", "clue": { "uz": "Eshik haqida gap", "ru": "Предложение о двери", "en": "A sentence about the door" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima? — «Eshik». Qanday? — «ochiq».", "ru": "Что? — «Eshik». Как? — «ochiq».", "en": "What? — “Eshik”. How? — “ochiq”." },
+      "explanation": { "uz": "«Eshik» soʻzi «E» unlisi bilan boshlanadi.", "ru": "Слово «Eshik» начинается с «E».", "en": "The word “Eshik” starts with “E”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Unli", "ru": "Гласные", "en": "Vowels" }, { "uz": "Undosh", "ru": "Согласные", "en": "Consonants" }, { "uz": "Raqam", "ru": "Цифры", "en": "Numbers" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻ va E qanday tovushlar?", "ru": "Какие звуки Oʻ и E?", "en": "What kind of sounds are Oʻ and E?" },
+      "hint": { "uz": "Ularni erkin choʻzib aytamiz.", "ru": "Их можно свободно тянуть.", "en": "They can be held freely." },
+      "explanation": { "uz": "Oʻ va E — unli tovushlar.", "ru": "Oʻ и E — гласные звуки.", "en": "Oʻ and E are vowels." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["echki", "koʻza", "non"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz «e» bilan boshlanadi?", "ru": "Какое слово начинается с «e»?", "en": "Which word starts with “e”?" },
+      "hint": { "uz": "Sut beradigan hayvon.", "ru": "Животное, дающее молоко.", "en": "The animal that gives milk." },
+      "explanation": { "uz": "«echki» «e» unlisi bilan boshlanadi.", "ru": "«echki» начинается с «e».", "en": "“echki” starts with “e”." }
+    }
+  ]
+}

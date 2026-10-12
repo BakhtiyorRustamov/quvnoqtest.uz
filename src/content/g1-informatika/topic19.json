@@ -1,0 +1,486 @@
+{
+  "topicId": "g1-informatika-19",
+  "subjectKey": "g1-informatika",
+  "emojis": "⬅️➡️✋🌐",
+  "title": {
+    "uz": "Chapda – oʻngda",
+    "ru": "Слева – справа",
+    "en": "Left – right"
+  },
+  "recall": {
+    "uz": "Buyumlar chapda yoki oʻngda boʻladi. Oʻng qoʻlimiz va chap qoʻlimiz bor. Rasmning yuqori chap, yuqori oʻng, pastki chap va pastki oʻng burchagi bor.",
+    "ru": "Предметы бывают слева и справа. У нас есть правая и левая рука. У картинки есть верхний левый, верхний правый, нижний левый и нижний правый углы.",
+    "en": "Things can be on the left or right. We have a right hand and a left hand. A picture has top-left, top-right, bottom-left and bottom-right corners."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yuqori chap burchakdagi shaklni bos!",
+        "ru": "Нажми фигуру в верхнем левом углу!",
+        "en": "Tap the top-left shape!"
+      },
+      "hint": {
+        "uz": "Tepa va chap tomon.",
+        "ru": "Верх и левая сторона.",
+        "en": "Top and left side."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yuqori chap burchak.",
+        "ru": "Молодец! Верхний левый угол.",
+        "en": "Great! Top-left corner."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 2,
+          "cols": 2,
+          "answer": "tl",
+          "prompt": {
+            "uz": "Yuqori chap burchakni bos",
+            "ru": "Нажми верхний левый",
+            "en": "Tap the top-left"
+          },
+          "cells": [
+            {
+              "id": "tl",
+              "kind": "circle",
+              "color": "yellow",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "tr",
+              "kind": "triangle",
+              "color": "purple",
+              "r": 0,
+              "c": 1
+            },
+            {
+              "id": "bl",
+              "kind": "star",
+              "color": "red",
+              "r": 1,
+              "c": 0
+            },
+            {
+              "id": "br",
+              "kind": "rhombus",
+              "color": "green",
+              "r": 1,
+              "c": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Pastki oʻng burchakdagi shaklni bos!",
+        "ru": "Нажми фигуру в нижнем правом углу!",
+        "en": "Tap the bottom-right shape!"
+      },
+      "hint": {
+        "uz": "Past va oʻng tomon.",
+        "ru": "Низ и правая сторона.",
+        "en": "Bottom and right side."
+      },
+      "explanation": {
+        "uz": "Barakalla! Pastki oʻng burchak.",
+        "ru": "Молодец! Нижний правый угол.",
+        "en": "Great! Bottom-right corner."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 2,
+          "cols": 2,
+          "answer": "br",
+          "prompt": {
+            "uz": "Pastki oʻng burchakni bos",
+            "ru": "Нажми нижний правый",
+            "en": "Tap the bottom-right"
+          },
+          "cells": [
+            {
+              "id": "tl",
+              "kind": "square",
+              "color": "blue",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "tr",
+              "kind": "circle",
+              "color": "orange",
+              "r": 0,
+              "c": 1
+            },
+            {
+              "id": "bl",
+              "kind": "triangle",
+              "color": "magenta",
+              "r": 1,
+              "c": 0
+            },
+            {
+              "id": "br",
+              "kind": "star",
+              "color": "green",
+              "r": 1,
+              "c": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yuqori oʻng burchakdagi shaklni bos!",
+        "ru": "Нажми фигуру в верхнем правом углу!",
+        "en": "Tap the top-right shape!"
+      },
+      "hint": {
+        "uz": "Tepa va oʻng tomon.",
+        "ru": "Верх и правая сторона.",
+        "en": "Top and right side."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yuqori oʻng burchak.",
+        "ru": "Молодец! Верхний правый угол.",
+        "en": "Great! Top-right corner."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 2,
+          "cols": 2,
+          "answer": "tr",
+          "prompt": {
+            "uz": "Yuqori oʻng burchakni bos",
+            "ru": "Нажми верхний правый",
+            "en": "Tap the top-right"
+          },
+          "cells": [
+            {
+              "id": "tl",
+              "kind": "star",
+              "color": "red",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "tr",
+              "kind": "circle",
+              "color": "blue",
+              "r": 0,
+              "c": 1
+            },
+            {
+              "id": "bl",
+              "kind": "square",
+              "color": "yellow",
+              "r": 1,
+              "c": 0
+            },
+            {
+              "id": "br",
+              "kind": "triangle",
+              "color": "purple",
+              "r": 1,
+              "c": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koʻpchilik odam qaysi qoʻl bilan yozadi?",
+        "ru": "Какой рукой пишет большинство?",
+        "en": "Which hand do most people write with?"
+      },
+      "hint": {
+        "uz": "Kuchli qoʻl.",
+        "ru": "Ведущая рука.",
+        "en": "The main hand."
+      },
+      "explanation": {
+        "uz": "Koʻpchilik oʻng qoʻl bilan yozadi.",
+        "ru": "Большинство — правой.",
+        "en": "Most people write with the right hand."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "oʻng",
+              "ru": "правой",
+              "en": "right"
+            },
+            {
+              "uz": "chap",
+              "ru": "левой",
+              "en": "left"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "5 ta mashina turibdi. Oʻrtadagisi nechanchi?",
+        "ru": "5 машин. Средняя — какая по счёту?",
+        "en": "5 cars. Which is the middle one?"
+      },
+      "hint": {
+        "uz": "Chap va oʻng oʻrtasida.",
+        "ru": "Между левым и правым.",
+        "en": "Between left and right."
+      },
+      "explanation": {
+        "uz": "Oʻrtadagisi — 3-chi.",
+        "ru": "Средняя — 3-я.",
+        "en": "The middle one is the 3rd."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "1",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻng qoʻlimizning qarshisida chap qoʻlimiz bor.",
+        "ru": "Напротив правой руки — левая.",
+        "en": "Opposite the right hand is the left hand."
+      },
+      "hint": {
+        "uz": "Ikki qoʻling bor.",
+        "ru": "У тебя две руки.",
+        "en": "You have two hands."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "✋",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Pastki chap burchakdagi shaklni bos!",
+        "ru": "Нажми фигуру в нижнем левом углу!",
+        "en": "Tap the bottom-left shape!"
+      },
+      "hint": {
+        "uz": "Past va chap tomon.",
+        "ru": "Низ и левая сторона.",
+        "en": "Bottom and left side."
+      },
+      "explanation": {
+        "uz": "Barakalla! Pastki chap burchak.",
+        "ru": "Молодец! Нижний левый угол.",
+        "en": "Great! Bottom-left corner."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 2,
+          "cols": 2,
+          "answer": "bl",
+          "prompt": {
+            "uz": "Pastki chap burchakni bos",
+            "ru": "Нажми нижний левый",
+            "en": "Tap the bottom-left"
+          },
+          "cells": [
+            {
+              "id": "tl",
+              "kind": "triangle",
+              "color": "green",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "tr",
+              "kind": "square",
+              "color": "red",
+              "r": 0,
+              "c": 1
+            },
+            {
+              "id": "bl",
+              "kind": "circle",
+              "color": "magenta",
+              "r": 1,
+              "c": 0
+            },
+            {
+              "id": "br",
+              "kind": "star",
+              "color": "yellow",
+              "r": 1,
+              "c": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan buyum nomini tuz! (🌐)",
+        "ru": "Составь слово! (🌐)",
+        "en": "Build the word! (🌐)"
+      },
+      "hint": {
+        "uz": "G-L-O-B-U-S harflaridan.",
+        "ru": "Из букв G-L-O-B-U-S.",
+        "en": "From G-L-O-B-U-S."
+      },
+      "explanation": {
+        "uz": "Barakalla! «globus» soʻzini tuzding.",
+        "ru": "Молодец! «globus».",
+        "en": "Great! You built “globus”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🌐",
+          "word": "globus",
+          "label": {
+            "uz": "globus",
+            "ru": "глобус",
+            "en": "globe"
+          },
+          "letters": [
+            "g",
+            "l",
+            "o",
+            "b",
+            "u",
+            "s"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kitobni oʻqiyotganda qaysi tomondan boshlaymiz?",
+        "ru": "С какой стороны начинаем читать?",
+        "en": "Which side do we start reading from?"
+      },
+      "hint": {
+        "uz": "Yozuv shu tomondan boshlanadi.",
+        "ru": "Письмо оттуда.",
+        "en": "Writing starts there."
+      },
+      "explanation": {
+        "uz": "Kitobni chap tomondan boshlab oʻqiymiz.",
+        "ru": "Читаем слева.",
+        "en": "We start reading from the left."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "chapdan",
+              "ru": "слева",
+              "en": "from the left"
+            },
+            {
+              "uz": "oʻngdan",
+              "ru": "справа",
+              "en": "from the right"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Rasmning tepa oʻng burchagida yulduz bor. U qayerda?",
+        "ru": "Звезда в верхнем правом углу. Где она?",
+        "en": "A star is in the top-right corner. Where is it?"
+      },
+      "hint": {
+        "uz": "Tepa va oʻng.",
+        "ru": "Верх и право.",
+        "en": "Top and right."
+      },
+      "explanation": {
+        "uz": "U yuqori oʻng burchakda.",
+        "ru": "В верхнем правом углу.",
+        "en": "It is in the top-right corner."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yuqori oʻngda",
+              "ru": "верхний правый",
+              "en": "top-right"
+            },
+            {
+              "uz": "pastki chapda",
+              "ru": "нижний левый",
+              "en": "bottom-left"
+            },
+            {
+              "uz": "oʻrtada",
+              "ru": "в центре",
+              "en": "in the middle"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

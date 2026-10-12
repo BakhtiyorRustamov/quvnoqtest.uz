@@ -1,0 +1,535 @@
+{
+  "topicId": "g1-alifbe-48",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🏡🍈🐦",
+  "title": {
+    "uz": "«H h» — oʻqish mashqi",
+    "ru": "Буква «H h» — чтение",
+    "en": "Letter “H h” — reading"
+  },
+  "recall": {
+    "uz": "«H» harfini oʻrgandik. Endi matn oʻqiymiz: hovli, handalak, hakka. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «H». Теперь читаем текст: hovli, handalak, hakka. Тренируем чтение!",
+    "en": "We learned the letter “H”. Now we read a text: hovli, handalak, hakka. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🏡 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🏡 Прочитай и нажми верно написанное слово!",
+        "en": "🏡 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «hovli».",
+        "ru": "Прочитай: «hovli».",
+        "en": "Read it: “hovli”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «hovli».",
+        "ru": "Верно — «hovli».",
+        "en": "Correct — “hovli”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🏡",
+          "options": [
+            {
+              "id": "ok",
+              "word": "hovli",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "xovli"
+            },
+            {
+              "id": "w2",
+              "word": "hovni"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «hovli» soʻzini tuz!",
+        "ru": "Составь слово «hovli»!",
+        "en": "Build the word “hovli”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «hovli» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «hovli».",
+        "en": "Great! You read “hovli”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🏡",
+          "word": "hovli",
+          "label": {
+            "uz": "hovli",
+            "ru": "двор",
+            "en": "yard"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь на вопрос.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение внимательно.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «hovlida».",
+        "ru": "Верный ответ — «hovlida».",
+        "en": "The right answer is “hovlida”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🏡",
+          "text": {
+            "uz": "Halima hovlida oʻynaydi.\nHovlida gul bor.",
+            "ru": "Halima hovlida oʻynaydi.\nHovlida gul bor.",
+            "en": "Halima hovlida oʻynaydi.\nHovlida gul bor."
+          },
+          "question": {
+            "uz": "Halima qayerda oʻynaydi?",
+            "ru": "Halima qayerda oʻynaydi?",
+            "en": "Halima qayerda oʻynaydi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "hovlida",
+                "ru": "hovlida",
+                "en": "hovlida"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "bogʻda",
+                "ru": "bogʻda",
+                "en": "bogʻda"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "uyda",
+                "ru": "uyda",
+                "en": "uyda"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍈 «handalak» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🍈 Похлопай слово «handalak» по слогам!",
+        "en": "🍈 Clap the word “handalak” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«handalak» — 3 boʻgʻin.",
+        "ru": "«handalak» — 3 слога.",
+        "en": "“handalak” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🍈",
+          "word": {
+            "uz": "handalak",
+            "ru": "handalak",
+            "en": "handalak"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«H» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «H»!",
+        "en": "Tap the words with the “H” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «h» tovushi bor.",
+        "ru": "В них есть звук «h».",
+        "en": "They have the “h” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏡",
+              "label": {
+                "uz": "hovli",
+                "ru": "hovli",
+                "en": "hovli"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍈",
+              "label": {
+                "uz": "handalak",
+                "ru": "handalak",
+                "en": "handalak"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐦",
+              "label": {
+                "uz": "hakka",
+                "ru": "hakka",
+                "en": "hakka"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«hovli» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «hovli». Найди картинку!",
+        "en": "Read “hovli”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«hovli» — 🏡.",
+        "ru": "«hovli» — 🏡.",
+        "en": "“hovli” is 🏡."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🏡",
+              "label": {
+                "uz": "hovli",
+                "ru": "двор",
+                "en": "yard"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🍈",
+              "label": {
+                "uz": "handalak",
+                "ru": "handalak",
+                "en": "handalak"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🐦",
+              "label": {
+                "uz": "hakka",
+                "ru": "hakka",
+                "en": "hakka"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🏡"
+              },
+              "right": {
+                "label": {
+                  "uz": "hovli",
+                  "ru": "hovli",
+                  "en": "hovli"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍈"
+              },
+              "right": {
+                "label": {
+                  "uz": "handalak",
+                  "ru": "handalak",
+                  "en": "handalak"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐦"
+              },
+              "right": {
+                "label": {
+                  "uz": "hakka",
+                  "ru": "hakka",
+                  "en": "hakka"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Halima … oʻynaydi.",
+        "ru": "Составь предложение: Halima … oʻynaydi.",
+        "en": "Order the words: Halima … oʻynaydi."
+      },
+      "hint": {
+        "uz": "Halima — hovlida — oʻynaydi.",
+        "ru": "Halima — hovlida — oʻynaydi.",
+        "en": "Halima — hovlida — oʻynaydi."
+      },
+      "explanation": {
+        "uz": "«Halima hovlida oʻynaydi.» — gap oʻqiding!",
+        "ru": "«Halima hovlida oʻynaydi.» — предложение!",
+        "en": "“Halima hovlida oʻynaydi.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Halima",
+                "ru": "Halima",
+                "en": "Halima"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "hovlida",
+                "ru": "hovlida",
+                "en": "hovlida"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oʻynaydi",
+                "ru": "oʻynaydi",
+                "en": "oʻynaydi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🏡"
+              },
+              "b": {
+                "label": {
+                  "uz": "hovli",
+                  "ru": "hovli",
+                  "en": "hovli"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍈"
+              },
+              "b": {
+                "label": {
+                  "uz": "handalak",
+                  "ru": "handalak",
+                  "en": "handalak"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐦"
+              },
+              "b": {
+                "label": {
+                  "uz": "hakka",
+                  "ru": "hakka",
+                  "en": "hakka"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«hovli» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «hovli»?",
+        "en": "How many sounds are in “hovli”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana. (harflab sana)",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«hovli»da 5 ta tovush bor.",
+        "ru": "В «hovli» 5 звука.",
+        "en": "“hovli” has 5 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

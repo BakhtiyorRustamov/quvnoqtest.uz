@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-03",
+  "subjectKey": "g1-ona",
+  "emojis": "🗣️👂✍️",
+  "title": {
+    "uz": "Til va nutq sirlari",
+    "ru": "Секреты языка и речи",
+    "en": "The secrets of language and speech"
+  },
+  "recall": {
+    "uz": "Nutq — soʻzlash, tinglash, oʻqish va yozishdan iborat. Yer yuzida faqat inson nutqqa ega. Ogʻzaki nutqni eshitamiz va talaffuz qilamiz. Yozma nutqni oʻqiymiz va yozamiz; unda harflardan foydalanamiz.",
+    "ru": "Речь — это говорение, слушание, чтение и письмо. На Земле только человек владеет речью. Устную речь мы слышим и произносим. Письменную — читаем и пишем, используя буквы.",
+    "en": "Speech means speaking, listening, reading and writing. On Earth only humans have speech. We hear and pronounce oral speech. We read and write written speech, using letters."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "nutq", "emoji": "🗣️", "clue": { "uz": "Soʻzlash, tinglash, oʻqish, yozish", "ru": "Говорение, слушание, чтение, письмо", "en": "Speaking, listening, reading, writing" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Toʻrt harf: n, u, t, q.", "ru": "Четыре буквы: n, u, t, q.", "en": "Four letters: n, u, t, q." },
+      "explanation": { "uz": "«Nutq» hosil boʻldi. Nutq bilan fikr almashamiz.", "ru": "Получилось «nutq» (речь). Речью мы обмениваемся мыслями.", "en": "We built “nutq” (speech). With speech we share thoughts." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "til", "emoji": "👅", "clue": { "uz": "Nutqning quroli", "ru": "Орудие речи", "en": "The tool of speech" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Uch harf: t, i, l.", "ru": "Три буквы: t, i, l.", "en": "Three letters: t, i, l." },
+      "explanation": { "uz": "«Til» hosil boʻldi. Til yordamida nutq tuzamiz.", "ru": "Получилось «til». С помощью языка мы строим речь.", "en": "We built “til”. With language we form speech." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "nut", "after": "", "choices": ["q", "k", "g"], "answer": "q", "emoji": "🗣️", "clue": { "uz": "«Nutq» soʻzini toʻldir", "ru": "Дополни слово «nutq»", "en": "Complete the word “nutq”" } } },
+      "prompt": { "uz": "Oxirgi harfni qoʻy!", "ru": "Вставь последнюю букву!", "en": "Add the last letter!" },
+      "hint": { "uz": "nut… — oxirida «q».", "ru": "nut… — в конце «q».", "en": "nut… — the last letter is “q”." },
+      "explanation": { "uz": "n + u + t + q = «nutq».", "ru": "n + u + t + q = «nutq».", "en": "n + u + t + q = “nutq”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Gapirish", "bin": "og" }, { "id": "b", "label": "Tinglash", "bin": "og" }, { "id": "c", "label": "Suhbat", "bin": "og" }, { "id": "d", "label": "Oʻqish", "bin": "yoz" }, { "id": "e", "label": "Yozish", "bin": "yoz" }, { "id": "f", "label": "Xat", "bin": "yoz" } ], "bins": [ { "id": "og", "label": "Ogʻzaki nutq" }, { "id": "yoz", "label": "Yozma nutq" } ] } },
+      "prompt": { "uz": "Nutq turlariga ajrat!", "ru": "Раздели по видам речи!", "en": "Sort by type of speech!" },
+      "hint": { "uz": "Gapirish, tinglash — ogʻzaki; oʻqish, yozish — yozma.", "ru": "Говорение, слушание — устная; чтение, письмо — письменная.", "en": "Speaking, listening — oral; reading, writing — written." },
+      "explanation": { "uz": "Ogʻzaki nutqni eshitamiz, yozma nutqni oʻqiymiz.", "ru": "Устную речь слышим, письменную читаем.", "en": "We hear oral speech and read written speech." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Gapirish", "right": "Ogʻiz" }, { "left": "Tinglash", "right": "Quloq" }, { "left": "Yozish", "right": "Qoʻl" }, { "left": "Oʻqish", "right": "Koʻz" } ] } },
+      "prompt": { "uz": "Ishni oʻz aʼzosiga ula!", "ru": "Соедини действие с органом!", "en": "Match each action to its organ!" },
+      "hint": { "uz": "Tinglash — quloq bilan.", "ru": "Слушаем — ухом.", "en": "We listen with the ear." },
+      "explanation": { "uz": "Nutqda ogʻiz, quloq, qoʻl va koʻzdan foydalanamiz.", "ru": "В речи участвуют рот, ухо, рука и глаз.", "en": "Speech uses the mouth, ear, hand and eye." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Faqat", "inson", "nutqqa", "ega."], "emoji": "🧑", "clue": { "uz": "Nutq faqat kimda bor?", "ru": "У кого есть речь?", "en": "Who has speech?" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Boshi — «Faqat inson…».", "ru": "Начало — «Faqat inson…».", "en": "Start — “Faqat inson…”." },
+      "explanation": { "uz": "Yer yuzida faqat inson nutqqa ega.", "ru": "На Земле только человек владеет речью.", "en": "On Earth only humans have speech." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Biz", "kitob", "oʻqiymiz."], "emoji": "📖", "clue": { "uz": "Yozma nutqqa misol", "ru": "Пример письменной речи", "en": "An example of written speech" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Biz». Nima qilamiz? — «oʻqiymiz».", "ru": "Кто? — «Biz». Что делаем? — «oʻqiymiz».", "en": "Who? — “Biz”. Do what? — “oʻqiymiz”." },
+      "explanation": { "uz": "Oʻqish — yozma nutq. Unda harflardan foydalanamiz.", "ru": "Чтение — письменная речь. В ней используются буквы.", "en": "Reading is written speech. It uses letters." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Yozma", "nutqda", "harf", "ishlatamiz."], "emoji": "✍️", "clue": { "uz": "Yozma nutqning belgisi", "ru": "Признак письменной речи", "en": "A feature of written speech" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima ishlatamiz? — «harf».", "ru": "Что используем? — «harf» (буквы).", "en": "What do we use? — “harf” (letters)." },
+      "explanation": { "uz": "Yozma nutqda harflardan foydalanamiz.", "ru": "В письменной речи мы используем буквы.", "en": "In written speech we use letters." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Soʻzlash, tinglash, oʻqish va yozish", "ru": "Говорение, слушание, чтение и письмо", "en": "Speaking, listening, reading and writing" }, { "uz": "Faqat yugurish", "ru": "Только бег", "en": "Only running" }, { "uz": "Faqat rasm chizish", "ru": "Только рисование", "en": "Only drawing" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Nutq nimalardan iborat?", "ru": "Из чего состоит речь?", "en": "What does speech consist of?" },
+      "hint": { "uz": "Nutq — soʻzlash, tinglash, oʻqish, yozish.", "ru": "Речь — говорение, слушание, чтение, письмо.", "en": "Speech — speaking, listening, reading, writing." },
+      "explanation": { "uz": "Nutq soʻzlash, tinglash, oʻqish va yozishdan iborat.", "ru": "Речь состоит из говорения, слушания, чтения и письма.", "en": "Speech consists of speaking, listening, reading and writing." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Eshitadigan va talaffuz qiladigan nutq", "ru": "Речь, которую слышим и произносим", "en": "Speech we hear and pronounce" }, { "uz": "Faqat kitobdagi nutq", "ru": "Речь только в книгах", "en": "Speech only in books" }, { "uz": "Rasmdagi nutq", "ru": "Речь на картинке", "en": "Speech in a picture" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Ogʻzaki nutq qanday nutq?", "ru": "Какая речь — устная?", "en": "What is oral speech?" },
+      "hint": { "uz": "Ogʻzaki nutqni quloq bilan eshitamiz.", "ru": "Устную речь мы слышим ухом.", "en": "We hear oral speech with our ears." },
+      "explanation": { "uz": "Ogʻzaki nutq — biz eshitadigan va talaffuz qiladigan nutq.", "ru": "Устная речь — та, которую мы слышим и произносим.", "en": "Oral speech is the speech we hear and pronounce." }
+    }
+  ]
+}

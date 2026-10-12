@@ -1,0 +1,567 @@
+{
+  "topicId": "g1-informatika-07",
+  "subjectKey": "g1-informatika",
+  "emojis": "✋🔥❄️🥥",
+  "title": {
+    "uz": "Biz nimalarni his qilamiz?",
+    "ru": "Что мы чувствуем?",
+    "en": "What do we feel?"
+  },
+  "recall": {
+    "uz": "Teri — his qilish aʼzosi. Teri va qoʻlimiz bilan issiq, sovuq, yumshoq va qattiqni sezamiz.",
+    "ru": "Кожа — орган осязания. Кожей и руками мы чувствуем тепло, холод, мягкое и твёрдое.",
+    "en": "The skin is the organ of touch. With our skin and hands we feel hot, cold, soft and hard."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi aʼzo bilan ushlab sezamiz?",
+        "ru": "Каким органом мы осязаем?",
+        "en": "Which organ do we touch with?"
+      },
+      "hint": {
+        "uz": "U bilan narsani ushlaymiz.",
+        "ru": "Ею мы трогаем.",
+        "en": "We touch things with it."
+      },
+      "explanation": {
+        "uz": "Teri va qoʻl bilan sezamiz.",
+        "ru": "Чувствуем кожей и рукой.",
+        "en": "We feel with skin and hand."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "✋",
+              "label": {
+                "uz": "qoʻl / teri",
+                "ru": "рука / кожа",
+                "en": "hand / skin"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani sezgisi bilan ula!",
+        "ru": "Соедини предмет с ощущением!",
+        "en": "Match each thing to its feel!"
+      },
+      "hint": {
+        "uz": "Olov issiq, muz sovuq.",
+        "ru": "Огонь горячий, лёд холодный.",
+        "en": "Fire is hot, ice is cold."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🔥"
+              },
+              "right": {
+                "label": {
+                  "uz": "issiq",
+                  "ru": "горячий",
+                  "en": "hot"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "❄️"
+              },
+              "right": {
+                "label": {
+                  "uz": "sovuq",
+                  "ru": "холодный",
+                  "en": "cold"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "☁️"
+              },
+              "right": {
+                "label": {
+                  "uz": "yumshoq",
+                  "ru": "мягкий",
+                  "en": "soft"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Muzning teginishi qanday?",
+        "ru": "Каким на ощупь лёд?",
+        "en": "How does ice feel?"
+      },
+      "hint": {
+        "uz": "Issiqmi, sovuqmi?",
+        "ru": "Горячий или холодный?",
+        "en": "Hot or cold?"
+      },
+      "explanation": {
+        "uz": "Muz sovuq.",
+        "ru": "Лёд холодный.",
+        "en": "Ice is cold."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "sovuq",
+              "ru": "холодный",
+              "en": "cold"
+            },
+            {
+              "uz": "issiq",
+              "ru": "горячий",
+              "en": "hot"
+            },
+            {
+              "uz": "yumshoq",
+              "ru": "мягкий",
+              "en": "soft"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni ajrat: issiq va sovuq!",
+        "ru": "Раздели: горячее и холодное!",
+        "en": "Sort them: hot and cold!"
+      },
+      "hint": {
+        "uz": "Avval rasmni, keyin qutini bos.",
+        "ru": "Сначала картинку, потом ящик.",
+        "en": "Tap a picture, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Issiq va sovuqqa ajratding.",
+        "ru": "Молодец! Горячее и холодное.",
+        "en": "Great! Hot and cold sorted."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "i",
+              "label": {
+                "uz": "Issiq",
+                "ru": "Горячий",
+                "en": "Hot"
+              }
+            },
+            {
+              "id": "s",
+              "label": {
+                "uz": "Sovuq",
+                "ru": "Холодный",
+                "en": "Cold"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔥",
+              "label": {
+                "uz": "olov",
+                "ru": "огонь",
+                "en": "fire"
+              },
+              "bin": "i"
+            },
+            {
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              },
+              "bin": "i"
+            },
+            {
+              "emoji": "❄️",
+              "label": {
+                "uz": "qor",
+                "ru": "снег",
+                "en": "snow"
+              },
+              "bin": "s"
+            },
+            {
+              "emoji": "⛄",
+              "label": {
+                "uz": "qorbobo",
+                "ru": "снеговик",
+                "en": "snowman"
+              },
+              "bin": "s"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kaktus tikanli, qadalib turadi.",
+        "ru": "Кактус колючий.",
+        "en": "A cactus is prickly."
+      },
+      "hint": {
+        "uz": "Kaktusga qara.",
+        "ru": "Посмотри на кактус.",
+        "en": "Look at a cactus."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Kaktus tikanli.",
+        "ru": "Верно! Кактус колючий.",
+        "en": "True! A cactus is prickly."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yumshoq narsalarni belgila!",
+        "ru": "Отметь мягкое!",
+        "en": "Tap the soft things!"
+      },
+      "hint": {
+        "uz": "Qaysilari yumshoq?",
+        "ru": "Что мягкое?",
+        "en": "Which are soft?"
+      },
+      "explanation": {
+        "uz": "Ular yumshoq.",
+        "ru": "Они мягкие.",
+        "en": "They are soft."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "☁️",
+              "label": {
+                "uz": "bulut",
+                "ru": "облако",
+                "en": "cloud"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐑",
+              "label": {
+                "uz": "qoʻy juni",
+                "ru": "овечья шерсть",
+                "en": "wool"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🧦",
+              "label": {
+                "uz": "paypoq",
+                "ru": "носок",
+                "en": "sock"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🥥",
+              "label": {
+                "uz": "yongʻoq",
+                "ru": "кокос",
+                "en": "coconut"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🌵",
+              "label": {
+                "uz": "kaktus",
+                "ru": "кактус",
+                "en": "cactus"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (issiq)",
+        "ru": "Нажми лишнее! (горячее)",
+        "en": "Tap the odd one! (hot)"
+      },
+      "hint": {
+        "uz": "Qaysi biri sovuq emas?",
+        "ru": "Что не холодное?",
+        "en": "Which is not cold?"
+      },
+      "explanation": {
+        "uz": "Olov issiq, qolganlari sovuq.",
+        "ru": "Огонь горячий, остальное холодное.",
+        "en": "Fire is hot, the rest are cold."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "sovuq narsalar",
+            "ru": "холодное",
+            "en": "cold things"
+          },
+          "tiles": [
+            {
+              "text": "muz"
+            },
+            {
+              "text": "qor"
+            },
+            {
+              "text": "ayoz"
+            },
+            {
+              "text": "olov",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sezgini nomi bilan juftla!",
+        "ru": "Соедини ощущение с названием!",
+        "en": "Match the feeling to its name!"
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Смотри на картинку.",
+        "en": "Look at the picture."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🔥"
+              },
+              "b": {
+                "label": {
+                  "uz": "issiq",
+                  "ru": "горячий",
+                  "en": "hot"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "❄️"
+              },
+              "b": {
+                "label": {
+                  "uz": "sovuq",
+                  "ru": "холодный",
+                  "en": "cold"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "☁️"
+              },
+              "b": {
+                "label": {
+                  "uz": "yumshoq",
+                  "ru": "мягкий",
+                  "en": "soft"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qishda nima uchun qoʻlqop kiyamiz?",
+        "ru": "Зачем зимой надеваем варежки?",
+        "en": "Why do we wear gloves in winter?"
+      },
+      "hint": {
+        "uz": "Qoʻl sovqotmasligi uchun.",
+        "ru": "Чтобы руки не мёрзли.",
+        "en": "So hands do not get cold."
+      },
+      "explanation": {
+        "uz": "Qoʻlimiz sovqotmasligi uchun.",
+        "ru": "Чтобы руки не мёрзли.",
+        "en": "So our hands do not get cold."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qoʻl sovqotmasligi uchun",
+              "ru": "чтобы руки не мёрзли",
+              "en": "so hands don't get cold"
+            },
+            {
+              "uz": "chiroyli koʻrinish uchun",
+              "ru": "для красоты",
+              "en": "to look nice"
+            },
+            {
+              "uz": "ovoz chiqarish uchun",
+              "ru": "чтобы шуметь",
+              "en": "to make noise"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri qattiq?",
+        "ru": "Что твёрдое?",
+        "en": "Which one is hard?"
+      },
+      "hint": {
+        "uz": "Qattiqni top.",
+        "ru": "Найди твёрдое.",
+        "en": "Find the hard one."
+      },
+      "explanation": {
+        "uz": "Yongʻoq qattiq.",
+        "ru": "Кокос твёрдый.",
+        "en": "A coconut is hard."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🥥",
+              "label": {
+                "uz": "yongʻoq",
+                "ru": "кокос",
+                "en": "coconut"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "☁️",
+              "label": {
+                "uz": "bulut",
+                "ru": "облако",
+                "en": "cloud"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🐑",
+              "label": {
+                "uz": "jun",
+                "ru": "шерсть",
+                "en": "wool"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

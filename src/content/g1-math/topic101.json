@@ -1,0 +1,359 @@
+{
+  "topicId": "g1-math-101",
+  "subjectKey": "g1-math",
+  "emojis": "📏📐🔟",
+  "title": {
+    "uz": "Detsimetr bilan tanishamiz",
+    "ru": "Знакомимся с дециметром",
+    "en": "Meet the decimetre"
+  },
+  "recall": {
+    "uz": "Uzunroq narsalarni oʻlchashda detsimetr (dm) ishlatiladi. 1 dm = 10 cm. Masalan, 4 dm = 40 cm. Detsimetr — santimetrdan kattaroq oʻlchov birligi.",
+    "ru": "Для более длинных предметов используют дециметр (дм). 1 дм = 10 см. Например, 4 дм = 40 см. Дециметр — единица крупнее сантиметра.",
+    "en": "For longer things we use the decimetre (dm). 1 dm = 10 cm. For example, 4 dm = 40 cm. The decimetre is bigger than the centimetre."
+  },
+  "items": [
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 40
+        }
+      },
+      "prompt": {
+        "uz": "4 dm necha cm boʻladi? Javobni bloklardan yasa (har oʻnlik = 1 dm).",
+        "ru": "Сколько см в 4 дм? Собери ответ из блоков (каждый десяток = 1 дм).",
+        "en": "How many cm are in 4 dm? Build the answer from blocks (each ten = 1 dm)."
+      },
+      "hint": {
+        "uz": "4 ta oʻnlik (dm) — har biri 10 cm.",
+        "ru": "4 десятка (дм) — по 10 см.",
+        "en": "4 tens (dm), each 10 cm."
+      },
+      "explanation": {
+        "uz": "4 dm = 40 cm.",
+        "ru": "4 дм = 40 см.",
+        "en": "4 dm = 40 cm."
+      },
+      "id": "q1"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "1 dm",
+              "right": "10 cm"
+            },
+            {
+              "left": "3 dm",
+              "right": "30 cm"
+            },
+            {
+              "left": "5 dm",
+              "right": "50 cm"
+            },
+            {
+              "left": "2 dm",
+              "right": "20 cm"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir detsimetrni unga teng santimetr bilan ulang!",
+        "ru": "Соедини каждый дециметр с равным числом сантиметров!",
+        "en": "Match each decimetre with its equal in centimetres!"
+      },
+      "hint": {
+        "uz": "1 dm = 10 cm, demak ko'paytir.",
+        "ru": "1 дм = 10 см, значит умножь.",
+        "en": "1 dm = 10 cm, so multiply."
+      },
+      "explanation": {
+        "uz": "1 dm=10, 3 dm=30, 5 dm=50, 2 dm=20 cm.",
+        "ru": "1 дм=10, 3 дм=30, 5 дм=50, 2 дм=20 см.",
+        "en": "1 dm=10, 3 dm=30, 5 dm=50, 2 dm=20 cm."
+      },
+      "id": "q2"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 10,
+          "y": 7
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi uzunroq: 1 dm yoki 7 cm? (1 dm = 10 cm.) Toʻgʻri belgini tanla.",
+        "ru": "Что длиннее: 1 дм или 7 см? (1 дм = 10 см.) Выбери знак.",
+        "en": "Which is longer: 1 dm or 7 cm? (1 dm = 10 cm.) Choose the sign."
+      },
+      "hint": {
+        "uz": "1 dm ni cm ga aylantir: 10 cm.",
+        "ru": "Переведи 1 дм в см: 10 см.",
+        "en": "Convert 1 dm to cm: 10 cm."
+      },
+      "explanation": {
+        "uz": "10 > 7, demak 1 dm > 7 cm.",
+        "ru": "10 > 7, значит 1 дм > 7 см.",
+        "en": "10 > 7, so 1 dm > 7 cm."
+      },
+      "id": "q3"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "AB kesma 8 cm, BC kesma 6 cm. AC = AB + BC necha cm? Sonlar chizigʻida hisobla.",
+        "ru": "Отрезок AB = 8 см, BC = 6 см. Сколько AC = AB + BC см? Посчитай на числовой прямой.",
+        "en": "Segment AB is 8 cm, BC is 6 cm. How long is AC = AB + BC? Use the number line."
+      },
+      "hint": {
+        "uz": "8 dan boshla va 6 cm oldinga sur.",
+        "ru": "Встань на 8 и продвинься на 6 см.",
+        "en": "Start at 8 and move 6 cm forward."
+      },
+      "explanation": {
+        "uz": "8 + 6 = 14 cm.",
+        "ru": "8 + 6 = 14 см.",
+        "en": "8 + 6 = 14 cm."
+      },
+      "id": "q4"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 60
+        }
+      },
+      "prompt": {
+        "uz": "6 dm necha cm? Javobni bloklardan yasa (har oʻnlik = 1 dm).",
+        "ru": "Сколько см в 6 дм? Собери ответ из блоков (каждый десяток = 1 дм).",
+        "en": "How many cm in 6 dm? Build the answer (each ten = 1 dm)."
+      },
+      "hint": {
+        "uz": "6 ta oʻnlik — har biri 10 cm.",
+        "ru": "6 десятков по 10 см.",
+        "en": "6 tens, each 10 cm."
+      },
+      "explanation": {
+        "uz": "6 dm = 60 cm.",
+        "ru": "6 дм = 60 см.",
+        "en": "6 dm = 60 cm."
+      },
+      "id": "q5"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "6 + 4",
+              "bin": "d1"
+            },
+            {
+              "id": "b",
+              "label": "8 + 2",
+              "bin": "d1"
+            },
+            {
+              "id": "c",
+              "label": "5 + 5",
+              "bin": "d1"
+            },
+            {
+              "id": "d",
+              "label": "11 + 9",
+              "bin": "d2"
+            },
+            {
+              "id": "e",
+              "label": "13 + 7",
+              "bin": "d2"
+            },
+            {
+              "id": "f",
+              "label": "14 + 6",
+              "bin": "d2"
+            }
+          ],
+          "bins": [
+            {
+              "id": "d1",
+              "label": "1 dm"
+            },
+            {
+              "id": "d2",
+              "label": "2 dm"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Yigʻindisini hisobla va kesmani toʻgʻri detsimetr qutisiga sudra (1 dm=10 cm, 2 dm=20 cm)!",
+        "ru": "Вычисли сумму и перетащи отрезок в нужный ящик-дециметр (1 дм=10 см, 2 дм=20 см)!",
+        "en": "Add up and drag each segment into the right decimetre bucket (1 dm=10 cm, 2 dm=20 cm)!"
+      },
+      "hint": {
+        "uz": "Yigʻindi 10 — 1 dm; 20 — 2 dm.",
+        "ru": "Сумма 10 — 1 дм; 20 — 2 дм.",
+        "en": "Sum 10 -> 1 dm; 20 -> 2 dm."
+      },
+      "explanation": {
+        "uz": "1 dm: 6+4, 8+2, 5+5. 2 dm: 11+9, 13+7, 14+6.",
+        "ru": "1 дм: 6+4, 8+2, 5+5. 2 дм: 11+9, 13+7, 14+6.",
+        "en": "1 dm: 6+4, 8+2, 5+5. 2 dm: 11+9, 13+7, 14+6."
+      },
+      "id": "q6"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 20,
+          "y": 15
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi uzunroq: 2 dm yoki 15 cm? (2 dm = 20 cm.) Toʻgʻri belgini tanla.",
+        "ru": "Что длиннее: 2 дм или 15 см? (2 дм = 20 см.) Выбери знак.",
+        "en": "Which is longer: 2 dm or 15 cm? (2 dm = 20 cm.) Choose the sign."
+      },
+      "hint": {
+        "uz": "2 dm = 20 cm.",
+        "ru": "2 дм = 20 см.",
+        "en": "2 dm = 20 cm."
+      },
+      "explanation": {
+        "uz": "20 > 15, demak 2 dm > 15 cm.",
+        "ru": "20 > 15, значит 2 дм > 15 см.",
+        "en": "20 > 15, so 2 dm > 15 cm."
+      },
+      "id": "q7"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 9,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Bir xil 9 cm li ikki kesmani ulasak, umumiy uzunlik necha cm? Sonlar chizigʻida hisobla.",
+        "ru": "Соединили два одинаковых отрезка по 9 см. Какова общая длина? Посчитай на числовой прямой.",
+        "en": "Two equal 9 cm segments are joined. What is the total length? Use the number line."
+      },
+      "hint": {
+        "uz": "9 ga yana 9 ni qoʻsh.",
+        "ru": "К 9 прибавь ещё 9.",
+        "en": "Add 9 to 9."
+      },
+      "explanation": {
+        "uz": "9 + 9 = 18 cm.",
+        "ru": "9 + 9 = 18 см.",
+        "en": "9 + 9 = 18 cm."
+      },
+      "id": "q8"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "20 cm",
+              "right": "2 dm"
+            },
+            {
+              "left": "40 cm",
+              "right": "4 dm"
+            },
+            {
+              "left": "50 cm",
+              "right": "5 dm"
+            },
+            {
+              "left": "30 cm",
+              "right": "3 dm"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir santimetrni unga teng detsimetr bilan ulang!",
+        "ru": "Соедини каждое число сантиметров с равным дециметром!",
+        "en": "Match each centimetre value with its equal in decimetres!"
+      },
+      "hint": {
+        "uz": "Oxiridagi 0 ni olib tashla: 20 cm = 2 dm.",
+        "ru": "Убери ноль в конце: 20 см = 2 дм.",
+        "en": "Drop the trailing 0: 20 cm = 2 dm."
+      },
+      "explanation": {
+        "uz": "20=2, 40=4, 50=5, 30=3 dm.",
+        "ru": "20=2, 40=4, 50=5, 30=3 дм.",
+        "en": "20=2, 40=4, 50=5, 30=3 dm."
+      },
+      "id": "q9"
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 10,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda boʻrning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: мелок. Сколько см?",
+        "en": "Measure the crayon on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
+      },
+      "explanation": {
+        "uz": "Boʻrning uzunligi 10 cm.",
+        "ru": "Длина: 10 см.",
+        "en": "The crayon is 10 cm long."
+      }
+    }
+  ]
+}

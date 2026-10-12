@@ -1,0 +1,316 @@
+{
+  "topicId": "g1-math-01",
+  "subjectKey": "g1-math",
+  "emojis": "🔴🔺🟦",
+  "title": {
+    "uz": "Shakl, rang va oʻlcham olami",
+    "ru": "Мир форм, цветов и размеров",
+    "en": "The world of shapes, colors and sizes"
+  },
+  "recall": {
+    "uz": "Atrofimizdagi har bir narsaning shakli, rangi va oʻlchami bor. Koptok — yumaloq, deraza — kvadrat. Olma qizil yoki yashil boʻladi. Fil — katta, sichqoncha esa kichkina!",
+    "ru": "У каждого предмета вокруг нас есть форма, цвет и размер. Мяч — круглый, окно — квадратное. Яблоко бывает красным или зелёным. Слон — большой, а мышка — маленькая!",
+    "en": "Everything around us has a shape, a color and a size. A ball is round and a window is a square. An apple can be red or green. An elephant is big, but a mouse is tiny!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Doirani top va bos!",
+        "ru": "Найди круг и нажми на него!",
+        "en": "Find the circle and tap it!"
+      },
+      "options": [
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "orange" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } }
+      ],
+      "answer": ["ci"],
+      "hint": {
+        "uz": "Doira — yumaloq shakl, burchaklari yoʻq. U gʻildirak va koptokka oʻxshaydi!",
+        "ru": "Круг — круглый, у него нет уголков. Он похож на колесо и мячик!",
+        "en": "A circle is round — it has no corners. It looks like a wheel or a ball!"
+      },
+      "explanation": {
+        "uz": "Doira — yumaloq, burchaksiz shakl. Kvadrat va uchburchakning esa burchaklari bor.",
+        "ru": "Круг — круглый, без углов. А у квадрата и треугольника углы есть.",
+        "en": "A circle is round with no corners. Squares and triangles do have corners."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma qizil shakllarni belgilab, «Tekshirish»ni bos!",
+        "ru": "Отметь все красные фигуры и нажми «Проверить»!",
+        "en": "Tap all the red shapes, then press “Check”!"
+      },
+      "options": [
+        { "id": "rsq", "art": { "kind": "square", "color": "red" } },
+        { "id": "bci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "rtr", "art": { "kind": "triangle", "color": "red" } },
+        { "id": "gre", "art": { "kind": "rect", "color": "green" } },
+        { "id": "rci", "art": { "kind": "circle", "color": "red" } },
+        { "id": "ytr", "art": { "kind": "triangle", "color": "yellow" } }
+      ],
+      "answer": ["rsq", "rtr", "rci"],
+      "hint": {
+        "uz": "Qizil — pomidor va olcha rangi. Qizil shakl bittadan koʻp! Avval hammasini bos, soʻngra «Tekshirish» tugmasini bos.",
+        "ru": "Красный — это цвет помидора и вишни. Красных фигур несколько! Сначала отметь все, потом нажми «Проверить».",
+        "en": "Red is the color of a tomato and a cherry. There is more than one red shape! Tap them all first, then press “Check”."
+      },
+      "explanation": {
+        "uz": "Qizil shakllar uchta edi: kvadrat, uchburchak va doira. Rang shaklga bogʻliq emas!",
+        "ru": "Красных фигур было три: квадрат, треугольник и круг. Цвет не зависит от формы!",
+        "en": "There were three red shapes: a square, a triangle and a circle. Color does not depend on shape!"
+      }
+    },
+    {
+      "id": "q3",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta olmani top!",
+        "ru": "Найди самое большое яблоко!",
+        "en": "Find the biggest apple!"
+      },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red", "scale": 0.55 } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green", "scale": 1.15 } },
+        { "id": "a3", "art": { "kind": "apple", "color": "red", "scale": 0.8 } }
+      ],
+      "answer": ["a2"],
+      "hint": {
+        "uz": "«Katta» — eng koʻp joy egallaydigan narsa. Olmalarni bir-biri bilan solishtir!",
+        "ru": "«Большое» — то, что занимает больше всего места. Сравни яблоки друг с другом!",
+        "en": "“Big” means it takes up the most space. Compare the apples with each other!"
+      },
+      "explanation": {
+        "uz": "Narsalarni oʻlchami boʻyicha solishtiramiz. Yashil olma eng keng va eng baland edi — demak, eng kattasi!",
+        "ru": "Мы сравниваем предметы по размеру. Зелёное яблоко было самым широким и высоким — значит, самым большим!",
+        "en": "We compare things by size. The green apple was the widest and tallest — so it was the biggest!"
+      }
+    },
+    {
+      "id": "q4",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Katta narsalarni filga 🐘, kichkinalarini sichqonchaga 🐭 sudrab ber!",
+        "ru": "Большие предметы перетащи слону 🐘, а маленькие — мышке 🐭!",
+        "en": "Drag the big things to the elephant 🐘 and the small ones to the mouse 🐭!"
+      },
+      "items": [
+        { "id": "star-big", "art": { "kind": "star", "color": "yellow", "scale": 1.25 }, "bin": "big" },
+        { "id": "ball-small", "art": { "kind": "ball", "color": "red", "scale": 0.55 }, "bin": "small" },
+        { "id": "star-small", "art": { "kind": "star", "color": "yellow", "scale": 0.55 }, "bin": "small" },
+        { "id": "ball-big", "art": { "kind": "ball", "color": "red", "scale": 1.25 }, "bin": "big" }
+      ],
+      "bins": [
+        { "id": "big", "label": { "uz": "Katta 🐘", "ru": "Большие 🐘", "en": "Big 🐘" }, "color": "blue" },
+        { "id": "small", "label": { "uz": "Kichkina 🐭", "ru": "Маленькие 🐭", "en": "Small 🐭" }, "color": "magenta" }
+      ],
+      "hint": {
+        "uz": "Shaklni barmogʻing bilan ushlab, kerakli qutigacha olib bor. Katta yulduz — filga boradi!",
+        "ru": "Возьми фигуру пальцем и донеси до нужной коробки. Большая звезда идёт к слону!",
+        "en": "Hold a shape with your finger and carry it to the right box. The big star goes to the elephant!"
+      },
+      "explanation": {
+        "uz": "Katta yulduz va katta koptok — filga, kichkinalari — sichqonchaga tushdi. Narsalarni oʻlchami boʻyicha ajratdik!",
+        "ru": "Большая звезда и большой мяч — слону, маленькие — мышке. Мы разделили предметы по размеру!",
+        "en": "The big star and the big ball went to the elephant, the small ones to the mouse. We sorted things by size!"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": {
+        "uz": "Har bir rasmni oʻz shakliga ula!",
+        "ru": "Соедини каждую картинку с её формой!",
+        "en": "Connect each picture to its shape!"
+      },
+      "left": [
+        { "id": "clock", "art": { "kind": "clock", "color": "blue" }, "match": "m-ci" },
+        { "id": "window", "art": { "kind": "window", "color": "orange" }, "match": "m-sq" },
+        { "id": "kite", "art": { "kind": "kite", "color": "magenta" }, "match": "m-rh" },
+        { "id": "roof", "art": { "kind": "roof", "color": "red" }, "match": "m-tr" }
+      ],
+      "right": [
+        { "id": "m-sq", "art": { "kind": "square", "color": "gray" } },
+        { "id": "m-tr", "art": { "kind": "triangle", "color": "gray" } },
+        { "id": "m-ci", "art": { "kind": "circle", "color": "gray" } },
+        { "id": "m-rh", "art": { "kind": "rhombus", "color": "gray" } }
+      ],
+      "hint": {
+        "uz": "Avval rasmni bos, keyin unga oʻxshagan shaklni bos — chiziq oʻzi chiziladi. Masalan: soat → doira.",
+        "ru": "Сначала нажми на картинку, потом на похожую фигуру — линия нарисуется сама. Например: часы → круг.",
+        "en": "First tap a picture, then tap the shape that looks like it — the line draws itself. For example: clock → circle."
+      },
+      "explanation": {
+        "uz": "Soat — doira, deraza — kvadrat, varrak — romb, tom — uchburchak. Har bir narsada shakl yashiringan!",
+        "ru": "Часы — круг, окно — квадрат, воздушный змей — ромб, крыша — треугольник. В каждом предмете прячется фигура!",
+        "en": "The clock is a circle, the window is a square, the kite is a rhombus and the roof is a triangle. A shape hides inside every object!"
+      }
+    },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?",
+        "ru": "Продолжи ряд: какая фигура будет следующей?",
+        "en": "Continue the pattern: which shape comes next?"
+      },
+      "sequence": [
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "orange" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "orange" },
+        { "kind": "circle", "color": "blue" }
+      ],
+      "options": [
+        { "id": "tr", "art": { "kind": "triangle", "color": "orange" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "sq", "art": { "kind": "square", "color": "green" } }
+      ],
+      "answer": ["tr"],
+      "hint": {
+        "uz": "Qatorga qara: doira, uchburchak, doira, uchburchak, doira… Ular navbat bilan keladi!",
+        "ru": "Посмотри на ряд: круг, треугольник, круг, треугольник, круг… Они идут по очереди!",
+        "en": "Look at the row: circle, triangle, circle, triangle, circle… They take turns!"
+      },
+      "explanation": {
+        "uz": "Shakllar navbatlashadi: doiradan keyin doim uchburchak keladi. Shuning uchun javob — uchburchak.",
+        "ru": "Фигуры чередуются: после круга всегда идёт треугольник. Поэтому ответ — треугольник.",
+        "en": "The shapes take turns: after a circle there is always a triangle. So the answer is a triangle."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Koptoklarni oʻz rangidagi savatga sol!",
+        "ru": "Разложи мячики по корзинам своего цвета!",
+        "en": "Sort the balls into the baskets of the same color!"
+      },
+      "items": [
+        { "id": "r1", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue", "scale": 0.8 }, "bin": "blue" },
+        { "id": "y1", "art": { "kind": "ball", "color": "yellow", "scale": 0.8 }, "bin": "yellow" },
+        { "id": "b2", "art": { "kind": "ball", "color": "blue", "scale": 0.8 }, "bin": "blue" },
+        { "id": "r2", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "y2", "art": { "kind": "ball", "color": "yellow", "scale": 0.8 }, "bin": "yellow" }
+      ],
+      "bins": [
+        { "id": "red", "label": { "uz": "Qizil", "ru": "Красная", "en": "Red" }, "color": "red" },
+        { "id": "blue", "label": { "uz": "Koʻk", "ru": "Синяя", "en": "Blue" }, "color": "blue" },
+        { "id": "yellow", "label": { "uz": "Sariq", "ru": "Жёлтая", "en": "Yellow" }, "color": "yellow" }
+      ],
+      "hint": {
+        "uz": "Qizil koptok — qizil savatga, koʻk — koʻkka, sariq — sariqqa. Koptokni ushlab, savat ustiga olib bor!",
+        "ru": "Красный мячик — в красную корзину, синий — в синюю, жёлтый — в жёлтую. Перенеси мячик прямо на корзину!",
+        "en": "Red ball into the red basket, blue into blue, yellow into yellow. Drag each ball right onto its basket!"
+      },
+      "explanation": {
+        "uz": "Koptoklarni rangi boʻyicha guruhladik: har bir koptok oʻz rangidagi savatga tushdi.",
+        "ru": "Мы сгруппировали мячики по цвету: каждый мячик попал в корзину своего цвета.",
+        "en": "We grouped the balls by color: every ball landed in the basket of its own color."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 3, "y": 5 } },
+      "prompt": {
+        "uz": "Tarozini koʻr: 3 va 5 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 3 и 5 — какой знак верный?",
+        "en": "Look at the scale: 3 and 5 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Qaysi son katta boʻlsa, tarozi oʻsha tomonga ogʻadi. Belgining ochiq (keng) tomoni doim katta songa qaraydi!",
+        "ru": "Весы наклоняются туда, где число больше. Открытая (широкая) сторона знака всегда смотрит на большее число!",
+        "en": "The scale tips toward the bigger number. The open (wide) side of the sign always faces the bigger number!"
+      },
+      "explanation": {
+        "uz": "3 soni 5 dan kichik, shuning uchun toʻgʻri belgi — «<». Tarozi katta son tomonga ogʻadi.",
+        "ru": "Число 3 меньше 5, поэтому верный знак — «<». Весы наклоняются в сторону большего числа.",
+        "en": "3 is smaller than 5, so the correct sign is “<”. The scale tips toward the bigger number."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": {
+        "uz": "Baliqlarni kichikdan kattaga tartibla!",
+        "ru": "Расставь рыбок от маленькой к большой!",
+        "en": "Put the fish in order from small to big!"
+      },
+      "items": [
+        { "id": "f-mid", "art": { "kind": "fish", "color": "orange", "scale": 0.85 } },
+        { "id": "f-small", "art": { "kind": "fish", "color": "blue", "scale": 0.55 } },
+        { "id": "f-big", "art": { "kind": "fish", "color": "magenta", "scale": 1.2 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "f-small", "ghost": { "kind": "fish", "color": "gray", "scale": 0.55 }, "label": { "uz": "1", "ru": "1", "en": "1" } },
+        { "id": "s2", "accept": "f-mid", "ghost": { "kind": "fish", "color": "gray", "scale": 0.85 }, "label": { "uz": "2", "ru": "2", "en": "2" } },
+        { "id": "s3", "accept": "f-big", "ghost": { "kind": "fish", "color": "gray", "scale": 1.2 }, "label": { "uz": "3", "ru": "3", "en": "3" } }
+      ],
+      "hint": {
+        "uz": "Avval eng kichkina baliqni 1-katakka qoʻy, keyin oʻrtachasini, oxirida eng kattasini. Kataklar yonib turibdi!",
+        "ru": "Сначала поставь самую маленькую рыбку в клетку 1, потом среднюю, в конце — самую большую. Клетки подсвечиваются!",
+        "en": "First put the smallest fish in box 1, then the middle one, and the biggest one last. The boxes are glowing!"
+      },
+      "explanation": {
+        "uz": "Tartib shunday boʻldi: kichkina → oʻrtacha → katta. Baliqlarni oʻlchami boʻyicha tartibladik!",
+        "ru": "Порядок получился такой: маленькая → средняя → большая. Мы расставили рыбок по размеру!",
+        "en": "The order was: small → medium → big. We arranged the fish by size!"
+      }
+    },
+    {
+      "id": "q10",
+      "type": "build",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Shakllardan uycha yasa!",
+        "ru": "Построй домик из фигур!",
+        "en": "Build a little house from shapes!"
+      },
+      "items": [
+        { "id": "p-tr", "art": { "kind": "triangle", "color": "red" } },
+        { "id": "p-ci", "art": { "kind": "circle", "color": "yellow" } },
+        { "id": "p-sq", "art": { "kind": "square", "color": "orange" } }
+      ],
+      "slots": [
+        { "id": "roof", "accept": "p-tr", "ghost": { "kind": "triangle", "color": "gray" } },
+        { "id": "wall", "accept": "p-sq", "ghost": { "kind": "square", "color": "gray" } },
+        { "id": "sun", "accept": "p-ci", "ghost": { "kind": "circle", "color": "gray" } }
+      ],
+      "hint": {
+        "uz": "Kvadrat — devor, uchburchak — tom, doira — quyosh boʻladi. Har bir shaklni nuqtali joyiga sudra!",
+        "ru": "Квадрат — это стена, треугольник — крыша, круг — солнышко. Перетащи каждую фигуру на её пунктирное место!",
+        "en": "The square is the wall, the triangle is the roof and the circle is the sun. Drag each shape onto its dotted spot!"
+      },
+      "explanation": {
+        "uz": "Kvadrat devor, uchburchak tom, doira esa quyosh boʻldi. Shakllardan butun rasm yasash mumkin ekan!",
+        "ru": "Квадрат стал стеной, треугольник — крышей, а круг — солнышком. Из фигур можно собрать целую картинку!",
+        "en": "The square became the wall, the triangle the roof and the circle the sun. You can build a whole picture from shapes!"
+      }
+    }
+  ],
+  "practice": {
+    "type": "race_to_answer",
+    "props": { "steps": 4, "maxSum": 5 },
+    "title": {
+      "uz": "Mashq maydonchasi: sanash poygasi",
+      "ru": "Площадка для практики: гонка со счётом",
+      "en": "Practice corner: counting race"
+    }
+  }
+}

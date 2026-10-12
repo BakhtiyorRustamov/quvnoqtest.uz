@@ -1,0 +1,568 @@
+{
+  "topicId": "g1-informatika-04",
+  "subjectKey": "g1-informatika",
+  "emojis": "👂🔔🦁🥁",
+  "title": {
+    "uz": "Biz nimalarni eshitamiz?",
+    "ru": "Что мы слышим?",
+    "en": "What do we hear?"
+  },
+  "recall": {
+    "uz": "Quloq — eshitish aʼzosi. Quloq bilan tabiat, jonzot va mashinalarning tovushlarini eshitamiz. Tovush past yoki baland boʻladi.",
+    "ru": "Ухо — орган слуха. Ушами мы слышим звуки природы, животных и машин. Звук бывает тихим или громким.",
+    "en": "The ear is the organ of hearing. With our ears we hear nature, animals and machines. Sound can be quiet or loud."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi aʼzo bilan eshitamiz?",
+        "ru": "Каким органом мы слышим?",
+        "en": "Which organ do we hear with?"
+      },
+      "hint": {
+        "uz": "Bosh yonida joylashgan.",
+        "ru": "По бокам головы.",
+        "en": "On the sides of the head."
+      },
+      "explanation": {
+        "uz": "Biz quloq bilan eshitamiz.",
+        "ru": "Мы слышим ушами.",
+        "en": "We hear with our ears."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "👃",
+              "label": {
+                "uz": "burun",
+                "ru": "нос",
+                "en": "nose"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tovush chiqaradigan narsalarni belgila!",
+        "ru": "Отметь, что издаёт звук!",
+        "en": "Tap the things that make a sound!"
+      },
+      "hint": {
+        "uz": "Qaysilari jaranglaydi?",
+        "ru": "Что звучит?",
+        "en": "Which ones make sound?"
+      },
+      "explanation": {
+        "uz": "Ular tovush chiqaradi.",
+        "ru": "Они издают звук.",
+        "en": "They make sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🔔",
+              "label": {
+                "uz": "qoʻngʻiroq",
+                "ru": "звонок",
+                "en": "bell"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐕",
+              "label": {
+                "uz": "it",
+                "ru": "собака",
+                "en": "dog"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🎵",
+              "label": {
+                "uz": "musiqa",
+                "ru": "музыка",
+                "en": "music"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🌹",
+              "label": {
+                "uz": "gul",
+                "ru": "цветок",
+                "en": "flower"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "📖",
+              "label": {
+                "uz": "kitob",
+                "ru": "книга",
+                "en": "book"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi aʼzo bilan eshitamiz?",
+        "ru": "Каким органом слышим?",
+        "en": "Which organ do we hear with?"
+      },
+      "hint": {
+        "uz": "Tovushni u sezadi.",
+        "ru": "Он ловит звук.",
+        "en": "It catches sound."
+      },
+      "explanation": {
+        "uz": "Quloq bilan eshitamiz.",
+        "ru": "Слышим ушами.",
+        "en": "We hear with our ears."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "quloq",
+              "ru": "уши",
+              "en": "ears"
+            },
+            {
+              "uz": "koʻz",
+              "ru": "глаза",
+              "en": "eyes"
+            },
+            {
+              "uz": "til",
+              "ru": "язык",
+              "en": "tongue"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Eng baland ovoz chiqaradigani qaysi?",
+        "ru": "Кто громче всех?",
+        "en": "Which is the loudest?"
+      },
+      "hint": {
+        "uz": "Kuchli ovozlisini top.",
+        "ru": "Найди самого громкого.",
+        "en": "Find the loudest one."
+      },
+      "explanation": {
+        "uz": "Sher eng baland boʻkiradi.",
+        "ru": "Лев рычит громче всех.",
+        "en": "The lion roars loudest."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🦁",
+              "label": {
+                "uz": "sher",
+                "ru": "лев",
+                "en": "lion"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🐜",
+              "label": {
+                "uz": "chumoli",
+                "ru": "муравей",
+                "en": "ant"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🐁",
+              "label": {
+                "uz": "sichqon",
+                "ru": "мышь",
+                "en": "mouse"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Quloq bilan tovushni eshitamiz.",
+        "ru": "Ушами мы слышим звук.",
+        "en": "We hear sound with our ears."
+      },
+      "hint": {
+        "uz": "Quloqni yumib koʻr.",
+        "ru": "Закрой уши и проверь.",
+        "en": "Cover your ears and check."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Quloq — eshitish aʼzosi.",
+        "ru": "Верно! Ухо — орган слуха.",
+        "en": "True! The ear is for hearing."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👂",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (eshitishga aloqasi yoʻq)",
+        "ru": "Нажми лишнее! (не про слух)",
+        "en": "Tap the odd one! (not about hearing)"
+      },
+      "hint": {
+        "uz": "Qaysi biri koʻrish uchun?",
+        "ru": "Что для зрения?",
+        "en": "Which is for seeing?"
+      },
+      "explanation": {
+        "uz": "Koʻzoynak koʻrish uchun, qolganlari tovush.",
+        "ru": "Очки для зрения, остальное — звук.",
+        "en": "Glasses are for seeing; the rest make sound."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "tovush bilan bogʻliq",
+            "ru": "связаны со звуком",
+            "en": "about sound"
+          },
+          "tiles": [
+            {
+              "text": "qoʻngʻiroq"
+            },
+            {
+              "text": "telefon"
+            },
+            {
+              "text": "radio"
+            },
+            {
+              "text": "koʻzoynak",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tovushni balandligi boʻyicha ajrat!",
+        "ru": "Раздели звуки: громкие и тихие!",
+        "en": "Sort the sounds: loud and quiet!"
+      },
+      "hint": {
+        "uz": "Avval rasmni, keyin qutini bos.",
+        "ru": "Сначала картинку, потом ящик.",
+        "en": "Tap a picture, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Baland va pastga ajratding.",
+        "ru": "Молодец! Громко и тихо.",
+        "en": "Great! Loud and quiet sorted."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "b",
+              "label": {
+                "uz": "Baland",
+                "ru": "Громко",
+                "en": "Loud"
+              }
+            },
+            {
+              "id": "p",
+              "label": {
+                "uz": "Past",
+                "ru": "Тихо",
+                "en": "Quiet"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🦁",
+              "label": {
+                "uz": "sher",
+                "ru": "лев",
+                "en": "lion"
+              },
+              "bin": "b"
+            },
+            {
+              "emoji": "🥁",
+              "label": {
+                "uz": "nogʻora",
+                "ru": "барабан",
+                "en": "drum"
+              },
+              "bin": "b"
+            },
+            {
+              "emoji": "🐁",
+              "label": {
+                "uz": "sichqon",
+                "ru": "мышь",
+                "en": "mouse"
+              },
+              "bin": "p"
+            },
+            {
+              "emoji": "🐝",
+              "label": {
+                "uz": "asalari",
+                "ru": "пчела",
+                "en": "bee"
+              },
+              "bin": "p"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Ular ikkita, tovushni eshitar.",
+        "ru": "Их два, они слышат звук.",
+        "en": "Two of them, they hear sound."
+      },
+      "explanation": {
+        "uz": "Javob — quloq!",
+        "ru": "Ответ — уши!",
+        "en": "The answer is ears!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Ikkitadir yonma-yon,",
+              "ru": "Два по бокам,",
+              "en": "Two, side by side,"
+            },
+            {
+              "uz": "Tovushni eshitar hamon.",
+              "ru": "всегда слышат звук.",
+              "en": "always hearing sound."
+            }
+          ],
+          "options": [
+            {
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              }
+            },
+            {
+              "emoji": "👃",
+              "label": {
+                "uz": "burun",
+                "ru": "нос",
+                "en": "nose"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tovush manbasini nomi bilan juftla!",
+        "ru": "Соедини источник звука с названием!",
+        "en": "Match the sound source to its name!"
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Смотри на картинку.",
+        "en": "Look at the picture."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🔔"
+              },
+              "b": {
+                "label": {
+                  "uz": "qoʻngʻiroq",
+                  "ru": "звонок",
+                  "en": "bell"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🥁"
+              },
+              "b": {
+                "label": {
+                  "uz": "nogʻora",
+                  "ru": "барабан",
+                  "en": "drum"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "📞"
+              },
+              "b": {
+                "label": {
+                  "uz": "telefon",
+                  "ru": "телефон",
+                  "en": "phone"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Maqol: «Yuz marta eshitgandan, bir marta koʻrgan yaxshi». Nima yaxshiroq?",
+        "ru": "Пословица: лучше один раз увидеть. Что лучше?",
+        "en": "Proverb: seeing once is better. Which is better?"
+      },
+      "hint": {
+        "uz": "Koʻrishmi, eshitishmi?",
+        "ru": "Видеть или слышать?",
+        "en": "Seeing or hearing?"
+      },
+      "explanation": {
+        "uz": "Bir marta koʻrgan — ishonchliroq.",
+        "ru": "Один раз увидеть — надёжнее.",
+        "en": "Seeing once is more reliable."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "bir marta koʻrgan",
+              "ru": "один раз увидеть",
+              "en": "seeing once"
+            },
+            {
+              "uz": "yuz marta eshitgan",
+              "ru": "сто раз услышать",
+              "en": "hearing a hundred times"
+            },
+            {
+              "uz": "hech narsa",
+              "ru": "ничего",
+              "en": "nothing"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

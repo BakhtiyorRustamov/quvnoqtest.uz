@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-23", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Nastarin guli novdasi", "ru": "Ветка сирени", "en": "A lilac branch" },
+  "recall": {
+    "uz": "Nastarin — bahorda ochiladigan xushboʻy gul. U novdada mayda gullar boʻlib oʻsadi. Keling, nastarin novdasini chizamiz.",
+    "ru": "Сирень — душистый весенний цветок. Она растёт на ветке мелкими цветочками. Давай нарисуем ветку сирени.",
+    "en": "Lilac is a fragrant spring flower. It grows on a branch in tiny blossoms. Let's draw a lilac branch."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Nastarin novdasini chiz.", "ru": "Нарисуй ветку сирени.", "en": "Draw a lilac branch." },
+      "hint": { "uz": "Novdaga koʻp mayda binafsha gul chiz.", "ru": "Нарисуй на ветке много мелких сиреневых цветочков.", "en": "Draw many tiny purple flowers on the branch." },
+      "explanation": { "uz": "Xushboʻy nastarin!", "ru": "Душистая сирень!", "en": "Fragrant lilac!" },
+      "widget": { "type": "free_draw", "props": { "example": "flower" } } }
+  ]
+}

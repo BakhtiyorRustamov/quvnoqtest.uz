@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-07",
+  "subjectKey": "g1-ona",
+  "emojis": "🧠🏆📚",
+  "title": {
+    "uz": "Bilimlar bellashuvi (takrorlash)",
+    "ru": "Состязание знаний (повторение)",
+    "en": "Knowledge contest (review)"
+  },
+  "recall": {
+    "uz": "Bugun oʻrganganlarimizni takrorlaymiz: nutq (ogʻzaki va yozma), soʻz va matn, unli va undosh tovushlar. Unli tovushlar: a, o, i, e, u, oʻ. Bilimingni sinab koʻr!",
+    "ru": "Сегодня повторяем изученное: речь (устная и письменная), слово и текст, гласные и согласные. Гласные: a, o, i, e, u, oʻ. Проверь свои знания!",
+    "en": "Today we review what we learned: speech (oral and written), word and text, vowels and consonants. Vowels: a, o, i, e, u, oʻ. Test your knowledge!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Gapirish", "bin": "og" }, { "id": "b", "label": "Tinglash", "bin": "og" }, { "id": "c", "label": "Suhbat", "bin": "og" }, { "id": "d", "label": "Oʻqish", "bin": "yoz" }, { "id": "e", "label": "Yozish", "bin": "yoz" }, { "id": "f", "label": "Xat", "bin": "yoz" } ], "bins": [ { "id": "og", "label": "Ogʻzaki nutq" }, { "id": "yoz", "label": "Yozma nutq" } ] } },
+      "prompt": { "uz": "Nutq turlariga ajrat!", "ru": "Раздели по видам речи!", "en": "Sort by type of speech!" },
+      "hint": { "uz": "Gapirish, tinglash — ogʻzaki.", "ru": "Говорение, слушание — устная.", "en": "Speaking, listening — oral." },
+      "explanation": { "uz": "Ogʻzaki nutqni eshitamiz, yozma nutqni oʻqiymiz.", "ru": "Устную речь слышим, письменную читаем.", "en": "We hear oral speech and read written speech." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "a", "bin": "unli" }, { "id": "b", "label": "o", "bin": "unli" }, { "id": "c", "label": "i", "bin": "unli" }, { "id": "d", "label": "b", "bin": "und" }, { "id": "e", "label": "t", "bin": "und" }, { "id": "f", "label": "k", "bin": "und" } ], "bins": [ { "id": "unli", "label": "Unli" }, { "id": "und", "label": "Undosh" } ] } },
+      "prompt": { "uz": "Tovushlarni ajrat!", "ru": "Раздели звуки!", "en": "Sort the sounds!" },
+      "hint": { "uz": "a, o, i — unli tovushlar.", "ru": "a, o, i — гласные.", "en": "a, o, i are vowels." },
+      "explanation": { "uz": "Unli tovushlar: a, o, i, e, u, oʻ. Qolganlari undosh.", "ru": "Гласные: a, o, i, e, u, oʻ. Остальные — согласные.", "en": "Vowels: a, o, i, e, u, oʻ. The rest are consonants." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "matn", "emoji": "📄", "clue": { "uz": "Bogʻlangan gaplardan tuzilgan", "ru": "Составлен из связанных предложений", "en": "Made of connected sentences" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: m, a, t, n.", "ru": "Буквы: m, a, t, n.", "en": "Letters: m, a, t, n." },
+      "explanation": { "uz": "«Matn» — bogʻlangan gaplar yigʻindisi.", "ru": "«Matn» (текст) — набор связанных предложений.", "en": "“Matn” (text) is a set of connected sentences." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "nutq", "emoji": "🗣️", "clue": { "uz": "Soʻzlash, tinglash, oʻqish, yozish", "ru": "Говорение, слушание, чтение, письмо", "en": "Speaking, listening, reading, writing" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: n, u, t, q.", "ru": "Буквы: n, u, t, q.", "en": "Letters: n, u, t, q." },
+      "explanation": { "uz": "«Nutq» — soʻzlash, tinglash, oʻqish va yozish.", "ru": "«Nutq» (речь) — говорение, слушание, чтение и письмо.", "en": "“Nutq” (speech) — speaking, listening, reading, writing." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "olma", "right": "o" }, { "left": "anor", "right": "a" }, { "left": "uzum", "right": "u" }, { "left": "ikki", "right": "i" } ] } },
+      "prompt": { "uz": "Soʻzni birinchi tovushiga ula!", "ru": "Соедини слово с его первым звуком!", "en": "Match each word to its first sound!" },
+      "hint": { "uz": "«olma» — «o» bilan boshlanadi.", "ru": "«olma» начинается с «o».", "en": "“olma” starts with “o”." },
+      "explanation": { "uz": "Bu soʻzlar unli tovush bilan boshlanadi.", "ru": "Эти слова начинаются с гласного.", "en": "These words start with a vowel." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Matn", "gaplardan", "tuziladi."], "emoji": "📚", "clue": { "uz": "Matn nimadan tuziladi?", "ru": "Из чего состоит текст?", "en": "What is a text made of?" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima? — «Matn». Nimadan? — «gaplardan».", "ru": "Что? — «Matn». Из чего? — «gaplardan».", "en": "What? — “Matn”. From what? — “gaplardan”." },
+      "explanation": { "uz": "Matn bogʻlangan gaplardan tuziladi.", "ru": "Текст состоит из связанных предложений.", "en": "A text is made of connected sentences." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "nli", "choices": ["u", "a", "i"], "answer": "u", "emoji": "🔊", "clue": { "uz": "a, o, i, e, u, oʻ — bular … tovushlar", "ru": "a, o, i, e, u, oʻ — это … звуки", "en": "a, o, i, e, u, oʻ are … sounds" } } },
+      "prompt": { "uz": "Birinchi harfni qoʻy!", "ru": "Вставь первую букву!", "en": "Add the first letter!" },
+      "hint": { "uz": "… n l i — «unli».", "ru": "… n l i — «unli» (гласный).", "en": "… n l i — “unli” (vowel)." },
+      "explanation": { "uz": "«unli» — a, o, i, e, u, oʻ tovushlari.", "ru": "«unli» — звуки a, o, i, e, u, oʻ.", "en": "“unli” (vowel) — the sounds a, o, i, e, u, oʻ." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["a, o, i, e, u, oʻ", "b, d, k, l, m, n", "a, b, s, t, q, r"], "answerIndex": 0 } },
+      "prompt": { "uz": "Unli tovushlar qaysi qatorda?", "ru": "В каком ряду только гласные?", "en": "Which row has only vowels?" },
+      "hint": { "uz": "Unlilar 6 ta.", "ru": "Гласных шесть.", "en": "There are six vowels." },
+      "explanation": { "uz": "Oʻzbek tilida 6 ta unli: a, o, i, e, u, oʻ.", "ru": "В узбекском 6 гласных: a, o, i, e, u, oʻ.", "en": "Uzbek has 6 vowels: a, o, i, e, u, oʻ." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "soʻz", "ru": "слово", "en": "a word" }, { "uz": "ertak", "ru": "сказка", "en": "a fairy tale" }, { "uz": "hikoya", "ru": "рассказ", "en": "a story" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi biri matn hisoblanmaydi?", "ru": "Что из этого не является текстом?", "en": "Which of these is NOT a text?" },
+      "hint": { "uz": "Matn bir nechta gapdan tuziladi.", "ru": "Текст состоит из нескольких предложений.", "en": "A text is made of several sentences." },
+      "explanation": { "uz": "Bitta soʻz matn emas. Ertak va hikoya — matn.", "ru": "Одно слово — не текст. Сказка и рассказ — текст.", "en": "A single word is not a text. A tale and a story are texts." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "ma", "after": "n", "choices": ["t", "d", "k"], "answer": "t", "emoji": "📄", "clue": { "uz": "Bogʻlangan gaplar", "ru": "Связанные предложения", "en": "Connected sentences" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "ma … n — «matn».", "ru": "ma … n — «matn» (текст).", "en": "ma … n — “matn” (text)." },
+      "explanation": { "uz": "m + a + t + n = «matn».", "ru": "m + a + t + n = «matn».", "en": "m + a + t + n = “matn”." }
+    }
+  ]
+}

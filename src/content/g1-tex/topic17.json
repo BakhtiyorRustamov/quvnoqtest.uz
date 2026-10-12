@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-17",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Akvarium",
+    "ru": "Аквариум",
+    "en": "An aquarium"
+  },
+  "recall": {
+    "uz": "Bugun kartondan baliqli akvarium yasaymiz.",
+    "ru": "Сегодня из картона сделаем аквариум с рыбками.",
+    "en": "Today we make an aquarium with fish from cardboard."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Akvarium yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай аквариум. Выполняй каждый этап по рисунку!",
+        "en": "Make an aquarium. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Ichiga baliqcha yopishtir.",
+        "ru": "Приклей внутрь рыбку.",
+        "en": "Glue a fish inside."
+      },
+      "explanation": {
+        "uz": "Jonli akvarium!",
+        "ru": "Живой аквариум!",
+        "en": "A lively aquarium!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "karton",
+              "ru": "картон",
+              "en": "cardboard"
+            },
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Kartondan idish yasab, koʻk qogʻoz — suv yopishtir.",
+              "ru": "Сделай из картона ёмкость и приклей синюю бумагу-воду.",
+              "en": "Make a tank from card and glue blue paper as water."
+            },
+            {
+              "uz": "Ichiga baliqcha yopishtir.",
+              "ru": "Приклей внутрь рыбку.",
+              "en": "Glue a fish inside."
+            },
+            {
+              "uz": "Oʻsimlik, toshlar va pufaklarni qoʻsh.",
+              "ru": "Добавь растения, камешки и пузырьки.",
+              "en": "Add plants, pebbles and bubbles."
+            }
+          ],
+          "art": "aquarium",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

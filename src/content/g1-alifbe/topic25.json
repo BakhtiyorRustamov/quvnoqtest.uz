@@ -1,0 +1,99 @@
+{
+  "topicId": "g1-alifbe-25",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🍌☁️👦",
+  "title": { "uz": "«B b» harfi", "ru": "Буква «B b»", "en": "The letter “B b”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «B b». U undosh tovush. Uni aytganda jipslashgan lablar havo chiqishi bilan birdaniga ochiladi. «B» bilan: banan, bulut, bola. Endi «banan» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «B b». Это согласный звук. Сомкнутые губы резко раскрываются с выдохом. Слова: banan, bulut, bola. Теперь мы можем прочитать слово «banan»!",
+    "en": "Today's letter is “B b”. It is a consonant. The closed lips burst open with the air. Words: banan, bulut, bola. Now we can read and build the word “banan”!"
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«B» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «B»!", "en": "Find the word that starts with “B”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: b-b-banan.", "ru": "Протяни начало: б-б-banan.", "en": "Stretch the start: b-b-banan." },
+      "explanation": { "uz": "«banan» «B» tovushi bilan boshlanadi.", "ru": "«banan» начинается со звука «B».", "en": "“banan” (banana) starts with the sound “B”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "banana", "emoji": "🍌", "label": { "uz": "banan", "ru": "banan", "en": "banan" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«B» harfini topib, hammasini bos!", "ru": "Найди букву «B» и нажми на все!", "en": "Find the letter “B” and tap them all!" },
+      "hint": { "uz": "Katta «B» ham, kichik «b» ham.", "ru": "Считаются «B» и «b».", "en": "Both “B” and “b” count." },
+      "explanation": { "uz": "«B» harfini topding!", "ru": "Ты нашёл букву «B»!", "en": "You found the letter “B”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "B", "cols": 3, "grid": ["B", "o", "b", "K", "B", "a", "b", "u", "B"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "☁️ «bulut»da «b» tovushi qaysi katakchada?", "ru": "☁️ В какой клетке звук «b» в слове «bulut»?", "en": "☁️ Which box has the “b” sound in “bulut”?" },
+      "hint": { "uz": "«bulut» «b» bilan boshlanadi.", "ru": "«bulut» начинается с «b».", "en": "“bulut” starts with “b”." },
+      "explanation": { "uz": "«bulut»da «b» — birinchi katakda.", "ru": "В «bulut» звук «b» — первая клетка.", "en": "In “bulut” the “b” is in the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "☁️", "word": { "uz": "bulut", "ru": "bulut", "en": "bulut" }, "sound": "b", "cells": ["b", "u", "l", "u", "t"], "answer": 0 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🍌 «banan» soʻzining tovush chizmasini rangla!", "ru": "🍌 Раскрась схему звуков слова «banan»!", "en": "🍌 Colour the sound scheme of “banan”!" },
+      "hint": { "uz": "b — undosh, a — unli, n — undosh, a — unli, n — undosh.", "ru": "b — согласный, a — гласный, n — согласный, a — гласный, n — согласный.", "en": "b, a, n, a, n." },
+      "explanation": { "uz": "«banan»: b, a, n, a, n — undosh, unli, undosh, unli, undosh.", "ru": "«banan»: согл., глас., согл., глас., согл.", "en": "“banan”: consonant, vowel, consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🍌", "word": { "uz": "banan", "ru": "banan", "en": "banan" }, "scheme": ["c", "v", "c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«B» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «B»!", "en": "Tap the words that have the “B” sound!" },
+      "hint": { "uz": "banan, bulut, bola — «b» tovushi bor.", "ru": "banan, bulut, bola — есть звук «b».", "en": "banan, bulut, bola have the “b” sound." },
+      "explanation": { "uz": "banan, bulut, bola — «b» bor. ot, olmada yoʻq.", "ru": "banan, bulut, bola — есть «b». В ot, olma нет.", "en": "banan, bulut, bola have “b”. ot, olma do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "banana", "emoji": "🍌", "label": { "uz": "banan", "ru": "banan", "en": "banan" }, "correct": true },
+        { "id": "cloud", "emoji": "☁️", "label": { "uz": "bulut", "ru": "bulut", "en": "bulut" }, "correct": true },
+        { "id": "boy", "emoji": "👦", "label": { "uz": "bola", "ru": "bola", "en": "bola" }, "correct": true },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «banan» soʻzini tuz!", "ru": "Составь слово «banan» из букв!", "en": "Build the word “banan” from letters!" },
+      "hint": { "uz": "b — a — n — a — n tartibida bos.", "ru": "Нажимай по порядку: b — a — n — a — n.", "en": "Tap in order: b — a — n — a — n." },
+      "explanation": { "uz": "b + a + n + a + n = «banan».", "ru": "b + a + n + a + n = «banan».", "en": "b + a + n + a + n = “banan” (banana)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🍌", "word": "banan", "label": { "uz": "banan", "ru": "банан", "en": "banana" } } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«B» — undosh tovush.", "ru": "«B» — согласный звук.", "en": "“B” is a consonant sound." },
+      "hint": { "uz": "«B»da lablar birdaniga ochiladi.", "ru": "При «B» губы резко раскрываются.", "en": "For “B” the lips burst open." },
+      "explanation": { "uz": "Toʻgʻri! «B» — undosh tovush.", "ru": "Верно! «B» — согласный.", "en": "True! “B” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🍌 «banan» soʻzini boʻgʻinlab qarsak chal!", "ru": "🍌 Похлопай слово «banan» по слогам!", "en": "🍌 Clap the word “banan” by syllables!" },
+      "hint": { "uz": "ba-nan — ikki marta qarsak.", "ru": "ba-nan — два хлопка.", "en": "ba-nan — two claps." },
+      "explanation": { "uz": "«banan» = ba-nan, ikki boʻgʻin.", "ru": "«banan» = ba-nan, два слога.", "en": "“banan” = ba-nan, two syllables." },
+      "widget": { "type": "syllable_clap", "props": { "emoji": "🍌", "word": { "uz": "banan", "ru": "banan", "en": "banan" }, "syllables": 2 } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Bir xil ikkita rasmni topib, ikkalasini bos!", "ru": "Найди две одинаковые картинки и нажми обе!", "en": "Find the two identical pictures and tap them both!" },
+      "hint": { "uz": "Banan ikkita.", "ru": "Банан встречается дважды.", "en": "The banana appears twice." },
+      "explanation": { "uz": "Ikkita 🍌 bir xil — bu banan.", "ru": "Два 🍌 одинаковы — это banan.", "en": "The two 🍌 are the same — “banan”." },
+      "widget": { "type": "find_pair", "props": { "tiles": [
+        { "id": "b1", "emoji": "🍌", "key": "banan" },
+        { "id": "cloud", "emoji": "☁️", "key": "bulut" },
+        { "id": "b2", "emoji": "🍌", "key": "banan" },
+        { "id": "boy", "emoji": "👦", "key": "bola" },
+        { "id": "apple", "emoji": "🍎", "key": "olma" }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«B» tovushini aytganda nima birdaniga ochiladi?", "ru": "Что резко раскрывается при звуке «B»?", "en": "What bursts open when saying “B”?" },
+      "hint": { "uz": "«B-b-b» deb ayt.", "ru": "Скажи «б-б-б».", "en": "Say “b-b-b”." },
+      "explanation": { "uz": "«B»da lablar birdaniga ochiladi.", "ru": "При «B» губы резко раскрываются.", "en": "For “B” the lips burst open." },
+      "widget": { "type": "mcq", "props": { "choices": [{ "uz": "lablar", "ru": "губы", "en": "the lips" }, { "uz": "koʻzlar", "ru": "глаза", "en": "the eyes" }, { "uz": "quloqlar", "ru": "уши", "en": "the ears" }], "answerIndex": 0 } }
+    }
+  ]
+}

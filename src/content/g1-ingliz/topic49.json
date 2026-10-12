@@ -1,0 +1,553 @@
+{
+  "topicId": "g1-ingliz-49",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🦁🐘🐵🐍",
+  "title": {
+    "uz": "Yovvoyi hayvonlar",
+    "ru": "Дикие животные",
+    "en": "Animals"
+  },
+  "recall": {
+    "uz": "8-boʻlim: Hayvonlar! Bugun yovvoyi hayvon nomlarini inglizcha oʻrganamiz: lion — sher, monkey — maymun, elephant — fil, snake — ilon.",
+    "ru": "Раздел 8: Животные! Сегодня учим диких животных по-английски: lion — лев, monkey — обезьяна, elephant — слон, snake — змея.",
+    "en": "Unit 8: Animals! Today we learn wild animals in English: a lion, a monkey, an elephant and a snake."
+  },
+  "ttsText": {
+    "uz": "Yovvoyi hayvonlar.",
+    "en": "Unit 8: Animals! A lion, a monkey, an elephant and a snake."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu qanday hayvon?",
+        "ru": "Послушай. Какое это животное?",
+        "en": "Listen. What animal is it?"
+      },
+      "hint": {
+        "uz": "«It's a lion» — bu sher.",
+        "ru": "«It's a lion» — это лев.",
+        "en": "\"It's a lion.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a lion — sher.",
+        "ru": "Верно! It's a lion — лев.",
+        "en": "Right! It's a lion."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What's this?",
+              "audio": {
+                "key": "ing49-q1-a",
+                "text": "What's this?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's a lion!",
+              "audio": {
+                "key": "ing49-q1-b",
+                "text": "It's a lion!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu qanday hayvon?",
+              "ru": "Какое это животное?",
+              "en": "What animal is it?"
+            },
+            "choices": [
+              "a lion",
+              "a monkey",
+              "a snake"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va sherni bos!",
+        "ru": "Послушай и нажми льва!",
+        "en": "Listen and tap the lion!"
+      },
+      "audio": {
+        "key": "ing49-q2",
+        "text": "Lion! Tap the lion.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«lion» — sher (hayvonlar shohi).",
+        "ru": "«lion» — лев (царь зверей).",
+        "en": "A \"lion\" is the king of animals."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Lion — sher.",
+        "ru": "Верно! Lion — лев.",
+        "en": "Right! Lion!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🦁",
+              "label": "lion",
+              "correct": true
+            },
+            {
+              "emoji": "🐵",
+              "label": "monkey"
+            },
+            {
+              "emoji": "🐘",
+              "label": "elephant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va maymunni bos!",
+        "ru": "Послушай и нажми обезьяну!",
+        "en": "Listen and tap the monkey!"
+      },
+      "audio": {
+        "key": "ing49-q3",
+        "text": "Monkey! Tap the monkey.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«monkey» — maymun (daraxtga chiqadi).",
+        "ru": "«monkey» — обезьяна (лазает).",
+        "en": "A \"monkey\" climbs trees."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Monkey — maymun.",
+        "ru": "Верно! Monkey — обезьяна.",
+        "en": "Right! Monkey!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐵",
+              "label": "monkey",
+              "correct": true
+            },
+            {
+              "emoji": "🐍",
+              "label": "snake"
+            },
+            {
+              "emoji": "🐦",
+              "label": "bird"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va ilonni bos!",
+        "ru": "Послушай и нажми змею!",
+        "en": "Listen and tap the snake!"
+      },
+      "audio": {
+        "key": "ing49-q4",
+        "text": "Snake! Tap the snake.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«snake» — ilon (oyoqsiz).",
+        "ru": "«snake» — змея (без ног).",
+        "en": "A \"snake\" has no legs."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Snake — ilon.",
+        "ru": "Верно! Snake — змея.",
+        "en": "Right! Snake!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐍",
+              "label": "snake",
+              "correct": true
+            },
+            {
+              "emoji": "🕷️",
+              "label": "spider"
+            },
+            {
+              "emoji": "🐊",
+              "label": "crocodile"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Katta va kulrang, uzun burni bor.",
+        "ru": "Большой, серый, с длинным носом.",
+        "en": "Big and gray, with a long nose."
+      },
+      "explanation": {
+        "uz": "Javob — elephant (fil)!",
+        "ru": "Ответ — elephant (слон)!",
+        "en": "The answer is an elephant!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Men katta va kulrangman,",
+              "ru": "Я большой и серый,",
+              "en": "I am big and gray,"
+            },
+            {
+              "uz": "uzun burnim bor. Men kimman?",
+              "ru": "с длинным носом. Кто я?",
+              "en": "with a long nose. What am I?"
+            }
+          ],
+          "options": [
+            {
+              "emoji": "🐘",
+              "label": {
+                "uz": "fil",
+                "ru": "слон",
+                "en": "elephant"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🐭",
+              "label": {
+                "uz": "sichqon",
+                "ru": "мышь",
+                "en": "mouse"
+              }
+            },
+            {
+              "emoji": "🐦",
+              "label": {
+                "uz": "qush",
+                "ru": "птица",
+                "en": "bird"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni hayvonga ula!",
+        "ru": "Соедини слово с животным!",
+        "en": "Match each word to its animal!"
+      },
+      "hint": {
+        "uz": "lion 🦁, monkey 🐵, snake 🐍, bird 🐦.",
+        "ru": "lion 🦁, monkey 🐵, snake 🐍, bird 🐦.",
+        "en": "lion 🦁, monkey 🐵, snake 🐍, bird 🐦."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Hayvonlarni bilding!",
+        "ru": "Отлично! Ты знаешь животных!",
+        "en": "Awesome! You know the animals!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "lion"
+              },
+              "right": {
+                "emoji": "🦁"
+              }
+            },
+            {
+              "left": {
+                "label": "monkey"
+              },
+              "right": {
+                "emoji": "🐵"
+              }
+            },
+            {
+              "left": {
+                "label": "snake"
+              },
+              "right": {
+                "emoji": "🐍"
+              }
+            },
+            {
+              "left": {
+                "label": "bird"
+              },
+              "right": {
+                "emoji": "🐦"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, soʻz va hayvon juftini top!",
+        "ru": "Открывай карточки: слово и животное!",
+        "en": "Flip the cards: match each word to its animal!"
+      },
+      "hint": {
+        "uz": "elephant 🐘, spider 🕷️, crocodile 🐊.",
+        "ru": "elephant 🐘, spider 🕷️, crocodile 🐊.",
+        "en": "elephant 🐘, spider 🕷️, crocodile 🐊."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐘"
+              },
+              "b": {
+                "label": "elephant"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🕷️"
+              },
+              "b": {
+                "label": "spider"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐊"
+              },
+              "b": {
+                "label": "crocodile"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Hayvonlar shohi, «rrr» deb boʻkiradi.",
+        "ru": "Царь зверей, рычит «ррр».",
+        "en": "The king of animals, it roars."
+      },
+      "explanation": {
+        "uz": "Javob — lion (sher)!",
+        "ru": "Ответ — lion (лев)!",
+        "en": "The answer is a lion!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Men hayvonlar shohiman,",
+              "ru": "Я царь зверей,",
+              "en": "I am the king of animals,"
+            },
+            {
+              "uz": "«rrr» deb boʻkiraman. Men kimman?",
+              "ru": "я рычу «ррр». Кто я?",
+              "en": "I roar. What am I?"
+            }
+          ],
+          "options": [
+            {
+              "emoji": "🦁",
+              "label": {
+                "uz": "sher",
+                "ru": "лев",
+                "en": "lion"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🐵",
+              "label": {
+                "uz": "maymun",
+                "ru": "обезьяна",
+                "en": "monkey"
+              }
+            },
+            {
+              "emoji": "🐍",
+              "label": {
+                "uz": "ilon",
+                "ru": "змея",
+                "en": "snake"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hayvonlarni belgila!",
+        "ru": "Отметь животных!",
+        "en": "Tap the animals!"
+      },
+      "hint": {
+        "uz": "Sher, maymun, fil.",
+        "ru": "Лев, обезьяна, слон.",
+        "en": "Lion, monkey, elephant."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular hayvon, olma va mashina esa yoʻq!",
+        "ru": "Молодец! Это животные, а яблоко и машина — нет!",
+        "en": "Great! Those are animals; an apple and a car are not!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🦁",
+              "label": "lion",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐵",
+              "label": "monkey",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐘",
+              "label": "elephant",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "id": "d1",
+              "emoji": "🚗",
+              "label": "car"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "U daraxtda sakraydi va banan yeydi. Bu qaysi hayvon?",
+        "ru": "Он прыгает по деревьям и ест бананы. Какое это животное?",
+        "en": "It swings in trees and eats bananas. What animal is it?"
+      },
+      "hint": {
+        "uz": "Banan yaxshi koʻradi.",
+        "ru": "Любит бананы.",
+        "en": "It loves bananas."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Monkey — maymun.",
+        "ru": "Верно! Monkey — обезьяна.",
+        "en": "Right! A monkey."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "monkey\nmaymun",
+              "ru": "monkey\nобезьяна",
+              "en": "monkey"
+            },
+            {
+              "uz": "lion\nsher",
+              "ru": "lion\nлев",
+              "en": "lion"
+            },
+            {
+              "uz": "snake\nilon",
+              "ru": "snake\nзмея",
+              "en": "snake"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

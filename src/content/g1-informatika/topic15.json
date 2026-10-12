@@ -1,0 +1,527 @@
+{
+  "topicId": "g1-informatika-15",
+  "subjectKey": "g1-informatika",
+  "emojis": "🌷☀️🍂❄️",
+  "title": {
+    "uz": "Tabiatdagi takrorlanish hodisalari",
+    "ru": "Повторяющиеся явления в природе",
+    "en": "Repeating events in nature"
+  },
+  "recall": {
+    "uz": "Tabiatda baʼzi hodisalar takrorlanadi. Fasllar — bahor, yoz, kuz, qish — har yili takrorlanadi. Kun va tun ham navbatlashadi.",
+    "ru": "В природе некоторые явления повторяются. Времена года повторяются каждый год. День и ночь чередуются.",
+    "en": "In nature some events repeat. The seasons repeat every year. Day and night alternate."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Fasllarni tartibda joyla!",
+        "ru": "Расставь времена года!",
+        "en": "Order the seasons!"
+      },
+      "hint": {
+        "uz": "Bahor, yoz, kuz, qish.",
+        "ru": "Весна, лето, осень, зима.",
+        "en": "Spring, summer, autumn, winter."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🌷 bahor",
+                "ru": "🌷 весна",
+                "en": "🌷 spring"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "☀️ yoz",
+                "ru": "☀️ лето",
+                "en": "☀️ summer"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🍂 kuz",
+                "ru": "🍂 осень",
+                "en": "🍂 autumn"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "❄️ qish",
+                "ru": "❄️ зима",
+                "en": "❄️ winter"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qishdan keyin yana qaysi fasl keladi?",
+        "ru": "Что снова после зимы?",
+        "en": "What season comes again after winter?"
+      },
+      "hint": {
+        "uz": "Fasllar takrorlanadi.",
+        "ru": "Времена года повторяются.",
+        "en": "The seasons repeat."
+      },
+      "explanation": {
+        "uz": "Qishdan keyin yana bahor keladi.",
+        "ru": "После зимы снова весна.",
+        "en": "Spring comes again after winter."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "bahor",
+              "ru": "весна",
+              "en": "spring"
+            },
+            {
+              "uz": "yoz",
+              "ru": "лето",
+              "en": "summer"
+            },
+            {
+              "uz": "kuz",
+              "ru": "осень",
+              "en": "autumn"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Daraxtning oʻsish bosqichlarini joyla!",
+        "ru": "Порядок роста дерева!",
+        "en": "Order the tree's growth!"
+      },
+      "hint": {
+        "uz": "Urugʻ, nihol, daraxt, meva.",
+        "ru": "Семя, росток, дерево, плод.",
+        "en": "Seed, sprout, tree, fruit."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🌰 urugʻ",
+                "ru": "🌰 семя",
+                "en": "🌰 seed"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "🌱 nihol",
+                "ru": "🌱 росток",
+                "en": "🌱 sprout"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🌳 daraxt",
+                "ru": "🌳 дерево",
+                "en": "🌳 tree"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "🍒 meva",
+                "ru": "🍒 плод",
+                "en": "🍒 fruit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har yili takrorlanadigan hodisalarni belgila!",
+        "ru": "Отметь ежегодные явления!",
+        "en": "Tap the events that repeat yearly!"
+      },
+      "hint": {
+        "uz": "Doim qaytadigan hodisalar.",
+        "ru": "Явления, что повторяются.",
+        "en": "Events that come back."
+      },
+      "explanation": {
+        "uz": "Ular har yili takrorlanadi.",
+        "ru": "Они повторяются каждый год.",
+        "en": "They repeat every year."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌷",
+              "label": {
+                "uz": "bahor kelishi",
+                "ru": "приход весны",
+                "en": "spring coming"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "❄️",
+              "label": {
+                "uz": "qish kelishi",
+                "ru": "приход зимы",
+                "en": "winter coming"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🌙",
+              "label": {
+                "uz": "kun va tun",
+                "ru": "день и ночь",
+                "en": "day and night"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🎂",
+              "label": {
+                "uz": "bir marta tugʻilish",
+                "ru": "одно рождение",
+                "en": "being born once"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan poliz mahsuloti nomini tuz! (🍉)",
+        "ru": "Составь название бахчевого! (🍉)",
+        "en": "Build the melon's name! (🍉)"
+      },
+      "hint": {
+        "uz": "T-R-U-A-V-Z harflaridan.",
+        "ru": "Из букв T-R-U-A-V-Z.",
+        "en": "From T-R-U-A-V-Z."
+      },
+      "explanation": {
+        "uz": "Barakalla! «tarvuz» soʻzini tuzding.",
+        "ru": "Молодец! «tarvuz».",
+        "en": "Great! You built “tarvuz”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🍉",
+          "word": "tarvuz",
+          "label": {
+            "uz": "tarvuz",
+            "ru": "арбуз",
+            "en": "watermelon"
+          },
+          "letters": [
+            "t",
+            "a",
+            "r",
+            "v",
+            "u",
+            "z"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tarvuz yilning qaysi faslida pishadi?",
+        "ru": "В какое время года зреет арбуз?",
+        "en": "In which season does watermelon ripen?"
+      },
+      "hint": {
+        "uz": "Eng issiq fasl.",
+        "ru": "Самое жаркое время.",
+        "en": "The hottest season."
+      },
+      "explanation": {
+        "uz": "Tarvuz yozda pishadi.",
+        "ru": "Арбуз зреет летом.",
+        "en": "Watermelon ripens in summer."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yozda",
+              "ru": "летом",
+              "en": "in summer"
+            },
+            {
+              "uz": "qishda",
+              "ru": "зимой",
+              "en": "in winter"
+            },
+            {
+              "uz": "bahorda",
+              "ru": "весной",
+              "en": "in spring"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir faslni belgisi bilan ula!",
+        "ru": "Соедини время года с приметой!",
+        "en": "Match each season to its sign!"
+      },
+      "hint": {
+        "uz": "Qishda qor, yozda issiq.",
+        "ru": "Зимой снег, летом жара.",
+        "en": "Snow in winter, heat in summer."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "❄️"
+              },
+              "right": {
+                "label": {
+                  "uz": "qor yogʻadi",
+                  "ru": "идёт снег",
+                  "en": "it snows"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🌷"
+              },
+              "right": {
+                "label": {
+                  "uz": "gullar ochiladi",
+                  "ru": "цветут цветы",
+                  "en": "flowers bloom"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "☀️"
+              },
+              "right": {
+                "label": {
+                  "uz": "issiq boʻladi",
+                  "ru": "жарко",
+                  "en": "it is hot"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍂"
+              },
+              "right": {
+                "label": {
+                  "uz": "barglar toʻkiladi",
+                  "ru": "листья падают",
+                  "en": "leaves fall"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Fasllar necha marta takrorlanadi?",
+        "ru": "Как часто повторяются сезоны?",
+        "en": "How often do the seasons repeat?"
+      },
+      "hint": {
+        "uz": "Doimo qaytadi.",
+        "ru": "Возвращаются всегда.",
+        "en": "They keep coming back."
+      },
+      "explanation": {
+        "uz": "Fasllar har yili takrorlanadi.",
+        "ru": "Сезоны повторяются каждый год.",
+        "en": "The seasons repeat every year."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "har yili",
+              "ru": "каждый год",
+              "en": "every year"
+            },
+            {
+              "uz": "bir marta",
+              "ru": "один раз",
+              "en": "once"
+            },
+            {
+              "uz": "hech qachon",
+              "ru": "никогда",
+              "en": "never"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kundan keyin har doim tun keladi.",
+        "ru": "После дня всегда наступает ночь.",
+        "en": "Night always comes after day."
+      },
+      "hint": {
+        "uz": "Ular navbatlashadi.",
+        "ru": "Они чередуются.",
+        "en": "They alternate."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌙",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yozdan keyin qaysi fasl, keyin yana takrorlanadi?",
+        "ru": "Что после лета, и повторяется?",
+        "en": "What comes after summer, then repeats?"
+      },
+      "hint": {
+        "uz": "Barglar sargʻayadi.",
+        "ru": "Листья желтеют.",
+        "en": "Leaves turn yellow."
+      },
+      "explanation": {
+        "uz": "Yozdan keyin kuz keladi.",
+        "ru": "После лета — осень.",
+        "en": "Autumn comes after summer."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🍂",
+              "label": {
+                "uz": "kuz",
+                "ru": "осень",
+                "en": "autumn"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "❄️",
+              "label": {
+                "uz": "qish",
+                "ru": "зима",
+                "en": "winter"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🌷",
+              "label": {
+                "uz": "bahor",
+                "ru": "весна",
+                "en": "spring"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

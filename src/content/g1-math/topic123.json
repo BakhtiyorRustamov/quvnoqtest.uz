@@ -1,0 +1,441 @@
+{
+  "topicId": "g1-math-123",
+  "subjectKey": "g1-math",
+  "emojis": "⭕🟡✨",
+  "title": {
+    "uz": "Sohalar va chegaralar",
+    "ru": "Области и границы",
+    "en": "Regions and boundaries"
+  },
+  "recall": {
+    "uz": "Shaklning chegarasi — uni oʻrab turgan yopiq chiziq. Shaklning sohasi — uning ichki qismi. Nuqta shakl ichida, chegarasida yoki tashqarisida boʻlishi mumkin. Shakllarni sanab, masalalarni yechamiz.",
+    "ru": "Граница фигуры — это замкнутая линия вокруг неё. Область фигуры — её внутренняя часть. Точка может быть внутри, на границе или снаружи. Считаем фигуры и решаем задачи.",
+    "en": "A shape's boundary is the closed line around it. A shape's region is its inside. A point can be inside, on the boundary, or outside. We count shapes and solve problems."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma doiralarni belgila!",
+        "ru": "Отметь все круги!",
+        "en": "Tap all the circles!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "square",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "circle",
+            "color": "magenta"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "e"
+      ],
+      "hint": {
+        "uz": "Doira — yumaloq, burchaksiz shakl.",
+        "ru": "Круг — круглая фигура без углов.",
+        "en": "A circle is round with no corners."
+      },
+      "explanation": {
+        "uz": "Uchta doirani topdik.",
+        "ru": "Нашли три круга.",
+        "en": "We found three circles."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 13,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Xatjildda 35 ta uchburchak, kvadratlar undan 22 ta kam. Nechta kvadrat? Bloklardan yasa.",
+        "ru": "В папке 35 треугольников, квадратов на 22 меньше. Сколько квадратов? Собери из блоков.",
+        "en": "A folder has 35 triangles, 22 fewer squares. How many squares? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "35 - 22 = 13.",
+        "ru": "35 - 22 = 13.",
+        "en": "35 - 22 = 13."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 48,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "35 ta uchburchak va 13 ta kvadrat. Jami nechta shakl? Bloklardan yasa.",
+        "ru": "35 треугольников и 13 квадратов. Сколько всего фигур? Собери из блоков.",
+        "en": "35 triangles and 13 squares. How many shapes in all? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "35 + 13 = 48.",
+        "ru": "35 + 13 = 48.",
+        "en": "35 + 13 = 48."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "35 - 22",
+              "right": "13"
+            },
+            {
+              "left": "35 + 13",
+              "right": "48"
+            },
+            {
+              "left": "40 - 18",
+              "right": "22"
+            },
+            {
+              "left": "12 + 23",
+              "right": "35"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta doirani bos!",
+        "ru": "Нажми на самый большой круг!",
+        "en": "Tap the biggest circle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "circle",
+            "color": "blue",
+            "scale": 0.7
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "circle",
+            "color": "orange",
+            "scale": 1.3
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "green",
+            "scale": 0.95
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Eng koʻp joy egallaganini tanla.",
+        "ru": "Выбери занимающий больше места.",
+        "en": "Pick the one taking the most space."
+      },
+      "explanation": {
+        "uz": "Eng katta doirani topdik.",
+        "ru": "Нашли самый большой круг.",
+        "en": "We found the biggest circle."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 4,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Ikki tomon: 9 cm va 4 cm. Yigʻindisi necha cm?",
+        "ru": "Две стороны: 9 см и 4 см. Сумма?",
+        "en": "Two sides: 9 cm and 4 cm. The sum?"
+      },
+      "hint": {
+        "uz": "9 dan boshla, 4 oldinga sur.",
+        "ru": "Встань на 9, продвинься на 4.",
+        "en": "Start at 9, move 4 forward."
+      },
+      "explanation": {
+        "uz": "9 + 4 = 13 cm.",
+        "ru": "9 + 4 = 13 см.",
+        "en": "9 + 4 = 13 cm."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 35,
+          "y": 48
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi perimetr katta: 35 yoki 48? Toʻgʻri belgini tanla.",
+        "ru": "Какой периметр больше: 35 или 48? Выбери знак.",
+        "en": "Which perimeter is bigger: 35 or 48? Choose the sign."
+      },
+      "hint": {
+        "uz": "Katta son — katta perimetr.",
+        "ru": "Больше число — больше периметр.",
+        "en": "A bigger number is a bigger perimeter."
+      },
+      "explanation": {
+        "uz": "35 < 48.",
+        "ru": "35 < 48.",
+        "en": "35 < 48."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 48
+        }
+      },
+      "prompt": {
+        "uz": "Jami 48 ta shakl bor. Shu sonni bloklardan yasa.",
+        "ru": "Всего 48 фигур. Собери это число.",
+        "en": "There are 48 shapes in all. Build that number."
+      },
+      "hint": {
+        "uz": "4 ta oʻnlik (+10) va 8 ta birlik (+1).",
+        "ru": "4 десятков (+10) и 8 единиц (+1).",
+        "en": "4 tens (+10) and 8 ones (+1)."
+      },
+      "explanation": {
+        "uz": "48 = 40 + 8.",
+        "ru": "48 = 40 + 8.",
+        "en": "48 = 40 + 8."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "8 + 5",
+              "bin": "v13"
+            },
+            {
+              "id": "b",
+              "label": "10 + 3",
+              "bin": "v13"
+            },
+            {
+              "id": "c",
+              "label": "6 + 7",
+              "bin": "v13"
+            },
+            {
+              "id": "d",
+              "label": "11 + 11",
+              "bin": "v22"
+            },
+            {
+              "id": "e",
+              "label": "18 + 4",
+              "bin": "v22"
+            },
+            {
+              "id": "f",
+              "label": "20 + 2",
+              "bin": "v22"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v13",
+              "label": "13"
+            },
+            {
+              "id": "v22",
+              "label": "22"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir perimetrni qiymati boʻyicha qutiga sudra!",
+        "ru": "Перетащи каждый периметр в ящик его значения!",
+        "en": "Drag each perimeter into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в нужный ящик.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir perimetr oʻz qiymati qutisida.",
+        "ru": "Каждый периметр в ящике своего значения.",
+        "en": "Each perimeter is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Naqshni davom ettir!",
+        "ru": "Продолжи узор!",
+        "en": "Continue the pattern!"
+      },
+      "sequence": [
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "square",
+          "color": "orange"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "square",
+          "color": "orange"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        }
+      ],
+      "options": [
+        {
+          "id": "sq",
+          "art": {
+            "kind": "square",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "ci",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "tr",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        }
+      ],
+      "answer": [
+        "sq"
+      ],
+      "hint": {
+        "uz": "Doira va kvadrat navbatlashadi.",
+        "ru": "Круг и квадрат чередуются.",
+        "en": "Circle and square take turns."
+      },
+      "explanation": {
+        "uz": "Doiradan keyin kvadrat keladi.",
+        "ru": "После круга идёт квадрат.",
+        "en": "After a circle comes a square."
+      }
+    }
+  ]
+}

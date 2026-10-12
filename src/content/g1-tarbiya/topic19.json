@@ -1,0 +1,278 @@
+{
+  "topicId": "g1-tarbiya-19",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🌍🤝🕌🌾",
+  "title": {
+    "uz": "Bagʻrikeng yurtim",
+    "ru": "Мой толерантный край",
+    "en": "My tolerant homeland"
+  },
+  "recall": {
+    "uz": "Oʻzbekistonda oʻzbeklar bilan birga qoraqalpoq, tojik, rus, qozoq, qirgʻiz, turkman va boshqa millat vakillari ahil-inoq yashaydi. Aholi turli dinlarga e'tiqod qiladi. Bagʻrikeng boʻlish — barcha millat va dinlarni hurmat qilish, hammaga doʻstona munosabatda boʻlish demakdir.",
+    "ru": "В Узбекистане вместе с узбеками дружно живут каракалпаки, таджики, русские, казахи, киргизы, туркмены и представители других народов. Люди исповедуют разные религии. Быть толерантным — значит уважать все народы и религии и относиться ко всем по-дружески.",
+    "en": "In Uzbekistan, alongside Uzbeks, Karakalpaks, Tajiks, Russians, Kazakhs, Kyrgyz, Turkmen and other peoples live together in harmony. People follow different religions. Being tolerant means respecting all peoples and faiths and treating everyone as a friend."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yurtimizda turli millat vakillari qanday yashaydi?",
+        "ru": "Как живут в нашем крае разные народы?",
+        "en": "How do the different peoples of our land live?"
+      },
+      "hint": {
+        "uz": "Doʻstona, inoq.",
+        "ru": "Дружно.",
+        "en": "In friendship."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Barcha millatlar ahil-inoq yashaydi.",
+        "ru": "Верно! Все народы живут дружно.",
+        "en": "Right! All peoples live in harmony."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ahil-inoq, doʻstona",
+              "ru": "дружно и мирно",
+              "en": "in harmony and friendship"
+            },
+            {
+              "uz": "bir-birini kamsitib",
+              "ru": "унижая друг друга",
+              "en": "looking down on each other"
+            },
+            {
+              "uz": "aralashmasdan, janjallashib",
+              "ru": "ссорясь и не общаясь",
+              "en": "quarreling and apart"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻzbekistonda yashaydigan xalqlarni belgila!",
+        "ru": "Отметь народы, живущие в Узбекистане!",
+        "en": "Tap the peoples who live in Uzbekistan!"
+      },
+      "hint": {
+        "uz": "Qoraqalpoq, tojik, rus, qozoq, qirgʻiz…",
+        "ru": "Каракалпаки, таджики, русские, казахи…",
+        "en": "Karakalpaks, Tajiks, Russians, Kazakhs…"
+      },
+      "explanation": {
+        "uz": "Barakalla! Bu xalqlar yurtimizda ahil yashaydi.",
+        "ru": "Молодец! Эти народы дружно живут у нас.",
+        "en": "Great! These peoples live together in our land."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "label": {
+                "uz": "qoraqalpoqlar",
+                "ru": "каракалпаки",
+                "en": "Karakalpaks"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "label": {
+                "uz": "tojiklar",
+                "ru": "таджики",
+                "en": "Tajiks"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "label": {
+                "uz": "ruslar",
+                "ru": "русские",
+                "en": "Russians"
+              },
+              "correct": true
+            },
+            {
+              "id": "c3",
+              "label": {
+                "uz": "qozoqlar",
+                "ru": "казахи",
+                "en": "Kazakhs"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "label": {
+                "uz": "dinozavrlar",
+                "ru": "динозавры",
+                "en": "dinosaurs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Boshqa millat va din vakillarini hurmat qilamiz.",
+        "ru": "Верно? Мы уважаем людей другой национальности и религии.",
+        "en": "Is this right? We respect people of other nations and faiths."
+      },
+      "hint": {
+        "uz": "Bagʻrikenglik — hurmat.",
+        "ru": "Толерантность — это уважение.",
+        "en": "Tolerance means respect."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bagʻrikeng inson hammani hurmat qiladi.",
+        "ru": "Верно! Толерантный человек уважает всех.",
+        "en": "Right! A tolerant person respects everyone."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🤝",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xulqni ajrat: bagʻrikeng yoki notoʻgʻri!",
+        "ru": "Разложи поведение: толерантно или неправильно!",
+        "en": "Sort the behaviour: tolerant or wrong!"
+      },
+      "hint": {
+        "uz": "Hurmat, doʻstlik — bagʻrikeng.",
+        "ru": "Уважение, дружба — толерантно.",
+        "en": "Respect, friendship — tolerant."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bagʻrikeng boʻlaylik.",
+        "ru": "Молодец! Будем толерантными.",
+        "en": "Great! Let's be tolerant."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "Bagʻrikeng",
+                "ru": "Толерантно",
+                "en": "Tolerant"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "uz": "Notoʻgʻri",
+                "ru": "Неправильно",
+                "en": "Wrong"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🤝",
+              "label": {
+                "uz": "hammani hurmat qilish",
+                "ru": "уважать всех",
+                "en": "respect everyone"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "😊",
+              "label": {
+                "uz": "barcha bilan doʻst boʻlish",
+                "ru": "дружить со всеми",
+                "en": "be friends with all"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🌍",
+              "label": {
+                "uz": "boshqa xalqni bilish",
+                "ru": "узнавать другие народы",
+                "en": "learn about other peoples"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "😠",
+              "label": {
+                "uz": "masxara qilish",
+                "ru": "насмехаться",
+                "en": "mock others"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "🚫",
+              "label": {
+                "uz": "kamsitish",
+                "ru": "унижать",
+                "en": "belittle others"
+              },
+              "bin": "no"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Atrofingizda qaysi millat vakillari yashaydi? Ular bilan qanday doʻstsiz?",
+        "ru": "Какие народы живут рядом с тобой? Как вы дружите?",
+        "en": "Which peoples live near you? How are you friends with them?"
+      },
+      "hint": {
+        "uz": "Qoʻshni, sinfdosh, doʻst — kimlar?",
+        "ru": "Соседи, одноклассники, друзья — кто?",
+        "en": "Neighbours, classmates, friends — who?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Bagʻrikeng inson koʻp doʻst orttiradi.",
+        "ru": "Отлично! У толерантного человека много друзей.",
+        "en": "Great! A tolerant person gains many friends."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Bizning mahallamizda oʻzbek, rus va qozoq oilalar yashaydi. Biz birga oʻynaymiz va bir-birimizni hurmat qilamiz.",
+            "ru": "В нашей махалле живут узбекские, русские и казахские семьи. Мы играем вместе и уважаем друг друга.",
+            "en": "In our neighbourhood there are Uzbek, Russian and Kazakh families. We play together and respect one another."
+          }
+        }
+      }
+    }
+  ]
+}

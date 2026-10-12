@@ -1,0 +1,183 @@
+{
+  "topicId": "g1-tabiiy-17",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🌾🍞🥖🌽",
+  "title": {
+    "uz": "Non qanday yetib keladi?",
+    "ru": "Как хлеб попадает к нам?",
+    "en": "How does bread reach us?"
+  },
+  "recall": {
+    "uz": "Non bugʻdoydan tayyorlanadi. Avval bugʻdoy ekiladi, keyin oʻriladi, tegirmonda maydalanib un boʻladi va novvoy nonni yopadi. Non bizga kuch va energiya beradi. Guruch, arpa, suli ham don ekinlari. Shirmoy non — oʻzbek milliy noni, tandirda pishiriladi.",
+    "ru": "Хлеб делают из пшеницы. Сначала пшеницу сеют, потом жнут, мелют на мельнице в муку, и пекарь печёт хлеб. Хлеб даёт нам силу и энергию. Рис, ячмень, овёс — тоже злаки. Ширмой нон — узбекский национальный хлеб, печётся в тандыре.",
+    "en": "Bread is made from wheat. First wheat is sown, then harvested, ground into flour at a mill, and the baker bakes the bread. Bread gives us strength and energy. Rice, barley and oats are grains too. Shirmoy non is Uzbek national bread, baked in a tandir."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Non qanday yetib keladi? Toʻgʻri tartibda joyla!", "ru": "Как получается хлеб? Расставь по порядку!", "en": "How do we get bread? Put it in order!" },
+      "hint": { "uz": "Avval ekiladi, oʻriladi, un boʻladi, keyin non yopiladi.", "ru": "Сначала сеют, жнут, мелют муку, потом пекут хлеб.", "en": "First sow, harvest, mill flour, then bake bread." },
+      "explanation": { "uz": "Bugʻdoy ekiladi, oʻriladi, tegirmonda un boʻladi va novvoy nonni yopadi.", "ru": "Пшеницу сеют, жнут, мелют в муку, и пекарь печёт хлеб.", "en": "Wheat is sown, harvested, milled into flour, and the baker bakes bread." },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "sow", "emoji": "🌱", "label": { "uz": "ekish", "ru": "посев", "en": "sowing" } },
+            { "id": "harvest", "emoji": "🌾", "label": { "uz": "oʻrish", "ru": "жатва", "en": "harvest" } },
+            { "id": "flour", "emoji": "🏭", "label": { "uz": "un", "ru": "мука", "en": "flour" } },
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "хлеб", "en": "bread" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Non nimadan tayyorlanadi?", "ru": "Из чего делают хлеб?", "en": "What is bread made from?" },
+      "hint": { "uz": "Uni dalada oʻstiriladigan don beradi.", "ru": "Его даёт зерно, растущее в поле.", "en": "It comes from grain grown in a field." },
+      "explanation": { "uz": "Non bugʻdoydan tayyorlanadi. Kartoshka va olmadan emas.", "ru": "Хлеб делают из пшеницы. Не из картофеля и яблока.", "en": "Bread is made from wheat. Not from potato or apple." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "wheat", "emoji": "🌾", "label": { "uz": "bugʻdoy", "ru": "пшеница", "en": "wheat" }, "correct": true },
+            { "id": "potato", "emoji": "🥔", "label": { "uz": "kartoshka", "ru": "картофель", "en": "potato" } },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir donni oʻz mahsulotiga ula!", "ru": "Соедини каждое зерно с его продуктом!", "en": "Match each grain to its product!" },
+      "hint": { "uz": "Bugʻdoy — non, guruch — bugʻdoy... guruch — boʻtqa, makka — zogʻora non.", "ru": "Пшеница — хлеб, рис — каша, кукуруза — лепёшка.", "en": "Wheat — bread, rice — porridge, corn — flatbread." },
+      "explanation": { "uz": "Har xil dondan har xil mahsulot: bugʻdoydan non, guruchdan boʻtqa, makkadan zogʻora non.", "ru": "Из разных зёрен разные продукты: из пшеницы хлеб, из риса каша, из кукурузы лепёшка.", "en": "Different grains give different foods: wheat bread, rice porridge, corn flatbread." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🌾", "label": { "uz": "bugʻdoy", "ru": "пшеница", "en": "wheat" } }, "right": { "emoji": "🍞", "label": { "uz": "non", "ru": "хлеб", "en": "bread" } } },
+            { "left": { "emoji": "🍚", "label": { "uz": "guruch", "ru": "рис", "en": "rice" } }, "right": { "emoji": "🥣", "label": { "uz": "boʻtqa", "ru": "каша", "en": "porridge" } } },
+            { "left": { "emoji": "🌽", "label": { "uz": "makkajoʻxori", "ru": "кукуруза", "en": "corn" } }, "right": { "emoji": "🫓", "label": { "uz": "zogʻora non", "ru": "лепёшка", "en": "flatbread" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Don ekinlarini belgila!", "ru": "Отметь злаки!", "en": "Tap the grain crops!" },
+      "hint": { "uz": "Bugʻdoy, guruch va makka — don ekinlari.", "ru": "Пшеница, рис и кукуруза — злаки.", "en": "Wheat, rice and corn are grains." },
+      "explanation": { "uz": "Bugʻdoy, guruch va makka — don ekinlari. Olma, sut va baliq — yoʻq.", "ru": "Пшеница, рис и кукуруза — злаки. Яблоко, молоко и рыба — нет.", "en": "Wheat, rice and corn are grains. Apple, milk and fish are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "wheat", "emoji": "🌾", "label": { "uz": "bugʻdoy", "ru": "пшеница", "en": "wheat" }, "correct": true },
+            { "id": "rice", "emoji": "🍚", "label": { "uz": "guruch", "ru": "рис", "en": "rice" }, "correct": true },
+            { "id": "corn", "emoji": "🌽", "label": { "uz": "makka", "ru": "кукуруза", "en": "corn" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } },
+            { "id": "milk", "emoji": "🥛", "label": { "uz": "sut", "ru": "молоко", "en": "milk" } },
+            { "id": "fish", "emoji": "🐟", "label": { "uz": "baliq", "ru": "рыба", "en": "fish" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Non bizga kuch va energiya beradi.", "ru": "Верно? Хлеб даёт нам силу и энергию.", "en": "True? Bread gives us strength and energy." },
+      "hint": { "uz": "Non tarkibida foydali moddalar va vitaminlar bor.", "ru": "В хлебе есть полезные вещества и витамины.", "en": "Bread contains useful nutrients and vitamins." },
+      "explanation": { "uz": "Toʻgʻri. Non foydali mahsulot, u oʻsish uchun kuch beradi.", "ru": "Верно. Хлеб полезен и даёт силы для роста.", "en": "True. Bread is nourishing and gives strength to grow." },
+      "widget": { "type": "true_false", "props": { "emoji": "🍞", "answer": true } }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Shirmoy non qayerda pishiriladi?", "ru": "Где пекут ширмой нон?", "en": "Where is shirmoy non baked?" },
+      "hint": { "uz": "U loydan tayyorlangan issiq oʻchoqda pishiriladi.", "ru": "Его пекут в горячей печи из глины.", "en": "It is baked in a hot clay oven." },
+      "explanation": { "uz": "Shirmoy non tandirda pishiriladi. Tandir loydan tayyorlanadi.", "ru": "Ширмой нон пекут в тандыре. Тандыр делают из глины.", "en": "Shirmoy non is baked in a tandir. A tandir is made of clay." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "tandir", "emoji": "🔥", "label": { "uz": "tandir", "ru": "тандыр", "en": "tandir" }, "correct": true },
+            { "id": "fridge", "emoji": "🧊", "label": { "uz": "muzlatgich", "ru": "холодильник", "en": "fridge" } },
+            { "id": "tv", "emoji": "📺", "label": { "uz": "televizor", "ru": "телевизор", "en": "TV" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Don mahsuloti yoki boshqa? Ajrat!", "ru": "Продукт из зерна или нет? Разложи!", "en": "Made from grain or not? Sort!" },
+      "hint": { "uz": "Non, makaron va boʻtqa — dondan; olma va sut — yoʻq.", "ru": "Хлеб, макароны и каша — из зерна; яблоко и молоко — нет.", "en": "Bread, pasta and porridge come from grain; apple and milk do not." },
+      "explanation": { "uz": "Non, makaron va boʻtqa dondan tayyorlanadi. Olma va sut — boshqa mahsulot.", "ru": "Хлеб, макароны и каша — из зерна. Яблоко и молоко — другие продукты.", "en": "Bread, pasta and porridge come from grain. Apple and milk are other foods." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "grain", "label": { "uz": "🌾 Dondan", "ru": "🌾 Из зерна", "en": "🌾 From grain" }, "color": "#f39a1f" },
+            { "id": "other", "label": { "uz": "🍎 Boshqa", "ru": "🍎 Другое", "en": "🍎 Other" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "хлеб", "en": "bread" }, "bin": "grain" },
+            { "id": "pasta", "emoji": "🍝", "label": { "uz": "makaron", "ru": "макароны", "en": "pasta" }, "bin": "grain" },
+            { "id": "porridge", "emoji": "🥣", "label": { "uz": "boʻtqa", "ru": "каша", "en": "porridge" }, "bin": "grain" },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" }, "bin": "other" },
+            { "id": "milk", "emoji": "🥛", "label": { "uz": "sut", "ru": "молоко", "en": "milk" }, "bin": "other" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Nonni hurmat qilamiz, uni yerga tashlamaymiz.", "ru": "Верно? Хлеб уважают и не бросают на землю.", "en": "True? We respect bread and do not throw it on the ground." },
+      "hint": { "uz": "Oʻzbekistonda nonga katta hurmat bilan qaraladi.", "ru": "В Узбекистане к хлебу относятся с большим уважением.", "en": "In Uzbekistan bread is treated with great respect." },
+      "explanation": { "uz": "Toʻgʻri. Non — muqaddas mahsulot. An'anaga koʻra, u qoʻl bilan sindiriladi.", "ru": "Верно. Хлеб — священный продукт. По традиции его ломают руками.", "en": "True. Bread is sacred. By tradition it is broken by hand." },
+      "widget": { "type": "true_false", "props": { "emoji": "🍞", "answer": true } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bugʻdoydan nimalar tayyorlanadi?", "ru": "Что делают из пшеницы?", "en": "What is made from wheat?" },
+      "hint": { "uz": "Bugʻdoy unidan non, makaron va boʻtqa tayyorlanadi.", "ru": "Из пшеничной муки делают хлеб, макароны и кашу.", "en": "From wheat flour we make bread, pasta and porridge." },
+      "explanation": { "uz": "Bugʻdoydan non, makaron va boʻtqa tayyorlanadi. Paypoq, stul va mashina — yoʻq.", "ru": "Из пшеницы делают хлеб, макароны и кашу. Носки, стул и машину — нет.", "en": "Wheat makes bread, pasta and porridge. Not socks, chairs or cars." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "хлеб", "en": "bread" }, "correct": true },
+            { "id": "pasta", "emoji": "🍝", "label": { "uz": "makaron", "ru": "макароны", "en": "pasta" }, "correct": true },
+            { "id": "porridge", "emoji": "🥣", "label": { "uz": "boʻtqa", "ru": "каша", "en": "porridge" }, "correct": true },
+            { "id": "socks", "emoji": "🧦", "label": { "uz": "paypoq", "ru": "носки", "en": "socks" } },
+            { "id": "chair", "emoji": "🪑", "label": { "uz": "stul", "ru": "стул", "en": "chair" } },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "mashina", "ru": "машина", "en": "car" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Un bugʻdoyni tegirmonda maydalab olinadi.", "ru": "Верно? Муку получают, измельчая пшеницу на мельнице.", "en": "True? Flour is made by grinding wheat at a mill." },
+      "hint": { "uz": "Bugʻdoy donlari tegirmonda maydalanib, un boʻladi.", "ru": "Зёрна пшеницы мелют на мельнице в муку.", "en": "Wheat grains are ground into flour at a mill." },
+      "explanation": { "uz": "Toʻgʻri. Bugʻdoy tegirmonda maydalanib un boʻladi, undan non yopiladi.", "ru": "Верно. Пшеницу мелют в муку, из неё пекут хлеб.", "en": "True. Wheat is ground into flour, and bread is baked from it." },
+      "widget": { "type": "true_false", "props": { "emoji": "🌾", "answer": true } }
+    }
+  ]
+}

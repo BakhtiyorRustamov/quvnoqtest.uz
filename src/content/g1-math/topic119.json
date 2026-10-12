@@ -1,0 +1,385 @@
+{
+  "topicId": "g1-math-119",
+  "subjectKey": "g1-math",
+  "emojis": "▭🟦✨",
+  "title": {
+    "uz": "Toʻrtburchak va kvadrat",
+    "ru": "Прямоугольник и квадрат",
+    "en": "Rectangle and square"
+  },
+  "recall": {
+    "uz": "Kvadratning hamma tomonlari teng. Toʻgʻri toʻrtburchakning qarama-qarshi tomonlari teng. Perimetrni topish uchun barcha tomonlarni qoʻshamiz. Masalan, tomoni 12 dm boʻlgan kvadrat perimetri 48 dm.",
+    "ru": "У квадрата все стороны равны. У прямоугольника равны противоположные стороны. Периметр — это сумма всех сторон. Например, у квадрата со стороной 12 дм периметр 48 дм.",
+    "en": "A square has all sides equal. A rectangle has equal opposite sides. The perimeter is the sum of all sides. For example a square with side 12 dm has a perimeter of 48 dm."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            12,
+            12,
+            12,
+            12
+          ],
+          "unit": "dm"
+        }
+      },
+      "prompt": {
+        "uz": "Kvadrat gilam perimetrini top.",
+        "ru": "Найди периметр квадратного ковра.",
+        "en": "Find the square carpet's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 48 dm.",
+        "ru": "Периметр = 48 dm.",
+        "en": "Perimeter = 48 dm."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            22,
+            12,
+            22,
+            12
+          ],
+          "unit": "dm"
+        }
+      },
+      "prompt": {
+        "uz": "Toʻgʻri toʻrtburchak gilam perimetrini top.",
+        "ru": "Найди периметр прямоугольного ковра.",
+        "en": "Find the rectangular carpet's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 68 dm.",
+        "ru": "Периметр = 68 dm.",
+        "en": "Perimeter = 68 dm."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "unit": "dm"
+        }
+      },
+      "prompt": {
+        "uz": "Kvadrat perimetrini top.",
+        "ru": "Найди периметр квадрата.",
+        "en": "Find the square's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 20 dm.",
+        "ru": "Периметр = 20 dm.",
+        "en": "Perimeter = 20 dm."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma toʻrtburchaklarni belgila!",
+        "ru": "Отметь все четырёхугольники!",
+        "en": "Tap all the quadrilaterals!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "rect",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "rhombus",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "circle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "hint": {
+        "uz": "Toʻrtburchakning 4 tomoni bor.",
+        "ru": "У четырёхугольника 4 стороны.",
+        "en": "A quadrilateral has 4 sides."
+      },
+      "explanation": {
+        "uz": "Kvadrat, toʻgʻri toʻrtburchak va romb — toʻrtburchaklar.",
+        "ru": "Квадрат, прямоугольник и ромб — четырёхугольники.",
+        "en": "Square, rectangle and rhombus are quadrilaterals."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Ortiqcha shaklni bos!",
+        "ru": "Нажми на лишнюю фигуру!",
+        "en": "Tap the odd one out!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "hint": {
+        "uz": "Qaysi shakl boshqalarga oʻxshamaydi?",
+        "ru": "Какая фигура не похожа на остальные?",
+        "en": "Which shape is not like the others?"
+      },
+      "explanation": {
+        "uz": "Uchta uchburchak va bitta doira — doira ortiqcha.",
+        "ru": "Три треугольника и круг — лишний круг.",
+        "en": "Three triangles and a circle — the circle is the odd one."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Olti burchakli shakl perimetrini top.",
+        "ru": "Найди периметр шестиугольника.",
+        "en": "Find the hexagon's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 18 cm.",
+        "ru": "Периметр = 18 cm.",
+        "en": "Perimeter = 18 cm."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 48,
+          "y": 68
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi perimetr katta: 48 yoki 68? Toʻgʻri belgini tanla.",
+        "ru": "Какой периметр больше: 48 или 68? Выбери знак.",
+        "en": "Which perimeter is bigger: 48 or 68? Choose the sign."
+      },
+      "hint": {
+        "uz": "Katta son — katta perimetr.",
+        "ru": "Больше число — больше периметр.",
+        "en": "A bigger number is a bigger perimeter."
+      },
+      "explanation": {
+        "uz": "48 < 68.",
+        "ru": "48 < 68.",
+        "en": "48 < 68."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 36
+        }
+      },
+      "prompt": {
+        "uz": "Koʻpburchak perimetri 36 cm. Shu sonni bloklardan yasa.",
+        "ru": "Периметр многоугольника 36 см. Собери это число.",
+        "en": "A polygon's perimeter is 36 cm. Build that number."
+      },
+      "hint": {
+        "uz": "3 ta oʻnlik (+10) va 6 ta birlik (+1).",
+        "ru": "3 десятков (+10) и 6 единиц (+1).",
+        "en": "3 tens (+10) and 6 ones (+1)."
+      },
+      "explanation": {
+        "uz": "36 = 30 + 6.",
+        "ru": "36 = 30 + 6.",
+        "en": "36 = 30 + 6."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "5 + 5 + 5 + 5",
+              "right": "20"
+            },
+            {
+              "left": "6 + 6 + 6",
+              "right": "18"
+            },
+            {
+              "left": "8 + 8 + 8",
+              "right": "24"
+            },
+            {
+              "left": "7 + 7",
+              "right": "14"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 9,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda shakl tomonining uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину стороны фигуры. Сколько см?",
+        "en": "Measure the side of the shape. How many cm?"
+      },
+      "hint": {
+        "uz": "Tomonning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается сторона.",
+        "en": "See which number the side ends on."
+      },
+      "explanation": {
+        "uz": "Tomon uzunligi 9 cm.",
+        "ru": "Длина стороны 9 см.",
+        "en": "The side is 9 cm long."
+      }
+    }
+  ]
+}

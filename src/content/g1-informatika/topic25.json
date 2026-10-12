@@ -1,0 +1,498 @@
+{
+  "topicId": "g1-informatika-25",
+  "subjectKey": "g1-informatika",
+  "emojis": "🏫🏠🚸📚",
+  "title": {
+    "uz": "Maktabdan uyga qaytish yoʻli",
+    "ru": "Дорога из школы домой",
+    "en": "The route home from school"
+  },
+  "recall": {
+    "uz": "Maktabdan uyga xavfsiz yoʻldan qaytamiz. Yoʻlda binolar yonidan oʻtamiz va kerakli tomonga burilamiz.",
+    "ru": "Из школы домой возвращаемся безопасной дорогой. Проходим мимо зданий и поворачиваем куда нужно.",
+    "en": "We go home from school by a safe route. We pass buildings and turn the right way."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yoʻldagi binolarni tartib bilan joyla!",
+        "ru": "Расставь здания по пути!",
+        "en": "Order the buildings on the way!"
+      },
+      "hint": {
+        "uz": "Maktab, kutubxona, doʻkon, uy.",
+        "ru": "Школа, библиотека, магазин, дом.",
+        "en": "School, library, shop, home."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yoʻl!",
+        "ru": "Верный путь!",
+        "en": "Correct route!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🏫 maktab",
+                "ru": "🏫 школа",
+                "en": "🏫 school"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "📚 kutubxona",
+                "ru": "📚 библиотека",
+                "en": "📚 library"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🏪 doʻkon",
+                "ru": "🏪 магазин",
+                "en": "🏪 shop"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "🏠 uy",
+                "ru": "🏠 дом",
+                "en": "🏠 home"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Maktabdan uyga qaysi yoʻldan yurish kerak?",
+        "ru": "Какой дорогой идти домой?",
+        "en": "Which route should we take home?"
+      },
+      "hint": {
+        "uz": "Xatarsiz yoʻl.",
+        "ru": "Безопасная дорога.",
+        "en": "The safe road."
+      },
+      "explanation": {
+        "uz": "Xavfsiz yoʻldan yurish kerak.",
+        "ru": "Идти по безопасной дороге.",
+        "en": "We should take the safe route."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "xavfsiz yoʻldan",
+              "ru": "по безопасной",
+              "en": "the safe route"
+            },
+            {
+              "uz": "xavfli yoʻldan",
+              "ru": "по опасной",
+              "en": "the dangerous route"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyga qaytish qadamlarini tartib bilan joyla!",
+        "ru": "Расставь шаги дороги домой!",
+        "en": "Order the steps of going home!"
+      },
+      "hint": {
+        "uz": "Chiqamiz, kesamiz, burilamiz, yetamiz.",
+        "ru": "Выходим, переходим, поворачиваем, доходим.",
+        "en": "Leave, cross, turn, arrive."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri tartib!",
+        "ru": "Верный порядок!",
+        "en": "Correct order!"
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "events": [
+            {
+              "text": {
+                "uz": "Maktabdan chiqamiz.",
+                "ru": "Выходим из школы.",
+                "en": "We leave the school."
+              }
+            },
+            {
+              "text": {
+                "uz": "Yoʻlni yashil chiroqda kesib oʻtamiz.",
+                "ru": "Переходим на зелёный.",
+                "en": "We cross on the green light."
+              }
+            },
+            {
+              "text": {
+                "uz": "Oʻngga burilamiz.",
+                "ru": "Поворачиваем направо.",
+                "en": "We turn right."
+              }
+            },
+            {
+              "text": {
+                "uz": "Uyga yetib boramiz.",
+                "ru": "Доходим до дома.",
+                "en": "We reach home."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qisqaroq yoʻldan yurgan bola uyga qanday yetadi?",
+        "ru": "Как дойдёт по короткой дороге?",
+        "en": "How does the child on the shorter route arrive?"
+      },
+      "hint": {
+        "uz": "Kamroq yurish.",
+        "ru": "Меньше идти.",
+        "en": "Less walking."
+      },
+      "explanation": {
+        "uz": "Qisqaroq yoʻldan tezroq yetadi.",
+        "ru": "По короткой — быстрее.",
+        "en": "Sooner, by the shorter route."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "tezroq",
+              "ru": "быстрее",
+              "en": "sooner"
+            },
+            {
+              "uz": "kechroq",
+              "ru": "позже",
+              "en": "later"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan bino nomini tuz! (🏫)",
+        "ru": "Составь слово! (🏫)",
+        "en": "Build the word! (🏫)"
+      },
+      "hint": {
+        "uz": "M-A-K-T-A-B harflaridan.",
+        "ru": "Из букв M-A-K-T-A-B.",
+        "en": "From M-A-K-T-A-B."
+      },
+      "explanation": {
+        "uz": "Barakalla! «maktab» soʻzini tuzding.",
+        "ru": "Молодец! «maktab».",
+        "en": "Great! You built “maktab”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🏫",
+          "word": "maktab",
+          "label": {
+            "uz": "maktab",
+            "ru": "школа",
+            "en": "school"
+          },
+          "letters": [
+            "m",
+            "a",
+            "k",
+            "t",
+            "a",
+            "b"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yoʻlda uchraydigan binolarni belgila!",
+        "ru": "Отметь здания на пути!",
+        "en": "Tap the buildings you pass!"
+      },
+      "hint": {
+        "uz": "Shahar binolari.",
+        "ru": "Городские здания.",
+        "en": "City buildings."
+      },
+      "explanation": {
+        "uz": "Ular yoʻlda uchraydigan binolar.",
+        "ru": "Это здания на пути.",
+        "en": "These are buildings on the way."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏫",
+              "label": {
+                "uz": "maktab",
+                "ru": "школа",
+                "en": "school"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "📚",
+              "label": {
+                "uz": "kutubxona",
+                "ru": "библиотека",
+                "en": "library"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🏦",
+              "label": {
+                "uz": "bank",
+                "ru": "банк",
+                "en": "bank"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🌙",
+              "label": {
+                "uz": "oy",
+                "ru": "луна",
+                "en": "moon"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "⭐",
+              "label": {
+                "uz": "yulduz",
+                "ru": "звезда",
+                "en": "star"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yoʻlni kesishdan avval qayerga qaraymiz?",
+        "ru": "Куда смотрим перед переходом?",
+        "en": "Where do we look before crossing?"
+      },
+      "hint": {
+        "uz": "Ikki tomonga.",
+        "ru": "В обе стороны.",
+        "en": "Both ways."
+      },
+      "explanation": {
+        "uz": "Avval chapga, keyin oʻngga qaraymiz.",
+        "ru": "Смотрим налево и направо.",
+        "en": "We look left and right."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "chapga va oʻngga",
+              "ru": "налево и направо",
+              "en": "left and right"
+            },
+            {
+              "uz": "faqat yuqoriga",
+              "ru": "только вверх",
+              "en": "only up"
+            },
+            {
+              "uz": "hech qayerga",
+              "ru": "никуда",
+              "en": "nowhere"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyga xavfsiz yoʻldan qaytish kerak.",
+        "ru": "Домой нужно идти безопасной дорогой.",
+        "en": "We should go home by a safe route."
+      },
+      "hint": {
+        "uz": "Xavfsizlik muhim.",
+        "ru": "Безопасность важна.",
+        "en": "Safety matters."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🚸",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir binoni nomi bilan juftla!",
+        "ru": "Соедини здание с названием!",
+        "en": "Match each building to its name!"
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Смотри на картинку.",
+        "en": "Look."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🏫"
+              },
+              "b": {
+                "label": {
+                  "uz": "maktab",
+                  "ru": "школа",
+                  "en": "school"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🏦"
+              },
+              "b": {
+                "label": {
+                  "uz": "bank",
+                  "ru": "банк",
+                  "en": "bank"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "📚"
+              },
+              "b": {
+                "label": {
+                  "uz": "kutubxona",
+                  "ru": "библиотека",
+                  "en": "library"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyga qaytishda nechta yoʻl boʻlishi mumkin?",
+        "ru": "Сколько дорог домой?",
+        "en": "How many routes home can there be?"
+      },
+      "hint": {
+        "uz": "Bittadan koʻp.",
+        "ru": "Больше одной.",
+        "en": "More than one."
+      },
+      "explanation": {
+        "uz": "Bir nechta yoʻl boʻlishi mumkin.",
+        "ru": "Может быть несколько.",
+        "en": "There can be several routes."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "bir nechta",
+              "ru": "несколько",
+              "en": "several"
+            },
+            {
+              "uz": "faqat bitta",
+              "ru": "только одна",
+              "en": "only one"
+            },
+            {
+              "uz": "yoʻq",
+              "ru": "ни одной",
+              "en": "none"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "topicId": "g1-tabiiy-21",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🚦🚸🚶🛑",
+  "title": {
+    "uz": "Yoʻlda xavfsizlik va svetofor",
+    "ru": "Безопасность на дороге и светофор",
+    "en": "Road safety and the traffic light"
+  },
+  "recall": {
+    "uz": "Svetofor yorugʻlik signallari bilan harakatni tartibga soladi. Qizil chiroq — toʻxta, yashil chiroq — yur degani. Yoʻlni faqat piyodalar oʻtish joyidan, atrofga qarab kesib oʻtamiz. Yugurmaymiz. Yoʻlda telefonda oʻynamaymiz — quloq va koʻz bilan ehtiyot boʻlamiz.",
+    "ru": "Светофор регулирует движение световыми сигналами. Красный — стой, зелёный — иди. Дорогу переходим только по пешеходному переходу, посмотрев по сторонам. Не бежим. На дороге не играем в телефон — бережёмся глазами и ушами.",
+    "en": "A traffic light directs traffic with light signals. Red means stop, green means go. We cross the road only at the pedestrian crossing, after looking around. We don't run. We don't play on the phone on the road — we stay alert with eyes and ears."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Chiroqqa qara — nima qilish kerak?", "ru": "Посмотри на светофор — что делать?", "en": "Look at the light — what should you do?" },
+      "hint": { "uz": "Qizil chiroq yonganda toʻxtaymiz.", "ru": "При красном свете мы стоим.", "en": "When the red light is on, we stop." },
+      "explanation": { "uz": "Qizil chiroq — toʻxta degani. Yoʻlga chiqmaymiz.", "ru": "Красный свет — значит стой. Не выходим на дорогу.", "en": "Red light means stop. We do not step onto the road." },
+      "widget": { "type": "traffic_light", "props": { "lit": "red", "answer": "stop" } }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Chiroqqa qara — nima qilish kerak?", "ru": "Посмотри на светофор — что делать?", "en": "Look at the light — what should you do?" },
+      "hint": { "uz": "Yashil chiroq yonganda yoʻlni kesib oʻtamiz.", "ru": "При зелёном свете переходим дорогу.", "en": "When the green light is on, we cross the road." },
+      "explanation": { "uz": "Yashil chiroq — yur degani. Endi ehtiyotkorlik bilan oʻtamiz.", "ru": "Зелёный свет — значит иди. Теперь осторожно переходим.", "en": "Green light means go. Now we cross carefully." },
+      "widget": { "type": "traffic_light", "props": { "lit": "green", "answer": "go" } }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Svetoforning qaysi rangi 'yur' degani?", "ru": "Какой цвет светофора означает «иди»?", "en": "Which traffic-light color means “go”?" },
+      "hint": { "uz": "Bu rang oʻt va bargning rangi.", "ru": "Это цвет травы и листьев.", "en": "It is the color of grass and leaves." },
+      "explanation": { "uz": "Yashil rang — yur degani. Qizil — toʻxta, sariq — kut.", "ru": "Зелёный — иди. Красный — стой, жёлтый — жди.", "en": "Green means go. Red means stop, yellow means wait." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "green", "emoji": "🟢", "label": { "uz": "yashil", "ru": "зелёный", "en": "green" }, "correct": true },
+            { "id": "red", "emoji": "🔴", "label": { "uz": "qizil", "ru": "красный", "en": "red" } },
+            { "id": "yellow", "emoji": "🟡", "label": { "uz": "sariq", "ru": "жёлтый", "en": "yellow" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yoʻlni qayerdan kesib oʻtish kerak?", "ru": "Где нужно переходить дорогу?", "en": "Where should we cross the road?" },
+      "hint": { "uz": "Yoʻlga oq chiziqlar — zebra chizilgan joydan.", "ru": "Там, где на дороге белые полосы — зебра.", "en": "Where the road has white stripes — the zebra crossing." },
+      "explanation": { "uz": "Yoʻlni piyodalar oʻtish joyidan (zebradan) kesib oʻtamiz. Boshqa joydan emas.", "ru": "Дорогу переходим по пешеходному переходу (зебре). Не в другом месте.", "en": "We cross at the pedestrian crossing (zebra). Not anywhere else." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "cross", "emoji": "🚸", "label": { "uz": "piyodalar oʻtish joyi", "ru": "пешеходный переход", "en": "pedestrian crossing" }, "correct": true },
+            { "id": "middle", "emoji": "🛣️", "label": { "uz": "yoʻl oʻrtasi", "ru": "середина дороги", "en": "middle of the road" } },
+            { "id": "any", "emoji": "🏃", "label": { "uz": "istalgan joy", "ru": "где угодно", "en": "anywhere" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yoʻldagi xavfsiz va xavfli xatti-harakatga ajrat!", "ru": "Разложи безопасное и опасное поведение на дороге!", "en": "Sort safe and dangerous behavior on the road!" },
+      "hint": { "uz": "Zebradan oʻtish, atrofga qarash — xavfsiz; qizilda oʻtish, yugurish — xavfli.", "ru": "Переход по зебре, смотреть по сторонам — безопасно; идти на красный, бежать — опасно.", "en": "Crossing at the zebra, looking around — safe; crossing on red, running — dangerous." },
+      "explanation": { "uz": "Zebradan oʻtish, atrofga qarash va yashilni kutish xavfsiz. Qizilda oʻtish, yugurish va telefon oʻynash xavfli.", "ru": "Переход по зебре, осмотр и ожидание зелёного — безопасно. Красный, бег и телефон — опасно.", "en": "Crossing at the zebra, looking, waiting for green are safe. Crossing on red, running, phone use are dangerous." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "safe", "label": { "uz": "✅ Xavfsiz", "ru": "✅ Безопасно", "en": "✅ Safe" }, "color": "#46c06a" },
+            { "id": "danger", "label": { "uz": "⚠️ Xavfli", "ru": "⚠️ Опасно", "en": "⚠️ Dangerous" }, "color": "#e14b4b" }
+          ],
+          "items": [
+            { "id": "zebra", "emoji": "🚸", "label": { "uz": "zebradan oʻtish", "ru": "по зебре", "en": "cross at zebra" }, "bin": "safe" },
+            { "id": "look", "emoji": "👀", "label": { "uz": "atrofga qarash", "ru": "смотреть", "en": "look around" }, "bin": "safe" },
+            { "id": "greenwait", "emoji": "🟢", "label": { "uz": "yashilni kutish", "ru": "ждать зелёный", "en": "wait for green" }, "bin": "safe" },
+            { "id": "redcross", "emoji": "🔴", "label": { "uz": "qizilda oʻtish", "ru": "идти на красный", "en": "cross on red" }, "bin": "danger" },
+            { "id": "run", "emoji": "🏃", "label": { "uz": "yugurib oʻtish", "ru": "бежать", "en": "run across" }, "bin": "danger" },
+            { "id": "phone", "emoji": "📱", "label": { "uz": "telefon oʻynash", "ru": "играть в телефон", "en": "use phone" }, "bin": "danger" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir yoʻl belgisini maʼnosiga ula!", "ru": "Соедини каждый дорожный знак с его значением!", "en": "Match each road sign to its meaning!" },
+      "hint": { "uz": "Zebra — oʻtish joyi, avtobus — bekat, velosiped — velo yoʻlka.", "ru": "Зебра — переход, автобус — остановка, велосипед — велодорожка.", "en": "Zebra — crossing, bus — stop, bike — bike lane." },
+      "explanation": { "uz": "Yoʻl belgilari bizga qoidalarni koʻrsatadi: oʻtish joyi, bekat, yoʻlka.", "ru": "Дорожные знаки показывают правила: переход, остановка, дорожка.", "en": "Road signs show us the rules: crossing, stop, lane." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🚸", "label": { "uz": "zebra", "ru": "зебра", "en": "zebra" } }, "right": { "label": { "uz": "piyodalar oʻtish joyi", "ru": "пешеходный переход", "en": "pedestrian crossing" } } },
+            { "left": { "emoji": "🚌", "label": { "uz": "avtobus", "ru": "автобус", "en": "bus" } }, "right": { "label": { "uz": "avtobus bekati", "ru": "остановка", "en": "bus stop" } } },
+            { "left": { "emoji": "🚲", "label": { "uz": "velosiped", "ru": "велосипед", "en": "bicycle" } }, "right": { "label": { "uz": "velosiped yoʻlkasi", "ru": "велодорожка", "en": "bike lane" } } },
+            { "left": { "emoji": "🚶", "label": { "uz": "piyoda", "ru": "пешеход", "en": "pedestrian" } }, "right": { "label": { "uz": "piyodalar yoʻlkasi", "ru": "тротуар", "en": "footpath" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Svetofor ranglarini belgila!", "ru": "Отметь цвета светофора!", "en": "Tap the traffic-light colors!" },
+      "hint": { "uz": "Svetoforda qizil, sariq va yashil rang boʻladi.", "ru": "У светофора красный, жёлтый и зелёный цвета.", "en": "A traffic light has red, yellow and green." },
+      "explanation": { "uz": "Svetofor ranglari: qizil, sariq, yashil. Koʻk, siyoh va jigarrang emas.", "ru": "Цвета светофора: красный, жёлтый, зелёный. Не синий, фиолетовый и коричневый.", "en": "Traffic-light colors: red, yellow, green. Not blue, purple or brown." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "red", "emoji": "🔴", "label": { "uz": "qizil", "ru": "красный", "en": "red" }, "correct": true },
+            { "id": "yellow", "emoji": "🟡", "label": { "uz": "sariq", "ru": "жёлтый", "en": "yellow" }, "correct": true },
+            { "id": "green", "emoji": "🟢", "label": { "uz": "yashil", "ru": "зелёный", "en": "green" }, "correct": true },
+            { "id": "blue", "emoji": "🔵", "label": { "uz": "koʻk", "ru": "синий", "en": "blue" } },
+            { "id": "purple", "emoji": "🟣", "label": { "uz": "siyohrang", "ru": "фиолетовый", "en": "purple" } },
+            { "id": "brown", "emoji": "🟤", "label": { "uz": "jigarrang", "ru": "коричневый", "en": "brown" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Sariq chiroq nimani bildiradi?", "ru": "Что означает жёлтый свет?", "en": "What does the yellow light mean?" },
+      "hint": { "uz": "Sariq chiroqda tayyorlanib, kutib turamiz.", "ru": "При жёлтом свете готовимся и ждём.", "en": "At yellow we get ready and wait." },
+      "explanation": { "uz": "Sariq chiroq — kut degani. Yashil yonguncha toʻxtab turamiz.", "ru": "Жёлтый свет — жди. Стоим, пока не загорится зелёный.", "en": "Yellow means wait. We stand until green comes on." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "wait", "emoji": "⏳", "label": { "uz": "kutamiz", "ru": "ждём", "en": "we wait" }, "correct": true },
+            { "id": "go", "emoji": "🚶", "label": { "uz": "yuramiz", "ru": "идём", "en": "we go" } },
+            { "id": "dontknow", "emoji": "🤷", "label": { "uz": "bilmaymiz", "ru": "не знаем", "en": "we don't know" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Yoʻlda yurganda telefonda oʻynash mumkin emas.", "ru": "Верно? На дороге нельзя играть в телефон.", "en": "True? We should not play on the phone on the road." },
+      "hint": { "uz": "Yoʻlda koʻrish va eshitish sezgisi kerak.", "ru": "На дороге нужны зрение и слух.", "en": "On the road we need our sight and hearing." },
+      "explanation": { "uz": "Toʻgʻri. Yoʻlda telefon chalgʻitadi — koʻz va quloq bilan ehtiyot boʻlamiz.", "ru": "Верно. Телефон отвлекает — на дороге бережёмся глазами и ушами.", "en": "True. The phone distracts — on the road we stay alert with eyes and ears." },
+      "widget": { "type": "true_false", "props": { "emoji": "📱", "answer": true } }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yashil chiroq miltillayotganda nima qilamiz?", "ru": "Что делать, когда зелёный свет мигает?", "en": "What do we do when the green light is blinking?" },
+      "hint": { "uz": "Miltillayotgan yashilда yoʻlga chiqmaymiz.", "ru": "При мигающем зелёном не выходим на дорогу.", "en": "When green blinks, we don't step onto the road." },
+      "explanation": { "uz": "Yashil miltillasa, oʻtishni boshlamaymiz — keyingi ruxsat chirogʻini kutamiz.", "ru": "Если зелёный мигает, не начинаем переход — ждём следующего разрешающего сигнала.", "en": "If green blinks, we don't start crossing — we wait for the next go signal." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "wait", "emoji": "⏳", "label": { "uz": "keyingi chiroqni kutamiz", "ru": "ждём следующий свет", "en": "wait for the next light" }, "correct": true },
+            { "id": "dontknow", "emoji": "🤷", "label": { "uz": "bilmaymiz", "ru": "не знаем", "en": "we don't know" } },
+            { "id": "wrong", "emoji": "❌", "label": { "uz": "notoʻgʻri oʻtamiz", "ru": "переходим неправильно", "en": "cross the wrong way" } }
+          ]
+        }
+      }
+    }
+  ]
+}

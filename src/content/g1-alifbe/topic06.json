@@ -1,0 +1,152 @@
+{
+  "topicId": "g1-alifbe-06",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🐔🦊🎂",
+  "title": {
+    "uz": "«T t» harfi",
+    "ru": "Буква «T t»",
+    "en": "The letter “T t”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «T t». U undosh tovush. Uni aytganda til tanglayga koʻtariladi, havo ogʻizda toʻsiqqa uchraydi. «T» bilan boshlanadigan soʻzlar: tovuq, tulki, tort. Katta «T» va kichik «t» — bir harfning ikki koʻrinishi.",
+    "ru": "Сегодня наша буква — «T t». Это согласный звук. Язык поднимается к нёбу, воздух встречает преграду. Слова на «T»: tovuq, tulki, tort. Большая «T» и маленькая «t» — одна буква.",
+    "en": "Today's letter is “T t”. It is a consonant sound. The tongue rises to the palate and the air meets a block. Words with “T”: tovuq, tulki, tort. Capital “T” and small “t” are one letter."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«T» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «T»!", "en": "Find the word that starts with “T”!" },
+      "hint": { "uz": "Soʻzning boshini choʻzib ayt: t-t-tovuq.", "ru": "Протяни начало: т-т-tovuq.", "en": "Stretch the start: t-t-tovuq." },
+      "explanation": { "uz": "«tovuq» «T» tovushi bilan boshlanadi.", "ru": "«tovuq» начинается со звука «T».", "en": "“tovuq” (hen) starts with the sound “T”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "hen", "emoji": "🐔", "label": { "uz": "tovuq", "ru": "tovuq", "en": "tovuq" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+            { "id": "mother", "emoji": "👩", "label": { "uz": "ona", "ru": "ona", "en": "ona" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«T» harfini topib, hammasini bos!", "ru": "Найди букву «T» и нажми на все!", "en": "Find the letter “T” and tap them all!" },
+      "hint": { "uz": "Katta «T» ham, kichik «t» ham boʻladi.", "ru": "Считаются большая «T» и маленькая «t».", "en": "Both capital “T” and small “t” count." },
+      "explanation": { "uz": "«T» harfini boshqa harflar orasidan topding!", "ru": "Ты нашёл букву «T» среди других!", "en": "You found the letter “T” among the others!" },
+      "widget": {
+        "type": "letter_hunt",
+        "props": { "target": "T", "cols": 3, "grid": ["T", "o", "t", "A", "T", "o", "t", "n", "T"] }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🦊 «tulki»da «t» tovushi qaysi katakchada?", "ru": "🦊 В какой клетке звук «t» в слове «tulki»?", "en": "🦊 Which box has the “t” sound in “tulki”?" },
+      "hint": { "uz": "«tulki» «t» bilan boshlanadi — birinchi katak.", "ru": "«tulki» начинается с «t» — первая клетка.", "en": "“tulki” starts with “t” — the first box." },
+      "explanation": { "uz": "«tulki»da «t» boshida — birinchi katakda.", "ru": "В «tulki» звук «t» в начале.", "en": "In “tulki” the “t” is at the start." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "🦊", "word": { "uz": "tulki", "ru": "tulki", "en": "tulki" }, "sound": "t", "cells": ["t", "u", "l", "k", "i"], "answer": 0 }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🐎 «ot»da «t» tovushi qaysi katakchada?", "ru": "🐎 В какой клетке звук «t» в слове «ot»?", "en": "🐎 Which box has the “t” sound in “ot”?" },
+      "hint": { "uz": "«ot» «t» tovushi bilan tugaydi — oxirgi katak.", "ru": "«ot» заканчивается на «t» — последняя клетка.", "en": "“ot” ends with “t” — the last box." },
+      "explanation": { "uz": "«ot»da «t» oxirida — ikkinchi katakda.", "ru": "В «ot» звук «t» в конце.", "en": "In “ot” the “t” is at the end." },
+      "widget": {
+        "type": "sound_position",
+        "props": { "emoji": "🐎", "word": { "uz": "ot", "ru": "ot", "en": "ot" }, "sound": "t", "cells": ["o", "t"], "answer": 1 }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«T» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «T»!", "en": "Tap the words that have the “T” sound!" },
+      "hint": { "uz": "Har soʻzni sekin ayt va «t»ni eshit.", "ru": "Произнеси каждое слово и услышь «t».", "en": "Say each word and listen for “t”." },
+      "explanation": { "uz": "tovuq, tort, ot — «t» tovushi bor.", "ru": "tovuq, tort, ot — есть звук «t».", "en": "tovuq, tort, ot have the “t” sound." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "hen", "emoji": "🐔", "label": { "uz": "tovuq", "ru": "tovuq", "en": "tovuq" }, "correct": true },
+            { "id": "cake", "emoji": "🎂", "label": { "uz": "tort", "ru": "tort", "en": "tort" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+            { "id": "mother", "emoji": "👩", "label": { "uz": "ona", "ru": "ona", "en": "ona" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«T» — undosh tovush.", "ru": "«T» — согласный звук.", "en": "“T” is a consonant sound." },
+      "hint": { "uz": "«T»ni aytganda havo ogʻizda toʻsiqqa uchraydi.", "ru": "При «T» воздух встречает преграду.", "en": "When saying “T” the air meets a block." },
+      "explanation": { "uz": "Toʻgʻri! «T» — undosh tovush.", "ru": "Верно! «T» — согласный.", "en": "True! “T” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🐎 «ot» soʻzining tovush chizmasini rangla!", "ru": "🐎 Раскрась схему звуков слова «ot»!", "en": "🐎 Colour the sound scheme of the word “ot”!" },
+      "hint": { "uz": "«o» — unli (qizil), «t» — undosh (koʻk).", "ru": "«o» — гласный (красный), «t» — согласный (синий).", "en": "“o” is a vowel (red), “t” is a consonant (blue)." },
+      "explanation": { "uz": "«ot»: o — unli (qizil), t — undosh (koʻk).", "ru": "«ot»: o — красный, t — синий.", "en": "“ot”: o is red (vowel), t is blue (consonant)." },
+      "widget": {
+        "type": "sound_scheme",
+        "props": { "emoji": "🐎", "word": { "uz": "ot", "ru": "ot", "en": "ot" }, "scheme": ["v", "c"] }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Tez ayt: «Tulki tomda, tovoq tokchada.» Qaysi tovush koʻp takrorlanadi?", "ru": "Скороговорка: «Tulki tomda, tovoq tokchada.» Какой звук повторяется чаще?", "en": "Tongue-twister: “Tulki tomda, tovoq tokchada.” Which sound repeats most?" },
+      "hint": { "uz": "Har soʻz shu tovush bilan boshlanadi.", "ru": "Каждое слово начинается с этого звука.", "en": "Each word starts with this sound." },
+      "explanation": { "uz": "«t» tovushi koʻp takrorlanadi.", "ru": "Чаще повторяется звук «t».", "en": "The “t” sound repeats most." },
+      "widget": { "type": "mcq", "props": { "choices": ["t", "m", "r"], "answerIndex": 0 } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir rasmni soʻzi bilan ula!", "ru": "Соедини каждую картинку с её словом!", "en": "Match each picture to its word!" },
+      "hint": { "uz": "Rasmga qarab, soʻzni oʻqi.", "ru": "Посмотри на картинку и прочитай слово.", "en": "Look at the picture and read the word." },
+      "explanation": { "uz": "tovuq, tulki, tort, ot — barchasida «t» bor.", "ru": "tovuq, tulki, tort, ot — везде есть «t».", "en": "tovuq, tulki, tort, ot — all have “t”." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🐔" }, "right": { "label": { "uz": "tovuq", "ru": "tovuq", "en": "tovuq" } } },
+            { "left": { "emoji": "🦊" }, "right": { "label": { "uz": "tulki", "ru": "tulki", "en": "tulki" } } },
+            { "left": { "emoji": "🎂" }, "right": { "label": { "uz": "tort", "ru": "tort", "en": "tort" } } },
+            { "left": { "emoji": "🐎" }, "right": { "label": { "uz": "ot", "ru": "ot", "en": "ot" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🦊 «tulki» soʻzini boʻgʻinlab qarsak chal!", "ru": "🦊 Похлопай слово «tulki» по слогам!", "en": "🦊 Clap the word “tulki” by syllables!" },
+      "hint": { "uz": "tul-ki — ikki marta qarsak.", "ru": "tul-ki — два хлопка.", "en": "tul-ki — two claps." },
+      "explanation": { "uz": "«tulki» = tul-ki, ikki boʻgʻin.", "ru": "«tulki» = tul-ki, два слога.", "en": "“tulki” = tul-ki, two syllables." },
+      "widget": {
+        "type": "syllable_clap",
+        "props": { "emoji": "🦊", "word": { "uz": "tulki", "ru": "tulki", "en": "tulki" }, "syllables": 2 }
+      }
+    }
+  ]
+}

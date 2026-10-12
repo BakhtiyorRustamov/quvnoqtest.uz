@@ -1,0 +1,282 @@
+{
+  "topicId": "g1-tarbiya-05",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🏠🚸🚌🏫",
+  "title": {
+    "uz": "Uydan maktabgacha yoʻl",
+    "ru": "Дорога из дома в школу",
+    "en": "The way from home to school"
+  },
+  "recall": {
+    "uz": "Oʻquvchilar maktabga piyoda, mashinada yoki avtobusda boradi. Har doim yoʻl qoidalariga amal qilamiz: koʻchani faqat belgilangan joydan, chiroqqa qarab kechamiz. Mashinada haydovchini gapga solib chalgʻitmaymiz, yoʻlda telefonga qaramaymiz.",
+    "ru": "Ученики идут в школу пешком, на машине или на автобусе. Мы всегда соблюдаем правила дорожного движения: переходим улицу только в положенном месте и на нужный сигнал светофора. В машине не отвлекаем водителя разговорами и не смотрим в телефон на дороге.",
+    "en": "Pupils go to school on foot, by car or by bus. We always follow the traffic rules: we cross the street only at the marked place and on the right signal. In the car we don't distract the driver, and we don't look at the phone on the road."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koʻchani qayerdan kechish kerak?",
+        "ru": "Где нужно переходить улицу?",
+        "en": "Where should you cross the street?"
+      },
+      "hint": {
+        "uz": "Belgilangan piyodalar oʻtish joyidan.",
+        "ru": "По пешеходному переходу.",
+        "en": "At the marked pedestrian crossing."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Faqat piyodalar oʻtish joyidan, chiroqqa qarab.",
+        "ru": "Верно! Только по переходу и на нужный сигнал.",
+        "en": "Right! Only at the crossing, on the right signal."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "piyodalar oʻtish joyidan",
+              "ru": "по пешеходному переходу",
+              "en": "at the pedestrian crossing"
+            },
+            {
+              "uz": "bilmayman",
+              "ru": "не знаю",
+              "en": "I don't know"
+            },
+            {
+              "uz": "notoʻgʻri joydan",
+              "ru": "в неположенном месте",
+              "en": "at the wrong place"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Yoʻldan oʻtayotganda telefonda oʻynash mumkin.",
+        "ru": "Верно? Переходя дорогу, можно играть в телефон.",
+        "en": "Is this right? You may play on the phone while crossing the road."
+      },
+      "hint": {
+        "uz": "Yoʻlga diqqat qilamiz.",
+        "ru": "Смотрим на дорогу.",
+        "en": "We watch the road."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Yoʻlda telefonga qaramaymiz.",
+        "ru": "Неверно! На дороге не смотрим в телефон.",
+        "en": "False! We don't look at the phone on the road."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "📵",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yoʻldagi xatti-harakatni ajrat: xavfsiz yoki xavfli!",
+        "ru": "Разложи поведение на дороге: безопасно или опасно!",
+        "en": "Sort the road behaviour: safe or dangerous!"
+      },
+      "hint": {
+        "uz": "Chiroqqa qarash — xavfsiz, yugurib oʻtish — xavfli.",
+        "ru": "Смотреть на светофор — безопасно, перебегать — опасно.",
+        "en": "Watching the light is safe, dashing across is dangerous."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yoʻlda ehtiyot boʻlamiz.",
+        "ru": "Молодец! На дороге будь осторожен.",
+        "en": "Great! Be careful on the road."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "Xavfsiz",
+                "ru": "Безопасно",
+                "en": "Safe"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "uz": "Xavfli",
+                "ru": "Опасно",
+                "en": "Dangerous"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🚦",
+              "label": {
+                "uz": "chiroqqa qarash",
+                "ru": "смотреть на светофор",
+                "en": "watch the light"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🚸",
+              "label": {
+                "uz": "oʻtish joyidan yurish",
+                "ru": "идти по переходу",
+                "en": "use the crossing"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🚶",
+              "label": {
+                "uz": "kattalar bilan oʻtish",
+                "ru": "переходить со взрослым",
+                "en": "cross with an adult"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🏃",
+              "label": {
+                "uz": "koʻchaga yugurib chiqish",
+                "ru": "выбегать на дорогу",
+                "en": "run onto the road"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "📱",
+              "label": {
+                "uz": "telefonga qarab yurish",
+                "ru": "идти, глядя в телефон",
+                "en": "walk staring at the phone"
+              },
+              "bin": "no"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Mashinada ketayotganda toʻgʻri ish qaysi?",
+        "ru": "Что правильно делать в машине?",
+        "en": "What is the right thing to do in the car?"
+      },
+      "hint": {
+        "uz": "Haydovchini chalgʻitmaymiz.",
+        "ru": "Не отвлекаем водителя.",
+        "en": "Don't distract the driver."
+      },
+      "explanation": {
+        "uz": "Barakalla! Haydovchining diqqati yoʻlda boʻlsin.",
+        "ru": "Молодец! Пусть водитель смотрит на дорогу.",
+        "en": "Great! Let the driver focus on the road."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🔒",
+              "label": {
+                "uz": "xavfsizlik kamarini taqish",
+                "ru": "пристегнуть ремень",
+                "en": "fasten the seatbelt"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🤫",
+              "label": {
+                "uz": "haydovchini chalgʻitmaslik",
+                "ru": "не отвлекать водителя",
+                "en": "not distract the driver"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🚪",
+              "label": {
+                "uz": "eshik-oynani ochib oʻtirmaslik",
+                "ru": "не открывать дверь и окно",
+                "en": "not open the door or window"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🗯️",
+              "label": {
+                "uz": "baland baqirish",
+                "ru": "громко кричать",
+                "en": "shout loudly"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🧍",
+              "label": {
+                "uz": "oʻrindiqda tik turish",
+                "ru": "вставать на сиденье",
+                "en": "stand up on the seat"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyingizdan maktabgacha boʻlgan yoʻlni tasvirlab bering.",
+        "ru": "Опиши дорогу из дома в школу.",
+        "en": "Describe your way from home to school."
+      },
+      "hint": {
+        "uz": "Nimada borasan, qayerdan oʻtasan, nimalarga e'tibor berasan?",
+        "ru": "На чём едешь, где переходишь, на что смотришь?",
+        "en": "How do you travel, where do you cross, what do you watch for?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Yoʻl qoidalarini bilasan.",
+        "ru": "Отлично! Ты знаешь правила дороги.",
+        "en": "Great! You know the road rules."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men maktabga piyoda boraman. Koʻchani piyodalar oʻtish joyidan, chiroqqa qarab kechaman.",
+            "ru": "Я иду в школу пешком. Улицу перехожу по переходу, глядя на светофор.",
+            "en": "I walk to school. I cross the street at the crossing, watching the traffic light."
+          }
+        }
+      }
+    }
+  ]
+}

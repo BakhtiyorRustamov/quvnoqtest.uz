@@ -1,0 +1,102 @@
+{
+  "topicId": "g1-alifbe-37",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🍉👁️⭐",
+  "title": { "uz": "«Z z» harfi", "ru": "Буква «Z z»", "en": "The letter “Z z”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «Z z». U undosh tovush. Uni aytganda tishlar bir-biriga yaqinlashadi, havo sirgʻalib chiqadi. «Z» bilan: tarvuz, koʻz, yulduz, xoʻroz. Endi «koʻz» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «Z z». Это согласный звук. Зубы сближаются, воздух выходит со звоном. Слова: tarvuz, koʻz, yulduz, xoʻroz. Теперь мы можем прочитать слово «koʻz»!",
+    "en": "Today's letter is “Z z”. It is a consonant. The teeth come close and the air buzzes out. Words: tarvuz, koʻz, yulduz, xoʻroz. Now we can read and build the word “koʻz”!"
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Z» tovushi bor soʻzni top!", "ru": "Найди слово со звуком «Z»!", "en": "Find a word with the “Z” sound!" },
+      "hint": { "uz": "Soʻzni sekin ayt: tar-vu-z.", "ru": "Скажи медленно: tar-vu-z.", "en": "Say it slowly: tar-vu-z." },
+      "explanation": { "uz": "«tarvuz»da «Z» tovushi bor (oxirida).", "ru": "В «tarvuz» есть звук «Z» (в конце).", "en": "“tarvuz” (watermelon) has the “Z” sound (at the end)." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "melon", "emoji": "🍉", "label": { "uz": "tarvuz", "ru": "tarvuz", "en": "tarvuz" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Z» harfini topib, hammasini bos!", "ru": "Найди букву «Z» и нажми на все!", "en": "Find the letter “Z” and tap them all!" },
+      "hint": { "uz": "Katta «Z» ham, kichik «z» ham.", "ru": "Считаются «Z» и «z».", "en": "Both “Z” and “z” count." },
+      "explanation": { "uz": "«Z» harfini topding!", "ru": "Ты нашёл букву «Z»!", "en": "You found the letter “Z”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "Z", "cols": 3, "grid": ["Z", "o", "z", "S", "Z", "u", "z", "i", "Z"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "👁️ «koʻz»da «z» tovushi qaysi katakchada?", "ru": "👁️ В какой клетке звук «z» в слове «koʻz»?", "en": "👁️ Which box has the “z” sound in “koʻz”?" },
+      "hint": { "uz": "«koʻz» «z» bilan tugaydi.", "ru": "«koʻz» заканчивается на «z».", "en": "“koʻz” ends with “z”." },
+      "explanation": { "uz": "«koʻz»da «z» oxirida — uchinchi katakda.", "ru": "В «koʻz» звук «z» в конце.", "en": "In “koʻz” the “z” is at the end." },
+      "widget": { "type": "sound_position", "props": { "emoji": "👁️", "word": { "uz": "koʻz", "ru": "koʻz", "en": "koʻz" }, "sound": "z", "cells": ["k", "oʻ", "z"], "answer": 2 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "👁️ «koʻz» soʻzining tovush chizmasini rangla!", "ru": "👁️ Раскрась схему звуков слова «koʻz»!", "en": "👁️ Colour the sound scheme of “koʻz”!" },
+      "hint": { "uz": "k — undosh, oʻ — unli, z — undosh.", "ru": "k — согласный, oʻ — гласный, z — согласный.", "en": "k consonant, oʻ vowel, z consonant." },
+      "explanation": { "uz": "«koʻz»: k, oʻ, z — undosh, unli, undosh.", "ru": "«koʻz»: согласный, гласный, согласный.", "en": "“koʻz”: consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "👁️", "word": { "uz": "koʻz", "ru": "koʻz", "en": "koʻz" }, "scheme": ["c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Z» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «Z»!", "en": "Tap the words that have the “Z” sound!" },
+      "hint": { "uz": "tarvuz, koʻz, yulduz — «z» tovushi bor.", "ru": "tarvuz, koʻz, yulduz — есть звук «z».", "en": "tarvuz, koʻz, yulduz have the “z” sound." },
+      "explanation": { "uz": "tarvuz, koʻz, yulduz — «z» bor. ot, olmada yoʻq.", "ru": "tarvuz, koʻz, yulduz — есть «z». В ot, olma нет.", "en": "tarvuz, koʻz, yulduz have “z”. ot, olma do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "melon", "emoji": "🍉", "label": { "uz": "tarvuz", "ru": "tarvuz", "en": "tarvuz" }, "correct": true },
+        { "id": "eye", "emoji": "👁️", "label": { "uz": "koʻz", "ru": "koʻz", "en": "koʻz" }, "correct": true },
+        { "id": "star", "emoji": "⭐", "label": { "uz": "yulduz", "ru": "yulduz", "en": "yulduz" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🍉 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!", "ru": "🍉 Прочитай и нажми верно написанное слово!", "en": "🍉 Read and tap the correctly spelled word!" },
+      "hint": { "uz": "Soʻz «z» bilan tugaydi: tar-vuz.", "ru": "Слово заканчивается на «z»: tar-vuz.", "en": "The word ends with “z”: tar-vuz." },
+      "explanation": { "uz": "Toʻgʻri yozilishi — «tarvuz».", "ru": "Верное написание — «tarvuz».", "en": "The correct spelling is “tarvuz”." },
+      "widget": { "type": "read_word", "props": { "emoji": "🍉", "options": [
+        { "id": "ok", "word": "tarvuz", "correct": true },
+        { "id": "w1", "word": "tarvus" },
+        { "id": "w2", "word": "darvuz" }
+      ] } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «koʻz» soʻzini tuz!", "ru": "Составь слово «koʻz» из букв!", "en": "Build the word “koʻz” from letters!" },
+      "hint": { "uz": "k — oʻ — z tartibida bos.", "ru": "Нажимай: k — oʻ — z.", "en": "Tap in order: k — oʻ — z." },
+      "explanation": { "uz": "k + oʻ + z = «koʻz».", "ru": "k + oʻ + z = «koʻz».", "en": "k + oʻ + z = “koʻz” (eye)." },
+      "widget": { "type": "build_word", "props": { "emoji": "👁️", "word": "koʻz", "letters": ["k", "oʻ", "z"], "label": { "uz": "koʻz", "ru": "глаз", "en": "eye" } } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«Z» — undosh tovush.", "ru": "«Z» — согласный звук.", "en": "“Z” is a consonant sound." },
+      "hint": { "uz": "«Z»da havo sirgʻalib chiqadi (jaranglaydi).", "ru": "При «Z» воздух выходит со звоном.", "en": "For “Z” the air buzzes out." },
+      "explanation": { "uz": "Toʻgʻri! «Z» — undosh tovush.", "ru": "Верно! «Z» — согласный.", "en": "True! “Z” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🍉 «tarvuz» soʻzini boʻgʻinlab qarsak chal!", "ru": "🍉 Похлопай слово «tarvuz» по слогам!", "en": "🍉 Clap the word “tarvuz” by syllables!" },
+      "hint": { "uz": "tar-vuz — ikki marta qarsak.", "ru": "tar-vuz — два хлопка.", "en": "tar-vuz — two claps." },
+      "explanation": { "uz": "«tarvuz» = tar-vuz, ikki boʻgʻin.", "ru": "«tarvuz» = tar-vuz, два слога.", "en": "“tarvuz” = tar-vuz, two syllables." },
+      "widget": { "type": "syllable_clap", "props": { "emoji": "🍉", "word": { "uz": "tarvuz", "ru": "tarvuz", "en": "tarvuz" }, "syllables": 2 } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Har bir rasmni soʻzi bilan ula!", "ru": "Соедини каждую картинку с её словом!", "en": "Match each picture to its word!" },
+      "hint": { "uz": "tarvuz — 🍉, koʻz — 👁️, yulduz — ⭐, olma — 🍎.", "ru": "tarvuz — 🍉, koʻz — 👁️, yulduz — ⭐, olma — 🍎.", "en": "tarvuz — 🍉, koʻz — 👁️, yulduz — ⭐, olma — 🍎." },
+      "explanation": { "uz": "Barcha «z» soʻzlarini toʻgʻri ulading!", "ru": "Ты верно соединил слова с «z»!", "en": "You matched the “z” words correctly!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "emoji": "🍉" }, "right": { "label": { "uz": "tarvuz", "ru": "tarvuz", "en": "tarvuz" } } },
+        { "left": { "emoji": "👁️" }, "right": { "label": { "uz": "koʻz", "ru": "koʻz", "en": "koʻz" } } },
+        { "left": { "emoji": "⭐" }, "right": { "label": { "uz": "yulduz", "ru": "yulduz", "en": "yulduz" } } },
+        { "left": { "emoji": "🍎" }, "right": { "label": { "uz": "olma", "ru": "olma", "en": "olma" } } }
+      ] } }
+    }
+  ]
+}

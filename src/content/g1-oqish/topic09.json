@@ -1,0 +1,429 @@
+{
+  "topicId": "g1-oqish-09",
+  "subjectKey": "g1-oqish",
+  "emojis": "❄️🛷⛸️",
+  "title": {
+    "uz": "Qish keldi oʻlkamga",
+    "ru": "Зима пришла в наш край",
+    "en": "Winter has come to our land"
+  },
+  "recall": {
+    "uz": "Yangi boʻlim — «Tabiat goʻzalliklari» boshlanadi! Bugun qish fasli haqidagi sheʼrni oʻqiymiz. Sheʼrda ohangdosh — qofiyadosh soʻzlarni topamiz va qishda boʻladigan hodisalarni aniqlaymiz.",
+    "ru": "Начинается новый раздел — «Красота природы»! Сегодня читаем стихотворение о зиме. Найдём в нём созвучные слова — рифмы — и определим, что происходит зимой.",
+    "en": "A new section begins — “The beauty of nature”! Today we read a poem about winter, find its rhyming words and decide which events happen in winter."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Qishning ishi",
+          "variant": "poem",
+          "audio": "g1-oqish-09-q1",
+          "lines": [
+            "Keldi qishning oq oti,",
+            "Ortida — qor quti.",
+            "Anhorlarni muz qoplab,",
+            "Yaxmalak soldi boplab.",
+            "Har bir uyning tomiga",
+            "Oq doʻppisin kiydirdi.",
+            "Qish shuncha oq boʻyoqni",
+            "Qayerlardan keltirdi?"
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrni ifodali oʻqing!",
+        "ru": "Прочитай стихотворение выразительно!",
+        "en": "Read the poem aloud!"
+      },
+      "hint": {
+        "uz": "Har bir qatorni sekin, ohang bilan oʻqing.",
+        "ru": "Читай каждую строку не спеша, с интонацией.",
+        "en": "Read each line slowly, with feeling."
+      },
+      "explanation": {
+        "uz": "Sheʼr qishning «ishlari» — qor, muz va yaxmalak haqida.",
+        "ru": "Стихотворение о «делах» зимы — снеге, льде и катке.",
+        "en": "The poem is about winter's “work” — snow, ice and the slide."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Qish fasli haqida",
+              "ru": "О зиме",
+              "en": "About winter"
+            },
+            {
+              "uz": "Yoz fasli haqida",
+              "ru": "О лете",
+              "en": "About summer"
+            },
+            {
+              "uz": "Maktab haqida",
+              "ru": "О школе",
+              "en": "About school"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼr qaysi fasl haqida?",
+        "ru": "О каком времени года стихотворение?",
+        "en": "Which season is the poem about?"
+      },
+      "hint": {
+        "uz": "Qor, muz, yaxmalak — qaysi faslda boʻladi?",
+        "ru": "Снег, лёд, каток — в какое время года?",
+        "en": "Snow, ice, a slide — which season has them?"
+      },
+      "explanation": {
+        "uz": "Qor, muz va yaxmalak — bularning bari qishda boʻladi.",
+        "ru": "Снег, лёд и каток — всё это бывает зимой.",
+        "en": "Snow, ice and slides all belong to winter."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Muz bilan",
+              "ru": "Льдом",
+              "en": "With ice"
+            },
+            {
+              "uz": "Gul bilan",
+              "ru": "Цветами",
+              "en": "With flowers"
+            },
+            {
+              "uz": "Qum bilan",
+              "ru": "Песком",
+              "en": "With sand"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrga koʻra, qish anhorlarni nima bilan qopladi?",
+        "ru": "Чем зима покрыла арыки в стихотворении?",
+        "en": "In the poem, what did winter cover the canals with?"
+      },
+      "hint": {
+        "uz": "«Anhorlarni ... qoplab, yaxmalak soldi boplab.»",
+        "ru": "«Anhorlarni ... qoplab...»",
+        "en": "“Anhorlarni ... qoplab…”"
+      },
+      "explanation": {
+        "uz": "Qish anhorlarni muz bilan qoplab, yaxmalak — sirpanish joyini yasadi.",
+        "ru": "Зима покрыла арыки льдом и устроила каток.",
+        "en": "Winter covered the canals with ice and made a slide."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Oq doʻppi — qor",
+              "ru": "Белую тюбетейку — снег",
+              "en": "A white cap — snow"
+            },
+            {
+              "uz": "Qizil roʻmol",
+              "ru": "Красный платок",
+              "en": "A red scarf"
+            },
+            {
+              "uz": "Yashil chodir",
+              "ru": "Зелёный шатёр",
+              "en": "A green tent"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qish uylarning tomiga nima «kiydirdi»?",
+        "ru": "Что зима «надела» на крыши домов?",
+        "en": "What did winter “put” on the rooftops?"
+      },
+      "hint": {
+        "uz": "Tomlardagi qor nimaga oʻxshatilgan?",
+        "ru": "С чем сравнили снег на крышах?",
+        "en": "What is the snow on the roofs compared to?"
+      },
+      "explanation": {
+        "uz": "Tomlardagi oppoq qor oq doʻppiga oʻxshatilgan.",
+        "ru": "Белый снег на крышах сравнили с белой тюбетейкой.",
+        "en": "The white snow on the roofs is compared to a white cap."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "libos",
+              "right": "kiyim"
+            },
+            {
+              "left": "yaxmalak",
+              "right": "sirpanish joyi"
+            },
+            {
+              "left": "anhor",
+              "right": "katta ariq"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«yaxmalak» — muzda sirpanadigan joy.",
+        "ru": "«yaxmalak» — место, где скользят по льду.",
+        "en": "“yaxmalak” is a place to slide on ice."
+      },
+      "explanation": {
+        "uz": "libos = kiyim; yaxmalak = muzdagi sirpanish joyi; anhor = katta ariq.",
+        "ru": "libos = одежда; yaxmalak = ледяная горка; anhor = большой арык.",
+        "en": "libos = clothing; yaxmalak = ice slide; anhor = a large canal."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "qoplab",
+              "right": "boplab"
+            },
+            {
+              "left": "kiydirdi",
+              "right": "keltirdi"
+            },
+            {
+              "left": "oti",
+              "right": "quti"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Ohangdosh (qofiyadosh) soʻzlarni juftla!",
+        "ru": "Соедини созвучные слова — рифмы!",
+        "en": "Match the rhyming words!"
+      },
+      "hint": {
+        "uz": "Oxiri bir xil eshitiladigan soʻzlar — qofiyadosh.",
+        "ru": "Рифмуются слова с одинаковым окончанием.",
+        "en": "Words that end with the same sound rhyme."
+      },
+      "explanation": {
+        "uz": "qoplab–boplab, kiydirdi–keltirdi, oti–quti — ohangdosh, yaʼni qofiyadosh soʻzlar.",
+        "ru": "qoplab–boplab, kiydirdi–keltirdi, oti–quti — рифмующиеся слова.",
+        "en": "qoplab–boplab, kiydirdi–keltirdi, oti–quti are rhyming pairs."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "Daryolar muzlaydi",
+              "match": true
+            },
+            {
+              "text": "Moychechak gullaydi",
+              "match": false
+            },
+            {
+              "text": "Ayiq uxlaydi",
+              "match": true
+            },
+            {
+              "text": "Olma pishadi",
+              "match": false
+            },
+            {
+              "text": "Qor yogʻadi",
+              "match": true
+            },
+            {
+              "text": "Qushlar issiq yurtdan qaytadi",
+              "match": false
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "«Boʻladi-boʻlmaydi» oʻyini: qishda boʻladigan hodisalarni bos!",
+        "ru": "Игра «Бывает — не бывает»: нажми, что бывает зимой!",
+        "en": "“Happens or not”: tap the events that happen in winter!"
+      },
+      "hint": {
+        "uz": "Gullash va meva pishishi — issiq fasllarda.",
+        "ru": "Цветение и созревание плодов — в тёплое время года.",
+        "en": "Flowers bloom and fruit ripens in the warm seasons."
+      },
+      "explanation": {
+        "uz": "Qishda daryolar muzlaydi, ayiq uxlaydi, qor yogʻadi. Gullash, olma pishishi va qushlarning qaytishi — boshqa fasllarda.",
+        "ru": "Зимой реки замерзают, медведь спит, идёт снег. Остальное — в другие сезоны.",
+        "en": "In winter rivers freeze, bears sleep and snow falls. The rest happens in other seasons."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "qish",
+          "letters": [
+            "q",
+            "i",
+            "s",
+            "h"
+          ],
+          "emoji": "❄️",
+          "clue": {
+            "uz": "Eng sovuq fasl",
+            "ru": "Самое холодное время года",
+            "en": "The coldest season"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Harflardan soʻzni yigʻ!",
+        "ru": "Собери слово из букв!",
+        "en": "Build the word from the letters!"
+      },
+      "hint": {
+        "uz": "Bu fasl dekabrda boshlanadi.",
+        "ru": "Это время года начинается в декабре.",
+        "en": "This season begins in December."
+      },
+      "explanation": {
+        "uz": "«Qish» — yilning eng sovuq fasli.",
+        "ru": "«Qish» (зима) — самое холодное время года.",
+        "en": "“Qish” (winter) is the coldest season."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Qishda anhorlarni ",
+          "after": " qoplaydi.",
+          "choices": [
+            "muz",
+            "gul",
+            "barg"
+          ],
+          "answer": "muz",
+          "emoji": "🧊",
+          "clue": {
+            "uz": "Sovuqda suv nimaga aylanadi?",
+            "ru": "Во что превращается вода на морозе?",
+            "en": "What does water turn into in the cold?"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Sovuqda suv qotib qoladi.",
+        "ru": "На морозе вода застывает.",
+        "en": "Water freezes hard in the cold."
+      },
+      "explanation": {
+        "uz": "Sovuqda suv qotib, muzga aylanadi — anhorlarni muz qoplaydi.",
+        "ru": "На морозе вода застывает и превращается в лёд.",
+        "en": "In the cold, water freezes into ice that covers the canals."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Qishda",
+            "yerni",
+            "oppoq",
+            "qor",
+            "qoplaydi."
+          ],
+          "emoji": "🌨️",
+          "clue": {
+            "uz": "Qish haqida gap tuz",
+            "ru": "Составь предложение о зиме",
+            "en": "Build a sentence about winter"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan gap tuz!",
+        "ru": "Составь предложение из слов!",
+        "en": "Build the sentence from the words!"
+      },
+      "hint": {
+        "uz": "Gap «Qishda» soʻzi bilan boshlanadi.",
+        "ru": "Предложение начинается со слова «Qishda».",
+        "en": "The sentence starts with “Qishda”."
+      },
+      "explanation": {
+        "uz": "Qishda yerni oppoq qor qoplaydi.",
+        "ru": "Зимой землю покрывает белый снег.",
+        "en": "In winter, white snow covers the ground."
+      }
+    }
+  ],
+  "skipRecall": true
+}

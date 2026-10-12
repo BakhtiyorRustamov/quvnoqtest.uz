@@ -1,0 +1,468 @@
+{
+  "topicId": "g1-ingliz-17",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐢🐯🚂🍅",
+  "title": {
+    "uz": "«t» tovushi: toshbaqa",
+    "ru": "Звук «t»: черепаха",
+    "en": "The 't' sound: a turtle"
+  },
+  "recall": {
+    "uz": "Hayvon tovushlari! Bugun «t» tovushini mashq qilamiz: turtle — toshbaqa, two — ikki, teddy — ayiqcha. T-t-turtle!",
+    "ru": "Звуки животных! Сегодня тренируем звук «t»: turtle — черепаха, two — два, teddy — мишка. T-t-turtle!",
+    "en": "Animal sounds! Today we practise the /t/ sound: turtle, two and teddy. T-t-turtle!"
+  },
+  "ttsText": {
+    "uz": "«t» tovushi.",
+    "en": "Animal sounds! The t sound. T-t-turtle! A turtle has two toys!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «t» bilan boshlanadigan hayvonni bos!",
+        "ru": "Послушай и нажми животное на «t»!",
+        "en": "Listen and tap the animal that starts with /t/!"
+      },
+      "audio": {
+        "key": "ing17-q1",
+        "text": "Turtle! T-t-turtle!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«turtle» — toshbaqa.",
+        "ru": "«turtle» — черепаха.",
+        "en": "\"turtle\" starts with /t/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Turtle — toshbaqa.",
+        "ru": "Верно! Turtle — черепаха.",
+        "en": "Right! Turtle!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐢",
+              "label": "turtle",
+              "correct": true
+            },
+            {
+              "emoji": "🐻",
+              "label": "bear"
+            },
+            {
+              "emoji": "🐟",
+              "label": "fish"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«t» bilan boshlanadigan hayvonni bos!",
+        "ru": "Нажми животное на «t»!",
+        "en": "Tap the animal that starts with /t/!"
+      },
+      "audio": {
+        "key": "ing17-q2",
+        "text": "Tiger! T-t-tiger!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«tiger» — yoʻlbars.",
+        "ru": "«tiger» — тигр.",
+        "en": "\"tiger\" starts with /t/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tiger — yoʻlbars.",
+        "ru": "Верно! Tiger — тигр.",
+        "en": "Right! Tiger!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐯",
+              "label": "tiger",
+              "correct": true
+            },
+            {
+              "emoji": "🦁",
+              "label": "lion"
+            },
+            {
+              "emoji": "🐶",
+              "label": "dog"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«t» tovushi bilan boshlanadigan hammasini belgila!",
+        "ru": "Отметь всё на «t»!",
+        "en": "Tap everything that starts with /t/!"
+      },
+      "hint": {
+        "uz": "turtle, tiger, train.",
+        "ru": "turtle, tiger, train.",
+        "en": "turtle, tiger, train."
+      },
+      "explanation": {
+        "uz": "Barakalla! Turtle, tiger, train — hammasi «t»!",
+        "ru": "Молодец! Turtle, tiger, train — всё на «t»!",
+        "en": "Great! Turtle, tiger, train — all /t/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐢",
+              "label": "turtle",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐯",
+              "label": "tiger",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🚂",
+              "label": "train",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐻",
+              "label": "bear"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «t» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «t»?",
+        "en": "Which word starts with the /t/ sound?"
+      },
+      "hint": {
+        "uz": "Til tishga tegib «t» de.",
+        "ru": "Кончик языка к зубам — «t».",
+        "en": "Touch your teeth and say /t/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «turtle» — «t» tovushi.",
+        "ru": "Верно! «turtle» — звук «t».",
+        "en": "Right! \"turtle\" starts with /t/."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "turtle",
+            "bear",
+            "ball"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«t» bilan boshlanadigan sonni bos!",
+        "ru": "Нажми число на «t»!",
+        "en": "Tap the number that starts with /t/!"
+      },
+      "audio": {
+        "key": "ing17-q5",
+        "text": "Two! T-t-two!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«two» — ikki.",
+        "ru": "«two» — два.",
+        "en": "\"two\" starts with /t/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Two — ikki.",
+        "ru": "Верно! Two — два.",
+        "en": "Right! Two!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "2️⃣",
+              "label": "two",
+              "correct": true
+            },
+            {
+              "emoji": "3️⃣",
+              "label": "three"
+            },
+            {
+              "emoji": "1️⃣",
+              "label": "one"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va birga ayt. Qaysi tovush takrorlanadi?",
+        "ru": "Послушай и повтори. Какой звук повторяется?",
+        "en": "Listen and say it. Which sound repeats?"
+      },
+      "hint": {
+        "uz": "Turtle, two, toys — bir tovush.",
+        "ru": "Turtle, two, toys — один звук.",
+        "en": "turtle, two, toys — the same sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «t» tovushi takrorlanadi.",
+        "ru": "Верно! Повторяется звук «t».",
+        "en": "Right! The /t/ sound repeats."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🐢",
+              "name": "Turtle",
+              "text": "A turtle has two toys!",
+              "audio": {
+                "key": "ing17-q6-a",
+                "text": "A turtle has two toys!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "You",
+              "text": "T-t-turtle! T-t-two! T-t-toys!",
+              "audio": {
+                "key": "ing17-q6-b",
+                "text": "T! T! T! Turtle, two, toys!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qaysi tovush?",
+              "ru": "Какой звук?",
+              "en": "Which sound?"
+            },
+            "choices": [
+              "/b/",
+              "/s/",
+              "/t/"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«turtle»ning tarjimasi nima?",
+        "ru": "Что значит «turtle»?",
+        "en": "What does \"turtle\" mean?"
+      },
+      "hint": {
+        "uz": "Sekin yuradigan, qobiqli hayvon.",
+        "ru": "Медленный зверь с панцирем.",
+        "en": "A slow animal with a shell."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Turtle — toshbaqa.",
+        "ru": "Верно! Turtle — черепаха.",
+        "en": "Right! A turtle."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "toshbaqa",
+              "ru": "черепаха",
+              "en": "a turtle"
+            },
+            {
+              "uz": "yoʻlbars",
+              "ru": "тигр",
+              "en": "a tiger"
+            },
+            {
+              "uz": "ayiq",
+              "ru": "медведь",
+              "en": "a bear"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yana «t» bilan boshlanadigan hammasini belgila!",
+        "ru": "Снова отметь всё на «t»!",
+        "en": "Tap all the /t/ words again!"
+      },
+      "hint": {
+        "uz": "train, tomato, tea.",
+        "ru": "train, tomato, tea.",
+        "en": "train, tomato, tea."
+      },
+      "explanation": {
+        "uz": "Barakalla! Train, tomato, tea — «t»!",
+        "ru": "Молодец! Train, tomato, tea — «t»!",
+        "en": "Great! Train, tomato, tea — /t/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🚂",
+              "label": "train",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍅",
+              "label": "tomato",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍵",
+              "label": "tea",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐱",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toshbaqani bos!",
+        "ru": "Нажми черепаху!",
+        "en": "Tap the turtle!"
+      },
+      "hint": {
+        "uz": "A turtle with two teddies.",
+        "ru": "Черепаха с двумя мишками.",
+        "en": "A turtle with two teddies."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Turtle — toshbaqa!",
+        "ru": "Верно! Turtle — черепаха!",
+        "en": "Right! A turtle!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐢",
+              "label": "turtle",
+              "correct": true
+            },
+            {
+              "emoji": "🐰",
+              "label": "rabbit"
+            },
+            {
+              "emoji": "🐸",
+              "label": "frog"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «two» soʻzi «t» tovushi bilan boshlanadi.",
+        "ru": "Верно? Слово «two» начинается на «t».",
+        "en": "Is this right? \"two\" starts with the /t/ sound."
+      },
+      "hint": {
+        "uz": "T-t-two!",
+        "ru": "T-t-two!",
+        "en": "T-t-two!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Two — «t» tovushi.",
+        "ru": "Верно! Two — звук «t».",
+        "en": "Right! \"two\" starts with /t/."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐢",
+          "answer": true
+        }
+      }
+    }
+  ]
+}

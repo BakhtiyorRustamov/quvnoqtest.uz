@@ -1,0 +1,25 @@
+# dependencies / build
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# env & secrets — never commit credentials
+.env
+.env.*
+!.env.example
+
+# Google service-account key for TTS seeding (keep this private!)
+gcloud-tts.json
+gcloud-tts.json.json
+*-service-account*.json
+
+.vercel
+.env*
+
+# Local raw media / working assets (kept out of the repo)
+videolar/
+language button images/
+# Windows folder metadata
+desktop.ini
+**/desktop.ini

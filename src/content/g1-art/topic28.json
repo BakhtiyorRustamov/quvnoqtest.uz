@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-28", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Olma daraxti", "ru": "Яблоня", "en": "The apple tree" },
+  "recall": {
+    "uz": "Olma daraxtida shirin olmalar pishadi. Uning tanasi jigarrang, barglari yashil. Keling, olma daraxtini boʻyaymiz.",
+    "ru": "На яблоне созревают сладкие яблоки. Ствол коричневый, листья зелёные. Давай раскрасим яблоню.",
+    "en": "Sweet apples ripen on the apple tree. Its trunk is brown and its leaves are green. Let's colour the apple tree."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Olma daraxtini boʻya.", "ru": "Раскрась яблоню.", "en": "Colour the apple tree." },
+      "hint": { "uz": "Barglar — yashil, olmalar — qizil, tana — jigarrang.", "ru": "Листья — зелёные, яблоки — красные, ствол — коричневый.", "en": "Leaves green, apples red, trunk brown." },
+      "explanation": { "uz": "Hosildor olma daraxti!", "ru": "Плодовитая яблоня!", "en": "A fruitful apple tree!" },
+      "widget": { "type": "color_fill", "props": { "picture": "tree" } } }
+  ]
+}

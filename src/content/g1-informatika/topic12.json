@@ -1,0 +1,513 @@
+{
+  "topicId": "g1-informatika-12",
+  "subjectKey": "g1-informatika",
+  "emojis": "🌾🍞🍎🥛",
+  "title": {
+    "uz": "Edi – boʻldi",
+    "ru": "Было – стало",
+    "en": "Was – became"
+  },
+  "recall": {
+    "uz": "Har bir narsa oʻzgaradi. Bugʻdoydan non, olmadan sharbat, sutdan pishloq tayyorlanadi.",
+    "ru": "Всё меняется. Из пшеницы — хлеб, из яблока — сок, из молока — сыр.",
+    "en": "Everything changes. Bread from wheat, juice from apples, cheese from milk."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir xomashyoni mahsuloti bilan ula!",
+        "ru": "Соедини сырьё с продуктом!",
+        "en": "Match each raw thing to its product!"
+      },
+      "hint": {
+        "uz": "Bugʻdoy — non.",
+        "ru": "Пшеница — хлеб.",
+        "en": "Wheat — bread."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🌾"
+              },
+              "right": {
+                "label": {
+                  "uz": "non",
+                  "ru": "хлеб",
+                  "en": "bread"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "sharbat",
+                  "ru": "сок",
+                  "en": "juice"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🥛"
+              },
+              "right": {
+                "label": {
+                  "uz": "pishloq",
+                  "ru": "сыр",
+                  "en": "cheese"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Non tayyorlash tartibini joyla!",
+        "ru": "Расставь по порядку: хлеб!",
+        "en": "Order how bread is made!"
+      },
+      "hint": {
+        "uz": "Bugʻdoy, un, non.",
+        "ru": "Пшеница, мука, хлеб.",
+        "en": "Wheat, flour, bread."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: bugʻdoy, un, non.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🌾 bugʻdoy",
+                "ru": "🌾 пшеница",
+                "en": "🌾 wheat"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "un",
+                "ru": "мука",
+                "en": "flour"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🍞 non",
+                "ru": "🍞 хлеб",
+                "en": "🍞 bread"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bugʻdoydan nima tayyorlanadi?",
+        "ru": "Что делают из пшеницы?",
+        "en": "What is made from wheat?"
+      },
+      "hint": {
+        "uz": "Har kuni yeymiz.",
+        "ru": "Едим каждый день.",
+        "en": "We eat it daily."
+      },
+      "explanation": {
+        "uz": "Bugʻdoydan non tayyorlanadi.",
+        "ru": "Из пшеницы — хлеб.",
+        "en": "Bread is made from wheat."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "non",
+              "ru": "хлеб",
+              "en": "bread"
+            },
+            {
+              "uz": "sharbat",
+              "ru": "сок",
+              "en": "juice"
+            },
+            {
+              "uz": "pishloq",
+              "ru": "сыр",
+              "en": "cheese"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sutdan nima tayyorlanadi?",
+        "ru": "Что делают из молока?",
+        "en": "What is made from milk?"
+      },
+      "hint": {
+        "uz": "Sichqon yaxshi koʻradi.",
+        "ru": "Мышка любит это.",
+        "en": "A mouse loves it."
+      },
+      "explanation": {
+        "uz": "Sutdan pishloq tayyorlanadi.",
+        "ru": "Из молока — сыр.",
+        "en": "Cheese is made from milk."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "pishloq",
+              "ru": "сыр",
+              "en": "cheese"
+            },
+            {
+              "uz": "non",
+              "ru": "хлеб",
+              "en": "bread"
+            },
+            {
+              "uz": "shakar",
+              "ru": "сахар",
+              "en": "sugar"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan buyum nomini tuz! (📓)",
+        "ru": "Составь слово! (📓)",
+        "en": "Build the word! (📓)"
+      },
+      "hint": {
+        "uz": "R-D-A-F-A-T harflaridan.",
+        "ru": "Из букв R-D-A-F-A-T.",
+        "en": "From R-D-A-F-A-T."
+      },
+      "explanation": {
+        "uz": "Barakalla! «daftar» soʻzini tuzding.",
+        "ru": "Молодец! «daftar».",
+        "en": "Great! You built “daftar”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "📓",
+          "word": "daftar",
+          "label": {
+            "uz": "daftar",
+            "ru": "тетрадь",
+            "en": "notebook"
+          },
+          "letters": [
+            "d",
+            "a",
+            "f",
+            "t",
+            "a",
+            "r"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Olmadan tayyorlanadigan narsalarni belgila!",
+        "ru": "Отметь, что делают из яблок!",
+        "en": "Tap what is made from apples!"
+      },
+      "hint": {
+        "uz": "Olmadan shirinliklar.",
+        "ru": "Из яблок — вкусности.",
+        "en": "Sweet things from apples."
+      },
+      "explanation": {
+        "uz": "Olmadan sharbat va murabbo boʻladi.",
+        "ru": "Из яблок — сок и варенье.",
+        "en": "Apples make juice and jam."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍹",
+              "label": {
+                "uz": "sharbat",
+                "ru": "сок",
+                "en": "juice"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍯",
+              "label": {
+                "uz": "murabbo",
+                "ru": "варенье",
+                "en": "jam"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍰",
+              "label": {
+                "uz": "pirog",
+                "ru": "пирог",
+                "en": "pie"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🧀",
+              "label": {
+                "uz": "pishloq",
+                "ru": "сыр",
+                "en": "cheese"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "хлеб",
+                "en": "bread"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Buterbrod tayyorlash tartibini joyla!",
+        "ru": "Порядок: бутерброд!",
+        "en": "Order: making a sandwich!"
+      },
+      "hint": {
+        "uz": "Non, sariyogʻ, qiyom.",
+        "ru": "Хлеб, масло, джем.",
+        "en": "Bread, butter, jam."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri tartib!",
+        "ru": "Верный порядок!",
+        "en": "Correct order!"
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "events": [
+            {
+              "text": {
+                "uz": "Nonni kesamiz.",
+                "ru": "Режем хлеб.",
+                "en": "We slice the bread."
+              }
+            },
+            {
+              "text": {
+                "uz": "Nonga sariyogʻ surtamiz.",
+                "ru": "Мажем масло.",
+                "en": "We spread butter on it."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ustiga qiyom qoʻyamiz.",
+                "ru": "Кладём джем сверху.",
+                "en": "We put jam on top."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Olmadan sharbat tayyorlash mumkin.",
+        "ru": "Из яблок можно сделать сок.",
+        "en": "Juice can be made from apples."
+      },
+      "hint": {
+        "uz": "Olmani siqamiz.",
+        "ru": "Выжимаем яблоко.",
+        "en": "We squeeze the apple."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍎",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xomashyoni mahsuloti bilan juftla!",
+        "ru": "Соедини сырьё с продуктом!",
+        "en": "Match raw thing to product!"
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Смотри на картинку.",
+        "en": "Look."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🌾"
+              },
+              "b": {
+                "label": {
+                  "uz": "non",
+                  "ru": "хлеб",
+                  "en": "bread"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": {
+                  "uz": "sharbat",
+                  "ru": "сок",
+                  "en": "juice"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🥛"
+              },
+              "b": {
+                "label": {
+                  "uz": "pishloq",
+                  "ru": "сыр",
+                  "en": "cheese"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Non nimadan tayyorlanadi?",
+        "ru": "Из чего делают хлеб?",
+        "en": "What is bread made from?"
+      },
+      "hint": {
+        "uz": "Dalada oʻsadi.",
+        "ru": "Растёт в поле.",
+        "en": "It grows in a field."
+      },
+      "explanation": {
+        "uz": "Non bugʻdoydan tayyorlanadi.",
+        "ru": "Хлеб — из пшеницы.",
+        "en": "Bread is made from wheat."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "bugʻdoydan",
+              "ru": "из пшеницы",
+              "en": "from wheat"
+            },
+            {
+              "uz": "sutdan",
+              "ru": "из молока",
+              "en": "from milk"
+            },
+            {
+              "uz": "olmadan",
+              "ru": "из яблок",
+              "en": "from apples"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

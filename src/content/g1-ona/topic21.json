@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-21",
+  "subjectKey": "g1-ona",
+  "emojis": "🧠🔡🏆",
+  "title": {
+    "uz": "Undoshlar bellashuvi (takrorlash)",
+    "ru": "Состязание согласных (повторение)",
+    "en": "Consonants contest (review)"
+  },
+  "recall": {
+    "uz": "Bugun undoshlar va harflarni takrorlaymiz. Oʻzbek tilida 24 ta undosh tovush, 23 ta undosh harf bor. «J» harfi ikki xil talaffuz qilinadi. Bilimingni sinab koʻr!",
+    "ru": "Сегодня повторяем согласные и буквы. В узбекском 24 согласных звука, 23 согласные буквы. «J» произносится двумя способами. Проверь себя!",
+    "en": "Today we review consonants and letters. Uzbek has 24 consonant sounds and 23 consonant letters. “J” is pronounced two ways. Test yourself!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["24", "6", "30"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻzbek tilida nechta undosh tovush bor?", "ru": "Сколько согласных звуков в узбекском?", "en": "How many consonant sounds are there in Uzbek?" },
+      "hint": { "uz": "Ular 23 ta harf bilan yoziladi.", "ru": "Они пишутся 23 буквами.", "en": "They are written with 23 letters." },
+      "explanation": { "uz": "Oʻzbek tilida 24 ta undosh tovush bor.", "ru": "В узбекском 24 согласных звука.", "en": "Uzbek has 24 consonant sounds." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "a", "match": false }, { "text": "b", "match": true }, { "text": "e", "match": false }, { "text": "s", "match": true }, { "text": "t", "match": true }, { "text": "o", "match": false }, { "text": "k", "match": true }, { "text": "r", "match": true } ] } },
+      "prompt": { "uz": "Undosh harflarni bos!", "ru": "Нажми согласные буквы!", "en": "Tap the consonant letters!" },
+      "hint": { "uz": "a, e, o — unli.", "ru": "a, e, o — гласные.", "en": "a, e, o are vowels." },
+      "explanation": { "uz": "b, s, t, k, r — undosh harflar.", "ru": "b, s, t, k, r — согласные буквы.", "en": "b, s, t, k, r are consonant letters." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "undosh", "letters": ["u", "n", "d", "o", "sh"], "emoji": "🔡", "clue": { "uz": "Havo toʻsiladigan tovush", "ru": "Звук с преградой", "en": "A sound with an obstruction" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: u, n, d, o, sh.", "ru": "Части: u, n, d, o, sh.", "en": "Parts: u, n, d, o, sh." },
+      "explanation": { "uz": "«undosh» — 24 ta tovush.", "ru": "«undosh» (согласный) — 24 звука.", "en": "“undosh” (consonant) — 24 sounds." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "a", "bin": "unli" }, { "id": "b", "label": "i", "bin": "unli" }, { "id": "c", "label": "oʻ", "bin": "unli" }, { "id": "d", "label": "b", "bin": "und" }, { "id": "e", "label": "sh", "bin": "und" }, { "id": "f", "label": "q", "bin": "und" } ], "bins": [ { "id": "unli", "label": "Unli" }, { "id": "und", "label": "Undosh" } ] } },
+      "prompt": { "uz": "Tovushlarni ajrat!", "ru": "Раздели звуки!", "en": "Sort the sounds!" },
+      "hint": { "uz": "b, sh, q — undosh.", "ru": "b, sh, q — согласные.", "en": "b, sh, q are consonants." },
+      "explanation": { "uz": "Unli: a, i, oʻ; undosh: b, sh, q.", "ru": "Гласные: a, i, oʻ; согласные: b, sh, q.", "en": "Vowels: a, i, oʻ; consonants: b, sh, q." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "dono", "match": true }, { "text": "non", "match": false }, { "text": "tosh", "match": true }, { "text": "kitob", "match": false }, { "text": "olma", "match": true }, { "text": "gul", "match": false } ] } },
+      "prompt": { "uz": "Toʻrt harfli soʻzlarni bos!", "ru": "Нажми слова из четырёх букв!", "en": "Tap the four-letter words!" },
+      "hint": { "uz": "dono, tosh, olma — 4 harf.", "ru": "dono, tosh, olma — 4 буквы.", "en": "dono, tosh, olma have 4 letters." },
+      "explanation": { "uz": "dono, tosh, olma — toʻrt harfdan iborat.", "ru": "dono, tosh, olma — из четырёх букв.", "en": "dono, tosh, olma each have four letters." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "quyo", "after": "", "choices": ["sh", "s", "ch"], "answer": "sh", "emoji": "☀️", "clue": { "uz": "Osmondagi yorugʻlik manbai", "ru": "Источник света на небе (солнце)", "en": "The source of light in the sky (the sun)" } } },
+      "prompt": { "uz": "Oxirgi birikmani qoʻy!", "ru": "Вставь последнее сочетание!", "en": "Add the last combination!" },
+      "hint": { "uz": "quyo … — «quyosh».", "ru": "quyo … — «quyosh» (солнце).", "en": "quyo … — “quyosh” (sun)." },
+      "explanation": { "uz": "«quyosh» «sh» birikmasi bilan tugaydi.", "ru": "«quyosh» оканчивается на «sh».", "en": "“quyosh” ends with “sh”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "dono", "right": "d" }, { "left": "quyosh", "right": "q" }, { "left": "maktab", "right": "m" }, { "left": "vatan", "right": "v" } ] } },
+      "prompt": { "uz": "Soʻzni birinchi harfiga ula!", "ru": "Соедини слово с его первой буквой!", "en": "Match each word to its first letter!" },
+      "hint": { "uz": "«dono» — «d» bilan boshlanadi.", "ru": "«dono» начинается с «d».", "en": "“dono” starts with “d”." },
+      "explanation": { "uz": "Har soʻz maʼlum undosh bilan boshlanadi.", "ru": "Каждое слово начинается со своего согласного.", "en": "Each word starts with a certain consonant." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "vatan", "emoji": "🇺🇿", "clue": { "uz": "Biz tugʻilgan yurt", "ru": "Родина, где мы родились", "en": "The homeland where we were born" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: v, a, t, a, n.", "ru": "Буквы: v, a, t, a, n.", "en": "Letters: v, a, t, a, n." },
+      "explanation": { "uz": "«vatan» soʻzida 3 undosh (v, t, n) bor.", "ru": "В «vatan» три согласных (v, t, n).", "en": "“vatan” has three consonants (v, t, n)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Quyosh", "nur", "sochdi."], "emoji": "☀️", "clue": { "uz": "Quyosh haqida gap", "ru": "Предложение о солнце", "en": "A sentence about the sun" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Quyosh». Nima qildi? — «sochdi».", "ru": "Кто? — «Quyosh». Что сделал? — «sochdi».", "en": "Who? — “Quyosh”. Did what? — “sochdi”." },
+      "explanation": { "uz": "«Quyosh» soʻzida «q» va «sh» undoshlari bor.", "ru": "В «Quyosh» есть согласные «q» и «sh».", "en": "“Quyosh” has the consonants “q” and “sh”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["i", "x", "k"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi harf undosh tovushni ifodalamaydi?", "ru": "Какая буква не обозначает согласный?", "en": "Which letter is NOT a consonant?" },
+      "hint": { "uz": "U — unli harf.", "ru": "Это гласная буква.", "en": "It is a vowel letter." },
+      "explanation": { "uz": "«i» — unli harf, undosh emas.", "ru": "«i» — гласная, не согласная.", "en": "“i” is a vowel, not a consonant." }
+    }
+  ]
+}

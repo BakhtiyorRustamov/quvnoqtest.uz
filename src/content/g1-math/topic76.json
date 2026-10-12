@@ -1,0 +1,335 @@
+{
+  "topicId": "g1-math-76",
+  "subjectKey": "g1-math",
+  "emojis": "🧭➕✨",
+  "title": {
+    "uz": "Masalani yechish algoritmi",
+    "ru": "Алгоритм решения задачи",
+    "en": "How to solve a problem"
+  },
+  "recall": {
+    "uz": "Masalani yechishda reja tuzamiz: maʼlumotlarni tanlaymiz, savolni aniqlaymiz, ifoda tuzamiz, qiymatini hisoblaymiz va javobini yozamiz. Bu tartib — algoritm. Masalan, 37 + 42 = 79.",
+    "ru": "Решая задачу, строим план: выбираем данные, определяем вопрос, составляем выражение, вычисляем и пишем ответ. Этот порядок — алгоритм. Например, 37 + 42 = 79.",
+    "en": "To solve a problem we make a plan: pick the data, find the question, write an expression, compute and write the answer. This order is an algorithm. For example 37 + 42 = 79."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "79",
+            "78",
+            "80"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Birinchi qopda 37 ta, ikkinchisida 42 ta yongʻoq. Hammasi nechta?",
+        "ru": "В первом мешке 37, во втором 42 ореха. Сколько всего?",
+        "en": "The first sack has 37, the second 42 nuts. How many in all?"
+      },
+      "hint": {
+        "uz": "37 ga 42 ni qoʻsh.",
+        "ru": "Прибавь к 37 число 42.",
+        "en": "Add 42 to 37."
+      },
+      "explanation": {
+        "uz": "37 + 42 = 79.",
+        "ru": "37 + 42 = 79.",
+        "en": "37 + 42 = 79."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 79,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 37 + 42 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 37 + 42 = ?",
+        "en": "Work it out and build the answer with blocks: 37 + 42 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "37 + 42 = 79.",
+        "ru": "37 + 42 = 79.",
+        "en": "37 + 42 = 79."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "37 + 42",
+              "right": "79"
+            },
+            {
+              "left": "40 + 20",
+              "right": "60"
+            },
+            {
+              "left": "55 + 14",
+              "right": "69"
+            },
+            {
+              "left": "23 + 25",
+              "right": "48"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "80",
+            "70",
+            "90"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Magazinga 50 ta va 30 ta non keltirildi. Jami nechta non?",
+        "ru": "В магазин привезли 50 и 30 хлебов. Сколько всего?",
+        "en": "A shop got 50 and 30 loaves. How many in all?"
+      },
+      "hint": {
+        "uz": "50 ga 30 ni qoʻsh.",
+        "ru": "Прибавь к 50 число 30.",
+        "en": "Add 30 to 50."
+      },
+      "explanation": {
+        "uz": "50 + 30 = 80.",
+        "ru": "50 + 30 = 80.",
+        "en": "50 + 30 = 80."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 69,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 55 + 14 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 55 + 14 = ?",
+        "en": "Work it out and build the answer with blocks: 55 + 14 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "55 + 14 = 69.",
+        "ru": "55 + 14 = 69.",
+        "en": "55 + 14 = 69."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "97",
+            "96",
+            "98"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 64 + 33 = ?",
+        "ru": "Вычисли: 64 + 33 = ?",
+        "en": "Work it out: 64 + 33 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Десятки к десяткам, единицы к единицам.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "64 + 33 = 97.",
+        "ru": "64 + 33 = 97.",
+        "en": "64 + 33 = 97."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "69 - 14",
+              "right": "55"
+            },
+            {
+              "left": "97 - 30",
+              "right": "67"
+            },
+            {
+              "left": "100 - 40",
+              "right": "60"
+            },
+            {
+              "left": "96 - 26",
+              "right": "70"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 79,
+          "y": 80
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 79 va 80 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 79 и 80 — какой знак верный?",
+        "en": "Look at the scale: 79 and 80 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "79 < 80.",
+        "ru": "79 < 80.",
+        "en": "79 < 80."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 88,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 46 + 42 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 46 + 42 = ?",
+        "en": "Work it out and build the answer with blocks: 46 + 42 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "46 + 42 = 88.",
+        "ru": "46 + 42 = 88.",
+        "en": "46 + 42 = 88."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "56",
+            "55",
+            "57"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 96 - 40 = ?",
+        "ru": "Вычисли: 96 - 40 = ?",
+        "en": "Work it out: 96 - 40 = ?"
+      },
+      "hint": {
+        "uz": "Birliklardan birliklarni, oʻnliklardan oʻnliklarni ayir.",
+        "ru": "Единицы из единиц, десятки из десятков.",
+        "en": "Subtract ones from ones and tens from tens."
+      },
+      "explanation": {
+        "uz": "96 - 40 = 56.",
+        "ru": "96 - 40 = 56.",
+        "en": "96 - 40 = 56."
+      }
+    }
+  ]
+}

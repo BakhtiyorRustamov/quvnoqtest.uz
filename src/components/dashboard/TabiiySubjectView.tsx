@@ -1,0 +1,310 @@
+'use client';
+
+import { useCallback, useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { useLocale, useTranslations } from 'next-intl';
+import BackBar from '@/components/ui/BackBar';
+import AIMascotButton from '@/components/ui/AIMascotButton';
+import TopicRecommendation from './TopicRecommendation';
+import CollapsibleGrid from './CollapsibleGrid';
+import { useUser } from '@/components/providers/UserProvider';
+import { api } from '@/lib/client';
+import { isBuiltTopic } from '@/content';
+import { G1_TABIIY_TOPICS, G1_TABIIY_PART2_START } from '@/content/g1-tabiiy/topics';
+import { getTabiiyTopic } from '@/content/g1-tabiiy/topics';
+import { FIZIKA_TITLE, KIMYO_TITLE, BIO_TITLE } from '@/content/g1-tabiiy/dtm-exams';
+import { pick } from '@/lib/i18n-config';
+import VideoLightbox from '@/components/ui/VideoLightbox';
+import { SUBJECTS } from '@/content/taxonomy';
+import type { ProgressRow } from '@/lib/store/types';
+
+/**
+ * Grade-1 "Tabiiy fanlar" (Natural science) subject view. Mirrors the Matematika
+ * layout — a green nature-notebook "what I've learned" strip (spiral + ruled
+ * lines + pen tool) on top, then the "Mavzular" list. Lessons 1–5 are real,
+ * playable lessons; the rest are "coming soon" dummy buttons.
+ */
+export default function TabiiySubjectView() {
+  const t = useTranslations();
+  const locale = useLocale();
+  const { user, ensureUser } = useUser();
+  const isPaid = user?.isPaid ?? false;
+  const [progress, setProgress] = useState<ProgressRow[]>([]);
+
+  useEffect(() => {
+    ensureUser(1);
+  }, [ensureUser]);
+
+  useEffect(() => {
+    api<{ progress: ProgressRow[] }>('/api/progress').then(({ data }) => setProgress(data?.progress ?? []));
+  }, []);
+
+  const s = (uz: string, ru: string, en: string) => pick({ uz, ru, en }, locale);
+  const completedKeys = new Set(progress.filter((p) => p.status === 'completed').map((p) => p.topicKey));
+  const scoreOf = (key: string) => progress.find((p) => p.topicKey === key)?.score;
+  // Real question count of a completed lesson (from stored answers) — short
+  // lessons (e.g. 2 questions) must not display as x/10.
+  const totalOf = (key: string) => progress.find((p) => p.topicKey === key)?.answers?.length || 10;
+  const learned = G1_TABIIY_TOPICS.filter((tp) => completedKeys.has(tp.key));
+
+  /* ---------------- pen drawing (same as Matematika, green ink) ---------------- */
+  const wrapRef = useRef<HTMLDivElement | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const strokes = useRef<Array<Array<{ x: number; y: number }>>>([]);
+  const current = useRef<Array<{ x: number; y: number }> | null>(null);
+  const [penMode, setPenMode] = useState(false);
+
+  const redraw = useCallback(() => {
+    const canvas = canvasRef.current;
+    const wrap = wrapRef.current;
+    if (!canvas || !wrap) return;
+    const dpr = window.devicePixelRatio || 1;
+    const w = wrap.clientWidth;
+    const h = wrap.clientHeight;
+    if (canvas.width !== w * dpr || canvas.height !== h * dpr) {
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+    }
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    ctx.strokeStyle = '#5aa02a';
+    ctx.lineWidth = 3.4;
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    const paths = current.current ? [...strokes.current, current.current] : strokes.current;
+    for (const path of paths) {
+      if (path.length < 2) continue;
+      ctx.beginPath();
+      ctx.moveTo(path[0].x, path[0].y);
+      for (let i = 1; i < path.length; i++) ctx.lineTo(path[i].x, path[i].y);
+      ctx.stroke();
+    }
+  }, []);
+
+  useEffect(() => {
+    const ro = new ResizeObserver(redraw);
+    if (wrapRef.current) ro.observe(wrapRef.current);
+    return () => ro.disconnect();
+  }, [redraw]);
+
+  function pt(e: React.PointerEvent): { x: number; y: number } {
+    const canvas = canvasRef.current!;
+    const r = canvas.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    const scaleX = r.width ? canvas.width / dpr / r.width : 1;
+    const scaleY = r.height ? canvas.height / dpr / r.height : 1;
+    return { x: (e.clientX - r.left) * scaleX, y: (e.clientY - r.top) * scaleY };
+  }
+
+  const renderEntry = (tp: (typeof G1_TABIIY_TOPICS)[number], i: number) => {
+    const delay = Math.min(i * 0.02, 0.4);
+    const built = isBuiltTopic(tp.key);
+    const done = completedKeys.has(tp.key);
+    if (built) {
+      return (
+        <motion.div key={tp.key} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay }}>
+          <Link
+            href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
+            className={`card h-full flex items-center gap-2 px-3 py-2.5 hover:-translate-y-0.5 transition-transform${!isPaid && tp.n === 1 ? ' free-ring' : ''}`}
+          >
+            <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm ${done ? 'bg-brand-green' : 'bg-[#5aa02a]'}`}>
+              {done ? '✓' : tp.n}
+            </span>
+            <span className="flex-1 font-extrabold text-ink text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
+            <span className={isPaid || tp.n === 1 ? 'shrink-0 text-brand-orange font-black' : 'shrink-0 text-base'} aria-hidden>{isPaid || tp.n === 1 ? '▶' : '🔒'}</span>
+          </Link>
+        </motion.div>
+      );
+    }
+    return (
+      <motion.div
+        key={tp.key}
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay }}
+        title={t('common.comingSoon')}
+        aria-label={t('common.comingSoon')}
+        className="card h-full flex items-center gap-2 px-3 py-2.5 opacity-70 cursor-default"
+      >
+        <span className="shrink-0 w-8 h-8 rounded-full grid place-items-center font-black text-white text-sm bg-ink/30">{tp.n}</span>
+        <span className="flex-1 font-extrabold text-ink/70 text-[12.5px] leading-snug">{pick(tp.title, locale)}</span>
+        <span className="shrink-0 text-base" aria-hidden>🔒</span>
+      </motion.div>
+    );
+  };
+
+  const part1 = G1_TABIIY_TOPICS.filter((tp) => tp.n < G1_TABIIY_PART2_START);
+  const part2 = G1_TABIIY_TOPICS.filter((tp) => tp.n >= G1_TABIIY_PART2_START);
+
+  return (
+    <main className="min-h-screen pb-16">
+      <BackBar backHref="/dashboard" showLang />
+
+      <div className="max-w-3xl mx-auto px-3">
+        <div className="flex items-center gap-3 mt-4">
+          <h1 className="font-black text-ink text-2xl sm:text-3xl">
+            {t('common.grade', { n: 1 })} · {pick(SUBJECTS['tabiiy-fanlar'].name, locale)}
+          </h1>
+        </div>
+
+        {/* ------- green notebook: "Hozirgacha o'rganganlarim" ------- */}
+        <section className="mt-6 relative">
+          <h2 className="font-black text-ink/70 text-lg mb-2">🌿 {t('dashboard.learnedTitle')}</h2>
+          <div className="relative rounded-2xl border border-brand-green/25 shadow-card overflow-hidden">
+            {/* spiral binding (green-tinted) */}
+            <div
+              aria-hidden
+              className="absolute left-0 top-0 bottom-0 w-9 z-10"
+              style={{
+                background:
+                  'radial-gradient(circle at 14px 17px, #fff 0 4px, #7fae5a 4px 6.5px, transparent 6.5px), linear-gradient(#e7f2da,#e7f2da)',
+                backgroundSize: '100% 34px, 100% 100%'
+              }}
+            />
+            <div ref={wrapRef} className="notebook notebook-green relative pl-[72px] pr-4 pt-[10px] pb-[78px] min-h-[170px]">
+              <div className="relative z-[5] flex flex-wrap gap-2.5 items-start" style={{ minHeight: 'calc(var(--line-h) * 2)' }}>
+                {learned.length === 0 && (
+                  <span className="font-bold text-ink/45 pt-1">{t('dashboard.emptyLearned')}</span>
+                )}
+                {learned.map((tp) => (
+                  <Link
+                    key={tp.key}
+                    href={isPaid || tp.n === 1 ? `/lesson/${tp.key}` : '/upgrade'}
+                    className="inline-flex items-center gap-2 rounded-xl bg-brand-green/20 border-2 border-brand-green/60 px-3 py-1.5 font-extrabold text-ink hover:bg-brand-green/30 transition-colors"
+                    title={t('dashboard.replay')}
+                  >
+                    ✅ {tp.n}. {pick(tp.title, locale)}
+                    <span className="text-xs px-2 py-0.5 rounded-full bg-white text-brand-purple border border-brand-purple/30">
+                      ⭐ {scoreOf(tp.key) ?? 0}/{totalOf(tp.key)}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+
+              {/* drawing canvas overlay (pen mode) */}
+              <canvas
+                ref={canvasRef}
+                className={`absolute inset-0 z-[8] ${penMode ? 'cursor-pencil' : 'pointer-events-none'}`}
+                style={{ touchAction: penMode ? 'none' : 'auto' }}
+                onPointerDown={(e) => {
+                  if (!penMode) return;
+                  (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
+                  current.current = [pt(e)];
+                  redraw();
+                }}
+                onPointerMove={(e) => {
+                  if (!penMode || !current.current) return;
+                  current.current.push(pt(e));
+                  redraw();
+                }}
+                onPointerUp={() => {
+                  if (current.current) {
+                    strokes.current.push(current.current);
+                    current.current = null;
+                    redraw();
+                  }
+                }}
+              />
+
+              {/* pen toolbar */}
+              <div className="absolute bottom-2.5 left-[72px] right-3 z-[12] flex items-center gap-2">
+                <button
+                  onClick={() => setPenMode(true)}
+                  aria-pressed={penMode}
+                  className={`btn-ghost text-sm px-3.5 py-2 ${penMode ? 'ring-2 ring-brand-green bg-brand-green/10' : ''}`}
+                >
+                  ✏️ {t('dashboard.pen')}
+                </button>
+                <button
+                  onClick={() => setPenMode(false)}
+                  aria-pressed={!penMode}
+                  className={`btn-ghost text-sm px-3.5 py-2 ${!penMode ? 'ring-2 ring-brand-green bg-brand-green/10' : ''}`}
+                >
+                  🖱️ {t('dashboard.cursor')}
+                </button>
+                <button
+                  onClick={() => {
+                    strokes.current = [];
+                    current.current = null;
+                    redraw();
+                  }}
+                  className="btn-ghost text-sm px-3.5 py-2 ml-auto"
+                >
+                  🧽 {t('dashboard.clearDrawing')}
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ------- Mavzular ------- */}
+        <section className="mt-8">
+          <h2 className="font-black text-ink/70 text-lg mb-3">📚 {t('dashboard.topicsTitle')}</h2>
+
+          <div className="mb-2 flex flex-wrap items-center gap-3">
+            <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part1')}</h3>
+            <VideoLightbox src="/videos/tabiiy1.mp4" poster="/videos/tabiiy1.jpg" label={t('dashboard.part1')} title={`${pick(SUBJECTS['tabiiy-fanlar'].name, locale)} · ${t('dashboard.part1')}`} />
+          </div>
+          <CollapsibleGrid>{part1.map(renderEntry)}</CollapsibleGrid>
+
+          <div className="mt-6 mb-2 flex flex-wrap items-center gap-3">
+            <h3 className="font-black text-ink/55 text-sm uppercase tracking-wide">{t('dashboard.part2')}</h3>
+            <VideoLightbox src="/videos/tabiiy2.mp4" poster="/videos/tabiiy2.jpg" label={t('dashboard.part2')} title={`${pick(SUBJECTS['tabiiy-fanlar'].name, locale)} · ${t('dashboard.part2')}`} />
+          </div>
+          <CollapsibleGrid>{part2.map(renderEntry)}</CollapsibleGrid>
+        </section>
+
+        {/* Milliy sertifikat practice exams — fizika, kimyo, biologiya
+            (mirrors the Matematika / Ona tili DTM exam cards) */}
+        <section className="mt-8 flex flex-col gap-4">
+          {(
+            [
+              { href: '/exam/g1-tabiiy-fizika', emoji: '💡', title: FIZIKA_TITLE, border: 'border-brand-blue/60', bg: 'from-brand-blue/15 to-brand-purple/10', arrow: 'text-brand-blue' },
+              { href: '/exam/g1-tabiiy-kimyo', emoji: '🧪', title: KIMYO_TITLE, border: 'border-brand-orange/60', bg: 'from-brand-orange/15 to-brand-magenta/10', arrow: 'text-brand-orange' },
+              { href: '/exam/g1-tabiiy-bio', emoji: '🌱', title: BIO_TITLE, border: 'border-brand-green/60', bg: 'from-brand-green/15 to-brand-blue/10', arrow: 'text-brand-green' }
+            ] as const
+          ).map((card) => (
+            <Link
+              key={card.href}
+              href={isPaid ? card.href : '/upgrade'}
+              className={`block rounded-3xl border-2 ${card.border} bg-gradient-to-br ${card.bg} px-5 py-5 hover:-translate-y-0.5 transition-transform`}
+            >
+              <div className="flex items-center gap-4">
+                <span className="shrink-0 w-14 h-14 rounded-full bg-white grid place-items-center text-3xl shadow-card" aria-hidden>{card.emoji}</span>
+                <div className="flex-1 leading-snug">
+                  <span className="block font-black text-ink text-lg">{pick(card.title, locale)}</span>
+                  <span className="block font-bold text-ink/50 text-[13px]">
+                    {s(
+                      '30 ta savol · 45 daqiqa · har safar boshqa test',
+                      '30 вопросов · 45 минут · каждый раз другой тест',
+                      '30 questions · 45 minutes · a different test each time'
+                    )}
+                  </span>
+                </div>
+                <span className={`shrink-0 ${isPaid ? `${card.arrow} font-black` : ''} text-xl`} aria-hidden>{isPaid ? '▶' : '🔒'}</span>
+              </div>
+            </Link>
+          ))}
+        </section>
+
+      
+
+        {/* personalized focused-review recommendation (same as maths) */}
+        <TopicRecommendation
+          progress={progress}
+          name={user?.name ?? null}
+          isPaid={user?.isPaid ?? false}
+          locale={locale}
+          subjectName={pick(SUBJECTS['tabiiy-fanlar'].name, locale)}
+          getTopicMeta={getTabiiyTopic}
+          startHref="/lesson/g1-tabiiy-01"
+        />
+      </div>
+
+      <AIMascotButton />
+    </main>
+  );
+}

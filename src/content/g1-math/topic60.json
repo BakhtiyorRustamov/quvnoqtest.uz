@@ -1,0 +1,304 @@
+{
+  "topicId": "g1-math-60",
+  "subjectKey": "g1-math",
+  "emojis": "🔢✍️✨",
+  "title": {
+    "uz": "21–100: sonlarni oʻqish va yozish",
+    "ru": "21–100: чтение и запись чисел",
+    "en": "21–100: reading and writing numbers"
+  },
+  "recall": {
+    "uz": "Ikki xonali sonni oʻqish va yozishda oldin oʻnliklar, soʻng birliklar aytiladi. Masalan, 45 — qirq besh: 4 oʻnlik va 5 birlik. Raqamning oʻrni — uning xonasi. Keling, mashq qilamiz!",
+    "ru": "Двузначное число читаем и пишем сначала десятки, потом единицы. Например, 45 — сорок пять: 4 десятка и 5 единиц. Место цифры — её разряд. Потренируемся!",
+    "en": "We read and write a two-digit number tens first, then ones. For example 45 — forty-five: 4 tens and 5 ones. A digit's spot is its place. Let's practise!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 45
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 45 sonini yasa!",
+        "ru": "Собери число 45 из блоков!",
+        "en": "Build the number 45 from blocks!"
+      },
+      "hint": {
+        "uz": "4 ta oʻnlik (+10) va 5 ta birlik (+1).",
+        "ru": "4 десятков (+10) и 5 единиц (+1).",
+        "en": "4 tens (+10) and 5 ones (+1)."
+      },
+      "explanation": {
+        "uz": "45 = 40 + 5: 4 oʻnlik va 5 birlik.",
+        "ru": "45 = 40 + 5: 4 десятков и 5 единиц.",
+        "en": "45 = 40 + 5: 4 tens and 5 ones."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 63
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 63 sonini yasa!",
+        "ru": "Собери число 63 из блоков!",
+        "en": "Build the number 63 from blocks!"
+      },
+      "hint": {
+        "uz": "6 ta oʻnlik (+10) va 3 ta birlik (+1).",
+        "ru": "6 десятков (+10) и 3 единиц (+1).",
+        "en": "6 tens (+10) and 3 ones (+1)."
+      },
+      "explanation": {
+        "uz": "63 = 60 + 3: 6 oʻnlik va 3 birlik.",
+        "ru": "63 = 60 + 3: 6 десятков и 3 единиц.",
+        "en": "63 = 60 + 3: 6 tens and 3 ones."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "45",
+            "54",
+            "40"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "4 oʻnlik va 5 birlik — qaysi son?",
+        "ru": "4 десятка и 5 единиц — какое число?",
+        "en": "4 tens and 5 ones — which number?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklar, soʻng birliklar.",
+        "ru": "Сначала десятки, потом единицы.",
+        "en": "Tens first, then ones."
+      },
+      "explanation": {
+        "uz": "4 oʻnlik va 5 birlik = 45.",
+        "ru": "4 десятка и 5 единиц = 45.",
+        "en": "4 tens and 5 ones = 45."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "72",
+            "27",
+            "70"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "7 oʻnlik va 2 birlik — qaysi son?",
+        "ru": "7 десятков и 2 единицы — какое число?",
+        "en": "7 tens and 2 ones — which number?"
+      },
+      "hint": {
+        "uz": "Oldin oʻnliklar yoziladi.",
+        "ru": "Сначала пишутся десятки.",
+        "en": "Tens are written first."
+      },
+      "explanation": {
+        "uz": "7 oʻnlik va 2 birlik = 72.",
+        "ru": "7 десятков и 2 единицы = 72.",
+        "en": "7 tens and 2 ones = 72."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "6",
+            "56"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "56 sonida oʻnlar xonasida qaysi raqam turibdi?",
+        "ru": "Какая цифра в разряде десятков числа 56?",
+        "en": "Which digit is in the tens place of 56?"
+      },
+      "hint": {
+        "uz": "Oʻnlar xonasi — chapda.",
+        "ru": "Разряд десятков — слева.",
+        "en": "The tens place is on the left."
+      },
+      "explanation": {
+        "uz": "56 da oʻnlar xonasida 5 turibdi.",
+        "ru": "В 56 в разряде десятков 5.",
+        "en": "In 56 the tens place holds 5."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "56"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "56 sonida birlar xonasida qaysi raqam turibdi?",
+        "ru": "Какая цифра в разряде единиц числа 56?",
+        "en": "Which digit is in the ones place of 56?"
+      },
+      "hint": {
+        "uz": "Birlar xonasi — oʻngda.",
+        "ru": "Разряд единиц — справа.",
+        "en": "The ones place is on the right."
+      },
+      "explanation": {
+        "uz": "56 da birlar xonasida 6 turibdi.",
+        "ru": "В 56 в разряде единиц 6.",
+        "en": "In 56 the ones place holds 6."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 89
+        }
+      },
+      "prompt": {
+        "uz": "Bloklardan 89 sonini yasa!",
+        "ru": "Собери число 89 из блоков!",
+        "en": "Build the number 89 from blocks!"
+      },
+      "hint": {
+        "uz": "8 ta oʻnlik (+10) va 9 ta birlik (+1).",
+        "ru": "8 десятков (+10) и 9 единиц (+1).",
+        "en": "8 tens (+10) and 9 ones (+1)."
+      },
+      "explanation": {
+        "uz": "89 = 80 + 9: 8 oʻnlik va 9 birlik.",
+        "ru": "89 = 80 + 9: 8 десятков и 9 единиц.",
+        "en": "89 = 80 + 9: 8 tens and 9 ones."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 35,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 30 + 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 30 + 5 = ?",
+        "en": "Work it out and build the answer with blocks: 30 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "30 + 5 = 35.",
+        "ru": "30 + 5 = 35.",
+        "en": "30 + 5 = 35."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 58,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 50 + 8 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 50 + 8 = ?",
+        "en": "Work it out and build the answer with blocks: 50 + 8 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "50 + 8 = 58.",
+        "ru": "50 + 8 = 58.",
+        "en": "50 + 8 = 58."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "91",
+            "89",
+            "79"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi son eng katta?",
+        "ru": "Какое число наибольшее?",
+        "en": "Which number is the biggest?"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means bigger."
+      },
+      "explanation": {
+        "uz": "91 > 89 > 79.",
+        "ru": "91 > 89 > 79.",
+        "en": "91 > 89 > 79."
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-11",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Kashtandan oʻyinchoqlar",
+    "ru": "Игрушки из каштанов",
+    "en": "Toys from chestnuts"
+  },
+  "recall": {
+    "uz": "Bugun kashtan va tayoqchalardan kulgili oʻyinchoq yasaymiz.",
+    "ru": "Сегодня из каштанов и палочек сделаем забавную игрушку.",
+    "en": "Today we make a funny toy from chestnuts and sticks."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kashtan oʻyinchoq yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай игрушку из каштана. Выполняй каждый этап по рисунку!",
+        "en": "Make a chestnut toy. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Tayoqchalardan qoʻl-oyoq yasa.",
+        "ru": "Сделай ручки и ножки из палочек.",
+        "en": "Make arms and legs from sticks."
+      },
+      "explanation": {
+        "uz": "Kulgili oʻyinchoq!",
+        "ru": "Забавная игрушка!",
+        "en": "A funny toy!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "kashtan",
+              "ru": "каштан",
+              "en": "a chestnut"
+            },
+            {
+              "uz": "tayoqchalar",
+              "ru": "палочки",
+              "en": "little sticks"
+            },
+            {
+              "uz": "plastilin",
+              "ru": "пластилин",
+              "en": "plastilin"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Kashtandan tanani tayyorla.",
+              "ru": "Возьми каштан для тела.",
+              "en": "Take a chestnut for the body."
+            },
+            {
+              "uz": "Tayoqchalardan qoʻl va oyoqlarni ulab qoʻy.",
+              "ru": "Прикрепи ручки и ножки из палочек.",
+              "en": "Attach arms and legs made of sticks."
+            },
+            {
+              "uz": "Plastilindan koʻz yasab, yuz qil.",
+              "ru": "Сделай глаза из пластилина — получится лицо.",
+              "en": "Make eyes from plastilin for the face."
+            }
+          ],
+          "art": "chestnut",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

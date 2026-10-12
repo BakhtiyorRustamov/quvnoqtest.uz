@@ -1,0 +1,512 @@
+{
+  "topicId": "g1-alifbe-40",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🪁🌋🍎",
+  "title": {
+    "uz": "«V v» — oʻqish mashqi",
+    "ru": "Буква «V v» — чтение",
+    "en": "Letter “V v” — reading"
+  },
+  "recall": {
+    "uz": "«V» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: varrak, vulqon. «V» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «V». Теперь читаем слова: varrak, vulqon. «V» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “V”. Now we read words: varrak, vulqon. “V” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🪁 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🪁 Прочитай и нажми верно написанное слово!",
+        "en": "🪁 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «varrak».",
+        "ru": "Прочитай: «varrak».",
+        "en": "Read it: “varrak”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «varrak».",
+        "ru": "Верно — «varrak».",
+        "en": "Correct — “varrak”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🪁",
+          "options": [
+            {
+              "id": "ok",
+              "word": "varrak",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "farrak"
+            },
+            {
+              "id": "w2",
+              "word": "varraq"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «varrak» soʻzini tuz!",
+        "ru": "Составь слово «varrak»!",
+        "en": "Build the word “varrak”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «varrak» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «varrak».",
+        "en": "Great! You read “varrak”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🪁",
+          "word": "varrak",
+          "label": {
+            "uz": "varrak",
+            "ru": "воздушный змей",
+            "en": "kite"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🪁 «varrak»da «v» tovushi qaysi katakchada?",
+        "ru": "🪁 В какой клетке звук «v» в слове «varrak»?",
+        "en": "🪁 Which box has the “v” sound in “varrak”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«varrak»da «v» tovushi toʻgʻri joyda.",
+        "ru": "В «varrak» звук «v» на верном месте.",
+        "en": "In “varrak” the “v” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🪁",
+          "word": {
+            "uz": "varrak",
+            "ru": "varrak",
+            "en": "varrak"
+          },
+          "sound": "v",
+          "cells": [
+            "v",
+            "a",
+            "r",
+            "r",
+            "a",
+            "k"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🪁 «varrak» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🪁 Похлопай слово «varrak» по слогам!",
+        "en": "🪁 Clap the word “varrak” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«varrak» — 2 boʻgʻin.",
+        "ru": "«varrak» — 2 слога.",
+        "en": "“varrak” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🪁",
+          "word": {
+            "uz": "varrak",
+            "ru": "varrak",
+            "en": "varrak"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«V» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «V»!",
+        "en": "Tap the words that have the “V” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «v» tovushi bor.",
+        "ru": "Верно! В них есть звук «v».",
+        "en": "Right! They have the “v” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🪁",
+              "label": {
+                "uz": "varrak",
+                "ru": "varrak",
+                "en": "varrak"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🌋",
+              "label": {
+                "uz": "vulqon",
+                "ru": "vulqon",
+                "en": "vulqon"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            },
+            {
+              "id": "d2",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«varrak» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «varrak». Найди картинку!",
+        "en": "Read “varrak”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«varrak» — 🪁.",
+        "ru": "«varrak» — 🪁.",
+        "en": "“varrak” is 🪁."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🪁",
+              "label": {
+                "uz": "varrak",
+                "ru": "воздушный змей",
+                "en": "kite"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🌋",
+              "label": {
+                "uz": "vulqon",
+                "ru": "vulqon",
+                "en": "vulqon"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🪁"
+              },
+              "right": {
+                "label": {
+                  "uz": "varrak",
+                  "ru": "varrak",
+                  "en": "varrak"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🌋"
+              },
+              "right": {
+                "label": {
+                  "uz": "vulqon",
+                  "ru": "vulqon",
+                  "en": "vulqon"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍞"
+              },
+              "right": {
+                "label": {
+                  "uz": "non",
+                  "ru": "non",
+                  "en": "non"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ota … oldi.",
+        "ru": "Составь предложение: Ota … oldi.",
+        "en": "Order the words: Ota … oldi."
+      },
+      "hint": {
+        "uz": "Ota — varrak — oldi.",
+        "ru": "Ota — varrak — oldi.",
+        "en": "Ota — varrak — oldi."
+      },
+      "explanation": {
+        "uz": "«Ota varrak oldi.» — gap oʻqiding!",
+        "ru": "«Ota varrak oldi.» — предложение!",
+        "en": "“Ota varrak oldi.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ota",
+                "ru": "Ota",
+                "en": "Ota"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "varrak",
+                "ru": "varrak",
+                "en": "varrak"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🪁"
+              },
+              "b": {
+                "label": {
+                  "uz": "varrak",
+                  "ru": "varrak",
+                  "en": "varrak"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🌋"
+              },
+              "b": {
+                "label": {
+                  "uz": "vulqon",
+                  "ru": "vulqon",
+                  "en": "vulqon"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«varrak» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «varrak»?",
+        "en": "How many sounds are in “varrak”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«varrak»da 6 ta tovush bor.",
+        "ru": "В «varrak» 6 звука.",
+        "en": "“varrak” has 6 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

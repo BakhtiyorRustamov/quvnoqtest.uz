@@ -1,0 +1,431 @@
+{
+  "topicId": "g1-oqish-18",
+  "subjectKey": "g1-oqish",
+  "emojis": "🧠💡📚",
+  "title": {
+    "uz": "Aql — boshda",
+    "ru": "Ум — в голове",
+    "en": "Wisdom lives in the head"
+  },
+  "recall": {
+    "uz": "Bugun aql va bilim haqidagi sheʼrni oʻqiymiz. «Naql» soʻzining maʼnosini oʻrganamiz, aql haqidagi maqollarni takrorlaymiz, qofiyadosh soʻzlarni topamiz va harflar orasida yashiringan soʻzlarni izlaymiz.",
+    "ru": "Сегодня читаем стихотворение об уме и знаниях. Узнаем значение слова «naql», повторим пословицы об уме, найдём рифмующиеся слова и слова, спрятанные среди букв.",
+    "en": "Today we read a poem about wisdom and knowledge. We learn the word “naql”, review proverbs about wisdom, find rhyming words, and hunt for words hidden among letters."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Aql — boshda",
+          "variant": "poem",
+          "audio": "g1-oqish-18-q1",
+          "lines": [
+            "Aql yoshga qaramas,",
+            "Deydilar: «Aql — boshda».",
+            "Dono bosh el ichida",
+            "Yaxshi ishga yoʻlboshchi.",
+            "",
+            "Oʻylamay qilingan ish",
+            "Boshga tashvish keltirar.",
+            "Har kun bilim olganning",
+            "Boshi aqlga toʻlar."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrni ifodali oʻqing!",
+        "ru": "Прочитай стихотворение выразительно!",
+        "en": "Read the poem aloud with feeling!"
+      },
+      "hint": {
+        "uz": "«Aql — boshda» degan naqlga eʼtibor bering.",
+        "ru": "Обрати внимание на изречение «Aql — boshda».",
+        "en": "Notice the saying “Aql — boshda”."
+      },
+      "explanation": {
+        "uz": "Sheʼr aql yoshga bogʻliq emasligi va har kuni bilim olish kerakligi haqida.",
+        "ru": "Стихотворение о том, что ум не зависит от возраста и что знания нужно получать каждый день.",
+        "en": "The poem says wisdom does not depend on age and that we should learn something every day."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Har kuni bilim olishga",
+              "ru": "Каждый день получать знания",
+              "en": "To learn something every day"
+            },
+            {
+              "uz": "Koʻp uxlashga",
+              "ru": "Много спать",
+              "en": "To sleep a lot"
+            },
+            {
+              "uz": "Tez yugurishga",
+              "ru": "Быстро бегать",
+              "en": "To run fast"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bosh aqlga toʻlishi uchun sheʼr bizni nimaga chaqiradi?",
+        "ru": "К чему призывает стихотворение, чтобы голова наполнилась умом?",
+        "en": "According to the poem, what fills the head with wisdom?"
+      },
+      "hint": {
+        "uz": "Oxirgi ikki misrani eslang.",
+        "ru": "Вспомни последние две строки.",
+        "en": "Remember the last two lines."
+      },
+      "explanation": {
+        "uz": "«Har kun bilim olganning boshi aqlga toʻlar» — bilim olish aqlni oshiradi.",
+        "ru": "«Голова того, кто учится каждый день, наполняется умом» — знания растят ум.",
+        "en": "“Whoever learns every day fills their head with wisdom” — learning grows the mind."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Aql yoshga emas, oʻylab ish qilishga bogʻliq",
+              "ru": "Ум зависит не от возраста, а от обдуманных поступков",
+              "en": "Wisdom depends on thinking, not on age"
+            },
+            {
+              "uz": "Faqat kattalar aqlli boʻladi",
+              "ru": "Умными бывают только взрослые",
+              "en": "Only grown-ups can be wise"
+            },
+            {
+              "uz": "Aql faqat kitobda boʻladi",
+              "ru": "Ум бывает только в книгах",
+              "en": "Wisdom exists only in books"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "«Aql yoshga qaramas» misrasini qanday tushunasiz?",
+        "ru": "Как ты понимаешь строку «Aql yoshga qaramas»?",
+        "en": "How do you understand the line “Aql yoshga qaramas”?"
+      },
+      "hint": {
+        "uz": "Kichkina bola ham dono ish qila oladimi?",
+        "ru": "Может ли маленький ребёнок поступить мудро?",
+        "en": "Can a small child act wisely too?"
+      },
+      "explanation": {
+        "uz": "Aql yoshga bogʻliq emas: kichkina bola ham oʻylab ish qilsa, dono boʻladi.",
+        "ru": "Ум не зависит от возраста: даже малыш мудр, если думает, прежде чем делать.",
+        "en": "Wisdom is not about age: even a child is wise if they think before acting."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "naql",
+              "right": "xalq hikmatli gapi"
+            },
+            {
+              "left": "dono",
+              "right": "aqlli"
+            },
+            {
+              "left": "tashvish",
+              "right": "muammo, xavotir"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "Naql — xalq tomonidan yaratilgan hikmatli gap.",
+        "ru": "Naql — мудрое изречение, созданное народом.",
+        "en": "A naql is a wise saying created by the people."
+      },
+      "explanation": {
+        "uz": "naql = xalq hikmatli gapi; dono = aqlli; tashvish = muammo, xavotir.",
+        "ru": "naql = народное мудрое изречение; dono = умный; tashvish = забота, проблема.",
+        "en": "naql = a folk saying of wisdom; dono = wise; tashvish = trouble, worry."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "kitob",
+              "match": true
+            },
+            {
+              "text": "bilim",
+              "match": true
+            },
+            {
+              "text": "aql",
+              "match": true
+            },
+            {
+              "text": "uhf",
+              "match": false
+            },
+            {
+              "text": "qlr",
+              "match": false
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "«UHFKITOBILIMAQLR» qatorida yashiringan HAQIQIY soʻzlarni bos!",
+        "ru": "Нажми НАСТОЯЩИЕ слова, спрятанные в строке «UHFKITOBILIMAQLR»!",
+        "en": "Tap the REAL words hidden in the string “UHFKITOBILIMAQLR”!"
+      },
+      "hint": {
+        "uz": "Uchta soʻz maʼnoga ega, ikkitasi shunchaki harflar.",
+        "ru": "Три — настоящие слова, два — просто буквы.",
+        "en": "Three are real words, two are just letters."
+      },
+      "explanation": {
+        "uz": "Qatorda kitob, bilim va aql soʻzlari yashiringan; «uhf» va «qlr» esa maʼnosiz harflar.",
+        "ru": "В строке спрятаны слова kitob, bilim и aql; «uhf» и «qlr» — бессмысленные буквы.",
+        "en": "The string hides kitob, bilim, and aql; “uhf” and “qlr” are meaningless letters."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Kitob",
+              "ru": "Книга",
+              "en": "A book"
+            },
+            {
+              "uz": "Radio",
+              "ru": "Радио",
+              "en": "A radio"
+            },
+            {
+              "uz": "Qalam",
+              "ru": "Карандаш",
+              "en": "A pencil"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Topishmoq: tili yoʻq, ammo aql oʻrgatadi. Bu nima?",
+        "ru": "Загадка: языка нет, а уму учит. Что это?",
+        "en": "Riddle: it has no tongue, yet it teaches wisdom. What is it?"
+      },
+      "hint": {
+        "uz": "U javonda turadi va varaqlanadi.",
+        "ru": "Она стоит на полке, и её листают.",
+        "en": "It sits on a shelf and you turn its pages."
+      },
+      "explanation": {
+        "uz": "Bu — kitob: u gapirmaydi, lekin oʻqigan odamga aql va bilim beradi.",
+        "ru": "Это книга: она молчит, но даёт читателю ум и знания.",
+        "en": "It is a book: it is silent, yet gives the reader wisdom and knowledge."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Aqlsiz bosh — nursiz ",
+          "after": ".",
+          "choices": [
+            "chiroq",
+            "daraxt",
+            "qoshiq"
+          ],
+          "answer": "chiroq",
+          "emoji": "🪔",
+          "clue": {
+            "uz": "Xalq maqolini toʻldiring",
+            "ru": "Дополни народную пословицу",
+            "en": "Complete the folk proverb"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Maqolni toʻldir!",
+        "ru": "Дополни пословицу!",
+        "en": "Complete the proverb!"
+      },
+      "hint": {
+        "uz": "Nursiz narsa yorita olmaydi.",
+        "ru": "Без света она не светит.",
+        "en": "Without light it cannot shine."
+      },
+      "explanation": {
+        "uz": "«Aqlsiz bosh — nursiz chiroq»: aqlsiz bosh chiroqqa oʻxshaydi-yu, lekin yoritmaydi.",
+        "ru": "«Голова без ума — светильник без света»: она есть, но не светит.",
+        "en": "“A head without wisdom is a lamp without light”: it exists but does not shine."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "toshga",
+              "ru": "toshga",
+              "en": "toshga"
+            },
+            {
+              "uz": "kitob",
+              "ru": "kitob",
+              "en": "kitob"
+            },
+            {
+              "uz": "dono",
+              "ru": "dono",
+              "en": "dono"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "«Boshga» soʻziga qofiyadosh (ohangdosh) soʻzni top!",
+        "ru": "Найди слово, рифмующееся со словом «boshga»!",
+        "en": "Find the word that rhymes with “boshga”!"
+      },
+      "hint": {
+        "uz": "Qofiyadosh soʻzlar oxiri bir xil eshitiladi.",
+        "ru": "Рифмующиеся слова одинаково заканчиваются.",
+        "en": "Rhyming words end with the same sound."
+      },
+      "explanation": {
+        "uz": "boshga — toshga: ikkala soʻz ham «-oshga» bilan tugaydi, ular qofiyadosh.",
+        "ru": "boshga — toshga: оба слова кончаются на «-oshga», они рифмуются.",
+        "en": "boshga — toshga: both end in “-oshga”, so they rhyme."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "letter_complete",
+        "props": {
+          "before": "",
+          "after": "aql",
+          "choices": [
+            "n",
+            "m",
+            "t"
+          ],
+          "answer": "n",
+          "emoji": "🗣️",
+          "clue": {
+            "uz": "«aql» soʻziga bitta harf qoʻsh — xalq hikmatli gapi maʼnosidagi soʻz chiqsin",
+            "ru": "Добавь одну букву к слову «aql» — получится слово «народное изречение»",
+            "en": "Add one letter to “aql” to get the word for a folk saying"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Bitta harf qoʻshib, yangi soʻz hosil qil!",
+        "ru": "Добавь одну букву и получи новое слово!",
+        "en": "Add one letter to make a new word!"
+      },
+      "hint": {
+        "uz": "Bu soʻzni izohli lugʻatda oʻrgandik.",
+        "ru": "Это слово мы учили в словарике.",
+        "en": "We learned this word in the glossary."
+      },
+      "explanation": {
+        "uz": "n + aql = naql. Bir harf soʻzga butunlay yangi maʼno beradi.",
+        "ru": "n + aql = naql. Одна буква даёт слову совсем новое значение.",
+        "en": "n + aql = naql. One letter gives the word a whole new meaning."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Dono",
+            "bosh",
+            "yaxshi",
+            "ishga",
+            "boshlaydi."
+          ],
+          "emoji": "💡",
+          "clue": {
+            "uz": "Sheʼrning bosh gʻoyasi",
+            "ru": "Главная мысль стихотворения",
+            "en": "The poem's main idea"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan gap tuz!",
+        "ru": "Составь предложение из слов!",
+        "en": "Build the sentence from the words!"
+      },
+      "hint": {
+        "uz": "Gap «Dono» soʻzi bilan boshlanadi.",
+        "ru": "Предложение начинается со слова «Dono».",
+        "en": "The sentence starts with “Dono”."
+      },
+      "explanation": {
+        "uz": "Dono bosh yaxshi ishga boshlaydi — aqlli odam atrofdagilarni ham ezgulikka yetaklaydi.",
+        "ru": "Мудрая голова ведёт к добрым делам — умный человек ведёт за собой других.",
+        "en": "A wise head leads to good deeds — a wise person guides others toward good."
+      }
+    }
+  ],
+  "skipRecall": true
+}

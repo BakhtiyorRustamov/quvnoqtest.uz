@@ -1,0 +1,402 @@
+{
+  "topicId": "g1-math-124",
+  "subjectKey": "g1-math",
+  "emojis": "🟰🔺✨",
+  "title": {
+    "uz": "Teng shakllar",
+    "ru": "Равные фигуры",
+    "en": "Equal shapes"
+  },
+  "recall": {
+    "uz": "Agar ikkita shaklni ustma-ust qoʻyganda hamma tomonlari mos kelsa, ular teng shakllar deyiladi. Teng shakllarning shakli va oʻlchami bir xil boʻladi. Ularning perimetrlari ham teng boʻladi.",
+    "ru": "Если две фигуры наложить друг на друга и все стороны совпадут, они равные. У равных фигур одинаковые форма и размер. Их периметры тоже равны.",
+    "en": "If two shapes overlap and all sides match, they are equal (congruent). Equal shapes have the same form and size. Their perimeters are also equal."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Bir xil (teng) uchburchaklarni belgila!",
+        "ru": "Отметь равные треугольники!",
+        "en": "Tap the equal triangles!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green",
+            "scale": 1.0
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "green",
+            "scale": 1.0
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "orange",
+            "scale": 1.4
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "triangle",
+            "color": "green",
+            "scale": 1.0
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "b",
+        "d"
+      ],
+      "hint": {
+        "uz": "Teng shakllar bir xil oʻlchamda boʻladi.",
+        "ru": "У равных фигур одинаковый размер.",
+        "en": "Equal shapes are the same size."
+      },
+      "explanation": {
+        "uz": "Uchta bir xil uchburchakni topdik.",
+        "ru": "Нашли три одинаковых треугольника.",
+        "en": "We found three equal triangles."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Kvadrat perimetrini top.",
+        "ru": "Найди периметр квадрата.",
+        "en": "Find the square's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 16 cm.",
+        "ru": "Периметр = 16 cm.",
+        "en": "Perimeter = 16 cm."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta uchburchakni bos!",
+        "ru": "Нажми на самый большой треугольник!",
+        "en": "Tap the biggest triangle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green",
+            "scale": 0.7
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "orange",
+            "scale": 1.3
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "blue",
+            "scale": 0.95
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Eng katta uchburchakni tanla.",
+        "ru": "Выбери самый большой треугольник.",
+        "en": "Pick the biggest triangle."
+      },
+      "explanation": {
+        "uz": "Eng kattasini topdik.",
+        "ru": "Нашли самый большой.",
+        "en": "We found the biggest one."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 64,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 40 + (14 + 10). Javobni bloklardan yasa.",
+        "ru": "Вычисли: 40 + (14 + 10). Собери из блоков.",
+        "en": "Work out 40 + (14 + 10). Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "40 + 24 = 64.",
+        "ru": "40 + 24 = 64.",
+        "en": "40 + 24 = 64."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "4 + 4 + 4 + 4",
+              "right": "16"
+            },
+            {
+              "left": "5 + 5 + 5",
+              "right": "15"
+            },
+            {
+              "left": "6 + 6",
+              "right": "12"
+            },
+            {
+              "left": "6 + 6 + 6",
+              "right": "18"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Boshqa kvadrat perimetrini top.",
+        "ru": "Найди периметр другого квадрата.",
+        "en": "Find another square's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 20 cm.",
+        "ru": "Периметр = 20 cm.",
+        "en": "Perimeter = 20 cm."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 16,
+          "y": 20
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi perimetr katta: 16 yoki 20? Toʻgʻri belgini tanla.",
+        "ru": "Какой периметр больше: 16 или 20? Выбери знак.",
+        "en": "Which perimeter is bigger: 16 or 20? Choose the sign."
+      },
+      "hint": {
+        "uz": "Katta son — katta perimetr.",
+        "ru": "Больше число — больше периметр.",
+        "en": "A bigger number is a bigger perimeter."
+      },
+      "explanation": {
+        "uz": "16 < 20.",
+        "ru": "16 < 20.",
+        "en": "16 < 20."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 7,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Ikki tomon: 7 cm va 7 cm. Yigʻindisi necha cm?",
+        "ru": "Две стороны: 7 см и 7 см. Сумма?",
+        "en": "Two sides: 7 cm and 7 cm. The sum?"
+      },
+      "hint": {
+        "uz": "7 dan boshla, 7 oldinga sur.",
+        "ru": "Встань на 7, продвинься на 7.",
+        "en": "Start at 7, move 7 forward."
+      },
+      "explanation": {
+        "uz": "7 + 7 = 14 cm.",
+        "ru": "7 + 7 = 14 см.",
+        "en": "7 + 7 = 14 cm."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 36
+        }
+      },
+      "prompt": {
+        "uz": "Shaklning perimetri 36 cm. Shu sonni bloklardan yasa.",
+        "ru": "Периметр фигуры 36 см. Собери это число.",
+        "en": "A shape's perimeter is 36 cm. Build that number."
+      },
+      "hint": {
+        "uz": "3 ta oʻnlik (+10) va 6 ta birlik (+1).",
+        "ru": "3 десятков (+10) и 6 единиц (+1).",
+        "en": "3 tens (+10) and 6 ones (+1)."
+      },
+      "explanation": {
+        "uz": "36 = 30 + 6.",
+        "ru": "36 = 30 + 6.",
+        "en": "36 = 30 + 6."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma toʻrtburchaklarni belgila!",
+        "ru": "Отметь все четырёхугольники!",
+        "en": "Tap all the quadrilaterals!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "rect",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "rhombus",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "circle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "hint": {
+        "uz": "Toʻrtburchakning 4 tomoni bor.",
+        "ru": "У четырёхугольника 4 стороны.",
+        "en": "A quadrilateral has 4 sides."
+      },
+      "explanation": {
+        "uz": "Uchta toʻrtburchakni topdik.",
+        "ru": "Нашли три четырёхугольника.",
+        "en": "We found three quadrilaterals."
+      }
+    }
+  ]
+}

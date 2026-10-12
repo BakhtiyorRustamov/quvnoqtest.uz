@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-19",
+  "subjectKey": "g1-ona",
+  "emojis": "👂✍️📖",
+  "title": {
+    "uz": "Aytilishi boshqa, yozilishi boshqa",
+    "ru": "Слышим одно, пишем другое",
+    "en": "Said one way, spelled another"
+  },
+  "recall": {
+    "uz": "Baʼzi undoshlar soʻz oxirida boshqacha eshitiladi: kitob «kitop» kabi. Toʻgʻri harfni topish uchun soʻzga unli qoʻshib aytamiz: kitob — kitobi, barg — bargi.",
+    "ru": "Некоторые согласные в конце слова слышатся иначе: kitob как «kitop». Чтобы найти верную букву, добавь гласную: kitob — kitobi, barg — bargi.",
+    "en": "Some consonants sound different at a word's end: kitob like “kitop”. To find the right letter, add a vowel: kitob — kitobi, barg — bargi."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["kitob", "kitop", "kitov"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz toʻgʻri yozilgan?", "ru": "Какое слово написано верно?", "en": "Which word is spelled correctly?" },
+      "hint": { "uz": "Unli qoʻshib koʻr: kitob — kitobi.", "ru": "Добавь гласную: kitob — kitobi.", "en": "Add a vowel: kitob — kitobi." },
+      "explanation": { "uz": "Toʻgʻrisi — «kitob» («kitobi» boʻlgani uchun).", "ru": "Правильно — «kitob» (ведь «kitobi»).", "en": "Correct is “kitob” (because “kitobi”)." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "kito", "after": "", "choices": ["b", "p", "v"], "answer": "b", "emoji": "📖", "clue": { "uz": "Oʻqiydigan narsamiz", "ru": "То, что мы читаем", "en": "The thing we read" } } },
+      "prompt": { "uz": "Oxirgi harfni qoʻy!", "ru": "Вставь последнюю букву!", "en": "Add the last letter!" },
+      "hint": { "uz": "kitob — kitobi.", "ru": "kitob — kitobi.", "en": "kitob — kitobi." },
+      "explanation": { "uz": "«kitob» «b» bilan tugaydi (kitobi).", "ru": "«kitob» оканчивается на «b» (kitobi).", "en": "“kitob” ends with “b” (kitobi)." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "tarvu", "after": "", "choices": ["z", "s", "j"], "answer": "z", "emoji": "🍉", "clue": { "uz": "Yozgi shirin, sersuv meva", "ru": "Летний сочный сладкий плод (арбуз)", "en": "A juicy sweet summer fruit (watermelon)" } } },
+      "prompt": { "uz": "Oxirgi harfni qoʻy!", "ru": "Вставь последнюю букву!", "en": "Add the last letter!" },
+      "hint": { "uz": "tarvuz — tarvuzi.", "ru": "tarvuz — tarvuzi.", "en": "tarvuz — tarvuzi." },
+      "explanation": { "uz": "«tarvuz» «z» bilan tugaydi (tarvuzi).", "ru": "«tarvuz» оканчивается на «z» (tarvuzi).", "en": "“tarvuz” ends with “z” (tarvuzi)." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "kitob", "bin": "b" }, { "id": "b", "label": "rubob", "bin": "b" }, { "id": "c", "label": "sabab", "bin": "b" }, { "id": "d", "label": "toʻp", "bin": "p" }, { "id": "e", "label": "gap", "bin": "p" }, { "id": "f", "label": "chap", "bin": "p" } ], "bins": [ { "id": "b", "label": "«b» bilan tugaydi" }, { "id": "p", "label": "«p» bilan tugaydi" } ] } },
+      "prompt": { "uz": "Soʻz oxiriga qarab ajrat!", "ru": "Раздели по концу слова!", "en": "Sort by the word ending!" },
+      "hint": { "uz": "kitob — b, toʻp — p bilan.", "ru": "kitob — на b, toʻp — на p.", "en": "kitob ends in b, toʻp in p." },
+      "explanation": { "uz": "Unli qoʻshib tekshiramiz: kitobi (b), toʻpi (p).", "ru": "Проверяем гласной: kitobi (b), toʻpi (p).", "en": "Check with a vowel: kitobi (b), toʻpi (p)." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "kitob", "match": true }, { "text": "toʻp", "match": false }, { "text": "rubob", "match": true }, { "text": "gap", "match": false }, { "text": "sabab", "match": true }, { "text": "chap", "match": false } ] } },
+      "prompt": { "uz": "«b» bilan tugagan soʻzlarni bos!", "ru": "Нажми слова, оканчивающиеся на «b»!", "en": "Tap the words that end with “b”!" },
+      "hint": { "uz": "kitob, rubob, sabab — «b» bilan.", "ru": "kitob, rubob, sabab — на «b».", "en": "kitob, rubob, sabab end with “b”." },
+      "explanation": { "uz": "kitob, rubob, sabab — «b» bilan tugaydi.", "ru": "kitob, rubob, sabab оканчиваются на «b».", "en": "kitob, rubob, sabab end with “b”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "bar", "after": "", "choices": ["g", "k", "gʻ"], "answer": "g", "emoji": "🍃", "clue": { "uz": "Daraxtda oʻsadi, yashil", "ru": "Растёт на дереве, зелёный (лист)", "en": "Grows on a tree, green (a leaf)" } } },
+      "prompt": { "uz": "Oxirgi harfni qoʻy!", "ru": "Вставь последнюю букву!", "en": "Add the last letter!" },
+      "hint": { "uz": "barg — bargi.", "ru": "barg — bargi.", "en": "barg — bargi." },
+      "explanation": { "uz": "«barg» «g» bilan tugaydi (bargi).", "ru": "«barg» оканчивается на «g» (bargi).", "en": "“barg” ends with “g” (bargi)." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "kitob", "right": "kitobi" }, { "left": "barg", "right": "bargi" }, { "left": "tarvuz", "right": "tarvuzi" }, { "left": "farzand", "right": "farzandi" } ] } },
+      "prompt": { "uz": "Soʻzni tekshiruv shakliga ula!", "ru": "Соедини слово с проверочной формой!", "en": "Match each word to its check-form!" },
+      "hint": { "uz": "«kitob» — «kitobi».", "ru": "«kitob» — «kitobi».", "en": "“kitob” — “kitobi”." },
+      "explanation": { "uz": "Unli qoʻshsak, oxirgi harf aniq eshitiladi.", "ru": "С гласной последняя буква слышна чётко.", "en": "With a vowel, the final letter is heard clearly." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "kitob", "emoji": "📖", "clue": { "uz": "Bilim manbai", "ru": "Источник знаний", "en": "A source of knowledge" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: k, i, t, o, b.", "ru": "Буквы: k, i, t, o, b.", "en": "Letters: k, i, t, o, b." },
+      "explanation": { "uz": "«kitob» — oxiri «b» (kitobi).", "ru": "«kitob» — на конце «b» (kitobi).", "en": "“kitob” ends with “b” (kitobi)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Barg", "shoxda", "oʻsadi."], "emoji": "🍃", "clue": { "uz": "Barg haqida gap", "ru": "Предложение о листе", "en": "A sentence about a leaf" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima? — «Barg». Qayerda? — «shoxda».", "ru": "Что? — «Barg». Где? — «shoxda».", "en": "What? — “Barg”. Where? — “shoxda”." },
+      "explanation": { "uz": "«Barg» soʻzi «g» bilan tugaydi (bargi).", "ru": "Слово «Barg» оканчивается на «g» (bargi).", "en": "The word “Barg” ends with “g” (bargi)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Unli qoʻshib aytamiz", "ru": "Добавляем гласную", "en": "We add a vowel" }, { "uz": "Koʻz yumamiz", "ru": "Закрываем глаза", "en": "We close our eyes" }, { "uz": "Sanaymiz", "ru": "Считаем", "en": "We count" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Soʻz oxiridagi harfni qanday tekshiramiz?", "ru": "Как проверить букву в конце слова?", "en": "How do we check a word's final letter?" },
+      "hint": { "uz": "kitob — kitobi.", "ru": "kitob — kitobi.", "en": "kitob — kitobi." },
+      "explanation": { "uz": "Soʻzga unli qoʻshib aytamiz — harf aniq eshitiladi.", "ru": "Добавляем гласную — буква слышна чётко.", "en": "We add a vowel — the letter is heard clearly." }
+    }
+  ]
+}

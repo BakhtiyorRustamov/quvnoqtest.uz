@@ -1,0 +1,289 @@
+{
+  "topicId": "g1-tarbiya-07",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "⭐📚🏫❤️",
+  "title": {
+    "uz": "Mustahkamlash",
+    "ru": "Закрепление",
+    "en": "Consolidation"
+  },
+  "recall": {
+    "uz": "Bu darsda boʻlim boʻyicha oʻrganganlarimizni takrorlaymiz: Vatanimiz va poytaxti, oʻzimizni tanishtirish, maktab xonalari va qoidalari, tozalik, ustozni hurmat qilish hamda mehribonlik, sabr va halollik kabi yaxshi fazilatlar.",
+    "ru": "На этом уроке мы повторяем изученное в разделе: Родина и её столица, как представлять себя, школьные помещения и правила, чистота, уважение к учителю и такие качества, как доброта, терпение и честность.",
+    "en": "In this lesson we review the whole unit: our homeland and its capital, introducing ourselves, school rooms and rules, cleanliness, respecting teachers and good qualities like kindness, patience and honesty."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Eslab koʻr: Vatanimizning poytaxti qaysi shahar?",
+        "ru": "Вспомни: какой город — столица нашей Родины?",
+        "en": "Recall: which city is the capital of our homeland?"
+      },
+      "hint": {
+        "uz": "1-darsni esla.",
+        "ru": "Вспомни урок 1.",
+        "en": "Remember lesson 1."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Toshkent — poytaxtimiz.",
+        "ru": "Верно! Ташкент — наша столица.",
+        "en": "Right! Tashkent is our capital."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Toshkent",
+              "ru": "Ташкент",
+              "en": "Tashkent"
+            },
+            {
+              "uz": "Xiva",
+              "ru": "Хива",
+              "en": "Khiva"
+            },
+            {
+              "uz": "Qoʻqon",
+              "ru": "Коканд",
+              "en": "Kokand"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xatti-harakatlarni ajrat: yaxshi xulq yoki yomon xulq!",
+        "ru": "Разложи поступки: хорошее или плохое поведение!",
+        "en": "Sort the actions: good or bad behaviour!"
+      },
+      "hint": {
+        "uz": "Tozalik, hurmat, yordam — yaxshi.",
+        "ru": "Чистота, уважение, помощь — хорошо.",
+        "en": "Cleanliness, respect, help are good."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yaxshi xulqni tanla.",
+        "ru": "Молодец! Выбирай хорошее поведение.",
+        "en": "Great! Choose good behaviour."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "good",
+              "label": {
+                "uz": "Yaxshi xulq",
+                "ru": "Хорошо",
+                "en": "Good"
+              }
+            },
+            {
+              "id": "bad",
+              "label": {
+                "uz": "Yomon xulq",
+                "ru": "Плохо",
+                "en": "Bad"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "✋",
+              "label": {
+                "uz": "qoʻl koʻtarish",
+                "ru": "поднять руку",
+                "en": "raise your hand"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "💧",
+              "label": {
+                "uz": "qoʻl yuvish",
+                "ru": "мыть руки",
+                "en": "wash hands"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "❤️",
+              "label": {
+                "uz": "mehribonlik",
+                "ru": "доброта",
+                "en": "kindness"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "😠",
+              "label": {
+                "uz": "dars paytida baqirish",
+                "ru": "кричать на уроке",
+                "en": "shout in class"
+              },
+              "bin": "bad"
+            },
+            {
+              "emoji": "🖍️",
+              "label": {
+                "uz": "devorga chizish",
+                "ru": "рисовать на стене",
+                "en": "draw on the wall"
+              },
+              "bin": "bad"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi fazilatlar orasidan ortiqchasini top!",
+        "ru": "Найди лишнее среди добрых качеств!",
+        "en": "Find the odd one out among the good qualities!"
+      },
+      "hint": {
+        "uz": "Qaysi biri yaxshi fazilat emas?",
+        "ru": "Что не является добрым качеством?",
+        "en": "Which one is not a good quality?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yolgʻonchi» — yaxshi fazilat emas.",
+        "ru": "Верно! «Лживый» — не доброе качество.",
+        "en": "Right! \"Dishonest\" is not a good quality."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "yaxshi fazilatlar",
+            "ru": "добрые качества",
+            "en": "good qualities"
+          },
+          "tiles": [
+            {
+              "text": "mehribon"
+            },
+            {
+              "text": "sabrli"
+            },
+            {
+              "text": "adolatli"
+            },
+            {
+              "text": "yolgʻonchi",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi oʻquvchining kunini tartibla!",
+        "ru": "Расставь день хорошего ученика по порядку!",
+        "en": "Put a good pupil's day in order!"
+      },
+      "hint": {
+        "uz": "5-darsni esla: uygʻonish → maktab → dars → uy vazifasi.",
+        "ru": "Вспомни урок 5: проснуться → школа → урок → домашнее задание.",
+        "en": "Remember lesson 5: wake up → school → lesson → homework."
+      },
+      "explanation": {
+        "uz": "Barakalla! Tartibli kun — muvaffaqiyat kaliti.",
+        "ru": "Молодец! Порядок в дне — ключ к успеху.",
+        "en": "Great! An orderly day is the key to success."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "vertical": true,
+          "items": [
+            {
+              "id": "wake",
+              "emoji": "🌅",
+              "label": {
+                "uz": "uygʻonadi",
+                "ru": "просыпается",
+                "en": "wakes up"
+              }
+            },
+            {
+              "id": "school",
+              "emoji": "🎒",
+              "label": {
+                "uz": "maktabga boradi",
+                "ru": "идёт в школу",
+                "en": "goes to school"
+              }
+            },
+            {
+              "id": "listen",
+              "emoji": "👂",
+              "label": {
+                "uz": "darsni tinglaydi",
+                "ru": "слушает урок",
+                "en": "listens in class"
+              }
+            },
+            {
+              "id": "homework",
+              "emoji": "📝",
+              "label": {
+                "uz": "uy vazifasini bajaradi",
+                "ru": "делает домашнее задание",
+                "en": "does the homework"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bu boʻlimda oʻrgangan eng muhim narsa siz uchun nima?",
+        "ru": "Что для тебя самое важное из этого раздела?",
+        "en": "What is the most important thing you learned in this unit?"
+      },
+      "hint": {
+        "uz": "Vatan, maktab, doʻstlik, yaxshi fazilatlar — nimasi yodingda qoldi?",
+        "ru": "Родина, школа, дружба, добрые качества — что запомнилось?",
+        "en": "Homeland, school, friendship, good qualities — what stayed with you?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen boʻlimni yaxshi oʻzlashtirding.",
+        "ru": "Отлично! Ты хорошо усвоил раздел.",
+        "en": "Great! You learned the unit well."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men uchun eng muhimi — doʻstlarga yordam berish va ustozni hurmat qilish. Bu meni yaxshi inson qiladi.",
+            "ru": "Самое важное для меня — помогать друзьям и уважать учителя. Это делает меня хорошим человеком.",
+            "en": "The most important thing for me is helping friends and respecting my teacher. It makes me a good person."
+          }
+        }
+      }
+    }
+  ]
+}

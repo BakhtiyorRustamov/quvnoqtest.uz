@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-27", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Bahorni chizamiz", "ru": "Рисуем весну", "en": "Drawing spring" },
+  "recall": {
+    "uz": "Bahor — eng goʻzal fasl. Uni oʻzing qanday koʻrsang, shunday chiz: gullar, daraxtlar, quyosh. Rasmingni chizib boʻlgach, suratga olib yukla.",
+    "ru": "Весна — самое красивое время года. Нарисуй её так, как видишь: цветы, деревья, солнце. Нарисовав, сфотографируй и загрузи рисунок.",
+    "en": "Spring is the most beautiful season. Draw it the way you see it: flowers, trees, the sun. When it's ready, take a photo and upload it."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Bahor rasmini qogʻozga chiz, soʻng suratga ol.", "ru": "Нарисуй весну на бумаге и сфотографируй.", "en": "Draw spring on paper, then photograph it." },
+      "hint": { "uz": "Rangli qalam yoki boʻyoqdan foydalan.", "ru": "Используй цветные карандаши или краски.", "en": "Use coloured pencils or paints." },
+      "explanation": { "uz": "Ajoyib bahor rasmi!", "ru": "Отличный рисунок весны!", "en": "A wonderful spring picture!" },
+      "widget": { "type": "photo_upload", "props": {} } }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "topicId": "g1-ingliz-36",
+  "subjectKey": "g1-ingliz",
+  "emojis": "👀👂👃👅",
+  "title": { "uz": "Fan: besh sezgi", "ru": "Наука: пять чувств", "en": "Science: the five senses" },
+  "recall": {
+    "uz": "Kashfiyot darsi (fan)! Bizda besh sezgi bor: sight — koʻrish, hearing — eshitish, smell — hidlash, taste — taʼm bilish, touch — sezish.",
+    "ru": "Урок-открытие (наука)! У нас пять чувств: sight — зрение, hearing — слух, smell — обоняние, taste — вкус, touch — осязание.",
+    "en": "Discovery lesson (science)! We have five senses: sight, hearing, smell, taste and touch."
+  },
+  "ttsText": { "uz": "Besh sezgi.", "en": "Science! The five senses: sight, hearing, smell, taste and touch." },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Har bir narsani toʻgʻri sezgi aʼzosiga qoʻsh!", "ru": "Соедини каждое с нужным органом чувств!", "en": "Match each thing to the right sense organ!" },
+      "hint": { "uz": "Kamalakni koʻramiz, nogʻorani eshitamiz.", "ru": "Радугу видим, барабан слышим.", "en": "We see a rainbow, we hear a drum." },
+      "explanation": { "uz": "Barakalla! Besh sezgini bilding!", "ru": "Молодец! Ты знаешь пять чувств!", "en": "Great! You know the five senses!" },
+      "widget": { "type": "sense_match", "props": { "rounds": [
+        { "emoji": "🌈", "label": { "uz": "kamalak", "ru": "радуга", "en": "rainbow" }, "organ": "eye" },
+        { "emoji": "🥁", "label": { "uz": "nogʻora", "ru": "барабан", "en": "drum" }, "organ": "ear" },
+        { "emoji": "🌹", "label": { "uz": "atirgul", "ru": "роза", "en": "rose" }, "organ": "nose" },
+        { "emoji": "🍦", "label": { "uz": "muzqaymoq", "ru": "мороженое", "en": "ice cream" }, "organ": "tongue" },
+        { "emoji": "🐱", "label": { "uz": "yumshoq mushuk", "ru": "мягкий кот", "en": "soft cat" }, "organ": "hand" }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Nima bilan koʻramiz? (sight)", "ru": "Чем мы видим? (sight)", "en": "What do we see with? (sight)" },
+      "hint": { "uz": "Koʻrish aʼzosi.", "ru": "Орган зрения.", "en": "The seeing organ." },
+      "explanation": { "uz": "Toʻgʻri! We see with our eyes.", "ru": "Верно! We see with our eyes.", "en": "Right! We see with our eyes." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "👀", "label": "eyes", "correct": true },
+        { "emoji": "👂", "label": "ears" },
+        { "emoji": "👃", "label": "nose" }
+      ] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Nima bilan eshitamiz? (hearing)", "ru": "Чем мы слышим? (hearing)", "en": "What do we hear with? (hearing)" },
+      "hint": { "uz": "Eshitish aʼzosi.", "ru": "Орган слуха.", "en": "The hearing organ." },
+      "explanation": { "uz": "Toʻgʻri! We hear with our ears.", "ru": "Верно! We hear with our ears.", "en": "Right! We hear with our ears." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "👂", "label": "ears", "correct": true },
+        { "emoji": "👀", "label": "eyes" },
+        { "emoji": "👄", "label": "mouth" }
+      ] } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Nima bilan hidlaymiz? (smell)", "ru": "Чем мы нюхаем? (smell)", "en": "What do we smell with? (smell)" },
+      "hint": { "uz": "Hidlash aʼzosi.", "ru": "Орган обоняния.", "en": "The smelling organ." },
+      "explanation": { "uz": "Toʻgʻri! We smell with our nose.", "ru": "Верно! We smell with our nose.", "en": "Right! We smell with our nose." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "👃", "label": "nose", "correct": true },
+        { "emoji": "👂", "label": "ears" },
+        { "emoji": "✋", "label": "hands" }
+      ] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Sezgini oʻz aʼzosiga ula!", "ru": "Соедини чувство с органом!", "en": "Match each sense to its organ!" },
+      "hint": { "uz": "sight 👀, hearing 👂, smell 👃, taste 👅.", "ru": "sight 👀, hearing 👂, smell 👃, taste 👅.", "en": "sight 👀, hearing 👂, smell 👃, taste 👅." },
+      "explanation": { "uz": "Barakalla!", "ru": "Молодец!", "en": "Great!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "label": "sight" }, "right": { "emoji": "👀" } },
+        { "left": { "label": "hearing" }, "right": { "emoji": "👂" } },
+        { "left": { "label": "smell" }, "right": { "emoji": "👃" } },
+        { "left": { "label": "taste" }, "right": { "emoji": "👅" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Narsalarni sezgiga qarab ajrat!", "ru": "Разложи по чувствам!", "en": "Sort the things by sense!" },
+      "hint": { "uz": "Koʻrish, eshitish, hidlash.", "ru": "Зрение, слух, обоняние.", "en": "See, hear, smell." },
+      "explanation": { "uz": "Barakalla! Har narsa oʻz sezgisida.", "ru": "Молодец! Каждое по своему чувству.", "en": "Great! Each thing by its sense!" },
+      "widget": { "type": "sort_bins", "props": {
+        "bins": [
+          { "id": "see", "label": { "uz": "See", "ru": "Видим", "en": "See" } },
+          { "id": "hear", "label": { "uz": "Hear", "ru": "Слышим", "en": "Hear" } },
+          { "id": "smell", "label": { "uz": "Smell", "ru": "Нюхаем", "en": "Smell" } }
+        ],
+        "items": [
+          { "emoji": "🌈", "label": "rainbow", "bin": "see" },
+          { "emoji": "☀️", "label": "sun", "bin": "see" },
+          { "emoji": "🥁", "label": "drum", "bin": "hear" },
+          { "emoji": "🔔", "label": "bell", "bin": "hear" },
+          { "emoji": "🌹", "label": "rose", "bin": "smell" },
+          { "emoji": "🍞", "label": "bread", "bin": "smell" }
+        ] } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Biz til bilan taʼm bilamiz. 👅", "ru": "Верно? Мы чувствуем вкус языком. 👅", "en": "Is this right? We taste with our tongue. 👅" },
+      "hint": { "uz": "Taʼm — til bilan.", "ru": "Вкус — языком.", "en": "Taste is with the tongue." },
+      "explanation": { "uz": "Toʻgʻri! Til bilan taʼm bilamiz.", "ru": "Верно! Вкус языком.", "en": "Right! We taste with our tongue." },
+      "widget": { "type": "true_false", "props": { "emoji": "👅", "answer": true } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Sezgi aʼzolarini belgila!", "ru": "Отметь органы чувств!", "en": "Tap the sense organs!" },
+      "hint": { "uz": "Koʻz, quloq, burun.", "ru": "Глаза, уши, нос.", "en": "Eyes, ears, nose." },
+      "explanation": { "uz": "Barakalla! Koʻz, quloq, burun — sezgi aʼzolari!", "ru": "Молодец! Глаза, уши, нос — органы чувств!", "en": "Great! Eyes, ears, nose are sense organs!" },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "c0", "emoji": "👀", "label": "eyes", "correct": true },
+        { "id": "c1", "emoji": "👂", "label": "ears", "correct": true },
+        { "id": "c2", "emoji": "👃", "label": "nose", "correct": true },
+        { "id": "d0", "emoji": "🚗", "label": "car" },
+        { "id": "d1", "emoji": "⚽", "label": "ball" }
+      ] } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kartalarni ochib, sezgini aʼzosiga juftla!", "ru": "Открывай карточки: чувство и орган!", "en": "Flip the cards: match each sense to its organ!" },
+      "hint": { "uz": "sight 👀, hearing 👂, taste 👅.", "ru": "sight 👀, hearing 👂, taste 👅.", "en": "sight 👀, hearing 👂, taste 👅." },
+      "explanation": { "uz": "Barakalla! Xotirang zoʻr!", "ru": "Молодец! Отличная память!", "en": "Great! What a memory!" },
+      "widget": { "type": "memory_match", "props": { "pairs": [
+        { "a": { "emoji": "👀" }, "b": { "label": "sight" } },
+        { "a": { "emoji": "👂" }, "b": { "label": "hearing" } },
+        { "a": { "emoji": "👅" }, "b": { "label": "taste" } }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Sen musiqa tinglayapsan. Qaysi sezgi?", "ru": "Ты слушаешь музыку. Какое чувство?", "en": "You listen to music. Which sense?" },
+      "hint": { "uz": "Quloq bilan.", "ru": "Ушами.", "en": "With your ears." },
+      "explanation": { "uz": "Toʻgʻri! Hearing — eshitish.", "ru": "Верно! Hearing — слух.", "en": "Right! Hearing!" },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "hearing\neshitish", "ru": "hearing\nслух", "en": "hearing" },
+        { "uz": "sight\nkoʻrish", "ru": "sight\nзрение", "en": "sight" },
+        { "uz": "taste\ntaʼm bilish", "ru": "taste\nвкус", "en": "taste" }
+      ], "answerIndex": 0 } }
+    }
+  ]
+}

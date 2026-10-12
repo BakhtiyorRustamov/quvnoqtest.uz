@@ -1,0 +1,572 @@
+{
+  "topicId": "g1-informatika-28",
+  "subjectKey": "g1-informatika",
+  "emojis": "⚖️🍎⚽🐘",
+  "title": {
+    "uz": "Taqqoslash",
+    "ru": "Сравнение",
+    "en": "Comparison"
+  },
+  "recall": {
+    "uz": "Narsalarni bir-biri bilan taqqoslaymiz: rangi, shakli, oʻlchami va boshqa belgilariga qarab. Oʻxshash va farqli tomonlarini topamiz.",
+    "ru": "Мы сравниваем предметы: по цвету, форме, размеру и другим признакам. Находим сходства и различия.",
+    "en": "We compare things by colour, shape, size and other features. We find similarities and differences."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni rangi boʻyicha ajrat!",
+        "ru": "Раздели предметы по цвету!",
+        "en": "Sort the things by colour!"
+      },
+      "hint": {
+        "uz": "Avval rasmni, keyin qutini bos.",
+        "ru": "Сначала картинку, потом ящик.",
+        "en": "Tap a picture, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ranglar boʻyicha ajratding.",
+        "ru": "Молодец!",
+        "en": "Great! Sorted by colour."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "q",
+              "label": {
+                "uz": "Qizil",
+                "ru": "Красный",
+                "en": "Red"
+              }
+            },
+            {
+              "id": "y",
+              "label": {
+                "uz": "Yashil",
+                "ru": "Зелёный",
+                "en": "Green"
+              }
+            },
+            {
+              "id": "s",
+              "label": {
+                "uz": "Sariq",
+                "ru": "Жёлтый",
+                "en": "Yellow"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              },
+              "bin": "q"
+            },
+            {
+              "emoji": "🍓",
+              "label": {
+                "uz": "qulupnay",
+                "ru": "клубника",
+                "en": "strawberry"
+              },
+              "bin": "q"
+            },
+            {
+              "emoji": "🥒",
+              "label": {
+                "uz": "bodring",
+                "ru": "огурец",
+                "en": "cucumber"
+              },
+              "bin": "y"
+            },
+            {
+              "emoji": "🌳",
+              "label": {
+                "uz": "daraxt",
+                "ru": "дерево",
+                "en": "tree"
+              },
+              "bin": "y"
+            },
+            {
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              },
+              "bin": "s"
+            },
+            {
+              "emoji": "🌽",
+              "label": {
+                "uz": "makkajoʻxori",
+                "ru": "кукуруза",
+                "en": "corn"
+              },
+              "bin": "s"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni shakli boʻyicha ajrat!",
+        "ru": "Раздели по форме!",
+        "en": "Sort them by shape!"
+      },
+      "hint": {
+        "uz": "Dumaloqmi, uchburchakmi?",
+        "ru": "Круглое или треугольное?",
+        "en": "Round or triangular?"
+      },
+      "explanation": {
+        "uz": "Barakalla! Shakllar boʻyicha ajratding.",
+        "ru": "Молодец!",
+        "en": "Great! Sorted by shape."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "d",
+              "label": {
+                "uz": "Doira",
+                "ru": "Круг",
+                "en": "Circle"
+              }
+            },
+            {
+              "id": "u",
+              "label": {
+                "uz": "Uchburchak",
+                "ru": "Треугольник",
+                "en": "Triangle"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "⚽",
+              "label": {
+                "uz": "koptok",
+                "ru": "мяч",
+                "en": "ball"
+              },
+              "bin": "d"
+            },
+            {
+              "emoji": "🔵",
+              "label": {
+                "uz": "doira",
+                "ru": "круг",
+                "en": "circle"
+              },
+              "bin": "d"
+            },
+            {
+              "emoji": "🍕",
+              "label": {
+                "uz": "pitsa boʻlagi",
+                "ru": "кусок пиццы",
+                "en": "pizza slice"
+              },
+              "bin": "u"
+            },
+            {
+              "emoji": "🔺",
+              "label": {
+                "uz": "uchburchak",
+                "ru": "треугольник",
+                "en": "triangle"
+              },
+              "bin": "u"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Fil va sichqonni taqqosla: qaysi biri katta?",
+        "ru": "Слон и мышь: кто больше?",
+        "en": "Elephant vs mouse: which is bigger?"
+      },
+      "hint": {
+        "uz": "Oʻlchamini solishtir.",
+        "ru": "Сравни размер.",
+        "en": "Compare the size."
+      },
+      "explanation": {
+        "uz": "Fil kattaroq.",
+        "ru": "Слон больше.",
+        "en": "The elephant is bigger."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "fil",
+              "ru": "слон",
+              "en": "elephant"
+            },
+            {
+              "uz": "sichqon",
+              "ru": "мышь",
+              "en": "mouse"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani rangi bilan ula!",
+        "ru": "Соедини предмет с цветом!",
+        "en": "Match each thing to its colour!"
+      },
+      "hint": {
+        "uz": "Narsaning rangiga qara.",
+        "ru": "Смотри на цвет.",
+        "en": "Look at the colour."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🍅"
+              },
+              "right": {
+                "label": {
+                  "uz": "qizil",
+                  "ru": "красный",
+                  "en": "red"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍋"
+              },
+              "right": {
+                "label": {
+                  "uz": "sariq",
+                  "ru": "жёлтый",
+                  "en": "yellow"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🥒"
+              },
+              "right": {
+                "label": {
+                  "uz": "yashil",
+                  "ru": "зелёный",
+                  "en": "green"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (rangi boshqa)",
+        "ru": "Нажми лишнее! (другого цвета)",
+        "en": "Tap the odd one! (different colour)"
+      },
+      "hint": {
+        "uz": "Qaysi biri qizil emas?",
+        "ru": "Что не красное?",
+        "en": "Which is not red?"
+      },
+      "explanation": {
+        "uz": "Limon sariq, boshqalari qizil.",
+        "ru": "Лимон жёлтый, остальные красные.",
+        "en": "The lemon is yellow, the rest are red."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "qizil narsalar",
+            "ru": "красные предметы",
+            "en": "red things"
+          },
+          "tiles": [
+            {
+              "text": "olma"
+            },
+            {
+              "text": "pomidor"
+            },
+            {
+              "text": "qulupnay"
+            },
+            {
+              "text": "limon",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ikki rasm orasidagi farqni qanday topamiz?",
+        "ru": "Как найти отличие двух картинок?",
+        "en": "How do we find a difference between two pictures?"
+      },
+      "hint": {
+        "uz": "Diqqat bilan qaraymiz.",
+        "ru": "Смотрим внимательно.",
+        "en": "We look carefully."
+      },
+      "explanation": {
+        "uz": "Diqqat bilan solishtiramiz.",
+        "ru": "Внимательно сравниваем.",
+        "en": "We compare carefully."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "diqqat bilan solishtiramiz",
+              "ru": "внимательно сравниваем",
+              "en": "compare carefully"
+            },
+            {
+              "uz": "koʻzni yumamiz",
+              "ru": "закрываем глаза",
+              "en": "close our eyes"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yashil rangdagi narsalarni belgila!",
+        "ru": "Отметь зелёные предметы!",
+        "en": "Tap the green things!"
+      },
+      "hint": {
+        "uz": "Faqat yashillarini tanla.",
+        "ru": "Выбери зелёные.",
+        "en": "Pick the green ones."
+      },
+      "explanation": {
+        "uz": "Ular yashil rangda.",
+        "ru": "Они зелёные.",
+        "en": "They are green."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🥒",
+              "label": {
+                "uz": "bodring",
+                "ru": "огурец",
+                "en": "cucumber"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🌳",
+              "label": {
+                "uz": "daraxt",
+                "ru": "дерево",
+                "en": "tree"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐸",
+              "label": {
+                "uz": "baqa",
+                "ru": "лягушка",
+                "en": "frog"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Taqqoslashda oʻxshash va farqli tomonlarni topamiz.",
+        "ru": "При сравнении находим сходства и различия.",
+        "en": "When comparing we find similarities and differences."
+      },
+      "hint": {
+        "uz": "Nima umumiy, nima boshqa?",
+        "ru": "Что общее, что разное?",
+        "en": "What's common, what's different?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "⚖️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koptok va apelsin nimasi oʻxshash?",
+        "ru": "Чем похожи мяч и апельсин?",
+        "en": "How are a ball and an orange alike?"
+      },
+      "hint": {
+        "uz": "Ikkalasi ham dumaloq.",
+        "ru": "Оба круглые.",
+        "en": "Both are round."
+      },
+      "explanation": {
+        "uz": "Ular shakli boʻyicha oʻxshash — dumaloq.",
+        "ru": "Похожи формой — круглые.",
+        "en": "They are alike in shape — round."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "shakli (dumaloq)",
+              "ru": "формой (круглые)",
+              "en": "shape (round)"
+            },
+            {
+              "uz": "tovushi",
+              "ru": "звуком",
+              "en": "sound"
+            },
+            {
+              "uz": "taʼmi",
+              "ru": "вкусом",
+              "en": "taste"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni nimalariga qarab taqqoslaymiz?",
+        "ru": "По каким признакам сравниваем?",
+        "en": "By what features do we compare things?"
+      },
+      "hint": {
+        "uz": "Belgilariga qarab.",
+        "ru": "По признакам.",
+        "en": "By their features."
+      },
+      "explanation": {
+        "uz": "Rang, shakl va oʻlchamiga qarab.",
+        "ru": "По цвету, форме и размеру.",
+        "en": "By colour, shape and size."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "rang, shakl, oʻlcham",
+              "ru": "цвет, форма, размер",
+              "en": "colour, shape, size"
+            },
+            {
+              "uz": "faqat nomiga",
+              "ru": "только по имени",
+              "en": "only the name"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

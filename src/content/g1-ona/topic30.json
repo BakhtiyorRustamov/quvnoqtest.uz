@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-30",
+  "subjectKey": "g1-ona",
+  "emojis": "❓❗🔚",
+  "title": {
+    "uz": "Gap oxiridagi belgilar",
+    "ru": "Знаки в конце предложения",
+    "en": "Marks at the end of a sentence"
+  },
+  "recall": {
+    "uz": "Xabar (darak) gap oxiriga nuqta (.) qoʻyiladi: Tong otdi. Soʻroq gap oxiriga soʻroq (?) belgisi: Tong otdimi? His-hayajon gap oxiriga undov (!) belgisi: Tong otdi!",
+    "ru": "В конце повествовательного предложения — точка (.): Tong otdi. В конце вопросительного — вопрос (?): Tong otdimi? В конце восклицательного — восклицание (!): Tong otdi!",
+    "en": "A statement ends with a full stop (.): Tong otdi. A question ends with a question mark (?): Tong otdimi? An exclamation ends with (!): Tong otdi!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Tong otdi.", "bin": "darak" }, { "id": "b", "label": "Bahor keldi.", "bin": "darak" }, { "id": "c", "label": "Tong otdimi?", "bin": "soroq" }, { "id": "d", "label": "Qachon keldi?", "bin": "soroq" }, { "id": "e", "label": "Tong otdi!", "bin": "undov" }, { "id": "f", "label": "Qanday goʻzal!", "bin": "undov" } ], "bins": [ { "id": "darak", "label": "Darak (.)" }, { "id": "soroq", "label": "Soʻroq (?)" }, { "id": "undov", "label": "His-hayajon (!)" } ] } },
+      "prompt": { "uz": "Gaplarni turiga ajrat!", "ru": "Раздели предложения по типу!", "en": "Sort the sentences by type!" },
+      "hint": { "uz": "Belgisiga qara: . ? !", "ru": "Смотри на знак: . ? !", "en": "Look at the mark: . ? !" },
+      "explanation": { "uz": "Har gap oxirida oʻz belgisi boʻladi: . ? !", "ru": "У каждого предложения свой знак: . ? !", "en": "Each sentence type has its own mark: . ? !" }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Nuqta (.)", "ru": "Точка (.)", "en": "A full stop (.)" }, { "uz": "Soʻroq (?)", "ru": "Вопрос (?)", "en": "A question mark (?)" }, { "uz": "Undov (!)", "ru": "Восклицание (!)", "en": "An exclamation (!)" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Xabar gap oxiriga nima qoʻyiladi?", "ru": "Что ставят в конце повествования?", "en": "What ends a statement sentence?" },
+      "hint": { "uz": "Tong otdi …", "ru": "Tong otdi …", "en": "Tong otdi …" },
+      "explanation": { "uz": "Xabar (darak) gap oxiriga nuqta qoʻyiladi.", "ru": "В конце повествования ставят точку.", "en": "A statement ends with a full stop." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Qachon bahor keladi?", "match": true }, { "text": "Bahor keldi.", "match": false }, { "text": "Nima uchun?", "match": true }, { "text": "Quyosh chiqdi.", "match": false }, { "text": "Kim keldi?", "match": true }, { "text": "Kun isidi.", "match": false } ] } },
+      "prompt": { "uz": "Soʻroq gaplarni bos!", "ru": "Нажми вопросительные предложения!", "en": "Tap the question sentences!" },
+      "hint": { "uz": "Soʻroq gap «?» bilan tugaydi.", "ru": "Вопрос заканчивается на «?».", "en": "A question ends with “?”." },
+      "explanation": { "uz": "Soʻroq gaplar «?» belgisi bilan tugaydi.", "ru": "Вопросительные предложения кончаются на «?».", "en": "Question sentences end with “?”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Qanday goʻzal!", "match": true }, { "text": "Tong otdi.", "match": false }, { "text": "Yashasin!", "match": true }, { "text": "Bola keldi.", "match": false }, { "text": "Voy, ajoyib!", "match": true }, { "text": "Kitob oʻqidim.", "match": false } ] } },
+      "prompt": { "uz": "His-hayajon gaplarni bos!", "ru": "Нажми восклицательные предложения!", "en": "Tap the exclamation sentences!" },
+      "hint": { "uz": "His-hayajon gap «!» bilan tugaydi.", "ru": "Восклицание кончается на «!».", "en": "An exclamation ends with “!”." },
+      "explanation": { "uz": "His-hayajon gaplar «!» belgisi bilan tugaydi.", "ru": "Восклицательные предложения кончаются на «!».", "en": "Exclamation sentences end with “!”." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Tong otdi.", "match": true }, { "text": "Tong otdimi?", "match": false }, { "text": "Bahor keldi.", "match": true }, { "text": "Qanday goʻzal!", "match": false }, { "text": "Kun isidi.", "match": true }, { "text": "Kim keldi?", "match": false } ] } },
+      "prompt": { "uz": "Darak (xabar) gaplarni bos!", "ru": "Нажми повествовательные предложения!", "en": "Tap the statement sentences!" },
+      "hint": { "uz": "Darak gap «.» bilan tugaydi.", "ru": "Повествование кончается на «.».", "en": "A statement ends with “.”." },
+      "explanation": { "uz": "Darak gaplar nuqta bilan tugaydi.", "ru": "Повествовательные предложения кончаются точкой.", "en": "Statement sentences end with a full stop." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bahorda", "qushlar", "qaytadi."], "emoji": "🐦", "clue": { "uz": "Darak gap tuz", "ru": "Составь повествование", "en": "Make a statement sentence" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Qachon? — «Bahorda».", "ru": "Когда? — «Bahorda».", "en": "When? — “Bahorda”." },
+      "explanation": { "uz": "«Bahorda qushlar qaytadi.» — darak gap, nuqta bilan.", "ru": "«Bahorda qushlar qaytadi.» — повествование, с точкой.", "en": "“Bahorda qushlar qaytadi.” — a statement, with a full stop." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "nuqta", "emoji": "⚫", "clue": { "uz": "Darak gap oxiridagi belgi", "ru": "Знак в конце повествования", "en": "The mark at a statement's end" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: n, u, q, t, a.", "ru": "Буквы: n, u, q, t, a.", "en": "Letters: n, u, q, t, a." },
+      "explanation": { "uz": "«nuqta» — darak gap oxiriga qoʻyiladi.", "ru": "«nuqta» (точка) ставится в конце повествования.", "en": "“nuqta” (full stop) ends a statement sentence." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Qachon", "bahor", "keladi?"], "emoji": "❓", "clue": { "uz": "Soʻroq gap tuz", "ru": "Составь вопрос", "en": "Make a question" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Soʻroq soʻzi — «Qachon».", "ru": "Вопросительное слово — «Qachon».", "en": "The question word — “Qachon”." },
+      "explanation": { "uz": "«Qachon bahor keladi?» — soʻroq gap, «?» bilan.", "ru": "«Qachon bahor keladi?» — вопрос, с «?».", "en": "“Qachon bahor keladi?” — a question, with “?”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "His-hayajon gap", "ru": "Восклицательное", "en": "An exclamation" }, { "uz": "Darak gap", "ru": "Повествование", "en": "A statement" }, { "uz": "Soʻroq gap", "ru": "Вопрос", "en": "A question" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Qanday goʻzal!» — qanday gap?", "ru": "«Qanday goʻzal!» — какое предложение?", "en": "“Qanday goʻzal!” — what kind of sentence?" },
+      "hint": { "uz": "Oxirida «!» bor.", "ru": "В конце «!».", "en": "It ends with “!”." },
+      "explanation": { "uz": "«Qanday goʻzal!» — his-hayajon gap.", "ru": "«Qanday goʻzal!» — восклицательное предложение.", "en": "“Qanday goʻzal!” is an exclamation sentence." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Voy", "after": "", "choices": ["!", ".", "?"], "answer": "!", "emoji": "😮", "clue": { "uz": "His-hayajonni bildiradi", "ru": "Выражает восклицание", "en": "Shows strong feeling" } } },
+      "prompt": { "uz": "Toʻgʻri belgini qoʻy!", "ru": "Поставь верный знак!", "en": "Add the right mark!" },
+      "hint": { "uz": "«Voy» — hayajon soʻzi.", "ru": "«Voy» — восклицание.", "en": "“Voy” is an exclamation." },
+      "explanation": { "uz": "«Voy!» — his-hayajon, undov belgisi qoʻyiladi.", "ru": "«Voy!» — восклицание, ставят «!».", "en": "“Voy!” — an exclamation, takes “!”." }
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "topicId": "g1-tabiiy-16",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🍵🍲🏺🥄",
+  "title": {
+    "uz": "Idish-tovoqlar olami",
+    "ru": "Мир посуды",
+    "en": "The world of dishes"
+  },
+  "recall": {
+    "uz": "Uyimizda turli idishlar bor: qozon, choynak, kosa, koʻza. Ular turli materialdan yasaladi: loy, yogʻoch, metall, chinni va shisha. Dastlab odamlar idishlarni loydan yasagan va pechda pishirgan. Kulol loydan, oʻymakor metalldan idish yasaydi.",
+    "ru": "Дома есть разная посуда: казан, чайник, пиала, кувшин. Её делают из разных материалов: глина, дерево, металл, фарфор и стекло. Сначала посуду лепили из глины и обжигали. Гончар делает посуду из глины, чеканщик — из металла.",
+    "en": "At home we have different dishes: a cauldron, a teapot, a bowl, a jug. They are made of different materials: clay, wood, metal, porcelain and glass. At first dishes were shaped from clay and fired. A potter works with clay, an engraver with metal."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Choy damlash uchun qaysi idish kerak?", "ru": "Какая посуда нужна, чтобы заварить чай?", "en": "Which dish is used to brew tea?" },
+      "hint": { "uz": "Choy shu idishda damlanadi.", "ru": "Чай заваривают в этой посуде.", "en": "Tea is brewed in this dish." },
+      "explanation": { "uz": "Choynakda choy damlanadi. Qozonda osh, qoshiqda ovqat yeymiz.", "ru": "В чайнике заваривают чай. В казане — плов, ложкой едят.", "en": "Tea is brewed in a teapot. A cauldron cooks pilaf, a spoon is for eating." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "teapot", "emoji": "🍵", "label": { "uz": "choynak", "ru": "чайник", "en": "teapot" }, "correct": true },
+            { "id": "pot", "emoji": "🍲", "label": { "uz": "qozon", "ru": "казан", "en": "cauldron" } },
+            { "id": "spoon", "emoji": "🥄", "label": { "uz": "qoshiq", "ru": "ложка", "en": "spoon" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir idishni oʻz vazifasiga ula!", "ru": "Соедини каждую посуду с её назначением!", "en": "Match each dish to what it is used for!" },
+      "hint": { "uz": "Choynak — choy, qozon — osh, koʻza — suv.", "ru": "Чайник — чай, казан — плов, кувшин — вода.", "en": "Teapot — tea, cauldron — pilaf, jug — water." },
+      "explanation": { "uz": "Har bir idishning oʻz vazifasi bor: choy damlash, ovqat pishirish, suv saqlash.", "ru": "У каждой посуды своё назначение: заварить чай, приготовить еду, хранить воду.", "en": "Each dish has its own use: to brew tea, to cook food, to hold water." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🍵", "label": { "uz": "choynak", "ru": "чайник", "en": "teapot" } }, "right": { "label": { "uz": "choy damlash", "ru": "заварить чай", "en": "brew tea" } } },
+            { "left": { "emoji": "🍲", "label": { "uz": "qozon", "ru": "казан", "en": "cauldron" } }, "right": { "label": { "uz": "osh pishirish", "ru": "готовить плов", "en": "cook pilaf" } } },
+            { "left": { "emoji": "🥄", "label": { "uz": "qoshiq", "ru": "ложка", "en": "spoon" } }, "right": { "label": { "uz": "ovqat yeyish", "ru": "есть", "en": "eat food" } } },
+            { "left": { "emoji": "🏺", "label": { "uz": "koʻza", "ru": "кувшин", "en": "jug" } }, "right": { "label": { "uz": "suv saqlash", "ru": "хранить воду", "en": "hold water" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Kartalarni ochib, idishni oʻz materialiga juftla!", "ru": "Открывай карточки и подбери посуду к материалу!", "en": "Flip the cards and match each dish to its material!" },
+      "hint": { "uz": "Qozon — metall, koʻza — loy, stakan — shisha.", "ru": "Казан — металл, кувшин — глина, стакан — стекло.", "en": "Cauldron — metal, jug — clay, glass — glass." },
+      "explanation": { "uz": "Har bir idish maʼlum materialdan: qozon metalldan, koʻza loydan, stakan shishadan.", "ru": "Каждая посуда из своего материала: казан из металла, кувшин из глины, стакан из стекла.", "en": "Each dish is made of a material: cauldron of metal, jug of clay, glass of glass." },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            { "a": { "emoji": "🍲", "label": { "uz": "qozon", "ru": "казан", "en": "cauldron" } }, "b": { "emoji": "🔩", "label": { "uz": "metall", "ru": "металл", "en": "metal" } } },
+            { "a": { "emoji": "🏺", "label": { "uz": "koʻza", "ru": "кувшин", "en": "jug" } }, "b": { "emoji": "🟤", "label": { "uz": "loy", "ru": "глина", "en": "clay" } } },
+            { "a": { "emoji": "🥛", "label": { "uz": "stakan", "ru": "стакан", "en": "glass" } }, "b": { "emoji": "✨", "label": { "uz": "shisha", "ru": "стекло", "en": "glass" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Metalldan yasalgan idishlarni belgila!", "ru": "Отметь металлическую посуду!", "en": "Tap the metal dishes!" },
+      "hint": { "uz": "Qozon, qoshiq va pichoq metalldan.", "ru": "Казан, ложка и нож — из металла.", "en": "The cauldron, spoon and knife are metal." },
+      "explanation": { "uz": "Qozon, qoshiq va pichoq metalldan yasalgan. Koʻza va stakan — yoʻq.", "ru": "Казан, ложка и нож — из металла. Кувшин и стакан — нет.", "en": "Cauldron, spoon and knife are metal. Jug and glass are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "pot", "emoji": "🍲", "label": { "uz": "qozon", "ru": "казан", "en": "cauldron" }, "correct": true },
+            { "id": "spoon", "emoji": "🥄", "label": { "uz": "qoshiq", "ru": "ложка", "en": "spoon" }, "correct": true },
+            { "id": "knife", "emoji": "🔪", "label": { "uz": "pichoq", "ru": "нож", "en": "knife" }, "correct": true },
+            { "id": "jug", "emoji": "🏺", "label": { "uz": "koʻza", "ru": "кувшин", "en": "jug" } },
+            { "id": "glass", "emoji": "🥛", "label": { "uz": "stakan", "ru": "стакан", "en": "glass" } },
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Dastlab odamlar idishlarni loydan yasagan.", "ru": "Верно? Сначала люди делали посуду из глины.", "en": "True? At first people made dishes from clay." },
+      "hint": { "uz": "Loyni qoʻlda shakllantirib, quyoshda quritganlar.", "ru": "Глину лепили руками и сушили на солнце.", "en": "They shaped clay by hand and dried it in the sun." },
+      "explanation": { "uz": "Toʻgʻri. Dastlab idishlar loydan yasalgan, keyin metalldan ham yasalgan.", "ru": "Верно. Сначала посуду делали из глины, потом и из металла.", "en": "True. First dishes were made of clay, later of metal too." },
+      "widget": { "type": "true_false", "props": { "emoji": "🏺", "answer": true } }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi idish shishadan yasalgan?", "ru": "Какая посуда сделана из стекла?", "en": "Which dish is made of glass?" },
+      "hint": { "uz": "Shisha tiniq boʻladi.", "ru": "Стекло прозрачное.", "en": "Glass is see-through." },
+      "explanation": { "uz": "Stakan shishadan yasalgan. Qozon metalldan, koʻza loydan.", "ru": "Стакан из стекла. Казан из металла, кувшин из глины.", "en": "A glass is made of glass. A cauldron is metal, a jug is clay." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "glass", "emoji": "🥛", "label": { "uz": "stakan", "ru": "стакан", "en": "glass" }, "correct": true },
+            { "id": "pot", "emoji": "🍲", "label": { "uz": "qozon", "ru": "казан", "en": "cauldron" } },
+            { "id": "jug", "emoji": "🏺", "label": { "uz": "koʻza", "ru": "кувшин", "en": "jug" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qadimda birinchi idishlar nimadan yasalgan?", "ru": "Из чего делали первую посуду в древности?", "en": "What were the first dishes made from?" },
+      "hint": { "uz": "Uni yerdan olib, qoʻlda shakllantirganlar.", "ru": "Её брали из земли и лепили руками.", "en": "It was taken from the ground and shaped by hand." },
+      "explanation": { "uz": "Birinchi idishlar loydan yasalgan. Poʻlat va plastik keyinroq paydo boʻlgan.", "ru": "Первую посуду делали из глины. Сталь и пластик появились позже.", "en": "The first dishes were clay. Steel and plastic came later." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "clay", "emoji": "🏺", "label": { "uz": "loy", "ru": "глина", "en": "clay" }, "correct": true },
+            { "id": "steel", "emoji": "🔩", "label": { "uz": "poʻlat", "ru": "сталь", "en": "steel" } },
+            { "id": "plastic", "emoji": "🥤", "label": { "uz": "plastik", "ru": "пластик", "en": "plastic" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Loy idishlar pechda pishirilsa, mustahkam boʻladi.", "ru": "Верно? Глиняная посуда после обжига становится прочной.", "en": "True? Clay dishes become strong after being fired." },
+      "hint": { "uz": "Quyoshda quritilgan idishlar tez singan, pechda pishirilgani mustahkam.", "ru": "Высушенная на солнце посуда быстро билась, обожжённая — прочная.", "en": "Sun-dried dishes broke easily; fired ones are strong." },
+      "explanation": { "uz": "Toʻgʻri. Loy idishlar pechda pishirilganda qattiq va mustahkam boʻladi.", "ru": "Верно. При обжиге глиняная посуда становится твёрдой и прочной.", "en": "True. When fired, clay dishes become hard and strong." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔥", "answer": true } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Idishlarni materialiga ajrat: metall yoki loy?", "ru": "Разложи посуду по материалу: металл или глина?", "en": "Sort the dishes by material: metal or clay?" },
+      "hint": { "uz": "Qozon va qoshiq — metall; koʻza va xurmacha — loy.", "ru": "Казан и ложка — металл; кувшин и горшочек — глина.", "en": "Cauldron and spoon are metal; jug and pot are clay." },
+      "explanation": { "uz": "Qozon va qoshiq metalldan. Koʻza va xurmacha loydan yasalgan.", "ru": "Казан и ложка — из металла. Кувшин и горшочек — из глины.", "en": "Cauldron and spoon are metal. Jug and little pot are clay." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "metal", "label": { "uz": "🔩 Metall", "ru": "🔩 Металл", "en": "🔩 Metal" }, "color": "#5a2d82" },
+            { "id": "clay", "label": { "uz": "🏺 Loy", "ru": "🏺 Глина", "en": "🏺 Clay" }, "color": "#a9743e" }
+          ],
+          "items": [
+            { "id": "pot", "emoji": "🍲", "label": { "uz": "qozon", "ru": "казан", "en": "cauldron" }, "bin": "metal" },
+            { "id": "spoon", "emoji": "🥄", "label": { "uz": "qoshiq", "ru": "ложка", "en": "spoon" }, "bin": "metal" },
+            { "id": "knife", "emoji": "🔪", "label": { "uz": "pichoq", "ru": "нож", "en": "knife" }, "bin": "metal" },
+            { "id": "jug", "emoji": "🏺", "label": { "uz": "koʻza", "ru": "кувшин", "en": "jug" }, "bin": "clay" },
+            { "id": "bowl", "emoji": "🥣", "label": { "uz": "kosa", "ru": "пиала", "en": "bowl" }, "bin": "clay" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Idish-tovoqlarni belgila!", "ru": "Отметь посуду!", "en": "Tap the dishes and utensils!" },
+      "hint": { "uz": "Qozon, choynak va qoshiq — idish-tovoq.", "ru": "Казан, чайник и ложка — посуда.", "en": "Cauldron, teapot and spoon are dishes." },
+      "explanation": { "uz": "Qozon, choynak va qoshiq — idish-tovoq. Stul, televizor va supurgi — yoʻq.", "ru": "Казан, чайник и ложка — посуда. Стул, телевизор и веник — нет.", "en": "Cauldron, teapot and spoon are dishes. Chair, TV and broom are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "pot", "emoji": "🍲", "label": { "uz": "qozon", "ru": "казан", "en": "cauldron" }, "correct": true },
+            { "id": "teapot", "emoji": "🍵", "label": { "uz": "choynak", "ru": "чайник", "en": "teapot" }, "correct": true },
+            { "id": "spoon", "emoji": "🥄", "label": { "uz": "qoshiq", "ru": "ложка", "en": "spoon" }, "correct": true },
+            { "id": "chair", "emoji": "🪑", "label": { "uz": "stul", "ru": "стул", "en": "chair" } },
+            { "id": "tv", "emoji": "📺", "label": { "uz": "televizor", "ru": "телевизор", "en": "TV" } },
+            { "id": "broom", "emoji": "🧹", "label": { "uz": "supurgi", "ru": "веник", "en": "broom" } }
+          ]
+        }
+      }
+    }
+  ]
+}

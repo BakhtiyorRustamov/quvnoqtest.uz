@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-07",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Guldon",
+    "ru": "Ваза",
+    "en": "A vase"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻozdan gullar solingan guldon yasaymiz.",
+    "ru": "Сегодня из цветной бумаги сделаем вазу с цветами.",
+    "en": "Today we make a vase of flowers from coloured paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Guldon yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай вазу. Выполняй каждый этап по рисунку!",
+        "en": "Make the vase. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Guldonni kartonga yopishtir.",
+        "ru": "Приклей вазу на картон.",
+        "en": "Glue the vase onto the card."
+      },
+      "explanation": {
+        "uz": "Chiroyli guldasta!",
+        "ru": "Красивый букет!",
+        "en": "A lovely bouquet!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "karton",
+              "ru": "картон",
+              "en": "cardboard"
+            },
+            {
+              "uz": "qaychi va yelim",
+              "ru": "ножницы и клей",
+              "en": "scissors and glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Rangli qogʻozdan guldon shaklini qirq.",
+              "ru": "Вырежь форму вазы.",
+              "en": "Cut a vase shape from paper."
+            },
+            {
+              "uz": "Guldonni kartonga yopishtir.",
+              "ru": "Приклей вазу на картон.",
+              "en": "Glue the vase onto the card."
+            },
+            {
+              "uz": "Qogʻozdan gullar qirqib, guldon ustiga yopishtir.",
+              "ru": "Вырежь цветы и приклей над вазой.",
+              "en": "Cut flowers and glue them above the vase."
+            }
+          ],
+          "art": "vase",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

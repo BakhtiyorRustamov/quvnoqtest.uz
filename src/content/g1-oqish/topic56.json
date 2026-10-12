@@ -1,0 +1,162 @@
+{
+  "topicId": "g1-oqish-56",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🪙⚖️🌟",
+  "title": {
+    "uz": "Yomon odatlardan saqlaning",
+    "ru": "Избегайте дурных привычек",
+    "en": "Avoid bad habits"
+  },
+  "recall": {
+    "uz": "«Ochkoʻzlik» hikoyasini tinglab oʻqiymiz va ochkoʻzlik yomon odat ekanini bilib olamiz.",
+    "ru": "Слушаем рассказ «Жадность» и узнаём, что жадность — дурная привычка.",
+    "en": "We read the story “Greed” and learn that greed is a bad habit."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Ochkoʻzlik",
+        "variant": "story",
+        "audio": "g1-oqish-56-q1",
+        "lines": [
+          "Bir bola koʻchada yigʻlab oʻtirgan ekan.",
+          "Oʻtkinchi: «Nega yigʻlayapsan?» — deb soʻrabdi.",
+          "«Bir tiyin pulim bor edi, yoʻqotib qoʻydim», — debdi bola.",
+          "Rahmi kelib, oʻtkinchi unga bir tiyin beribdi.",
+          "Bola pulni olgach, yana koʻproq yigʻlabdi.",
+          "«Endi nega yigʻlaysan?» — deb soʻrabdi oʻtkinchi.",
+          "«Pulim yoʻqolmaganida, hozir ikki tiyin boʻlardi!» — debdi bola."
+        ]
+      } },
+      "prompt": { "uz": "Hikoyani tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Bola nega ikkinchi marta yigʻladi?", "ru": "Почему мальчик заплакал во второй раз?", "en": "Why did the boy cry a second time?" },
+      "explanation": { "uz": "Hikoya ochkoʻzlik — yomon odat ekani haqida.", "ru": "Рассказ о том, что жадность — дурная привычка.", "en": "The story shows that greed is a bad habit." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": {
+        "tiles": [
+          { "id": "t1", "label": "mehribon", "bin": "b1" },
+          { "id": "t2", "label": "toʻgʻrisoʻz", "bin": "b1" },
+          { "id": "t3", "label": "kamtarin", "bin": "b1" },
+          { "id": "t4", "label": "dangasa", "bin": "b2" },
+          { "id": "t5", "label": "yolgʻonchi", "bin": "b2" },
+          { "id": "t6", "label": "maqtanchoq", "bin": "b2" }
+        ],
+        "bins": [
+          { "id": "b1", "label": "fazilat" },
+          { "id": "b2", "label": "illat" }
+        ]
+      } },
+      "prompt": { "uz": "Soʻzlarni ikki guruhga ajrating: fazilat va illat!", "ru": "Раздели слова: добродетель и порок!", "en": "Sort the words: virtue and vice!" },
+      "hint": { "uz": "Fazilat — yaxshi xulq, illat — yomon odat.", "ru": "Добродетель — хорошее, порок — плохое.", "en": "Virtue is good, vice is bad." },
+      "explanation": { "uz": "mehribon, toʻgʻrisoʻz, kamtarin — fazilat; dangasa, yolgʻonchi, maqtanchoq — illat.", "ru": "Добрый, правдивый, скромный — добродетель; ленивый, лживый, хвастливый — порок.", "en": "Kind, truthful, modest are virtues; lazy, deceitful, boastful are vices." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Bola bir tiyinini yoʻqotgani uchun yigʻladi.", "ru": "Мальчик заплакал из-за потерянной монетки.", "en": "The boy cried because he lost a coin." },
+        "answer": "true",
+        "why": { "uz": "Hikoyada bola pulini yoʻqotib yigʻlaydi.", "ru": "В рассказе мальчик плачет из-за потерянной монеты.", "en": "In the story the boy cries over his lost coin." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Bola nimasini yoʻqotdi?", "ru": "Что потерял мальчик?", "en": "What did the boy lose?" },
+      "explanation": { "uz": "Toʻgʻri: bola bir tiyinini yoʻqotib yigʻladi.", "ru": "Верно: мальчик плакал из-за потерянной монетки.", "en": "True: he cried over his lost coin." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Oʻtkinchi bolaga hech qanday yordam bermadi.", "ru": "Прохожий совсем не помог мальчику.", "en": "The passer-by did not help the boy at all." },
+        "answer": "false",
+        "why": { "uz": "Oʻtkinchi rahmi kelib, bolaga bir tiyin berdi.", "ru": "Прохожий пожалел и дал мальчику монетку.", "en": "The passer-by felt sorry and gave the boy a coin." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Oʻtkinchi bolaga nima berdi?", "ru": "Что дал прохожий мальчику?", "en": "What did the passer-by give the boy?" },
+      "explanation": { "uz": "Notoʻgʻri: oʻtkinchi bolaga bir tiyin berdi.", "ru": "Неверно: прохожий дал мальчику монетку.", "en": "False: the passer-by gave the boy a coin." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "fazilat", "right": "yaxshi xulq" },
+        { "left": "illat", "right": "yomon odat" },
+        { "left": "ochkoʻz", "right": "nafsi hakalak, qanoatsiz" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«fazilat» — yaxshi xulq, «illat» — yomon odat.", "ru": "«fazilat» — добродетель, «illat» — порок.", "en": "“fazilat” is a virtue, “illat” is a vice." },
+      "explanation": { "uz": "fazilat = yaxshi xulq; illat = yomon odat; ochkoʻz = qanoatsiz.", "ru": "fazilat = добродетель; illat = порок; ochkoʻz = жадный.", "en": "fazilat = a virtue; illat = a vice; ochkoʻz = greedy." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Ochkoʻz boʻlmasdan, boriga shukr qilish kerak", "ru": "Не быть жадным и довольствоваться тем, что есть", "en": "Don't be greedy — be content with what you have" },
+        { "uz": "Doim koʻproq talab qilish kerak", "ru": "Всегда требовать больше", "en": "Always demand more" },
+        { "uz": "Har doim yigʻlash kerak", "ru": "Всё время плакать", "en": "Cry all the time" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Hikoyadan qanday saboq olamiz?", "ru": "Какой урок из рассказа?", "en": "What lesson do we take from the story?" },
+      "hint": { "uz": "Ochkoʻz odam boriga qanoat qilmaydi.", "ru": "Жадный не довольствуется тем, что есть.", "en": "A greedy person is never content." },
+      "explanation": { "uz": "Ochkoʻz boʻlmasdan, boriga shukr, qanoat qilish kerak.", "ru": "Нужно не жадничать, а довольствоваться тем, что есть.", "en": "We should not be greedy but content with what we have." },
+      "openEnd": { "uz": "Senda qanoat (boriga shukr qilish) bormi? Misol keltir.", "ru": "Умеешь ли ты довольствоваться тем, что есть? Приведи пример.", "en": "Are you content with what you have? Give an example." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Ochkoʻz odam hech qachon ", "after": " boʻlmaydi.", "choices": ["qanoatli", "charchagan", "kulgili"], "answer": "qanoatli", "emoji": "🪙", "clue": { "uz": "Hikoya saboqi", "ru": "Урок рассказа", "en": "The story's lesson" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Ochkoʻz borига doim norozi.", "ru": "Жадный всегда недоволен.", "en": "A greedy person is never satisfied." },
+      "explanation": { "uz": "Ochkoʻz odam hech qachon qanoatli (mamnun) boʻlmaydi.", "ru": "Жадный никогда не бывает довольным.", "en": "A greedy person is never content." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "ochkoʻzlik", "match": true },
+        { "text": "yolgʻonchilik", "match": true },
+        { "text": "dangasalik", "match": true },
+        { "text": "rostgoʻylik", "match": false },
+        { "text": "mehribonlik", "match": false }
+      ] } },
+      "prompt": { "uz": "Yomon odatlarni (illatlarni) bos!", "ru": "Нажми дурные привычки (пороки)!", "en": "Tap the bad habits (vices)!" },
+      "hint": { "uz": "Yomon odatdan saqlanish kerak.", "ru": "От дурных привычек надо беречься.", "en": "We should avoid bad habits." },
+      "explanation": { "uz": "Ochkoʻzlik, yolgʻonchilik, dangasalik — illat; rostgoʻylik, mehribonlik — fazilat.", "ru": "Жадность, ложь, лень — пороки; правдивость, доброта — добродетели.", "en": "Greed, lying, laziness are vices; truthfulness, kindness are virtues." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "dangasa" },
+        { "text": "maqtanchoq" },
+        { "text": "ochkoʻz" },
+        { "text": "mehribon", "odd": true }
+      ], "clue": { "uz": "Qaysi biri yaxshi xislat?", "ru": "Что из этого хорошее качество?", "en": "Which one is a good trait?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi — yomon odat.", "ru": "Три — дурные привычки.", "en": "Three are bad habits." },
+      "explanation": { "uz": "Mehribon — fazilat; dangasa, maqtanchoq, ochkoʻz — illat.", "ru": "Добрый — добродетель; остальные — пороки.", "en": "Kind is a virtue; the rest are vices." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "qanoat", "syllables": ["qa", "no", "at"], "emoji": "🌟", "clue": { "uz": "Boriga shukr qilish, ochkoʻz boʻlmaslik", "ru": "Довольство тем, что есть", "en": "Being content, not greedy" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "qa + no + at = ?", "ru": "qa + no + at = ?", "en": "qa + no + at = ?" },
+      "explanation": { "uz": "qa-no-at → qanoat. Boriga shukr qilish.", "ru": "qa-no-at → qanoat (довольство).", "en": "qa-no-at → qanoat (contentment)." }
+    }
+  ]
+}

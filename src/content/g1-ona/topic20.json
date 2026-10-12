@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-20",
+  "subjectKey": "g1-ona",
+  "emojis": "🔚🔊👦",
+  "title": {
+    "uz": "Soʻz oxiridagi undoshlar",
+    "ru": "Согласные в конце слова",
+    "en": "Consonants at the end of a word"
+  },
+  "recall": {
+    "uz": "Soʻz oxiridagi jarangli undoshlar baʼzan jarangsiz eshitiladi: ovoz «ovos» kabi. Toʻgʻri yozish uchun unli qoʻshib tekshiramiz: ovoz — ovozi. Ismlar ham toʻgʻri yoziladi: Dilshod, Mahmud.",
+    "ru": "Звонкие согласные в конце слова иногда слышатся глухо: ovoz как «ovos». Проверяем гласной: ovoz — ovozi. Имена тоже пишем верно: Dilshod, Mahmud.",
+    "en": "Voiced consonants at a word's end sometimes sound voiceless: ovoz like “ovos”. Check with a vowel: ovoz — ovozi. Names are spelled right too: Dilshod, Mahmud."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "ovo", "after": "", "choices": ["z", "s", "j"], "answer": "z", "emoji": "🔊", "clue": { "uz": "Quloq bilan eshitamiz", "ru": "То, что слышим ухом (голос)", "en": "What we hear with our ear (voice)" } } },
+      "prompt": { "uz": "Oxirgi harfni qoʻy!", "ru": "Вставь последнюю букву!", "en": "Add the last letter!" },
+      "hint": { "uz": "ovoz — ovozi.", "ru": "ovoz — ovozi.", "en": "ovoz — ovozi." },
+      "explanation": { "uz": "«ovoz» «z» bilan tugaydi (ovozi).", "ru": "«ovoz» оканчивается на «z» (ovozi).", "en": "“ovoz” ends with “z” (ovozi)." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Dilsho", "after": "", "choices": ["d", "t", "s"], "answer": "d", "emoji": "👦", "clue": { "uz": "Oʻgʻil bola ismi", "ru": "Имя мальчика", "en": "A boy's name" } } },
+      "prompt": { "uz": "Ismning oxirgi harfini qoʻy!", "ru": "Вставь последнюю букву имени!", "en": "Add the name's last letter!" },
+      "hint": { "uz": "Dilshod — Dilshodning.", "ru": "Dilshod — Dilshodning.", "en": "Dilshod — Dilshodning." },
+      "explanation": { "uz": "«Dilshod» «d» bilan tugaydi.", "ru": "«Dilshod» оканчивается на «d».", "en": "“Dilshod” ends with “d”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Mahmu", "after": "", "choices": ["d", "t", "z"], "answer": "d", "emoji": "👦", "clue": { "uz": "Oʻgʻil bola ismi", "ru": "Имя мальчика", "en": "A boy's name" } } },
+      "prompt": { "uz": "Ismning oxirgi harfini qoʻy!", "ru": "Вставь последнюю букву имени!", "en": "Add the name's last letter!" },
+      "hint": { "uz": "Mahmud — Mahmudning.", "ru": "Mahmud — Mahmudning.", "en": "Mahmud — Mahmudning." },
+      "explanation": { "uz": "«Mahmud» «d» bilan tugaydi.", "ru": "«Mahmud» оканчивается на «d».", "en": "“Mahmud” ends with “d”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "obod", "bin": "d" }, { "id": "b", "label": "savod", "bin": "d" }, { "id": "c", "label": "Ahmad", "bin": "d" }, { "id": "d", "label": "baxt", "bin": "t" }, { "id": "e", "label": "doʻst", "bin": "t" }, { "id": "f", "label": "xat", "bin": "t" } ], "bins": [ { "id": "d", "label": "«d» bilan tugaydi" }, { "id": "t", "label": "«t» bilan tugaydi" } ] } },
+      "prompt": { "uz": "Soʻz oxiriga qarab ajrat!", "ru": "Раздели по концу слова!", "en": "Sort by the word ending!" },
+      "hint": { "uz": "savod — d, baxt — t bilan.", "ru": "savod — на d, baxt — на t.", "en": "savod ends in d, baxt in t." },
+      "explanation": { "uz": "Unli qoʻshib tekshiramiz: savodi (d), baxti (t).", "ru": "Проверяем гласной: savodi (d), baxti (t).", "en": "Check with a vowel: savodi (d), baxti (t)." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "ovoz", "match": true }, { "text": "ovos", "match": false }, { "text": "savod", "match": true }, { "text": "kitop", "match": false }, { "text": "sabab", "match": true }, { "text": "maktap", "match": false } ] } },
+      "prompt": { "uz": "Toʻgʻri yozilgan soʻzlarni bos!", "ru": "Нажми верно написанные слова!", "en": "Tap the correctly spelled words!" },
+      "hint": { "uz": "ovoz, savod, sabab — toʻgʻri.", "ru": "ovoz, savod, sabab — верно.", "en": "ovoz, savod, sabab are correct." },
+      "explanation": { "uz": "ovoz, savod, sabab toʻgʻri; qolganlari xato.", "ru": "ovoz, savod, sabab — верно; остальные — ошибка.", "en": "ovoz, savod, sabab are right; the others are wrong." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "ovoz", "right": "ovozi" }, { "left": "savod", "right": "savodi" }, { "left": "obod", "right": "obodi" }, { "left": "murod", "right": "murodi" } ] } },
+      "prompt": { "uz": "Soʻzni tekshiruv shakliga ula!", "ru": "Соедини слово с проверочной формой!", "en": "Match each word to its check-form!" },
+      "hint": { "uz": "«ovoz» — «ovozi».", "ru": "«ovoz» — «ovozi».", "en": "“ovoz” — “ovozi”." },
+      "explanation": { "uz": "Unli qoʻshsak, oxirgi harf aniq eshitiladi.", "ru": "С гласной последняя буква слышна чётко.", "en": "With a vowel, the final letter is clear." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "savod", "emoji": "📚", "clue": { "uz": "Oʻqish-yozishni bilish", "ru": "Умение читать и писать (грамота)", "en": "Knowing how to read and write (literacy)" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: s, a, v, o, d.", "ru": "Буквы: s, a, v, o, d.", "en": "Letters: s, a, v, o, d." },
+      "explanation": { "uz": "«savod» «d» bilan tugaydi (savodi).", "ru": "«savod» оканчивается на «d» (savodi).", "en": "“savod” ends with “d” (savodi)." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Ahmad", "kitob", "oʻqiydi."], "emoji": "📖", "clue": { "uz": "Ahmad haqida gap", "ru": "Предложение об Ахмаде", "en": "A sentence about Ahmad" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Ahmad».", "ru": "Кто? — «Ahmad».", "en": "Who? — “Ahmad”." },
+      "explanation": { "uz": "«Ahmad» ismi «d» bilan tugaydi.", "ru": "Имя «Ahmad» оканчивается на «d».", "en": "The name “Ahmad” ends with “d”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["ovoz", "ovos", "ovoj"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz toʻgʻri yozilgan?", "ru": "Какое слово написано верно?", "en": "Which word is spelled correctly?" },
+      "hint": { "uz": "Unli qoʻshib koʻr: ovoz — ovozi.", "ru": "Добавь гласную: ovoz — ovozi.", "en": "Add a vowel: ovoz — ovozi." },
+      "explanation": { "uz": "Toʻgʻrisi — «ovoz».", "ru": "Правильно — «ovoz».", "en": "The correct spelling is “ovoz”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["Dilshod", "Dilshot", "Dilshos"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi ism toʻgʻri yozilgan?", "ru": "Какое имя написано верно?", "en": "Which name is spelled correctly?" },
+      "hint": { "uz": "Ism «d» bilan tugaydi.", "ru": "Имя оканчивается на «d».", "en": "The name ends with “d”." },
+      "explanation": { "uz": "Toʻgʻrisi — «Dilshod».", "ru": "Правильно — «Dilshod».", "en": "The correct spelling is “Dilshod”." }
+    }
+  ]
+}

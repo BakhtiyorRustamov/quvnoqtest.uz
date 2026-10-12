@@ -1,0 +1,108 @@
+{
+  "topicId": "g1-ona-39",
+  "subjectKey": "g1-ona",
+  "emojis": "🔠🅰️✍️",
+  "title": {
+    "uz": "Ismlar bosh harf bilan",
+    "ru": "Имена — с заглавной буквы",
+    "en": "Names begin with a capital letter"
+  },
+  "recall": {
+    "uz": "Kishilarga atab qoʻyilgan ism va familiyalar har doim bosh (katta) harf bilan yoziladi: Ali, Madina, Komil. Oddiy soʻzlar kichik harf bilan yoziladi.",
+    "ru": "Имена и фамилии людей всегда пишутся с заглавной буквы: Ali, Madina, Komil. Обычные слова пишутся со строчной.",
+    "en": "People's names and surnames are always written with a capital letter: Ali, Madina, Komil. Ordinary words start with a lowercase letter."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "media": { "gif": "/quiz-media/ona-boshharf.gif", "alt": { "uz": "Ism bosh harf bilan: Ali", "ru": "Имя с заглавной: Ali", "en": "A name with a capital: Ali" }, "maxWidth": 200 },
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Bosh (katta) harf", "ru": "Заглавная буква", "en": "A capital letter" }, { "uz": "Kichik harf", "ru": "Строчная буква", "en": "A lowercase letter" }, { "uz": "Raqam", "ru": "Цифра", "en": "A number" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Kishilarning ismi qanday harf bilan yoziladi?", "ru": "С какой буквы пишут имена людей?", "en": "What letter do we start people's names with?" },
+      "hint": { "uz": "Ali, Madina — katta harf bilan.", "ru": "Ali, Madina — с заглавной.", "en": "Ali, Madina — with a capital." },
+      "explanation": { "uz": "Ism va familiyalar bosh harf bilan yoziladi.", "ru": "Имена и фамилии пишут с заглавной буквы.", "en": "Names and surnames are written with a capital letter." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Ali", "match": true }, { "text": "kitob", "match": false }, { "text": "Madina", "match": true }, { "text": "olma", "match": false }, { "text": "Tohir", "match": true }, { "text": "gul", "match": false } ] } },
+      "prompt": { "uz": "Ismlarni (bosh harfli soʻzlarni) bos!", "ru": "Нажми имена (слова с заглавной)!", "en": "Tap the names (capitalized words)!" },
+      "hint": { "uz": "Katta harf bilan boshlanganlarini tanla.", "ru": "Выбери слова с заглавной буквы.", "en": "Choose words that start with a capital." },
+      "explanation": { "uz": "Ali, Madina, Tohir — ismlar, bosh harf bilan.", "ru": "Ali, Madina, Tohir — имена, с заглавной.", "en": "Ali, Madina, Tohir are names, with a capital." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Komil", "bin": "ism" }, { "id": "b", "label": "Madina", "bin": "ism" }, { "id": "c", "label": "Ali", "bin": "ism" }, { "id": "d", "label": "kitob", "bin": "oddiy" }, { "id": "e", "label": "olma", "bin": "oddiy" }, { "id": "f", "label": "gul", "bin": "oddiy" } ], "bins": [ { "id": "ism", "label": "Ism (bosh harf)" }, { "id": "oddiy", "label": "Oddiy soʻz" } ] } },
+      "prompt": { "uz": "Ism va oddiy soʻzni ajrat!", "ru": "Раздели имя и обычное слово!", "en": "Sort names and ordinary words!" },
+      "hint": { "uz": "Ism — katta harf, oddiy soʻz — kichik.", "ru": "Имя — заглавная, слово — строчная.", "en": "A name — capital, a word — lowercase." },
+      "explanation": { "uz": "Ismlar bosh harf, oddiy soʻzlar kichik harf bilan.", "ru": "Имена — с заглавной, слова — со строчной.", "en": "Names start with a capital, ordinary words with lowercase." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "li", "choices": ["A", "a", "o"], "answer": "A", "emoji": "👦", "clue": { "uz": "Oʻgʻil bola ismi", "ru": "Имя мальчика", "en": "A boy's name" } } },
+      "prompt": { "uz": "Ismning birinchi harfini toʻgʻri qoʻy!", "ru": "Поставь верную первую букву имени!", "en": "Add the name's correct first letter!" },
+      "hint": { "uz": "Ism katta harf bilan boshlanadi.", "ru": "Имя начинается с заглавной.", "en": "A name starts with a capital." },
+      "explanation": { "uz": "«Ali» — ism, bosh harf «A» bilan yoziladi.", "ru": "«Ali» — имя, пишется с «A».", "en": "“Ali” is a name — written with capital “A”." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["Ak", "mal"], "emoji": "👦", "clue": { "uz": "Oʻgʻil bola ismi", "ru": "Имя мальчика", "en": "A boy's name" } } },
+      "prompt": { "uz": "Boʻgʻinlardan ismni tuz!", "ru": "Собери имя из слогов!", "en": "Build the name from syllables!" },
+      "hint": { "uz": "Ak- … -mal.", "ru": "Ak- … -mal.", "en": "Ak- … -mal." },
+      "explanation": { "uz": "«Akmal» — ism, bosh harf bilan yoziladi.", "ru": "«Akmal» — имя, с заглавной.", "en": "“Akmal” is a name, with a capital." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["Shah", "zod"], "emoji": "👦", "clue": { "uz": "Oʻgʻil bola ismi", "ru": "Имя мальчика", "en": "A boy's name" } } },
+      "prompt": { "uz": "Boʻgʻinlardan ismni tuz!", "ru": "Собери имя из слогов!", "en": "Build the name from syllables!" },
+      "hint": { "uz": "Shah- … -zod.", "ru": "Shah- … -zod.", "en": "Shah- … -zod." },
+      "explanation": { "uz": "«Shahzod» — ism, bosh harf bilan.", "ru": "«Shahzod» — имя, с заглавной.", "en": "“Shahzod” is a name, with a capital." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "ali", "right": "Ali" }, { "left": "vali", "right": "Vali" }, { "left": "said", "right": "Said" }, { "left": "sayfi", "right": "Sayfi" } ] } },
+      "prompt": { "uz": "Ismni toʻgʻri yozilishiga ula!", "ru": "Соедини имя с верным написанием!", "en": "Match each name to its correct spelling!" },
+      "hint": { "uz": "Ism bosh harf bilan yoziladi.", "ru": "Имя пишут с заглавной.", "en": "A name is written with a capital." },
+      "explanation": { "uz": "«ali» notoʻgʻri; toʻgʻrisi — «Ali».", "ru": "«ali» неверно; правильно — «Ali».", "en": "“ali” is wrong; correct is “Ali”." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Ali", "match": true }, { "text": "vali", "match": false }, { "text": "Madina", "match": true }, { "text": "tohir", "match": false }, { "text": "Omina", "match": true }, { "text": "said", "match": false } ] } },
+      "prompt": { "uz": "Toʻgʻri yozilgan ismlarni bos!", "ru": "Нажми верно написанные имена!", "en": "Tap the correctly written names!" },
+      "hint": { "uz": "Bosh harf bilan yozilganlarini tanla.", "ru": "Выбери имена с заглавной.", "en": "Choose names written with a capital." },
+      "explanation": { "uz": "Ali, Madina, Omina — bosh harf bilan, toʻgʻri.", "ru": "Ali, Madina, Omina — с заглавной, верно.", "en": "Ali, Madina, Omina — with a capital, correct." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Komil", "kamalakni", "koʻrdi."], "emoji": "🌈", "clue": { "uz": "Komil haqida gap", "ru": "Предложение о Комиле", "en": "A sentence about Komil" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Komil».", "ru": "Кто? — «Komil».", "en": "Who? — “Komil”." },
+      "explanation": { "uz": "«Komil» — ism, bosh harf bilan yoziladi.", "ru": "«Komil» — имя, с заглавной.", "en": "“Komil” is a name, with a capital." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Yoʻq, «Ali» boʻlishi kerak", "ru": "Нет, нужно «Ali»", "en": "No, it should be “Ali”" }, { "uz": "Ha, toʻgʻri", "ru": "Да, верно", "en": "Yes, correct" }, { "uz": "Farqi yoʻq", "ru": "Без разницы", "en": "No difference" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«ali» soʻzi toʻgʻri yozilganmi?", "ru": "Слово «ali» написано верно?", "en": "Is the word “ali” written correctly?" },
+      "hint": { "uz": "Ism kichik harf bilan yozilmaydi.", "ru": "Имя не пишут со строчной.", "en": "A name is not written in lowercase." },
+      "explanation": { "uz": "Ism bosh harf bilan yoziladi — «Ali».", "ru": "Имя пишут с заглавной — «Ali».", "en": "A name is written with a capital — “Ali”." }
+    }
+  ]
+}

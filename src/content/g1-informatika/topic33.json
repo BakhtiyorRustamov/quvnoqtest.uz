@@ -1,0 +1,326 @@
+{
+  "topicId": "g1-informatika-33",
+  "subjectKey": "g1-informatika",
+  "emojis": "⭐✅🎁🏆",
+  "title": {
+    "uz": "Samarali natija",
+    "ru": "Эффективный результат",
+    "en": "An effective result"
+  },
+  "recall": {
+    "uz": "Yaxshi natijaga erishish uchun ish toʻrt belgiga ega boʻladi: oʻz vaqtida bajarilgan, toʻgʻri, oxiriga yetkazilgan va foydali. Ana shunda natija samarali boʻladi. Kompyuter dasturi ham xuddi shunday: toʻgʻri, toʻliq va foydali javob bersa — yaxshi ishlaydi.",
+    "ru": "Чтобы получить хороший результат, у дела есть четыре признака: сделано вовремя, правильно, доведено до конца и полезно. Тогда результат эффективный. Компьютерная программа так же: если ответ верный, полный и полезный — она работает хорошо.",
+    "en": "A good result has four marks: done on time, correct, finished to the end, and useful. Then the result is effective. A computer program is the same: if its answer is correct, complete and useful, it works well."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi natija haqidagi gaplarni «Rost» yoki «Yolgʻon» deb belgila!",
+        "ru": "Отметь предложения о хорошем результате «Верно» или «Неверно»!",
+        "en": "Mark the sentences about a good result 'True' or 'False'!"
+      },
+      "hint": {
+        "uz": "Yaxshi ish qanday tugaydi?",
+        "ru": "Как заканчивается хорошее дело?",
+        "en": "How does a good task end?"
+      },
+      "explanation": {
+        "uz": "Yaxshi natija toʻliq va foydali boʻladi.",
+        "ru": "Хороший результат полный и полезный.",
+        "en": "A good result is complete and useful."
+      },
+      "widget": {
+        "type": "statement_check",
+        "props": {
+          "scene": "⭐",
+          "statements": [
+            { "text": { "uz": "Yaxshi natija oʻz vaqtida tayyor boʻladi.", "ru": "Хороший результат готов вовремя.", "en": "A good result is ready on time." }, "value": true },
+            { "text": { "uz": "Yaxshi natija chala qoladi.", "ru": "Хороший результат остаётся незавершённым.", "en": "A good result is left unfinished." }, "value": false },
+            { "text": { "uz": "Yaxshi natija foydali boʻladi.", "ru": "Хороший результат полезен.", "en": "A good result is useful." }, "value": true },
+            { "text": { "uz": "Yaxshi natija xato boʻladi.", "ru": "Хороший результат ошибочен.", "en": "A good result is wrong." }, "value": false }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ikki xonani solishtir — oʻng rasmdagi 3 ta farqni topib bos!",
+        "ru": "Сравни две комнаты — найди 3 различия на правой картинке!",
+        "en": "Compare the two rooms — find and tap the 3 differences on the right!"
+      },
+      "hint": {
+        "uz": "Har katakni yonidagi bilan solishtir.",
+        "ru": "Сравни каждую клетку с соседней.",
+        "en": "Compare each cell with its twin."
+      },
+      "explanation": {
+        "uz": "Diqqat bilan solishtirsang, farqni topasan.",
+        "ru": "Внимательное сравнение находит различия.",
+        "en": "Careful comparison finds the differences."
+      },
+      "widget": {
+        "type": "spot_difference",
+        "props": {
+          "rows": 3,
+          "cols": 3,
+          "left":  ["🎈","📚","⚽","🐱","🎵","🚗","🌳","💡","🎁"],
+          "right": ["🎈","📚","🏀","🐶","🎵","🚗","🌳","🔔","🎁"]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kubning uch tomonida ⭐ yulduz, ❤️ yurak va 🌙 oy chizilgan. Shu rasmlarni belgila!",
+        "ru": "На трёх гранях кубика нарисованы ⭐ звезда, ❤️ сердце и 🌙 луна. Отметь их!",
+        "en": "The cube has ⭐ a star, ❤️ a heart and 🌙 a moon on its three faces. Tap them!"
+      },
+      "hint": {
+        "uz": "Faqat kubda koʻringan uchtasini tanla.",
+        "ru": "Выбери только те три, что на кубике.",
+        "en": "Pick only the three shown on the cube."
+      },
+      "explanation": {
+        "uz": "Yulduz, yurak va oy — kub tomonlari.",
+        "ru": "Звезда, сердце и луна — грани кубика.",
+        "en": "Star, heart and moon are the cube faces."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "c0", "emoji": "⭐", "label": { "uz": "yulduz", "ru": "звезда", "en": "star" }, "correct": true },
+            { "id": "c1", "emoji": "❤️", "label": { "uz": "yurak", "ru": "сердце", "en": "heart" }, "correct": true },
+            { "id": "c2", "emoji": "🌙", "label": { "uz": "oy", "ru": "луна", "en": "moon" }, "correct": true },
+            { "id": "d0", "emoji": "☀️", "label": { "uz": "quyosh", "ru": "солнце", "en": "sun" } },
+            { "id": "d1", "emoji": "🍎", "label": { "uz": "olma", "ru": "яблоко", "en": "apple" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishni oxiriga yetkazish uchun bosqichlarni tartibla!",
+        "ru": "Расставь этапы, чтобы довести дело до конца!",
+        "en": "Put the steps in order to finish the task!"
+      },
+      "hint": {
+        "uz": "Avval boshlaymiz, oxirida tugatamiz.",
+        "ru": "Сначала начинаем, в конце завершаем.",
+        "en": "First we start, at the end we finish."
+      },
+      "explanation": {
+        "uz": "Boshlash → bajarish → tekshirish → tugatish.",
+        "ru": "Начать → сделать → проверить → завершить.",
+        "en": "Start → do → check → finish."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "a", "label": { "uz": "🔵 boshlash", "ru": "🔵 начать", "en": "🔵 start" } },
+            { "id": "b", "label": { "uz": "✏️ bajarish", "ru": "✏️ делать", "en": "✏️ do it" } },
+            { "id": "c", "label": { "uz": "✅ tekshirish", "ru": "✅ проверить", "en": "✅ check" } },
+            { "id": "d", "label": { "uz": "🏁 tugatish", "ru": "🏁 завершить", "en": "🏁 finish" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ish qanday boʻlsa, natija samarali boʻladi?",
+        "ru": "Каким должно быть дело, чтобы результат был эффективным?",
+        "en": "What makes a result effective?"
+      },
+      "hint": {
+        "uz": "Toʻgʻri va tugallangan.",
+        "ru": "Правильное и завершённое.",
+        "en": "Correct and finished."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri va oxiriga yetkazilgan ish.",
+        "ru": "Правильное и доведённое до конца дело.",
+        "en": "A task done correctly and to the end."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            { "uz": "toʻgʻri va oxiriga yetkazilgan", "ru": "правильное и завершённое", "en": "correct and finished" },
+            { "uz": "chala tashlangan", "ru": "брошенное на полпути", "en": "left half-done" },
+            { "uz": "xato bajarilgan", "ru": "сделанное с ошибкой", "en": "done wrong" }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ishni oʻz vaqtida tugatish — yaxshi natija belgisi.» Bu rostmi?",
+        "ru": "«Завершить дело вовремя — признак хорошего результата.» Верно?",
+        "en": "'Finishing a task on time is a mark of a good result.' Is this true?"
+      },
+      "hint": {
+        "uz": "Vaqtida tayyor ish yaxshimi?",
+        "ru": "Хорошо ли, когда готово вовремя?",
+        "en": "Is being ready on time good?"
+      },
+      "explanation": {
+        "uz": "Rost — oʻz vaqtida bajarish muhim.",
+        "ru": "Верно — важно делать вовремя.",
+        "en": "True — doing it on time matters."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": { "emoji": "⏰", "answer": true }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishlarni ikki savatga ajrat: yaxshi natija va yomon natija!",
+        "ru": "Разложи дела в две корзины: хороший и плохой результат!",
+        "en": "Sort the actions into two baskets: good result and bad result!"
+      },
+      "hint": {
+        "uz": "Vaqtida, toʻgʻri, tugallangan — yaxshi.",
+        "ru": "Вовремя, верно, завершено — хорошо.",
+        "en": "On time, correct, finished — good."
+      },
+      "explanation": {
+        "uz": "Yaxshi natija — vaxtida, toʻgʻri, tugallangan.",
+        "ru": "Хороший результат — вовремя, верно, завершён.",
+        "en": "A good result is on time, correct and finished."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "g", "label": { "uz": "Yaxshi natija", "ru": "Хороший", "en": "Good" } },
+            { "id": "b", "label": { "uz": "Yomon natija", "ru": "Плохой", "en": "Bad" } }
+          ],
+          "items": [
+            { "emoji": "⏰", "label": { "uz": "vaqtida tugatdi", "ru": "закончил вовремя", "en": "finished on time" }, "bin": "g" },
+            { "emoji": "✅", "label": { "uz": "xatosiz bajardi", "ru": "сделал без ошибок", "en": "did it without mistakes" }, "bin": "g" },
+            { "emoji": "🏁", "label": { "uz": "oxiriga yetkazdi", "ru": "довёл до конца", "en": "finished to the end" }, "bin": "g" },
+            { "emoji": "🐢", "label": { "uz": "juda kech qoldi", "ru": "сильно опоздал", "en": "was very late" }, "bin": "b" },
+            { "emoji": "❌", "label": { "uz": "xato qildi", "ru": "сделал ошибку", "en": "made a mistake" }, "bin": "b" },
+            { "emoji": "🚧", "label": { "uz": "chala tashladi", "ru": "бросил на полпути", "en": "left it half-done" }, "bin": "b" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishini toʻgʻri va oxiriga yetkazgan bola qanday belgi oladi?",
+        "ru": "Какой знак получает тот, кто сделал дело верно и до конца?",
+        "en": "What mark does a child who did the task correctly and fully get?"
+      },
+      "hint": {
+        "uz": "Gʻalaba belgisini oʻyla.",
+        "ru": "Подумай о знаке победы.",
+        "en": "Think of a winning mark."
+      },
+      "explanation": {
+        "uz": "Yaxshi natija — kubok!",
+        "ru": "Хороший результат — кубок!",
+        "en": "A good result earns the trophy!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "ok", "emoji": "🏆", "label": { "uz": "kubok", "ru": "кубок", "en": "trophy" }, "correct": true },
+            { "id": "a", "emoji": "🐢", "label": { "uz": "kechikish", "ru": "опоздание", "en": "lateness" } },
+            { "id": "b", "emoji": "❌", "label": { "uz": "xato", "ru": "ошибка", "en": "mistake" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi natija belgilari orasida ortiqcha soʻzni top!",
+        "ru": "Найди лишнее среди признаков хорошего результата!",
+        "en": "Find the odd one out among the marks of a good result!"
+      },
+      "hint": {
+        "uz": "Qaysi biri yaxshi natija emas?",
+        "ru": "Что не относится к хорошему результату?",
+        "en": "Which one is not a good-result mark?"
+      },
+      "explanation": {
+        "uz": "«Chala» — yaxshi natija belgisi emas.",
+        "ru": "«Незавершённое» — не признак хорошего результата.",
+        "en": "'Half-done' is not a mark of a good result."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": { "uz": "yaxshi natija belgisi", "ru": "признаки хорошего результата", "en": "marks of a good result" },
+          "tiles": [
+            { "text": "toʻgʻri" },
+            { "text": "oxiriga yetkazilgan" },
+            { "text": "oʻz vaqtida" },
+            { "text": "chala", "odd": true }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yakuniy tekshiruv: samarali natija haqidagi gaplarni belgila!",
+        "ru": "Итоговая проверка: отметь предложения об эффективном результате!",
+        "en": "Final check: mark the sentences about an effective result!"
+      },
+      "hint": {
+        "uz": "Toʻgʻri, toʻliq, foydali.",
+        "ru": "Верный, полный, полезный.",
+        "en": "Correct, complete, useful."
+      },
+      "explanation": {
+        "uz": "Barakalla! Samarali natija — toʻgʻri va foydali.",
+        "ru": "Молодец! Эффективный результат — верный и полезный.",
+        "en": "Great! An effective result is correct and useful."
+      },
+      "widget": {
+        "type": "statement_check",
+        "props": {
+          "scene": "🏆",
+          "statements": [
+            { "text": { "uz": "Samarali natija — toʻgʻri natija.", "ru": "Эффективный результат — верный.", "en": "An effective result is a correct one." }, "value": true },
+            { "text": { "uz": "Samarali natija foydali boʻladi.", "ru": "Эффективный результат полезен.", "en": "An effective result is useful." }, "value": true },
+            { "text": { "uz": "Samarali natijani chala qoldiramiz.", "ru": "Эффективный результат оставляем незавершённым.", "en": "We leave an effective result unfinished." }, "value": false }
+          ]
+        }
+      }
+    }
+  ]
+}

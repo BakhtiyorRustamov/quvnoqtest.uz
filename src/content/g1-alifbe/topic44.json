@@ -1,0 +1,535 @@
+{
+  "topicId": "g1-alifbe-44",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🌷🎸🍚",
+  "title": {
+    "uz": "«G g» — oʻqish mashqi",
+    "ru": "Буква «G g» — чтение",
+    "en": "Letter “G g” — reading"
+  },
+  "recall": {
+    "uz": "«G» harfini oʻrgandik. Endi matn oʻqiymiz: gul, gitara, guruch. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «G». Теперь читаем текст: gul, gitara, guruch. Тренируем чтение!",
+    "en": "We learned the letter “G”. Now we read a text: gul, gitara, guruch. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌷 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🌷 Прочитай и нажми верно написанное слово!",
+        "en": "🌷 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «gul».",
+        "ru": "Прочитай: «gul».",
+        "en": "Read it: “gul”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «gul».",
+        "ru": "Верно — «gul».",
+        "en": "Correct — “gul”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🌷",
+          "options": [
+            {
+              "id": "ok",
+              "word": "gul",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "kul"
+            },
+            {
+              "id": "w2",
+              "word": "gol"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «gul» soʻzini tuz!",
+        "ru": "Составь слово «gul»!",
+        "en": "Build the word “gul”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «gul» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «gul».",
+        "en": "Great! You read “gul”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🌷",
+          "word": "gul",
+          "label": {
+            "uz": "gul",
+            "ru": "цветок",
+            "en": "flower"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь на вопрос.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение внимательно.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «gulzorda».",
+        "ru": "Верный ответ — «gulzorda».",
+        "en": "The right answer is “gulzorda”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🌷",
+          "text": {
+            "uz": "Gulnoza gul oldi.\nGul gulzorda oʻsadi.",
+            "ru": "Gulnoza gul oldi.\nGul gulzorda oʻsadi.",
+            "en": "Gulnoza gul oldi.\nGul gulzorda oʻsadi."
+          },
+          "question": {
+            "uz": "Gul qayerda oʻsadi?",
+            "ru": "Gul qayerda oʻsadi?",
+            "en": "Gul qayerda oʻsadi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "gulzorda",
+                "ru": "gulzorda",
+                "en": "gulzorda"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "dalada",
+                "ru": "dalada",
+                "en": "dalada"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "uyda",
+                "ru": "uyda",
+                "en": "uyda"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🎸 «gitara» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🎸 Похлопай слово «gitara» по слогам!",
+        "en": "🎸 Clap the word “gitara” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«gitara» — 3 boʻgʻin.",
+        "ru": "«gitara» — 3 слога.",
+        "en": "“gitara” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🎸",
+          "word": {
+            "uz": "gitara",
+            "ru": "gitara",
+            "en": "gitara"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«G» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «G»!",
+        "en": "Tap the words with the “G” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «g» tovushi bor.",
+        "ru": "В них есть звук «g».",
+        "en": "They have the “g” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌷",
+              "label": {
+                "uz": "gul",
+                "ru": "gul",
+                "en": "gul"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🎸",
+              "label": {
+                "uz": "gitara",
+                "ru": "gitara",
+                "en": "gitara"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍚",
+              "label": {
+                "uz": "guruch",
+                "ru": "guruch",
+                "en": "guruch"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«gul» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «gul». Найди картинку!",
+        "en": "Read “gul”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«gul» — 🌷.",
+        "ru": "«gul» — 🌷.",
+        "en": "“gul” is 🌷."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🌷",
+              "label": {
+                "uz": "gul",
+                "ru": "цветок",
+                "en": "flower"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🎸",
+              "label": {
+                "uz": "gitara",
+                "ru": "gitara",
+                "en": "gitara"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🍚",
+              "label": {
+                "uz": "guruch",
+                "ru": "guruch",
+                "en": "guruch"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🌷"
+              },
+              "right": {
+                "label": {
+                  "uz": "gul",
+                  "ru": "gul",
+                  "en": "gul"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🎸"
+              },
+              "right": {
+                "label": {
+                  "uz": "gitara",
+                  "ru": "gitara",
+                  "en": "gitara"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍚"
+              },
+              "right": {
+                "label": {
+                  "uz": "guruch",
+                  "ru": "guruch",
+                  "en": "guruch"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Gulnoza … oldi.",
+        "ru": "Составь предложение: Gulnoza … oldi.",
+        "en": "Order the words: Gulnoza … oldi."
+      },
+      "hint": {
+        "uz": "Gulnoza — gul — oldi.",
+        "ru": "Gulnoza — gul — oldi.",
+        "en": "Gulnoza — gul — oldi."
+      },
+      "explanation": {
+        "uz": "«Gulnoza gul oldi.» — gap oʻqiding!",
+        "ru": "«Gulnoza gul oldi.» — предложение!",
+        "en": "“Gulnoza gul oldi.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Gulnoza",
+                "ru": "Gulnoza",
+                "en": "Gulnoza"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "gul",
+                "ru": "gul",
+                "en": "gul"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🌷"
+              },
+              "b": {
+                "label": {
+                  "uz": "gul",
+                  "ru": "gul",
+                  "en": "gul"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎸"
+              },
+              "b": {
+                "label": {
+                  "uz": "gitara",
+                  "ru": "gitara",
+                  "en": "gitara"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍚"
+              },
+              "b": {
+                "label": {
+                  "uz": "guruch",
+                  "ru": "guruch",
+                  "en": "guruch"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«gul» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «gul»?",
+        "en": "How many sounds are in “gul”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana. (harflab sana)",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«gul»da 3 ta tovush bor.",
+        "ru": "В «gul» 3 звука.",
+        "en": "“gul” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

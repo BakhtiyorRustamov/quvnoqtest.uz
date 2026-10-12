@@ -1,0 +1,349 @@
+{
+  "topicId": "g1-math-106",
+  "subjectKey": "g1-math",
+  "emojis": "💧🔢✨",
+  "title": {
+    "uz": "Hajm va litr bilan tanishamiz",
+    "ru": "Знакомимся с объёмом и литром",
+    "en": "Getting to know volume and the litre"
+  },
+  "recall": {
+    "uz": "Idishga sigʻadigan suyuqlik miqdori — bu hajm. Hajm litrlarda oʻlchanadi. Idishda qancha suv koʻproq sigʻsa, hajmi shuncha katta. Masalan, chelakka oʻn litr, koʻzaga besh litr suv sigʻadi.",
+    "ru": "Сколько жидкости вмещает сосуд — это объём. Объём измеряют в литрах. Чем больше воды помещается, тем больше объём. Например, в ведро десять литров, в кувшин пять литров.",
+    "en": "How much liquid a container holds is its volume. Volume is measured in litres. The more water it holds, the bigger the volume. For example a bucket holds ten litres, a jug five litres."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 9,
+          "y": 4
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 9 litr va 4 litr. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 9 л и 4 л. Какой знак верный?",
+        "en": "Compare: 9 L and 4 L. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Soni katta boʻlsa, koʻproq.",
+        "ru": "Больше число — больше.",
+        "en": "A bigger number is more."
+      },
+      "explanation": {
+        "uz": "9 > 4.",
+        "ru": "9 > 4.",
+        "en": "9 > 4."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 4,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "9 litr va 4 litr — birga necha litr? Sonlar chizigʻida hisobla.",
+        "ru": "9 л и 4 л — сколько вместе? Посчитай на числовой прямой.",
+        "en": "9 L and 4 L — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "9 dan boshla, 4 qadam oldinga sur.",
+        "ru": "Встань на 9, продвинься на 4.",
+        "en": "Start at 9, move 4 forward."
+      },
+      "explanation": {
+        "uz": "9 + 4 = 13 litr.",
+        "ru": "9 + 4 = 13 л.",
+        "en": "9 + 4 = 13 L."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 14,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Koʻzada 12 litr yogʻ bor. 6 litr olib, yana 8 litr quyildi. Necha litr boʻldi? Bloklardan yasa.",
+        "ru": "В кувшине 12 л масла. Взяли 6 л, долили 8 л. Сколько стало? Собери из блоков.",
+        "en": "A jug has 12 L of oil. 6 L is taken out and 8 L added. How many litres now? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "12 - 6 + 8 = 14.",
+        "ru": "12 - 6 + 8 = 14.",
+        "en": "12 - 6 + 8 = 14."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "10 - 4",
+              "right": "6"
+            },
+            {
+              "left": "20 - 8",
+              "right": "12"
+            },
+            {
+              "left": "80 - 30",
+              "right": "50"
+            },
+            {
+              "left": "76 - 16",
+              "right": "60"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "7 litr va 8 litr — birga necha litr? Sonlar chizigʻida hisobla.",
+        "ru": "7 л и 8 л — сколько вместе? Посчитай на числовой прямой.",
+        "en": "7 L and 8 L — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla, 8 qadam oldinga sur.",
+        "ru": "Встань на 7, продвинься на 8.",
+        "en": "Start at 7, move 8 forward."
+      },
+      "explanation": {
+        "uz": "7 + 8 = 15 litr.",
+        "ru": "7 + 8 = 15 л.",
+        "en": "7 + 8 = 15 L."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "4 + 6",
+              "bin": "v10"
+            },
+            {
+              "id": "b",
+              "label": "7 + 3",
+              "bin": "v10"
+            },
+            {
+              "id": "c",
+              "label": "2 + 8",
+              "bin": "v10"
+            },
+            {
+              "id": "d",
+              "label": "9 + 6",
+              "bin": "v15"
+            },
+            {
+              "id": "e",
+              "label": "8 + 7",
+              "bin": "v15"
+            },
+            {
+              "id": "f",
+              "label": "10 + 5",
+              "bin": "v15"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v10",
+              "label": "10"
+            },
+            {
+              "id": "v15",
+              "label": "15"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha toʻgʻri qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик его значения!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в ящик с этим числом.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 12,
+          "y": 7
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 12 litr va 7 litr. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 12 л и 7 л. Какой знак верный?",
+        "en": "Compare: 12 L and 7 L. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Soni katta boʻlsa, koʻproq.",
+        "ru": "Больше число — больше.",
+        "en": "A bigger number is more."
+      },
+      "explanation": {
+        "uz": "12 > 7.",
+        "ru": "12 > 7.",
+        "en": "12 > 7."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 18
+        }
+      },
+      "prompt": {
+        "uz": "Bochkada 18 litr suv bor. Shu miqdorni bloklardan yasa.",
+        "ru": "В бочке 18 л воды. Собери это число из блоков.",
+        "en": "A barrel has 18 L of water. Build that number from blocks."
+      },
+      "hint": {
+        "uz": "1 ta oʻnlik (+10) va 8 ta birlik (+1).",
+        "ru": "1 десятков (+10) и 8 единиц (+1).",
+        "en": "1 tens (+10) and 8 ones (+1)."
+      },
+      "explanation": {
+        "uz": "18 = 10 + 8.",
+        "ru": "18 = 10 + 8.",
+        "en": "18 = 10 + 8."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 6,
+          "b": 9,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "6 litr va 9 litr — birga necha litr? Sonlar chizigʻida hisobla.",
+        "ru": "6 л и 9 л — сколько вместе? Посчитай на числовой прямой.",
+        "en": "6 L and 9 L — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "6 dan boshla, 9 qadam oldinga sur.",
+        "ru": "Встань на 6, продвинься на 9.",
+        "en": "Start at 6, move 9 forward."
+      },
+      "explanation": {
+        "uz": "6 + 9 = 15 litr.",
+        "ru": "6 + 9 = 15 л.",
+        "en": "6 + 9 = 15 L."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Chelakka 9 litr, koʻzaga undan 5 litr kam suv sigʻadi. Koʻzaga necha litr sigʻadi?",
+        "ru": "В ведро 9 л, в кувшин на 5 л меньше. Сколько литров в кувшине?",
+        "en": "A bucket holds 9 L, a jug 5 L less. How many litres in the jug?"
+      },
+      "hint": {
+        "uz": "9 dan 5 ni ayir.",
+        "ru": "Вычти из 9 число 5.",
+        "en": "Take 5 from 9."
+      },
+      "explanation": {
+        "uz": "9 - 5 = 4 litr.",
+        "ru": "9 - 5 = 4 л.",
+        "en": "9 - 5 = 4 L."
+      }
+    }
+  ]
+}

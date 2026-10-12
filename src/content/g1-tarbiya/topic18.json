@@ -1,0 +1,248 @@
+{
+  "topicId": "g1-tarbiya-18",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🍵🚪😊🍞",
+  "title": {
+    "uz": "Mehmondorchilik odobi",
+    "ru": "Правила гостеприимства",
+    "en": "The etiquette of hospitality"
+  },
+  "recall": {
+    "uz": "Xalqimiz mehmondoʻst. Mehmonni kulib kutamiz, joy koʻrsatamiz, non-choy bilan siylaymiz. Mehmon ham «rahmat» aytadi va odob saqlaydi. Mehmondorchilik — goʻzal urf-odatimiz.",
+    "ru": "Наш народ гостеприимен. Гостя встречаем с улыбкой, показываем место, угощаем чаем и хлебом. Гость тоже говорит «спасибо» и ведёт себя воспитанно. Гостеприимство — наш прекрасный обычай.",
+    "en": "Our people are hospitable. We greet a guest with a smile, offer a seat and share bread and tea. The guest also says \"thank you\" and behaves politely. Hospitality is our beautiful custom."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyingizga mehmon keldi. Avval nima qilasiz?",
+        "ru": "К тебе пришёл гость. Что делаешь сначала?",
+        "en": "A guest comes to your home. What do you do first?"
+      },
+      "hint": {
+        "uz": "Iliq kutib olamiz.",
+        "ru": "Тепло встречаем.",
+        "en": "We give a warm welcome."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Kulib salomlashib kutib olamiz.",
+        "ru": "Верно! Встречаем с улыбкой и приветствием.",
+        "en": "Right! We greet them with a smile."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "kulib kutib olaman",
+              "ru": "встречаю с улыбкой",
+              "en": "I welcome them warmly"
+            },
+            {
+              "uz": "eshikni yopaman",
+              "ru": "закрываю дверь",
+              "en": "I shut the door"
+            },
+            {
+              "uz": "eʼtibor bermayman",
+              "ru": "не обращаю внимания",
+              "en": "I ignore them"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi mezbonning ishlarini belgila!",
+        "ru": "Отметь дела хорошего хозяина!",
+        "en": "Tap the things a good host does!"
+      },
+      "hint": {
+        "uz": "Kutib olish, joy koʻrsatish, choy taklif qilish.",
+        "ru": "Встретить, показать место, предложить чай.",
+        "en": "Welcome, offer a seat, offer tea."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bular mehmondorchilik odobi.",
+        "ru": "Молодец! Это правила гостеприимства.",
+        "en": "Great! Those are the rules of hospitality."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "😊",
+              "label": {
+                "uz": "kulib kutib olish",
+                "ru": "встретить с улыбкой",
+                "en": "welcome with a smile"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🛋️",
+              "label": {
+                "uz": "joy koʻrsatish",
+                "ru": "показать место",
+                "en": "offer a seat"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍵",
+              "label": {
+                "uz": "choy taklif qilish",
+                "ru": "предложить чай",
+                "en": "offer tea"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🙈",
+              "label": {
+                "uz": "eʼtibor bermaslik",
+                "ru": "не замечать",
+                "en": "ignore them"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🚪",
+              "label": {
+                "uz": "mehmonni haydash",
+                "ru": "выгнать гостя",
+                "en": "send the guest away"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: mehmon kelganda nima boʻldi?",
+        "ru": "Расставь историю: что было, когда пришёл гость?",
+        "en": "Put the story in order: what happened when the guest came?"
+      },
+      "hint": {
+        "uz": "Avval qoʻngʻiroq bosiladi, oxirida joyga taklif qilinadi.",
+        "ru": "Сначала звонок, в конце приглашают за стол.",
+        "en": "First the bell rings, at the end the guest is seated."
+      },
+      "explanation": {
+        "uz": "Barakalla! Mehmonni chiroyli kutib olding.",
+        "ru": "Молодец! Ты красиво встретил гостя.",
+        "en": "Great! You welcomed the guest nicely."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🚪",
+          "events": [
+            {
+              "text": {
+                "uz": "Eshik qoʻngʻirogʻi bosildi.",
+                "ru": "Позвонили в дверь.",
+                "en": "The doorbell rang."
+              }
+            },
+            {
+              "text": {
+                "uz": "Bola eshikni ochdi.",
+                "ru": "Ребёнок открыл дверь.",
+                "en": "The child opened the door."
+              }
+            },
+            {
+              "text": {
+                "uz": "«Xush kelibsiz!» dedi.",
+                "ru": "Сказал «Добро пожаловать!».",
+                "en": "He said \"Welcome!\""
+              }
+            },
+            {
+              "text": {
+                "uz": "Mehmonni joyga taklif qildi.",
+                "ru": "Пригласил гостя сесть.",
+                "en": "He offered the guest a seat."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Mehmon ketayotganda «rahmat» aytadi.",
+        "ru": "Верно? Гость, уходя, говорит «спасибо».",
+        "en": "Is this right? When leaving, a guest says \"thank you\"."
+      },
+      "hint": {
+        "uz": "Mehmon ham odobli boʻladi.",
+        "ru": "Гость тоже воспитан.",
+        "en": "A guest is polite too."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Mehmon minnatdorchilik bildiradi.",
+        "ru": "Верно! Гость благодарит.",
+        "en": "Right! The guest gives thanks."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🙏",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyingizga mehmon kelganda qanday yordam berasiz?",
+        "ru": "Как ты помогаешь, когда к вам приходит гость?",
+        "en": "How do you help when a guest visits your home?"
+      },
+      "hint": {
+        "uz": "Dasturxon, choy, joy — nima qilasan?",
+        "ru": "Стол, чай, место — что делаешь?",
+        "en": "The table, tea, a seat — what do you do?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen chin mezbon ekansan.",
+        "ru": "Отлично! Ты настоящий хозяин.",
+        "en": "Great! You are a real host."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Mehmon kelganda men choy quyaman, dasturxonga non qoʻyaman va mehmonga joy koʻrsataman.",
+            "ru": "Когда приходит гость, я наливаю чай, кладу хлеб на стол и показываю гостю место.",
+            "en": "When a guest comes I pour the tea, put bread on the table and show the guest to a seat."
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "topicId": "g1-math-100",
+  "subjectKey": "g1-math",
+  "emojis": "📏✏️📐",
+  "title": {
+    "uz": "Kesma uzunligini oʻlchaymiz",
+    "ru": "Измеряем длину отрезка",
+    "en": "Measuring a segment's length"
+  },
+  "recall": {
+    "uz": "Kesmaning uzunligini chizgʻich bilan oʻlchaymiz: chizgʻich boshini (0) kesma boshiga qoʻyamiz va ikkinchi uchidagi sonni oʻqiymiz. A va B nuqtalar orasidagi masofa — AB kesmaning uzunligi. 1 cm = 2 katak.",
+    "ru": "Длину отрезка измеряем линейкой: ставим начало линейки (0) к началу отрезка и читаем число у второго конца. Расстояние между точками A и B — это длина отрезка AB. 1 см = 2 клетки.",
+    "en": "We measure a segment with a ruler: put the ruler's 0 at the start and read the number at the other end. The distance between points A and B is the length of segment AB. 1 cm = 2 cells."
+  },
+  "items": [
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 6,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "AB kesma 6 cm, BC kesma 8 cm. Ularni ulasak, AC necha cm? Sonlar chizigʻida hisobla.",
+        "ru": "Отрезок AB = 6 см, BC = 8 см. Какова длина AC, если их соединить? Посчитай на числовой прямой.",
+        "en": "Segment AB is 6 cm, BC is 8 cm. Joined together, how long is AC? Use the number line."
+      },
+      "hint": {
+        "uz": "6 dan boshla va 8 cm oldinga sur.",
+        "ru": "Встань на 6 и продвинься на 8 см.",
+        "en": "Start at 6 and move 8 cm forward."
+      },
+      "explanation": {
+        "uz": "6 + 8 = 14 cm.",
+        "ru": "6 + 8 = 14 см.",
+        "en": "6 + 8 = 14 cm."
+      },
+      "id": "q1"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 11,
+          "y": 8
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi kesma uzunroq: 11 cm yoki 8 cm? Toʻgʻri belgini tanla.",
+        "ru": "Какой отрезок длиннее: 11 см или 8 см? Выбери знак.",
+        "en": "Which segment is longer: 11 cm or 8 cm? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgan kesma uzunroq.",
+        "ru": "Длиннее отрезок с большим числом.",
+        "en": "The segment with the bigger number is longer."
+      },
+      "explanation": {
+        "uz": "11 > 8.",
+        "ru": "11 > 8.",
+        "en": "11 > 8."
+      },
+      "id": "q2"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 17
+        }
+      },
+      "prompt": {
+        "uz": "Kesmaning uzunligi 17 cm. Shu uzunlikni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Длина отрезка 17 см. Собери эту длину из блоков десятков и единиц.",
+        "en": "A segment is 17 cm long. Build that length from tens and ones blocks."
+      },
+      "hint": {
+        "uz": "1 ta oʻnlik (+10) va 7 ta birlik (+1).",
+        "ru": "1 десяток (+10) и 7 единиц (+1).",
+        "en": "1 ten (+10) and 7 ones (+1)."
+      },
+      "explanation": {
+        "uz": "17 = 10 + 7 cm.",
+        "ru": "17 = 10 + 7 см.",
+        "en": "17 = 10 + 7 cm."
+      },
+      "id": "q3"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "6 + 7",
+              "right": "13"
+            },
+            {
+              "left": "15 - 4",
+              "right": "11"
+            },
+            {
+              "left": "8 + 9",
+              "right": "17"
+            },
+            {
+              "left": "19 - 5",
+              "right": "14"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir kesmalar amalini uning uzunligi (cm) bilan ulang!",
+        "ru": "Соедини каждое действие с длиной отрезка (см)!",
+        "en": "Match each segment expression with its length (cm)!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, tengini oʻngdan top.",
+        "ru": "Вычисли слева, найди равное справа.",
+        "en": "Work out the left side, find its equal on the right."
+      },
+      "explanation": {
+        "uz": "13, 11, 17, 14 cm.",
+        "ru": "13, 11, 17, 14 см.",
+        "en": "13, 11, 17, 14 cm."
+      },
+      "id": "q4"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 9,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "AB kesma 7 cm edi, uni 9 cm ga uzaytirdik. Endi necha cm? Sonlar chizigʻida hisobla.",
+        "ru": "Отрезок AB был 7 см, его удлинили на 9 см. Сколько теперь? Посчитай на числовой прямой.",
+        "en": "Segment AB was 7 cm; we extended it by 9 cm. How long now? Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla va 9 cm oldinga sur.",
+        "ru": "Встань на 7 и продвинься на 9 см.",
+        "en": "Start at 7 and move 9 cm forward."
+      },
+      "explanation": {
+        "uz": "7 + 9 = 16 cm.",
+        "ru": "7 + 9 = 16 см.",
+        "en": "7 + 9 = 16 cm."
+      },
+      "id": "q5"
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 7,
+          "maxCm": 10
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda qalamning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: карандаш. Сколько см?",
+        "en": "Measure the pencil on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
+      },
+      "explanation": {
+        "uz": "Qalamning uzunligi 7 cm.",
+        "ru": "Длина: 7 см.",
+        "en": "The pencil is 7 cm long."
+      }
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "5 + 7",
+              "bin": "v12"
+            },
+            {
+              "id": "b",
+              "label": "9 + 3",
+              "bin": "v12"
+            },
+            {
+              "id": "c",
+              "label": "8 + 4",
+              "bin": "v12"
+            },
+            {
+              "id": "d",
+              "label": "9 + 7",
+              "bin": "v16"
+            },
+            {
+              "id": "e",
+              "label": "8 + 8",
+              "bin": "v16"
+            },
+            {
+              "id": "f",
+              "label": "10 + 6",
+              "bin": "v16"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v12",
+              "label": "12"
+            },
+            {
+              "id": "v16",
+              "label": "16"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Oʻlchangan kesmalarni uzunligi (cm) boʻyicha toʻgʻri qutiga sudra!",
+        "ru": "Перетащи измеренные отрезки в ящик их длины (см)!",
+        "en": "Drag each measured segment into the bucket of its length (cm)!"
+      },
+      "hint": {
+        "uz": "Avval uzunlikni hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли длину, потом перетащи в нужный ящик.",
+        "en": "Work out the length, then drag into that bucket."
+      },
+      "explanation": {
+        "uz": "12: 5+7, 9+3, 8+4. 16: 9+7, 8+8, 10+6.",
+        "ru": "12: 5+7, 9+3, 8+4. 16: 9+7, 8+8, 10+6.",
+        "en": "12: 5+7, 9+3, 8+4. 16: 9+7, 8+8, 10+6."
+      },
+      "id": "q7"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 9,
+          "y": 14
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi kesma uzunroq: 9 cm yoki 14 cm? Toʻgʻri belgini tanla.",
+        "ru": "Какой отрезок длиннее: 9 см или 14 см? Выбери знак.",
+        "en": "Which segment is longer: 9 cm or 14 cm? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgan kesma uzunroq.",
+        "ru": "Длиннее отрезок с большим числом.",
+        "en": "The segment with the bigger number is longer."
+      },
+      "explanation": {
+        "uz": "9 < 14.",
+        "ru": "9 < 14.",
+        "en": "9 < 14."
+      },
+      "id": "q8"
+    },
+    {
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 28,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Kesma 40 cm edi, 12 cm kesib olindi. Qancha qoldi? Javobni bloklardan yasa.",
+        "ru": "Отрезок был 40 см, отрезали 12 см. Сколько осталось? Собери ответ из блоков.",
+        "en": "A segment was 40 cm; 12 cm was cut off. How much is left? Build the answer."
+      },
+      "hint": {
+        "uz": "Avval 40 - 12 ni hisobla, soʻng yasa.",
+        "ru": "Сначала вычисли 40 - 12, потом собери.",
+        "en": "Work out 40 - 12 first, then build it."
+      },
+      "explanation": {
+        "uz": "40 - 12 = 28 cm.",
+        "ru": "40 - 12 = 28 см.",
+        "en": "40 - 12 = 28 cm."
+      },
+      "id": "q9"
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 9,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Chizgʻichda lentaning uzunligini oʻlcha. U necha cm?",
+        "ru": "Измерь длину: лента. Сколько см?",
+        "en": "Measure the ribbon on the ruler. How many cm?"
+      },
+      "hint": {
+        "uz": "Jismning oxiri qaysi sonda tugashiga qara.",
+        "ru": "Посмотри, на каком числе кончается предмет.",
+        "en": "See which number the object ends on."
+      },
+      "explanation": {
+        "uz": "Lentaning uzunligi 9 cm.",
+        "ru": "Длина: 9 см.",
+        "en": "The ribbon is 9 cm long."
+      }
+    }
+  ]
+}

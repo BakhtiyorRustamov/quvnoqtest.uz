@@ -1,0 +1,165 @@
+{
+  "topicId": "g1-oqish-52",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "👕✨📿",
+  "title": {
+    "uz": "Kiyinish odobi",
+    "ru": "Культура одежды",
+    "en": "The etiquette of dressing"
+  },
+  "recall": {
+    "uz": "«Eng qimmatli libos» matnini tinglab oʻqiymiz va haqiqiy koʻrk goʻzal xulqda ekanini bilib olamiz.",
+    "ru": "Слушаем текст «Самая дорогая одежда» и узнаём, что истинная красота — в добром нраве.",
+    "en": "We read “The most precious garment” and learn that true beauty is good character."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Eng qimmatli libos",
+        "variant": "story",
+        "audio": "g1-oqish-52-q1",
+        "lines": [
+          "Bir kuni dono ota oʻgʻlini yoniga chaqiribdi.",
+          "Oʻgʻli juda qimmatbaho kiyimlar kiyib olgan ekan.",
+          "Ota debdi: «Oʻgʻlim, shunday libos kiygin —",
+          "uni hech qanday xazina bilan sotib boʻlmaydi.»",
+          "«U qanday libos?» — soʻrabdi oʻgʻil.",
+          "Ota javob beribdi:",
+          "«Uning matosi — goʻzal xulq va ezgu ish,",
+          "ipi esa — murosa va sabrdan iborat.»"
+        ]
+      } },
+      "prompt": { "uz": "Matnni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Eng qimmatli libos nimadan tikiladi?", "ru": "Из чего шьётся самая дорогая одежда?", "en": "What is the most precious garment made of?" },
+      "explanation": { "uz": "Matn haqiqiy koʻrk — goʻzal xulq ekani haqida.", "ru": "Текст о том, что истинная красота — добрый нрав.", "en": "The text shows that true beauty is good character." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "who_said", "props": {
+        "characters": [
+          { "name": { "uz": "Ota", "ru": "Отец", "en": "Father" } },
+          { "name": { "uz": "Oʻgʻil", "ru": "Сын", "en": "Son" } }
+        ],
+        "quotes": [
+          { "text": { "uz": "Shunday libos kiyginki, uni hech qanday xazina bilan sotib boʻlmaydi.", "ru": "Носи такую одежду, которую не купить ни за какое богатство.", "en": "Wear a garment that no treasure can buy." }, "speaker": 0 },
+          { "text": { "uz": "Ey ota, u qanday libos, nimadan tikiladi?", "ru": "Отец, что это за одежда, из чего она?", "en": "Father, what garment is that, what is it made of?" }, "speaker": 1 },
+          { "text": { "uz": "Uning matosi goʻzal xulq va ezgu ishdan iborat.", "ru": "Её ткань — добрый нрав и благие дела.", "en": "Its cloth is good character and good deeds." }, "speaker": 0 }
+        ],
+        "clue": { "uz": "Bu gap otaniki yoki oʻgʻilniki?", "ru": "Чьи это слова — отца или сына?", "en": "Whose line is it — the father's or the son's?" }
+      } },
+      "prompt": { "uz": "Bu gapni kim aytdi?", "ru": "Кто это сказал?", "en": "Who said this line?" },
+      "hint": { "uz": "Dono maslahatni ota beradi.", "ru": "Мудрый совет даёт отец.", "en": "The wise advice comes from the father." },
+      "explanation": { "uz": "Maslahat va taʼrif — otaniki; savol — oʻgʻilniki.", "ru": "Совет и описание — отца; вопрос — сына.", "en": "The advice and description are the father's; the question is the son's." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Eng qimmatli libos goʻzal xulq va ezgu ishdan tikiladi.", "ru": "Самая дорогая одежда шьётся из доброго нрава и благих дел.", "en": "The most precious garment is made of good character and good deeds." },
+        "answer": "true",
+        "why": { "uz": "Ota aynan shunday deb javob beradi.", "ru": "Именно так отвечает отец.", "en": "That is exactly what the father says." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Libosning matosi nima?", "ru": "Из чего ткань этой одежды?", "en": "What is the garment's cloth?" },
+      "explanation": { "uz": "Toʻgʻri: matosi goʻzal xulq, ipi murosa va sabr.", "ru": "Верно: ткань — добрый нрав, нить — терпение.", "en": "True: the cloth is good character, the thread is patience." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Ota oʻgʻliga oltin toj sovgʻa qildi.", "ru": "Отец подарил сыну золотую корону.", "en": "The father gave his son a golden crown." },
+        "answer": "ng",
+        "why": { "uz": "Matnda toj haqida hech narsa aytilmagan.", "ru": "О короне в тексте ничего нет.", "en": "The text says nothing about a crown." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Matnda toj tilga olinganmi?", "ru": "Упоминается ли корона?", "en": "Is a crown mentioned?" },
+      "explanation": { "uz": "«Matnda yoʻq»: toj haqida gap yoʻq.", "ru": "«Не сказано»: о короне речи нет.", "en": "“Not given”: no crown is mentioned." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Eng qimmatli libosning matosi —" },
+          { "blank": "xulq" },
+          { "text": ", ipi —" },
+          { "blank": "sabr" },
+          { "text": "." }
+        ],
+        "bank": ["xulq", "sabr", "oltin"]
+      } },
+      "prompt": { "uz": "Soʻzlarni tanlab, boʻsh joylarga qoʻying!", "ru": "Вставь слова в пропуски!", "en": "Fill the gaps with the right words!" },
+      "hint": { "uz": "Otaning javobini eslang.", "ru": "Вспомни ответ отца.", "en": "Recall the father's answer." },
+      "explanation": { "uz": "Matosi — goʻzal xulq, ipi — sabr va murosa.", "ru": "Ткань — добрый нрав, нить — терпение.", "en": "The cloth is good character; the thread is patience." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "gʻoyat", "right": "juda" },
+        { "left": "ezgu", "right": "yaxshi" },
+        { "left": "murosa", "right": "oʻzaro kelishuv" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«ezgu» — yaxshi, xayrli.", "ru": "«ezgu» — добрый.", "en": "“ezgu” means good, kind." },
+      "explanation": { "uz": "gʻoyat = juda; ezgu = yaxshi; murosa = kelishuv.", "ru": "gʻoyat = очень; ezgu = добрый; murosa = согласие.", "en": "gʻoyat = very; ezgu = good; murosa = harmony." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Goʻzal xulq va ezgu ishdan tikilganini", "ru": "Сшитую из доброго нрава и благих дел", "en": "The one made of good character and deeds" },
+        { "uz": "Eng qimmat va yaltiroq kiyimni", "ru": "Самую дорогую и блестящую одежду", "en": "The most expensive, shiny clothes" },
+        { "uz": "Xazinadagi tojni", "ru": "Корону из сокровищницы", "en": "The crown from the treasury" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Ota qanday libosni ulugʻladi?", "ru": "Какую одежду возвысил отец?", "en": "Which garment did the father praise?" },
+      "hint": { "uz": "Haqiqiy koʻrk — buyumda emas.", "ru": "Истинная красота — не в вещи.", "en": "True beauty is not in the object." },
+      "explanation": { "uz": "Ota goʻzal xulq va ezgu ishdan tikilgan libosni ulugʻladi.", "ru": "Отец возвысил одежду из доброго нрава и дел.", "en": "The father praised the garment of good character and deeds." },
+      "openEnd": { "uz": "Sen qanday xulqlaring bilan chiroyli koʻrinasan deb oʻylaysan?", "ru": "Какими качествами ты красив, как думаешь?", "en": "Which of your qualities make you beautiful, do you think?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Kiyim ozoda boʻlsin", "match": true },
+        { "text": "Poyabzalni artib yuring", "match": true },
+        { "text": "Joyiga qarab kiyining", "match": true },
+        { "text": "Kir kiyim kiyish", "match": false },
+        { "text": "Kiyimni yirtib tashlash", "match": false }
+      ] } },
+      "prompt": { "uz": "Kiyinish odobiga mos ishlarni bos!", "ru": "Нажми правила культуры одежды!", "en": "Tap the good dressing habits!" },
+      "hint": { "uz": "Ozoda va toza kiyinish — odob.", "ru": "Опрятность — это вежливость.", "en": "Neat dressing is good manners." },
+      "explanation": { "uz": "Ozoda kiyim, tozalangan poyabzal, joyiga mos kiyinish — odob; qolganlari — yoʻq.", "ru": "Опрятная одежда и чистая обувь — вежливость; остальное — нет.", "en": "Clean clothes and shoes, dressing to fit the place are good; the rest are not." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Odob — kishining ", "after": ".", "choices": ["ziynati", "yuki", "gʻami"], "answer": "ziynati", "emoji": "✨", "clue": { "uz": "Oynada aks etgan maqol", "ru": "Пословица, отражённая в зеркале", "en": "The proverb reflected in the mirror" } } },
+      "prompt": { "uz": "Maqolni mos soʻz bilan toʻldiring!", "ru": "Дополни пословицу подходящим словом!", "en": "Complete the proverb with the right word!" },
+      "hint": { "uz": "Odob insonni bezaydi.", "ru": "Вежливость украшает человека.", "en": "Manners adorn a person." },
+      "explanation": { "uz": "«Odob — kishining zeb-u ziynati» — odob insonni bezaydi.", "ru": "«Вежливость — украшение человека».", "en": "“Manners are a person's adornment.”" }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "libos", "syllables": ["li", "bos"], "emoji": "👕", "clue": { "uz": "Egnimizga kiyadigan narsa", "ru": "То, что мы надеваем", "en": "What we wear" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "li + bos = ?", "ru": "li + bos = ?", "en": "li + bos = ?" },
+      "explanation": { "uz": "li-bos → libos. Kiyim-kechak.", "ru": "li-bos → libos (одежда).", "en": "li-bos → libos (a garment)." }
+    }
+  ]
+}

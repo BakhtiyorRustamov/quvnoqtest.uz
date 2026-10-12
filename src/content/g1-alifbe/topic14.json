@@ -1,0 +1,510 @@
+{
+  "topicId": "g1-alifbe-14",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖👅👅🌳",
+  "title": {
+    "uz": "«L l» — oʻqish mashqi",
+    "ru": "Буква «L l» — чтение",
+    "en": "Letter “L l” — reading"
+  },
+  "recall": {
+    "uz": "«L» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: til, tol, lola. «L» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «L». Теперь читаем слова: til, tol, lola. «L» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “L”. Now we read words: til, tol, lola. “L” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "👅 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "👅 Прочитай и нажми верно написанное слово!",
+        "en": "👅 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «til».",
+        "ru": "Прочитай: «til».",
+        "en": "Read it: “til”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «til».",
+        "ru": "Верно — «til».",
+        "en": "Correct — “til”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "👅",
+          "options": [
+            {
+              "id": "ok",
+              "word": "til",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "tel"
+            },
+            {
+              "id": "w2",
+              "word": "tir"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «til» soʻzini tuz!",
+        "ru": "Составь слово «til»!",
+        "en": "Build the word “til”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «til» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «til».",
+        "en": "Great! You read “til”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "👅",
+          "word": "til",
+          "label": {
+            "uz": "til",
+            "ru": "язык",
+            "en": "tongue"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "👅 «til»da «l» tovushi qaysi katakchada?",
+        "ru": "👅 В какой клетке звук «l» в слове «til»?",
+        "en": "👅 Which box has the “l” sound in “til”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«til»da «l» tovushi toʻgʻri joyda.",
+        "ru": "В «til» звук «l» на верном месте.",
+        "en": "In “til” the “l” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "👅",
+          "word": {
+            "uz": "til",
+            "ru": "til",
+            "en": "til"
+          },
+          "sound": "l",
+          "cells": [
+            "t",
+            "i",
+            "l"
+          ],
+          "answer": 2
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌷 «lola» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🌷 Похлопай слово «lola» по слогам!",
+        "en": "🌷 Clap the word “lola” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«lola» — 2 boʻgʻin.",
+        "ru": "«lola» — 2 слога.",
+        "en": "“lola” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🌷",
+          "word": {
+            "uz": "lola",
+            "ru": "lola",
+            "en": "lola"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«L» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «L»!",
+        "en": "Tap the words that have the “L” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «l» tovushi bor.",
+        "ru": "Верно! В них есть звук «l».",
+        "en": "Right! They have the “l” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "til",
+                "en": "til"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🌳",
+              "label": {
+                "uz": "tol",
+                "ru": "tol",
+                "en": "tol"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🌷",
+              "label": {
+                "uz": "lola",
+                "ru": "lola",
+                "en": "lola"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«til» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «til». Найди картинку!",
+        "en": "Read “til”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«til» — 👅.",
+        "ru": "«til» — 👅.",
+        "en": "“til” is 👅."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "язык",
+                "en": "tongue"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🌷",
+              "label": {
+                "uz": "lola",
+                "ru": "lola",
+                "en": "lola"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🌳",
+              "label": {
+                "uz": "tol",
+                "ru": "tol",
+                "en": "tol"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🌷"
+              },
+              "right": {
+                "label": {
+                  "uz": "lola",
+                  "ru": "lola",
+                  "en": "lola"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👅"
+              },
+              "right": {
+                "label": {
+                  "uz": "til",
+                  "ru": "til",
+                  "en": "til"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🌳"
+              },
+              "right": {
+                "label": {
+                  "uz": "tol",
+                  "ru": "tol",
+                  "en": "tol"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐍"
+              },
+              "right": {
+                "label": {
+                  "uz": "ilon",
+                  "ru": "ilon",
+                  "en": "ilon"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ilon … tol.",
+        "ru": "Составь предложение: Ilon … tol.",
+        "en": "Order the words: Ilon … tol."
+      },
+      "hint": {
+        "uz": "Ilon — ana — tol.",
+        "ru": "Ilon — ana — tol.",
+        "en": "Ilon — ana — tol."
+      },
+      "explanation": {
+        "uz": "«Ilon ana tol.» — gap oʻqiding!",
+        "ru": "«Ilon ana tol.» — предложение!",
+        "en": "“Ilon ana tol.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ilon",
+                "ru": "Ilon",
+                "en": "Ilon"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "ana",
+                "ru": "ana",
+                "en": "ana"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "tol",
+                "ru": "tol",
+                "en": "tol"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🌷"
+              },
+              "b": {
+                "label": {
+                  "uz": "lola",
+                  "ru": "lola",
+                  "en": "lola"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👅"
+              },
+              "b": {
+                "label": {
+                  "uz": "til",
+                  "ru": "til",
+                  "en": "til"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🌳"
+              },
+              "b": {
+                "label": {
+                  "uz": "tol",
+                  "ru": "tol",
+                  "en": "tol"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«til» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «til»?",
+        "en": "How many sounds are in “til”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«til»da 3 ta tovush bor.",
+        "ru": "В «til» 3 звука.",
+        "en": "“til” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

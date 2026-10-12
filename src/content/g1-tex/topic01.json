@@ -1,0 +1,29 @@
+{
+  "topicId": "g1-tex-01", "subjectKey": "g1-tex", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Tabiiy olam va inson mehnati mahsuli", "ru": "Природа и творения человека", "en": "Nature and things people make" },
+  "recall": {
+    "uz": "Tabiiy olam — inson qoʻli bilan yaratilmagan borliq: daraxtlar, jonivorlar, suv, togʻlar, quyosh. Inson mehnati mahsuli — odamlar yaratgan narsalar: binolar, kiyim, kitob, oʻyinchoqlar.",
+    "ru": "Природа — это то, что не создано руками человека: деревья, животные, вода, горы, солнце. Творения человека — то, что сделали люди: здания, одежда, книги, игрушки.",
+    "en": "Nature is everything not made by human hands: trees, animals, water, mountains, the sun. Things people make are created by humans: buildings, clothes, books, toys."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri tabiat olamiga kiradi?", "ru": "Что относится к природе?", "en": "Which one belongs to nature?" },
+      "hint": { "uz": "Inson yaratmagan narsa.", "ru": "То, что не создано человеком.", "en": "Something not made by people." },
+      "explanation": { "uz": "Toʻgʻri! Daraxt — tabiat.", "ru": "Верно! Дерево — это природа.", "en": "Right! A tree is nature." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "daraxt", "ru": "дерево", "en": "a tree" },
+        { "uz": "kitob", "ru": "книга", "en": "a book" },
+        { "uz": "mashina", "ru": "машина", "en": "a car" }
+      ], "answerIndex": 0 } } },
+    { "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri inson mehnati mahsuli?", "ru": "Что создано человеком?", "en": "Which one is made by people?" },
+      "hint": { "uz": "Odamlar yaratgan narsa.", "ru": "То, что сделали люди.", "en": "Something people made." },
+      "explanation": { "uz": "Toʻgʻri! Mashinani odamlar yaratgan.", "ru": "Верно! Машину создали люди.", "en": "Right! A car is made by people." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "mashina", "ru": "машина", "en": "a car" },
+        { "uz": "quyosh", "ru": "солнце", "en": "the sun" },
+        { "uz": "tosh", "ru": "камень", "en": "a stone" }
+      ], "answerIndex": 0 } } }
+  ]
+}

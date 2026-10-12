@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-06",
+  "subjectKey": "g1-ona",
+  "emojis": "🔠📜✏️",
+  "title": {
+    "uz": "Alifbo — harflar saltanati",
+    "ru": "Алфавит — царство букв",
+    "en": "The alphabet — a kingdom of letters"
+  },
+  "recall": {
+    "uz": "Alifbo — maʼlum tartibda joylashgan harflar ketma-ketligi. Oʻzbek alifbosida 29 ta harf, 3 ta harf birikmasi (ch, sh, ng) va 1 ta tutuq belgisi (ʼ) bor. Harf soʻzning boshida, oʻrtasida yoki oxirida kelishi mumkin.",
+    "ru": "Алфавит — это последовательность букв в определённом порядке. В узбекском алфавите 29 букв, 3 буквосочетания (ch, sh, ng) и 1 знак тутук (ʼ). Буква может стоять в начале, середине или конце слова.",
+    "en": "The alphabet is a sequence of letters in a set order. Uzbek has 29 letters, 3 letter-combinations (ch, sh, ng) and 1 tutuq sign (ʼ). A letter can stand at the start, middle or end of a word."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "alifbo", "emoji": "🔠", "clue": { "uz": "Barcha harflar tartibi", "ru": "Порядок всех букв", "en": "The order of all letters" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: a, l, i, f, b, o.", "ru": "Буквы: a, l, i, f, b, o.", "en": "Letters: a, l, i, f, b, o." },
+      "explanation": { "uz": "«Alifbo» — harflarning maʼlum tartibi.", "ru": "«Alifbo» (алфавит) — определённый порядок букв.", "en": "“Alifbo” (alphabet) is a set order of letters." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "tartib", "emoji": "🔢", "clue": { "uz": "Alifboda harflar shu bilan joylashadi", "ru": "По нему расставлены буквы алфавита", "en": "Letters are arranged by it" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: t, a, r, t, i, b.", "ru": "Буквы: t, a, r, t, i, b.", "en": "Letters: t, a, r, t, i, b." },
+      "explanation": { "uz": "«Tartib» — har harf oʻz oʻrnida turadi.", "ru": "«Tartib» (порядок) — каждая буква на своём месте.", "en": "“Tartib” (order) — each letter in its place." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "lma", "choices": ["o", "a", "u"], "answer": "o", "emoji": "🍎", "clue": { "uz": "Qizil yoki yashil meva", "ru": "Красный или зелёный фрукт", "en": "A red or green fruit" } } },
+      "prompt": { "uz": "Birinchi harfni qoʻy!", "ru": "Вставь первую букву!", "en": "Add the first letter!" },
+      "hint": { "uz": "… l m a — «olma».", "ru": "… l m a — «olma» (яблоко).", "en": "… l m a — “olma” (apple)." },
+      "explanation": { "uz": "«olma» «o» harfi bilan boshlanadi. Harf soʻz boshida keldi.", "ru": "«olma» начинается с «o». Буква стоит в начале слова.", "en": "“olma” starts with “o”. The letter stands at the word's start." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "ch", "bin": "bir" }, { "id": "b", "label": "sh", "bin": "bir" }, { "id": "c", "label": "ng", "bin": "bir" }, { "id": "d", "label": "b", "bin": "odd" }, { "id": "e", "label": "d", "bin": "odd" }, { "id": "f", "label": "k", "bin": "odd" } ], "bins": [ { "id": "bir", "label": "Harf birikmasi" }, { "id": "odd", "label": "Oddiy harf" } ] } },
+      "prompt": { "uz": "Harf birikmasini ajrat!", "ru": "Раздели буквосочетания!", "en": "Sort the letter-combinations!" },
+      "hint": { "uz": "ch, sh, ng — ikki belgidan iborat birikma.", "ru": "ch, sh, ng — сочетания из двух знаков.", "en": "ch, sh, ng are two-sign combinations." },
+      "explanation": { "uz": "Alifboda 3 ta harf birikmasi bor: ch, sh, ng.", "ru": "В алфавите 3 буквосочетания: ch, sh, ng.", "en": "The alphabet has 3 letter-combinations: ch, sh, ng." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "A", "right": "1" }, { "left": "B", "right": "2" }, { "left": "D", "right": "3" }, { "left": "E", "right": "4" } ] } },
+      "prompt": { "uz": "Harfni alifbodagi tartibiga ula!", "ru": "Соедини букву с её местом в алфавите!", "en": "Match each letter to its place in the alphabet!" },
+      "hint": { "uz": "Alifbo: A, B, D, E …", "ru": "Алфавит: A, B, D, E …", "en": "Alphabet: A, B, D, E …" },
+      "explanation": { "uz": "Alifboda A — 1-, B — 2-, D — 3-, E — 4- harf.", "ru": "В алфавите A — 1-я, B — 2-я, D — 3-я, E — 4-я буква.", "en": "In the alphabet A is 1st, B 2nd, D 3rd, E 4th." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "qayiq", "right": "ayiq" }, { "left": "dona", "right": "ona" }, { "left": "bosh", "right": "osh" }, { "left": "soy", "right": "oy" } ] } },
+      "prompt": { "uz": "Bir harfni olib tashlab, yangi soʻzga ula!", "ru": "Убери одну букву и соедини с новым словом!", "en": "Remove one letter and match the new word!" },
+      "hint": { "uz": "«qayiq» dan «q»ni olsak — «ayiq».", "ru": "Убрать «q» из «qayiq» — «ayiq».", "en": "Remove “q” from “qayiq” — “ayiq”." },
+      "explanation": { "uz": "Bitta harfni olib tashlasak, yangi soʻz hosil boʻladi.", "ru": "Убрав одну букву, получаем новое слово.", "en": "Removing one letter makes a new word." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Men", "harflarni", "tartib", "bilan", "yozaman."], "emoji": "✏️", "clue": { "uz": "Alifbo tartibi haqida", "ru": "О порядке алфавита", "en": "About the alphabet order" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Men». Qanday? — «tartib bilan».", "ru": "Кто? — «Men». Как? — «tartib bilan».", "en": "Who? — “Men”. How? — “in order”." },
+      "explanation": { "uz": "Harflarni alifbo tartibida yozamiz.", "ru": "Буквы пишем в порядке алфавита.", "en": "We write letters in alphabetical order." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "ma", "after": "tab", "choices": ["k", "q", "g"], "answer": "k", "emoji": "🏫", "clue": { "uz": "Bilim olinadigan maskan", "ru": "Место, где получают знания", "en": "The place where we get knowledge" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "ma … tab — «maktab».", "ru": "ma … tab — «maktab» (школа).", "en": "ma … tab — “maktab” (school)." },
+      "explanation": { "uz": "m + a + k + t + a + b = «maktab». Harf soʻz oʻrtasida keldi.", "ru": "m + a + k + t + a + b = «maktab». Буква стоит в середине.", "en": "m + a + k + t + a + b = “maktab”. The letter stands in the middle." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["29", "30", "26"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻzbek alifbosida nechta harf bor?", "ru": "Сколько букв в узбекском алфавите?", "en": "How many letters are in the Uzbek alphabet?" },
+      "hint": { "uz": "Tovushlar 30 ta, harflar undan bitta kam.", "ru": "Звуков 30, букв на одну меньше.", "en": "There are 30 sounds; one fewer letters." },
+      "explanation": { "uz": "Oʻzbek alifbosida 29 ta harf bor.", "ru": "В узбекском алфавите 29 букв.", "en": "The Uzbek alphabet has 29 letters." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["ch, sh, ng", "a, o, i", "b, d, k"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysilari harf birikmasi?", "ru": "Какие из них — буквосочетания?", "en": "Which of these are letter-combinations?" },
+      "hint": { "uz": "Birikma ikki belgidan iborat.", "ru": "Сочетание состоит из двух знаков.", "en": "A combination is made of two signs." },
+      "explanation": { "uz": "Alifboda 3 ta birikma (ch, sh, ng) va 1 ta tutuq belgisi (ʼ) bor.", "ru": "В алфавите 3 сочетания (ch, sh, ng) и 1 знак тутук (ʼ).", "en": "The alphabet has 3 combinations (ch, sh, ng) and 1 tutuq sign (ʼ)." }
+    }
+  ]
+}

@@ -1,0 +1,512 @@
+{
+  "topicId": "g1-alifbe-26",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🍌☁️👦",
+  "title": {
+    "uz": "«B b» — oʻqish mashqi",
+    "ru": "Буква «B b» — чтение",
+    "en": "Letter “B b” — reading"
+  },
+  "recall": {
+    "uz": "«B» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: banan, bulut, bola. «B» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «B». Теперь читаем слова: banan, bulut, bola. «B» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “B”. Now we read words: banan, bulut, bola. “B” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍌 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🍌 Прочитай и нажми верно написанное слово!",
+        "en": "🍌 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «banan».",
+        "ru": "Прочитай: «banan».",
+        "en": "Read it: “banan”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «banan».",
+        "ru": "Верно — «banan».",
+        "en": "Correct — “banan”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🍌",
+          "options": [
+            {
+              "id": "ok",
+              "word": "banan",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "panan"
+            },
+            {
+              "id": "w2",
+              "word": "banon"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «banan» soʻzini tuz!",
+        "ru": "Составь слово «banan»!",
+        "en": "Build the word “banan”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «banan» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «banan».",
+        "en": "Great! You read “banan”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🍌",
+          "word": "banan",
+          "label": {
+            "uz": "banan",
+            "ru": "банан",
+            "en": "banana"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍌 «banan»da «b» tovushi qaysi katakchada?",
+        "ru": "🍌 В какой клетке звук «b» в слове «banan»?",
+        "en": "🍌 Which box has the “b” sound in “banan”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«banan»da «b» tovushi toʻgʻri joyda.",
+        "ru": "В «banan» звук «b» на верном месте.",
+        "en": "In “banan” the “b” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🍌",
+          "word": {
+            "uz": "banan",
+            "ru": "banan",
+            "en": "banan"
+          },
+          "sound": "b",
+          "cells": [
+            "b",
+            "a",
+            "n",
+            "a",
+            "n"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍌 «banan» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🍌 Похлопай слово «banan» по слогам!",
+        "en": "🍌 Clap the word “banan” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«banan» — 2 boʻgʻin.",
+        "ru": "«banan» — 2 слога.",
+        "en": "“banan” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🍌",
+          "word": {
+            "uz": "banan",
+            "ru": "banan",
+            "en": "banan"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«B» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «B»!",
+        "en": "Tap the words that have the “B” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «b» tovushi bor.",
+        "ru": "Верно! В них есть звук «b».",
+        "en": "Right! They have the “b” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍌",
+              "label": {
+                "uz": "banan",
+                "ru": "banan",
+                "en": "banan"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "☁️",
+              "label": {
+                "uz": "bulut",
+                "ru": "bulut",
+                "en": "bulut"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👦",
+              "label": {
+                "uz": "bola",
+                "ru": "bola",
+                "en": "bola"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«banan» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «banan». Найди картинку!",
+        "en": "Read “banan”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«banan» — 🍌.",
+        "ru": "«banan» — 🍌.",
+        "en": "“banan” is 🍌."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🍌",
+              "label": {
+                "uz": "banan",
+                "ru": "банан",
+                "en": "banana"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "☁️",
+              "label": {
+                "uz": "bulut",
+                "ru": "bulut",
+                "en": "bulut"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "👦",
+              "label": {
+                "uz": "bola",
+                "ru": "bola",
+                "en": "bola"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🍌"
+              },
+              "right": {
+                "label": {
+                  "uz": "banan",
+                  "ru": "banan",
+                  "en": "banan"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "☁️"
+              },
+              "right": {
+                "label": {
+                  "uz": "bulut",
+                  "ru": "bulut",
+                  "en": "bulut"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👦"
+              },
+              "right": {
+                "label": {
+                  "uz": "bola",
+                  "ru": "bola",
+                  "en": "bola"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Bola … oldi.",
+        "ru": "Составь предложение: Bola … oldi.",
+        "en": "Order the words: Bola … oldi."
+      },
+      "hint": {
+        "uz": "Bola — non — oldi.",
+        "ru": "Bola — non — oldi.",
+        "en": "Bola — non — oldi."
+      },
+      "explanation": {
+        "uz": "«Bola non oldi.» — gap oʻqiding!",
+        "ru": "«Bola non oldi.» — предложение!",
+        "en": "“Bola non oldi.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Bola",
+                "ru": "Bola",
+                "en": "Bola"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🍌"
+              },
+              "b": {
+                "label": {
+                  "uz": "banan",
+                  "ru": "banan",
+                  "en": "banan"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "☁️"
+              },
+              "b": {
+                "label": {
+                  "uz": "bulut",
+                  "ru": "bulut",
+                  "en": "bulut"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👦"
+              },
+              "b": {
+                "label": {
+                  "uz": "bola",
+                  "ru": "bola",
+                  "en": "bola"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«banan» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «banan»?",
+        "en": "How many sounds are in “banan”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«banan»da 5 ta tovush bor.",
+        "ru": "В «banan» 5 звука.",
+        "en": "“banan” has 5 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

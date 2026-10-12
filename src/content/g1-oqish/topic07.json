@@ -1,0 +1,424 @@
+{
+  "topicId": "g1-oqish-07",
+  "subjectKey": "g1-oqish",
+  "emojis": "🌟🇺🇿💖",
+  "title": {
+    "uz": "Men — shu yurtning boʻlagi",
+    "ru": "Я — частичка этой страны",
+    "en": "I am a part of this land"
+  },
+  "recall": {
+    "uz": "Bugun «Men — shu yurtning boʻlagi» sheʼrini oʻqiymiz. Har bir bola oʻz yurtining boʻlagi: yaxshi oʻqisa, mehnat qilsa — Vataniga foyda keltiradi. Avval maqoldagi tushib qolgan harfni topamiz, soʻng sheʼrni oʻqiymiz.",
+    "ru": "Сегодня читаем стихотворение «Я — частичка этой страны». Каждый ребёнок — частичка своей страны: хорошо учась и трудясь, он приносит пользу Родине. Сначала найдём пропущенную букву в пословице, потом прочитаем стих.",
+    "en": "Today we read the poem “I am a part of this land”. Every child is a part of their country: by studying and working well, they help the homeland. First we find the missing letter in a proverb, then read the poem."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Men — shu yurtning boʻlagi",
+          "variant": "poem",
+          "audio": "g1-oqish-07-q1",
+          "lines": [
+            "Men shu yurtning farzandiman,",
+            "Kerakliman Vatanga.",
+            "Oʻqib, uqib, katta boʻlib,",
+            "Xizmat qilay elimga.",
+            "",
+            "Vatanim bor — baxtim bor,",
+            "Yashnasin orzu-tilak.",
+            "Mehnatim-la yurtim shaʼni",
+            "Boʻlsin doim sarbaland!"
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrni ifodali oʻqing!",
+        "ru": "Прочитай стихотворение выразительно!",
+        "en": "Read the poem aloud!"
+      },
+      "hint": {
+        "uz": "Har bir satrni ohang bilan oʻqing.",
+        "ru": "Читай каждую строку с выражением.",
+        "en": "Read each line with feeling."
+      },
+      "explanation": {
+        "uz": "Sheʼr oʻzini yurtining boʻlagi deb bilgan bola haqida.",
+        "ru": "Стихотворение о ребёнке, который считает себя частичкой своей страны.",
+        "en": "The poem is about a child who feels part of their land."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "letter_complete",
+        "props": {
+          "before": "V",
+          "after": "tani borning baxti bor.",
+          "choices": [
+            "a",
+            "o",
+            "u"
+          ],
+          "answer": "a",
+          "emoji": "🏡",
+          "clue": {
+            "uz": "Maqoldagi tushib qolgan unlini top",
+            "ru": "Найди пропущенную гласную в пословице",
+            "en": "Find the missing vowel in the proverb"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Tushib qolgan unli harfni qoʻy va maqolni oʻqi!",
+        "ru": "Вставь пропущенную гласную и прочитай пословицу!",
+        "en": "Put in the missing vowel and read the proverb!"
+      },
+      "hint": {
+        "uz": "Tugʻilib oʻsgan yurt — V…tan.",
+        "ru": "Родной край — V…tan.",
+        "en": "Your native land is V…tan."
+      },
+      "explanation": {
+        "uz": "«Vatani borning baxti bor» — Vatanli inson baxtlidir.",
+        "ru": "«У кого есть Родина, у того есть счастье».",
+        "en": "“Whoever has a homeland has happiness.”"
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Vatanga mehr va xizmat haqida",
+              "ru": "О любви и служении Родине",
+              "en": "About loving and serving the homeland"
+            },
+            {
+              "uz": "Qish haqida",
+              "ru": "О зиме",
+              "en": "About winter"
+            },
+            {
+              "uz": "Hayvonlar haqida",
+              "ru": "О животных",
+              "en": "About animals"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼr nima haqida?",
+        "ru": "О чём стихотворение?",
+        "en": "What is the poem about?"
+      },
+      "hint": {
+        "uz": "«Xizmat qilay elimga…»",
+        "ru": "«Буду служить своему народу…»",
+        "en": "“Let me serve my people…”"
+      },
+      "explanation": {
+        "uz": "Sheʼr Vatanga mehr qoʻyish va unga xizmat qilish haqida.",
+        "ru": "Стихотворение о любви к Родине и служении ей.",
+        "en": "The poem is about loving and serving the homeland."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yaxshi oʻqib, elga xizmat qilishni",
+              "ru": "Хорошо учиться и служить народу",
+              "en": "To study well and serve the people"
+            },
+            {
+              "uz": "Uzoq uxlashni",
+              "ru": "Долго спать",
+              "en": "To sleep a lot"
+            },
+            {
+              "uz": "Faqat oʻynashni",
+              "ru": "Только играть",
+              "en": "Only to play"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼr qahramoni nimani orzu qiladi?",
+        "ru": "О чём мечтает герой стихотворения?",
+        "en": "What does the poem's hero dream of?"
+      },
+      "hint": {
+        "uz": "«Oʻqib, uqib, katta boʻlib…»",
+        "ru": "«Учась и понимая, вырасту…»",
+        "en": "“Studying and learning, I will grow up…”"
+      },
+      "explanation": {
+        "uz": "Qahramon yaxshi oʻqib, katta boʻlib, eliga xizmat qilishni orzu qiladi.",
+        "ru": "Герой мечтает хорошо учиться и служить своему народу.",
+        "en": "The hero dreams of studying well and serving the people."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "shaʼn",
+              "right": "obroʻ, sharaf"
+            },
+            {
+              "left": "sarbaland",
+              "right": "eng baland"
+            },
+            {
+              "left": "uqmoq",
+              "right": "tushunib olmoq"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«uqmoq» — tushunmoq, bilib olmoq.",
+        "ru": "«uqmoq» — понять, усвоить.",
+        "en": "“uqmoq” means to understand."
+      },
+      "explanation": {
+        "uz": "shaʼn = obroʻ; sarbaland = eng baland; uqmoq = tushunib olmoq.",
+        "ru": "shaʼn = честь; sarbaland = самый высокий; uqmoq = понять.",
+        "en": "shaʼn = honour; sarbaland = highest; uqmoq = to understand."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Obroʻsi baland boʻlsin",
+              "ru": "Пусть её честь будет высока",
+              "en": "May its honour stand high"
+            },
+            {
+              "uz": "Uyi katta boʻlsin",
+              "ru": "Пусть дом будет большим",
+              "en": "May the house be big"
+            },
+            {
+              "uz": "Ovqati mazali boʻlsin",
+              "ru": "Пусть еда будет вкусной",
+              "en": "May the food be tasty"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "«Yurtim shaʼni boʻlsin sarbaland» satri nimani anglatadi?",
+        "ru": "Что означает строка «Yurtim shaʼni boʻlsin sarbaland»?",
+        "en": "What does the line “Yurtim shaʼni boʻlsin sarbaland” mean?"
+      },
+      "hint": {
+        "uz": "shaʼn = obroʻ, sarbaland = eng baland.",
+        "ru": "shaʼn = честь, sarbaland = самый высокий.",
+        "en": "shaʼn = honour, sarbaland = highest."
+      },
+      "explanation": {
+        "uz": "Bu satr «yurtimning obroʻsi doim baland boʻlsin» degani.",
+        "ru": "Строка означает «пусть честь моей страны всегда будет высока».",
+        "en": "The line means “may my country's honour always stand high”."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Vatani",
+            "borning",
+            "baxti",
+            "bor."
+          ],
+          "emoji": "💖",
+          "clue": {
+            "uz": "Darsda oʻqigan maqolimiz",
+            "ru": "Пословица из урока",
+            "en": "The proverb from this lesson"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan maqol tuz!",
+        "ru": "Составь пословицу из слов!",
+        "en": "Build the proverb from the words!"
+      },
+      "hint": {
+        "uz": "Kimning baxti bor? — Vatani borning.",
+        "ru": "У кого есть счастье? — У того, у кого есть Родина.",
+        "en": "Who has happiness? — The one who has a homeland."
+      },
+      "explanation": {
+        "uz": "«Vatani borning baxti bor».",
+        "ru": "«У кого есть Родина, у того есть счастье».",
+        "en": "“Whoever has a homeland has happiness.”"
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "baxt",
+          "letters": [
+            "b",
+            "a",
+            "x",
+            "t"
+          ],
+          "emoji": "🌟",
+          "clue": {
+            "uz": "Vatani borda bu bor",
+            "ru": "Это есть у того, у кого есть Родина",
+            "en": "Whoever has a homeland has this"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Harflardan soʻzni yigʻ!",
+        "ru": "Собери слово из букв!",
+        "en": "Build the word from the letters!"
+      },
+      "hint": {
+        "uz": "«Vatanim bor — …im bor».",
+        "ru": "«Есть Родина — есть …».",
+        "en": "“I have a homeland — I have …”"
+      },
+      "explanation": {
+        "uz": "«Baxt» — Vatani bor insonning boyligi.",
+        "ru": "«Baxt» (счастье) — богатство человека, у которого есть Родина.",
+        "en": "“Baxt” (happiness) belongs to those who have a homeland."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "tiles": [
+            {
+              "text": "yurt"
+            },
+            {
+              "text": "el"
+            },
+            {
+              "text": "diyor"
+            },
+            {
+              "text": "daraxt",
+              "odd": true
+            }
+          ],
+          "clue": {
+            "uz": "«Vatan» soʻzining maʼnodoshlari",
+            "ru": "Синонимы слова «Vatan»",
+            "en": "Synonyms of “Vatan”"
+          },
+          "emoji": "🇺🇿"
+        }
+      },
+      "prompt": {
+        "uz": "Ortiqcha soʻzni top!",
+        "ru": "Найди лишнее слово!",
+        "en": "Tap the odd one out!"
+      },
+      "hint": {
+        "uz": "Uchtasi Vatanni bildiradi, bittasi — oʻsimlik.",
+        "ru": "Три означают Родину, одно — растение.",
+        "en": "Three mean homeland, one is a plant."
+      },
+      "explanation": {
+        "uz": "yurt, el, diyor — Vatanga yaqin soʻzlar; daraxt — oʻsimlik.",
+        "ru": "yurt, el, diyor — слова о Родине; daraxt (дерево) — растение.",
+        "en": "yurt, el and diyor relate to homeland; daraxt (a tree) is a plant."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Men shu yurtning ",
+          "after": "iman.",
+          "choices": [
+            "farzand",
+            "mehmon",
+            "qoʻshni"
+          ],
+          "answer": "farzand",
+          "emoji": "⭐",
+          "clue": {
+            "uz": "Sheʼrning birinchi satrini esla",
+            "ru": "Вспомни первую строку стиха",
+            "en": "Recall the first line of the poem"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Har bir bola oʻz yurtining …i.",
+        "ru": "Каждый ребёнок — … своей страны.",
+        "en": "Every child is a … of their land."
+      },
+      "explanation": {
+        "uz": "«Men shu yurtning farzandiman» — har birimiz yurt boʻlagimiz.",
+        "ru": "«Я — дитя этой страны» — каждый из нас её частичка.",
+        "en": "“I am a child of this land” — each of us is a part of it."
+      }
+    }
+  ],
+  "skipRecall": true
+}

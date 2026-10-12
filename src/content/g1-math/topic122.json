@@ -1,0 +1,395 @@
+{
+  "topicId": "g1-math-122",
+  "subjectKey": "g1-math",
+  "emojis": "▱🔢✨",
+  "title": {
+    "uz": "Toʻrtburchaklar",
+    "ru": "Четырёхугольники",
+    "en": "Quadrilaterals"
+  },
+  "recall": {
+    "uz": "Toʻrtburchak — 4 ta tomon va 4 ta uchdan iborat shakl. Kvadrat, toʻgʻri toʻrtburchak va romb — bularning hammasi toʻrtburchak. Toʻrtburchaklarni tanib, perimetrini topamiz va burchaklarini ajratamiz.",
+    "ru": "Четырёхугольник — фигура из 4 сторон и 4 вершин. Квадрат, прямоугольник и ромб — это четырёхугольники. Распознаём их, находим периметр и различаем углы.",
+    "en": "A quadrilateral has 4 sides and 4 vertices. Square, rectangle and rhombus are all quadrilaterals. We recognise them, find the perimeter and tell the angles apart."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma toʻrtburchaklarni belgila!",
+        "ru": "Отметь все четырёхугольники!",
+        "en": "Tap all the quadrilaterals!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "rect",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "rhombus",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "circle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "hint": {
+        "uz": "Toʻrtburchakning 4 tomoni bor.",
+        "ru": "У четырёхугольника 4 стороны.",
+        "en": "A quadrilateral has 4 sides."
+      },
+      "explanation": {
+        "uz": "Kvadrat, toʻgʻri toʻrtburchak va romb.",
+        "ru": "Квадрат, прямоугольник и ромб.",
+        "en": "Square, rectangle and rhombus."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Ortiqcha shaklni bos!",
+        "ru": "Нажми на лишнюю фигуру!",
+        "en": "Tap the odd one out!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "rect",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "rhombus",
+            "color": "magenta"
+          }
+        }
+      ],
+      "answer": [
+        "c"
+      ],
+      "hint": {
+        "uz": "Qaysi shakl toʻrtburchak emas?",
+        "ru": "Какая фигура не четырёхугольник?",
+        "en": "Which shape is not a quadrilateral?"
+      },
+      "explanation": {
+        "uz": "Uchburchakning 3 tomoni bor — ortiqcha.",
+        "ru": "У треугольника 3 стороны — лишний.",
+        "en": "A triangle has 3 sides — it's the odd one."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "angle_find",
+        "props": {
+          "angles": [
+            {
+              "id": "a",
+              "deg": 90
+            },
+            {
+              "id": "b",
+              "deg": 50
+            },
+            {
+              "id": "c",
+              "deg": 90
+            },
+            {
+              "id": "d",
+              "deg": 130
+            },
+            {
+              "id": "e",
+              "deg": 90
+            }
+          ],
+          "target": "right"
+        }
+      },
+      "prompt": {
+        "uz": "Toʻrtburchakdagi toʻgʻri burchaklarni bos!",
+        "ru": "Нажми на прямые углы!",
+        "en": "Tap the right angles!"
+      },
+      "hint": {
+        "uz": "Toʻgʻri burchak — 90°, oʻtkir — undan kichik, oʻtmas — undan katta.",
+        "ru": "Прямой угол — 90°, острый — меньше, тупой — больше.",
+        "en": "A right angle is 90°, acute is smaller, obtuse is bigger."
+      },
+      "explanation": {
+        "uz": "Hamma toʻgʻri burchaklarni topdik.",
+        "ru": "Нашли все прямые углы.",
+        "en": "We found all the right angles."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            6,
+            3,
+            6,
+            3
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Eni 3 cm, boʻyi 6 cm toʻgʻri toʻrtburchak perimetrini top.",
+        "ru": "Найди периметр прямоугольника 6×3 см.",
+        "en": "Find the perimeter of a 6 by 3 cm rectangle."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 18 cm.",
+        "ru": "Периметр = 18 cm.",
+        "en": "Perimeter = 18 cm."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 20,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 45 - (12 + 13). Javobni bloklardan yasa.",
+        "ru": "Вычисли: 45 - (12 + 13). Собери из блоков.",
+        "en": "Work out 45 - (12 + 13). Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "45 - 25 = 20.",
+        "ru": "45 - 25 = 20.",
+        "en": "45 - 25 = 20."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 59,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 23 + (15 + 21). Javobni bloklardan yasa.",
+        "ru": "Вычисли: 23 + (15 + 21). Собери из блоков.",
+        "en": "Work out 23 + (15 + 21). Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "23 + 36 = 59.",
+        "ru": "23 + 36 = 59.",
+        "en": "23 + 36 = 59."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "45 - 25",
+              "right": "20"
+            },
+            {
+              "left": "23 + 36",
+              "right": "59"
+            },
+            {
+              "left": "66 - 12",
+              "right": "54"
+            },
+            {
+              "left": "72 + 11",
+              "right": "83"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Toʻrtburchakning nechta tomoni bor?",
+        "ru": "Сколько сторон у четырёхугольника?",
+        "en": "How many sides does a quadrilateral have?"
+      },
+      "hint": {
+        "uz": "«Toʻrt» — bu nechta?",
+        "ru": "«Четыре» — это сколько?",
+        "en": "«Quad» means how many?"
+      },
+      "explanation": {
+        "uz": "Toʻrtburchakning 4 ta tomoni bor.",
+        "ru": "У четырёхугольника 4 стороны.",
+        "en": "A quadrilateral has 4 sides."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 20,
+          "y": 59
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi perimetr katta: 20 yoki 59? Toʻgʻri belgini tanla.",
+        "ru": "Какой периметр больше: 20 или 59? Выбери знак.",
+        "en": "Which perimeter is bigger: 20 or 59? Choose the sign."
+      },
+      "hint": {
+        "uz": "Katta son — katta perimetr.",
+        "ru": "Больше число — больше периметр.",
+        "en": "A bigger number is a bigger perimeter."
+      },
+      "explanation": {
+        "uz": "20 < 59.",
+        "ru": "20 < 59.",
+        "en": "20 < 59."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 8,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Ikki tomon: 8 cm va 8 cm. Yigʻindisi necha cm?",
+        "ru": "Две стороны: 8 см и 8 см. Сумма?",
+        "en": "Two sides: 8 cm and 8 cm. The sum?"
+      },
+      "hint": {
+        "uz": "8 dan boshla, 8 oldinga sur.",
+        "ru": "Встань на 8, продвинься на 8.",
+        "en": "Start at 8, move 8 forward."
+      },
+      "explanation": {
+        "uz": "8 + 8 = 16 cm.",
+        "ru": "8 + 8 = 16 см.",
+        "en": "8 + 8 = 16 cm."
+      }
+    }
+  ]
+}

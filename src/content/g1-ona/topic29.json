@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-29",
+  "subjectKey": "g1-ona",
+  "emojis": "🧱💬📈",
+  "title": {
+    "uz": "Gapni soʻzlardan quramiz",
+    "ru": "Строим предложение из слов",
+    "en": "Building a sentence from words"
+  },
+  "recall": {
+    "uz": "Gap soʻzlardan tuziladi va soʻz qoʻshgan sari kengayadi: Qish. → Qish keldi. → Qahraton qish keldi. Gap bosh harf bilan boshlanib, nuqta bilan tugaydi.",
+    "ru": "Предложение строится из слов и растёт с каждым словом: Qish. → Qish keldi. → Qahraton qish keldi. Предложение начинается с заглавной буквы и кончается точкой.",
+    "en": "A sentence is built from words and grows as words are added: Qish. → Qish keldi. → Qahraton qish keldi. It starts with a capital letter and ends with a full stop."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Qish", "keldi."], "emoji": "❄️", "clue": { "uz": "Ikki soʻzli gap", "ru": "Предложение из двух слов", "en": "A two-word sentence" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima? — «Qish».", "ru": "Что? — «Qish».", "en": "What? — “Qish”." },
+      "explanation": { "uz": "«Qish keldi.» — ikki soʻzdan iborat gap.", "ru": "«Qish keldi.» — предложение из двух слов.", "en": "“Qish keldi.” is a two-word sentence." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Qahraton", "qish", "keldi."], "emoji": "🥶", "clue": { "uz": "Uch soʻzli gap", "ru": "Предложение из трёх слов", "en": "A three-word sentence" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Qanday qish? — «Qahraton».", "ru": "Какая зима? — «Qahraton».", "en": "What winter? — “Qahraton”." },
+      "explanation": { "uz": "Soʻz qoʻshgan sari gap kengayadi.", "ru": "С каждым словом предложение расширяется.", "en": "The sentence grows with each added word." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Soʻzlardan", "ru": "Из слов", "en": "From words" }, { "uz": "Raqamlardan", "ru": "Из цифр", "en": "From numbers" }, { "uz": "Rasmlardan", "ru": "Из картинок", "en": "From pictures" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Gap nimadan tuziladi?", "ru": "Из чего строится предложение?", "en": "What is a sentence built from?" },
+      "hint": { "uz": "Har gap soʻzlardan iborat.", "ru": "Каждое предложение — из слов.", "en": "Every sentence is made of words." },
+      "explanation": { "uz": "Gap soʻzlardan tuziladi.", "ru": "Предложение строится из слов.", "en": "A sentence is built from words." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Bahor keldi.", "match": true }, { "text": "bahor keldi", "match": false }, { "text": "Qush uchdi.", "match": true }, { "text": "qush uchdi", "match": false }, { "text": "Kun isidi.", "match": true }, { "text": "kun isidi", "match": false } ] } },
+      "prompt": { "uz": "Toʻgʻri yozilgan gaplarni bos!", "ru": "Нажми верно написанные предложения!", "en": "Tap the correctly written sentences!" },
+      "hint": { "uz": "Gap bosh harf bilan boshlanib, nuqta bilan tugaydi.", "ru": "С заглавной буквы и с точкой.", "en": "Capital start and a full stop." },
+      "explanation": { "uz": "Toʻgʻri gap — bosh harf bilan boshlanib, nuqta bilan tugaydi.", "ru": "Верное предложение — с заглавной и с точкой.", "en": "A correct sentence starts with a capital and ends with a full stop." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "soʻz", "letters": ["s", "oʻ", "z"], "emoji": "🧱", "clue": { "uz": "Gapning gʻishti", "ru": "Кирпичик предложения", "en": "A brick of a sentence" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: s, oʻ, z.", "ru": "Части: s, oʻ, z.", "en": "Parts: s, oʻ, z." },
+      "explanation": { "uz": "Gap soʻzlardan tuziladi — soʻz uning gʻishti.", "ru": "Предложение из слов — слово его кирпичик.", "en": "A sentence is built from words — a word is its brick." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Kun isidi.", "bin": "gap" }, { "id": "b", "label": "Bola yugurdi.", "bin": "gap" }, { "id": "c", "label": "Qor yogʻdi.", "bin": "gap" }, { "id": "d", "label": "kun", "bin": "soz" }, { "id": "e", "label": "bola", "bin": "soz" }, { "id": "f", "label": "qor", "bin": "soz" } ], "bins": [ { "id": "gap", "label": "Gap" }, { "id": "soz", "label": "Soʻz" } ] } },
+      "prompt": { "uz": "Gap va soʻzni ajrat!", "ru": "Раздели предложение и слово!", "en": "Sort sentences and words!" },
+      "hint": { "uz": "Gapda tugal fikr, soʻz bitta narsa.", "ru": "В предложении мысль, слово — одно.", "en": "A sentence is a thought; a word is one item." },
+      "explanation": { "uz": "Gap soʻzlardan tuziladi va fikr bildiradi.", "ru": "Предложение из слов и выражает мысль.", "en": "A sentence is made of words and expresses a thought." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Qish.", "right": "1" }, { "left": "Qish keldi.", "right": "2" }, { "left": "Qahraton qish keldi.", "right": "3" }, { "left": "Bugun qahraton qish keldi.", "right": "4" } ] } },
+      "prompt": { "uz": "Gapni soʻz soniga ula!", "ru": "Соедини предложение с числом слов!", "en": "Match each sentence to its word count!" },
+      "hint": { "uz": "Soʻzlarni sana.", "ru": "Сосчитай слова.", "en": "Count the words." },
+      "explanation": { "uz": "Soʻz qoʻshgan sari gap uzayadi.", "ru": "С каждым словом предложение длиннее.", "en": "Each added word makes the sentence longer." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Gap", "bosh", "harf", "bilan", "boshlanadi."], "emoji": "🔠", "clue": { "uz": "Gap qoidasi", "ru": "Правило предложения", "en": "The sentence rule" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima bilan? — «bosh harf».", "ru": "С чего? — «bosh harf».", "en": "With what? — “bosh harf”." },
+      "explanation": { "uz": "Gap bosh (katta) harf bilan boshlanadi.", "ru": "Предложение начинается с заглавной буквы.", "en": "A sentence starts with a capital letter." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["gap", "lar"], "emoji": "💬", "clue": { "uz": "Koʻp gap", "ru": "Много предложений", "en": "Many sentences" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "gap- … -lar.", "ru": "gap- … -lar.", "en": "gap- … -lar." },
+      "explanation": { "uz": "«gap-lar» — 2 boʻgʻin. Gaplardan matn tuziladi.", "ru": "«gap-lar» — 2 слога. Из предложений строится текст.", "en": "“gap-lar” — 2 syllables. Sentences make a text." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Nuqta (.)", "ru": "Точка (.)", "en": "A full stop (.)" }, { "uz": "Vergul (,)", "ru": "Запятая (,)", "en": "A comma (,)" }, { "uz": "Hech narsa", "ru": "Ничего", "en": "Nothing" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Darak gap oxiriga nima qoʻyiladi?", "ru": "Что ставят в конце повествовательного предложения?", "en": "What goes at the end of a statement sentence?" },
+      "hint": { "uz": "Xabar gaplar shu bilan tugaydi.", "ru": "Повествование заканчивается им.", "en": "A statement ends with it." },
+      "explanation": { "uz": "Darak (xabar) gap oxiriga nuqta qoʻyiladi.", "ru": "В конце повествовательного предложения ставят точку.", "en": "A statement sentence ends with a full stop." }
+    }
+  ]
+}

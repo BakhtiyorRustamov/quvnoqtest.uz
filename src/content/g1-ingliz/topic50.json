@@ -1,0 +1,569 @@
+{
+  "topicId": "g1-ingliz-50",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐘🐭📏🦁",
+  "title": {
+    "uz": "Fillar katta",
+    "ru": "Слоны большие",
+    "en": "Elephants are big"
+  },
+  "recall": {
+    "uz": "Bugun hayvonlarni taʼriflaymiz: «Elephants are big» — «Fillar katta». Sifatlar: big — katta, small — kichkina, long — uzun.",
+    "ru": "Сегодня описываем животных: «Elephants are big» — «Слоны большие». Прилагательные: big — большой, small — маленький, long — длинный.",
+    "en": "Today we describe animals: \"Elephants are big.\" Adjectives: big, small and long."
+  },
+  "ttsText": {
+    "uz": "Fillar katta.",
+    "en": "Elephants are big! A mouse is small. A snake is long."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Fillar qanday?",
+        "ru": "Послушай. Какие слоны?",
+        "en": "Listen. What are elephants like?"
+      },
+      "hint": {
+        "uz": "«big» — katta.",
+        "ru": "«big» — большой.",
+        "en": "\"big\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Elephants are big — fillar katta.",
+        "ru": "Верно! Elephants are big — слоны большие.",
+        "en": "Right! Elephants are big."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Look! Elephants!",
+              "audio": {
+                "key": "ing50-q1-a",
+                "text": "Look! Elephants!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes, they are big!",
+              "audio": {
+                "key": "ing50-q1-b",
+                "text": "Yes, they are big!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Fillar qanday?",
+              "ru": "Какие слоны?",
+              "en": "What are elephants like?"
+            },
+            "choices": [
+              "small",
+              "big",
+              "short"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Taqqosla va toʻgʻri hayvonni bos!",
+        "ru": "Сравни и нажми верное животное!",
+        "en": "Compare and tap the correct animal!"
+      },
+      "hint": {
+        "uz": "Kattaroq va kichikroqni solishtir.",
+        "ru": "Сравни большего и меньшего.",
+        "en": "Compare the bigger and smaller one."
+      },
+      "explanation": {
+        "uz": "Barakalla! Katta va kichikni bilding!",
+        "ru": "Молодец! Ты знаешь большое и маленькое!",
+        "en": "Great! You know big and small!"
+      },
+      "widget": {
+        "type": "compare_pick",
+        "props": {
+          "rounds": [
+            {
+              "prompt": {
+                "uz": "Qaysi biri kattaroq?",
+                "ru": "Кто больше?",
+                "en": "Which is bigger?"
+              },
+              "a": {
+                "emoji": "🐘",
+                "label": {
+                  "uz": "fil",
+                  "ru": "слон",
+                  "en": "elephant"
+                }
+              },
+              "b": {
+                "emoji": "🐭",
+                "label": {
+                  "uz": "sichqon",
+                  "ru": "мышь",
+                  "en": "mouse"
+                }
+              },
+              "answer": "a"
+            },
+            {
+              "prompt": {
+                "uz": "Qaysi biri kichikroq?",
+                "ru": "Кто меньше?",
+                "en": "Which is smaller?"
+              },
+              "a": {
+                "emoji": "🦁",
+                "label": {
+                  "uz": "sher",
+                  "ru": "лев",
+                  "en": "lion"
+                }
+              },
+              "b": {
+                "emoji": "🐜",
+                "label": {
+                  "uz": "chumoli",
+                  "ru": "муравей",
+                  "en": "ant"
+                }
+              },
+              "answer": "b"
+            },
+            {
+              "prompt": {
+                "uz": "Qaysi biri uzunroq?",
+                "ru": "Кто длиннее?",
+                "en": "Which is longer?"
+              },
+              "a": {
+                "emoji": "🐍",
+                "label": {
+                  "uz": "ilon",
+                  "ru": "змея",
+                  "en": "snake"
+                }
+              },
+              "b": {
+                "emoji": "🐛",
+                "label": {
+                  "uz": "qurt",
+                  "ru": "гусеница",
+                  "en": "caterpillar"
+                }
+              },
+              "answer": "a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Katta hayvonni bos!",
+        "ru": "Нажми большое животное!",
+        "en": "Tap the big animal!"
+      },
+      "hint": {
+        "uz": "«big» — katta.",
+        "ru": "«big» — большой.",
+        "en": "\"big\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! An elephant is big.",
+        "ru": "Верно! An elephant is big.",
+        "en": "Right! An elephant is big."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐘",
+              "label": "elephant (big)",
+              "correct": true
+            },
+            {
+              "emoji": "🐭",
+              "label": "mouse"
+            },
+            {
+              "emoji": "🐜",
+              "label": "ant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Fil katta. 🐘 «An elephant is big.»",
+        "ru": "Верно? Слон большой. 🐘",
+        "en": "Is this right? An elephant is big. 🐘"
+      },
+      "hint": {
+        "uz": "Fil juda katta.",
+        "ru": "Слон очень большой.",
+        "en": "An elephant is very big."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Fil katta.",
+        "ru": "Верно! Слон большой.",
+        "en": "Right! An elephant is big."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐘",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Sichqon katta. 🐭 «A mouse is big.»",
+        "ru": "Верно? Мышь большая. 🐭",
+        "en": "Is this right? A mouse is big. 🐭"
+      },
+      "hint": {
+        "uz": "Sichqon kichkina.",
+        "ru": "Мышь маленькая.",
+        "en": "A mouse is small."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Sichqon kichkina (small).",
+        "ru": "Неверно! Мышь маленькая (small).",
+        "en": "False! A mouse is small."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐭",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hayvonlarni ajrat: katta yoki kichkina!",
+        "ru": "Разложи животных: большие или маленькие!",
+        "en": "Sort the animals: big or small!"
+      },
+      "hint": {
+        "uz": "Fil katta, chumoli kichkina.",
+        "ru": "Слон большой, муравей маленький.",
+        "en": "Elephant big, ant small."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har biri oʻz guruhida.",
+        "ru": "Молодец! Каждое в своей группе.",
+        "en": "Great! Each in its group!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "big",
+              "label": {
+                "uz": "Big",
+                "ru": "Большой",
+                "en": "Big"
+              }
+            },
+            {
+              "id": "small",
+              "label": {
+                "uz": "Small",
+                "ru": "Маленький",
+                "en": "Small"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🐘",
+              "label": "elephant",
+              "bin": "big"
+            },
+            {
+              "emoji": "🦁",
+              "label": "lion",
+              "bin": "big"
+            },
+            {
+              "emoji": "🐊",
+              "label": "crocodile",
+              "bin": "big"
+            },
+            {
+              "emoji": "🐭",
+              "label": "mouse",
+              "bin": "small"
+            },
+            {
+              "emoji": "🐜",
+              "label": "ant",
+              "bin": "small"
+            },
+            {
+              "emoji": "🕷️",
+              "label": "spider",
+              "bin": "small"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sifatni hayvonga ula!",
+        "ru": "Соедини прилагательное с животным!",
+        "en": "Match each adjective to an animal!"
+      },
+      "hint": {
+        "uz": "big 🐘, small 🐭, long 🐍.",
+        "ru": "big 🐘, small 🐭, long 🐍.",
+        "en": "big 🐘, small 🐭, long 🐍."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "big"
+              },
+              "right": {
+                "emoji": "🐘"
+              }
+            },
+            {
+              "left": {
+                "label": "small"
+              },
+              "right": {
+                "emoji": "🐭"
+              }
+            },
+            {
+              "left": {
+                "label": "long"
+              },
+              "right": {
+                "emoji": "🐍"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Fil qanchalik katta?",
+        "ru": "Послушай. Насколько большой слон?",
+        "en": "Listen. How big is the elephant?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «It's very big!»",
+        "ru": "Верно! «It's very big!»",
+        "en": "Right! \"It's very big!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Look! An elephant!",
+              "audio": {
+                "key": "ing50-q8-a",
+                "text": "Look! An elephant!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Is it big?",
+              "audio": {
+                "key": "ing50-q8-b",
+                "text": "Is it big?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Yes, it's very big!",
+              "audio": {
+                "key": "ing50-q8-c",
+                "text": "Yes, it's very big!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Fil qanday?",
+              "ru": "Какой слон?",
+              "en": "How is the elephant?"
+            },
+            "choices": [
+              "very small",
+              "very short",
+              "very big"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Katta hayvonlarni belgila!",
+        "ru": "Отметь больших животных!",
+        "en": "Tap the big animals!"
+      },
+      "hint": {
+        "uz": "Fil, sher, timsoh.",
+        "ru": "Слон, лев, крокодил.",
+        "en": "Elephant, lion, crocodile."
+      },
+      "explanation": {
+        "uz": "Barakalla! Fil, sher, timsoh — katta!",
+        "ru": "Молодец! Слон, лев, крокодил — большие!",
+        "en": "Great! Elephant, lion, crocodile are big!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐘",
+              "label": "elephant",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🦁",
+              "label": "lion",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐊",
+              "label": "crocodile",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐭",
+              "label": "mouse"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐜",
+              "label": "ant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Fil juda ___. Qaysi soʻz?",
+        "ru": "Слон очень ___. Какое слово?",
+        "en": "An elephant is very ___. Which word?"
+      },
+      "hint": {
+        "uz": "Fil kichkinami yoki katta?",
+        "ru": "Слон маленький или большой?",
+        "en": "Is an elephant small or big?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! An elephant is very big.",
+        "ru": "Верно! An elephant is very big.",
+        "en": "Right! An elephant is very big."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "big\nkatta",
+              "ru": "big\nбольшой",
+              "en": "big"
+            },
+            {
+              "uz": "small\nkichkina",
+              "ru": "small\nмаленький",
+              "en": "small"
+            },
+            {
+              "uz": "short\nkalta",
+              "ru": "short\nкороткий",
+              "en": "short"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

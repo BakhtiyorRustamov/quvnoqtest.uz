@@ -1,0 +1,473 @@
+{
+  "topicId": "g1-ingliz-23",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐬🐶🦆🚪",
+  "title": {
+    "uz": "«d» tovushi: delfin",
+    "ru": "Звук «d»: дельфин",
+    "en": "The 'd' sound: a dolphin"
+  },
+  "recall": {
+    "uz": "Hayvon tovushlari! Bugun «d» tovushini mashq qilamiz: dolphin — delfin, dog — it, dad — dada. D-d-dolphin!",
+    "ru": "Звуки животных! Сегодня тренируем звук «d»: dolphin — дельфин, dog — собака, dad — папа. D-d-dolphin!",
+    "en": "Animal sounds! Today we practise the /d/ sound: dolphin, dog and dad. D-d-dolphin!"
+  },
+  "ttsText": {
+    "uz": "«d» tovushi.",
+    "en": "Animal sounds! The d sound. D-d-dolphin! A dolphin and a dog!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «d» bilan boshlanadigan hayvonni bos!",
+        "ru": "Послушай и нажми животное на «d»!",
+        "en": "Listen and tap the animal that starts with /d/!"
+      },
+      "audio": {
+        "key": "ing23-q1",
+        "text": "Dolphin! D-d-dolphin!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«dolphin» — delfin.",
+        "ru": "«dolphin» — дельфин.",
+        "en": "\"dolphin\" starts with /d/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Dolphin — delfin.",
+        "ru": "Верно! Dolphin — дельфин.",
+        "en": "Right! Dolphin!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐬",
+              "label": "dolphin",
+              "correct": true
+            },
+            {
+              "emoji": "🐢",
+              "label": "turtle"
+            },
+            {
+              "emoji": "🐻",
+              "label": "bear"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«d» bilan boshlanadigan hayvonni bos!",
+        "ru": "Нажми животное на «d»!",
+        "en": "Tap the animal that starts with /d/!"
+      },
+      "audio": {
+        "key": "ing23-q2",
+        "text": "Dog! D-d-dog!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«dog» — it.",
+        "ru": "«dog» — собака.",
+        "en": "\"dog\" starts with /d/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Dog — it.",
+        "ru": "Верно! Dog — собака.",
+        "en": "Right! Dog!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐶",
+              "label": "dog",
+              "correct": true
+            },
+            {
+              "emoji": "🐱",
+              "label": "cat"
+            },
+            {
+              "emoji": "🐰",
+              "label": "rabbit"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«d» tovushi bilan boshlanadigan hammasini belgila!",
+        "ru": "Отметь всё на «d»!",
+        "en": "Tap everything that starts with /d/!"
+      },
+      "hint": {
+        "uz": "dolphin, dog, duck.",
+        "ru": "dolphin, dog, duck.",
+        "en": "dolphin, dog, duck."
+      },
+      "explanation": {
+        "uz": "Barakalla! Dolphin, dog, duck — hammasi «d»!",
+        "ru": "Молодец! Dolphin, dog, duck — всё на «d»!",
+        "en": "Great! Dolphin, dog, duck — all /d/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐬",
+              "label": "dolphin",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐶",
+              "label": "dog",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🦆",
+              "label": "duck",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐻",
+              "label": "bear"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «d» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «d»?",
+        "en": "Which word starts with the /d/ sound?"
+      },
+      "hint": {
+        "uz": "Til tishga tegib «d» de.",
+        "ru": "Язык к зубам — «d».",
+        "en": "Touch your teeth and say /d/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «dolphin» — «d» tovushi.",
+        "ru": "Верно! «dolphin» — звук «d».",
+        "en": "Right! \"dolphin\" starts with /d/."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "dolphin",
+            "turtle",
+            "ball"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«d» bilan boshlanadigan qushni bos!",
+        "ru": "Нажми птицу на «d»!",
+        "en": "Tap the bird that starts with /d/!"
+      },
+      "audio": {
+        "key": "ing23-q5",
+        "text": "Duck! D-d-duck!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«duck» — oʻrdak.",
+        "ru": "«duck» — утка.",
+        "en": "\"duck\" starts with /d/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Duck — oʻrdak.",
+        "ru": "Верно! Duck — утка.",
+        "en": "Right! Duck!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🦆",
+              "label": "duck",
+              "correct": true
+            },
+            {
+              "emoji": "🐔",
+              "label": "hen"
+            },
+            {
+              "emoji": "🐝",
+              "label": "bee"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va birga ayt. Qaysi tovush takrorlanadi?",
+        "ru": "Послушай и повтори. Какой звук повторяется?",
+        "en": "Listen and say it. Which sound repeats?"
+      },
+      "hint": {
+        "uz": "Dolphin, dog, duck — bir tovush.",
+        "ru": "Dolphin, dog, duck — один звук.",
+        "en": "dolphin, dog, duck — the same sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «d» tovushi takrorlanadi.",
+        "ru": "Верно! Повторяется звук «d».",
+        "en": "Right! The /d/ sound repeats."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🐬",
+              "name": "Dolphin",
+              "text": "A dolphin and a dog and a duck!",
+              "audio": {
+                "key": "ing23-q6-a",
+                "text": "A dolphin and a dog and a duck!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "You",
+              "text": "D-d-dolphin! D-d-dog! D-d-duck!",
+              "audio": {
+                "key": "ing23-q6-b",
+                "text": "D! D! D! Dolphin, dog, duck!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qaysi tovush?",
+              "ru": "Какой звук?",
+              "en": "Which sound?"
+            },
+            "choices": [
+              "/b/",
+              "/t/",
+              "/d/"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«dolphin»ning tarjimasi nima?",
+        "ru": "Что значит «dolphin»?",
+        "en": "What does \"dolphin\" mean?"
+      },
+      "hint": {
+        "uz": "Dengizda suzadigan aqlli hayvon.",
+        "ru": "Умное морское животное.",
+        "en": "A clever sea animal."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Dolphin — delfin.",
+        "ru": "Верно! Dolphin — дельфин.",
+        "en": "Right! A dolphin."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "delfin",
+              "ru": "дельфин",
+              "en": "a dolphin"
+            },
+            {
+              "uz": "it",
+              "ru": "собака",
+              "en": "a dog"
+            },
+            {
+              "uz": "toshbaqa",
+              "ru": "черепаха",
+              "en": "a turtle"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yana «d» bilan boshlanadigan hammasini belgila!",
+        "ru": "Снова отметь всё на «d»!",
+        "en": "Tap all the /d/ words again!"
+      },
+      "hint": {
+        "uz": "door, dog, dice.",
+        "ru": "door, dog, dice.",
+        "en": "door, dog, dice."
+      },
+      "explanation": {
+        "uz": "Barakalla! Door, dog, dice — «d»!",
+        "ru": "Молодец! Door, dog, dice — «d»!",
+        "en": "Great! Door, dog, dice — /d/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🚪",
+              "label": "door",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐶",
+              "label": "dog",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🎲",
+              "label": "dice",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "☀️",
+              "label": "sun"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐱",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«d» bilan boshlanadigan oila aʼzosini bos!",
+        "ru": "Нажми члена семьи на «d»!",
+        "en": "Tap the family member that starts with /d/!"
+      },
+      "audio": {
+        "key": "ing23-q9",
+        "text": "Dad! D-d-dad!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«dad» — dada.",
+        "ru": "«dad» — папа.",
+        "en": "\"dad\" starts with /d/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Dad — dada.",
+        "ru": "Верно! Dad — папа.",
+        "en": "Right! Dad!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👨",
+              "label": "dad",
+              "correct": true
+            },
+            {
+              "emoji": "👵",
+              "label": "grandma"
+            },
+            {
+              "emoji": "👦",
+              "label": "brother"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «dog» soʻzi «d» tovushi bilan boshlanadi.",
+        "ru": "Верно? Слово «dog» начинается на «d».",
+        "en": "Is this right? \"dog\" starts with the /d/ sound."
+      },
+      "hint": {
+        "uz": "D-d-dog!",
+        "ru": "D-d-dog!",
+        "en": "D-d-dog!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Dog — «d» tovushi.",
+        "ru": "Верно! Dog — звук «d».",
+        "en": "Right! \"dog\" starts with /d/."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐶",
+          "answer": true
+        }
+      }
+    }
+  ]
+}

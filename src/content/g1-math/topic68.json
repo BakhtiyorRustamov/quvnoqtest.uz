@@ -1,0 +1,362 @@
+{
+  "topicId": "g1-math-68",
+  "subjectKey": "g1-math",
+  "emojis": "➖✏️✨",
+  "title": {
+    "uz": "Ayirish va tengsizliklar",
+    "ru": "Вычитание и неравенства",
+    "en": "Subtraction and inequalities"
+  },
+  "recall": {
+    "uz": "Ikki xonali sonlarni ayiramiz va ularni «>» yoki «<» belgilari bilan taqqoslaymiz. Masalan, 16 soni 13 dan katta: 16 > 13. Sonlarni hisoblab, ularni toʻgʻri taqqoslashni oʻrganamiz.",
+    "ru": "Вычитаем двузначные числа и сравниваем их знаками «>» или «<». Например, 16 больше 13: 16 > 13. Учимся считать и правильно сравнивать числа.",
+    "en": "We subtract two-digit numbers and compare them with «>» or «<». For example 16 is greater than 13: 16 > 13. We learn to compute and compare correctly."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "31",
+            "30",
+            "32"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "1-maktab 43 qop, 2-maktab undan 12 qop kam yongʻoq terdi. 2-maktab nechta qop terdi?",
+        "ru": "Школа №1 собрала 43 мешка, школа №2 на 12 меньше. Сколько мешков у школы №2?",
+        "en": "School 1 gathered 43 sacks, school 2 twelve fewer. How many did school 2 gather?"
+      },
+      "hint": {
+        "uz": "43 dan 12 ni ayir.",
+        "ru": "Вычти из 43 число 12.",
+        "en": "Take 12 from 43."
+      },
+      "explanation": {
+        "uz": "43 - 12 = 31.",
+        "ru": "43 - 12 = 31.",
+        "en": "43 - 12 = 31."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 16 ... 13",
+        "ru": "Выбери знак: 16 ... 13",
+        "en": "Choose the sign: 16 ... 13"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means bigger."
+      },
+      "explanation": {
+        "uz": "16 > 13.",
+        "ru": "16 > 13.",
+        "en": "16 > 13."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 1
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 15 ... 20",
+        "ru": "Выбери знак: 15 ... 20",
+        "en": "Choose the sign: 15 ... 20"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means bigger."
+      },
+      "explanation": {
+        "uz": "15 < 20.",
+        "ru": "15 < 20.",
+        "en": "15 < 20."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma uchburchaklarni belgila!",
+        "ru": "Отметь все треугольники!",
+        "en": "Tap all the triangles!"
+      },
+      "options": [
+        {
+          "id": "t1",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "s1",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "t2",
+          "art": {
+            "kind": "triangle",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c1",
+          "art": {
+            "kind": "circle",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "t3",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "t1",
+        "t2",
+        "t3"
+      ],
+      "hint": {
+        "uz": "Uchburchakning uchta tomoni bor.",
+        "ru": "У треугольника три стороны.",
+        "en": "A triangle has three sides."
+      },
+      "explanation": {
+        "uz": "Uchta uchburchakni topdik.",
+        "ru": "Нашли три треугольника.",
+        "en": "We found three triangles."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 14,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 35 - 21 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 35 - 21 = ?",
+        "en": "Work it out and build the answer with blocks: 35 - 21 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "35 - 21 = 14.",
+        "ru": "35 - 21 = 14.",
+        "en": "35 - 21 = 14."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "24 + 43",
+              "right": "67"
+            },
+            {
+              "left": "56 + 12",
+              "right": "68"
+            },
+            {
+              "left": "34 + 42",
+              "right": "76"
+            },
+            {
+              "left": "27 + 12",
+              "right": "39"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "56",
+            "55",
+            "57"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Zanjirni davom ettir (+11): 23, 34, 45, ?",
+        "ru": "Продолжи цепочку (+11): 23, 34, 45, ?",
+        "en": "Continue the chain (+11): 23, 34, 45, ?"
+      },
+      "hint": {
+        "uz": "Har safar 11 ta qoʻsh.",
+        "ru": "Каждый раз прибавляй 11.",
+        "en": "Add 11 each time."
+      },
+      "explanation": {
+        "uz": "45 + 11 = 56.",
+        "ru": "45 + 11 = 56.",
+        "en": "45 + 11 = 56."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "24",
+            "23",
+            "25"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Zanjirni davom ettir (-12): 60, 48, 36, ?",
+        "ru": "Продолжи цепочку (-12): 60, 48, 36, ?",
+        "en": "Continue the chain (-12): 60, 48, 36, ?"
+      },
+      "hint": {
+        "uz": "Har safar 12 ni ayir.",
+        "ru": "Каждый раз вычитай 12.",
+        "en": "Subtract 12 each time."
+      },
+      "explanation": {
+        "uz": "36 - 12 = 24.",
+        "ru": "36 - 12 = 24.",
+        "en": "36 - 12 = 24."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 43,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 78 - 35 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 78 - 35 = ?",
+        "en": "Work it out and build the answer with blocks: 78 - 35 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "78 - 35 = 43.",
+        "ru": "78 - 35 = 43.",
+        "en": "78 - 35 = 43."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ">",
+            "<",
+            "="
+          ],
+          "answerIndex": 1
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: 45 ... 54",
+        "ru": "Выбери знак: 45 ... 54",
+        "en": "Choose the sign: 45 ... 54"
+      },
+      "hint": {
+        "uz": "Oʻnliklari koʻp boʻlgan son katta.",
+        "ru": "Больше десятков — больше число.",
+        "en": "More tens means bigger."
+      },
+      "explanation": {
+        "uz": "45 < 54.",
+        "ru": "45 < 54.",
+        "en": "45 < 54."
+      }
+    }
+  ]
+}

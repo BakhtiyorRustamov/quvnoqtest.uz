@@ -1,0 +1,326 @@
+{
+  "topicId": "g1-math-141",
+  "subjectKey": "g1-math",
+  "emojis": "📏✏️✨",
+  "title": {
+    "uz": "Kesma uzunligi — takrorlash",
+    "ru": "Длина отрезка — повторение",
+    "en": "Segment length — review"
+  },
+  "recall": {
+    "uz": "Kesma — ikki nuqtani tutashtiruvchi toʻgʻri chiziq boʻlagi. Uning uzunligini chizgʻich bilan oʻlchaymiz, birligi — santimetr (cm). Masalalarda nomaʼlum uzunlik yoki miqdorni tenglama tuzib topamiz.",
+    "ru": "Отрезок — часть прямой между двумя точками. Его длину измеряем линейкой в сантиметрах (cm). В задачах неизвестную длину или количество находим, составив уравнение.",
+    "en": "A segment is the part of a line between two points. We measure its length with a ruler in centimetres (cm). In problems we find an unknown length or amount by building an equation."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "10 - 3 = x",
+          "answer": 7,
+          "choices": [
+            7,
+            6,
+            8
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Nozim 10 keglidan 3 tasini urdi. Nechta kegli qoldi? 10 - 3 = x.",
+        "ru": "Нозим сбил 3 из 10 кеглей. Сколько осталось? 10 - 3 = x.",
+        "en": "Nozim knocked down 3 of 10 pins. How many are left? 10 - 3 = x."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 7 ga teng.",
+        "ru": "Неизвестное равно 7.",
+        "en": "The unknown equals 7."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 6,
+          "maxCm": 10
+        }
+      },
+      "prompt": {
+        "uz": "Kesma uzunligini oʻlcha (cm).",
+        "ru": "Измерь длину отрезка (см).",
+        "en": "Measure the segment's length (cm)."
+      },
+      "hint": {
+        "uz": "Kesma boshi 0 da. Oxiri qaysi boʻlinishda tugaydi?",
+        "ru": "Начало отрезка на 0. На каком делении конец?",
+        "en": "The segment starts at 0. Which mark does it end on?"
+      },
+      "explanation": {
+        "uz": "Kesma uzunligi 6 cm.",
+        "ru": "Длина отрезка 6 см.",
+        "en": "The segment is 6 cm long."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "x + 9 = 17",
+          "answer": 8,
+          "choices": [
+            8,
+            7,
+            9
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Tenglamani yech: x + 9 = 17. Qaysi komponent nomaʼlum?",
+        "ru": "Реши уравнение: x + 9 = 17. Какой компонент неизвестен?",
+        "en": "Solve: x + 9 = 17. Which component is unknown?"
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 8 ga teng.",
+        "ru": "Неизвестное равно 8.",
+        "en": "The unknown equals 8."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "8 + 6 + x = 22",
+          "answer": 8,
+          "choices": [
+            8,
+            7,
+            9
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Nomaʼlum narsani top: 8 + 6 + x = 22.",
+        "ru": "Найди неизвестное: 8 + 6 + x = 22.",
+        "en": "Find the unknown: 8 + 6 + x = 22."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 8 ga teng.",
+        "ru": "Неизвестное равно 8.",
+        "en": "The unknown equals 8."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 9,
+          "maxCm": 12
+        }
+      },
+      "prompt": {
+        "uz": "Kesma uzunligini oʻlcha (cm).",
+        "ru": "Измерь длину отрезка (см).",
+        "en": "Measure the segment's length (cm)."
+      },
+      "hint": {
+        "uz": "Kesma boshi 0 da. Oxiri qaysi boʻlinishda tugaydi?",
+        "ru": "Начало отрезка на 0. На каком делении конец?",
+        "en": "The segment starts at 0. Which mark does it end on?"
+      },
+      "explanation": {
+        "uz": "Kesma uzunligi 9 cm.",
+        "ru": "Длина отрезка 9 см.",
+        "en": "The segment is 9 cm long."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 17,
+          "y": 8
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 17 va 8. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 17 и 8. Какой знак верный?",
+        "en": "Compare: 17 and 8. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "17 > 8.",
+        "ru": "17 > 8.",
+        "en": "17 > 8."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "10 - 3",
+              "right": "7"
+            },
+            {
+              "left": "17 - 9",
+              "right": "8"
+            },
+            {
+              "left": "40 + 14",
+              "right": "54"
+            },
+            {
+              "left": "60 + 9",
+              "right": "69"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagini hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 3,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 7 + 3. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 7 + 3. Используй числовую прямую.",
+        "en": "Work it out: 7 + 3. Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla, 3 oldinga sur.",
+        "ru": "Встань на 7, продвинься на 3.",
+        "en": "Start at 7, move 3 forward."
+      },
+      "explanation": {
+        "uz": "7 + 3 = 10.",
+        "ru": "7 + 3 = 10.",
+        "en": "7 + 3 = 10."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 54
+        }
+      },
+      "prompt": {
+        "uz": "Sonni bloklardan yasa: 54.",
+        "ru": "Собери число 54.",
+        "en": "Build the number 54."
+      },
+      "hint": {
+        "uz": "5 ta oʻnlik (+10) va 4 ta birlik (+1).",
+        "ru": "5 десятков (+10) и 4 единиц (+1).",
+        "en": "5 tens (+10) and 4 ones (+1)."
+      },
+      "explanation": {
+        "uz": "54 = 50 + 4.",
+        "ru": "54 = 50 + 4.",
+        "en": "54 = 50 + 4."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_order",
+        "props": {
+          "numbers": [
+            25,
+            21,
+            34,
+            46
+          ],
+          "direction": "asc"
+        }
+      },
+      "prompt": {
+        "uz": "Sonlarni oʻsish tartibida tartibla.",
+        "ru": "Расставь числа по возрастанию.",
+        "en": "Put the numbers in ascending order."
+      },
+      "hint": {
+        "uz": "Eng kichik (yoki eng katta) sondan boshla.",
+        "ru": "Начни с самого маленького (или большого) числа.",
+        "en": "Start with the smallest (or largest) number."
+      },
+      "explanation": {
+        "uz": "Sonlar toʻgʻri tartibda joylashdi.",
+        "ru": "Числа расставлены по порядку.",
+        "en": "The numbers are in the correct order."
+      }
+    }
+  ]
+}

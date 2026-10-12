@@ -1,0 +1,113 @@
+{
+  "topicId": "g1-math-21",
+  "subjectKey": "g1-math",
+  "emojis": "6️⃣🎲🍎",
+  "title": { "uz": "Olti soni va raqami", "ru": "Число шесть", "en": "The number six" },
+  "recall": {
+    "uz": "Olti sonini oʻrganamiz. Oltita narsani sanaymiz. Olti beshdan kattaroq. Besh va bir qoʻshilsa, olti boʻladi. Olti sonining raqamini yozamiz.",
+    "ru": "Учим число шесть. Считаем шесть предметов. Шесть больше пяти. Пять и один вместе — это шесть. Пишем цифру шесть.",
+    "en": "We learn the number six. We count six things. Six is bigger than five. Five and one make six. We write the numeral six."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Oltita olmani sanab belgila!", "ru": "Сосчитай и отметь шесть яблок!", "en": "Count and tap the six apples!" },
+      "options": [
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "a2", "art": { "kind": "apple", "color": "green" } },
+        { "id": "a3", "art": { "kind": "apple", "color": "yellow" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "a4", "art": { "kind": "apple", "color": "red" } },
+        { "id": "a5", "art": { "kind": "apple", "color": "green" } },
+        { "id": "a6", "art": { "kind": "apple", "color": "yellow" } }
+      ],
+      "answer": ["a1", "a2", "a3", "a4", "a5", "a6"],
+      "hint": { "uz": "Olmalarni sana: bir… olti.", "ru": "Считай яблоки: один… шесть.", "en": "Count the apples: one… six." },
+      "explanation": { "uz": "Oltita olma bor edi. Olti — beshdan bitta koʻp.", "ru": "Было шесть яблок. Шесть — на один больше пяти.", "en": "There were six apples. Six is one more than five." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 5, "b": 1, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: besh va bir!", "ru": "Сложи на числовой прямой: пять и один!", "en": "Add on the number line: five and one!" },
+      "hint": { "uz": "Beshdan boshla, bitta qadam oldinga sakra.", "ru": "Встань на пять, прыгни на один вперёд.", "en": "Start at five, hop one forward." },
+      "explanation": { "uz": "Besh va bir qoʻshilib, olti boʻldi.", "ru": "Пять и один дали шесть.", "en": "Five and one made six." }
+    },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["6", "5", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 5 + 1 = ?", "ru": "Найди сумму: 5 + 1 = ?", "en": "Find the sum: 5 + 1 = ?" },
+      "hint": { "uz": "Beshtaga bitta qoʻsh.", "ru": "К пяти прибавь один.", "en": "Add one to five." },
+      "explanation": { "uz": "Besh qoʻshish bir — olti.", "ru": "Пять плюс один — шесть.", "en": "Five plus one is six." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2", "3", "1"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 6 = 4 + ?", "ru": "Найди недостающее число: 6 = 4 + ?", "en": "Find the missing number: 6 = 4 + ?" },
+      "hint": { "uz": "Toʻrtga nechta qoʻshsak, olti boʻladi?", "ru": "Сколько добавить к четырём, чтобы вышло шесть?", "en": "How much to add to four to make six?" },
+      "explanation": { "uz": "Toʻrt qoʻshish ikki — olti. Yetishmagan son — ikki.", "ru": "Четыре плюс два — шесть. Недостающее число — два.", "en": "Four plus two is six. The missing number is two." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["6-1=4", "4+2=6", "3+3=6"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi misol notoʻgʻri?", "ru": "Какой пример неверный?", "en": "Which equation is wrong?" },
+      "hint": { "uz": "Har bir misolni sanab tekshir.", "ru": "Проверь каждый пример счётом.", "en": "Check each equation by counting." },
+      "explanation": { "uz": "Olti ayirish bir — besh, toʻrt emas. Bu misol notoʻgʻri.", "ru": "Шесть минус один — пять, а не четыре. Этот пример неверный.", "en": "Six minus one is five, not four. That equation is wrong." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 6, "y": 3 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Olti uchdan katta.", "ru": "Шесть больше трёх.", "en": "Six is bigger than three." } },
+    {
+      "id": "q7",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Shakllarni rangi boʻyicha guruhla!", "ru": "Сгруппируй фигуры по цвету!", "en": "Group the shapes by color!" },
+      "items": [
+        { "id": "r1", "art": { "kind": "star", "color": "red" }, "bin": "red" },
+        { "id": "b1", "art": { "kind": "star", "color": "blue" }, "bin": "blue" },
+        { "id": "r2", "art": { "kind": "circle", "color": "red" }, "bin": "red" },
+        { "id": "b2", "art": { "kind": "circle", "color": "blue" }, "bin": "blue" }
+      ],
+      "bins": [
+        { "id": "red", "label": { "uz": "Qizil", "ru": "Красные", "en": "Red" }, "color": "red" },
+        { "id": "blue", "label": { "uz": "Koʻk", "ru": "Синие", "en": "Blue" }, "color": "blue" }
+      ],
+      "hint": { "uz": "Rangiga qara, shakliga emas.", "ru": "Смотри на цвет, не на форму.", "en": "Look at the color, not the shape." },
+      "explanation": { "uz": "Qizillarni bir guruhga, koʻklarni boshqasiga ajratdik.", "ru": "Красные в одну группу, синие в другую.", "en": "Red in one group, blue in the other." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "star", "color": "magenta" },
+        { "kind": "square", "color": "green" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "square", "color": "green" },
+        { "kind": "star", "color": "magenta" }
+      ],
+      "options": [
+        { "id": "sq", "art": { "kind": "square", "color": "green" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["sq"],
+      "hint": { "uz": "Yulduz, kvadrat, yulduz, kvadrat… navbat bilan keladi!", "ru": "Звезда, квадрат, звезда, квадрат… по очереди!", "en": "Star, square, star, square… they take turns!" },
+      "explanation": { "uz": "Yulduzdan keyin doim kvadrat keladi. Keyingisi — kvadrat.", "ru": "После звезды всегда идёт квадрат. Следующий — квадрат.", "en": "After a star there is always a square. The next one is a square." }
+    },
+    {
+      "id": "q9",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladiganini bos!", "ru": "Нажми на ту, что отличается!", "en": "Tap the one that is different!" },
+      "options": [
+        { "id": "c1", "art": { "kind": "ball", "color": "red" } },
+        { "id": "df", "art": { "kind": "ball", "color": "yellow" } },
+        { "id": "c2", "art": { "kind": "ball", "color": "red" } }
+      ],
+      "answer": ["df"],
+      "hint": { "uz": "Ikkitasi qizil. Bittasi rangi bilan farqli.", "ru": "Два красных. Один отличается цветом.", "en": "Two are red. One differs by color." },
+      "explanation": { "uz": "Sariq koptok rangi bilan farq qildi.", "ru": "Жёлтый мяч отличался цветом.", "en": "The yellow ball differed by color." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["4", "5", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 6 - 2 = ?", "ru": "Найди разность: 6 - 2 = ?", "en": "Find the difference: 6 - 2 = ?" },
+      "hint": { "uz": "Oltita bor edi, ikkitasi ketdi.", "ru": "Было шесть, два ушли.", "en": "There were six, two went away." },
+      "explanation": { "uz": "Olti ayirish ikki — toʻrt qoladi.", "ru": "Шесть минус два — четыре.", "en": "Six minus two is four." } }
+  ]
+}

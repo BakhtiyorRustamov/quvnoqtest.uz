@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-23",
+  "subjectKey": "g1-ona",
+  "emojis": "✂️🔤🔢",
+  "title": {
+    "uz": "Soʻzni boʻgʻinlarga boʻlamiz",
+    "ru": "Делим слово на слоги",
+    "en": "Splitting a word into syllables"
+  },
+  "recall": {
+    "uz": "Soʻzni boʻgʻinlarga boʻlish uchun unlilarni sanaymiz — nechta unli boʻlsa, shuncha boʻgʻin boʻladi: ov-qat (2), pi-yo-la (3). Boʻgʻin soni unlilar soniga teng.",
+    "ru": "Чтобы разделить слово на слоги, считаем гласные — сколько гласных, столько слогов: ov-qat (2), pi-yo-la (3). Число слогов равно числу гласных.",
+    "en": "To split a word into syllables we count the vowels — as many vowels, so many syllables: ov-qat (2), pi-yo-la (3). Syllable count equals vowel count."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["ov", "qat"], "emoji": "🍲", "clue": { "uz": "Yeydigan taomimiz", "ru": "Еда, которую мы едим", "en": "The food we eat" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "ov- … -qat.", "ru": "ov- … -qat.", "en": "ov- … -qat." },
+      "explanation": { "uz": "«ov-qat» — 2 boʻgʻin (2 unli).", "ru": "«ov-qat» — 2 слога (2 гласные).", "en": "“ov-qat” — 2 syllables (2 vowels)." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["pi", "yo", "la"], "emoji": "🍵", "clue": { "uz": "Choy ichadigan idish", "ru": "Пиала для чая", "en": "A bowl for tea" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "pi- … -yo- … -la.", "ru": "pi- … -yo- … -la.", "en": "pi- … -yo- … -la." },
+      "explanation": { "uz": "«pi-yo-la» — 3 boʻgʻin (3 unli).", "ru": "«pi-yo-la» — 3 слога (3 гласные).", "en": "“pi-yo-la” — 3 syllables (3 vowels)." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["sinf", "dosh"], "emoji": "👫", "clue": { "uz": "Birga oʻqiydigan doʻst", "ru": "Друг, с кем учимся вместе", "en": "A classmate you study with" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "sinf- … -dosh.", "ru": "sinf- … -dosh.", "en": "sinf- … -dosh." },
+      "explanation": { "uz": "«sinf-dosh» — 2 boʻgʻin, ikkalasi ham yopiq.", "ru": "«sinf-dosh» — 2 слога, оба закрытые.", "en": "“sinf-dosh” — 2 syllables, both closed." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "ovqat", "bin": "ikki" }, { "id": "b", "label": "sinfdosh", "bin": "ikki" }, { "id": "c", "label": "pichoq", "bin": "ikki" }, { "id": "d", "label": "piyola", "bin": "uch" }, { "id": "e", "label": "mehribon", "bin": "uch" }, { "id": "f", "label": "oʻquvchi", "bin": "uch" } ], "bins": [ { "id": "ikki", "label": "2 boʻgʻinli" }, { "id": "uch", "label": "3 boʻgʻinli" } ] } },
+      "prompt": { "uz": "Boʻgʻin soniga qarab ajrat!", "ru": "Раздели по числу слогов!", "en": "Sort by the number of syllables!" },
+      "hint": { "uz": "ovqat — 2, piyola — 3 boʻgʻin.", "ru": "ovqat — 2, piyola — 3 слога.", "en": "ovqat — 2, piyola — 3 syllables." },
+      "explanation": { "uz": "Boʻgʻin sonini unlilarni sanab topamiz.", "ru": "Число слогов находим, считая гласные.", "en": "We find the syllable count by counting vowels." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "piyola", "match": true }, { "text": "ovqat", "match": false }, { "text": "mehribon", "match": true }, { "text": "sinfdosh", "match": false }, { "text": "oʻquvchi", "match": true }, { "text": "pichoq", "match": false } ] } },
+      "prompt": { "uz": "3 boʻgʻinli soʻzlarni bos!", "ru": "Нажми трёхсложные слова!", "en": "Tap the three-syllable words!" },
+      "hint": { "uz": "Uch unlisi bor soʻzlarni tanla.", "ru": "Выбери слова с тремя гласными.", "en": "Choose words with three vowels." },
+      "explanation": { "uz": "piyola, mehribon, oʻquvchi — 3 boʻgʻinli.", "ru": "piyola, mehribon, oʻquvchi — трёхсложные.", "en": "piyola, mehribon, oʻquvchi have three syllables." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["3", "2", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "«oʻquvchi» soʻzida nechta boʻgʻin bor?", "ru": "Сколько слогов в слове «oʻquvchi»?", "en": "How many syllables are in “oʻquvchi”?" },
+      "hint": { "uz": "oʻ-quv-chi.", "ru": "oʻ-quv-chi.", "en": "oʻ-quv-chi." },
+      "explanation": { "uz": "«oʻ-quv-chi» — 3 boʻgʻin.", "ru": "«oʻ-quv-chi» — 3 слога.", "en": "“oʻ-quv-chi” — 3 syllables." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "kema", "emoji": "⛵", "clue": { "uz": "Suvda suzadigan transport", "ru": "Транспорт, плывущий по воде", "en": "Transport that sails on water" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: k, e, m, a.", "ru": "Буквы: k, e, m, a.", "en": "Letters: k, e, m, a." },
+      "explanation": { "uz": "«ke-ma» — 2 boʻgʻinli soʻz.", "ru": "«ke-ma» — двусложное слово.", "en": "“ke-ma” — a two-syllable word." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "ip", "right": "1" }, { "left": "kema", "right": "2" }, { "left": "avtobus", "right": "3" }, { "left": "velosiped", "right": "4" } ] } },
+      "prompt": { "uz": "Soʻzni boʻgʻin soniga ula!", "ru": "Соедини слово с числом слогов!", "en": "Match each word to its syllable count!" },
+      "hint": { "uz": "«ip» — 1, «kema» — 2 boʻgʻin.", "ru": "«ip» — 1, «kema» — 2 слога.", "en": "“ip” — 1, “kema” — 2 syllables." },
+      "explanation": { "uz": "Boʻgʻin soni unlilar soniga teng.", "ru": "Число слогов равно числу гласных.", "en": "Syllable count equals the vowel count." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Har", "boʻgʻinda", "bitta", "unli", "bor."], "emoji": "🔢", "clue": { "uz": "Boʻgʻin qoidasi", "ru": "Правило слога", "en": "The syllable rule" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nechta unli? — «bitta».", "ru": "Сколько гласных? — «bitta» (одна).", "en": "How many vowels? — “bitta” (one)." },
+      "explanation": { "uz": "Har boʻgʻinda bitta unli boʻladi.", "ru": "В каждом слоге одна гласная.", "en": "Each syllable has one vowel." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Unlilarni sanaymiz", "ru": "Считаем гласные", "en": "We count the vowels" }, { "uz": "Harflarni sanaymiz", "ru": "Считаем буквы", "en": "We count the letters" }, { "uz": "Undoshlarni sanaymiz", "ru": "Считаем согласные", "en": "We count the consonants" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Boʻgʻin sonini qanday bilamiz?", "ru": "Как узнать число слогов?", "en": "How do we find the syllable count?" },
+      "hint": { "uz": "Har boʻgʻinda bitta unli bor.", "ru": "В каждом слоге одна гласная.", "en": "Each syllable has one vowel." },
+      "explanation": { "uz": "Unlilarni sanaymiz — shuncha boʻgʻin boʻladi.", "ru": "Считаем гласные — столько и слогов.", "en": "We count the vowels — that many syllables." }
+    }
+  ]
+}

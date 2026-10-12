@@ -1,0 +1,38 @@
+{
+  "topicId": "g1-art-07",
+  "subjectKey": "g1-art",
+  "emojis": "",
+  "hideAudio": true,
+  "title": { "uz": "Kamalak", "ru": "Радуга", "en": "The rainbow" },
+  "recall": {
+    "uz": "Kamalak — yomgʻirdan keyin osmonda paydo boʻladigan yetti rangli yoy: qizil, toʻq sariq, sariq, yashil, koʻk, hovarang va binafsha. Keling, kamalakni boʻyaymiz.",
+    "ru": "Радуга — семицветная дуга на небе после дождя: красный, оранжевый, жёлтый, зелёный, голубой, синий и фиолетовый. Давай раскрасим радугу.",
+    "en": "A rainbow is a seven-colour arc in the sky after rain: red, orange, yellow, green, blue, indigo and violet. Let's colour the rainbow."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kamalak ranglarini tanla!", "ru": "Выбери цвета радуги!", "en": "Pick the rainbow colours!" },
+      "hint": { "uz": "Yetti rang bor, qora va jigarrang yoʻq.", "ru": "Семь цветов; чёрного и коричневого нет.", "en": "Seven colours; no black or brown." },
+      "explanation": { "uz": "Barakalla! Kamalakda yetti rang bor.", "ru": "Молодец! В радуге семь цветов.", "en": "Great! A rainbow has seven colours." },
+      "widget": { "type": "color_pick", "props": { "multi": true, "options": [
+        { "id": "red", "color": "#e4443a", "label": { "uz": "qizil", "ru": "красный", "en": "red" }, "correct": true },
+        { "id": "orange", "color": "#f39a1f", "label": { "uz": "toʻq sariq", "ru": "оранжевый", "en": "orange" }, "correct": true },
+        { "id": "yellow", "color": "#f7d13a", "label": { "uz": "sariq", "ru": "жёлтый", "en": "yellow" }, "correct": true },
+        { "id": "green", "color": "#5bbf5b", "label": { "uz": "yashil", "ru": "зелёный", "en": "green" }, "correct": true },
+        { "id": "blue", "color": "#1fa7e0", "label": { "uz": "koʻk", "ru": "голубой", "en": "blue" }, "correct": true },
+        { "id": "indigo", "color": "#3a5fd0", "label": { "uz": "hovarang", "ru": "синий", "en": "indigo" }, "correct": true },
+        { "id": "violet", "color": "#8a4bd0", "label": { "uz": "binafsha", "ru": "фиолетовый", "en": "violet" }, "correct": true },
+        { "id": "black", "color": "#333333", "label": { "uz": "qora", "ru": "чёрный", "en": "black" } },
+        { "id": "brown", "color": "#9c5b2e", "label": { "uz": "jigarrang", "ru": "коричневый", "en": "brown" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kamalakni ranglarga boʻya.", "ru": "Раскрась радугу.", "en": "Colour the rainbow." },
+      "hint": { "uz": "Har yoyni boshqa rangga boʻya.", "ru": "Каждую дугу — своим цветом.", "en": "Colour each band a different colour." },
+      "explanation": { "uz": "Rang-barang kamalak!", "ru": "Разноцветная радуга!", "en": "A colourful rainbow!" },
+      "widget": { "type": "color_fill", "props": { "picture": "rainbow" } }
+    }
+  ]
+}

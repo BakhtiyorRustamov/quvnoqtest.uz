@@ -1,0 +1,102 @@
+{
+  "topicId": "g1-alifbe-35",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🕐🥛📖",
+  "title": { "uz": "«S s» harfi", "ru": "Буква «S s»", "en": "The letter “S s”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «S s». U undosh tovush. Uni aytganda tishlar bir-biriga yaqinlashadi, havo sirgʻalib chiqadi. «S» bilan: soat, sut, salom, son. Endi «soat» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «S s». Это согласный звук. Зубы сближаются, воздух выходит со свистом. Слова: soat, sut, salom, son. Теперь мы можем прочитать слово «soat»!",
+    "en": "Today's letter is “S s”. It is a consonant. The teeth come close and the air hisses out. Words: soat, sut, salom, son. Now we can read and build the word “soat”!"
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«S» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «S»!", "en": "Find the word that starts with “S”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: s-s-soat.", "ru": "Протяни начало: с-с-soat.", "en": "Stretch the start: s-s-soat." },
+      "explanation": { "uz": "«soat» «S» tovushi bilan boshlanadi.", "ru": "«soat» начинается со звука «S».", "en": "“soat” (clock) starts with the sound “S”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "clock", "emoji": "🕐", "label": { "uz": "soat", "ru": "soat", "en": "soat" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«S» harfini topib, hammasini bos!", "ru": "Найди букву «S» и нажми на все!", "en": "Find the letter “S” and tap them all!" },
+      "hint": { "uz": "Katta «S» ham, kichik «s» ham.", "ru": "Считаются «S» и «s».", "en": "Both “S” and “s” count." },
+      "explanation": { "uz": "«S» harfini topding!", "ru": "Ты нашёл букву «S»!", "en": "You found the letter “S”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "S", "cols": 3, "grid": ["S", "o", "s", "R", "S", "u", "s", "a", "S"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🥛 «sut»da «s» tovushi qaysi katakchada?", "ru": "🥛 В какой клетке звук «s» в слове «sut»?", "en": "🥛 Which box has the “s” sound in “sut”?" },
+      "hint": { "uz": "«sut» «s» bilan boshlanadi.", "ru": "«sut» начинается с «s».", "en": "“sut” starts with “s”." },
+      "explanation": { "uz": "«sut»da «s» — birinchi katakda.", "ru": "В «sut» звук «s» — первая клетка.", "en": "In “sut” the “s” is in the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🥛", "word": { "uz": "sut", "ru": "sut", "en": "sut" }, "sound": "s", "cells": ["s", "u", "t"], "answer": 0 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🥛 «sut» soʻzining tovush chizmasini rangla!", "ru": "🥛 Раскрась схему звуков слова «sut»!", "en": "🥛 Colour the sound scheme of “sut”!" },
+      "hint": { "uz": "s — undosh, u — unli, t — undosh.", "ru": "s — согласный, u — гласный, t — согласный.", "en": "s consonant, u vowel, t consonant." },
+      "explanation": { "uz": "«sut»: s, u, t — undosh, unli, undosh.", "ru": "«sut»: согласный, гласный, согласный.", "en": "“sut”: consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🥛", "word": { "uz": "sut", "ru": "sut", "en": "sut" }, "scheme": ["c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«S» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «S»!", "en": "Tap the words that have the “S” sound!" },
+      "hint": { "uz": "soat, sut — «s» tovushi bor.", "ru": "soat, sut — есть звук «s».", "en": "soat, sut have the “s” sound." },
+      "explanation": { "uz": "soat, sut — «s» bor. ot, olma, nonda yoʻq.", "ru": "soat, sut — есть «s». В ot, olma, non нет.", "en": "soat, sut have “s”. ot, olma, non do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "clock", "emoji": "🕐", "label": { "uz": "soat", "ru": "soat", "en": "soat" }, "correct": true },
+        { "id": "milk", "emoji": "🥛", "label": { "uz": "sut", "ru": "sut", "en": "sut" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+        { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🕐 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!", "ru": "🕐 Прочитай и нажми верно написанное слово!", "en": "🕐 Read and tap the correctly spelled word!" },
+      "hint": { "uz": "Soʻz «s» bilan boshlanadi: so-at.", "ru": "Слово начинается с «s»: so-at.", "en": "The word starts with “s”: so-at." },
+      "explanation": { "uz": "Toʻgʻri yozilishi — «soat».", "ru": "Верное написание — «soat».", "en": "The correct spelling is “soat”." },
+      "widget": { "type": "read_word", "props": { "emoji": "🕐", "options": [
+        { "id": "ok", "word": "soat", "correct": true },
+        { "id": "w1", "word": "zoat" },
+        { "id": "w2", "word": "soad" }
+      ] } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «soat» soʻzini tuz!", "ru": "Составь слово «soat» из букв!", "en": "Build the word “soat” from letters!" },
+      "hint": { "uz": "s — o — a — t tartibida bos.", "ru": "Нажимай: s — o — a — t.", "en": "Tap in order: s — o — a — t." },
+      "explanation": { "uz": "s + o + a + t = «soat».", "ru": "s + o + a + t = «soat».", "en": "s + o + a + t = “soat” (clock)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🕐", "word": "soat", "label": { "uz": "soat", "ru": "часы", "en": "clock" } } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«S» — undosh tovush.", "ru": "«S» — согласный звук.", "en": "“S” is a consonant sound." },
+      "hint": { "uz": "«S»da havo sirgʻalib chiqadi.", "ru": "При «S» воздух выходит со свистом.", "en": "For “S” the air hisses out." },
+      "explanation": { "uz": "Toʻgʻri! «S» — undosh tovush.", "ru": "Верно! «S» — согласный.", "en": "True! “S” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Har bir rasmni soʻzi bilan ula!", "ru": "Соедини каждую картинку с её словом!", "en": "Match each picture to its word!" },
+      "hint": { "uz": "soat — 🕐, sut — 🥛, olma — 🍎, ot — 🐎.", "ru": "soat — 🕐, sut — 🥛, olma — 🍎, ot — 🐎.", "en": "soat — 🕐, sut — 🥛, olma — 🍎, ot — 🐎." },
+      "explanation": { "uz": "Rasm va soʻzni toʻgʻri ulading!", "ru": "Ты верно соединил картинку и слово!", "en": "You matched picture and word correctly!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "emoji": "🕐" }, "right": { "label": { "uz": "soat", "ru": "soat", "en": "soat" } } },
+        { "left": { "emoji": "🥛" }, "right": { "label": { "uz": "sut", "ru": "sut", "en": "sut" } } },
+        { "left": { "emoji": "🍎" }, "right": { "label": { "uz": "olma", "ru": "olma", "en": "olma" } } },
+        { "left": { "emoji": "🐎" }, "right": { "label": { "uz": "ot", "ru": "ot", "en": "ot" } } }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«S» tovushida havo qanday chiqadi?", "ru": "Как выходит воздух при звуке «S»?", "en": "How does the air leave when saying “S”?" },
+      "hint": { "uz": "«S-s-s» deb ayt — ilonday.", "ru": "Скажи «с-с-с» — как змея.", "en": "Say “s-s-s” — like a snake." },
+      "explanation": { "uz": "«S»da havo sirgʻalib chiqadi.", "ru": "При «S» воздух выходит со свистом.", "en": "For “S” the air slides/hisses out." },
+      "widget": { "type": "mcq", "props": { "choices": [{ "uz": "sirgʻalib", "ru": "со свистом", "en": "hissing/sliding" }, { "uz": "birdaniga", "ru": "резко", "en": "with a burst" }, { "uz": "burundan", "ru": "через нос", "en": "through the nose" }], "answerIndex": 0 } }
+    }
+  ]
+}

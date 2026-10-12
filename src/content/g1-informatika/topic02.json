@@ -1,0 +1,529 @@
+{
+  "topicId": "g1-informatika-02",
+  "subjectKey": "g1-informatika",
+  "emojis": "👀🌈📖⭐",
+  "title": {
+    "uz": "Biz nimalarni koʻramiz?",
+    "ru": "Что мы видим?",
+    "en": "What do we see?"
+  },
+  "recall": {
+    "uz": "Koʻz — koʻrish aʼzosi. Koʻzimiz bilan narsalarning rangini, shaklini va kattaligini koʻramiz.",
+    "ru": "Глаз — орган зрения. Глазами мы видим цвет, форму и размер предметов.",
+    "en": "The eye is the organ of sight. With our eyes we see the colour, shape and size of things."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bola kitobni qaysi aʼzo bilan oʻqiyapti?",
+        "ru": "Каким органом ребёнок читает книгу?",
+        "en": "Which organ is the child reading with?"
+      },
+      "hint": {
+        "uz": "Oʻqish uchun koʻrish kerak.",
+        "ru": "Чтобы читать, нужно видеть.",
+        "en": "To read you must see."
+      },
+      "explanation": {
+        "uz": "Biz koʻz bilan oʻqiymiz.",
+        "ru": "Мы читаем глазами.",
+        "en": "We read with our eyes."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "👅",
+              "label": {
+                "uz": "til",
+                "ru": "язык",
+                "en": "tongue"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koʻz bilan nimalarni bilamiz?",
+        "ru": "Что мы узнаём глазами?",
+        "en": "What do we learn with our eyes?"
+      },
+      "hint": {
+        "uz": "Rangmi, tovushmi?",
+        "ru": "Цвет или звук?",
+        "en": "Colour or sound?"
+      },
+      "explanation": {
+        "uz": "Koʻz rang, shakl va hajmni biladi.",
+        "ru": "Глаз узнаёт цвет, форму и размер.",
+        "en": "Eyes tell colour, shape and size."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "rang, shakl, hajm",
+              "ru": "цвет, форму, размер",
+              "en": "colour, shape, size"
+            },
+            {
+              "uz": "tovush",
+              "ru": "звук",
+              "en": "sound"
+            },
+            {
+              "uz": "hid",
+              "ru": "запах",
+              "en": "smell"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Rangni nomi bilan juftla!",
+        "ru": "Соедини цвет с названием!",
+        "en": "Match the colour to its name!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab rangni ayt.",
+        "ru": "Назови цвет по картинке.",
+        "en": "Name the colour."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": {
+                  "uz": "qizil",
+                  "ru": "красный",
+                  "en": "red"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍋"
+              },
+              "b": {
+                "label": {
+                  "uz": "sariq",
+                  "ru": "жёлтый",
+                  "en": "yellow"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🥒"
+              },
+              "b": {
+                "label": {
+                  "uz": "yashil",
+                  "ru": "зелёный",
+                  "en": "green"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani rangi bilan ula!",
+        "ru": "Соедини предмет с его цветом!",
+        "en": "Match each thing to its colour!"
+      },
+      "hint": {
+        "uz": "Narsaning rangiga qara.",
+        "ru": "Смотри на цвет.",
+        "en": "Look at the colour."
+      },
+      "explanation": {
+        "uz": "Barcha ranglarni topding!",
+        "ru": "Ты нашёл все цвета!",
+        "en": "You found all the colours!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🍅"
+              },
+              "right": {
+                "label": {
+                  "uz": "qizil",
+                  "ru": "красный",
+                  "en": "red"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🌽"
+              },
+              "right": {
+                "label": {
+                  "uz": "sariq",
+                  "ru": "жёлтый",
+                  "en": "yellow"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🥒"
+              },
+              "right": {
+                "label": {
+                  "uz": "yashil",
+                  "ru": "зелёный",
+                  "en": "green"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koʻzimizni yumsak, rangni koʻra olmaymiz.",
+        "ru": "Закрыв глаза, мы не видим цвет.",
+        "en": "With eyes shut we cannot see colour."
+      },
+      "hint": {
+        "uz": "Koʻzingni yumib koʻr.",
+        "ru": "Закрой глаза и проверь.",
+        "en": "Close your eyes and check."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Koʻrish uchun koʻz kerak.",
+        "ru": "Верно! Для зрения нужны глаза.",
+        "en": "True! We need eyes to see."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👀",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (koʻrishga yordam bermaydi)",
+        "ru": "Нажми лишнее! (не помогает видеть)",
+        "en": "Tap the odd one! (not for seeing)"
+      },
+      "hint": {
+        "uz": "Qaysi biri eshitish uchun?",
+        "ru": "Что для слуха?",
+        "en": "Which one is for hearing?"
+      },
+      "explanation": {
+        "uz": "Quloq — eshitish aʼzosi, koʻrish emas.",
+        "ru": "Ухо — для слуха, не для зрения.",
+        "en": "The ear is for hearing, not seeing."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "koʻrishga yordam beradi",
+            "ru": "помогают видеть",
+            "en": "help us see"
+          },
+          "tiles": [
+            {
+              "text": "koʻz"
+            },
+            {
+              "text": "koʻzoynak"
+            },
+            {
+              "text": "durbin"
+            },
+            {
+              "text": "quloq",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koʻrishga yordam beradigan narsalarni belgila!",
+        "ru": "Отметь, что помогает видеть!",
+        "en": "Tap what helps us see!"
+      },
+      "hint": {
+        "uz": "Koʻzga yordam beradiganlar.",
+        "ru": "То, что помогает глазам.",
+        "en": "Things that help the eyes."
+      },
+      "explanation": {
+        "uz": "Ular koʻrishga yordam beradi.",
+        "ru": "Они помогают видеть.",
+        "en": "They help us see."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👓",
+              "label": {
+                "uz": "koʻzoynak",
+                "ru": "очки",
+                "en": "glasses"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🔭",
+              "label": {
+                "uz": "durbin",
+                "ru": "телескоп",
+                "en": "telescope"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🔍",
+              "label": {
+                "uz": "lupa",
+                "ru": "лупа",
+                "en": "magnifier"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "уши",
+                "en": "ears"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Uni koʻzga taqadilar.",
+        "ru": "Их надевают на глаза.",
+        "en": "They are worn on the eyes."
+      },
+      "explanation": {
+        "uz": "Javob — koʻzoynak!",
+        "ru": "Ответ — очки!",
+        "en": "The answer is glasses!"
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Ikki koʻzi bor,",
+              "ru": "Два стёклышка,",
+              "en": "Two little glasses,"
+            },
+            {
+              "uz": "Koʻrishga yordam berar.",
+              "ru": "помогают видеть.",
+              "en": "they help you see."
+            }
+          ],
+          "options": [
+            {
+              "emoji": "👓",
+              "label": {
+                "uz": "koʻzoynak",
+                "ru": "очки",
+                "en": "glasses"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "👀",
+              "label": {
+                "uz": "koʻz",
+                "ru": "глаза",
+                "en": "eyes"
+              }
+            },
+            {
+              "emoji": "📖",
+              "label": {
+                "uz": "kitob",
+                "ru": "книга",
+                "en": "book"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Televizor koʻrganda qaysi aʼzolar ishlaydi?",
+        "ru": "Какие органы работают при просмотре ТВ?",
+        "en": "Which organs work when watching TV?"
+      },
+      "hint": {
+        "uz": "Koʻrasan va eshitasan.",
+        "ru": "Смотришь и слушаешь.",
+        "en": "You watch and listen."
+      },
+      "explanation": {
+        "uz": "Koʻz va quloq birga ishlaydi.",
+        "ru": "Работают глаза и уши.",
+        "en": "Eyes and ears work together."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "koʻz va quloq",
+              "ru": "глаза и уши",
+              "en": "eyes and ears"
+            },
+            {
+              "uz": "faqat burun",
+              "ru": "только нос",
+              "en": "only the nose"
+            },
+            {
+              "uz": "faqat til",
+              "ru": "только язык",
+              "en": "only the tongue"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koʻz — bu qanday aʼzo?",
+        "ru": "Глаз — какой это орган?",
+        "en": "The eye is an organ of what?"
+      },
+      "hint": {
+        "uz": "Koʻz nima qiladi?",
+        "ru": "Что делает глаз?",
+        "en": "What does the eye do?"
+      },
+      "explanation": {
+        "uz": "Koʻz — koʻrish aʼzosi.",
+        "ru": "Глаз — орган зрения.",
+        "en": "The eye is for seeing."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "koʻrish",
+              "ru": "зрение",
+              "en": "seeing"
+            },
+            {
+              "uz": "eshitish",
+              "ru": "слух",
+              "en": "hearing"
+            },
+            {
+              "uz": "hidlash",
+              "ru": "обоняние",
+              "en": "smelling"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

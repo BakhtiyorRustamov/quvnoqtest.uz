@@ -1,0 +1,158 @@
+{
+  "topicId": "g1-oqish-27",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🌷💗🍞",
+  "title": {
+    "uz": "Onajonim, mehribonim",
+    "ru": "Мамочка, милая моя",
+    "en": "My dear, kind mother"
+  },
+  "recall": {
+    "uz": "Ona haqidagi sheʼrni tinglab oʻqiymiz, «Ona» soʻziga sinkveyn tuzamiz va onaga yordam beradigan ishlarni topamiz.",
+    "ru": "Слушаем стихотворение о маме, составляем синквейн к слову «мама» и находим, чем помочь маме.",
+    "en": "We read a poem about mother, build a cinquain for the word “mother”, and find ways to help her."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Onajonim",
+        "variant": "poem",
+        "audio": "g1-oqish-27-q1",
+        "lines": [
+          "Onam mehri — quyoshdek,",
+          "Doim yorugʻ, mehribon.",
+          "Ertalab non yopadi,",
+          "Bizni kutar dasturxon.",
+          "",
+          "Onajonim qoʻllari",
+          "Mehr bilan mehnat qilar.",
+          "Uning issiq duosi",
+          "Bizga baxtlar keltirar."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Onaning mehri nimaga oʻxshatilgan?", "ru": "С чем сравнивается любовь мамы?", "en": "What is a mother's love compared to?" },
+      "explanation": { "uz": "Sheʼr onaning mehri va gʻamxoʻrligi haqida.", "ru": "Стихотворение о любви и заботе мамы.", "en": "The poem is about a mother's love and care." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "cinquain", "props": {
+        "topic": { "uz": "Ona", "ru": "Мама", "en": "Mother" },
+        "lines": [
+          { "label": { "uz": "Qanday?", "ru": "Какая?", "en": "What is she like?" }, "need": 2, "bank": ["mehribon", "gʻamxoʻr", "aqlli", "kuchli", "chiroyli"] },
+          { "label": { "uz": "Nima qiladi?", "ru": "Что делает?", "en": "What does she do?" }, "need": 3, "bank": ["mehr beradi", "ovqat pishiradi", "alla aytadi", "tarbiyalaydi", "quvontiradi"] },
+          { "label": { "uz": "Maʼnodosh soʻz", "ru": "Синоним", "en": "A synonym" }, "need": 1, "bank": ["oyi", "onajon", "volida"] }
+        ]
+      } },
+      "prompt": { "uz": "«Ona» soʻziga sinkveyn tuzing — har qatorga mos soʻzlarni tanlang!", "ru": "Составь синквейн к слову «мама» — подбери слова к каждой строке!", "en": "Build a cinquain for “mother” — pick words for each line!" },
+      "hint": { "uz": "Onani taʼriflaydigan va u qiladigan ishlar soʻzlarini tanla.", "ru": "Выбери слова, которые описывают маму и её дела.", "en": "Choose words that describe mother and what she does." },
+      "explanation": { "uz": "Sinkveyn — soʻz haqidagi kichik sheʼr: sifat, harakat va maʼnodosh soʻzlar bilan.", "ru": "Синквейн — маленькое стихотворение о слове: признаки, действия и синоним.", "en": "A cinquain is a tiny word-poem: adjectives, actions and a synonym." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrda ona ertalab non yopadi.", "ru": "В стихотворении мама печёт хлеб по утрам.", "en": "In the poem, mother bakes bread in the morning." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «Ertalab non yopadi» deyilgan.", "ru": "В стихотворении сказано, что она печёт хлеб утром.", "en": "The poem says she bakes bread in the morning." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Ona ertalab nima qiladi?", "ru": "Что мама делает утром?", "en": "What does mother do in the morning?" },
+      "explanation": { "uz": "Toʻgʻri: ona ertalab non yopadi.", "ru": "Верно: мама печёт хлеб утром.", "en": "True: mother bakes bread in the morning." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrda ona mashina haydashi aytiladi.", "ru": "В стихотворении говорится, что мама водит машину.", "en": "The poem says mother drives a car." },
+        "answer": "ng",
+        "why": { "uz": "Sheʼrda mashina haqida hech narsa yoʻq.", "ru": "В стихотворении про машину ничего нет.", "en": "The poem says nothing about a car." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Sheʼrda mashina tilga olinganmi?", "ru": "Упоминается ли машина?", "en": "Is a car mentioned?" },
+      "explanation": { "uz": "«Matnda yoʻq»: mashina haqida gap yoʻq.", "ru": "«Не сказано»: о машине речи нет.", "en": "“Not given”: no car is mentioned." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Dasturxonni yigʻishtirish", "match": true },
+        { "text": "Idishlarni yuvishga yordam", "match": true },
+        { "text": "Kichkinaga qarashish", "match": true },
+        { "text": "Xonani axlatga toʻldirish", "match": false },
+        { "text": "Baqirib janjallashish", "match": false }
+      ] } },
+      "prompt": { "uz": "Onaga qanday yordam berish mumkin? Toʻgʻrilarini bos!", "ru": "Чем можно помочь маме? Нажми верные!", "en": "How can you help mother? Tap the correct ones!" },
+      "hint": { "uz": "Uy ishlarida yordam berish onani xursand qiladi.", "ru": "Помощь по дому радует маму.", "en": "Helping with chores makes mother happy." },
+      "explanation": { "uz": "Dasturxon yigʻish, idish yuvish, kichkinaga qarash — yaxshi yordam.", "ru": "Убрать со стола, помыть посуду, присмотреть за малышом — хорошая помощь.", "en": "Clearing the table, washing dishes, minding a little one are good help." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "sevalamoq", "right": "tomchilatib sepmoq" },
+        { "left": "gumbaz", "right": "yarim shar shaklidagi tom" },
+        { "left": "mehribon", "right": "gʻamxoʻr, mehrli" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«mehribon» — mehrli, gʻamxoʻr.", "ru": "«mehribon» — заботливый, ласковый.", "en": "“mehribon” means kind, caring." },
+      "explanation": { "uz": "sevalamoq = tomchilatib sepmoq; gumbaz = yarim shar tom; mehribon = gʻamxoʻr.", "ru": "sevalamoq = сбрызгивать; gumbaz = купол; mehribon = заботливый.", "en": "sevalamoq = to sprinkle; gumbaz = a dome; mehribon = caring." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Mehribon va gʻamxoʻr", "ru": "Заботливая и любящая", "en": "Kind and caring" },
+        { "uz": "Qattiqqoʻl va jahldor", "ru": "Строгая и сердитая", "en": "Harsh and angry" },
+        { "uz": "Beparvo va dangasa", "ru": "Беспечная и ленивая", "en": "Careless and lazy" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Sheʼrga koʻra ona qanday inson?", "ru": "Какая мама по стихотворению?", "en": "What is mother like, according to the poem?" },
+      "hint": { "uz": "Onaning mehri quyoshga oʻxshatilgan.", "ru": "Любовь мамы сравнивается с солнцем.", "en": "Mother's love is compared to the sun." },
+      "explanation": { "uz": "Ona — mehribon, gʻamxoʻr va mehnatkash inson.", "ru": "Мама — заботливая, любящая и трудолюбивая.", "en": "Mother is kind, caring and hard-working." },
+      "openEnd": { "uz": "«Mening onam» — onang haqida bir gap ayt.", "ru": "«Моя мама» — скажи одно предложение о своей маме.", "en": "“My mother” — say one sentence about your mother." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Ona", "duosi", "—", "bebaho."], "emoji": "💛", "clue": { "uz": "Ona haqidagi hikmat", "ru": "Мудрость о маме", "en": "A saying about mother" } } },
+      "prompt": { "uz": "Soʻzlardan hikmatli gap tuzing!", "ru": "Составь мудрое предложение из слов!", "en": "Build the wise sentence from the words!" },
+      "hint": { "uz": "Gap «Ona» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Ona».", "en": "The sentence starts with “Ona”." },
+      "explanation": { "uz": "«Ona duosi — bebaho»: onaning duosi hech narsaga tenglashmaydi.", "ru": "«Молитва мамы — бесценна»: ничто с ней не сравнится.", "en": "“A mother's blessing is priceless”: nothing compares to it." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "ona" },
+        { "text": "ota" },
+        { "text": "buvi" },
+        { "text": "stol", "odd": true }
+      ], "clue": { "uz": "Qaysi biri oila aʼzosi emas?", "ru": "Кто из них не член семьи?", "en": "Which one is not a family member?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi oila aʼzosi, biri esa mebel.", "ru": "Три — члены семьи, одно — мебель.", "en": "Three are family members, one is furniture." },
+      "explanation": { "uz": "Stol — mebel; ona, ota, buvi esa oila aʼzolari.", "ru": "Стол — мебель; мама, папа, бабушка — семья.", "en": "A table is furniture; mother, father, grandmother are family." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "mehribon", "syllables": ["meh", "ri", "bon"], "emoji": "💗", "clue": { "uz": "Onaning eng yaxshi sifati", "ru": "Лучшее качество мамы", "en": "Mother's best quality" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "meh + ri + bon = ?", "ru": "meh + ri + bon = ?", "en": "meh + ri + bon = ?" },
+      "explanation": { "uz": "meh-ri-bon → mehribon. Mehrli, gʻamxoʻr degani.", "ru": "meh-ri-bon → mehribon (заботливый).", "en": "meh-ri-bon → mehribon (kind, caring)." }
+    }
+  ]
+}

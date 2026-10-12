@@ -1,0 +1,160 @@
+{
+  "topicId": "g1-oqish-42",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "💧☁️🌧️",
+  "title": {
+    "uz": "Suv tomchisining sayohati",
+    "ru": "Путешествие капельки воды",
+    "en": "The journey of a water drop"
+  },
+  "recall": {
+    "uz": "Tabiatda suvning aylanishi haqidagi matnni tinglab oʻqiymiz va bosqichlarni tartibga solamiz.",
+    "ru": "Слушаем текст о круговороте воды в природе и расставляем этапы по порядку.",
+    "en": "We read about the water cycle in nature and put its steps in order."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Tabiatda suvning aylanishi",
+        "variant": "story",
+        "audio": "g1-oqish-42-q1",
+        "lines": [
+          "Okean, dengiz va daryo yuzasi qizganda suv bugʻlanadi.",
+          "Bugʻ osmonga koʻtariladi.",
+          "Yuqorida suv zarralari birlashib, bulut hosil qiladi.",
+          "Shamol bulutlarni har tomonga tarqatadi.",
+          "Bulut ogʻirlashsa, suv pastga qaytadi.",
+          "U yerga yomgʻir, doʻl yoki qor boʻlib yogʻadi.",
+          "Suv yana daryo va koʻllarga quyiladi.",
+          "Shunday qilib, tabiatda suv aylanib turadi."
+        ]
+      } },
+      "prompt": { "uz": "Matnni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Suv qizganda nima boʻladi?", "ru": "Что происходит с водой при нагреве?", "en": "What happens to water when it heats up?" },
+      "explanation": { "uz": "Matn tabiatda suvning aylanishi — bugʻlanish, bulut va yogʻin haqida.", "ru": "Текст о круговороте воды: испарение, облака и осадки.", "en": "The text is about the water cycle: evaporation, clouds and precipitation." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Suv yuzasi qizib, bugʻlanadi.", "ru": "Вода нагревается и испаряется.", "en": "The water heats up and evaporates." } },
+        { "text": { "uz": "Bugʻ osmonga koʻtariladi.", "ru": "Пар поднимается в небо.", "en": "The vapour rises into the sky." } },
+        { "text": { "uz": "Suv zarralari birlashib, bulut hosil qiladi.", "ru": "Капельки соединяются в облако.", "en": "Droplets join into a cloud." } },
+        { "text": { "uz": "Yomgʻir yoki qor boʻlib yogʻadi.", "ru": "Выпадает дождём или снегом.", "en": "It falls as rain or snow." } },
+        { "text": { "uz": "Suv daryo va koʻllarga quyiladi.", "ru": "Вода стекает в реки и озёра.", "en": "The water flows into rivers and lakes." } }
+      ] } },
+      "prompt": { "uz": "Suvning aylanish bosqichlarini tartibga soling!", "ru": "Расставь этапы круговорота воды по порядку!", "en": "Put the steps of the water cycle in order!" },
+      "hint": { "uz": "Avval suv bugʻlanadi…", "ru": "Сначала вода испаряется…", "en": "First the water evaporates…" },
+      "explanation": { "uz": "Bugʻlanish → koʻtarilish → bulut → yogʻin → daryoga quyilish.", "ru": "Испарение → подъём → облако → осадки → в реки.", "en": "Evaporation → rising → cloud → rain/snow → into rivers." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Suv qizganda bugʻlanadi.", "ru": "При нагреве вода испаряется.", "en": "Water evaporates when it heats up." },
+        "answer": "true",
+        "why": { "uz": "Matnda «suv yuzasi qizganda bugʻlanadi» deyilgan.", "ru": "В тексте сказано, что при нагреве вода испаряется.", "en": "The text says water evaporates when heated." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Quyosh suvni qizdirsa nima boʻladi?", "ru": "Что происходит, когда солнце нагревает воду?", "en": "What happens when the sun heats water?" },
+      "explanation": { "uz": "Toʻgʻri: qizigan suv bugʻlanadi.", "ru": "Верно: нагретая вода испаряется.", "en": "True: heated water evaporates." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Bulutlar shakardan yasaladi.", "ru": "Облака делают из сахара.", "en": "Clouds are made of sugar." },
+        "answer": "false",
+        "why": { "uz": "Aksincha, bulut suv zarralaridan hosil boʻladi.", "ru": "Наоборот, облако образуется из капелек воды.", "en": "On the contrary, a cloud forms from water droplets." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Bulut nimadan hosil boʻladi?", "ru": "Из чего образуется облако?", "en": "What is a cloud made of?" },
+      "explanation": { "uz": "Notoʻgʻri: bulut suv zarralaridan hosil boʻladi.", "ru": "Неверно: облако из капелек воды.", "en": "False: a cloud forms from water droplets." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "okean", "right": "eng katta suv havzasi" },
+        { "left": "par", "right": "bugʻning umumiy koʻrinishi" },
+        { "left": "bugʻlanmoq", "right": "parga aylanmoq" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«okean» — eng katta suv havzasi.", "ru": "«okean» — самый большой водоём.", "en": "“okean” is the largest body of water." },
+      "explanation": { "uz": "okean = katta suv havzasi; par = bugʻ koʻrinishi; bugʻlanmoq = parga aylanmoq.", "ru": "okean = океан; par = пар; bugʻlanmoq = испаряться.", "en": "okean = an ocean; par = vapour; bugʻlanmoq = to evaporate." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "yomgʻir", "match": true },
+        { "text": "qor", "match": true },
+        { "text": "doʻl", "match": true },
+        { "text": "shamol", "match": false },
+        { "text": "chang", "match": false }
+      ] } },
+      "prompt": { "uz": "Bulutdan yogʻadigan yogʻin turlarini bos!", "ru": "Нажми виды осадков из облаков!", "en": "Tap the kinds of precipitation that fall from clouds!" },
+      "hint": { "uz": "Bulutdan suv qanday koʻrinishda tushadi?", "ru": "В каком виде вода падает из облаков?", "en": "In what form does water fall from clouds?" },
+      "explanation": { "uz": "Yomgʻir, qor, doʻl — yogʻin turlari; shamol va chang — yoʻq.", "ru": "Дождь, снег, град — осадки; ветер и пыль — нет.", "en": "Rain, snow, hail are precipitation; wind and dust are not." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Bugʻlanadi, bulut boʻladi va yomgʻir boʻlib yogʻadi", "ru": "Испаряется, становится облаком и выпадает дождём", "en": "It evaporates, becomes a cloud and falls as rain" },
+        { "uz": "Bir joyda qimirlamay turadi", "ru": "Стоит на месте без движения", "en": "It stays still in one place" },
+        { "uz": "Toshga aylanib qoladi", "ru": "Превращается в камень", "en": "It turns into stone" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Tabiatda suv qanday aylanadi?", "ru": "Как вода движется в природе?", "en": "How does water move in nature?" },
+      "hint": { "uz": "Bugʻlanish → bulut → yogʻin.", "ru": "Испарение → облако → осадки.", "en": "Evaporation → cloud → rain." },
+      "explanation": { "uz": "Suv bugʻlanadi, bulutga aylanadi va yomgʻir boʻlib yerga qaytadi.", "ru": "Вода испаряется, становится облаком и возвращается дождём.", "en": "Water evaporates, becomes a cloud and returns as rain." },
+      "openEnd": { "uz": "Suvni tejash uchun sen nima qila olasan?", "ru": "Что ты можешь сделать, чтобы беречь воду?", "en": "What can you do to save water?" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Suv qizsa ", "after": "ga aylanadi.", "choices": ["bugʻ", "muz", "tosh"], "answer": "bugʻ", "emoji": "♨️", "clue": { "uz": "Suvning aylanishi", "ru": "Круговорот воды", "en": "The water cycle" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Issiq suv koʻtariladi va koʻrinmas boʻladi.", "ru": "Горячая вода поднимается и становится невидимой.", "en": "Hot water rises and becomes invisible." },
+      "explanation": { "uz": "Suv qizsa bugʻga aylanib, osmonga koʻtariladi.", "ru": "Нагреваясь, вода превращается в пар и поднимается.", "en": "When heated, water turns to vapour and rises." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Bulut ogʻirlashsa, suv" },
+          { "blank": "yomgʻir" },
+          { "text": "boʻlib" },
+          { "blank": "yerga" },
+          { "text": "qaytadi." }
+        ],
+        "bank": ["yomgʻir", "yerga", "osmonga"]
+      } },
+      "prompt": { "uz": "Soʻzni tanlab, boʻsh joyga qoʻying!", "ru": "Выбери слово и вставь в пропуск!", "en": "Pick a word and fill each gap!" },
+      "hint": { "uz": "Ogʻir bulutdan suv pastga tushadi.", "ru": "Из тяжёлого облака вода падает вниз.", "en": "From a heavy cloud, water falls down." },
+      "explanation": { "uz": "«Bulut ogʻirlashsa, suv yomgʻir boʻlib yerga qaytadi».", "ru": "«Когда облако тяжелеет, вода возвращается дождём на землю».", "en": "“When a cloud grows heavy, water returns to the ground as rain.”" }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "yomgʻir", "syllables": ["yom", "gʻir"], "emoji": "🌧️", "clue": { "uz": "Bulutdan tomchilab yogʻadigan suv", "ru": "Вода, что капает из облака", "en": "Water that drips from a cloud" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "yom + gʻir = ?", "ru": "yom + gʻir = ?", "en": "yom + gʻir = ?" },
+      "explanation": { "uz": "yom-gʻir → yomgʻir. Bulutdan yogʻadigan suv.", "ru": "yom-gʻir → yomgʻir (дождь).", "en": "yom-gʻir → yomgʻir (rain)." }
+    }
+  ]
+}

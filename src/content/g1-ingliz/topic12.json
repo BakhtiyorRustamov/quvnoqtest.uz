@@ -1,0 +1,135 @@
+{
+  "topicId": "g1-ingliz-12",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🔬🌳🔑🥛",
+  "title": { "uz": "Fan: nimadan yasalgan?", "ru": "Наука: из чего сделано?", "en": "Science: what material?" },
+  "recall": {
+    "uz": "Kashfiyot darsi (fan)! Buyumlar turli materialdan yasaladi: wood — yogʻoch, metal — metall, glass — shisha, plastic — plastmassa.",
+    "ru": "Урок-открытие (наука)! Предметы делают из разных материалов: wood — дерево, metal — металл, glass — стекло, plastic — пластик.",
+    "en": "Discovery lesson (science)! Things are made of different materials: wood, metal, glass and plastic."
+  },
+  "ttsText": { "uz": "Nimadan yasalgan?", "en": "Science! What material is it? Wood, metal, glass or plastic?" },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Yogʻochdan yasalgan narsani bos!", "ru": "Нажми деревянный предмет!", "en": "Tap the thing made of wood!" },
+      "audio": { "key": "ing12-q1", "text": "Wood! A pencil is made of wood.", "voice": "teacher" },
+      "hint": { "uz": "«wood» — yogʻoch. Qalam yogʻochdan.", "ru": "«wood» — дерево. Карандаш из дерева.", "en": "\"wood\" — a pencil is made of wood." },
+      "explanation": { "uz": "Toʻgʻri! Qalam — yogʻochdan.", "ru": "Верно! Карандаш из дерева.", "en": "Right! A pencil is wood." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "✏️", "label": "pencil (wood)", "correct": true },
+        { "emoji": "🥛", "label": "glass" },
+        { "emoji": "🔑", "label": "key" }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Shishadan yasalgan narsani bos!", "ru": "Нажми стеклянный предмет!", "en": "Tap the thing made of glass!" },
+      "audio": { "key": "ing12-q2", "text": "Glass! A cup can be made of glass.", "voice": "girl" },
+      "hint": { "uz": "«glass» — shisha.", "ru": "«glass» — стекло.", "en": "\"glass\" is clear and shiny." },
+      "explanation": { "uz": "Toʻgʻri! Stakan — shishadan.", "ru": "Верно! Стакан из стекла.", "en": "Right! A glass!" },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "🥛", "label": "glass", "correct": true },
+        { "emoji": "✏️", "label": "pencil" },
+        { "emoji": "🔑", "label": "key" }
+      ] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Metalldan yasalgan narsani bos!", "ru": "Нажми металлический предмет!", "en": "Tap the thing made of metal!" },
+      "audio": { "key": "ing12-q3", "text": "Metal! A key is made of metal.", "voice": "man" },
+      "hint": { "uz": "«metal» — metall. Kalit metalldan.", "ru": "«metal» — металл. Ключ из металла.", "en": "\"metal\" — a key is made of metal." },
+      "explanation": { "uz": "Toʻgʻri! Kalit — metalldan.", "ru": "Верно! Ключ из металла.", "en": "Right! A key is metal." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "🔑", "label": "key (metal)", "correct": true },
+        { "emoji": "🌳", "label": "tree" },
+        { "emoji": "🥛", "label": "glass" }
+      ] } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Buyumlarni materialiga qarab ajrat!", "ru": "Разложи предметы по материалу!", "en": "Sort the things by their material!" },
+      "hint": { "uz": "Yogʻoch, metall, shisha.", "ru": "Дерево, металл, стекло.", "en": "Wood, metal, glass." },
+      "explanation": { "uz": "Barakalla! Har buyum oʻz materialida.", "ru": "Молодец! Каждый предмет по материалу.", "en": "Great! Each thing by its material!" },
+      "widget": { "type": "sort_bins", "props": {
+        "bins": [
+          { "id": "w", "label": { "uz": "Yogʻoch", "ru": "Дерево", "en": "Wood" } },
+          { "id": "m", "label": { "uz": "Metall", "ru": "Металл", "en": "Metal" } },
+          { "id": "g", "label": { "uz": "Shisha", "ru": "Стекло", "en": "Glass" } }
+        ],
+        "items": [
+          { "emoji": "✏️", "label": "pencil", "bin": "w" },
+          { "emoji": "🚪", "label": "door", "bin": "w" },
+          { "emoji": "🔑", "label": "key", "bin": "m" },
+          { "emoji": "🥄", "label": "spoon", "bin": "m" },
+          { "emoji": "🥛", "label": "glass", "bin": "g" },
+          { "emoji": "🔍", "label": "lens", "bin": "g" }
+        ] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Yogʻoch nimadan olinadi?", "ru": "Откуда берут дерево?", "en": "Where does wood come from?" },
+      "hint": { "uz": "Oʻrmonda oʻsadi.", "ru": "Растёт в лесу.", "en": "It grows in a forest." },
+      "explanation": { "uz": "Toʻgʻri! Yogʻoch daraxtdan.", "ru": "Верно! Дерево из деревьев.", "en": "Right! Wood comes from trees." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "daraxtdan", "ru": "из деревьев", "en": "from trees" },
+        { "uz": "metalldan", "ru": "из металла", "en": "from metal" },
+        { "uz": "shishadan", "ru": "из стекла", "en": "from glass" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Ichadigan naycha koʻpincha nimadan?", "ru": "Из чего чаще делают трубочку для питья?", "en": "A drinking straw is often made of …?" },
+      "hint": { "uz": "Yengil va egiluvchan material.", "ru": "Лёгкий и гибкий материал.", "en": "A light, bendy material." },
+      "explanation": { "uz": "Toʻgʻri! Plastic — plastmassa.", "ru": "Верно! Plastic — пластик.", "en": "Right! Plastic!" },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "plastmassa", "ru": "пластик", "en": "plastic" },
+        { "uz": "yogʻoch", "ru": "дерево", "en": "wood" },
+        { "uz": "shisha", "ru": "стекло", "en": "glass" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Materialni oʻz buyumiga ula!", "ru": "Соедини материал с предметом!", "en": "Match each material to its object!" },
+      "hint": { "uz": "wood — qalam, metal — kalit, glass — stakan.", "ru": "wood — карандаш, metal — ключ, glass — стакан.", "en": "wood — pencil, metal — key, glass — cup." },
+      "explanation": { "uz": "Barakalla! Materiallarni bilding!", "ru": "Молодец! Ты знаешь материалы!", "en": "Great! You know the materials!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "label": "wood" }, "right": { "emoji": "✏️" } },
+        { "left": { "label": "metal" }, "right": { "emoji": "🔑" } },
+        { "left": { "label": "glass" }, "right": { "emoji": "🥛" } }
+      ] } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Kalit metalldan yasaladi.", "ru": "Верно? Ключ сделан из металла.", "en": "Is this right? A key is made of metal." },
+      "hint": { "uz": "Kalitni ushlab koʻr — qattiq va sovuq.", "ru": "Потрогай ключ — твёрдый и холодный.", "en": "A key feels hard and cold." },
+      "explanation": { "uz": "Toʻgʻri! Kalit — metall.", "ru": "Верно! Ключ — металл.", "en": "Right! A key is metal." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔑", "answer": true } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Metalldan yasalgan hamma narsani belgila!", "ru": "Отметь всё из металла!", "en": "Tap everything made of metal!" },
+      "hint": { "uz": "Kalit, qoshiq, kalit-ochqich.", "ru": "Ключ, ложка, гаечный ключ.", "en": "Key, spoon, wrench." },
+      "explanation": { "uz": "Barakalla! Kalit, qoshiq, kalit-ochqich — metall!", "ru": "Молодец! Ключ, ложка, ключ — металл!", "en": "Great! Key, spoon, wrench — metal!" },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "c0", "emoji": "🔑", "label": "key", "correct": true },
+        { "id": "c1", "emoji": "🥄", "label": "spoon", "correct": true },
+        { "id": "c2", "emoji": "🔧", "label": "wrench", "correct": true },
+        { "id": "d0", "emoji": "✏️", "label": "pencil" },
+        { "id": "d1", "emoji": "🥛", "label": "glass" }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«wood»ning tarjimasi nima?", "ru": "Что значит «wood»?", "en": "What does \"wood\" mean?" },
+      "hint": { "uz": "Daraxtdan olinadi.", "ru": "Берут из дерева.", "en": "It comes from trees." },
+      "explanation": { "uz": "Toʻgʻri! Wood — yogʻoch.", "ru": "Верно! Wood — дерево.", "en": "Right! Wood!" },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "yogʻoch", "ru": "дерево", "en": "wood" },
+        { "uz": "metall", "ru": "металл", "en": "metal" },
+        { "uz": "shisha", "ru": "стекло", "en": "glass" }
+      ], "answerIndex": 0 } }
+    }
+  ]
+}

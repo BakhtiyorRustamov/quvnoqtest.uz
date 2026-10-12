@@ -1,0 +1,510 @@
+{
+  "topicId": "g1-alifbe-22",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🐋☀️🎬",
+  "title": {
+    "uz": "«K k» — oʻqish mashqi",
+    "ru": "Буква «K k» — чтение",
+    "en": "Letter “K k” — reading"
+  },
+  "recall": {
+    "uz": "«K» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: kit, kun, kino. «K» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «K». Теперь читаем слова: kit, kun, kino. «K» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “K”. Now we read words: kit, kun, kino. “K” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐋 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🐋 Прочитай и нажми верно написанное слово!",
+        "en": "🐋 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «kit».",
+        "ru": "Прочитай: «kit».",
+        "en": "Read it: “kit”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «kit».",
+        "ru": "Верно — «kit».",
+        "en": "Correct — “kit”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🐋",
+          "options": [
+            {
+              "id": "ok",
+              "word": "kit",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "git"
+            },
+            {
+              "id": "w2",
+              "word": "kid"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «kit» soʻzini tuz!",
+        "ru": "Составь слово «kit»!",
+        "en": "Build the word “kit”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «kit» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «kit».",
+        "en": "Great! You read “kit”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🐋",
+          "word": "kit",
+          "label": {
+            "uz": "kit",
+            "ru": "кит",
+            "en": "whale"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐋 «kit»da «k» tovushi qaysi katakchada?",
+        "ru": "🐋 В какой клетке звук «k» в слове «kit»?",
+        "en": "🐋 Which box has the “k” sound in “kit”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«kit»da «k» tovushi toʻgʻri joyda.",
+        "ru": "В «kit» звук «k» на верном месте.",
+        "en": "In “kit” the “k” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🐋",
+          "word": {
+            "uz": "kit",
+            "ru": "kit",
+            "en": "kit"
+          },
+          "sound": "k",
+          "cells": [
+            "k",
+            "i",
+            "t"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🎬 «kino» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🎬 Похлопай слово «kino» по слогам!",
+        "en": "🎬 Clap the word “kino” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«kino» — 2 boʻgʻin.",
+        "ru": "«kino» — 2 слога.",
+        "en": "“kino” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🎬",
+          "word": {
+            "uz": "kino",
+            "ru": "kino",
+            "en": "kino"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«K» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «K»!",
+        "en": "Tap the words that have the “K” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «k» tovushi bor.",
+        "ru": "Верно! В них есть звук «k».",
+        "en": "Right! They have the “k” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐋",
+              "label": {
+                "uz": "kit",
+                "ru": "kit",
+                "en": "kit"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "☀️",
+              "label": {
+                "uz": "kun",
+                "ru": "kun",
+                "en": "kun"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🎬",
+              "label": {
+                "uz": "kino",
+                "ru": "kino",
+                "en": "kino"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«kit» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «kit». Найди картинку!",
+        "en": "Read “kit”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«kit» — 🐋.",
+        "ru": "«kit» — 🐋.",
+        "en": "“kit” is 🐋."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🐋",
+              "label": {
+                "uz": "kit",
+                "ru": "кит",
+                "en": "whale"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "☀️",
+              "label": {
+                "uz": "kun",
+                "ru": "kun",
+                "en": "kun"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🎬",
+              "label": {
+                "uz": "kino",
+                "ru": "kino",
+                "en": "kino"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🐋"
+              },
+              "right": {
+                "label": {
+                  "uz": "kit",
+                  "ru": "kit",
+                  "en": "kit"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "☀️"
+              },
+              "right": {
+                "label": {
+                  "uz": "kun",
+                  "ru": "kun",
+                  "en": "kun"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🎬"
+              },
+              "right": {
+                "label": {
+                  "uz": "kino",
+                  "ru": "kino",
+                  "en": "kino"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Kim … kit.",
+        "ru": "Составь предложение: Kim … kit.",
+        "en": "Order the words: Kim … kit."
+      },
+      "hint": {
+        "uz": "Kim — ana — kit.",
+        "ru": "Kim — ana — kit.",
+        "en": "Kim — ana — kit."
+      },
+      "explanation": {
+        "uz": "«Kim ana kit.» — gap oʻqiding!",
+        "ru": "«Kim ana kit.» — предложение!",
+        "en": "“Kim ana kit.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Kim",
+                "ru": "Kim",
+                "en": "Kim"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "ana",
+                "ru": "ana",
+                "en": "ana"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "kit",
+                "ru": "kit",
+                "en": "kit"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐋"
+              },
+              "b": {
+                "label": {
+                  "uz": "kit",
+                  "ru": "kit",
+                  "en": "kit"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "☀️"
+              },
+              "b": {
+                "label": {
+                  "uz": "kun",
+                  "ru": "kun",
+                  "en": "kun"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎬"
+              },
+              "b": {
+                "label": {
+                  "uz": "kino",
+                  "ru": "kino",
+                  "en": "kino"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«kit» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «kit»?",
+        "en": "How many sounds are in “kit”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«kit»da 3 ta tovush bor.",
+        "ru": "В «kit» 3 звука.",
+        "en": "“kit” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

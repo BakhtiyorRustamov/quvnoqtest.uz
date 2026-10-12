@@ -1,0 +1,18 @@
+{
+  "topicId": "g1-art-09", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Hosil yigʻim-terimi", "ru": "Сбор урожая", "en": "Harvest time" },
+  "recall": {
+    "uz": "Kuzda dalalar va bogʻlardan moʻl hosil yigʻiladi: olma, uzum, qovoq va sabzavotlar. Keling, hosil savatchasini rang-barang boʻyaymiz.",
+    "ru": "Осенью с полей и садов собирают богатый урожай: яблоки, виноград, тыкву и овощи. Давай раскрасим корзину с урожаем.",
+    "en": "In autumn a rich harvest is gathered from fields and gardens: apples, grapes, pumpkins and vegetables. Let's colour the harvest basket."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Hosil savatchasini rang-barang boʻya.", "ru": "Раскрась корзину с урожаем.", "en": "Colour the harvest basket." },
+      "hint": { "uz": "Olma, uzum va qovoqni turli ranglarga boʻya.", "ru": "Раскрась яблоки, виноград и тыкву разными цветами.", "en": "Colour the apples, grapes and pumpkin in different colours." },
+      "explanation": { "uz": "Barakalla! Moʻl hosil!", "ru": "Молодец! Богатый урожай!", "en": "Great! A rich harvest!" },
+      "widget": { "type": "color_sheet", "props": { "sheet": "harvest" } }
+    }
+  ]
+}

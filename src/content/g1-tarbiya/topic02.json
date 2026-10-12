@@ -1,0 +1,219 @@
+{
+  "topicId": "g1-tarbiya-02",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🙋😊🌱🏫",
+  "title": {
+    "uz": "Men kimman?",
+    "ru": "Кто я?",
+    "en": "Who am I?"
+  },
+  "recall": {
+    "uz": "Har bir inson oʻziga xosdir. Biz oʻzimizni tanishtiramiz: ismimiz, yoshimiz va sevimli mashgʻulotimizni aytamiz. Yaxshi bola oilaga yordam beradi va doʻstlar orttiradi.",
+    "ru": "Каждый человек особенный. Мы представляемся: называем имя, возраст и любимое занятие. Хороший ребёнок помогает семье и заводит друзей.",
+    "en": "Every person is special. We introduce ourselves: we tell our name, our age and our favourite hobby. A good child helps the family and makes friends."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻzingizni tanishtiring: ismingiz, yoshingiz va sevimli mashgʻulotingiz nima?",
+        "ru": "Представься: как тебя зовут, сколько тебе лет и любимое занятие?",
+        "en": "Introduce yourself: your name, your age and your favourite hobby?"
+      },
+      "hint": {
+        "uz": "«Mening ismim ...» deb boshla.",
+        "ru": "Начни со слов «Меня зовут ...».",
+        "en": "Start with \"My name is ...\"."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen oʻzingni chiroyli tanishtirding.",
+        "ru": "Отлично! Ты хорошо представился.",
+        "en": "Great! You introduced yourself nicely."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Mening ismim Ali. Men 7 yoshdaman. Men rasm chizishni va kitob oʻqishni yaxshi koʻraman.",
+            "ru": "Меня зовут Али. Мне 7 лет. Я люблю рисовать и читать книги.",
+            "en": "My name is Ali. I am 7 years old. I love drawing and reading books."
+          },
+          "placeholder": {
+            "uz": "Mening ismim ..., men ... yoshdaman.",
+            "ru": "Меня зовут ..., мне ... лет.",
+            "en": "My name is ..., I am ... years old."
+          },
+          "starters": [
+            {
+              "uz": "Mening ismim ..., men ... yoshdaman.",
+              "ru": "Меня зовут ..., мне ... лет.",
+              "en": "My name is ..., I am ... years old."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Nima uchun odamlar oʻzlarini tanishtiradilar?",
+        "ru": "Зачем люди представляются друг другу?",
+        "en": "Why do people introduce themselves?"
+      },
+      "hint": {
+        "uz": "Yangi doʻst orttirish uchun.",
+        "ru": "Чтобы завести новых друзей.",
+        "en": "To make new friends."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bir-birini tanish va doʻst boʻlish uchun.",
+        "ru": "Верно! Чтобы узнать друг друга и подружиться.",
+        "en": "Right! To get to know each other and become friends."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "bir-birini tanish va doʻst boʻlish uchun",
+              "ru": "чтобы узнать друг друга и подружиться",
+              "en": "to get to know each other and be friends"
+            },
+            {
+              "uz": "urishish uchun",
+              "ru": "чтобы поссориться",
+              "en": "to fight"
+            },
+            {
+              "uz": "yashirinish uchun",
+              "ru": "чтобы спрятаться",
+              "en": "to hide"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oilaga yordam beradigan yaxshi ishlarni belgila!",
+        "ru": "Отметь добрые дела для помощи семье!",
+        "en": "Tap the good ways to help your family!"
+      },
+      "hint": {
+        "uz": "Gul sugʻorish, idish yigʻish, chiqindi tashlash.",
+        "ru": "Полить цветы, убрать посуду, вынести мусор.",
+        "en": "Water the plants, tidy the dishes, take out the trash."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bular oilaga chin yordam.",
+        "ru": "Молодец! Это настоящая помощь семье.",
+        "en": "Great! Those really help the family."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌱",
+              "label": {
+                "uz": "gul sugʻorish",
+                "ru": "полить цветы",
+                "en": "water the plants"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍽️",
+              "label": {
+                "uz": "idish yigʻish",
+                "ru": "убрать посуду",
+                "en": "tidy the dishes"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🗑️",
+              "label": {
+                "uz": "chiqindi tashlash",
+                "ru": "вынести мусор",
+                "en": "take out the trash"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "😠",
+              "label": {
+                "uz": "janjal qilish",
+                "ru": "ссориться",
+                "en": "quarrel"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "📺",
+              "label": {
+                "uz": "kun boʻyi televizor",
+                "ru": "весь день телевизор",
+                "en": "watch TV all day"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Boʻsh vaqtingizda nima qilishni yoqtirasiz?",
+        "ru": "Чем ты любишь заниматься в свободное время?",
+        "en": "What do you like to do in your free time?"
+      },
+      "hint": {
+        "uz": "Oʻyin, rasm, sport, kitob — nimani sevasan?",
+        "ru": "Игры, рисование, спорт, книги — что тебе нравится?",
+        "en": "Games, drawing, sport, books — what do you enjoy?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Har kimning oʻz sevimli mashgʻuloti bor.",
+        "ru": "Отлично! У каждого своё любимое занятие.",
+        "en": "Great! Everyone has their own favourite hobby."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Boʻsh vaqtimda men futbol oʻynayman va bobom bilan bogʻda ishlayman.",
+            "ru": "В свободное время я играю в футбол и помогаю дедушке в саду.",
+            "en": "In my free time I play football and help my grandpa in the garden."
+          },
+          "placeholder": {
+            "uz": "Boʻsh vaqtimda men ...",
+            "ru": "В свободное время я ...",
+            "en": "In my free time I ..."
+          },
+          "starters": [
+            {
+              "uz": "Boʻsh vaqtimda men",
+              "ru": "В свободное время я",
+              "en": "In my free time I"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

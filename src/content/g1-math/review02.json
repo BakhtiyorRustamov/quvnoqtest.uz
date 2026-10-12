@@ -1,0 +1,39 @@
+{
+  "topicId": "g1-math-review-2",
+  "subjectKey": "g1-math",
+  "skipRecall": true,
+  "emojis": "🚤🚩➕",
+  "title": {
+    "uz": "Takrorlash oʻyini: Kemalar bellashuvi",
+    "ru": "Игра-повторение: Перетягивание буксиров",
+    "en": "Review game: Tugboat Tug-of-War"
+  },
+  "recall": {
+    "uz": "Takrorlash oʻyini. Qoʻshish va ayirishni oʻynab mashq qilamiz. Toʻgʻri javob bersang, kemang bayroqni oʻzi tomon tortadi. Diqqat, tayyor, boshladik.",
+    "ru": "Игра-повторение. Тренируем сложение и вычитание в игре. Отвечай верно — и твой кораблик тянет флажок к себе. Внимание, приготовились, поехали.",
+    "en": "A review game. We practice adding and subtracting through play. Answer right and your boat pulls the flag to your side. Ready, set, go."
+  },
+  "items": [
+    {
+      "id": "g1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tug_of_war_math", "completeOn": "finish" },
+      "prompt": {
+        "uz": "Kemalar bellashuvi: toʻgʻri javob berib, bayroqni oʻz tomoningga tort!",
+        "ru": "Перетягивание буксиров: отвечай верно и перетяни флажок на свою сторону!",
+        "en": "Tugboat tug-of-war: answer right and pull the flag to your side!"
+      },
+      "hint": {
+        "uz": "Har bir misolni diqqat bilan yechib, toʻgʻri sonni tanla.",
+        "ru": "Внимательно решай каждый пример и выбирай верное число.",
+        "en": "Solve each problem carefully and choose the correct number."
+      },
+      "explanation": {
+        "uz": "Qoʻshish va ayirishni oʻyin orqali mashq qildik. Kuchli tortganing uchun barakalla!",
+        "ru": "Мы потренировали сложение и вычитание в игре. Молодец, что тянул так сильно!",
+        "en": "We practiced addition and subtraction through a game. Well done for pulling so hard!"
+      }
+    }
+  ]
+}

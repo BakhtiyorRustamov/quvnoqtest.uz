@@ -1,0 +1,478 @@
+{
+  "topicId": "g1-alifbe-43",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🌷🎸🍚",
+  "title": {
+    "uz": "«G g» harfi",
+    "ru": "Буква «G g»",
+    "en": "The letter “G g”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «G g». U undosh tovush. «G» bilan: gul, gitara, guruch. Endi «gul» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «G g». Это согласный звук. Слова: gul, gitara, guruch. Теперь мы можем прочитать слово «gul»!",
+    "en": "Today's letter is “G g”. It is a consonant. Words: gul, gitara, guruch. Now we can read and build the word “gul”!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«G» bilan boshlanadigan soʻzni top!",
+        "ru": "Найди слово на «G»!",
+        "en": "Find the word that starts with “G”!"
+      },
+      "hint": {
+        "uz": "Boshini choʻzib ayt: g-g-gul.",
+        "ru": "Протяни начало: gul.",
+        "en": "Stretch the start: gul."
+      },
+      "explanation": {
+        "uz": "«gul» «G» tovushi bilan boshlanadi.",
+        "ru": "«gul» начинается со звука «G».",
+        "en": "“gul” starts with the sound “G”."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🌷",
+              "label": {
+                "uz": "gul",
+                "ru": "цветок",
+                "en": "flower"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«G» harfini topib, hammasini bos!",
+        "ru": "Найди букву «G» и нажми на все!",
+        "en": "Find the letter “G” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham boʻladi.",
+        "ru": "Считаются большая и маленькая.",
+        "en": "Both capital and small count."
+      },
+      "explanation": {
+        "uz": "«G» harfini topding!",
+        "ru": "Ты нашёл букву «G»!",
+        "en": "You found the letter “G”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "G",
+          "cols": 3,
+          "grid": [
+            "G",
+            "o",
+            "g",
+            "T",
+            "G",
+            "i",
+            "g",
+            "n",
+            "G"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌷 «gul»da «g» tovushi qaysi katakchada?",
+        "ru": "🌷 В какой клетке звук «g» в слове «gul»?",
+        "en": "🌷 Which box has the “g” sound in “gul”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«gul»da «g» toʻgʻri joyda.",
+        "ru": "В «gul» звук «g» на верном месте.",
+        "en": "In “gul” the “g” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🌷",
+          "word": {
+            "uz": "gul",
+            "ru": "gul",
+            "en": "gul"
+          },
+          "sound": "g",
+          "cells": [
+            "g",
+            "u",
+            "l"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌷 «gul» soʻzining tovush chizmasini rangla!",
+        "ru": "🌷 Раскрась схему звуков слова «gul»!",
+        "en": "🌷 Colour the sound scheme of “gul”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«gul» tovushlari ketma-ketligini rangladik.",
+        "ru": "Мы раскрасили схему звуков «gul».",
+        "en": "We coloured the sound scheme of “gul”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "🌷",
+          "word": {
+            "uz": "gul",
+            "ru": "gul",
+            "en": "gul"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«G» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «G»!",
+        "en": "Tap the words that have the “G” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «g» tovushi bor.",
+        "ru": "В них есть звук «g».",
+        "en": "They have the “g” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌷",
+              "label": {
+                "uz": "gul",
+                "ru": "gul",
+                "en": "gul"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🎸",
+              "label": {
+                "uz": "gitara",
+                "ru": "gitara",
+                "en": "gitara"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍚",
+              "label": {
+                "uz": "guruch",
+                "ru": "guruch",
+                "en": "guruch"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌷 Yetishmayotgan harfni qoʻy!",
+        "ru": "🌷 Вставь недостающую букву!",
+        "en": "🌷 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz «g» bilan boshlanadi.",
+        "ru": "Слово начинается с «g».",
+        "en": "The word starts with “g”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «g». Soʻz: «gul».",
+        "ru": "Верная буква — «g». Слово: «gul».",
+        "en": "The right letter is “g”. Word: “gul”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🌷",
+          "label": {
+            "uz": "gul",
+            "ru": "цветок",
+            "en": "flower"
+          },
+          "letters": [
+            "g",
+            "u",
+            "l"
+          ],
+          "blank": 0,
+          "choices": [
+            "g",
+            "k",
+            "q"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«G» — undosh tovush.",
+        "ru": "«G» — согласный звук.",
+        "en": "“G” is a consonant sound."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «G» — undosh tovush.",
+        "ru": "Верно! «G» — согласный.",
+        "en": "True! “G” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🎸 «gitara» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🎸 Похлопай слово «gitara» по слогам!",
+        "en": "🎸 Clap the word “gitara” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«gitara» — 3 boʻgʻin.",
+        "ru": "«gitara» — 3 слога.",
+        "en": "“gitara” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🎸",
+          "word": {
+            "uz": "gitara",
+            "ru": "gitara",
+            "en": "gitara"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🌷"
+              },
+              "right": {
+                "label": {
+                  "uz": "gul",
+                  "ru": "gul",
+                  "en": "gul"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🎸"
+              },
+              "right": {
+                "label": {
+                  "uz": "gitara",
+                  "ru": "gitara",
+                  "en": "gitara"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍚"
+              },
+              "right": {
+                "label": {
+                  "uz": "guruch",
+                  "ru": "guruch",
+                  "en": "guruch"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«G»da til oʻrtasi qayerga koʻtariladi?",
+        "ru": "Куда поднимается средняя часть языка при «G»?",
+        "en": "Where does the mid-tongue rise for “G”?"
+      },
+      "hint": {
+        "uz": "«g-g-g» deb ayt.",
+        "ru": "Скажи «g-g-g».",
+        "en": "Say “g-g-g”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — tanglayga.",
+        "ru": "Верный ответ — к нёбу.",
+        "en": "The right answer is to the palate."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "tanglayga",
+              "ru": "к нёбу",
+              "en": "to the palate"
+            },
+            {
+              "uz": "lablarga",
+              "ru": "к губам",
+              "en": "to the lips"
+            },
+            {
+              "uz": "tishlarga",
+              "ru": "к зубам",
+              "en": "to the teeth"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

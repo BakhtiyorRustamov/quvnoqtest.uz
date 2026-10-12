@@ -1,0 +1,165 @@
+{
+  "topicId": "g1-oqish-63",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "☀️⛰️📖",
+  "title": {
+    "uz": "Quvnoq oʻtsin goʻzal yoz",
+    "ru": "Пусть весело пройдёт лето",
+    "en": "May the fine summer pass merrily"
+  },
+  "recall": {
+    "uz": "«Taʼtilda» sheʼrini tinglab oʻqiymiz va yozgi taʼtilni foydali oʻtkazishni oʻrganamiz.",
+    "ru": "Слушаем стихотворение «На каникулах» и учимся проводить лето с пользой.",
+    "en": "We read the poem “On holiday” and learn to spend summer usefully."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Taʼtilda",
+        "variant": "poem",
+        "audio": "g1-oqish-63-q1",
+        "lines": [
+          "Taʼtilda dam oldik biz",
+          "Yurtning koʻrkam bogʻida.",
+          "Sof havodan toʻyib nafas,",
+          "Yuksak togʻlar bagʻrida.",
+          "",
+          "Goh qiziqarli kitob oʻqdik,",
+          "Goh anhorda choʻmildik.",
+          "Charaqlagan quyosh nuriga",
+          "Maza qilib koʻmildik."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Bolalar taʼtilda nimalar qilishdi?", "ru": "Чем занимались дети на каникулах?", "en": "What did the children do on holiday?" },
+      "explanation": { "uz": "Sheʼr yozgi taʼtilni faol va foydali oʻtkazish haqida.", "ru": "Стихотворение о том, как весело и с пользой провести лето.", "en": "The poem is about spending summer actively and usefully." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tongue_twister", "props": {
+        "text": { "uz": "Tonggi toza havo — tanangga koni davo.", "ru": "Утренний свежий воздух — телу настоящее лекарство.", "en": "Fresh morning air is true medicine for the body." },
+        "sound": "T",
+        "options": ["T", "H", "D"],
+        "clue": { "uz": "Qaysi tovush koʻp takrorlanadi?", "ru": "Какой звук чаще повторяется?", "en": "Which sound repeats most?" }
+      } },
+      "prompt": { "uz": "Tez ayting! Qaysi tovush koʻp takrorlanadi?", "ru": "Скажи быстро! Какой звук повторяется?", "en": "Say it fast! Which sound repeats?" },
+      "hint": { "uz": "Tonggi... toza... tanangga...", "ru": "Tonggi... toza... tanangga...", "en": "Tonggi... toza... tanangga..." },
+      "explanation": { "uz": "Bir nechta soʻz «T» tovushi bilan boshlanadi.", "ru": "Несколько слов начинаются со звука «T».", "en": "Several words begin with the sound “T”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "toza", "right": "ozoda" },
+        { "left": "yaxshi", "right": "aʼlo" },
+        { "left": "chiroyli", "right": "koʻrkam" }
+      ] } },
+      "prompt": { "uz": "Maʼnodosh soʻzlarni bir-biriga ulang!", "ru": "Соедини слова-синонимы!", "en": "Match the synonyms!" },
+      "hint": { "uz": "«toza» va «ozoda» — bir maʼnoda.", "ru": "«toza» и «ozoda» — об одном.", "en": "“toza” and “ozoda” mean the same." },
+      "explanation": { "uz": "toza = ozoda; yaxshi = aʼlo; chiroyli = koʻrkam.", "ru": "toza = чистый; yaxshi = отличный; chiroyli = красивый.", "en": "toza = clean; yaxshi = excellent; chiroyli = beautiful." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Bolalar taʼtilda togʻlarda sayr qilib, kitob oʻqishdi.", "ru": "На каникулах дети гуляли в горах и читали книги.", "en": "On holiday the children hiked mountains and read books." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda togʻ, kitob va anhor tilga olinadi.", "ru": "В стихотворении упомянуты горы, книги и канал.", "en": "The poem mentions mountains, books and a canal." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Sheʼrda qanday ishlar sanaladi?", "ru": "Какие занятия перечислены?", "en": "What activities are listed?" },
+      "explanation": { "uz": "Toʻgʻri: bolalar sayr qilishdi, kitob oʻqishdi, choʻmilishdi.", "ru": "Верно: дети гуляли, читали, купались.", "en": "True: the children hiked, read and swam." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "«Gʻamxoʻr» — ", "after": " degani.", "choices": ["qaygʻuradigan", "dangasa", "jahldor"], "answer": "qaygʻuradigan", "emoji": "💛", "clue": { "uz": "Izohli lugʻat", "ru": "Словарик", "en": "Glossary" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Gʻamxoʻr — boshqalar haqida qaygʻuradi.", "ru": "Заботливый переживает за других.", "en": "A caring person worries for others." },
+      "explanation": { "uz": "«Gʻamxoʻr» — qaygʻuradigan, mehribon.", "ru": "«Gʻamxoʻr» — заботливый.", "en": "“Gʻamxoʻr” means caring." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Faol va foydali — sayr, kitob, dam olish bilan", "ru": "Активно и с пользой — прогулки, книги, отдых", "en": "Actively and usefully — hikes, books, rest" },
+        { "uz": "Faqat uxlab", "ru": "Только сном", "en": "Only sleeping" },
+        { "uz": "Hech narsa qilmay", "ru": "Ничего не делая", "en": "Doing nothing" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Sheʼrga koʻra, bolalar taʼtilni qanday oʻtkazishdi?", "ru": "Как дети провели каникулы по стихотворению?", "en": "How did the children spend the holiday, per the poem?" },
+      "hint": { "uz": "Ular togʻ, bogʻ, anhorda boʻlishdi.", "ru": "Они были в горах, саду, у канала.", "en": "They were in mountains, gardens, by a canal." },
+      "explanation": { "uz": "Bolalar taʼtilni faol va foydali oʻtkazishdi.", "ru": "Дети провели каникулы активно и с пользой.", "en": "The children spent the holiday actively and usefully." },
+      "openEnd": { "uz": "Sen yozgi taʼtilingda nima qilishni rejalashtirasan?", "ru": "Что ты планируешь на летние каникулы?", "en": "What do you plan to do on your summer holiday?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Taʼtilda" },
+          { "blank": "togʻ" },
+          { "text": "da sayr qildik," },
+          { "blank": "kitob" },
+          { "text": "oʻqidik." }
+        ],
+        "bank": ["togʻ", "kitob", "qor"]
+      } },
+      "prompt": { "uz": "Soʻzlarni tanlab, boʻsh joylarga qoʻying!", "ru": "Вставь слова в пропуски!", "en": "Fill the gaps with the right words!" },
+      "hint": { "uz": "Sheʼrdagi ishlarni eslang.", "ru": "Вспомни занятия из стиха.", "en": "Recall the activities in the poem." },
+      "explanation": { "uz": "Taʼtilda togʻda sayr qilib, kitob oʻqidik.", "ru": "На каникулах гуляли в горах и читали книги.", "en": "On holiday we hiked mountains and read books." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Kitob oʻqish", "match": true },
+        { "text": "Sayr qilish", "match": true },
+        { "text": "Ota-onaga yordam", "match": true },
+        { "text": "Kun boʻyi behuda yotish", "match": false },
+        { "text": "Faqat telefon oʻynash", "match": false }
+      ] } },
+      "prompt": { "uz": "Taʼtilda foydali ishlarni bos!", "ru": "Нажми полезные дела на каникулах!", "en": "Tap the useful holiday activities!" },
+      "hint": { "uz": "Taʼtilni mazmunli oʻtkazish kerak.", "ru": "Каникулы надо проводить с пользой.", "en": "Spend the holiday meaningfully." },
+      "explanation": { "uz": "Kitob, sayr, yordam — foydali; behuda yotish, faqat telefon — yoʻq.", "ru": "Книги, прогулки, помощь — полезно; безделье — нет.", "en": "Books, walks, helping are useful; idling is not." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "bogʻda sayr" },
+        { "text": "anhorda choʻmilish" },
+        { "text": "quyoshda toblanish" },
+        { "text": "qorboʻron", "odd": true }
+      ], "clue": { "uz": "Qaysi biri yozgi mashgʻulot emas?", "ru": "Что из этого не летнее занятие?", "en": "Which one is not a summer activity?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi — yozda qilinadi.", "ru": "Три — летние занятия.", "en": "Three are done in summer." },
+      "explanation": { "uz": "Qorboʻron — qishki oʻyin; qolganlari yozgi mashgʻulot.", "ru": "Игра в снежки — зимняя; остальные — летние.", "en": "A snowball fight is winter; the rest are summer activities." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "size_order", "props": {
+        "words": ["Yoz", "dam", "olishga", "soz."],
+        "phrase": "Yoz — dam olishga soz.",
+        "meaning": { "uz": "Yoz — dam olish uchun ajoyib fasl.", "ru": "Лето — прекрасное время для отдыха.", "en": "Summer is a fine season for rest." }
+      } },
+      "prompt": { "uz": "Soʻzlarni kichikdan kattaga bosib, maqolni oʻqing!", "ru": "Нажимай слова от маленького к большому и прочитай пословицу!", "en": "Tap the words smallest to largest to read the proverb!" },
+      "hint": { "uz": "Eng kichik soʻzdan boshla.", "ru": "Начни с самого маленького слова.", "en": "Start with the smallest word." },
+      "explanation": { "uz": "«Yoz — dam olishga soz»: yoz dam olishga qulay.", "ru": "«Лето — пора отдыха».", "en": "“Summer is fine for rest.”" }
+    }
+  ]
+}

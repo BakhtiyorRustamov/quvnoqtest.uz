@@ -1,0 +1,165 @@
+{
+  "topicId": "g1-oqish-46",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "💎📜🎁",
+  "title": {
+    "uz": "Ertaklardan ol saboq",
+    "ru": "Возьми урок из сказки",
+    "en": "Take a lesson from tales"
+  },
+  "recall": {
+    "uz": "«Aql va boylik» ertagini tinglab oʻqiymiz va haqiqiy boylik nima ekanini bilib olamiz.",
+    "ru": "Слушаем сказку «Ум и богатство» и узнаём, что такое настоящее богатство.",
+    "en": "We read the tale “Wit and wealth” and learn what true riches are."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Aql va boylik",
+        "variant": "story",
+        "audio": "g1-oqish-46-q1",
+        "lines": [
+          "Bir boy otaning uch oʻgʻli bor ekan.",
+          "U merosni eng aqlli oʻgʻliga qoldirmoqchi boʻlibdi.",
+          "Katta oʻgʻil zumrad koʻzli oltin uzugini koʻrsatibdi.",
+          "Oʻrtancha oʻgʻil zarbof choponi bilan maqtanibdi.",
+          "Kenja oʻgʻil esa debdi:",
+          "«Menda uzuk ham, chopon ham yoʻq.",
+          "Ammo mehnatkash qoʻlim, botir yuragim, aqlli boshim bor!»",
+          "Ota merosni kenja oʻgʻilga qoldiribdi."
+        ]
+      } },
+      "prompt": { "uz": "Ertakni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Ota merosni qaysi oʻgʻliga qoldirdi?", "ru": "Кому отец оставил наследство?", "en": "To which son did the father leave the inheritance?" },
+      "explanation": { "uz": "Ertak aql va mehnat — haqiqiy boylik ekani haqida.", "ru": "Сказка о том, что ум и труд — настоящее богатство.", "en": "The tale shows that wit and work are the true riches." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "who_said", "props": {
+        "characters": [
+          { "name": { "uz": "Katta oʻgʻil", "ru": "Старший сын", "en": "Eldest son" } },
+          { "name": { "uz": "Oʻrtancha oʻgʻil", "ru": "Средний сын", "en": "Middle son" } },
+          { "name": { "uz": "Kenja oʻgʻil", "ru": "Младший сын", "en": "Youngest son" } }
+        ],
+        "quotes": [
+          { "text": { "uz": "Mana zumrad koʻzli oltin uzugim!", "ru": "Вот моё золотое кольцо с изумрудом!", "en": "Here is my gold ring with an emerald!" }, "speaker": 0 },
+          { "text": { "uz": "Mening zarbof choponimni koʻrgan qoyil qoladi.", "ru": "Кто увидит мой златотканый халат, восхитится.", "en": "Anyone who sees my gold-woven robe will admire it." }, "speaker": 1 },
+          { "text": { "uz": "Menda mehnatkash qoʻl, botir yurak, aqlli bosh bor.", "ru": "У меня трудолюбивые руки, храброе сердце, умная голова.", "en": "I have hardworking hands, a brave heart, a clever head." }, "speaker": 2 }
+        ],
+        "clue": { "uz": "Bu maqtov qaysi oʻgʻilniki?", "ru": "Чья это похвальба?", "en": "Which son is boasting here?" }
+      } },
+      "prompt": { "uz": "Bu gapni kim aytdi?", "ru": "Кто это сказал?", "en": "Who said this line?" },
+      "hint": { "uz": "Faqat kenja oʻgʻil buyum haqida gapirmaydi.", "ru": "Только младший сын не хвалит вещь.", "en": "Only the youngest son boasts of no object." },
+      "explanation": { "uz": "Katta — uzuk, oʻrtancha — chopon, kenja — aql va mehnat.", "ru": "Старший — кольцо, средний — халат, младший — ум и труд.", "en": "Eldest — ring, middle — robe, youngest — wit and work." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Ota merosni kenja oʻgʻilga qoldirdi.", "ru": "Отец оставил наследство младшему сыну.", "en": "The father left the inheritance to the youngest son." },
+        "answer": "true",
+        "why": { "uz": "Ertak oxirida ota merosni kenja oʻgʻilga qoldiradi.", "ru": "В конце сказки отец оставляет наследство младшему.", "en": "At the end the father leaves it to the youngest." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Aql va mehnatni kim koʻrsatdi?", "ru": "Кто показал ум и труд?", "en": "Who showed wit and work?" },
+      "explanation": { "uz": "Toʻgʻri: aqlli va mehnatkash kenja oʻgʻil meros oldi.", "ru": "Верно: умный и трудолюбивый младший сын получил наследство.", "en": "True: the clever, hardworking youngest son inherited." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Kenja oʻgʻilning qimmatbaho uzugi bor edi.", "ru": "У младшего сына было дорогое кольцо.", "en": "The youngest son had a precious ring." },
+        "answer": "false",
+        "why": { "uz": "Kenjada uzuk ham, chopon ham yoʻq edi.", "ru": "У младшего не было ни кольца, ни халата.", "en": "The youngest had neither a ring nor a robe." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Kenja oʻgʻilda qanday boylik bor edi?", "ru": "Какое богатство было у младшего сына?", "en": "What riches did the youngest son have?" },
+      "explanation": { "uz": "Notoʻgʻri: kenjada buyum emas, aql va mehnat bor edi.", "ru": "Неверно: у младшего были не вещи, а ум и труд.", "en": "False: the youngest had wit and work, not objects." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "oltin uzuk", "right": "katta oʻgʻil" },
+        { "left": "zarbof chopon", "right": "oʻrtancha oʻgʻil" },
+        { "left": "mehnatkash qoʻl", "right": "kenja oʻgʻil" }
+      ] } },
+      "prompt": { "uz": "Rasmlarni kuzating: har biri qaysi oʻgʻilniki? Ulang!", "ru": "Соедини: чей это предмет?", "en": "Match each item to its son!" },
+      "hint": { "uz": "Kenja oʻgʻil buyum bilan maqtanmadi.", "ru": "Младший сын не хвалился вещами.", "en": "The youngest didn't boast of objects." },
+      "explanation": { "uz": "oltin uzuk — katta; zarbof chopon — oʻrtancha; mehnatkash qoʻl — kenja.", "ru": "кольцо — старший; халат — средний; руки — младший.", "en": "ring — eldest; robe — middle; hands — youngest." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Chunki uning aqli va mehnati bor edi", "ru": "Потому что у него были ум и труд", "en": "Because he had wit and industry" },
+        { "uz": "Chunki u eng katta edi", "ru": "Потому что он был старшим", "en": "Because he was the eldest" },
+        { "uz": "Chunki u eng boy edi", "ru": "Потому что он был самым богатым", "en": "Because he was the richest" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Ota nega merosni kenja oʻgʻilga qoldirdi?", "ru": "Почему отец оставил наследство младшему сыну?", "en": "Why did the father leave the inheritance to the youngest son?" },
+      "hint": { "uz": "Haqiqiy boylik — buyum emas.", "ru": "Настоящее богатство — не вещи.", "en": "True wealth is not objects." },
+      "explanation": { "uz": "Kenja oʻgʻil aqli va mehnati bilan haqiqiy boylikni koʻrsatdi.", "ru": "Младший показал настоящее богатство — ум и труд.", "en": "The youngest showed the true wealth — wit and work." },
+      "openEnd": { "uz": "Sencha, haqiqiy boylik nima — aqlmi yoki oltinmi? Nega?", "ru": "Как ты думаешь, что настоящее богатство — ум или золото? Почему?", "en": "What do you think true wealth is — wit or gold? Why?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "«Davlatmand» — ", "after": " koʻp odam.", "choices": ["boyligi", "kuchi", "doʻsti"], "answer": "boyligi", "emoji": "💎", "clue": { "uz": "Izohli lugʻat", "ru": "Словарик", "en": "Glossary" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Davlatmand — boy odam.", "ru": "Davlatmand — богатый человек.", "en": "Davlatmand means a wealthy person." },
+      "explanation": { "uz": "«Davlatmand» — boyligi koʻp, badavlat odam.", "ru": "«Davlatmand» — богатый человек.", "en": "“Davlatmand” means a person of great wealth." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Haqiqiy boylik —" },
+          { "blank": "aql" },
+          { "text": "va" },
+          { "blank": "mehnat" },
+          { "text": "." }
+        ],
+        "bank": ["aql", "mehnat", "oltin"]
+      } },
+      "prompt": { "uz": "Soʻzlarni tanlab, boʻsh joylarga qoʻying!", "ru": "Вставь слова в пропуски!", "en": "Fill the gaps with the right words!" },
+      "hint": { "uz": "Ertakning asosiy fikri.", "ru": "Главная мысль сказки.", "en": "The tale's main idea." },
+      "explanation": { "uz": "Haqiqiy boylik — aql va mehnat.", "ru": "Настоящее богатство — ум и труд.", "en": "True wealth is wit and work." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "oltin uzuk" },
+        { "text": "zarbof chopon" },
+        { "text": "qimmatbaho kamar" },
+        { "text": "aqlli bosh", "odd": true }
+      ], "clue": { "uz": "Qaysi biri buyum emas?", "ru": "Что из этого не вещь?", "en": "Which one is not an object?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi qimmatbaho buyum, biri esa yoʻq.", "ru": "Три — дорогие вещи, одно — нет.", "en": "Three are precious objects, one is not." },
+      "explanation": { "uz": "«Aqlli bosh» — buyum emas; qolganlari qimmatbaho narsalar.", "ru": "«Умная голова» — не вещь; остальные — дорогие предметы.", "en": "“A clever head” is not an object; the rest are precious things." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "meros", "syllables": ["me", "ros"], "emoji": "🎁", "clue": { "uz": "Ota-bobodan qolgan boylik", "ru": "Наследство от предков", "en": "What is passed down from elders" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "me + ros = ?", "ru": "me + ros = ?", "en": "me + ros = ?" },
+      "explanation": { "uz": "me-ros → meros. Ota kenja oʻgʻilga merosni qoldirdi.", "ru": "me-ros → meros (наследство).", "en": "me-ros → meros (inheritance)." }
+    }
+  ]
+}

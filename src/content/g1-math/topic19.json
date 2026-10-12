@@ -1,0 +1,142 @@
+{
+  "topicId": "g1-math-19",
+  "subjectKey": "g1-math",
+  "emojis": "🔢🧩🍎",
+  "title": { "uz": "Birdan beshgacha sonlar", "ru": "Числа от одного до пяти", "en": "Numbers one to five" },
+  "recall": {
+    "uz": "Bir dan besh gacha sonlarni oʻrganamiz. Butun narsani qismlarga ajratamiz. Qismlarni qoʻshsak, yana butun chiqadi. Qoʻshish va ayirishni mashq qilamiz.",
+    "ru": "Учим числа от одного до пяти. Делим целое на части. Если сложить части, снова получится целое. Тренируем сложение и вычитание.",
+    "en": "We learn the numbers one to five. We split a whole into parts. Add the parts and the whole comes back. We practice adding and subtracting."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 3, "b": 2, "maxSum": 5 } },
+      "prompt": { "uz": "Sonlar chizigʻida butunni yigʻ: uch va ikki!", "ru": "Собери целое на числовой прямой: три и два!", "en": "Build the whole on the number line: three and two!" },
+      "hint": { "uz": "Uchdan boshla, ikki qadam oldinga sakra.", "ru": "Встань на три, прыгни на два вперёд.", "en": "Start at three, hop two forward." },
+      "explanation": { "uz": "Uch va ikki qismlardan butun — besh hosil boʻldi.", "ru": "Из частей три и два получилось целое — пять.", "en": "The parts three and two made the whole — five." }
+    },
+    { "id": "q2", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan qismni top: 5 = 3 + ?", "ru": "Найди недостающую часть: 5 = 3 + ?", "en": "Find the missing part: 5 = 3 + ?" },
+      "hint": { "uz": "Uchga nechta qoʻshsak, besh boʻladi?", "ru": "Сколько добавить к трём, чтобы вышло пять?", "en": "How much to add to three to make five?" },
+      "explanation": { "uz": "Uch qoʻshish ikki — besh. Yetishmagan qism — ikki.", "ru": "Три плюс два — пять. Недостающая часть — два.", "en": "Three plus two is five. The missing part is two." } },
+    {
+      "id": "q3",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": { "uz": "Koptoklarni rangi boʻyicha guruhla!", "ru": "Сгруппируй мячи по цвету!", "en": "Group the balls by color!" },
+      "items": [
+        { "id": "r1", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue", "scale": 0.8 }, "bin": "blue" },
+        { "id": "y1", "art": { "kind": "ball", "color": "yellow", "scale": 0.8 }, "bin": "yellow" },
+        { "id": "r2", "art": { "kind": "ball", "color": "red", "scale": 0.8 }, "bin": "red" },
+        { "id": "b2", "art": { "kind": "ball", "color": "blue", "scale": 0.8 }, "bin": "blue" }
+      ],
+      "bins": [
+        { "id": "red", "label": { "uz": "Qizil", "ru": "Красные", "en": "Red" }, "color": "red" },
+        { "id": "blue", "label": { "uz": "Koʻk", "ru": "Синие", "en": "Blue" }, "color": "blue" },
+        { "id": "yellow", "label": { "uz": "Sariq", "ru": "Жёлтые", "en": "Yellow" }, "color": "yellow" }
+      ],
+      "hint": { "uz": "Bir xil rangdagilarni bitta guruhga yigʻ.", "ru": "Собирай одинаковые по цвету в одну группу.", "en": "Put the same colors together." },
+      "explanation": { "uz": "Koptoklarni rangiga qarab guruhladik. Har guruhda nechtaligini sanash mumkin.", "ru": "Сгруппировали мячи по цвету. В каждой группе можно сосчитать число.", "en": "We grouped the balls by color. You can count how many are in each." }
+    },
+    {
+      "id": "q4",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir narsani oʻz shakliga ula!", "ru": "Соедини каждый предмет с его формой!", "en": "Connect each object to its shape!" },
+      "left": [
+        { "id": "clock", "art": { "kind": "clock", "color": "blue" }, "match": "m-ci" },
+        { "id": "window", "art": { "kind": "window", "color": "orange" }, "match": "m-sq" },
+        { "id": "roof", "art": { "kind": "roof", "color": "red" }, "match": "m-tr" }
+      ],
+      "right": [
+        { "id": "m-sq", "art": { "kind": "square", "color": "gray" } },
+        { "id": "m-tr", "art": { "kind": "triangle", "color": "gray" } },
+        { "id": "m-ci", "art": { "kind": "circle", "color": "gray" } }
+      ],
+      "hint": { "uz": "Soat — doira, deraza — kvadrat, tom — uchburchak.", "ru": "Часы — круг, окно — квадрат, крыша — треугольник.", "en": "Clock — circle, window — square, roof — triangle." },
+      "explanation": { "uz": "Har bir narsada yashiringan shaklni topdik.", "ru": "Мы нашли спрятанную в каждом предмете фигуру.", "en": "We found the shape hidden in each object." }
+    },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["3", "4", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 4 - 1 = ?", "ru": "Найди разность: 4 - 1 = ?", "en": "Find the difference: 4 - 1 = ?" },
+      "hint": { "uz": "Toʻrttadan bittasini olib tashla.", "ru": "Убери от четырёх один.", "en": "Take one away from four." },
+      "explanation": { "uz": "Toʻrt ayirish bir — uch qoladi.", "ru": "Четыре минус один — три.", "en": "Four minus one is three." } },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "orange" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "orange" },
+        { "kind": "circle", "color": "blue" }
+      ],
+      "options": [
+        { "id": "tr", "art": { "kind": "triangle", "color": "orange" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["tr"],
+      "hint": { "uz": "Doira, uchburchak, doira, uchburchak… navbat bilan keladi!", "ru": "Круг, треугольник, круг, треугольник… по очереди!", "en": "Circle, triangle, circle, triangle… they take turns!" },
+      "explanation": { "uz": "Doiradan keyin doim uchburchak keladi. Keyingisi — uchburchak.", "ru": "После круга всегда идёт треугольник. Следующий — треугольник.", "en": "After a circle there is always a triangle. The next one is a triangle." }
+    },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Beshta yulduzni sanab belgila!", "ru": "Сосчитай и отметь пять звёзд!", "en": "Count and tap the five stars!" },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "s3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "s4", "art": { "kind": "star", "color": "red" } },
+        { "id": "s5", "art": { "kind": "star", "color": "green" } }
+      ],
+      "answer": ["s1", "s2", "s3", "s4", "s5"],
+      "hint": { "uz": "Yulduzlarni sana: bir, ikki, uch, toʻrt, besh.", "ru": "Считай звёзды: один… пять.", "en": "Count the stars: one… five." },
+      "explanation": { "uz": "Beshta yulduz bor edi.", "ru": "Было пять звёзд.", "en": "There were five stars." }
+    },
+    { "id": "q8", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 5, "y": 4 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Besh toʻrtdan katta.", "ru": "Пять больше четырёх.", "en": "Five is bigger than four." } },
+    {
+      "id": "q9",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladiganini bos!", "ru": "Нажми на ту, что отличается!", "en": "Tap the one that is different!" },
+      "options": [
+        { "id": "c1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "c2", "art": { "kind": "apple", "color": "red" } },
+        { "id": "df", "art": { "kind": "apple", "color": "green" } }
+      ],
+      "answer": ["df"],
+      "hint": { "uz": "Ikkitasi bir xil rangda. Bittasi farqli.", "ru": "Две одного цвета. Одна отличается.", "en": "Two are the same color. One is different." },
+      "explanation": { "uz": "Yashil olma rangi bilan farq qildi.", "ru": "Зелёное яблоко отличалось цветом.", "en": "The green apple differed by color." }
+    },
+    {
+      "id": "q10",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Yulduzlarni kichikdan kattaga tartibla!", "ru": "Расставь звёзды от маленькой к большой!", "en": "Order the stars from small to big!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "star", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "star", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "star", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "birinchi", "ru": "первая", "en": "first" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "ikkinchi", "ru": "вторая", "en": "second" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "uchinchi", "ru": "третья", "en": "third" } }
+      ],
+      "hint": { "uz": "Eng kichkinasi birinchi, eng kattasi uchinchi.", "ru": "Самая маленькая первая, самая большая третья.", "en": "The smallest first, the biggest third." },
+      "explanation": { "uz": "Yulduzlarni oʻlchami boʻyicha tartibladik.", "ru": "Расставили звёзды по размеру.", "en": "We ordered the stars by size." }
+    }
+  ]
+}

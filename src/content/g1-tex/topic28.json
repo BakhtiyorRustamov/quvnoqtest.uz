@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-28",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Naqsh",
+    "ru": "Узор",
+    "en": "A pattern"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻoz shakllaridan chiroyli naqsh yasaymiz.",
+    "ru": "Сегодня из бумажных фигур сделаем красивый узор.",
+    "en": "Today we make a pretty pattern from paper shapes."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Naqsh yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай узор. Выполняй каждый этап по рисунку!",
+        "en": "Make a pattern. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Shakllarni takrorlab joyla.",
+        "ru": "Повторяй фигуры по порядку.",
+        "en": "Repeat the shapes in order."
+      },
+      "explanation": {
+        "uz": "Chiroyli naqsh!",
+        "ru": "Красивый узор!",
+        "en": "A lovely pattern!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Rangli qogʻozdan shakllar qirq.",
+              "ru": "Вырежь фигуры из цветной бумаги.",
+              "en": "Cut shapes from coloured paper."
+            },
+            {
+              "uz": "Shakllarni qatorlab teraverib joyla.",
+              "ru": "Расставь фигуры в ряд.",
+              "en": "Lay the shapes out in a row."
+            },
+            {
+              "uz": "Ranglarni almashtirib naqsh yasa.",
+              "ru": "Чередуя цвета, составь узор.",
+              "en": "Alternate the colours to make a pattern."
+            }
+          ],
+          "art": "pattern",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

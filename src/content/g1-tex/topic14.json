@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-14",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Bulutcha",
+    "ru": "Облачко",
+    "en": "A little cloud"
+  },
+  "recall": {
+    "uz": "Bugun kartondan va paxtadan yumshoq bulutcha yasaymiz.",
+    "ru": "Сегодня из картона и ваты сделаем мягкое облачко.",
+    "en": "Today we make a soft cloud from cardboard and cotton."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bulutcha yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай облачко. Выполняй каждый этап по рисунку!",
+        "en": "Make a cloud. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Paxtani tekis yopishtir.",
+        "ru": "Клей вату ровно.",
+        "en": "Glue the cotton evenly."
+      },
+      "explanation": {
+        "uz": "Yumshoq bulutcha!",
+        "ru": "Мягкое облачко!",
+        "en": "A soft cloud!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "oq karton",
+              "ru": "белый картон",
+              "en": "white cardboard"
+            },
+            {
+              "uz": "paxta",
+              "ru": "вата",
+              "en": "cotton"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            },
+            {
+              "uz": "ip",
+              "ru": "нить",
+              "en": "thread"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Kartondan bulut shaklini qirq.",
+              "ru": "Вырежь из картона форму облака.",
+              "en": "Cut a cloud shape from cardboard."
+            },
+            {
+              "uz": "Ustiga paxtani yopishtir.",
+              "ru": "Приклей сверху вату.",
+              "en": "Glue cotton on top."
+            },
+            {
+              "uz": "Yomgʻir tomchilarini qoʻsh yoki ipga osib qoʻy.",
+              "ru": "Добавь капельки дождя или подвесь на нить.",
+              "en": "Add raindrops or hang it on a thread."
+            }
+          ],
+          "art": "cloud",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

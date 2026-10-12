@@ -1,0 +1,540 @@
+{
+  "topicId": "g1-alifbe-46",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🦢⛰️🌳",
+  "title": {
+    "uz": "«Gʻ gʻ» — oʻqish mashqi",
+    "ru": "Буква «Gʻ gʻ» — чтение",
+    "en": "Letter “Gʻ gʻ” — reading"
+  },
+  "recall": {
+    "uz": "«Gʻ» harfini oʻrgandik. Endi matn oʻqiymiz: gʻoz, togʻ, bogʻ. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «Gʻ». Теперь читаем текст: gʻoz, togʻ, bogʻ. Тренируем чтение!",
+    "en": "We learned the letter “Gʻ”. Now we read a text: gʻoz, togʻ, bogʻ. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🦢 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🦢 Прочитай и нажми верно написанное слово!",
+        "en": "🦢 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «gʻoz».",
+        "ru": "Прочитай: «gʻoz».",
+        "en": "Read it: “gʻoz”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «gʻoz».",
+        "ru": "Верно — «gʻoz».",
+        "en": "Correct — “gʻoz”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🦢",
+          "options": [
+            {
+              "id": "ok",
+              "word": "gʻoz",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "goz"
+            },
+            {
+              "id": "w2",
+              "word": "gʻos"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «gʻoz» soʻzini tuz!",
+        "ru": "Составь слово «gʻoz»!",
+        "en": "Build the word “gʻoz”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «gʻoz» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «gʻoz».",
+        "en": "Great! You read “gʻoz”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🦢",
+          "word": "gʻoz",
+          "label": {
+            "uz": "gʻoz",
+            "ru": "гусь",
+            "en": "goose"
+          },
+          "letters": [
+            "gʻ",
+            "o",
+            "z"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь на вопрос.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай каждое предложение внимательно.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — «gʻoz».",
+        "ru": "Верный ответ — «gʻoz».",
+        "en": "The right answer is “gʻoz”."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "🦢",
+          "text": {
+            "uz": "Bogʻda gʻoz bor.\nTogʻda qor bor.",
+            "ru": "Bogʻda gʻoz bor.\nTogʻda qor bor.",
+            "en": "Bogʻda gʻoz bor.\nTogʻda qor bor."
+          },
+          "question": {
+            "uz": "Bogʻda nima bor?",
+            "ru": "Bogʻda nima bor?",
+            "en": "Bogʻda nima bor?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "gʻoz",
+                "ru": "gʻoz",
+                "en": "gʻoz"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "qor",
+                "ru": "qor",
+                "en": "qor"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "gul",
+                "ru": "gul",
+                "en": "gul"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🌾 «gʻalla» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🌾 Похлопай слово «gʻalla» по слогам!",
+        "en": "🌾 Clap the word “gʻalla” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«gʻalla» — 2 boʻgʻin.",
+        "ru": "«gʻalla» — 2 слога.",
+        "en": "“gʻalla” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🌾",
+          "word": {
+            "uz": "gʻalla",
+            "ru": "gʻalla",
+            "en": "gʻalla"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Gʻ» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «Gʻ»!",
+        "en": "Tap the words with the “Gʻ” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «gʻ» tovushi bor.",
+        "ru": "В них есть звук «gʻ».",
+        "en": "They have the “gʻ” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🦢",
+              "label": {
+                "uz": "gʻoz",
+                "ru": "gʻoz",
+                "en": "gʻoz"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "⛰️",
+              "label": {
+                "uz": "togʻ",
+                "ru": "togʻ",
+                "en": "togʻ"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🌳",
+              "label": {
+                "uz": "bogʻ",
+                "ru": "bogʻ",
+                "en": "bogʻ"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«gʻoz» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «gʻoz». Найди картинку!",
+        "en": "Read “gʻoz”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«gʻoz» — 🦢.",
+        "ru": "«gʻoz» — 🦢.",
+        "en": "“gʻoz” is 🦢."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🦢",
+              "label": {
+                "uz": "gʻoz",
+                "ru": "гусь",
+                "en": "goose"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "⛰️",
+              "label": {
+                "uz": "togʻ",
+                "ru": "togʻ",
+                "en": "togʻ"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🌳",
+              "label": {
+                "uz": "bogʻ",
+                "ru": "bogʻ",
+                "en": "bogʻ"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🦢"
+              },
+              "right": {
+                "label": {
+                  "uz": "gʻoz",
+                  "ru": "gʻoz",
+                  "en": "gʻoz"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⛰️"
+              },
+              "right": {
+                "label": {
+                  "uz": "togʻ",
+                  "ru": "togʻ",
+                  "en": "togʻ"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🌳"
+              },
+              "right": {
+                "label": {
+                  "uz": "bogʻ",
+                  "ru": "bogʻ",
+                  "en": "bogʻ"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Bogʻda … bor.",
+        "ru": "Составь предложение: Bogʻda … bor.",
+        "en": "Order the words: Bogʻda … bor."
+      },
+      "hint": {
+        "uz": "Bogʻda — gʻoz — bor.",
+        "ru": "Bogʻda — gʻoz — bor.",
+        "en": "Bogʻda — gʻoz — bor."
+      },
+      "explanation": {
+        "uz": "«Bogʻda gʻoz bor.» — gap oʻqiding!",
+        "ru": "«Bogʻda gʻoz bor.» — предложение!",
+        "en": "“Bogʻda gʻoz bor.” — a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Bogʻda",
+                "ru": "Bogʻda",
+                "en": "Bogʻda"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "gʻoz",
+                "ru": "gʻoz",
+                "en": "gʻoz"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "bor",
+                "ru": "bor",
+                "en": "bor"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🦢"
+              },
+              "b": {
+                "label": {
+                  "uz": "gʻoz",
+                  "ru": "gʻoz",
+                  "en": "gʻoz"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "⛰️"
+              },
+              "b": {
+                "label": {
+                  "uz": "togʻ",
+                  "ru": "togʻ",
+                  "en": "togʻ"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🌳"
+              },
+              "b": {
+                "label": {
+                  "uz": "bogʻ",
+                  "ru": "bogʻ",
+                  "en": "bogʻ"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«gʻoz» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «gʻoz»?",
+        "en": "How many sounds are in “gʻoz”?"
+      },
+      "hint": {
+        "uz": "Har tovushni sana. («gʻ» — bitta tovush)",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«gʻoz»da 3 ta tovush bor.",
+        "ru": "В «gʻoz» 3 звука.",
+        "en": "“gʻoz” has 3 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-19",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Oqqush",
+    "ru": "Лебедь",
+    "en": "A swan"
+  },
+  "recall": {
+    "uz": "Bugun oq qogʻozdan chiroyli oqqush yasaymiz.",
+    "ru": "Сегодня из белой бумаги сделаем красивого лебедя.",
+    "en": "Today we make a graceful swan from white paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oqqush yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай лебедя. Выполняй каждый этап по рисунку!",
+        "en": "Make a swan. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Boʻyni — S shaklida.",
+        "ru": "Шея — в форме буквы S.",
+        "en": "The neck is an S-shape."
+      },
+      "explanation": {
+        "uz": "Goʻzal oqqush!",
+        "ru": "Красивый лебедь!",
+        "en": "A graceful swan!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "oq qogʻoz",
+              "ru": "белая бумага",
+              "en": "white paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Oval tanani qirq.",
+              "ru": "Вырежь овальное тело.",
+              "en": "Cut an oval body."
+            },
+            {
+              "uz": "S shaklidagi uzun boʻyin va boshni qoʻsh.",
+              "ru": "Добавь длинную шею буквой S и голову.",
+              "en": "Add a long S-shaped neck and a head."
+            },
+            {
+              "uz": "Tumshuq, koʻz va qanotni chiz.",
+              "ru": "Нарисуй клюв, глаз и крыло.",
+              "en": "Draw a beak, an eye and a wing."
+            }
+          ],
+          "art": "swan",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

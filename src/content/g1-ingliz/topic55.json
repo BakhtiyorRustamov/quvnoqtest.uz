@@ -1,0 +1,555 @@
+{
+  "topicId": "g1-ingliz-55",
+  "subjectKey": "g1-ingliz",
+  "emojis": "⭐🏃🏊🎤",
+  "title": {
+    "uz": "Takrorlash: harakatlar",
+    "ru": "Повторение: действия",
+    "en": "Review: actions"
+  },
+  "recall": {
+    "uz": "Takrorlash! 7-boʻlim harakatlarini eslaymiz: run — yugurmoq, swim — suzmoq, dance — raqs, sing — kuylash, ride a bike — velosiped haydash.",
+    "ru": "Повторение! Вспоминаем действия из раздела 7: run — бегать, swim — плавать, dance — танцевать, sing — петь, ride a bike — кататься на велосипеде.",
+    "en": "Review! Let's remember Unit 7 actions: run, swim, dance, sing and ride a bike."
+  },
+  "ttsText": {
+    "uz": "Takrorlash: harakatlar.",
+    "en": "Review! Run, swim, dance, sing and ride a bike!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Faqat harakat soʻzlarini bos!",
+        "ru": "Нажми только слова-действия!",
+        "en": "Tap only the action words!"
+      },
+      "hint": {
+        "uz": "run, swim, dance, sing.",
+        "ru": "run, swim, dance, sing.",
+        "en": "run, swim, dance, sing."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular harakat!",
+        "ru": "Молодец! Это действия!",
+        "en": "Great! Those are actions!"
+      },
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "run",
+              "match": true
+            },
+            {
+              "text": "swim",
+              "match": true
+            },
+            {
+              "text": "lion",
+              "match": false
+            },
+            {
+              "text": "dance",
+              "match": true
+            },
+            {
+              "text": "apple",
+              "match": false
+            },
+            {
+              "text": "sing",
+              "match": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yugurayotganni bos!",
+        "ru": "Нажми бег!",
+        "en": "Tap 'run'!"
+      },
+      "audio": {
+        "key": "ing55-q2",
+        "text": "Run! Tap 'run'.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«run» — yugurmoq.",
+        "ru": "«run» — бегать.",
+        "en": "\"run\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Run.",
+        "ru": "Верно! Run.",
+        "en": "Right! Run!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🏃",
+              "label": "run",
+              "correct": true
+            },
+            {
+              "emoji": "🏊",
+              "label": "swim"
+            },
+            {
+              "emoji": "💃",
+              "label": "dance"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suzayotganni bos!",
+        "ru": "Нажми плавание!",
+        "en": "Tap 'swim'!"
+      },
+      "audio": {
+        "key": "ing55-q3",
+        "text": "Swim! Tap 'swim'.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«swim» — suzmoq.",
+        "ru": "«swim» — плавать.",
+        "en": "\"swim\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Swim.",
+        "ru": "Верно! Swim.",
+        "en": "Right! Swim!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🏊",
+              "label": "swim",
+              "correct": true
+            },
+            {
+              "emoji": "🚴",
+              "label": "ride a bike"
+            },
+            {
+              "emoji": "🎤",
+              "label": "sing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kunni tartibla: nima birinchi?",
+        "ru": "Расставь день по порядку!",
+        "en": "Put the day in order!"
+      },
+      "hint": {
+        "uz": "Avval uygʻonamiz, oxirida uxlaymiz.",
+        "ru": "Сначала просыпаемся, в конце спим.",
+        "en": "First wake up, at the end sleep."
+      },
+      "explanation": {
+        "uz": "Barakalla! Uygʻon → ye → oʻyna → uxla.",
+        "ru": "Молодец! Проснись → поешь → играй → спи.",
+        "en": "Great! Wake up → eat → play → sleep."
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "vertical": true,
+          "items": [
+            {
+              "id": "wake",
+              "emoji": "🌅",
+              "label": {
+                "uz": "uygʻonmoq",
+                "ru": "проснуться",
+                "en": "wake up"
+              }
+            },
+            {
+              "id": "eat",
+              "emoji": "🍽️",
+              "label": {
+                "uz": "ovqatlanmoq",
+                "ru": "поесть",
+                "en": "eat"
+              }
+            },
+            {
+              "id": "play",
+              "emoji": "⚽",
+              "label": {
+                "uz": "oʻynamoq",
+                "ru": "играть",
+                "en": "play"
+              }
+            },
+            {
+              "id": "sleep",
+              "emoji": "😴",
+              "label": {
+                "uz": "uxlamoq",
+                "ru": "спать",
+                "en": "sleep"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni harakatga ula!",
+        "ru": "Соедини слово с действием!",
+        "en": "Match each word to its action!"
+      },
+      "hint": {
+        "uz": "run 🏃, swim 🏊, dance 💃, sing 🎤.",
+        "ru": "run 🏃, swim 🏊, dance 💃, sing 🎤.",
+        "en": "run 🏃, swim 🏊, dance 💃, sing 🎤."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "run"
+              },
+              "right": {
+                "emoji": "🏃"
+              }
+            },
+            {
+              "left": {
+                "label": "swim"
+              },
+              "right": {
+                "emoji": "🏊"
+              }
+            },
+            {
+              "left": {
+                "label": "dance"
+              },
+              "right": {
+                "emoji": "💃"
+              }
+            },
+            {
+              "left": {
+                "label": "sing"
+              },
+              "right": {
+                "emoji": "🎤"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, harakat juftlarini top!",
+        "ru": "Открывай карточки: пары действий!",
+        "en": "Flip the cards: match the action pairs!"
+      },
+      "hint": {
+        "uz": "ride 🚴, paint 🎨, draw ✏️.",
+        "ru": "ride 🚴, paint 🎨, draw ✏️.",
+        "en": "ride 🚴, paint 🎨, draw ✏️."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🚴"
+              },
+              "b": {
+                "label": "ride"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎨"
+              },
+              "b": {
+                "label": "paint"
+              }
+            },
+            {
+              "a": {
+                "emoji": "✏️"
+              },
+              "b": {
+                "label": "draw"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima qila oladi?",
+        "ru": "Послушай. Что умеет ребёнок?",
+        "en": "Listen. What can the child do?"
+      },
+      "hint": {
+        "uz": "«I can dance!» — raqsga tusha olaman.",
+        "ru": "«I can dance!» — умею танцевать.",
+        "en": "\"I can dance!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I can dance.",
+        "ru": "Верно! I can dance.",
+        "en": "Right! I can dance."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What can you do?",
+              "audio": {
+                "key": "ing55-q7-a",
+                "text": "What can you do?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I can dance!",
+              "audio": {
+                "key": "ing55-q7-b",
+                "text": "I can dance!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bola nima qila oladi?",
+              "ru": "Что умеет ребёнок?",
+              "en": "What can the child do?"
+            },
+            "choices": [
+              "dance",
+              "run",
+              "swim"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harakatlarni belgila!",
+        "ru": "Отметь действия!",
+        "en": "Tap the actions!"
+      },
+      "hint": {
+        "uz": "Yugur, suz, kuyla.",
+        "ru": "Бегай, плавай, пой.",
+        "en": "Run, swim, sing."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ular harakat!",
+        "ru": "Молодец! Это действия!",
+        "en": "Great! Those are actions!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏃",
+              "label": "run",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🏊",
+              "label": "swim",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🎤",
+              "label": "sing",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "id": "d1",
+              "emoji": "🚗",
+              "label": "car"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola suza oladimi?",
+        "ru": "Послушай. Ребёнок умеет плавать?",
+        "en": "Listen. Can the child swim?"
+      },
+      "hint": {
+        "uz": "«Yes, I can!»",
+        "ru": "«Yes, I can!»",
+        "en": "\"Yes, I can!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Yes, I can swim!",
+        "ru": "Верно! Yes, I can swim!",
+        "en": "Right! Yes, I can swim!"
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can you swim?",
+              "audio": {
+                "key": "ing55-q9-a",
+                "text": "Can you swim?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes, I can swim!",
+              "audio": {
+                "key": "ing55-q9-b",
+                "text": "Yes, I can swim!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Javob nima?",
+              "ru": "Какой ответ?",
+              "en": "What is the answer?"
+            },
+            "choices": [
+              "Yes, I can!",
+              "No, I can't!",
+              "Goodbye!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sen musiqaga tebranasan. Bu qanday harakat?",
+        "ru": "Ты двигаешься под музыку. Какое это действие?",
+        "en": "You move to music. What action?"
+      },
+      "hint": {
+        "uz": "Musiqada qilamiz.",
+        "ru": "Делаем под музыку.",
+        "en": "You do it to music."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Dance — raqs.",
+        "ru": "Верно! Dance — танцевать.",
+        "en": "Right! Dance!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "dance\nraqsga tushmoq",
+              "ru": "dance\nтанцевать",
+              "en": "dance"
+            },
+            {
+              "uz": "swim\nsuzmoq",
+              "ru": "swim\nплавать",
+              "en": "swim"
+            },
+            {
+              "uz": "run\nyugurmoq",
+              "ru": "run\nбегать",
+              "en": "run"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

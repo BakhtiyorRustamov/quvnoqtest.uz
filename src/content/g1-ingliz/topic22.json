@@ -1,0 +1,508 @@
+{
+  "topicId": "g1-ingliz-22",
+  "subjectKey": "g1-ingliz",
+  "emojis": "👋👵😀💬",
+  "title": {
+    "uz": "Salom, buvi! Yaxshimisiz?",
+    "ru": "Привет, бабушка! Как дела?",
+    "en": "Hello, Grandma. How are you?"
+  },
+  "recall": {
+    "uz": "Suhbat vaqti! Bugun oila bilan salomlashamiz: «Hello, Grandma. How are you?» — «Salom, buvi. Yaxshimisiz?» Javob: «I'm fine, thank you!»",
+    "ru": "Время беседы! Сегодня здороваемся с семьёй: «Hello, Grandma. How are you?» — «Привет, бабушка. Как дела?» Ответ: «I'm fine, thank you!»",
+    "en": "Talk time! Today we greet family: \"Hello, Grandma. How are you?\" Answer: \"I'm fine, thank you!\""
+  },
+  "ttsText": {
+    "uz": "Salom, buvi! Yaxshimisiz?",
+    "en": "Talk time! Hello, Grandma. How are you? I'm fine, thank you!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Buvi qanday javob berdi?",
+        "ru": "Послушай. Что ответила бабушка?",
+        "en": "Listen. How did grandma answer?"
+      },
+      "hint": {
+        "uz": "«I'm fine» — yaxshiman.",
+        "ru": "«I'm fine» — хорошо.",
+        "en": "\"I'm fine, thank you.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «I'm fine, thank you!»",
+        "ru": "Верно! «I'm fine, thank you!»",
+        "en": "Right! \"I'm fine, thank you!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Hello, Grandma. How are you?",
+              "audio": {
+                "key": "ing22-q1-a",
+                "text": "Hello, Grandma. How are you?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👵",
+              "name": "Grandma",
+              "text": "I'm fine, thank you!",
+              "audio": {
+                "key": "ing22-q1-b",
+                "text": "I'm fine, thank you!",
+                "voice": "teacher"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Buvi nima dedi?",
+              "ru": "Что сказала бабушка?",
+              "en": "What did grandma say?"
+            },
+            "choices": [
+              "I'm fine, thank you!",
+              "Goodbye!",
+              "How many books?"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola qanday his qilyapti?",
+        "ru": "Послушай. Как чувствует себя ребёнок?",
+        "en": "Listen. How does the child feel?"
+      },
+      "hint": {
+        "uz": "«I'm happy!» — xursandman.",
+        "ru": "«I'm happy!» — я рад.",
+        "en": "\"I'm happy!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «I'm happy!»",
+        "ru": "Верно! «I'm happy!»",
+        "en": "Right! \"I'm happy!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👵",
+              "name": "Grandma",
+              "text": "How are you, Sam?",
+              "audio": {
+                "key": "ing22-q2-a",
+                "text": "How are you, Sam?",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I'm happy!",
+              "audio": {
+                "key": "ing22-q2-b",
+                "text": "I'm happy!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam qanday?",
+              "ru": "Каков Сэм?",
+              "en": "How is Sam?"
+            },
+            "choices": [
+              "sad",
+              "angry",
+              "happy"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Buvingga qanday salom berasan?",
+        "ru": "Как поздороваешься с бабушкой?",
+        "en": "How do you greet grandma?"
+      },
+      "hint": {
+        "uz": "Salom va holini soʻra.",
+        "ru": "Поздоровайся и спроси о делах.",
+        "en": "Say hello and ask how she is."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Hello, Grandma. How are you?»",
+        "ru": "Верно! «Hello, Grandma. How are you?»",
+        "en": "Right! \"Hello, Grandma. How are you?\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«Hello, Grandma. How are you?»",
+              "ru": "«Hello, Grandma. How are you?»",
+              "en": "\"Hello, Grandma. How are you?\""
+            },
+            {
+              "uz": "«How many books?»",
+              "ru": "«How many books?»",
+              "en": "\"How many books?\""
+            },
+            {
+              "uz": "«It's a robot.»",
+              "ru": "«It's a robot.»",
+              "en": "\"It's a robot.\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«I'm happy!» — baxtli chehrani bos!",
+        "ru": "«I'm happy!» — нажми весёлое лицо!",
+        "en": "\"I'm happy!\" — tap the happy face!"
+      },
+      "hint": {
+        "uz": "Kulib turgan yuz.",
+        "ru": "Улыбающееся лицо.",
+        "en": "A smiling face."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 😀 — happy.",
+        "ru": "Верно! 😀 — happy.",
+        "en": "Right! 😀 happy!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "😀",
+              "label": "happy",
+              "correct": true
+            },
+            {
+              "emoji": "😢",
+              "label": "sad"
+            },
+            {
+              "emoji": "😴",
+              "label": "sleepy"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «How are you?» — holini soʻraydi.",
+        "ru": "Верно? «How are you?» спрашивает о самочувствии.",
+        "en": "Is this right? \"How are you?\" asks how someone feels."
+      },
+      "hint": {
+        "uz": "Salomlashganda soʻraymiz.",
+        "ru": "Спрашиваем при встрече.",
+        "en": "We ask it when we meet."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Holini soʻraydi.",
+        "ru": "Верно! Спрашивает о делах.",
+        "en": "Right! It asks how you feel."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "💬",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola oxirida nima dedi?",
+        "ru": "Послушай. Что ребёнок сказал в конце?",
+        "en": "Listen. What did the child say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «I'm fine, thank you!»",
+        "ru": "Верно! «I'm fine, thank you!»",
+        "en": "Right! \"I'm fine, thank you!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Hi, Grandpa!",
+              "audio": {
+                "key": "ing22-q6-a",
+                "text": "Hi, Grandpa!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👴",
+              "name": "Grandpa",
+              "text": "Hello! How are you?",
+              "audio": {
+                "key": "ing22-q6-b",
+                "text": "Hello! How are you?",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I'm fine, thank you!",
+              "audio": {
+                "key": "ing22-q6-c",
+                "text": "I'm fine, thank you!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam oxirida nima dedi?",
+              "ru": "Что Сэм сказал в конце?",
+              "en": "What did Sam say at the end?"
+            },
+            "choices": [
+              "How many?",
+              "No, it isn't!",
+              "I'm fine, thank you!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«How are you?»ning tarjimasi nima?",
+        "ru": "Что значит «How are you?»",
+        "en": "What does \"How are you?\" mean?"
+      },
+      "hint": {
+        "uz": "Holni soʻrash.",
+        "ru": "Спросить о самочувствии.",
+        "en": "Asking how someone is."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Qalaysiz? / Yaxshimisiz?",
+        "ru": "Верно! Как дела?",
+        "en": "Right! \"How are you?\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yaxshimisiz? / Qalaysiz?",
+              "ru": "Как дела?",
+              "en": "How are you?"
+            },
+            {
+              "uz": "Bu nechta?",
+              "ru": "Сколько это?",
+              "en": "How many?"
+            },
+            {
+              "uz": "Bu kim?",
+              "ru": "Кто это?",
+              "en": "Who is it?"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Salom berayotgan qoʻlni bos!",
+        "ru": "Нажми приветственную руку!",
+        "en": "Tap the waving hand hello!"
+      },
+      "hint": {
+        "uz": "Qoʻl silkitib salom.",
+        "ru": "Машем рукой.",
+        "en": "We wave hello."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 👋 — Hello!",
+        "ru": "Верно! 👋 — Hello!",
+        "en": "Right! 👋 Hello!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👋",
+              "label": "hello",
+              "correct": true
+            },
+            {
+              "emoji": "😴",
+              "label": "sleep"
+            },
+            {
+              "emoji": "🙈",
+              "label": "hide"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Buving «How are you?» dedi. Sen nima deysan?",
+        "ru": "Бабушка спросила «How are you?». Что ответишь?",
+        "en": "Grandma asks \"How are you?\" What do you say?"
+      },
+      "hint": {
+        "uz": "Odob bilan javob ber.",
+        "ru": "Ответь вежливо.",
+        "en": "Answer politely."
+      },
+      "explanation": {
+        "uz": "Barakalla! «I'm fine, thank you!»",
+        "ru": "Молодец! «I'm fine, thank you!»",
+        "en": "Great! \"I'm fine, thank you!\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«I'm fine, thank you!»",
+              "ru": "«I'm fine, thank you!»",
+              "en": "\"I'm fine, thank you!\""
+            },
+            {
+              "uz": "«It's a ball.»",
+              "ru": "«It's a ball.»",
+              "en": "\"It's a ball.\""
+            },
+            {
+              "uz": "«Three books.»",
+              "ru": "«Three books.»",
+              "en": "\"Three books.\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Ular qanday xayrlashdi?",
+        "ru": "Послушай. Как попрощались?",
+        "en": "Listen. How did they say goodbye?"
+      },
+      "hint": {
+        "uz": "«See you soon!» — tez orada koʻrishguncha.",
+        "ru": "«See you soon!» — до скорой встречи.",
+        "en": "\"See you soon!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Bye! See you soon!»",
+        "ru": "Верно! «Bye! See you soon!»",
+        "en": "Right! \"Bye! See you soon!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Goodbye, Grandma!",
+              "audio": {
+                "key": "ing22-q10-a",
+                "text": "Goodbye, Grandma!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👵",
+              "name": "Grandma",
+              "text": "Bye! See you soon!",
+              "audio": {
+                "key": "ing22-q10-b",
+                "text": "Bye! See you soon!",
+                "voice": "teacher"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Buvi nima dedi?",
+              "ru": "Что сказала бабушка?",
+              "en": "What did grandma say?"
+            },
+            "choices": [
+              "See you soon!",
+              "Stand up!",
+              "How many?"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    }
+  ]
+}

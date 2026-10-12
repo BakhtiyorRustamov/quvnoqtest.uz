@@ -1,0 +1,516 @@
+{
+  "topicId": "g1-ingliz-27",
+  "subjectKey": "g1-ingliz",
+  "emojis": "📖🧸🤲🏠",
+  "title": {
+    "uz": "Narsalarga eʼtiborli boʻl (hikoya)",
+    "ru": "Береги вещи (история)",
+    "en": "Take care of things (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bugungi qadriyat — «Take care of things» (narsalarni asra). Kitob va oʻyinchoqlarimizga ehtiyot boʻlamiz.",
+    "ru": "Время истории! Ценность сегодня — «Take care of things» (береги вещи). Бережём книги и игрушки.",
+    "en": "Story time! Today's value is \"Take care of things.\" We look after our books and toys."
+  },
+  "ttsText": {
+    "uz": "Narsalarga eʼtiborli boʻl.",
+    "en": "Story time! Take care of things. I take care of my book!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: nima birinchi boʻldi?",
+        "ru": "Расставь историю по порядку!",
+        "en": "Put the story in order!"
+      },
+      "hint": {
+        "uz": "Avval kitob tushib ketadi.",
+        "ru": "Сначала книга падает.",
+        "en": "First the book falls."
+      },
+      "explanation": {
+        "uz": "Barakalla! Endi Sam kitobini asraydi.",
+        "ru": "Молодец! Теперь Сэм бережёт книгу.",
+        "en": "Great! Now Sam takes care of his book."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "📖",
+          "events": [
+            {
+              "text": {
+                "uz": "Samning kitobi tushib ketdi.",
+                "ru": "Книга Сэма упала.",
+                "en": "Sam's book falls down."
+              }
+            },
+            {
+              "text": {
+                "uz": "Bir sahifa yirtildi.",
+                "ru": "Страница порвалась.",
+                "en": "A page tears."
+              }
+            },
+            {
+              "text": {
+                "uz": "Buvi tuzatishni koʻrsatadi.",
+                "ru": "Бабушка показывает, как починить.",
+                "en": "Grandma shows how to mend it."
+              }
+            },
+            {
+              "text": {
+                "uz": "Endi Sam kitobini asraydi.",
+                "ru": "Теперь Сэм бережёт книгу.",
+                "en": "Now Sam takes care of his book."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Sam nima dedi?",
+        "ru": "Послушай. Что сказал Сэм?",
+        "en": "Listen. What did Sam say?"
+      },
+      "hint": {
+        "uz": "«I'll take care of it» — uni asrayman.",
+        "ru": "«I'll take care of it» — буду беречь.",
+        "en": "\"I'll take care of it.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «I'll take care of it!»",
+        "ru": "Верно! «I'll take care of it!»",
+        "en": "Right! \"I'll take care of it!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👵",
+              "name": "Grandma",
+              "text": "Take care of your book!",
+              "audio": {
+                "key": "ing27-q2-a",
+                "text": "Take care of your book!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "OK! I'll take care of it!",
+              "audio": {
+                "key": "ing27-q2-b",
+                "text": "OK! I'll take care of it!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "Go away!",
+              "How many?",
+              "I'll take care of it!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Narsalarimizni asrashimiz kerak.",
+        "ru": "Верно? Мы должны беречь вещи.",
+        "en": "Is this right? We should take care of our things."
+      },
+      "hint": {
+        "uz": "Ehtiyot boʻlamiz.",
+        "ru": "Бережём.",
+        "en": "We look after them."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Narsalarimizni asraymiz.",
+        "ru": "Верно! Бережём свои вещи.",
+        "en": "Right! We take care of our things."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🤲",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kitobni qanday asraymiz? Yaxshi usullarni belgila!",
+        "ru": "Как беречь книгу? Отметь хорошие способы!",
+        "en": "How do we care for a book? Tap the good ways!"
+      },
+      "hint": {
+        "uz": "Toza qoʻl, ehtiyotkorlik, javonga qoʻyish.",
+        "ru": "Чистые руки, аккуратность, ставить на полку.",
+        "en": "Clean hands, gentle hold, put on a shelf."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ehtiyotkorlik bilan asraymiz!",
+        "ru": "Молодец! Бережём аккуратно!",
+        "en": "Great! We care for it gently!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "📚",
+              "label": "put on a shelf",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🤲",
+              "label": "hold gently",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🧼",
+              "label": "clean hands",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "💧",
+              "label": "get it wet"
+            },
+            {
+              "id": "d1",
+              "emoji": "✂️",
+              "label": "cut it"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sam nimani asrayapti? Bos!",
+        "ru": "О чём заботится Сэм? Нажми!",
+        "en": "What does Sam take care of? Tap it!"
+      },
+      "hint": {
+        "uz": "Oʻqiydigan narsa.",
+        "ru": "То, что читают.",
+        "en": "Something you read."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A book — kitob.",
+        "ru": "Верно! A book — книга.",
+        "en": "Right! A book!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "📖",
+              "label": "book",
+              "correct": true
+            },
+            {
+              "emoji": "⚽",
+              "label": "ball"
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Kitob yaxshimi?",
+        "ru": "Послушай. Книга в порядке?",
+        "en": "Listen. Is the book OK?"
+      },
+      "hint": {
+        "uz": "«Yes! I take care of it».",
+        "ru": "«Yes! I take care of it».",
+        "en": "\"Yes! I take care of it.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes! I take care of it!»",
+        "ru": "Верно! «Yes! I take care of it!»",
+        "en": "Right! \"Yes! I take care of it!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👵",
+              "name": "Grandma",
+              "text": "Is the book OK?",
+              "audio": {
+                "key": "ing27-q6-a",
+                "text": "Is the book OK?",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Yes! I take care of it!",
+              "audio": {
+                "key": "ing27-q6-b",
+                "text": "Yes! I take care of it!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "Yes! I take care of it!",
+              "No, it isn't!",
+              "Goodbye!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishlarni ajrat: narsani asraydi yoki buzadi!",
+        "ru": "Разложи: бережёт или портит!",
+        "en": "Sort them: takes care or breaks it!"
+      },
+      "hint": {
+        "uz": "Ehtiyotkorlik — asrash.",
+        "ru": "Аккуратность — беречь.",
+        "en": "Gentle — take care."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ehtiyotkorlik yaxshi.",
+        "ru": "Молодец! Бережное отношение — хорошо.",
+        "en": "Great! Gentle care is good."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "g",
+              "label": {
+                "uz": "Take care",
+                "ru": "Бережёт",
+                "en": "Take care"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "Breaks it",
+                "ru": "Ломает",
+                "en": "Breaks it"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "📚",
+              "label": "tidy it",
+              "bin": "g"
+            },
+            {
+              "emoji": "🤲",
+              "label": "hold gently",
+              "bin": "g"
+            },
+            {
+              "emoji": "🧽",
+              "label": "clean it",
+              "bin": "g"
+            },
+            {
+              "emoji": "💧",
+              "label": "get it wet",
+              "bin": "b"
+            },
+            {
+              "emoji": "✂️",
+              "label": "tear it",
+              "bin": "b"
+            },
+            {
+              "emoji": "🦶",
+              "label": "step on it",
+              "bin": "b"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Kitobni yirtish — uni asrash.",
+        "ru": "Верно? Порвать книгу — беречь её.",
+        "en": "Is this right? Tearing a book is taking care of it."
+      },
+      "hint": {
+        "uz": "Yirtish — buzish.",
+        "ru": "Рвать — портить.",
+        "en": "Tearing is breaking."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Yirtish — asrash emas.",
+        "ru": "Неверно! Рвать — не беречь.",
+        "en": "False! Tearing is not taking care."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "📖",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, asraydigan narsalarni juftla!",
+        "ru": "Открывай карточки: вещи, которые бережём!",
+        "en": "Flip the cards: match the things we care for!"
+      },
+      "hint": {
+        "uz": "book 📖, bag 🎒, bike 🚲.",
+        "ru": "book 📖, bag 🎒, bike 🚲.",
+        "en": "book 📖, bag 🎒, bike 🚲."
+      },
+      "explanation": {
+        "uz": "Barakalla! Hammasini asraymiz!",
+        "ru": "Молодец! Бережём всё!",
+        "en": "Great! We care for them all!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "📖"
+              },
+              "b": {
+                "label": "book"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎒"
+              },
+              "b": {
+                "label": "bag"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🚲"
+              },
+              "b": {
+                "label": "bike"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qadriyati nima?",
+        "ru": "Какая ценность у истории?",
+        "en": "What is the value of the story?"
+      },
+      "hint": {
+        "uz": "Narsalarimizga munosabat.",
+        "ru": "Отношение к вещам.",
+        "en": "How we treat our things."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Take care of things — narsalarni asra.",
+        "ru": "Верно! Take care of things — береги вещи.",
+        "en": "Right! Take care of things!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "take care of things\nnarsalarni asrash",
+              "ru": "take care of things\nбереги вещи",
+              "en": "take care of things"
+            },
+            {
+              "uz": "break things\nnarsalarni sindirish",
+              "ru": "break things\nломать вещи",
+              "en": "break things"
+            },
+            {
+              "uz": "waste things\nnarsalarni isrof qilish",
+              "ru": "waste things\nтратить вещи",
+              "en": "waste things"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

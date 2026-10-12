@@ -1,0 +1,35 @@
+{
+  "topicId": "g1-art-03",
+  "subjectKey": "g1-art",
+  "emojis": "",
+  "hideAudio": true,
+  "title": { "uz": "Kuzgi yaproqlar", "ru": "Осенние листья", "en": "Autumn leaves" },
+  "recall": {
+    "uz": "Kuzda barglar yashildan sariq, qizil va jigarrang tusga kiradi. Keling, kuzgi yaproq rasmini chiroyli qilib boʻyaymiz.",
+    "ru": "Осенью листья становятся из зелёных жёлтыми, красными и коричневыми. Давай красиво раскрасим осенний лист.",
+    "en": "In autumn leaves turn from green to yellow, red and brown. Let's colour an autumn leaf beautifully."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kuzgi barglarning ranglarini tanla!", "ru": "Выбери цвета осенних листьев!", "en": "Pick the colours of autumn leaves!" },
+      "hint": { "uz": "Sariq, qizil, jigarrang.", "ru": "Жёлтый, красный, коричневый.", "en": "Yellow, red, brown." },
+      "explanation": { "uz": "Barakalla! Kuz — sariq, qizil va jigarrang fasl.", "ru": "Молодец! Осень — жёлтая, красная и коричневая.", "en": "Great! Autumn is yellow, red and brown." },
+      "widget": { "type": "color_pick", "props": { "multi": true, "options": [
+        { "id": "red", "color": "#e4443a", "label": { "uz": "qizil", "ru": "красный", "en": "red" }, "correct": true },
+        { "id": "orange", "color": "#f39a1f", "label": { "uz": "toʻq sariq", "ru": "оранжевый", "en": "orange" }, "correct": true },
+        { "id": "yellow", "color": "#f7d13a", "label": { "uz": "sariq", "ru": "жёлтый", "en": "yellow" }, "correct": true },
+        { "id": "brown", "color": "#9c5b2e", "label": { "uz": "jigarrang", "ru": "коричневый", "en": "brown" }, "correct": true },
+        { "id": "blue", "color": "#1fa7e0", "label": { "uz": "koʻk", "ru": "синий", "en": "blue" } },
+        { "id": "purple", "color": "#8a4bd0", "label": { "uz": "binafsha", "ru": "фиолетовый", "en": "purple" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kuzgi yaproqni oʻzing xohlagan kuz ranglariga boʻya.", "ru": "Раскрась осенний лист в осенние цвета.", "en": "Colour the autumn leaf in autumn colours." },
+      "hint": { "uz": "Rang tanla, soʻng bargni bos.", "ru": "Выбери цвет и нажми на лист.", "en": "Pick a colour, then tap the leaf." },
+      "explanation": { "uz": "Chiroyli kuzgi barg!", "ru": "Красивый осенний лист!", "en": "A beautiful autumn leaf!" },
+      "widget": { "type": "color_fill", "props": { "picture": "leaf" } }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 150" font-family="system-ui, sans-serif">
+<rect width="700" height="150" rx="18" fill="#ffffff"/>
+<circle cx="80" cy="75" r="36" fill="#f0c930" stroke="#2b2f3a" stroke-width="5"/>
+<circle cx="185" cy="75" r="36" fill="#f0c930" stroke="#2b2f3a" stroke-width="5"/>
+<polygon points="290,44.55 255.0,105.45 325.0,105.45" fill="#e8564a" stroke="#2b2f3a" stroke-width="5" stroke-linejoin="round"/>
+<circle cx="400" cy="75" r="36" fill="#f0c930" stroke="#2b2f3a" stroke-width="5"/>
+<circle cx="505" cy="75" r="36" fill="#f0c930" stroke="#2b2f3a" stroke-width="5"/>
+<rect x="576.0" y="31.0" width="88" height="88" rx="14" fill="#eef4ff" stroke="#4a9be8" stroke-width="5" stroke-dasharray="10 8"/><text x="620" y="93" text-anchor="middle" font-size="52" font-weight="700" fill="#4a9be8">?</text>
+</svg>

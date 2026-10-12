@@ -1,0 +1,523 @@
+{
+  "topicId": "g1-informatika-26",
+  "subjectKey": "g1-informatika",
+  "emojis": "🏠🔺⬛☀️",
+  "title": {
+    "uz": "Narsalarni qismlarga ajratish",
+    "ru": "Разбиение на части",
+    "en": "Breaking things into parts"
+  },
+  "recall": {
+    "uz": "Har bir narsa qismlardan iborat. Uy uchburchak va kvadratlardan, quyosh doiradan tashkil topgan. Katta narsani kichik qismlarga ajratamiz.",
+    "ru": "Каждый предмет состоит из частей. Дом — из треугольника и квадратов, солнце — из круга. Большое делим на части.",
+    "en": "Everything is made of parts. A house is made of a triangle and squares, the sun of a circle. We split a big thing into parts."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani shakli bilan ula!",
+        "ru": "Соедини предмет с его фигурами!",
+        "en": "Match each thing to its shapes!"
+      },
+      "hint": {
+        "uz": "Uy — uchburchak va kvadrat.",
+        "ru": "Дом — треугольник и квадрат.",
+        "en": "House — triangle and square."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🏠"
+              },
+              "right": {
+                "label": {
+                  "uz": "uchburchak va kvadrat",
+                  "ru": "треугольник и квадрат",
+                  "en": "triangle & square"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "☀️"
+              },
+              "right": {
+                "label": {
+                  "uz": "doira",
+                  "ru": "круг",
+                  "en": "circle"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🌳"
+              },
+              "right": {
+                "label": {
+                  "uz": "doira va toʻrtburchak",
+                  "ru": "круг и прямоугольник",
+                  "en": "circle & rectangle"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uyning tomi qaysi shaklda?",
+        "ru": "Какой формы крыша дома?",
+        "en": "What shape is a house's roof?"
+      },
+      "hint": {
+        "uz": "Uchi bor.",
+        "ru": "С острым верхом.",
+        "en": "It has a point."
+      },
+      "explanation": {
+        "uz": "Uyning tomi — uchburchak.",
+        "ru": "Крыша — треугольник.",
+        "en": "The roof is a triangle."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "uchburchak",
+              "ru": "треугольник",
+              "en": "triangle"
+            },
+            {
+              "uz": "doira",
+              "ru": "круг",
+              "en": "circle"
+            },
+            {
+              "uz": "kvadrat",
+              "ru": "квадрат",
+              "en": "square"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Quyosh qaysi shakldan iborat?",
+        "ru": "Из какой фигуры солнце?",
+        "en": "What shape is the sun?"
+      },
+      "hint": {
+        "uz": "Dumaloq.",
+        "ru": "Круглое.",
+        "en": "It is round."
+      },
+      "explanation": {
+        "uz": "Quyosh — doira.",
+        "ru": "Солнце — круг.",
+        "en": "The sun is a circle."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "doira",
+              "ru": "круг",
+              "en": "circle"
+            },
+            {
+              "uz": "uchburchak",
+              "ru": "треугольник",
+              "en": "triangle"
+            },
+            {
+              "uz": "kvadrat",
+              "ru": "квадрат",
+              "en": "square"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kubning nechta yogʻi (tomoni) bor?",
+        "ru": "Сколько граней у куба?",
+        "en": "How many faces does a cube have?"
+      },
+      "hint": {
+        "uz": "Har tomonini sana.",
+        "ru": "Посчитай грани.",
+        "en": "Count the faces."
+      },
+      "explanation": {
+        "uz": "Kubning 6 ta yogʻi bor.",
+        "ru": "У куба 6 граней.",
+        "en": "A cube has 6 faces."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "4",
+            "3"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Shakllarni turiga qarab ajrat!",
+        "ru": "Раздели фигуры по виду!",
+        "en": "Sort the shapes by type!"
+      },
+      "hint": {
+        "uz": "Avval shaklni, keyin qutini bos.",
+        "ru": "Сначала фигуру, потом ящик.",
+        "en": "Tap a shape, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Shakllarni ajratding.",
+        "ru": "Молодец!",
+        "en": "Great! Shapes sorted."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "u",
+              "label": {
+                "uz": "Uchburchak",
+                "ru": "Треугольник",
+                "en": "Triangle"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "Doira",
+                "ru": "Круг",
+                "en": "Circle"
+              }
+            },
+            {
+              "id": "t",
+              "label": {
+                "uz": "Toʻrtburchak",
+                "ru": "Прямоугольник",
+                "en": "Rectangle"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🔺",
+              "label": {
+                "uz": "uchburchak",
+                "ru": "треугольник",
+                "en": "triangle"
+              },
+              "bin": "u"
+            },
+            {
+              "emoji": "🍕",
+              "label": {
+                "uz": "pitsa boʻlagi",
+                "ru": "кусок пиццы",
+                "en": "pizza slice"
+              },
+              "bin": "u"
+            },
+            {
+              "emoji": "🔵",
+              "label": {
+                "uz": "doira",
+                "ru": "круг",
+                "en": "circle"
+              },
+              "bin": "d"
+            },
+            {
+              "emoji": "⚽",
+              "label": {
+                "uz": "koptok",
+                "ru": "мяч",
+                "en": "ball"
+              },
+              "bin": "d"
+            },
+            {
+              "emoji": "⬛",
+              "label": {
+                "uz": "kvadrat",
+                "ru": "квадрат",
+                "en": "square"
+              },
+              "bin": "t"
+            },
+            {
+              "emoji": "📺",
+              "label": {
+                "uz": "televizor",
+                "ru": "телевизор",
+                "en": "TV"
+              },
+              "bin": "t"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (uyni tashkil etmaydi)",
+        "ru": "Нажми лишнее! (не в доме)",
+        "en": "Tap the odd one! (not in a house)"
+      },
+      "hint": {
+        "uz": "Qaysi shakl uyda yoʻq?",
+        "ru": "Какой фигуры нет в доме?",
+        "en": "Which shape isn't in a house?"
+      },
+      "explanation": {
+        "uz": "Uy uchburchak va toʻrtburchaklardan, doira yoʻq.",
+        "ru": "Дом — из треугольника и прямоугольников.",
+        "en": "A house uses triangles and rectangles, not a circle."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "uyni tashkil etuvchi shakllar",
+            "ru": "фигуры дома",
+            "en": "house shapes"
+          },
+          "tiles": [
+            {
+              "text": "uchburchak"
+            },
+            {
+              "text": "kvadrat"
+            },
+            {
+              "text": "toʻrtburchak"
+            },
+            {
+              "text": "doira",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uy bir necha shakldan tuzilgan.",
+        "ru": "Дом состоит из нескольких фигур.",
+        "en": "A house is made of several shapes."
+      },
+      "hint": {
+        "uz": "Tom va devorlar.",
+        "ru": "Крыша и стены.",
+        "en": "Roof and walls."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🏠",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan shakl nomini tuz! (⬛)",
+        "ru": "Составь название фигуры! (⬛)",
+        "en": "Build the shape's name! (⬛)"
+      },
+      "hint": {
+        "uz": "K-V-A-D-R-A-T harflaridan.",
+        "ru": "Из букв K-V-A-D-R-A-T.",
+        "en": "From K-V-A-D-R-A-T."
+      },
+      "explanation": {
+        "uz": "Barakalla! «kvadrat» soʻzini tuzding.",
+        "ru": "Молодец! «kvadrat».",
+        "en": "Great! You built “kvadrat”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "⬛",
+          "word": "kvadrat",
+          "label": {
+            "uz": "kvadrat",
+            "ru": "квадрат",
+            "en": "square"
+          },
+          "letters": [
+            "k",
+            "v",
+            "a",
+            "d",
+            "r",
+            "a",
+            "t"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kubning yoqlari qaysi shaklda?",
+        "ru": "Какой формы грани куба?",
+        "en": "What shape are a cube's faces?"
+      },
+      "hint": {
+        "uz": "Toʻrt teng tomon.",
+        "ru": "Четыре равные стороны.",
+        "en": "Four equal sides."
+      },
+      "explanation": {
+        "uz": "Kubning yoqlari — kvadrat.",
+        "ru": "Грани куба — квадраты.",
+        "en": "A cube's faces are squares."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "kvadrat",
+              "ru": "квадрат",
+              "en": "square"
+            },
+            {
+              "uz": "doira",
+              "ru": "круг",
+              "en": "circle"
+            },
+            {
+              "uz": "uchburchak",
+              "ru": "треугольник",
+              "en": "triangle"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir shaklni tomonlari soni bilan ula!",
+        "ru": "Соедини фигуру с числом сторон!",
+        "en": "Match each shape to its number of sides!"
+      },
+      "hint": {
+        "uz": "Uchburchak — 3 tomon.",
+        "ru": "Треугольник — 3 стороны.",
+        "en": "Triangle — 3 sides."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🔺"
+              },
+              "right": {
+                "label": {
+                  "uz": "3 tomon",
+                  "ru": "3 стороны",
+                  "en": "3 sides"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬛"
+              },
+              "right": {
+                "label": {
+                  "uz": "4 tomon",
+                  "ru": "4 стороны",
+                  "en": "4 sides"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🔵"
+              },
+              "right": {
+                "label": {
+                  "uz": "dumaloq",
+                  "ru": "круглый",
+                  "en": "round"
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "topicId": "g1-math-79",
+  "subjectKey": "g1-math",
+  "emojis": "🤖➕✨",
+  "title": {
+    "uz": "Masalalarni yechamiz",
+    "ru": "Решаем задачи",
+    "en": "Solving word problems"
+  },
+  "recall": {
+    "uz": "Koʻp masalalarda qismlar butunni hosil qiladi: qism + qism = butun. Butunni topish uchun qismlarni qoʻshamiz. Masalan, 46 qop va 42 qop — jami 46 + 42 = 88 qop.",
+    "ru": "Во многих задачах части образуют целое: часть + часть = целое. Чтобы найти целое, складываем части. Например, 46 и 42 мешка — всего 46 + 42 = 88.",
+    "en": "In many problems parts make a whole: part + part = whole. To find the whole, add the parts. For example 46 and 42 sacks — 46 + 42 = 88 in all."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "88",
+            "87",
+            "89"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bir robot 46 qop, ikkinchisi 42 qop chiqindi yukladi. Jami nechta qop?",
+        "ru": "Один робот загрузил 46 мешков, другой 42. Сколько всего?",
+        "en": "One robot loaded 46 sacks, another 42. How many in all?"
+      },
+      "hint": {
+        "uz": "46 ga 42 ni qoʻsh.",
+        "ru": "Прибавь к 46 число 42.",
+        "en": "Add 42 to 46."
+      },
+      "explanation": {
+        "uz": "46 + 42 = 88.",
+        "ru": "46 + 42 = 88.",
+        "en": "46 + 42 = 88."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 88,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 46 + 42 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 46 + 42 = ?",
+        "en": "Work it out and build the answer with blocks: 46 + 42 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "46 + 42 = 88.",
+        "ru": "46 + 42 = 88.",
+        "en": "46 + 42 = 88."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "46 + 42",
+              "right": "88"
+            },
+            {
+              "left": "30 + 43",
+              "right": "73"
+            },
+            {
+              "left": "74 + 11",
+              "right": "85"
+            },
+            {
+              "left": "88 - 14",
+              "right": "74"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "13",
+            "12",
+            "14"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Robot 1-topshiriqda 5, 2-da 3, 3-da 5 ball oldi. Jami nechta ball?",
+        "ru": "Робот набрал 5, 3 и 5 баллов. Сколько всего баллов?",
+        "en": "A robot scored 5, 3 and 5 points. How many points in all?"
+      },
+      "hint": {
+        "uz": "5 + 3 + 5 ni qoʻsh.",
+        "ru": "Сложи 5 + 3 + 5.",
+        "en": "Add 5 + 3 + 5."
+      },
+      "explanation": {
+        "uz": "5 + 3 + 5 = 13.",
+        "ru": "5 + 3 + 5 = 13.",
+        "en": "5 + 3 + 5 = 13."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 13,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 5 + 3 + 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 5 + 3 + 5 = ?",
+        "en": "Work it out and build the answer with blocks: 5 + 3 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "5 + 3 + 5 = 13.",
+        "ru": "5 + 3 + 5 = 13.",
+        "en": "5 + 3 + 5 = 13."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "12 + 8",
+              "right": "20"
+            },
+            {
+              "left": "40 + 9",
+              "right": "49"
+            },
+            {
+              "left": "57 + 10",
+              "right": "67"
+            },
+            {
+              "left": "25 + 25",
+              "right": "50"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "85",
+            "84",
+            "86"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 74 + 11 = ?",
+        "ru": "Вычисли: 74 + 11 = ?",
+        "en": "Work it out: 74 + 11 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Десятки к десяткам, единицы к единицам.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "74 + 11 = 85.",
+        "ru": "74 + 11 = 85.",
+        "en": "74 + 11 = 85."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 88,
+          "y": 85
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 88 va 85 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 88 и 85 — какой знак верный?",
+        "en": "Look at the scale: 88 and 85 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla.",
+        "ru": "Сначала сравни десятки.",
+        "en": "Compare the tens first."
+      },
+      "explanation": {
+        "uz": "88 > 85.",
+        "ru": "88 > 85.",
+        "en": "88 > 85."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "38",
+            "37",
+            "39"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Koʻrgazmada 23 katta va 15 kichik robot bor. Jami nechta robot?",
+        "ru": "На выставке 23 больших и 15 малых роботов. Сколько всего?",
+        "en": "An expo has 23 big and 15 small robots. How many in all?"
+      },
+      "hint": {
+        "uz": "23 ga 15 ni qoʻsh.",
+        "ru": "Прибавь к 23 число 15.",
+        "en": "Add 15 to 23."
+      },
+      "explanation": {
+        "uz": "23 + 15 = 38.",
+        "ru": "23 + 15 = 38.",
+        "en": "23 + 15 = 38."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 38,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 23 + 15 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 23 + 15 = ?",
+        "en": "Work it out and build the answer with blocks: 23 + 15 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "23 + 15 = 38.",
+        "ru": "23 + 15 = 38.",
+        "en": "23 + 15 = 38."
+      }
+    }
+  ]
+}

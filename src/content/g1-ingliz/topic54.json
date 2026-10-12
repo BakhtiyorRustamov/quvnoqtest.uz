@@ -1,0 +1,512 @@
+{
+  "topicId": "g1-ingliz-54",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🚶🦋🐍🐦",
+  "title": {
+    "uz": "Fan: hayvonlar qanday harakatlanadi?",
+    "ru": "Наука: как двигаются животные?",
+    "en": "Science: how do animals move?"
+  },
+  "recall": {
+    "uz": "Kashfiyot darsi (fan)! Hayvonlar turlicha harakatlanadi: walk — yuradi, fly — uchadi, slither — sudraladi. Qush uchadi, ilon sudraladi.",
+    "ru": "Урок-открытие (наука)! Животные двигаются по-разному: walk — ходят, fly — летают, slither — ползают. Птица летает, змея ползёт.",
+    "en": "Discovery lesson (science)! Animals move differently: walk, fly and slither. A bird flies, a snake slithers."
+  },
+  "ttsText": {
+    "uz": "Hayvonlar qanday harakatlanadi?",
+    "en": "Science! How do animals move? Walk, fly or slither? A bird can fly!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hayvonlarni harakatiga qarab ajrat!",
+        "ru": "Разложи животных по движению!",
+        "en": "Sort the animals by how they move!"
+      },
+      "hint": {
+        "uz": "Yuradi, uchadi, sudraladi.",
+        "ru": "Ходит, летает, ползёт.",
+        "en": "Walk, fly, slither."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har hayvon oʻz harakatida.",
+        "ru": "Молодец! Каждое по своему движению.",
+        "en": "Great! Each by its movement!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "w",
+              "label": {
+                "uz": "Walk",
+                "ru": "Ходит",
+                "en": "Walk"
+              }
+            },
+            {
+              "id": "f",
+              "label": {
+                "uz": "Fly",
+                "ru": "Летает",
+                "en": "Fly"
+              }
+            },
+            {
+              "id": "s",
+              "label": {
+                "uz": "Slither",
+                "ru": "Ползёт",
+                "en": "Slither"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🦁",
+              "label": "lion",
+              "bin": "w"
+            },
+            {
+              "emoji": "🐘",
+              "label": "elephant",
+              "bin": "w"
+            },
+            {
+              "emoji": "🐦",
+              "label": "bird",
+              "bin": "f"
+            },
+            {
+              "emoji": "🦋",
+              "label": "butterfly",
+              "bin": "f"
+            },
+            {
+              "emoji": "🐍",
+              "label": "snake",
+              "bin": "s"
+            },
+            {
+              "emoji": "🐌",
+              "label": "snail",
+              "bin": "s"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi hayvon ucha oladi? Bos!",
+        "ru": "Какое животное умеет летать? Нажми!",
+        "en": "Which animal can fly? Tap it!"
+      },
+      "hint": {
+        "uz": "Qanoti bor.",
+        "ru": "У неё есть крылья.",
+        "en": "It has wings."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A bird can fly.",
+        "ru": "Верно! A bird can fly.",
+        "en": "Right! A bird can fly."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐦",
+              "label": "bird",
+              "correct": true
+            },
+            {
+              "emoji": "🐍",
+              "label": "snake"
+            },
+            {
+              "emoji": "🦁",
+              "label": "lion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi hayvon sudraladi? Bos!",
+        "ru": "Какое животное ползёт? Нажми!",
+        "en": "Which animal slithers? Tap it!"
+      },
+      "hint": {
+        "uz": "Oyoqsiz, yerda sudraladi.",
+        "ru": "Без ног, ползёт по земле.",
+        "en": "No legs, moves on the ground."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A snake slithers.",
+        "ru": "Верно! A snake slithers.",
+        "en": "Right! A snake slithers."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐍",
+              "label": "snake",
+              "correct": true
+            },
+            {
+              "emoji": "🐦",
+              "label": "bird"
+            },
+            {
+              "emoji": "🐘",
+              "label": "elephant"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Qush ucha oladi. 🐦 «A bird can fly.»",
+        "ru": "Верно? Птица умеет летать. 🐦",
+        "en": "Is this right? A bird can fly. 🐦"
+      },
+      "hint": {
+        "uz": "Qanoti bor.",
+        "ru": "У неё крылья.",
+        "en": "It has wings."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A bird can fly.",
+        "ru": "Верно! A bird can fly.",
+        "en": "Right! A bird can fly."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐦",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Ilon ucha oladi. 🐍 «A snake can fly.»",
+        "ru": "Верно? Змея умеет летать. 🐍",
+        "en": "Is this right? A snake can fly. 🐍"
+      },
+      "hint": {
+        "uz": "Ilon sudraladi.",
+        "ru": "Змея ползёт.",
+        "en": "A snake slithers."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Ilon sudraladi (slither).",
+        "ru": "Неверно! Змея ползёт (slither).",
+        "en": "False! A snake slithers."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐍",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harakatni hayvonga ula!",
+        "ru": "Соедини движение с животным!",
+        "en": "Match each movement to an animal!"
+      },
+      "hint": {
+        "uz": "walk 🦁, fly 🐦, slither 🐍.",
+        "ru": "walk 🦁, fly 🐦, slither 🐍.",
+        "en": "walk 🦁, fly 🐦, slither 🐍."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "walk"
+              },
+              "right": {
+                "emoji": "🦁"
+              }
+            },
+            {
+              "left": {
+                "label": "fly"
+              },
+              "right": {
+                "emoji": "🐦"
+              }
+            },
+            {
+              "left": {
+                "label": "slither"
+              },
+              "right": {
+                "emoji": "🐍"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ucha oladigan hayvonlarni belgila!",
+        "ru": "Отметь животных, которые летают!",
+        "en": "Tap the animals that can fly!"
+      },
+      "hint": {
+        "uz": "Qush, kapalak, asalari.",
+        "ru": "Птица, бабочка, пчела.",
+        "en": "Bird, butterfly, bee."
+      },
+      "explanation": {
+        "uz": "Barakalla! Qush, kapalak, asalari — uchadi!",
+        "ru": "Молодец! Птица, бабочка, пчела — летают!",
+        "en": "Great! Bird, butterfly, bee can fly!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐦",
+              "label": "bird",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🦋",
+              "label": "butterfly",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐝",
+              "label": "bee",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐍",
+              "label": "snake"
+            },
+            {
+              "id": "d1",
+              "emoji": "🦁",
+              "label": "lion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Oyogʻim yoʻq, yerda «sss» deb sudralaman.",
+        "ru": "У меня нет ног, я ползу «ссс».",
+        "en": "I have no legs, I move on the ground: sss."
+      },
+      "explanation": {
+        "uz": "Javob — snake (ilon)! U sudraladi.",
+        "ru": "Ответ — snake (змея)! Она ползёт.",
+        "en": "The answer is a snake! It slithers."
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Oyogʻim yoʻq, yerda sudralaman,",
+              "ru": "У меня нет ног, я ползу,",
+              "en": "I have no legs, I slither on the ground,"
+            },
+            {
+              "uz": "«sss» deyman. Men kimman?",
+              "ru": "я шиплю «ссс». Кто я?",
+              "en": "I hiss: sss. What am I?"
+            }
+          ],
+          "options": [
+            {
+              "emoji": "🐍",
+              "label": {
+                "uz": "ilon",
+                "ru": "змея",
+                "en": "snake"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🐦",
+              "label": {
+                "uz": "qush",
+                "ru": "птица",
+                "en": "bird"
+              }
+            },
+            {
+              "emoji": "🦁",
+              "label": {
+                "uz": "sher",
+                "ru": "лев",
+                "en": "lion"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Qush qanday harakatlanadi?",
+        "ru": "Послушай. Как двигается птица?",
+        "en": "Listen. How does a bird move?"
+      },
+      "hint": {
+        "uz": "«It can fly!» — u ucha oladi.",
+        "ru": "«It can fly!» — она летает.",
+        "en": "\"It can fly!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It can fly — uchadi.",
+        "ru": "Верно! It can fly — летает.",
+        "en": "Right! It can fly."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "How does a bird move?",
+              "audio": {
+                "key": "ing54-q9-a",
+                "text": "How does a bird move?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "🤖",
+              "name": "Robo",
+              "text": "It can fly!",
+              "audio": {
+                "key": "ing54-q9-b",
+                "text": "It can fly!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qush qanday harakatlanadi?",
+              "ru": "Как двигается птица?",
+              "en": "How does a bird move?"
+            },
+            "choices": [
+              "swim",
+              "fly",
+              "slither"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ilon qanday harakatlanadi?",
+        "ru": "Как двигается змея?",
+        "en": "How does a snake move?"
+      },
+      "hint": {
+        "uz": "Yerda sudraladi.",
+        "ru": "Ползёт по земле.",
+        "en": "It moves on the ground."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Slither — sudralish.",
+        "ru": "Верно! Slither — ползать.",
+        "en": "Right! Slither!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "slither\nsudralish",
+              "ru": "slither\nползать",
+              "en": "slither"
+            },
+            {
+              "uz": "fly\nuchish",
+              "ru": "fly\nлетать",
+              "en": "fly"
+            },
+            {
+              "uz": "walk\nyurish",
+              "ru": "walk\nходить",
+              "en": "walk"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

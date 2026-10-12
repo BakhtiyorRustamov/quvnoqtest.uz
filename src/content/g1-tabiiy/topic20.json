@@ -1,0 +1,204 @@
+{
+  "topicId": "g1-tabiiy-20",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "✈️🚗🚢🚂",
+  "title": {
+    "uz": "Transport olami",
+    "ru": "Мир транспорта",
+    "en": "The world of transport"
+  },
+  "recall": {
+    "uz": "Transport odamlar va yuklarni bir joydan boshqa joyga olib boradi. Transport uch guruhga boʻlinadi: havo, yer usti va suv transporti. Samolyot osmonda uchadi, avtomobil va poyezd yerda yuradi, kema suvda suzadi. Har bir transport oʻziga xos foydali.",
+    "ru": "Транспорт перевозит людей и грузы с одного места на другое. Транспорт делится на три группы: воздушный, наземный и водный. Самолёт летит в небе, автомобиль и поезд едут по земле, корабль плывёт по воде. Каждый транспорт по-своему полезен.",
+    "en": "Transport carries people and goods from one place to another. Transport is divided into three groups: air, land and water. A plane flies in the sky, a car and a train move on land, a ship sails on water. Each type is useful in its own way."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Havoda uchadigan transportni bos!", "ru": "Нажми воздушный транспорт!", "en": "Tap the air transport!" },
+      "hint": { "uz": "U baland osmonda parvoz qiladi.", "ru": "Он летает высоко в небе.", "en": "It flies high in the sky." },
+      "explanation": { "uz": "Samolyot — havo transporti. Avtomobil yerda, kema suvda yuradi.", "ru": "Самолёт — воздушный транспорт. Машина едет по земле, корабль — по воде.", "en": "A plane is air transport. A car moves on land, a ship on water." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "plane", "emoji": "✈️", "label": { "uz": "samolyot", "ru": "самолёт", "en": "plane" }, "correct": true },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "avtomobil", "ru": "машина", "en": "car" } },
+            { "id": "ship", "emoji": "🚢", "label": { "uz": "kema", "ru": "корабль", "en": "ship" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Suvda suzadigan transportni bos!", "ru": "Нажми водный транспорт!", "en": "Tap the water transport!" },
+      "hint": { "uz": "U daryo va dengizda suzadi.", "ru": "Он плавает по реке и морю.", "en": "It sails on rivers and seas." },
+      "explanation": { "uz": "Kema — suv transporti. Poyezd yerda, samolyot havoda yuradi.", "ru": "Корабль — водный транспорт. Поезд по земле, самолёт по воздуху.", "en": "A ship is water transport. A train moves on land, a plane in the air." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "ship", "emoji": "🚢", "label": { "uz": "kema", "ru": "корабль", "en": "ship" }, "correct": true },
+            { "id": "train", "emoji": "🚂", "label": { "uz": "poyezd", "ru": "поезд", "en": "train" } },
+            { "id": "plane", "emoji": "✈️", "label": { "uz": "samolyot", "ru": "самолёт", "en": "plane" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Transportni guruhlarga ajrat: havo, yer, suv!", "ru": "Разложи транспорт: воздух, земля, вода!", "en": "Sort the transport: air, land, water!" },
+      "hint": { "uz": "Uchadigani — havo, yuradigani — yer, suzadigani — suv.", "ru": "Летает — воздух, едет — земля, плавает — вода.", "en": "Flies → air, drives → land, sails → water." },
+      "explanation": { "uz": "Samolyot va vertolyot — havo; avtomobil va poyezd — yer; kema va qayiq — suv transporti.", "ru": "Самолёт и вертолёт — воздух; машина и поезд — земля; корабль и лодка — вода.", "en": "Plane and helicopter are air; car and train are land; ship and boat are water transport." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "air", "label": { "uz": "✈️ Havo", "ru": "✈️ Воздух", "en": "✈️ Air" }, "color": "#2f9fe0" },
+            { "id": "land", "label": { "uz": "🚗 Yer", "ru": "🚗 Земля", "en": "🚗 Land" }, "color": "#f39a1f" },
+            { "id": "water", "label": { "uz": "🚢 Suv", "ru": "🚢 Вода", "en": "🚢 Water" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "plane", "emoji": "✈️", "label": { "uz": "samolyot", "ru": "самолёт", "en": "plane" }, "bin": "air" },
+            { "id": "heli", "emoji": "🚁", "label": { "uz": "vertolyot", "ru": "вертолёт", "en": "helicopter" }, "bin": "air" },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "avtomobil", "ru": "машина", "en": "car" }, "bin": "land" },
+            { "id": "train", "emoji": "🚂", "label": { "uz": "poyezd", "ru": "поезд", "en": "train" }, "bin": "land" },
+            { "id": "ship", "emoji": "🚢", "label": { "uz": "kema", "ru": "корабль", "en": "ship" }, "bin": "water" },
+            { "id": "boat", "emoji": "⛵", "label": { "uz": "qayiq", "ru": "лодка", "en": "boat" }, "bin": "water" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir transportni harakat joyiga ula!", "ru": "Соедини каждый транспорт с местом движения!", "en": "Match each transport to where it moves!" },
+      "hint": { "uz": "Avtomobil — yoʻl, poyezd — rels, samolyot — osmon, kema — dengiz.", "ru": "Машина — дорога, поезд — рельсы, самолёт — небо, корабль — море.", "en": "Car — road, train — rails, plane — sky, ship — sea." },
+      "explanation": { "uz": "Har bir transport oʻz yoʻlida yuradi: yoʻlda, relsda, osmonda yoki dengizda.", "ru": "Каждый транспорт движется по своему пути: по дороге, рельсам, небу или морю.", "en": "Each transport moves on its own path: road, rails, sky or sea." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🚗", "label": { "uz": "avtomobil", "ru": "машина", "en": "car" } }, "right": { "label": { "uz": "yoʻl", "ru": "дорога", "en": "road" } } },
+            { "left": { "emoji": "🚂", "label": { "uz": "poyezd", "ru": "поезд", "en": "train" } }, "right": { "label": { "uz": "rels", "ru": "рельсы", "en": "rails" } } },
+            { "left": { "emoji": "✈️", "label": { "uz": "samolyot", "ru": "самолёт", "en": "plane" } }, "right": { "label": { "uz": "osmon", "ru": "небо", "en": "sky" } } },
+            { "left": { "emoji": "🚢", "label": { "uz": "kema", "ru": "корабль", "en": "ship" } }, "right": { "label": { "uz": "dengiz", "ru": "море", "en": "sea" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yer usti transportini belgila!", "ru": "Отметь наземный транспорт!", "en": "Tap the land transport!" },
+      "hint": { "uz": "Yer usti transporti yoʻlda yuradi.", "ru": "Наземный транспорт едет по земле.", "en": "Land transport moves on the ground." },
+      "explanation": { "uz": "Avtomobil, avtobus va velosiped — yer usti transporti. Samolyot va kema — yoʻq.", "ru": "Машина, автобус и велосипед — наземный транспорт. Самолёт и корабль — нет.", "en": "Car, bus and bicycle are land transport. Plane and ship are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "car", "emoji": "🚗", "label": { "uz": "avtomobil", "ru": "машина", "en": "car" }, "correct": true },
+            { "id": "bus", "emoji": "🚌", "label": { "uz": "avtobus", "ru": "автобус", "en": "bus" }, "correct": true },
+            { "id": "bike", "emoji": "🚲", "label": { "uz": "velosiped", "ru": "велосипед", "en": "bicycle" }, "correct": true },
+            { "id": "plane", "emoji": "✈️", "label": { "uz": "samolyot", "ru": "самолёт", "en": "plane" } },
+            { "id": "ship", "emoji": "🚢", "label": { "uz": "kema", "ru": "корабль", "en": "ship" } },
+            { "id": "heli", "emoji": "🚁", "label": { "uz": "vertolyot", "ru": "вертолёт", "en": "helicopter" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Eng tez harakatlanadigan transport qaysi?", "ru": "Какой транспорт самый быстрый?", "en": "Which transport is the fastest?" },
+      "hint": { "uz": "U osmonga juda tez uchib chiqadi.", "ru": "Он очень быстро взлетает в небо.", "en": "It shoots into the sky very fast." },
+      "explanation": { "uz": "Raketa eng tez uchadi. Velosiped va samokat sekin harakatlanadi.", "ru": "Ракета самая быстрая. Велосипед и самокат движутся медленно.", "en": "A rocket is the fastest. A bicycle and a scooter move slowly." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "rocket", "emoji": "🚀", "label": { "uz": "raketa", "ru": "ракета", "en": "rocket" }, "correct": true },
+            { "id": "bike", "emoji": "🚲", "label": { "uz": "velosiped", "ru": "велосипед", "en": "bicycle" } },
+            { "id": "scooter", "emoji": "🛴", "label": { "uz": "samokat", "ru": "самокат", "en": "scooter" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qisqa masofaga borish uchun qaysi transport qulay?", "ru": "На чём удобно ездить на короткие расстояния?", "en": "Which transport is handy for short distances?" },
+      "hint": { "uz": "Yaqin joyga velosipedda borish qulay.", "ru": "Близко удобно ехать на велосипеде.", "en": "For a nearby place a bicycle is handy." },
+      "explanation": { "uz": "Qisqa masofaga velosiped qulay. Samolyot va kema uzoq masofa uchun.", "ru": "На короткие расстояния удобен велосипед. Самолёт и корабль — для дальних.", "en": "A bicycle is handy for short distances. A plane and ship are for long ones." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "bike", "emoji": "🚲", "label": { "uz": "velosiped", "ru": "велосипед", "en": "bicycle" }, "correct": true },
+            { "id": "plane", "emoji": "✈️", "label": { "uz": "samolyot", "ru": "самолёт", "en": "plane" } },
+            { "id": "ship", "emoji": "🚢", "label": { "uz": "kema", "ru": "корабль", "en": "ship" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Havo transportini belgila!", "ru": "Отметь воздушный транспорт!", "en": "Tap the air transport!" },
+      "hint": { "uz": "Havoda uchadiganlar — havo transporti.", "ru": "Те, что летают, — воздушный транспорт.", "en": "The ones that fly are air transport." },
+      "explanation": { "uz": "Samolyot, vertolyot va raketa — havo transporti. Avtomobil va kema — yoʻq.", "ru": "Самолёт, вертолёт и ракета — воздушный транспорт. Машина и корабль — нет.", "en": "Plane, helicopter and rocket are air transport. Car and ship are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "plane", "emoji": "✈️", "label": { "uz": "samolyot", "ru": "самолёт", "en": "plane" }, "correct": true },
+            { "id": "heli", "emoji": "🚁", "label": { "uz": "vertolyot", "ru": "вертолёт", "en": "helicopter" }, "correct": true },
+            { "id": "rocket", "emoji": "🚀", "label": { "uz": "raketa", "ru": "ракета", "en": "rocket" }, "correct": true },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "avtomobil", "ru": "машина", "en": "car" } },
+            { "id": "ship", "emoji": "🚢", "label": { "uz": "kema", "ru": "корабль", "en": "ship" } },
+            { "id": "bike", "emoji": "🚲", "label": { "uz": "velosiped", "ru": "велосипед", "en": "bicycle" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bu soya qaysi transportniki?", "ru": "Чья это тень?", "en": "Whose shadow is this?" },
+      "hint": { "uz": "Uning qanotlari bor, u osmonda uchadi.", "ru": "У него есть крылья, он летает в небе.", "en": "It has wings and flies in the sky." },
+      "explanation": { "uz": "Soya samolyotniki. Samolyotning qanotlari bor.", "ru": "Это тень самолёта. У самолёта есть крылья.", "en": "The shadow belongs to a plane. A plane has wings." },
+      "widget": {
+        "type": "shadow_guess",
+        "props": {
+          "shadow": "✈️",
+          "options": [
+            { "id": "plane", "emoji": "✈️", "label": { "uz": "samolyot", "ru": "самолёт", "en": "plane" }, "correct": true },
+            { "id": "car", "emoji": "🚗", "label": { "uz": "avtomobil", "ru": "машина", "en": "car" } },
+            { "id": "ship", "emoji": "🚢", "label": { "uz": "kema", "ru": "корабль", "en": "ship" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Poyezd rels ustida harakatlanadi.", "ru": "Верно? Поезд движется по рельсам.", "en": "True? A train moves on rails." },
+      "hint": { "uz": "Poyezd temir yoʻl — rels ustida yuradi.", "ru": "Поезд едет по железной дороге — рельсам.", "en": "A train runs on a railway — the rails." },
+      "explanation": { "uz": "Toʻgʻri. Poyezd rels ustida yuradi, avtomobil esa yoʻlda.", "ru": "Верно. Поезд едет по рельсам, а машина — по дороге.", "en": "True. A train runs on rails, and a car on the road." },
+      "widget": { "type": "true_false", "props": { "emoji": "🚂", "answer": true } }
+    }
+  ]
+}

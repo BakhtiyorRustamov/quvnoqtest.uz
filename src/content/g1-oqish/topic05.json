@@ -1,0 +1,455 @@
+{
+  "topicId": "g1-oqish-05",
+  "subjectKey": "g1-oqish",
+  "emojis": "🪖🛡️💪",
+  "title": {
+    "uz": "Yurt qalqonlari",
+    "ru": "Щиты страны",
+    "en": "Shields of the land"
+  },
+  "recall": {
+    "uz": "Bugun yosh askarlar haqidagi sheʼrni oʻqiymiz. Askarlar yurt tinchligini qoʻriqlaydi — ular yurtga qalqondir. Sheʼrni ifodali oʻqing, soʻng savollarga javob bering va soʻzlarni oʻrganing.",
+    "ru": "Сегодня читаем стихотворение о молодых солдатах. Солдаты охраняют мир страны — они её щит. Прочитай стих выразительно, потом ответь на вопросы и выучи слова.",
+    "en": "Today we read a poem about young soldiers. Soldiers guard the peace of the land — they are its shield. Read the poem aloud, then answer the questions and learn the words."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Yurt qalqonlari",
+          "variant": "poem",
+          "audio": "g1-oqish-05-q1",
+          "lines": [
+            "Yosh posbonmiz, mard oʻgʻlonmiz,",
+            "Yurtimizga biz qalqon.",
+            "Tinchligini asraymiz deb,",
+            "Berganmiz soʻz, ahd-paymon.",
+            "",
+            "Yurtni saqlash — vazifamiz,",
+            "Bu — muqaddas burchimiz.",
+            "Ahillikda, birlikdadir",
+            "Bizning quvvat-kuchimiz."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrni ifodali oʻqing!",
+        "ru": "Прочитай стихотворение выразительно!",
+        "en": "Read the poem aloud!"
+      },
+      "hint": {
+        "uz": "Har bir satrni ohang bilan oʻqing.",
+        "ru": "Читай каждую строку с выражением.",
+        "en": "Read each line with feeling."
+      },
+      "explanation": {
+        "uz": "Sheʼr yurtni qoʻriqlaydigan yosh askarlar nomidan aytilgan.",
+        "ru": "Стихотворение написано от имени молодых солдат, охраняющих страну.",
+        "en": "The poem is spoken by young soldiers who guard the land."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yosh askarlar nomidan",
+              "ru": "От имени молодых солдат",
+              "en": "By young soldiers"
+            },
+            {
+              "uz": "Oʻqituvchi nomidan",
+              "ru": "От имени учителя",
+              "en": "By a teacher"
+            },
+            {
+              "uz": "Buvi nomidan",
+              "ru": "От имени бабушки",
+              "en": "By a grandmother"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼr kimning nomidan aytilgan?",
+        "ru": "От чьего имени написано стихотворение?",
+        "en": "In whose voice is the poem written?"
+      },
+      "hint": {
+        "uz": "«Yosh posbonmiz, mard oʻgʻlonmiz…»",
+        "ru": "«Yosh posbonmiz, mard oʻgʻlonmiz…»",
+        "en": "“Yosh posbonmiz, mard oʻgʻlonmiz…”"
+      },
+      "explanation": {
+        "uz": "Sheʼr yosh askarlar — yurt posbonlari nomidan aytilgan.",
+        "ru": "Стихотворение — от имени молодых солдат, стражей страны.",
+        "en": "The poem speaks in the voice of young soldiers, the land's guardians."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Ahillikda, birlikda",
+              "ru": "В согласии и единстве",
+              "en": "In harmony and unity"
+            },
+            {
+              "uz": "Boylikda",
+              "ru": "В богатстве",
+              "en": "In wealth"
+            },
+            {
+              "uz": "Uyquda",
+              "ru": "Во сне",
+              "en": "In sleep"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrga koʻra, askarlarning kuchi nimada?",
+        "ru": "В чём, по стихотворению, сила солдат?",
+        "en": "According to the poem, where does the soldiers' strength lie?"
+      },
+      "hint": {
+        "uz": "Sheʼrning oxirgi satrlarini esla.",
+        "ru": "Вспомни последние строки стиха.",
+        "en": "Recall the last lines of the poem."
+      },
+      "explanation": {
+        "uz": "«Ahillikda, birlikdadir / Bizning quvvat-kuchimiz» — kuch birlikda.",
+        "ru": "«Наша сила — в согласии и единстве».",
+        "en": "“Our strength is in harmony and unity.”"
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "burch",
+              "right": "majburiy vazifa"
+            },
+            {
+              "left": "qalqon",
+              "right": "himoya vositasi"
+            },
+            {
+              "left": "posbon",
+              "right": "qoʻriqchi"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«posbon» — qoʻriqchi degani.",
+        "ru": "«posbon» — сторож, страж.",
+        "en": "“posbon” means a guard."
+      },
+      "explanation": {
+        "uz": "burch = majburiy vazifa; qalqon = himoya vositasi; posbon = qoʻriqchi.",
+        "ru": "burch = обязательный долг; qalqon = щит; posbon = страж.",
+        "en": "burch = a duty; qalqon = a shield; posbon = a guard."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "birdamlik",
+              "right": "hamjihatlik"
+            },
+            {
+              "left": "oliy",
+              "right": "yuksak"
+            },
+            {
+              "left": "jasur",
+              "right": "botir"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnodoshi bilan bogʻla!",
+        "ru": "Соедини слово с его синонимом!",
+        "en": "Match each word with its synonym!"
+      },
+      "hint": {
+        "uz": "«jasur» — qoʻrqmas, botir.",
+        "ru": "«jasur» — храбрый, отважный.",
+        "en": "“jasur” means brave."
+      },
+      "explanation": {
+        "uz": "birdamlik = hamjihatlik; oliy = yuksak; jasur = botir.",
+        "ru": "birdamlik = сплочённость; oliy = высокий; jasur = храбрый.",
+        "en": "birdamlik = togetherness; oliy = supreme; jasur = brave."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "bins": [
+            {
+              "id": "davolaydi",
+              "label": "Davolaydi 🩺"
+            },
+            {
+              "id": "orgatadi",
+              "label": "Oʻrgatadi 📖"
+            },
+            {
+              "id": "qoriqlaydi",
+              "label": "Qoʻriqlaydi 🛡️"
+            }
+          ],
+          "tiles": [
+            {
+              "id": "t1",
+              "label": "shifokor",
+              "bin": "davolaydi"
+            },
+            {
+              "id": "t2",
+              "label": "hamshira",
+              "bin": "davolaydi"
+            },
+            {
+              "id": "t3",
+              "label": "oʻqituvchi",
+              "bin": "orgatadi"
+            },
+            {
+              "id": "t4",
+              "label": "murabbiy",
+              "bin": "orgatadi"
+            },
+            {
+              "id": "t5",
+              "label": "askar",
+              "bin": "qoriqlaydi"
+            },
+            {
+              "id": "t6",
+              "label": "chegarachi",
+              "bin": "qoriqlaydi"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir kasb egasi Vatanga qanday xizmat qiladi? Qutilarga ajrat!",
+        "ru": "Как каждая профессия служит Родине? Разложи по ящикам!",
+        "en": "How does each profession serve the homeland? Sort them into buckets!"
+      },
+      "hint": {
+        "uz": "Shifokor davolaydi, oʻqituvchi oʻrgatadi, askar qoʻriqlaydi.",
+        "ru": "Врач лечит, учитель учит, солдат охраняет.",
+        "en": "A doctor heals, a teacher teaches, a soldier guards."
+      },
+      "explanation": {
+        "uz": "Har bir kasb egasi oʻz ishi bilan Vatanga xizmat qiladi va uni himoya qiladi.",
+        "ru": "Каждый своим трудом служит Родине и защищает её.",
+        "en": "Everyone serves and protects the homeland through their own work."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "qalqon",
+          "letters": [
+            "q",
+            "a",
+            "l",
+            "q",
+            "o",
+            "n"
+          ],
+          "emoji": "🛡️",
+          "clue": {
+            "uz": "Himoya vositasi",
+            "ru": "Средство защиты",
+            "en": "A means of protection"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Harflardan soʻzni yigʻ!",
+        "ru": "Собери слово из букв!",
+        "en": "Build the word from the letters!"
+      },
+      "hint": {
+        "uz": "Askar uni koʻksiga tutadi.",
+        "ru": "Воин держит его перед грудью.",
+        "en": "A warrior holds it before his chest."
+      },
+      "explanation": {
+        "uz": "«Qalqon» — himoya vositasi; askarlar yurtga qalqondir.",
+        "ru": "«Qalqon» (щит) — средство защиты; солдаты — щит страны.",
+        "en": "“Qalqon” (a shield) protects; soldiers are the land's shield."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Yurtni saqlash — muqaddas ",
+          "after": ".",
+          "choices": [
+            "burchimiz",
+            "oʻyinimiz",
+            "taomimiz"
+          ],
+          "answer": "burchimiz",
+          "emoji": "🎖️",
+          "clue": {
+            "uz": "Sheʼrdagi satrni esla",
+            "ru": "Вспомни строку из стиха",
+            "en": "Recall the line from the poem"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Burch — bajarilishi shart boʻlgan vazifa.",
+        "ru": "Долг — обязательная задача.",
+        "en": "A duty is a task that must be done."
+      },
+      "explanation": {
+        "uz": "Yurtni saqlash — muqaddas burchimiz.",
+        "ru": "Беречь страну — наш священный долг.",
+        "en": "Keeping the land safe is our sacred duty."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "tiles": [
+            {
+              "text": "askar"
+            },
+            {
+              "text": "posbon"
+            },
+            {
+              "text": "chegarachi"
+            },
+            {
+              "text": "qoshiq",
+              "odd": true
+            }
+          ],
+          "clue": {
+            "uz": "Yurtni qoʻriqlaydiganlar",
+            "ru": "Те, кто охраняет страну",
+            "en": "Those who guard the land"
+          },
+          "emoji": "🪖"
+        }
+      },
+      "prompt": {
+        "uz": "Ortiqcha soʻzni top!",
+        "ru": "Найди лишнее слово!",
+        "en": "Tap the odd one out!"
+      },
+      "hint": {
+        "uz": "Uchtasi — qoʻriqchi, bittasi — oshxona buyumi.",
+        "ru": "Три — стражи, одно — кухонный предмет.",
+        "en": "Three are guards, one is a kitchen item."
+      },
+      "explanation": {
+        "uz": "askar, posbon, chegarachi — qoʻriqchilar; qoshiq — oshxona buyumi.",
+        "ru": "солдат, страж, пограничник — защитники; ложка — кухонный предмет.",
+        "en": "Soldier, guard, border guard protect; a spoon is a kitchen item."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Birlik",
+            "bor",
+            "yerda",
+            "kuch",
+            "bor."
+          ],
+          "emoji": "💪",
+          "clue": {
+            "uz": "Birlik haqida maqol",
+            "ru": "Пословица о единстве",
+            "en": "A proverb about unity"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan maqol tuz!",
+        "ru": "Составь пословицу из слов!",
+        "en": "Build the proverb from the words!"
+      },
+      "hint": {
+        "uz": "Qayerda birlik boʻlsa, oʻsha yerda nima boʻladi?",
+        "ru": "Где единство — там что?",
+        "en": "Where there is unity, there is what?"
+      },
+      "explanation": {
+        "uz": "«Birlik bor yerda kuch bor» — ahillik kuch beradi.",
+        "ru": "«Где единство — там сила».",
+        "en": "“Where there is unity, there is strength.”"
+      }
+    }
+  ],
+  "skipRecall": true
+}

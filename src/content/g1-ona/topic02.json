@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-02",
+  "subjectKey": "g1-ona",
+  "emojis": "📝📚✏️",
+  "title": {
+    "uz": "Gap va matn quramiz",
+    "ru": "Строим предложение и текст",
+    "en": "Building a sentence and a text"
+  },
+  "recall": {
+    "uz": "Gap soʻzlardan tuziladi va tugallangan fikrni bildiradi. Gapdagi soʻzlar maʼno jihatdan bir-biriga bogʻlanadi. Mazmunan bogʻlangan ikki yoki undan ortiq gap matn deyiladi.",
+    "ru": "Предложение состоит из слов и выражает законченную мысль. Слова в предложении связаны по смыслу. Два и более связанных предложения образуют текст.",
+    "en": "A sentence is made of words and expresses a complete thought. The words are linked by meaning. Two or more connected sentences make a text."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "gap", "emoji": "💬", "clue": { "uz": "Tugallangan fikrni bildiradi", "ru": "Выражает законченную мысль", "en": "Expresses a complete thought" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Uch harf: g, a, p.", "ru": "Три буквы: g, a, p.", "en": "Three letters: g, a, p." },
+      "explanation": { "uz": "«Gap» hosil boʻldi. Gap soʻzlardan tuziladi.", "ru": "Получилось «gap». Предложение состоит из слов.", "en": "We built “gap” (sentence). A sentence is made of words." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "matn", "emoji": "📄", "clue": { "uz": "Bogʻlangan gaplardan tuzilgan", "ru": "Составлен из связанных предложений", "en": "Made of connected sentences" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Toʻrt harf: m, a, t, n.", "ru": "Четыре буквы: m, a, t, n.", "en": "Four letters: m, a, t, n." },
+      "explanation": { "uz": "«Matn» hosil boʻldi. Matn — bogʻlangan gaplar.", "ru": "Получилось «matn» (текст). Текст — связанные предложения.", "en": "We built “matn” (text). A text is connected sentences." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Men", "maktabga", "boraman."], "emoji": "🏫", "clue": { "uz": "Maktab haqida gap tuz", "ru": "Составь предложение о школе", "en": "Make a sentence about school" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Kim? — «Men». Nima qilaman? — «boraman».", "ru": "Кто? — «Men». Что делаю? — «boraman».", "en": "Who? — “Men”. Do what? — “boraman”." },
+      "explanation": { "uz": "«Men maktabga boraman.» — tugallangan fikrli gap.", "ru": "«Men maktabga boraman.» — предложение с законченной мыслью.", "en": "“Men maktabga boraman.” is a complete-thought sentence." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bahorda", "gullar", "ochildi."], "emoji": "🌷", "clue": { "uz": "Bahor haqida gap tuz", "ru": "Составь предложение о весне", "en": "Make a sentence about spring" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Qachon? — «Bahorda». Nima? — «gullar».", "ru": "Когда? — «Bahorda». Что? — «gullar».", "en": "When? — “Bahorda”. What? — “gullar”." },
+      "explanation": { "uz": "Soʻzlar maʼno jihatdan bogʻlanib, gap hosil qildi.", "ru": "Слова связались по смыслу и образовали предложение.", "en": "The words linked by meaning and formed a sentence." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Quyosh", "right": "chiqdi." }, { "left": "Yomgʻir", "right": "yogʻdi." }, { "left": "Bola", "right": "uxladi." }, { "left": "Qushlar", "right": "sayradi." } ] } },
+      "prompt": { "uz": "Soʻzlarni ulab, gap hosil qil!", "ru": "Соедини слова в предложение!", "en": "Connect the words into a sentence!" },
+      "hint": { "uz": "«Quyosh» nima qildi? — «chiqdi».", "ru": "«Quyosh» что сделал? — «chiqdi».", "en": "What did “Quyosh” do? — “chiqdi”." },
+      "explanation": { "uz": "Har juftlik bir gap: soʻzlar maʼno bilan bogʻlanadi.", "ru": "Каждая пара — предложение: слова связаны по смыслу.", "en": "Each pair is a sentence: the words connect by meaning." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Olma", "bin": "soz" }, { "id": "b", "label": "Kitob", "bin": "soz" }, { "id": "c", "label": "Non", "bin": "soz" }, { "id": "d", "label": "Bahor keldi.", "bin": "gap" }, { "id": "e", "label": "Havo issiq.", "bin": "gap" }, { "id": "f", "label": "Men oʻqiyman.", "bin": "gap" } ], "bins": [ { "id": "soz", "label": "Soʻz" }, { "id": "gap", "label": "Gap" } ] } },
+      "prompt": { "uz": "Soʻz va gapni ajrat!", "ru": "Раздели слово и предложение!", "en": "Sort words and sentences!" },
+      "hint": { "uz": "Bitta soʻz — «soʻz». Tugallangan fikr — «gap».", "ru": "Одно слово — «soʻz». Законченная мысль — «gap».", "en": "One word is “soʻz”. A complete thought is “gap”." },
+      "explanation": { "uz": "Gap tugallangan fikrni bildiradi, soʻz esa bitta narsani ataydi.", "ru": "Предложение выражает мысль, слово называет одну вещь.", "en": "A sentence expresses a thought; a word just names one thing." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Biz", "bogʻda", "oʻynadik."], "emoji": "🌳", "clue": { "uz": "Bogʻ haqida gap tuz", "ru": "Составь предложение о саде", "en": "Make a sentence about the garden" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Kim? — «Biz». Qayerda? — «bogʻda».", "ru": "Кто? — «Biz». Где? — «bogʻda».", "en": "Who? — “Biz”. Where? — “bogʻda”." },
+      "explanation": { "uz": "Gap bosh harf bilan boshlanib, nuqta bilan tugadi.", "ru": "Предложение начинается с заглавной буквы и кончается точкой.", "en": "A sentence starts with a capital letter and ends with a full stop." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "g", "after": "p", "choices": ["a", "o", "u"], "answer": "a", "emoji": "💬", "clue": { "uz": "«Gap» soʻzini toʻldir", "ru": "Дополни слово «gap»", "en": "Complete the word “gap”" } } },
+      "prompt": { "uz": "Yetishmayotgan harfni qoʻy!", "ru": "Вставь недостающую букву!", "en": "Add the missing letter!" },
+      "hint": { "uz": "g … p — oʻrtada «a».", "ru": "g … p — посередине «a».", "en": "g … p — the middle letter is “a”." },
+      "explanation": { "uz": "g + a + p = «gap». Har bir harf oʻz oʻrnida.", "ru": "g + a + p = «gap». Каждая буква на месте.", "en": "g + a + p = “gap”. Each letter in place." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Bogʻlangan ikki yoki undan ortiq gap", "ru": "Два и более связанных предложения", "en": "Two or more connected sentences" }, { "uz": "Bitta soʻz", "ru": "Одно слово", "en": "A single word" }, { "uz": "Bitta harf", "ru": "Одна буква", "en": "A single letter" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Matn nima?", "ru": "Что такое текст?", "en": "What is a text?" },
+      "hint": { "uz": "Matn bir nechta bogʻlangan gapdan tuziladi.", "ru": "Текст состоит из нескольких связанных предложений.", "en": "A text is made of several connected sentences." },
+      "explanation": { "uz": "Mazmunan bogʻlangan ikki yoki undan ortiq gap — matn.", "ru": "Два и более связанных по смыслу предложения — текст.", "en": "Two or more meaningfully connected sentences form a text." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Tugallangan fikrni bildiradi", "ru": "Выражает законченную мысль", "en": "Expresses a complete thought" }, { "uz": "Faqat bitta harf", "ru": "Только одна буква", "en": "Just one letter" }, { "uz": "Rasm", "ru": "Картинка", "en": "A picture" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Gap nima qiladi?", "ru": "Что делает предложение?", "en": "What does a sentence do?" },
+      "hint": { "uz": "Gap soʻzlardan tuziladi va fikr bildiradi.", "ru": "Предложение состоит из слов и выражает мысль.", "en": "A sentence is made of words and expresses a thought." },
+      "explanation": { "uz": "Gap soʻzlardan tuziladi va tugallangan fikrni ifodalaydi.", "ru": "Предложение состоит из слов и выражает законченную мысль.", "en": "A sentence is made of words and expresses a complete thought." }
+    }
+  ]
+}

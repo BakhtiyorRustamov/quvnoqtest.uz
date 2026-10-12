@@ -1,0 +1,344 @@
+{
+  "topicId": "g1-math-107",
+  "subjectKey": "g1-math",
+  "emojis": "🥤🔢✨",
+  "title": {
+    "uz": "Hajmlarni qoʻshamiz va taqqoslaymiz",
+    "ru": "Складываем и сравниваем объёмы",
+    "en": "Adding and comparing volumes"
+  },
+  "recall": {
+    "uz": "Bir nechta suyuqlikni aralashtirsak, hajmlar qoʻshiladi. Masalan, toʻqqiz litr suv, toʻrt litr sharbat va ikki litr qiyom — jami oʻn besh litr ichimlik. Hajmlarni litrlarda qoʻshamiz va taqqoslaymiz.",
+    "ru": "Если смешать несколько жидкостей, объёмы складываются. Например, девять литров воды, четыре литра сока и два литра сиропа — всего пятнадцать литров. Складываем и сравниваем объёмы в литрах.",
+    "en": "When we mix liquids, the volumes add up. For example nine litres of water, four of juice and two of syrup — fifteen litres in all. We add and compare volumes in litres."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 15,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Ichimlik: 9 litr suv, 4 litr sharbat, 2 litr qiyom. Jami necha litr? Bloklardan yasa.",
+        "ru": "Напиток: 9 л воды, 4 л сока, 2 л сиропа. Сколько всего? Собери из блоков.",
+        "en": "A drink: 9 L water, 4 L juice, 2 L syrup. How many litres in all? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "9 + 4 + 2 = 15.",
+        "ru": "9 + 4 + 2 = 15.",
+        "en": "9 + 4 + 2 = 15."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 17,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 9 + 5 + 3 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 9 + 5 + 3 = ?",
+        "en": "Work it out and build the answer with blocks: 9 + 5 + 3 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "9 + 5 + 3 = 17.",
+        "ru": "9 + 5 + 3 = 17.",
+        "en": "9 + 5 + 3 = 17."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 19,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 9 + 2 + 8 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 9 + 2 + 8 = ?",
+        "en": "Work it out and build the answer with blocks: 9 + 2 + 8 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "9 + 2 + 8 = 19.",
+        "ru": "9 + 2 + 8 = 19.",
+        "en": "9 + 2 + 8 = 19."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "9 + 4 + 2",
+              "right": "15"
+            },
+            {
+              "left": "9 + 5 + 3",
+              "right": "17"
+            },
+            {
+              "left": "9 + 2 + 8",
+              "right": "19"
+            },
+            {
+              "left": "10 + 5 + 5",
+              "right": "20"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 15,
+          "y": 17
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 15 litr va 17 litr. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 15 л и 17 л. Какой знак верный?",
+        "en": "Compare: 15 L and 17 L. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Soni katta boʻlsa, koʻproq.",
+        "ru": "Больше число — больше.",
+        "en": "A bigger number is more."
+      },
+      "explanation": {
+        "uz": "15 < 17.",
+        "ru": "15 < 17.",
+        "en": "15 < 17."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "8 litr va 6 litr — birga necha litr? Sonlar chizigʻida hisobla.",
+        "ru": "8 л и 6 л — сколько вместе? Посчитай на числовой прямой.",
+        "en": "8 L and 6 L — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "8 dan boshla, 6 qadam oldinga sur.",
+        "ru": "Встань на 8, продвинься на 6.",
+        "en": "Start at 8, move 6 forward."
+      },
+      "explanation": {
+        "uz": "8 + 6 = 14 litr.",
+        "ru": "8 + 6 = 14 л.",
+        "en": "8 + 6 = 14 L."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "8 + 7",
+              "bin": "v15"
+            },
+            {
+              "id": "b",
+              "label": "10 + 5",
+              "bin": "v15"
+            },
+            {
+              "id": "c",
+              "label": "9 + 6",
+              "bin": "v15"
+            },
+            {
+              "id": "d",
+              "label": "9 + 9",
+              "bin": "v18"
+            },
+            {
+              "id": "e",
+              "label": "10 + 8",
+              "bin": "v18"
+            },
+            {
+              "id": "f",
+              "label": "12 + 6",
+              "bin": "v18"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v15",
+              "label": "15"
+            },
+            {
+              "id": "v18",
+              "label": "18"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha toʻgʻri qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик его значения!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в ящик с этим числом.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 16
+        }
+      },
+      "prompt": {
+        "uz": "Idishda 16 litr ichimlik bor. Shu miqdorni bloklardan yasa.",
+        "ru": "В сосуде 16 л напитка. Собери это число.",
+        "en": "A container has 16 L of drink. Build that number."
+      },
+      "hint": {
+        "uz": "1 ta oʻnlik (+10) va 6 ta birlik (+1).",
+        "ru": "1 десятков (+10) и 6 единиц (+1).",
+        "en": "1 tens (+10) and 6 ones (+1)."
+      },
+      "explanation": {
+        "uz": "16 = 10 + 6.",
+        "ru": "16 = 10 + 6.",
+        "en": "16 = 10 + 6."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 19,
+          "y": 15
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 19 litr va 15 litr. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 19 л и 15 л. Какой знак верный?",
+        "en": "Compare: 19 L and 15 L. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Soni katta boʻlsa, koʻproq.",
+        "ru": "Больше число — больше.",
+        "en": "A bigger number is more."
+      },
+      "explanation": {
+        "uz": "19 > 15.",
+        "ru": "19 > 15.",
+        "en": "19 > 15."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 7,
+          "b": 7,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "7 litr va 7 litr — birga necha litr? Sonlar chizigʻida hisobla.",
+        "ru": "7 л и 7 л — сколько вместе? Посчитай на числовой прямой.",
+        "en": "7 L and 7 L — how much together? Use the number line."
+      },
+      "hint": {
+        "uz": "7 dan boshla, 7 qadam oldinga sur.",
+        "ru": "Встань на 7, продвинься на 7.",
+        "en": "Start at 7, move 7 forward."
+      },
+      "explanation": {
+        "uz": "7 + 7 = 14 litr.",
+        "ru": "7 + 7 = 14 л.",
+        "en": "7 + 7 = 14 L."
+      }
+    }
+  ]
+}

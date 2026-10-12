@@ -1,0 +1,339 @@
+{
+  "topicId": "g1-math-82",
+  "subjectKey": "g1-math",
+  "emojis": "🔟🧩✨",
+  "title": {
+    "uz": "Butunni topamiz: 10 gacha toʻldirish",
+    "ru": "Целое: дополнение до 10",
+    "en": "Finding the whole: fill to 10"
+  },
+  "recall": {
+    "uz": "Qismlarni qoʻshganda biror qismni 10 gacha toʻldirish qulay. Masalan, 7 + 5 = (7 + 3) + 2 = 10 + 2 = 12. Avval 10 gacha toʻldiramiz, soʻng qolganini qoʻshamiz.",
+    "ru": "При сложении частей удобно дополнить одну до 10. Например, 7 + 5 = (7 + 3) + 2 = 10 + 2 = 12. Сначала дополняем до 10, потом прибавляем остаток.",
+    "en": "When adding parts it helps to fill one up to 10. For example 7 + 5 = (7 + 3) + 2 = 10 + 2 = 12. Fill to 10 first, then add the rest."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 7 + 5 = ?",
+        "ru": "Вычисли: 7 + 5 = ?",
+        "en": "Work it out: 7 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Десятки к десяткам, единицы к единицам.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "7 + 5 = 12.",
+        "ru": "7 + 5 = 12.",
+        "en": "7 + 5 = 12."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "14",
+            "13",
+            "15"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 8 + 6 = ?",
+        "ru": "Вычисли: 8 + 6 = ?",
+        "en": "Work it out: 8 + 6 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Десятки к десяткам, единицы к единицам.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "8 + 6 = 14.",
+        "ru": "8 + 6 = 14.",
+        "en": "8 + 6 = 14."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "7 + 5",
+              "right": "12"
+            },
+            {
+              "left": "9 + 4",
+              "right": "13"
+            },
+            {
+              "left": "6 + 8",
+              "right": "14"
+            },
+            {
+              "left": "8 + 7",
+              "right": "15"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 12,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 7 + 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 7 + 5 = ?",
+        "en": "Work it out and build the answer with blocks: 7 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "7 + 5 = 12.",
+        "ru": "7 + 5 = 12.",
+        "en": "7 + 5 = 12."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "13",
+            "12",
+            "14"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Savatda 8 ta olma va 5 ta nok. Jami nechta meva?",
+        "ru": "В корзине 8 яблок и 5 груш. Сколько всего?",
+        "en": "A basket has 8 apples and 5 pears. How many fruits?"
+      },
+      "hint": {
+        "uz": "8 ni 10 gacha toʻldir.",
+        "ru": "Дополни 8 до 10.",
+        "en": "Fill 8 up to 10."
+      },
+      "explanation": {
+        "uz": "8 + 5 = 13.",
+        "ru": "8 + 5 = 13.",
+        "en": "8 + 5 = 13."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 15,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 9 + 6 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 9 + 6 = ?",
+        "en": "Work it out and build the answer with blocks: 9 + 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "9 + 6 = 15.",
+        "ru": "9 + 6 = 15.",
+        "en": "9 + 6 = 15."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "6 + 7",
+              "right": "13"
+            },
+            {
+              "left": "9 + 8",
+              "right": "17"
+            },
+            {
+              "left": "5 + 9",
+              "right": "14"
+            },
+            {
+              "left": "8 + 8",
+              "right": "16"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "16",
+            "15",
+            "17"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 9 + 7 = ?",
+        "ru": "Вычисли: 9 + 7 = ?",
+        "en": "Work it out: 9 + 7 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Десятки к десяткам, единицы к единицам.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "9 + 7 = 16.",
+        "ru": "9 + 7 = 16.",
+        "en": "9 + 7 = 16."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "40",
+            "39",
+            "41"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qismlari 16 va 24 boʻlgan butunni top.",
+        "ru": "Найди целое из частей 16 и 24.",
+        "en": "Find the whole made of 16 and 24."
+      },
+      "hint": {
+        "uz": "16 ga 24 ni qoʻsh.",
+        "ru": "Прибавь к 16 число 24.",
+        "en": "Add 24 to 16."
+      },
+      "explanation": {
+        "uz": "16 + 24 = 40.",
+        "ru": "16 + 24 = 40.",
+        "en": "16 + 24 = 40."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 40,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 16 + 24 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 16 + 24 = ?",
+        "en": "Work it out and build the answer with blocks: 16 + 24 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "16 + 24 = 40.",
+        "ru": "16 + 24 = 40.",
+        "en": "16 + 24 = 40."
+      }
+    }
+  ]
+}

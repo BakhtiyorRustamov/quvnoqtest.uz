@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-43",
+  "subjectKey": "g1-ona",
+  "emojis": "🐱🐶✍️",
+  "title": {
+    "uz": "Hayvon laqablari — bosh harf",
+    "ru": "Клички животных — заглавная буква",
+    "en": "Animal nicknames — capital letters"
+  },
+  "recall": {
+    "uz": "Laqab — jonivorlarga atab qoʻyilgan nom. Hayvonlarning laqablari kishilar ismi kabi bosh harf bilan yoziladi. Hayvonning turi (mushuk, it, ot) kichik harf bilan, laqabi (Malla, Momiqvoy, Chopqir) bosh harf bilan yoziladi.",
+    "ru": "Кличка — это имя, данное животному. Клички животных пишутся с заглавной буквы, как имена людей. Вид животного (mushuk, it, ot) — со строчной, а кличка (Malla, Momiqvoy, Chopqir) — с заглавной.",
+    "en": "A nickname (laqab) is a name given to an animal. Animal nicknames are written with a capital letter, like people's names. The kind of animal (mushuk, it, ot) is lowercase; the nickname (Malla, Momiqvoy, Chopqir) takes a capital."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Hayvonga atab qoʻyilgan nom", "ru": "Имя, данное животному", "en": "A name given to an animal" }, { "uz": "Shahar nomi", "ru": "Название города", "en": "A city name" }, { "uz": "Oʻyin turi", "ru": "Вид игры", "en": "A kind of game" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Laqab» nima?", "ru": "Что такое «кличка» (laqab)?", "en": "What is a “laqab” (nickname)?" },
+      "hint": { "uz": "Mushukning Malla, itning Chopqir — bular laqab.", "ru": "Malla у кота, Chopqir у собаки — это клички.", "en": "Malla for a cat, Chopqir for a dog — these are nicknames." },
+      "explanation": { "uz": "Laqab — jonivorga atab qoʻyilgan nom.", "ru": "Кличка — это имя, данное животному.", "en": "A nickname is a name given to an animal." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Bosh harf bilan", "ru": "С заглавной буквы", "en": "With a capital letter" }, { "uz": "Kichik harf bilan", "ru": "Со строчной буквы", "en": "With a small letter" }, { "uz": "Yozilmaydi", "ru": "Не пишется", "en": "It is not written" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Hayvonlarning laqablari qanday harf bilan yoziladi?", "ru": "С какой буквы пишутся клички животных?", "en": "Which letter do animal nicknames begin with?" },
+      "hint": { "uz": "Laqab kishilar ismi kabi yoziladi.", "ru": "Кличка пишется как имя человека.", "en": "A nickname is written like a person's name." },
+      "explanation": { "uz": "Laqablar bosh harf bilan yoziladi.", "ru": "Клички пишутся с заглавной буквы.", "en": "Nicknames are written with a capital letter." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Momiqvoy", "bin": "laqab" }, { "id": "b", "label": "Chopqir", "bin": "laqab" }, { "id": "c", "label": "Malla", "bin": "laqab" }, { "id": "d", "label": "mushuk", "bin": "hayvon" }, { "id": "e", "label": "it", "bin": "hayvon" }, { "id": "f", "label": "ot", "bin": "hayvon" } ], "bins": [ { "id": "laqab", "label": "Laqab (bosh harf)" }, { "id": "hayvon", "label": "Hayvon nomi (kichik harf)" } ] } },
+      "prompt": { "uz": "Ajrat: laqab va hayvon nomi!", "ru": "Раздели: кличка и название животного!", "en": "Sort: nickname vs kind of animal!" },
+      "hint": { "uz": "mushuk, it, ot — hayvon turlari (kichik harf).", "ru": "mushuk, it, ot — виды животных (со строчной).", "en": "mushuk, it, ot are kinds of animals (lowercase)." },
+      "explanation": { "uz": "Laqab bosh harf, hayvon nomi kichik harf bilan yoziladi.", "ru": "Кличка — с заглавной, название животного — со строчной.", "en": "A nickname takes a capital; the animal type is lowercase." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Mushuk", "right": "Momiqvoy" }, { "left": "It", "right": "Chopqir" }, { "left": "Toychoq", "right": "Qashqa" } ] } },
+      "prompt": { "uz": "Hayvonni oʻz laqabiga ula!", "ru": "Соедини животное с его кличкой!", "en": "Match each animal to its nickname!" },
+      "hint": { "uz": "Zilolaning mushugi — Momiqvoy.", "ru": "Кот Зилолы — Momiqvoy.", "en": "Zilola's cat is Momiqvoy." },
+      "explanation": { "uz": "Har bir hayvonning oʻz laqabi bor.", "ru": "У каждого животного своя кличка.", "en": "Each animal has its own nickname." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Momiqvoy", "match": true }, { "text": "mushuk", "match": false }, { "text": "Chopqir", "match": true }, { "text": "it", "match": false }, { "text": "Malla", "match": true }, { "text": "quyon", "match": false } ] } },
+      "prompt": { "uz": "Laqablarni (bosh harfli soʻzlarni) bos!", "ru": "Нажми клички (слова с заглавной)!", "en": "Tap the nicknames (capitalized words)!" },
+      "hint": { "uz": "mushuk, it, quyon — hayvon turlari, kichik harf bilan.", "ru": "mushuk, it, quyon — виды животных, со строчной.", "en": "mushuk, it, quyon are animal kinds — lowercase." },
+      "explanation": { "uz": "Momiqvoy, Chopqir, Malla — laqablar, bosh harf bilan.", "ru": "Momiqvoy, Chopqir, Malla — клички, с заглавной.", "en": "Momiqvoy, Chopqir, Malla are nicknames — with a capital." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "alla", "choices": ["M", "m", "N"], "answer": "M", "emoji": "🐱", "clue": { "uz": "Mushukning laqabi", "ru": "Кличка кота", "en": "A cat's nickname" } } },
+      "prompt": { "uz": "Mushukning laqabini bosh harf bilan boshla!", "ru": "Начни кличку кота с заглавной!", "en": "Start the cat's nickname with a capital!" },
+      "hint": { "uz": "Laqab — «Malla».", "ru": "Кличка — «Malla».", "en": "The nickname is “Malla”." },
+      "explanation": { "uz": "«Malla» — laqab, bosh «M» bilan yoziladi.", "ru": "«Malla» — кличка, с заглавной «M».", "en": "“Malla” is a nickname, written with a capital “M”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "Chopqir", "letters": ["Ch", "o", "p", "q", "i", "r"], "emoji": "🐶", "clue": { "uz": "Zilolaning itining laqabi", "ru": "Кличка собаки Зилолы", "en": "Zilola's dog's nickname" } } },
+      "prompt": { "uz": "Harflardan itning laqabini yigʻ!", "ru": "Собери кличку собаки из букв!", "en": "Build the dog's nickname from the letters!" },
+      "hint": { "uz": "Ch- bilan boshlanadi.", "ru": "Начинается с Ch-.", "en": "It starts with Ch-." },
+      "explanation": { "uz": "«Chopqir» — itning laqabi, bosh harf bilan.", "ru": "«Chopqir» — кличка собаки, с заглавной.", "en": "“Chopqir” is the dog's nickname, with a capital." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["Mo", "miq", "voy"], "emoji": "🐱", "clue": { "uz": "Mushukning laqabi", "ru": "Кличка кота", "en": "A cat's nickname" } } },
+      "prompt": { "uz": "Boʻgʻinlardan mushukning laqabini tuz!", "ru": "Собери кличку кота из слогов!", "en": "Build the cat's nickname from syllables!" },
+      "hint": { "uz": "Mo- … -miq- … -voy.", "ru": "Mo- … -miq- … -voy.", "en": "Mo- … -miq- … -voy." },
+      "explanation": { "uz": "«Momiqvoy» — laqab, bosh harf bilan yoziladi.", "ru": "«Momiqvoy» — кличка, с заглавной.", "en": "“Momiqvoy” is a nickname, written with a capital." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Mening", "itim", "Chopqir."], "emoji": "🐶", "clue": { "uz": "It haqida gap", "ru": "Предложение о собаке", "en": "A sentence about a dog" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Laqab — «Chopqir».", "ru": "Кличка — «Chopqir».", "en": "The nickname is “Chopqir”." },
+      "explanation": { "uz": "«Chopqir» — laqab, bosh harf bilan yoziladi.", "ru": "«Chopqir» — кличка, с заглавной.", "en": "“Chopqir” is a nickname, written with a capital." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Itimning laqabi Olapar.", "ru": "Itimning laqabi Olapar.", "en": "Itimning laqabi Olapar." }, { "uz": "Itimning laqabi olapar.", "ru": "Itimning laqabi olapar.", "en": "Itimning laqabi olapar." }, { "uz": "itimning laqabi Olapar.", "ru": "itimning laqabi Olapar.", "en": "itimning laqabi Olapar." } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi gap toʻgʻri yozilgan?", "ru": "Какое предложение написано верно?", "en": "Which sentence is written correctly?" },
+      "hint": { "uz": "Gap bosh harf bilan boshlanadi, laqab ham bosh harf bilan.", "ru": "Предложение — с заглавной, и кличка — с заглавной.", "en": "The sentence starts with a capital, and so does the nickname." },
+      "explanation": { "uz": "«Itimning laqabi Olapar.» — gap va laqab bosh harf bilan.", "ru": "«Itimning laqabi Olapar.» — и предложение, и кличка с заглавной.", "en": "“Itimning laqabi Olapar.” — both the sentence and the nickname are capitalized." }
+    }
+  ]
+}

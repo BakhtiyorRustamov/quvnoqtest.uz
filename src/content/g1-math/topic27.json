@@ -1,0 +1,106 @@
+{
+  "topicId": "g1-math-27",
+  "subjectKey": "g1-math",
+  "emojis": "🔢⬆️⬇️",
+  "title": { "uz": "Birdan oʻngacha sonlarni solishtirish", "ru": "Числа 1–10: сравнение", "en": "Numbers 1–10: comparing" },
+  "recall": {
+    "uz": "Bir dan oʻn gacha sonlarni solishtiramiz. Sonlarni oʻsish va kamayish tartibida joylaymiz. Kichikdan kattaga yoki kattadan kichikka teramiz. Yetishmagan sonlarni topamiz.",
+    "ru": "Сравниваем числа от одного до десяти. Расставляем их по возрастанию и убыванию. От меньшего к большему или наоборот. Находим пропущенные числа.",
+    "en": "We compare numbers one to ten. We put them in increasing and decreasing order. From small to big or big to small. We find the missing numbers."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["5", "7", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 3, 4, ?, 6", "ru": "Найди недостающее число: 3, 4, ?, 6", "en": "Find the missing number: 3, 4, ?, 6" },
+      "hint": { "uz": "Sonlar oʻsib bormoqda. Toʻrtdan keyin nima keladi?", "ru": "Числа растут. Что идёт после четырёх?", "en": "The numbers are increasing. What comes after four?" },
+      "explanation": { "uz": "Oʻsish tartibida toʻrtdan keyin besh keladi.", "ru": "По возрастанию после четырёх идёт пять.", "en": "Increasing, after four comes five." } },
+    { "id": "q2", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["6", "9", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 8, 7, ?, 5", "ru": "Найди недостающее число: 8, 7, ?, 5", "en": "Find the missing number: 8, 7, ?, 5" },
+      "hint": { "uz": "Sonlar kamayib bormoqda. Yettidan keyin nima keladi?", "ru": "Числа убывают. Что идёт после семи?", "en": "The numbers are decreasing. What comes after seven?" },
+      "explanation": { "uz": "Kamayish tartibida yettidan keyin olti keladi.", "ru": "По убыванию после семи идёт шесть.", "en": "Decreasing, after seven comes six." } },
+    {
+      "id": "q3",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": { "uz": "Yulduzlarni oʻsish tartibida (kichikdan kattaga) tartibla!", "ru": "Расставь звёзды по возрастанию (от маленькой к большой)!", "en": "Order the stars increasing (small to big)!" },
+      "items": [
+        { "id": "mid", "art": { "kind": "star", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "star", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "star", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "kichik", "ru": "малая", "en": "small" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "oʻrta", "ru": "средняя", "en": "medium" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "katta", "ru": "большая", "en": "big" } }
+      ],
+      "hint": { "uz": "Eng kichkinasi birinchi, eng kattasi oxirida.", "ru": "Самая маленькая первая, самая большая последняя.", "en": "Smallest first, biggest last." },
+      "explanation": { "uz": "Oʻsish tartibi: kichik, oʻrta, katta.", "ru": "По возрастанию: малая, средняя, большая.", "en": "Increasing order: small, medium, big." }
+    },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["10", "7"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi son katta: 7 yoki 10?", "ru": "Какое число больше: 7 или 10?", "en": "Which number is bigger: 7 or 10?" },
+      "hint": { "uz": "Sanoqda kechroq keladigani kattaroq.", "ru": "То, что идёт позже в счёте, больше.", "en": "The later one in counting is bigger." },
+      "explanation": { "uz": "Oʻn yettidan katta.", "ru": "Десять больше семи.", "en": "Ten is bigger than seven." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["1", "4", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Eng kichik son qaysi: 4, 1, 8?", "ru": "Какое число самое маленькое: 4, 1, 8?", "en": "Which number is the smallest: 4, 1, 8?" },
+      "hint": { "uz": "Sanashni boshlaganda birinchi aytiladigan sonni top.", "ru": "Найди число, которое называют первым при счёте.", "en": "Find the number said first when counting." },
+      "explanation": { "uz": "Bir eng kichik son.", "ru": "Один — самое маленькое.", "en": "One is the smallest." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 9, "y": 5 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Toʻqqiz beshdan katta.", "ru": "Девять больше пяти.", "en": "Nine is bigger than five." } },
+    {
+      "id": "q7",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin nima keladi?", "ru": "Продолжи ряд: что идёт дальше?", "en": "Continue the row: what comes next?" },
+      "sequence": [
+        { "kind": "ball", "color": "red" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "ball", "color": "red" },
+        { "kind": "ball", "color": "blue" },
+        { "kind": "ball", "color": "red" }
+      ],
+      "options": [
+        { "id": "bl", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "rd", "art": { "kind": "ball", "color": "red" } },
+        { "id": "yl", "art": { "kind": "ball", "color": "yellow" } }
+      ],
+      "answer": ["bl"],
+      "hint": { "uz": "Qizil, koʻk, qizil, koʻk… navbat bilan keladi!", "ru": "Красный, синий, красный, синий… по очереди!", "en": "Red, blue, red, blue… they take turns!" },
+      "explanation": { "uz": "Qizildan keyin doim koʻk keladi. Keyingisi — koʻk.", "ru": "После красного всегда идёт синий. Следующий — синий.", "en": "After red there is always blue. The next one is blue." }
+    },
+    {
+      "id": "q8",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Hamma baliqlarni sanab belgila!", "ru": "Сосчитай и отметь всех рыбок!", "en": "Count and tap all the fish!" },
+      "options": [
+        { "id": "f1", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "f2", "art": { "kind": "fish", "color": "blue" } },
+        { "id": "f3", "art": { "kind": "fish", "color": "green" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "magenta" } }
+      ],
+      "answer": ["f1", "f2", "f3"],
+      "hint": { "uz": "Faqat baliqlarni sana.", "ru": "Считай только рыбок.", "en": "Count only the fish." },
+      "explanation": { "uz": "Uchta baliq bor edi.", "ru": "Было три рыбки.", "en": "There were three fish." }
+    },
+    {
+      "id": "q9",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Boshqalardan farq qiladiganini bos!", "ru": "Нажми на ту, что отличается!", "en": "Tap the one that is different!" },
+      "options": [
+        { "id": "c1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "df", "art": { "kind": "star", "color": "blue" } },
+        { "id": "c2", "art": { "kind": "star", "color": "yellow" } }
+      ],
+      "answer": ["df"],
+      "hint": { "uz": "Ikkitasi sariq. Bittasi rangi bilan farqli.", "ru": "Две жёлтые. Одна отличается цветом.", "en": "Two are yellow. One differs by color." },
+      "explanation": { "uz": "Koʻk yulduz rangi bilan farq qildi.", "ru": "Синяя звезда отличалась цветом.", "en": "The blue star differed by color." }
+    },
+    { "id": "q10", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["10", "11", "8"], "answerIndex": 0 } },
+      "prompt": { "uz": "Keyingi son qaysi? 7, 8, 9, ?", "ru": "Какое число следующее? 7, 8, 9, ?", "en": "Which number comes next? 7, 8, 9, ?" },
+      "hint": { "uz": "Toʻqqizdan keyin sanoq qaysi son bilan tugaydi?", "ru": "Каким числом заканчивается счёт после девяти?", "en": "Which number ends the count after nine?" },
+      "explanation": { "uz": "Toʻqqizdan keyin oʻn keladi.", "ru": "После девяти идёт десять.", "en": "After nine comes ten." } }
+  ]
+}

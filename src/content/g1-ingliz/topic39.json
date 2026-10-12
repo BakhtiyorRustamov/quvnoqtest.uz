@@ -1,0 +1,516 @@
+{
+  "topicId": "g1-ingliz-39",
+  "subjectKey": "g1-ingliz",
+  "emojis": "⏳🐔🥚🌾",
+  "title": {
+    "uz": "Sabr qil (hikoya)",
+    "ru": "Будь терпеливым (история)",
+    "en": "Be patient (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bugungi qadriyat — «Be patient» (sabr qil). Xotirjam kutamiz, shoshmaymiz.",
+    "ru": "Время истории! Ценность сегодня — «Be patient» (будь терпеливым). Спокойно ждём, не спешим.",
+    "en": "Story time! Today's value is \"Be patient.\" We wait calmly and don't rush."
+  },
+  "ttsText": {
+    "uz": "Sabr qil.",
+    "en": "Story time! Be patient. Wait, please. Be patient!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: nima birinchi boʻldi?",
+        "ru": "Расставь историю по порядку!",
+        "en": "Put the story in order!"
+      },
+      "hint": {
+        "uz": "Avval bolalar tuxum xohlaydi.",
+        "ru": "Сначала дети хотят яйца.",
+        "en": "First the children want eggs."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sabr yaxshi natija beradi.",
+        "ru": "Молодец! Терпение даёт результат.",
+        "en": "Great! Patience brings a good result."
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "🥚",
+          "events": [
+            {
+              "text": {
+                "uz": "Bolalar tuxum olmoqchi.",
+                "ru": "Дети хотят яйца.",
+                "en": "The children want eggs."
+              }
+            },
+            {
+              "text": {
+                "uz": "Tovuq hali tayyor emas.",
+                "ru": "Курица ещё не готова.",
+                "en": "The hen is not ready yet."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ular sabr bilan kutadi.",
+                "ru": "Они терпеливо ждут.",
+                "en": "They wait patiently."
+              }
+            },
+            {
+              "text": {
+                "uz": "Tovuq tuxum beradi!",
+                "ru": "Курица даёт яйца!",
+                "en": "The hen gives eggs!"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima dedi?",
+        "ru": "Послушай. Что сказал ребёнок?",
+        "en": "Listen. What did the child say?"
+      },
+      "hint": {
+        "uz": "«I'll wait» — kutaman.",
+        "ru": "«I'll wait» — подожду.",
+        "en": "\"OK, I'll wait.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «OK, I'll wait!»",
+        "ru": "Верно! «OK, I'll wait!»",
+        "en": "Right! \"OK, I'll wait!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👨",
+              "name": "Farmer",
+              "text": "Wait, please. Be patient!",
+              "audio": {
+                "key": "ing39-q2-a",
+                "text": "Wait, please. Be patient!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "OK, I'll wait!",
+              "audio": {
+                "key": "ing39-q2-b",
+                "text": "OK, I'll wait!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "OK, I'll wait!",
+              "Goodbye!",
+              "No! Now!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Sabrli boʻlish — xotirjam kutish.",
+        "ru": "Верно? Быть терпеливым — спокойно ждать.",
+        "en": "Is this right? Being patient means waiting calmly."
+      },
+      "hint": {
+        "uz": "Shoshmaslik.",
+        "ru": "Не спешить.",
+        "en": "Not rushing."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Xotirjam kutamiz.",
+        "ru": "Верно! Спокойно ждём.",
+        "en": "Right! We wait calmly."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "⏳",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Fermada tuxumni kim beradi? Bos!",
+        "ru": "Кто на ферме даёт яйца? Нажми!",
+        "en": "What gives eggs on a farm? Tap it!"
+      },
+      "hint": {
+        "uz": "«hen» — tovuq.",
+        "ru": "«hen» — курица.",
+        "en": "A \"hen\" lays eggs."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A hen — tovuq.",
+        "ru": "Верно! A hen — курица.",
+        "en": "Right! A hen!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐔",
+              "label": "hen",
+              "correct": true
+            },
+            {
+              "emoji": "🐷",
+              "label": "pig"
+            },
+            {
+              "emoji": "🐮",
+              "label": "cow"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishlarni ajrat: sabrli yoki sabrsiz!",
+        "ru": "Разложи: терпеливо или нетерпеливо!",
+        "en": "Sort them: patient or not patient!"
+      },
+      "hint": {
+        "uz": "Xotirjam kutish — sabrli.",
+        "ru": "Спокойно ждать — терпеливо.",
+        "en": "Waiting calmly — patient."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sabr yaxshi.",
+        "ru": "Молодец! Терпение — хорошо.",
+        "en": "Great! Patience is good."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "p",
+              "label": {
+                "uz": "Patient",
+                "ru": "Терпеливо",
+                "en": "Patient"
+              }
+            },
+            {
+              "id": "n",
+              "label": {
+                "uz": "Not patient",
+                "ru": "Нетерпеливо",
+                "en": "Not patient"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🙂",
+              "label": "wait calmly",
+              "bin": "p"
+            },
+            {
+              "emoji": "⏳",
+              "label": "wait",
+              "bin": "p"
+            },
+            {
+              "emoji": "🧎",
+              "label": "sit and wait",
+              "bin": "p"
+            },
+            {
+              "emoji": "😠",
+              "label": "shout",
+              "bin": "n"
+            },
+            {
+              "emoji": "😤",
+              "label": "grab",
+              "bin": "n"
+            },
+            {
+              "emoji": "🏃",
+              "label": "run away",
+              "bin": "n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Tuxum tayyormi?",
+        "ru": "Послушай. Яйца готовы?",
+        "en": "Listen. Are the eggs ready?"
+      },
+      "hint": {
+        "uz": "«Not yet» — hali yoʻq.",
+        "ru": "«Not yet» — ещё нет.",
+        "en": "\"Not yet.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Not yet. Be patient!»",
+        "ru": "Верно! «Not yet. Be patient!»",
+        "en": "Right! \"Not yet. Be patient!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Are the eggs ready?",
+              "audio": {
+                "key": "ing39-q6-a",
+                "text": "Are the eggs ready?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👨",
+              "name": "Farmer",
+              "text": "Not yet. Be patient!",
+              "audio": {
+                "key": "ing39-q6-b",
+                "text": "Not yet. Be patient!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Fermer nima dedi?",
+              "ru": "Что сказал фермер?",
+              "en": "What did the farmer say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Yes, now!",
+              "Not yet. Be patient!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, ferma juftlarini top!",
+        "ru": "Открывай карточки: пары фермы!",
+        "en": "Flip the cards: match the farm pairs!"
+      },
+      "hint": {
+        "uz": "hen 🐔, cow 🐮, egg 🥚.",
+        "ru": "hen 🐔, cow 🐮, egg 🥚.",
+        "en": "hen 🐔, cow 🐮, egg 🥚."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐔"
+              },
+              "b": {
+                "label": "hen"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐮"
+              },
+              "b": {
+                "label": "cow"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🥚"
+              },
+              "b": {
+                "label": "egg"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ferma hayvonlarini belgila!",
+        "ru": "Отметь животных с фермы!",
+        "en": "Tap the farm animals!"
+      },
+      "hint": {
+        "uz": "Tovuq, sigir, qoʻy.",
+        "ru": "Курица, корова, овца.",
+        "en": "Hen, cow, sheep."
+      },
+      "explanation": {
+        "uz": "Barakalla! Tovuq, sigir, qoʻy — ferma hayvonlari!",
+        "ru": "Молодец! Курица, корова, овца — животные фермы!",
+        "en": "Great! Hen, cow, sheep are farm animals!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐔",
+              "label": "hen",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐮",
+              "label": "cow",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐑",
+              "label": "sheep",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🦁",
+              "label": "lion"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐬",
+              "label": "dolphin"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Baqirish — sabrli boʻlish. 😠",
+        "ru": "Верно? Кричать — быть терпеливым. 😠",
+        "en": "Is this right? Shouting is being patient. 😠"
+      },
+      "hint": {
+        "uz": "Baqirish — sabrsizlik.",
+        "ru": "Крик — нетерпение.",
+        "en": "Shouting is impatient."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Baqirish sabr emas.",
+        "ru": "Неверно! Крик — не терпение.",
+        "en": "False! Shouting is not patient."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "😠",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qadriyati nima?",
+        "ru": "Какая ценность у истории?",
+        "en": "What is the value of the story?"
+      },
+      "hint": {
+        "uz": "Kutish haqida.",
+        "ru": "О терпении.",
+        "en": "About waiting."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Be patient — sabr qil.",
+        "ru": "Верно! Be patient — будь терпеливым.",
+        "en": "Right! Be patient!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "be patient\nsabr qil",
+              "ru": "be patient\nбудь терпеливым",
+              "en": "be patient"
+            },
+            {
+              "uz": "be angry\njahl qil",
+              "ru": "be angry\nзлись",
+              "en": "be angry"
+            },
+            {
+              "uz": "be fast\ntez boʻl",
+              "ru": "be fast\nбудь быстрым",
+              "en": "be fast"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

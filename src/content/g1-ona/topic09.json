@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-09",
+  "subjectKey": "g1-ona",
+  "emojis": "🅰️🅾️✍️",
+  "title": {
+    "uz": "A va O — egizak unlilar",
+    "ru": "A и O — гласные-близнецы",
+    "en": "A and O — twin vowels"
+  },
+  "recall": {
+    "uz": "A va O — unli tovushlar. Soʻzlarni toʻgʻri yozish uchun ularni farqlash kerak: katta (kotta emas), tomosha (tamosha emas), taklif (toklif emas). Ismlarda ham A va O toʻgʻri qoʻyiladi.",
+    "ru": "A и O — гласные. Чтобы писать правильно, их нужно различать: katta (не kotta), tomosha (не tamosha), taklif (не toklif). В именах A и O тоже пишутся верно.",
+    "en": "A and O are vowels. To spell correctly we must tell them apart: katta (not kotta), tomosha (not tamosha), taklif (not toklif). Names also use A and O correctly."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "kmal", "choices": ["A", "O", "E"], "answer": "A", "emoji": "👦", "clue": { "uz": "Oʻgʻil bola ismi", "ru": "Имя мальчика", "en": "A boy's name" } } },
+      "prompt": { "uz": "Ismning birinchi harfini qoʻy!", "ru": "Вставь первую букву имени!", "en": "Add the first letter of the name!" },
+      "hint": { "uz": "… k m a l — «Akmal».", "ru": "… k m a l — «Akmal».", "en": "… k m a l — “Akmal”." },
+      "explanation": { "uz": "«Akmal» «A» unlisi bilan boshlanadi.", "ru": "«Akmal» начинается с гласной «A».", "en": "“Akmal” starts with the vowel “A”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "zod", "choices": ["O", "A", "U"], "answer": "O", "emoji": "👦", "clue": { "uz": "Erkin degan maʼnodagi ism", "ru": "Имя со значением «свободный»", "en": "A name meaning ‘free’" } } },
+      "prompt": { "uz": "Ismning birinchi harfini qoʻy!", "ru": "Вставь первую букву имени!", "en": "Add the first letter of the name!" },
+      "hint": { "uz": "… z o d — «Ozod».", "ru": "… z o d — «Ozod».", "en": "… z o d — “Ozod”." },
+      "explanation": { "uz": "«Ozod» «O» unlisi bilan boshlanadi.", "ru": "«Ozod» начинается с гласной «O».", "en": "“Ozod” starts with the vowel “O”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "bahor", "emoji": "🌷", "clue": { "uz": "Gullar ochiladigan fasl", "ru": "Пора, когда цветут цветы", "en": "The season when flowers bloom" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: b, a, h, o, r.", "ru": "Буквы: b, a, h, o, r.", "en": "Letters: b, a, h, o, r." },
+      "explanation": { "uz": "«bahor» — «a» va «o» unlilari bor.", "ru": "«bahor» — в нём гласные «a» и «o».", "en": "“bahor” (spring) has both “a” and “o”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "k", "after": "tta", "choices": ["a", "o", "u"], "answer": "a", "emoji": "🐘", "clue": { "uz": "Kichik emas, …", "ru": "Не маленький, а …", "en": "Not small, but …" } } },
+      "prompt": { "uz": "Toʻgʻri unlini tanla!", "ru": "Выбери верную гласную!", "en": "Choose the right vowel!" },
+      "hint": { "uz": "k … t t a — «katta» (kotta emas).", "ru": "k … t t a — «katta» (не «kotta»).", "en": "k … t t a — “katta” (not “kotta”)." },
+      "explanation": { "uz": "Toʻgʻrisi — «katta». «kotta» xato yozilishdir.", "ru": "Правильно — «katta». «kotta» — ошибка.", "en": "Correct is “katta”. “kotta” is a misspelling." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "anor", "bin": "a" }, { "id": "b", "label": "aka", "bin": "a" }, { "id": "c", "label": "archa", "bin": "a" }, { "id": "d", "label": "olma", "bin": "o" }, { "id": "e", "label": "ona", "bin": "o" }, { "id": "f", "label": "oy", "bin": "o" } ], "bins": [ { "id": "a", "label": "«A» bilan" }, { "id": "o", "label": "«O» bilan" } ] } },
+      "prompt": { "uz": "Soʻzni birinchi unlisiga qarab ajrat!", "ru": "Раздели по первой гласной!", "en": "Sort the words by their first vowel!" },
+      "hint": { "uz": "«anor» — «a», «olma» — «o» bilan.", "ru": "«anor» — с «a», «olma» — с «o».", "en": "“anor” starts with “a”, “olma” with “o”." },
+      "explanation": { "uz": "A va O — ikki xil unli. Ularni toʻgʻri farqlaymiz.", "ru": "A и O — разные гласные. Мы их различаем.", "en": "A and O are two different vowels. We tell them apart." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "bahor", "right": "🌷" }, { "left": "olma", "right": "🍎" }, { "left": "oy", "right": "🌙" }, { "left": "kitob", "right": "📖" } ] } },
+      "prompt": { "uz": "Soʻzni rasmiga ula!", "ru": "Соедини слово с картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«oy» — 🌙, «olma» — 🍎.", "ru": "«oy» — 🌙, «olma» — 🍎.", "en": "“oy” — 🌙, “olma” — 🍎." },
+      "explanation": { "uz": "Har soʻzda «a» yoki «o» unlisi bor.", "ru": "В каждом слове есть «a» или «o».", "en": "Each word contains “a” or “o”." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "davlat", "emoji": "🏛️", "clue": { "uz": "Bizning mamlakatimiz — Oʻzbekiston …", "ru": "Наша страна — …", "en": "Our country is a …" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: d, a, v, l, a, t.", "ru": "Буквы: d, a, v, l, a, t.", "en": "Letters: d, a, v, l, a, t." },
+      "explanation": { "uz": "«davlat» — ikki «a» unlisi bor.", "ru": "«davlat» (государство) — две гласные «a».", "en": "“davlat” (state) has two “a” vowels." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Onam", "bahorni", "yaxshi", "koʻradi."], "emoji": "🌸", "clue": { "uz": "Bahor haqida gap", "ru": "Предложение о весне", "en": "A sentence about spring" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Onam». Nimani? — «bahorni».", "ru": "Кто? — «Onam». Что? — «bahorni».", "en": "Who? — “Onam”. What? — “bahorni”." },
+      "explanation": { "uz": "Gapdagi soʻzlarda «a» va «o» unlilari uchraydi.", "ru": "В словах предложения встречаются «a» и «o».", "en": "The words in the sentence contain “a” and “o”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["katta", "kotta", "kutta"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz toʻgʻri yozilgan?", "ru": "Какое слово написано верно?", "en": "Which word is spelled correctly?" },
+      "hint": { "uz": "Kichikning teskarisi.", "ru": "Противоположность «маленький».", "en": "The opposite of small." },
+      "explanation": { "uz": "Toʻgʻrisi — «katta».", "ru": "Правильно — «katta».", "en": "The correct spelling is “katta”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["tomosha", "tamosha", "tomasha"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz toʻgʻri yozilgan?", "ru": "Какое слово написано верно?", "en": "Which word is spelled correctly?" },
+      "hint": { "uz": "Sirkda … qilamiz.", "ru": "В цирке мы … (смотрим представление).", "en": "At the circus we watch a …" },
+      "explanation": { "uz": "Toʻgʻrisi — «tomosha».", "ru": "Правильно — «tomosha».", "en": "The correct spelling is “tomosha”." }
+    }
+  ]
+}

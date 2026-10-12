@@ -1,0 +1,161 @@
+{
+  "topicId": "g1-oqish-62",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🍎🧼💧",
+  "title": {
+    "uz": "Mevalar gʻarq pishgan mahalda",
+    "ru": "Когда плоды поспевают",
+    "en": "When the fruit ripens"
+  },
+  "recall": {
+    "uz": "«Ichburugʻ» sheʼrini tinglab oʻqiymiz va tozalik kasallikdan saqlashini bilib olamiz.",
+    "ru": "Слушаем стихотворение «Кишечный микроб» и узнаём, что чистота бережёт от болезней.",
+    "en": "We read the poem “The gut germ” and learn that cleanliness protects from illness."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Ichburugʻ",
+        "variant": "poem",
+        "audio": "g1-oqish-62-q1",
+        "lines": [
+          "Men — koʻzga koʻrinmas ichburugʻ,",
+          "Yuqumli kasallik tarqataman.",
+          "Qoʻlini yuvmaydigan bolaning",
+          "Qorniga bemalol oʻrnashaman.",
+          "",
+          "Yuvilmagan olma, koʻlmak suv —",
+          "Menga eng yoqqan maskan.",
+          "Ammo qoʻlingni toza yuvsang,",
+          "Men senga yaqinlasholmayman!"
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Ichburugʻ qanday bolaga yaqinlashadi?", "ru": "К какому ребёнку пристаёт микроб?", "en": "Which child does the germ cling to?" },
+      "explanation": { "uz": "Sheʼr tozalik — kasallikdan himoya ekani haqida.", "ru": "Стихотворение о том, что чистота защищает от болезней.", "en": "The poem shows that cleanliness guards against illness." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Qoʻlni yuvmaslik", "match": true },
+        { "text": "Yuvilmagan meva yeyish", "match": true },
+        { "text": "Koʻlmak suvda choʻmilish", "match": true },
+        { "text": "Qoʻlni sovunlab yuvish", "match": false },
+        { "text": "Mevani yuvib yeyish", "match": false }
+      ] } },
+      "prompt": { "uz": "Ichburugʻ paydo boʻladigan xavfli odatlarni bos!", "ru": "Нажми опасные привычки, от которых заводится микроб!", "en": "Tap the risky habits that let the germ in!" },
+      "hint": { "uz": "Kasallik ifloslikdan tarqaladi.", "ru": "Болезни идут от грязи.", "en": "Illness spreads from dirt." },
+      "explanation": { "uz": "Qoʻlni yuvmaslik, yuvilmagan meva, koʻlmak suv — xavfli; yuvinish esa himoya.", "ru": "Немытые руки, немытые фрукты, грязная вода — опасно; мытьё — защита.", "en": "Unwashed hands, unwashed fruit, dirty water are risky; washing protects." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Qoʻlni yuvmaslik kasallik tarqalishiga sabab boʻladi.", "ru": "Немытые руки — причина болезней.", "en": "Not washing hands causes illness to spread." },
+        "answer": "true",
+        "why": { "uz": "Ichburugʻ qoʻlini yuvmagan bolaga yopishadi.", "ru": "Микроб пристаёт к тому, кто не моет руки.", "en": "The germ clings to those who don't wash hands." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Ichburugʻ qaerda paydo boʻladi?", "ru": "Где заводится микроб?", "en": "Where does the germ appear?" },
+      "explanation": { "uz": "Toʻgʻri: qoʻlni yuvmaslik kasallikka olib keladi.", "ru": "Верно: немытые руки ведут к болезни.", "en": "True: unwashed hands lead to illness." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Mevani bozordan olish", "ru": "Купить фрукт", "en": "Buy the fruit" } },
+        { "text": { "uz": "Oqar suvda yuvish", "ru": "Помыть под проточной водой", "en": "Wash under running water" } },
+        { "text": { "uz": "Artib tozalash", "ru": "Вытереть насухо", "en": "Wipe it clean" } },
+        { "text": { "uz": "Soʻng yeyish", "ru": "Затем съесть", "en": "Then eat it" } }
+      ] } },
+      "prompt": { "uz": "Mevani yeyishdan oldingi ishlarni tartiblang!", "ru": "Расставь по порядку, что сделать перед едой!", "en": "Order the steps before eating the fruit!" },
+      "hint": { "uz": "Yeyishdan oldin meva yuvilishi kerak.", "ru": "Перед едой фрукт нужно помыть.", "en": "Wash the fruit before eating." },
+      "explanation": { "uz": "Olish → yuvish → artish → yeyish.", "ru": "Купить → помыть → вытереть → съесть.", "en": "Buy → wash → wipe → eat." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Qoʻlni va mevani yuvish kerak", "ru": "Мыть руки и фрукты", "en": "Wash your hands and the fruit" },
+        { "uz": "Koʻlmak suvda choʻmilish kerak", "ru": "Купаться в грязной воде", "en": "Swim in dirty water" },
+        { "uz": "Yuvilmagan meva yeyish kerak", "ru": "Есть немытые фрукты", "en": "Eat unwashed fruit" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Kasallikdan saqlanish uchun nima qilish kerak?", "ru": "Что нужно делать, чтобы не заболеть?", "en": "What should we do to avoid illness?" },
+      "hint": { "uz": "Sheʼrning oxirgi bandini eslang.", "ru": "Вспомни последнюю строфу.", "en": "Recall the last stanza." },
+      "explanation": { "uz": "Qoʻlni va mevani yuvsak, kasallikdan saqlanamiz.", "ru": "Мытьё рук и фруктов бережёт от болезней.", "en": "Washing hands and fruit keeps illness away." },
+      "openEnd": { "uz": "Ovqatdan oldin qoʻlingni qanday yuvasan?", "ru": "Как ты моешь руки перед едой?", "en": "How do you wash your hands before eating?" }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "changallamoq", "right": "qoʻl bilan mahkam ushlamoq" },
+        { "left": "anoyimas", "right": "sodda emas" },
+        { "left": "nozir", "right": "nazorat qilib turuvchi" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«nozir» — nazorat qilib turuvchi.", "ru": "«nozir» — надзиратель.", "en": "“nozir” means an overseer." },
+      "explanation": { "uz": "changallamoq = mahkam ushlamoq; anoyimas = sodda emas; nozir = nazoratchi.", "ru": "changallamoq = крепко схватить; anoyimas = не прост; nozir = надзиратель.", "en": "changallamoq = to grip; anoyimas = not naive; nozir = an overseer." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Ovqatdan oldin ", "after": "ni sovunlab yuvish kerak.", "choices": ["qoʻl", "soch", "poyabzal"], "answer": "qoʻl", "emoji": "🧼", "clue": { "uz": "Salomatlik qoidasi", "ru": "Правило здоровья", "en": "A health rule" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "Ovqatni nima bilan olamiz?", "ru": "Чем мы берём еду?", "en": "What do we pick up food with?" },
+      "explanation": { "uz": "Ovqatdan oldin qoʻlni sovunlab yuvish kerak.", "ru": "Перед едой руки нужно мыть с мылом.", "en": "Wash your hands with soap before eating." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "qoʻl yuvish" },
+        { "text": "mevani yuvish" },
+        { "text": "toza suv ichish" },
+        { "text": "koʻlmak suvda choʻmilish", "odd": true }
+      ], "clue": { "uz": "Qaysi biri salomatlikka zarar?", "ru": "Что из этого вредно для здоровья?", "en": "Which one harms health?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi — sogʻlom odat.", "ru": "Три — здоровые привычки.", "en": "Three are healthy habits." },
+      "explanation": { "uz": "Koʻlmak suvda choʻmilish — zararli; qolganlari sogʻlom odat.", "ru": "Купание в грязной воде вредно; остальное — здоровые привычки.", "en": "Swimming in dirty water is harmful; the rest are healthy." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Yuvilmagan" },
+          { "blank": "meva" },
+          { "text": "va" },
+          { "blank": "koʻlmak" },
+          { "text": "suv — kasallik manbai." }
+        ],
+        "bank": ["meva", "koʻlmak", "kitob"]
+      } },
+      "prompt": { "uz": "Soʻzlarni tanlab, boʻsh joylarga qoʻying!", "ru": "Вставь слова в пропуски!", "en": "Fill the gaps with the right words!" },
+      "hint": { "uz": "Ichburugʻ nimalarni yaxshi koʻradi?", "ru": "Что любит микроб?", "en": "What does the germ like?" },
+      "explanation": { "uz": "Yuvilmagan meva va koʻlmak suv — kasallik manbai.", "ru": "Немытые фрукты и грязная вода — источник болезней.", "en": "Unwashed fruit and dirty water are sources of illness." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "tozalik", "syllables": ["to", "za", "lik"], "emoji": "🧼", "clue": { "uz": "Kasallikdan saqlaydigan odat", "ru": "Привычка, берегущая от болезней", "en": "The habit that guards from illness" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "to + za + lik = ?", "ru": "to + za + lik = ?", "en": "to + za + lik = ?" },
+      "explanation": { "uz": "to-za-lik → tozalik. Salomatlikning garovi.", "ru": "to-za-lik → tozalik (чистота).", "en": "to-za-lik → tozalik (cleanliness)." }
+    }
+  ]
+}

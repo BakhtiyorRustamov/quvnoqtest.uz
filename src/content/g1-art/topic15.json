@@ -1,0 +1,18 @@
+{
+  "topicId": "g1-art-15", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Qoʻlqop", "ru": "Варежки", "en": "Mittens" },
+  "recall": {
+    "uz": "Qishda qoʻlqop qoʻllarimizni sovuqdan asraydi. Qoʻlqoplar rang-barang va naqshli boʻladi. Keling, bir juft qoʻlqopni boʻyaymiz.",
+    "ru": "Зимой варежки берегут наши руки от холода. Варежки бывают яркими и с узорами. Давай раскрасим пару варежек.",
+    "en": "In winter mittens keep our hands warm. Mittens can be colourful and patterned. Let's colour a pair of mittens."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Bir juft qoʻlqopni boʻya.", "ru": "Раскрась пару варежек.", "en": "Colour the pair of mittens." },
+      "hint": { "uz": "Ikkala qoʻlqopni bir xil rangga boʻya.", "ru": "Раскрась обе варежки одинаково.", "en": "Colour both mittens the same." },
+      "explanation": { "uz": "Issiq qoʻlqoplar!", "ru": "Тёплые варежки!", "en": "Warm mittens!" },
+      "widget": { "type": "color_fill", "props": { "picture": "gloves" } }
+    }
+  ]
+}

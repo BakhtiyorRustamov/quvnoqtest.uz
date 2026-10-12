@@ -1,0 +1,167 @@
+{
+  "topicId": "g1-oqish-50",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "📚🏰🧩",
+  "title": {
+    "uz": "Boʻlim yuzasidan takrorlash",
+    "ru": "Повторение по разделу",
+    "en": "Section review"
+  },
+  "recall": {
+    "uz": "«Ertaklar olami» boʻlimini takrorlaymiz: ertak, maqol, topishmoq va rivoyatlarni eslaymiz.",
+    "ru": "Повторяем раздел «Мир сказок»: сказки, пословицы, загадки и предания.",
+    "en": "We review the “World of tales” section: tales, proverbs, riddles and legends."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Ertaklar olamida",
+        "variant": "poem",
+        "audio": "g1-oqish-50-q1",
+        "lines": [
+          "Ertaklar olamida",
+          "Sayr qilib chiqdik biz.",
+          "Topishmoq, maqol, rivoyat —",
+          "Koʻp saboq oldik biz.",
+          "",
+          "Mehnat — baxt kaliti,",
+          "Aql — eng katta boylik."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Boʻlimda nimalarni oʻrgandik?", "ru": "Что мы изучили в разделе?", "en": "What did we learn in this section?" },
+      "explanation": { "uz": "Sheʼr boʻlimda oʻrganilgan ertak, maqol, topishmoq va rivoyatni eslatadi.", "ru": "Стихотворение напоминает о сказках, пословицах, загадках и преданиях.", "en": "The poem recalls the tales, proverbs, riddles and legends we studied." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_forge", "props": {
+        "letters": ["M", "A", "Q", "O", "L", "E", "R", "T", "K"],
+        "accept": ["maqol", "ertak", "olma", "mol", "ot", "qator"],
+        "goal": 3,
+        "emoji": "📚",
+        "clue": { "uz": "Boʻlimda oʻrgangan soʻzlarni tuzing", "ru": "Составь слова из раздела", "en": "Build words from the section" }
+      } },
+      "prompt": { "uz": "Harflardan soʻzlar hosil qiling!", "ru": "Составь слова из букв!", "en": "Build words from the letters!" },
+      "hint": { "uz": "Ikki–uch harfni birlashtirib, kichik soʻzlar tuzing.", "ru": "Соединяй по 2–3 буквы и составляй короткие слова.", "en": "Join 2–3 letters at a time to make short words." },
+      "explanation": { "uz": "Bu harflardan bir nechta maʼnoli soʻz hosil boʻladi.", "ru": "Из этих букв можно составить несколько осмысленных слов.", "en": "These letters can form several meaningful words." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "riddle_solve", "props": {
+        "lines": [
+          { "uz": "Varaqlarim koʻp mening,", "ru": "У меня много страниц,", "en": "I have many pages," },
+          { "uz": "Ichim toʻla hikoya.", "ru": "внутри — множество историй.", "en": "and I am full of stories." },
+          { "uz": "Ochsang — ertak dunyosi,", "ru": "Откроешь — мир сказок,", "en": "Open me — a world of tales," },
+          { "uz": "Har sahifam — bir saboq.", "ru": "каждая страница — урок.", "en": "each page a lesson." }
+        ],
+        "options": [
+          { "emoji": "📖", "label": { "uz": "Kitob", "ru": "Книга", "en": "Book" }, "correct": true },
+          { "emoji": "🎈", "label": { "uz": "Sharcha", "ru": "Шарик", "en": "Balloon" } },
+          { "emoji": "🍞", "label": { "uz": "Non", "ru": "Хлеб", "en": "Bread" } }
+        ]
+      } },
+      "prompt": { "uz": "Topishmoqni yeching: bu nima?", "ru": "Отгадай загадку: что это?", "en": "Solve the riddle: what is it?" },
+      "hint": { "uz": "Unda ertaklar yashaydi.", "ru": "В нём живут сказки.", "en": "Tales live inside it." },
+      "explanation": { "uz": "Javob — kitob: uning ichida ertaklar bor.", "ru": "Ответ — книга: в ней сказки.", "en": "The answer is a book: it holds tales." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Oʻgʻil oʻtinga chiqdi", "ru": "Сын пошёл за дровами", "en": "The son went for firewood" } },
+        { "text": { "uz": "Kechgacha charchab ishladi", "ru": "Устал, работая до вечера", "en": "He worked till evening, tired" } },
+        { "text": { "uz": "Zogʻora nonni yedi", "ru": "Съел ячменный хлеб", "en": "He ate the barley bread" } },
+        { "text": { "uz": "Non unga shirin tuyuldi", "ru": "Хлеб показался сладким", "en": "The bread tasted sweet" } }
+      ] } },
+      "prompt": { "uz": "«Shakardan shirin» ertagi voqealarini tartiblang!", "ru": "Расставь события сказки «Слаще сахара»!", "en": "Order the events of “Sweeter than sugar”!" },
+      "hint": { "uz": "Avval oʻgʻil ishga chiqadi.", "ru": "Сначала сын идёт работать.", "en": "First the son goes to work." },
+      "explanation": { "uz": "Oʻtinga chiqdi → ishladi → nonni yedi → shirin tuyuldi.", "ru": "Пошёл за дровами → работал → съел хлеб → стало сладко.", "en": "Went for wood → worked → ate the bread → it tasted sweet." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "ertak", "right": "xayoliy hikoya" },
+        { "left": "maqol", "right": "qisqa hikmatli gap" },
+        { "left": "topishmoq", "right": "jumboqli savol" }
+      ] } },
+      "prompt": { "uz": "Janrni maʼnosiga ula!", "ru": "Соедини жанр с его значением!", "en": "Match each genre to its meaning!" },
+      "hint": { "uz": "Ertak — oʻylab topilgan hikoya.", "ru": "Сказка — вымышленный рассказ.", "en": "A tale is an imagined story." },
+      "explanation": { "uz": "ertak = xayoliy hikoya; maqol = hikmatli gap; topishmoq = jumboqli savol.", "ru": "ertak = сказка; maqol = пословица; topishmoq = загадка.", "en": "ertak = a tale; maqol = a proverb; topishmoq = a riddle." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Mehnat — baxt kaliti", "ru": "Труд — ключ к счастью", "en": "Work is the key to happiness" },
+        { "uz": "Bir bor ekan, bir yoʻq ekan", "ru": "Жили-были...", "en": "Once upon a time..." },
+        { "uz": "Kichkina mitti, qoʻlimga olsam...", "ru": "Крохотное, если возьму в руку...", "en": "Tiny little, if I take it..." }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Quyidagilardan qaysi biri maqol?", "ru": "Что из этого — пословица?", "en": "Which of these is a proverb?" },
+      "hint": { "uz": "Maqol — qisqa, hikmatli gap.", "ru": "Пословица — краткое мудрое выражение.", "en": "A proverb is a short, wise saying." },
+      "explanation": { "uz": "«Mehnat — baxt kaliti» — maqol; qolganlari ertak boshi va topishmoq.", "ru": "«Труд — ключ к счастью» — пословица; остальное — зачин сказки и загадка.", "en": "“Work is the key to happiness” is a proverb; the others are a tale-opening and a riddle." },
+      "openEnd": { "uz": "Boʻlimda oʻrgangan ertaklardan qaysi biri koʻproq yoqdi? Nega?", "ru": "Какая сказка из раздела понравилась больше? Почему?", "en": "Which tale from the section did you like most? Why?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "size_order", "props": {
+        "words": ["Koʻp", "oʻqigan", "koʻp", "bilar."],
+        "phrase": "Koʻp oʻqigan koʻp bilar.",
+        "meaning": { "uz": "Koʻp oʻqigan odam koʻp narsani biladi.", "ru": "Кто много читает, тот много знает.", "en": "Whoever reads a lot, knows a lot." }
+      } },
+      "prompt": { "uz": "Soʻzlarni kichikdan kattaga bosib, maqolni oʻqing!", "ru": "Нажимай слова от маленького к большому и прочитай пословицу!", "en": "Tap the words smallest to largest to read the proverb!" },
+      "hint": { "uz": "Eng kichik soʻzdan boshla.", "ru": "Начни с самого маленького слова.", "en": "Start with the smallest word." },
+      "explanation": { "uz": "«Koʻp oʻqigan koʻp bilar» — oʻqish bilim beradi.", "ru": "«Кто много читает — много знает».", "en": "“Who reads a lot, knows a lot.”" }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Doʻst doʻstga qalqon.", "match": true },
+        { "text": "Koʻp oʻqigan koʻp bilar.", "match": true },
+        { "text": "Bugun havo issiq.", "match": false },
+        { "text": "Men toʻp oʻynadim.", "match": false }
+      ] } },
+      "prompt": { "uz": "Maqollarni bos (oddiy gaplarni emas)!", "ru": "Нажми пословицы (не обычные предложения)!", "en": "Tap the proverbs (not ordinary sentences)!" },
+      "hint": { "uz": "Maqolda hikmat, oʻgit boʻladi.", "ru": "В пословице есть мудрость, наставление.", "en": "A proverb carries wisdom and advice." },
+      "explanation": { "uz": "Ikkitasi — hikmatli maqol; qolganlari — oddiy gap.", "ru": "Две — мудрые пословицы; остальные — обычные предложения.", "en": "Two are wise proverbs; the rest are ordinary sentences." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "ertak", "syllables": ["er", "tak"], "emoji": "🏰", "clue": { "uz": "«Bir bor ekan...» bilan boshlanadigan xayoliy hikoya", "ru": "Вымышленный рассказ, что начинается «Жили-были...»", "en": "An imagined story that begins “Once upon a time...”" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "er + tak = ?", "ru": "er + tak = ?", "en": "er + tak = ?" },
+      "explanation": { "uz": "er-tak → ertak. Yaxshilikka yetaklaydigan xayoliy hikoya.", "ru": "er-tak → ertak (сказка).", "en": "er-tak → ertak (a fairy tale)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_sequence", "props": {
+        "letters": ["m", "a", "q", "o", "l"],
+        "words": [5],
+        "phrase": "maqol",
+        "meaning": { "uz": "Maqol — xalqning qisqa, hikmatli gapi.", "ru": "Пословица — краткое мудрое народное выражение.", "en": "A proverb — a short, wise folk saying." }
+      } },
+      "prompt": { "uz": "Harflarni toʻgʻri ketma-ketlikda bosib, soʻzni oʻqing!", "ru": "Нажимай буквы по порядку и прочитай слово!", "en": "Tap the letters in the right order to read the word!" },
+      "hint": { "uz": "«m» harfidan boshlanadi.", "ru": "Начинается с «m».", "en": "It starts with “m”." },
+      "explanation": { "uz": "m-a-q-o-l → maqol. Xalqning hikmatli gapi.", "ru": "m-a-q-o-l → maqol (пословица).", "en": "m-a-q-o-l → maqol (a proverb)." }
+    }
+  ]
+}

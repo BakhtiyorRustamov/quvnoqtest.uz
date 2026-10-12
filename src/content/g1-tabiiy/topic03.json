@@ -1,0 +1,211 @@
+{
+  "topicId": "g1-tabiiy-03",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🪵🪟📖🪣",
+  "title": {
+    "uz": "Narsalar nimadan yasalgan?",
+    "ru": "Из чего сделаны предметы?",
+    "en": "What are things made of?"
+  },
+  "recall": {
+    "uz": "Atrofimizdagi narsalar turli moddalardan yasalgan: yogʻoch, plastmassa, shisha va qogʻoz. Qalam yogʻochdan, chelak plastmassadan, deraza shishadan, kitob qogʻozdan. Narsalarni moddasiga qarab guruhlaymiz.",
+    "ru": "Предметы вокруг нас сделаны из разных материалов: дерево, пластмасса, стекло и бумага. Карандаш из дерева, ведро из пластмассы, окно из стекла, книга из бумаги. Мы группируем предметы по материалу.",
+    "en": "Things around us are made of different materials: wood, plastic, glass and paper. A pencil is wood, a bucket is plastic, a window is glass, a book is paper. We group things by their material."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri yogʻochdan yasalgan?", "ru": "Что сделано из дерева?", "en": "Which one is made of wood?" },
+      "hint": { "uz": "Qalamning ichi yogʻochdan.", "ru": "Карандаш внутри из дерева.", "en": "A pencil is made of wood." },
+      "explanation": { "uz": "Qalam yogʻochdan yasalgan. Deraza shishadan, chelak plastmassadan.", "ru": "Карандаш из дерева. Окно из стекла, ведро из пластмассы.", "en": "A pencil is made of wood. A window is glass, a bucket is plastic." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "pencil", "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" }, "correct": true },
+            { "id": "window", "emoji": "🪟", "label": { "uz": "deraza", "ru": "окно", "en": "window" } },
+            { "id": "bucket", "emoji": "🪣", "label": { "uz": "chelak", "ru": "ведро", "en": "bucket" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri shishadan yasalgan?", "ru": "Что сделано из стекла?", "en": "Which one is made of glass?" },
+      "hint": { "uz": "Shisha tiniq boʻladi — deraza shunday.", "ru": "Стекло прозрачное — окно такое.", "en": "Glass is see-through — a window is like that." },
+      "explanation": { "uz": "Deraza shishadan. Kitob qogʻozdan, stul yogʻochdan.", "ru": "Окно из стекла. Книга из бумаги, стул из дерева.", "en": "A window is glass. A book is paper, a chair is wood." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "window", "emoji": "🪟", "label": { "uz": "deraza", "ru": "окно", "en": "window" }, "correct": true },
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" } },
+            { "id": "chair", "emoji": "🪑", "label": { "uz": "stul", "ru": "стул", "en": "chair" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri qogʻozdan yasalgan?", "ru": "Что сделано из бумаги?", "en": "Which one is made of paper?" },
+      "hint": { "uz": "Kitob varaqlari qogʻozdan.", "ru": "Страницы книги из бумаги.", "en": "The pages of a book are paper." },
+      "explanation": { "uz": "Kitob qogʻozdan. Banka shishadan, chelak plastmassadan.", "ru": "Книга из бумаги. Банка из стекла, ведро из пластмассы.", "en": "A book is paper. A jar is glass, a bucket is plastic." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" }, "correct": true },
+            { "id": "jar", "emoji": "🫙", "label": { "uz": "banka", "ru": "банка", "en": "jar" } },
+            { "id": "bucket", "emoji": "🪣", "label": { "uz": "chelak", "ru": "ведро", "en": "bucket" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi biri plastmassadan yasalgan?", "ru": "Что сделано из пластмассы?", "en": "Which one is made of plastic?" },
+      "hint": { "uz": "Chelak yengil va plastmassadan boʻladi.", "ru": "Ведро лёгкое и из пластмассы.", "en": "A bucket is light and made of plastic." },
+      "explanation": { "uz": "Chelak plastmassadan. Gitara yogʻochdan, lampochka shishadan.", "ru": "Ведро из пластмассы. Гитара из дерева, лампочка из стекла.", "en": "A bucket is plastic. A guitar is wood, a bulb is glass." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "bucket", "emoji": "🪣", "label": { "uz": "chelak", "ru": "ведро", "en": "bucket" }, "correct": true },
+            { "id": "guitar", "emoji": "🎸", "label": { "uz": "gitara", "ru": "гитара", "en": "guitar" } },
+            { "id": "bulb", "emoji": "💡", "label": { "uz": "lampochka", "ru": "лампочка", "en": "bulb" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir narsani oʻz moddasiga ula!", "ru": "Соедини каждый предмет с его материалом!", "en": "Match each thing to its material!" },
+      "hint": { "uz": "Qalam — yogʻoch, banka — shisha, chelak — plastmassa, kitob — qogʻoz.", "ru": "Карандаш — дерево, банка — стекло, ведро — пластмасса, книга — бумага.", "en": "Pencil — wood, jar — glass, bucket — plastic, book — paper." },
+      "explanation": { "uz": "Har bir narsa maʼlum moddadan yasalgan. Moddani bilib guruhladik.", "ru": "Каждый предмет сделан из своего материала. Мы сгруппировали по материалу.", "en": "Each thing is made of a certain material. We grouped them by material." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" } }, "right": { "emoji": "🪵", "label": { "uz": "yogʻoch", "ru": "дерево", "en": "wood" } } },
+            { "left": { "emoji": "🫙", "label": { "uz": "banka", "ru": "банка", "en": "jar" } }, "right": { "label": { "uz": "shisha", "ru": "стекло", "en": "glass" } } },
+            { "left": { "emoji": "🪣", "label": { "uz": "chelak", "ru": "ведро", "en": "bucket" } }, "right": { "emoji": "🧴", "label": { "uz": "plastmassa", "ru": "пластмасса", "en": "plastic" } } },
+            { "left": { "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" } }, "right": { "emoji": "📄", "label": { "uz": "qogʻoz", "ru": "бумага", "en": "paper" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yogʻoch va plastmassadan yasalganlarga ajrat!", "ru": "Разложи: из дерева и из пластмассы!", "en": "Sort into wood and plastic!" },
+      "hint": { "uz": "Qalam va gitara — yogʻoch; chelak va ruchka — plastmassa.", "ru": "Карандаш и гитара — дерево; ведро и ручка — пластмасса.", "en": "Pencil and guitar are wood; bucket and pen are plastic." },
+      "explanation": { "uz": "Qalam bilan gitara yogʻochdan, chelak bilan ruchka plastmassadan.", "ru": "Карандаш и гитара из дерева, ведро и ручка из пластмассы.", "en": "Pencil and guitar are wood; bucket and pen are plastic." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "wood", "label": { "uz": "🪵 Yogʻoch", "ru": "🪵 Дерево", "en": "🪵 Wood" }, "color": "#a9743e" },
+            { "id": "plastic", "label": { "uz": "🧴 Plastmassa", "ru": "🧴 Пластмасса", "en": "🧴 Plastic" }, "color": "#2f9fe0" }
+          ],
+          "items": [
+            { "id": "pencil", "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" }, "bin": "wood" },
+            { "id": "guitar", "emoji": "🎸", "label": { "uz": "gitara", "ru": "гитара", "en": "guitar" }, "bin": "wood" },
+            { "id": "bucket", "emoji": "🪣", "label": { "uz": "chelak", "ru": "ведро", "en": "bucket" }, "bin": "plastic" },
+            { "id": "pen", "emoji": "🖊️", "label": { "uz": "ruchka", "ru": "ручка", "en": "pen" }, "bin": "plastic" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Shisha va qogʻozdan yasalganlarga ajrat!", "ru": "Разложи: из стекла и из бумаги!", "en": "Sort into glass and paper!" },
+      "hint": { "uz": "Banka va lampochka — shisha; kitob va quti — qogʻoz.", "ru": "Банка и лампочка — стекло; книга и коробка — бумага.", "en": "Jar and bulb are glass; book and box are paper." },
+      "explanation": { "uz": "Banka bilan lampochka shishadan, kitob bilan quti qogʻozdan (kartondan).", "ru": "Банка и лампочка из стекла, книга и коробка из бумаги (картона).", "en": "Jar and bulb are glass; book and box are paper (cardboard)." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "glass", "label": { "uz": "🥃 Shisha", "ru": "🥃 Стекло", "en": "🥃 Glass" }, "color": "#46c06a" },
+            { "id": "paper", "label": { "uz": "📄 Qogʻoz", "ru": "📄 Бумага", "en": "📄 Paper" }, "color": "#f39a1f" }
+          ],
+          "items": [
+            { "id": "jar", "emoji": "🫙", "label": { "uz": "banka", "ru": "банка", "en": "jar" }, "bin": "glass" },
+            { "id": "bulb", "emoji": "💡", "label": { "uz": "lampochka", "ru": "лампочка", "en": "bulb" }, "bin": "glass" },
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" }, "bin": "paper" },
+            { "id": "box", "emoji": "📦", "label": { "uz": "quti", "ru": "коробка", "en": "box" }, "bin": "paper" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Shishadan yasalgan barcha narsalarni belgila!", "ru": "Отметь все предметы из стекла!", "en": "Tap all the things made of glass!" },
+      "hint": { "uz": "Shisha tiniq va sinuvchan boʻladi.", "ru": "Стекло прозрачное и хрупкое.", "en": "Glass is see-through and breakable." },
+      "explanation": { "uz": "Banka, deraza va lampochka shishadan. Kitob, chelak, qalam esa yoʻq.", "ru": "Банка, окно и лампочка из стекла. Книга, ведро, карандаш — нет.", "en": "Jar, window and bulb are glass. Book, bucket, pencil are not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "jar", "emoji": "🫙", "label": { "uz": "banka", "ru": "банка", "en": "jar" }, "correct": true },
+            { "id": "window", "emoji": "🪟", "label": { "uz": "deraza", "ru": "окно", "en": "window" }, "correct": true },
+            { "id": "bulb", "emoji": "💡", "label": { "uz": "lampochka", "ru": "лампочка", "en": "bulb" }, "correct": true },
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" } },
+            { "id": "bucket", "emoji": "🪣", "label": { "uz": "chelak", "ru": "ведро", "en": "bucket" } },
+            { "id": "pencil", "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Sinfimizda nima koʻp boʻladi? Bos!", "ru": "Чего в классе много? Нажми!", "en": "What is there many of in a classroom? Tap it!" },
+      "hint": { "uz": "Oʻquvchilar koʻp — stullar ham koʻp. Globus va soat bitta.", "ru": "Учеников много — и стульев много. Глобус и часы — по одному.", "en": "There are many pupils — so many chairs. The globe and clock are one." },
+      "explanation": { "uz": "Sinfda stullar koʻp boʻladi. Globus va soat esa bittadan.", "ru": "В классе много стульев. А глобус и часы — по одному.", "en": "A classroom has many chairs. The globe and clock are just one each." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "chairs", "emoji": "🪑", "label": { "uz": "stullar (koʻp)", "ru": "стулья (много)", "en": "chairs (many)" }, "correct": true },
+            { "id": "globe", "emoji": "🌐", "label": { "uz": "globus (bitta)", "ru": "глобус (один)", "en": "globe (one)" } },
+            { "id": "clock", "emoji": "🕐", "label": { "uz": "soat (bitta)", "ru": "часы (одни)", "en": "clock (one)" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Deraza va banka bir xil moddadan. Bu qaysi modda?", "ru": "Окно и банка из одного материала. Какой это материал?", "en": "A window and a jar are the same material. Which material is it?" },
+      "hint": { "uz": "Ikkalasi ham tiniq va sinadi — bu shisha.", "ru": "Оба прозрачные и бьются — это стекло.", "en": "Both are see-through and break — it is glass." },
+      "explanation": { "uz": "Deraza ham, banka ham shishadan yasalgan.", "ru": "И окно, и банка сделаны из стекла.", "en": "Both the window and the jar are made of glass." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "glass", "emoji": "🥃", "label": { "uz": "shisha", "ru": "стекло", "en": "glass" }, "correct": true },
+            { "id": "wood", "emoji": "🪵", "label": { "uz": "yogʻoch", "ru": "дерево", "en": "wood" } },
+            { "id": "paper", "emoji": "📄", "label": { "uz": "qogʻoz", "ru": "бумага", "en": "paper" } }
+          ]
+        }
+      }
+    }
+  ]
+}

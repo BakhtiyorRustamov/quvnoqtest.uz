@@ -1,0 +1,511 @@
+{
+  "topicId": "g1-alifbe-20",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖👤🌾📓",
+  "title": {
+    "uz": "«D d» — oʻqish mashqi",
+    "ru": "Буква «D d» — чтение",
+    "en": "Letter “D d” — reading"
+  },
+  "recall": {
+    "uz": "«D» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: odam, dala, daftar. «D» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «D». Теперь читаем слова: odam, dala, daftar. «D» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “D”. Now we read words: odam, dala, daftar. “D” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "👤 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "👤 Прочитай и нажми верно написанное слово!",
+        "en": "👤 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «odam».",
+        "ru": "Прочитай: «odam».",
+        "en": "Read it: “odam”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «odam».",
+        "ru": "Верно — «odam».",
+        "en": "Correct — “odam”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "👤",
+          "options": [
+            {
+              "id": "ok",
+              "word": "odam",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "otam"
+            },
+            {
+              "id": "w2",
+              "word": "odom"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «odam» soʻzini tuz!",
+        "ru": "Составь слово «odam»!",
+        "en": "Build the word “odam”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «odam» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «odam».",
+        "en": "Great! You read “odam”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "👤",
+          "word": "odam",
+          "label": {
+            "uz": "odam",
+            "ru": "человек",
+            "en": "person"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "👤 «odam»da «d» tovushi qaysi katakchada?",
+        "ru": "👤 В какой клетке звук «d» в слове «odam»?",
+        "en": "👤 Which box has the “d” sound in “odam”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«odam»da «d» tovushi toʻgʻri joyda.",
+        "ru": "В «odam» звук «d» на верном месте.",
+        "en": "In “odam” the “d” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "👤",
+          "word": {
+            "uz": "odam",
+            "ru": "odam",
+            "en": "odam"
+          },
+          "sound": "d",
+          "cells": [
+            "o",
+            "d",
+            "a",
+            "m"
+          ],
+          "answer": 1
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "👤 «odam» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "👤 Похлопай слово «odam» по слогам!",
+        "en": "👤 Clap the word “odam” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«odam» — 2 boʻgʻin.",
+        "ru": "«odam» — 2 слога.",
+        "en": "“odam” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "👤",
+          "word": {
+            "uz": "odam",
+            "ru": "odam",
+            "en": "odam"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«D» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «D»!",
+        "en": "Tap the words that have the “D” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «d» tovushi bor.",
+        "ru": "Верно! В них есть звук «d».",
+        "en": "Right! They have the “d” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👤",
+              "label": {
+                "uz": "odam",
+                "ru": "odam",
+                "en": "odam"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🌾",
+              "label": {
+                "uz": "dala",
+                "ru": "dala",
+                "en": "dala"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "📓",
+              "label": {
+                "uz": "daftar",
+                "ru": "daftar",
+                "en": "daftar"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«odam» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «odam». Найди картинку!",
+        "en": "Read “odam”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«odam» — 👤.",
+        "ru": "«odam» — 👤.",
+        "en": "“odam” is 👤."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "👤",
+              "label": {
+                "uz": "odam",
+                "ru": "человек",
+                "en": "person"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🌾",
+              "label": {
+                "uz": "dala",
+                "ru": "dala",
+                "en": "dala"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "📓",
+              "label": {
+                "uz": "daftar",
+                "ru": "daftar",
+                "en": "daftar"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "👤"
+              },
+              "right": {
+                "label": {
+                  "uz": "odam",
+                  "ru": "odam",
+                  "en": "odam"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🌾"
+              },
+              "right": {
+                "label": {
+                  "uz": "dala",
+                  "ru": "dala",
+                  "en": "dala"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "📓"
+              },
+              "right": {
+                "label": {
+                  "uz": "daftar",
+                  "ru": "daftar",
+                  "en": "daftar"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Odam … oldi.",
+        "ru": "Составь предложение: Odam … oldi.",
+        "en": "Order the words: Odam … oldi."
+      },
+      "hint": {
+        "uz": "Odam — non — oldi.",
+        "ru": "Odam — non — oldi.",
+        "en": "Odam — non — oldi."
+      },
+      "explanation": {
+        "uz": "«Odam non oldi.» — gap oʻqiding!",
+        "ru": "«Odam non oldi.» — предложение!",
+        "en": "“Odam non oldi.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Odam",
+                "ru": "Odam",
+                "en": "Odam"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "oldi",
+                "ru": "oldi",
+                "en": "oldi"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "👤"
+              },
+              "b": {
+                "label": {
+                  "uz": "odam",
+                  "ru": "odam",
+                  "en": "odam"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🌾"
+              },
+              "b": {
+                "label": {
+                  "uz": "dala",
+                  "ru": "dala",
+                  "en": "dala"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "📓"
+              },
+              "b": {
+                "label": {
+                  "uz": "daftar",
+                  "ru": "daftar",
+                  "en": "daftar"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«odam» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «odam»?",
+        "en": "How many sounds are in “odam”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«odam»da 4 ta tovush bor.",
+        "ru": "В «odam» 4 звука.",
+        "en": "“odam” has 4 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

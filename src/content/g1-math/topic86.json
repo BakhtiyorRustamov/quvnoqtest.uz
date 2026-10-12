@@ -1,0 +1,377 @@
+{
+  "topicId": "g1-math-86",
+  "subjectKey": "g1-math",
+  "emojis": "➕➖✨",
+  "title": {
+    "uz": "Orttirish va kamaytirish masalalari",
+    "ru": "Задачи на увеличение и уменьшение",
+    "en": "More and fewer problems"
+  },
+  "recall": {
+    "uz": "«...ta ortiq» soʻzi qoʻshishni, «...ta kam» soʻzi ayirishni bildiradi. Masalan, 7 dan 4 ta koʻp — bu 7 + 4 = 11. Aziznikidan 2 ta kam — bu ayirish. Shartni diqqat bilan oʻqiymiz!",
+    "ru": "Слова «...больше» означают сложение, «...меньше» — вычитание. Например, на 4 больше 7 — это 7 + 4 = 11. На 2 меньше — вычитание. Внимательно читаем условие!",
+    "en": "«...more» means add, «...fewer» means subtract. For example 4 more than 7 is 7 + 4 = 11. «2 fewer» means subtract. Read the condition carefully!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "6",
+            "5",
+            "7"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Azizda 8 ta qalam. Saidda undan 2 ta kam. Saidda nechta qalam?",
+        "ru": "У Азиза 8 карандашей. У Саида на 2 меньше. Сколько у Саида?",
+        "en": "Aziz has 8 pencils. Said has 2 fewer. How many does Said have?"
+      },
+      "hint": {
+        "uz": "8 dan 2 ni ayir.",
+        "ru": "Вычти из 8 число 2.",
+        "en": "Take 2 from 8."
+      },
+      "explanation": {
+        "uz": "8 - 2 = 6.",
+        "ru": "8 - 2 = 6.",
+        "en": "8 - 2 = 6."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Chap tomonda 6 ta stol, oʻngda 1 ta kam. Oʻngda nechta stol?",
+        "ru": "Слева 6 столов, справа на 1 меньше. Сколько справа?",
+        "en": "6 tables on the left, 1 fewer on the right. How many on the right?"
+      },
+      "hint": {
+        "uz": "6 dan 1 ni ayir.",
+        "ru": "Вычти из 6 число 1.",
+        "en": "Take 1 from 6."
+      },
+      "explanation": {
+        "uz": "6 - 1 = 5.",
+        "ru": "6 - 1 = 5.",
+        "en": "6 - 1 = 5."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "11",
+            "10",
+            "12"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Ustki qatorda 7 ta darslik, pastki qatorda 4 ta koʻp. Pastda nechta?",
+        "ru": "На верхней полке 7 учебников, на нижней на 4 больше. Сколько внизу?",
+        "en": "7 textbooks on the top shelf, 4 more on the bottom. How many on the bottom?"
+      },
+      "hint": {
+        "uz": "7 ga 4 ni qoʻsh.",
+        "ru": "Прибавь к 7 число 4.",
+        "en": "Add 4 to 7."
+      },
+      "explanation": {
+        "uz": "7 + 4 = 11.",
+        "ru": "7 + 4 = 11.",
+        "en": "7 + 4 = 11."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 11,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 7 + 4 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 7 + 4 = ?",
+        "en": "Work it out and build the answer with blocks: 7 + 4 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "7 + 4 = 11.",
+        "ru": "7 + 4 = 11.",
+        "en": "7 + 4 = 11."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "8 - 2",
+              "right": "6"
+            },
+            {
+              "left": "6 - 1",
+              "right": "5"
+            },
+            {
+              "left": "7 + 4",
+              "right": "11"
+            },
+            {
+              "left": "9 + 3",
+              "right": "12"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Naqshni davom ettir!",
+        "ru": "Продолжи узор!",
+        "en": "Continue the pattern!"
+      },
+      "sequence": [
+        {
+          "kind": "triangle",
+          "color": "red"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "triangle",
+          "color": "red"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "triangle",
+          "color": "red"
+        }
+      ],
+      "options": [
+        {
+          "id": "ci",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "tr",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        },
+        {
+          "id": "sq",
+          "art": {
+            "kind": "square",
+            "color": "green"
+          }
+        }
+      ],
+      "answer": [
+        "ci"
+      ],
+      "hint": {
+        "uz": "Uchburchak va doira navbatlashadi.",
+        "ru": "Треугольник и круг чередуются.",
+        "en": "Triangle and circle take turns."
+      },
+      "explanation": {
+        "uz": "Uchburchakdan keyin doira keladi.",
+        "ru": "После треугольника идёт круг.",
+        "en": "After a triangle comes a circle."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 7,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 12 - 5 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 12 - 5 = ?",
+        "en": "Work it out and build the answer with blocks: 12 - 5 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "12 - 5 = 7.",
+        "ru": "12 - 5 = 7.",
+        "en": "12 - 5 = 7."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 5,
+          "b": 4,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Sonlar chizigʻida hisobla: 5 + 4!",
+        "ru": "Вычисли на числовой прямой: 5 + 4!",
+        "en": "Work it out on the number line: 5 + 4!"
+      },
+      "hint": {
+        "uz": "5 dan boshla va 4 qadam oldinga sakra.",
+        "ru": "Встань на 5 и прыгни на 4 вперёд.",
+        "en": "Start at 5 and hop 4 forward."
+      },
+      "explanation": {
+        "uz": "5 + 4 = 9.",
+        "ru": "5 + 4 = 9.",
+        "en": "5 + 4 = 9."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "10 + 2",
+              "right": "12"
+            },
+            {
+              "left": "10 - 3",
+              "right": "7"
+            },
+            {
+              "left": "8 + 6",
+              "right": "14"
+            },
+            {
+              "left": "15 - 5",
+              "right": "10"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "12",
+            "11",
+            "13"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bolada 9 ta, ukasida 3 ta koʻp shar. Ukasida nechta?",
+        "ru": "У мальчика 9, у брата на 3 больше шаров. Сколько у брата?",
+        "en": "A boy has 9, his brother 3 more balloons. How many has the brother?"
+      },
+      "hint": {
+        "uz": "9 ga 3 ni qoʻsh.",
+        "ru": "Прибавь к 9 число 3.",
+        "en": "Add 3 to 9."
+      },
+      "explanation": {
+        "uz": "9 + 3 = 12.",
+        "ru": "9 + 3 = 12.",
+        "en": "9 + 3 = 12."
+      }
+    }
+  ]
+}

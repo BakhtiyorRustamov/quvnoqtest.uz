@@ -1,0 +1,530 @@
+{
+  "topicId": "g1-ingliz-30",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🔺🟦⚪🕐",
+  "title": {
+    "uz": "Matematika: qaysi shakl?",
+    "ru": "Математика: какая фигура?",
+    "en": "Math: which shape?"
+  },
+  "recall": {
+    "uz": "Kashfiyot darsi (matematika)! Bugun shakllarni oʻrganamiz: circle — doira, triangle — uchburchak, square — kvadrat. «What's this? It's a circle.»",
+    "ru": "Урок-открытие (математика)! Сегодня учим фигуры: circle — круг, triangle — треугольник, square — квадрат. «What's this? It's a circle.»",
+    "en": "Discovery lesson (math)! Today we learn shapes: circle, triangle and square. \"What's this? It's a circle.\""
+  },
+  "ttsText": {
+    "uz": "Qaysi shakl?",
+    "en": "Math! Which shape is it? A circle, a triangle or a square?"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu qaysi shakl?",
+        "ru": "Послушай. Какая это фигура?",
+        "en": "Listen. What shape is it?"
+      },
+      "hint": {
+        "uz": "«It's a circle» — bu doira.",
+        "ru": "«It's a circle» — это круг.",
+        "en": "\"It's a circle.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a circle — doira.",
+        "ru": "Верно! It's a circle — круг.",
+        "en": "Right! It's a circle."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "What's this?",
+              "audio": {
+                "key": "ing30-q1-a",
+                "text": "What's this?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "It's a circle!",
+              "audio": {
+                "key": "ing30-q1-b",
+                "text": "It's a circle!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu qaysi shakl?",
+              "ru": "Какая фигура?",
+              "en": "What shape is it?"
+            },
+            "choices": [
+              "a square",
+              "a circle",
+              "a triangle"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Tingla va doirani bos!",
+        "ru": "Послушай и нажми круг!",
+        "en": "Listen and tap the circle!"
+      },
+      "audio": {
+        "key": "ing30-q2",
+        "text": "Circle! Tap the circle.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«circle» — doira (dumaloq).",
+        "ru": "«circle» — круг.",
+        "en": "A \"circle\" is round."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Circle — doira.",
+        "ru": "Верно! Circle — круг.",
+        "en": "Right! Circle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "circle",
+            "color": "red"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "square",
+            "color": "green"
+          }
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Tingla va uchburchakni bos!",
+        "ru": "Послушай и нажми треугольник!",
+        "en": "Listen and tap the triangle!"
+      },
+      "audio": {
+        "key": "ing30-q3",
+        "text": "Triangle! Tap the triangle.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«triangle» — uchburchak (3 tomon).",
+        "ru": "«triangle» — треугольник (3 стороны).",
+        "en": "A \"triangle\" has three sides."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Triangle — uchburchak.",
+        "ru": "Верно! Triangle — треугольник.",
+        "en": "Right! Triangle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "circle",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "square",
+            "color": "purple"
+          }
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Tingla va kvadratni bos!",
+        "ru": "Послушай и нажми квадрат!",
+        "en": "Listen and tap the square!"
+      },
+      "audio": {
+        "key": "ing30-q4",
+        "text": "Square! Tap the square.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«square» — kvadrat (4 teng tomon).",
+        "ru": "«square» — квадрат (4 равные стороны).",
+        "en": "A \"square\" has four equal sides."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Square — kvadrat.",
+        "ru": "Верно! Square — квадрат.",
+        "en": "Right! Square!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "red"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "circle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "yellow"
+          }
+        }
+      ],
+      "answer": [
+        "a"
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani oʻz shakliga ula!",
+        "ru": "Соедини каждый предмет с его фигурой!",
+        "en": "Match each thing to its shape!"
+      },
+      "hint": {
+        "uz": "Soat — doira, kitob — kvadrat, pitsa — uchburchak.",
+        "ru": "Часы — круг, книга — квадрат, пицца — треугольник.",
+        "en": "clock — circle, book — square, pizza — triangle."
+      },
+      "explanation": {
+        "uz": "Barakalla! Shakllarni bilding!",
+        "ru": "Молодец! Ты знаешь фигуры!",
+        "en": "Great! You know the shapes!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🕐"
+              },
+              "right": {
+                "label": "circle"
+              }
+            },
+            {
+              "left": {
+                "emoji": "📗"
+              },
+              "right": {
+                "label": "square"
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍕"
+              },
+              "right": {
+                "label": "triangle"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Koptok — doira shaklida. ⚽",
+        "ru": "Верно? Мяч — это круг. ⚽",
+        "en": "Is this right? A ball is a circle. ⚽"
+      },
+      "hint": {
+        "uz": "Koptok dumaloq.",
+        "ru": "Мяч круглый.",
+        "en": "A ball is round."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Koptok — doira.",
+        "ru": "Верно! Мяч — круг.",
+        "en": "Right! A ball is a circle."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "⚽",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni shakliga qarab ajrat!",
+        "ru": "Разложи предметы по форме!",
+        "en": "Sort the things by their shape!"
+      },
+      "hint": {
+        "uz": "Doira, uchburchak, kvadrat.",
+        "ru": "Круг, треугольник, квадрат.",
+        "en": "Circle, triangle, square."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har narsa oʻz shaklida.",
+        "ru": "Молодец! Каждый предмет по форме.",
+        "en": "Great! Each thing by its shape!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "c",
+              "label": {
+                "uz": "Circle",
+                "ru": "Круг",
+                "en": "Circle"
+              }
+            },
+            {
+              "id": "t",
+              "label": {
+                "uz": "Triangle",
+                "ru": "Треугольник",
+                "en": "Triangle"
+              }
+            },
+            {
+              "id": "s",
+              "label": {
+                "uz": "Square",
+                "ru": "Квадрат",
+                "en": "Square"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🕐",
+              "label": "clock",
+              "bin": "c"
+            },
+            {
+              "emoji": "⚽",
+              "label": "ball",
+              "bin": "c"
+            },
+            {
+              "emoji": "🍕",
+              "label": "pizza",
+              "bin": "t"
+            },
+            {
+              "emoji": "🚩",
+              "label": "flag",
+              "bin": "t"
+            },
+            {
+              "emoji": "📗",
+              "label": "book",
+              "bin": "s"
+            },
+            {
+              "emoji": "📺",
+              "label": "TV",
+              "bin": "s"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doira shaklidagi narsani bos!",
+        "ru": "Нажми предмет-круг!",
+        "en": "Tap the thing shaped like a circle!"
+      },
+      "hint": {
+        "uz": "Dumaloq narsa.",
+        "ru": "Круглый предмет.",
+        "en": "A round thing."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Koptok — doira.",
+        "ru": "Верно! Мяч — круг.",
+        "en": "Right! A ball is a circle."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "⚽",
+              "label": "ball (circle)",
+              "correct": true
+            },
+            {
+              "emoji": "📗",
+              "label": "book"
+            },
+            {
+              "emoji": "🍕",
+              "label": "pizza"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Uchburchakni yana bir bor bos!",
+        "ru": "Ещё раз нажми треугольник!",
+        "en": "Tap the triangle again!"
+      },
+      "audio": {
+        "key": "ing30-q9",
+        "text": "Triangle! Tap the triangle.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "3 tomonli shakl.",
+        "ru": "Фигура с 3 сторонами.",
+        "en": "A 3-sided shape."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Triangle — uchburchak.",
+        "ru": "Верно! Triangle — треугольник.",
+        "en": "Right! Triangle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "magenta"
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ]
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Gʻildirak qaysi shaklda?",
+        "ru": "Какой формы колесо?",
+        "en": "What shape is a wheel?"
+      },
+      "hint": {
+        "uz": "Gʻildirak dumaloq.",
+        "ru": "Колесо круглое.",
+        "en": "A wheel is round."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a circle — doira.",
+        "ru": "Верно! It's a circle — круг.",
+        "en": "Right! It's a circle."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "circle\ndoira",
+              "ru": "circle\nкруг",
+              "en": "circle"
+            },
+            {
+              "uz": "square\nkvadrat",
+              "ru": "square\nквадрат",
+              "en": "square"
+            },
+            {
+              "uz": "triangle\nuchburchak",
+              "ru": "triangle\nтреугольник",
+              "en": "triangle"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

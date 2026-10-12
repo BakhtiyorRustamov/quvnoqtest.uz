@@ -1,0 +1,399 @@
+{
+  "topicId": "g1-math-142",
+  "subjectKey": "g1-math",
+  "emojis": "🔁🧮✨",
+  "title": {
+    "uz": "Yakuniy takrorlash",
+    "ru": "Итоговое повторение",
+    "en": "Final review"
+  },
+  "recall": {
+    "uz": "Bu darsda oʻrganganlarimizni takrorlaymiz: murakkab masalalarni tenglama bilan yechamiz, ifodalarni hisoblaymiz, sonlarni tartiblaymiz, uzunlikni oʻlchaymiz va geometrik shakllarni eslaymiz.",
+    "ru": "На этом уроке повторяем изученное: решаем сложные задачи уравнением, вычисляем выражения, расставляем числа по порядку, измеряем длину и вспоминаем геометрические фигуры.",
+    "en": "In this lesson we review what we've learned: solving complex problems with an equation, computing expressions, ordering numbers, measuring length and recalling geometric shapes."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "23 + 34 + x = 78",
+          "answer": 21,
+          "choices": [
+            21,
+            20,
+            22
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "1-tokchada 23, 2-tokchada 34 quti. Uchtasida 78 quti boʻlsa, 3-tokchada nechta? 23 + 34 + x = 78.",
+        "ru": "На 1-й полке 23, на 2-й 34 коробки. На трёх 78 — сколько на 3-й? 23 + 34 + x = 78.",
+        "en": "Shelf 1 has 23, shelf 2 has 34 boxes. If three shelves hold 78, how many on shelf 3? 23 + 34 + x = 78."
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 21 ga teng.",
+        "ru": "Неизвестное равно 21.",
+        "en": "The unknown equals 21."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_order",
+        "props": {
+          "numbers": [
+            21,
+            25,
+            34,
+            46,
+            58
+          ],
+          "direction": "asc"
+        }
+      },
+      "prompt": {
+        "uz": "Javoblarni oʻsish tartibida joylashtir.",
+        "ru": "Расставь ответы по возрастанию.",
+        "en": "Arrange the answers in ascending order."
+      },
+      "hint": {
+        "uz": "Eng kichik (yoki eng katta) sondan boshla.",
+        "ru": "Начни с самого маленького (или большого) числа.",
+        "en": "Start with the smallest (or largest) number."
+      },
+      "explanation": {
+        "uz": "Sonlar toʻgʻri tartibda joylashdi.",
+        "ru": "Числа расставлены по порядку.",
+        "en": "The numbers are in the correct order."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 57,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Birinchi ikki tokchada jami nechta quti? 23 + 34 ni bloklardan yasa.",
+        "ru": "Сколько коробок на первых двух полках? Собери 23 + 34.",
+        "en": "How many boxes on the first two shelves? Build 23 + 34."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "23 + 34 = 57.",
+        "ru": "23 + 34 = 57.",
+        "en": "23 + 34 = 57."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "65 - 40",
+              "right": "25"
+            },
+            {
+              "left": "10 + 11",
+              "right": "21"
+            },
+            {
+              "left": "68 - 34",
+              "right": "34"
+            },
+            {
+              "left": "24 + 34",
+              "right": "58"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagini hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "ruler_measure",
+        "props": {
+          "lengthCm": 10,
+          "maxCm": 15
+        }
+      },
+      "prompt": {
+        "uz": "Kesmani oʻlcha (cm). 10 cm = 1 dm.",
+        "ru": "Измерь отрезок (см). 10 см = 1 дм.",
+        "en": "Measure the segment (cm). 10 cm = 1 dm."
+      },
+      "hint": {
+        "uz": "Kesma boshi 0 da. Oxiri qaysi boʻlinishda tugaydi?",
+        "ru": "Начало отрезка на 0. На каком делении конец?",
+        "en": "The segment starts at 0. Which mark does it end on?"
+      },
+      "explanation": {
+        "uz": "Kesma uzunligi 10 cm.",
+        "ru": "Длина отрезка 10 см.",
+        "en": "The segment is 10 cm long."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 57,
+          "y": 78
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: 57 va 78. Qaysi belgi toʻgʻri?",
+        "ru": "Сравни: 57 и 78. Какой знак верный?",
+        "en": "Compare: 57 and 78. Which sign is correct?"
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "57 < 78.",
+        "ru": "57 < 78.",
+        "en": "57 < 78."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Tangramdagi uchburchaklarni belgila!",
+        "ru": "Отметь треугольники в танграме!",
+        "en": "Tap the triangles in the tangram!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "square",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "triangle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "square",
+            "color": "magenta"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "hint": {
+        "uz": "Tangramda 5 ta uchburchak bor.",
+        "ru": "В танграме 5 треугольников.",
+        "en": "A tangram has 5 triangles."
+      },
+      "explanation": {
+        "uz": "Uchburchaklarni topdik.",
+        "ru": "Нашли треугольники.",
+        "en": "We found the triangles."
+      },
+      "media": {
+        "gif": "/tangram.jpg",
+        "alt": {
+          "uz": "Tangram — 7 qismdan iborat boshqotirma",
+          "ru": "Танграм — головоломка из 7 частей",
+          "en": "Tangram — a 7-piece puzzle"
+        },
+        "maxWidth": 200
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 9,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 9 + 6. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 9 + 6. Используй числовую прямую.",
+        "en": "Work it out: 9 + 6. Use the number line."
+      },
+      "hint": {
+        "uz": "9 dan boshla, 6 oldinga sur.",
+        "ru": "Встань на 9, продвинься на 6.",
+        "en": "Start at 9, move 6 forward."
+      },
+      "explanation": {
+        "uz": "9 + 6 = 15.",
+        "ru": "9 + 6 = 15.",
+        "en": "9 + 6 = 15."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "drag_buckets",
+        "props": {
+          "tiles": [
+            {
+              "id": "a",
+              "label": "10 + 11",
+              "bin": "v21"
+            },
+            {
+              "id": "b",
+              "label": "30 - 9",
+              "bin": "v21"
+            },
+            {
+              "id": "c",
+              "label": "25 - 4",
+              "bin": "v21"
+            },
+            {
+              "id": "d",
+              "label": "68 - 34",
+              "bin": "v34"
+            },
+            {
+              "id": "e",
+              "label": "20 + 14",
+              "bin": "v34"
+            },
+            {
+              "id": "f",
+              "label": "30 + 4",
+              "bin": "v34"
+            }
+          ],
+          "bins": [
+            {
+              "id": "v21",
+              "label": "21"
+            },
+            {
+              "id": "v34",
+              "label": "34"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati boʻyicha qutiga sudra!",
+        "ru": "Перетащи каждое выражение в ящик его значения!",
+        "en": "Drag each expression into the bucket of its value!"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng shu sonli qutiga tashla.",
+        "ru": "Сначала вычисли, потом перетащи в нужный ящик.",
+        "en": "Work it out, then drag it into that number's bucket."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati qutisida.",
+        "ru": "Каждое выражение в ящике своего значения.",
+        "en": "Each expression is in the bucket of its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 78
+        }
+      },
+      "prompt": {
+        "uz": "Sonni bloklardan yasa: 78.",
+        "ru": "Собери число 78.",
+        "en": "Build the number 78."
+      },
+      "hint": {
+        "uz": "7 ta oʻnlik (+10) va 8 ta birlik (+1).",
+        "ru": "7 десятков (+10) и 8 единиц (+1).",
+        "en": "7 tens (+10) and 8 ones (+1)."
+      },
+      "explanation": {
+        "uz": "78 = 70 + 8.",
+        "ru": "78 = 70 + 8.",
+        "en": "78 = 70 + 8."
+      }
+    }
+  ]
+}

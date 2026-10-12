@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-18",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Joʻja",
+    "ru": "Цыплёнок",
+    "en": "A chick"
+  },
+  "recall": {
+    "uz": "Bugun sariq qogʻozdan kichkina joʻja yasaymiz.",
+    "ru": "Сегодня из жёлтой бумаги сделаем цыплёнка.",
+    "en": "Today we make a little chick from yellow paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Joʻja yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай цыплёнка. Выполняй каждый этап по рисунку!",
+        "en": "Make a chick. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Tumshuq — kichik uchburchak.",
+        "ru": "Клюв — маленький треугольник.",
+        "en": "The beak is a small triangle."
+      },
+      "explanation": {
+        "uz": "Kichkina joʻja!",
+        "ru": "Маленький цыплёнок!",
+        "en": "A little chick!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "sariq qogʻoz",
+              "ru": "жёлтая бумага",
+              "en": "yellow paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Sariq qogʻozdan doira tanani qirq.",
+              "ru": "Вырежь круглое тело из жёлтой бумаги.",
+              "en": "Cut a round body from yellow paper."
+            },
+            {
+              "uz": "Bosh va tumshuqni qoʻsh.",
+              "ru": "Добавь голову и клюв.",
+              "en": "Add a head and a beak."
+            },
+            {
+              "uz": "Koʻz, qanot va oyoqlarni qoʻsh.",
+              "ru": "Добавь глаз, крыло и лапки.",
+              "en": "Add an eye, a wing and legs."
+            }
+          ],
+          "art": "chick",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,468 @@
+{
+  "topicId": "g1-ingliz-11",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🐻📘🔵🐝",
+  "title": {
+    "uz": "«b» tovushi: kitobli ayiq",
+    "ru": "Звук «b»: медведь с книгой",
+    "en": "The 'b' sound: a bear with a book"
+  },
+  "recall": {
+    "uz": "Hayvon tovushlari! Bugun «b» tovushini mashq qilamiz: bear — ayiq, blue — koʻk, book — kitob. B-b-bear!",
+    "ru": "Звуки животных! Сегодня тренируем звук «b»: bear — медведь, blue — синий, book — книга. B-b-bear!",
+    "en": "Animal sounds! Today we practise the /b/ sound: bear, blue and book. B-b-bear!"
+  },
+  "ttsText": {
+    "uz": "«b» tovushi.",
+    "en": "Animal sounds! The b sound. B-b-bear! A bear has a blue book!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va «b» bilan boshlanadigan hayvonni bos!",
+        "ru": "Послушай и нажми животное на «b»!",
+        "en": "Listen and tap the animal that starts with /b/!"
+      },
+      "audio": {
+        "key": "ing11-q1",
+        "text": "Bear! B-b-bear!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«bear» — ayiq.",
+        "ru": "«bear» — медведь.",
+        "en": "\"bear\" starts with /b/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bear — ayiq.",
+        "ru": "Верно! Bear — медведь.",
+        "en": "Right! Bear!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐻",
+              "label": "bear",
+              "correct": true
+            },
+            {
+              "emoji": "🐱",
+              "label": "cat"
+            },
+            {
+              "emoji": "🐶",
+              "label": "dog"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«b» bilan boshlanadigan narsani bos!",
+        "ru": "Нажми предмет на «b»!",
+        "en": "Tap the thing that starts with /b/!"
+      },
+      "audio": {
+        "key": "ing11-q2",
+        "text": "Book! B-b-book!",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«book» — kitob.",
+        "ru": "«book» — книга.",
+        "en": "\"book\" starts with /b/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Book — kitob.",
+        "ru": "Верно! Book — книга.",
+        "en": "Right! Book!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "📘",
+              "label": "book",
+              "correct": true
+            },
+            {
+              "emoji": "✏️",
+              "label": "pencil"
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«b» tovushi bilan boshlanadigan hammasini belgila!",
+        "ru": "Отметь всё, что начинается на «b»!",
+        "en": "Tap everything that starts with /b/!"
+      },
+      "hint": {
+        "uz": "bear, banana, bee.",
+        "ru": "bear, banana, bee.",
+        "en": "bear, banana, bee."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bear, banana, bee — hammasi «b»!",
+        "ru": "Молодец! Bear, banana, bee — всё на «b»!",
+        "en": "Great! Bear, banana, bee — all /b/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐻",
+              "label": "bear",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍌",
+              "label": "banana",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐝",
+              "label": "bee",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "id": "d1",
+              "emoji": "🐱",
+              "label": "cat"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi soʻz «b» tovushi bilan boshlanadi?",
+        "ru": "Какое слово начинается на звук «b»?",
+        "en": "Which word starts with the /b/ sound?"
+      },
+      "hint": {
+        "uz": "Lablarni jip yopib «b» de.",
+        "ru": "Сомкни губы и скажи «b».",
+        "en": "Close your lips and say /b/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «bear» — «b» tovushi.",
+        "ru": "Верно! «bear» — звук «b».",
+        "en": "Right! \"bear\" starts with /b/."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "bear",
+            "cat",
+            "dog"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«b» bilan boshlanadigan rangni bos!",
+        "ru": "Нажми цвет на «b»!",
+        "en": "Tap the color that starts with /b/!"
+      },
+      "audio": {
+        "key": "ing11-q5",
+        "text": "Blue! B-b-blue!",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«blue» — koʻk.",
+        "ru": "«blue» — синий.",
+        "en": "\"blue\" starts with /b/."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Blue — koʻk.",
+        "ru": "Верно! Blue — синий.",
+        "en": "Right! Blue!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🔵",
+              "label": "blue",
+              "correct": true
+            },
+            {
+              "emoji": "🔴",
+              "label": "red"
+            },
+            {
+              "emoji": "🟢",
+              "label": "green"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va birga ayt. Qaysi tovush takrorlanadi?",
+        "ru": "Послушай и повтори. Какой звук повторяется?",
+        "en": "Listen and say it. Which sound repeats?"
+      },
+      "hint": {
+        "uz": "Bear, blue, book — hammasi bir tovush.",
+        "ru": "Bear, blue, book — один звук.",
+        "en": "bear, blue, book — the same sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «b» tovushi takrorlanadi.",
+        "ru": "Верно! Повторяется звук «b».",
+        "en": "Right! The /b/ sound repeats."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🐻",
+              "name": "Bear",
+              "text": "A bear has a blue book!",
+              "audio": {
+                "key": "ing11-q6-a",
+                "text": "A bear has a blue book!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "You",
+              "text": "B-b-bear! B-b-blue! B-b-book!",
+              "audio": {
+                "key": "ing11-q6-b",
+                "text": "B! B! B! Bear, blue, book!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qaysi tovush?",
+              "ru": "Какой звук?",
+              "en": "Which sound?"
+            },
+            "choices": [
+              "/m/",
+              "/s/",
+              "/b/"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«bear»ning tarjimasi nima?",
+        "ru": "Что значит «bear»?",
+        "en": "What does \"bear\" mean?"
+      },
+      "hint": {
+        "uz": "Katta, tukli hayvon.",
+        "ru": "Большой пушистый зверь.",
+        "en": "A big furry animal."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bear — ayiq.",
+        "ru": "Верно! Bear — медведь.",
+        "en": "Right! A bear."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ayiq",
+              "ru": "медведь",
+              "en": "a bear"
+            },
+            {
+              "uz": "mushuk",
+              "ru": "кот",
+              "en": "a cat"
+            },
+            {
+              "uz": "qush",
+              "ru": "птица",
+              "en": "a bird"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yana «b» bilan boshlanadigan hammasini belgila!",
+        "ru": "Снова отметь всё на «b»!",
+        "en": "Tap all the /b/ words again!"
+      },
+      "hint": {
+        "uz": "bird, ball, book.",
+        "ru": "bird, ball, book.",
+        "en": "bird, ball, book."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bird, ball, book — «b»!",
+        "ru": "Молодец! Bird, ball, book — «b»!",
+        "en": "Great! Bird, ball, book — /b/!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐦",
+              "label": "bird",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "⚽",
+              "label": "ball",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "📘",
+              "label": "book",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐟",
+              "label": "fish"
+            },
+            {
+              "id": "d1",
+              "emoji": "☀️",
+              "label": "sun"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kitobli hayvonni bos!",
+        "ru": "Нажми животное с книгой!",
+        "en": "Tap the animal with a book!"
+      },
+      "hint": {
+        "uz": "A bear with a book.",
+        "ru": "A bear with a book.",
+        "en": "A bear with a book."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bear — kitobli ayiq!",
+        "ru": "Верно! Bear — медведь с книгой!",
+        "en": "Right! A bear with a book!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🐻",
+              "label": "bear",
+              "correct": true
+            },
+            {
+              "emoji": "🐰",
+              "label": "rabbit"
+            },
+            {
+              "emoji": "🦊",
+              "label": "fox"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «blue» soʻzi «b» tovushi bilan boshlanadi.",
+        "ru": "Верно? Слово «blue» начинается на «b».",
+        "en": "Is this right? \"blue\" starts with the /b/ sound."
+      },
+      "hint": {
+        "uz": "B-b-blue!",
+        "ru": "B-b-blue!",
+        "en": "B-b-blue!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Blue — «b» tovushi.",
+        "ru": "Верно! Blue — звук «b».",
+        "en": "Right! \"blue\" starts with /b/."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    }
+  ]
+}

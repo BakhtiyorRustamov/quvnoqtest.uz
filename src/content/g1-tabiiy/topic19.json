@@ -1,0 +1,183 @@
+{
+  "topicId": "g1-tabiiy-19",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "🏠🔥🔌🚪",
+  "title": {
+    "uz": "Xavfsiz uy qoidalari",
+    "ru": "Правила безопасного дома",
+    "en": "Safe-home rules"
+  },
+  "recall": {
+    "uz": "Uyda xavfsizlik juda muhim. Gaz plitasi va olovga tegmaymiz — kuyib qolish mumkin. Elektr rozetkasi bilan oʻynamaymiz. Deraza tokchasiga chiqmaymiz. Begona odamga eshikni ochmaymiz. Uylar yogʻoch, gʻisht va toshdan quriladi.",
+    "ru": "Дома безопасность очень важна. Не трогаем газовую плиту и огонь — можно обжечься. Не играем с розеткой. Не залезаем на подоконник. Не открываем дверь незнакомцу. Дома строят из дерева, кирпича и камня.",
+    "en": "Safety at home is very important. We don't touch the gas stove or fire — we could get burned. We don't play with the outlet. We don't climb on the windowsill. We don't open the door to strangers. Houses are built of wood, brick and stone."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Xonadagi xavfli narsalarni topib bos!", "ru": "Найди опасные предметы в комнате!", "en": "Find the dangerous things in the room!" },
+      "hint": { "uz": "Olov, rozetka va oʻtkir pichoq xavfli.", "ru": "Огонь, розетка и острый нож опасны.", "en": "Fire, the outlet and a sharp knife are dangerous." },
+      "explanation": { "uz": "Gaz plitasi, rozetka va pichoq xavfli. Oʻyinchoq, kitob va stul xavfsiz.", "ru": "Плита, розетка и нож опасны. Игрушка, книга и стул безопасны.", "en": "The stove, outlet and knife are dangerous. The toy, book and chair are safe." },
+      "widget": {
+        "type": "hotspot_scene",
+        "props": {
+          "spots": [
+            { "id": "stove", "emoji": "🔥", "x": 22, "y": 62, "danger": true, "label": { "uz": "gaz plitasi", "ru": "плита", "en": "stove" } },
+            { "id": "outlet", "emoji": "🔌", "x": 82, "y": 48, "danger": true, "label": { "uz": "rozetka", "ru": "розетка", "en": "outlet" } },
+            { "id": "knife", "emoji": "🔪", "x": 52, "y": 40, "danger": true, "label": { "uz": "pichoq", "ru": "нож", "en": "knife" } },
+            { "id": "toy", "emoji": "🧸", "x": 34, "y": 82, "label": { "uz": "oʻyinchoq", "ru": "игрушка", "en": "toy" } },
+            { "id": "book", "emoji": "📖", "x": 64, "y": 80, "label": { "uz": "kitob", "ru": "книга", "en": "book" } },
+            { "id": "chair", "emoji": "🪑", "x": 88, "y": 80, "label": { "uz": "stul", "ru": "стул", "en": "chair" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qaysi narsaga tegmaslik kerak?", "ru": "К чему нельзя прикасаться?", "en": "Which thing should we not touch?" },
+      "hint": { "uz": "Undan elektr toki oʻtadi — xavfli.", "ru": "Через неё идёт электрический ток — опасно.", "en": "Electricity runs through it — dangerous." },
+      "explanation": { "uz": "Rozetkaga tegmaymiz — bu xavfli. Oʻyinchoq va kitob xavfsiz.", "ru": "Не трогаем розетку — это опасно. Игрушка и книга безопасны.", "en": "We don't touch the outlet — it is dangerous. A toy and a book are safe." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "outlet", "emoji": "🔌", "label": { "uz": "rozetka", "ru": "розетка", "en": "outlet" }, "correct": true },
+            { "id": "toy", "emoji": "🧸", "label": { "uz": "oʻyinchoq", "ru": "игрушка", "en": "toy" } },
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Xavfli va xavfsiz narsalarga ajrat!", "ru": "Разложи на опасные и безопасные предметы!", "en": "Sort into dangerous and safe things!" },
+      "hint": { "uz": "Olov, rozetka va pichoq — xavfli; oʻyinchoq, kitob va qalam — xavfsiz.", "ru": "Огонь, розетка и нож — опасны; игрушка, книга и карандаш — безопасны.", "en": "Fire, outlet and knife are dangerous; toy, book and pencil are safe." },
+      "explanation": { "uz": "Olov, rozetka va pichoq xavfli — ehtiyot boʻlamiz. Oʻyinchoq, kitob va qalam xavfsiz.", "ru": "Огонь, розетка и нож опасны — будь осторожен. Игрушка, книга и карандаш безопасны.", "en": "Fire, outlet and knife are dangerous — be careful. Toy, book and pencil are safe." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "danger", "label": { "uz": "⚠️ Xavfli", "ru": "⚠️ Опасно", "en": "⚠️ Dangerous" }, "color": "#e14b4b" },
+            { "id": "safe", "label": { "uz": "✅ Xavfsiz", "ru": "✅ Безопасно", "en": "✅ Safe" }, "color": "#46c06a" }
+          ],
+          "items": [
+            { "id": "fire", "emoji": "🔥", "label": { "uz": "olov", "ru": "огонь", "en": "fire" }, "bin": "danger" },
+            { "id": "outlet", "emoji": "🔌", "label": { "uz": "rozetka", "ru": "розетка", "en": "outlet" }, "bin": "danger" },
+            { "id": "knife", "emoji": "🔪", "label": { "uz": "pichoq", "ru": "нож", "en": "knife" }, "bin": "danger" },
+            { "id": "toy", "emoji": "🧸", "label": { "uz": "oʻyinchoq", "ru": "игрушка", "en": "toy" }, "bin": "safe" },
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" }, "bin": "safe" },
+            { "id": "pencil", "emoji": "✏️", "label": { "uz": "qalam", "ru": "карандаш", "en": "pencil" }, "bin": "safe" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Begona odamga eshikni ochish mumkin emas.", "ru": "Верно? Незнакомцу нельзя открывать дверь.", "en": "True? We should not open the door to a stranger." },
+      "hint": { "uz": "Avval kim kelganini bilib, kattalarni chaqiramiz.", "ru": "Сначала узнаём, кто пришёл, и зовём взрослых.", "en": "First find out who it is and call an adult." },
+      "explanation": { "uz": "Toʻgʻri. Begona odamga eshik ochmaymiz, avval kattalarni chaqiramiz.", "ru": "Верно. Незнакомцу дверь не открываем, сначала зовём взрослых.", "en": "True. We don't open the door to a stranger; we call an adult first." },
+      "widget": { "type": "true_false", "props": { "emoji": "🚪", "answer": true } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Uyda olov chiqsa, nima qilamiz?", "ru": "Что делать, если дома возник огонь?", "en": "What do we do if a fire starts at home?" },
+      "hint": { "uz": "Oʻzimiz emas, kattalar yordam beradi.", "ru": "Помогают взрослые, а не мы сами.", "en": "Adults help, not us by ourselves." },
+      "explanation": { "uz": "Olov chiqsa, darhol kattalarni chaqiramiz. Oʻzimiz oʻchirishga urinmaymiz.", "ru": "При огне сразу зовём взрослых. Сами тушить не пытаемся.", "en": "If a fire starts, we call an adult right away. We don't try to put it out ourselves." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "call", "emoji": "📞", "label": { "uz": "kattalarni chaqiramiz", "ru": "зовём взрослых", "en": "call an adult" }, "correct": true },
+            { "id": "dontknow", "emoji": "🤷", "label": { "uz": "bilmaymiz", "ru": "не знаем", "en": "we don't know" } },
+            { "id": "wrong", "emoji": "❌", "label": { "uz": "notoʻgʻri ish qilamiz", "ru": "поступаем неправильно", "en": "do the wrong thing" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Deraza tokchasida tik turish xavfsiz.", "ru": "Верно? Стоять на подоконнике безопасно.", "en": "True? Standing on the windowsill is safe." },
+      "hint": { "uz": "Balanddan yiqilib tushish mumkin.", "ru": "Можно упасть с высоты.", "en": "You could fall from a height." },
+      "explanation": { "uz": "Notoʻgʻri. Deraza tokchasiga chiqish xavfli — yiqilib tushish mumkin.", "ru": "Неверно. Залезать на подоконник опасно — можно упасть.", "en": "False. Climbing on the windowsill is dangerous — you could fall." },
+      "widget": { "type": "true_false", "props": { "emoji": "🪟", "answer": false } }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Xavfli narsalarni belgila!", "ru": "Отметь опасные предметы!", "en": "Tap the dangerous things!" },
+      "hint": { "uz": "Olov, rozetka va pichoq bilan ehtiyot boʻlamiz.", "ru": "С огнём, розеткой и ножом будь осторожен.", "en": "Be careful with fire, the outlet and a knife." },
+      "explanation": { "uz": "Olov, rozetka va pichoq xavfli. Oʻyinchoq, shar va kitob xavfsiz.", "ru": "Огонь, розетка и нож опасны. Игрушка, шарик и книга безопасны.", "en": "Fire, outlet and knife are dangerous. A toy, balloon and book are safe." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "fire", "emoji": "🔥", "label": { "uz": "olov", "ru": "огонь", "en": "fire" }, "correct": true },
+            { "id": "outlet", "emoji": "🔌", "label": { "uz": "rozetka", "ru": "розетка", "en": "outlet" }, "correct": true },
+            { "id": "knife", "emoji": "🔪", "label": { "uz": "pichoq", "ru": "нож", "en": "knife" }, "correct": true },
+            { "id": "toy", "emoji": "🧸", "label": { "uz": "oʻyinchoq", "ru": "игрушка", "en": "toy" } },
+            { "id": "balloon", "emoji": "🎈", "label": { "uz": "shar", "ru": "шарик", "en": "balloon" } },
+            { "id": "book", "emoji": "📖", "label": { "uz": "kitob", "ru": "книга", "en": "book" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir uyni qurilgan materialiga ula!", "ru": "Соедини каждый дом с его материалом!", "en": "Match each house to its material!" },
+      "hint": { "uz": "Yogʻoch uy — yogʻoch, gʻishtli uy — gʻisht, tosh uy — tosh.", "ru": "Деревянный дом — дерево, кирпичный — кирпич, каменный — камень.", "en": "Wooden house — wood, brick house — brick, stone house — stone." },
+      "explanation": { "uz": "Uylar turli materialdan quriladi: yogʻoch, gʻisht va tosh.", "ru": "Дома строят из разных материалов: дерево, кирпич и камень.", "en": "Houses are built from different materials: wood, brick and stone." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🪵", "label": { "uz": "yogʻoch", "ru": "дерево", "en": "wood" } }, "right": { "label": { "uz": "yogʻoch uy", "ru": "деревянный дом", "en": "wooden house" } } },
+            { "left": { "emoji": "🧱", "label": { "uz": "gʻisht", "ru": "кирпич", "en": "brick" } }, "right": { "label": { "uz": "gʻishtli uy", "ru": "кирпичный дом", "en": "brick house" } } },
+            { "left": { "emoji": "🪨", "label": { "uz": "tosh", "ru": "камень", "en": "stone" } }, "right": { "label": { "uz": "tosh uy", "ru": "каменный дом", "en": "stone house" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Eng mustahkam uy qaysi materialdan quriladi?", "ru": "Из какого материала самый прочный дом?", "en": "Which material makes the strongest house?" },
+      "hint": { "uz": "Bu qattiq material somondan mustahkamroq.", "ru": "Этот твёрдый материал прочнее соломы.", "en": "This hard material is stronger than straw." },
+      "explanation": { "uz": "Gʻishtdan qurilgan uy mustahkam boʻladi. Somon va bargli uy zaif.", "ru": "Дом из кирпича прочный. Дом из соломы и листьев слабый.", "en": "A brick house is strong. A straw or leaf house is weak." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "brick", "emoji": "🧱", "label": { "uz": "gʻisht", "ru": "кирпич", "en": "brick" }, "correct": true },
+            { "id": "straw", "emoji": "🌾", "label": { "uz": "somon", "ru": "солома", "en": "straw" } },
+            { "id": "leaf", "emoji": "🍂", "label": { "uz": "barg", "ru": "листья", "en": "leaves" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Elektr rozetkasi bilan oʻynash xavfli.", "ru": "Верно? Играть с розеткой опасно.", "en": "True? Playing with the electrical outlet is dangerous." },
+      "hint": { "uz": "Rozetkada elektr toki bor.", "ru": "В розетке есть электрический ток.", "en": "There is electric current in the outlet." },
+      "explanation": { "uz": "Toʻgʻri. Rozetka bilan oʻynash xavfli — unga barmoq tiqmaymiz.", "ru": "Верно. Играть с розеткой опасно — не суём в неё пальцы.", "en": "True. Playing with the outlet is dangerous — we don't put fingers in it." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔌", "answer": true } }
+    }
+  ]
+}

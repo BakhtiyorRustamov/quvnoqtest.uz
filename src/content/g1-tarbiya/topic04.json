@@ -1,0 +1,294 @@
+{
+  "topicId": "g1-tarbiya-04",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "💧🌸🗑️🚿",
+  "title": {
+    "uz": "Maktabim – ikkinchi uyim",
+    "ru": "Моя школа — мой второй дом",
+    "en": "My school is my second home"
+  },
+  "recall": {
+    "uz": "Tozalik — sogʻliqning kaliti. Hojatxonadan foydalangach qoʻlni sovunlab yuvamiz. Maktab hovlisidagi daraxt va gullarni asrab-avaylaymiz, chiqindini qutiga tashlaymiz. Toza muhitda oʻqish yoqimli.",
+    "ru": "Чистота — залог здоровья. После туалета мы моем руки с мылом. Бережём деревья и цветы во дворе школы, бросаем мусор в урну. В чистоте учиться приятно.",
+    "en": "Cleanliness is the key to health. After the toilet we wash our hands with soap. We protect the trees and flowers in the schoolyard and put rubbish in the bin. Learning in a clean place is pleasant."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ishlarni ajrat: toʻgʻri yoki notoʻgʻri xulq!",
+        "ru": "Разложи поступки: правильно или неправильно!",
+        "en": "Sort the actions: right or wrong behaviour!"
+      },
+      "hint": {
+        "uz": "Toza tutish — toʻgʻri, iflos qilish — notoʻgʻri.",
+        "ru": "Держать в чистоте — правильно, пачкать — неправильно.",
+        "en": "Keeping clean is right, making a mess is wrong."
+      },
+      "explanation": {
+        "uz": "Barakalla! Tozalik — toʻgʻri xulq.",
+        "ru": "Молодец! Чистота — правильное поведение.",
+        "en": "Great! Cleanliness is right behaviour."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "Toʻgʻri",
+                "ru": "Правильно",
+                "en": "Right"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "uz": "Notoʻgʻri",
+                "ru": "Неправильно",
+                "en": "Wrong"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "💧",
+              "label": {
+                "uz": "qoʻl yuvish",
+                "ru": "мыть руки",
+                "en": "wash hands"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🗑️",
+              "label": {
+                "uz": "chiqindini qutiga",
+                "ru": "мусор в урну",
+                "en": "trash in the bin"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🌱",
+              "label": {
+                "uz": "gul ekish",
+                "ru": "сажать цветы",
+                "en": "plant flowers"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🖍️",
+              "label": {
+                "uz": "devorga chizish",
+                "ru": "рисовать на стене",
+                "en": "draw on the wall"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "🌸",
+              "label": {
+                "uz": "gulni uzish",
+                "ru": "срывать цветы",
+                "en": "pick the flowers"
+              },
+              "bin": "no"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hojatxonadan foydalangach nima qilamiz?",
+        "ru": "Что делаем после посещения туалета?",
+        "en": "What do we do after using the toilet?"
+      },
+      "hint": {
+        "uz": "Sovun va suv bilan.",
+        "ru": "С мылом и водой.",
+        "en": "With soap and water."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Qoʻlni sovunlab yuvamiz.",
+        "ru": "Верно! Моем руки с мылом.",
+        "en": "Right! We wash our hands with soap."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qoʻlni sovunlab yuvamiz",
+              "ru": "моем руки с мылом",
+              "en": "we wash our hands with soap"
+            },
+            {
+              "uz": "hech narsa qilmaymiz",
+              "ru": "ничего не делаем",
+              "en": "we do nothing"
+            },
+            {
+              "uz": "yuguramiz",
+              "ru": "бежим",
+              "en": "we run away"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toza va sogʻlom boʻlish yoʻllarini belgila!",
+        "ru": "Отметь способы быть чистым и здоровым!",
+        "en": "Tap the ways to stay clean and healthy!"
+      },
+      "hint": {
+        "uz": "Qoʻl yuvish, suvni yopish, chiqindini qutiga.",
+        "ru": "Мыть руки, закрывать воду, мусор в урну.",
+        "en": "Wash hands, turn off the tap, trash in the bin."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bular tozalik qoidalari.",
+        "ru": "Молодец! Это правила чистоты.",
+        "en": "Great! Those are the rules of cleanliness."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "💧",
+              "label": {
+                "uz": "qoʻlni suvda yuvish",
+                "ru": "мыть руки водой",
+                "en": "wash hands with water"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🚰",
+              "label": {
+                "uz": "suvni yopish",
+                "ru": "закрывать воду",
+                "en": "turn off the tap"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🗑️",
+              "label": {
+                "uz": "chiqindini qutiga",
+                "ru": "мусор в урну",
+                "en": "trash in the bin"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🖍️",
+              "label": {
+                "uz": "devorni ifloslash",
+                "ru": "пачкать стену",
+                "en": "dirty the wall"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🌸",
+              "label": {
+                "uz": "gulni uzish",
+                "ru": "срывать цветы",
+                "en": "pick the flowers"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Maktab hovlisidagi gullarni uzib olish kerak.",
+        "ru": "Верно? Цветы в школьном дворе нужно срывать.",
+        "en": "Is this right? We should pick the flowers in the schoolyard."
+      },
+      "hint": {
+        "uz": "Gullar hammaning koʻzini quvontiradi.",
+        "ru": "Цветы радуют всех.",
+        "en": "Flowers make everyone happy."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Gullarni asraymiz, uzmaymiz.",
+        "ru": "Неверно! Цветы бережём, не срываем.",
+        "en": "False! We protect the flowers, we don't pick them."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌸",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sinf xonasini toza saqlashga qanday hissa qoʻshasiz?",
+        "ru": "Как ты помогаешь держать класс в чистоте?",
+        "en": "How do you help keep your classroom clean?"
+      },
+      "hint": {
+        "uz": "Chiqindi, parta, kitob — qanday tartib qilasan?",
+        "ru": "Мусор, парта, книги — как наводишь порядок?",
+        "en": "Trash, desk, books — how do you keep order?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen sinfingga gʻamxoʻrlik qilasan.",
+        "ru": "Отлично! Ты заботишься о своём классе.",
+        "en": "Great! You take care of your classroom."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men partamni toza tutaman, chiqindini qutiga tashlayman va kitoblarni joyiga qoʻyaman.",
+            "ru": "Я держу парту в чистоте, бросаю мусор в урну и ставлю книги на место.",
+            "en": "I keep my desk clean, put rubbish in the bin and return the books to their place."
+          },
+          "placeholder": {
+            "uz": "Men sinfimni toza saqlash uchun ...",
+            "ru": "Чтобы держать класс в чистоте, я ...",
+            "en": "To keep my classroom clean, I ..."
+          },
+          "starters": [
+            {
+              "uz": "Men sinfimni toza saqlash uchun",
+              "ru": "Чтобы держать класс в чистоте, я",
+              "en": "To keep my classroom clean, I"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

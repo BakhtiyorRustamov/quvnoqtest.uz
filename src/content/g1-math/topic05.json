@@ -1,0 +1,306 @@
+{
+  "topicId": "g1-math-05",
+  "subjectKey": "g1-math",
+  "emojis": "🔺🟦🔵",
+  "title": {
+    "uz": "Tekis va hajmdor shakllar",
+    "ru": "Плоские и объёмные тела",
+    "en": "Flat and 3D shapes"
+  },
+  "recall": {
+    "uz": "Shakllar yassi yoki hajmli boʻladi. Doira, kvadrat, uchburchak — yassi. Shar, kub, konus — hajmli. Atrofdagi narsalarda shu shakllarni topamiz va guruhlarga ajratamiz.",
+    "ru": "Фигуры бывают плоские и объёмные. Круг, квадрат, треугольник — плоские. Шар, куб, конус — объёмные. Находим эти фигуры в предметах и делим их на группы.",
+    "en": "Shapes can be flat or solid. A circle, a square and a triangle are flat. A ball, a cube and a cone are solid. We find these shapes around us and sort them into groups."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Yassi shaklni top va bos!",
+        "ru": "Найди и нажми плоскую фигуру!",
+        "en": "Find and tap the flat shape!"
+      },
+      "options": [
+        { "id": "sphere", "art": { "kind": "sphere", "color": "red" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "cone", "art": { "kind": "cone", "color": "orange" } }
+      ],
+      "answer": ["sq"],
+      "hint": {
+        "uz": "Yassi shakl tekis — qogʻozga chizsa boʻladi. Kvadrat shunday.",
+        "ru": "Плоская фигура ровная — её можно нарисовать на бумаге. Квадрат такой.",
+        "en": "A flat shape is level — you can draw it on paper. A square is like that."
+      },
+      "explanation": {
+        "uz": "Kvadrat — yassi shakl. Shar va konus hajmli, ular tekis emas.",
+        "ru": "Квадрат — плоская фигура. Шар и конус объёмные, они не плоские.",
+        "en": "A square is a flat shape. The sphere and the cone are solid, they are not flat."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hajmli shaklni top va bos!",
+        "ru": "Найди и нажми объёмную фигуру!",
+        "en": "Find and tap the solid shape!"
+      },
+      "options": [
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "sphere", "art": { "kind": "sphere", "color": "orange" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["sphere"],
+      "hint": {
+        "uz": "Hajmli shaklni qoʻlga olsa boʻladi — u tekis emas. Shar shunday.",
+        "ru": "Объёмную фигуру можно взять в руки — она не плоская. Шар такой.",
+        "en": "You can hold a solid shape in your hand — it is not flat. A sphere is like that."
+      },
+      "explanation": {
+        "uz": "Shar — hajmli shakl, uni qoʻlga olsa boʻladi. Uchburchak va doira esa yassi.",
+        "ru": "Шар — объёмная фигура, его можно взять в руки. А треугольник и круг плоские.",
+        "en": "A sphere is a solid shape you can hold. A triangle and a circle are flat."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma yassi shakllarni belgila, soʻng «Tekshirish»ni bos!",
+        "ru": "Отметь все плоские фигуры и нажми «Проверить»!",
+        "en": "Tap all the flat shapes, then press “Check”!"
+      },
+      "options": [
+        { "id": "sq", "art": { "kind": "square", "color": "orange" } },
+        { "id": "sphere", "art": { "kind": "sphere", "color": "red" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "cube", "art": { "kind": "cube", "color": "magenta" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["sq", "tr", "ci"],
+      "hint": {
+        "uz": "Yassi shakllar: kvadrat, uchburchak, doira. Shar va kub hajmli.",
+        "ru": "Плоские фигуры: квадрат, треугольник, круг. Шар и куб объёмные.",
+        "en": "Flat shapes: square, triangle, circle. The sphere and the cube are solid."
+      },
+      "explanation": {
+        "uz": "Yassi shakllar uchta edi: kvadrat, uchburchak, doira. Ularni tekis chizsa boʻladi.",
+        "ru": "Плоских фигур было три: квадрат, треугольник, круг. Их можно нарисовать ровно.",
+        "en": "There were three flat shapes: square, triangle, circle. You can draw them flat."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Shakllarni yassi va hajmli qutilarga ajrat!",
+        "ru": "Разложи фигуры по коробкам: плоские и объёмные!",
+        "en": "Sort the shapes into the flat and solid boxes!"
+      },
+      "items": [
+        { "id": "sq", "art": { "kind": "square", "color": "orange" }, "bin": "flat" },
+        { "id": "sphere", "art": { "kind": "sphere", "color": "red" }, "bin": "solid" },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" }, "bin": "flat" },
+        { "id": "cube", "art": { "kind": "cube", "color": "blue" }, "bin": "solid" }
+      ],
+      "bins": [
+        { "id": "flat", "label": { "uz": "Yassi", "ru": "Плоские", "en": "Flat" }, "color": "blue" },
+        { "id": "solid", "label": { "uz": "Hajmli", "ru": "Объёмные", "en": "Solid" }, "color": "magenta" }
+      ],
+      "hint": {
+        "uz": "Tekis chiziladiganlar — yassi qutiga. Qoʻlga olinadiganlar — hajmli qutiga.",
+        "ru": "Те, что рисуются ровно, — в коробку «плоские». Те, что берутся в руки, — в «объёмные».",
+        "en": "The ones you draw flat go to the flat box. The ones you can hold go to the solid box."
+      },
+      "explanation": {
+        "uz": "Kvadrat va uchburchak — yassi; shar va kub — hajmli. Shakllarni turiga qarab ajratdik.",
+        "ru": "Квадрат и треугольник — плоские; шар и куб — объёмные. Мы разделили фигуры по виду.",
+        "en": "Square and triangle are flat; the sphere and the cube are solid. We sorted shapes by type."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": {
+        "uz": "Har bir narsani oʻz shakliga ula!",
+        "ru": "Соедини каждый предмет с его формой!",
+        "en": "Connect each object to its shape!"
+      },
+      "left": [
+        { "id": "clock", "art": { "kind": "clock", "color": "blue" }, "match": "m-ci" },
+        { "id": "window", "art": { "kind": "window", "color": "orange" }, "match": "m-sq" },
+        { "id": "roof", "art": { "kind": "roof", "color": "red" }, "match": "m-tr" },
+        { "id": "kite", "art": { "kind": "kite", "color": "magenta" }, "match": "m-rh" }
+      ],
+      "right": [
+        { "id": "m-sq", "art": { "kind": "square", "color": "gray" } },
+        { "id": "m-tr", "art": { "kind": "triangle", "color": "gray" } },
+        { "id": "m-ci", "art": { "kind": "circle", "color": "gray" } },
+        { "id": "m-rh", "art": { "kind": "rhombus", "color": "gray" } }
+      ],
+      "hint": {
+        "uz": "Soat — doira, deraza — kvadrat, tom — uchburchak, varrak — romb.",
+        "ru": "Часы — круг, окно — квадрат, крыша — треугольник, змей — ромб.",
+        "en": "Clock — circle, window — square, roof — triangle, kite — rhombus."
+      },
+      "explanation": {
+        "uz": "Har bir narsada yassi shakl yashiringan: soatda doira, derazada kvadrat.",
+        "ru": "В каждом предмете спрятана плоская фигура: в часах круг, в окне квадрат.",
+        "en": "A flat shape hides in each object: a circle in the clock, a square in the window."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma uchburchaklarni belgila!",
+        "ru": "Отметь все треугольники!",
+        "en": "Tap all the triangles!"
+      },
+      "options": [
+        { "id": "t1", "art": { "kind": "triangle", "color": "red" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "t2", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "orange" } },
+        { "id": "t3", "art": { "kind": "triangle", "color": "magenta" } }
+      ],
+      "answer": ["t1", "t2", "t3"],
+      "hint": {
+        "uz": "Uchburchakning uchta burchagi va uchta tomoni bor.",
+        "ru": "У треугольника три угла и три стороны.",
+        "en": "A triangle has three corners and three sides."
+      },
+      "explanation": {
+        "uz": "Uchta uchburchak bor edi. Rang har xil boʻlsa ham, shakl bir xil.",
+        "ru": "Было три треугольника. Цвет разный, но форма одинаковая.",
+        "en": "There were three triangles. The colors differ, but the shape is the same."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?",
+        "ru": "Продолжи ряд: какая фигура будет следующей?",
+        "en": "Continue the row: which shape comes next?"
+      },
+      "sequence": [
+        { "kind": "square", "color": "blue" },
+        { "kind": "triangle", "color": "orange" },
+        { "kind": "square", "color": "blue" },
+        { "kind": "triangle", "color": "orange" },
+        { "kind": "square", "color": "blue" }
+      ],
+      "options": [
+        { "id": "tr", "art": { "kind": "triangle", "color": "orange" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "green" } }
+      ],
+      "answer": ["tr"],
+      "hint": {
+        "uz": "Kvadrat, uchburchak, kvadrat, uchburchak… ular navbat bilan keladi!",
+        "ru": "Квадрат, треугольник, квадрат, треугольник… они идут по очереди!",
+        "en": "Square, triangle, square, triangle… they take turns!"
+      },
+      "explanation": {
+        "uz": "Kvadratdan keyin doim uchburchak keladi. Keyingisi — uchburchak.",
+        "ru": "После квадрата всегда идёт треугольник. Следующая — треугольник.",
+        "en": "After a square there is always a triangle. The next one is a triangle."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Shakllarni doiralar va kvadratlarga ajrat!",
+        "ru": "Разложи фигуры: круги и квадраты!",
+        "en": "Sort the shapes into circles and squares!"
+      },
+      "items": [
+        { "id": "c1", "art": { "kind": "circle", "color": "red" }, "bin": "circ" },
+        { "id": "s1", "art": { "kind": "square", "color": "blue" }, "bin": "squ" },
+        { "id": "c2", "art": { "kind": "circle", "color": "orange" }, "bin": "circ" },
+        { "id": "s2", "art": { "kind": "square", "color": "green" }, "bin": "squ" }
+      ],
+      "bins": [
+        { "id": "circ", "label": { "uz": "Doiralar", "ru": "Круги", "en": "Circles" }, "color": "orange" },
+        { "id": "squ", "label": { "uz": "Kvadratlar", "ru": "Квадраты", "en": "Squares" }, "color": "blue" }
+      ],
+      "hint": {
+        "uz": "Dumaloqlari — doiralar qutiga, toʻrt burchaklilari — kvadratlar qutiga.",
+        "ru": "Круглые — в коробку «круги», четырёхугольные — в «квадраты».",
+        "en": "Round ones go to circles, four-cornered ones go to squares."
+      },
+      "explanation": {
+        "uz": "Doiralarni bir qutiga, kvadratlarni boshqasiga ajratdik. Shaklga qarab guruhladik.",
+        "ru": "Круги в одну коробку, квадраты в другую. Мы сгруппировали по форме.",
+        "en": "Circles to one box, squares to the other. We grouped them by shape."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Boshqalardan farq qiladigan shaklni bos!",
+        "ru": "Нажми на фигуру, которая отличается!",
+        "en": "Tap the shape that is different!"
+      },
+      "options": [
+        { "id": "c1", "art": { "kind": "circle", "color": "magenta" } },
+        { "id": "c2", "art": { "kind": "circle", "color": "magenta" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "magenta" } }
+      ],
+      "answer": ["tr"],
+      "hint": {
+        "uz": "Ikkitasi bir xil shakl. Uchinchisi shakli bilan farq qiladi.",
+        "ru": "Две фигуры одинаковые. Третья отличается формой.",
+        "en": "Two shapes are the same. The third differs by shape."
+      },
+      "explanation": {
+        "uz": "Ikki doira bir xil edi, uchburchak esa shakli bilan farq qildi.",
+        "ru": "Два круга были одинаковыми, а треугольник отличался формой.",
+        "en": "Two circles were the same, but the triangle differed by shape."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "build",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Shakllardan uycha yasa!",
+        "ru": "Построй домик из фигур!",
+        "en": "Build a little house from shapes!"
+      },
+      "items": [
+        { "id": "p-tr", "art": { "kind": "triangle", "color": "red" } },
+        { "id": "p-sq", "art": { "kind": "square", "color": "orange" } },
+        { "id": "p-ci", "art": { "kind": "circle", "color": "yellow" } }
+      ],
+      "slots": [
+        { "id": "roof", "accept": "p-tr", "ghost": { "kind": "triangle", "color": "gray" } },
+        { "id": "wall", "accept": "p-sq", "ghost": { "kind": "square", "color": "gray" } },
+        { "id": "sun", "accept": "p-ci", "ghost": { "kind": "circle", "color": "gray" } }
+      ],
+      "hint": {
+        "uz": "Uchburchak — tom, kvadrat — devor, doira — quyosh. Har shaklni nuqtali joyiga qoʻy.",
+        "ru": "Треугольник — крыша, квадрат — стена, круг — солнышко. Поставь каждую на пунктир.",
+        "en": "Triangle — roof, square — wall, circle — sun. Put each shape on its dotted spot."
+      },
+      "explanation": {
+        "uz": "Uchburchak tom, kvadrat devor, doira quyosh boʻldi. Yassi shakllardan rasm yasadik!",
+        "ru": "Треугольник стал крышей, квадрат — стеной, круг — солнышком. Из плоских фигур собрали картинку!",
+        "en": "The triangle became the roof, the square the wall, the circle the sun. We built a picture from flat shapes!"
+      }
+    }
+  ]
+}

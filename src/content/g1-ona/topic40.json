@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-40",
+  "subjectKey": "g1-ona",
+  "emojis": "👨‍👩‍👧‍👦🔠✍️",
+  "title": {
+    "uz": "Ism, sharif, familiya",
+    "ru": "Имя, отчество, фамилия",
+    "en": "Name, patronymic, surname"
+  },
+  "recall": {
+    "uz": "Kishining toʻliq nomi uch qismdan iborat: familiya, ism, sharif. Bularning barchasi bosh harf bilan yoziladi. Qiz bolalar familiyasi -ova, -yeva bilan, oʻgʻil bolalarniki -ov, -yev bilan tugaydi.",
+    "ru": "Полное имя человека состоит из трёх частей: фамилия, имя, отчество. Все они пишутся с заглавной. Фамилии девочек оканчиваются на -ova, -yeva, мальчиков — на -ov, -yev.",
+    "en": "A person's full name has three parts: surname, name, patronymic. All are capitalized. Girls' surnames end in -ova, -yeva; boys' in -ov, -yev."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "3 (ism, sharif, familiya)", "ru": "3 (имя, отчество, фамилия)", "en": "3 (name, patronymic, surname)" }, { "uz": "1", "ru": "1", "en": "1" }, { "uz": "2", "ru": "2", "en": "2" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Kishining toʻliq nomi nechta qismdan iborat?", "ru": "Из скольких частей полное имя человека?", "en": "How many parts does a full name have?" },
+      "hint": { "uz": "Familiya, ism va sharif.", "ru": "Фамилия, имя и отчество.", "en": "Surname, name and patronymic." },
+      "explanation": { "uz": "Toʻliq nom: familiya, ism, sharif — uch qism.", "ru": "Полное имя: фамилия, имя, отчество — три части.", "en": "A full name: surname, name, patronymic — three parts." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Lola", "bin": "ism" }, { "id": "b", "label": "Nilufar", "bin": "ism" }, { "id": "c", "label": "Asal", "bin": "ism" }, { "id": "d", "label": "lola", "bin": "oddiy" }, { "id": "e", "label": "nilufar", "bin": "oddiy" }, { "id": "f", "label": "asal", "bin": "oddiy" } ], "bins": [ { "id": "ism", "label": "Ism (bosh harf)" }, { "id": "oddiy", "label": "Oddiy soʻz" } ] } },
+      "prompt": { "uz": "Ism va oddiy soʻzni ajrat!", "ru": "Раздели имя и обычное слово!", "en": "Sort names and ordinary words!" },
+      "hint": { "uz": "«Lola» — ism, «lola» — gul (oddiy soʻz).", "ru": "«Lola» — имя, «lola» — цветок.", "en": "“Lola” is a name; “lola” is a flower." },
+      "explanation": { "uz": "Bir soʻz bosh harf bilan — ism, kichik harf bilan — oddiy soʻz.", "ru": "С заглавной — имя, со строчной — обычное слово.", "en": "With a capital — a name; lowercase — an ordinary word." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Ali", "right": "Aliyev" }, { "left": "Qodir", "right": "Qodirov" }, { "left": "Karim", "right": "Karimov" }, { "left": "Botir", "right": "Botirov" } ] } },
+      "prompt": { "uz": "Ismni familiyasiga ula!", "ru": "Соедини имя с фамилией!", "en": "Match each name to its surname!" },
+      "hint": { "uz": "«Ali» — «Aliyev».", "ru": "«Ali» — «Aliyev».", "en": "“Ali” — “Aliyev”." },
+      "explanation": { "uz": "Oʻgʻil bolalar familiyasi -ov, -yev bilan tugaydi.", "ru": "Фамилии мальчиков — на -ov, -yev.", "en": "Boys' surnames end in -ov, -yev." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["-ova, -yeva", "-ov, -yev", "-lar"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qiz bolalar familiyasi qanday tugaydi?", "ru": "Чем оканчиваются фамилии девочек?", "en": "How do girls' surnames end?" },
+      "hint": { "uz": "Qodirova, Aliyeva.", "ru": "Qodirova, Aliyeva.", "en": "Qodirova, Aliyeva." },
+      "explanation": { "uz": "Qiz bolalar familiyasi -ova, -yeva bilan tugaydi.", "ru": "Фамилии девочек — на -ova, -yeva.", "en": "Girls' surnames end in -ova, -yeva." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Qodir", "after": "", "choices": ["ova", "ov", "lar"], "answer": "ova", "emoji": "👧", "clue": { "uz": "Qiz bolaning familiyasi", "ru": "Фамилия девочки", "en": "A girl's surname" } } },
+      "prompt": { "uz": "Familiya qoʻshimchasini qoʻy!", "ru": "Добавь окончание фамилии!", "en": "Add the surname ending!" },
+      "hint": { "uz": "Qiz familiyasi -ova bilan tugaydi.", "ru": "Фамилия девочки — на -ova.", "en": "A girl's surname ends in -ova." },
+      "explanation": { "uz": "Qodir + ova = «Qodirova» (qiz familiyasi).", "ru": "Qodir + ova = «Qodirova» (фамилия девочки).", "en": "Qodir + ova = “Qodirova” (a girl's surname)." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Aliy", "after": "", "choices": ["ev", "eva", "lar"], "answer": "ev", "emoji": "👦", "clue": { "uz": "Oʻgʻil bolaning familiyasi", "ru": "Фамилия мальчика", "en": "A boy's surname" } } },
+      "prompt": { "uz": "Familiya qoʻshimchasini qoʻy!", "ru": "Добавь окончание фамилии!", "en": "Add the surname ending!" },
+      "hint": { "uz": "Oʻgʻil familiyasi -yev bilan tugaydi.", "ru": "Фамилия мальчика — на -yev.", "en": "A boy's surname ends in -yev." },
+      "explanation": { "uz": "Aliy + ev = «Aliyev» (oʻgʻil familiyasi).", "ru": "Aliy + ev = «Aliyev» (фамилия мальчика).", "en": "Aliy + ev = “Aliyev” (a boy's surname)." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Lola", "match": true }, { "text": "lola", "match": false }, { "text": "Nilufar", "match": true }, { "text": "asal", "match": false }, { "text": "Asal", "match": true }, { "text": "yulduz", "match": false } ] } },
+      "prompt": { "uz": "Ism (bosh harfli) soʻzlarni bos!", "ru": "Нажми имена (с заглавной)!", "en": "Tap the names (capitalized)!" },
+      "hint": { "uz": "Katta harf bilan yozilganlarini tanla.", "ru": "Выбери слова с заглавной.", "en": "Choose words with a capital." },
+      "explanation": { "uz": "Lola, Nilufar, Asal — ismlar (bosh harf).", "ru": "Lola, Nilufar, Asal — имена (с заглавной).", "en": "Lola, Nilufar, Asal are names (capital)." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["O", "li", "mov"], "emoji": "👨", "clue": { "uz": "Oʻgʻil bolaning familiyasi", "ru": "Фамилия мальчика", "en": "A boy's surname" } } },
+      "prompt": { "uz": "Boʻgʻinlardan familiyani tuz!", "ru": "Собери фамилию из слогов!", "en": "Build the surname from syllables!" },
+      "hint": { "uz": "O- … -li- … -mov.", "ru": "O- … -li- … -mov.", "en": "O- … -li- … -mov." },
+      "explanation": { "uz": "«Olimov» — familiya, bosh harf bilan yoziladi.", "ru": "«Olimov» — фамилия, с заглавной.", "en": "“Olimov” is a surname, with a capital." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Aziza", "chiroyli", "rasm", "chizdi."], "emoji": "👧", "clue": { "uz": "Aziza haqida gap", "ru": "Предложение об Азизе", "en": "A sentence about Aziza" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Aziza».", "ru": "Кто? — «Aziza».", "en": "Who? — “Aziza”." },
+      "explanation": { "uz": "«Aziza» — ism, bosh harf bilan yoziladi.", "ru": "«Aziza» — имя, с заглавной.", "en": "“Aziza” is a name, with a capital." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Qodirova", "bin": "qiz" }, { "id": "b", "label": "Aliyeva", "bin": "qiz" }, { "id": "c", "label": "Olimova", "bin": "qiz" }, { "id": "d", "label": "Qodirov", "bin": "ogil" }, { "id": "e", "label": "Aliyev", "bin": "ogil" }, { "id": "f", "label": "Olimov", "bin": "ogil" } ], "bins": [ { "id": "qiz", "label": "Qiz familiyasi" }, { "id": "ogil", "label": "Oʻgʻil familiyasi" } ] } },
+      "prompt": { "uz": "Familiyalarni ajrat!", "ru": "Раздели фамилии!", "en": "Sort the surnames!" },
+      "hint": { "uz": "-ova — qiz, -ov — oʻgʻil.", "ru": "-ova — девочка, -ov — мальчик.", "en": "-ova — girl, -ov — boy." },
+      "explanation": { "uz": "Qiz familiyasi -ova/-yeva, oʻgʻilniki -ov/-yev bilan tugaydi.", "ru": "Фамилии девочек на -ova/-yeva, мальчиков — на -ov/-yev.", "en": "Girls' surnames end in -ova/-yeva, boys' in -ov/-yev." }
+    }
+  ]
+}

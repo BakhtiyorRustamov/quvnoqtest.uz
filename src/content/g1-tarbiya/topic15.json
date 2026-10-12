@@ -1,0 +1,256 @@
+{
+  "topicId": "g1-tarbiya-15",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🌳💧💡♻️",
+  "title": {
+    "uz": "Asrab-avaylaymiz",
+    "ru": "Бережём и охраняем",
+    "en": "We cherish and protect"
+  },
+  "recall": {
+    "uz": "Tabiat — bizning boyligimiz. Suv va elektr energiyasini tejaymiz, daraxt ekamiz, chiqindini joyiga tashlaymiz. Tabiatga gʻamxoʻrlik qilish — kelajakka gʻamxoʻrlik qilishdir.",
+    "ru": "Природа — наше богатство. Мы экономим воду и электричество, сажаем деревья, выбрасываем мусор в урну. Заботиться о природе — значит заботиться о будущем.",
+    "en": "Nature is our wealth. We save water and electricity, plant trees and put rubbish in the bin. Caring for nature means caring for the future."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tabiatni asrash yoʻllarini belgila!",
+        "ru": "Отметь способы беречь природу!",
+        "en": "Tap the ways to protect nature!"
+      },
+      "hint": {
+        "uz": "Suvni tejash, chiroqni oʻchirish, daraxt ekish.",
+        "ru": "Экономить воду, гасить свет, сажать деревья.",
+        "en": "Save water, turn off lights, plant trees."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bular tabiatga gʻamxoʻrlik.",
+        "ru": "Молодец! Это забота о природе.",
+        "en": "Great! Those care for nature."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "💧",
+              "label": {
+                "uz": "suvni tejash",
+                "ru": "экономить воду",
+                "en": "save water"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "💡",
+              "label": {
+                "uz": "chiroqni oʻchirish",
+                "ru": "гасить свет",
+                "en": "turn off the light"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🌱",
+              "label": {
+                "uz": "daraxt ekish",
+                "ru": "сажать деревья",
+                "en": "plant trees"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🗑️",
+              "label": {
+                "uz": "chiqindini koʻchaga tashlash",
+                "ru": "бросать мусор на улицу",
+                "en": "throw trash on the street"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🚿",
+              "label": {
+                "uz": "suvni behuda oqizish",
+                "ru": "лить воду впустую",
+                "en": "waste water"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xonadan chiqayotganda nima qilamiz?",
+        "ru": "Что делаем, выходя из комнаты?",
+        "en": "What do we do when we leave a room?"
+      },
+      "hint": {
+        "uz": "Elektrni tejaymiz.",
+        "ru": "Экономим электричество.",
+        "en": "We save electricity."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Chiroqni oʻchiramiz.",
+        "ru": "Верно! Гасим свет.",
+        "en": "Right! We turn off the light."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "chiroqni oʻchiramiz",
+              "ru": "гасим свет",
+              "en": "we turn off the light"
+            },
+            {
+              "uz": "chiroqni yoqib ketamiz",
+              "ru": "оставляем свет включённым",
+              "en": "we leave the light on"
+            },
+            {
+              "uz": "televizorni ochamiz",
+              "ru": "включаем телевизор",
+              "en": "we turn on the TV"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topishmoqni yech!",
+        "ru": "Отгадай загадку!",
+        "en": "Solve the riddle!"
+      },
+      "hint": {
+        "uz": "Koʻkdan yogʻaman, hamma jonzotga kerakman.",
+        "ru": "Падаю с неба, нужна всему живому.",
+        "en": "I fall from the sky, all living things need me."
+      },
+      "explanation": {
+        "uz": "Javob — suv! Suvni tejash kerak.",
+        "ru": "Ответ — вода! Воду надо беречь.",
+        "en": "The answer is water! We must save water."
+      },
+      "widget": {
+        "type": "riddle_solve",
+        "props": {
+          "lines": [
+            {
+              "uz": "Koʻkdan yomgʻir boʻlib yogʻaman,",
+              "ru": "Падаю с неба дождём,",
+              "en": "I fall from the sky as rain,"
+            },
+            {
+              "uz": "hamma jonzotga kerakman. Men nima?",
+              "ru": "нужна всему живому. Что я?",
+              "en": "all living things need me. What am I?"
+            }
+          ],
+          "options": [
+            {
+              "emoji": "💧",
+              "label": {
+                "uz": "suv",
+                "ru": "вода",
+                "en": "water"
+              },
+              "correct": true
+            },
+            {
+              "emoji": "🔥",
+              "label": {
+                "uz": "olov",
+                "ru": "огонь",
+                "en": "fire"
+              }
+            },
+            {
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Suvni behuda oqizish — tejamkorlik.",
+        "ru": "Верно? Лить воду впустую — это бережливость.",
+        "en": "Is this right? Wasting water is thrifty."
+      },
+      "hint": {
+        "uz": "Tejamkor suvni asraydi.",
+        "ru": "Бережливый экономит воду.",
+        "en": "A thrifty person saves water."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Suvni tejaymiz, behuda oqizmaymiz.",
+        "ru": "Неверно! Воду экономим, не льём впустую.",
+        "en": "False! We save water, we don't waste it."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "💧",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Siz tabiatni asrash uchun nima qila olasiz?",
+        "ru": "Что ты можешь сделать, чтобы беречь природу?",
+        "en": "What can you do to protect nature?"
+      },
+      "hint": {
+        "uz": "Suv, elektr, daraxt, chiqindi — nimani qilasan?",
+        "ru": "Вода, свет, деревья, мусор — что сделаешь?",
+        "en": "Water, electricity, trees, trash — what will you do?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Har bir kichik ish tabiatga foyda.",
+        "ru": "Отлично! Каждое малое дело помогает природе.",
+        "en": "Great! Every small action helps nature."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men tishimni yuvayotganda suvni yopaman va hovlimizga bir tup daraxt ekaman.",
+            "ru": "Когда чищу зубы, я закрываю воду и сажаю деревце у нас во дворе.",
+            "en": "When I brush my teeth I turn off the tap, and I plant a tree in our yard."
+          }
+        }
+      }
+    }
+  ]
+}

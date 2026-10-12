@@ -1,0 +1,32 @@
+{
+  "topicId": "g1-art-08",
+  "subjectKey": "g1-art",
+  "emojis": "",
+  "hideAudio": true,
+  "title": { "uz": "Sovun pufakchalari", "ru": "Мыльные пузыри", "en": "Soap bubbles" },
+  "recall": {
+    "uz": "Sovun pufakchalari yumaloq, yengil va shaffof boʻladi. Ular quyoshda rang-barang tovlanadi. Keling, turli kattalikdagi pufakchalarni chizamiz.",
+    "ru": "Мыльные пузыри круглые, лёгкие и прозрачные. На солнце они переливаются разными цветами. Давай нарисуем пузыри разного размера.",
+    "en": "Soap bubbles are round, light and see-through. In the sun they shimmer with colours. Let's draw bubbles of different sizes."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Sovun pufakchalari qanday shaklda boʻladi?", "ru": "Какой формы мыльные пузыри?", "en": "What shape are soap bubbles?" },
+      "hint": { "uz": "Doira kabi.", "ru": "Как круг.", "en": "Like a circle." },
+      "explanation": { "uz": "Toʻgʻri! Ular yumaloq.", "ru": "Верно! Они круглые.", "en": "Right! They are round." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "yumaloq", "ru": "круглые", "en": "round" },
+        { "uz": "uchburchak", "ru": "треугольные", "en": "triangular" },
+        { "uz": "kvadrat", "ru": "квадратные", "en": "square" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Pufakchalarni boʻya yoki namunaga qarab yangisini chiz.", "ru": "Раскрась пузыри или нарисуй свои по образцу.", "en": "Colour the bubbles or draw your own from the model." },
+      "hint": { "uz": "Yumaloq pufakchalarni boʻya.", "ru": "Раскрась круглые пузыри.", "en": "Colour the round bubbles." },
+      "explanation": { "uz": "Chiroyli pufakchalar!", "ru": "Красивые пузыри!", "en": "Lovely bubbles!" },
+      "widget": { "type": "color_fill", "props": { "picture": "bubbles" } }
+    }
+  ]
+}

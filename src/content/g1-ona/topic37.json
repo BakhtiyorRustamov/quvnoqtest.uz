@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-37",
+  "subjectKey": "g1-ona",
+  "emojis": "❓🧑📦",
+  "title": {
+    "uz": "Toʻrt savol — shaxs va narsa",
+    "ru": "Четыре вопроса — лицо и предмет",
+    "en": "Four questions — persons and things"
+  },
+  "recall": {
+    "uz": "Shaxsga «Kim?» (bitta), «Kimlar?» (koʻp); narsaga «Nima?» (bitta), «Nimalar?» (koʻp) soʻrogʻi beriladi. Masalan: bola — Kim?, bolalar — Kimlar?, kitob — Nima?, kitoblar — Nimalar?",
+    "ru": "К лицу: «Кто?» (один), «Кто мн.?» (много); к предмету: «Что?» (один), «Что мн.?» (много). Например: bola — Кто?, bolalar — Кто мн.?, kitob — Что?, kitoblar — Что мн.?",
+    "en": "A person: “Kim?” (one), “Kimlar?” (many); a thing: “Nima?” (one), “Nimalar?” (many). E.g. bola — Kim?, bolalar — Kimlar?, kitob — Nima?, kitoblar — Nimalar?"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "bola", "right": "Kim?" }, { "left": "bolalar", "right": "Kimlar?" }, { "left": "kitob", "right": "Nima?" }, { "left": "kitoblar", "right": "Nimalar?" } ] } },
+      "prompt": { "uz": "Soʻzni mos savoliga ula!", "ru": "Соедини слово с его вопросом!", "en": "Match each word to its question!" },
+      "hint": { "uz": "«bolalar» — koʻp odam — «Kimlar?».", "ru": "«bolalar» — много людей — «Кто мн.?».", "en": "“bolalar” — many people — “Kimlar?”." },
+      "explanation": { "uz": "Shaxs/narsa va bitta/koʻpga qarab savol tanlanadi.", "ru": "Вопрос зависит от лица/предмета и числа.", "en": "The question depends on person/thing and number." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "singlim", "bin": "shaxs" }, { "id": "b", "label": "rassom", "bin": "shaxs" }, { "id": "c", "label": "oʻrtoq", "bin": "shaxs" }, { "id": "d", "label": "qalam", "bin": "narsa" }, { "id": "e", "label": "qogʻoz", "bin": "narsa" }, { "id": "f", "label": "rasm", "bin": "narsa" } ], "bins": [ { "id": "shaxs", "label": "Shaxs" }, { "id": "narsa", "label": "Narsa" } ] } },
+      "prompt": { "uz": "Shaxs va narsani ajrat!", "ru": "Раздели лицо и предмет!", "en": "Sort persons and things!" },
+      "hint": { "uz": "singlim — odam, qalam — buyum.", "ru": "singlim — человек, qalam — предмет.", "en": "singlim is a person, qalam a thing." },
+      "explanation": { "uz": "singlim, rassom, oʻrtoq — shaxs; qalam, qogʻoz, rasm — narsa.", "ru": "singlim, rassom, oʻrtoq — лица; qalam, qogʻoz, rasm — предметы.", "en": "singlim, rassom, oʻrtoq are people; qalam, qogʻoz, rasm are things." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "singlim", "match": true }, { "text": "qalam", "match": false }, { "text": "rassom", "match": true }, { "text": "rasm", "match": false }, { "text": "Muyassar", "match": true }, { "text": "qogʻoz", "match": false } ] } },
+      "prompt": { "uz": "«Kim?» soʻrogʻiga javob soʻzlarni bos!", "ru": "Нажми слова, отвечающие на «Кто?»!", "en": "Tap the words that answer “Who?”!" },
+      "hint": { "uz": "Odamlarni bildirgan soʻzlarni tanla.", "ru": "Выбери слова, называющие людей.", "en": "Choose words that name people." },
+      "explanation": { "uz": "singlim, rassom, Muyassar — shaxs (Kim?).", "ru": "singlim, rassom, Muyassar — лица (Кто?).", "en": "singlim, rassom, Muyassar are people (Who?)." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["Kimlar?", "Nimalar?", "Kim?"], "answerIndex": 0 } },
+      "prompt": { "uz": "«qizlar» soʻziga qanday savol beriladi?", "ru": "Какой вопрос к слову «qizlar»?", "en": "What question do we ask of “qizlar”?" },
+      "hint": { "uz": "Koʻp qiz — odam.", "ru": "Много девочек — люди.", "en": "Many girls — people." },
+      "explanation": { "uz": "«qizlar» — koʻp shaxs, «Kimlar?» soʻrogʻiga javob.", "ru": "«qizlar» — много лиц, «Кто мн.?».", "en": "“qizlar” is many people — “Kimlar?”." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "bola", "bin": "bir" }, { "id": "b", "label": "kitob", "bin": "bir" }, { "id": "c", "label": "gul", "bin": "bir" }, { "id": "d", "label": "bolalar", "bin": "kop" }, { "id": "e", "label": "kitoblar", "bin": "kop" }, { "id": "f", "label": "gullar", "bin": "kop" } ], "bins": [ { "id": "bir", "label": "Bitta" }, { "id": "kop", "label": "Koʻp" } ] } },
+      "prompt": { "uz": "Bitta va koʻpni ajrat!", "ru": "Раздели один и много!", "en": "Sort one and many!" },
+      "hint": { "uz": "«-lar» boʻlsa — koʻp.", "ru": "Есть «-lar» — много.", "en": "With “-lar” — many." },
+      "explanation": { "uz": "«-lar» koʻplikni bildiradi (Kimlar? / Nimalar?).", "ru": "«-lar» — множественное (Кто мн.? / Что мн.?).", "en": "“-lar” marks the plural (Kimlar? / Nimalar?)." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "qalamlar", "match": true }, { "text": "qalam", "match": false }, { "text": "kitoblar", "match": true }, { "text": "bola", "match": false }, { "text": "gullar", "match": true }, { "text": "rassom", "match": false } ] } },
+      "prompt": { "uz": "«Nimalar?» (koʻp narsa) soʻzlarini bos!", "ru": "Нажми слова «Что мн.?» (много предметов)!", "en": "Tap the “Nimalar?” words (many things)!" },
+      "hint": { "uz": "Koʻp narsani bildirgan soʻzlar.", "ru": "Слова, называющие много предметов.", "en": "Words naming many things." },
+      "explanation": { "uz": "qalamlar, kitoblar, gullar — koʻp narsa (Nimalar?).", "ru": "qalamlar, kitoblar, gullar — много предметов (Что мн.?).", "en": "qalamlar, kitoblar, gullar are many things (Nimalar?)." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "qalam", "emoji": "✏️", "clue": { "uz": "Yozadigan, chizadigan buyum", "ru": "Предмет для письма и рисования", "en": "A tool for writing and drawing" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: q, a, l, a, m.", "ru": "Буквы: q, a, l, a, m.", "en": "Letters: q, a, l, a, m." },
+      "explanation": { "uz": "«qalam» — narsa (Nima?), «qalamlar» — koʻp.", "ru": "«qalam» — предмет (Что?), «qalamlar» — много.", "en": "“qalam” — a thing (Nima?), “qalamlar” — many." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Singlim", "chiroyli", "rasm", "chizdi."], "emoji": "👧", "clue": { "uz": "Singil haqida gap", "ru": "Предложение о сестрёнке", "en": "A sentence about little sister" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Singlim». Nima? — «rasm».", "ru": "Кто? — «Singlim». Что? — «rasm».", "en": "Who? — “Singlim”. What? — “rasm”." },
+      "explanation": { "uz": "«Singlim» — shaxs (Kim?), «rasm» — narsa (Nima?).", "ru": "«Singlim» — лицо (Кто?), «rasm» — предмет (Что?).", "en": "“Singlim” is a person (Who?), “rasm” a thing (What?)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "qiz", "right": "qizlar" }, { "left": "rassom", "right": "rassomlar" }, { "left": "qalam", "right": "qalamlar" }, { "left": "gul", "right": "gullar" } ] } },
+      "prompt": { "uz": "Bitta soʻzni koʻplikka ula!", "ru": "Соедини слово с мн. числом!", "en": "Match each word to its plural!" },
+      "hint": { "uz": "«qiz» — «qizlar».", "ru": "«qiz» — «qizlar».", "en": "“qiz” — “qizlar”." },
+      "explanation": { "uz": "Shaxs ham, narsa ham «-lar» bilan koʻplik boʻladi.", "ru": "И лицо, и предмет образуют мн. число с «-lar».", "en": "Both persons and things pluralize with “-lar”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["Kim?", "Nima?", "Qanday?"], "answerIndex": 0 } },
+      "prompt": { "uz": "«Muyassar» soʻziga qanday savol beriladi?", "ru": "Какой вопрос к слову «Muyassar»?", "en": "What question do we ask of “Muyassar”?" },
+      "hint": { "uz": "Muyassar — qizning ismi.", "ru": "Muyassar — имя девочки.", "en": "Muyassar is a girl's name." },
+      "explanation": { "uz": "«Muyassar» — shaxs, «Kim?» soʻrogʻiga javob.", "ru": "«Muyassar» — лицо, отвечает на «Кто?».", "en": "“Muyassar” is a person — it answers “Who?”." }
+    }
+  ]
+}

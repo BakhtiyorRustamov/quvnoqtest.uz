@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-12",
+  "subjectKey": "g1-ona",
+  "emojis": "🧠🎈🔤",
+  "title": {
+    "uz": "Unlilar bellashuvi (takrorlash)",
+    "ru": "Состязание гласных (повторение)",
+    "en": "Vowels contest (review)"
+  },
+  "recall": {
+    "uz": "Unli tovushlar havo erkin chiqqanda hosil boʻladi va boʻgʻin yasaydi. Oʻzbek tilida 6 ta unli: a, o, i, e, u, oʻ. Qolgan tovushlar undosh. Bilimingni sinab koʻr!",
+    "ru": "Гласные образуются при свободном выходе воздуха и создают слог. В узбекском 6 гласных: a, o, i, e, u, oʻ. Остальные — согласные. Проверь себя!",
+    "en": "Vowels are made when air flows freely and they form syllables. Uzbek has 6 vowels: a, o, i, e, u, oʻ. The rest are consonants. Test yourself!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Havo erkin chiqadigan tovush", "ru": "Звук со свободным выходом воздуха", "en": "A sound where air flows freely" }, { "uz": "Havo toʻsiladigan tovush", "ru": "Звук с преградой", "en": "A sound with an obstruction" }, { "uz": "Ovozsiz belgi", "ru": "Беззвучный знак", "en": "A silent sign" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qanday tovush unli deyiladi?", "ru": "Какой звук называется гласным?", "en": "Which sound is called a vowel?" },
+      "hint": { "uz": "Unlida havo toʻsiqqa uchramaydi.", "ru": "У гласного нет преграды.", "en": "A vowel has no obstruction." },
+      "explanation": { "uz": "Unli — havo erkin chiqqanda hosil boʻladigan tovush.", "ru": "Гласный — звук при свободном выходе воздуха.", "en": "A vowel forms when air flows out freely." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "a", "bin": "unli" }, { "id": "b", "label": "e", "bin": "unli" }, { "id": "c", "label": "oʻ", "bin": "unli" }, { "id": "d", "label": "b", "bin": "und" }, { "id": "e", "label": "s", "bin": "und" }, { "id": "f", "label": "ch", "bin": "und" } ], "bins": [ { "id": "unli", "label": "Unli" }, { "id": "und", "label": "Undosh" } ] } },
+      "prompt": { "uz": "Tovushlarni ajrat!", "ru": "Раздели звуки!", "en": "Sort the sounds!" },
+      "hint": { "uz": "a, e, oʻ — unli.", "ru": "a, e, oʻ — гласные.", "en": "a, e, oʻ are vowels." },
+      "explanation": { "uz": "Unli: a, o, i, e, u, oʻ. Qolganlari undosh.", "ru": "Гласные: a, o, i, e, u, oʻ. Остальные — согласные.", "en": "Vowels: a, o, i, e, u, oʻ. The rest are consonants." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "a", "match": true }, { "text": "b", "match": false }, { "text": "i", "match": true }, { "text": "t", "match": false }, { "text": "u", "match": true }, { "text": "e", "match": true }, { "text": "k", "match": false }, { "text": "oʻ", "match": true } ] } },
+      "prompt": { "uz": "Barcha unli harflarni bos!", "ru": "Нажми все гласные буквы!", "en": "Tap all the vowel letters!" },
+      "hint": { "uz": "Unlilar: a, o, i, e, u, oʻ.", "ru": "Гласные: a, o, i, e, u, oʻ.", "en": "Vowels: a, o, i, e, u, oʻ." },
+      "explanation": { "uz": "a, i, u, e, oʻ — unli harflar.", "ru": "a, i, u, e, oʻ — гласные буквы.", "en": "a, i, u, e, oʻ are vowel letters." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "unli", "emoji": "🔊", "clue": { "uz": "Erkin chiqadigan tovush", "ru": "Свободно выходящий звук", "en": "A freely-flowing sound" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: u, n, l, i.", "ru": "Буквы: u, n, l, i.", "en": "Letters: u, n, l, i." },
+      "explanation": { "uz": "«unli» — a, o, i, e, u, oʻ tovushlari.", "ru": "«unli» — звуки a, o, i, e, u, oʻ.", "en": "“unli” — the sounds a, o, i, e, u, oʻ." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "anor", "right": "a" }, { "left": "olma", "right": "o" }, { "left": "uzum", "right": "u" }, { "left": "ikki", "right": "i" } ] } },
+      "prompt": { "uz": "Soʻzni birinchi unlisiga ula!", "ru": "Соедини слово с его первой гласной!", "en": "Match each word to its first vowel!" },
+      "hint": { "uz": "«anor» — «a» bilan.", "ru": "«anor» — с «a».", "en": "“anor” starts with “a”." },
+      "explanation": { "uz": "Har soʻz maʼlum unli bilan boshlanadi.", "ru": "Каждое слово начинается со своей гласной.", "en": "Each word starts with a certain vowel." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Unlilar", "boʻgʻin", "yasaydi."], "emoji": "🎵", "clue": { "uz": "Unlilarning vazifasi", "ru": "Роль гласных", "en": "The job of vowels" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nima yasaydi? — «boʻgʻin».", "ru": "Что образуют? — «boʻgʻin».", "en": "What do they form? — “boʻgʻin”." },
+      "explanation": { "uz": "Har boʻgʻinda kamida bitta unli boʻladi.", "ru": "В каждом слоге есть хотя бы одна гласная.", "en": "Every syllable has at least one vowel." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "olma", "bin": "unli" }, { "id": "b", "label": "uzum", "bin": "unli" }, { "id": "c", "label": "echki", "bin": "unli" }, { "id": "d", "label": "kitob", "bin": "und" }, { "id": "e", "label": "non", "bin": "und" }, { "id": "f", "label": "tosh", "bin": "und" } ], "bins": [ { "id": "unli", "label": "Unli bilan" }, { "id": "und", "label": "Undosh bilan" } ] } },
+      "prompt": { "uz": "Soʻzni boshlanishiga qarab ajrat!", "ru": "Раздели по началу слова!", "en": "Sort by how the word begins!" },
+      "hint": { "uz": "«olma» — unli, «non» — undosh bilan.", "ru": "«olma» — с гласной, «non» — с согласной.", "en": "“olma” starts with a vowel, “non” with a consonant." },
+      "explanation": { "uz": "Soʻzlar unli yoki undosh bilan boshlanishi mumkin.", "ru": "Слова могут начинаться с гласного или согласного.", "en": "Words can start with a vowel or a consonant." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "lma", "choices": ["o", "a", "u"], "answer": "o", "emoji": "🍎", "clue": { "uz": "Qizil yoki yashil meva", "ru": "Красный или зелёный фрукт", "en": "A red or green fruit" } } },
+      "prompt": { "uz": "Birinchi unlini qoʻy!", "ru": "Вставь первую гласную!", "en": "Add the first vowel!" },
+      "hint": { "uz": "… l m a — «olma».", "ru": "… l m a — «olma».", "en": "… l m a — “olma”." },
+      "explanation": { "uz": "«olma» «o» unlisi bilan boshlanadi.", "ru": "«olma» начинается с «o».", "en": "“olma” starts with “o”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "boʻgʻin", "letters": ["b", "oʻ", "gʻ", "i", "n"], "emoji": "🎶", "clue": { "uz": "Unli hosil qiladigan boʻlak", "ru": "Часть, образуемая гласной", "en": "A chunk a vowel forms" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: b, oʻ, gʻ, i, n.", "ru": "Части: b, oʻ, gʻ, i, n.", "en": "Parts: b, oʻ, gʻ, i, n." },
+      "explanation": { "uz": "«boʻgʻin» — soʻzning unli bilan aytiladigan boʻlagi.", "ru": "«boʻgʻin» (слог) — часть слова с гласной.", "en": "“boʻgʻin” (syllable) — the part of a word said with a vowel." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["6", "3", "10"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻzbek tilida nechta unli tovush bor?", "ru": "Сколько гласных в узбекском?", "en": "How many vowels are there in Uzbek?" },
+      "hint": { "uz": "a, o, i, e, u, oʻ.", "ru": "a, o, i, e, u, oʻ.", "en": "a, o, i, e, u, oʻ." },
+      "explanation": { "uz": "Oʻzbek tilida 6 ta unli tovush bor.", "ru": "В узбекском 6 гласных.", "en": "Uzbek has 6 vowels." }
+    }
+  ]
+}

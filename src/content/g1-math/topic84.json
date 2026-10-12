@@ -1,0 +1,343 @@
+{
+  "topicId": "g1-math-84",
+  "subjectKey": "g1-math",
+  "emojis": "📊➖✨",
+  "title": {
+    "uz": "Qismni topamiz — mashq",
+    "ru": "Находим часть — практика",
+    "en": "Finding the parts — practice"
+  },
+  "recall": {
+    "uz": "Nomaʼlum qismni topish uchun butundan maʼlum qismni ayiramiz: butun - qism = qism. Yigʻindini topish uchun esa qoʻshiluvchilarni qoʻshamiz. Keling, jadvallarni toʻldiramiz!",
+    "ru": "Чтобы найти неизвестную часть, из целого вычитаем известную: целое - часть = часть. А сумму находим сложением слагаемых. Заполним таблицы!",
+    "en": "To find a missing part, subtract the known part from the whole: whole - part = part. To find a sum, add the addends. Let's fill the tables!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "67",
+            "66",
+            "68"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Qoʻshiluvchi 13, qoʻshiluvchi 54. Yigʻindi nechа?",
+        "ru": "Слагаемое 13, слагаемое 54. Чему равна сумма?",
+        "en": "Addend 13, addend 54. What is the sum?"
+      },
+      "hint": {
+        "uz": "13 ga 54 ni qoʻsh.",
+        "ru": "Прибавь к 13 число 54.",
+        "en": "Add 54 to 13."
+      },
+      "explanation": {
+        "uz": "13 + 54 = 67.",
+        "ru": "13 + 54 = 67.",
+        "en": "13 + 54 = 67."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "54",
+            "53",
+            "55"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Yigʻindi 68, bir qoʻshiluvchi 14. Ikkinchisi nechа?",
+        "ru": "Сумма 68, одно слагаемое 14. Чему равно второе?",
+        "en": "Sum 68, one addend 14. What is the other?"
+      },
+      "hint": {
+        "uz": "68 dan 14 ni ayir.",
+        "ru": "Вычти из 68 число 14.",
+        "en": "Take 14 from 68."
+      },
+      "explanation": {
+        "uz": "68 - 14 = 54.",
+        "ru": "68 - 14 = 54.",
+        "en": "68 - 14 = 54."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "17 hosil boʻlishi uchun 13 ga nechta birlik yetmaydi?",
+        "ru": "Сколько единиц не хватает 13 до 17?",
+        "en": "How many ones does 13 need to reach 17?"
+      },
+      "hint": {
+        "uz": "17 dan 13 ni ayir.",
+        "ru": "Вычти из 17 число 13.",
+        "en": "Take 13 from 17."
+      },
+      "explanation": {
+        "uz": "17 - 13 = 4.",
+        "ru": "17 - 13 = 4.",
+        "en": "17 - 13 = 4."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "40",
+            "30",
+            "50"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "90 hosil qilish uchun 50 ga qaysi sonni qoʻshish kerak?",
+        "ru": "Какое число прибавить к 50, чтобы получить 90?",
+        "en": "Which number to add to 50 to make 90?"
+      },
+      "hint": {
+        "uz": "90 dan 50 ni ayir.",
+        "ru": "Вычти из 90 число 50.",
+        "en": "Take 50 from 90."
+      },
+      "explanation": {
+        "uz": "90 - 50 = 40.",
+        "ru": "90 - 50 = 40.",
+        "en": "90 - 50 = 40."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "56 hosil boʻlishi uchun 53 ni nechtaga orttirish kerak?",
+        "ru": "На сколько увеличить 53, чтобы получить 56?",
+        "en": "By how much to increase 53 to make 56?"
+      },
+      "hint": {
+        "uz": "56 dan 53 ni ayir.",
+        "ru": "Вычти из 56 число 53.",
+        "en": "Take 53 from 56."
+      },
+      "explanation": {
+        "uz": "56 - 53 = 3.",
+        "ru": "56 - 53 = 3.",
+        "en": "56 - 53 = 3."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "13 + 54",
+              "right": "67"
+            },
+            {
+              "left": "68 - 14",
+              "right": "54"
+            },
+            {
+              "left": "21 + 0",
+              "right": "21"
+            },
+            {
+              "left": "100 - 60",
+              "right": "40"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 67,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 13 + 54 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 13 + 54 = ?",
+        "en": "Work it out and build the answer with blocks: 13 + 54 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "13 + 54 = 67.",
+        "ru": "13 + 54 = 67.",
+        "en": "13 + 54 = 67."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 54,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 68 - 14 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 68 - 14 = ?",
+        "en": "Work it out and build the answer with blocks: 68 - 14 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "68 - 14 = 54.",
+        "ru": "68 - 14 = 54.",
+        "en": "68 - 14 = 54."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "11 + 1",
+              "right": "12"
+            },
+            {
+              "left": "98 - 38",
+              "right": "60"
+            },
+            {
+              "left": "40 + 25",
+              "right": "65"
+            },
+            {
+              "left": "57 - 36",
+              "right": "21"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bayram 18-yanvarda. Bugun 10-yanvar. Necha kun qoldi?",
+        "ru": "Праздник 18 января. Сегодня 10-е. Сколько дней осталось?",
+        "en": "The holiday is January 18. Today is the 10th. How many days are left?"
+      },
+      "hint": {
+        "uz": "18 dan 10 ni ayir.",
+        "ru": "Вычти из 18 число 10.",
+        "en": "Take 10 from 18."
+      },
+      "explanation": {
+        "uz": "18 - 10 = 8.",
+        "ru": "18 - 10 = 8.",
+        "en": "18 - 10 = 8."
+      }
+    }
+  ]
+}

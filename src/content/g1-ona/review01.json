@@ -1,0 +1,39 @@
+{
+  "topicId": "g1-ona-review-1",
+  "subjectKey": "g1-ona",
+  "skipRecall": true,
+  "emojis": "🧩🔤✨",
+  "title": {
+    "uz": "Takrorlash oʻyini: Anagramma",
+    "ru": "Игра-повторение: Анаграмма",
+    "en": "Review game: Anagram"
+  },
+  "recall": {
+    "uz": "Takrorlash oʻyini. Harflarni oʻynab mashq qilamiz. Tosh harflarni toʻgʻri tartibda bosib, krossvordni toʻldiramiz. Diqqat, tayyor, boshladik.",
+    "ru": "Игра-повторение. Тренируем буквы в игре. Нажимаем каменные буквы в верном порядке и заполняем кроссворд. Внимание, приготовились, поехали.",
+    "en": "A review game. We practice letters through play. Tap the stone letters in the right order and fill the crossword. Ready, set, go."
+  },
+  "items": [
+    {
+      "id": "g1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "anagram_game", "completeOn": "finish" },
+      "prompt": {
+        "uz": "Anagramma: tosh harflarni toʻgʻri tartibda bosib, krossvordni toʻldir!",
+        "ru": "Анаграмма: нажимай каменные буквы в верном порядке и заполни кроссворд!",
+        "en": "Anagram: tap the stone letters in the right order and fill the crossword!"
+      },
+      "hint": {
+        "uz": "Yaltirab turgan katak — navbatdagi harfning oʻrni. Soʻzning birinchi harfidan boshla.",
+        "ru": "Светящаяся клетка — место следующей буквы. Начни с первой буквы слова.",
+        "en": "The glowing cell shows where the next letter goes. Start with the first letter of the word."
+      },
+      "explanation": {
+        "uz": "Harflardan soʻz yasab, krossvordni toʻldirishni mashq qildik. Soʻzlarni tez va toʻgʻri topganing uchun barakalla!",
+        "ru": "Мы потренировались собирать слова и заполнять кроссворд. Молодец за быстрые и верные слова!",
+        "en": "We practiced building words and filling a crossword. Well done for finding words quickly and correctly!"
+      }
+    }
+  ]
+}

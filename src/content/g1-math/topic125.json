@@ -1,0 +1,448 @@
+{
+  "topicId": "g1-math-125",
+  "subjectKey": "g1-math",
+  "emojis": "🧩🔺✨",
+  "title": {
+    "uz": "Qismlardan shakllar tuzamiz",
+    "ru": "Собираем фигуры из частей",
+    "en": "Building shapes from parts"
+  },
+  "recall": {
+    "uz": "Tangram — yetti qismdan iborat boshqotirma: uchburchaklar va toʻrtburchaklardan. Qismlardan har xil shakllar tuzish mumkin. Qismlarni sanab, ular bilan masalalar yechamiz.",
+    "ru": "Танграм — головоломка из семи частей: треугольников и четырёхугольников. Из частей можно собирать разные фигуры. Считаем части и решаем с ними задачи.",
+    "en": "A tangram is a seven-piece puzzle made of triangles and quadrilaterals. You can build different shapes from the parts. We count the parts and solve problems with them."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "media": {
+        "gif": "/tangram.jpg",
+        "alt": {
+          "uz": "Tangram — 7 qismdan iborat boshqotirma",
+          "ru": "Танграм — головоломка из 7 частей",
+          "en": "Tangram — a 7-piece puzzle"
+        },
+        "maxWidth": 200
+      },
+      "prompt": {
+        "uz": "Hamma uchburchaklarni belgila!",
+        "ru": "Отметь все треугольники!",
+        "en": "Tap all the triangles!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "circle",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "e"
+      ],
+      "hint": {
+        "uz": "Uchburchakning 3 tomoni bor.",
+        "ru": "У треугольника 3 стороны.",
+        "en": "A triangle has 3 sides."
+      },
+      "explanation": {
+        "uz": "Uchta uchburchakni topdik.",
+        "ru": "Нашли три треугольника.",
+        "en": "We found three triangles."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/tangram.jpg",
+        "alt": {
+          "uz": "Tangram — 7 qismdan iborat boshqotirma",
+          "ru": "Танграм — головоломка из 7 частей",
+          "en": "Tangram — a 7-piece puzzle"
+        },
+        "maxWidth": 200
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Tangramda nechta uchburchak bor?",
+        "ru": "Сколько треугольников в танграме?",
+        "en": "How many triangles are in a tangram?"
+      },
+      "hint": {
+        "uz": "Tangram qismlarini sana.",
+        "ru": "Посчитай части танграма.",
+        "en": "Count the tangram pieces."
+      },
+      "explanation": {
+        "uz": "Tangramda 5 ta uchburchak bor.",
+        "ru": "В танграме 5 треугольников.",
+        "en": "A tangram has 5 triangles."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/tangram.jpg",
+        "alt": {
+          "uz": "Tangram — 7 qismdan iborat boshqotirma",
+          "ru": "Танграм — головоломка из 7 частей",
+          "en": "Tangram — a 7-piece puzzle"
+        },
+        "maxWidth": 200
+      },
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 14,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Qutida «Tangram»ning 2 ta toʻplami bor (har biri 7 qism). Jami nechta qism? Bloklardan yasa.",
+        "ru": "В коробке 2 набора танграма (по 7 частей). Сколько всего частей? Собери из блоков.",
+        "en": "A box has 2 tangram sets (7 pieces each). How many pieces in all? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "7 + 7 = 14.",
+        "ru": "7 + 7 = 14.",
+        "en": "7 + 7 = 14."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "media": {
+        "gif": "/tangram.jpg",
+        "alt": {
+          "uz": "Tangram — 7 qismdan iborat boshqotirma",
+          "ru": "Танграм — головоломка из 7 частей",
+          "en": "Tangram — a 7-piece puzzle"
+        },
+        "maxWidth": 200
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Tangramda 7 qism bor. 2 tasi yoʻqoldi. Nechta qism qoldi?",
+        "ru": "В танграме 7 частей. 2 потерялись. Сколько осталось?",
+        "en": "A tangram has 7 pieces. 2 are lost. How many are left?"
+      },
+      "hint": {
+        "uz": "7 dan 2 ni ayir.",
+        "ru": "Вычти из 7 число 2.",
+        "en": "Take 2 from 7."
+      },
+      "explanation": {
+        "uz": "7 - 2 = 5 qism.",
+        "ru": "7 - 2 = 5 частей.",
+        "en": "7 - 2 = 5 pieces."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            4,
+            4,
+            4
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Tangram uchburchagi perimetrini top.",
+        "ru": "Найди периметр треугольника танграма.",
+        "en": "Find the tangram triangle's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 12 cm.",
+        "ru": "Периметр = 12 cm.",
+        "en": "Perimeter = 12 cm."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "7 + 7",
+              "right": "14"
+            },
+            {
+              "left": "80 - 30",
+              "right": "50"
+            },
+            {
+              "left": "14 - 2",
+              "right": "12"
+            },
+            {
+              "left": "21 + 6",
+              "right": "27"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir ifodani qiymati bilan ulang!",
+        "ru": "Соедини каждое выражение с его значением!",
+        "en": "Match each expression with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta uchburchakni bos!",
+        "ru": "Нажми на самый большой треугольник!",
+        "en": "Tap the biggest triangle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green",
+            "scale": 0.7
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "orange",
+            "scale": 1.3
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "blue",
+            "scale": 0.95
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Eng katta uchburchakni tanla.",
+        "ru": "Выбери самый большой треугольник.",
+        "en": "Pick the biggest triangle."
+      },
+      "explanation": {
+        "uz": "Eng kattasini topdik.",
+        "ru": "Нашли самый большой.",
+        "en": "We found the biggest one."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 50,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Kitobchada 80 ta shakl bor. Dilnoza 30 tasidan yangi shakl yasadi. Nechta qoldi? Bloklardan yasa.",
+        "ru": "В книжке 80 фигур. Дилноза собрала 30. Сколько осталось? Собери из блоков.",
+        "en": "A book has 80 shapes. Dilnoza built 30. How many are left? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "80 - 30 = 50.",
+        "ru": "80 - 30 = 50.",
+        "en": "80 - 30 = 50."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            5,
+            3,
+            5,
+            3
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Tangram toʻrtburchagi perimetrini top.",
+        "ru": "Найди периметр четырёхугольника танграма.",
+        "en": "Find the tangram quadrilateral's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = 16 cm.",
+        "ru": "Периметр = 16 cm.",
+        "en": "Perimeter = 16 cm."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma toʻrtburchaklarni belgila!",
+        "ru": "Отметь все четырёхугольники!",
+        "en": "Tap all the quadrilaterals!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "rect",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "rhombus",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "circle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "hint": {
+        "uz": "Toʻrtburchakning 4 tomoni bor.",
+        "ru": "У четырёхугольника 4 стороны.",
+        "en": "A quadrilateral has 4 sides."
+      },
+      "explanation": {
+        "uz": "Uchta toʻrtburchakni topdik.",
+        "ru": "Нашли три четырёхугольника.",
+        "en": "We found three quadrilaterals."
+      }
+    }
+  ]
+}

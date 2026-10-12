@@ -1,0 +1,473 @@
+{
+  "topicId": "g1-informatika-27",
+  "subjectKey": "g1-informatika",
+  "emojis": "🔧🚗🚀🏠",
+  "title": {
+    "uz": "Turli qismlardan yaxlit narsani yigʻish",
+    "ru": "Сборка целого из частей",
+    "en": "Assembling a whole from parts"
+  },
+  "recall": {
+    "uz": "Kichik qismlardan katta, yaxlit narsa yasaymiz. Lego boʻlaklaridan uy yoki mashina yigʻish mumkin. Tangram qismlaridan turli shakllar hosil boʻladi.",
+    "ru": "Из мелких частей собираем большое, целое. Из деталей лего — дом или машину. Из частей танграма — разные фигуры.",
+    "en": "From small parts we build a big whole. From Lego pieces — a house or a car. From tangram pieces — different shapes."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Lego boʻlaklaridan nima yasash mumkin?",
+        "ru": "Что можно собрать из лего?",
+        "en": "What can we build from Lego?"
+      },
+      "hint": {
+        "uz": "Uy, mashina...",
+        "ru": "Дом, машину...",
+        "en": "A house, a car..."
+      },
+      "explanation": {
+        "uz": "Lego boʻlaklaridan uy va mashina yasaladi.",
+        "ru": "Из лего — дом и машину.",
+        "en": "From Lego we build a house and a car."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "uy va mashina",
+              "ru": "дом и машину",
+              "en": "a house and a car"
+            },
+            {
+              "uz": "tirik mushuk",
+              "ru": "живого кота",
+              "en": "a live cat"
+            },
+            {
+              "uz": "yomgʻir",
+              "ru": "дождь",
+              "en": "rain"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (mashina qismi emas)",
+        "ru": "Нажми лишнее! (не часть машины)",
+        "en": "Tap the odd one! (not a car part)"
+      },
+      "hint": {
+        "uz": "Qaysi biri mashinaga tegishli emas?",
+        "ru": "Что не от машины?",
+        "en": "Which is not a car part?"
+      },
+      "explanation": {
+        "uz": "Barg mashina qismi emas.",
+        "ru": "Лист — не часть машины.",
+        "en": "A leaf is not a car part."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "mashina qismlari",
+            "ru": "части машины",
+            "en": "car parts"
+          },
+          "tiles": [
+            {
+              "text": "gʻildirak"
+            },
+            {
+              "text": "oyna"
+            },
+            {
+              "text": "eshik"
+            },
+            {
+              "text": "barg",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Mashinani yigʻishda qaysi qism kerak emas?",
+        "ru": "Что не нужно для сборки машины?",
+        "en": "Which part is NOT needed for a car?"
+      },
+      "hint": {
+        "uz": "Mashinada oʻsmaydi.",
+        "ru": "На машине не растёт.",
+        "en": "It doesn't grow on a car."
+      },
+      "explanation": {
+        "uz": "Gul mashina qismi emas.",
+        "ru": "Цветок — не часть машины.",
+        "en": "A flower is not a car part."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🌹",
+              "label": {
+                "uz": "gul",
+                "ru": "цветок",
+                "en": "flower"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🚗",
+              "label": {
+                "uz": "gʻildirak",
+                "ru": "колесо",
+                "en": "wheel"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🚪",
+              "label": {
+                "uz": "eshik",
+                "ru": "дверь",
+                "en": "door"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tangram qismlaridan nima yigʻish mumkin?",
+        "ru": "Что собирают из танграма?",
+        "en": "What can be built from tangram?"
+      },
+      "hint": {
+        "uz": "Raketa, uycha...",
+        "ru": "Ракету, домик...",
+        "en": "A rocket, a little house..."
+      },
+      "explanation": {
+        "uz": "Tangramdan raketa va uycha yigʻiladi.",
+        "ru": "Из танграма — ракету и домик.",
+        "en": "From tangram — a rocket and a house."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "raketa va uycha",
+              "ru": "ракету и домик",
+              "en": "a rocket and a house"
+            },
+            {
+              "uz": "suv",
+              "ru": "воду",
+              "en": "water"
+            },
+            {
+              "uz": "shamol",
+              "ru": "ветер",
+              "en": "wind"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan soʻz tuz! (🚀)",
+        "ru": "Составь слово! (🚀)",
+        "en": "Build the word! (🚀)"
+      },
+      "hint": {
+        "uz": "R-A-K-E-T-A harflaridan.",
+        "ru": "Из букв R-A-K-E-T-A.",
+        "en": "From R-A-K-E-T-A."
+      },
+      "explanation": {
+        "uz": "Barakalla! «raketa» soʻzini tuzding.",
+        "ru": "Молодец! «raketa».",
+        "en": "Great! You built “raketa”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🚀",
+          "word": "raketa",
+          "label": {
+            "uz": "raketa",
+            "ru": "ракета",
+            "en": "rocket"
+          },
+          "letters": [
+            "r",
+            "a",
+            "k",
+            "e",
+            "t",
+            "a"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir butun narsani qismi bilan ula!",
+        "ru": "Соедини целое с его частью!",
+        "en": "Match each whole to one of its parts!"
+      },
+      "hint": {
+        "uz": "Mashinada gʻildirak bor.",
+        "ru": "У машины есть колесо.",
+        "en": "A car has a wheel."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🚗"
+              },
+              "right": {
+                "label": {
+                  "uz": "gʻildirak",
+                  "ru": "колесо",
+                  "en": "wheel"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🏠"
+              },
+              "right": {
+                "label": {
+                  "uz": "tom",
+                  "ru": "крыша",
+                  "en": "roof"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "📖"
+              },
+              "right": {
+                "label": {
+                  "uz": "sahifa",
+                  "ru": "страница",
+                  "en": "page"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kichik qismlardan katta narsa yasash mumkin.",
+        "ru": "Из мелких частей можно собрать большое.",
+        "en": "We can build a big thing from small parts."
+      },
+      "hint": {
+        "uz": "Boʻlaklarni birlashtiramiz.",
+        "ru": "Соединяем детали.",
+        "en": "We join the pieces."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔧",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxlit narsa nimalardan yigʻiladi?",
+        "ru": "Из чего собирается целое?",
+        "en": "What is a whole assembled from?"
+      },
+      "hint": {
+        "uz": "Boʻlaklardan.",
+        "ru": "Из деталей.",
+        "en": "From pieces."
+      },
+      "explanation": {
+        "uz": "Yaxlit narsa qismlardan yigʻiladi.",
+        "ru": "Целое — из частей.",
+        "en": "A whole is assembled from parts."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qismlardan",
+              "ru": "из частей",
+              "en": "from parts"
+            },
+            {
+              "uz": "hech narsadan",
+              "ru": "из ничего",
+              "en": "from nothing"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Legodan yasash mumkin boʻlgan narsalarni belgila!",
+        "ru": "Отметь, что собрать из лего!",
+        "en": "Tap what can be built from Lego!"
+      },
+      "hint": {
+        "uz": "Oʻyinchoq narsalar.",
+        "ru": "Игрушечные вещи.",
+        "en": "Toy things."
+      },
+      "explanation": {
+        "uz": "Ularni legodan yasash mumkin.",
+        "ru": "Их можно собрать из лего.",
+        "en": "These can be built from Lego."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏠",
+              "label": {
+                "uz": "uy",
+                "ru": "дом",
+                "en": "house"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🚗",
+              "label": {
+                "uz": "mashina",
+                "ru": "машина",
+                "en": "car"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🤖",
+              "label": {
+                "uz": "robot",
+                "ru": "робот",
+                "en": "robot"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐈",
+              "label": {
+                "uz": "tirik mushuk",
+                "ru": "живой кот",
+                "en": "a live cat"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🌧️",
+              "label": {
+                "uz": "yomgʻir",
+                "ru": "дождь",
+                "en": "rain"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tangram qismlaridan har xil shakl yigʻiladi.",
+        "ru": "Из танграма собирают разные фигуры.",
+        "en": "Different shapes are made from tangram pieces."
+      },
+      "hint": {
+        "uz": "Qismlarni turlicha joylaymiz.",
+        "ru": "Складываем по-разному.",
+        "en": "We arrange the pieces differently."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🚀",
+          "answer": true
+        }
+      }
+    }
+  ]
+}

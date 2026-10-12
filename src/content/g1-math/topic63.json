@@ -1,0 +1,303 @@
+{
+  "topicId": "g1-math-63",
+  "subjectKey": "g1-math",
+  "emojis": "➕🔢✨",
+  "title": {
+    "uz": "Ikki xonali sonlarni qoʻshamiz",
+    "ru": "Складываем двузначные числа",
+    "en": "Adding two-digit numbers"
+  },
+  "recall": {
+    "uz": "Ikki xonali sonlarni qoʻshganda oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻshamiz. Masalan, 23 + 14: oʻnliklar 20 + 10 = 30, birliklar 3 + 4 = 7, yigʻindi 37. Keling, qoʻshamiz!",
+    "ru": "Складывая двузначные числа, прибавляем десятки к десяткам, единицы к единицам. Например, 23 + 14: десятки 20 + 10 = 30, единицы 3 + 4 = 7, сумма 37. Давай складывать!",
+    "en": "When adding two-digit numbers we add tens to tens and ones to ones. For example 23 + 14: tens 20 + 10 = 30, ones 3 + 4 = 7, sum 37. Let's add!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 57,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 50 + 7 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 50 + 7 = ?",
+        "en": "Work it out and build the answer with blocks: 50 + 7 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "50 + 7 = 57.",
+        "ru": "50 + 7 = 57.",
+        "en": "50 + 7 = 57."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 46,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 40 + 6 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 40 + 6 = ?",
+        "en": "Work it out and build the answer with blocks: 40 + 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "40 + 6 = 46.",
+        "ru": "40 + 6 = 46.",
+        "en": "40 + 6 = 46."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 37,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 23 + 14 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 23 + 14 = ?",
+        "en": "Work it out and build the answer with blocks: 23 + 14 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "23 + 14 = 37.",
+        "ru": "23 + 14 = 37.",
+        "en": "23 + 14 = 37."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 58,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 52 + 6 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 52 + 6 = ?",
+        "en": "Work it out and build the answer with blocks: 52 + 6 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "52 + 6 = 58.",
+        "ru": "52 + 6 = 58.",
+        "en": "52 + 6 = 58."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "70",
+            "69",
+            "71"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 30 + 40 = ?",
+        "ru": "Вычисли: 30 + 40 = ?",
+        "en": "Work it out: 30 + 40 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Складывай десятки с десятками, единицы с единицами.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "30 + 40 = 70.",
+        "ru": "30 + 40 = 70.",
+        "en": "30 + 40 = 70."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "36",
+            "35",
+            "37"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 25 + 11 = ?",
+        "ru": "Вычисли: 25 + 11 = ?",
+        "en": "Work it out: 25 + 11 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Складывай десятки с десятками, единицы с единицами.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "25 + 11 = 36.",
+        "ru": "25 + 11 = 36.",
+        "en": "25 + 11 = 36."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "25",
+            "24",
+            "26"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "11 litr havorang va 14 litr sariq boʻyoq aralashtirildi. Jami necha litr boʻyoq?",
+        "ru": "Смешали 11 л голубой и 14 л жёлтой краски. Сколько всего литров?",
+        "en": "11 L of blue and 14 L of yellow paint were mixed. How many litres in all?"
+      },
+      "hint": {
+        "uz": "11 ga 14 ni qoʻsh.",
+        "ru": "Прибавь к 11 число 14.",
+        "en": "Add 14 to 11."
+      },
+      "explanation": {
+        "uz": "11 + 14 = 25 litr.",
+        "ru": "11 + 14 = 25 л.",
+        "en": "11 + 14 = 25 L."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 68,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 60 + 8 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 60 + 8 = ?",
+        "en": "Work it out and build the answer with blocks: 60 + 8 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "60 + 8 = 68.",
+        "ru": "60 + 8 = 68.",
+        "en": "60 + 8 = 68."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 46,
+          "y": 64
+        }
+      },
+      "prompt": {
+        "uz": "Tarozini koʻr: 46 va 64 — qaysi belgi toʻgʻri?",
+        "ru": "Посмотри на весы: 46 и 64 — какой знак верный?",
+        "en": "Look at the scale: 46 and 64 — which sign is correct?"
+      },
+      "hint": {
+        "uz": "Avval oʻnliklarni taqqosla. Oʻnliklar teng boʻlsa, birliklarni.",
+        "ru": "Сначала сравни десятки. Если равны — сравни единицы.",
+        "en": "Compare the tens first. If equal, compare the ones."
+      },
+      "explanation": {
+        "uz": "46 < 64.",
+        "ru": "46 < 64.",
+        "en": "46 < 64."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "48",
+            "47",
+            "49"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 43 + 5 = ?",
+        "ru": "Вычисли: 43 + 5 = ?",
+        "en": "Work it out: 43 + 5 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Складывай десятки с десятками, единицы с единицами.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "43 + 5 = 48.",
+        "ru": "43 + 5 = 48.",
+        "en": "43 + 5 = 48."
+      }
+    }
+  ]
+}

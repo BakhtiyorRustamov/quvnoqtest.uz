@@ -1,0 +1,166 @@
+{
+  "topicId": "g1-oqish-58",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "⏰📅🌟",
+  "title": {
+    "uz": "Vaqtdan unumli foydalaning",
+    "ru": "Цените время",
+    "en": "Use your time wisely"
+  },
+  "recall": {
+    "uz": "«Fursat — gʻanimat» sheʼrini tinglab oʻqiymiz va kun tartibi haqida bilib olamiz.",
+    "ru": "Слушаем стихотворение «Время бесценно» и узнаём о распорядке дня.",
+    "en": "We read the poem “Time is precious” and learn about a daily routine."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Fursat — gʻanimat",
+        "variant": "poem",
+        "audio": "g1-oqish-58-q1",
+        "lines": [
+          "Vaqt — eng qimmat boylik,",
+          "Bir ketsa, qaytmas hech.",
+          "Kun tartibin tutmagan",
+          "Ishlarin qilar kech.",
+          "",
+          "Sahar turgin barvaqt,",
+          "Har ishni oʻz vaqtida.",
+          "Vaqtni bejiz oʻtkazma,",
+          "Fursat — gʻanimat, avayla."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Vaqt bir ketsa, qaytadimi?", "ru": "Возвращается ли ушедшее время?", "en": "Does time come back once it's gone?" },
+      "explanation": { "uz": "Sheʼr vaqtning qadri va kun tartibi haqida.", "ru": "Стихотворение о ценности времени и распорядке дня.", "en": "The poem is about the value of time and a daily routine." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "story_sequence", "props": { "events": [
+        { "text": { "uz": "Uyqudan turish", "ru": "Проснуться", "en": "Wake up" } },
+        { "text": { "uz": "Yuvinish", "ru": "Умыться", "en": "Wash up" } },
+        { "text": { "uz": "Nonushta qilish", "ru": "Позавтракать", "en": "Have breakfast" } },
+        { "text": { "uz": "Darslarga borish", "ru": "Пойти на уроки", "en": "Go to lessons" } },
+        { "text": { "uz": "Kechqurun uxlash", "ru": "Лечь спать вечером", "en": "Sleep in the evening" } }
+      ] } },
+      "prompt": { "uz": "Kun tartibini toʻgʻri tartibda joylang!", "ru": "Расставь распорядок дня по порядку!", "en": "Put the daily routine in order!" },
+      "hint": { "uz": "Kun uyqudan turishdan boshlanadi.", "ru": "День начинается с пробуждения.", "en": "The day begins with waking up." },
+      "explanation": { "uz": "Turish → yuvinish → nonushta → darslar → uxlash.", "ru": "Проснуться → умыться → завтрак → уроки → сон.", "en": "Wake → wash → breakfast → lessons → sleep." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Vaqt bir ketsa, qaytib kelmaydi.", "ru": "Ушедшее время не возвращается.", "en": "Once time is gone, it does not return." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «bir ketsa, qaytmas hech» deyilgan.", "ru": "В стихотворении так и сказано.", "en": "The poem says exactly this." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Oʻtgan vaqtni qaytarib boʻladimi?", "ru": "Можно ли вернуть прошедшее время?", "en": "Can lost time be brought back?" },
+      "explanation": { "uz": "Toʻgʻri: vaqt bir ketsa, qaytmaydi — uni avaylash kerak.", "ru": "Верно: время не вернуть — его надо беречь.", "en": "True: time never returns — we must value it." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": {
+        "words": ["Har", "ishning", "bir", "vaqti", "bor."],
+        "emoji": "⏰",
+        "clue": { "uz": "Vaqt haqidagi maqol", "ru": "Пословица о времени", "en": "A proverb about time" }
+      } },
+      "prompt": { "uz": "Soʻzlarni tartibla va maqolni oʻqing!", "ru": "Расставь слова и прочитай пословицу!", "en": "Order the words to read the proverb!" },
+      "hint": { "uz": "«Har» soʻzidan boshlanadi.", "ru": "Начинается со слова «Har».", "en": "It starts with the word “Har”." },
+      "explanation": { "uz": "«Har ishning bir vaqti bor» — har ishni oʻz vaqtida qilish kerak.", "ru": "«Всякому делу — своё время».", "en": "“Everything has its own time.”" }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "fursat", "right": "vaqt, imkoniyat" },
+        { "left": "gʻanimat", "right": "qaytmaydigan qadrli vaqt" },
+        { "left": "intizom", "right": "har ishni tartib bilan qilish" }
+      ] } },
+      "prompt": { "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)", "ru": "Соедини слово с его значением!", "en": "Match each word to its meaning!" },
+      "hint": { "uz": "«fursat» — qulay vaqt, imkoniyat.", "ru": "«fursat» — удобное время.", "en": "“fursat” is an opportune moment." },
+      "explanation": { "uz": "fursat = vaqt; gʻanimat = qadrli vaqt; intizom = tartib bilan ish qilish.", "ru": "fursat = время; gʻanimat = ценное время; intizom = дисциплина.", "en": "fursat = a moment; gʻanimat = precious time; intizom = discipline." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Kun tartibiga amal qilish", "ru": "Соблюдать распорядок дня", "en": "Follow a daily routine" },
+        { "uz": "Koʻp uxlash", "ru": "Много спать", "en": "Sleep a lot" },
+        { "uz": "Ishni keyinga qoldirish", "ru": "Откладывать дела на потом", "en": "Put things off" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Vaqtdan unumli foydalanish uchun nima kerak?", "ru": "Что нужно, чтобы ценить время?", "en": "What is needed to use time wisely?" },
+      "hint": { "uz": "Har ishni oʻz vaqtida qilish — bu nima?", "ru": "Делать всё вовремя — это что?", "en": "Doing everything on time — what is that?" },
+      "explanation": { "uz": "Vaqtni tejash uchun kun tartibiga amal qilish kerak.", "ru": "Чтобы ценить время, надо соблюдать распорядок дня.", "en": "To save time, follow a daily routine." },
+      "openEnd": { "uz": "Sening kun tartibing bormi? Ertalab birinchi nima qilasan?", "ru": "Есть ли у тебя распорядок дня? Что делаешь утром первым?", "en": "Do you have a daily routine? What do you do first in the morning?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Har ishni" },
+          { "blank": "oʻz" },
+          { "text": "" },
+          { "blank": "vaqtida" },
+          { "text": "bajaraylik." }
+        ],
+        "bank": ["oʻz", "vaqtida", "keyin"]
+      } },
+      "prompt": { "uz": "Soʻzlarni tanlab, boʻsh joylarga qoʻying!", "ru": "Вставь слова в пропуски!", "en": "Fill the gaps with the right words!" },
+      "hint": { "uz": "Ishni qachon bajarish kerak?", "ru": "Когда нужно делать дело?", "en": "When should a task be done?" },
+      "explanation": { "uz": "Har ishni oʻz vaqtida bajarish kerak.", "ru": "Каждое дело нужно делать вовремя.", "en": "Every task should be done on time." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Darsni oʻz vaqtida qilish", "match": true },
+        { "text": "Ertalab barvaqt turish", "match": true },
+        { "text": "Ishni rejalashtirish", "match": true },
+        { "text": "Vaqtni behuda oʻtkazish", "match": false },
+        { "text": "Ishni ertaga qoldirish", "match": false }
+      ] } },
+      "prompt": { "uz": "Vaqtni tejaydigan ishlarni bos!", "ru": "Нажми привычки, которые берегут время!", "en": "Tap the habits that save time!" },
+      "hint": { "uz": "Intizomli bola vaqtini tejaydi.", "ru": "Дисциплинированный ребёнок бережёт время.", "en": "A disciplined child saves time." },
+      "explanation": { "uz": "Oʻz vaqtida qilish, barvaqt turish, rejalashtirish — vaqtni tejaydi; qolganlari — yoʻq.", "ru": "Делать вовремя, рано вставать, планировать — берегут время; остальное — нет.", "en": "Doing on time, rising early, planning save time; the rest do not." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "rejalashtirish" },
+        { "text": "intizom" },
+        { "text": "tartib" },
+        { "text": "dangasalik", "odd": true }
+      ], "clue": { "uz": "Qaysi biri vaqtni behuda ketkazadi?", "ru": "Что из этого тратит время впустую?", "en": "Which one wastes time?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi — vaqtni tejaydi.", "ru": "Три — берегут время.", "en": "Three save time." },
+      "explanation": { "uz": "Dangasalik — vaqtni behuda ketkazadi; qolganlari tejaydi.", "ru": "Лень тратит время впустую; остальные берегут.", "en": "Laziness wastes time; the rest save it." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "intizom", "syllables": ["in", "ti", "zom"], "emoji": "⏰", "clue": { "uz": "Har ishni oʻz vaqtida, tartib bilan qilish", "ru": "Порядок, дисциплина", "en": "Order, discipline" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "in + ti + zom = ?", "ru": "in + ti + zom = ?", "en": "in + ti + zom = ?" },
+      "explanation": { "uz": "in-ti-zom → intizom. Har ishni tartib bilan qilish.", "ru": "in-ti-zom → intizom (дисциплина).", "en": "in-ti-zom → intizom (discipline)." }
+    }
+  ]
+}

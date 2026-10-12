@@ -1,0 +1,295 @@
+{
+  "topicId": "g1-math-02",
+  "subjectKey": "g1-math",
+  "emojis": "🗼📏🎈",
+  "title": {
+    "uz": "Oʻxshashlik va tafovut",
+    "ru": "Сходство и отличие",
+    "en": "Likeness and difference"
+  },
+  "recall": {
+    "uz": "Narsalarni bir biriga taqqoslaymiz. Biri baland, biri past. Biri keng, biri tor. Biri uzun, biri qisqa. Biri katta, biri kichik. Oʻxshashlarini topamiz, farqlarini koʻramiz.",
+    "ru": "Мы сравниваем предметы. Один высокий, другой низкий. Один широкий, другой узкий. Один длинный, другой короткий. Один большой, другой маленький. Находим похожее и замечаем различия.",
+    "en": "We compare things. One is tall, another is short. One is wide, another is narrow. One is long, another is short. One is big, another is small. We find what is alike and notice what differs."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qaysi biri boshqalardan farq qiladi? Uni bos!",
+        "ru": "Какая фигура отличается от других? Нажми на неё!",
+        "en": "Which one is different from the others? Tap it!"
+      },
+      "options": [
+        { "id": "c1", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "sq", "art": { "kind": "square", "color": "blue" } },
+        { "id": "c2", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["sq"],
+      "hint": {
+        "uz": "Ikkitasi bir xil shaklda. Bittasi ulardan farq qiladi — uni top!",
+        "ru": "Две фигуры одинаковые. Одна отличается — найди её!",
+        "en": "Two shapes are the same. One is different — find it!"
+      },
+      "explanation": {
+        "uz": "Ikki doira bir xil edi, kvadrat esa ulardan farq qildi. Oʻxshashni va farqlini shunday topamiz.",
+        "ru": "Два круга были одинаковыми, а квадрат отличался. Так мы находим сходство и различие.",
+        "en": "The two circles were alike, but the square was different. That is how we spot similarity and difference."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Rangi boʻyicha farq qiladiganini bos!",
+        "ru": "Нажми на ту, что отличается по цвету!",
+        "en": "Tap the one that differs by color!"
+      },
+      "options": [
+        { "id": "b1", "art": { "kind": "ball", "color": "red" } },
+        { "id": "b2", "art": { "kind": "ball", "color": "red" } },
+        { "id": "b3", "art": { "kind": "ball", "color": "blue" } }
+      ],
+      "answer": ["b3"],
+      "hint": {
+        "uz": "Shakli bir xil, lekin rangi boshqacha boʻlganini izla!",
+        "ru": "Форма одинаковая, ищи ту, у которой другой цвет!",
+        "en": "The shape is the same — look for the one with a different color!"
+      },
+      "explanation": {
+        "uz": "Koptoklarning shakli bir xil edi. Koʻk koptok rangi bilan farq qildi.",
+        "ru": "Форма мячиков одинаковая. Синий мячик отличался цветом.",
+        "en": "The balls had the same shape. The blue ball differed by color."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng balandini top va bos!",
+        "ru": "Найди самую высокую и нажми!",
+        "en": "Find the tallest one and tap it!"
+      },
+      "options": [
+        { "id": "r1", "art": { "kind": "rect", "color": "orange", "scale": 0.6 } },
+        { "id": "r2", "art": { "kind": "rect", "color": "blue", "scale": 1.2 } },
+        { "id": "r3", "art": { "kind": "rect", "color": "green", "scale": 0.85 } }
+      ],
+      "answer": ["r2"],
+      "hint": {
+        "uz": "«Baland» — eng yuqoriga choʻzilgan narsa. Ularni solishtir!",
+        "ru": "«Высокий» — тот, что тянется выше всех. Сравни их!",
+        "en": "“Tall” reaches up the highest. Compare them with each other!"
+      },
+      "explanation": {
+        "uz": "Koʻk minora eng yuqoriga choʻzilgan edi, shuning uchun u eng baland.",
+        "ru": "Синяя башня тянулась выше всех, поэтому она самая высокая.",
+        "en": "The blue tower reached up the highest, so it is the tallest."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng kichik baliqni top!",
+        "ru": "Найди самую маленькую рыбку!",
+        "en": "Find the smallest fish!"
+      },
+      "options": [
+        { "id": "f1", "art": { "kind": "fish", "color": "orange", "scale": 1.15 } },
+        { "id": "f2", "art": { "kind": "fish", "color": "magenta", "scale": 0.5 } },
+        { "id": "f3", "art": { "kind": "fish", "color": "blue", "scale": 0.85 } }
+      ],
+      "answer": ["f2"],
+      "hint": {
+        "uz": "«Kichik» — eng kam joy egallaydigan narsa. Baliqlarni solishtir!",
+        "ru": "«Маленькая» — та, что занимает меньше всего места. Сравни рыбок!",
+        "en": "“Small” takes up the least space. Compare the fish!"
+      },
+      "explanation": {
+        "uz": "Pushti baliq eng kam joy egalladi — demak, u eng kichik baliq.",
+        "ru": "Розовая рыбка занимала меньше всего места — значит, она самая маленькая.",
+        "en": "The pink fish took up the least space, so it is the smallest fish."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma katta shakllarni belgilab, «Tekshirish»ni bos!",
+        "ru": "Отметь все большие фигуры и нажми «Проверить»!",
+        "en": "Tap all the big shapes, then press “Check”!"
+      },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow", "scale": 1.2 } },
+        { "id": "s2", "art": { "kind": "star", "color": "yellow", "scale": 0.55 } },
+        { "id": "s3", "art": { "kind": "star", "color": "orange", "scale": 1.2 } },
+        { "id": "s4", "art": { "kind": "star", "color": "orange", "scale": 0.55 } },
+        { "id": "s5", "art": { "kind": "star", "color": "magenta", "scale": 1.2 } }
+      ],
+      "answer": ["s1", "s3", "s5"],
+      "hint": {
+        "uz": "Katta yulduzlar bittadan koʻp. Avval hammasini bos, soʻng «Tekshirish»ni bos.",
+        "ru": "Больших звёзд несколько. Сначала отметь все, потом нажми «Проверить».",
+        "en": "There is more than one big star. Tap them all first, then press “Check”."
+      },
+      "explanation": {
+        "uz": "Uchta katta yulduz bor edi. Oʻlchami boʻyicha kattalarini ajratdik.",
+        "ru": "Больших звёзд было три. Мы выбрали большие по размеру.",
+        "en": "There were three big stars. We picked the big ones by size."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?",
+        "ru": "Продолжи ряд: какая фигура будет следующей?",
+        "en": "Continue the pattern: which shape comes next?"
+      },
+      "sequence": [
+        { "kind": "star", "color": "magenta" },
+        { "kind": "square", "color": "green" },
+        { "kind": "star", "color": "magenta" },
+        { "kind": "square", "color": "green" },
+        { "kind": "star", "color": "magenta" }
+      ],
+      "options": [
+        { "id": "sq", "art": { "kind": "square", "color": "green" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } }
+      ],
+      "answer": ["sq"],
+      "hint": {
+        "uz": "Qatorga qara: yulduz, kvadrat, yulduz, kvadrat… Ular navbat bilan keladi!",
+        "ru": "Посмотри на ряд: звезда, квадрат, звезда, квадрат… Они идут по очереди!",
+        "en": "Look at the row: star, square, star, square… They take turns!"
+      },
+      "explanation": {
+        "uz": "Shakllar navbatlashadi: yulduzdan keyin doim kvadrat keladi. Javob — kvadrat.",
+        "ru": "Фигуры чередуются: после звезды всегда идёт квадрат. Ответ — квадрат.",
+        "en": "The shapes take turns: after a star there is always a square. The answer is a square."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": {
+        "uz": "Har bir rasmni unga oʻxshaganiga ula!",
+        "ru": "Соедини каждую картинку с похожей на неё!",
+        "en": "Connect each picture to the one that is alike!"
+      },
+      "left": [
+        { "id": "apple", "art": { "kind": "apple", "color": "red" }, "match": "m-apple" },
+        { "id": "fish", "art": { "kind": "fish", "color": "blue" }, "match": "m-fish" },
+        { "id": "star", "art": { "kind": "star", "color": "yellow" }, "match": "m-star" },
+        { "id": "ball", "art": { "kind": "ball", "color": "green" }, "match": "m-ball" }
+      ],
+      "right": [
+        { "id": "m-fish", "art": { "kind": "fish", "color": "gray" } },
+        { "id": "m-ball", "art": { "kind": "ball", "color": "gray" } },
+        { "id": "m-apple", "art": { "kind": "apple", "color": "gray" } },
+        { "id": "m-star", "art": { "kind": "star", "color": "gray" } }
+      ],
+      "hint": {
+        "uz": "Avval rangli rasmni bos, keyin xuddi oʻshanga oʻxshaganini bos. Olma — olmaga oʻxshaydi!",
+        "ru": "Сначала нажми на цветную картинку, потом на похожую. Яблоко похоже на яблоко!",
+        "en": "First tap a colored picture, then tap the one that looks like it. An apple matches an apple!"
+      },
+      "explanation": {
+        "uz": "Har bir narsani oʻziga oʻxshaganiga uladik: olma — olmaga, baliq — baliqqa. Oʻxshash narsalar juft boʻldi.",
+        "ru": "Мы соединили каждый предмет с похожим: яблоко с яблоком, рыбку с рыбкой. Похожие стали парами.",
+        "en": "We matched each thing to one that is alike: apple to apple, fish to fish. Similar things became pairs."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Narsalarni katta va kichik qutilarga ajrat!",
+        "ru": "Разложи предметы по коробкам: большие и маленькие!",
+        "en": "Sort the things into the big and small boxes!"
+      },
+      "items": [
+        { "id": "ap-big", "art": { "kind": "apple", "color": "red", "scale": 1.2 }, "bin": "big" },
+        { "id": "ap-small", "art": { "kind": "apple", "color": "green", "scale": 0.55 }, "bin": "small" },
+        { "id": "st-big", "art": { "kind": "star", "color": "yellow", "scale": 1.2 }, "bin": "big" },
+        { "id": "st-small", "art": { "kind": "star", "color": "orange", "scale": 0.55 }, "bin": "small" }
+      ],
+      "bins": [
+        { "id": "big", "label": { "uz": "Katta", "ru": "Большие", "en": "Big" }, "color": "blue" },
+        { "id": "small", "label": { "uz": "Kichik", "ru": "Маленькие", "en": "Small" }, "color": "magenta" }
+      ],
+      "hint": {
+        "uz": "Narsani barmogʻing bilan ushlab, kerakli qutiga olib bor. Katta olma — katta qutiga!",
+        "ru": "Возьми предмет пальцем и отнеси в нужную коробку. Большое яблоко — в большую коробку!",
+        "en": "Hold a thing with your finger and carry it to the right box. The big apple goes to the big box!"
+      },
+      "explanation": {
+        "uz": "Katta narsalar bir qutiga, kichiklari boshqasiga tushdi. Narsalarni oʻlchami boʻyicha ajratdik.",
+        "ru": "Большие предметы в одну коробку, маленькие — в другую. Мы разделили предметы по размеру.",
+        "en": "Big things went to one box, small ones to the other. We sorted things by size."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": {
+        "uz": "Gullarni kattadan kichikka tartibla!",
+        "ru": "Расставь цветы от большого к маленькому!",
+        "en": "Put the flowers in order from big to small!"
+      },
+      "items": [
+        { "id": "fl-mid", "art": { "kind": "star", "color": "magenta", "scale": 0.85 } },
+        { "id": "fl-big", "art": { "kind": "star", "color": "red", "scale": 1.25 } },
+        { "id": "fl-small", "art": { "kind": "star", "color": "orange", "scale": 0.5 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "fl-big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "katta", "ru": "большой", "en": "big" } },
+        { "id": "s2", "accept": "fl-mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "oʻrta", "ru": "средний", "en": "medium" } },
+        { "id": "s3", "accept": "fl-small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "kichik", "ru": "маленький", "en": "small" } }
+      ],
+      "hint": {
+        "uz": "Avval eng kattasini birinchi katakka qoʻy, keyin oʻrtachasini, oxirida eng kichkinasini.",
+        "ru": "Сначала поставь самый большой в первую клетку, потом средний, в конце — самый маленький.",
+        "en": "First put the biggest in the first box, then the middle one, and the smallest last."
+      },
+      "explanation": {
+        "uz": "Tartib shunday boʻldi: katta, oʻrta, kichik. Narsalarni oʻlchami boʻyicha tartibladik.",
+        "ru": "Порядок получился такой: большой, средний, маленький. Мы расставили по размеру.",
+        "en": "The order was: big, medium, small. We arranged them by size."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "balance_scale", "props": { "x": 2, "y": 6 } },
+      "prompt": {
+        "uz": "Tarozini koʻr: qaysi tomon ogʻirroq?",
+        "ru": "Посмотри на весы: какая сторона тяжелее?",
+        "en": "Look at the scale: which side is heavier?"
+      },
+      "hint": {
+        "uz": "Tarozi koʻproq boʻlgan tomonga ogʻadi. Belgining keng tomoni doim katta songa qaraydi!",
+        "ru": "Весы наклоняются туда, где больше. Широкая сторона знака всегда смотрит на большее число!",
+        "en": "The scale tips toward the side that has more. The wide side of the sign always faces the bigger number!"
+      },
+      "explanation": {
+        "uz": "Bir tomonda kamroq, boshqasida koʻproq edi. Tarozi koʻp tomonga ogʻdi — shunday taqqoslaymiz.",
+        "ru": "С одной стороны меньше, с другой больше. Весы наклонились к большему — так мы сравниваем.",
+        "en": "One side had less, the other had more. The scale tipped to the bigger side — that is how we compare."
+      }
+    }
+  ]
+}

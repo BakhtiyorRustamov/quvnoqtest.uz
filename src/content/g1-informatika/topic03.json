@@ -1,0 +1,589 @@
+{
+  "topicId": "g1-informatika-03",
+  "subjectKey": "g1-informatika",
+  "emojis": "🔵🔺🍎🍋",
+  "title": {
+    "uz": "Rang va shakl",
+    "ru": "Цвет и форма",
+    "en": "Colour and shape"
+  },
+  "recall": {
+    "uz": "Koʻzimiz bilan buyumlarning rangi va shaklini farqlaymiz. Asosiy shakllar: doira, uchburchak va kvadrat.",
+    "ru": "Глазами мы различаем цвет и форму предметов. Основные формы: круг, треугольник и квадрат.",
+    "en": "With our eyes we tell colour and shape apart. The main shapes are circle, triangle and square."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Shaklni nomi bilan ula!",
+        "ru": "Соедини форму с названием!",
+        "en": "Match the shape to its name!"
+      },
+      "hint": {
+        "uz": "Doira — dumaloq.",
+        "ru": "Круг — круглый.",
+        "en": "A circle is round."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🔵"
+              },
+              "right": {
+                "label": {
+                  "uz": "doira",
+                  "ru": "круг",
+                  "en": "circle"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🔺"
+              },
+              "right": {
+                "label": {
+                  "uz": "uchburchak",
+                  "ru": "треугольник",
+                  "en": "triangle"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "⬛"
+              },
+              "right": {
+                "label": {
+                  "uz": "kvadrat",
+                  "ru": "квадрат",
+                  "en": "square"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qizil rangli narsalarni belgila!",
+        "ru": "Отметь красные предметы!",
+        "en": "Tap the red things!"
+      },
+      "hint": {
+        "uz": "Faqat qizillarini tanla.",
+        "ru": "Выбери только красные.",
+        "en": "Pick only the red ones."
+      },
+      "explanation": {
+        "uz": "Ular qizil rangda.",
+        "ru": "Они красного цвета.",
+        "en": "They are red."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍓",
+              "label": {
+                "uz": "qulupnay",
+                "ru": "клубника",
+                "en": "strawberry"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🌹",
+              "label": {
+                "uz": "atirgul",
+                "ru": "роза",
+                "en": "rose"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🥒",
+              "label": {
+                "uz": "bodring",
+                "ru": "огурец",
+                "en": "cucumber"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi shakl doira?",
+        "ru": "Какая фигура круг?",
+        "en": "Which shape is a circle?"
+      },
+      "hint": {
+        "uz": "Dumaloq shaklni top.",
+        "ru": "Найди круглую.",
+        "en": "Find the round one."
+      },
+      "explanation": {
+        "uz": "Bu — doira.",
+        "ru": "Это круг.",
+        "en": "This is a circle."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🔵",
+              "label": {
+                "uz": "doira",
+                "ru": "круг",
+                "en": "circle"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🔺",
+              "label": {
+                "uz": "uchburchak",
+                "ru": "треугольник",
+                "en": "triangle"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "⬛",
+              "label": {
+                "uz": "kvadrat",
+                "ru": "квадрат",
+                "en": "square"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (rangi boshqa)",
+        "ru": "Нажми лишнее! (другого цвета)",
+        "en": "Tap the odd one! (different colour)"
+      },
+      "hint": {
+        "uz": "Qaysi biri qizil emas?",
+        "ru": "Что не красное?",
+        "en": "Which is not red?"
+      },
+      "explanation": {
+        "uz": "Limon sariq, boshqalari qizil.",
+        "ru": "Лимон жёлтый, остальные красные.",
+        "en": "The lemon is yellow, the rest are red."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "qizil narsalar",
+            "ru": "красные предметы",
+            "en": "red things"
+          },
+          "tiles": [
+            {
+              "text": "olma"
+            },
+            {
+              "text": "pomidor"
+            },
+            {
+              "text": "qulupnay"
+            },
+            {
+              "text": "limon",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni rangi boʻyicha qutilarga ajrat!",
+        "ru": "Разложи предметы по цвету!",
+        "en": "Sort the things by colour!"
+      },
+      "hint": {
+        "uz": "Avval rasmni, keyin qutini bos.",
+        "ru": "Сначала картинку, потом ящик.",
+        "en": "Tap a picture, then its box."
+      },
+      "explanation": {
+        "uz": "Barakalla! Ranglar boʻyicha ajratding.",
+        "ru": "Молодец! Разложил по цветам.",
+        "en": "Great! Sorted by colour."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "q",
+              "label": {
+                "uz": "Qizil",
+                "ru": "Красный",
+                "en": "Red"
+              }
+            },
+            {
+              "id": "s",
+              "label": {
+                "uz": "Sariq",
+                "ru": "Жёлтый",
+                "en": "Yellow"
+              }
+            },
+            {
+              "id": "y",
+              "label": {
+                "uz": "Yashil",
+                "ru": "Зелёный",
+                "en": "Green"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              },
+              "bin": "q"
+            },
+            {
+              "emoji": "🍓",
+              "label": {
+                "uz": "qulupnay",
+                "ru": "клубника",
+                "en": "strawberry"
+              },
+              "bin": "q"
+            },
+            {
+              "emoji": "🍋",
+              "label": {
+                "uz": "limon",
+                "ru": "лимон",
+                "en": "lemon"
+              },
+              "bin": "s"
+            },
+            {
+              "emoji": "🌽",
+              "label": {
+                "uz": "makkajoʻxori",
+                "ru": "кукуруза",
+                "en": "corn"
+              },
+              "bin": "s"
+            },
+            {
+              "emoji": "🥒",
+              "label": {
+                "uz": "bodring",
+                "ru": "огурец",
+                "en": "cucumber"
+              },
+              "bin": "y"
+            },
+            {
+              "emoji": "🌳",
+              "label": {
+                "uz": "daraxt",
+                "ru": "дерево",
+                "en": "tree"
+              },
+              "bin": "y"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uchburchakning nechta tomoni bor?",
+        "ru": "Сколько сторон у треугольника?",
+        "en": "How many sides does a triangle have?"
+      },
+      "hint": {
+        "uz": "Tomonlarini sana.",
+        "ru": "Посчитай стороны.",
+        "en": "Count the sides."
+      },
+      "explanation": {
+        "uz": "Uchburchakning 3 ta tomoni bor.",
+        "ru": "У треугольника 3 стороны.",
+        "en": "A triangle has 3 sides."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "4",
+            "1"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Shaklni nomi bilan juftla!",
+        "ru": "Соедини форму с названием!",
+        "en": "Match shape to name!"
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Смотри на картинку.",
+        "en": "Look at the picture."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🔺"
+              },
+              "b": {
+                "label": {
+                  "uz": "uchburchak",
+                  "ru": "треугольник",
+                  "en": "triangle"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "⬛"
+              },
+              "b": {
+                "label": {
+                  "uz": "kvadrat",
+                  "ru": "квадрат",
+                  "en": "square"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🔵"
+              },
+              "b": {
+                "label": {
+                  "uz": "doira",
+                  "ru": "круг",
+                  "en": "circle"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koptok doira shaklida.",
+        "ru": "Мяч имеет форму круга.",
+        "en": "A ball has a round shape."
+      },
+      "hint": {
+        "uz": "Koptokka qara.",
+        "ru": "Посмотри на мяч.",
+        "en": "Look at a ball."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Koptok dumaloq.",
+        "ru": "Верно! Мяч круглый.",
+        "en": "True! A ball is round."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "⚽",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir narsani shakli bilan ula!",
+        "ru": "Соедини предмет с его формой!",
+        "en": "Match each thing to its shape!"
+      },
+      "hint": {
+        "uz": "Buyumning shakliga qara.",
+        "ru": "Смотри на форму.",
+        "en": "Look at the shape."
+      },
+      "explanation": {
+        "uz": "Barcha shakllarni topding!",
+        "ru": "Ты нашёл все формы!",
+        "en": "You found all the shapes!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "⚽"
+              },
+              "right": {
+                "label": {
+                  "uz": "doira",
+                  "ru": "круг",
+                  "en": "circle"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "📺"
+              },
+              "right": {
+                "label": {
+                  "uz": "kvadrat",
+                  "ru": "квадрат",
+                  "en": "square"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍕"
+              },
+              "right": {
+                "label": {
+                  "uz": "uchburchak",
+                  "ru": "треугольник",
+                  "en": "triangle"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Rang va shaklni qaysi aʼzo bilan bilamiz?",
+        "ru": "Каким органом узнаём цвет и форму?",
+        "en": "Which organ tells colour and shape?"
+      },
+      "hint": {
+        "uz": "Koʻrish kerak.",
+        "ru": "Нужно видеть.",
+        "en": "You need to see."
+      },
+      "explanation": {
+        "uz": "Rang va shaklni koʻz bilan bilamiz.",
+        "ru": "Цвет и форму узнаём глазами.",
+        "en": "We tell colour and shape with our eyes."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "koʻz",
+              "ru": "глаза",
+              "en": "eyes"
+            },
+            {
+              "uz": "quloq",
+              "ru": "уши",
+              "en": "ears"
+            },
+            {
+              "uz": "burun",
+              "ru": "нос",
+              "en": "nose"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-15",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Baliqchalar",
+    "ru": "Рыбки",
+    "en": "Little fish"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻozdan chiroyli baliqcha yasaymiz.",
+    "ru": "Сегодня из цветной бумаги сделаем красивую рыбку.",
+    "en": "Today we make a pretty fish from coloured paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Baliqcha yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай рыбку. Выполняй каждый этап по рисунку!",
+        "en": "Make a fish. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Dumini unutma.",
+        "ru": "Не забудь хвост.",
+        "en": "Don't forget the tail."
+      },
+      "explanation": {
+        "uz": "Suzayotgan baliqcha!",
+        "ru": "Плывущая рыбка!",
+        "en": "A swimming fish!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Oval tana va uchburchak dumni qirq.",
+              "ru": "Вырежь овальное тело и треугольный хвост.",
+              "en": "Cut an oval body and a triangular tail."
+            },
+            {
+              "uz": "Suzgich va koʻzni qoʻsh.",
+              "ru": "Добавь плавник и глаз.",
+              "en": "Add a fin and an eye."
+            },
+            {
+              "uz": "Tangacha va suv pufaklarini chiz.",
+              "ru": "Нарисуй чешуйки и пузырьки.",
+              "en": "Draw scales and bubbles."
+            }
+          ],
+          "art": "fish",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

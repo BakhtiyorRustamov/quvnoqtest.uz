@@ -1,0 +1,516 @@
+{
+  "topicId": "g1-ingliz-33",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🚿💧🛁😁",
+  "title": {
+    "uz": "Toza boʻl (hikoya)",
+    "ru": "Будь чистым (история)",
+    "en": "Be clean (story)"
+  },
+  "recall": {
+    "uz": "Hikoya vaqti! Bugungi qadriyat — «Be clean» (toza boʻl). Qoʻl va oyoqlarimizni yuvamiz, toza yuramiz.",
+    "ru": "Время истории! Ценность сегодня — «Be clean» (будь чистым). Моем руки и ноги, ходим чистыми.",
+    "en": "Story time! Today's value is \"Be clean.\" We wash our hands and feet and stay clean."
+  },
+  "ttsText": {
+    "uz": "Toza boʻl.",
+    "en": "Story time! Be clean. Wash your hands! Be clean!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyani tartibla: nima birinchi boʻldi?",
+        "ru": "Расставь историю по порядку!",
+        "en": "Put the story in order!"
+      },
+      "hint": {
+        "uz": "Avval bolalar qumda oʻynaydi.",
+        "ru": "Сначала дети играют в песке.",
+        "en": "First the children play in the sand."
+      },
+      "explanation": {
+        "uz": "Barakalla! Endi ular toza!",
+        "ru": "Молодец! Теперь они чистые!",
+        "en": "Great! Now they are clean!"
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "emoji": "💧",
+          "events": [
+            {
+              "text": {
+                "uz": "Bolalar qumda oʻynaydi.",
+                "ru": "Дети играют в песке.",
+                "en": "The children play in the sand."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ular kir boʻlib qoladi.",
+                "ru": "Они пачкаются.",
+                "en": "They get dirty."
+              }
+            },
+            {
+              "text": {
+                "uz": "Robot suv olib keladi.",
+                "ru": "Робот приносит воду.",
+                "en": "The robot brings water."
+              }
+            },
+            {
+              "text": {
+                "uz": "Ular yuvinib, toza boʻladi.",
+                "ru": "Они моются и становятся чистыми.",
+                "en": "They wash and are clean!"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima dedi?",
+        "ru": "Послушай. Что сказал ребёнок?",
+        "en": "Listen. What did the child say?"
+      },
+      "hint": {
+        "uz": "«OK, I will!» — mayli, yuvaman.",
+        "ru": "«OK, I will!» — хорошо, помою.",
+        "en": "\"OK, I will!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «OK, I will!»",
+        "ru": "Верно! «OK, I will!»",
+        "en": "Right! \"OK, I will!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "Wash your hands!",
+              "audio": {
+                "key": "ing33-q2-a",
+                "text": "Wash your hands!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "OK, I will!",
+              "audio": {
+                "key": "ing33-q2-b",
+                "text": "OK, I will!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima dedi?",
+              "ru": "Что сказал Сэм?",
+              "en": "What did Sam say?"
+            },
+            "choices": [
+              "OK, I will!",
+              "No, I won't!",
+              "How many?"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Biz toza boʻlishimiz kerak.",
+        "ru": "Верно? Мы должны быть чистыми.",
+        "en": "Is this right? We should be clean."
+      },
+      "hint": {
+        "uz": "Yuvinish — toza boʻlish.",
+        "ru": "Мыться — быть чистым.",
+        "en": "Washing keeps us clean."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Toza boʻlamiz.",
+        "ru": "Верно! Мы чистые.",
+        "en": "Right! We are clean."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🚿",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toza boʻlish usullarini belgila!",
+        "ru": "Отметь способы быть чистым!",
+        "en": "Tap the ways to be clean!"
+      },
+      "hint": {
+        "uz": "Dush, vanna, qoʻl yuvish.",
+        "ru": "Душ, ванна, мытьё рук.",
+        "en": "Shower, bath, wash hands."
+      },
+      "explanation": {
+        "uz": "Barakalla! Dush, vanna, qoʻl yuvish — tozalik!",
+        "ru": "Молодец! Душ, ванна, мытьё рук — чистота!",
+        "en": "Great! Shower, bath, washing — cleanliness!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🚿",
+              "label": "shower",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🛁",
+              "label": "bath",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💧",
+              "label": "wash hands",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🗑️",
+              "label": "trash"
+            },
+            {
+              "id": "d1",
+              "emoji": "🍟",
+              "label": "fries"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qanday toza boʻlamiz? Dushni bos!",
+        "ru": "Как стать чистым? Нажми душ!",
+        "en": "How do we get clean? Tap the shower!"
+      },
+      "hint": {
+        "uz": "Suv bilan yuvinamiz.",
+        "ru": "Моемся водой.",
+        "en": "We wash with water."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 🚿 — dush.",
+        "ru": "Верно! 🚿 — душ.",
+        "en": "Right! 🚿 shower!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🚿",
+              "label": "shower",
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bolaning qoʻli tozami?",
+        "ru": "Послушай. Руки ребёнка чистые?",
+        "en": "Listen. Are the child's hands clean?"
+      },
+      "hint": {
+        "uz": "«Yes! I washed them».",
+        "ru": "«Yes! I washed them».",
+        "en": "\"Yes! I washed them.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes! I washed them!»",
+        "ru": "Верно! «Yes! I washed them!»",
+        "en": "Right! \"Yes! I washed them!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "Are your hands clean?",
+              "audio": {
+                "key": "ing33-q6-a",
+                "text": "Are your hands clean?",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes! I washed them!",
+              "audio": {
+                "key": "ing33-q6-b",
+                "text": "Yes! I washed them!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "No, it isn't!",
+              "Yes! I washed them!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni ajrat: toza yoki kir!",
+        "ru": "Разложи: чистое или грязное!",
+        "en": "Sort them: clean or dirty!"
+      },
+      "hint": {
+        "uz": "Yuvinish — toza.",
+        "ru": "Мытьё — чистое.",
+        "en": "Washing — clean."
+      },
+      "explanation": {
+        "uz": "Barakalla! Tozalik yaxshi.",
+        "ru": "Молодец! Чистота — хорошо.",
+        "en": "Great! Being clean is good."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "c",
+              "label": {
+                "uz": "Clean",
+                "ru": "Чистое",
+                "en": "Clean"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "Dirty",
+                "ru": "Грязное",
+                "en": "Dirty"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🚿",
+              "label": "shower",
+              "bin": "c"
+            },
+            {
+              "emoji": "🛁",
+              "label": "bath",
+              "bin": "c"
+            },
+            {
+              "emoji": "💧",
+              "label": "wash",
+              "bin": "c"
+            },
+            {
+              "emoji": "🗑️",
+              "label": "trash",
+              "bin": "d"
+            },
+            {
+              "emoji": "🐷",
+              "label": "mud",
+              "bin": "d"
+            },
+            {
+              "emoji": "🐛",
+              "label": "bug",
+              "bin": "d"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Kir qoʻl — toza qoʻl. ✋",
+        "ru": "Верно? Грязные руки — чистые руки. ✋",
+        "en": "Is this right? Dirty hands are clean hands. ✋"
+      },
+      "hint": {
+        "uz": "Kir — toza emas.",
+        "ru": "Грязное — не чистое.",
+        "en": "Dirty is not clean."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Kir qoʻlni yuvish kerak.",
+        "ru": "Неверно! Грязные руки надо мыть.",
+        "en": "False! Wash dirty hands."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "✋",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, tozalik narsalarini juftla!",
+        "ru": "Открывай карточки: вещи чистоты!",
+        "en": "Flip the cards: match the clean things!"
+      },
+      "hint": {
+        "uz": "shower 🚿, bath 🛁, water 💧.",
+        "ru": "shower 🚿, bath 🛁, water 💧.",
+        "en": "shower 🚿, bath 🛁, water 💧."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🚿"
+              },
+              "b": {
+                "label": "shower"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🛁"
+              },
+              "b": {
+                "label": "bath"
+              }
+            },
+            {
+              "a": {
+                "emoji": "💧"
+              },
+              "b": {
+                "label": "water"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hikoyaning qadriyati nima?",
+        "ru": "Какая ценность у истории?",
+        "en": "What is the value of the story?"
+      },
+      "hint": {
+        "uz": "Yuvinish haqida.",
+        "ru": "О чистоте.",
+        "en": "About cleanliness."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Be clean — toza boʻl.",
+        "ru": "Верно! Be clean — будь чистым.",
+        "en": "Right! Be clean!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "be clean\ntoza boʻl",
+              "ru": "be clean\nбудь чистым",
+              "en": "be clean"
+            },
+            {
+              "uz": "be dirty\niflos boʻl",
+              "ru": "be dirty\nбудь грязным",
+              "en": "be dirty"
+            },
+            {
+              "uz": "be lazy\ndangasa boʻl",
+              "ru": "be lazy\nбудь ленивым",
+              "en": "be lazy"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "topicId": "g1-alifbe-13",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🌷👅🌳",
+  "title": {
+    "uz": "«L l» harfi",
+    "ru": "Буква «L l»",
+    "en": "The letter “L l”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «L l». U undosh tovush. Uni aytganda til tanglayga tegadi, havo yonlardan chiqadi. «L» bilan: lola, til, tol, ilon. Endi «til» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «L l». Это согласный звук. Язык касается нёба, воздух выходит по бокам. Слова: lola, til, tol, ilon. Теперь мы можем прочитать и составить слово «til»!",
+    "en": "Today's letter is “L l”. It is a consonant. The tongue touches the palate and air flows around the sides. Words: lola, til, tol, ilon. Now we can read and build the word “til”!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«L» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «L»!", "en": "Find the word that starts with “L”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: l-l-lola.", "ru": "Протяни начало: л-л-lola.", "en": "Stretch the start: l-l-lola." },
+      "explanation": { "uz": "«lola» «L» tovushi bilan boshlanadi.", "ru": "«lola» начинается со звука «L».", "en": "“lola” (tulip) starts with the sound “L”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "tulip", "emoji": "🌷", "label": { "uz": "lola", "ru": "lola", "en": "lola" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«L» harfini topib, hammasini bos!", "ru": "Найди букву «L» и нажми на все!", "en": "Find the letter “L” and tap them all!" },
+      "hint": { "uz": "Katta «L» ham, kichik «l» ham.", "ru": "Считаются «L» и «l».", "en": "Both “L” and “l” count." },
+      "explanation": { "uz": "«L» harfini topding!", "ru": "Ты нашёл букву «L»!", "en": "You found the letter “L”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "L", "cols": 3, "grid": ["L", "i", "l", "T", "L", "o", "l", "n", "L"] } }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🌷 «lola»da birinchi «l» qaysi katakchada?", "ru": "🌷 В какой клетке первый «l» в слове «lola»?", "en": "🌷 Which box has the first “l” in “lola”?" },
+      "hint": { "uz": "«lola» «l» bilan boshlanadi.", "ru": "«lola» начинается с «l».", "en": "“lola” starts with “l”." },
+      "explanation": { "uz": "«lola» «l» bilan boshlanadi — birinchi katak.", "ru": "«lola» начинается с «l» — первая клетка.", "en": "“lola” starts with “l” — the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🌷", "word": { "uz": "lola", "ru": "lola", "en": "lola" }, "sound": "l", "cells": ["l", "o", "l", "a"], "answer": 0 } }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "👅 «til»da «l» tovushi qaysi katakchada?", "ru": "👅 В какой клетке звук «l» в слове «til»?", "en": "👅 Which box has the “l” sound in “til”?" },
+      "hint": { "uz": "«til» «l» bilan tugaydi — oxirgi katak.", "ru": "«til» заканчивается на «l».", "en": "“til” ends with “l”." },
+      "explanation": { "uz": "«til»da «l» oxirida — uchinchi katakda.", "ru": "В «til» звук «l» в конце.", "en": "In “til” the “l” is at the end." },
+      "widget": { "type": "sound_position", "props": { "emoji": "👅", "word": { "uz": "til", "ru": "til", "en": "til" }, "sound": "l", "cells": ["t", "i", "l"], "answer": 2 } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«L» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «L»!", "en": "Tap the words that have the “L” sound!" },
+      "hint": { "uz": "lola, til, tol, ilon — «l» tovushi bor.", "ru": "lola, til, tol, ilon — есть звук «l».", "en": "lola, til, tol, ilon have the “l” sound." },
+      "explanation": { "uz": "lola, til, tol, ilon — «l» bor. ot, nonda yoʻq.", "ru": "lola, til, tol, ilon — есть «l». В ot, non нет.", "en": "lola, til, tol, ilon have “l”. ot, non do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "tulip", "emoji": "🌷", "label": { "uz": "lola", "ru": "lola", "en": "lola" }, "correct": true },
+            { "id": "tongue", "emoji": "👅", "label": { "uz": "til", "ru": "til", "en": "til" }, "correct": true },
+            { "id": "willow", "emoji": "🌳", "label": { "uz": "tol", "ru": "tol", "en": "tol" }, "correct": true },
+            { "id": "snake", "emoji": "🐍", "label": { "uz": "ilon", "ru": "ilon", "en": "ilon" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+            { "id": "bread", "emoji": "🍞", "label": { "uz": "non", "ru": "non", "en": "non" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🌷 «lola» soʻzining tovush chizmasini rangla!", "ru": "🌷 Раскрась схему звуков слова «lola»!", "en": "🌷 Colour the sound scheme of the word “lola”!" },
+      "hint": { "uz": "l — undosh, o — unli, l — undosh, a — unli.", "ru": "l — согласный, o — гласный, l — согласный, a — гласный.", "en": "l consonant, o vowel, l consonant, a vowel." },
+      "explanation": { "uz": "«lola»: l, o, l, a — undosh, unli, undosh, unli.", "ru": "«lola»: согласный, гласный, согласный, гласный.", "en": "“lola”: consonant, vowel, consonant, vowel." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🌷", "word": { "uz": "lola", "ru": "lola", "en": "lola" }, "scheme": ["c", "v", "c", "v"] } }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Harflardan «til» soʻzini tuz!", "ru": "Составь слово «til» из букв!", "en": "Build the word “til” from letters!" },
+      "hint": { "uz": "t — i — l tartibida bos.", "ru": "Нажимай по порядку: t — i — l.", "en": "Tap in order: t — i — l." },
+      "explanation": { "uz": "t + i + l = «til». Yangi harfimiz bilan soʻz yozdik!", "ru": "t + i + l = «til». С новой буквой составили слово!", "en": "t + i + l = “til” (tongue). We built a word with our new letter!" },
+      "widget": { "type": "build_word", "props": { "emoji": "👅", "word": "til", "label": { "uz": "til", "ru": "язык", "en": "tongue" } } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«L» — undosh tovush.", "ru": "«L» — согласный звук.", "en": "“L” is a consonant sound." },
+      "hint": { "uz": "«L»da til tanglayga tegadi.", "ru": "При «L» язык касается нёба.", "en": "For “L” the tongue touches the palate." },
+      "explanation": { "uz": "Toʻgʻri! «L» — undosh tovush.", "ru": "Верно! «L» — согласный.", "en": "True! “L” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Bir xil ikkita rasmni topib, ikkalasini bos!", "ru": "Найди две одинаковые картинки и нажми обе!", "en": "Find the two identical pictures and tap them both!" },
+      "hint": { "uz": "Lola ikkita.", "ru": "Тюльпан встречается дважды.", "en": "The tulip appears twice." },
+      "explanation": { "uz": "Ikkita 🌷 bir xil — bu lola.", "ru": "Два 🌷 одинаковы — это lola.", "en": "The two 🌷 are the same — “lola”." },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            { "id": "l1", "emoji": "🌷", "key": "lola" },
+            { "id": "tongue", "emoji": "👅", "key": "til" },
+            { "id": "l2", "emoji": "🌷", "key": "lola" },
+            { "id": "horse", "emoji": "🐎", "key": "ot" },
+            { "id": "apple", "emoji": "🍎", "key": "olma" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir rasmni soʻzi bilan ula!", "ru": "Соедини каждую картинку с её словом!", "en": "Match each picture to its word!" },
+      "hint": { "uz": "lola — 🌷, til — 👅, tol — 🌳, ilon — 🐍.", "ru": "lola — 🌷, til — 👅, tol — 🌳, ilon — 🐍.", "en": "lola — 🌷, til — 👅, tol — 🌳, ilon — 🐍." },
+      "explanation": { "uz": "Barcha soʻzlarda «l» tovushi bor.", "ru": "Во всех словах есть звук «l».", "en": "All the words have the “l” sound." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "emoji": "🌷" }, "right": { "label": { "uz": "lola", "ru": "lola", "en": "lola" } } },
+            { "left": { "emoji": "👅" }, "right": { "label": { "uz": "til", "ru": "til", "en": "til" } } },
+            { "left": { "emoji": "🌳" }, "right": { "label": { "uz": "tol", "ru": "tol", "en": "tol" } } },
+            { "left": { "emoji": "🐍" }, "right": { "label": { "uz": "ilon", "ru": "ilon", "en": "ilon" } } }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "topicId": "g1-alifbe-31",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤📻🦆🥁",
+  "title": { "uz": "«R r» harfi", "ru": "Буква «R r»", "en": "The letter “R r”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «R r». U undosh tovush. Uni aytganda til uchi milkka koʻtariladi va titraydi. «R» bilan: radio, oʻrdak, doira, nur. Endi «oʻrdak» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «R r». Это согласный звук. Кончик языка поднимается к дёснам и дрожит. Слова: radio, oʻrdak, doira, nur. Теперь мы можем прочитать слово «oʻrdak»!",
+    "en": "Today's letter is “R r”. It is a consonant. The tip of the tongue rises to the ridge and trembles. Words: radio, oʻrdak, doira, nur. Now we can read and build the word “oʻrdak”!"
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«R» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «R»!", "en": "Find the word that starts with “R”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: r-r-radio.", "ru": "Протяни начало: р-р-radio.", "en": "Stretch the start: r-r-radio." },
+      "explanation": { "uz": "«radio» «R» tovushi bilan boshlanadi.", "ru": "«radio» начинается со звука «R».", "en": "“radio” starts with the sound “R”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "radio", "emoji": "📻", "label": { "uz": "radio", "ru": "radio", "en": "radio" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«R» harfini topib, hammasini bos!", "ru": "Найди букву «R» и нажми на все!", "en": "Find the letter “R” and tap them all!" },
+      "hint": { "uz": "Katta «R» ham, kichik «r» ham.", "ru": "Считаются «R» и «r».", "en": "Both “R” and “r” count." },
+      "explanation": { "uz": "«R» harfini topding!", "ru": "Ты нашёл букву «R»!", "en": "You found the letter “R”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "R", "cols": 3, "grid": ["R", "o", "r", "B", "R", "a", "r", "k", "R"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "📻 «radio»da «r» tovushi qaysi katakchada?", "ru": "📻 В какой клетке звук «r» в слове «radio»?", "en": "📻 Which box has the “r” sound in “radio”?" },
+      "hint": { "uz": "«radio» «r» bilan boshlanadi.", "ru": "«radio» начинается с «r».", "en": "“radio” starts with “r”." },
+      "explanation": { "uz": "«radio»da «r» — birinchi katakda.", "ru": "В «radio» звук «r» — первая клетка.", "en": "In “radio” the “r” is in the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "📻", "word": { "uz": "radio", "ru": "radio", "en": "radio" }, "sound": "r", "cells": ["r", "a", "d", "i", "o"], "answer": 0 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "📻 «radio» soʻzining tovush chizmasini rangla!", "ru": "📻 Раскрась схему звуков слова «radio»!", "en": "📻 Colour the sound scheme of “radio”!" },
+      "hint": { "uz": "r — undosh, a — unli, d — undosh, i — unli, o — unli.", "ru": "r — согл., a — глас., d — согл., i — глас., o — глас.", "en": "r consonant, a vowel, d consonant, i vowel, o vowel." },
+      "explanation": { "uz": "«radio»: r, a, d, i, o — undosh, unli, undosh, unli, unli.", "ru": "«radio»: согл., глас., согл., глас., глас.", "en": "“radio”: consonant, vowel, consonant, vowel, vowel." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "📻", "word": { "uz": "radio", "ru": "radio", "en": "radio" }, "scheme": ["c", "v", "c", "v", "v"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«R» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «R»!", "en": "Tap the words that have the “R” sound!" },
+      "hint": { "uz": "radio, oʻrdak, doira — «r» tovushi bor.", "ru": "radio, oʻrdak, doira — есть звук «r».", "en": "radio, oʻrdak, doira have the “r” sound." },
+      "explanation": { "uz": "radio, oʻrdak, doira — «r» bor. ot, olmada yoʻq.", "ru": "radio, oʻrdak, doira — есть «r». В ot, olma нет.", "en": "radio, oʻrdak, doira have “r”. ot, olma do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "radio", "emoji": "📻", "label": { "uz": "radio", "ru": "radio", "en": "radio" }, "correct": true },
+        { "id": "duck", "emoji": "🦆", "label": { "uz": "oʻrdak", "ru": "oʻrdak", "en": "oʻrdak" }, "correct": true },
+        { "id": "drum", "emoji": "🥁", "label": { "uz": "doira", "ru": "doira", "en": "doira" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🦆 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!", "ru": "🦆 Прочитай и нажми верно написанное слово!", "en": "🦆 Read and tap the correctly spelled word!" },
+      "hint": { "uz": "Soʻz «oʻ» bilan boshlanadi: oʻr-dak.", "ru": "Слово начинается с «oʻ»: oʻr-dak.", "en": "The word starts with “oʻ”: oʻr-dak." },
+      "explanation": { "uz": "Toʻgʻri yozilishi — «oʻrdak».", "ru": "Верное написание — «oʻrdak».", "en": "The correct spelling is “oʻrdak”." },
+      "widget": { "type": "read_word", "props": { "emoji": "🦆", "options": [
+        { "id": "ok", "word": "oʻrdak", "correct": true },
+        { "id": "w1", "word": "urdak" },
+        { "id": "w2", "word": "oʻrdaq" }
+      ] } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «oʻrdak» soʻzini tuz!", "ru": "Составь слово «oʻrdak» из букв!", "en": "Build the word “oʻrdak” from letters!" },
+      "hint": { "uz": "oʻ — r — d — a — k tartibida bos.", "ru": "Нажимай: oʻ — r — d — a — k.", "en": "Tap in order: oʻ — r — d — a — k." },
+      "explanation": { "uz": "oʻ + r + d + a + k = «oʻrdak».", "ru": "oʻ + r + d + a + k = «oʻrdak».", "en": "oʻ + r + d + a + k = “oʻrdak” (duck)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🦆", "word": "oʻrdak", "letters": ["oʻ", "r", "d", "a", "k"], "label": { "uz": "oʻrdak", "ru": "утка", "en": "duck" } } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«R» — undosh tovush.", "ru": "«R» — согласный звук.", "en": "“R” is a consonant sound." },
+      "hint": { "uz": "«R»da til uchi titraydi.", "ru": "При «R» дрожит кончик языка.", "en": "For “R” the tongue tip trembles." },
+      "explanation": { "uz": "Toʻgʻri! «R» — undosh tovush.", "ru": "Верно! «R» — согласный.", "en": "True! “R” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "📻 «radio» soʻzini boʻgʻinlab qarsak chal!", "ru": "📻 Похлопай слово «radio» по слогам!", "en": "📻 Clap the word “radio” by syllables!" },
+      "hint": { "uz": "ra-di-o — uch marta qarsak.", "ru": "ra-di-o — три хлопка.", "en": "ra-di-o — three claps." },
+      "explanation": { "uz": "«radio» = ra-di-o, uch boʻgʻin.", "ru": "«radio» = ra-di-o, три слога.", "en": "“radio” = ra-di-o, three syllables." },
+      "widget": { "type": "syllable_clap", "props": { "emoji": "📻", "word": { "uz": "radio", "ru": "radio", "en": "radio" }, "syllables": 3 } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«R» tovushini aytganda til uchi nima qiladi?", "ru": "Что делает кончик языка при звуке «R»?", "en": "What does the tongue tip do when saying “R”?" },
+      "hint": { "uz": "«R-r-r» deb ayt.", "ru": "Скажи «р-р-р».", "en": "Say “r-r-r”." },
+      "explanation": { "uz": "«R»da til uchi titraydi.", "ru": "При «R» кончик языка дрожит.", "en": "For “R” the tongue tip trembles." },
+      "widget": { "type": "mcq", "props": { "choices": [{ "uz": "titraydi", "ru": "дрожит", "en": "trembles" }, { "uz": "tinch turadi", "ru": "не двигается", "en": "stays still" }, { "uz": "yopiladi", "ru": "закрывается", "en": "closes" }], "answerIndex": 0 } }
+    }
+  ]
+}

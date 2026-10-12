@@ -1,0 +1,156 @@
+{
+  "topicId": "g1-oqish-43",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "💬✨📖",
+  "title": {
+    "uz": "Ajoyib soʻzlar",
+    "ru": "Удивительные слова",
+    "en": "Wonderful words"
+  },
+  "recall": {
+    "uz": "«Qoʻl» soʻzi ishtirok etgan iboralar haqidagi sheʼrni tinglab oʻqiymiz va ularning maʼnosini topamiz.",
+    "ru": "Слушаем стихотворение о выражениях со словом «рука» и находим их значения.",
+    "en": "We read a poem about idioms with the word “hand” and find out what they mean."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Qoʻllaringiz qanaqa?",
+        "variant": "poem",
+        "audio": "g1-oqish-43-q1",
+        "lines": [
+          "Saxiy odam boʻlsa gar,",
+          "«Ochiqqoʻl», deb aytamiz.",
+          "Hunari koʻp bolani",
+          "«Ikki qoʻli gul», deymiz.",
+          "",
+          "Qattiq tarbiyalasa,",
+          "Onani «qattiqqoʻl» deymiz.",
+          "Mazza ovqat pishirsa,",
+          "«Qoʻli shirin», deb kulamiz."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Sheʼrda qaysi soʻz koʻp takrorlanadi?", "ru": "Какое слово часто повторяется в стихотворении?", "en": "Which word repeats often in the poem?" },
+      "explanation": { "uz": "Sheʼr «qoʻl» soʻzi bilan tuzilgan koʻchma maʼnoli iboralar haqida.", "ru": "Стихотворение о переносных выражениях со словом «рука».", "en": "The poem is about figurative idioms built with the word “hand”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "ochiqqoʻl", "right": "saxiy" },
+        { "left": "ikki qoʻli gul", "right": "hunarli, epchil" },
+        { "left": "qattiqqoʻl", "right": "talabchan" }
+      ] } },
+      "prompt": { "uz": "Iborani maʼnosiga ula!", "ru": "Соедини выражение с его значением!", "en": "Match each idiom to its meaning!" },
+      "hint": { "uz": "«ochiqqoʻl» — qoʻli ochiq, saxiy odam.", "ru": "«ochiqqoʻl» — щедрый человек.", "en": "“ochiqqoʻl” means a generous person." },
+      "explanation": { "uz": "ochiqqoʻl = saxiy; ikki qoʻli gul = hunarli; qattiqqoʻl = talabchan.", "ru": "ochiqqoʻl = щедрый; ikki qoʻli gul = умелый; qattiqqoʻl = строгий.", "en": "ochiqqoʻl = generous; ikki qoʻli gul = skilful; qattiqqoʻl = strict." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "«Qoʻli shirin» — mazali ovqat pishiradigan odam haqida.", "ru": "«qoʻli shirin» — о том, кто вкусно готовит.", "en": "“qoʻli shirin” is said of someone who cooks deliciously." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda mazza ovqat pishirsa «qoʻli shirin» deyilgan.", "ru": "В стихотворении так говорят о вкусной готовке.", "en": "The poem uses it for cooking tasty food." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Mazza ovqat pishirsa nima deymiz?", "ru": "Как говорят о вкусной готовке?", "en": "What do we say about tasty cooking?" },
+      "explanation": { "uz": "Toʻgʻri: «qoʻli shirin» — mazali pishiradigan odam.", "ru": "Верно: «qoʻli shirin» — вкусно готовит.", "en": "True: “qoʻli shirin” means a good cook." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrda futbol oʻyini haqida gapiriladi.", "ru": "В стихотворении говорится о футболе.", "en": "The poem talks about a football game." },
+        "answer": "ng",
+        "why": { "uz": "Sheʼr «qoʻl» iboralari haqida; futbol tilga olinmagan.", "ru": "Стихотворение о выражениях с «рукой»; футбол не упоминается.", "en": "The poem is about “hand” idioms; football is not mentioned." }
+      } },
+      "prompt": { "uz": "Matnga koʻra bu fikr qanaqa?", "ru": "Каково это утверждение по тексту?", "en": "According to the text, what is this statement?" },
+      "hint": { "uz": "Sheʼr nima haqida?", "ru": "О чём стихотворение?", "en": "What is the poem about?" },
+      "explanation": { "uz": "«Matnda yoʻq»: futbol haqida gap yoʻq.", "ru": "«Не сказано»: о футболе речи нет.", "en": "“Not given”: football is not mentioned." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "ochiqqoʻl", "match": true },
+        { "text": "qoʻli gul", "match": true },
+        { "text": "qattiqqoʻl", "match": true },
+        { "text": "sovuq suv", "match": false },
+        { "text": "baland togʻ", "match": false }
+      ] } },
+      "prompt": { "uz": "«Qoʻl» ishtirok etgan iboralarni bos!", "ru": "Нажми выражения со словом «рука»!", "en": "Tap the idioms that use the word “hand”!" },
+      "hint": { "uz": "Iborada «qoʻl» soʻzi boʻlishi kerak.", "ru": "В выражении должно быть слово «рука».", "en": "The idiom must contain the word “hand”." },
+      "explanation": { "uz": "ochiqqoʻl, qoʻli gul, qattiqqoʻl — «qoʻl» iboralari; qolganlari — oddiy soʻzlar.", "ru": "ochiqqoʻl, qoʻli gul, qattiqqoʻl — идиомы; остальные — обычные слова.", "en": "ochiqqoʻl, qoʻli gul, qattiqqoʻl are idioms; the rest are plain words." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Qoʻrqmasdan, dadil ish qiladigan odam", "ru": "Тот, кто действует смело, без страха", "en": "Someone who acts bravely, without fear" },
+        { "uz": "Doim uxlaydigan odam", "ru": "Тот, кто всё время спит", "en": "Someone who always sleeps" },
+        { "uz": "Hech narsa qilmaydigan odam", "ru": "Тот, кто ничего не делает", "en": "Someone who does nothing" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "«Qoʻli botir» iborasi qanday odamga aytiladi?", "ru": "О ком говорят «qoʻli botir»?", "en": "Whom do we call “qoʻli botir” (brave-handed)?" },
+      "hint": { "uz": "«Botir» — jasur, dadil degani.", "ru": "«Botir» — смелый.", "en": "“Botir” means brave." },
+      "explanation": { "uz": "«Qoʻli botir» — qoʻrqmasdan, dadil ish qiladigan odam.", "ru": "«qoʻli botir» — тот, кто действует смело.", "en": "“qoʻli botir” means someone who works boldly and without fear." },
+      "openEnd": { "uz": "Oila aʼzolaringning qoʻllari haqida qanday ibora aytasan?", "ru": "Какое выражение ты скажешь о руках членов семьи?", "en": "What “hand” idiom would you use for your family members?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Saxiy odamning aksi — ", "after": ".", "choices": ["ziqna", "mehribon", "dono"], "answer": "ziqna", "emoji": "💰", "clue": { "uz": "Qarama-qarshi maʼnoli soʻz", "ru": "Слово-антоним", "en": "An antonym" } } },
+      "prompt": { "uz": "Qarama-qarshi maʼnoli soʻzni tanla!", "ru": "Выбери слово-антоним!", "en": "Choose the opposite word!" },
+      "hint": { "uz": "Saxiy — hamma narsani ulashadi; aksi — ...", "ru": "Щедрый делится всем; наоборот — ...", "en": "Generous shares everything; the opposite is …" },
+      "explanation": { "uz": "Saxiyning aksi — ziqna (baxil), hech narsa bermaydigan.", "ru": "Антоним щедрого — скупой.", "en": "The opposite of generous is stingy." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "saxiy" },
+        { "text": "ochiqqoʻl" },
+        { "text": "himmatli" },
+        { "text": "ziqna", "odd": true }
+      ], "clue": { "uz": "Qaysi biri boshqalarga qarama-qarshi?", "ru": "Что противоположно остальным?", "en": "Which one is the opposite of the others?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi bir maʼnoda, biri esa aksi.", "ru": "Три об одном, одно — наоборот.", "en": "Three mean the same, one is the opposite." },
+      "explanation": { "uz": "Ziqna — baxil; saxiy, ochiqqoʻl, himmatli esa bir maʼnoda.", "ru": "Скупой — противоположность; щедрый, ochiqqoʻl, великодушный — синонимы.", "en": "Stingy is the opposite; generous, open-handed, big-hearted mean the same." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_sequence", "props": {
+        "letters": ["o", "ch", "i", "q", "q", "oʻ", "l"],
+        "words": [7],
+        "phrase": "ochiqqoʻl",
+        "meaning": { "uz": "Ochiqqoʻl — saxiy, qoʻli ochiq odam.", "ru": "ochiqqoʻl — щедрый человек.", "en": "ochiqqoʻl — a generous, open-handed person." }
+      } },
+      "prompt": { "uz": "Harflarni toʻgʻri ketma-ketlikda bosib, iborani oʻqing!", "ru": "Нажимай буквы по порядку и прочитай выражение!", "en": "Tap the letters in the right order to read the idiom!" },
+      "hint": { "uz": "Saxiy odam haqidagi ibora — «o» harfidan boshlanadi.", "ru": "Выражение о щедром человеке — начинается с «o».", "en": "The idiom for a generous person starts with “o”." },
+      "explanation": { "uz": "o-ch-i-q-q-oʻ-l → ochiqqoʻl (saxiy).", "ru": "o-ch-i-q-q-oʻ-l → ochiqqoʻl (щедрый).", "en": "o-ch-i-q-q-oʻ-l → ochiqqoʻl (generous)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "hunar", "syllables": ["hu", "nar"], "emoji": "🛠️", "clue": { "uz": "Qoʻli gul odamning egaligi", "ru": "То, чем владеет умелец", "en": "What a skilful person has" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "hu + nar = ?", "ru": "hu + nar = ?", "en": "hu + nar = ?" },
+      "explanation": { "uz": "hu-nar → hunar. Qoʻl bilan qilinadigan mahorat.", "ru": "hu-nar → hunar (ремесло).", "en": "hu-nar → hunar (a craft, skill)." }
+    }
+  ]
+}

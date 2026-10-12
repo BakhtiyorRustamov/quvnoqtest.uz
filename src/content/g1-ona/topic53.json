@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-53",
+  "subjectKey": "g1-ona",
+  "emojis": "🔢🥇✍️",
+  "title": {
+    "uz": "Sanoq, miqdor va tartib",
+    "ru": "Счёт, количество и порядок",
+    "en": "Count, quantity and order"
+  },
+  "recall": {
+    "uz": "Sonni bildirgan soʻzlar uch xil boʻladi. Sanoqni bildirgan soʻzlar «Necha?» (besh baho), miqdorni bildirgan soʻzlar «Nechta?», «Qancha?» (sakkizta kitob), tartibni bildirgan soʻzlar «Nechanchi?» (oltinchi qavat) soʻrogʻiga javob boʻladi.",
+    "ru": "Слова-числа бывают трёх видов. Счёт отвечает на «Сколько (по счёту)?» (besh baho), количество — на «Сколько штук?» (sakkizta kitob), порядок — на «Который?» (oltinchi qavat).",
+    "en": "Number words are of three kinds. Count words answer “How many?” (besh baho), quantity words answer “How many items?” (sakkizta kitob), and order words answer “Which one (in order)?” (oltinchi qavat)."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "besh", "right": "Necha?" }, { "left": "sakkizta", "right": "Nechta?" }, { "left": "oltinchi", "right": "Nechanchi?" } ] } },
+      "prompt": { "uz": "Son soʻzini oʻz soʻrogʻiga ula!", "ru": "Соедини слово-число с его вопросом!", "en": "Match each number word to its question!" },
+      "hint": { "uz": "oltinchi — tartib — Nechanchi?", "ru": "oltinchi — порядок — Который?", "en": "oltinchi is order — Which one?" },
+      "explanation": { "uz": "besh — Necha?, sakkizta — Nechta?, oltinchi — Nechanchi?", "ru": "besh — сколько?, sakkizta — сколько штук?, oltinchi — который?", "en": "besh — how many?, sakkizta — how many items?, oltinchi — which one?" }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "besh", "bin": "sanoq" }, { "id": "b", "label": "oʻn", "bin": "sanoq" }, { "id": "c", "label": "uchta", "bin": "miqdor" }, { "id": "d", "label": "oʻnta", "bin": "miqdor" }, { "id": "e", "label": "birinchi", "bin": "tartib" }, { "id": "f", "label": "oltinchi", "bin": "tartib" } ], "bins": [ { "id": "sanoq", "label": "Sanoq (Necha?)" }, { "id": "miqdor", "label": "Miqdor (Nechta?)" }, { "id": "tartib", "label": "Tartib (Nechanchi?)" } ] } },
+      "prompt": { "uz": "Son soʻzlarini turkumlarga ajrat!", "ru": "Раздели слова-числа по группам!", "en": "Sort the number words into groups!" },
+      "hint": { "uz": "-ta — miqdor, -inchi — tartib.", "ru": "-ta — количество, -inchi — порядок.", "en": "-ta is quantity, -inchi is order." },
+      "explanation": { "uz": "besh, oʻn — sanoq; uchta, oʻnta — miqdor; birinchi, oltinchi — tartib.", "ru": "besh, oʻn — счёт; uchta, oʻnta — количество; birinchi, oltinchi — порядок.", "en": "besh, oʻn — count; uchta, oʻnta — quantity; birinchi, oltinchi — order." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "bir", "right": "birinchi" }, { "left": "ikki", "right": "ikkinchi" }, { "left": "uch", "right": "uchinchi" }, { "left": "toʻrt", "right": "toʻrtinchi" } ] } },
+      "prompt": { "uz": "Sanoq sonini tartib soniga ula!", "ru": "Соедини число со его порядковым!", "en": "Match each count to its ordinal!" },
+      "hint": { "uz": "bir — birinchi, ikki — ikkinchi.", "ru": "один — первый, два — второй.", "en": "one — first, two — second." },
+      "explanation": { "uz": "-inchi qoʻshimchasi bilan tartib soni yasaladi.", "ru": "Порядковое образуется суффиксом -inchi.", "en": "The ordinal is formed with the suffix -inchi." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Biz ", "after": " sinfda oʻqiymiz.", "choices": ["birinchi", "bitta", "besh"], "answer": "birinchi", "emoji": "🏫", "clue": { "uz": "Nechanchi sinf?", "ru": "Который класс?", "en": "Which grade?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos son soʻzini qoʻy!", "ru": "Вставь подходящее слово-число!", "en": "Fill the gap with the right number word!" },
+      "hint": { "uz": "Tartibni bildirgan soʻz kerak (Nechanchi?).", "ru": "Нужно слово порядка (Который?).", "en": "You need an order word (Which one?)." },
+      "explanation": { "uz": "Biz birinchi sinfda oʻqiymiz. «Birinchi» — tartib soni.", "ru": "Мы учимся в первом классе. «Birinchi» — порядковое.", "en": "We study in the first grade. “Birinchi” is an ordinal." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Stolda ", "after": " olma bor.", "choices": ["uchta", "uchinchi", "uch"], "answer": "uchta", "emoji": "🍎", "clue": { "uz": "Nechta olma?", "ru": "Сколько яблок?", "en": "How many apples?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos son soʻzini qoʻy!", "ru": "Вставь подходящее слово-число!", "en": "Fill the gap with the right number word!" },
+      "hint": { "uz": "Narsa miqdori — -ta qoʻshimchasi bilan.", "ru": "Количество предметов — с суффиксом -ta.", "en": "The quantity of things uses the -ta suffix." },
+      "explanation": { "uz": "Stolda uchta olma bor. «Uchta» — miqdor soʻzi (Nechta?).", "ru": "На столе три яблока. «Uchta» — количество (Сколько штук?).", "en": "There are three apples on the table. “Uchta” is a quantity word." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "birinchi" }, { "text": "ikkinchi" }, { "text": "uchinchi" }, { "text": "besh", "odd": true } ], "clue": { "uz": "Tartib soʻzlari — bittasi sanoq", "ru": "Порядковые — одно из них счёт", "en": "Order words — one is a count" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Qaysi biri «Nechanchi?» soʻrogʻiga javob bermaydi?", "ru": "Какое не отвечает на «Который?»?", "en": "Which one does not answer “Which one?”?" },
+      "explanation": { "uz": "«Besh» — sanoq (Necha?), qolganlari tartib (Nechanchi?).", "ru": "«Besh» — счёт, остальные — порядковые.", "en": "“Besh” is a count; the rest are ordinals." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Dunyoning ", "after": " moʻjizasi bor.", "choices": ["yetti", "yettinchi", "yettita"], "answer": "yetti", "emoji": "🌍", "clue": { "uz": "Necha moʻjiza?", "ru": "Сколько чудес?", "en": "How many wonders?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos son soʻzini qoʻy!", "ru": "Вставь подходящее слово-число!", "en": "Fill the gap with the right number word!" },
+      "hint": { "uz": "«Dunyoning yetti moʻjizasi» — iborani esla.", "ru": "Вспомни выражение «семь чудес света».", "en": "Recall the phrase “the seven wonders of the world”." },
+      "explanation": { "uz": "Dunyoning yetti moʻjizasi. «Yetti» — sanoq soni.", "ru": "Семь чудес света. «Yetti» — счётное число.", "en": "The seven wonders of the world. “Yetti” is a count word." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "olti", "after": "", "choices": ["nchi", "ta", "lar"], "answer": "nchi", "emoji": "🏢", "clue": { "uz": "Tartib: Nechanchi qavat?", "ru": "Порядок: который этаж?", "en": "Order: which floor?" } } },
+      "prompt": { "uz": "Tartib qoʻshimchasini qoʻy!", "ru": "Добавь суффикс порядка!", "en": "Add the order suffix!" },
+      "hint": { "uz": "Tartib soni -nchi bilan tugaydi.", "ru": "Порядковое оканчивается на -nchi.", "en": "The ordinal ends in -nchi." },
+      "explanation": { "uz": "olti + nchi = «oltinchi» (Nechanchi qavat?).", "ru": "olti + nchi = «oltinchi» (который этаж?).", "en": "olti + nchi = “oltinchi” (which floor?)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["bi", "rin", "chi"], "emoji": "🥇", "clue": { "uz": "Tartib soʻzi (Nechanchi?)", "ru": "Порядковое (Который?)", "en": "An order word (Which one?)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan tartib soʻzini tuz!", "ru": "Собери порядковое слово из слогов!", "en": "Build the order word from syllables!" },
+      "hint": { "uz": "bi- … -rin- … -chi.", "ru": "bi- … -rin- … -chi.", "en": "bi- … -rin- … -chi." },
+      "explanation": { "uz": "«Birinchi» — tartib soni (Nechanchi?).", "ru": "«Birinchi» — порядковое (Который?).", "en": "“Birinchi” is an ordinal (Which one?)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "birinchi", "match": true }, { "text": "besh", "match": false }, { "text": "oltinchi", "match": true }, { "text": "uchta", "match": false }, { "text": "ikkinchi", "match": true }, { "text": "oʻn", "match": false } ] } },
+      "prompt": { "uz": "Tartibni bildirgan soʻzlarni bos!", "ru": "Нажми порядковые слова!", "en": "Tap the order words!" },
+      "hint": { "uz": "besh, oʻn — sanoq; uchta — miqdor.", "ru": "besh, oʻn — счёт; uchta — количество.", "en": "besh, oʻn are counts; uchta is quantity." },
+      "explanation": { "uz": "birinchi, oltinchi, ikkinchi — tartib soʻzlari (Nechanchi?).", "ru": "birinchi, oltinchi, ikkinchi — порядковые (Который?).", "en": "birinchi, oltinchi, ikkinchi are order words (Which one?)." }
+    }
+  ]
+}

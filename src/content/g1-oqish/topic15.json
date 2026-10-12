@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-oqish-15",
+  "subjectKey": "g1-oqish",
+  "emojis": "❄️🧠🏆",
+  "title": {
+    "uz": "Boʻlim yuzasidan takrorlash",
+    "ru": "Повторение по разделу",
+    "en": "Section review"
+  },
+  "recall": {
+    "uz": "Qish haqidagi boʻlimni yakunlaymiz! Bugun oʻqigan sheʼr va hikoyalarimizni eslaymiz: qish oylari, «kumush qish», qishki oʻyinlar, xavfsizlik qoidalari va oʻrgangan yangi soʻzlarimizni takrorlaymiz.",
+    "ru": "Завершаем раздел о зиме! Сегодня вспоминаем прочитанные стихи и рассказы: зимние месяцы, «серебряную зиму», зимние игры, правила безопасности и новые слова.",
+    "en": "We finish the winter section! Today we recall the poems and stories we read: the winter months, the “silver winter”, winter games, safety rules, and our new words."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Qor parchalari", "ru": "Снежинки", "en": "Snowflakes" }, { "uz": "Kapalaklar", "ru": "Бабочки", "en": "Butterflies" }, { "uz": "Barglar", "ru": "Листья", "en": "Leaves" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Topishmoq: qishda osmonda oq «kapalakchalar» uchadi, kaftga qoʻnsa — yoʻq boʻlib qoladi. Bu nima?", "ru": "Загадка: зимой в небе летают белые «бабочки», сядут на ладонь — и исчезают. Что это?", "en": "Riddle: in winter, white “butterflies” fly in the sky, but land on your palm and vanish. What are they?" },
+      "hint": { "uz": "Kaftda ular erib ketadi.", "ru": "На ладони они тают.", "en": "They melt on your palm." },
+      "explanation": { "uz": "Bu qor parchalari: ular kapalakdek uchadi, issiq kaftga qoʻnsa erib, yoʻqoladi.", "ru": "Это снежинки: они летают, как бабочки, а на тёплой ладони тают.", "en": "They are snowflakes: they fly like butterflies and melt on a warm palm." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Dekabr, yanvar, fevral", "ru": "Декабрь, январь, февраль", "en": "December, January, February" }, { "uz": "Mart, aprel, may", "ru": "Март, апрель, май", "en": "March, April, May" }, { "uz": "Iyun, iyul, avgust", "ru": "Июнь, июль, август", "en": "June, July, August" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Qish fasli qaysi oylardan iborat?", "ru": "Из каких месяцев состоит зима?", "en": "Which months make up winter?" },
+      "hint": { "uz": "«Kumushrang qish» matnini eslang.", "ru": "Вспомни текст о серебристой зиме.", "en": "Remember the text about the silvery winter." },
+      "explanation": { "uz": "Qish fasli dekabr, yanvar va fevral oylaridan iborat.", "ru": "Зима состоит из декабря, января и февраля.", "en": "Winter is made up of December, January, and February." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Qor mayda zarralardek yaltiragani uchun", "ru": "Потому что снег блестит, как серебро", "en": "Because snow sparkles like silver" }, { "uz": "Qishda kumush qazilgani uchun", "ru": "Потому что зимой добывают серебро", "en": "Because silver is mined in winter" }, { "uz": "Daraxtlar kumushdan boʻlgani uchun", "ru": "Потому что деревья из серебра", "en": "Because the trees are made of silver" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Nima uchun odamlar qishni «kumush qish» deyishadi?", "ru": "Почему люди называют зиму «серебряной»?", "en": "Why do people call winter the “silver winter”?" },
+      "hint": { "uz": "Quyoshda qor qanday koʻrinadi?", "ru": "Как выглядит снег на солнце?", "en": "How does snow look in the sun?" },
+      "explanation": { "uz": "Qor mayda zarralardek turli rangda yaltiraydi, shuning uchun qishni «kumush qish» deyishadi.", "ru": "Снег сверкает, как серебряные искорки, поэтому зиму называют «серебряной».", "en": "Snow sparkles like tiny silver specks, so people call winter the “silver winter”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "qor", "match": true }, { "text": "ayoz", "match": true }, { "text": "chana", "match": true }, { "text": "tarvuz", "match": false }, { "text": "choʻmilish", "match": false } ] } },
+      "prompt": { "uz": "Qishga oid soʻzlarni bos!", "ru": "Нажми слова, связанные с зимой!", "en": "Tap the winter words!" },
+      "hint": { "uz": "Qishda nima yogʻadi, qishda nimada uchamiz?", "ru": "Что идёт зимой и на чём катаются?", "en": "What falls in winter, and what do we ride on?" },
+      "explanation": { "uz": "Qor, ayoz va chana — qishga oid; tarvuz va choʻmilish — yozga oid soʻzlar.", "ru": "Снег, мороз и санки — зимние слова; арбуз и купание — летние.", "en": "Snow, frost, and sledge are winter words; watermelon and swimming belong to summer." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "libos", "right": "kiyim" }, { "left": "yaxmalak", "right": "sirpanchiq" }, { "left": "izza boʻlish", "right": "uyalish" } ] } },
+      "prompt": { "uz": "Boʻlimda oʻrgangan soʻzlaringizni maʼnosiga ula!", "ru": "Соедини изученные слова с их значениями!", "en": "Match the words you learned to their meanings!" },
+      "hint": { "uz": "«Olamga oq libos» — qor haqidagi sheʼrni eslang.", "ru": "Вспомни стихотворение про белый наряд земли.", "en": "Remember the poem about the world's white robe." },
+      "explanation": { "uz": "libos = kiyim; yaxmalak = sirpanchiq; izza boʻlish = uyalish. Bularni boʻlim darslarida oʻrgandik.", "ru": "libos = одежда; yaxmalak = каток, скользкое место; izza boʻlish = стыдиться.", "en": "libos = clothing; yaxmalak = a slippery ice patch; izza boʻlish = to feel ashamed." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [ { "text": "chana" }, { "text": "konki" }, { "text": "qorboʻron" }, { "text": "choʻmilish", "odd": true } ], "clue": { "uz": "Qishki oʻyinlar", "ru": "Зимние игры", "en": "Winter games" }, "emoji": "🛷" } },
+      "prompt": { "uz": "Qaysi soʻz qishki oʻyinlarga mos EMAS?", "ru": "Какое слово НЕ относится к зимним играм?", "en": "Which word is NOT a winter game?" },
+      "hint": { "uz": "Uchtasi qishda, bittasi yozda qilinadi.", "ru": "Три — зимой, одно — летом.", "en": "Three happen in winter, one in summer." },
+      "explanation": { "uz": "Chana, konki va qorboʻron — qishki oʻyinlar; choʻmilish esa yozgi mashgʻulot.", "ru": "Санки, коньки и снежки — зимние игры; купание — летнее занятие.", "en": "Sledging, skating, and snowball fights are winter games; swimming is a summer activity." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "Muzli yoʻlda sekin yuraman", "match": true }, { "text": "Issiq kiyinaman", "match": true }, { "text": "Yoʻl ustida yaxmalak otaman", "match": false }, { "text": "Muz qoplagan hovuzga chiqaman", "match": false } ] } },
+      "prompt": { "uz": "Qishdagi TOʻGʻRI xavfsizlik qoidalarini bos!", "ru": "Нажми ПРАВИЛЬНЫЕ правила зимней безопасности!", "en": "Tap the CORRECT winter safety rules!" },
+      "hint": { "uz": "Qaysi ishlar xavfli, qaysilari xavfsiz?", "ru": "Какие действия опасны, а какие безопасны?", "en": "Which actions are dangerous and which are safe?" },
+      "explanation": { "uz": "Muzli yoʻlda sekin yurish va issiq kiyinish toʻgʻri; yoʻlda yaxmalak otish va muzli hovuzga chiqish xavfli.", "ru": "Идти медленно по льду и тепло одеваться — правильно; кататься на дороге и выходить на лёд пруда — опасно.", "en": "Walking slowly on ice and dressing warmly are right; sliding on the road and stepping onto a frozen pond are dangerous." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "qo", "after": "", "choices": ["p", "l", "sh"], "answer": "p", "emoji": "🧺", "clue": { "uz": "«qor» soʻzining oxirgi harfini almashtir — narsa solinadigan xalta chiqsin", "ru": "Замени последнюю букву слова «qor» — получится мешок", "en": "Change the last letter of “qor” to get a sack" } } },
+      "prompt": { "uz": "«Qor» soʻzidan yana yangi soʻz hosil qil!", "ru": "Сделай из слова «qor» ещё одно новое слово!", "en": "Make another new word from “qor”!" },
+      "hint": { "uz": "Unga kartoshka ham solsa boʻladi.", "ru": "В него можно насыпать картошку.", "en": "You can put potatoes in it." },
+      "explanation": { "uz": "r → p: qor → qop. Bitta harf almashsa, butunlay yangi soʻz hosil boʻladi.", "ru": "r → p: qor → qop (мешок). Одна буква — и слово новое.", "en": "r → p: qor → qop (a sack). One letter makes a brand-new word." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Qishda daraxtlar oppoq ", "after": " kiyadi.", "choices": ["libos", "poyabzal", "qalpoq"], "answer": "libos", "emoji": "🌨️", "clue": { "uz": "Boʻlimda oʻrgangan soʻzimiz", "ru": "Слово, изученное в разделе", "en": "A word we learned in this section" } } },
+      "prompt": { "uz": "Boʻsh joyga mos soʻzni qoʻy!", "ru": "Вставь подходящее слово!", "en": "Fill the gap with the right word!" },
+      "hint": { "uz": "Bu soʻz «kiyim» degan maʼnoni bildiradi.", "ru": "Это слово означает «одежда».", "en": "This word means “clothing”." },
+      "explanation": { "uz": "Qishda daraxtlar oppoq libos kiyadi — qor ularni kiyimdek oʻraydi.", "ru": "Зимой деревья надевают белый наряд — снег укрывает их, как одежда.", "en": "In winter the trees put on a white robe — snow wraps them like clothing." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Qish", "fasli", "uch", "oydan", "iborat."], "emoji": "📅", "clue": { "uz": "Boʻlimdan bilib olgan faktimiz", "ru": "Факт, который мы узнали в разделе", "en": "A fact we learned in this section" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Build the sentence from the words!" },
+      "hint": { "uz": "Gap «Qish» soʻzi bilan boshlanadi.", "ru": "Предложение начинается со слова «Qish».", "en": "The sentence starts with “Qish”." },
+      "explanation": { "uz": "Qish fasli uch oydan iborat: dekabr, yanvar va fevral.", "ru": "Зима состоит из трёх месяцев: декабря, января и февраля.", "en": "Winter consists of three months: December, January, and February." }
+    }
+  ]
+}

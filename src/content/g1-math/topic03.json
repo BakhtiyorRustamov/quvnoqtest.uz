@@ -1,0 +1,303 @@
+{
+  "topicId": "g1-math-03",
+  "subjectKey": "g1-math",
+  "emojis": "⬅️⬆️➡️",
+  "title": {
+    "uz": "Buyumlarning oʻrni",
+    "ru": "Где находятся предметы",
+    "en": "Where objects are"
+  },
+  "recall": {
+    "uz": "Narsalar qayerda turishini aytamiz. Biri tepada, biri pastda. Biri chapda, biri oʻngda. Qatorda birinchi va oxirgini topamiz. Narsalarning oʻrnini shunday belgilaymiz.",
+    "ru": "Мы говорим, где находятся предметы. Один наверху, другой внизу. Один слева, другой справа. В ряду находим первый и последний. Так мы определяем расположение.",
+    "en": "We say where things are. One is on top, one is below. One is on the left, one is on the right. In a row we find the first and the last. That is how we tell position."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorda eng oʻngdagi shaklni bos!",
+        "ru": "Нажми на фигуру справа в ряду!",
+        "en": "Tap the shape on the right of the row!"
+      },
+      "options": [
+        { "id": "left", "art": { "kind": "circle", "color": "red" } },
+        { "id": "mid", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "right", "art": { "kind": "square", "color": "blue" } }
+      ],
+      "answer": ["right"],
+      "hint": {
+        "uz": "Oʻng tomon — qatorning oxirgi, eng chetidagi shakli.",
+        "ru": "Справа — это последняя фигура с краю ряда.",
+        "en": "The right side is the last shape at the end of the row."
+      },
+      "explanation": {
+        "uz": "Eng oʻngda koʻk kvadrat turardi. Qatorning oʻng cheti — oʻng tomon.",
+        "ru": "Справа стоял синий квадрат. Правый край ряда — это правая сторона.",
+        "en": "The blue square was on the right. The right edge of the row is the right side."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorda eng chapdagi shaklni bos!",
+        "ru": "Нажми на фигуру слева в ряду!",
+        "en": "Tap the shape on the left of the row!"
+      },
+      "options": [
+        { "id": "left", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "mid", "art": { "kind": "ball", "color": "orange" } },
+        { "id": "right", "art": { "kind": "fish", "color": "blue" } }
+      ],
+      "answer": ["left"],
+      "hint": {
+        "uz": "Chap tomon — qatorning boshidagi, birinchi shakli.",
+        "ru": "Слева — это первая фигура в начале ряда.",
+        "en": "The left side is the first shape at the start of the row."
+      },
+      "explanation": {
+        "uz": "Eng chapda yashil uchburchak turardi. Qatorning chap cheti — chap tomon.",
+        "ru": "Слева стоял зелёный треугольник. Левый край ряда — это левая сторона.",
+        "en": "The green triangle was on the left. The left edge of the row is the left side."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Oʻrtadagi shaklni bos!",
+        "ru": "Нажми на фигуру в середине!",
+        "en": "Tap the shape in the middle!"
+      },
+      "options": [
+        { "id": "left", "art": { "kind": "apple", "color": "red" } },
+        { "id": "mid", "art": { "kind": "sun", "color": "yellow" } },
+        { "id": "right", "art": { "kind": "kite", "color": "magenta" } }
+      ],
+      "answer": ["mid"],
+      "hint": {
+        "uz": "Oʻrta — chap bilan oʻng oraligʻidagi shakl.",
+        "ru": "Середина — это фигура между левой и правой.",
+        "en": "The middle is the shape between the left and the right."
+      },
+      "explanation": {
+        "uz": "Oʻrtada sariq quyosh turardi — chap va oʻng oraligʻida.",
+        "ru": "В середине было жёлтое солнце — между левой и правой.",
+        "en": "The yellow sun was in the middle — between the left and the right."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorni davom ettir: keyin nima keladi?",
+        "ru": "Продолжи ряд: что идёт дальше?",
+        "en": "Continue the row: what comes next?"
+      },
+      "sequence": [
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "orange" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "star", "color": "orange" },
+        { "kind": "circle", "color": "blue" }
+      ],
+      "options": [
+        { "id": "st", "art": { "kind": "star", "color": "orange" } },
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "sq", "art": { "kind": "square", "color": "green" } }
+      ],
+      "answer": ["st"],
+      "hint": {
+        "uz": "Doira, yulduz, doira, yulduz… ular navbat bilan keladi!",
+        "ru": "Круг, звезда, круг, звезда… они идут по очереди!",
+        "en": "Circle, star, circle, star… they take turns!"
+      },
+      "explanation": {
+        "uz": "Doiradan keyin doim yulduz keladi. Keyingi shakl — yulduz.",
+        "ru": "После круга всегда идёт звезда. Следующая фигура — звезда.",
+        "en": "After a circle there is always a star. The next shape is a star."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorning ikki chetidagi shakllarni belgila, soʻng «Tekshirish»ni bos!",
+        "ru": "Отметь фигуры на обоих краях ряда и нажми «Проверить»!",
+        "en": "Tap the shapes at both ends of the row, then press “Check”!"
+      },
+      "options": [
+        { "id": "end-left", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "mid", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "end-right", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["end-left", "end-right"],
+      "hint": {
+        "uz": "Chetlar — eng chap va eng oʻngdagi shakllar. Oʻrtadagini qoldir.",
+        "ru": "Края — это самая левая и самая правая фигуры. Среднюю не трогай.",
+        "en": "The ends are the leftmost and the rightmost shapes. Leave the middle one."
+      },
+      "explanation": {
+        "uz": "Chetlarda — chap va oʻngda — ikki yulduz turardi. Oʻrtadagi koptok chetda emas.",
+        "ru": "По краям — слева и справа — стояли две звезды. Мячик в середине не на краю.",
+        "en": "At the ends — left and right — were two stars. The ball in the middle is not at an end."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "drag_order",
+      "visualHint": "pulse_target",
+      "prompt": {
+        "uz": "Shakllarni chapdan oʻngga: kichikdan kattaga tartibla!",
+        "ru": "Расставь фигуры слева направо: от маленькой к большой!",
+        "en": "Arrange the shapes left to right: from small to big!"
+      },
+      "items": [
+        { "id": "mid", "art": { "kind": "star", "color": "orange", "scale": 0.85 } },
+        { "id": "small", "art": { "kind": "star", "color": "blue", "scale": 0.5 } },
+        { "id": "big", "art": { "kind": "star", "color": "magenta", "scale": 1.25 } }
+      ],
+      "slots": [
+        { "id": "s1", "accept": "small", "ghost": { "kind": "star", "color": "gray", "scale": 0.5 }, "label": { "uz": "chap", "ru": "слева", "en": "left" } },
+        { "id": "s2", "accept": "mid", "ghost": { "kind": "star", "color": "gray", "scale": 0.85 }, "label": { "uz": "oʻrta", "ru": "середина", "en": "middle" } },
+        { "id": "s3", "accept": "big", "ghost": { "kind": "star", "color": "gray", "scale": 1.25 }, "label": { "uz": "oʻng", "ru": "справа", "en": "right" } }
+      ],
+      "hint": {
+        "uz": "Eng kichkinasini chapga, eng kattasini oʻngga qoʻy.",
+        "ru": "Самую маленькую слева, самую большую справа.",
+        "en": "Put the smallest on the left and the biggest on the right."
+      },
+      "explanation": {
+        "uz": "Chapdan oʻngga: kichik, oʻrta, katta. Joylashuvni shunday tartibladik.",
+        "ru": "Слева направо: маленькая, средняя, большая. Так мы упорядочили расположение.",
+        "en": "Left to right: small, medium, big. That is how we ordered their position."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorda birinchi turgan shaklni bos!",
+        "ru": "Нажми на фигуру, которая стоит первой!",
+        "en": "Tap the shape that is first in the row!"
+      },
+      "options": [
+        { "id": "first", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "mid", "art": { "kind": "fish", "color": "green" } },
+        { "id": "last", "art": { "kind": "fish", "color": "blue" } }
+      ],
+      "answer": ["first"],
+      "hint": {
+        "uz": "Birinchi — qatorning eng boshidagi, chapdagi shakl.",
+        "ru": "Первая — это фигура в самом начале ряда, слева.",
+        "en": "First is the shape at the very start of the row, on the left."
+      },
+      "explanation": {
+        "uz": "Birinchi boʻlib zarhal baliq turardi — qatorning boshida.",
+        "ru": "Первой стояла оранжевая рыбка — в начале ряда.",
+        "en": "The orange fish was first — at the start of the row."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qatorda oxirgi turgan shaklni bos!",
+        "ru": "Нажми на фигуру, которая стоит последней!",
+        "en": "Tap the shape that is last in the row!"
+      },
+      "options": [
+        { "id": "first", "art": { "kind": "apple", "color": "red" } },
+        { "id": "mid", "art": { "kind": "apple", "color": "yellow" } },
+        { "id": "last", "art": { "kind": "apple", "color": "green" } }
+      ],
+      "answer": ["last"],
+      "hint": {
+        "uz": "Oxirgi — qatorning eng oxiridagi, oʻngdagi shakl.",
+        "ru": "Последняя — это фигура в самом конце ряда, справа.",
+        "en": "Last is the shape at the very end of the row, on the right."
+      },
+      "explanation": {
+        "uz": "Oxirgi boʻlib yashil olma turardi — qatorning oxirida.",
+        "ru": "Последним стояло зелёное яблоко — в конце ряда.",
+        "en": "The green apple was last — at the end of the row."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 3,
+          "cols": 1,
+          "answer": "top",
+          "cells": [
+            { "id": "top", "kind": "star", "color": "magenta", "r": 0, "c": 0 },
+            { "id": "mid", "kind": "circle", "color": "blue", "r": 1, "c": 0 },
+            { "id": "bot", "kind": "square", "color": "orange", "r": 2, "c": 0 }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Eng tepadagi shaklni bos!",
+        "ru": "Нажми на самую верхнюю фигуру!",
+        "en": "Tap the shape on top!"
+      },
+      "hint": {
+        "uz": "Tepa — ustun ichidagi eng yuqori shakl.",
+        "ru": "Верх — это самая верхняя фигура в столбце.",
+        "en": "The top is the highest shape in the column."
+      },
+      "explanation": {
+        "uz": "Eng tepada yulduz turardi. Ustunning yuqori qismi — tepa.",
+        "ru": "Наверху была звезда. Верхняя часть столбца — это верх.",
+        "en": "The star was on top. The upper part of the column is the top."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 2,
+          "cols": 2,
+          "answer": "br",
+          "cells": [
+            { "id": "tl", "kind": "circle", "color": "red", "r": 0, "c": 0 },
+            { "id": "tr", "kind": "star", "color": "yellow", "r": 0, "c": 1 },
+            { "id": "bl", "kind": "triangle", "color": "green", "r": 1, "c": 0 },
+            { "id": "br", "kind": "square", "color": "blue", "r": 1, "c": 1 }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Pastki oʻng burchakdagi shaklni bos!",
+        "ru": "Нажми на фигуру в правом нижнем углу!",
+        "en": "Tap the shape in the bottom-right corner!"
+      },
+      "hint": {
+        "uz": "Pastki qator — quyida, oʻng burchak — oʻng tomonda.",
+        "ru": "Нижний ряд — внизу, правый угол — справа.",
+        "en": "The bottom row is below, the right corner is on the right side."
+      },
+      "explanation": {
+        "uz": "Pastki qatorning oʻng chetida koʻk kvadrat turardi — past va oʻng.",
+        "ru": "В нижнем ряду справа был синий квадрат — внизу и справа.",
+        "en": "The blue square was on the right of the bottom row — below and on the right."
+      }
+    }
+  ]
+}

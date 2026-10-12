@@ -1,0 +1,308 @@
+{
+  "topicId": "g1-tarbiya-11",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "⭐🤝🌳🙏",
+  "title": {
+    "uz": "Mustahkamlash",
+    "ru": "Закрепление",
+    "en": "Consolidation"
+  },
+  "recall": {
+    "uz": "Bu darsda oʻrganganlarimizni takrorlaymiz: hamkorlik va oʻzaro yordam, odobli soʻzlar, ishonch, masʼuliyat, tabiatni asrash hamda mehmondorchilik odobi. Bu fazilatlar bizni yaxshi inson qiladi.",
+    "ru": "На этом уроке мы повторяем изученное: сотрудничество и взаимопомощь, вежливые слова, доверие, ответственность, бережное отношение к природе и гостеприимство. Эти качества делают нас хорошими людьми.",
+    "en": "In this lesson we review what we learned: cooperation and mutual help, polite words, trust, responsibility, protecting nature and hospitality. These qualities make us good people."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xatti-harakatlarni ajrat: yaxshi xulq yoki yomon xulq!",
+        "ru": "Разложи поступки: хорошее или плохое поведение!",
+        "en": "Sort the actions: good or bad behaviour!"
+      },
+      "hint": {
+        "uz": "Yordam, rostgoʻylik, tejamkorlik — yaxshi.",
+        "ru": "Помощь, правдивость, бережливость — хорошо.",
+        "en": "Help, honesty, thrift are good."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yaxshi xulqni tanla.",
+        "ru": "Молодец! Выбирай хорошее поведение.",
+        "en": "Great! Choose good behaviour."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "good",
+              "label": {
+                "uz": "Yaxshi xulq",
+                "ru": "Хорошо",
+                "en": "Good"
+              }
+            },
+            {
+              "id": "bad",
+              "label": {
+                "uz": "Yomon xulq",
+                "ru": "Плохо",
+                "en": "Bad"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🤝",
+              "label": {
+                "uz": "yordam berish",
+                "ru": "помогать",
+                "en": "help others"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "💧",
+              "label": {
+                "uz": "suvni tejash",
+                "ru": "экономить воду",
+                "en": "save water"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "🙏",
+              "label": {
+                "uz": "«rahmat» aytish",
+                "ru": "говорить «спасибо»",
+                "en": "say thank you"
+              },
+              "bin": "good"
+            },
+            {
+              "emoji": "🚫",
+              "label": {
+                "uz": "yolgʻon gapirish",
+                "ru": "лгать",
+                "en": "tell lies"
+              },
+              "bin": "bad"
+            },
+            {
+              "emoji": "🗑️",
+              "label": {
+                "uz": "koʻchaga axlat tashlash",
+                "ru": "мусорить на улице",
+                "en": "litter the street"
+              },
+              "bin": "bad"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Odobli soʻzlar orasidan ortiqchasini top!",
+        "ru": "Найди лишнее среди вежливых слов!",
+        "en": "Find the odd one out among the polite words!"
+      },
+      "hint": {
+        "uz": "Qaysi biri odobli soʻz emas?",
+        "ru": "Что не является вежливым словом?",
+        "en": "Which one is not a polite word?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Qoʻpollik» — odobli soʻz emas.",
+        "ru": "Верно! «Грубость» — не вежливое слово.",
+        "en": "Right! \"Rudeness\" is not a polite word."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "odobli soʻzlar",
+            "ru": "вежливые слова",
+            "en": "polite words"
+          },
+          "tiles": [
+            {
+              "text": "Salom"
+            },
+            {
+              "text": "Rahmat"
+            },
+            {
+              "text": "Iltimos"
+            },
+            {
+              "text": "qoʻpollik",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi ishni mos belgisiga ula!",
+        "ru": "Соедини доброе дело с его символом!",
+        "en": "Match each good deed to its symbol!"
+      },
+      "hint": {
+        "uz": "yordam — 🤝, tabiat — 🌳, minnatdorchilik — 🙏.",
+        "ru": "помощь — 🤝, природа — 🌳, благодарность — 🙏.",
+        "en": "help — 🤝, nature — 🌳, thanks — 🙏."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": {
+                  "uz": "yordam",
+                  "ru": "помощь",
+                  "en": "help"
+                }
+              },
+              "right": {
+                "emoji": "🤝"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "tabiat",
+                  "ru": "природа",
+                  "en": "nature"
+                }
+              },
+              "right": {
+                "emoji": "🌳"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "rahmat",
+                  "ru": "спасибо",
+                  "en": "thanks"
+                }
+              },
+              "right": {
+                "emoji": "🙏"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, qadriyat juftlarini top!",
+        "ru": "Открывай карточки: пары ценностей!",
+        "en": "Flip the cards: match the value pairs!"
+      },
+      "hint": {
+        "uz": "yordam 🤝, ishonch 🔑, tabiat 🌳.",
+        "ru": "помощь 🤝, доверие 🔑, природа 🌳.",
+        "en": "help 🤝, trust 🔑, nature 🌳."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🤝"
+              },
+              "b": {
+                "label": {
+                  "uz": "yordam",
+                  "ru": "помощь",
+                  "en": "help"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🔑"
+              },
+              "b": {
+                "label": {
+                  "uz": "ishonch",
+                  "ru": "доверие",
+                  "en": "trust"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🌳"
+              },
+              "b": {
+                "label": {
+                  "uz": "tabiat",
+                  "ru": "природа",
+                  "en": "nature"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bu darslardan oʻzingiz uchun qanday saboq oldingiz?",
+        "ru": "Какой урок ты вынес из этих занятий для себя?",
+        "en": "What lesson did you take from these classes for yourself?"
+      },
+      "hint": {
+        "uz": "Yordam, ishonch, tabiat, mehmondorchilik — nima yodingda qoldi?",
+        "ru": "Помощь, доверие, природа, гостеприимство — что запомнилось?",
+        "en": "Help, trust, nature, hospitality — what stayed with you?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen yaxshi fazilatlarni oʻzlashtirding.",
+        "ru": "Отлично! Ты усвоил добрые качества.",
+        "en": "Great! You have taken good qualities to heart."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men doʻstlarimga yordam berishni va rost gapirishni oʻrgandim. Bu meni ishonchli doʻst qiladi.",
+            "ru": "Я научился помогать друзьям и говорить правду. Это делает меня надёжным другом.",
+            "en": "I learned to help my friends and to tell the truth. It makes me a trustworthy friend."
+          }
+        }
+      }
+    }
+  ]
+}

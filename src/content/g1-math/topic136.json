@@ -1,0 +1,345 @@
+{
+  "topicId": "g1-math-136",
+  "subjectKey": "g1-math",
+  "emojis": "🏛️🔢✨",
+  "title": {
+    "uz": "Rim raqamlari",
+    "ru": "Римские цифры",
+    "en": "Roman numerals"
+  },
+  "recall": {
+    "uz": "Bugun raqamlarning ikki turi ishlatiladi: arab (1, 2, 3...) va rim (I, V, X...). I = 1, V = 5, X = 10. Belgilarni qoʻshib oki ayirib oʻqiymiz: VI = 6, IV = 4. Asrlar va soat siferblati koʻpincha rim raqamlari bilan yoziladi.",
+    "ru": "Сегодня используют два вида цифр: арабские (1, 2, 3...) и римские (I, V, X...). I = 1, V = 5, X = 10. Знаки складываем или вычитаем: VI = 6, IV = 4. Века и циферблат часов часто пишут римскими цифрами.",
+    "en": "Today we use two kinds of numerals: Arabic (1, 2, 3...) and Roman (I, V, X...). I = 1, V = 5, X = 10. We add or subtract the symbols: VI = 6, IV = 4. Centuries and clock faces often use Roman numerals."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "IV",
+              "right": "4"
+            },
+            {
+              "left": "VI",
+              "right": "6"
+            },
+            {
+              "left": "VIII",
+              "right": "8"
+            },
+            {
+              "left": "X",
+              "right": "10"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Rim raqamini arab raqami bilan ulang!",
+        "ru": "Соедини римскую цифру с арабской!",
+        "en": "Match each Roman numeral with its Arabic number!"
+      },
+      "hint": {
+        "uz": "I = 1, V = 5, X = 10. Belgilarni qoʻshib oʻqi.",
+        "ru": "I = 1, V = 5, X = 10. Складывай знаки.",
+        "en": "I = 1, V = 5, X = 10. Add the symbols."
+      },
+      "explanation": {
+        "uz": "Har bir rim raqami soni bilan ulandi.",
+        "ru": "Каждая римская цифра соединена с числом.",
+        "en": "Each Roman numeral is matched with its number."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "V + V = x",
+          "answer": 10,
+          "choices": [
+            10,
+            9,
+            11
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Rim raqamlarini hisobla: V + V = x. x nechа?",
+        "ru": "Вычисли римские: V + V = x. Чему равно x?",
+        "en": "Compute the Roman numerals: V + V = x. What is x?"
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 10 ga teng.",
+        "ru": "Неизвестное равно 10.",
+        "en": "The unknown equals 10."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "<",
+            ">",
+            "="
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Belgini tanla: VIII ... X",
+        "ru": "Выбери знак: VIII ... X",
+        "en": "Choose the sign: VIII ... X"
+      },
+      "hint": {
+        "uz": "VIII = 8, X = 10.",
+        "ru": "VIII = 8, X = 10.",
+        "en": "VIII = 8, X = 10."
+      },
+      "explanation": {
+        "uz": "8 < 10, demak VIII < X.",
+        "ru": "8 < 10, значит VIII < X.",
+        "en": "8 < 10, so VIII < X."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "II",
+              "right": "2"
+            },
+            {
+              "left": "VII",
+              "right": "7"
+            },
+            {
+              "left": "IX",
+              "right": "9"
+            },
+            {
+              "left": "XII",
+              "right": "12"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Rim raqamini arab raqami bilan ulang!",
+        "ru": "Соедини римскую цифру с арабской!",
+        "en": "Match each Roman numeral with its Arabic number!"
+      },
+      "hint": {
+        "uz": "I = 1, V = 5, X = 10. Belgilarni qoʻshib oʻqi.",
+        "ru": "I = 1, V = 5, X = 10. Складывай знаки.",
+        "en": "I = 1, V = 5, X = 10. Add the symbols."
+      },
+      "explanation": {
+        "uz": "Har bir rim raqami soni bilan ulandi.",
+        "ru": "Каждая римская цифра соединена с числом.",
+        "en": "Each Roman numeral is matched with its number."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "X - VI = x",
+          "answer": 4,
+          "choices": [
+            4,
+            5,
+            3
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Rim raqamlarini hisobla: X - VI = x. x nechа?",
+        "ru": "Вычисли римские: X - VI = x. Чему равно x?",
+        "en": "Compute the Roman numerals: X - VI = x. What is x?"
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 4 ga teng.",
+        "ru": "Неизвестное равно 4.",
+        "en": "The unknown equals 4."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "21",
+            "19",
+            "12"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "XXI asr — bu nechanchi asr?",
+        "ru": "XXI век — это какой век?",
+        "en": "XXI century — which century is it?"
+      },
+      "hint": {
+        "uz": "X = 10, X = 10, I = 1.",
+        "ru": "X = 10, X = 10, I = 1.",
+        "en": "X = 10, X = 10, I = 1."
+      },
+      "explanation": {
+        "uz": "XXI = 21.",
+        "ru": "XXI = 21.",
+        "en": "XXI = 21."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 21
+        }
+      },
+      "prompt": {
+        "uz": "XXI = 21. Shu sonni bloklardan yasa.",
+        "ru": "XXI = 21. Собери это число из блоков.",
+        "en": "XXI = 21. Build this number from blocks."
+      },
+      "hint": {
+        "uz": "2 ta oʻnlik (+10) va 1 ta birlik (+1).",
+        "ru": "2 десятков (+10) и 1 единиц (+1).",
+        "en": "2 tens (+10) and 1 ones (+1)."
+      },
+      "explanation": {
+        "uz": "21 = 20 + 1.",
+        "ru": "21 = 20 + 1.",
+        "en": "21 = 20 + 1."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 5,
+          "b": 5,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 5 + 5. Sonlar chizigʻidan foydalan.",
+        "ru": "Вычисли: 5 + 5. Используй числовую прямую.",
+        "en": "Work it out: 5 + 5. Use the number line."
+      },
+      "hint": {
+        "uz": "5 dan boshla, 5 oldinga sur.",
+        "ru": "Встань на 5, продвинься на 5.",
+        "en": "Start at 5, move 5 forward."
+      },
+      "explanation": {
+        "uz": "5 + 5 = 10.",
+        "ru": "5 + 5 = 10.",
+        "en": "5 + 5 = 10."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 8,
+          "y": 10
+        }
+      },
+      "prompt": {
+        "uz": "Taqqosla: VIII (8) va X (10).",
+        "ru": "Сравни: VIII (8) и X (10).",
+        "en": "Compare: VIII (8) and X (10)."
+      },
+      "hint": {
+        "uz": "Katta son tomonga tarozi ogʻadi.",
+        "ru": "Весы наклоняются к большему числу.",
+        "en": "The scale tips to the bigger number."
+      },
+      "explanation": {
+        "uz": "8 < 10.",
+        "ru": "8 < 10.",
+        "en": "8 < 10."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "IX + I = x",
+          "answer": 10,
+          "choices": [
+            10,
+            9,
+            11
+          ],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Rim raqamlarini hisobla: IX + I = x. x nechа?",
+        "ru": "Вычисли римские: IX + I = x. Чему равно x?",
+        "en": "Compute the Roman numerals: IX + I = x. What is x?"
+      },
+      "hint": {
+        "uz": "Har bir sonni qoʻyib koʻr: qaysi biri tenglikni toʻgʻri qiladi?",
+        "ru": "Подставляй числа: какое делает равенство верным?",
+        "en": "Try each number: which makes the equation true?"
+      },
+      "explanation": {
+        "uz": "Nomaʼlum son 10 ga teng.",
+        "ru": "Неизвестное равно 10.",
+        "en": "The unknown equals 10."
+      }
+    }
+  ]
+}

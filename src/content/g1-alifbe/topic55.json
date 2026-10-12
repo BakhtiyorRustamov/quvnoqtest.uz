@@ -1,0 +1,450 @@
+{
+  "topicId": "g1-alifbe-55",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🦒🐤🧶",
+  "title": {
+    "uz": "«J j» harfi",
+    "ru": "Буква «J j»",
+    "en": "The letter “J j”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «J j». U undosh tovush. «J» bilan: jirafa, joʻja, jun. Ism va joy nomlari bosh harf bilan yoziladi!",
+    "ru": "Сегодня наша буква — «J j». Это согласный звук. Слова: jirafa, joʻja, jun. Имена и названия пишутся с заглавной буквы!",
+    "en": "Today's letter is “J j”. It is a consonant. Words: jirafa, joʻja, jun. Names and places are written with a capital letter!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«J» bilan boshlanadigan soʻzni top!",
+        "ru": "Найди слово на «J»!",
+        "en": "Find the word that starts with “J”!"
+      },
+      "hint": {
+        "uz": "Boshini choʻzib ayt: jirafa.",
+        "ru": "Протяни начало: jirafa.",
+        "en": "Stretch the start: jirafa."
+      },
+      "explanation": {
+        "uz": "«jirafa» «J» tovushi bilan boshlanadi.",
+        "ru": "«jirafa» начинается со звука «J».",
+        "en": "“jirafa” starts with the sound “J”."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🦒",
+              "label": {
+                "uz": "jirafa",
+                "ru": "жираф",
+                "en": "giraffe"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«J» harfini topib, hammasini bos!",
+        "ru": "Найди букву «J» и нажми на все!",
+        "en": "Find the letter “J” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham.",
+        "ru": "Большая и маленькая тоже.",
+        "en": "Capital and small too."
+      },
+      "explanation": {
+        "uz": "«J» harfini topding!",
+        "ru": "Ты нашёл букву «J»!",
+        "en": "You found the letter “J”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "J",
+          "cols": 3,
+          "grid": [
+            "J",
+            "o",
+            "j",
+            "T",
+            "J",
+            "i",
+            "j",
+            "n",
+            "J"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🦒 «jirafa»da «j» tovushi qaysi katakchada?",
+        "ru": "🦒 В какой клетке звук «j» в слове «jirafa»?",
+        "en": "🦒 Which box has the “j” sound in “jirafa”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«jirafa»da «j» toʻgʻri joyda.",
+        "ru": "В «jirafa» звук «j» на верном месте.",
+        "en": "In “jirafa” the “j” is right."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🦒",
+          "word": {
+            "uz": "jirafa",
+            "ru": "jirafa",
+            "en": "jirafa"
+          },
+          "sound": "j",
+          "cells": [
+            "j",
+            "i",
+            "r",
+            "a",
+            "f",
+            "a"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🦒 «jirafa» soʻzining tovush chizmasini rangla!",
+        "ru": "🦒 Раскрась схему звуков «jirafa»!",
+        "en": "🦒 Colour the sound scheme of “jirafa”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«jirafa» chizmasini rangladik.",
+        "ru": "Мы раскрасили схему «jirafa».",
+        "en": "We coloured the scheme of “jirafa”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "🦒",
+          "word": {
+            "uz": "jirafa",
+            "ru": "jirafa",
+            "en": "jirafa"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c",
+            "v",
+            "c",
+            "v"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«J» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «J»!",
+        "en": "Tap the words with the “J” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «j» tovushi bor.",
+        "ru": "В них есть звук «j».",
+        "en": "They have the “j” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🦒",
+              "label": {
+                "uz": "jirafa",
+                "ru": "jirafa",
+                "en": "jirafa"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🐤",
+              "label": {
+                "uz": "joʻja",
+                "ru": "joʻja",
+                "en": "joʻja"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🧶",
+              "label": {
+                "uz": "jun",
+                "ru": "jun",
+                "en": "jun"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🦒 Yetishmayotgan harfni qoʻy!",
+        "ru": "🦒 Вставь недостающую букву!",
+        "en": "🦒 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz: «jirafa».",
+        "ru": "Слово: «jirafa».",
+        "en": "The word: “jirafa”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «j».",
+        "ru": "Верная буква — «j».",
+        "en": "The right letter is “j”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🦒",
+          "label": {
+            "uz": "jirafa",
+            "ru": "жираф",
+            "en": "giraffe"
+          },
+          "letters": [
+            "j",
+            "i",
+            "r",
+            "a",
+            "f",
+            "a"
+          ],
+          "blank": 0,
+          "choices": [
+            "j",
+            "z",
+            "g"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bosh harf bilan yoziladigan soʻzlarni belgila!",
+        "ru": "Отметь слова с заглавной буквы!",
+        "en": "Tap the words that need a capital letter!"
+      },
+      "hint": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия — с заглавной.",
+        "en": "Names and places take a capital."
+      },
+      "explanation": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия пишутся с заглавной буквы.",
+        "en": "Names and place names are written with a capital."
+      },
+      "widget": {
+        "type": "capital_pick",
+        "props": {
+          "words": [
+            {
+              "word": "Jasur",
+              "capital": true
+            },
+            {
+              "word": "Jamila",
+              "capital": true
+            },
+            {
+              "word": "jun",
+              "capital": false
+            },
+            {
+              "word": "jirafa",
+              "capital": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«J» — undosh tovush.",
+        "ru": "«J» — согласный звук.",
+        "en": "“J” is a consonant."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «J» — undosh.",
+        "ru": "Верно! «J» — согласный.",
+        "en": "True! “J” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🦒 «jirafa» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🦒 Похлопай «jirafa» по слогам!",
+        "en": "🦒 Clap “jirafa” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«jirafa» — 3 boʻgʻin.",
+        "ru": "«jirafa» — 3 слога.",
+        "en": "“jirafa” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🦒",
+          "word": {
+            "uz": "jirafa",
+            "ru": "jirafa",
+            "en": "jirafa"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«J» qanday tovush?",
+        "ru": "«J» — какой звук?",
+        "en": "What kind of sound is “J”?"
+      },
+      "hint": {
+        "uz": "«j» tovushini ayt.",
+        "ru": "Скажи звук «j».",
+        "en": "Say the “j” sound."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — undosh.",
+        "ru": "Верно — согласный.",
+        "en": "Right — consonant."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "undosh",
+              "ru": "согласный",
+              "en": "consonant"
+            },
+            {
+              "uz": "unli",
+              "ru": "гласный",
+              "en": "vowel"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

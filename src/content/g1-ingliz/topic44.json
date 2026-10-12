@@ -1,0 +1,523 @@
+{
+  "topicId": "g1-ingliz-44",
+  "subjectKey": "g1-ingliz",
+  "emojis": "💪🏃🏊🚴",
+  "title": {
+    "uz": "Men ... ola man",
+    "ru": "Я умею...",
+    "en": "I can..."
+  },
+  "recall": {
+    "uz": "Bugun qobiliyatni aytamiz: «I can swim» — «Men suza olaman». Va: «I can't ...» — «Men ... ololmayman».",
+    "ru": "Сегодня говорим об умениях: «I can swim» — «Я умею плавать». И: «I can't ...» — «Я не умею ...».",
+    "en": "Today we say what we can do: \"I can swim.\" And \"I can't ...\""
+  },
+  "ttsText": {
+    "uz": "Men ola man.",
+    "en": "I can swim! I can run! Can you swim?"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima qila oladi?",
+        "ru": "Послушай. Что умеет ребёнок?",
+        "en": "Listen. What can the child do?"
+      },
+      "hint": {
+        "uz": "«I can swim» — suza olaman.",
+        "ru": "«I can swim» — умею плавать.",
+        "en": "\"I can swim!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I can swim — suzmoq.",
+        "ru": "Верно! I can swim — плавать.",
+        "en": "Right! I can swim."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Can you swim?",
+              "audio": {
+                "key": "ing44-q1-a",
+                "text": "Can you swim?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Yes, I can swim!",
+              "audio": {
+                "key": "ing44-q1-b",
+                "text": "Yes, I can swim!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bola nima qila oladi?",
+              "ru": "Что умеет ребёнок?",
+              "en": "What can the child do?"
+            },
+            "choices": [
+              "sing",
+              "swim",
+              "draw"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nima qila olmaydi?",
+        "ru": "Послушай. Что ребёнок не умеет?",
+        "en": "Listen. What can't the child do?"
+      },
+      "hint": {
+        "uz": "«I can't fly» — ucha olmayman.",
+        "ru": "«I can't fly» — не умею летать.",
+        "en": "\"I can't fly.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I can't fly — ucholmayman.",
+        "ru": "Верно! I can't fly — не умею летать.",
+        "en": "Right! I can't fly."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can you fly?",
+              "audio": {
+                "key": "ing44-q2-a",
+                "text": "Can you fly?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "No, I can't fly!",
+              "audio": {
+                "key": "ing44-q2-b",
+                "text": "No, I can't fly!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bola nima qila olmaydi?",
+              "ru": "Что ребёнок не умеет?",
+              "en": "What can't the child do?"
+            },
+            "choices": [
+              "fly",
+              "run",
+              "swim"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Baliq suza oladi. 🐟 «A fish can swim.»",
+        "ru": "Верно? Рыба умеет плавать. 🐟 «A fish can swim.»",
+        "en": "Is this right? A fish can swim. 🐟"
+      },
+      "hint": {
+        "uz": "Baliq suvda yashaydi.",
+        "ru": "Рыба живёт в воде.",
+        "en": "A fish lives in water."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! A fish can swim.",
+        "ru": "Верно! A fish can swim.",
+        "en": "Right! A fish can swim."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐟",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Baliq yugura oladi. 🐟 «A fish can run.»",
+        "ru": "Верно? Рыба умеет бегать. 🐟 «A fish can run.»",
+        "en": "Is this right? A fish can run. 🐟"
+      },
+      "hint": {
+        "uz": "Baliqda oyoq bormi?",
+        "ru": "У рыбы есть ноги?",
+        "en": "Does a fish have legs?"
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Baliq suzadi, yugurmaydi.",
+        "ru": "Неверно! Рыба плавает, не бегает.",
+        "en": "False! A fish swims, it can't run."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐟",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«I can ride a bike.» Velosipedni bos!",
+        "ru": "«I can ride a bike.» Нажми велосипед!",
+        "en": "\"I can ride a bike.\" Tap the bike!"
+      },
+      "hint": {
+        "uz": "«ride a bike» — velosiped haydamoq.",
+        "ru": "«ride a bike» — кататься на велосипеде.",
+        "en": "\"ride a bike\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ride a bike — velosiped haydamoq.",
+        "ru": "Верно! Ride a bike — кататься на велосипеде.",
+        "en": "Right! Ride a bike!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🚴",
+              "label": "ride a bike",
+              "correct": true
+            },
+            {
+              "emoji": "🏊",
+              "label": "swim"
+            },
+            {
+              "emoji": "🎤",
+              "label": "sing"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola oxirida nima dedi?",
+        "ru": "Послушай. Что ребёнок сказал в конце?",
+        "en": "Listen. What did the child say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Yes, I can dance!»",
+        "ru": "Верно! «Yes, I can dance!»",
+        "en": "Right! \"Yes, I can dance!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can you dance?",
+              "audio": {
+                "key": "ing44-q6-a",
+                "text": "Can you dance?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Dance? Let me try!",
+              "audio": {
+                "key": "ing44-q6-b",
+                "text": "Dance? Let me try!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes, I can dance!",
+              "audio": {
+                "key": "ing44-q6-c",
+                "text": "Yes, I can dance!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "No, I can't!",
+              "Yes, I can dance!",
+              "How many?"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Odam qila oladigan harakatlarni belgila!",
+        "ru": "Отметь действия, которые умеет человек!",
+        "en": "Tap the actions a person can do!"
+      },
+      "hint": {
+        "uz": "Yugurmoq, suzmoq, raqs.",
+        "ru": "Бегать, плавать, танцевать.",
+        "en": "Run, swim, dance."
+      },
+      "explanation": {
+        "uz": "Barakalla! Odam yugurar, suzar, raqsga tushar!",
+        "ru": "Молодец! Человек бегает, плавает, танцует!",
+        "en": "Great! A person can run, swim and dance!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏃",
+              "label": "run",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🏊",
+              "label": "swim",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "💃",
+              "label": "dance",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🌙",
+              "label": "moon"
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": "apple"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni harakatga ula!",
+        "ru": "Соедини слово с действием!",
+        "en": "Match each word to its action!"
+      },
+      "hint": {
+        "uz": "run 🏃, swim 🏊, ride 🚴, paint 🎨.",
+        "ru": "run 🏃, swim 🏊, ride 🚴, paint 🎨.",
+        "en": "run 🏃, swim 🏊, ride 🚴, paint 🎨."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "run"
+              },
+              "right": {
+                "emoji": "🏃"
+              }
+            },
+            {
+              "left": {
+                "label": "swim"
+              },
+              "right": {
+                "emoji": "🏊"
+              }
+            },
+            {
+              "left": {
+                "label": "ride"
+              },
+              "right": {
+                "emoji": "🚴"
+              }
+            },
+            {
+              "left": {
+                "label": "paint"
+              },
+              "right": {
+                "emoji": "🎨"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola rasm chiza oladimi?",
+        "ru": "Послушай. Ребёнок умеет рисовать?",
+        "en": "Listen. Can the child draw?"
+      },
+      "hint": {
+        "uz": "«Yes, I can draw» — chiza olaman.",
+        "ru": "«Yes, I can draw» — умею рисовать.",
+        "en": "\"Yes, I can draw!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Yes, I can draw.",
+        "ru": "Верно! Yes, I can draw.",
+        "en": "Right! Yes, I can draw."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Can you draw?",
+              "audio": {
+                "key": "ing44-q9-a",
+                "text": "Can you draw?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Yes, I can draw!",
+              "audio": {
+                "key": "ing44-q9-b",
+                "text": "Yes, I can draw!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Javob nima?",
+              "ru": "Какой ответ?",
+              "en": "What is the answer?"
+            },
+            "choices": [
+              "Goodbye!",
+              "No, I can't!",
+              "Yes, I can!"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sen suza olasan. Buni qanday aytasan?",
+        "ru": "Ты умеешь плавать. Как это сказать?",
+        "en": "You can swim. How do you say it?"
+      },
+      "hint": {
+        "uz": "«I can ...» bilan boshla.",
+        "ru": "Начни с «I can ...».",
+        "en": "Start with \"I can ...\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I can swim.",
+        "ru": "Верно! I can swim.",
+        "en": "Right! I can swim."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "I can swim.\nMen suza olaman.",
+              "ru": "I can swim.\nЯ умею плавать.",
+              "en": "I can swim."
+            },
+            {
+              "uz": "I can't move.\nMen qimirlay olmayman.",
+              "ru": "I can't move.\nЯ не могу двигаться.",
+              "en": "I can't move."
+            },
+            {
+              "uz": "Sit down.\nOʻtir.",
+              "ru": "Sit down.\nСядь.",
+              "en": "Sit down."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

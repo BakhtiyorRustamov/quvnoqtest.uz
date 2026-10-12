@@ -1,0 +1,478 @@
+{
+  "topicId": "g1-alifbe-49",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🎈👖🕯️",
+  "title": {
+    "uz": "«Sh sh» harfi",
+    "ru": "Буква «Sh sh»",
+    "en": "The letter “Sh sh”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «Sh sh». U undosh tovush. «Sh» bilan: shar, shim, sham. Endi «shar» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «Sh sh». Это согласный звук. Слова: shar, shim, sham. Теперь мы можем прочитать слово «shar»!",
+    "en": "Today's letter is “Sh sh”. It is a consonant. Words: shar, shim, sham. Now we can read and build the word “shar”!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Sh» bilan boshlanadigan soʻzni top!",
+        "ru": "Найди слово на «Sh»!",
+        "en": "Find the word that starts with “Sh”!"
+      },
+      "hint": {
+        "uz": "Boshini choʻzib ayt: sh-sh-shar.",
+        "ru": "Протяни начало: shar.",
+        "en": "Stretch the start: shar."
+      },
+      "explanation": {
+        "uz": "«shar» «Sh» tovushi bilan boshlanadi.",
+        "ru": "«shar» начинается со звука «Sh».",
+        "en": "“shar” starts with the sound “Sh”."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🎈",
+              "label": {
+                "uz": "shar",
+                "ru": "шар",
+                "en": "balloon"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Sh» harfini topib, hammasini bos!",
+        "ru": "Найди букву «Sh» и нажми на все!",
+        "en": "Find the letter “Sh” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham boʻladi.",
+        "ru": "Считаются большая и маленькая.",
+        "en": "Both capital and small count."
+      },
+      "explanation": {
+        "uz": "«Sh» harfini topding!",
+        "ru": "Ты нашёл букву «Sh»!",
+        "en": "You found the letter “Sh”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "Sh",
+          "cols": 3,
+          "grid": [
+            "Sh",
+            "o",
+            "sh",
+            "T",
+            "Sh",
+            "i",
+            "sh",
+            "n",
+            "Sh"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🎈 «shar»da «sh» tovushi qaysi katakchada?",
+        "ru": "🎈 В какой клетке звук «sh» в слове «shar»?",
+        "en": "🎈 Which box has the “sh” sound in “shar”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«shar»da «sh» toʻgʻri joyda.",
+        "ru": "В «shar» звук «sh» на верном месте.",
+        "en": "In “shar” the “sh” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🎈",
+          "word": {
+            "uz": "shar",
+            "ru": "shar",
+            "en": "shar"
+          },
+          "sound": "sh",
+          "cells": [
+            "sh",
+            "a",
+            "r"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🎈 «shar» soʻzining tovush chizmasini rangla!",
+        "ru": "🎈 Раскрась схему звуков слова «shar»!",
+        "en": "🎈 Colour the sound scheme of “shar”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«shar» tovushlari ketma-ketligini rangladik.",
+        "ru": "Мы раскрасили схему звуков «shar».",
+        "en": "We coloured the sound scheme of “shar”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "🎈",
+          "word": {
+            "uz": "shar",
+            "ru": "shar",
+            "en": "shar"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Sh» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «Sh»!",
+        "en": "Tap the words that have the “Sh” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «sh» tovushi bor.",
+        "ru": "В них есть звук «sh».",
+        "en": "They have the “sh” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🎈",
+              "label": {
+                "uz": "shar",
+                "ru": "shar",
+                "en": "shar"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👖",
+              "label": {
+                "uz": "shim",
+                "ru": "shim",
+                "en": "shim"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🕯️",
+              "label": {
+                "uz": "sham",
+                "ru": "sham",
+                "en": "sham"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🎈 Yetishmayotgan harfni qoʻy!",
+        "ru": "🎈 Вставь недостающую букву!",
+        "en": "🎈 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz «sh» bilan boshlanadi.",
+        "ru": "Слово начинается с «sh».",
+        "en": "The word starts with “sh”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «sh». Soʻz: «shar».",
+        "ru": "Верная буква — «sh». Слово: «shar».",
+        "en": "The right letter is “sh”. Word: “shar”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🎈",
+          "label": {
+            "uz": "shar",
+            "ru": "шар",
+            "en": "balloon"
+          },
+          "letters": [
+            "sh",
+            "a",
+            "r"
+          ],
+          "blank": 0,
+          "choices": [
+            "sh",
+            "s",
+            "h"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Sh» — undosh tovush.",
+        "ru": "«Sh» — согласный звук.",
+        "en": "“Sh” is a consonant sound."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Sh» — undosh tovush.",
+        "ru": "Верно! «Sh» — согласный.",
+        "en": "True! “Sh” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍫 «shokolad» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🍫 Похлопай слово «shokolad» по слогам!",
+        "en": "🍫 Clap the word “shokolad” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«shokolad» — 3 boʻgʻin.",
+        "ru": "«shokolad» — 3 слога.",
+        "en": "“shokolad” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🍫",
+          "word": {
+            "uz": "shokolad",
+            "ru": "shokolad",
+            "en": "shokolad"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🎈"
+              },
+              "right": {
+                "label": {
+                  "uz": "shar",
+                  "ru": "shar",
+                  "en": "shar"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👖"
+              },
+              "right": {
+                "label": {
+                  "uz": "shim",
+                  "ru": "shim",
+                  "en": "shim"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🕯️"
+              },
+              "right": {
+                "label": {
+                  "uz": "sham",
+                  "ru": "sham",
+                  "en": "sham"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Sh» necha harfdan iborat?",
+        "ru": "Из скольких букв состоит «Sh»?",
+        "en": "How many letters is “Sh” made of?"
+      },
+      "hint": {
+        "uz": "«sh-sh-sh» deb ayt.",
+        "ru": "Скажи «sh-sh-sh».",
+        "en": "Say “sh-sh-sh”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — ikki (s va h).",
+        "ru": "Верный ответ — две (s и h).",
+        "en": "The right answer is two (s and h)."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "ikki (s va h)",
+              "ru": "две (s и h)",
+              "en": "two (s and h)"
+            },
+            {
+              "uz": "bir",
+              "ru": "одна",
+              "en": "one"
+            },
+            {
+              "uz": "uch",
+              "ru": "три",
+              "en": "three"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

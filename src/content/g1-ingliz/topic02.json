@@ -1,0 +1,499 @@
+{
+  "topicId": "g1-ingliz-02",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🔢👋🎳✨",
+  "title": {
+    "uz": "Ismim, yoshim va sonlar (1–10)",
+    "ru": "Имя, возраст и числа (1–10)",
+    "en": "My name, my age & numbers 1–10"
+  },
+  "recall": {
+    "uz": "«What's your name?» — Isming nima? Inglizcha oʻngacha sanashni ham oʻrganamiz!",
+    "ru": "«What's your name?» — Как тебя зовут? А ещё научимся считать до десяти!",
+    "en": "What's your name? How old are you? Let's count to ten!"
+  },
+  "ttsText": {
+    "uz": "Ismim, yoshim va sonlar.",
+    "en": "What's your name? How old are you? Let's count to ten!"
+  },
+  "recallAudioLang": "en",
+  "recallMedia": {
+    "gif": "/quiz-media/en-numbers.gif",
+    "maxWidth": 260
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Qiz nima deb javob berdi?",
+        "ru": "Послушай диалог. Что ответила девочка?",
+        "en": "Listen to the dialog. What did the girl answer?"
+      },
+      "hint": {
+        "uz": "«What's your name?» — «Isming nima?» degani.",
+        "ru": "«What's your name?» значит «Как тебя зовут?».",
+        "en": "\"What's your name?\" asks for a name."
+      },
+      "explanation": {
+        "uz": "Barakalla! Qiz «I'm Mia» — «Men Miaman» dedi.",
+        "ru": "Молодец! Девочка сказала «I'm Mia» — «Я Мия».",
+        "en": "Great! The girl said \"I'm Mia\"."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩‍🏫",
+              "name": "Teacher",
+              "text": "Hello! What's your name?",
+              "audio": {
+                "key": "ing02-q1-a",
+                "text": "Hello! What's your name?",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Hello! I'm Mia.",
+              "audio": {
+                "key": "ing02-q1-b",
+                "text": "Hello! I'm Mia.",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qiz nima dedi?",
+              "ru": "Что сказала девочка?",
+              "en": "What did the girl say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "I'm Mia.",
+              "Thank you!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. Qaysi sonni eshitding?",
+        "ru": "Послушай. Какое число ты услышал?",
+        "en": "Listen. Which number did you hear?"
+      },
+      "audio": {
+        "key": "ing02-q2",
+        "text": "Seven! Seven.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«Seven» — yetti.",
+        "ru": "«Seven» — семь.",
+        "en": "Count on your fingers: one, two, three, four, five, six, seven."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Seven — 7.",
+        "ru": "Верно! Seven — 7.",
+        "en": "Right! Seven is 7."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "7",
+            "5",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. Qaysi sonni eshitding?",
+        "ru": "Послушай. Какое число ты услышал?",
+        "en": "Listen. Which number did you hear?"
+      },
+      "audio": {
+        "key": "ing02-q3",
+        "text": "Three! Three.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«Three» — uch.",
+        "ru": "«Three» — три.",
+        "en": "\"Three\" comes after two."
+      },
+      "explanation": {
+        "uz": "Barakalla! Three — 3.",
+        "ru": "Молодец! Three — 3.",
+        "en": "Great! Three is 3."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "8",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. Qaysi sonni eshitding?",
+        "ru": "Послушай. Какое число ты услышал?",
+        "en": "Listen. Which number did you hear?"
+      },
+      "audio": {
+        "key": "ing02-q4",
+        "text": "Ten! Ten.",
+        "voice": "boy"
+      },
+      "hint": {
+        "uz": "«Ten» — oʻn, eng katta barmoqlar soni!",
+        "ru": "«Ten» — десять, все пальцы на руках!",
+        "en": "\"Ten\" is all your fingers!"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ten — 10.",
+        "ru": "Верно! Ten — 10.",
+        "en": "Right! Ten is 10."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "10",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kegllardagidek sonlarni kichikdan kattaga tartibla!",
+        "ru": "Расставь числа-кегли от меньшего к большему!",
+        "en": "Put the bowling-pin numbers in order!"
+      },
+      "hint": {
+        "uz": "One, two, three… — 1, 2, 3…",
+        "ru": "One, two, three… — 1, 2, 3…",
+        "en": "One, two, three, four, five!"
+      },
+      "explanation": {
+        "uz": "Barakalla! One, two, three, four, five!",
+        "ru": "Молодец! One, two, three, four, five!",
+        "en": "Great! One, two, three, four, five!"
+      },
+      "widget": {
+        "type": "number_order",
+        "props": {
+          "numbers": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "direction": "asc"
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola necha yoshda?",
+        "ru": "Послушай. Сколько лет мальчику?",
+        "en": "Listen. How old is the boy?"
+      },
+      "hint": {
+        "uz": "«I'm six» — «Men olti yoshdaman» degani.",
+        "ru": "«I'm six» значит «Мне шесть лет».",
+        "en": "\"I'm six\" tells the age."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Six — olti. Bola 6 yoshda.",
+        "ru": "Верно! Six — шесть. Мальчику 6 лет.",
+        "en": "Right! Six — the boy is 6."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩‍🏫",
+              "name": "Teacher",
+              "text": "How old are you?",
+              "audio": {
+                "key": "ing02-q6-a",
+                "text": "How old are you?",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I'm six!",
+              "audio": {
+                "key": "ing02-q6-b",
+                "text": "I'm six!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bola necha yoshda?",
+              "ru": "Сколько лет мальчику?",
+              "en": "How old is the boy?"
+            },
+            "choices": [
+              "9",
+              "3",
+              "6"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va sana! Nechta barmoq?",
+        "ru": "Послушай и посчитай! Сколько пальцев?",
+        "en": "Listen and count! How many fingers?"
+      },
+      "audio": {
+        "key": "ing02-q7",
+        "text": "Count with me: one, two, three, four, five!",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "Har bir sonni barmogʻingda sanab bor.",
+        "ru": "Считай каждое слово на пальцах.",
+        "en": "Count each word on your fingers."
+      },
+      "explanation": {
+        "uz": "Barakalla! Beshgacha sanadik — five!",
+        "ru": "Молодец! Досчитали до пяти — five!",
+        "en": "Great! We counted to five!"
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Samning sevimli rangi qaysi?",
+        "ru": "Послушай. Какой любимый цвет у Сэма?",
+        "en": "Listen. What is Sam's favorite color?"
+      },
+      "hint": {
+        "uz": "«My favorite color's …» — «Sevimli rangim — …» degani.",
+        "ru": "«My favorite color's …» значит «Мой любимый цвет — …».",
+        "en": "Listen for the color word at the end."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Samning sevimli rangi — blue, koʻk.",
+        "ru": "Верно! Любимый цвет Сэма — blue, синий.",
+        "en": "Right! Sam's favorite color is blue."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What's your favorite color?",
+              "audio": {
+                "key": "ing02-q8-a",
+                "text": "What's your favorite color?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "My favorite color's blue!",
+              "audio": {
+                "key": "ing02-q8-b",
+                "text": "My favorite color's blue!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Samning sevimli rangi?",
+              "ru": "Любимый цвет Сэма?",
+              "en": "Sam's favorite color?"
+            },
+            "choices": [
+              "blue",
+              "pink",
+              "red"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla. Qaysi sonni eshitding?",
+        "ru": "Послушай. Какое число ты услышал?",
+        "en": "Listen. Which number did you hear?"
+      },
+      "audio": {
+        "key": "ing02-q9",
+        "text": "Eight! Eight.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«Eight» — sakkiz.",
+        "ru": "«Eight» — восемь.",
+        "en": "\"Eight\" comes after seven."
+      },
+      "explanation": {
+        "uz": "Barakalla! Eight — 8.",
+        "ru": "Молодец! Eight — 8.",
+        "en": "Great! Eight is 8."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "3",
+            "10"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Uchrashganda avval nima deymiz?",
+        "ru": "Послушай. Что мы говорим первым при встрече?",
+        "en": "Listen. What do we say first when we meet?"
+      },
+      "hint": {
+        "uz": "Uchrashuv — «Hello», xayrlashuv — «Goodbye».",
+        "ru": "Встреча — «Hello», прощание — «Goodbye».",
+        "en": "Meeting — \"Hello\", leaving — \"Goodbye\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Avval «Hello!» deymiz.",
+        "ru": "Верно! Сначала говорим «Hello!».",
+        "en": "Right! First we say \"Hello!\"."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Hello, I'm Sam!",
+              "audio": {
+                "key": "ing02-q10-a",
+                "text": "Hello, I'm Sam!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Hello! I'm Mia. How old are you?",
+              "audio": {
+                "key": "ing02-q10-b",
+                "text": "Hello! I'm Mia. How old are you?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I'm seven. Goodbye, Mia!",
+              "audio": {
+                "key": "ing02-q10-c",
+                "text": "I'm seven. Goodbye, Mia!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Goodbye!",
+              "audio": {
+                "key": "ing02-q10-d",
+                "text": "Goodbye!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Uchrashganda avval nima deymiz?",
+              "ru": "Что говорим первым при встрече?",
+              "en": "What do we say first?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Hello!",
+              "I'm seven."
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    }
+  ]
+}

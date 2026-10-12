@@ -1,0 +1,160 @@
+{
+  "topicId": "g1-oqish-55",
+  "subjectKey": "g1-oqish",
+  "skipRecall": true,
+  "emojis": "🧼✨🪥",
+  "title": {
+    "uz": "Orastalik qanday soz",
+    "ru": "Как прекрасна опрятность",
+    "en": "How fine is tidiness"
+  },
+  "recall": {
+    "uz": "«Orasta boʻling!» sheʼrini tinglab oʻqiymiz va orastalik odatlarini oʻrganamiz.",
+    "ru": "Слушаем стихотворение «Будьте опрятны!» и учим привычки чистоплотности.",
+    "en": "We read the poem “Be tidy!” and learn habits of neatness."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "karaoke_reading", "props": {
+        "title": "Orasta boʻling!",
+        "variant": "poem",
+        "audio": "g1-oqish-55-q1",
+        "lines": [
+          "Qanday yaxshi, bolalar,",
+          "Tozalik, orastalik.",
+          "Goʻzal xulq, odob bilan",
+          "Doim boʻlaylik ahil.",
+          "",
+          "Sahar turib uygʻonib,",
+          "Muzdek suvda yuvinaylik.",
+          "Kiyimimiz toza boʻlsin,",
+          "Ozoda yurib yuraylik."
+        ]
+      } },
+      "prompt": { "uz": "Sheʼrni tinglab, ergashib oʻqing!", "ru": "Послушай и читай, следя за текстом!", "en": "Listen and follow along as you read!" },
+      "hint": { "uz": "Sheʼr nimaga chaqiradi?", "ru": "К чему призывает стихотворение?", "en": "What does the poem call for?" },
+      "explanation": { "uz": "Sheʼr tozalik va orastalikka chaqiradi.", "ru": "Стихотворение призывает к чистоте и опрятности.", "en": "The poem calls for cleanliness and tidiness." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [
+        { "left": "ozoda", "right": "toza" },
+        { "left": "chiroyli", "right": "koʻrkam" },
+        { "left": "payvasta", "right": "bogʻlangan" }
+      ] } },
+      "prompt": { "uz": "Maʼnodosh soʻzlarni bir-biriga ulang!", "ru": "Соедини слова-синонимы!", "en": "Match the synonyms!" },
+      "hint": { "uz": "«ozoda» va «toza» — bir maʼnoda.", "ru": "«ozoda» и «toza» — об одном.", "en": "“ozoda” and “toza” mean the same." },
+      "explanation": { "uz": "ozoda = toza; chiroyli = koʻrkam; payvasta = bogʻlangan.", "ru": "ozoda = чистый; chiroyli = красивый; payvasta = связанный.", "en": "ozoda = clean; chiroyli = beautiful; payvasta = joined." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "true_false_ng", "props": {
+        "statement": { "uz": "Sheʼrga koʻra, sahar turib yuz-qoʻlni yuvish kerak.", "ru": "По стихотворению, нужно утром умываться.", "en": "According to the poem, you should wash up in the morning." },
+        "answer": "true",
+        "why": { "uz": "Sheʼrda «Sahar turib... muzdek suvda yuvinaylik» deyilgan.", "ru": "В стихотворении сказано умываться холодной водой утром.", "en": "The poem says to wash with cold water in the morning." }
+      } },
+      "prompt": { "uz": "Bu fikr toʻgʻrimi?", "ru": "Верно ли это?", "en": "Is this statement true?" },
+      "hint": { "uz": "Sahar turgach nima qilamiz?", "ru": "Что делаем, встав утром?", "en": "What do we do when we get up?" },
+      "explanation": { "uz": "Toʻgʻri: sahar turib yuvinish kerak.", "ru": "Верно: утром надо умываться.", "en": "True: we should wash up in the morning." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [
+        { "text": "Sochni tarash", "match": true },
+        { "text": "Kiyimni dazmollash", "match": true },
+        { "text": "Tishni tozalash", "match": true },
+        { "text": "Xonani axlatga toʻldirish", "match": false },
+        { "text": "Kir kiyim kiyish", "match": false }
+      ] } },
+      "prompt": { "uz": "Orastalik ishlarini bos!", "ru": "Нажми привычки опрятности!", "en": "Tap the tidy habits!" },
+      "hint": { "uz": "Orasta bola oʻzini toza tutadi.", "ru": "Опрятный ребёнок держит себя в чистоте.", "en": "A tidy child keeps clean." },
+      "explanation": { "uz": "Soch tarash, kiyim dazmollash, tish tozalash — orastalik; qolganlari — yoʻq.", "ru": "Расчёсывание, глажка, чистка зубов — опрятность; остальное — нет.", "en": "Combing, ironing, brushing teeth are tidy; the rest are not." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "«Chogʻ» — ", "after": " degani.", "choices": ["shod va xursand", "charchagan", "kasal"], "answer": "shod va xursand", "emoji": "✨", "clue": { "uz": "Izohli lugʻat", "ru": "Словарик", "en": "Glossary" } } },
+      "prompt": { "uz": "Gapni mos soʻz bilan toʻldiring!", "ru": "Дополни предложение подходящим словом!", "en": "Complete the sentence with the right word!" },
+      "hint": { "uz": "«Koʻngli chogʻ» — kayfiyati yaxshi.", "ru": "«Koʻngli chogʻ» — в хорошем настроении.", "en": "“Koʻngli chogʻ” means in a good mood." },
+      "explanation": { "uz": "«Chogʻ» — shod, xursand degani.", "ru": "«Chogʻ» — радостный, весёлый.", "en": "“Chogʻ” means joyful, cheerful." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Ozoda va orasta boʻlishga", "ru": "Быть чистым и опрятным", "en": "To be clean and tidy" },
+        { "uz": "Koʻp uxlashga", "ru": "Много спать", "en": "To sleep a lot" },
+        { "uz": "Dangasa boʻlishga", "ru": "Быть ленивым", "en": "To be lazy" }
+      ], "answerIndex": 0 } },
+      "prompt": { "uz": "Shoir sheʼr orqali nimaga chaqiradi?", "ru": "К чему призывает поэт?", "en": "What does the poet call for?" },
+      "hint": { "uz": "Sheʼr sarlavhasini eslang: «Orasta boʻling!».", "ru": "Вспомни заголовок: «Будьте опрятны!».", "en": "Recall the title: “Be tidy!”." },
+      "explanation": { "uz": "Shoir bolalarni ozoda va orasta boʻlishga chaqiradi.", "ru": "Поэт зовёт детей быть чистыми и опрятными.", "en": "The poet calls children to be clean and tidy." },
+      "openEnd": { "uz": "Sen ertalab turib qanday orastalik ishlarini bajarasan?", "ru": "Какие дела опрятности ты делаешь утром?", "en": "Which tidiness habits do you do each morning?" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "fill_blanks", "props": {
+        "segments": [
+          { "text": "Kiyimimiz" },
+          { "blank": "ozoda" },
+          { "text": "va" },
+          { "blank": "dazmollangan" },
+          { "text": "boʻlsin." }
+        ],
+        "bank": ["ozoda", "dazmollangan", "yirtiq"]
+      } },
+      "prompt": { "uz": "Soʻzlarni tanlab, boʻsh joylarga qoʻying!", "ru": "Вставь слова в пропуски!", "en": "Fill the gaps with the right words!" },
+      "hint": { "uz": "Orasta bolaning kiyimi qanday boʻladi?", "ru": "Какая одежда у опрятного ребёнка?", "en": "What are a tidy child's clothes like?" },
+      "explanation": { "uz": "Kiyimimiz ozoda va dazmollangan boʻlsin.", "ru": "Одежда должна быть чистой и выглаженной.", "en": "Our clothes should be clean and ironed." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "odd_one_out", "props": { "tiles": [
+        { "text": "yuvinish" },
+        { "text": "taranish" },
+        { "text": "kiyim tozalash" },
+        { "text": "janjallashish", "odd": true }
+      ], "clue": { "uz": "Qaysi biri orastalikka aloqasiz?", "ru": "Что из этого не связано с опрятностью?", "en": "Which one is not about tidiness?" } } },
+      "prompt": { "uz": "Ortiqcha soʻzni top!", "ru": "Найди лишнее слово!", "en": "Find the odd one out!" },
+      "hint": { "uz": "Uchtasi — oʻzini toza tutish.", "ru": "Три — про чистоту себя.", "en": "Three are about keeping clean." },
+      "explanation": { "uz": "Janjallashish — orastalik emas; qolganlari oʻzni toza tutish.", "ru": "Ссора — не опрятность; остальные — уход за собой.", "en": "Quarrelling is not tidiness; the rest are self-care." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "target": "orasta", "syllables": ["o", "ras", "ta"], "emoji": "🧼", "clue": { "uz": "Toza, tartibli, ozoda", "ru": "Чистый, аккуратный", "en": "Clean and neat" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻzni yigʻ!", "ru": "Собери слово из слогов!", "en": "Build the word from the syllables!" },
+      "hint": { "uz": "o + ras + ta = ?", "ru": "o + ras + ta = ?", "en": "o + ras + ta = ?" },
+      "explanation": { "uz": "o-ras-ta → orasta. Toza va tartibli.", "ru": "o-ras-ta → orasta (опрятный).", "en": "o-ras-ta → orasta (tidy)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": {
+        "words": ["Sahar", "turib,", "yuz-qoʻlni", "yuvamiz."],
+        "emoji": "🪥",
+        "clue": { "uz": "Soʻzlardan gap tuzing", "ru": "Составь предложение из слов", "en": "Build the sentence from the words" }
+      } },
+      "prompt": { "uz": "Soʻzlarni tartibla va gap tuz!", "ru": "Расставь слова и составь предложение!", "en": "Order the words to make a sentence!" },
+      "hint": { "uz": "«Sahar» soʻzidan boshlanadi.", "ru": "Начинается со слова «Sahar».", "en": "It starts with the word “Sahar”." },
+      "explanation": { "uz": "«Sahar turib, yuz-qoʻlni yuvamiz» — orasta bolaning odati.", "ru": "«Встав утром, умываем лицо и руки».", "en": "“In the morning we wash our face and hands.”" }
+    }
+  ]
+}

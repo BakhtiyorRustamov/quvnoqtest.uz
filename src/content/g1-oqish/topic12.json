@@ -1,0 +1,422 @@
+{
+  "topicId": "g1-oqish-12",
+  "subjectKey": "g1-oqish",
+  "emojis": "🌨️🍞🌾",
+  "title": {
+    "uz": "Laylak qor yoqqanda",
+    "ru": "Когда падает пушистый снег",
+    "en": "When fluffy snow falls"
+  },
+  "recall": {
+    "uz": "Bugun laylak qor — yirik, momiq qor parchalari haqidagi sheʼrni oʻqiymiz. «Qor yogʻsa — non yogʻar» degan xalq maqolining maʼnosini ochamiz va qor haqidagi qiziqarli faktlarni bilib olamiz.",
+    "ru": "Сегодня читаем стихотворение о крупном пушистом снеге. Разберём смысл народной пословицы «Пойдёт снег — будет хлеб» и узнаем интересные факты о снеге.",
+    "en": "Today we read a poem about big fluffy snowflakes, unpack the folk proverb “When snow falls, bread falls” and learn fun facts about snow."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Laylak qor",
+          "variant": "poem",
+          "audio": "g1-oqish-12-q1",
+          "lines": [
+            "Laylak qor, laylak qor,",
+            "Ohista yogʻar momiq qor.",
+            "Dalalarga koʻrpa boʻl,",
+            "Shudgorlarga yopgʻich boʻl.",
+            "Qor ostida dam olib,",
+            "Yer bahorga kuch yigʻar.",
+            "Xalq bejiz aytmagan:",
+            "«Qor yogʻsa — non yogʻar»."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrni ifodali oʻqing!",
+        "ru": "Прочитай стихотворение выразительно!",
+        "en": "Read the poem aloud!"
+      },
+      "hint": {
+        "uz": "Oxirgi ikki qatorga alohida eʼtibor bering.",
+        "ru": "Обрати внимание на две последние строки.",
+        "en": "Pay attention to the last two lines."
+      },
+      "explanation": {
+        "uz": "Sheʼr laylak qor — yirik momiq qor va uning foydasi haqida.",
+        "ru": "Стихотворение о пушистом снеге и его пользе.",
+        "en": "The poem is about fluffy snow and its benefits."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yirik, momiq va sekin yogʻadigan qor",
+              "ru": "Крупный, пушистый, медленно падающий снег",
+              "en": "Big, fluffy, slowly falling snow"
+            },
+            {
+              "uz": "Muzli yomgʻir",
+              "ru": "Ледяной дождь",
+              "en": "Icy rain"
+            },
+            {
+              "uz": "Kuchli boʻron",
+              "ru": "Сильная буря",
+              "en": "A strong storm"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "«Laylak qor» qanday qor?",
+        "ru": "Что такое «laylak qor»?",
+        "en": "What kind of snow is “laylak qor”?"
+      },
+      "hint": {
+        "uz": "Sheʼrda u «ohista yogʻar» deyilgan.",
+        "ru": "В стихе он «падает тихо».",
+        "en": "The poem says it falls gently."
+      },
+      "explanation": {
+        "uz": "Laylak qor — yirik, momiq qor parchalari boʻlib, ohista yogʻadi.",
+        "ru": "«Laylak qor» — крупные пушистые хлопья, падающие медленно.",
+        "en": "“Laylak qor” means big fluffy flakes that fall slowly."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Koʻrpa boʻlib, yerni sovuqdan asraydi",
+              "ru": "Как одеяло защищает землю от мороза",
+              "en": "Like a blanket, it shields the soil from frost"
+            },
+            {
+              "uz": "Yerni yanada muzlatadi",
+              "ru": "Ещё сильнее замораживает землю",
+              "en": "It freezes the soil even more"
+            },
+            {
+              "uz": "Dalalarni yoritib turadi",
+              "ru": "Освещает поля",
+              "en": "It lights up the fields"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sheʼrga koʻra, qor dalalarga qanday foyda keltiradi?",
+        "ru": "Какую пользу приносит снег полям?",
+        "en": "According to the poem, how does snow help the fields?"
+      },
+      "hint": {
+        "uz": "«Dalalarga ... boʻl» — qaysi soʻz?",
+        "ru": "«Dalalarga … boʻl» — какое слово?",
+        "en": "“Dalalarga … boʻl” — which word?"
+      },
+      "explanation": {
+        "uz": "Qor dalalarga koʻrpa boʻladi: yer qor ostida dam olib, bahorga kuch yigʻadi.",
+        "ru": "Снег — одеяло для полей: земля отдыхает и копит силы к весне.",
+        "en": "Snow blankets the fields: the soil rests and gathers strength for spring."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Qor koʻp yogʻsa, hosil moʻl boʻladi",
+              "ru": "Если снега много, урожай будет богатым",
+              "en": "Plenty of snow brings a rich harvest"
+            },
+            {
+              "uz": "Qishda non osmondan tushadi",
+              "ru": "Зимой хлеб падает с неба",
+              "en": "In winter bread falls from the sky"
+            },
+            {
+              "uz": "Qorda non pishiriladi",
+              "ru": "В снегу пекут хлеб",
+              "en": "Bread is baked in snow"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "«Qor yogʻsa — non yogʻar» maqoli nimani bildiradi?",
+        "ru": "Что означает пословица «Пойдёт снег — будет хлеб»?",
+        "en": "What does the proverb “When snow falls, bread falls” mean?"
+      },
+      "hint": {
+        "uz": "Qor yerga nima beradi? Yer esa nima beradi?",
+        "ru": "Что снег даёт земле, а земля — людям?",
+        "en": "What does snow give the soil, and the soil give people?"
+      },
+      "explanation": {
+        "uz": "Qor yerni namlantirib asraydi — bahorda bugʻdoy yaxshi unadi, non moʻl boʻladi.",
+        "ru": "Снег питает и бережёт землю — весной пшеница растёт лучше, хлеба много.",
+        "en": "Snow moistens and protects the soil, so wheat grows well and bread is plentiful."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "shudgor",
+              "right": "haydalgan yer"
+            },
+            {
+              "left": "momiq",
+              "right": "yumshoq"
+            },
+            {
+              "left": "hosil",
+              "right": "yer bergan mahsulot"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«shudgor» — ekish uchun haydab qoʻyilgan yer.",
+        "ru": "«shudgor» — вспаханное поле.",
+        "en": "“shudgor” is a ploughed field."
+      },
+      "explanation": {
+        "uz": "shudgor = haydalgan yer; momiq = yumshoq; hosil = yer bergan mahsulot.",
+        "ru": "shudgor = вспаханная земля; momiq = мягкий; hosil = урожай.",
+        "en": "shudgor = ploughed land; momiq = soft; hosil = harvest."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Ular juda yengil — deyarli havodan iborat",
+              "ru": "Они очень лёгкие — почти из воздуха",
+              "en": "They are very light — almost all air"
+            },
+            {
+              "uz": "Ular parashyut taqadi",
+              "ru": "У них есть парашюты",
+              "en": "They wear parachutes"
+            },
+            {
+              "uz": "Shamol ularni ushlab turadi",
+              "ru": "Ветер их держит",
+              "en": "The wind holds them up"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bu qiziq! Nega qor parchalari juda sekin tushadi?",
+        "ru": "Это интересно! Почему снежинки падают так медленно?",
+        "en": "Fun fact! Why do snowflakes fall so slowly?"
+      },
+      "hint": {
+        "uz": "Ularning ichida nima koʻp?",
+        "ru": "Чего в них больше всего?",
+        "en": "What are they mostly made of?"
+      },
+      "explanation": {
+        "uz": "Qor parchalari deyarli havodan tashkil topgani uchun juda yengil va sekin tushadi.",
+        "ru": "Снежинки почти целиком состоят из воздуха, поэтому очень лёгкие.",
+        "en": "Snowflakes are almost all air, so they are feather-light and fall slowly."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yaponiyada",
+              "ru": "В Японии",
+              "en": "In Japan"
+            },
+            {
+              "uz": "Misrda",
+              "ru": "В Египте",
+              "en": "In Egypt"
+            },
+            {
+              "uz": "Braziliyada",
+              "ru": "В Бразилии",
+              "en": "In Brazil"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bu qiziq! Qor parchalari muzeyi qaysi mamlakatda bor?",
+        "ru": "Это интересно! В какой стране есть музей снежинок?",
+        "en": "Fun fact! Which country has a snowflake museum?"
+      },
+      "hint": {
+        "uz": "Bu mamlakat kunchiqar yurt deb ham ataladi.",
+        "ru": "Эту страну называют страной восходящего солнца.",
+        "en": "It is called the land of the rising sun."
+      },
+      "explanation": {
+        "uz": "Qor parchalari muzeyi Yaponiyada joylashgan.",
+        "ru": "Музей снежинок находится в Японии.",
+        "en": "The snowflake museum is in Japan."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Endi men qor parchalari bir-biriga ",
+          "after": " emasligini bilaman.",
+          "choices": [
+            "oʻxshash",
+            "uzoq",
+            "shirin"
+          ],
+          "answer": "oʻxshash",
+          "emoji": "❄️",
+          "clue": {
+            "uz": "«Endi men ... bilaman» gapini toʻldir",
+            "ru": "Дополни предложение «Теперь я знаю…»",
+            "en": "Complete the “Now I know…” sentence"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Ikkita bir xil qor parchasi uchramaydi.",
+        "ru": "Двух одинаковых снежинок не бывает.",
+        "en": "No two snowflakes are the same."
+      },
+      "explanation": {
+        "uz": "Qor parchalari bir-biriga oʻxshash emas — har biri betakror.",
+        "ru": "Снежинки не похожи друг на друга — каждая неповторима.",
+        "en": "Snowflakes are not alike — each one is unique."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Qor",
+            "yogʻsa",
+            "—",
+            "non",
+            "yogʻar."
+          ],
+          "emoji": "🍞",
+          "clue": {
+            "uz": "Xalq maqolini tikla",
+            "ru": "Восстанови народную пословицу",
+            "en": "Rebuild the folk proverb"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan maqolni tuz!",
+        "ru": "Составь пословицу из слов!",
+        "en": "Build the proverb from the words!"
+      },
+      "hint": {
+        "uz": "Maqol «Qor» soʻzi bilan boshlanadi.",
+        "ru": "Пословица начинается со слова «Qor».",
+        "en": "The proverb starts with “Qor”."
+      },
+      "explanation": {
+        "uz": "«Qor yogʻsa — non yogʻar»: moʻl qor moʻl hosil keltiradi.",
+        "ru": "«Пойдёт снег — будет хлеб»: много снега — богатый урожай.",
+        "en": "“When snow falls, bread falls”: plenty of snow means a rich harvest."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "syllable_build",
+        "props": {
+          "syllables": [
+            "shud",
+            "gor"
+          ],
+          "emoji": "🚜",
+          "clue": {
+            "uz": "Haydalgan yer",
+            "ru": "Вспаханная земля",
+            "en": "Ploughed land"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻgʻinlardan soʻz tuz!",
+        "ru": "Собери слово из слогов!",
+        "en": "Build the word from syllables!"
+      },
+      "hint": {
+        "uz": "Bu soʻz izohli lugʻatda bor edi.",
+        "ru": "Это слово было в словарике.",
+        "en": "This word was in the glossary."
+      },
+      "explanation": {
+        "uz": "shud-gor → «shudgor» — ekishga tayyorlab haydalgan yer.",
+        "ru": "shud-gor → «shudgor» — вспаханная под посев земля.",
+        "en": "shud-gor → “shudgor” — land ploughed for sowing."
+      }
+    }
+  ],
+  "skipRecall": true
+}

@@ -1,0 +1,528 @@
+{
+  "topicId": "g1-ingliz-10",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🗣️👋😊🏫",
+  "title": {
+    "uz": "Tanishamiz: mening ismim...",
+    "ru": "Знакомимся: меня зовут...",
+    "en": "Introducing myself"
+  },
+  "recall": {
+    "uz": "Suhbat vaqti! Bugun tanishamiz. «Hello. My name's …» — «Salom. Mening ismim …». «What's your name?» — «Isming nima?»",
+    "ru": "Время беседы! Сегодня знакомимся. «Hello. My name's …» — «Привет. Меня зовут …». «What's your name?» — «Как тебя зовут?»",
+    "en": "Talk time! Today we introduce ourselves. \"Hello. My name's …\" and \"What's your name?\""
+  },
+  "ttsText": {
+    "uz": "Tanishamiz.",
+    "en": "Talk time! Hello. My name's Robo. What's your name?"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Oʻqituvchining ismi nima?",
+        "ru": "Послушай. Как зовут учителя?",
+        "en": "Listen. What is the teacher's name?"
+      },
+      "hint": {
+        "uz": "«My name's …» — mening ismim …",
+        "ru": "«My name's …» — меня зовут …",
+        "en": "\"My name's …\" tells us a name."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! My name's Miss Lee.",
+        "ru": "Верно! My name's Miss Lee.",
+        "en": "Right! Her name is Miss Lee."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Teacher",
+              "text": "Hello! My name's Miss Lee.",
+              "audio": {
+                "key": "ing10-q1-a",
+                "text": "Hello! My name's Miss Lee.",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Hello, Miss Lee!",
+              "audio": {
+                "key": "ing10-q1-b",
+                "text": "Hello, Miss Lee!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Oʻqituvchining ismi?",
+              "ru": "Как зовут учителя?",
+              "en": "The teacher's name?"
+            },
+            "choices": [
+              "Sam",
+              "Miss Lee",
+              "Mia"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bolaning ismi nima?",
+        "ru": "Послушай. Как зовут мальчика?",
+        "en": "Listen. What is the boy's name?"
+      },
+      "hint": {
+        "uz": "U oʻz ismini aytadi.",
+        "ru": "Он называет своё имя.",
+        "en": "He says his own name."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! My name's Ravi.",
+        "ru": "Верно! My name's Ravi.",
+        "en": "Right! His name is Ravi."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Hello! What's your name?",
+              "audio": {
+                "key": "ing10-q2-a",
+                "text": "Hello! What's your name?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Ravi",
+              "text": "Hello! My name's Ravi.",
+              "audio": {
+                "key": "ing10-q2-b",
+                "text": "Hello! My name's Ravi.",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bolaning ismi?",
+              "ru": "Как зовут мальчика?",
+              "en": "The boy's name?"
+            },
+            "choices": [
+              "Mia",
+              "Ravi",
+              "Lee"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻz is'mingni qanday aytasan?",
+        "ru": "Как ты называешь своё имя?",
+        "en": "How do you tell your name?"
+      },
+      "hint": {
+        "uz": "«My name's …».",
+        "ru": "«My name's …».",
+        "en": "Start with \"My name's …\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «My name's …».",
+        "ru": "Верно! «My name's …».",
+        "en": "Right! \"My name's …\"."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«My name's Sam.»",
+              "ru": "«My name's Sam.»",
+              "en": "\"My name's Sam.\""
+            },
+            {
+              "uz": "«How many books?»",
+              "ru": "«How many books?»",
+              "en": "\"How many books?\""
+            },
+            {
+              "uz": "«Sit down.»",
+              "ru": "«Sit down.»",
+              "en": "\"Sit down.\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Doʻstona salomni bos!",
+        "ru": "Нажми дружеское приветствие!",
+        "en": "Tap the friendly hello!"
+      },
+      "hint": {
+        "uz": "Qoʻl silkitib salom beramiz.",
+        "ru": "Машем рукой в знак приветствия.",
+        "en": "We wave hello."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 👋 — Hello!",
+        "ru": "Верно! 👋 — Hello!",
+        "en": "Right! 👋 Hello!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👋",
+              "label": "hello",
+              "correct": true
+            },
+            {
+              "emoji": "😴",
+              "label": "sleep"
+            },
+            {
+              "emoji": "🙈",
+              "label": "hide"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Qizning ismi nima?",
+        "ru": "Послушай. Как зовут девочку?",
+        "en": "Listen. What is the girl's name?"
+      },
+      "hint": {
+        "uz": "«My name's …».",
+        "ru": "«My name's …».",
+        "en": "Listen for \"My name's …\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! My name's Mia.",
+        "ru": "Верно! My name's Mia.",
+        "en": "Right! Her name is Mia."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "What's your name?",
+              "audio": {
+                "key": "ing10-q5-a",
+                "text": "What's your name?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "My name's Mia.",
+              "audio": {
+                "key": "ing10-q5-b",
+                "text": "My name's Mia.",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qizning ismi?",
+              "ru": "Как зовут девочку?",
+              "en": "The girl's name?"
+            },
+            "choices": [
+              "Sam",
+              "Ravi",
+              "Mia"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«My name's Sam»ning tarjimasi nima?",
+        "ru": "Что значит «My name's Sam»?",
+        "en": "What does \"My name's Sam\" mean?"
+      },
+      "hint": {
+        "uz": "U ismini aytyapti.",
+        "ru": "Он называет имя.",
+        "en": "He tells his name."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Mening ismim Sam.",
+        "ru": "Верно! Меня зовут Сэм.",
+        "en": "Right! \"My name is Sam.\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Mening ismim Sam.",
+              "ru": "Меня зовут Сэм.",
+              "en": "My name is Sam."
+            },
+            {
+              "uz": "Menda ikkita kitob bor.",
+              "ru": "У меня две книги.",
+              "en": "I have two books."
+            },
+            {
+              "uz": "Xayr, Sam!",
+              "ru": "Пока, Сэм!",
+              "en": "Goodbye, Sam!"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «Nice to meet you» — bu iliq salom.",
+        "ru": "Верно? «Nice to meet you» — тёплое приветствие.",
+        "en": "Is this right? \"Nice to meet you\" is a warm greeting."
+      },
+      "hint": {
+        "uz": "Yangi tanishganda aytamiz.",
+        "ru": "Говорим при знакомстве.",
+        "en": "We say it when we meet someone."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Nice to meet you» — tanishganimizdan xursandmiz.",
+        "ru": "Верно! «Nice to meet you» — приятно познакомиться.",
+        "en": "Right! \"Nice to meet you!\""
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "😊",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Oxirgi bola nima dedi?",
+        "ru": "Послушай. Что сказал последний ребёнок?",
+        "en": "Listen. What did the last child say?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Nice to meet you, Tom!»",
+        "ru": "Верно! «Nice to meet you, Tom!»",
+        "en": "Right! \"Nice to meet you, Tom!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "🧒",
+              "name": "Tom",
+              "text": "Hello! I'm Tom.",
+              "audio": {
+                "key": "ing10-q8-a",
+                "text": "Hello! I'm Tom.",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Hi, Tom! My name's Mia.",
+              "audio": {
+                "key": "ing10-q8-b",
+                "text": "Hi, Tom! My name's Mia.",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "Tom",
+              "text": "Nice to meet you, Mia!",
+              "audio": {
+                "key": "ing10-q8-c",
+                "text": "Nice to meet you, Mia!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Tom oxirida nima dedi?",
+              "ru": "Что Том сказал в конце?",
+              "en": "What did Tom say at the end?"
+            },
+            "choices": [
+              "Nice to meet you!",
+              "How many pens?",
+              "Goodbye!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kimdir «What's your name?» dedi. Sen nima deysan?",
+        "ru": "Кто-то спросил «What's your name?». Что ты ответишь?",
+        "en": "Someone asks \"What's your name?\" What do you say?"
+      },
+      "hint": {
+        "uz": "Oʻz isʼmingni ayt.",
+        "ru": "Назови своё имя.",
+        "en": "Tell your own name."
+      },
+      "explanation": {
+        "uz": "Barakalla! «My name's …».",
+        "ru": "Молодец! «My name's …».",
+        "en": "Great! \"My name's …\"."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«My name's Ali.»",
+              "ru": "«My name's Ali.»",
+              "en": "\"My name's Ali.\""
+            },
+            {
+              "uz": "«Three books.»",
+              "ru": "«Three books.»",
+              "en": "\"Three books.\""
+            },
+            {
+              "uz": "«Open your book.»",
+              "ru": "«Open your book.»",
+              "en": "\"Open your book.\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Ular nima deb xayrlashdi?",
+        "ru": "Послушай. Как они попрощались?",
+        "en": "Listen. How did they say goodbye?"
+      },
+      "hint": {
+        "uz": "«Goodbye!» — xayr.",
+        "ru": "«Goodbye!» — до свидания.",
+        "en": "\"Goodbye!\" is for leaving."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Goodbye! Nice to meet you!»",
+        "ru": "Верно! «Goodbye! Nice to meet you!»",
+        "en": "Right! \"Goodbye! Nice to meet you!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Goodbye! Nice to meet you!",
+              "audio": {
+                "key": "ing10-q10-a",
+                "text": "Goodbye! Nice to meet you!",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Ravi",
+              "text": "Goodbye, Mia!",
+              "audio": {
+                "key": "ing10-q10-b",
+                "text": "Goodbye, Mia!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Ular qanday xayrlashdi?",
+              "ru": "Как попрощались?",
+              "en": "How did they say bye?"
+            },
+            "choices": [
+              "How many?",
+              "Goodbye!",
+              "Stand up!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    }
+  ]
+}

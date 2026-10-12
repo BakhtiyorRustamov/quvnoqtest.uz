@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-26",
+  "subjectKey": "g1-ona",
+  "emojis": "🧠🧩🏅",
+  "title": {
+    "uz": "Boʻgʻinlar bellashuvi (takrorlash)",
+    "ru": "Состязание слогов (повторение)",
+    "en": "Syllables contest (review)"
+  },
+  "recall": {
+    "uz": "Boʻgʻin mavzularini takrorlaymiz: soʻzni boʻgʻinlarga boʻlish, boʻgʻin soni (unlilar soni), boʻgʻin koʻchirish. Masalan: fa-rish-ta — 3 boʻgʻin. Bilimingni sinab koʻr!",
+    "ru": "Повторяем тему слогов: деление на слоги, число слогов (по гласным), перенос. Например: fa-rish-ta — 3 слога. Проверь себя!",
+    "en": "We review syllables: splitting words, counting syllables (by vowels), line breaks. E.g. fa-rish-ta — 3 syllables. Test yourself!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["fa", "rish", "ta"], "emoji": "😇", "clue": { "uz": "Ezgu, yaxshi ruh", "ru": "Добрый дух (ангел)", "en": "A good spirit (an angel)" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "fa- … -rish- … -ta («sh» birga).", "ru": "fa- … -rish- … -ta («sh» вместе).", "en": "fa- … -rish- … -ta (“sh” together)." },
+      "explanation": { "uz": "«fa-rish-ta» — 3 boʻgʻin, «sh» ajratilmaydi.", "ru": "«fa-rish-ta» — 3 слога, «sh» вместе.", "en": "“fa-rish-ta” — 3 syllables, “sh” stays together." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["ka-bu-tar", "kab-u-tar", "ka-but-ar"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz toʻgʻri boʻgʻinlangan?", "ru": "Какое слово верно разбито на слоги?", "en": "Which word is correctly split into syllables?" },
+      "hint": { "uz": "Har boʻgʻinda bitta unli.", "ru": "В каждом слоге одна гласная.", "en": "One vowel per syllable." },
+      "explanation": { "uz": "Toʻgʻrisi — «ka-bu-tar».", "ru": "Правильно — «ka-bu-tar».", "en": "Correct is “ka-bu-tar”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "koʻkalamzor", "match": true }, { "text": "tomosha", "match": false }, { "text": "televizor", "match": true }, { "text": "oromgoh", "match": false }, { "text": "avtomobil", "match": true }, { "text": "sayyoh", "match": false } ] } },
+      "prompt": { "uz": "4 boʻgʻinli soʻzlarni bos!", "ru": "Нажми четырёхсложные слова!", "en": "Tap the four-syllable words!" },
+      "hint": { "uz": "Toʻrt unlisi bor soʻzlarni tanla.", "ru": "Выбери слова с четырьмя гласными.", "en": "Choose words with four vowels." },
+      "explanation": { "uz": "koʻkalamzor, televizor, avtomobil — 4 boʻgʻinli.", "ru": "koʻkalamzor, televizor, avtomobil — четырёхсложные.", "en": "koʻkalamzor, televizor, avtomobil have four syllables." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "sayyoh", "bin": "ikki" }, { "id": "b", "label": "maktab", "bin": "ikki" }, { "id": "c", "label": "ovqat", "bin": "ikki" }, { "id": "d", "label": "tomosha", "bin": "uch" }, { "id": "e", "label": "oromgoh", "bin": "uch" }, { "id": "f", "label": "mehribon", "bin": "uch" } ], "bins": [ { "id": "ikki", "label": "2 boʻgʻinli" }, { "id": "uch", "label": "3 boʻgʻinli" } ] } },
+      "prompt": { "uz": "Boʻgʻin soniga qarab ajrat!", "ru": "Раздели по числу слогов!", "en": "Sort by the number of syllables!" },
+      "hint": { "uz": "sayyoh — 2, tomosha — 3.", "ru": "sayyoh — 2, tomosha — 3.", "en": "sayyoh — 2, tomosha — 3." },
+      "explanation": { "uz": "Unlilarni sanab, boʻgʻin sonini topamiz.", "ru": "Считая гласные, находим число слогов.", "en": "By counting vowels we find the syllable count." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["sing", "lim"], "emoji": "👧", "clue": { "uz": "Mening kichik opam", "ru": "Моя младшая сестра", "en": "My younger sister" } } },
+      "prompt": { "uz": "Boʻgʻinlardan soʻz tuz!", "ru": "Собери слово из слогов!", "en": "Build the word from syllables!" },
+      "hint": { "uz": "sing- … -lim («ng» birga).", "ru": "sing- … -lim («ng» вместе).", "en": "sing- … -lim (“ng” together)." },
+      "explanation": { "uz": "«sing-lim» — «ng» ajratilmaydi.", "ru": "«sing-lim» — «ng» вместе.", "en": "“sing-lim” — “ng” stays together." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["3", "2", "4"], "answerIndex": 0 } },
+      "prompt": { "uz": "«farishta» nechta boʻgʻinli?", "ru": "Сколько слогов в «farishta»?", "en": "How many syllables are in “farishta”?" },
+      "hint": { "uz": "fa-rish-ta.", "ru": "fa-rish-ta.", "en": "fa-rish-ta." },
+      "explanation": { "uz": "«fa-rish-ta» — 3 boʻgʻin.", "ru": "«fa-rish-ta» — 3 слога.", "en": "“fa-rish-ta” — 3 syllables." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "kabutar", "right": "ka-bu-tar" }, { "left": "maktab", "right": "mak-tab" }, { "left": "ona", "right": "o-na" }, { "left": "daftar", "right": "daf-tar" } ] } },
+      "prompt": { "uz": "Soʻzni boʻgʻinlangan shakliga ula!", "ru": "Соедини слово с его разбивкой!", "en": "Match each word to its syllable split!" },
+      "hint": { "uz": "«ona» — «o-na».", "ru": "«ona» — «o-na».", "en": "“ona” — “o-na”." },
+      "explanation": { "uz": "Har boʻgʻinda bitta unli boʻladi.", "ru": "В каждом слоге одна гласная.", "en": "Each syllable has one vowel." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "boʻgʻin", "letters": ["b", "oʻ", "gʻ", "i", "n"], "emoji": "🧩", "clue": { "uz": "Soʻzning bir boʻlagi", "ru": "Часть слова", "en": "A chunk of a word" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: b, oʻ, gʻ, i, n.", "ru": "Части: b, oʻ, gʻ, i, n.", "en": "Parts: b, oʻ, gʻ, i, n." },
+      "explanation": { "uz": "«boʻgʻin» — soʻzning unli bilan aytiladigan boʻlagi.", "ru": "«boʻgʻin» (слог) — часть слова с гласной.", "en": "“boʻgʻin” (syllable) — a word-part said with a vowel." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "mak-tab", "match": true }, { "text": "ma-ktab", "match": false }, { "text": "o-na", "match": true }, { "text": "on-a", "match": false }, { "text": "ki-tob", "match": true }, { "text": "kit-ob", "match": false } ] } },
+      "prompt": { "uz": "Toʻgʻri boʻgʻinlangan soʻzlarni bos!", "ru": "Нажми верно разбитые слова!", "en": "Tap the correctly split words!" },
+      "hint": { "uz": "Har boʻgʻinda bitta unli.", "ru": "В каждом слоге одна гласная.", "en": "One vowel per syllable." },
+      "explanation": { "uz": "mak-tab, o-na, ki-tob — toʻgʻri boʻgʻinlangan.", "ru": "mak-tab, o-na, ki-tob — верно.", "en": "mak-tab, o-na, ki-tob are correctly split." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Boʻgʻin", "soni", "unlilarga", "teng."], "emoji": "🔢", "clue": { "uz": "Boʻgʻin qoidasi", "ru": "Правило слога", "en": "The syllable rule" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Nimaga teng? — «unlilarga».", "ru": "Чему равно? — «unlilarga».", "en": "Equal to what? — “unlilarga”." },
+      "explanation": { "uz": "Boʻgʻin soni unlilar soniga teng.", "ru": "Число слогов равно числу гласных.", "en": "The syllable count equals the vowel count." }
+    }
+  ]
+}

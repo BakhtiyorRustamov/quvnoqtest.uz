@@ -1,0 +1,502 @@
+{
+  "topicId": "g1-informatika-16",
+  "subjectKey": "g1-informatika",
+  "emojis": "🏃🍎😴🚿",
+  "title": {
+    "uz": "Bizning sogʻlom turmush tarzimiz",
+    "ru": "Наш здоровый образ жизни",
+    "en": "Our healthy lifestyle"
+  },
+  "recall": {
+    "uz": "Sogʻlom boʻlish uchun sport bilan shugʻullanamiz, toza havoda yuramiz, gigiyenaga rioya qilamiz, toʻgʻri ovqatlanamiz va yaxshi uxlaymiz.",
+    "ru": "Чтобы быть здоровым, занимаемся спортом, гуляем на свежем воздухе, соблюдаем гигиену, правильно едим и хорошо спим.",
+    "en": "To be healthy we do sport, walk in fresh air, keep clean, eat well and sleep well."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sogʻlom turmush qoidalarini belgila!",
+        "ru": "Отметь правила ЗОЖ!",
+        "en": "Tap the healthy-life rules!"
+      },
+      "hint": {
+        "uz": "Foydali odatlarni tanla.",
+        "ru": "Выбери полезные привычки.",
+        "en": "Pick the good habits."
+      },
+      "explanation": {
+        "uz": "Ular sogʻliq uchun foydali.",
+        "ru": "Они полезны для здоровья.",
+        "en": "They are good for health."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏃",
+              "label": {
+                "uz": "sport",
+                "ru": "спорт",
+                "en": "sport"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🌳",
+              "label": {
+                "uz": "toza havo",
+                "ru": "свежий воздух",
+                "en": "fresh air"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍎",
+              "label": {
+                "uz": "mevalar",
+                "ru": "фрукты",
+                "en": "fruit"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍬",
+              "label": {
+                "uz": "koʻp shirinlik",
+                "ru": "много сладкого",
+                "en": "too many sweets"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "📺",
+              "label": {
+                "uz": "koʻp televizor",
+                "ru": "много ТВ",
+                "en": "too much TV"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kun tartibini toʻgʻri joyla!",
+        "ru": "Расставь режим дня!",
+        "en": "Order the daily routine!"
+      },
+      "hint": {
+        "uz": "Uygʻonish, mashq, nonushta, uxlash.",
+        "ru": "Проснуться, зарядка, завтрак, сон.",
+        "en": "Wake, exercise, breakfast, sleep."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri kun tartibi!",
+        "ru": "Верный режим!",
+        "en": "Correct routine!"
+      },
+      "widget": {
+        "type": "story_sequence",
+        "props": {
+          "events": [
+            {
+              "text": {
+                "uz": "Ertalab uygʻonamiz.",
+                "ru": "Утром просыпаемся.",
+                "en": "We wake up in the morning."
+              }
+            },
+            {
+              "text": {
+                "uz": "Jismoniy mashq qilamiz.",
+                "ru": "Делаем зарядку.",
+                "en": "We do exercises."
+              }
+            },
+            {
+              "text": {
+                "uz": "Nonushta qilamiz.",
+                "ru": "Завтракаем.",
+                "en": "We have breakfast."
+              }
+            },
+            {
+              "text": {
+                "uz": "Kechqurun uxlaymiz.",
+                "ru": "Вечером спим.",
+                "en": "We sleep at night."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sogʻlom boʻlish uchun nima qilamiz?",
+        "ru": "Что делаем, чтобы быть здоровыми?",
+        "en": "What do we do to be healthy?"
+      },
+      "hint": {
+        "uz": "Jismonan faol boʻlamiz.",
+        "ru": "Быть активными.",
+        "en": "Stay active."
+      },
+      "explanation": {
+        "uz": "Sport bilan shugʻullanamiz.",
+        "ru": "Занимаемся спортом.",
+        "en": "We do sport."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "sport bilan shugʻullanamiz",
+              "ru": "занимаемся спортом",
+              "en": "do sport"
+            },
+            {
+              "uz": "kam uxlaymiz",
+              "ru": "мало спим",
+              "en": "sleep little"
+            },
+            {
+              "uz": "koʻp shirinlik yeymiz",
+              "ru": "едим много сладкого",
+              "en": "eat many sweets"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan soʻzni tuz! (💪)",
+        "ru": "Составь слово! (💪)",
+        "en": "Build the word! (💪)"
+      },
+      "hint": {
+        "uz": "O-S-Gʻ-O-L-M harflaridan.",
+        "ru": "Из букв O-S-Gʻ-O-L-M.",
+        "en": "From O-S-Gʻ-O-L-M."
+      },
+      "explanation": {
+        "uz": "Barakalla! «sogʻlom» soʻzini tuzding.",
+        "ru": "Молодец! «sogʻlom».",
+        "en": "Great! You built “sogʻlom”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "💪",
+          "word": "sogʻlom",
+          "label": {
+            "uz": "sogʻlom",
+            "ru": "здоровый",
+            "en": "healthy"
+          },
+          "letters": [
+            "s",
+            "o",
+            "gʻ",
+            "o",
+            "l",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ertalab jismoniy mashq qilish foydali.",
+        "ru": "Утренняя зарядка полезна.",
+        "en": "Morning exercise is good."
+      },
+      "hint": {
+        "uz": "Mashq tanani chiniqtiradi.",
+        "ru": "Зарядка укрепляет тело.",
+        "en": "Exercise strengthens the body."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🏃",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir foydali odatni rasmi bilan ula!",
+        "ru": "Соедини привычку с картинкой!",
+        "en": "Match each habit to its picture!"
+      },
+      "hint": {
+        "uz": "Sport, uyqu, gigiyena, ovqat.",
+        "ru": "Спорт, сон, гигиена, еда.",
+        "en": "Sport, sleep, hygiene, food."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri ulading!",
+        "ru": "Верно!",
+        "en": "Matched!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🏃"
+              },
+              "right": {
+                "label": {
+                  "uz": "sport",
+                  "ru": "спорт",
+                  "en": "sport"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "😴"
+              },
+              "right": {
+                "label": {
+                  "uz": "uyqu",
+                  "ru": "сон",
+                  "en": "sleep"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🚿"
+              },
+              "right": {
+                "label": {
+                  "uz": "gigiyena",
+                  "ru": "гигиена",
+                  "en": "hygiene"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "ovqatlanish",
+                  "ru": "питание",
+                  "en": "food"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri sogʻliq uchun foydali?",
+        "ru": "Что полезно для здоровья?",
+        "en": "Which is good for health?"
+      },
+      "hint": {
+        "uz": "Vitamini bor.",
+        "ru": "С витаминами.",
+        "en": "Full of vitamins."
+      },
+      "explanation": {
+        "uz": "Meva sogʻliq uchun foydali.",
+        "ru": "Фрукты полезны.",
+        "en": "Fruit is good for health."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🍎",
+              "label": {
+                "uz": "meva",
+                "ru": "фрукт",
+                "en": "fruit"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🍬",
+              "label": {
+                "uz": "koʻp konfet",
+                "ru": "много конфет",
+                "en": "many sweets"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🥤",
+              "label": {
+                "uz": "gazli ichimlik",
+                "ru": "газировка",
+                "en": "fizzy drink"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni bos! (zararli odat)",
+        "ru": "Нажми лишнее! (вредная привычка)",
+        "en": "Tap the odd one! (bad habit)"
+      },
+      "hint": {
+        "uz": "Qaysi biri zararli?",
+        "ru": "Что вредно?",
+        "en": "Which is harmful?"
+      },
+      "explanation": {
+        "uz": "Tamaki zararli, qolganlari foydali.",
+        "ru": "Табак вреден, остальное полезно.",
+        "en": "Tobacco is harmful; the rest are good."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "sogʻlom odatlar",
+            "ru": "здоровые привычки",
+            "en": "healthy habits"
+          },
+          "tiles": [
+            {
+              "text": "sport"
+            },
+            {
+              "text": "uyqu"
+            },
+            {
+              "text": "gigiyena"
+            },
+            {
+              "text": "gazli ichimlik",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kuniga necha marta tish yuvamiz?",
+        "ru": "Сколько раз в день чистим зубы?",
+        "en": "How many times a day do we brush teeth?"
+      },
+      "hint": {
+        "uz": "Ertalab va kechqurun.",
+        "ru": "Утром и вечером.",
+        "en": "Morning and evening."
+      },
+      "explanation": {
+        "uz": "Kuniga 2 marta tish yuvamiz.",
+        "ru": "Дважды в день.",
+        "en": "Twice a day."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "2 marta",
+              "ru": "2 раза",
+              "en": "twice"
+            },
+            {
+              "uz": "hech qachon",
+              "ru": "никогда",
+              "en": "never"
+            },
+            {
+              "uz": "oyda bir",
+              "ru": "раз в месяц",
+              "en": "once a month"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi uxlash salomatlik uchun kerak.",
+        "ru": "Хороший сон нужен для здоровья.",
+        "en": "Good sleep is needed for health."
+      },
+      "hint": {
+        "uz": "Uyqu kuch beradi.",
+        "ru": "Сон даёт силы.",
+        "en": "Sleep gives strength."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "😴",
+          "answer": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "topicId": "g1-ingliz-42",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🌱🍎🐔🥛",
+  "title": {
+    "uz": "Fan: oʻsimlik yoki hayvon?",
+    "ru": "Наука: растение или животное?",
+    "en": "Science: plant or animal food?"
+  },
+  "recall": {
+    "uz": "Kashfiyot darsi (fan)! Baʼzi taomlar oʻsimlikdan: olma, sabzi, makkajoʻxori. Baʼzilari hayvondan: tovuq, tuxum, sut.",
+    "ru": "Урок-открытие (наука)! Одна еда из растений: яблоко, морковь, кукуруза. Другая из животных: курица, яйцо, молоко.",
+    "en": "Discovery lesson (science)! Some food comes from plants: apple, carrot, corn. Some from animals: chicken, egg, milk."
+  },
+  "ttsText": {
+    "uz": "Oʻsimlik yoki hayvon?",
+    "en": "Science! Plant or animal food? An apple is a plant. An egg is from an animal."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Taomlarni ajrat: oʻsimlikdan yoki hayvondan!",
+        "ru": "Разложи еду: из растений или животных!",
+        "en": "Sort the food: from plants or animals!"
+      },
+      "hint": {
+        "uz": "Olma — oʻsimlik, tuxum — hayvon.",
+        "ru": "Яблоко — растение, яйцо — животное.",
+        "en": "Apple — plant, egg — animal."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har taom oʻz guruhida.",
+        "ru": "Молодец! Каждая еда в своей группе.",
+        "en": "Great! Each food in its group!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "p",
+              "label": {
+                "uz": "Plant",
+                "ru": "Растение",
+                "en": "Plant"
+              }
+            },
+            {
+              "id": "a",
+              "label": {
+                "uz": "Animal",
+                "ru": "Животное",
+                "en": "Animal"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "label": "apple",
+              "bin": "p"
+            },
+            {
+              "emoji": "🥕",
+              "label": "carrot",
+              "bin": "p"
+            },
+            {
+              "emoji": "🌽",
+              "label": "corn",
+              "bin": "p"
+            },
+            {
+              "emoji": "🍗",
+              "label": "chicken",
+              "bin": "a"
+            },
+            {
+              "emoji": "🥚",
+              "label": "egg",
+              "bin": "a"
+            },
+            {
+              "emoji": "🥛",
+              "label": "milk",
+              "bin": "a"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri oʻsimlik taomi? Bos!",
+        "ru": "Что из этого — растительная еда? Нажми!",
+        "en": "Which is a plant food? Tap it!"
+      },
+      "hint": {
+        "uz": "Olma daraxtda oʻsadi.",
+        "ru": "Яблоко растёт на дереве.",
+        "en": "An apple grows on a tree."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Olma — oʻsimlik taomi.",
+        "ru": "Верно! Яблоко — растительная еда.",
+        "en": "Right! An apple is a plant food."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "emoji": "🍗",
+              "label": "chicken"
+            },
+            {
+              "emoji": "🥛",
+              "label": "milk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri hayvondan olinadi? Bos!",
+        "ru": "Что берут от животных? Нажми!",
+        "en": "Which comes from an animal? Tap it!"
+      },
+      "hint": {
+        "uz": "Tuxumni tovuq beradi.",
+        "ru": "Яйцо даёт курица.",
+        "en": "A hen gives an egg."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tuxum — hayvondan.",
+        "ru": "Верно! Яйцо — от животного.",
+        "en": "Right! An egg is from an animal."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🥚",
+              "label": "egg",
+              "correct": true
+            },
+            {
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "emoji": "🥕",
+              "label": "carrot"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Olma — oʻsimlik taomi. 🍎",
+        "ru": "Верно? Яблоко — растительная еда. 🍎",
+        "en": "Is this right? An apple is a plant food. 🍎"
+      },
+      "hint": {
+        "uz": "Olma oʻsimlikda oʻsadi.",
+        "ru": "Яблоко растёт на растении.",
+        "en": "An apple grows on a plant."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Olma — oʻsimlik taomi.",
+        "ru": "Верно! Яблоко — растительная еда.",
+        "en": "Right! An apple is a plant food."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🍎",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Sut oʻsimlikdan olinadi. 🥛",
+        "ru": "Верно? Молоко из растений. 🥛",
+        "en": "Is this right? Milk comes from a plant. 🥛"
+      },
+      "hint": {
+        "uz": "Sutni sigir beradi.",
+        "ru": "Молоко даёт корова.",
+        "en": "A cow gives milk."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Sut — hayvondan (sigir).",
+        "ru": "Неверно! Молоко — от животного (корова).",
+        "en": "False! Milk comes from an animal (a cow)."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🥛",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hayvondan olinadigan taomlarni belgila!",
+        "ru": "Отметь еду от животных!",
+        "en": "Tap the animal foods!"
+      },
+      "hint": {
+        "uz": "Tovuq, tuxum, sut.",
+        "ru": "Курица, яйцо, молоко.",
+        "en": "Chicken, egg, milk."
+      },
+      "explanation": {
+        "uz": "Barakalla! Tovuq, tuxum, sut — hayvondan!",
+        "ru": "Молодец! Курица, яйцо, молоко — от животных!",
+        "en": "Great! Chicken, egg, milk are animal foods!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍗",
+              "label": "chicken",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🥚",
+              "label": "egg",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🥛",
+              "label": "milk",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "id": "d1",
+              "emoji": "🥕",
+              "label": "carrot"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻsimlikdan olinadigan taomlarni belgila!",
+        "ru": "Отметь растительную еду!",
+        "en": "Tap the plant foods!"
+      },
+      "hint": {
+        "uz": "Olma, sabzi, makkajoʻxori.",
+        "ru": "Яблоко, морковь, кукуруза.",
+        "en": "Apple, carrot, corn."
+      },
+      "explanation": {
+        "uz": "Barakalla! Olma, sabzi, makkajoʻxori — oʻsimlikdan!",
+        "ru": "Молодец! Яблоко, морковь, кукуруза — из растений!",
+        "en": "Great! Apple, carrot, corn are plant foods!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🥕",
+              "label": "carrot",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🌽",
+              "label": "corn",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍗",
+              "label": "chicken"
+            },
+            {
+              "id": "d1",
+              "emoji": "🥛",
+              "label": "milk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, oʻsimlik taomlarini juftla!",
+        "ru": "Открывай карточки: растительная еда!",
+        "en": "Flip the cards: match the plant foods!"
+      },
+      "hint": {
+        "uz": "apple 🍎, carrot 🥕, corn 🌽.",
+        "ru": "apple 🍎, carrot 🥕, corn 🌽.",
+        "en": "apple 🍎, carrot 🥕, corn 🌽."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": "apple"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🥕"
+              },
+              "b": {
+                "label": "carrot"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🌽"
+              },
+              "b": {
+                "label": "corn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Olma qanday taom?",
+        "ru": "Послушай. Яблоко — какая еда?",
+        "en": "Listen. What kind of food is an apple?"
+      },
+      "hint": {
+        "uz": "«plant food» — oʻsimlik taomi.",
+        "ru": "«plant food» — растительная еда.",
+        "en": "\"a plant food\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a plant food!",
+        "ru": "Верно! It's a plant food!",
+        "en": "Right! It's a plant food!"
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Is an apple a plant or an animal food?",
+              "audio": {
+                "key": "ing42-q9-a",
+                "text": "Is an apple a plant or an animal food?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "🤖",
+              "name": "Robo",
+              "text": "It's a plant food!",
+              "audio": {
+                "key": "ing42-q9-b",
+                "text": "It's a plant food!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Olma qanday taom?",
+              "ru": "Яблоко — какая еда?",
+              "en": "What food is an apple?"
+            },
+            "choices": [
+              "a plant food",
+              "a drink",
+              "an animal food"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tovuq goʻshti nimadan olinadi?",
+        "ru": "Курятину получают от…?",
+        "en": "Chicken meat comes from a…?"
+      },
+      "hint": {
+        "uz": "Ferma hayvoni.",
+        "ru": "Животное с фермы.",
+        "en": "A farm animal."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Hayvondan — animal.",
+        "ru": "Верно! От животного — animal.",
+        "en": "Right! From an animal."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "animal\nhayvon",
+              "ru": "animal\nживотное",
+              "en": "animal"
+            },
+            {
+              "uz": "plant\noʻsimlik",
+              "ru": "plant\nрастение",
+              "en": "plant"
+            },
+            {
+              "uz": "car\nmashina",
+              "ru": "car\nмашина",
+              "en": "car"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

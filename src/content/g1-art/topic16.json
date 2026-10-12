@@ -1,0 +1,18 @@
+{
+  "topicId": "g1-art-16", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Qor — sachratish usuli", "ru": "Снег — приём разбрызгивания", "en": "Snow — splatter technique" },
+  "recall": {
+    "uz": "Sachratish usulida choʻtkadan boʻyoqni sachratib, yogʻayotgan qorni chizamiz. Oq nuqtalar — qor parchalari. Keling, qor yogʻishini tasvirlaymiz.",
+    "ru": "В приёме разбрызгивания мы стряхиваем краску с кисти и рисуем падающий снег. Белые точки — снежинки. Давай изобразим снегопад.",
+    "en": "In the splatter technique we flick paint off the brush to draw falling snow. White dots are snowflakes. Let's depict a snowfall."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Yogʻayotgan qorni nuqtalar bilan chiz.", "ru": "Нарисуй падающий снег точками.", "en": "Draw falling snow with dots." },
+      "hint": { "uz": "Koʻp mayda nuqta — qor parchalari.", "ru": "Много мелких точек — снежинки.", "en": "Many small dots are snowflakes." },
+      "explanation": { "uz": "Qor yogʻmoqda!", "ru": "Идёт снег!", "en": "It's snowing!" },
+      "widget": { "type": "free_draw", "props": {} }
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "topicId": "g1-math-78",
+  "subjectKey": "g1-math",
+  "emojis": "🖼️🔺✨",
+  "title": {
+    "uz": "Masala sharti qanday beriladi",
+    "ru": "Способы записи условия",
+    "en": "Ways to show a problem"
+  },
+  "recall": {
+    "uz": "Masalaning sharti turlicha berilishi mumkin: matn, rasm, qisqacha yozuv yoki sxema bilan. Rasm va sxema masalani tushunishni osonlashtiradi. Shakllarni koʻrib, masalani yechamiz!",
+    "ru": "Условие задачи можно показать по-разному: текстом, рисунком, краткой записью или схемой. Рисунок и схема помогают понять задачу. Рассмотрим фигуры и решим!",
+    "en": "A problem's condition can be shown in different ways: text, a picture, a short note or a scheme. Pictures and schemes make it easier. Let's look at shapes and solve!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma doiralarni belgila!",
+        "ru": "Отметь все круги!",
+        "en": "Tap all the circles!"
+      },
+      "options": [
+        {
+          "id": "c1",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "s1",
+          "art": {
+            "kind": "square",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c2",
+          "art": {
+            "kind": "circle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "t1",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        },
+        {
+          "id": "c3",
+          "art": {
+            "kind": "circle",
+            "color": "magenta"
+          }
+        }
+      ],
+      "answer": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "hint": {
+        "uz": "Doira — yumaloq, burchaksiz shakl.",
+        "ru": "Круг — круглая фигура без углов.",
+        "en": "A circle is round with no corners."
+      },
+      "explanation": {
+        "uz": "Uchta doirani topdik.",
+        "ru": "Нашли три круга.",
+        "en": "We found three circles."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Uchburchakni bos!",
+        "ru": "Нажми на треугольник!",
+        "en": "Tap the triangle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "circle",
+            "color": "green"
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Uchburchakning 3 ta tomoni bor.",
+        "ru": "У треугольника 3 стороны.",
+        "en": "A triangle has 3 sides."
+      },
+      "explanation": {
+        "uz": "Uchburchakni topdik.",
+        "ru": "Нашли треугольник.",
+        "en": "We found the triangle."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "drag_sort",
+      "visualHint": "arrow_to_dropzone",
+      "prompt": {
+        "uz": "Shakllarni ajrat: yumaloq va burchakli",
+        "ru": "Раздели фигуры: круглые и угловатые",
+        "en": "Sort the shapes: round and cornered"
+      },
+      "items": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          },
+          "bin": "round"
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "square",
+            "color": "orange"
+          },
+          "bin": "corner"
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "ball",
+            "color": "red"
+          },
+          "bin": "round"
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          },
+          "bin": "corner"
+        }
+      ],
+      "bins": [
+        {
+          "id": "round",
+          "label": {
+            "uz": "Yumaloq",
+            "ru": "Круглые",
+            "en": "Round"
+          },
+          "color": "blue"
+        },
+        {
+          "id": "corner",
+          "label": {
+            "uz": "Burchakli",
+            "ru": "Угловатые",
+            "en": "Cornered"
+          },
+          "color": "magenta"
+        }
+      ],
+      "hint": {
+        "uz": "Yumaloqda burchak yoʻq, burchaklida bor.",
+        "ru": "У круглых нет углов, у угловатых есть.",
+        "en": "Round shapes have no corners; cornered ones do."
+      },
+      "explanation": {
+        "uz": "Shakllarni burchagi boʻyicha ajratdik.",
+        "ru": "Разделили фигуры по углам.",
+        "en": "We sorted shapes by their corners."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "19",
+            "18",
+            "20"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Rasmda 14 ta olma va 5 ta nok bor. Jami nechta meva?",
+        "ru": "На рисунке 14 яблок и 5 груш. Сколько всего фруктов?",
+        "en": "The picture has 14 apples and 5 pears. How many fruits in all?"
+      },
+      "hint": {
+        "uz": "14 ga 5 ni qoʻsh.",
+        "ru": "Прибавь к 14 число 5.",
+        "en": "Add 5 to 14."
+      },
+      "explanation": {
+        "uz": "14 + 5 = 19.",
+        "ru": "14 + 5 = 19.",
+        "en": "14 + 5 = 19."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "14 + 5",
+              "right": "19"
+            },
+            {
+              "left": "10 + 10",
+              "right": "20"
+            },
+            {
+              "left": "12 + 6",
+              "right": "18"
+            },
+            {
+              "left": "11 + 5",
+              "right": "16"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Mos juftlarni ulang!",
+        "ru": "Соедини пары!",
+        "en": "Match the pairs!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли выражение слева, потом найди равное справа.",
+        "en": "Work out the left expression, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir ifodani oʻz qiymati bilan ulading.",
+        "ru": "Каждое выражение соединили с его значением.",
+        "en": "Each expression was matched to its value."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 37,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla va javobni bloklardan yasa: 23 + 14 = ?",
+        "ru": "Вычисли и собери ответ из блоков: 23 + 14 = ?",
+        "en": "Work it out and build the answer with blocks: 23 + 14 = ?"
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni oʻnlik va birlik bloklaridan yasa.",
+        "ru": "Сначала вычисли, потом собери ответ из десятков и единиц.",
+        "en": "Work it out first, then build the answer from tens and ones."
+      },
+      "explanation": {
+        "uz": "23 + 14 = 37.",
+        "ru": "23 + 14 = 37.",
+        "en": "23 + 14 = 37."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Naqshni davom ettir!",
+        "ru": "Продолжи узор!",
+        "en": "Continue the pattern!"
+      },
+      "sequence": [
+        {
+          "kind": "triangle",
+          "color": "green"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "triangle",
+          "color": "green"
+        },
+        {
+          "kind": "circle",
+          "color": "blue"
+        },
+        {
+          "kind": "triangle",
+          "color": "green"
+        }
+      ],
+      "options": [
+        {
+          "id": "ci",
+          "art": {
+            "kind": "circle",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "tr",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "sq",
+          "art": {
+            "kind": "square",
+            "color": "orange"
+          }
+        }
+      ],
+      "answer": [
+        "ci"
+      ],
+      "hint": {
+        "uz": "Uchburchak va doira navbatlashadi.",
+        "ru": "Треугольник и круг чередуются.",
+        "en": "Triangle and circle take turns."
+      },
+      "explanation": {
+        "uz": "Uchburchakdan keyin doira keladi.",
+        "ru": "После треугольника идёт круг.",
+        "en": "After a triangle comes a circle."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "8",
+            "7",
+            "9"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Sxemada butun 20, bir qism 12. Ikkinchi qism nechа?",
+        "ru": "На схеме целое 20, одна часть 12. Чему равна вторая?",
+        "en": "On the scheme the whole is 20, one part is 12. What is the other part?"
+      },
+      "hint": {
+        "uz": "20 dan 12 ni ayir.",
+        "ru": "Вычти из 20 число 12.",
+        "en": "Take 12 from 20."
+      },
+      "explanation": {
+        "uz": "20 - 12 = 8.",
+        "ru": "20 - 12 = 8.",
+        "en": "20 - 12 = 8."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "17",
+            "16",
+            "18"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 9 + 8 = ?",
+        "ru": "Вычисли: 9 + 8 = ?",
+        "en": "Work it out: 9 + 8 = ?"
+      },
+      "hint": {
+        "uz": "Oʻnliklarni oʻnliklarga, birliklarni birliklarga qoʻsh.",
+        "ru": "Десятки к десяткам, единицы к единицам.",
+        "en": "Add tens to tens and ones to ones."
+      },
+      "explanation": {
+        "uz": "9 + 8 = 17.",
+        "ru": "9 + 8 = 17.",
+        "en": "9 + 8 = 17."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta kvadratni bos!",
+        "ru": "Нажми на самый большой квадрат!",
+        "en": "Tap the biggest square!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue",
+            "scale": 0.7
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "square",
+            "color": "orange",
+            "scale": 1.3
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "square",
+            "color": "green",
+            "scale": 0.95
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Eng koʻp joy egallagan shaklni tanla.",
+        "ru": "Выбери фигуру, занимающую больше места.",
+        "en": "Pick the shape that takes the most space."
+      },
+      "explanation": {
+        "uz": "Eng katta kvadratni topdik.",
+        "ru": "Нашли самый большой квадрат.",
+        "en": "We found the biggest square."
+      }
+    }
+  ]
+}

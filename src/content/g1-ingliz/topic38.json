@@ -1,0 +1,541 @@
+{
+  "topicId": "g1-ingliz-38",
+  "subjectKey": "g1-ingliz",
+  "emojis": "😋🍌🍗🥛",
+  "title": {
+    "uz": "Menga ... yoqadi",
+    "ru": "Мне нравится...",
+    "en": "I like..."
+  },
+  "recall": {
+    "uz": "Bugun yoqtirishni aytamiz: «I like bananas» — «Menga banan yoqadi». Va: «I don't like ...» — «Menga ... yoqmaydi».",
+    "ru": "Сегодня говорим о вкусах: «I like bananas» — «Мне нравятся бананы». И: «I don't like ...» — «Мне не нравится ...».",
+    "en": "Today we say what we like: \"I like bananas.\" And \"I don't like ...\""
+  },
+  "ttsText": {
+    "uz": "Menga yoqadi.",
+    "en": "I like bananas! I don't like ... What do you like?"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola bananni yoqtiradimi?",
+        "ru": "Послушай. Ребёнок любит бананы?",
+        "en": "Listen. Does the child like bananas?"
+      },
+      "hint": {
+        "uz": "«Yes, I like bananas» — ha, yoqadi.",
+        "ru": "«Yes, I like bananas» — да, нравятся.",
+        "en": "\"Yes, I like bananas!\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Yes, I like bananas.",
+        "ru": "Верно! Yes, I like bananas.",
+        "en": "Right! Yes, I like bananas."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Do you like bananas?",
+              "audio": {
+                "key": "ing38-q1-a",
+                "text": "Do you like bananas?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Yes, I like bananas!",
+              "audio": {
+                "key": "ing38-q1-b",
+                "text": "Yes, I like bananas!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Javob nima?",
+              "ru": "Какой ответ?",
+              "en": "What is the answer?"
+            },
+            "choices": [
+              "How many?",
+              "Yes, I like bananas!",
+              "No, I don't!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Qiz nima dedi?",
+        "ru": "Послушай. Что сказала девочка?",
+        "en": "Listen. What did the girl say?"
+      },
+      "hint": {
+        "uz": "«I don't like ...» — yoqmaydi.",
+        "ru": "«I don't like ...» — не нравится.",
+        "en": "\"I don't like chicken.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I don't like chicken.",
+        "ru": "Верно! I don't like chicken.",
+        "en": "Right! I don't like chicken."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "I like chicken!",
+              "audio": {
+                "key": "ing38-q2-a",
+                "text": "I like chicken!",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "I don't like chicken.",
+              "audio": {
+                "key": "ing38-q2-b",
+                "text": "I don't like chicken.",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Qiz nima dedi?",
+              "ru": "Что сказала девочка?",
+              "en": "What did the girl say?"
+            },
+            "choices": [
+              "I don't like chicken.",
+              "I like chicken!",
+              "Goodbye!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Tort mazali. Menga tort yoqadi. 🎂",
+        "ru": "Верно? Торт вкусный. Мне нравится торт. 🎂",
+        "en": "Is this right? Cake is yummy. I like cake. 🎂"
+      },
+      "hint": {
+        "uz": "Shirin narsalar yoqadi.",
+        "ru": "Сладкое нравится.",
+        "en": "Sweet things are yummy."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I like cake.",
+        "ru": "Верно! I like cake.",
+        "en": "Right! I like cake."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🎂",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«I like fruit.» Mevani bos!",
+        "ru": "«I like fruit.» Нажми фрукт!",
+        "en": "\"I like fruit.\" Tap the fruit!"
+      },
+      "hint": {
+        "uz": "Meva — olma.",
+        "ru": "Фрукт — яблоко.",
+        "en": "A fruit — an apple."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! An apple — meva.",
+        "ru": "Верно! An apple — фрукт.",
+        "en": "Right! An apple is a fruit."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread"
+            },
+            {
+              "emoji": "🍗",
+              "label": "chicken"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Taomlarni ajrat: meva yoki ichimlik!",
+        "ru": "Разложи: фрукт или напиток!",
+        "en": "Sort them: fruit or drink!"
+      },
+      "hint": {
+        "uz": "Yeymiz — meva, ichamiz — ichimlik.",
+        "ru": "Едим — фрукт, пьём — напиток.",
+        "en": "We eat fruit, we drink drinks."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har biri oʻz guruhida.",
+        "ru": "Молодец! Каждое в своей группе.",
+        "en": "Great! Each in its group!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "f",
+              "label": {
+                "uz": "Fruit",
+                "ru": "Фрукт",
+                "en": "Fruit"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "Drink",
+                "ru": "Напиток",
+                "en": "Drink"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🍎",
+              "label": "apple",
+              "bin": "f"
+            },
+            {
+              "emoji": "🍌",
+              "label": "banana",
+              "bin": "f"
+            },
+            {
+              "emoji": "🍊",
+              "label": "orange",
+              "bin": "f"
+            },
+            {
+              "emoji": "🥛",
+              "label": "milk",
+              "bin": "d"
+            },
+            {
+              "emoji": "💧",
+              "label": "water",
+              "bin": "d"
+            },
+            {
+              "emoji": "🍹",
+              "label": "juice",
+              "bin": "d"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Oxirgi bola nima dedi?",
+        "ru": "Послушай. Что сказал последний ребёнок?",
+        "en": "Listen. What did the last child say?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «I don't like eggs.»",
+        "ru": "Верно! «I don't like eggs.»",
+        "en": "Right! \"I don't like eggs.\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Do you like eggs?",
+              "audio": {
+                "key": "ing38-q6-a",
+                "text": "Do you like eggs?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "🧒",
+              "name": "Tom",
+              "text": "Yes! I like eggs.",
+              "audio": {
+                "key": "ing38-q6-b",
+                "text": "Yes! I like eggs.",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "I don't like eggs.",
+              "audio": {
+                "key": "ing38-q6-c",
+                "text": "I don't like eggs.",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia nima dedi?",
+              "ru": "Что сказала Мия?",
+              "en": "What did Mia say?"
+            },
+            "choices": [
+              "I don't like eggs.",
+              "I like eggs!",
+              "How many?"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ichimliklarni belgila!",
+        "ru": "Отметь напитки!",
+        "en": "Tap the drinks!"
+      },
+      "hint": {
+        "uz": "Sut, suv, sharbat.",
+        "ru": "Молоко, вода, сок.",
+        "en": "Milk, water, juice."
+      },
+      "explanation": {
+        "uz": "Barakalla! Sut, suv, sharbat — ichimlik!",
+        "ru": "Молодец! Молоко, вода, сок — напитки!",
+        "en": "Great! Milk, water, juice are drinks!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🥛",
+              "label": "milk",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "💧",
+              "label": "water",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍹",
+              "label": "juice",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🍞",
+              "label": "bread"
+            },
+            {
+              "id": "d1",
+              "emoji": "🥚",
+              "label": "egg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ortiqcha soʻzni top — qaysi biri meva emas?",
+        "ru": "Найди лишнее — что не фрукт?",
+        "en": "Find the odd one out — which is not a fruit?"
+      },
+      "hint": {
+        "uz": "Ichimlikni top.",
+        "ru": "Найди напиток.",
+        "en": "Find the drink."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Milk — ichimlik, meva emas.",
+        "ru": "Верно! Milk — напиток, не фрукт.",
+        "en": "Right! Milk is a drink, not a fruit."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "mevalar",
+            "ru": "фрукты",
+            "en": "fruits"
+          },
+          "tiles": [
+            {
+              "text": "apple"
+            },
+            {
+              "text": "banana"
+            },
+            {
+              "text": "orange"
+            },
+            {
+              "text": "milk",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soyaga qarab taomni top!",
+        "ru": "Угадай еду по тени!",
+        "en": "Guess the food by its shadow!"
+      },
+      "hint": {
+        "uz": "Sariq, egilgan meva.",
+        "ru": "Жёлтый, изогнутый фрукт.",
+        "en": "A yellow, curved fruit."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Banana — banan.",
+        "ru": "Верно! Banana — банан.",
+        "en": "Right! Banana!"
+      },
+      "widget": {
+        "type": "shadow_guess",
+        "props": {
+          "shadow": "🍌",
+          "options": [
+            {
+              "id": "banana",
+              "emoji": "🍌",
+              "label": "banana",
+              "correct": true
+            },
+            {
+              "id": "apple",
+              "emoji": "🍎",
+              "label": "apple"
+            },
+            {
+              "id": "egg",
+              "emoji": "🥚",
+              "label": "egg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Senga banan yoqadi. Buni qanday aytasan?",
+        "ru": "Тебе нравятся бананы. Как это сказать?",
+        "en": "You like bananas. How do you say it?"
+      },
+      "hint": {
+        "uz": "«I like ...» bilan boshla.",
+        "ru": "Начни с «I like ...».",
+        "en": "Start with \"I like ...\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! I like bananas.",
+        "ru": "Верно! I like bananas.",
+        "en": "Right! I like bananas."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "I like bananas.\nMenga banan yoqadi.",
+              "ru": "I like bananas.\nМне нравятся бананы.",
+              "en": "I like bananas."
+            },
+            {
+              "uz": "I don't like food.\nMenga ovqat yoqmaydi.",
+              "ru": "I don't like food.\nМне не нравится еда.",
+              "en": "I don't like food."
+            },
+            {
+              "uz": "Stand up.\nOʻrningdan tur.",
+              "ru": "Stand up.\nВстань.",
+              "en": "Stand up."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

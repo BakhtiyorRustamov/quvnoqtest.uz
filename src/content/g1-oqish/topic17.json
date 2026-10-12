@@ -1,0 +1,433 @@
+{
+  "topicId": "g1-oqish-17",
+  "subjectKey": "g1-oqish",
+  "emojis": "🏠📚🗞️",
+  "title": {
+    "uz": "Oilaviy mutolaa",
+    "ru": "Семейное чтение",
+    "en": "Family reading"
+  },
+  "recall": {
+    "uz": "Bugun kitob oʻqish — mutolaa haqidagi matnni oʻqiymiz. Bir oilada har kim nimani oʻqishini bilib olamiz, «mutolaa» va «pazandalik» soʻzlarini oʻrganamiz hamda adashgan harflardan soʻzlar yigʻamiz.",
+    "ru": "Сегодня читаем текст о чтении — мутолаа. Узнаем, кто что читает в одной семье, выучим слова «mutolaa» и «pazandalik» и соберём слова из перепутанных букв.",
+    "en": "Today we read a text about reading — mutolaa. We find out what everyone in one family reads, learn the words “mutolaa” and “pazandalik”, and rebuild words from mixed-up letters."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Kitobxon oila",
+          "variant": "story",
+          "audio": "g1-oqish-17-q1",
+          "lines": [
+            "Bizning oilamizda hamma mutolaani yaxshi koʻradi.",
+            "Mutolaa — bu kitobni diqqat bilan oʻqish demakdir.",
+            "Oyim pazandalikka oid kitoblarni oʻqiydilar: ulardan mazali taomlar tayyorlashni oʻrganadilar.",
+            "Dadam esa avtomobillar haqidagi jurnallarni yoqtiradilar.",
+            "Bobom har kuni gazeta oʻqiydilar, chunki yangiliklarni bilishga qiziqadilar.",
+            "Singlim ertaklarni sevadi.",
+            "Buvim esa biz oʻqib berganlarimizni jon qulogʻi bilan tinglaydilar.",
+            "Men-chi?",
+            "Men bolalar ensiklopediyasini sevib oʻqiyman.",
+            "Undan dunyo haqida juda koʻp qiziqarli maʼlumot topaman.",
+            "Kechqurun hammamiz oʻqiganlarimizni bir-birimizga soʻzlab beramiz."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Matnni diqqat bilan oʻqing!",
+        "ru": "Внимательно прочитай текст!",
+        "en": "Read the text carefully!"
+      },
+      "hint": {
+        "uz": "Kim nimani oʻqishini yodda saqlang.",
+        "ru": "Запомни, кто что читает.",
+        "en": "Remember who reads what."
+      },
+      "explanation": {
+        "uz": "Matn kitobxon oila haqida: har kim oʻz qiziqishiga mos narsani mutolaa qiladi.",
+        "ru": "Текст о читающей семье: каждый читает то, что ему интересно.",
+        "en": "The text is about a reading family: everyone reads what interests them."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Kitobni diqqat bilan oʻqish",
+              "ru": "Внимательное чтение книги",
+              "en": "Reading a book attentively"
+            },
+            {
+              "uz": "Rasm chizish",
+              "ru": "Рисование",
+              "en": "Drawing pictures"
+            },
+            {
+              "uz": "Ovqat tayyorlash",
+              "ru": "Приготовление еды",
+              "en": "Cooking food"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "«Mutolaa» soʻzi nimani anglatadi?",
+        "ru": "Что означает слово «mutolaa»?",
+        "en": "What does the word “mutolaa” mean?"
+      },
+      "hint": {
+        "uz": "Javob matnning birinchi xatboshida berilgan.",
+        "ru": "Ответ дан в первом абзаце.",
+        "en": "The answer is given in the first paragraph."
+      },
+      "explanation": {
+        "uz": "Mutolaa — kitobni diqqat bilan oʻqish. Bu koʻplab oilalarning sevimli mashgʻuloti.",
+        "ru": "Mutolaa — внимательное чтение книги. Это любимое занятие многих семей.",
+        "en": "Mutolaa means reading a book with full attention. Many families love this pastime."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "mutolaa",
+              "right": "diqqat bilan oʻqish"
+            },
+            {
+              "left": "pazandalik",
+              "right": "taom tayyorlash ilmi"
+            },
+            {
+              "left": "ensiklopediya",
+              "right": "bilimlar toʻplami kitobi"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "Oyim qaysi kitoblardan taom tayyorlashni oʻrganadilar?",
+        "ru": "По каким книгам мама учится готовить?",
+        "en": "Which books does Mum learn cooking from?"
+      },
+      "explanation": {
+        "uz": "mutolaa = diqqat bilan oʻqish; pazandalik = taom tayyorlash ilmi; ensiklopediya = bilimlar toʻplami kitobi.",
+        "ru": "mutolaa = внимательное чтение; pazandalik = кулинария; ensiklopediya = книга-собрание знаний.",
+        "en": "mutolaa = attentive reading; pazandalik = the craft of cooking; ensiklopediya = a book that gathers knowledge."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "oyim",
+              "right": "pazandalik kitoblari"
+            },
+            {
+              "left": "dadam",
+              "right": "avtomobil jurnallari"
+            },
+            {
+              "left": "bobom",
+              "right": "gazeta"
+            },
+            {
+              "left": "singlim",
+              "right": "ertaklar"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Kim nimani oʻqiydi? Ula!",
+        "ru": "Кто что читает? Соедини!",
+        "en": "Who reads what? Match them!"
+      },
+      "hint": {
+        "uz": "Bobom yangiliklarga qiziqadilar.",
+        "ru": "Дедушка интересуется новостями.",
+        "en": "Grandpa is interested in the news."
+      },
+      "explanation": {
+        "uz": "Oyim — pazandalik kitoblari, dadam — avtomobil jurnallari, bobom — gazeta, singlim — ertaklar.",
+        "ru": "Мама — кулинарные книги, папа — автомобильные журналы, дедушка — газеты, сестрёнка — сказки.",
+        "en": "Mum — cookbooks, Dad — car magazines, Grandpa — the newspaper, little sister — fairy tales."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Yangiliklarni bilishga qiziqadilar",
+              "ru": "Он интересуется новостями",
+              "en": "He is interested in the news"
+            },
+            {
+              "uz": "Rasmlarini yoqtiradilar",
+              "ru": "Ему нравятся картинки",
+              "en": "He likes the pictures"
+            },
+            {
+              "uz": "Ertak oʻqishni sevadilar",
+              "ru": "Он любит читать сказки",
+              "en": "He loves reading fairy tales"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Bobom nima uchun har kuni gazeta oʻqiydilar?",
+        "ru": "Почему дедушка каждый день читает газету?",
+        "en": "Why does Grandpa read the newspaper every day?"
+      },
+      "hint": {
+        "uz": "Gazetada har kuni nimalar yoziladi?",
+        "ru": "О чём каждый день пишут в газете?",
+        "en": "What do newspapers report every day?"
+      },
+      "explanation": {
+        "uz": "Bobom yangiliklarga qiziqqanlari uchun har kuni gazeta oʻqiydilar.",
+        "ru": "Дедушка читает газету, потому что интересуется новостями.",
+        "en": "Grandpa reads the newspaper because he is interested in the news."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Bolalar ensiklopediyasini",
+              "ru": "Детскую энциклопедию",
+              "en": "A children's encyclopedia"
+            },
+            {
+              "uz": "Avtomobil jurnalini",
+              "ru": "Автомобильный журнал",
+              "en": "A car magazine"
+            },
+            {
+              "uz": "Pazandalik kitobini",
+              "ru": "Кулинарную книгу",
+              "en": "A cookbook"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hikoyachi bola nimani sevib oʻqiydi?",
+        "ru": "Что любит читать рассказчик?",
+        "en": "What does the narrator love to read?"
+      },
+      "hint": {
+        "uz": "U undan dunyo haqida maʼlumot topadi.",
+        "ru": "Из неё он узнаёт о мире.",
+        "en": "He learns about the world from it."
+      },
+      "explanation": {
+        "uz": "Bola bolalar ensiklopediyasini sevib oʻqiydi va undan dunyo haqida koʻp maʼlumot topadi.",
+        "ru": "Мальчик любит детскую энциклопедию — из неё он много узнаёт о мире.",
+        "en": "The boy loves his children's encyclopedia — it teaches him a lot about the world."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "jurnal",
+          "letters": [
+            "j",
+            "u",
+            "r",
+            "n",
+            "a",
+            "l"
+          ],
+          "emoji": "🚗",
+          "clue": {
+            "uz": "Adashgan harflarni tartibla: dadam sevib oʻqiydigan narsa",
+            "ru": "Расставь перепутанные буквы: это любит читать папа",
+            "en": "Fix the mixed-up letters: Dad loves reading this"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Adashgan harflarni oʻz oʻrniga qoʻyib, soʻzni yigʻ!",
+        "ru": "Поставь перепутанные буквы на место и собери слово!",
+        "en": "Put the mixed-up letters in order and build the word!"
+      },
+      "hint": {
+        "uz": "Soʻz «j» harfi bilan boshlanadi.",
+        "ru": "Слово начинается с буквы «j».",
+        "en": "The word starts with “j”."
+      },
+      "explanation": {
+        "uz": "j-u-r-n-a-l — jurnal. Dadam avtomobillar haqidagi jurnallarni oʻqiydilar.",
+        "ru": "j-u-r-n-a-l — журнал. Папа читает автомобильные журналы.",
+        "en": "j-u-r-n-a-l — magazine. Dad reads car magazines."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "Kitob tanlashda ",
+          "after": " bilan maslahatlashing.",
+          "choices": [
+            "kattalar",
+            "oʻyinchoqlar",
+            "shamol"
+          ],
+          "answer": "kattalar",
+          "emoji": "📖",
+          "clue": {
+            "uz": "«Yodda tuting!» qoidasi",
+            "ru": "Правило «Запомни!»",
+            "en": "The “Remember!” rule"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Ota-ona, buvi va bobo — ular kimlar?",
+        "ru": "Родители, бабушка и дедушка — кто они?",
+        "en": "Parents and grandparents — who are they?"
+      },
+      "explanation": {
+        "uz": "Kitob tanlashda kattalar bilan maslahatlashing — ular sizga mos kitobni tavsiya qiladilar.",
+        "ru": "Выбирая книгу, советуйся со взрослыми — они подскажут подходящую.",
+        "en": "When choosing a book, ask the grown-ups — they will suggest the right one."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "tiles": [
+            {
+              "text": "kitob"
+            },
+            {
+              "text": "jurnal"
+            },
+            {
+              "text": "gazeta"
+            },
+            {
+              "text": "koptok",
+              "odd": true
+            }
+          ],
+          "clue": {
+            "uz": "Mutolaa qilinadigan narsalar",
+            "ru": "То, что можно читать",
+            "en": "Things you can read"
+          },
+          "emoji": "📰"
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi soʻz mutolaa qilinadigan narsalarga mos EMAS?",
+        "ru": "Какое слово НЕ относится к чтению?",
+        "en": "Which word is NOT something you read?"
+      },
+      "hint": {
+        "uz": "Uchtasi oʻqiladi, bittasi tepiladi.",
+        "ru": "Три — читают, одно — пинают.",
+        "en": "Three you read, one you kick."
+      },
+      "explanation": {
+        "uz": "Kitob, jurnal va gazeta oʻqiladi; koptok esa oʻyinchoq — u mutolaa qilinmaydi.",
+        "ru": "Книгу, журнал и газету читают; мяч — игрушка, его не читают.",
+        "en": "You read books, magazines, and newspapers; a ball is a toy — you cannot read it."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Bizning",
+            "oilamiz",
+            "mutolaani",
+            "yaxshi",
+            "koʻradi."
+          ],
+          "emoji": "🏠",
+          "clue": {
+            "uz": "Matnning birinchi gapi",
+            "ru": "Первое предложение текста",
+            "en": "The first sentence of the text"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan gap tuz!",
+        "ru": "Составь предложение из слов!",
+        "en": "Build the sentence from the words!"
+      },
+      "hint": {
+        "uz": "Gap «Bizning» soʻzi bilan boshlanadi.",
+        "ru": "Предложение начинается со слова «Bizning».",
+        "en": "The sentence starts with “Bizning”."
+      },
+      "explanation": {
+        "uz": "Bizning oilamiz mutolaani yaxshi koʻradi — har kuni kitob oʻqish ajoyib odat!",
+        "ru": "Наша семья любит чтение — читать каждый день отличная привычка!",
+        "en": "Our family loves reading — reading every day is a wonderful habit!"
+      }
+    }
+  ],
+  "skipRecall": true
+}

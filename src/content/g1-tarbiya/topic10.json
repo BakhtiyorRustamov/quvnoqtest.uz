@@ -1,0 +1,243 @@
+{
+  "topicId": "g1-tarbiya-10",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "💬🙏🙂✨",
+  "title": {
+    "uz": "Minnatdorlik",
+    "ru": "Благодарность",
+    "en": "Gratitude"
+  },
+  "recall": {
+    "uz": "«Salom», «Rahmat», «Iltimos», «Kechirasiz» va «Minnatdorman» — sehrli soʻzlar. Ular koʻngilni ochadi, hurmat va doʻstlikni koʻrsatadi. Odobli soʻz — insonning koʻrki.",
+    "ru": "«Здравствуйте», «Спасибо», «Пожалуйста», «Извините» и «Благодарю» — волшебные слова. Они радуют сердце, показывают уважение и дружбу. Вежливое слово украшает человека.",
+    "en": "\"Hello\", \"Thank you\", \"Please\", \"Sorry\" and \"I'm grateful\" are magic words. They warm the heart and show respect and friendship. A polite word is a person's adornment."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir odob soʻzini mos holatga ula!",
+        "ru": "Соедини каждое вежливое слово с ситуацией!",
+        "en": "Match each polite word to the right situation!"
+      },
+      "hint": {
+        "uz": "Uchrashganda, minnatdorchilik, uzr, iltimos.",
+        "ru": "При встрече, благодарность, извинение, просьба.",
+        "en": "Meeting, thanks, apology, a request."
+      },
+      "explanation": {
+        "uz": "Barakalla! Odob soʻzlarini toʻgʻri qoʻllading.",
+        "ru": "Молодец! Ты верно применил вежливые слова.",
+        "en": "Great! You used the polite words correctly."
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": {
+                  "uz": "Salom",
+                  "ru": "Здравствуйте",
+                  "en": "Hello"
+                }
+              },
+              "right": {
+                "emoji": "👋"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "Rahmat",
+                  "ru": "Спасибо",
+                  "en": "Thank you"
+                }
+              },
+              "right": {
+                "emoji": "🙏"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "Kechirasiz",
+                  "ru": "Извините",
+                  "en": "Sorry"
+                }
+              },
+              "right": {
+                "emoji": "😔"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "Iltimos",
+                  "ru": "Пожалуйста",
+                  "en": "Please"
+                }
+              },
+              "right": {
+                "emoji": "🙂"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Birovga beixtiyor xalaqit berdingiz. Nima deysiz?",
+        "ru": "Ты нечаянно помешал кому-то. Что скажешь?",
+        "en": "You accidentally disturbed someone. What do you say?"
+      },
+      "hint": {
+        "uz": "Uzr soʻzi.",
+        "ru": "Слово извинения.",
+        "en": "A word of apology."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Kechirasiz» deymiz.",
+        "ru": "Верно! Говорим «Извините».",
+        "en": "Right! We say \"Sorry\"."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Kechirasiz!",
+              "ru": "Извините!",
+              "en": "Sorry!"
+            },
+            {
+              "uz": "Menga nima!",
+              "ru": "Мне-то что!",
+              "en": "So what!"
+            },
+            {
+              "uz": "Sen aybdorsan!",
+              "ru": "Ты виноват!",
+              "en": "It's your fault!"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sehrli (odobli) soʻzlarni bos!",
+        "ru": "Нажми волшебные (вежливые) слова!",
+        "en": "Tap the magic (polite) words!"
+      },
+      "hint": {
+        "uz": "Salom, Rahmat, Iltimos, Kechirasiz.",
+        "ru": "Здравствуйте, Спасибо, Пожалуйста, Извините.",
+        "en": "Hello, Thank you, Please, Sorry."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bular sehrli soʻzlar.",
+        "ru": "Молодец! Это волшебные слова.",
+        "en": "Great! Those are the magic words."
+      },
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "Salom",
+              "match": true
+            },
+            {
+              "text": "Rahmat",
+              "match": true
+            },
+            {
+              "text": "qoʻpollik",
+              "match": false
+            },
+            {
+              "text": "Iltimos",
+              "match": true
+            },
+            {
+              "text": "baqiriq",
+              "match": false
+            },
+            {
+              "text": "Kechirasiz",
+              "match": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Odobli soʻzlar odamlarni xursand qiladi.",
+        "ru": "Верно? Вежливые слова радуют людей.",
+        "en": "Is this right? Polite words make people happy."
+      },
+      "hint": {
+        "uz": "Koʻngilni ochadi.",
+        "ru": "Радуют сердце.",
+        "en": "They warm the heart."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Odobli soʻz koʻngilni ochadi.",
+        "ru": "Верно! Вежливое слово радует.",
+        "en": "Right! A polite word warms the heart."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "✨",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi sehrli soʻzni eng koʻp ishlatasiz va nega?",
+        "ru": "Какое волшебное слово ты используешь чаще всего и почему?",
+        "en": "Which magic word do you use most, and why?"
+      },
+      "hint": {
+        "uz": "Salom, Rahmat, Iltimos — bittasini tanla.",
+        "ru": "Здравствуйте, Спасибо, Пожалуйста — выбери одно.",
+        "en": "Hello, Thank you, Please — pick one."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Odob — insonning koʻrki.",
+        "ru": "Отлично! Вежливость украшает человека.",
+        "en": "Great! Politeness adorns a person."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Men «rahmat» soʻzini koʻp ishlataman, chunki menga yordam berganlarga minnatdorchilik bildiraman.",
+            "ru": "Я чаще всего говорю «спасибо», ведь я благодарю тех, кто мне помог.",
+            "en": "I use \"thank you\" most, because I show gratitude to those who help me."
+          }
+        }
+      }
+    }
+  ]
+}

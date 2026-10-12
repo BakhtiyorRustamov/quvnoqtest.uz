@@ -1,0 +1,532 @@
+{
+  "topicId": "g1-ingliz-34",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🚿✋👣💧",
+  "title": {
+    "uz": "Oyoqlaringni yuv!",
+    "ru": "Помой ноги!",
+    "en": "Wash your feet, please!"
+  },
+  "recall": {
+    "uz": "Suhbat vaqti! Bugun aytamiz: «Wash your hands, please!» — «Qoʻlingni yuv!» Va: «Wash your feet, please!» — «Oyoqlaringni yuv!»",
+    "ru": "Время беседы! Сегодня говорим: «Wash your hands, please!» — «Помой руки!» И: «Wash your feet, please!» — «Помой ноги!»",
+    "en": "Talk time! Today we say \"Wash your hands, please!\" And \"Wash your feet, please!\""
+  },
+  "ttsText": {
+    "uz": "Oyoqlaringni yuv!",
+    "en": "Talk time! Wash your hands, please! Wash your feet, please!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Oyisi nima soʻradi?",
+        "ru": "Послушай. О чём попросила мама?",
+        "en": "Listen. What did Mom ask?"
+      },
+      "hint": {
+        "uz": "«Wash your hands» — qoʻlingni yuv.",
+        "ru": "«Wash your hands» — помой руки.",
+        "en": "\"Wash your hands.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Wash your hands, please!»",
+        "ru": "Верно! «Wash your hands, please!»",
+        "en": "Right! \"Wash your hands, please!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "Wash your hands, please!",
+              "audio": {
+                "key": "ing34-q1-a",
+                "text": "Wash your hands, please!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "OK, Mom!",
+              "audio": {
+                "key": "ing34-q1-b",
+                "text": "OK, Mom!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Oyisi nima dedi?",
+              "ru": "Что сказала мама?",
+              "en": "What did Mom say?"
+            },
+            "choices": [
+              "How many?",
+              "Wash your hands!",
+              "Happy birthday!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Dadasi nima soʻradi?",
+        "ru": "Послушай. О чём попросил папа?",
+        "en": "Listen. What did Dad ask?"
+      },
+      "hint": {
+        "uz": "«Wash your feet» — oyoqlaringni yuv.",
+        "ru": "«Wash your feet» — помой ноги.",
+        "en": "\"Wash your feet.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Wash your feet, please!»",
+        "ru": "Верно! «Wash your feet, please!»",
+        "en": "Right! \"Wash your feet, please!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👨",
+              "name": "Dad",
+              "text": "Wash your feet, please!",
+              "audio": {
+                "key": "ing34-q2-a",
+                "text": "Wash your feet, please!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "OK, Dad!",
+              "audio": {
+                "key": "ing34-q2-b",
+                "text": "OK, Dad!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Dadasi nima dedi?",
+              "ru": "Что сказал папа?",
+              "en": "What did Dad say?"
+            },
+            "choices": [
+              "Stand up!",
+              "Wash your feet!",
+              "Goodbye!"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Wash your hands!» — qoʻllarni bos!",
+        "ru": "«Wash your hands!» — нажми руки!",
+        "en": "\"Wash your hands!\" — tap the hands!"
+      },
+      "hint": {
+        "uz": "«hands» — qoʻllar.",
+        "ru": "«hands» — руки.",
+        "en": "\"hands\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Hands — qoʻllar.",
+        "ru": "Верно! Hands — руки.",
+        "en": "Right! Hands!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "✋",
+              "label": "hands",
+              "correct": true
+            },
+            {
+              "emoji": "👀",
+              "label": "eyes"
+            },
+            {
+              "emoji": "👂",
+              "label": "ears"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? «Wash your hands» — tozalik haqida.",
+        "ru": "Верно? «Wash your hands» — о чистоте.",
+        "en": "Is this right? \"Wash your hands\" is about being clean."
+      },
+      "hint": {
+        "uz": "Yuvinish — tozalik.",
+        "ru": "Мытьё — чистота.",
+        "en": "Washing is cleanliness."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tozalik haqida.",
+        "ru": "Верно! О чистоте.",
+        "en": "Right! It's about being clean."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "💧",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola oxirida nima dedi?",
+        "ru": "Послушай. Что ребёнок сказал в конце?",
+        "en": "Listen. What did the child say at the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «OK, I will!»",
+        "ru": "Верно! «OK, I will!»",
+        "en": "Right! \"OK, I will!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👨",
+              "name": "Dad",
+              "text": "Your feet are dirty!",
+              "audio": {
+                "key": "ing34-q5-a",
+                "text": "Your feet are dirty!",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "👨",
+              "name": "Dad",
+              "text": "Wash your feet, please.",
+              "audio": {
+                "key": "ing34-q5-b",
+                "text": "Wash your feet, please.",
+                "voice": "man"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "OK, I will!",
+              "audio": {
+                "key": "ing34-q5-c",
+                "text": "OK, I will!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Mia oxirida nima dedi?",
+              "ru": "Что Мия сказала в конце?",
+              "en": "What did Mia say at the end?"
+            },
+            "choices": [
+              "OK, I will!",
+              "Three books!",
+              "No, it isn't!"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yuvadigan aʼzolarni belgila!",
+        "ru": "Отметь части, которые моют!",
+        "en": "Tap the parts you wash!"
+      },
+      "hint": {
+        "uz": "Qoʻllar, oyoqlar, yuz.",
+        "ru": "Руки, ноги, лицо.",
+        "en": "Hands, feet, face."
+      },
+      "explanation": {
+        "uz": "Barakalla! Qoʻl, oyoq, yuzni yuvamiz!",
+        "ru": "Молодец! Моем руки, ноги, лицо!",
+        "en": "Great! We wash hands, feet and face!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "✋",
+              "label": "hands",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "👣",
+              "label": "feet",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👄",
+              "label": "face",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🚗",
+              "label": "car"
+            },
+            {
+              "id": "d1",
+              "emoji": "⚽",
+              "label": "ball"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soyaga qarab tana aʼzosini top!",
+        "ru": "Угадай часть тела по тени!",
+        "en": "Guess the body part by its shadow!"
+      },
+      "hint": {
+        "uz": "Ular bilan ushlaymiz.",
+        "ru": "Ими держим.",
+        "en": "We hold with them."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Hands — qoʻllar.",
+        "ru": "Верно! Hands — руки.",
+        "en": "Right! Hands!"
+      },
+      "widget": {
+        "type": "shadow_guess",
+        "props": {
+          "shadow": "✋",
+          "options": [
+            {
+              "id": "hands",
+              "emoji": "✋",
+              "label": "hands",
+              "correct": true
+            },
+            {
+              "id": "feet",
+              "emoji": "👣",
+              "label": "feet"
+            },
+            {
+              "id": "ears",
+              "emoji": "👂",
+              "label": "ears"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Buyruqni tana aʼzosiga ula!",
+        "ru": "Соедини команду с частью тела!",
+        "en": "Match each command to its body part!"
+      },
+      "hint": {
+        "uz": "hands ✋, feet 👣, face 👄.",
+        "ru": "hands ✋, feet 👣, face 👄.",
+        "en": "hands ✋, feet 👣, face 👄."
+      },
+      "explanation": {
+        "uz": "Barakalla!",
+        "ru": "Молодец!",
+        "en": "Great!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "hands"
+              },
+              "right": {
+                "emoji": "✋"
+              }
+            },
+            {
+              "left": {
+                "label": "feet"
+              },
+              "right": {
+                "emoji": "👣"
+              }
+            },
+            {
+              "left": {
+                "label": "face"
+              },
+              "right": {
+                "emoji": "👄"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Oyisi nima soʻradi?",
+        "ru": "Послушай. О чём попросила мама?",
+        "en": "Listen. What did Mom ask?"
+      },
+      "hint": {
+        "uz": "«Wash your face» — yuzingni yuv.",
+        "ru": "«Wash your face» — умойся.",
+        "en": "\"Wash your face.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Wash your face, please!»",
+        "ru": "Верно! «Wash your face, please!»",
+        "en": "Right! \"Wash your face, please!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👩",
+              "name": "Mom",
+              "text": "Wash your face, please!",
+              "audio": {
+                "key": "ing34-q9-a",
+                "text": "Wash your face, please!",
+                "voice": "teacher"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "OK, Mom!",
+              "audio": {
+                "key": "ing34-q9-b",
+                "text": "OK, Mom!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Oyisi nima dedi?",
+              "ru": "Что сказала мама?",
+              "en": "What did Mom say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Wash your face!",
+              "How many?"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qoʻling kir. Oyisi nima deydi?",
+        "ru": "Руки грязные. Что скажет мама?",
+        "en": "Your hands are dirty. What does Mom say?"
+      },
+      "hint": {
+        "uz": "Yuvishni soʻraydi.",
+        "ru": "Просит помыть.",
+        "en": "She asks you to wash."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Wash your hands, please.»",
+        "ru": "Верно! «Wash your hands, please.»",
+        "en": "Right! \"Wash your hands, please.\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Wash your hands, please.\nQoʻlingni yuv.",
+              "ru": "Wash your hands, please.\nПомой руки.",
+              "en": "Wash your hands, please."
+            },
+            {
+              "uz": "Eat more!\nKoʻproq ye!",
+              "ru": "Eat more!\nЕшь больше!",
+              "en": "Eat more!"
+            },
+            {
+              "uz": "Go to sleep.\nUxlagin.",
+              "ru": "Go to sleep.\nИди спать.",
+              "en": "Go to sleep."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

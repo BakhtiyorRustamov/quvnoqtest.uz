@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-32", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Gʻijimlangan qogʻoz yordamida", "ru": "Рисуем смятой бумагой", "en": "Painting with crumpled paper" },
+  "recall": {
+    "uz": "Gʻijimlangan qogʻozni boʻyoqqa botirib bossak, gʻalati va chiroyli naqshlar hosil boʻladi. Shu usulda rasm chiz va suratga ol.",
+    "ru": "Если обмакнуть смятую бумагу в краску и прижать, получаются необычные красивые узоры. Нарисуй так и сфотографируй.",
+    "en": "If you dip crumpled paper in paint and press, you get unusual, pretty patterns. Make a picture this way and photograph it."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Gʻijim qogʻoz bilan rasm chiz va suratga ol.", "ru": "Нарисуй смятой бумагой и сфотографируй.", "en": "Paint with crumpled paper, then photograph it." },
+      "hint": { "uz": "Qogʻozni gʻijimlab, boʻyoqqa botirib bos.", "ru": "Смни бумагу, обмакни в краску и прижми.", "en": "Crumple the paper, dip in paint and press." },
+      "explanation": { "uz": "Ajoyib naqshlar!", "ru": "Замечательные узоры!", "en": "Wonderful patterns!" },
+      "widget": { "type": "photo_upload", "props": {} } }
+  ]
+}

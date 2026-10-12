@@ -1,0 +1,478 @@
+{
+  "topicId": "g1-ingliz-20",
+  "subjectKey": "g1-ingliz",
+  "emojis": "❓👵👨‍👩‍👧‍👦👧",
+  "title": {
+    "uz": "Bu kim? — Bu mening...",
+    "ru": "Кто это? — Это мой(я)...",
+    "en": "Who's this? This is my..."
+  },
+  "recall": {
+    "uz": "Bugun soʻraymiz: «Who's this?» — «Bu kim?» Javob: «This is my dad» — «Bu mening dadam». Va: «Is that your sister?» — «Yes / No, it isn't».",
+    "ru": "Сегодня спрашиваем: «Who's this?» — «Кто это?» Ответ: «This is my dad» — «Это мой папа». И: «Is that your sister?» — «Yes / No, it isn't».",
+    "en": "Today we ask \"Who's this?\" and answer \"This is my dad.\" And \"Is that your sister? Yes, it is. / No, it isn't.\""
+  },
+  "ttsText": {
+    "uz": "Bu kim?",
+    "en": "Who's this? This is my dad! Is that your sister? No, it isn't."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu kim?",
+        "ru": "Послушай. Кто это?",
+        "en": "Listen. Who is it?"
+      },
+      "hint": {
+        "uz": "«This is my dad».",
+        "ru": "«This is my dad».",
+        "en": "\"This is my dad.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! This is my dad — dadam.",
+        "ru": "Верно! This is my dad — папа.",
+        "en": "Right! This is my dad."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Who's this?",
+              "audio": {
+                "key": "ing20-q1-a",
+                "text": "Who's this?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "This is my dad!",
+              "audio": {
+                "key": "ing20-q1-b",
+                "text": "This is my dad!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu kim?",
+              "ru": "Кто это?",
+              "en": "Who is it?"
+            },
+            "choices": [
+              "grandpa",
+              "brother",
+              "dad"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu aslida kim?",
+        "ru": "Послушай. Кто это на самом деле?",
+        "en": "Listen. Who is it really?"
+      },
+      "hint": {
+        "uz": "«No, it isn't. It's my cousin».",
+        "ru": "«No, it isn't. It's my cousin».",
+        "en": "\"No, it isn't. It's my cousin.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bu singil emas, amakivachcha (cousin).",
+        "ru": "Верно! Это не сестра, а двоюродный(ая) (cousin).",
+        "en": "Right! It isn't the sister — it's the cousin."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Is that your sister?",
+              "audio": {
+                "key": "ing20-q2-a",
+                "text": "Is that your sister?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "No, it isn't. It's my cousin!",
+              "audio": {
+                "key": "ing20-q2-b",
+                "text": "No, it isn't. It's my cousin!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu kim?",
+              "ru": "Кто это?",
+              "en": "Who is it?"
+            },
+            "choices": [
+              "cousin",
+              "sister",
+              "mom"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bu kim? 👵",
+        "ru": "Кто это? 👵",
+        "en": "Who's this? 👵"
+      },
+      "hint": {
+        "uz": "Keksa ayol — buvi.",
+        "ru": "Пожилая женщина — бабушка.",
+        "en": "An older woman."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! This is my grandma.",
+        "ru": "Верно! This is my grandma.",
+        "en": "Right! This is my grandma."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "This is my grandma.",
+              "ru": "This is my grandma.",
+              "en": "This is my grandma."
+            },
+            {
+              "uz": "This is my brother.",
+              "ru": "This is my brother.",
+              "en": "This is my brother."
+            },
+            {
+              "uz": "This is my dad.",
+              "ru": "This is my dad.",
+              "en": "This is my dad."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bu kim? 👦",
+        "ru": "Кто это? 👦",
+        "en": "Who's this? 👦"
+      },
+      "hint": {
+        "uz": "Oʻgʻil bola — aka/uka.",
+        "ru": "Мальчик — брат.",
+        "en": "A boy in the family."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! This is my brother.",
+        "ru": "Верно! This is my brother.",
+        "en": "Right! This is my brother."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "This is my brother.",
+              "ru": "This is my brother.",
+              "en": "This is my brother."
+            },
+            {
+              "uz": "This is my grandma.",
+              "ru": "This is my grandma.",
+              "en": "This is my grandma."
+            },
+            {
+              "uz": "This is my mom.",
+              "ru": "This is my mom.",
+              "en": "This is my mom."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? 👴 = «This is my grandpa».",
+        "ru": "Верно? 👴 = «This is my grandpa».",
+        "en": "Is this right? 👴 = \"This is my grandpa.\""
+      },
+      "hint": {
+        "uz": "Keksa erkak — bobo.",
+        "ru": "Пожилой мужчина — дедушка.",
+        "en": "An older man is grandpa."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bu bobo.",
+        "ru": "Верно! Это дедушка.",
+        "en": "Right! It's grandpa."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👴",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? 👩 = «This is my brother».",
+        "ru": "Верно? 👩 = «This is my brother».",
+        "en": "Is this right? 👩 = \"This is my brother.\""
+      },
+      "hint": {
+        "uz": "👩 — ayol.",
+        "ru": "👩 — женщина.",
+        "en": "👩 is a woman."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Bu oyi (mom), aka emas.",
+        "ru": "Неверно! Это мама, а не брат.",
+        "en": "False! It's mom, not a brother."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👩",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu kim ekan?",
+        "ru": "Послушай. Кто же это?",
+        "en": "Listen. Who is it, in the end?"
+      },
+      "hint": {
+        "uz": "Uch gapni tingla.",
+        "ru": "Послушай три фразы.",
+        "en": "Listen to all three lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's my aunt — xolam/ammam.",
+        "ru": "Верно! It's my aunt — тётя.",
+        "en": "Right! It's my aunt."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Who's that?",
+              "audio": {
+                "key": "ing20-q7-a",
+                "text": "Who's that?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "Is that your mom?",
+              "audio": {
+                "key": "ing20-q7-b",
+                "text": "Is that your mom?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "No, it isn't. It's my aunt!",
+              "audio": {
+                "key": "ing20-q7-c",
+                "text": "No, it isn't. It's my aunt!",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu kim?",
+              "ru": "Кто это?",
+              "en": "Who is it?"
+            },
+            "choices": [
+              "aunt",
+              "sister",
+              "mom"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«This is my dad»ning tarjimasi nima?",
+        "ru": "Что значит «This is my dad»?",
+        "en": "What does \"This is my dad\" mean?"
+      },
+      "hint": {
+        "uz": "Oila aʼzosini koʻrsatyapti.",
+        "ru": "Показывает члена семьи.",
+        "en": "He shows a family member."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bu mening dadam.",
+        "ru": "Верно! Это мой папа.",
+        "en": "Right! \"This is my dad.\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Bu mening dadam.",
+              "ru": "Это мой папа.",
+              "en": "This is my dad."
+            },
+            {
+              "uz": "Bu mening buvim.",
+              "ru": "Это моя бабушка.",
+              "en": "This is my grandma."
+            },
+            {
+              "uz": "Bu mening koptogim.",
+              "ru": "Это мой мяч.",
+              "en": "This is my ball."
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«This is my grandma» — buvini bos!",
+        "ru": "«This is my grandma» — нажми бабушку!",
+        "en": "\"This is my grandma\" — tap grandma!"
+      },
+      "hint": {
+        "uz": "Keksa ayol.",
+        "ru": "Пожилая женщина.",
+        "en": "An older woman."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 👵 — grandma.",
+        "ru": "Верно! 👵 — grandma.",
+        "en": "Right! 👵 grandma!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "👵",
+              "label": "grandma",
+              "correct": true
+            },
+            {
+              "emoji": "👧",
+              "label": "sister"
+            },
+            {
+              "emoji": "👨",
+              "label": "dad"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kimdir «Is that your brother?» dedi, lekin bu amakivachcha. Nima deysan?",
+        "ru": "Спросили «Is that your brother?», но это двоюродный. Что ответишь?",
+        "en": "Someone asks \"Is that your brother?\" but it's your cousin. What do you say?"
+      },
+      "hint": {
+        "uz": "Bu aka/uka emas.",
+        "ru": "Это не брат.",
+        "en": "It is not your brother."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «No, it isn't. It's my cousin.»",
+        "ru": "Верно! «No, it isn't. It's my cousin.»",
+        "en": "Right! \"No, it isn't. It's my cousin.\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«No, it isn't. It's my cousin.»",
+              "ru": "«No, it isn't. It's my cousin.»",
+              "en": "\"No, it isn't. It's my cousin.\""
+            },
+            {
+              "uz": "«Yes, it is.»",
+              "ru": "«Yes, it is.»",
+              "en": "\"Yes, it is.\""
+            },
+            {
+              "uz": "«Happy birthday!»",
+              "ru": "«Happy birthday!»",
+              "en": "\"Happy birthday!\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "topicId": "g1-tabiiy-12",
+  "subjectKey": "g1-tabiiy",
+  "emojis": "❄️🧊⛄🌨️",
+  "title": {
+    "uz": "Qor va sovuq hodisalari",
+    "ru": "Снежные и морозные явления",
+    "en": "Snow and cold weather events"
+  },
+  "recall": {
+    "uz": "Qishda kunlar qisqa, tunlar uzun boʻladi. Havo sovib, daryo va koʻllar muzlaydi. Bulutdagi mayda suv tomchilari muzlab, qor boʻlib yogʻadi. Kuchli shamolli qor boʻron deyiladi. Erigan qor kechasi muzlab, yaxmalak hosil qiladi.",
+    "ru": "Зимой дни короткие, ночи длинные. Холодает, реки и озёра замерзают. Капельки воды в облаках замерзают и выпадают снегом. Снег с сильным ветром называют бураном. Растаявший снег ночью замерзает и образует гололёд.",
+    "en": "In winter days are short and nights are long. It gets cold, rivers and lakes freeze. Tiny water drops in clouds freeze and fall as snow. Snow with a strong wind is called a blizzard. Melted snow freezes at night and forms black ice."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Qishda kunlar qisqa, tunlar uzun boʻladi.", "ru": "Верно? Зимой дни короткие, а ночи длинные.", "en": "True? In winter days are short and nights are long." },
+      "hint": { "uz": "Qishda quyosh erta botadi, tun uzoq davom etadi.", "ru": "Зимой солнце рано садится, ночь длинная.", "en": "In winter the sun sets early and the night is long." },
+      "explanation": { "uz": "Toʻgʻri. Qishda kun qisqa, tun uzun boʻladi.", "ru": "Верно. Зимой день короткий, а ночь длинная.", "en": "True. In winter the day is short and the night is long." },
+      "widget": { "type": "true_false", "props": { "emoji": "🌙", "answer": true } }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qishda daryo va koʻllar bilan nima boʻladi?", "ru": "Что происходит зимой с реками и озёрами?", "en": "What happens to rivers and lakes in winter?" },
+      "hint": { "uz": "Sovuqda suv qattiq muzga aylanadi.", "ru": "На холоде вода превращается в лёд.", "en": "In the cold, water turns into hard ice." },
+      "explanation": { "uz": "Qishda daryo va koʻllar muzlaydi — suv muzga aylanadi.", "ru": "Зимой реки и озёра замерзают — вода становится льдом.", "en": "In winter rivers and lakes freeze — water turns to ice." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "freeze", "emoji": "🧊", "label": { "uz": "muzlaydi", "ru": "замерзает", "en": "freezes" }, "correct": true },
+            { "id": "boil", "emoji": "🔥", "label": { "uz": "qiziydi", "ru": "нагревается", "en": "heats up" } },
+            { "id": "wave", "emoji": "🌊", "label": { "uz": "toshadi", "ru": "разливается", "en": "overflows" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Ikkita bir xil rasmni topib, ikkalasini ham bos!", "ru": "Найди две одинаковые картинки и нажми обе!", "en": "Find the two identical pictures and tap them both!" },
+      "hint": { "uz": "Qor parchasini boshqalari bilan solishtir.", "ru": "Сравни снежинку с остальными.", "en": "Compare the snowflake with the others." },
+      "explanation": { "uz": "Ikki qor parchasi bir xil edi. Boshqa qishki rasmlar har xil.", "ru": "Две снежинки были одинаковыми. Другие зимние картинки разные.", "en": "The two snowflakes were identical. The other winter pictures were different." },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            { "id": "f1", "emoji": "❄️", "key": "flake" },
+            { "id": "snowman", "emoji": "⛄", "key": "snowman" },
+            { "id": "ice", "emoji": "🧊", "key": "ice" },
+            { "id": "scarf", "emoji": "🧣", "key": "scarf" },
+            { "id": "f2", "emoji": "❄️", "key": "flake" },
+            { "id": "mitten", "emoji": "🧤", "key": "mitten" },
+            { "id": "ski", "emoji": "🎿", "key": "ski" },
+            { "id": "cloud", "emoji": "🌨️", "key": "cloud" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Har bir hodisani oʻz rasmiga ula!", "ru": "Соедини каждое явление с его картинкой!", "en": "Match each phenomenon to its picture!" },
+      "hint": { "uz": "Qor yogʻishi, muzlash, shamol, qor koʻchkisi.", "ru": "Снегопад, замерзание, ветер, лавина.", "en": "Snowfall, freezing, wind, avalanche." },
+      "explanation": { "uz": "Qishda turli hodisalar boʻladi: qor yogʻadi, suv muzlaydi, shamol esadi.", "ru": "Зимой бывают разные явления: идёт снег, вода замерзает, дует ветер.", "en": "In winter there are different events: snow falls, water freezes, wind blows." },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            { "left": { "label": { "uz": "Qor yogʻishi", "ru": "Снегопад", "en": "Snowfall" } }, "right": { "emoji": "🌨️", "label": { "uz": "qor", "ru": "снег", "en": "snow" } } },
+            { "left": { "label": { "uz": "Muzlash", "ru": "Замерзание", "en": "Freezing" } }, "right": { "emoji": "🧊", "label": { "uz": "muz", "ru": "лёд", "en": "ice" } } },
+            { "left": { "label": { "uz": "Izgʻirin", "ru": "Метель", "en": "Blowing snow" } }, "right": { "emoji": "🌬️", "label": { "uz": "shamol", "ru": "ветер", "en": "wind" } } },
+            { "left": { "label": { "uz": "Qor koʻchkisi", "ru": "Лавина", "en": "Avalanche" } }, "right": { "emoji": "🏔️", "label": { "uz": "togʻ", "ru": "гора", "en": "mountain" } } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qishda boʻladigan hodisalarni belgila!", "ru": "Отметь зимние явления!", "en": "Tap the winter phenomena!" },
+      "hint": { "uz": "Qor yogʻishi, muzlash va izgʻirin — qish hodisalari.", "ru": "Снегопад, гололёд и метель — зимние явления.", "en": "Snowfall, freezing and blowing snow are winter events." },
+      "explanation": { "uz": "Qor yogʻishi, muzlash va izgʻirin qishda boʻladi. Kamalak va gullash — yoʻq.", "ru": "Снегопад, гололёд и метель бывают зимой. Радуга и цветение — нет.", "en": "Snowfall, freezing and blowing snow happen in winter. Rainbow and blossom do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "snow", "emoji": "🌨️", "label": { "uz": "qor yogʻishi", "ru": "снегопад", "en": "snowfall" }, "correct": true },
+            { "id": "ice", "emoji": "🧊", "label": { "uz": "muzlash", "ru": "гололёд", "en": "freezing" }, "correct": true },
+            { "id": "wind", "emoji": "🌬️", "label": { "uz": "izgʻirin", "ru": "метель", "en": "blowing snow" }, "correct": true },
+            { "id": "rainbow", "emoji": "🌈", "label": { "uz": "kamalak", "ru": "радуга", "en": "rainbow" } },
+            { "id": "bloom", "emoji": "🌸", "label": { "uz": "gullash", "ru": "цветение", "en": "blossom" } },
+            { "id": "heat", "emoji": "☀️", "label": { "uz": "jazirama", "ru": "жара", "en": "heat" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Topishmoq: oq koʻrpa yerni yopadi, quyoshda erib ketadi. Bu nima?", "ru": "Загадка: белое одеяло покрывает землю, тает на солнце. Что это?", "en": "Riddle: a white blanket covers the ground, melts in the sun. What is it?" },
+      "hint": { "uz": "U qishda osmondan oq boʻlib yogʻadi.", "ru": "Зимой падает с неба белым.", "en": "It falls from the sky white in winter." },
+      "explanation": { "uz": "Bu — qor. Qor yerni oq koʻrpadek yopadi va quyoshda eriydi.", "ru": "Это снег. Снег покрывает землю, как одеяло, и тает на солнце.", "en": "It is snow. Snow covers the ground like a blanket and melts in the sun." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "snow", "emoji": "❄️", "label": { "uz": "qor", "ru": "снег", "en": "snow" }, "correct": true },
+            { "id": "water", "emoji": "💧", "label": { "uz": "suv", "ru": "вода", "en": "water" } },
+            { "id": "fire", "emoji": "🔥", "label": { "uz": "olov", "ru": "огонь", "en": "fire" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Qishda havo issiq boʻladi.", "ru": "Верно? Зимой воздух тёплый.", "en": "True? The air is warm in winter." },
+      "hint": { "uz": "Qish — yilning eng sovuq fasli.", "ru": "Зима — самое холодное время года.", "en": "Winter is the coldest season." },
+      "explanation": { "uz": "Notoʻgʻri. Qishda havo sovuq boʻladi, issiq emas.", "ru": "Неверно. Зимой воздух холодный, а не тёплый.", "en": "False. In winter the air is cold, not warm." },
+      "widget": { "type": "true_false", "props": { "emoji": "❄️", "answer": false } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Yaxmalak nima? Kechasi muzlab hosil boʻlgan yupqa muz.", "ru": "Что такое гололёд? Тонкий лёд, замёрзший ночью.", "en": "What is black ice? A thin layer of ice frozen at night." },
+      "hint": { "uz": "Erigan suv kechasi muzlab, sirpanchiq muz hosil qiladi.", "ru": "Талая вода ночью замерзает в скользкий лёд.", "en": "Melted water freezes at night into slippery ice." },
+      "explanation": { "uz": "Yaxmalak — yupqa, sirpanchiq muz. Unda ehtiyot boʻlish kerak.", "ru": "Гололёд — тонкий скользкий лёд. С ним надо быть осторожным.", "en": "Black ice is thin, slippery ice. You must be careful on it." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "ice", "emoji": "🧊", "label": { "uz": "muz", "ru": "лёд", "en": "ice" }, "correct": true },
+            { "id": "rain", "emoji": "🌧️", "label": { "uz": "yomgʻir", "ru": "дождь", "en": "rain" } },
+            { "id": "wind", "emoji": "🌬️", "label": { "uz": "shamol", "ru": "ветер", "en": "wind" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Qishda yoki yozda boʻladi? Ajrat!", "ru": "Бывает зимой или летом? Разложи!", "en": "Happens in winter or summer? Sort!" },
+      "hint": { "uz": "Qor va muz — qishda; muzqaymoq va jazirama — yozda.", "ru": "Снег и лёд — зимой; мороженое и жара — летом.", "en": "Snow and ice in winter; ice cream and heat in summer." },
+      "explanation": { "uz": "Qor, qor odam va muz qishda boʻladi. Muzqaymoq, suzish va jazirama — yozda.", "ru": "Снег, снеговик и лёд — зимой. Мороженое, купание и жара — летом.", "en": "Snow, snowman and ice happen in winter. Ice cream, swimming and heat in summer." },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            { "id": "winter", "label": { "uz": "❄️ Qish", "ru": "❄️ Зима", "en": "❄️ Winter" }, "color": "#2f9fe0" },
+            { "id": "summer", "label": { "uz": "☀️ Yoz", "ru": "☀️ Лето", "en": "☀️ Summer" }, "color": "#f39a1f" }
+          ],
+          "items": [
+            { "id": "snow", "emoji": "❄️", "label": { "uz": "qor", "ru": "снег", "en": "snow" }, "bin": "winter" },
+            { "id": "snowman", "emoji": "⛄", "label": { "uz": "qor odam", "ru": "снеговик", "en": "snowman" }, "bin": "winter" },
+            { "id": "ice", "emoji": "🧊", "label": { "uz": "muz", "ru": "лёд", "en": "ice" }, "bin": "winter" },
+            { "id": "icecream", "emoji": "🍦", "label": { "uz": "muzqaymoq", "ru": "мороженое", "en": "ice cream" }, "bin": "summer" },
+            { "id": "swim", "emoji": "🏊", "label": { "uz": "suzish", "ru": "купание", "en": "swimming" }, "bin": "summer" },
+            { "id": "heat", "emoji": "☀️", "label": { "uz": "jazirama", "ru": "жара", "en": "heat" }, "bin": "summer" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Qor — suvning muzlagan holati.", "ru": "Верно? Снег — это замёрзшая вода.", "en": "True? Snow is water in a frozen state." },
+      "hint": { "uz": "Suv sovib muzlaganda qor va muz hosil boʻladi.", "ru": "Когда вода замерзает, образуются снег и лёд.", "en": "When water freezes, snow and ice form." },
+      "explanation": { "uz": "Toʻgʻri. Qor — bu muzlagan suv. Erisa, yana suvga aylanadi.", "ru": "Верно. Снег — это замёрзшая вода. Растаяв, снова становится водой.", "en": "True. Snow is frozen water. When it melts, it becomes water again." },
+      "widget": { "type": "true_false", "props": { "emoji": "❄️", "answer": true } }
+    }
+  ]
+}

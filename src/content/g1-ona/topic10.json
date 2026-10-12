@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-10",
+  "subjectKey": "g1-ona",
+  "emojis": "🇮🇺✍️📗",
+  "title": {
+    "uz": "I va U — jajji unlilar",
+    "ru": "I и U — маленькие гласные",
+    "en": "I and U — the little vowels"
+  },
+  "recall": {
+    "uz": "I va U — unli tovushlar. Umr, mehr, sehr, qadr, turp soʻzlarida qator undoshlar orasidagi qisqa i va u eshitilsa ham, yozuvda yozilmaydi. Ismlarda I va U toʻgʻri qoʻyiladi.",
+    "ru": "I и U — гласные. В словах umr, mehr, sehr, qadr, turp короткие i и u между согласными слышатся, но на письме не пишутся. В именах I и U пишутся верно.",
+    "en": "I and U are vowels. In umr, mehr, sehr, qadr, turp a short i or u between consonants is heard but not written. In names, I and U are written correctly."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "lhom", "choices": ["I", "U", "A"], "answer": "I", "emoji": "👦", "clue": { "uz": "Oʻgʻil bola ismi", "ru": "Имя мальчика", "en": "A boy's name" } } },
+      "prompt": { "uz": "Ismning birinchi harfini qoʻy!", "ru": "Вставь первую букву имени!", "en": "Add the first letter of the name!" },
+      "hint": { "uz": "… l h o m — «Ilhom».", "ru": "… l h o m — «Ilhom».", "en": "… l h o m — “Ilhom”." },
+      "explanation": { "uz": "«Ilhom» «I» unlisi bilan boshlanadi.", "ru": "«Ilhom» начинается с гласной «I».", "en": "“Ilhom” starts with the vowel “I”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "lugʻbek", "choices": ["U", "I", "O"], "answer": "U", "emoji": "👦", "clue": { "uz": "Buyuk bobomiz — astronom ismi", "ru": "Имя великого предка-астронома", "en": "The name of a great astronomer ancestor" } } },
+      "prompt": { "uz": "Ismning birinchi harfini qoʻy!", "ru": "Вставь первую букву имени!", "en": "Add the first letter of the name!" },
+      "hint": { "uz": "… l u gʻ b e k — «Ulugʻbek».", "ru": "… l u gʻ b e k — «Ulugʻbek».", "en": "… l u gʻ b e k — “Ulugʻbek”." },
+      "explanation": { "uz": "«Ulugʻbek» «U» unlisi bilan boshlanadi.", "ru": "«Ulugʻbek» начинается с гласной «U».", "en": "“Ulugʻbek” starts with the vowel “U”." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "Dilf", "after": "za", "choices": ["u", "i", "o"], "answer": "u", "emoji": "👧", "clue": { "uz": "Qiz bola ismi", "ru": "Имя девочки", "en": "A girl's name" } } },
+      "prompt": { "uz": "Yetishmayotgan unlini qoʻy!", "ru": "Вставь недостающую гласную!", "en": "Add the missing vowel!" },
+      "hint": { "uz": "Dilf … za — «Dilfuza».", "ru": "Dilf … za — «Dilfuza».", "en": "Dilf … za — “Dilfuza”." },
+      "explanation": { "uz": "«Dilfuza» soʻzida «u» unlisi bor.", "ru": "В «Dilfuza» есть гласная «u».", "en": "“Dilfuza” contains the vowel “u”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "Ilhom", "bin": "i" }, { "id": "b", "label": "Ibrohim", "bin": "i" }, { "id": "c", "label": "ikki", "bin": "i" }, { "id": "d", "label": "Umid", "bin": "u" }, { "id": "e", "label": "Ulugʻbek", "bin": "u" }, { "id": "f", "label": "uch", "bin": "u" } ], "bins": [ { "id": "i", "label": "«I» bilan" }, { "id": "u", "label": "«U» bilan" } ] } },
+      "prompt": { "uz": "Soʻzni birinchi unlisiga qarab ajrat!", "ru": "Раздели по первой гласной!", "en": "Sort by the first vowel!" },
+      "hint": { "uz": "«Ilhom» — «i», «Umid» — «u» bilan.", "ru": "«Ilhom» — с «i», «Umid» — с «u».", "en": "“Ilhom” starts with “i”, “Umid” with “u”." },
+      "explanation": { "uz": "I va U — ikki xil unli. Ularni toʻgʻri farqlaymiz.", "ru": "I и U — разные гласные. Мы их различаем.", "en": "I and U are two different vowels. We tell them apart." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "umr", "emoji": "⏳", "clue": { "uz": "Insonning yashash muddati", "ru": "Срок жизни человека", "en": "A person's lifetime" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: u, m, r.", "ru": "Буквы: u, m, r.", "en": "Letters: u, m, r." },
+      "explanation": { "uz": "«umr» — «m» va «r» orasida «i» yozilmaydi.", "ru": "«umr» — между «m» и «r» «i» не пишется.", "en": "“umr” — no “i” is written between “m” and “r”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "mehr", "right": "❤️" }, { "left": "sehr", "right": "✨" }, { "left": "umr", "right": "⏳" }, { "left": "qadr", "right": "🌟" } ] } },
+      "prompt": { "uz": "Soʻzni rasmiga ula!", "ru": "Соедини слово с картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«mehr» — ❤️, «sehr» — ✨.", "ru": "«mehr» — ❤️, «sehr» — ✨.", "en": "“mehr” — ❤️, “sehr” — ✨." },
+      "explanation": { "uz": "Bu soʻzlarda undoshlar orasida i/u yozilmaydi.", "ru": "В этих словах между согласными i/u не пишется.", "en": "In these words no i/u is written between consonants." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["umr", "umir", "umur"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz toʻgʻri yozilgan?", "ru": "Какое слово написано верно?", "en": "Which word is spelled correctly?" },
+      "hint": { "uz": "Undoshlar orasida «i» yozilmaydi.", "ru": "Между согласными «i» не пишется.", "en": "No “i” is written between the consonants." },
+      "explanation": { "uz": "Toʻgʻrisi — «umr».", "ru": "Правильно — «umr».", "en": "The correct spelling is “umr”." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["mehr", "mehir", "mehur"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻz toʻgʻri yozilgan?", "ru": "Какое слово написано верно?", "en": "Which word is spelled correctly?" },
+      "hint": { "uz": "«h» va «r» orasida unli yozilmaydi.", "ru": "Между «h» и «r» гласная не пишется.", "en": "No vowel is written between “h” and “r”." },
+      "explanation": { "uz": "Toʻgʻrisi — «mehr».", "ru": "Правильно — «mehr».", "en": "The correct spelling is “mehr”." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Umid", "kitob", "oʻqiydi."], "emoji": "📗", "clue": { "uz": "Umid haqida gap", "ru": "Предложение об Умиде", "en": "A sentence about Umid" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kim? — «Umid». Nima qiladi? — «oʻqiydi».", "ru": "Кто? — «Umid». Что делает? — «oʻqiydi».", "en": "Who? — “Umid”. Does what? — “oʻqiydi”." },
+      "explanation": { "uz": "«Umid» ismida «U» va «i» unlilari bor.", "ru": "В имени «Umid» есть гласные «U» и «i».", "en": "The name “Umid” has the vowels “U” and “i”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "turp", "emoji": "🥬", "clue": { "uz": "Yer ostida oʻsadigan sabzavot", "ru": "Овощ, растущий под землёй", "en": "A vegetable that grows underground" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: t, u, r, p.", "ru": "Буквы: t, u, r, p.", "en": "Letters: t, u, r, p." },
+      "explanation": { "uz": "«turp» — «r» dan keyin «u» yozilmaydi (turup emas).", "ru": "«turp» — после «r» «u» не пишется (не «turup»).", "en": "“turp” — no “u” after “r” (not “turup”)." }
+    }
+  ]
+}

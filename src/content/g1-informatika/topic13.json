@@ -1,0 +1,495 @@
+{
+  "topicId": "g1-informatika-13",
+  "subjectKey": "g1-informatika",
+  "emojis": "🐜🐈🐘📏",
+  "title": {
+    "uz": "Oʻsish va kamayish tartibi",
+    "ru": "Порядок возрастания и убывания",
+    "en": "Increasing and decreasing order"
+  },
+  "recall": {
+    "uz": "Narsalarni kattaligi yoki soni boʻyicha tartiblash mumkin. Kichikdan kattaga — oʻsish, kattadan kichikka — kamayish tartibi.",
+    "ru": "Предметы можно упорядочить по размеру или числу. От меньшего к большему — возрастание, наоборот — убывание.",
+    "en": "We can order things by size or number. Small to big is increasing; big to small is decreasing."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Hayvonlarni kichikdan kattaga joyla!",
+        "ru": "Расставь от меньшего к большему!",
+        "en": "Order the animals small to big!"
+      },
+      "hint": {
+        "uz": "Chumoli, mushuk, fil.",
+        "ru": "Муравей, кот, слон.",
+        "en": "Ant, cat, elephant."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: chumoli, mushuk, fil.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🐜 chumoli",
+                "ru": "🐜 муравей",
+                "en": "🐜 ant"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "🐈 mushuk",
+                "ru": "🐈 кот",
+                "en": "🐈 cat"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🐘 fil",
+                "ru": "🐘 слон",
+                "en": "🐘 elephant"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Transportni kichikdan kattaga joyla!",
+        "ru": "Транспорт: от меньшего к большему!",
+        "en": "Order transport small to big!"
+      },
+      "hint": {
+        "uz": "Samokat, mototsikl, mashina.",
+        "ru": "Самокат, мотоцикл, машина.",
+        "en": "Scooter, motorbike, car."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "🛴 samokat",
+                "ru": "🛴 самокат",
+                "en": "🛴 scooter"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "🏍️ mototsikl",
+                "ru": "🏍️ мотоцикл",
+                "en": "🏍️ motorbike"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "🚗 mashina",
+                "ru": "🚗 машина",
+                "en": "🚗 car"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oilada eng katta yoshli kim?",
+        "ru": "Кто старший в семье?",
+        "en": "Who is the oldest in a family?"
+      },
+      "hint": {
+        "uz": "Sochlari oq.",
+        "ru": "С седыми волосами.",
+        "en": "With grey hair."
+      },
+      "explanation": {
+        "uz": "Eng katta yoshli — buva.",
+        "ru": "Старший — дедушка.",
+        "en": "The oldest is grandpa."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "buva",
+              "ru": "дедушка",
+              "en": "grandpa"
+            },
+            {
+              "uz": "chaqaloq",
+              "ru": "малыш",
+              "en": "baby"
+            },
+            {
+              "uz": "uka",
+              "ru": "младший брат",
+              "en": "little brother"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oila aʼzolarini yoshiga qarab joyla (kichikdan)!",
+        "ru": "Расставь семью по возрасту!",
+        "en": "Order the family by age (young to old)!"
+      },
+      "hint": {
+        "uz": "Chaqaloq, bola, ota, buva.",
+        "ru": "Малыш, ребёнок, отец, дед.",
+        "en": "Baby, child, father, grandpa."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "👶 chaqaloq",
+                "ru": "👶 малыш",
+                "en": "👶 baby"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "👦 bola",
+                "ru": "👦 ребёнок",
+                "en": "👦 child"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "👨 ota",
+                "ru": "👨 отец",
+                "en": "👨 father"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "👴 buva",
+                "ru": "👴 дед",
+                "en": "👴 grandpa"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan buyum nomini tuz! (✏️)",
+        "ru": "Составь слово! (✏️)",
+        "en": "Build the word! (✏️)"
+      },
+      "hint": {
+        "uz": "Q-A-A-M-L harflaridan.",
+        "ru": "Из букв Q-A-A-M-L.",
+        "en": "From Q-A-A-M-L."
+      },
+      "explanation": {
+        "uz": "Barakalla! «qalam» soʻzini tuzding.",
+        "ru": "Молодец! «qalam».",
+        "en": "Great! You built “qalam”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "✏️",
+          "word": "qalam",
+          "label": {
+            "uz": "qalam",
+            "ru": "карандаш",
+            "en": "pencil"
+          },
+          "letters": [
+            "q",
+            "a",
+            "l",
+            "a",
+            "m"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sonlarni kamayish tartibida joyla!",
+        "ru": "Расставь числа по убыванию!",
+        "en": "Order the numbers decreasing!"
+      },
+      "hint": {
+        "uz": "5, 4, 3, 2.",
+        "ru": "5, 4, 3, 2.",
+        "en": "5, 4, 3, 2."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri: 5, 4, 3, 2.",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "5",
+                "ru": "5",
+                "en": "5"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "4",
+                "ru": "4",
+                "en": "4"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "3",
+                "ru": "3",
+                "en": "3"
+              }
+            },
+            {
+              "id": "d",
+              "label": {
+                "uz": "2",
+                "ru": "2",
+                "en": "2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kamayish tartibi qanday boʻladi?",
+        "ru": "Что такое убывание?",
+        "en": "What is decreasing order?"
+      },
+      "hint": {
+        "uz": "Katta, keyin kichik.",
+        "ru": "Большое, потом малое.",
+        "en": "Big, then small."
+      },
+      "explanation": {
+        "uz": "Kamayish — kattadan kichikka.",
+        "ru": "Убывание — от большого к малому.",
+        "en": "Decreasing is big to small."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "kattadan kichikka",
+              "ru": "от большого к малому",
+              "en": "big to small"
+            },
+            {
+              "uz": "kichikdan kattaga",
+              "ru": "от малого к большому",
+              "en": "small to big"
+            },
+            {
+              "uz": "aralash",
+              "ru": "вперемешку",
+              "en": "mixed"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Chumoli fildan kichik.",
+        "ru": "Муравей меньше слона.",
+        "en": "An ant is smaller than an elephant."
+      },
+      "hint": {
+        "uz": "Kattaligini solishtir.",
+        "ru": "Сравни размер.",
+        "en": "Compare their size."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🐜",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻquv qurollarini uzunligi boʻyicha joyla (qisqadan)!",
+        "ru": "Расставь по длине (от короткого)!",
+        "en": "Order by length (short to long)!"
+      },
+      "hint": {
+        "uz": "Oʻchirgʻich, qalam, chizgʻich.",
+        "ru": "Ластик, карандаш, линейка.",
+        "en": "Eraser, pencil, ruler."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "Correct!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "a",
+              "label": {
+                "uz": "oʻchirgʻich",
+                "ru": "• ластик",
+                "en": "• eraser"
+              }
+            },
+            {
+              "id": "b",
+              "label": {
+                "uz": "✏️ qalam",
+                "ru": "✏️ карандаш",
+                "en": "✏️ pencil"
+              }
+            },
+            {
+              "id": "c",
+              "label": {
+                "uz": "📏 chizgʻich",
+                "ru": "📏 линейка",
+                "en": "📏 ruler"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Eng katta hayvon qaysi?",
+        "ru": "Какое животное самое большое?",
+        "en": "Which animal is the biggest?"
+      },
+      "hint": {
+        "uz": "Xartumi bor.",
+        "ru": "С хоботом.",
+        "en": "It has a trunk."
+      },
+      "explanation": {
+        "uz": "Eng katta — fil.",
+        "ru": "Самый большой — слон.",
+        "en": "The biggest is the elephant."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🐘",
+              "label": {
+                "uz": "fil",
+                "ru": "слон",
+                "en": "elephant"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🐈",
+              "label": {
+                "uz": "mushuk",
+                "ru": "кот",
+                "en": "cat"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🐜",
+              "label": {
+                "uz": "chumoli",
+                "ru": "муравей",
+                "en": "ant"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

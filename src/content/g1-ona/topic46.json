@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-46",
+  "subjectKey": "g1-ona",
+  "emojis": "🏃‍♂️⚡✍️",
+  "title": {
+    "uz": "Harakatni bildirgan soʻzlar",
+    "ru": "Слова, обозначающие действие",
+    "en": "Words that name actions"
+  },
+  "recall": {
+    "uz": "Shaxs va narsaning harakatini bildirgan soʻzlar «Nima qildi?», «Nima qiladi?», «Nima qilyapti?» soʻroqlariga javob boʻladi. Masalan: suzyapti, uchyapti, yugurdi, oʻqiydi. Bu soʻzlar kim yoki nima nima qilayotganini koʻrsatadi.",
+    "ru": "Слова, обозначающие действие лица или предмета, отвечают на вопросы «Что сделал?», «Что делает?», «Что делает сейчас?». Например: suzyapti, uchyapti, yugurdi, oʻqiydi. Эти слова показывают, что кто-то или что-то делает.",
+    "en": "Words that name the action of a person or thing answer the questions “What did it do?”, “What does it do?”, “What is it doing?”. For example: suzyapti (is swimming), uchyapti (is flying), yugurdi (ran), oʻqiydi (reads). These words show what someone or something does."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "suzyapti", "bin": "harakat" }, { "id": "b", "label": "uchyapti", "bin": "harakat" }, { "id": "c", "label": "yuguradi", "bin": "harakat" }, { "id": "d", "label": "baliq", "bin": "narsa" }, { "id": "e", "label": "qush", "bin": "narsa" }, { "id": "f", "label": "bola", "bin": "narsa" } ], "bins": [ { "id": "harakat", "label": "Harakat (nima qiladi?)" }, { "id": "narsa", "label": "Narsa (kim? nima?)" } ] } },
+      "prompt": { "uz": "Ajrat: harakat soʻzi va narsa soʻzi!", "ru": "Раздели: слово-действие и слово-предмет!", "en": "Sort: action word vs thing word!" },
+      "hint": { "uz": "baliq, qush, bola — narsa; suzyapti, uchyapti — harakat.", "ru": "baliq, qush, bola — предметы; suzyapti, uchyapti — действия.", "en": "baliq, qush, bola are things; suzyapti, uchyapti are actions." },
+      "explanation": { "uz": "Harakat soʻzlari «nima qiladi?» soʻrogʻiga javob boʻladi.", "ru": "Слова-действия отвечают на вопрос «что делает?».", "en": "Action words answer the question “what does it do?”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "sakradi", "match": true }, { "text": "kitob", "match": false }, { "text": "oʻqiyapti", "match": true }, { "text": "stol", "match": false }, { "text": "pishirdi", "match": true }, { "text": "gul", "match": false } ] } },
+      "prompt": { "uz": "Harakatni bildirgan soʻzlarni bos!", "ru": "Нажми слова, обозначающие действие!", "en": "Tap the words that name an action!" },
+      "hint": { "uz": "kitob, stol, gul — narsa nomlari.", "ru": "kitob, stol, gul — названия предметов.", "en": "kitob, stol, gul are names of things." },
+      "explanation": { "uz": "sakradi, oʻqiyapti, pishirdi — harakat soʻzlari.", "ru": "sakradi, oʻqiyapti, pishirdi — слова-действия.", "en": "sakradi, oʻqiyapti, pishirdi are action words." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Nafisa dugonalari bilan arqon ", "after": ".", "choices": ["sakradi", "pishirdi", "toʻkiladi"], "answer": "sakradi", "emoji": "🤸", "clue": { "uz": "Arqon bilan nima qildi?", "ru": "Что сделала со скакалкой?", "en": "What did she do with the rope?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "Arqon oʻyinida bolalar sakraydi.", "ru": "Со скакалкой дети прыгают.", "en": "With a jump-rope, children jump." },
+      "explanation": { "uz": "Nafisa arqon sakradi. «Sakradi» — harakat soʻzi.", "ru": "Nafisa прыгала через скакалку. «Sakradi» — слово-действие.", "en": "Nafisa jumped rope. “Sakradi” is an action word." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Opam mazali ovqat ", "after": ".", "choices": ["pishirdi", "chaldi", "sakradi"], "answer": "pishirdi", "emoji": "🍲", "clue": { "uz": "Ovqatni nima qildi?", "ru": "Что сделала с едой?", "en": "What did she do with the food?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "Ovqatni tayyorlaydi — pishiradi.", "ru": "Еду готовят — варят.", "en": "Food is cooked." },
+      "explanation": { "uz": "Opam ovqat pishirdi. «Pishirdi» — harakat soʻzi.", "ru": "Сестра приготовила еду. «Pishirdi» — слово-действие.", "en": "My sister cooked food. “Pishirdi” is an action word." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_cloze", "props": { "before": "Kuz faslida daraxt barglari ", "after": ".", "choices": ["toʻkiladi", "yuguradi", "oʻqiyapti"], "answer": "toʻkiladi", "emoji": "🍂", "clue": { "uz": "Barglar kuzda nima qiladi?", "ru": "Что делают листья осенью?", "en": "What do leaves do in autumn?" } } },
+      "prompt": { "uz": "Boʻsh joyga mos harakat soʻzini qoʻy!", "ru": "Вставь подходящее слово-действие!", "en": "Fill the gap with the right action word!" },
+      "hint": { "uz": "Kuzda barglar daraxtdan tushadi.", "ru": "Осенью листья опадают.", "en": "In autumn the leaves fall." },
+      "explanation": { "uz": "Barglar toʻkiladi. «Toʻkiladi» — harakat soʻzi.", "ru": "Листья опадают. «Toʻkiladi» — слово-действие.", "en": "The leaves fall. “Toʻkiladi” is an action word." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "Sozanda", "right": "rubob chaldi" }, { "left": "Dehqonlar", "right": "sabzavot terishdi" }, { "left": "Abbos", "right": "kitob oʻqiyapti" } ] } },
+      "prompt": { "uz": "Kim nima qildi? Juftlarni ula!", "ru": "Кто что сделал? Соедини пары!", "en": "Who did what? Match the pairs!" },
+      "hint": { "uz": "Sozanda cholgʻu asbobini chaladi.", "ru": "Музыкант играет на инструменте.", "en": "A musician plays an instrument." },
+      "explanation": { "uz": "Har bir shaxs oʻz harakatini bajaradi.", "ru": "Каждое лицо выполняет своё действие.", "en": "Each person performs their own action." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Nafisa", "arqon", "sakradi."], "emoji": "🤸", "clue": { "uz": "Harakat haqida gap", "ru": "Предложение о действии", "en": "A sentence about an action" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение из слов!", "en": "Make a sentence from the words!" },
+      "hint": { "uz": "Kim? — Nafisa. Nima qildi? — sakradi.", "ru": "Кто? — Nafisa. Что сделала? — sakradi.", "en": "Who? — Nafisa. What did she do? — sakradi." },
+      "explanation": { "uz": "Nafisa arqon sakradi. «Sakradi» — harakat soʻzi.", "ru": "Nafisa прыгала через скакалку. «Sakradi» — действие.", "en": "Nafisa jumped rope. “Sakradi” is the action word." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "suzadi", "match": true }, { "text": "daryo", "match": false }, { "text": "uchadi", "match": true }, { "text": "baland", "match": false }, { "text": "gapiradi", "match": true }, { "text": "shirin", "match": false } ] } },
+      "prompt": { "uz": "«Nima qiladi?» soʻrogʻiga javob boʻlgan soʻzlarni bos!", "ru": "Нажми слова, отвечающие на вопрос «что делает?»!", "en": "Tap the words that answer “what does it do?”!" },
+      "hint": { "uz": "daryo — narsa, baland va shirin — belgi.", "ru": "daryo — предмет, baland и shirin — признаки.", "en": "daryo is a thing; baland and shirin are attributes." },
+      "explanation": { "uz": "suzadi, uchadi, gapiradi — harakat soʻzlari.", "ru": "suzadi, uchadi, gapiradi — слова-действия.", "en": "suzadi, uchadi, gapiradi are action words." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "syllable_build", "props": { "syllables": ["yu", "gu", "ra", "di"], "emoji": "🏃", "clue": { "uz": "Tez harakat (harakat soʻzi)", "ru": "Быстрое действие", "en": "A fast action" } } },
+      "prompt": { "uz": "Boʻgʻinlardan harakat soʻzini tuz!", "ru": "Собери слово-действие из слогов!", "en": "Build the action word from syllables!" },
+      "hint": { "uz": "yu- … -gu- … -ra- … -di.", "ru": "yu- … -gu- … -ra- … -di.", "en": "yu- … -gu- … -ra- … -di." },
+      "explanation": { "uz": "«Yuguradi» — harakat soʻzi, «nima qiladi?» soʻrogʻiga javob.", "ru": "«Yuguradi» — слово-действие, отвечает на «что делает?».", "en": "“Yuguradi” is an action word, answering “what does it do?”." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "suzadi", "letters": ["s", "u", "z", "a", "d", "i"], "emoji": "🐟", "clue": { "uz": "Suvda harakat (harakat soʻzi)", "ru": "Действие в воде", "en": "An action in water" } } },
+      "prompt": { "uz": "Harflardan harakat soʻzini yigʻ!", "ru": "Собери слово-действие из букв!", "en": "Build the action word from the letters!" },
+      "hint": { "uz": "Baliq suvda nima qiladi?", "ru": "Что делает рыба в воде?", "en": "What does a fish do in water?" },
+      "explanation": { "uz": "«Suzadi» — harakat soʻzi (baliq suzadi).", "ru": "«Suzadi» — слово-действие (рыба плавает).", "en": "“Suzadi” is an action word (a fish swims)." }
+    }
+  ]
+}

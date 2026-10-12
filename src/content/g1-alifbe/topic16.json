@@ -1,0 +1,511 @@
+{
+  "topicId": "g1-alifbe-16",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🍎🏠🐄",
+  "title": {
+    "uz": "«M m» — oʻqish mashqi",
+    "ru": "Буква «M m» — чтение",
+    "en": "Letter “M m” — reading"
+  },
+  "recall": {
+    "uz": "«M» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: olma, tom, mol. «M» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «M». Теперь читаем слова: olma, tom, mol. «M» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “M”. Now we read words: olma, tom, mol. “M” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍎 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🍎 Прочитай и нажми верно написанное слово!",
+        "en": "🍎 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «olma».",
+        "ru": "Прочитай: «olma».",
+        "en": "Read it: “olma”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «olma».",
+        "ru": "Верно — «olma».",
+        "en": "Correct — “olma”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🍎",
+          "options": [
+            {
+              "id": "ok",
+              "word": "olma",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "alma"
+            },
+            {
+              "id": "w2",
+              "word": "olmo"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «olma» soʻzini tuz!",
+        "ru": "Составь слово «olma»!",
+        "en": "Build the word “olma”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «olma» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «olma».",
+        "en": "Great! You read “olma”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🍎",
+          "word": "olma",
+          "label": {
+            "uz": "olma",
+            "ru": "яблоко",
+            "en": "apple"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍎 «olma»da «m» tovushi qaysi katakchada?",
+        "ru": "🍎 В какой клетке звук «m» в слове «olma»?",
+        "en": "🍎 Which box has the “m” sound in “olma”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«olma»da «m» tovushi toʻgʻri joyda.",
+        "ru": "В «olma» звук «m» на верном месте.",
+        "en": "In “olma” the “m” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🍎",
+          "word": {
+            "uz": "olma",
+            "ru": "olma",
+            "en": "olma"
+          },
+          "sound": "m",
+          "cells": [
+            "o",
+            "l",
+            "m",
+            "a"
+          ],
+          "answer": 2
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍎 «olma» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🍎 Похлопай слово «olma» по слогам!",
+        "en": "🍎 Clap the word “olma” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«olma» — 2 boʻgʻin.",
+        "ru": "«olma» — 2 слога.",
+        "en": "“olma” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🍎",
+          "word": {
+            "uz": "olma",
+            "ru": "olma",
+            "en": "olma"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«M» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «M»!",
+        "en": "Tap the words that have the “M” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «m» tovushi bor.",
+        "ru": "Верно! В них есть звук «m».",
+        "en": "Right! They have the “m” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🏠",
+              "label": {
+                "uz": "tom",
+                "ru": "tom",
+                "en": "tom"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐄",
+              "label": {
+                "uz": "mol",
+                "ru": "mol",
+                "en": "mol"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«olma» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «olma». Найди картинку!",
+        "en": "Read “olma”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«olma» — 🍎.",
+        "ru": "«olma» — 🍎.",
+        "en": "“olma” is 🍎."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "🏠",
+              "label": {
+                "uz": "tom",
+                "ru": "tom",
+                "en": "tom"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "🐄",
+              "label": {
+                "uz": "mol",
+                "ru": "mol",
+                "en": "mol"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🏠"
+              },
+              "right": {
+                "label": {
+                  "uz": "tom",
+                  "ru": "tom",
+                  "en": "tom"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐄"
+              },
+              "right": {
+                "label": {
+                  "uz": "mol",
+                  "ru": "mol",
+                  "en": "mol"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐍"
+              },
+              "right": {
+                "label": {
+                  "uz": "ilon",
+                  "ru": "ilon",
+                  "en": "ilon"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ota … olma.",
+        "ru": "Составь предложение: Ota … olma.",
+        "en": "Order the words: Ota … olma."
+      },
+      "hint": {
+        "uz": "Ota — ana — olma.",
+        "ru": "Ota — ana — olma.",
+        "en": "Ota — ana — olma."
+      },
+      "explanation": {
+        "uz": "«Ota ana olma.» — gap oʻqiding!",
+        "ru": "«Ota ana olma.» — предложение!",
+        "en": "“Ota ana olma.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Ota",
+                "ru": "Ota",
+                "en": "Ota"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "ana",
+                "ru": "ana",
+                "en": "ana"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🍎"
+              },
+              "b": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🏠"
+              },
+              "b": {
+                "label": {
+                  "uz": "tom",
+                  "ru": "tom",
+                  "en": "tom"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "🐄"
+              },
+              "b": {
+                "label": {
+                  "uz": "mol",
+                  "ru": "mol",
+                  "en": "mol"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«olma» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «olma»?",
+        "en": "How many sounds are in “olma”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«olma»da 4 ta tovush bor.",
+        "ru": "В «olma» 4 звука.",
+        "en": "“olma” has 4 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "4",
+            "3",
+            "5"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,447 @@
+{
+  "topicId": "g1-ingliz-14",
+  "subjectKey": "g1-ingliz",
+  "emojis": "❓⚽🤖🎁",
+  "title": {
+    "uz": "Bu nima? — Bu...",
+    "ru": "Что это? — Это...",
+    "en": "What's this? It's a..."
+  },
+  "recall": {
+    "uz": "Bugun soʻraymiz: «What's this?» — «Bu nima?» Javob: «It's a ball» — «Bu koptok». Va: «Is it a ball?» — «Bu koptokmi?» «Yes, it is / No, it isn't».",
+    "ru": "Сегодня спрашиваем: «What's this?» — «Что это?» Ответ: «It's a ball» — «Это мяч». И: «Is it a ball?» — «Это мяч?» «Yes, it is / No, it isn't».",
+    "en": "Today we ask \"What's this?\" and answer \"It's a ball.\" And \"Is it a ball? Yes, it is. / No, it isn't.\""
+  },
+  "ttsText": {
+    "uz": "Bu nima?",
+    "en": "What's this? It's a ball! Is it a ball? Yes, it is!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu nima?",
+        "ru": "Послушай. Что это?",
+        "en": "Listen. What is it?"
+      },
+      "hint": {
+        "uz": "«It's a kite» — bu varrak.",
+        "ru": "«It's a kite» — это воздушный змей.",
+        "en": "\"It's a kite.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a kite — varrak.",
+        "ru": "Верно! It's a kite — воздушный змей.",
+        "en": "Right! It's a kite."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What's this?",
+              "audio": {
+                "key": "ing14-q1-a",
+                "text": "What's this?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's a kite!",
+              "audio": {
+                "key": "ing14-q1-b",
+                "text": "It's a kite!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu nima?",
+              "ru": "Что это?",
+              "en": "What is it?"
+            },
+            "choices": [
+              "a kite",
+              "a ball",
+              "a car"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu aslida nima?",
+        "ru": "Послушай. Что это на самом деле?",
+        "en": "Listen. What is it really?"
+      },
+      "hint": {
+        "uz": "«No, it isn't» — yoʻq, bu emas.",
+        "ru": "«No, it isn't» — нет, не он.",
+        "en": "\"No, it isn't. It's a robot.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bu koptok emas, robot.",
+        "ru": "Верно! Это не мяч, а робот.",
+        "en": "Right! It isn't a ball — it's a robot."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Is it a ball?",
+              "audio": {
+                "key": "ing14-q2-a",
+                "text": "Is it a ball?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "No, it isn't. It's a robot!",
+              "audio": {
+                "key": "ing14-q2-b",
+                "text": "No, it isn't. It's a robot!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu nima?",
+              "ru": "Что это?",
+              "en": "What is it?"
+            },
+            "choices": [
+              "a robot",
+              "a kite",
+              "a ball"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Bu koptok: ⚽ = «It's a ball».",
+        "ru": "Верно? Это мяч: ⚽ = «It's a ball».",
+        "en": "Is this right? ⚽ = \"It's a ball.\""
+      },
+      "hint": {
+        "uz": "Rasmga qara.",
+        "ru": "Посмотри на картинку.",
+        "en": "Look at the picture."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Yes, it is — bu koptok.",
+        "ru": "Верно! Yes, it is — это мяч.",
+        "en": "Right! Yes, it is — a ball."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "⚽",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Bu koptok: 🤖 = «It's a ball».",
+        "ru": "Верно? 🤖 = «It's a ball».",
+        "en": "Is this right? 🤖 = \"It's a ball.\""
+      },
+      "hint": {
+        "uz": "🤖 — bu koptokmi?",
+        "ru": "🤖 — это мяч?",
+        "en": "Is 🤖 a ball?"
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! No, it isn't — bu robot.",
+        "ru": "Неверно! No, it isn't — это робот.",
+        "en": "False! No, it isn't — it's a robot."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🤖",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bu nima? 🚲",
+        "ru": "Что это? 🚲",
+        "en": "What's this? 🚲"
+      },
+      "hint": {
+        "uz": "Ikki gʻildirakli.",
+        "ru": "На двух колёсах.",
+        "en": "It has two wheels."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a bike.",
+        "ru": "Верно! It's a bike.",
+        "en": "Right! It's a bike."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "It's a bike.",
+            "It's a car.",
+            "It's a ball."
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bu nima? 🐻",
+        "ru": "Что это? 🐻",
+        "en": "What's this? 🐻"
+      },
+      "hint": {
+        "uz": "Yumshoq ayiqcha.",
+        "ru": "Мягкий мишка.",
+        "en": "A soft bear."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a teddy bear.",
+        "ru": "Верно! It's a teddy bear.",
+        "en": "Right! It's a teddy bear."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "It's a teddy bear.",
+            "It's a robot.",
+            "It's a bike."
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Mashinani bos!",
+        "ru": "Нажми машинку!",
+        "en": "Tap the car!"
+      },
+      "audio": {
+        "key": "ing14-q7",
+        "text": "Is it a car? Tap the car.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«car» — mashina.",
+        "ru": "«car» — машина.",
+        "en": "A \"car\" has four wheels."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a car — mashina.",
+        "ru": "Верно! It's a car — машина.",
+        "en": "Right! It's a car."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🚗",
+              "label": "car",
+              "correct": true
+            },
+            {
+              "emoji": "⚽",
+              "label": "ball"
+            },
+            {
+              "emoji": "🤖",
+              "label": "robot"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Topish oʻyini! Suhbatni tingla. Javob nima?",
+        "ru": "Игра-угадайка! Послушай. Какой ответ?",
+        "en": "Guessing game! Listen. What is the answer?"
+      },
+      "hint": {
+        "uz": "«Yes, it is!» — ha, shu.",
+        "ru": "«Yes, it is!» — да, он.",
+        "en": "\"Yes, it is!\" means correct guess."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Uchinchi taxmin toʻgʻri: «Yes, it is!»",
+        "ru": "Верно! Третья догадка верна: «Yes, it is!»",
+        "en": "Right! The third guess: \"Yes, it is!\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Is it a ball?",
+              "audio": {
+                "key": "ing14-q8-a",
+                "text": "Is it a ball?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "No, it isn't.",
+              "audio": {
+                "key": "ing14-q8-b",
+                "text": "No, it isn't.",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "Is it a bike?",
+              "audio": {
+                "key": "ing14-q8-c",
+                "text": "Is it a bike?",
+                "voice": "girl"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Sam nima deydi?",
+              "ru": "Что скажет Сэм?",
+              "en": "What does Sam say?"
+            },
+            "choices": [
+              "Goodbye!",
+              "Yes, it is!",
+              "How many?"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kimdir «Is it a ball?» dedi, lekin bu ayiqcha 🐻. Sen nima deysan?",
+        "ru": "Спросили «Is it a ball?», но это мишка 🐻. Что ответишь?",
+        "en": "Someone asks \"Is it a ball?\" but it is a teddy bear 🐻. What do you say?"
+      },
+      "hint": {
+        "uz": "Bu koptok emas.",
+        "ru": "Это не мяч.",
+        "en": "It is not a ball."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «No, it isn't.»",
+        "ru": "Верно! «No, it isn't.»",
+        "en": "Right! \"No, it isn't.\""
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "«No, it isn't.»",
+              "ru": "«No, it isn't.»",
+              "en": "\"No, it isn't.\""
+            },
+            {
+              "uz": "«Yes, it is.»",
+              "ru": "«Yes, it is.»",
+              "en": "\"Yes, it is.\""
+            },
+            {
+              "uz": "«Stand up.»",
+              "ru": "«Stand up.»",
+              "en": "\"Stand up.\""
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bu nima? 📷",
+        "ru": "Что это? 📷",
+        "en": "What's this? 📷"
+      },
+      "hint": {
+        "uz": "Rasmga oladi.",
+        "ru": "Делает фото.",
+        "en": "It takes photos."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a camera.",
+        "ru": "Верно! It's a camera.",
+        "en": "Right! It's a camera."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "It's a camera.",
+            "It's a kite.",
+            "It's a ball."
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

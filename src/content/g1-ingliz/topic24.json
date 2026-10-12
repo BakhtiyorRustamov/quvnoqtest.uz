@@ -1,0 +1,476 @@
+{
+  "topicId": "g1-ingliz-24",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🌍🗺️🧭🌎",
+  "title": {
+    "uz": "Geografiya: qaysi qitʼa?",
+    "ru": "География: какой континент?",
+    "en": "Geography: which continent?"
+  },
+  "recall": {
+    "uz": "Kashfiyot darsi (geografiya)! Yer yuzida 7 ta qitʼa bor: North America, South America, Europe, Africa, Asia, Australia, Antarctica. Har shahar oʻz qitʼasida.",
+    "ru": "Урок-открытие (география)! На Земле 7 континентов: North America, South America, Europe, Africa, Asia, Australia, Antarctica. Каждый город на своём континенте.",
+    "en": "Discovery lesson (geography)! Earth has seven continents: North America, South America, Europe, Africa, Asia, Australia and Antarctica. Each city is on a continent."
+  },
+  "ttsText": {
+    "uz": "Qaysi qitʼa?",
+    "en": "Geography! Which continent is it? Earth has seven continents!"
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Tokio qaysi qitʼada?",
+        "ru": "Послушай. На каком континенте Токио?",
+        "en": "Listen. Which continent is Tokyo on?"
+      },
+      "hint": {
+        "uz": "Tokio — Osiyoda.",
+        "ru": "Токио — в Азии.",
+        "en": "Tokyo is in Asia."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tokyo — Asia (Osiyo).",
+        "ru": "Верно! Tokyo — Asia (Азия).",
+        "en": "Right! Tokyo is in Asia."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Akio",
+              "text": "My name's Akio. I'm from Tokyo.",
+              "audio": {
+                "key": "ing24-q1-a",
+                "text": "My name's Akio. I'm from Tokyo.",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "🤖",
+              "name": "Robo",
+              "text": "Tokyo is in Asia!",
+              "audio": {
+                "key": "ing24-q1-b",
+                "text": "Tokyo is in Asia!",
+                "voice": "man"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Tokio qaysi qitʼada?",
+              "ru": "Где Токио?",
+              "en": "Where is Tokyo?"
+            },
+            "choices": [
+              "Asia",
+              "Europe",
+              "Africa"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yer sharini bos!",
+        "ru": "Нажми планету Земля!",
+        "en": "Tap the planet Earth!"
+      },
+      "hint": {
+        "uz": "Bizning sayyoramiz.",
+        "ru": "Наша планета.",
+        "en": "Our planet."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! 🌍 — Yer (Earth).",
+        "ru": "Верно! 🌍 — Земля (Earth).",
+        "en": "Right! 🌍 the Earth!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🌍",
+              "label": "Earth",
+              "correct": true
+            },
+            {
+              "emoji": "☀️",
+              "label": "sun"
+            },
+            {
+              "emoji": "🌙",
+              "label": "moon"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yerda nechta qitʼa bor?",
+        "ru": "Сколько континентов на Земле?",
+        "en": "How many continents are on Earth?"
+      },
+      "hint": {
+        "uz": "Yettita.",
+        "ru": "Семь.",
+        "en": "Seven."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Yettita qitʼa — seven.",
+        "ru": "Верно! Семь континентов — seven.",
+        "en": "Right! Seven continents."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "seven",
+            "five",
+            "three"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Shaharlarni qitʼasiga qarab ajrat!",
+        "ru": "Разложи города по континентам!",
+        "en": "Sort the cities by their continent!"
+      },
+      "hint": {
+        "uz": "Tokio — Osiyo, Madrid — Yevropa.",
+        "ru": "Токио — Азия, Мадрид — Европа.",
+        "en": "Tokyo — Asia, Madrid — Europe."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har shahar oʻz qitʼasida.",
+        "ru": "Молодец! Каждый город на своём континенте.",
+        "en": "Great! Each city on its continent!"
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "as",
+              "label": {
+                "uz": "Asia",
+                "ru": "Азия",
+                "en": "Asia"
+              }
+            },
+            {
+              "id": "eu",
+              "label": {
+                "uz": "Europe",
+                "ru": "Европа",
+                "en": "Europe"
+              }
+            },
+            {
+              "id": "na",
+              "label": {
+                "uz": "N. America",
+                "ru": "Сев. Америка",
+                "en": "N. America"
+              }
+            },
+            {
+              "id": "sa",
+              "label": {
+                "uz": "S. America",
+                "ru": "Юж. Америка",
+                "en": "S. America"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "🏙️",
+              "label": "Tokyo",
+              "bin": "as"
+            },
+            {
+              "emoji": "🏙️",
+              "label": "Madrid",
+              "bin": "eu"
+            },
+            {
+              "emoji": "🏙️",
+              "label": "Ottawa",
+              "bin": "na"
+            },
+            {
+              "emoji": "🏙️",
+              "label": "Lima",
+              "bin": "sa"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ottava qaysi qitʼada?",
+        "ru": "На каком континенте Оттава?",
+        "en": "Which continent is Ottawa on?"
+      },
+      "hint": {
+        "uz": "Kanada — Shimoliy Amerikada.",
+        "ru": "Канада — в Северной Америке.",
+        "en": "Canada is in North America."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ottawa — North America.",
+        "ru": "Верно! Ottawa — North America.",
+        "en": "Right! Ottawa is in North America."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "North America",
+              "ru": "Северная Америка",
+              "en": "North America"
+            },
+            {
+              "uz": "Asia",
+              "ru": "Азия",
+              "en": "Asia"
+            },
+            {
+              "uz": "Africa",
+              "ru": "Африка",
+              "en": "Africa"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Lima qaysi qitʼada?",
+        "ru": "На каком континенте Лима?",
+        "en": "Which continent is Lima on?"
+      },
+      "hint": {
+        "uz": "Peru — Janubiy Amerikada.",
+        "ru": "Перу — в Южной Америке.",
+        "en": "Peru is in South America."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Lima — South America.",
+        "ru": "Верно! Lima — South America.",
+        "en": "Right! Lima is in South America."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "South America",
+              "ru": "Южная Америка",
+              "en": "South America"
+            },
+            {
+              "uz": "Europe",
+              "ru": "Европа",
+              "en": "Europe"
+            },
+            {
+              "uz": "Australia",
+              "ru": "Австралия",
+              "en": "Australia"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Madrid qaysi qitʼada?",
+        "ru": "На каком континенте Мадрид?",
+        "en": "Which continent is Madrid on?"
+      },
+      "hint": {
+        "uz": "Ispaniya — Yevropada.",
+        "ru": "Испания — в Европе.",
+        "en": "Spain is in Europe."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Madrid — Europe.",
+        "ru": "Верно! Madrid — Europe.",
+        "en": "Right! Madrid is in Europe."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Europe",
+              "ru": "Европа",
+              "en": "Europe"
+            },
+            {
+              "uz": "Asia",
+              "ru": "Азия",
+              "en": "Asia"
+            },
+            {
+              "uz": "North America",
+              "ru": "Северная Америка",
+              "en": "North America"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«continent»ning tarjimasi nima?",
+        "ru": "Что значит «continent»?",
+        "en": "What does \"continent\" mean?"
+      },
+      "hint": {
+        "uz": "Juda katta quruqlik.",
+        "ru": "Очень большая суша.",
+        "en": "A very large land."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Continent — qitʼa.",
+        "ru": "Верно! Continent — континент.",
+        "en": "Right! A continent."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qitʼa",
+              "ru": "континент",
+              "en": "a continent"
+            },
+            {
+              "uz": "shahar",
+              "ru": "город",
+              "en": "a city"
+            },
+            {
+              "uz": "daryo",
+              "ru": "река",
+              "en": "a river"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri qitʼa?",
+        "ru": "Что из этого — континент?",
+        "en": "Which one is a continent?"
+      },
+      "hint": {
+        "uz": "Tokio va Madrid — shaharlar.",
+        "ru": "Токио и Мадрид — города.",
+        "en": "Tokyo and Madrid are cities."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Africa — qitʼa.",
+        "ru": "Верно! Africa — континент.",
+        "en": "Right! Africa is a continent."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Africa",
+              "ru": "Африка",
+              "en": "Africa"
+            },
+            {
+              "uz": "Tokyo",
+              "ru": "Токио",
+              "en": "Tokyo"
+            },
+            {
+              "uz": "Madrid",
+              "ru": "Мадрид",
+              "en": "Madrid"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Yerda 7 ta qitʼa bor.",
+        "ru": "Верно? На Земле 7 континентов.",
+        "en": "Is this right? Earth has seven continents."
+      },
+      "hint": {
+        "uz": "Sana: 7 ta.",
+        "ru": "Посчитай: 7.",
+        "en": "Count: seven."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Yettita qitʼa bor.",
+        "ru": "Верно! Семь континентов.",
+        "en": "Right! There are seven continents."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌍",
+          "answer": true
+        }
+      }
+    }
+  ]
+}

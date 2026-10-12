@@ -1,0 +1,34 @@
+{
+  "topicId": "g1-art-36", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Biz nimalarni oʻrgandik", "ru": "Чему мы научились", "en": "What we have learned" },
+  "recall": {
+    "uz": "Yil davomida koʻp narsani oʻrgandik: barglar, kamalak, mevalar, hayvonlar va kapalaklar chizdik, sponj, gʻijim qogʻoz va monotipiya usullarini sinadik. Keling, oʻrganganlarimizni eslaymiz.",
+    "ru": "За год мы многому научились: рисовали листья, радугу, фрукты, животных и бабочек, пробовали приёмы губки, смятой бумаги и монотипии. Давай вспомним, чему научились.",
+    "en": "Through the year we learned a lot: we drew leaves, rainbows, fruit, animals and butterflies, and tried sponge, crumpled-paper and monotype techniques. Let's remember what we learned."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Kamalakda nechta rang bor?", "ru": "Сколько цветов в радуге?", "en": "How many colours are in a rainbow?" },
+      "hint": { "uz": "Qizildan binafshagacha.", "ru": "От красного до фиолетового.", "en": "From red to violet." },
+      "explanation": { "uz": "Toʻgʻri! Yetti rang.", "ru": "Верно! Семь цветов.", "en": "Right! Seven colours." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "yetti", "ru": "семь", "en": "seven" },
+        { "uz": "uch", "ru": "три", "en": "three" },
+        { "uz": "oʻn", "ru": "десять", "en": "ten" }
+      ], "answerIndex": 0 } } },
+    { "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Sachratish usulida rasmni nima bilan chizamiz?", "ru": "Чем рисуют в приёме разбрызгивания?", "en": "What do we paint with in the splatter technique?" },
+      "hint": { "uz": "Choʻtkadan boʻyoq sachratamiz.", "ru": "Стряхиваем краску с кисти.", "en": "We flick paint off the brush." },
+      "explanation": { "uz": "Toʻgʻri! Choʻtkadan boʻyoq sachratib.", "ru": "Верно! Стряхивая краску с кисти.", "en": "Right! By flicking paint off the brush." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "choʻtkadan boʻyoq sachratib", "ru": "стряхивая краску с кисти", "en": "flicking paint off the brush" },
+        { "uz": "qalam bilan", "ru": "карандашом", "en": "with a pencil" },
+        { "uz": "oʻchirgʻich bilan", "ru": "ластиком", "en": "with an eraser" }
+      ], "answerIndex": 0 } } },
+    { "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Yil davomida eng yoqqan narsangni chiz.", "ru": "Нарисуй то, что понравилось больше всего за год.", "en": "Draw what you liked most during the year." },
+      "hint": { "uz": "Barg, kamalak, hayvon yoki kapalak.", "ru": "Лист, радуга, животное или бабочка.", "en": "A leaf, rainbow, animal or butterfly." },
+      "explanation": { "uz": "Ajoyib! Sen yaxshi rassom boʻlding.", "ru": "Отлично! Ты стал хорошим художником.", "en": "Great! You have become a good artist." },
+      "widget": { "type": "free_draw", "props": {} } }
+  ]
+}

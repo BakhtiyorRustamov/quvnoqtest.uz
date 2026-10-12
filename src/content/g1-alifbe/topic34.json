@@ -1,0 +1,512 @@
+{
+  "topicId": "g1-alifbe-34",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖🐰❄️👂",
+  "title": {
+    "uz": "«Q q» — oʻqish mashqi",
+    "ru": "Буква «Q q» — чтение",
+    "en": "Letter “Q q” — reading"
+  },
+  "recall": {
+    "uz": "«Q» harfini oʻrgandik. Endi soʻz va gap oʻqiymiz: quyon, qor, quloq. «Q» — undosh tovush. Oʻqishni mashq qilamiz!",
+    "ru": "Мы выучили букву «Q». Теперь читаем слова: quyon, qor, quloq. «Q» — согласный звук. Тренируем чтение!",
+    "en": "We learned the letter “Q”. Now we read words: quyon, qor, quloq. “Q” is a consonant. Let's practice reading!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐰 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "🐰 Прочитай и нажми верно написанное слово!",
+        "en": "🐰 Read and tap the correctly spelled word!"
+      },
+      "hint": {
+        "uz": "Soʻzni oʻqi: «quyon».",
+        "ru": "Прочитай: «quyon».",
+        "en": "Read it: “quyon”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri yozilishi — «quyon».",
+        "ru": "Верно — «quyon».",
+        "en": "Correct — “quyon”."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "🐰",
+          "options": [
+            {
+              "id": "ok",
+              "word": "quyon",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "kuyon"
+            },
+            {
+              "id": "w2",
+              "word": "quyan"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «quyon» soʻzini tuz!",
+        "ru": "Составь слово «quyon»!",
+        "en": "Build the word “quyon”!"
+      },
+      "hint": {
+        "uz": "Harflarni tartib bilan bos.",
+        "ru": "Нажимай буквы по порядку.",
+        "en": "Tap the letters in order."
+      },
+      "explanation": {
+        "uz": "Barakalla! «quyon» soʻzini oʻqiding.",
+        "ru": "Молодец! Ты прочитал «quyon».",
+        "en": "Great! You read “quyon”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🐰",
+          "word": "quyon",
+          "label": {
+            "uz": "quyon",
+            "ru": "заяц",
+            "en": "rabbit"
+          }
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐰 «quyon»da «q» tovushi qaysi katakchada?",
+        "ru": "🐰 В какой клетке звук «q» в слове «quyon»?",
+        "en": "🐰 Which box has the “q” sound in “quyon”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«quyon»da «q» tovushi toʻgʻri joyda.",
+        "ru": "В «quyon» звук «q» на верном месте.",
+        "en": "In “quyon” the “q” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🐰",
+          "word": {
+            "uz": "quyon",
+            "ru": "quyon",
+            "en": "quyon"
+          },
+          "sound": "q",
+          "cells": [
+            "q",
+            "u",
+            "y",
+            "o",
+            "n"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🐰 «quyon» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🐰 Похлопай слово «quyon» по слогам!",
+        "en": "🐰 Clap the word “quyon” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«quyon» — 2 boʻgʻin.",
+        "ru": "«quyon» — 2 слога.",
+        "en": "“quyon” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🐰",
+          "word": {
+            "uz": "quyon",
+            "ru": "quyon",
+            "en": "quyon"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Q» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «Q»!",
+        "en": "Tap the words that have the “Q” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Ularda «q» tovushi bor.",
+        "ru": "Верно! В них есть звук «q».",
+        "en": "Right! They have the “q” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🐰",
+              "label": {
+                "uz": "quyon",
+                "ru": "quyon",
+                "en": "quyon"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "❄️",
+              "label": {
+                "uz": "qor",
+                "ru": "qor",
+                "en": "qor"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "quloq",
+                "en": "quloq"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«quyon» soʻzini oʻqi. Mos rasmni top!",
+        "ru": "Прочитай «quyon». Найди картинку!",
+        "en": "Read “quyon”. Find the picture!"
+      },
+      "hint": {
+        "uz": "Soʻzni harflab oʻqi.",
+        "ru": "Прочитай по буквам.",
+        "en": "Read it letter by letter."
+      },
+      "explanation": {
+        "uz": "«quyon» — 🐰.",
+        "ru": "«quyon» — 🐰.",
+        "en": "“quyon” is 🐰."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🐰",
+              "label": {
+                "uz": "quyon",
+                "ru": "заяц",
+                "en": "rabbit"
+              },
+              "correct": true
+            },
+            {
+              "id": "p0",
+              "emoji": "❄️",
+              "label": {
+                "uz": "qor",
+                "ru": "qor",
+                "en": "qor"
+              }
+            },
+            {
+              "id": "p1",
+              "emoji": "👂",
+              "label": {
+                "uz": "quloq",
+                "ru": "quloq",
+                "en": "quloq"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab, soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🐰"
+              },
+              "right": {
+                "label": {
+                  "uz": "quyon",
+                  "ru": "quyon",
+                  "en": "quyon"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "❄️"
+              },
+              "right": {
+                "label": {
+                  "uz": "qor",
+                  "ru": "qor",
+                  "en": "qor"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "👂"
+              },
+              "right": {
+                "label": {
+                  "uz": "quloq",
+                  "ru": "quloq",
+                  "en": "quloq"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Quyon … qor.",
+        "ru": "Составь предложение: Quyon … qor.",
+        "en": "Order the words: Quyon … qor."
+      },
+      "hint": {
+        "uz": "Quyon — ana — qor.",
+        "ru": "Quyon — ana — qor.",
+        "en": "Quyon — ana — qor."
+      },
+      "explanation": {
+        "uz": "«Quyon ana qor.» — gap oʻqiding!",
+        "ru": "«Quyon ana qor.» — предложение!",
+        "en": "“Quyon ana qor.” — you read a sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "s0",
+              "label": {
+                "uz": "Quyon",
+                "ru": "Quyon",
+                "en": "Quyon"
+              }
+            },
+            {
+              "id": "s1",
+              "label": {
+                "uz": "ana",
+                "ru": "ana",
+                "en": "ana"
+              }
+            },
+            {
+              "id": "s2",
+              "label": {
+                "uz": "qor",
+                "ru": "qor",
+                "en": "qor"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, rasmni soʻzi bilan juftla!",
+        "ru": "Открой карточки и соедини картинку со словом!",
+        "en": "Flip the cards and match picture to word!"
+      },
+      "hint": {
+        "uz": "Har rasmning oʻz soʻzi bor.",
+        "ru": "У каждой картинки своё слово.",
+        "en": "Each picture has its word."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri juftlading!",
+        "ru": "Верно соединил!",
+        "en": "Matched correctly!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🐰"
+              },
+              "b": {
+                "label": {
+                  "uz": "quyon",
+                  "ru": "quyon",
+                  "en": "quyon"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "❄️"
+              },
+              "b": {
+                "label": {
+                  "uz": "qor",
+                  "ru": "qor",
+                  "en": "qor"
+                }
+              }
+            },
+            {
+              "a": {
+                "emoji": "👂"
+              },
+              "b": {
+                "label": {
+                  "uz": "quloq",
+                  "ru": "quloq",
+                  "en": "quloq"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«quyon» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «quyon»?",
+        "en": "How many sounds are in “quyon”?"
+      },
+      "hint": {
+        "uz": "Har bir tovushni sana.",
+        "ru": "Посчитай каждый звук.",
+        "en": "Count each sound."
+      },
+      "explanation": {
+        "uz": "«quyon»da 5 ta tovush bor.",
+        "ru": "В «quyon» 5 звука.",
+        "en": "“quyon” has 5 sounds."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

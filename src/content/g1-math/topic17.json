@@ -1,0 +1,115 @@
+{
+  "topicId": "g1-math-17",
+  "subjectKey": "g1-math",
+  "emojis": "4️⃣🐟🍎",
+  "title": { "uz": "Toʻrt soni va raqami", "ru": "Число четыре", "en": "The number four" },
+  "recall": {
+    "uz": "Toʻrt sonini oʻrganamiz. Toʻrtta narsani sanaymiz. Toʻrt uchdan kattaroq. Ikki va ikki qoʻshilsa, toʻrt boʻladi. Toʻrt sonining raqamini yozamiz.",
+    "ru": "Учим число четыре. Считаем четыре предмета. Четыре больше трёх. Два и два вместе — это четыре. Пишем цифру четыре.",
+    "en": "We learn the number four. We count four things. Four is bigger than three. Two and two make four. We write the numeral four."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Toʻrtta baliqni sanab belgila!", "ru": "Сосчитай и отметь четыре рыбки!", "en": "Count and tap the four fish!" },
+      "options": [
+        { "id": "f1", "art": { "kind": "fish", "color": "orange" } },
+        { "id": "f2", "art": { "kind": "fish", "color": "blue" } },
+        { "id": "a1", "art": { "kind": "apple", "color": "red" } },
+        { "id": "f3", "art": { "kind": "fish", "color": "magenta" } },
+        { "id": "f4", "art": { "kind": "fish", "color": "green" } }
+      ],
+      "answer": ["f1", "f2", "f3", "f4"],
+      "hint": { "uz": "Baliqlarni sana: bir, ikki, uch, toʻrt.", "ru": "Считай рыбок: один, два, три, четыре.", "en": "Count the fish: one, two, three, four." },
+      "explanation": { "uz": "Toʻrtta baliq bor edi. Toʻrt — uchdan bitta koʻp.", "ru": "Было четыре рыбки. Четыре — на один больше трёх.", "en": "There were four fish. Four is one more than three." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "number_line_addition", "props": { "a": 2, "b": 2, "maxSum": 10 } },
+      "prompt": { "uz": "Sonlar chizigʻida qoʻshib koʻr: ikki va ikki!", "ru": "Сложи на числовой прямой: два и два!", "en": "Add on the number line: two and two!" },
+      "hint": { "uz": "Ikkidan boshla, yana ikki qadam oldinga sakra.", "ru": "Встань на два, прыгни ещё на два вперёд.", "en": "Start at two, hop two more steps forward." },
+      "explanation": { "uz": "Ikki va ikki qoʻshilib, toʻrt boʻldi.", "ru": "Два и два дали четыре.", "en": "Two and two made four." }
+    },
+    { "id": "q3", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["4", "3", "5"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 2 + 2 = ?", "ru": "Найди сумму: 2 + 2 = ?", "en": "Find the sum: 2 + 2 = ?" },
+      "hint": { "uz": "Ikkitaga yana ikkita qoʻsh.", "ru": "К двум прибавь ещё два.", "en": "Add two more to two." },
+      "explanation": { "uz": "Ikki qoʻshish ikki — toʻrt.", "ru": "Два плюс два — четыре.", "en": "Two plus two is four." } },
+    { "id": "q4", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["4", "5", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yigʻindini top: 3 + 1 = ?", "ru": "Найди сумму: 3 + 1 = ?", "en": "Find the sum: 3 + 1 = ?" },
+      "hint": { "uz": "Uchtaga bitta qoʻsh.", "ru": "К трём прибавь один.", "en": "Add one to three." },
+      "explanation": { "uz": "Uch qoʻshish bir — toʻrt.", "ru": "Три плюс один — четыре.", "en": "Three plus one is four." } },
+    { "id": "q5", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["3", "4", "2"], "answerIndex": 0 } },
+      "prompt": { "uz": "Ayirmani top: 4 - 1 = ?", "ru": "Найди разность: 4 - 1 = ?", "en": "Find the difference: 4 - 1 = ?" },
+      "hint": { "uz": "Toʻrttadan bittasini olib tashla.", "ru": "Убери от четырёх один.", "en": "Take one away from four." },
+      "explanation": { "uz": "Toʻrt ayirish bir — uch qoladi.", "ru": "Четыре минус один — остаётся три.", "en": "Four minus one leaves three." } },
+    { "id": "q6", "type": "widget", "visualHint": "none", "widget": { "type": "balance_scale", "props": { "x": 4, "y": 2 } },
+      "prompt": { "uz": "Tarozini koʻr: qaysi son katta?", "ru": "Посмотри на весы: какое число больше?", "en": "Look at the scale: which number is bigger?" },
+      "hint": { "uz": "Koʻp boʻlgan tomon pastga ogʻadi.", "ru": "Сторона, где больше, опускается.", "en": "The side with more goes down." },
+      "explanation": { "uz": "Toʻrt ikkidan katta.", "ru": "Четыре больше двух.", "en": "Four is bigger than two." } },
+    {
+      "id": "q7",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Toʻrtta yulduzni sanab belgila!", "ru": "Сосчитай и отметь четыре звезды!", "en": "Count and tap the four stars!" },
+      "options": [
+        { "id": "s1", "art": { "kind": "star", "color": "yellow" } },
+        { "id": "s2", "art": { "kind": "star", "color": "orange" } },
+        { "id": "b1", "art": { "kind": "ball", "color": "blue" } },
+        { "id": "s3", "art": { "kind": "star", "color": "magenta" } },
+        { "id": "s4", "art": { "kind": "star", "color": "red" } }
+      ],
+      "answer": ["s1", "s2", "s3", "s4"],
+      "hint": { "uz": "Yulduzlarni sana: bir, ikki, uch, toʻrt.", "ru": "Считай звёзды: один, два, три, четыре.", "en": "Count the stars: one, two, three, four." },
+      "explanation": { "uz": "Toʻrtta yulduz bor edi.", "ru": "Было четыре звезды.", "en": "There were four stars." }
+    },
+    {
+      "id": "q8",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": { "uz": "Qatorni davom ettir: keyin qaysi shakl keladi?", "ru": "Продолжи ряд: какая фигура будет следующей?", "en": "Continue the row: which shape comes next?" },
+      "sequence": [
+        { "kind": "triangle", "color": "green" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "green" },
+        { "kind": "circle", "color": "blue" },
+        { "kind": "triangle", "color": "green" }
+      ],
+      "options": [
+        { "id": "ci", "art": { "kind": "circle", "color": "blue" } },
+        { "id": "tr", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "st", "art": { "kind": "star", "color": "magenta" } }
+      ],
+      "answer": ["ci"],
+      "hint": { "uz": "Uchburchak, doira, uchburchak, doira… navbat bilan keladi!", "ru": "Треугольник, круг, треугольник, круг… по очереди!", "en": "Triangle, circle, triangle, circle… they take turns!" },
+      "explanation": { "uz": "Uchburchakdan keyin doim doira keladi. Keyingisi — doira.", "ru": "После треугольника всегда идёт круг. Следующий — круг.", "en": "After a triangle there is always a circle. The next one is a circle." }
+    },
+    { "id": "q9", "type": "widget", "visualHint": "none", "widget": { "type": "mcq", "props": { "choices": ["2", "1", "3"], "answerIndex": 0 } },
+      "prompt": { "uz": "Yetishmagan sonni top: 4 = 2 + ?", "ru": "Найди недостающее число: 4 = 2 + ?", "en": "Find the missing number: 4 = 2 + ?" },
+      "hint": { "uz": "Ikkiga nechta qoʻshsak, toʻrt boʻladi?", "ru": "Сколько прибавить к двум, чтобы вышло четыре?", "en": "How much to add to two to make four?" },
+      "explanation": { "uz": "Ikki qoʻshish ikki — toʻrt. Yetishmagan son — ikki.", "ru": "Два плюс два — четыре. Недостающее число — два.", "en": "Two plus two is four. The missing number is two." } },
+    {
+      "id": "q10",
+      "type": "match_line",
+      "visualHint": "example_pair",
+      "prompt": { "uz": "Har bir narsani xuddi oʻshanga ula!", "ru": "Соедини каждый предмет с таким же!", "en": "Connect each thing to the same one!" },
+      "left": [
+        { "id": "fi", "art": { "kind": "fish", "color": "blue" }, "match": "m-fi" },
+        { "id": "ap", "art": { "kind": "apple", "color": "red" }, "match": "m-ap" },
+        { "id": "st", "art": { "kind": "star", "color": "yellow" }, "match": "m-st" },
+        { "id": "ba", "art": { "kind": "ball", "color": "green" }, "match": "m-ba" }
+      ],
+      "right": [
+        { "id": "m-ba", "art": { "kind": "ball", "color": "gray" } },
+        { "id": "m-st", "art": { "kind": "star", "color": "gray" } },
+        { "id": "m-fi", "art": { "kind": "fish", "color": "gray" } },
+        { "id": "m-ap", "art": { "kind": "apple", "color": "gray" } }
+      ],
+      "hint": { "uz": "Avval rangli narsani bos, keyin xuddi oʻshanday narsani bos.", "ru": "Сначала нажми на цветной предмет, потом на такой же.", "en": "First tap a colored thing, then tap the same one." },
+      "explanation": { "uz": "Toʻrt juftni toʻgʻri uladik.", "ru": "Мы верно соединили четыре пары.", "en": "We matched all four pairs correctly." }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-35",
+  "subjectKey": "g1-ona",
+  "emojis": "🧒👨‍👩‍👧‍👦❓",
+  "title": {
+    "uz": "Bitta odam, koʻp odam",
+    "ru": "Один человек, много людей",
+    "en": "One person, many people"
+  },
+  "recall": {
+    "uz": "Bitta shaxs nomiga «Kim?» soʻrogʻi beriladi: bola. Bittadan ortiq shaxs nomiga «Kimlar?» soʻrogʻi beriladi: bolalar. Koʻplik «-lar» qoʻshimchasi bilan hosil boʻladi.",
+    "ru": "К одному лицу ставят вопрос «Кто?»: bola. К нескольким — «Кто (мн.)?»: bolalar. Множественное число образуется с «-lar».",
+    "en": "One person answers “Kim?” (Who?): bola. More than one answers “Kimlar?”: bolalar. The plural is formed with “-lar”."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["Kim?", "Kimlar?", "Nima?"], "answerIndex": 0 } },
+      "prompt": { "uz": "Bitta shaxsga qanday savol beriladi?", "ru": "Какой вопрос к одному лицу?", "en": "What question do we ask of one person?" },
+      "hint": { "uz": "Bitta odam — «Kim?».", "ru": "Один человек — «Кто?».", "en": "One person — “Kim?”." },
+      "explanation": { "uz": "Bitta shaxsga «Kim?» soʻrogʻi beriladi.", "ru": "К одному лицу — «Кто?».", "en": "One person answers “Kim?”." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "bola", "bin": "bir" }, { "id": "b", "label": "ona", "bin": "bir" }, { "id": "c", "label": "doʻst", "bin": "bir" }, { "id": "d", "label": "bolalar", "bin": "kop" }, { "id": "e", "label": "onalar", "bin": "kop" }, { "id": "f", "label": "doʻstlar", "bin": "kop" } ], "bins": [ { "id": "bir", "label": "Kim? (bitta)" }, { "id": "kop", "label": "Kimlar? (koʻp)" } ] } },
+      "prompt": { "uz": "Bitta va koʻpni ajrat!", "ru": "Раздели один и много!", "en": "Sort one and many!" },
+      "hint": { "uz": "«-lar» boʻlsa — koʻp odam.", "ru": "Есть «-lar» — много людей.", "en": "With “-lar” — many people." },
+      "explanation": { "uz": "«-lar» koʻp shaxsni bildiradi (Kimlar?).", "ru": "«-lar» — много лиц (Кто мн.?).", "en": "“-lar” marks many people (Kimlar?)." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "bola", "right": "bolalar" }, { "left": "oʻquvchi", "right": "oʻquvchilar" }, { "left": "doʻst", "right": "doʻstlar" }, { "left": "farzand", "right": "farzandlar" } ] } },
+      "prompt": { "uz": "Bitta shaxsni koʻplikka ula!", "ru": "Соедини лицо с его мн. числом!", "en": "Match each person to its plural!" },
+      "hint": { "uz": "«bola» — «bolalar».", "ru": "«bola» — «bolalar».", "en": "“bola” — “bolalar”." },
+      "explanation": { "uz": "Koʻplik «-lar» qoʻshib yasaladi.", "ru": "Множественное — добавляем «-lar».", "en": "The plural adds “-lar”." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "bola", "match": true }, { "text": "taroq", "match": false }, { "text": "quruvchi", "match": true }, { "text": "shamol", "match": false }, { "text": "dugona", "match": true }, { "text": "changʻi", "match": false } ] } },
+      "prompt": { "uz": "Shaxs (Kim?) soʻzlarini bos!", "ru": "Нажми слова-лица (Кто?)!", "en": "Tap the person words (Who?)!" },
+      "hint": { "uz": "Odamni bildirgan soʻzlarni tanla.", "ru": "Выбери слова, называющие людей.", "en": "Choose words that name people." },
+      "explanation": { "uz": "bola, quruvchi, dugona — shaxs; taroq, shamol, changʻi — narsa.", "ru": "bola, quruvchi, dugona — лица; taroq, shamol, changʻi — предметы.", "en": "bola, quruvchi, dugona are people; taroq, shamol, changʻi are things." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "farzand", "bin": "shaxs" }, { "id": "b", "label": "quruvchi", "bin": "shaxs" }, { "id": "c", "label": "dugona", "bin": "shaxs" }, { "id": "d", "label": "taroq", "bin": "narsa" }, { "id": "e", "label": "shamol", "bin": "narsa" }, { "id": "f", "label": "changʻi", "bin": "narsa" } ], "bins": [ { "id": "shaxs", "label": "Shaxs (Kim?)" }, { "id": "narsa", "label": "Narsa (Nima?)" } ] } },
+      "prompt": { "uz": "Shaxs va narsani ajrat!", "ru": "Раздели лицо и предмет!", "en": "Sort persons and things!" },
+      "hint": { "uz": "quruvchi — odam, taroq — buyum.", "ru": "quruvchi — человек, taroq — предмет.", "en": "quruvchi is a person, taroq a thing." },
+      "explanation": { "uz": "Odam — «Kim?», buyum — «Nima?».", "ru": "Человек — «Кто?», предмет — «Что?».", "en": "A person — “Who?”, a thing — “What?”." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "bola", "after": "", "choices": ["lar", "ni", "ga"], "answer": "lar", "emoji": "👦", "clue": { "uz": "Bitta emas, koʻp bola", "ru": "Не один, а много детей", "en": "Not one, but many children" } } },
+      "prompt": { "uz": "Koʻplik qoʻshimchasini qoʻy!", "ru": "Добавь суффикс мн. числа!", "en": "Add the plural suffix!" },
+      "hint": { "uz": "bola + … = koʻp bola.", "ru": "bola + … = много детей.", "en": "bola + … = many children." },
+      "explanation": { "uz": "bola + lar = «bolalar» (Kimlar?).", "ru": "bola + lar = «bolalar» (Кто мн.?).", "en": "bola + lar = “bolalar” (Kimlar?)." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "shaxs", "letters": ["sh", "a", "x", "s"], "emoji": "🧒", "clue": { "uz": "Odam, inson", "ru": "Человек, лицо", "en": "A person" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: sh, a, x, s.", "ru": "Части: sh, a, x, s.", "en": "Parts: sh, a, x, s." },
+      "explanation": { "uz": "«shaxs» — odam (Kim?).", "ru": "«shaxs» (лицо) — человек (Кто?).", "en": "“shaxs” (person) — a human (Who?)." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "bolalar", "match": true }, { "text": "bola", "match": false }, { "text": "doʻstlar", "match": true }, { "text": "ona", "match": false }, { "text": "oʻquvchilar", "match": true }, { "text": "farzand", "match": false } ] } },
+      "prompt": { "uz": "Koʻplikdagi shaxs soʻzlarini bos!", "ru": "Нажми лица во множественном числе!", "en": "Tap the plural person words!" },
+      "hint": { "uz": "«-lar» bilan tugaganlarini tanla.", "ru": "Выбери слова на «-lar».", "en": "Choose words ending in “-lar”." },
+      "explanation": { "uz": "bolalar, doʻstlar, oʻquvchilar — koʻp shaxs (Kimlar?).", "ru": "bolalar, doʻstlar, oʻquvchilar — много лиц (Кто мн.?).", "en": "bolalar, doʻstlar, oʻquvchilar are many people (Kimlar?)." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bolalar", "bogʻda", "oʻynaydi."], "emoji": "🧒", "clue": { "uz": "Bolalar haqida gap", "ru": "Предложение о детях", "en": "A sentence about children" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Kimlar? — «Bolalar».", "ru": "Кто (мн.)? — «Bolalar».", "en": "Who (pl.)? — “Bolalar”." },
+      "explanation": { "uz": "«Bolalar» — koʻp shaxs (Kimlar?).", "ru": "«Bolalar» — много лиц (Кто мн.?).", "en": "“Bolalar” is many people (Kimlar?)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["Kimlar?", "Kim?", "Nimalar?"], "answerIndex": 0 } },
+      "prompt": { "uz": "«bolalar» soʻziga qanday savol beriladi?", "ru": "Какой вопрос к слову «bolalar»?", "en": "What question do we ask of “bolalar”?" },
+      "hint": { "uz": "Koʻp odam — «Kimlar?».", "ru": "Много людей — «Кто (мн.)?».", "en": "Many people — “Kimlar?”." },
+      "explanation": { "uz": "«bolalar» — koʻp shaxs, «Kimlar?» soʻrogʻiga javob.", "ru": "«bolalar» — много лиц, отвечает на «Кто (мн.)?».", "en": "“bolalar” is many people — it answers “Kimlar?”." }
+    }
+  ]
+}

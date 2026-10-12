@@ -1,0 +1,409 @@
+{
+  "topicId": "g1-math-116",
+  "subjectKey": "g1-math",
+  "emojis": "⬠🔺✨",
+  "title": {
+    "uz": "Koʻpburchaklar olami",
+    "ru": "Знакомимся с многоугольниками",
+    "en": "Meet polygons"
+  },
+  "recall": {
+    "uz": "Koʻpburchak — yopiq siniq chiziq bilan chegaralangan shakl. Uning nomi uchlari soniga bogʻliq: 3 ta uchi boʻlsa — uchburchak, 4 ta uchi boʻlsa — toʻrtburchak, 5 ta uchi boʻlsa — beshburchak. Tomonlari va uchlari teng sonda boʻladi.",
+    "ru": "Многоугольник — фигура, ограниченная замкнутой ломаной. Имя зависит от числа вершин: 3 вершины — треугольник, 4 — четырёхугольник, 5 — пятиугольник. Сторон и вершин поровну.",
+    "en": "A polygon is a shape bounded by a closed broken line. Its name depends on its vertices: 3 vertices — triangle, 4 — quadrilateral, 5 — pentagon. It has equal numbers of sides and vertices."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma uchburchaklarni belgila!",
+        "ru": "Отметь все треугольники!",
+        "en": "Tap all the triangles!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "circle",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "triangle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "e"
+      ],
+      "hint": {
+        "uz": "Uchburchakning 3 tomoni bor.",
+        "ru": "У треугольника 3 стороны.",
+        "en": "A triangle has 3 sides."
+      },
+      "explanation": {
+        "uz": "Uchta uchburchakni topdik.",
+        "ru": "Нашли три треугольника.",
+        "en": "We found three triangles."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "multi_select",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Hamma toʻrtburchaklarni belgila!",
+        "ru": "Отметь все четырёхугольники!",
+        "en": "Tap all the quadrilaterals!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "square",
+            "color": "blue"
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "green"
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "rect",
+            "color": "orange"
+          }
+        },
+        {
+          "id": "d",
+          "art": {
+            "kind": "rhombus",
+            "color": "magenta"
+          }
+        },
+        {
+          "id": "e",
+          "art": {
+            "kind": "circle",
+            "color": "red"
+          }
+        }
+      ],
+      "answer": [
+        "a",
+        "c",
+        "d"
+      ],
+      "hint": {
+        "uz": "Toʻrtburchakning 4 tomoni bor.",
+        "ru": "У четырёхугольника 4 стороны.",
+        "en": "A quadrilateral has 4 sides."
+      },
+      "explanation": {
+        "uz": "Uchta toʻrtburchakni topdik.",
+        "ru": "Нашли три четырёхугольника.",
+        "en": "We found three quadrilaterals."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "click_correct",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Eng katta uchburchakni bos!",
+        "ru": "Нажми на самый большой треугольник!",
+        "en": "Tap the biggest triangle!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "art": {
+            "kind": "triangle",
+            "color": "green",
+            "scale": 0.7
+          }
+        },
+        {
+          "id": "b",
+          "art": {
+            "kind": "triangle",
+            "color": "orange",
+            "scale": 1.3
+          }
+        },
+        {
+          "id": "c",
+          "art": {
+            "kind": "triangle",
+            "color": "blue",
+            "scale": 0.95
+          }
+        }
+      ],
+      "answer": [
+        "b"
+      ],
+      "hint": {
+        "uz": "Eng koʻp joy egallaganini tanla.",
+        "ru": "Выбери занимающий больше места.",
+        "en": "Pick the one taking the most space."
+      },
+      "explanation": {
+        "uz": "Eng katta uchburchakni topdik.",
+        "ru": "Нашли самый большой.",
+        "en": "We found the biggest one."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Toʻrtburchak perimetrini top: har bir tomonni bos.",
+        "ru": "Найди периметр четырёхугольника: нажми на стороны.",
+        "en": "Find the quadrilateral's perimeter: tap the sides."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = barcha tomonlar yigʻindisi = 16 cm.",
+        "ru": "Периметр = сумма всех сторон = 16 cm.",
+        "en": "Perimeter = sum of all sides = 16 cm."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "place_value_blocks",
+        "props": {
+          "target": 78,
+          "hideTarget": true
+        }
+      },
+      "prompt": {
+        "uz": "Siniq chiziqning boʻgʻinlari 45 cm va 33 cm. Uzunligi? Bloklardan yasa.",
+        "ru": "Звенья ломаной 45 см и 33 см. Длина? Собери из блоков.",
+        "en": "A broken line's links are 45 cm and 33 cm. Length? Build it."
+      },
+      "hint": {
+        "uz": "Avval hisobla, soʻng javobni bloklardan yasa.",
+        "ru": "Сначала вычисли, потом собери из блоков.",
+        "en": "Work it out, then build the answer from blocks."
+      },
+      "explanation": {
+        "uz": "45 + 33 = 78 cm.",
+        "ru": "45 + 33 = 78 см.",
+        "en": "45 + 33 = 78 cm."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_line_addition",
+        "props": {
+          "a": 8,
+          "b": 6,
+          "maxSum": 20
+        }
+      },
+      "prompt": {
+        "uz": "Siniq chiziq boʻgʻinlari: 8 cm va 6 cm. Umumiy uzunligi necha cm?",
+        "ru": "Звенья ломаной: 8 см и 6 см. Какова общая длина?",
+        "en": "Broken-line links: 8 cm and 6 cm. What is the total length?"
+      },
+      "hint": {
+        "uz": "8 dan boshla, 6 cm oldinga sur.",
+        "ru": "Встань на 8, продвинься на 6 см.",
+        "en": "Start at 8, move 6 cm forward."
+      },
+      "explanation": {
+        "uz": "8 + 6 = 14 cm.",
+        "ru": "8 + 6 = 14 см.",
+        "en": "8 + 6 = 14 cm."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "3 + 3 + 3",
+              "right": "9"
+            },
+            {
+              "left": "4 + 4 + 4",
+              "right": "12"
+            },
+            {
+              "left": "5 + 5 + 5",
+              "right": "15"
+            },
+            {
+              "left": "6 + 6 + 6",
+              "right": "18"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Har bir uzunlikni qiymati bilan ulang!",
+        "ru": "Соедини каждую длину с её значением!",
+        "en": "Match each length with its value!"
+      },
+      "hint": {
+        "uz": "Chapdagi ifodani hisobla, soʻng tengini oʻngdan top.",
+        "ru": "Вычисли слева, потом найди равное справа.",
+        "en": "Work out the left side, then find its equal on the right."
+      },
+      "explanation": {
+        "uz": "Har bir uzunlik oʻz qiymati bilan ulandi.",
+        "ru": "Каждая длина соединена со своим значением.",
+        "en": "Each length is matched with its value."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "balance_scale",
+        "props": {
+          "x": 14,
+          "y": 18
+        }
+      },
+      "prompt": {
+        "uz": "Qaysi kesma uzunroq: 14 cm yoki 18 cm? Toʻgʻri belgini tanla.",
+        "ru": "Какой отрезок длиннее: 14 см или 18 см? Выбери знак.",
+        "en": "Which segment is longer: 14 cm or 18 cm? Choose the sign."
+      },
+      "hint": {
+        "uz": "Soni katta boʻlgan kesma uzunroq.",
+        "ru": "Отрезок с большим числом длиннее.",
+        "en": "The bigger number is the longer segment."
+      },
+      "explanation": {
+        "uz": "14 < 18.",
+        "ru": "14 < 18.",
+        "en": "14 < 18."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "polygon_perimeter",
+        "props": {
+          "sides": [
+            5,
+            5,
+            5
+          ],
+          "unit": "cm"
+        }
+      },
+      "prompt": {
+        "uz": "Uchburchak perimetrini top.",
+        "ru": "Найди периметр треугольника.",
+        "en": "Find the triangle's perimeter."
+      },
+      "hint": {
+        "uz": "Har bir tomonni bos — uzunliklar qoʻshilib, perimetr chiqadi.",
+        "ru": "Нажми на каждую сторону — длины складываются в периметр.",
+        "en": "Tap each side — the lengths add up to the perimeter."
+      },
+      "explanation": {
+        "uz": "Perimetr = barcha tomonlar yigʻindisi = 15 cm.",
+        "ru": "Периметр = сумма всех сторон = 15 cm.",
+        "en": "Perimeter = sum of all sides = 15 cm."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "5",
+            "4",
+            "6"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Beshburchakning nechta uchi bor?",
+        "ru": "Сколько вершин у пятиугольника?",
+        "en": "How many vertices does a pentagon have?"
+      },
+      "hint": {
+        "uz": "«Besh» — bu nechta?",
+        "ru": "«Пять» — это сколько?",
+        "en": "«Penta» means how many?"
+      },
+      "explanation": {
+        "uz": "Beshburchakning 5 ta uchi bor.",
+        "ru": "У пятиугольника 5 вершин.",
+        "en": "A pentagon has 5 vertices."
+      }
+    }
+  ]
+}

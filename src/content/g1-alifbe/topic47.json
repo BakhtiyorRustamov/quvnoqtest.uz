@@ -1,0 +1,484 @@
+{
+  "topicId": "g1-alifbe-47",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🏡🍈🐦",
+  "title": {
+    "uz": "«H h» harfi",
+    "ru": "Буква «H h»",
+    "en": "The letter “H h”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «H h». U undosh tovush. «H» bilan: hovli, handalak, hakka. Endi «hovli» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «H h». Это согласный звук. Слова: hovli, handalak, hakka. Теперь мы можем прочитать слово «hovli»!",
+    "en": "Today's letter is “H h”. It is a consonant. Words: hovli, handalak, hakka. Now we can read and build the word “hovli”!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«H» bilan boshlanadigan soʻzni top!",
+        "ru": "Найди слово на «H»!",
+        "en": "Find the word that starts with “H”!"
+      },
+      "hint": {
+        "uz": "Boshini choʻzib ayt: h-h-hovli.",
+        "ru": "Протяни начало: hovli.",
+        "en": "Stretch the start: hovli."
+      },
+      "explanation": {
+        "uz": "«hovli» «H» tovushi bilan boshlanadi.",
+        "ru": "«hovli» начинается со звука «H».",
+        "en": "“hovli” starts with the sound “H”."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🏡",
+              "label": {
+                "uz": "hovli",
+                "ru": "двор",
+                "en": "yard"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«H» harfini topib, hammasini bos!",
+        "ru": "Найди букву «H» и нажми на все!",
+        "en": "Find the letter “H” and tap them all!"
+      },
+      "hint": {
+        "uz": "Katta va kichik shakli ham boʻladi.",
+        "ru": "Считаются большая и маленькая.",
+        "en": "Both capital and small count."
+      },
+      "explanation": {
+        "uz": "«H» harfini topding!",
+        "ru": "Ты нашёл букву «H»!",
+        "en": "You found the letter “H”!"
+      },
+      "widget": {
+        "type": "letter_hunt",
+        "props": {
+          "target": "H",
+          "cols": 3,
+          "grid": [
+            "H",
+            "o",
+            "h",
+            "T",
+            "H",
+            "i",
+            "h",
+            "n",
+            "H"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🏡 «hovli»da «h» tovushi qaysi katakchada?",
+        "ru": "🏡 В какой клетке звук «h» в слове «hovli»?",
+        "en": "🏡 Which box has the “h” sound in “hovli”?"
+      },
+      "hint": {
+        "uz": "Soʻzni sekin ayt.",
+        "ru": "Произнеси медленно.",
+        "en": "Say it slowly."
+      },
+      "explanation": {
+        "uz": "«hovli»da «h» toʻgʻri joyda.",
+        "ru": "В «hovli» звук «h» на верном месте.",
+        "en": "In “hovli” the “h” is in the right box."
+      },
+      "widget": {
+        "type": "sound_position",
+        "props": {
+          "emoji": "🏡",
+          "word": {
+            "uz": "hovli",
+            "ru": "hovli",
+            "en": "hovli"
+          },
+          "sound": "h",
+          "cells": [
+            "h",
+            "o",
+            "v",
+            "l",
+            "i"
+          ],
+          "answer": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🏡 «hovli» soʻzining tovush chizmasini rangla!",
+        "ru": "🏡 Раскрась схему звуков слова «hovli»!",
+        "en": "🏡 Colour the sound scheme of “hovli”!"
+      },
+      "hint": {
+        "uz": "Qizil — unli, koʻk — undosh.",
+        "ru": "Красный — гласный, синий — согласный.",
+        "en": "Red — vowel, blue — consonant."
+      },
+      "explanation": {
+        "uz": "«hovli» tovushlari ketma-ketligini rangladik.",
+        "ru": "Мы раскрасили схему звуков «hovli».",
+        "en": "We coloured the sound scheme of “hovli”."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "🏡",
+          "word": {
+            "uz": "hovli",
+            "ru": "hovli",
+            "en": "hovli"
+          },
+          "scheme": [
+            "c",
+            "v",
+            "c",
+            "c",
+            "v"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«H» tovushi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со звуком «H»!",
+        "en": "Tap the words that have the “H” sound!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin ayt.",
+        "ru": "Произнеси каждое слово.",
+        "en": "Say each word."
+      },
+      "explanation": {
+        "uz": "Ularda «h» tovushi bor.",
+        "ru": "В них есть звук «h».",
+        "en": "They have the “h” sound."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🏡",
+              "label": {
+                "uz": "hovli",
+                "ru": "hovli",
+                "en": "hovli"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍈",
+              "label": {
+                "uz": "handalak",
+                "ru": "handalak",
+                "en": "handalak"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🐦",
+              "label": {
+                "uz": "hakka",
+                "ru": "hakka",
+                "en": "hakka"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "olma",
+                "en": "olma"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🏡 Yetishmayotgan harfni qoʻy!",
+        "ru": "🏡 Вставь недостающую букву!",
+        "en": "🏡 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz «h» bilan boshlanadi.",
+        "ru": "Слово начинается с «h».",
+        "en": "The word starts with “h”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «h». Soʻz: «hovli».",
+        "ru": "Верная буква — «h». Слово: «hovli».",
+        "en": "The right letter is “h”. Word: “hovli”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🏡",
+          "label": {
+            "uz": "hovli",
+            "ru": "двор",
+            "en": "yard"
+          },
+          "letters": [
+            "h",
+            "o",
+            "v",
+            "l",
+            "i"
+          ],
+          "blank": 0,
+          "choices": [
+            "h",
+            "x",
+            "k"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«H» — undosh tovush.",
+        "ru": "«H» — согласный звук.",
+        "en": "“H” is a consonant sound."
+      },
+      "hint": {
+        "uz": "Undoshlar toʻsiq bilan aytiladi.",
+        "ru": "Согласные — с преградой.",
+        "en": "Consonants have a block."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «H» — undosh tovush.",
+        "ru": "Верно! «H» — согласный.",
+        "en": "True! “H” is a consonant."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔵",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🍈 «handalak» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🍈 Похлопай слово «handalak» по слогам!",
+        "en": "🍈 Clap the word “handalak” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — один хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«handalak» — 3 boʻgʻin.",
+        "ru": "«handalak» — 3 слога.",
+        "en": "“handalak” — 3 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🍈",
+          "word": {
+            "uz": "handalak",
+            "ru": "handalak",
+            "en": "handalak"
+          },
+          "syllables": 3
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir rasmni soʻzi bilan ula!",
+        "ru": "Соедини картинку со словом!",
+        "en": "Match each picture to its word!"
+      },
+      "hint": {
+        "uz": "Rasmga qarab soʻzni oʻqi.",
+        "ru": "Посмотри и прочитай слово.",
+        "en": "Look and read the word."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал слова!",
+        "en": "You read all the words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "emoji": "🏡"
+              },
+              "right": {
+                "label": {
+                  "uz": "hovli",
+                  "ru": "hovli",
+                  "en": "hovli"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍈"
+              },
+              "right": {
+                "label": {
+                  "uz": "handalak",
+                  "ru": "handalak",
+                  "en": "handalak"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🐦"
+              },
+              "right": {
+                "label": {
+                  "uz": "hakka",
+                  "ru": "hakka",
+                  "en": "hakka"
+                }
+              }
+            },
+            {
+              "left": {
+                "emoji": "🍎"
+              },
+              "right": {
+                "label": {
+                  "uz": "olma",
+                  "ru": "olma",
+                  "en": "olma"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«H» tovushi qanday chiqadi?",
+        "ru": "Как выходит звук «H»?",
+        "en": "How does the “H” sound come out?"
+      },
+      "hint": {
+        "uz": "«h-h-h» deb ayt.",
+        "ru": "Скажи «h-h-h».",
+        "en": "Say “h-h-h”."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — yumshoq.",
+        "ru": "Верный ответ — мягко.",
+        "en": "The right answer is softly."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "yumshoq",
+              "ru": "мягко",
+              "en": "softly"
+            },
+            {
+              "uz": "qattiq",
+              "ru": "твёрдо",
+              "en": "hard"
+            },
+            {
+              "uz": "baland",
+              "ru": "громко",
+              "en": "loudly"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

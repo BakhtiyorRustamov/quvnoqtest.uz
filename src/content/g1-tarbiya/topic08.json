@@ -1,0 +1,255 @@
+{
+  "topicId": "g1-tarbiya-08",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🙂👋🙏💬",
+  "title": {
+    "uz": "Soʻzlashish odobi",
+    "ru": "Культура общения",
+    "en": "Polite speech"
+  },
+  "recall": {
+    "uz": "Xushmuomalalik — odob belgisi. «Salom», «Rahmat», «Iltimos», «Kechirasiz» va «Xayr» soʻzlari hurmat va doʻstlikni koʻrsatadi. Kattalarga «siz» deb muloyim murojaat qilamiz.",
+    "ru": "Вежливость — признак воспитанности. Слова «Здравствуйте», «Спасибо», «Пожалуйста», «Извините» и «До свидания» показывают уважение и дружбу. К старшим обращаемся вежливо на «вы».",
+    "en": "Politeness is a sign of good manners. The words \"Hello\", \"Thank you\", \"Please\", \"Sorry\" and \"Goodbye\" show respect and friendship. We address elders politely."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir soʻzni mos holatga ula!",
+        "ru": "Соедини каждое слово с подходящей ситуацией!",
+        "en": "Match each word to the right situation!"
+      },
+      "hint": {
+        "uz": "Uchrashganda — Salom, sovgʻa uchun — Rahmat, xatoga — Kechirasiz.",
+        "ru": "При встрече — Здравствуйте, за подарок — Спасибо, за ошибку — Извините.",
+        "en": "When you meet — Hello, for a gift — Thank you, for a mistake — Sorry."
+      },
+      "explanation": {
+        "uz": "Barakalla! Odobli soʻzlarni toʻgʻri qoʻllading.",
+        "ru": "Молодец! Ты правильно применил вежливые слова.",
+        "en": "Great! You used the polite words correctly."
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": {
+                  "uz": "Salom",
+                  "ru": "Здравствуйте",
+                  "en": "Hello"
+                }
+              },
+              "right": {
+                "emoji": "👋"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "Rahmat",
+                  "ru": "Спасибо",
+                  "en": "Thank you"
+                }
+              },
+              "right": {
+                "emoji": "🎁"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "Kechirasiz",
+                  "ru": "Извините",
+                  "en": "Sorry"
+                }
+              },
+              "right": {
+                "emoji": "😔"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kimdir senga yordam berdi. Nima deysan?",
+        "ru": "Кто-то тебе помог. Что скажешь?",
+        "en": "Someone helped you. What do you say?"
+      },
+      "hint": {
+        "uz": "Minnatdorchilik soʻzi.",
+        "ru": "Слово благодарности.",
+        "en": "A word of thanks."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Rahmat» deymiz.",
+        "ru": "Верно! Говорим «Спасибо».",
+        "en": "Right! We say \"Thank you\"."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Rahmat!",
+              "ru": "Спасибо!",
+              "en": "Thank you!"
+            },
+            {
+              "uz": "Ketaver!",
+              "ru": "Уходи!",
+              "en": "Go away!"
+            },
+            {
+              "uz": "Menga nima?",
+              "ru": "Мне-то что?",
+              "en": "So what?"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Odobli soʻzlarni belgila!",
+        "ru": "Отметь вежливые слова!",
+        "en": "Tap the polite words!"
+      },
+      "hint": {
+        "uz": "Salom, Rahmat, Iltimos, Kechirasiz.",
+        "ru": "Здравствуйте, Спасибо, Пожалуйста, Извините.",
+        "en": "Hello, Thank you, Please, Sorry."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bular xushmuomalalik soʻzlari.",
+        "ru": "Молодец! Это вежливые слова.",
+        "en": "Great! Those are polite words."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "👋",
+              "label": {
+                "uz": "Salom",
+                "ru": "Здравствуйте",
+                "en": "Hello"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🙏",
+              "label": {
+                "uz": "Rahmat",
+                "ru": "Спасибо",
+                "en": "Thank you"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🙂",
+              "label": {
+                "uz": "Iltimos",
+                "ru": "Пожалуйста",
+                "en": "Please"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "😠",
+              "label": {
+                "uz": "qoʻpol soʻz",
+                "ru": "грубое слово",
+                "en": "a rude word"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🗯️",
+              "label": {
+                "uz": "baqiriq",
+                "ru": "крик",
+                "en": "a shout"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Kattalarga muloyim «siz» deb murojaat qilamiz.",
+        "ru": "Верно? К старшим обращаемся вежливо на «вы».",
+        "en": "Is this right? We address elders politely."
+      },
+      "hint": {
+        "uz": "Hurmat belgisi.",
+        "ru": "Знак уважения.",
+        "en": "A sign of respect."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Kattalarni hurmat qilamiz.",
+        "ru": "Верно! Мы уважаем старших.",
+        "en": "Right! We respect our elders."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🙂",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bugun kimga «rahmat» aytdingiz va nima uchun?",
+        "ru": "Кому ты сегодня сказал «спасибо» и за что?",
+        "en": "Whom did you thank today, and why?"
+      },
+      "hint": {
+        "uz": "Oila, doʻst, oʻqituvchi — kim yordam berdi?",
+        "ru": "Семья, друг, учитель — кто помог?",
+        "en": "Family, a friend, a teacher — who helped you?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Minnatdorchilik — chiroyli odat.",
+        "ru": "Отлично! Благодарность — прекрасная привычка.",
+        "en": "Great! Gratitude is a lovely habit."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Bugun men oyimga «rahmat» aytdim, chunki u menga mazali nonushta tayyorladi.",
+            "ru": "Сегодня я сказал «спасибо» маме, потому что она приготовила вкусный завтрак.",
+            "en": "Today I thanked my mom, because she made me a tasty breakfast."
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-18",
+  "subjectKey": "g1-ona",
+  "emojis": "❜🏰🎨",
+  "title": {
+    "uz": "Tutuq belgisi sirlari",
+    "ru": "Секреты знака тутук (ʼ)",
+    "en": "Secrets of the tutuq sign (ʼ)"
+  },
+  "recall": {
+    "uz": "Tutuq belgisi (ʼ) unlidan keyin kelsa, uni choʻziq aytamiz: maʼno, saʼva, eʼlon. Undoshdan keyin kelsa, unlini undoshdan ajratadi: sanʼat, qalʼa, surʼat. U soʻz maʼnosini oʻzgartiradi: qalʼa — qala.",
+    "ru": "Знак тутук (ʼ) после гласной удлиняет её: maʼno, saʼva, eʼlon. После согласной отделяет гласную от согласной: sanʼat, qalʼa, surʼat. Он меняет смысл: qalʼa — qala.",
+    "en": "The tutuq sign (ʼ) after a vowel lengthens it: maʼno, saʼva, eʼlon. After a consonant it separates the vowel: sanʼat, qalʼa, surʼat. It changes meaning: qalʼa — qala."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "san", "after": "at", "choices": ["ʼ", "h", "-"], "answer": "ʼ", "emoji": "🎨", "clue": { "uz": "Musiqa, rasm, raqs — bu …", "ru": "Музыка, рисунок, танец — это …", "en": "Music, drawing, dance — this is …" } } },
+      "prompt": { "uz": "Yetishmayotgan belgini qoʻy!", "ru": "Вставь недостающий знак!", "en": "Add the missing sign!" },
+      "hint": { "uz": "san … at — «sanʼat».", "ru": "san … at — «sanʼat» (искусство).", "en": "san … at — “sanʼat” (art)." },
+      "explanation": { "uz": "«sanʼat» — tutuq belgisi unlini undoshdan ajratadi.", "ru": "«sanʼat» — знак тутук отделяет гласную.", "en": "“sanʼat” — the sign separates the vowel." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "ma", "after": "no", "choices": ["ʼ", "h", "y"], "answer": "ʼ", "emoji": "💭", "clue": { "uz": "Soʻzning mazmuni", "ru": "Смысл слова", "en": "The meaning of a word" } } },
+      "prompt": { "uz": "Yetishmayotgan belgini qoʻy!", "ru": "Вставь недостающий знак!", "en": "Add the missing sign!" },
+      "hint": { "uz": "ma … no — «maʼno».", "ru": "ma … no — «maʼno» (смысл).", "en": "ma … no — “maʼno” (meaning)." },
+      "explanation": { "uz": "«maʼno» — unlidan keyin belgi uni choʻziq qiladi.", "ru": "«maʼno» — знак после гласной удлиняет её.", "en": "“maʼno” — the sign lengthens the vowel." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "tap_match", "props": { "tiles": [ { "text": "sanʼat", "match": true }, { "text": "kitob", "match": false }, { "text": "qalʼa", "match": true }, { "text": "non", "match": false }, { "text": "maʼno", "match": true }, { "text": "tosh", "match": false } ] } },
+      "prompt": { "uz": "Tutuq belgisi bor soʻzlarni bos!", "ru": "Нажми слова со знаком тутук!", "en": "Tap the words with the tutuq sign!" },
+      "hint": { "uz": "sanʼat, qalʼa, maʼno — belgisi bor.", "ru": "sanʼat, qalʼa, maʼno — со знаком.", "en": "sanʼat, qalʼa, maʼno have the sign." },
+      "explanation": { "uz": "sanʼat, qalʼa, maʼno — tutuq belgisi bilan yoziladi.", "ru": "sanʼat, qalʼa, maʼno пишутся со знаком тутук.", "en": "sanʼat, qalʼa, maʼno are written with the tutuq sign." }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "qalʼa", "right": "🏰" }, { "left": "sanʼat", "right": "🎨" }, { "left": "sheʼr", "right": "📜" }, { "left": "inʼom", "right": "🎁" } ] } },
+      "prompt": { "uz": "Soʻzni rasmiga ula!", "ru": "Соедини слово с картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«qalʼa» — 🏰, «inʼom» — 🎁.", "ru": "«qalʼa» — 🏰, «inʼom» — 🎁.", "en": "“qalʼa” — 🏰, “inʼom” — 🎁." },
+      "explanation": { "uz": "Bu soʻzlarning barchasida tutuq belgisi bor.", "ru": "Во всех этих словах есть знак тутук.", "en": "All these words have the tutuq sign." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "qalʼa", "bin": "bor" }, { "id": "b", "label": "sanʼat", "bin": "bor" }, { "id": "c", "label": "sheʼr", "bin": "bor" }, { "id": "d", "label": "qala", "bin": "yoq" }, { "id": "e", "label": "sana", "bin": "yoq" }, { "id": "f", "label": "sher", "bin": "yoq" } ], "bins": [ { "id": "bor", "label": "Tutuqli" }, { "id": "yoq", "label": "Tutuqsiz" } ] } },
+      "prompt": { "uz": "Tutuq belgisiga qarab ajrat!", "ru": "Раздели по знаку тутук!", "en": "Sort by the tutuq sign!" },
+      "hint": { "uz": "«qalʼa» — tutuqli, «qala» — tutuqsiz.", "ru": "«qalʼa» — со знаком, «qala» — без.", "en": "“qalʼa” has the sign, “qala” doesn't." },
+      "explanation": { "uz": "Tutuq belgisi soʻz maʼnosini oʻzgartiradi.", "ru": "Знак тутук меняет смысл слова.", "en": "The tutuq sign changes a word's meaning." }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "maʼno", "letters": ["m", "a", "ʼ", "n", "o"], "emoji": "💭", "clue": { "uz": "Soʻzning mazmuni", "ru": "Смысл слова", "en": "The meaning of a word" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Boʻlaklar: m, a, ʼ, n, o.", "ru": "Части: m, a, ʼ, n, o.", "en": "Parts: m, a, ʼ, n, o." },
+      "explanation": { "uz": "«maʼno» soʻzida tutuq belgisi bor.", "ru": "В «maʼno» есть знак тутук.", "en": "“maʼno” contains the tutuq sign." }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Yoʻq, maʼnosi boshqa", "ru": "Нет, смысл разный", "en": "No, the meaning differs" }, { "uz": "Ha, bir xil", "ru": "Да, одинаковы", "en": "Yes, the same" }, { "uz": "Bilmadim", "ru": "Не знаю", "en": "I don't know" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "«qalʼa» va «qala» — bir xilmi?", "ru": "«qalʼa» и «qala» — это одно и то же?", "en": "Are “qalʼa” and “qala” the same?" },
+      "hint": { "uz": "Bittasida tutuq belgisi bor.", "ru": "В одном есть знак тутук.", "en": "One has the tutuq sign." },
+      "explanation": { "uz": "«qalʼa» — mustahkam bino, «qala» — boshqa soʻz.", "ru": "«qalʼa» — крепость, «qala» — другое слово.", "en": "“qalʼa” is a fortress; “qala” is a different word." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Bu", "qadimiy", "qalʼa."], "emoji": "🏰", "clue": { "uz": "Qalʼa haqida gap", "ru": "Предложение о крепости", "en": "A sentence about the fortress" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Qanday? — «qadimiy».", "ru": "Какая? — «qadimiy».", "en": "What kind? — “qadimiy”." },
+      "explanation": { "uz": "«qalʼa» soʻzida tutuq belgisi bor.", "ru": "В слове «qalʼa» есть знак тутук.", "en": "The word “qalʼa” contains the tutuq sign." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "e", "after": "lon", "choices": ["ʼ", "h", "y"], "answer": "ʼ", "emoji": "📢", "clue": { "uz": "Hammaga xabar berish", "ru": "Объявление для всех", "en": "An announcement to everyone" } } },
+      "prompt": { "uz": "Yetishmayotgan belgini qoʻy!", "ru": "Вставь недостающий знак!", "en": "Add the missing sign!" },
+      "hint": { "uz": "e … lon — «eʼlon».", "ru": "e … lon — «eʼlon» (объявление).", "en": "e … lon — “eʼlon” (announcement)." },
+      "explanation": { "uz": "«eʼlon» — unlidan keyin tutuq belgisi.", "ru": "«eʼlon» — знак тутук после гласной.", "en": "“eʼlon” — the sign after a vowel." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["sanʼat", "kitob", "olma"], "answerIndex": 0 } },
+      "prompt": { "uz": "Qaysi soʻzda tutuq belgisi bor?", "ru": "В каком слове есть знак тутук?", "en": "Which word has the tutuq sign?" },
+      "hint": { "uz": "Musiqa, rasm — bu …", "ru": "Музыка, рисунок — это …", "en": "Music, drawing — this is …" },
+      "explanation": { "uz": "«sanʼat» soʻzida tutuq belgisi bor.", "ru": "В «sanʼat» есть знак тутук.", "en": "“sanʼat” contains the tutuq sign." }
+    }
+  ]
+}

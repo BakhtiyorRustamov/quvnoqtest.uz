@@ -1,0 +1,16 @@
+{
+  "topicId": "g1-art-25", "subjectKey": "g1-art", "emojis": "", "hideAudio": true,
+  "title": { "uz": "Mimoza", "ru": "Мимоза", "en": "Mimosa" },
+  "recall": {
+    "uz": "Mimoza — quyoshdek sariq, yumshoq va xushboʻy bahor guli. Uning gullari mayda toʻpchalar kabi boʻladi. Keling, mimoza gulini chizamiz.",
+    "ru": "Мимоза — жёлтый, как солнце, мягкий и душистый весенний цветок. Её цветы похожи на маленькие шарики. Давай нарисуем мимозу.",
+    "en": "Mimosa is a spring flower, yellow like the sun, soft and fragrant. Its blossoms look like tiny balls. Let's draw mimosa."
+  },
+  "items": [
+    { "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Mimoza novdasini chiz.", "ru": "Нарисуй веточку мимозы.", "en": "Draw a mimosa branch." },
+      "hint": { "uz": "Koʻp mayda sariq toʻpchalar chiz.", "ru": "Нарисуй много мелких жёлтых шариков.", "en": "Draw many tiny yellow balls." },
+      "explanation": { "uz": "Quyoshdek mimoza!", "ru": "Солнечная мимоза!", "en": "Sunny mimosa!" },
+      "widget": { "type": "free_draw", "props": { "example": "flower" } } }
+  ]
+}

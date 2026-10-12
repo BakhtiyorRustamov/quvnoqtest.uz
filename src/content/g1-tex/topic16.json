@@ -1,0 +1,79 @@
+{
+  "topicId": "g1-tex-16",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "Rang-barang uycha",
+    "ru": "Разноцветный домик",
+    "en": "A colourful house"
+  },
+  "recall": {
+    "uz": "Bugun rangli qogʻozdan chiroyli uycha yasaymiz.",
+    "ru": "Сегодня из цветной бумаги сделаем красивый домик.",
+    "en": "Today we make a colourful house from paper."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uycha yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай домик. Выполняй каждый этап по рисунку!",
+        "en": "Make a house. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Tom — uchburchak.",
+        "ru": "Крыша — треугольник.",
+        "en": "The roof is a triangle."
+      },
+      "explanation": {
+        "uz": "Chiroyli uycha!",
+        "ru": "Красивый домик!",
+        "en": "A lovely house!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Devor uchun kvadrat qirq.",
+              "ru": "Вырежь квадрат для стены.",
+              "en": "Cut a square for the wall."
+            },
+            {
+              "uz": "Uchburchak tomni yopishtir.",
+              "ru": "Приклей треугольную крышу.",
+              "en": "Glue a triangular roof."
+            },
+            {
+              "uz": "Eshik va derazalarni qoʻsh.",
+              "ru": "Добавь дверь и окна.",
+              "en": "Add a door and windows."
+            }
+          ],
+          "art": "house",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

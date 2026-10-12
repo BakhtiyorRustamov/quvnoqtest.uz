@@ -1,0 +1,462 @@
+{
+  "topicId": "g1-alifbe-61",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🎨📣🏰",
+  "title": {
+    "uz": "«ʼ» — tutuq belgisi",
+    "ru": "«ʼ» — разделительный знак",
+    "en": "“ʼ” — the glottal sign"
+  },
+  "recall": {
+    "uz": "«ʼ» — tutuq belgisi. U tovushni ifodalamaydi. Undan oldingi unli biroz choʻziq aytiladi. Soʻzlar: aʼlo, sheʼr, sanʼat, meʼmor.",
+    "ru": "«ʼ» — разделительный знак. Он не обозначает звук. Слова: aʼlo, sheʼr, sanʼat, meʼmor.",
+    "en": "“ʼ” is the glottal sign. It stands for no sound. Words: aʼlo, sheʼr, sanʼat, meʼmor."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tutuq belgisi (ʼ) nima qiladi?",
+        "ru": "Что делает знак ʼ?",
+        "en": "What does the ʼ sign do?"
+      },
+      "hint": {
+        "uz": "U alohida tovush emas.",
+        "ru": "Это не отдельный звук.",
+        "en": "It is not a separate sound."
+      },
+      "explanation": {
+        "uz": "Tutuq belgisi tovushni ifodalamaydi.",
+        "ru": "Знак ʼ не обозначает звук.",
+        "en": "The ʼ sign stands for no sound."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "tovushni ifodalamaydi",
+              "ru": "не обозначает звук",
+              "en": "stands for no sound"
+            },
+            {
+              "uz": "unli tovush",
+              "ru": "гласный звук",
+              "en": "a vowel"
+            },
+            {
+              "uz": "bosh harf",
+              "ru": "заглавная буква",
+              "en": "a capital letter"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tutuq belgisini toʻgʻri joyga qoʻy: san…at",
+        "ru": "Поставь знак ʼ верно: san…at",
+        "en": "Place the ʼ sign: san…at"
+      },
+      "hint": {
+        "uz": "Soʻzni ayt: sanʼat.",
+        "ru": "Произнеси: sanʼat.",
+        "en": "Say it: sanʼat."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! sanʼat.",
+        "ru": "Верно! sanʼat.",
+        "en": "Right! sanʼat."
+      },
+      "widget": {
+        "type": "tutuq_place",
+        "props": {
+          "emoji": "🎨",
+          "label": {
+            "uz": "sanʼat",
+            "ru": "искусство",
+            "en": "art"
+          },
+          "letters": [
+            "s",
+            "a",
+            "n",
+            "a",
+            "t"
+          ],
+          "gap": 3
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tutuq belgisini toʻgʻri joyga qoʻy: a…lo",
+        "ru": "Поставь знак ʼ верно: a…lo",
+        "en": "Place the ʼ sign: a…lo"
+      },
+      "hint": {
+        "uz": "Soʻzni ayt: aʼlo.",
+        "ru": "Произнеси: aʼlo.",
+        "en": "Say it: aʼlo."
+      },
+      "explanation": {
+        "uz": "Barakalla! aʼlo.",
+        "ru": "Молодец! aʼlo.",
+        "en": "Great! aʼlo."
+      },
+      "widget": {
+        "type": "tutuq_place",
+        "props": {
+          "emoji": "⭐",
+          "label": {
+            "uz": "aʼlo",
+            "ru": "отлично",
+            "en": "excellent"
+          },
+          "letters": [
+            "a",
+            "l",
+            "o"
+          ],
+          "gap": 1
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻri yozilgan soʻzni oʻqib bos!",
+        "ru": "Нажми верно написанное слово!",
+        "en": "Tap the correctly written word!"
+      },
+      "hint": {
+        "uz": "Tutuq belgisi «ʼ» kerak.",
+        "ru": "Нужен знак «ʼ».",
+        "en": "The ʼ sign is needed."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri — eʼlon.",
+        "ru": "Верно — eʼlon.",
+        "en": "Correct — eʼlon."
+      },
+      "widget": {
+        "type": "read_word",
+        "props": {
+          "emoji": "📣",
+          "options": [
+            {
+              "id": "ok",
+              "word": "eʼlon",
+              "correct": true
+            },
+            {
+              "id": "w1",
+              "word": "elon"
+            },
+            {
+              "id": "w2",
+              "word": "eʼʼlon"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bosh harf bilan yoziladigan soʻzlarni belgila!",
+        "ru": "Отметь слова с заглавной буквы!",
+        "en": "Tap the words that need a capital!"
+      },
+      "hint": {
+        "uz": "Ismlar bosh harf bilan yoziladi.",
+        "ru": "Имена — с заглавной.",
+        "en": "Names take a capital."
+      },
+      "explanation": {
+        "uz": "Ism va joy nomlari bosh harf bilan yoziladi.",
+        "ru": "Имена и названия — с заглавной.",
+        "en": "Names take a capital."
+      },
+      "widget": {
+        "type": "capital_pick",
+        "props": {
+          "words": [
+            {
+              "word": "Aʼzam",
+              "capital": true
+            },
+            {
+              "word": "Raʼno",
+              "capital": true
+            },
+            {
+              "word": "sanʼat",
+              "capital": false
+            },
+            {
+              "word": "meʼmor",
+              "capital": false
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🎨 «sanʼat» soʻzini boʻgʻinlab qarsak chal!",
+        "ru": "🎨 Похлопай «sanʼat» по слогам!",
+        "en": "🎨 Clap “sanʼat” by syllables!"
+      },
+      "hint": {
+        "uz": "Har boʻgʻinga bitta qarsak.",
+        "ru": "На каждый слог — хлопок.",
+        "en": "One clap per syllable."
+      },
+      "explanation": {
+        "uz": "«sanʼat» — 2 boʻgʻin.",
+        "ru": "«sanʼat» — 2 слога.",
+        "en": "“sanʼat” — 2 syllables."
+      },
+      "widget": {
+        "type": "syllable_clap",
+        "props": {
+          "emoji": "🎨",
+          "word": {
+            "uz": "sanʼat",
+            "ru": "sanʼat",
+            "en": "sanʼat"
+          },
+          "syllables": 2
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "🏠 Yetishmayotgan harfni qoʻy!",
+        "ru": "🏠 Вставь недостающую букву!",
+        "en": "🏠 Fill the missing letter!"
+      },
+      "hint": {
+        "uz": "Soʻz: meʼmor.",
+        "ru": "Слово: meʼmor.",
+        "en": "The word: meʼmor."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri harf — «o».",
+        "ru": "Верная буква — «o».",
+        "en": "The right letter is “o”."
+      },
+      "widget": {
+        "type": "missing_letter",
+        "props": {
+          "emoji": "🏠",
+          "label": {
+            "uz": "meʼmor",
+            "ru": "зодчий",
+            "en": "architect"
+          },
+          "letters": [
+            "m",
+            "e",
+            "ʼ",
+            "m",
+            "o",
+            "r"
+          ],
+          "blank": 4,
+          "choices": [
+            "o",
+            "a",
+            "u"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Matnni oʻqi, soʻng savolga javob ber.",
+        "ru": "Прочитай текст и ответь.",
+        "en": "Read the text, then answer."
+      },
+      "hint": {
+        "uz": "Har jumlani diqqat bilan oʻqi.",
+        "ru": "Читай внимательно.",
+        "en": "Read each sentence carefully."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri javob — sanʼatni yoqtirganlar.",
+        "ru": "Верный ответ — sanʼatni yoqtirganlar.",
+        "en": "The right answer — sanʼatni yoqtirganlar."
+      },
+      "widget": {
+        "type": "read_text",
+        "props": {
+          "emoji": "📣",
+          "text": {
+            "uz": "Eʼlon!\nTasviriy sanʼatni yoqtirgan bolalar uchun toʻgarak ochildi.\nRahbar — Maʼmura opa.",
+            "ru": "Eʼlon!\nTasviriy sanʼatni yoqtirgan bolalar uchun toʻgarak ochildi.\nRahbar — Maʼmura opa.",
+            "en": "Eʼlon!\nTasviriy sanʼatni yoqtirgan bolalar uchun toʻgarak ochildi.\nRahbar — Maʼmura opa."
+          },
+          "question": {
+            "uz": "Toʻgarak kimlar uchun ochildi?",
+            "ru": "Toʻgarak kimlar uchun ochildi?",
+            "en": "Toʻgarak kimlar uchun ochildi?"
+          },
+          "options": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "sanʼatni yoqtirganlar",
+                "ru": "sanʼatni yoqtirganlar",
+                "en": "sanʼatni yoqtirganlar"
+              },
+              "correct": true
+            },
+            {
+              "id": "o1",
+              "label": {
+                "uz": "sportchilar",
+                "ru": "sportchilar",
+                "en": "sportchilar"
+              }
+            },
+            {
+              "id": "o2",
+              "label": {
+                "uz": "ashulachilar",
+                "ru": "ashulachilar",
+                "en": "ashulachilar"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tutuq belgisidan oldingi unli biroz choʻziq aytiladi.",
+        "ru": "Гласный перед знаком ʼ звучит немного дольше.",
+        "en": "The vowel before ʼ is said a bit longer."
+      },
+      "hint": {
+        "uz": "Masalan: aʼlo, sheʼr.",
+        "ru": "Например: aʼlo, sheʼr.",
+        "en": "For example: aʼlo, sheʼr."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🔊",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tutuq belgisi bor soʻzlarni belgila!",
+        "ru": "Отметь слова со знаком ʼ!",
+        "en": "Tap the words with the ʼ sign!"
+      },
+      "hint": {
+        "uz": "Har soʻzni sekin oʻqi.",
+        "ru": "Читай каждое слово.",
+        "en": "Read each word."
+      },
+      "explanation": {
+        "uz": "Ularda tutuq belgisi bor.",
+        "ru": "В них есть знак ʼ.",
+        "en": "They contain the ʼ sign."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "⭐",
+              "label": {
+                "uz": "aʼlo",
+                "ru": "aʼlo",
+                "en": "aʼlo"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "📖",
+              "label": {
+                "uz": "sheʼr",
+                "ru": "sheʼr",
+                "en": "sheʼr"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🏰",
+              "label": {
+                "uz": "qalʼa",
+                "ru": "qalʼa",
+                "en": "qalʼa"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🏫",
+              "label": {
+                "uz": "maktab",
+                "ru": "maktab",
+                "en": "maktab"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

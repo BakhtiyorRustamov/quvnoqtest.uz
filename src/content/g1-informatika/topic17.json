@@ -1,0 +1,511 @@
+{
+  "topicId": "g1-informatika-17",
+  "subjectKey": "g1-informatika",
+  "emojis": "⬆️⬇️☀️🐟",
+  "title": {
+    "uz": "Tepa – past",
+    "ru": "Вверху – внизу",
+    "en": "Top – bottom"
+  },
+  "recall": {
+    "uz": "Buyumlar tepada yoki pastda joylashadi. Javonning tepa tokchasida bir narsa, pastki tokchasida boshqa narsa turadi. Osmon tepada, yer pastda.",
+    "ru": "Предметы бывают вверху и внизу. На верхней полке одно, на нижней другое. Небо вверху, земля внизу.",
+    "en": "Things are at the top or bottom. One thing on the top shelf, another on the bottom. Sky above, ground below."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Eng tepadagi shaklni bos!",
+        "ru": "Нажми верхнюю фигуру!",
+        "en": "Tap the top shape!"
+      },
+      "hint": {
+        "uz": "Yuqoridagisini tanla.",
+        "ru": "Выбери верхнюю.",
+        "en": "Pick the highest."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bu tepadagi shakl.",
+        "ru": "Молодец! Это верхняя.",
+        "en": "Great! That's the top one."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 3,
+          "cols": 1,
+          "answer": "t",
+          "prompt": {
+            "uz": "Eng tepadagi shaklni bos",
+            "ru": "Нажми верхнюю",
+            "en": "Tap the top one"
+          },
+          "cells": [
+            {
+              "id": "t",
+              "kind": "star",
+              "color": "magenta",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "m",
+              "kind": "circle",
+              "color": "blue",
+              "r": 1,
+              "c": 0
+            },
+            {
+              "id": "b",
+              "kind": "square",
+              "color": "orange",
+              "r": 2,
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Eng pastdagi shaklni bos!",
+        "ru": "Нажми нижнюю фигуру!",
+        "en": "Tap the bottom shape!"
+      },
+      "hint": {
+        "uz": "Quyidagisini tanla.",
+        "ru": "Выбери нижнюю.",
+        "en": "Pick the lowest."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bu pastdagi shakl.",
+        "ru": "Молодец! Это нижняя.",
+        "en": "Great! That's the bottom one."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 3,
+          "cols": 1,
+          "answer": "b",
+          "prompt": {
+            "uz": "Eng pastdagi shaklni bos",
+            "ru": "Нажми нижнюю",
+            "en": "Tap the bottom one"
+          },
+          "cells": [
+            {
+              "id": "t",
+              "kind": "triangle",
+              "color": "green",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "m",
+              "kind": "circle",
+              "color": "yellow",
+              "r": 1,
+              "c": 0
+            },
+            {
+              "id": "b",
+              "kind": "square",
+              "color": "red",
+              "r": 2,
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Quyosh qayerda — tepada yoki pastda?",
+        "ru": "Солнце вверху или внизу?",
+        "en": "Is the sun up or down?"
+      },
+      "hint": {
+        "uz": "Osmonga qara.",
+        "ru": "Смотри на небо.",
+        "en": "Look at the sky."
+      },
+      "explanation": {
+        "uz": "Quyosh tepada — osmonda.",
+        "ru": "Солнце вверху — в небе.",
+        "en": "The sun is up in the sky."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "tepada",
+              "ru": "вверху",
+              "en": "at the top"
+            },
+            {
+              "uz": "pastda",
+              "ru": "внизу",
+              "en": "at the bottom"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi narsa odatda tepada boʻladi?",
+        "ru": "Что обычно вверху?",
+        "en": "Which is usually at the top?"
+      },
+      "hint": {
+        "uz": "Osmonda uchadi.",
+        "ru": "Летает в небе.",
+        "en": "It is in the sky."
+      },
+      "explanation": {
+        "uz": "Quyosh tepada boʻladi.",
+        "ru": "Солнце вверху.",
+        "en": "The sun is at the top."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "🌱",
+              "label": {
+                "uz": "oʻt",
+                "ru": "трава",
+                "en": "grass"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "🐟",
+              "label": {
+                "uz": "baliq",
+                "ru": "рыба",
+                "en": "fish"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻrtadagi shaklni bos!",
+        "ru": "Нажми среднюю фигуру!",
+        "en": "Tap the middle shape!"
+      },
+      "hint": {
+        "uz": "Tepa bilan past oʻrtasida.",
+        "ru": "Между верхом и низом.",
+        "en": "Between top and bottom."
+      },
+      "explanation": {
+        "uz": "Barakalla! Bu oʻrtadagi shakl.",
+        "ru": "Молодец! Это средняя.",
+        "en": "Great! That's the middle one."
+      },
+      "widget": {
+        "type": "position_grid",
+        "props": {
+          "rows": 3,
+          "cols": 1,
+          "answer": "m",
+          "prompt": {
+            "uz": "Oʻrtadagi shaklni bos",
+            "ru": "Нажми среднюю",
+            "en": "Tap the middle one"
+          },
+          "cells": [
+            {
+              "id": "t",
+              "kind": "circle",
+              "color": "red",
+              "r": 0,
+              "c": 0
+            },
+            {
+              "id": "m",
+              "kind": "star",
+              "color": "purple",
+              "r": 1,
+              "c": 0
+            },
+            {
+              "id": "b",
+              "kind": "square",
+              "color": "blue",
+              "r": 2,
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Osmon tepada, yer pastda.",
+        "ru": "Небо вверху, земля внизу.",
+        "en": "Sky above, ground below."
+      },
+      "hint": {
+        "uz": "Atrofga qara.",
+        "ru": "Осмотрись.",
+        "en": "Look around."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "☀️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Daraxtning ildizi qayerda?",
+        "ru": "Где корни дерева?",
+        "en": "Where are a tree's roots?"
+      },
+      "hint": {
+        "uz": "Yer ostida.",
+        "ru": "Под землёй.",
+        "en": "Under the ground."
+      },
+      "explanation": {
+        "uz": "Ildiz pastda — yer ostida.",
+        "ru": "Корни внизу — под землёй.",
+        "en": "Roots are at the bottom, underground."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "pastda",
+              "ru": "внизу",
+              "en": "at the bottom"
+            },
+            {
+              "uz": "tepada",
+              "ru": "вверху",
+              "en": "at the top"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Koʻp qavatli uyda 5-qavat 2-qavatdan qayerda?",
+        "ru": "Где 5-й этаж относительно 2-го?",
+        "en": "Where is floor 5 vs floor 2?"
+      },
+      "hint": {
+        "uz": "Yuqoridami, quyidami?",
+        "ru": "Выше или ниже?",
+        "en": "Higher or lower?"
+      },
+      "explanation": {
+        "uz": "5-qavat tepada — yuqorida.",
+        "ru": "5-й этаж выше.",
+        "en": "Floor 5 is higher up."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "tepada",
+              "ru": "выше",
+              "en": "higher up"
+            },
+            {
+              "uz": "pastda",
+              "ru": "ниже",
+              "en": "lower down"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tepada boʻladigan narsalarni belgila!",
+        "ru": "Отметь, что бывает вверху!",
+        "en": "Tap the things that are up high!"
+      },
+      "hint": {
+        "uz": "Osmonda koʻrinadi.",
+        "ru": "Видны в небе.",
+        "en": "Seen in the sky."
+      },
+      "explanation": {
+        "uz": "Ular tepada — osmonda boʻladi.",
+        "ru": "Они вверху, в небе.",
+        "en": "They are up in the sky."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "⭐",
+              "label": {
+                "uz": "yulduz",
+                "ru": "звезда",
+                "en": "star"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "☁️",
+              "label": {
+                "uz": "bulut",
+                "ru": "облако",
+                "en": "cloud"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🐟",
+              "label": {
+                "uz": "baliq",
+                "ru": "рыба",
+                "en": "fish"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "🌱",
+              "label": {
+                "uz": "maysa",
+                "ru": "трава",
+                "en": "grass"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Baliq qayerda yashaydi — tepada yoki pastda (suvda)?",
+        "ru": "Где живёт рыба?",
+        "en": "Where does a fish live?"
+      },
+      "hint": {
+        "uz": "Suv ichida.",
+        "ru": "В воде.",
+        "en": "In the water."
+      },
+      "explanation": {
+        "uz": "Baliq pastda — suv ichida yashaydi.",
+        "ru": "Рыба внизу, в воде.",
+        "en": "A fish lives down in the water."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "ok",
+              "emoji": "🐟",
+              "label": {
+                "uz": "pastda (suvda)",
+                "ru": "внизу (в воде)",
+                "en": "down (in water)"
+              },
+              "correct": true
+            },
+            {
+              "id": "a",
+              "emoji": "☀️",
+              "label": {
+                "uz": "tepada",
+                "ru": "вверху",
+                "en": "up high"
+              }
+            },
+            {
+              "id": "b",
+              "emoji": "⭐",
+              "label": {
+                "uz": "osmonda",
+                "ru": "в небе",
+                "en": "in the sky"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

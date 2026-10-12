@@ -1,0 +1,107 @@
+{
+  "topicId": "g1-ona-04",
+  "subjectKey": "g1-ona",
+  "emojis": "🔊🔤👂",
+  "title": {
+    "uz": "Tovush va harf bilan oʻynaymiz",
+    "ru": "Играем со звуком и буквой",
+    "en": "Playing with sound and letter"
+  },
+  "recall": {
+    "uz": "Tovushni talaffuz qilamiz va eshitamiz. Oʻzbek tilida 30 ta tovush bor. Har bir tovush maʼlum bir harf bilan yoziladi. Soʻzdagi bitta tovushni oʻzgartirsak, soʻz maʼnosi oʻzgaradi yoki yangi soʻz hosil boʻladi.",
+    "ru": "Звук мы произносим и слышим. В узбекском языке 30 звуков. Каждый звук записывается своей буквой. Если поменять один звук в слове, меняется смысл или получается новое слово.",
+    "en": "We pronounce and hear a sound. Uzbek has 30 sounds. Each sound is written by a certain letter. If we change one sound in a word, the meaning changes or a new word appears."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "tovush", "letters": ["t", "o", "v", "u", "sh"], "emoji": "🔊", "clue": { "uz": "Uni talaffuz qilamiz va eshitamiz", "ru": "Его произносим и слышим", "en": "We pronounce and hear it" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Harflar: t, o, v, u, sh.", "ru": "Буквы: t, o, v, u, sh.", "en": "Letters: t, o, v, u, sh." },
+      "explanation": { "uz": "«Tovush» hosil boʻldi. Tovushni quloq bilan eshitamiz.", "ru": "Получилось «tovush» (звук). Звук слышим ухом.", "en": "We built “tovush” (sound). We hear a sound with our ear." }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "word_scramble", "props": { "word": "harf", "emoji": "🔤", "clue": { "uz": "Uni koʻramiz va yozamiz", "ru": "Её видим и пишем", "en": "We see and write it" } } },
+      "prompt": { "uz": "Soʻzni yigʻ!", "ru": "Собери слово!", "en": "Build the word!" },
+      "hint": { "uz": "Toʻrt harf: h, a, r, f.", "ru": "Четыре буквы: h, a, r, f.", "en": "Four letters: h, a, r, f." },
+      "explanation": { "uz": "«Harf» hosil boʻldi. Harfni koʻz bilan koʻramiz.", "ru": "Получилось «harf» (буква). Букву видим глазами.", "en": "We built “harf” (letter). We see a letter with our eyes." }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "b", "after": "sh", "choices": ["o", "e", "a"], "answer": "o", "emoji": "🙂", "clue": { "uz": "Tananing eng yuqori qismi", "ru": "Самая верхняя часть тела", "en": "The top part of the body" } } },
+      "prompt": { "uz": "Toʻgʻri tovushni tanla!", "ru": "Выбери верный звук!", "en": "Choose the right sound!" },
+      "hint": { "uz": "b … sh — «bosh».", "ru": "b … sh — «bosh» (голова).", "en": "b … sh — “bosh” (head)." },
+      "explanation": { "uz": "«bosh». Agar «o»ni «e»ga almashtirsak — «besh» (5) chiqadi!", "ru": "«bosh». Заменим «o» на «e» — получится «besh» (5)!", "en": "“bosh”. Swap “o” for “e” and you get “besh” (5)!" }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "t", "after": "l", "choices": ["i", "o", "u"], "answer": "i", "emoji": "👅", "clue": { "uz": "Nutq quroli", "ru": "Орудие речи", "en": "The tool of speech" } } },
+      "prompt": { "uz": "Toʻgʻri tovushni tanla!", "ru": "Выбери верный звук!", "en": "Choose the right sound!" },
+      "hint": { "uz": "t … l — «til».", "ru": "t … l — «til» (язык).", "en": "t … l — “til” (language)." },
+      "explanation": { "uz": "«til». «i»ni «o»ga almashtirsak — «tol» (daraxt) boʻladi.", "ru": "«til». Заменим «i» на «o» — будет «tol» (ива).", "en": "“til”. Swap “i” for “o” and you get “tol” (willow)." }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "letter_complete", "props": { "before": "", "after": "ul", "choices": ["g", "k", "q"], "answer": "g", "emoji": "🌷", "clue": { "uz": "Bogʻda ochiladigan chiroyli oʻsimlik", "ru": "Красивое растение в саду", "en": "A beautiful plant in the garden" } } },
+      "prompt": { "uz": "Birinchi tovushni tanla!", "ru": "Выбери первый звук!", "en": "Choose the first sound!" },
+      "hint": { "uz": "… u l — «gul».", "ru": "… u l — «gul» (цветок).", "en": "… u l — “gul” (flower)." },
+      "explanation": { "uz": "«gul». «g»ni «k»ga almashtirsak — «kul» chiqadi. Bitta tovush hammasini oʻzgartiradi!", "ru": "«gul». Заменим «g» на «k» — «kul». Один звук всё меняет!", "en": "“gul”. Swap “g” for “k” and get “kul”. One sound changes everything!" }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "match_pairs", "props": { "pairs": [ { "left": "bosh", "right": "🙂" }, { "left": "besh", "right": "5" }, { "left": "tosh", "right": "🗿" }, { "left": "qosh", "right": "👁️" } ] } },
+      "prompt": { "uz": "Soʻzni oʻz rasmiga ula!", "ru": "Соедини слово с картинкой!", "en": "Match each word to its picture!" },
+      "hint": { "uz": "«besh» — 5 soni.", "ru": "«besh» — число 5.", "en": "“besh” means 5." },
+      "explanation": { "uz": "Bir tovush farq qiladi, ammo soʻz butunlay boshqacha!", "ru": "Отличается один звук, а слово совсем другое!", "en": "Just one sound differs, yet the word is completely different!" }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "drag_buckets", "props": { "tiles": [ { "id": "a", "label": "ot", "bin": "o" }, { "id": "b", "label": "olma", "bin": "o" }, { "id": "c", "label": "ona", "bin": "o" }, { "id": "d", "label": "anor", "bin": "a" }, { "id": "e", "label": "ayiq", "bin": "a" }, { "id": "f", "label": "aka", "bin": "a" } ], "bins": [ { "id": "o", "label": "«o» tovushi" }, { "id": "a", "label": "«a» tovushi" } ] } },
+      "prompt": { "uz": "Soʻzni birinchi tovushiga qarab ajrat!", "ru": "Раздели слова по первому звуку!", "en": "Sort the words by their first sound!" },
+      "hint": { "uz": "«ot» — «o» bilan, «anor» — «a» bilan boshlanadi.", "ru": "«ot» — на «o», «anor» — на «a».", "en": "“ot” starts with “o”, “anor” with “a”." },
+      "explanation": { "uz": "Har soʻz maʼlum tovush bilan boshlanadi. Tovushlarni eshitib ajratamiz.", "ru": "Каждое слово начинается со своего звука. Звуки различаем на слух.", "en": "Each word starts with a certain sound. We tell sounds apart by ear." }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "sentence_order", "props": { "words": ["Tovushni", "eshitamiz,", "harfni", "koʻramiz."], "emoji": "👂", "clue": { "uz": "Tovush va harf farqi", "ru": "Разница звука и буквы", "en": "The difference between sound and letter" } } },
+      "prompt": { "uz": "Soʻzlardan gap tuz!", "ru": "Составь предложение!", "en": "Make a sentence!" },
+      "hint": { "uz": "Tovushni — quloq, harfni — koʻz.", "ru": "Звук — ухо, букву — глаз.", "en": "Sound — ear, letter — eye." },
+      "explanation": { "uz": "Tovushni eshitamiz, harfni koʻramiz — asosiy farq shu.", "ru": "Звук слышим, букву видим — вот главное отличие.", "en": "We hear a sound and see a letter — that's the key difference." }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": ["30", "29", "10"], "answerIndex": 0 } },
+      "prompt": { "uz": "Oʻzbek tilida nechta tovush bor?", "ru": "Сколько звуков в узбекском языке?", "en": "How many sounds are there in Uzbek?" },
+      "hint": { "uz": "Tovushlar harflardan bitta koʻp.", "ru": "Звуков на один больше, чем букв.", "en": "There is one more sound than letters." },
+      "explanation": { "uz": "Oʻzbek tilida 30 ta tovush bor (harflar esa 29 ta).", "ru": "В узбекском 30 звуков (а букв — 29).", "en": "Uzbek has 30 sounds (and 29 letters)." }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": { "type": "mcq", "props": { "choices": [ { "uz": "Talaffuz qilamiz va eshitamiz", "ru": "Произносим и слышим", "en": "We pronounce and hear it" }, { "uz": "Faqat chizamiz", "ru": "Только рисуем", "en": "We only draw it" }, { "uz": "Faqat sanaymiz", "ru": "Только считаем", "en": "We only count it" } ], "answerIndex": 0 } },
+      "prompt": { "uz": "Tovushni nima qilamiz?", "ru": "Что мы делаем со звуком?", "en": "What do we do with a sound?" },
+      "hint": { "uz": "Tovush — ogʻzaki nutqda.", "ru": "Звук — в устной речи.", "en": "A sound belongs to oral speech." },
+      "explanation": { "uz": "Tovushni talaffuz qilamiz (aytamiz) va eshitamiz.", "ru": "Звук мы произносим и слышим.", "en": "We pronounce a sound and hear it." }
+    }
+  ]
+}

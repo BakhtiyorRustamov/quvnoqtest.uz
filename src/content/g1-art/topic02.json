@@ -1,0 +1,21 @@
+{
+  "topicId": "g1-art-02",
+  "subjectKey": "g1-art",
+  "emojis": "",
+  "hideAudio": true,
+  "title": { "uz": "Oʻlkamiz boyliklari", "ru": "Богатства нашего края", "en": "The riches of our land" },
+  "recall": {
+    "uz": "Oʻlkamiz tabiati juda goʻzal: togʻlar, daryolar, bogʻlar va gullar. Rassomlar ana shu goʻzallikdan ilhom oladi va uni rasmga soladi. Keling, biz ham chizamiz.",
+    "ru": "Природа нашего края очень красива: горы, реки, сады и цветы. Художники вдохновляются этой красотой и рисуют её. Давай и мы нарисуем.",
+    "en": "The nature of our land is very beautiful: mountains, rivers, gardens and flowers. Artists are inspired by this beauty and paint it. Let's draw too."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Oʻzing koʻrgan goʻzal manzarani chiz — togʻ, daryo, bogʻ yoki gul.", "ru": "Нарисуй красивый вид, который ты видел — горы, реку, сад или цветок.", "en": "Draw a beautiful scene you have seen — a mountain, river, garden or flower." },
+      "hint": { "uz": "Rang tanla va erkin chiz.", "ru": "Выбери цвет и рисуй свободно.", "en": "Pick a colour and draw freely." },
+      "explanation": { "uz": "Ajoyib manzara! Sen haqiqiy rassomsan.", "ru": "Прекрасный пейзаж! Ты настоящий художник.", "en": "A beautiful scene! You are a real artist." },
+      "widget": { "type": "free_draw", "props": { "example": "flower" } }
+    }
+  ]
+}

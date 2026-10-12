@@ -1,0 +1,530 @@
+{
+  "topicId": "g1-ingliz-07",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🏫📚✏️🎒",
+  "title": {
+    "uz": "Sinf jihozlari",
+    "ru": "Школьные предметы",
+    "en": "Classroom things"
+  },
+  "recall": {
+    "uz": "1-boʻlim: Maktab! Bugun sinf jihozlarini inglizcha oʻrganamiz: book — kitob, pen — ruchka, pencil — qalam, bag — sumka.",
+    "ru": "Раздел 1: Школа! Сегодня учим школьные предметы по-английски: book — книга, pen — ручка, pencil — карандаш, bag — сумка.",
+    "en": "Unit 1: School! Today we learn classroom things in English: a book, a pen, a pencil and a bag."
+  },
+  "ttsText": {
+    "uz": "Sinf jihozlari.",
+    "en": "Unit 1: School! Let's learn our classroom things: a book, a pen, a pencil and a bag."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bola nimani koʻrsatyapti?",
+        "ru": "Послушай диалог. Что показывает мальчик?",
+        "en": "Listen to the dialog. What is the boy pointing to?"
+      },
+      "hint": {
+        "uz": "«It's a …» — «Bu …».",
+        "ru": "«It's a …» значит «Это …».",
+        "en": "\"It's a …\" means \"This is a …\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! U «It's a book» dedi — bu kitob.",
+        "ru": "Верно! Он сказал «It's a book» — это книга.",
+        "en": "Right! He said \"It's a book.\""
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What's this?",
+              "audio": {
+                "key": "ing07-q1-a",
+                "text": "What's this?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's a book!",
+              "audio": {
+                "key": "ing07-q1-b",
+                "text": "It's a book!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bola nimani koʻrsatdi?",
+              "ru": "Что показал мальчик?",
+              "en": "What did the boy show?"
+            },
+            "choices": [
+              "a bag",
+              "a pen",
+              "a book"
+            ],
+            "answerIndex": 2
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va kitobni bos!",
+        "ru": "Послушай и нажми книгу!",
+        "en": "Listen and tap the book!"
+      },
+      "audio": {
+        "key": "ing07-q2",
+        "text": "Book! Tap the book.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«Book» — kitob.",
+        "ru": "«Book» — книга.",
+        "en": "A \"book\" is for reading."
+      },
+      "explanation": {
+        "uz": "Barakalla! Book — kitob.",
+        "ru": "Молодец! Book — книга.",
+        "en": "Great! Book!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "📖",
+              "label": "book",
+              "correct": true
+            },
+            {
+              "emoji": "✏️",
+              "label": "pencil"
+            },
+            {
+              "emoji": "🎒",
+              "label": "bag"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va qalamni bos!",
+        "ru": "Послушай и нажми карандаш!",
+        "en": "Listen and tap the pencil!"
+      },
+      "audio": {
+        "key": "ing07-q3",
+        "text": "Pencil! Tap the pencil.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«Pencil» — qalam.",
+        "ru": "«Pencil» — карандаш.",
+        "en": "A \"pencil\" is for writing and drawing."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Pencil — qalam.",
+        "ru": "Верно! Pencil — карандаш.",
+        "en": "Right! Pencil!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "✏️",
+              "label": "pencil",
+              "correct": true
+            },
+            {
+              "emoji": "📏",
+              "label": "ruler"
+            },
+            {
+              "emoji": "📕",
+              "label": "book"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va ruchkani bos!",
+        "ru": "Послушай и нажми ручку!",
+        "en": "Listen and tap the pen!"
+      },
+      "audio": {
+        "key": "ing07-q4",
+        "text": "Pen! Tap the pen.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«Pen» — ruchka.",
+        "ru": "«Pen» — ручка.",
+        "en": "A \"pen\" writes with ink."
+      },
+      "explanation": {
+        "uz": "Barakalla! Pen — ruchka.",
+        "ru": "Молодец! Pen — ручка.",
+        "en": "Great! Pen!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🖊️",
+              "label": "pen",
+              "correct": true
+            },
+            {
+              "emoji": "🖍️",
+              "label": "crayon"
+            },
+            {
+              "emoji": "📎",
+              "label": "clip"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va maktab sumkasini bos!",
+        "ru": "Послушай и нажми школьную сумку!",
+        "en": "Listen and tap the school bag!"
+      },
+      "audio": {
+        "key": "ing07-q5",
+        "text": "Bag! Tap the school bag.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«Bag» — sumka.",
+        "ru": "«Bag» — сумка.",
+        "en": "A \"bag\" carries your books."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Bag — sumka.",
+        "ru": "Верно! Bag — сумка.",
+        "en": "Right! Bag!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🎒",
+              "label": "bag",
+              "correct": true
+            },
+            {
+              "emoji": "📚",
+              "label": "books"
+            },
+            {
+              "emoji": "✂️",
+              "label": "scissors"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni oʻz rasmiga ula!",
+        "ru": "Соедини английское слово с картинкой!",
+        "en": "Match each English word to its picture!"
+      },
+      "hint": {
+        "uz": "book, pen, pencil, bag.",
+        "ru": "book, pen, pencil, bag.",
+        "en": "Say each word aloud: book, pen, pencil, bag."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Toʻrtta soʻzni bilding!",
+        "ru": "Отлично! Ты знаешь четыре слова!",
+        "en": "Awesome! You know four words!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "book"
+              },
+              "right": {
+                "emoji": "📖"
+              }
+            },
+            {
+              "left": {
+                "label": "pen"
+              },
+              "right": {
+                "emoji": "🖊️"
+              }
+            },
+            {
+              "left": {
+                "label": "pencil"
+              },
+              "right": {
+                "emoji": "✏️"
+              }
+            },
+            {
+              "left": {
+                "label": "bag"
+              },
+              "right": {
+                "emoji": "🎒"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, soʻz va rasm juftini top!",
+        "ru": "Открывай карточки: слово и картинка!",
+        "en": "Flip the cards: match each word to its picture!"
+      },
+      "hint": {
+        "uz": "book — 📖, ruler — 📏, bag — 🎒.",
+        "ru": "book — 📖, ruler — 📏, bag — 🎒.",
+        "en": "book — 📖, ruler — 📏, bag — 🎒."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "📖"
+              },
+              "b": {
+                "label": "book"
+              }
+            },
+            {
+              "a": {
+                "emoji": "📏"
+              },
+              "b": {
+                "label": "ruler"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🎒"
+              },
+              "b": {
+                "label": "bag"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Pencil»ning tarjimasi nima?",
+        "ru": "Что значит «pencil»?",
+        "en": "What does \"pencil\" mean?"
+      },
+      "hint": {
+        "uz": "U bilan chizamiz.",
+        "ru": "Им рисуют.",
+        "en": "You draw with it."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Pencil — qalam.",
+        "ru": "Верно! Pencil — карандаш.",
+        "en": "Right! A pencil."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qalam",
+              "ru": "карандаш",
+              "en": "a pencil"
+            },
+            {
+              "uz": "kitob",
+              "ru": "книга",
+              "en": "a book"
+            },
+            {
+              "uz": "sumka",
+              "ru": "сумка",
+              "en": "a bag"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu nima?",
+        "ru": "Послушай диалог. Что это?",
+        "en": "Listen to the dialog. What is it?"
+      },
+      "hint": {
+        "uz": "«ruler» — chizgʻich.",
+        "ru": "«ruler» — линейка.",
+        "en": "A \"ruler\" measures lines."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's a ruler — chizgʻich.",
+        "ru": "Верно! It's a ruler — линейка.",
+        "en": "Right! It's a ruler."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "What's this, Miss?",
+              "audio": {
+                "key": "ing07-q9-a",
+                "text": "What's this, Miss?",
+                "voice": "boy"
+              }
+            },
+            {
+              "who": "👩",
+              "name": "Teacher",
+              "text": "It's a ruler.",
+              "audio": {
+                "key": "ing07-q9-b",
+                "text": "It's a ruler.",
+                "voice": "teacher"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu nima?",
+              "ru": "Что это?",
+              "en": "What is it?"
+            },
+            "choices": [
+              "a book",
+              "a ruler",
+              "a pen"
+            ],
+            "answerIndex": 1
+          }
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yozadigan va chizadigan barcha narsalarni belgila!",
+        "ru": "Отметь всё, чем пишут и рисуют!",
+        "en": "Tap everything you can write or draw with!"
+      },
+      "hint": {
+        "uz": "Qalam, ruchka, boʻyoq qalam.",
+        "ru": "Карандаш, ручка, мелок.",
+        "en": "A pencil, a pen and a crayon."
+      },
+      "explanation": {
+        "uz": "Barakalla! Pencil, pen, crayon bilan yozamiz!",
+        "ru": "Молодец! Пишем карандашом, ручкой, мелком!",
+        "en": "Great! We write with a pencil, a pen and a crayon!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "✏️",
+              "label": "pencil",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🖊️",
+              "label": "pen",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🖍️",
+              "label": "crayon",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🎒",
+              "label": "bag"
+            },
+            {
+              "id": "d1",
+              "emoji": "📏",
+              "label": "ruler"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

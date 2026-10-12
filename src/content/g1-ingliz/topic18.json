@@ -1,0 +1,129 @@
+{
+  "topicId": "g1-ingliz-18",
+  "subjectKey": "g1-ingliz",
+  "emojis": "⚡🤖🔦⚽",
+  "title": { "uz": "Fan: elektrmi yoki yoʻq?", "ru": "Наука: электрическое или нет?", "en": "Science: is it electric?" },
+  "recall": {
+    "uz": "Kashfiyot darsi (fan)! Baʼzi oʻyinchoqlar elektr bilan ishlaydi: robot, kamera, fonar. Baʼzilari esa yoʻq: koptok, ayiqcha. «It's electric» yoki «It isn't electric» deymiz.",
+    "ru": "Урок-открытие (наука)! Некоторые игрушки работают от электричества: робот, камера, фонарик. А некоторые — нет: мяч, мишка. Говорим «It's electric» или «It isn't electric».",
+    "en": "Discovery lesson (science)! Some toys need electricity: a robot, a camera, a torch. Some don't: a ball, a teddy bear. We say \"It's electric\" or \"It isn't electric.\""
+  },
+  "ttsText": { "uz": "Elektrmi yoki yoʻq?", "en": "Science! Is it electric? A robot is electric. A ball isn't electric." },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Elektr bilan ishlaydigan oʻyinchoqni bos!", "ru": "Нажми игрушку, работающую от электричества!", "en": "Tap the electric toy!" },
+      "audio": { "key": "ing18-q1", "text": "A robot is electric!", "voice": "teacher" },
+      "hint": { "uz": "Robot batareya bilan ishlaydi.", "ru": "Робот работает от батареек.", "en": "A robot uses batteries." },
+      "explanation": { "uz": "Toʻgʻri! Robot — electric.", "ru": "Верно! Робот — electric.", "en": "Right! A robot is electric." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "🤖", "label": "robot", "correct": true },
+        { "emoji": "⚽", "label": "ball" },
+        { "emoji": "🐻", "label": "teddy bear" }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Elektrsiz ishlaydigan oʻyinchoqni bos!", "ru": "Нажми игрушку без электричества!", "en": "Tap the toy that isn't electric!" },
+      "audio": { "key": "ing18-q2", "text": "A ball isn't electric!", "voice": "girl" },
+      "hint": { "uz": "Koptok batareyasiz.", "ru": "Мяч без батареек.", "en": "A ball has no batteries." },
+      "explanation": { "uz": "Toʻgʻri! Ball — elektr emas.", "ru": "Верно! Ball — не электрический.", "en": "Right! A ball isn't electric." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "emoji": "⚽", "label": "ball", "correct": true },
+        { "emoji": "🔦", "label": "torch" },
+        { "emoji": "📷", "label": "camera" }
+      ] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Oʻyinchoqlarni ajrat: elektr yoki elektrsiz!", "ru": "Разложи игрушки: электрические и нет!", "en": "Sort the toys: electric and not electric!" },
+      "hint": { "uz": "Batareya bormi?", "ru": "Есть ли батарейка?", "en": "Does it have batteries?" },
+      "explanation": { "uz": "Barakalla! Har oʻyinchoq oʻz guruhida.", "ru": "Молодец! Каждая игрушка в своей группе.", "en": "Great! Each toy in its group!" },
+      "widget": { "type": "sort_bins", "props": {
+        "bins": [
+          { "id": "e", "label": { "uz": "Elektr", "ru": "Электрические", "en": "Electric" } },
+          { "id": "n", "label": { "uz": "Elektrsiz", "ru": "Не электрические", "en": "Not electric" } }
+        ],
+        "items": [
+          { "emoji": "🤖", "label": "robot", "bin": "e" },
+          { "emoji": "📷", "label": "camera", "bin": "e" },
+          { "emoji": "🔦", "label": "torch", "bin": "e" },
+          { "emoji": "⚽", "label": "ball", "bin": "n" },
+          { "emoji": "🐻", "label": "teddy bear", "bin": "n" },
+          { "emoji": "🚲", "label": "bike", "bin": "n" }
+        ] } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Robotni ishlatish uchun nima kerak?", "ru": "Что нужно, чтобы работал робот?", "en": "What does a robot need to work?" },
+      "hint": { "uz": "Batareya yoki tok.", "ru": "Батарейка или ток.", "en": "Batteries or power." },
+      "explanation": { "uz": "Toʻgʻri! Robotga elektr kerak.", "ru": "Верно! Роботу нужно электричество.", "en": "Right! A robot needs electricity." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "elektr", "ru": "электричество", "en": "electricity" },
+        { "uz": "suv", "ru": "вода", "en": "water" },
+        { "uz": "ovqat", "ru": "еда", "en": "food" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Koptok elektr bilan ishlaydi.", "ru": "Верно? Мяч работает от электричества.", "en": "Is this right? A ball is electric." },
+      "hint": { "uz": "Koptokda batareya bormi?", "ru": "У мяча есть батарейка?", "en": "Does a ball have batteries?" },
+      "explanation": { "uz": "Notoʻgʻri! Koptok elektrsiz.", "ru": "Неверно! Мяч без электричества.", "en": "False! A ball isn't electric." },
+      "widget": { "type": "true_false", "props": { "emoji": "⚽", "answer": false } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Toʻgʻrimi? Fonar elektr bilan ishlaydi.", "ru": "Верно? Фонарик работает от электричества.", "en": "Is this right? A torch is electric." },
+      "hint": { "uz": "Fonar batareya bilan yonadi.", "ru": "Фонарик светит от батареек.", "en": "A torch lights up with batteries." },
+      "explanation": { "uz": "Toʻgʻri! Fonar — electric.", "ru": "Верно! Фонарик — electric.", "en": "Right! A torch is electric." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔦", "answer": true } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Inglizcha soʻzni oʻyinchoqqa ula!", "ru": "Соедини слово с игрушкой!", "en": "Match each word to its toy!" },
+      "hint": { "uz": "robot, camera, torch.", "ru": "robot, camera, torch.", "en": "robot, camera, torch." },
+      "explanation": { "uz": "Barakalla! Elektr oʻyinchoqlarni bilding!", "ru": "Молодец! Ты знаешь электрические игрушки!", "en": "Great! You know the electric toys!" },
+      "widget": { "type": "match_columns", "props": { "pairs": [
+        { "left": { "label": "robot" }, "right": { "emoji": "🤖" } },
+        { "left": { "label": "camera" }, "right": { "emoji": "📷" } },
+        { "left": { "label": "torch" }, "right": { "emoji": "🔦" } }
+      ] } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«electric»ning tarjimasi nima?", "ru": "Что значит «electric»?", "en": "What does \"electric\" mean?" },
+      "hint": { "uz": "Tok bilan ishlaydigan.", "ru": "Работает от тока.", "en": "Works with power." },
+      "explanation": { "uz": "Toʻgʻri! Electric — elektr(li).", "ru": "Верно! Electric — электрический.", "en": "Right! Electric!" },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "elektrli", "ru": "электрический", "en": "electric" },
+        { "uz": "yogʻoch", "ru": "деревянный", "en": "wooden" },
+        { "uz": "yumshoq", "ru": "мягкий", "en": "soft" }
+      ], "answerIndex": 0 } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Elektr bilan ishlaydigan hamma narsani belgila!", "ru": "Отметь всё, что работает от электричества!", "en": "Tap everything that is electric!" },
+      "hint": { "uz": "Robot, kamera, kompyuter.", "ru": "Робот, камера, компьютер.", "en": "Robot, camera, computer." },
+      "explanation": { "uz": "Barakalla! Robot, kamera, kompyuter — elektr!", "ru": "Молодец! Робот, камера, компьютер — электрические!", "en": "Great! Robot, camera, computer — electric!" },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "c0", "emoji": "🤖", "label": "robot", "correct": true },
+        { "id": "c1", "emoji": "📷", "label": "camera", "correct": true },
+        { "id": "c2", "emoji": "💻", "label": "computer", "correct": true },
+        { "id": "d0", "emoji": "⚽", "label": "ball" },
+        { "id": "d1", "emoji": "🐻", "label": "teddy bear" }
+      ] } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Ayiqcha elektr bilan ishlaydimi? 🐻", "ru": "Мишка электрический? 🐻", "en": "Is a teddy bear electric? 🐻" },
+      "hint": { "uz": "Ayiqcha yumshoq, batareyasiz.", "ru": "Мишка мягкий, без батареек.", "en": "A teddy bear is soft, no batteries." },
+      "explanation": { "uz": "Toʻgʻri! No, it isn't — ayiqcha elektrsiz.", "ru": "Верно! No, it isn't — мишка не электрический.", "en": "Right! No, it isn't — a teddy bear isn't electric." },
+      "widget": { "type": "mcq", "props": { "choices": [
+        { "uz": "Yoʻq, elektrsiz.", "ru": "Нет, не электрический.", "en": "No, it isn't." },
+        { "uz": "Ha, elektrli.", "ru": "Да, электрический.", "en": "Yes, it is." },
+        { "uz": "Bu robot.", "ru": "Это робот.", "en": "It's a robot." }
+      ], "answerIndex": 0 } }
+    }
+  ]
+}

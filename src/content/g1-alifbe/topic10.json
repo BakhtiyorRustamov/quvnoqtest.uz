@@ -1,0 +1,491 @@
+{
+  "topicId": "g1-alifbe-10",
+  "subjectKey": "g1-alifbe",
+  "emojis": "📖✅🐎🍞",
+  "title": {
+    "uz": "«N n» — oʻqish mashqi",
+    "ru": "Буква «N n» — чтение",
+    "en": "Letter “N n” — reading"
+  },
+  "recall": {
+    "uz": "Biz endi soʻzlarni qoʻshib gap oʻqiymiz! «Ona, ana non.» «Ota, ana ot.» Gap oxirida nuqta qoʻyiladi — u gap tugaganini bildiradi. Oʻrgangan harflarimiz: O, T, A, N. Bugun ularni takrorlaymiz va birinchi gaplarni oʻqiymiz.",
+    "ru": "Теперь мы соединяем слова в предложения! «Ona, ana non.» «Ota, ana ot.» В конце предложения ставится точка — она показывает, что предложение закончилось. Наши буквы: O, T, A, N. Сегодня повторяем их и читаем первые предложения.",
+    "en": "Now we join words into sentences! “Ona, ana non.” “Ota, ana ot.” A period goes at the end of a sentence — it shows the sentence has finished. Our letters: O, T, A, N. Today we review them and read our first sentences."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ona … non.",
+        "ru": "Расставь слова и составь предложение: Ona … non.",
+        "en": "Order the words into a sentence: Ona … non."
+      },
+      "hint": {
+        "uz": "Ona — ana — non.",
+        "ru": "Ona — ana — non.",
+        "en": "Ona — ana — non."
+      },
+      "explanation": {
+        "uz": "«Ona, ana non.» — birinchi gapimiz!",
+        "ru": "«Ona, ana non.» — наше первое предложение!",
+        "en": "“Ona, ana non.” — our first sentence!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "ona",
+              "label": {
+                "uz": "Ona",
+                "ru": "Ona",
+                "en": "Ona"
+              }
+            },
+            {
+              "id": "ana",
+              "label": {
+                "uz": "ana",
+                "ru": "ana",
+                "en": "ana"
+              }
+            },
+            {
+              "id": "non",
+              "label": {
+                "uz": "non",
+                "ru": "non",
+                "en": "non"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Soʻzlarni tartibla va gap tuz: Ota … ot.",
+        "ru": "Расставь слова и составь предложение: Ota … ot.",
+        "en": "Order the words into a sentence: Ota … ot."
+      },
+      "hint": {
+        "uz": "Ota — ana — ot.",
+        "ru": "Ota — ana — ot.",
+        "en": "Ota — ana — ot."
+      },
+      "explanation": {
+        "uz": "«Ota, ana ot.» — yana bir gap oʻqiding!",
+        "ru": "«Ota, ana ot.» — ещё одно предложение!",
+        "en": "“Ota, ana ot.” — another sentence read!"
+      },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            {
+              "id": "ota",
+              "label": {
+                "uz": "Ota",
+                "ru": "Ota",
+                "en": "Ota"
+              }
+            },
+            {
+              "id": "ana",
+              "label": {
+                "uz": "ana",
+                "ru": "ana",
+                "en": "ana"
+              }
+            },
+            {
+              "id": "ot",
+              "label": {
+                "uz": "ot",
+                "ru": "ot",
+                "en": "ot"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Gapni oʻqi: «Ona non oldi.» Ona nima oldi?",
+        "ru": "Прочитай: «Ona non oldi.» Что взяла мама?",
+        "en": "Read: “Ona non oldi.” What did mother take?"
+      },
+      "hint": {
+        "uz": "Gapdagi «non» soʻzini top.",
+        "ru": "Найди в предложении слово «non».",
+        "en": "Find the word “non” in the sentence."
+      },
+      "explanation": {
+        "uz": "Ona non oldi — u non 🍞 oldi.",
+        "ru": "Мама взяла хлеб 🍞.",
+        "en": "Mother took bread 🍞."
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "id": "bread",
+              "emoji": "🍞",
+              "label": {
+                "uz": "non",
+                "ru": "хлеб",
+                "en": "bread"
+              },
+              "correct": true
+            },
+            {
+              "id": "horse",
+              "emoji": "🐎",
+              "label": {
+                "uz": "ot",
+                "ru": "конь",
+                "en": "horse"
+              }
+            },
+            {
+              "id": "apple",
+              "emoji": "🍎",
+              "label": {
+                "uz": "olma",
+                "ru": "яблоко",
+                "en": "apple"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Gap oxirida qanday belgi qoʻyiladi?",
+        "ru": "Какой знак ставится в конце предложения?",
+        "en": "Which mark goes at the end of a sentence?"
+      },
+      "hint": {
+        "uz": "U kichkina nuqta.",
+        "ru": "Это маленькая точка.",
+        "en": "It is a small dot."
+      },
+      "explanation": {
+        "uz": "Gap oxirida nuqta (.) qoʻyiladi.",
+        "ru": "В конце предложения ставится точка (.).",
+        "en": "A period (.) goes at the end of a sentence."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            ".",
+            "?",
+            ","
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Oʻrgangan harflarni belgila: O, T, A, N!",
+        "ru": "Отметь изученные буквы: O, T, A, N!",
+        "en": "Tap the letters we learned: O, T, A, N!"
+      },
+      "hint": {
+        "uz": "Toʻrtta harfni bilamiz: O, T, A, N.",
+        "ru": "Мы знаем четыре буквы: O, T, A, N.",
+        "en": "We know four letters: O, T, A, N."
+      },
+      "explanation": {
+        "uz": "O, T, A, N — oʻrgangan harflarimiz. B va K — hali emas.",
+        "ru": "O, T, A, N — наши буквы. B и K — ещё нет.",
+        "en": "O, T, A, N are our letters. B and K are not yet."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "a",
+              "emoji": "A",
+              "label": {
+                "uz": "A",
+                "ru": "A",
+                "en": "A"
+              },
+              "correct": true
+            },
+            {
+              "id": "o",
+              "emoji": "O",
+              "label": {
+                "uz": "O",
+                "ru": "O",
+                "en": "O"
+              },
+              "correct": true
+            },
+            {
+              "id": "t",
+              "emoji": "T",
+              "label": {
+                "uz": "T",
+                "ru": "T",
+                "en": "T"
+              },
+              "correct": true
+            },
+            {
+              "id": "n",
+              "emoji": "N",
+              "label": {
+                "uz": "N",
+                "ru": "N",
+                "en": "N"
+              },
+              "correct": true
+            },
+            {
+              "id": "b",
+              "emoji": "B",
+              "label": {
+                "uz": "B",
+                "ru": "B",
+                "en": "B"
+              }
+            },
+            {
+              "id": "k",
+              "emoji": "K",
+              "label": {
+                "uz": "K",
+                "ru": "K",
+                "en": "K"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan «non» soʻzini tuz!",
+        "ru": "Составь слово «non» из букв!",
+        "en": "Build the word “non” from letters!"
+      },
+      "hint": {
+        "uz": "n — o — n tartibida bos.",
+        "ru": "Нажимай по порядку: n — o — n.",
+        "en": "Tap in order: n — o — n."
+      },
+      "explanation": {
+        "uz": "n + o + n = «non».",
+        "ru": "n + o + n = «non».",
+        "en": "n + o + n = “non” (bread)."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🍞",
+          "word": "non",
+          "label": {
+            "uz": "non",
+            "ru": "хлеб",
+            "en": "bread"
+          }
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "👩 «ona» soʻzining tovush chizmasini rangla!",
+        "ru": "👩 Раскрась схему звуков слова «ona»!",
+        "en": "👩 Colour the sound scheme of the word “ona”!"
+      },
+      "hint": {
+        "uz": "o — unli, n — undosh, a — unli.",
+        "ru": "o — гласный, n — согласный, a — гласный.",
+        "en": "o vowel, n consonant, a vowel."
+      },
+      "explanation": {
+        "uz": "«ona»: o, n, a — unli, undosh, unli.",
+        "ru": "«ona»: гласный, согласный, гласный.",
+        "en": "“ona”: vowel, consonant, vowel."
+      },
+      "widget": {
+        "type": "sound_scheme",
+        "props": {
+          "emoji": "👩",
+          "word": {
+            "uz": "ona",
+            "ru": "ona",
+            "en": "ona"
+          },
+          "scheme": [
+            "v",
+            "c",
+            "v"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir soʻzni oʻqib, rasmiga ula!",
+        "ru": "Прочитай каждое слово и соедини с картинкой!",
+        "en": "Read each word and match it to its picture!"
+      },
+      "hint": {
+        "uz": "ot — 🐎, ona — 👩, ota — 👨, non — 🍞.",
+        "ru": "ot — 🐎, ona — 👩, ota — 👨, non — 🍞.",
+        "en": "ot — 🐎, ona — 👩, ota — 👨, non — 🍞."
+      },
+      "explanation": {
+        "uz": "Barcha soʻzlarni toʻgʻri oʻqiding!",
+        "ru": "Ты верно прочитал все слова!",
+        "en": "You read all the words correctly!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": {
+                  "uz": "ot",
+                  "ru": "ot",
+                  "en": "ot"
+                }
+              },
+              "right": {
+                "emoji": "🐎"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "ona",
+                  "ru": "ona",
+                  "en": "ona"
+                }
+              },
+              "right": {
+                "emoji": "👩"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "ota",
+                  "ru": "ota",
+                  "en": "ota"
+                }
+              },
+              "right": {
+                "emoji": "👨"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "non",
+                  "ru": "non",
+                  "en": "non"
+                }
+              },
+              "right": {
+                "emoji": "🍞"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«ota» soʻzida nechta tovush bor?",
+        "ru": "Сколько звуков в слове «ota»?",
+        "en": "How many sounds are in the word “ota”?"
+      },
+      "hint": {
+        "uz": "o — t — a, sanab koʻr.",
+        "ru": "o — t — a, посчитай.",
+        "en": "o — t — a, count them."
+      },
+      "explanation": {
+        "uz": "«ota»da uchta tovush bor: o, t, a.",
+        "ru": "В «ota» три звука: o, t, a.",
+        "en": "“ota” has three sounds: o, t, a."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "3",
+            "2",
+            "4"
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Ona, ana non.» — bu gap.",
+        "ru": "«Ona, ana non.» — это предложение.",
+        "en": "“Ona, ana non.” is a sentence."
+      },
+      "hint": {
+        "uz": "Soʻzlardan tuzilgan va nuqta bilan tugagan.",
+        "ru": "Составлено из слов и заканчивается точкой.",
+        "en": "Made of words and ends with a period."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Soʻzlar birlashib gap boʻldi va nuqta bilan tugadi.",
+        "ru": "Верно! Слова образовали предложение с точкой в конце.",
+        "en": "True! The words formed a sentence ending with a period."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "📖",
+          "answer": true
+        }
+      }
+    }
+  ]
+}

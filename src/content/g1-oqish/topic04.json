@@ -1,0 +1,419 @@
+{
+  "topicId": "g1-oqish-04",
+  "subjectKey": "g1-oqish",
+  "emojis": "🛡️🇺🇿🎖️",
+  "title": {
+    "uz": "Vatan himoyachilari",
+    "ru": "Защитники Родины",
+    "en": "Defenders of the Homeland"
+  },
+  "recall": {
+    "uz": "Bugun Vatan himoyachilari kuni haqidagi matnni oʻqiymiz. 14-yanvar — Oʻzbekistonda nishonlanadigan muhim bayram. Avval alifbo yordamida bitta soʻzni ochamiz, soʻng matnni oʻqib, savollarga javob beramiz.",
+    "ru": "Сегодня читаем текст о Дне защитников Родины. 14 января — важный праздник в Узбекистане. Сначала с помощью алфавита разгадаем слово, потом прочитаем текст и ответим на вопросы.",
+    "en": "Today we read a text about Defenders of the Homeland Day. 14 January is an important holiday in Uzbekistan. First we decode a word using the alphabet, then read the text and answer questions."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "karaoke_reading",
+        "props": {
+          "title": "Vatan himoyachilari kuni",
+          "variant": "story",
+          "audio": "g1-oqish-04-q1",
+          "lines": [
+            "Oʻzbekistonda 14-yanvar — Vatan himoyachilari kuni sifatida nishonlanadi.",
+            "Bu sana yurtimizning muhim bayramlaridan biridir.",
+            "Aynan shu kuni Oʻzbekiston Respublikasining Qurolli Kuchlari tuzilgan.",
+            "Yosh davlatimiz shu bilan buyuk kelajak sari ilk qadamini qoʻygan.",
+            "Bu bayram faqat askarlarniki emas.",
+            "Yurtdagi har bir yigit va qiz oʻz ona yurtiga tayanch, unga himoyachi boʻla oladi."
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Matnni ifodali oʻqing!",
+        "ru": "Прочитай текст выразительно!",
+        "en": "Read the text aloud!"
+      },
+      "hint": {
+        "uz": "Har bir xatboshini alohida oʻqing.",
+        "ru": "Читай каждый абзац отдельно.",
+        "en": "Read each paragraph separately."
+      },
+      "explanation": {
+        "uz": "Matn Vatan himoyachilari kuni — 14-yanvar haqida.",
+        "ru": "Текст о Дне защитников Родины — 14 января.",
+        "en": "The text is about Defenders of the Homeland Day — 14 January."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            "HIMOYA",
+            "BAYRAM",
+            "ASKAR",
+            "QALQON"
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Har bir raqam alifbodagi harf tartibiga mos: 7, 8, 12, 14, 23, 1. Qaysi soʻz hosil boʻladi?",
+        "ru": "Каждое число — порядковый номер буквы в алфавите: 7, 8, 12, 14, 23, 1. Какое слово получится?",
+        "en": "Each number is a letter's position in the alphabet: 7, 8, 12, 14, 23, 1. Which word do they spell?"
+      },
+      "hint": {
+        "uz": "Alifbo tartibi: H=7, I=8, M=12, O=14, Y=23, A=1.",
+        "ru": "Алфавит: H=7, I=8, M=12, O=14, Y=23, A=1.",
+        "en": "Alphabet: H=7, I=8, M=12, O=14, Y=23, A=1."
+      },
+      "explanation": {
+        "uz": "7=H, 8=I, 12=M, 14=O, 23=Y, 1=A → HIMOYA.",
+        "ru": "7=H, 8=I, 12=M, 14=O, 23=Y, 1=A → HIMOYA (защита).",
+        "en": "7=H, 8=I, 12=M, 14=O, 23=Y, 1=A → HIMOYA (defence)."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Vatan himoyachilari kuni",
+              "ru": "День защитников Родины",
+              "en": "Defenders of the Homeland Day"
+            },
+            {
+              "uz": "Hosil bayrami",
+              "ru": "Праздник урожая",
+              "en": "Harvest festival"
+            },
+            {
+              "uz": "Yangi yil",
+              "ru": "Новый год",
+              "en": "New Year"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "14-yanvar qanday kun sifatida nishonlanadi?",
+        "ru": "Как отмечается 14 января?",
+        "en": "What day is celebrated on 14 January?"
+      },
+      "hint": {
+        "uz": "Matn sarlavhasiga qara.",
+        "ru": "Посмотри на заголовок текста.",
+        "en": "Look at the title of the text."
+      },
+      "explanation": {
+        "uz": "14-yanvar — Vatan himoyachilari kuni.",
+        "ru": "14 января — День защитников Родины.",
+        "en": "14 January is Defenders of the Homeland Day."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Qurolli Kuchlar tuzilgan kun boʻlgani uchun",
+              "ru": "Потому что в этот день созданы Вооружённые силы",
+              "en": "Because the Armed Forces were founded that day"
+            },
+            {
+              "uz": "Qish boshlangani uchun",
+              "ru": "Потому что началась зима",
+              "en": "Because winter began"
+            },
+            {
+              "uz": "Maktab ochilgani uchun",
+              "ru": "Потому что открылась школа",
+              "en": "Because a school opened"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Nima uchun aynan 14-yanvar bayram deb belgilangan?",
+        "ru": "Почему праздником выбрано именно 14 января?",
+        "en": "Why was 14 January chosen as the holiday?"
+      },
+      "hint": {
+        "uz": "Matnda Qurolli Kuchlar tilga olingan.",
+        "ru": "В тексте упомянуты Вооружённые силы.",
+        "en": "The text mentions the Armed Forces."
+      },
+      "explanation": {
+        "uz": "Shu kuni Oʻzbekiston Qurolli Kuchlari tuzilgan.",
+        "ru": "В этот день были созданы Вооружённые силы Узбекистана.",
+        "en": "The Armed Forces of Uzbekistan were founded on that day."
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "Har bir yigit va qiz",
+              "ru": "Каждый юноша и девушка",
+              "en": "Every young man and woman"
+            },
+            {
+              "uz": "Faqat askarlar",
+              "ru": "Только солдаты",
+              "en": "Only soldiers"
+            },
+            {
+              "uz": "Faqat kattalar",
+              "ru": "Только взрослые",
+              "en": "Only adults"
+            }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Matnga koʻra, kimlar Vatan himoyachisi boʻla oladi?",
+        "ru": "Кто, по тексту, может быть защитником Родины?",
+        "en": "According to the text, who can be a defender of the homeland?"
+      },
+      "hint": {
+        "uz": "«Bu bayram faqat askarlarniki emas…»",
+        "ru": "«Этот праздник не только для солдат…»",
+        "en": "“This holiday is not only for soldiers…”"
+      },
+      "explanation": {
+        "uz": "Har bir yigit va qiz oʻz yurtiga tayanch va himoyachi boʻla oladi.",
+        "ru": "Каждый юноша и девушка может быть опорой и защитником своей страны.",
+        "en": "Every young man and woman can be a support and defender of their land."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            {
+              "left": "himoyachi",
+              "right": "asrovchi, qoʻriqlovchi"
+            },
+            {
+              "left": "tayanch",
+              "right": "suyanchiq"
+            },
+            {
+              "left": "sana",
+              "right": "kun, vaqt belgisi"
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzni maʼnosiga ula! (izohli lugʻat)",
+        "ru": "Соедини слово с его значением!",
+        "en": "Match each word to its meaning!"
+      },
+      "hint": {
+        "uz": "«tayanch» — suyanchiq, suyanadigan narsa.",
+        "ru": "«tayanch» — опора.",
+        "en": "“tayanch” means a support."
+      },
+      "explanation": {
+        "uz": "himoyachi = asrovchi; tayanch = suyanchiq; sana = kun belgisi.",
+        "ru": "himoyachi = защитник; tayanch = опора; sana = дата.",
+        "en": "himoyachi = protector; tayanch = support; sana = date."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_cloze",
+        "props": {
+          "before": "14-yanvar — Vatan ",
+          "after": " kuni.",
+          "choices": [
+            "himoyachilari",
+            "oshpazlari",
+            "sayohatchilari"
+          ],
+          "answer": "himoyachilari",
+          "emoji": "🎖️",
+          "clue": {
+            "uz": "Bayram nomini esla",
+            "ru": "Вспомни название праздника",
+            "en": "Remember the holiday's name"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Boʻsh joyga mos soʻzni qoʻy!",
+        "ru": "Вставь подходящее слово!",
+        "en": "Fill the gap with the right word!"
+      },
+      "hint": {
+        "uz": "Matn sarlavhasida bor.",
+        "ru": "Есть в заголовке текста.",
+        "en": "It is in the title of the text."
+      },
+      "explanation": {
+        "uz": "14-yanvar — Vatan himoyachilari kuni.",
+        "ru": "14 января — День защитников Родины.",
+        "en": "14 January is Defenders of the Homeland Day."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "word_scramble",
+        "props": {
+          "word": "askar",
+          "letters": [
+            "a",
+            "s",
+            "k",
+            "a",
+            "r"
+          ],
+          "emoji": "🪖",
+          "clue": {
+            "uz": "Yurtni qoʻriqlaydigan kishi",
+            "ru": "Тот, кто охраняет страну",
+            "en": "A person who guards the country"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Harflardan soʻzni yigʻ!",
+        "ru": "Собери слово из букв!",
+        "en": "Build the word from the letters!"
+      },
+      "hint": {
+        "uz": "U harbiy kiyim kiyadi.",
+        "ru": "Он носит военную форму.",
+        "en": "He wears a military uniform."
+      },
+      "explanation": {
+        "uz": "«Askar» — Vatanni qoʻriqlovchi jangchi.",
+        "ru": "«Askar» (солдат) — воин, охраняющий Родину.",
+        "en": "“Askar” (a soldier) guards the homeland."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "tap_match",
+        "props": {
+          "tiles": [
+            {
+              "text": "askar",
+              "match": true
+            },
+            {
+              "text": "muzqaymoq",
+              "match": false
+            },
+            {
+              "text": "chegarachi",
+              "match": true
+            },
+            {
+              "text": "koptok",
+              "match": false
+            },
+            {
+              "text": "harbiy",
+              "match": true
+            },
+            {
+              "text": "qoʻgʻirchoq",
+              "match": false
+            }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Vatanni qoʻriqlashga oid soʻzlarni bos!",
+        "ru": "Нажми слова, связанные с защитой Родины!",
+        "en": "Tap the words related to defending the homeland!"
+      },
+      "hint": {
+        "uz": "muzqaymoq, koptok, qoʻgʻirchoq — boshqa soʻzlar.",
+        "ru": "мороженое, мяч, кукла — другие слова.",
+        "en": "ice cream, ball, doll are other words."
+      },
+      "explanation": {
+        "uz": "askar, chegarachi, harbiy — Vatanni qoʻriqlashga oid soʻzlar.",
+        "ru": "солдат, пограничник, военный — слова о защите Родины.",
+        "en": "soldier, border guard, military — words about defending the homeland."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "sentence_order",
+        "props": {
+          "words": [
+            "Askar",
+            "yurtini",
+            "qoʻriqlaydi."
+          ],
+          "emoji": "🛡️",
+          "clue": {
+            "uz": "Askar nima qiladi?",
+            "ru": "Что делает солдат?",
+            "en": "What does a soldier do?"
+          }
+        }
+      },
+      "prompt": {
+        "uz": "Soʻzlardan gap tuz!",
+        "ru": "Составь предложение из слов!",
+        "en": "Build the sentence from the words!"
+      },
+      "hint": {
+        "uz": "Kim? — Askar. Nima qiladi? — qoʻriqlaydi.",
+        "ru": "Кто? — Солдат. Что делает? — охраняет.",
+        "en": "Who? — A soldier. Does what? — guards."
+      },
+      "explanation": {
+        "uz": "Askar yurtini qoʻriqlaydi — u Vatan himoyachisi.",
+        "ru": "Солдат охраняет свою страну — он защитник Родины.",
+        "en": "A soldier guards his country — he is a defender of the homeland."
+      }
+    }
+  ],
+  "skipRecall": true
+}

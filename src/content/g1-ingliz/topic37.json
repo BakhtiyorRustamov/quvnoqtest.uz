@@ -1,0 +1,522 @@
+{
+  "topicId": "g1-ingliz-37",
+  "subjectKey": "g1-ingliz",
+  "emojis": "🍎🍌🥛🍞",
+  "title": {
+    "uz": "Mening taomlarim",
+    "ru": "Моя еда",
+    "en": "Food"
+  },
+  "recall": {
+    "uz": "6-boʻlim: Taom! Bugun taom nomlarini inglizcha oʻrganamiz: apple — olma, banana — banan, milk — sut, bread — non.",
+    "ru": "Раздел 6: Еда! Сегодня учим названия еды по-английски: apple — яблоко, banana — банан, milk — молоко, bread — хлеб.",
+    "en": "Unit 6: Food! Today we learn food words in English: apple, banana, milk and bread."
+  },
+  "ttsText": {
+    "uz": "Mening taomlarim.",
+    "en": "Unit 6: Food! Apple, banana, milk and bread."
+  },
+  "recallAudioLang": "en",
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Suhbatni tingla. Bu qanday taom?",
+        "ru": "Послушай. Какая это еда?",
+        "en": "Listen. What food is it?"
+      },
+      "hint": {
+        "uz": "«It's an apple» — bu olma.",
+        "ru": "«It's an apple» — это яблоко.",
+        "en": "\"It's an apple.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's an apple — olma.",
+        "ru": "Верно! It's an apple — яблоко.",
+        "en": "Right! It's an apple."
+      },
+      "widget": {
+        "type": "dialog_listen",
+        "props": {
+          "lines": [
+            {
+              "who": "👧",
+              "name": "Mia",
+              "text": "What's this?",
+              "audio": {
+                "key": "ing37-q1-a",
+                "text": "What's this?",
+                "voice": "girl"
+              }
+            },
+            {
+              "who": "👦",
+              "name": "Sam",
+              "text": "It's an apple!",
+              "audio": {
+                "key": "ing37-q1-b",
+                "text": "It's an apple!",
+                "voice": "boy"
+              }
+            }
+          ],
+          "question": {
+            "prompt": {
+              "uz": "Bu qanday taom?",
+              "ru": "Какая это еда?",
+              "en": "What food is it?"
+            },
+            "choices": [
+              "an apple",
+              "bread",
+              "a banana"
+            ],
+            "answerIndex": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va olmani bos!",
+        "ru": "Послушай и нажми яблоко!",
+        "en": "Listen and tap the apple!"
+      },
+      "audio": {
+        "key": "ing37-q2",
+        "text": "Apple! Tap the apple.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«apple» — olma.",
+        "ru": "«apple» — яблоко.",
+        "en": "An \"apple\" is a fruit."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Apple — olma.",
+        "ru": "Верно! Apple — яблоко.",
+        "en": "Right! Apple!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "emoji": "🍌",
+              "label": "banana"
+            },
+            {
+              "emoji": "🥚",
+              "label": "egg"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va bananni bos!",
+        "ru": "Послушай и нажми банан!",
+        "en": "Listen and tap the banana!"
+      },
+      "audio": {
+        "key": "ing37-q3",
+        "text": "Banana! Tap the banana.",
+        "voice": "girl"
+      },
+      "hint": {
+        "uz": "«banana» — banan (sariq).",
+        "ru": "«banana» — банан (жёлтый).",
+        "en": "A \"banana\" is yellow."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Banana — banan.",
+        "ru": "Верно! Banana — банан.",
+        "en": "Right! Banana!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🍌",
+              "label": "banana",
+              "correct": true
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread"
+            },
+            {
+              "emoji": "🥛",
+              "label": "milk"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va sutni bos!",
+        "ru": "Послушай и нажми молоко!",
+        "en": "Listen and tap the milk!"
+      },
+      "audio": {
+        "key": "ing37-q4",
+        "text": "Milk! Tap the milk.",
+        "voice": "man"
+      },
+      "hint": {
+        "uz": "«milk» — sut (ichamiz).",
+        "ru": "«milk» — молоко (пьём).",
+        "en": "We drink \"milk\"."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Milk — sut.",
+        "ru": "Верно! Milk — молоко.",
+        "en": "Right! Milk!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🥛",
+              "label": "milk",
+              "correct": true
+            },
+            {
+              "emoji": "🧀",
+              "label": "cheese"
+            },
+            {
+              "emoji": "🍗",
+              "label": "chicken"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Tingla va tuxumni bos!",
+        "ru": "Послушай и нажми яйцо!",
+        "en": "Listen and tap the egg!"
+      },
+      "audio": {
+        "key": "ing37-q5",
+        "text": "Egg! Tap the egg.",
+        "voice": "teacher"
+      },
+      "hint": {
+        "uz": "«egg» — tuxum.",
+        "ru": "«egg» — яйцо.",
+        "en": "An \"egg\" comes from a hen."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Egg — tuxum.",
+        "ru": "Верно! Egg — яйцо.",
+        "en": "Right! Egg!"
+      },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            {
+              "emoji": "🥚",
+              "label": "egg",
+              "correct": true
+            },
+            {
+              "emoji": "🍞",
+              "label": "bread"
+            },
+            {
+              "emoji": "🍊",
+              "label": "orange"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Inglizcha soʻzni taomga ula!",
+        "ru": "Соедини слово с едой!",
+        "en": "Match each word to its food!"
+      },
+      "hint": {
+        "uz": "apple, banana, milk, bread.",
+        "ru": "apple, banana, milk, bread.",
+        "en": "apple, banana, milk, bread."
+      },
+      "explanation": {
+        "uz": "Ajoyib! Taomlarni bilding!",
+        "ru": "Отлично! Ты знаешь еду!",
+        "en": "Awesome! You know the foods!"
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": "apple"
+              },
+              "right": {
+                "emoji": "🍎"
+              }
+            },
+            {
+              "left": {
+                "label": "banana"
+              },
+              "right": {
+                "emoji": "🍌"
+              }
+            },
+            {
+              "left": {
+                "label": "milk"
+              },
+              "right": {
+                "emoji": "🥛"
+              }
+            },
+            {
+              "left": {
+                "label": "bread"
+              },
+              "right": {
+                "emoji": "🍞"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartalarni ochib, soʻz va taom juftini top!",
+        "ru": "Открывай карточки: слово и еда!",
+        "en": "Flip the cards: match each word to its food!"
+      },
+      "hint": {
+        "uz": "egg 🥚, cheese 🧀, chicken 🍗.",
+        "ru": "egg 🥚, cheese 🧀, chicken 🍗.",
+        "en": "egg 🥚, cheese 🧀, chicken 🍗."
+      },
+      "explanation": {
+        "uz": "Barakalla! Xotirang zoʻr!",
+        "ru": "Молодец! Отличная память!",
+        "en": "Great! What a memory!"
+      },
+      "widget": {
+        "type": "memory_match",
+        "props": {
+          "pairs": [
+            {
+              "a": {
+                "emoji": "🥚"
+              },
+              "b": {
+                "label": "egg"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🧀"
+              },
+              "b": {
+                "label": "cheese"
+              }
+            },
+            {
+              "a": {
+                "emoji": "🍗"
+              },
+              "b": {
+                "label": "chicken"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bir xil juftni top!",
+        "ru": "Найди одинаковую пару!",
+        "en": "Find the matching pair!"
+      },
+      "hint": {
+        "uz": "Bir xil ikkita taomni top.",
+        "ru": "Найди два одинаковых.",
+        "en": "Find the two that are the same."
+      },
+      "explanation": {
+        "uz": "Barakalla! Juftni topding!",
+        "ru": "Молодец! Ты нашёл пару!",
+        "en": "Great! You found the pair!"
+      },
+      "widget": {
+        "type": "find_pair",
+        "props": {
+          "tiles": [
+            {
+              "id": "a1",
+              "emoji": "🍎",
+              "key": "apple"
+            },
+            {
+              "id": "ban",
+              "emoji": "🍌",
+              "key": "banana"
+            },
+            {
+              "id": "a2",
+              "emoji": "🍎",
+              "key": "apple"
+            },
+            {
+              "id": "milk",
+              "emoji": "🥛",
+              "key": "milk"
+            },
+            {
+              "id": "bread",
+              "emoji": "🍞",
+              "key": "bread"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Mevalarni belgila!",
+        "ru": "Отметь фрукты!",
+        "en": "Tap the fruits!"
+      },
+      "hint": {
+        "uz": "Olma, banan, apelsin.",
+        "ru": "Яблоко, банан, апельсин.",
+        "en": "Apple, banana, orange."
+      },
+      "explanation": {
+        "uz": "Barakalla! Olma, banan, apelsin — meva!",
+        "ru": "Молодец! Яблоко, банан, апельсин — фрукты!",
+        "en": "Great! Apple, banana, orange are fruits!"
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🍎",
+              "label": "apple",
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "🍌",
+              "label": "banana",
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "🍊",
+              "label": "orange",
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "🥛",
+              "label": "milk"
+            },
+            {
+              "id": "d1",
+              "emoji": "🍞",
+              "label": "bread"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Buni ichamiz. Bu nima? 🥛",
+        "ru": "Это мы пьём. Что это? 🥛",
+        "en": "You drink it. What is it? 🥛"
+      },
+      "hint": {
+        "uz": "Oq ichimlik.",
+        "ru": "Белый напиток.",
+        "en": "A white drink."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! It's milk — sut.",
+        "ru": "Верно! It's milk — молоко.",
+        "en": "Right! It's milk."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "milk\nsut",
+              "ru": "milk\nмолоко",
+              "en": "milk"
+            },
+            {
+              "uz": "bread\nnon",
+              "ru": "bread\nхлеб",
+              "en": "bread"
+            },
+            {
+              "uz": "egg\ntuxum",
+              "ru": "egg\nяйцо",
+              "en": "egg"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

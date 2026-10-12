@@ -1,0 +1,84 @@
+{
+  "topicId": "g1-tex-23",
+  "subjectKey": "g1-tex",
+  "emojis": "",
+  "hideAudio": true,
+  "title": {
+    "uz": "8-mart sovgʻasi",
+    "ru": "Подарок к 8 Марта",
+    "en": "An 8th of March gift"
+  },
+  "recall": {
+    "uz": "Bugun onajonimizga gulli tabrik kartochkasi yasaymiz.",
+    "ru": "Сегодня сделаем маме открытку с цветами.",
+    "en": "Today we make a flower greeting card for our mum."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Kartochka yasa. Har bosqichni rasmga qarab bajar!",
+        "ru": "Сделай открытку. Выполняй каждый этап по рисунку!",
+        "en": "Make a card. Do each step by the picture!"
+      },
+      "hint": {
+        "uz": "Old tomonini bezat.",
+        "ru": "Укрась переднюю сторону.",
+        "en": "Decorate the front."
+      },
+      "explanation": {
+        "uz": "Chiroyli sovgʻa!",
+        "ru": "Красивый подарок!",
+        "en": "A lovely gift!"
+      },
+      "widget": {
+        "type": "craft_steps",
+        "props": {
+          "materials": [
+            {
+              "uz": "rangli qogʻoz",
+              "ru": "цветная бумага",
+              "en": "coloured paper"
+            },
+            {
+              "uz": "qaychi",
+              "ru": "ножницы",
+              "en": "scissors"
+            },
+            {
+              "uz": "yelim",
+              "ru": "клей",
+              "en": "glue"
+            },
+            {
+              "uz": "qalam",
+              "ru": "карандаш",
+              "en": "a pencil"
+            }
+          ],
+          "steps": [
+            {
+              "uz": "Qogʻozni yarmidan buklab kartochka yasa.",
+              "ru": "Сложи бумагу пополам — получится открытка.",
+              "en": "Fold the paper in half to make a card."
+            },
+            {
+              "uz": "Old tomoniga gullar yopishtir.",
+              "ru": "Приклей на переднюю сторону цветы.",
+              "en": "Glue flowers on the front."
+            },
+            {
+              "uz": "Yurakcha va bezaklarni qoʻsh.",
+              "ru": "Добавь сердечки и украшения.",
+              "en": "Add hearts and decorations."
+            }
+          ],
+          "art": "giftcard",
+          "photo": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "topicId": "g1-alifbe-39",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤🪁🌋📖",
+  "title": { "uz": "«V v» harfi", "ru": "Буква «V v»", "en": "The letter “V v”" },
+  "recall": {
+    "uz": "Bugungi harfimiz — «V v». U undosh tovush. Uni aytganda pastki lab yuqori tishga yaqinlashadi. «V» bilan: varrak, vulqon, Vatan, vaqt. Endi «varrak» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «V v». Это согласный звук. Нижняя губа приближается к верхним зубам. Слова: varrak, vulqon, Vatan, vaqt. Теперь мы можем прочитать слово «varrak»!",
+    "en": "Today's letter is “V v”. It is a consonant. The lower lip comes close to the upper teeth. Words: varrak, vulqon, Vatan, vaqt. Now we can read and build the word “varrak”!"
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«V» bilan boshlanadigan soʻzni top!", "ru": "Найди слово на «V»!", "en": "Find the word that starts with “V”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: v-v-varrak.", "ru": "Протяни начало: в-в-varrak.", "en": "Stretch the start: v-v-varrak." },
+      "explanation": { "uz": "«varrak» «V» tovushi bilan boshlanadi.", "ru": "«varrak» начинается со звука «V».", "en": "“varrak” (kite) starts with the sound “V”." },
+      "widget": { "type": "pick_picture", "props": { "options": [
+        { "id": "kite", "emoji": "🪁", "label": { "uz": "varrak", "ru": "varrak", "en": "varrak" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q2", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«V» harfini topib, hammasini bos!", "ru": "Найди букву «V» и нажми на все!", "en": "Find the letter “V” and tap them all!" },
+      "hint": { "uz": "Katta «V» ham, kichik «v» ham.", "ru": "Считаются «V» и «v».", "en": "Both “V” and “v” count." },
+      "explanation": { "uz": "«V» harfini topding!", "ru": "Ты нашёл букву «V»!", "en": "You found the letter “V”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "V", "cols": 3, "grid": ["V", "a", "v", "Y", "V", "o", "v", "u", "V"] } }
+    },
+    {
+      "id": "q3", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🪁 «varrak»da «v» tovushi qaysi katakchada?", "ru": "🪁 В какой клетке звук «v» в слове «varrak»?", "en": "🪁 Which box has the “v” sound in “varrak”?" },
+      "hint": { "uz": "«varrak» «v» bilan boshlanadi.", "ru": "«varrak» начинается с «v».", "en": "“varrak” starts with “v”." },
+      "explanation": { "uz": "«varrak»da «v» — birinchi katakda.", "ru": "В «varrak» звук «v» — первая клетка.", "en": "In “varrak” the “v” is in the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🪁", "word": { "uz": "varrak", "ru": "varrak", "en": "varrak" }, "sound": "v", "cells": ["v", "a", "r", "r", "a", "k"], "answer": 0 } }
+    },
+    {
+      "id": "q4", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🪁 «varrak» soʻzining tovush chizmasini rangla!", "ru": "🪁 Раскрась схему звуков слова «varrak»!", "en": "🪁 Colour the sound scheme of “varrak”!" },
+      "hint": { "uz": "v — undosh, a — unli, r — undosh, r — undosh, a — unli, k — undosh.", "ru": "v, a, r, r, a, k.", "en": "v, a, r, r, a, k." },
+      "explanation": { "uz": "«varrak»: v, a, r, r, a, k — undosh, unli, undosh, undosh, unli, undosh.", "ru": "«varrak»: согл., глас., согл., согл., глас., согл.", "en": "“varrak”: consonant, vowel, consonant, consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "🪁", "word": { "uz": "varrak", "ru": "varrak", "en": "varrak" }, "scheme": ["c", "v", "c", "c", "v", "c"] } }
+    },
+    {
+      "id": "q5", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«V» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «V»!", "en": "Tap the words that have the “V” sound!" },
+      "hint": { "uz": "varrak, vulqon — «v» tovushi bor.", "ru": "varrak, vulqon — есть звук «v».", "en": "varrak, vulqon have the “v” sound." },
+      "explanation": { "uz": "varrak, vulqon — «v» bor. ot, olmada yoʻq.", "ru": "varrak, vulqon — есть «v». В ot, olma нет.", "en": "varrak, vulqon have “v”. ot, olma do not." },
+      "widget": { "type": "pick_many", "props": { "options": [
+        { "id": "kite", "emoji": "🪁", "label": { "uz": "varrak", "ru": "varrak", "en": "varrak" }, "correct": true },
+        { "id": "volcano", "emoji": "🌋", "label": { "uz": "vulqon", "ru": "vulqon", "en": "vulqon" }, "correct": true },
+        { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+        { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+      ] } }
+    },
+    {
+      "id": "q6", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "🪁 Rasmga mos toʻgʻri yozilgan soʻzni oʻqib bos!", "ru": "🪁 Прочитай и нажми верно написанное слово!", "en": "🪁 Read and tap the correctly spelled word!" },
+      "hint": { "uz": "Soʻz «v» bilan boshlanadi: var-rak.", "ru": "Слово начинается с «v»: var-rak.", "en": "The word starts with “v”: var-rak." },
+      "explanation": { "uz": "Toʻgʻri yozilishi — «varrak».", "ru": "Верное написание — «varrak».", "en": "The correct spelling is “varrak”." },
+      "widget": { "type": "read_word", "props": { "emoji": "🪁", "options": [
+        { "id": "ok", "word": "varrak", "correct": true },
+        { "id": "w1", "word": "farrak" },
+        { "id": "w2", "word": "varraq" }
+      ] } }
+    },
+    {
+      "id": "q7", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflardan «varrak» soʻzini tuz!", "ru": "Составь слово «varrak» из букв!", "en": "Build the word “varrak” from letters!" },
+      "hint": { "uz": "v — a — r — r — a — k tartibida bos.", "ru": "Нажимай: v — a — r — r — a — k.", "en": "Tap in order: v — a — r — r — a — k." },
+      "explanation": { "uz": "v + a + r + r + a + k = «varrak».", "ru": "v + a + r + r + a + k = «varrak».", "en": "v + a + r + r + a + k = “varrak” (kite)." },
+      "widget": { "type": "build_word", "props": { "emoji": "🪁", "word": "varrak", "label": { "uz": "varrak", "ru": "воздушный змей", "en": "kite" } } }
+    },
+    {
+      "id": "q8", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«V» — undosh tovush.", "ru": "«V» — согласный звук.", "en": "“V” is a consonant sound." },
+      "hint": { "uz": "«V»da pastki lab yuqori tishga yaqinlashadi.", "ru": "При «V» нижняя губа тянется к верхним зубам.", "en": "For “V” the lower lip nears the upper teeth." },
+      "explanation": { "uz": "Toʻgʻri! «V» — undosh tovush.", "ru": "Верно! «V» — согласный.", "en": "True! “V” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q9", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Harflarni unli yoki undoshga ajrat!", "ru": "Разложи буквы: гласная или согласная!", "en": "Sort the letters: vowel or consonant!" },
+      "hint": { "uz": "Unli: A, E, Oʻ. Undosh: R, S, V.", "ru": "Гласные: A, E, Oʻ. Согласные: R, S, V.", "en": "Vowels: A, E, Oʻ. Consonants: R, S, V." },
+      "explanation": { "uz": "Unli: A, E, Oʻ. Undosh: R, S, V.", "ru": "Гласные: A, E, Oʻ. Согласные: R, S, V.", "en": "Vowels: A, E, Oʻ. Consonants: R, S, V." },
+      "widget": { "type": "sort_bins", "props": {
+        "bins": [
+          { "id": "vowel", "label": { "uz": "Unli", "ru": "Гласный", "en": "Vowel" }, "color": "#e14b4b" },
+          { "id": "cons", "label": { "uz": "Undosh", "ru": "Согласный", "en": "Consonant" }, "color": "#2f9fe0" }
+        ],
+        "items": [
+          { "id": "a", "emoji": "A", "label": { "uz": "a", "ru": "a", "en": "a" }, "bin": "vowel" },
+          { "id": "e", "emoji": "E", "label": { "uz": "e", "ru": "e", "en": "e" }, "bin": "vowel" },
+          { "id": "oq", "emoji": "Oʻ", "label": { "uz": "oʻ", "ru": "oʻ", "en": "oʻ" }, "bin": "vowel" },
+          { "id": "r", "emoji": "R", "label": { "uz": "r", "ru": "r", "en": "r" }, "bin": "cons" },
+          { "id": "s", "emoji": "S", "label": { "uz": "s", "ru": "s", "en": "s" }, "bin": "cons" },
+          { "id": "v", "emoji": "V", "label": { "uz": "v", "ru": "v", "en": "v" }, "bin": "cons" }
+        ]
+      } }
+    },
+    {
+      "id": "q10", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "«V» tovushida pastki lab qayerga yaqinlashadi?", "ru": "К чему приближается нижняя губа при звуке «V»?", "en": "Where does the lower lip go when saying “V”?" },
+      "hint": { "uz": "«V-v-v» deb ayt.", "ru": "Скажи «в-в-в».", "en": "Say “v-v-v”." },
+      "explanation": { "uz": "«V»da pastki lab yuqori tishga yaqinlashadi.", "ru": "При «V» нижняя губа приближается к верхним зубам.", "en": "For “V” the lower lip nears the upper teeth." },
+      "widget": { "type": "mcq", "props": { "choices": [{ "uz": "yuqori tishga", "ru": "к верхним зубам", "en": "to the upper teeth" }, { "uz": "tilga", "ru": "к языку", "en": "to the tongue" }, { "uz": "burunga", "ru": "к носу", "en": "to the nose" }], "answerIndex": 0 } }
+    }
+  ]
+}

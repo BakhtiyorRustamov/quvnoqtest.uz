@@ -1,0 +1,136 @@
+{
+  "topicId": "g1-alifbe-19",
+  "subjectKey": "g1-alifbe",
+  "emojis": "🔤👤🌾📓",
+  "title": {
+    "uz": "«D d» harfi",
+    "ru": "Буква «D d»",
+    "en": "The letter “D d”"
+  },
+  "recall": {
+    "uz": "Bugungi harfimiz — «D d». U undosh tovush. Uni aytganda til tanglayga koʻtariladi, havo shovqin bilan chiqadi. «D» bilan: odam, dala, daftar. Endi «odam» soʻzini oʻqiy va yoza olamiz!",
+    "ru": "Сегодня наша буква — «D d». Это согласный звук. Язык поднимается к нёбу, воздух выходит с шумом. Слова: odam, dala, daftar. Теперь мы можем прочитать слово «odam»!",
+    "en": "Today's letter is “D d”. It is a consonant. The tongue rises to the palate and the air leaves with a burst. Words: odam, dala, daftar. Now we can read and build the word “odam”!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«D» bilan boshlanadigan soʻzni top!", "ru": "Найди слово, которое начинается с «D»!", "en": "Find the word that starts with “D”!" },
+      "hint": { "uz": "Boshini choʻzib ayt: d-d-daftar.", "ru": "Протяни начало: д-д-daftar.", "en": "Stretch the start: d-d-daftar." },
+      "explanation": { "uz": "«daftar» «D» tovushi bilan boshlanadi.", "ru": "«daftar» начинается со звука «D».", "en": "“daftar” (notebook) starts with the sound “D”." },
+      "widget": {
+        "type": "pick_picture",
+        "props": {
+          "options": [
+            { "id": "notebook", "emoji": "📓", "label": { "uz": "daftar", "ru": "daftar", "en": "daftar" }, "correct": true },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«D» harfini topib, hammasini bos!", "ru": "Найди букву «D» и нажми на все!", "en": "Find the letter “D” and tap them all!" },
+      "hint": { "uz": "Katta «D» ham, kichik «d» ham.", "ru": "Считаются «D» и «d».", "en": "Both “D” and “d” count." },
+      "explanation": { "uz": "«D» harfini topding!", "ru": "Ты нашёл букву «D»!", "en": "You found the letter “D”!" },
+      "widget": { "type": "letter_hunt", "props": { "target": "D", "cols": 3, "grid": ["D", "o", "d", "U", "D", "a", "d", "m", "D"] } }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "👤 «odam»da «d» tovushi qaysi katakchada?", "ru": "👤 В какой клетке звук «d» в слове «odam»?", "en": "👤 Which box has the “d” sound in “odam”?" },
+      "hint": { "uz": "«d» ikkinchi katakda.", "ru": "«d» во второй клетке.", "en": "“d” is in the second box." },
+      "explanation": { "uz": "«odam»da «d» — ikkinchi katakda.", "ru": "В «odam» звук «d» — вторая клетка.", "en": "In “odam” the “d” is in the second box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "👤", "word": { "uz": "odam", "ru": "odam", "en": "odam" }, "sound": "d", "cells": ["o", "d", "a", "m"], "answer": 1 } }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "🌾 «dala»da «d» tovushi qaysi katakchada?", "ru": "🌾 В какой клетке звук «d» в слове «dala»?", "en": "🌾 Which box has the “d” sound in “dala”?" },
+      "hint": { "uz": "«dala» «d» bilan boshlanadi.", "ru": "«dala» начинается с «d».", "en": "“dala” starts with “d”." },
+      "explanation": { "uz": "«dala» «d» bilan boshlanadi — birinchi katak.", "ru": "«dala» начинается с «d» — первая клетка.", "en": "“dala” starts with “d” — the first box." },
+      "widget": { "type": "sound_position", "props": { "emoji": "🌾", "word": { "uz": "dala", "ru": "dala", "en": "dala" }, "sound": "d", "cells": ["d", "a", "l", "a"], "answer": 0 } }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "👤 «odam» soʻzining tovush chizmasini rangla!", "ru": "👤 Раскрась схему звуков слова «odam»!", "en": "👤 Colour the sound scheme of the word “odam”!" },
+      "hint": { "uz": "o — unli, d — undosh, a — unli, m — undosh.", "ru": "o — гласный, d — согласный, a — гласный, m — согласный.", "en": "o vowel, d consonant, a vowel, m consonant." },
+      "explanation": { "uz": "«odam»: o, d, a, m — unli, undosh, unli, undosh.", "ru": "«odam»: гласный, согласный, гласный, согласный.", "en": "“odam”: vowel, consonant, vowel, consonant." },
+      "widget": { "type": "sound_scheme", "props": { "emoji": "👤", "word": { "uz": "odam", "ru": "odam", "en": "odam" }, "scheme": ["v", "c", "v", "c"] } }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«D» tovushi bor soʻzlarni belgila!", "ru": "Отметь слова со звуком «D»!", "en": "Tap the words that have the “D” sound!" },
+      "hint": { "uz": "odam, dala, daftar — «d» tovushi bor.", "ru": "odam, dala, daftar — есть звук «d».", "en": "odam, dala, daftar have the “d” sound." },
+      "explanation": { "uz": "odam, dala, daftar — «d» bor. ot, olmada yoʻq.", "ru": "odam, dala, daftar — есть «d». В ot, olma нет.", "en": "odam, dala, daftar have “d”. ot, olma do not." },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            { "id": "person", "emoji": "👤", "label": { "uz": "odam", "ru": "odam", "en": "odam" }, "correct": true },
+            { "id": "field", "emoji": "🌾", "label": { "uz": "dala", "ru": "dala", "en": "dala" }, "correct": true },
+            { "id": "notebook", "emoji": "📓", "label": { "uz": "daftar", "ru": "daftar", "en": "daftar" }, "correct": true },
+            { "id": "horse", "emoji": "🐎", "label": { "uz": "ot", "ru": "ot", "en": "ot" } },
+            { "id": "apple", "emoji": "🍎", "label": { "uz": "olma", "ru": "olma", "en": "olma" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Harflardan «odam» soʻzini tuz!", "ru": "Составь слово «odam» из букв!", "en": "Build the word “odam” from letters!" },
+      "hint": { "uz": "o — d — a — m tartibida bos.", "ru": "Нажимай по порядку: o — d — a — m.", "en": "Tap in order: o — d — a — m." },
+      "explanation": { "uz": "o + d + a + m = «odam».", "ru": "o + d + a + m = «odam».", "en": "o + d + a + m = “odam” (person)." },
+      "widget": { "type": "build_word", "props": { "emoji": "👤", "word": "odam", "label": { "uz": "odam", "ru": "человек", "en": "person" } } }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«D» — undosh tovush.", "ru": "«D» — согласный звук.", "en": "“D” is a consonant sound." },
+      "hint": { "uz": "«D»da havo shovqin bilan chiqadi.", "ru": "При «D» воздух выходит с шумом.", "en": "For “D” the air leaves with a burst." },
+      "explanation": { "uz": "Toʻgʻri! «D» — undosh tovush.", "ru": "Верно! «D» — согласный.", "en": "True! “D” is a consonant." },
+      "widget": { "type": "true_false", "props": { "emoji": "🔵", "answer": true } }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "Soʻzlarni tartibla va gap tuz: Odam … oldi.", "ru": "Расставь слова и составь предложение: Odam … oldi.", "en": "Order the words into a sentence: Odam … oldi." },
+      "hint": { "uz": "Odam — non — oldi.", "ru": "Odam — non — oldi.", "en": "Odam — non — oldi." },
+      "explanation": { "uz": "«Odam non oldi.» — gapni oʻqiding!", "ru": "«Odam non oldi.» — ты прочитал предложение!", "en": "“Odam non oldi.” — you read the sentence!" },
+      "widget": {
+        "type": "order_line",
+        "props": {
+          "items": [
+            { "id": "odam", "label": { "uz": "Odam", "ru": "Odam", "en": "Odam" } },
+            { "id": "non", "label": { "uz": "non", "ru": "non", "en": "non" } },
+            { "id": "oldi", "label": { "uz": "oldi", "ru": "oldi", "en": "oldi" } }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": { "uz": "«odam» soʻzida nechta tovush bor?", "ru": "Сколько звуков в слове «odam»?", "en": "How many sounds are in the word “odam”?" },
+      "hint": { "uz": "o — d — a — m, sanab koʻr.", "ru": "o — d — a — m, посчитай.", "en": "o — d — a — m, count them." },
+      "explanation": { "uz": "«odam»da toʻrtta tovush bor: o, d, a, m.", "ru": "В «odam» четыре звука: o, d, a, m.", "en": "“odam” has four sounds: o, d, a, m." },
+      "widget": { "type": "mcq", "props": { "choices": ["4", "3", "5"], "answerIndex": 0 } }
+    }
+  ]
+}

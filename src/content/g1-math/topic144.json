@@ -1,0 +1,311 @@
+{
+  "topicId": "g1-math-144",
+  "subjectKey": "g1-math",
+  "emojis": "🔁🧳✨",
+  "title": {
+    "uz": "Yakuniy takrorlash (3)",
+    "ru": "Итоговое повторение (3)",
+    "en": "Final review (3)"
+  },
+  "recall": {
+    "uz": "Oxirgi takrorlash darsi: murakkab masala, kesma va uning qismlari, geometrik shakllar. Qavsli ifodalarda avval qavs ichini hisoblaymiz. Juft sonlarni tartiblasak, yashiringan soʻz ochiladi. Diqqat bilan ishlasang, sayohatga tayyor boʻlasan!",
+    "ru": "Последний урок повторения: составные задачи, отрезок и его части, геометрические фигуры. В выражениях со скобками сначала считаем в скобках. Если расставить чётные числа по порядку, откроется спрятанное слово. Работай внимательно — и отправишься в путешествие!",
+    "en": "The last review lesson: multi-step problems, a segment and its parts, geometric shapes. In bracket expressions we first work out the brackets. Ordering the even numbers reveals a hidden word. Work carefully and get ready for a journey!"
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "20 + x = 56",
+          "answer": 36,
+          "choices": [36, 35, 37],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Dam olish maskaniga 20 kishi keldi va hozir ular 56 kishi boʻldi. Dastlab u yerda qancha kishi boʻlgan? 20 + x = 56.",
+        "ru": "На базу отдыха приехали ещё 20 человек, и теперь их 56. Сколько человек было там сначала? 20 + x = 56.",
+        "en": "20 more people came to the resort and now there are 56. How many were there at first? 20 + x = 56."
+      },
+      "hint": {
+        "uz": "Butun 56, maʼlum qism 20. Nomaʼlum qismni ayirish bilan top.",
+        "ru": "Целое — 56, известная часть — 20. Найди неизвестную часть вычитанием.",
+        "en": "The whole is 56, the known part is 20. Find the unknown part by subtracting."
+      },
+      "explanation": {
+        "uz": "56 - 20 = 36. Dastlab 36 kishi boʻlgan.",
+        "ru": "56 - 20 = 36. Сначала было 36 человек.",
+        "en": "56 - 20 = 36. At first there were 36 people."
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": ["63", "61", "65"],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Hisobla: 99 - (12 + 24) = ?",
+        "ru": "Вычисли: 99 - (12 + 24) = ?",
+        "en": "Work it out: 99 - (12 + 24) = ?"
+      },
+      "hint": {
+        "uz": "Avval qavs ichini hisobla: 12 + 24 = 36.",
+        "ru": "Сначала посчитай в скобках: 12 + 24 = 36.",
+        "en": "First work out the brackets: 12 + 24 = 36."
+      },
+      "explanation": {
+        "uz": "12 + 24 = 36, soʻng 99 - 36 = 63.",
+        "ru": "12 + 24 = 36, затем 99 - 36 = 63.",
+        "en": "12 + 24 = 36, then 99 - 36 = 63."
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "match_pairs",
+        "props": {
+          "pairs": [
+            { "left": "(12 + 57) - 21", "right": "48" },
+            { "left": "(18 - 16) + 20", "right": "22" },
+            { "left": "(44 + 21) + 23", "right": "88" },
+            { "left": "54 + (99 - 77)", "right": "76" }
+          ]
+        }
+      },
+      "prompt": {
+        "uz": "Qavsli ifodalarni qiymatlari bilan ulang!",
+        "ru": "Соедини выражения со скобками с их значениями!",
+        "en": "Match the bracket expressions with their values!"
+      },
+      "hint": {
+        "uz": "Avval qavs ichini, keyin qolganini hisobla.",
+        "ru": "Сначала считай в скобках, потом остальное.",
+        "en": "Work out the brackets first, then the rest."
+      },
+      "explanation": {
+        "uz": "Har bir ifoda oʻz qiymati bilan ulandi.",
+        "ru": "Каждое выражение соединено со своим значением.",
+        "en": "Each expression is matched with its value."
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "number_order",
+        "props": {
+          "numbers": [22, 48, 54, 60],
+          "direction": "asc"
+        }
+      },
+      "prompt": {
+        "uz": "Juft sonlarni oʻsish tartibida joylashtir — harflar yashiringan soʻzni ochadi!",
+        "ru": "Расставь чётные числа по возрастанию — буквы откроют спрятанное слово!",
+        "en": "Arrange the even numbers in ascending order — the letters reveal a hidden word!"
+      },
+      "hint": {
+        "uz": "Eng kichik sondan boshla: 22, 48, …",
+        "ru": "Начни с самого маленького: 22, 48, …",
+        "en": "Start with the smallest: 22, 48, …"
+      },
+      "explanation": {
+        "uz": "22, 48, 54, 60, 76, 88, 98 — harflari S, A, Y, O, H, A, T: yashiringan soʻz SAYOHAT!",
+        "ru": "22, 48, 54, 60, 76, 88, 98 — буквы S, A, Y, O, H, A, T: спрятанное слово — SAYOHAT (путешествие)!",
+        "en": "22, 48, 54, 60, 76, 88, 98 — the letters S, A, Y, O, H, A, T spell SAYOHAT (journey)!"
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": ["6", "3", "4"],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "AB kesma C va D nuqtalar bilan qismlarga boʻlingan. Hammasi boʻlib nechta kesma hosil boʻldi?",
+        "ru": "Отрезок AB разделён точками C и D. Сколько всего отрезков получилось?",
+        "en": "Segment AB is divided by points C and D. How many segments are there in total?"
+      },
+      "hint": {
+        "uz": "Sanab chiq: AC, CD, DB, AD, CB va AB ning oʻzi.",
+        "ru": "Пересчитай: AC, CD, DB, AD, CB и сам AB.",
+        "en": "Count them: AC, CD, DB, AD, CB and AB itself."
+      },
+      "explanation": {
+        "uz": "AC, CD, DB, AD, CB, AB — jami 6 ta kesma.",
+        "ru": "AC, CD, DB, AD, CB, AB — всего 6 отрезков.",
+        "en": "AC, CD, DB, AD, CB, AB — 6 segments in total."
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            { "uz": "Kamayuvchi", "ru": "Уменьшаемое", "en": "Minuend" },
+            { "uz": "Yigʻindi", "ru": "Сумма", "en": "Sum" },
+            { "uz": "Qoʻshiluvchi", "ru": "Слагаемое", "en": "Addend" }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Oʻzingni tekshir! Qaysi soʻz ayirish amalining komponenti?",
+        "ru": "Проверь себя! Какое слово — компонент вычитания?",
+        "en": "Check yourself! Which word is a component of subtraction?"
+      },
+      "hint": {
+        "uz": "Ayirishda: kamayuvchi - ayriluvchi = ayirma.",
+        "ru": "В вычитании: уменьшаемое - вычитаемое = разность.",
+        "en": "In subtraction: minuend - subtrahend = difference."
+      },
+      "explanation": {
+        "uz": "Kamayuvchi — ayirish komponenti. Yigʻindi va qoʻshiluvchi qoʻshishga tegishli.",
+        "ru": "Уменьшаемое — компонент вычитания. Сумма и слагаемое относятся к сложению.",
+        "en": "The minuend belongs to subtraction. Sum and addend belong to addition."
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            { "uz": "Litr", "ru": "Литр", "en": "Litre" },
+            { "uz": "Kilogramm", "ru": "Килограмм", "en": "Kilogram" },
+            { "uz": "Santimetr", "ru": "Сантиметр", "en": "Centimetre" }
+          ],
+          "answerIndex": 0
+        }
+      },
+      "prompt": {
+        "uz": "Oʻzingni tekshir! Hajmni oʻlchash birligi qaysi?",
+        "ru": "Проверь себя! Какая единица измеряет объём?",
+        "en": "Check yourself! Which unit measures volume?"
+      },
+      "hint": {
+        "uz": "Suv va sutni nimada oʻlchaymiz?",
+        "ru": "В чём измеряем воду и молоко?",
+        "en": "What do we measure water and milk in?"
+      },
+      "explanation": {
+        "uz": "Hajm litrda oʻlchanadi. Kilogramm — ogʻirlik, santimetr — uzunlik birligi.",
+        "ru": "Объём измеряется в литрах. Килограмм — масса, сантиметр — длина.",
+        "en": "Volume is measured in litres. Kilograms measure mass, centimetres measure length."
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "x + 5 = 20",
+          "answer": 15,
+          "choices": [15, 25, 14],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Oʻzingni tekshir! Tenglamani yech: x + 5 = 20.",
+        "ru": "Проверь себя! Реши уравнение: x + 5 = 20.",
+        "en": "Check yourself! Solve the equation: x + 5 = 20."
+      },
+      "hint": {
+        "uz": "x ni topish uchun 20 dan 5 ni ayir: x = 20 - 5.",
+        "ru": "Чтобы найти x, вычти 5 из 20: x = 20 - 5.",
+        "en": "To find x, subtract 5 from 20: x = 20 - 5."
+      },
+      "explanation": {
+        "uz": "x = 20 - 5 = 15.",
+        "ru": "x = 20 - 5 = 15.",
+        "en": "x = 20 - 5 = 15."
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "widget": {
+        "type": "equation_solve",
+        "props": {
+          "equation": "x - 5 = 10",
+          "answer": 15,
+          "choices": [15, 5, 16],
+          "unknown": "x"
+        }
+      },
+      "prompt": {
+        "uz": "Oʻzingni tekshir! x - 5 = 10 tenglamada x qoʻshish bilan topiladi: x = 10 + 5. Yech!",
+        "ru": "Проверь себя! В уравнении x - 5 = 10 неизвестное находим сложением: x = 10 + 5. Реши!",
+        "en": "Check yourself! In x - 5 = 10 we find x by adding: x = 10 + 5. Solve it!"
+      },
+      "hint": {
+        "uz": "x ni topish uchun 10 ga 5 ni qoʻsh.",
+        "ru": "Чтобы найти x, прибавь 5 к 10.",
+        "en": "To find x, add 5 to 10."
+      },
+      "explanation": {
+        "uz": "x = 10 + 5 = 15. Tekshir: 15 - 5 = 10.",
+        "ru": "x = 10 + 5 = 15. Проверь: 15 - 5 = 10.",
+        "en": "x = 10 + 5 = 15. Check: 15 - 5 = 10."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "sequence",
+      "visualHint": "tap_finger",
+      "prompt": {
+        "uz": "Qonuniyatni aniqla va zanjirni davom ettir: keyin qaysi shakl keladi?",
+        "ru": "Определи закономерность и продолжи цепочку: какая фигура следующая?",
+        "en": "Find the pattern and continue the chain: which shape comes next?"
+      },
+      "sequence": [
+        { "kind": "circle", "color": "orange" },
+        { "kind": "triangle", "color": "blue" },
+        { "kind": "circle", "color": "green" },
+        { "kind": "triangle", "color": "orange" },
+        { "kind": "circle", "color": "blue" }
+      ],
+      "options": [
+        { "id": "tg", "art": { "kind": "triangle", "color": "green" } },
+        { "id": "co", "art": { "kind": "circle", "color": "orange" } },
+        { "id": "tb", "art": { "kind": "triangle", "color": "blue" } }
+      ],
+      "answer": ["tg"],
+      "hint": {
+        "uz": "Shakllar: doira, uchburchak, doira… Ranglar: toʻq sariq, koʻk, yashil takrorlanadi.",
+        "ru": "Фигуры: круг, треугольник, круг… Цвета: оранжевый, синий, зелёный повторяются.",
+        "en": "Shapes: circle, triangle, circle… Colours: orange, blue, green repeat."
+      },
+      "explanation": {
+        "uz": "Zanjirda uchburchak keladi, rangi esa yashil — qonuniyat shunday!",
+        "ru": "Дальше идёт треугольник, и по закономерности он зелёный!",
+        "en": "Next comes a triangle, and by the pattern it is green!"
+      }
+    }
+  ]
+}

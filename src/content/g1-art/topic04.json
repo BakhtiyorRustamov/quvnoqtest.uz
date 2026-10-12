@@ -1,0 +1,21 @@
+{
+  "topicId": "g1-art-04",
+  "subjectKey": "g1-art",
+  "emojis": "",
+  "hideAudio": true,
+  "title": { "uz": "Kuzgi yaproqlarning toʻkilishi", "ru": "Листопад", "en": "Falling autumn leaves" },
+  "recall": {
+    "uz": "Kuzda shamol esganda barglar shoxlardan sekin toʻkiladi. Keling, havoda uchib tushayotgan yaproqlarni chizamiz.",
+    "ru": "Осенью, когда дует ветер, листья медленно опадают с веток. Давай нарисуем листья, летящие в воздухе.",
+    "en": "In autumn, when the wind blows, leaves slowly fall from the branches. Let's draw leaves flying in the air."
+  },
+  "items": [
+    {
+      "id": "q1", "type": "widget", "visualHint": "none",
+      "prompt": { "uz": "Namunaga qarab, toʻkilayotgan yaproqlarni chiz.", "ru": "Глядя на образец, нарисуй падающие листья.", "en": "Looking at the model, draw the falling leaves." },
+      "hint": { "uz": "Bir nechta barg chiz va boʻya.", "ru": "Нарисуй несколько листьев и раскрась.", "en": "Draw a few leaves and colour them." },
+      "explanation": { "uz": "Ajoyib! Xuddi kuzdagidek.", "ru": "Отлично! Как настоящий листопад.", "en": "Great! Just like real autumn." },
+      "widget": { "type": "free_draw", "props": { "example": "leaf" } }
+    }
+  ]
+}

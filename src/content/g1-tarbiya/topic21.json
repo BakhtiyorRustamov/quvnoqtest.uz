@@ -1,0 +1,252 @@
+{
+  "topicId": "g1-tarbiya-21",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🎓⭐📘💛",
+  "title": {
+    "uz": "Yakuniy dars",
+    "ru": "Итоговый урок",
+    "en": "Final lesson"
+  },
+  "recall": {
+    "uz": "Bu — yakuniy dars. Yil davomida odob va fazilatlarni oʻrgandik: Vatanni sevish, maktabni asrash, doʻstlik, ishonch, halollik, mehmondorchilik va bagʻrikenglik. «Tarbiya» — insonni goʻzal xulqqa oʻrgatadi. Shoir aytganidek: «Odob koʻrinar salom-alikda».",
+    "ru": "Это — итоговый урок. За год мы изучили вежливость и качества: любовь к Родине, бережное отношение к школе, дружбу, доверие, честность, гостеприимство и толерантность. «Тарбия» учит человека прекрасному поведению. Как сказал поэт: «Воспитанность видна в приветствии».",
+    "en": "This is the final lesson. Through the year we learned manners and qualities: love of the homeland, caring for school, friendship, trust, honesty, hospitality and tolerance. \"Tarbiya\" teaches a person beautiful conduct. As the poet said: \"Good manners show in a greeting.\""
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Tarbiya» insonni nimaga oʻrgatadi?",
+        "ru": "Чему «тарбия» учит человека?",
+        "en": "What does \"tarbiya\" teach a person?"
+      },
+      "hint": {
+        "uz": "Goʻzal xulq va odobga.",
+        "ru": "Прекрасному поведению и вежливости.",
+        "en": "Beautiful conduct and good manners."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Tarbiya goʻzal xulqqa oʻrgatadi.",
+        "ru": "Верно! Тарбия учит прекрасному поведению.",
+        "en": "Right! Tarbiya teaches beautiful conduct."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "goʻzal xulq va odobga",
+              "ru": "прекрасному поведению и вежливости",
+              "en": "beautiful conduct and manners"
+            },
+            {
+              "uz": "faqat oʻyin oʻynashga",
+              "ru": "только играть",
+              "en": "only to play games"
+            },
+            {
+              "uz": "hech nimaga",
+              "ru": "ничему",
+              "en": "nothing"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Xislatlarni ajrat: yaxshi yoki yomon!",
+        "ru": "Разложи качества: хорошее или плохое!",
+        "en": "Sort the traits: good or bad!"
+      },
+      "hint": {
+        "uz": "Mehr, halollik — yaxshi; yolgʻon, qoʻpollik — yomon.",
+        "ru": "Доброта, честность — хорошо; ложь, грубость — плохо.",
+        "en": "Kindness, honesty — good; lying, rudeness — bad."
+      },
+      "explanation": {
+        "uz": "Barakalla! Yaxshi xislatlarni tanladik.",
+        "ru": "Молодец! Мы выбрали добрые качества.",
+        "en": "Great! We chose the good traits."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "ok",
+              "label": {
+                "uz": "Yaxshi",
+                "ru": "Хорошее",
+                "en": "Good"
+              }
+            },
+            {
+              "id": "no",
+              "label": {
+                "uz": "Yomon",
+                "ru": "Плохое",
+                "en": "Bad"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "💛",
+              "label": {
+                "uz": "mehr",
+                "ru": "доброта",
+                "en": "kindness"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "💬",
+              "label": {
+                "uz": "halollik",
+                "ru": "честность",
+                "en": "honesty"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🙏",
+              "label": {
+                "uz": "hurmat",
+                "ru": "уважение",
+                "en": "respect"
+              },
+              "bin": "ok"
+            },
+            {
+              "emoji": "🙈",
+              "label": {
+                "uz": "yolgʻon",
+                "ru": "ложь",
+                "en": "lying"
+              },
+              "bin": "no"
+            },
+            {
+              "emoji": "😠",
+              "label": {
+                "uz": "qoʻpollik",
+                "ru": "грубость",
+                "en": "rudeness"
+              },
+              "bin": "no"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaxshi xislatlar orasidan ortiqchasini top!",
+        "ru": "Найди лишнее среди добрых качеств!",
+        "en": "Find the odd one out among the good traits!"
+      },
+      "hint": {
+        "uz": "Qaysi biri yaxshi emas?",
+        "ru": "Что не является хорошим?",
+        "en": "Which one is not good?"
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! «Dangasalik» — yaxshi xislat emas.",
+        "ru": "Верно! «Лень» — не доброе качество.",
+        "en": "Right! \"Laziness\" is not a good trait."
+      },
+      "widget": {
+        "type": "odd_one_out",
+        "props": {
+          "clue": {
+            "uz": "yaxshi xislatlar",
+            "ru": "добрые качества",
+            "en": "good traits"
+          },
+          "tiles": [
+            {
+              "text": "halollik"
+            },
+            {
+              "text": "mehr"
+            },
+            {
+              "text": "hurmat"
+            },
+            {
+              "text": "dangasalik",
+              "odd": true
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Shoir aytadi: odob salom-alikda koʻrinadi.",
+        "ru": "Верно? Поэт говорит: воспитанность видна в приветствии.",
+        "en": "Is this right? The poet says: good manners show in a greeting."
+      },
+      "hint": {
+        "uz": "«Odob koʻrinar salom-alikda».",
+        "ru": "«Воспитанность видна в приветствии».",
+        "en": "\"Manners show in a greeting.\""
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Odob salomlashishdan boshlanadi.",
+        "ru": "Верно! Воспитанность начинается с приветствия.",
+        "en": "Right! Good manners begin with a greeting."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "👋",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Darslikdagi eng yoqqan mavzung qaysi va nega?",
+        "ru": "Какая тема учебника понравилась тебе больше всего и почему?",
+        "en": "Which topic in the book did you like most, and why?"
+      },
+      "hint": {
+        "uz": "Vatan, doʻstlik, halollik, mehmondorchilik — qaysi biri?",
+        "ru": "Родина, дружба, честность, гостеприимство — какая?",
+        "en": "Homeland, friendship, honesty, hospitality — which one?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen odobli va tarbiyali bolasan.",
+        "ru": "Отлично! Ты вежливый и воспитанный.",
+        "en": "Great! You are a polite and well-mannered child."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Menga «Men yashaydigan Oʻzbekiston» mavzusi eng yoqdi, chunki Vatanimni sevaman.",
+            "ru": "Мне больше всего понравилась тема «Узбекистан, где я живу», ведь я люблю свою Родину.",
+            "en": "I liked the topic \"The Uzbekistan I live in\" most, because I love my homeland."
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "topicId": "g1-informatika-20",
+  "subjectKey": "g1-informatika",
+  "emojis": "🌙⭐📖🌳",
+  "title": {
+    "uz": "Uzoq – yaqin",
+    "ru": "Далеко – близко",
+    "en": "Far – near"
+  },
+  "recall": {
+    "uz": "Buyumlar bizga yaqin yoki uzoq boʻladi. Yaqindagi narsa katta, uzoqdagi narsa kichik koʻrinadi. Oy va yulduzlar bizdan juda uzoqda.",
+    "ru": "Предметы бывают близко или далеко. Близкое кажется большим, далёкое — маленьким. Луна и звёзды очень далеко.",
+    "en": "Things can be near or far. Near things look big, far things look small. The Moon and stars are very far."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uzoqdagi narsa qanday koʻrinadi?",
+        "ru": "Каким кажется далёкое?",
+        "en": "How does a far thing look?"
+      },
+      "hint": {
+        "uz": "Katta yoki kichik?",
+        "ru": "Большим или маленьким?",
+        "en": "Big or small?"
+      },
+      "explanation": {
+        "uz": "Uzoqdagi narsa kichik koʻrinadi.",
+        "ru": "Далёкое кажется маленьким.",
+        "en": "Far things look small."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "kichik",
+              "ru": "маленьким",
+              "en": "small"
+            },
+            {
+              "uz": "katta",
+              "ru": "большим",
+              "en": "big"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaqindagi narsa qanday koʻrinadi?",
+        "ru": "Каким кажется близкое?",
+        "en": "How does a near thing look?"
+      },
+      "hint": {
+        "uz": "Katta yoki kichik?",
+        "ru": "Большим или маленьким?",
+        "en": "Big or small?"
+      },
+      "explanation": {
+        "uz": "Yaqindagi narsa katta koʻrinadi.",
+        "ru": "Близкое кажется большим.",
+        "en": "Near things look big."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "katta",
+              "ru": "большим",
+              "en": "big"
+            },
+            {
+              "uz": "kichik",
+              "ru": "маленьким",
+              "en": "small"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Quyosh bizdan juda uzoqda.",
+        "ru": "Солнце очень далеко от нас.",
+        "en": "The Sun is very far from us."
+      },
+      "hint": {
+        "uz": "Osmonda, juda baland.",
+        "ru": "В небе, очень высоко.",
+        "en": "In the sky, very high."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "☀️",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Uzoqdagi togʻ qanday koʻrinadi?",
+        "ru": "Каким кажется далёкая гора?",
+        "en": "How does a far mountain look?"
+      },
+      "hint": {
+        "uz": "Uzoqda kichrayadi.",
+        "ru": "Вдали уменьшается.",
+        "en": "It shrinks in the distance."
+      },
+      "explanation": {
+        "uz": "Uzoqdagi togʻ kichik koʻrinadi.",
+        "ru": "Далёкая гора кажется маленькой.",
+        "en": "A far mountain looks small."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "kichik",
+              "ru": "маленькой",
+              "en": "small"
+            },
+            {
+              "uz": "juda katta",
+              "ru": "очень большой",
+              "en": "very big"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Harflardan soʻz tuz! (🌳)",
+        "ru": "Составь слово! (🌳)",
+        "en": "Build the word! (🌳)"
+      },
+      "hint": {
+        "uz": "D-A-R-A-X-T harflaridan.",
+        "ru": "Из букв D-A-R-A-X-T.",
+        "en": "From D-A-R-A-X-T."
+      },
+      "explanation": {
+        "uz": "Barakalla! «daraxt» soʻzini tuzding.",
+        "ru": "Молодец! «daraxt».",
+        "en": "Great! You built “daraxt”."
+      },
+      "widget": {
+        "type": "build_word",
+        "props": {
+          "emoji": "🌳",
+          "word": "daraxt",
+          "label": {
+            "uz": "daraxt",
+            "ru": "дерево",
+            "en": "tree"
+          },
+          "letters": [
+            "d",
+            "a",
+            "r",
+            "a",
+            "x",
+            "t"
+          ]
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Narsalarni ajrat: yaqin va uzoq!",
+        "ru": "Раздели: близкое и далёкое!",
+        "en": "Sort them: near and far!"
+      },
+      "hint": {
+        "uz": "Qoʻldagimi, osmondami?",
+        "ru": "В руке или в небе?",
+        "en": "In hand or in the sky?"
+      },
+      "explanation": {
+        "uz": "Barakalla! Yaqin va uzoqqa ajratding.",
+        "ru": "Молодец! Разделил.",
+        "en": "Great! Sorted near and far."
+      },
+      "widget": {
+        "type": "sort_bins",
+        "props": {
+          "bins": [
+            {
+              "id": "y",
+              "label": {
+                "uz": "Yaqin",
+                "ru": "Близко",
+                "en": "Near"
+              }
+            },
+            {
+              "id": "u",
+              "label": {
+                "uz": "Uzoq",
+                "ru": "Далеко",
+                "en": "Far"
+              }
+            }
+          ],
+          "items": [
+            {
+              "emoji": "📖",
+              "label": {
+                "uz": "kitob",
+                "ru": "книга",
+                "en": "book"
+              },
+              "bin": "y"
+            },
+            {
+              "emoji": "✏️",
+              "label": {
+                "uz": "qalam",
+                "ru": "карандаш",
+                "en": "pencil"
+              },
+              "bin": "y"
+            },
+            {
+              "emoji": "🌙",
+              "label": {
+                "uz": "oy",
+                "ru": "луна",
+                "en": "moon"
+              },
+              "bin": "u"
+            },
+            {
+              "emoji": "⭐",
+              "label": {
+                "uz": "yulduz",
+                "ru": "звезда",
+                "en": "star"
+              },
+              "bin": "u"
+            },
+            {
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              },
+              "bin": "u"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q7",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Qaysi biri bizga yaqinroq — kitob yoki Oy?",
+        "ru": "Что ближе — книга или Луна?",
+        "en": "Which is nearer — a book or the Moon?"
+      },
+      "hint": {
+        "uz": "Qoʻlda ushlab boʻladigani.",
+        "ru": "То, что в руках.",
+        "en": "The one you can hold."
+      },
+      "explanation": {
+        "uz": "Kitob bizga yaqinroq.",
+        "ru": "Книга ближе.",
+        "en": "A book is nearer."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "kitob",
+              "ru": "книга",
+              "en": "book"
+            },
+            {
+              "uz": "Oy",
+              "ru": "Луна",
+              "en": "the Moon"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q8",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Yaqindagi narsa katta, uzoqdagi kichik koʻrinadi.",
+        "ru": "Близкое — большое, далёкое — маленькое.",
+        "en": "Near looks big, far looks small."
+      },
+      "hint": {
+        "uz": "Masofaga qarab oʻzgaradi.",
+        "ru": "Зависит от расстояния.",
+        "en": "It depends on distance."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri!",
+        "ru": "Верно!",
+        "en": "True!"
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🌙",
+          "answer": true
+        }
+      }
+    },
+    {
+      "id": "q9",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Bizdan uzoqdagi narsalarni belgila!",
+        "ru": "Отметь далёкие предметы!",
+        "en": "Tap the things that are far away!"
+      },
+      "hint": {
+        "uz": "Osmonda, juda uzoqda.",
+        "ru": "В небе, очень далеко.",
+        "en": "In the sky, very far."
+      },
+      "explanation": {
+        "uz": "Ular bizdan juda uzoqda.",
+        "ru": "Они очень далеко.",
+        "en": "They are very far from us."
+      },
+      "widget": {
+        "type": "pick_many",
+        "props": {
+          "options": [
+            {
+              "id": "c0",
+              "emoji": "🌙",
+              "label": {
+                "uz": "Oy",
+                "ru": "Луна",
+                "en": "Moon"
+              },
+              "correct": true
+            },
+            {
+              "id": "c1",
+              "emoji": "⭐",
+              "label": {
+                "uz": "yulduz",
+                "ru": "звезда",
+                "en": "star"
+              },
+              "correct": true
+            },
+            {
+              "id": "c2",
+              "emoji": "☀️",
+              "label": {
+                "uz": "quyosh",
+                "ru": "солнце",
+                "en": "sun"
+              },
+              "correct": true
+            },
+            {
+              "id": "d0",
+              "emoji": "📖",
+              "label": {
+                "uz": "qoʻldagi kitob",
+                "ru": "книга в руке",
+                "en": "book in hand"
+              }
+            },
+            {
+              "id": "d1",
+              "emoji": "✏️",
+              "label": {
+                "uz": "partadagi qalam",
+                "ru": "карандаш на парте",
+                "en": "pencil on desk"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q10",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "«Uzoq» va «yaqin» — bu nima?",
+        "ru": "«Далеко» и «близко» — что это?",
+        "en": "'Far' and 'near' — what are these?"
+      },
+      "hint": {
+        "uz": "Qanchalik olisligini bildiradi.",
+        "ru": "Показывают расстояние.",
+        "en": "They show distance."
+      },
+      "explanation": {
+        "uz": "Ular masofani bildiradi.",
+        "ru": "Указывают расстояние.",
+        "en": "They show distance."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "masofa",
+              "ru": "расстояние",
+              "en": "distance"
+            },
+            {
+              "uz": "rang",
+              "ru": "цвет",
+              "en": "colour"
+            },
+            {
+              "uz": "tovush",
+              "ru": "звук",
+              "en": "sound"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    }
+  ]
+}

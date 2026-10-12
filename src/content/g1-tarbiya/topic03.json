@@ -1,0 +1,235 @@
+{
+  "topicId": "g1-tarbiya-03",
+  "subjectKey": "g1-tarbiya",
+  "emojis": "🏫🏀🎭📚",
+  "title": {
+    "uz": "Maktabga sayohat",
+    "ru": "Путешествие по школе",
+    "en": "A tour of the school"
+  },
+  "recall": {
+    "uz": "Maktabimizda turli xonalar bor. Sport zalida jismonan chiniqamiz. Ijod zalida yigʻilish va bayramlar oʻtkaziladi — bolalar qoʻshiq kuylaydi, raqsga tushadi va qobiliyatini koʻrsatadi. Har bir xonada oʻzini odob bilan tutish kerak.",
+    "ru": "В нашей школе разные помещения. В спортзале мы закаляемся физически. В зале творчества проходят собрания и праздники — дети поют, танцуют и показывают свои способности. В каждом зале нужно вести себя воспитанно.",
+    "en": "Our school has different rooms. In the gym we get fit. In the arts hall we hold gatherings and celebrations — children sing, dance and show their talents. In every room we should behave politely."
+  },
+  "items": [
+    {
+      "id": "q1",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sport zalida biz asosan nima qilamiz?",
+        "ru": "Что мы в основном делаем в спортзале?",
+        "en": "What do we mainly do in the gym?"
+      },
+      "hint": {
+        "uz": "Sogʻlom va kuchli boʻlamiz.",
+        "ru": "Становимся здоровыми и сильными.",
+        "en": "We become healthy and strong."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Jismonan chiniqamiz.",
+        "ru": "Верно! Мы физически закаляемся.",
+        "en": "Right! We get physically fit."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "jismonan chiniqamiz",
+              "ru": "закаляемся физически",
+              "en": "we get physically fit"
+            },
+            {
+              "uz": "ovqat pishiramiz",
+              "ru": "готовим еду",
+              "en": "we cook food"
+            },
+            {
+              "uz": "uxlaymiz",
+              "ru": "спим",
+              "en": "we sleep"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q2",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Ijod zalida bolalar nima qiladi?",
+        "ru": "Что дети делают в зале творчества?",
+        "en": "What do children do in the arts hall?"
+      },
+      "hint": {
+        "uz": "Sahnada qobiliyatini koʻrsatadi.",
+        "ru": "Показывают на сцене свои таланты.",
+        "en": "They show their talents on stage."
+      },
+      "explanation": {
+        "uz": "Toʻgʻri! Qoʻshiq kuylaydi va raqsga tushadi.",
+        "ru": "Верно! Поют и танцуют.",
+        "en": "Right! They sing and dance."
+      },
+      "widget": {
+        "type": "mcq",
+        "props": {
+          "choices": [
+            {
+              "uz": "qoʻshiq kuylaydi va raqsga tushadi",
+              "ru": "поют и танцуют",
+              "en": "they sing and dance"
+            },
+            {
+              "uz": "kir yuvadi",
+              "ru": "стирают бельё",
+              "en": "they wash clothes"
+            },
+            {
+              "uz": "mashina haydaydi",
+              "ru": "водят машину",
+              "en": "they drive a car"
+            }
+          ],
+          "answerIndex": 0
+        }
+      }
+    },
+    {
+      "id": "q3",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Har bir xonani oʻz mashgʻulotiga ula!",
+        "ru": "Соедини каждое помещение с его занятием!",
+        "en": "Match each room to its activity!"
+      },
+      "hint": {
+        "uz": "Sport zali — sport, ijod zali — sahna, sinf — dars.",
+        "ru": "Спортзал — спорт, зал творчества — сцена, класс — урок.",
+        "en": "Gym — sport, arts hall — stage, classroom — lesson."
+      },
+      "explanation": {
+        "uz": "Barakalla! Har xona oʻz ishiga mos.",
+        "ru": "Молодец! Каждое помещение для своего дела.",
+        "en": "Great! Each room fits its purpose."
+      },
+      "widget": {
+        "type": "match_columns",
+        "props": {
+          "pairs": [
+            {
+              "left": {
+                "label": {
+                  "uz": "sport",
+                  "ru": "спорт",
+                  "en": "sport"
+                }
+              },
+              "right": {
+                "emoji": "🏀"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "sahna",
+                  "ru": "сцена",
+                  "en": "stage"
+                }
+              },
+              "right": {
+                "emoji": "🎭"
+              }
+            },
+            {
+              "left": {
+                "label": {
+                  "uz": "dars",
+                  "ru": "урок",
+                  "en": "lesson"
+                }
+              },
+              "right": {
+                "emoji": "📚"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Toʻgʻrimi? Ijod zalida baqirib, boshqalarga xalaqit berish kerak.",
+        "ru": "Верно? В зале творчества нужно кричать и мешать другим.",
+        "en": "Is this right? In the arts hall we should shout and disturb others."
+      },
+      "hint": {
+        "uz": "Odob bilan tinglaymiz.",
+        "ru": "Слушаем воспитанно.",
+        "en": "We listen politely."
+      },
+      "explanation": {
+        "uz": "Notoʻgʻri! Sokin va odobli boʻlamiz.",
+        "ru": "Неверно! Нужно быть тихим и воспитанным.",
+        "en": "False! We should be quiet and polite."
+      },
+      "widget": {
+        "type": "true_false",
+        "props": {
+          "emoji": "🤫",
+          "answer": false
+        }
+      }
+    },
+    {
+      "id": "q5",
+      "type": "widget",
+      "visualHint": "none",
+      "prompt": {
+        "uz": "Sizga maktabning qaysi xonasi koʻproq yoqadi va nega?",
+        "ru": "Какое помещение школы тебе нравится больше и почему?",
+        "en": "Which room in your school do you like most, and why?"
+      },
+      "hint": {
+        "uz": "Sport zali, ijod zali, kutubxona — nima uchun yoqadi?",
+        "ru": "Спортзал, зал творчества, библиотека — почему нравится?",
+        "en": "Gym, arts hall, library — why do you like it?"
+      },
+      "explanation": {
+        "uz": "Ajoyib! Sen sababini chiroyli tushuntirding.",
+        "ru": "Отлично! Ты хорошо объяснил причину.",
+        "en": "Great! You explained your reason nicely."
+      },
+      "widget": {
+        "type": "open_response",
+        "props": {
+          "sample": {
+            "uz": "Menga ijod zali koʻproq yoqadi, chunki u yerda qoʻshiq aytish va raqsga tushish qiziqarli.",
+            "ru": "Мне больше нравится зал творчества, ведь там интересно петь и танцевать.",
+            "en": "I like the arts hall most, because singing and dancing there is fun."
+          },
+          "placeholder": {
+            "uz": "Menga ... zali yoqadi, chunki ...",
+            "ru": "Мне нравится ..., потому что ...",
+            "en": "I like the ..., because ..."
+          },
+          "starters": [
+            {
+              "uz": "Menga ... zali yoqadi, chunki",
+              "ru": "Мне нравится ..., потому что",
+              "en": "I like the ..., because"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
