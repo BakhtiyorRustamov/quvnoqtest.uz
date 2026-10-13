@@ -7,32 +7,30 @@ import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import { pick } from '@/lib/i18n-config';
 import { getG11Subject, g11SubjectHref } from '@/content/g11/subjects';
-import { buildG11Diagnostic, G11_DIAG_COUNT, G11_DIAG_MINUTES, G11_DIAG_INTRO, G11_DIAG_TITLE } from '@/content/g11/diagnostic';
+import { buildG11Diagnostic, G11_DIAG_COUNT, G11_DIAG_MINUTES, type G11Question } from '@/content/g11/diagnostic';
+import ReviewChat from './ReviewChat';
 import QuestionSketchpad from './QuestionSketchpad';
 
-type Phase = 'intro' | 'quiz' | 'done';
+type Phase = 'quiz' | 'done';
 
 const S: Record<string, Record<string, string>> = {
   uz: {
     start: 'Testni boshlash', minutes: 'daqiqa', questions: 'ta savol', question: 'Savol', of: '/',
     finish: 'Yakunlash', next: 'Keyingi', back: 'Orqaga', yourScore: 'Sizning natijangiz', timeUp: 'Vaqt tugadi!',
     review: 'Savollar tahlili', yourAnswer: 'Sizning javobingiz', correct: 'Toʻgʻri javob', noAnswer: 'Javob berilmadi',
-    retry: 'Qaytadan ishlash', home: 'Fan sahifasi', notebook: 'Qoralama daftar',
-    notebookHint: 'Qalamni tanlang va shu yerda (yoki sahifaning istalgan joyida) yozing. Har bir savolning yozuvlari alohida saqlanadi.'
+    retry: 'Qaytadan ishlash', home: 'Fan sahifasi', explanation: 'Tushuntirish', more: 'Batafsil', less: 'Yopish'
   },
   ru: {
     start: 'Начать тест', minutes: 'минут', questions: 'вопросов', question: 'Вопрос', of: 'из',
     finish: 'Завершить', next: 'Далее', back: 'Назад', yourScore: 'Ваш результат', timeUp: 'Время вышло!',
     review: 'Разбор вопросов', yourAnswer: 'Ваш ответ', correct: 'Верный ответ', noAnswer: 'Нет ответа',
-    retry: 'Пройти заново', home: 'Страница предмета', notebook: 'Черновик',
-    notebookHint: 'Выберите ручку и пишите здесь (или в любом месте страницы). Записи каждого вопроса хранятся отдельно.'
+    retry: 'Пройти заново', home: 'Страница предмета', explanation: 'Объяснение', more: 'Подробнее', less: 'Свернуть'
   },
   en: {
     start: 'Start the test', minutes: 'minutes', questions: 'questions', question: 'Question', of: 'of',
     finish: 'Finish', next: 'Next', back: 'Back', yourScore: 'Your score', timeUp: "Time's up!",
     review: 'Question review', yourAnswer: 'Your answer', correct: 'Correct answer', noAnswer: 'No answer',
-    retry: 'Try again', home: 'Subject page', notebook: 'Scratch notebook',
-    notebookHint: 'Pick the pen and write here (or anywhere on the page). Each question keeps its own notes.'
+    retry: 'Try again', home: 'Subject page', explanation: 'Explanation', more: 'Details', less: 'Close'
   }
 };
 
@@ -56,12 +54,13 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
   const count = G11_DIAG_COUNT;
   const minutes = G11_DIAG_MINUTES;
 
-  const [phase, setPhase] = useState<Phase>('intro');
+  const [phase, setPhase] = useState<Phase>('quiz');
   const [questions] = useState(() => buildG11Diagnostic(slug));
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState<(number | null)[]>(() => Array(count).fill(null));
   const [secondsLeft, setSecondsLeft] = useState(minutes * 60);
   const [attempt, setAttempt] = useState(0); // remounts the sketchpad (fresh drawings) on retry
+  const [open, setOpen] = useState<number | null>(null); // expanded review item
   const pageRef = useRef<HTMLElement | null>(null);
 
   const finish = useCallback(() => setPhase('done'), []);
@@ -92,44 +91,11 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     setIdx(0);
     setSecondsLeft(minutes * 60);
     setAttempt((a) => a + 1);
+    setOpen(null);
     setPhase('quiz');
   }
 
   const subjectName = subject ? pick(subject.name, locale) : '';
-  const accent = subject?.color ?? '#1FA7E0';
-
-  /* --------------------------- INTRO --------------------------- */
-  if (phase === 'intro') {
-    return (
-      <main className="min-h-screen pb-16">
-        <BackBar backHref={backHref} showLang />
-        <div className="max-w-2xl mx-auto px-4">
-          <div className="text-center mt-6">
-            <div className="inline-block rounded-full px-4 py-1.5 text-sm font-extrabold text-white" style={{ background: accent }}>
-              11 · {subjectName}
-            </div>
-            <h1 className="font-black text-ink text-[clamp(24px,6vw,38px)] mt-3">{pick(G11_DIAG_TITLE, locale)}</h1>
-          </div>
-          <div className="card p-5 mt-6 text-[15.5px] leading-relaxed font-semibold text-ink/80">{pick(G11_DIAG_INTRO, locale)}</div>
-          <div className="flex justify-center gap-3 mt-5">
-            <div className="card px-5 py-3 text-center">
-              <div className="text-3xl font-black text-brand-orange">{count}</div>
-              <div className="text-xs font-bold text-ink/50">{t.questions}</div>
-            </div>
-            <div className="card px-5 py-3 text-center">
-              <div className="text-3xl font-black text-brand-blue">{minutes}</div>
-              <div className="text-xs font-bold text-ink/50">{t.minutes}</div>
-            </div>
-          </div>
-          <div className="mt-7 text-center">
-            <button onClick={() => setPhase('quiz')} className="btn-primary text-2xl px-12 py-5 inline-flex">
-              ⏱️ {t.start}
-            </button>
-          </div>
-        </div>
-      </main>
-    );
-  }
 
   /* --------------------------- QUIZ --------------------------- */
   if (phase === 'quiz') {
@@ -237,9 +203,6 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
 
           {/* scratch notebook (spiral + ruled lines) — draw on it with the pen */}
           <section className="mt-8">
-            <h2 className="font-black text-ink/70 text-lg mb-2">
-              📒 {t.notebook} <span className="text-ink/40 text-sm font-extrabold">· {t.question} {idx + 1}</span>
-            </h2>
             <div className="relative rounded-2xl border border-ink/10 shadow-card overflow-hidden">
               <div
                 aria-hidden
@@ -251,7 +214,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
                 }}
               />
               <div className="notebook relative pl-[56px] pr-4 pt-[6px] min-h-[min(60vh,520px)]">
-                <p className="text-[13px] font-bold leading-[var(--line-h)] text-ink/35 select-none">{t.notebookHint}</p>
+                <PencilDoodle />
               </div>
             </div>
           </section>
@@ -271,9 +234,8 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     <main className="min-h-screen pb-16">
       <BackBar backHref={backHref} showLang />
       <div className="max-w-2xl mx-auto px-4 text-center">
-        <div className="text-6xl mt-4">{score >= count * 0.8 ? '🏆' : score >= count * 0.5 ? '🎉' : '💪'}</div>
-        {timedOut && <p className="font-black text-error mt-1">{t.timeUp}</p>}
-        <div className="inline-flex items-baseline gap-2 mt-3 px-8 py-4 rounded-3xl bg-white shadow-card border border-ink/10">
+        {timedOut && <p className="font-black text-error mt-4">{t.timeUp}</p>}
+        <div className="inline-flex items-baseline gap-2 mt-6 px-8 py-4 rounded-3xl bg-white shadow-card border border-ink/10">
           <span className="text-sm font-extrabold text-ink/50">{t.yourScore}</span>
           <span className="text-4xl font-black text-brand-orange">
             {score}/{count}
@@ -291,39 +253,146 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
 
         <h2 className="font-black text-ink text-xl mt-10 mb-3 text-left">{t.review}</h2>
         <ol className="space-y-2.5 text-left">
-          {questions.map((q, i) => {
-            const ok = correctFlags[i];
-            const chosen = answers[i];
-            return (
-              <li key={q.id} className={`card p-3.5 border-l-8 ${ok ? 'border-l-brand-green' : 'border-l-error'}`}>
-                <div className="flex gap-3 items-start">
-                  <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center text-white font-black ${ok ? 'bg-brand-green' : 'bg-error'}`}>
-                    {ok ? '✓' : '✗'}
-                  </span>
-                  <div className="min-w-0">
-                    <div className="font-extrabold text-ink leading-snug whitespace-pre-line">
-                      {i + 1}. {pick(q.prompt, locale)}
-                    </div>
-                    <div className="text-[14px] font-semibold mt-1 leading-snug">
-                      <span className="text-ink/55">{t.yourAnswer}: </span>
-                      <span className={ok ? 'text-brand-green' : 'text-error'}>
-                        {chosen === null ? t.noAnswer : pick(q.choices[chosen], locale)}
-                      </span>
-                      {!ok && (
-                        <>
-                          <span className="text-ink/40"> · </span>
-                          <span className="text-ink/55">{t.correct}: </span>
-                          <span className="text-brand-green">{pick(q.choices[q.answerIndex], locale)}</span>
-                        </>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </li>
-            );
-          })}
+          {questions.map((q, i) => (
+            <ReviewItem
+              key={q.id}
+              n={i + 1}
+              q={q}
+              chosen={answers[i]}
+              open={open === i}
+              onToggle={() => setOpen(open === i ? null : i)}
+              subjectName={subjectName}
+              locale={locale}
+              t={t}
+            />
+          ))}
         </ol>
       </div>
     </main>
+  );
+}
+
+/* ------------------------------ review item ------------------------------ */
+
+function ReviewItem({
+  n,
+  q,
+  chosen,
+  open,
+  onToggle,
+  subjectName,
+  locale,
+  t
+}: {
+  n: number;
+  q: G11Question;
+  chosen: number | null;
+  open: boolean;
+  onToggle: () => void;
+  subjectName: string;
+  locale: string;
+  t: Record<string, string>;
+}) {
+  const ok = chosen === q.answerIndex;
+  const letter = (i: number) => String.fromCharCode(65 + i);
+  // context the AI tutor gets with the student's first question
+  const context = [
+    `Fan: ${subjectName}. Savol ${n}: ${pick(q.prompt, locale)}`,
+    `Variantlar: ${q.choices.map((c, i) => `${letter(i)}) ${pick(c, locale)}`).join('; ')}`,
+    `Oʻquvchi javobi: ${chosen === null ? 'javob bermagan' : `${letter(chosen)}) ${pick(q.choices[chosen], locale)}`}`,
+    `Toʻgʻri javob: ${letter(q.answerIndex)}) ${pick(q.choices[q.answerIndex], locale)}`,
+    `Tushuntirish: ${pick(q.explanation, locale)}`
+  ].join('\n');
+
+  return (
+    <li className={`card overflow-hidden border-l-8 ${ok ? 'border-l-brand-green' : 'border-l-error'}`}>
+      <button onClick={onToggle} aria-expanded={open} className="flex w-full items-start gap-3 p-3.5 text-left">
+        <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center text-white font-black ${ok ? 'bg-brand-green' : 'bg-error'}`}>
+          {ok ? '✓' : '✗'}
+        </span>
+        <span className="min-w-0 flex-1">
+          <span className="block font-extrabold text-ink leading-snug whitespace-pre-line">
+            {n}. {pick(q.prompt, locale)}
+          </span>
+          <span className="block text-[14px] font-semibold mt-1 leading-snug">
+            <span className="text-ink/55">{t.yourAnswer}: </span>
+            <span className={ok ? 'text-brand-green' : 'text-error'}>
+              {chosen === null ? t.noAnswer : pick(q.choices[chosen], locale)}
+            </span>
+          </span>
+        </span>
+        <span className="shrink-0 self-center text-xs font-black text-brand-blue">
+          {open ? t.less : t.more}
+          <svg viewBox="0 0 24 24" className={`ml-0.5 inline h-4 w-4 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </span>
+      </button>
+
+      <AnimatePresence initial={false}>
+        {open && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.22 }}
+            className="overflow-hidden"
+          >
+            <div className="border-t border-ink/10 px-3.5 pb-4 pt-3">
+              {/* every option, marked */}
+              <ul className="grid gap-1.5">
+                {q.choices.map((c, ci) => {
+                  const isAns = ci === q.answerIndex;
+                  const isMine = ci === chosen;
+                  return (
+                    <li
+                      key={ci}
+                      className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-[15px] font-bold ${
+                        isAns ? 'border-brand-green/50 bg-brand-green/10 text-ink' : isMine ? 'border-error/40 bg-error/10 text-ink' : 'border-ink/10 text-ink/60'
+                      }`}
+                    >
+                      <span className="font-black text-ink/45">{letter(ci)})</span>
+                      <span className="flex-1">{pick(c, locale)}</span>
+                      {isAns && <span className="text-xs font-black text-brand-green">{t.correct}</span>}
+                      {isMine && !isAns && <span className="text-xs font-black text-error">{t.yourAnswer}</span>}
+                    </li>
+                  );
+                })}
+              </ul>
+
+              <div className="mt-3 rounded-xl bg-brand-blue/[0.07] px-3.5 py-3">
+                <div className="text-xs font-black uppercase tracking-wide text-brand-blue">{t.explanation}</div>
+                <p className="mt-1 text-[15px] font-semibold leading-relaxed text-ink/80">{pick(q.explanation, locale)}</p>
+              </div>
+
+              <ReviewChat context={context} locale={locale} />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </li>
+  );
+}
+
+/* Faint hand-drawn squiggle + pencil decorating the empty notebook. */
+function PencilDoodle() {
+  return (
+    <svg viewBox="0 0 320 120" className="pointer-events-none mx-auto mt-10 w-[min(100%,340px)] select-none opacity-50" aria-hidden>
+      <path
+        d="M14 64 C 22 20, 30 104, 40 60 S 56 18, 66 62 S 82 106, 92 58 S 108 22, 118 64 S 134 100, 144 60 S 160 30, 170 62 S 184 90, 194 62"
+        fill="none"
+        stroke="#8B7FD6"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <g transform="translate(196 50) rotate(-4)">
+        <polygon points="0,12 18,5 18,19" fill="#E9C59A" />
+        <polygon points="0,12 6,9.7 6,14.3" fill="#2E2A4F" />
+        <rect x="18" y="5" width="96" height="14" rx="2" fill="#3E3A78" />
+        <rect x="18" y="5" width="96" height="4.5" rx="2" fill="#5A55A0" />
+        <rect x="108" y="5" width="8" height="14" rx="1.5" fill="#2E2A5A" />
+      </g>
+    </svg>
   );
 }

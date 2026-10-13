@@ -8,7 +8,7 @@ import { getG11Subject, g11ExamHref } from '@/content/g11/subjects';
 import { G11_DIAG_TITLE } from '@/content/g11/diagnostic';
 import { G11_LESSONS, g11LessonHref } from '@/content/g11/lessons';
 
-const LESSONS_TITLE: Record<string, string> = { uz: 'Darslar', ru: 'Уроки', en: 'Lessons' };
+const LESSONS_TITLE: Record<string, string> = { uz: 'Mavzular boʻyicha', ru: 'По темам', en: 'By topic' };
 const LESSON_N: Record<string, (n: number) => string> = {
   uz: (n) => `${n}-dars`,
   ru: (n) => `Урок ${n}`,
@@ -16,7 +16,7 @@ const LESSON_N: Record<string, (n: number) => string> = {
 };
 
 /** Minimal grade-11 subject page: subject name, the glowing pulsing
- *  "Sinov testi" button right under it, then the lesson list. Lessons with
+ *  "Testni boshlash" button right under it, then the lesson list. Lessons with
  *  content are links; the rest are title-only placeholders (not clickable yet). */
 export default function G11SubjectView({ slug }: { slug: string }) {
   const locale = useLocale();
