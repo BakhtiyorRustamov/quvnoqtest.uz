@@ -26,13 +26,9 @@ export default function G11LessonView({ slug, n }: { slug: string; n: number }) 
 
   return (
     <main className="min-h-screen pb-16">
-      <BackBar backHref={backHref} showLang />
+      <BackBar backHref={backHref} showLang title={pick(s.name, locale)} />
       <article className="max-w-2xl mx-auto px-4">
-        <ArrowBack href={backHref} label={t.back} className="mt-2" />
-        <div className="mt-4 inline-block rounded-full px-3.5 py-1 text-sm font-extrabold text-white" style={{ background: s.color }}>
-          {pick(s.name, locale)}
-        </div>
-        <h1 className="mt-3 font-black text-ink text-[clamp(26px,7vw,40px)] leading-tight">{pick(lesson.title, locale)}</h1>
+        <h2 className="mt-5 font-black text-ink text-[clamp(26px,7vw,40px)] leading-tight">{pick(lesson.title, locale)}</h2>
         <div className="card mt-6 p-5 sm:p-6 space-y-5">
           {lesson.body.map((p, i) => (
             <section key={i}>

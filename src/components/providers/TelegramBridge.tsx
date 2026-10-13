@@ -3,6 +3,28 @@
 import { useEffect } from 'react';
 import { inTelegram, tapFeedback, tgVersionAtLeast, whenTg } from '@/lib/tg';
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/** Stop Telegram's swipe-down-to-minimise/close: the SDK call (Bot API 7.7+)
+ *  plus the raw WebView event it sends, for clients where the helper is missing. */
+function lockSwipes(w: any) {
+  try {
+    w.disableVerticalSwipes?.();
+  } catch {
+    /* ignore */
+  }
+  try {
+    w.isVerticalSwipesEnabled = false;
+  } catch {
+    /* read-only on some SDK builds */
+  }
+  try {
+    const tg = (window as any).Telegram?.WebView;
+    tg?.postEvent?.('web_app_setup_swipe_behavior', false, { allow_vertical_swipe: false });
+  } catch {
+    /* ignore */
+  }
+}
+
 /** Elements that count as a "tap target" for haptic feedback. */
 const TAPPABLE = 'button, a[href], [role="button"], [role="tab"], label, summary, select, input[type="checkbox"], input[type="radio"]';
 
@@ -23,10 +45,10 @@ export default function TelegramBridge() {
       try {
         w.ready?.();
         w.expand?.();
-        if (tgVersionAtLeast(w, '7.7')) w.disableVerticalSwipes?.();
       } catch {
         /* ignore */
       }
+      lockSwipes(w);
       const root = document.documentElement;
       const apply = () => {
         const sa = w.safeAreaInset ?? {};
@@ -37,7 +59,27 @@ export default function TelegramBridge() {
       apply();
       const events = ['safeAreaChanged', 'contentSafeAreaChanged', 'fullscreenChanged', 'viewportChanged'];
       events.forEach((e) => w.onEvent?.(e, apply));
-      off = () => events.forEach((e) => w.offEvent?.(e, apply));
+      // Telegram can re-enable swipe-to-close after a resize / re-open: lock again.
+      const relock = () => lockSwipes(w);
+      const relockEvents = ['viewportChanged', 'activated', 'fullscreenChanged'];
+      relockEvents.forEach((e) => w.onEvent?.(e, relock));
+      // Older clients (< 7.7) have no swipe lock: keep the page scrolled 1px
+      // away from the top, so a downward swipe scrolls the page instead of
+      // dragging the mini-app window.
+      const nudge = () => {
+        if (window.scrollY <= 0) window.scrollTo(0, 1);
+      };
+      const legacy = !tgVersionAtLeast(w, '7.7');
+      if (legacy) {
+        root.classList.add('tg-legacy-swipe');
+        window.addEventListener('touchstart', nudge, { passive: true });
+        nudge();
+      }
+      off = () => {
+        events.forEach((e) => w.offEvent?.(e, apply));
+        relockEvents.forEach((e) => w.offEvent?.(e, relock));
+        if (legacy) window.removeEventListener('touchstart', nudge);
+      };
     });
     return () => off();
   }, []);

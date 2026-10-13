@@ -850,7 +850,8 @@ html.lenis body {
 /* ---- Telegram Mini App ----
    `html.tg` is set by the inline detector in layout.tsx only when the page runs
    inside Telegram. --app-top is the height Telegram's own overlay (status bar +
-   Close / ⋯ buttons in fullscreen) occupies; TelegramBridge keeps it current. */
+   Close / ⋯ buttons in fullscreen) occupies; TelegramBridge keeps it current.
+   Our own back button is used in Telegram too (Telegram's BackButton is off). */
 :root {
   --app-top: 0px;
   --app-bottom: 0px;
@@ -858,7 +859,12 @@ html.lenis body {
 html.tg body {
   padding-top: var(--app-top);
 }
-/* our in-app back button is replaced by Telegram's native BackButton */
-html.tg .tg-hide {
-  display: none !important;
+/* no rubber-band pull-down inside Telegram (it drags the mini-app window) */
+html.tg,
+html.tg body {
+  overscroll-behavior-y: none;
+}
+/* old Telegram clients without a swipe lock: always leave 1px to scroll up */
+html.tg-legacy-swipe body {
+  min-height: calc(100vh + 2px);
 }

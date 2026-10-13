@@ -3,14 +3,12 @@
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
-import ArrowBack from './ArrowBack';
 import { pick } from '@/lib/i18n-config';
 import { getG11Subject, g11ExamHref } from '@/content/g11/subjects';
 import { G11_DIAG_TITLE } from '@/content/g11/diagnostic';
 import { G11_LESSONS, g11LessonHref } from '@/content/g11/lessons';
 
 const LESSONS_TITLE: Record<string, string> = { uz: 'Mavzular boʻyicha', ru: 'По темам', en: 'By topic' };
-const BACK: Record<string, string> = { uz: '11-sinf', ru: '11 класс', en: 'Grade 11' };
 
 /** Minimal grade-11 subject page: subject name, the glowing pulsing
  *  "Testni boshlash" button right under it, then the lesson list. Lessons with
@@ -22,14 +20,10 @@ export default function G11SubjectView({ slug }: { slug: string }) {
 
   return (
     <main className="min-h-screen pb-16">
-      <BackBar backHref="/dashboard/g11" showLang />
+      <BackBar backHref="/dashboard/g11" showLang title={pick(s.name, locale)} />
       <div className="max-w-2xl mx-auto px-4">
-        <div className="mt-3 grid grid-cols-[48px_1fr_48px] items-center gap-2">
-          <ArrowBack href="/dashboard/g11" label={BACK[locale] ?? BACK.uz} />
-          <h1 className="text-center font-black text-ink text-[clamp(28px,8vw,48px)] leading-tight">{pick(s.name, locale)}</h1>
-        </div>
 
-        <div className="mt-6 flex justify-center">
+        <div className="mt-8 flex justify-center">
           <Link
             href={g11ExamHref(slug)}
             className="diag-btn rounded-full px-10 py-5 text-[clamp(22px,6vw,30px)] font-black text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
