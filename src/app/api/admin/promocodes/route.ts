@@ -1,26 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { ADMIN_COOKIE, getAdminPasswordHash, isAdminSessionValid } from '@/lib/admin';
+import { isAdmin } from '@/lib/admin';
 import { getPromoCatalog, normalizePromoCode, upsertPromoCode } from '@/lib/promo';
 
-function requireAdminCookie(req: NextRequest): boolean {
-  const cookieHeader = req.headers.get('cookie') ?? '';
-  const match = cookieHeader
-    .split(';')
-    .map((part) => part.trim())
-    .find((part) => part.startsWith(`${ADMIN_COOKIE}=`));
-  const cookie = match ? decodeURIComponent(match.slice(ADMIN_COOKIE.length + 1)) : '';
-  return isAdminSessionValid(cookie) && !!getAdminPasswordHash();
-}
+/** Same admin session check as the other /api/admin routes. */
+const requireAdminCookie = (_req: NextRequest) => isAdmin();
 
 export async function GET(req: NextRequest) {
-  if (!requireAdminCookie(req)) {
+  if (!(await requireAdminCookie(req))) {
     return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   }
   return NextResponse.json({ codes: await getPromoCatalog() });
 }
 
 export async function POST(req: NextRequest) {
-  if (!requireAdminCookie(req)) {
+  if (!(await requireAdminCookie(req))) {
     return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
   }
 
