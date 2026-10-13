@@ -9,6 +9,7 @@ import { pick } from '@/lib/i18n-config';
 import { getG11Subject, g11SubjectHref } from '@/content/g11/subjects';
 import { buildG11Diagnostic, G11_DIAG_COUNT, G11_DIAG_MINUTES, type G11Question } from '@/content/g11/diagnostic';
 import ReviewChat from './ReviewChat';
+import ArrowBack from './ArrowBack';
 import QuestionSketchpad from './QuestionSketchpad';
 
 type Phase = 'quiz' | 'done';
@@ -214,6 +215,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
                 }}
               />
               <div className="notebook relative pl-[56px] pr-4 pt-[6px] min-h-[min(60vh,520px)]">
+                {/* doodle sits in the margin strip between the spiral and the red line */}
                 <PencilDoodle />
               </div>
             </div>
@@ -267,6 +269,10 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
             />
           ))}
         </ol>
+
+        <div className="mt-8 flex justify-center">
+          <ArrowBack href={backHref} label={t.home} />
+        </div>
       </div>
     </main>
   );
@@ -374,25 +380,28 @@ function ReviewItem({
   );
 }
 
-/* Faint hand-drawn squiggle + pencil decorating the empty notebook. */
+/* Vertical zigzag + pencil in the notebook margin (between spiral and red line). */
 function PencilDoodle() {
   return (
-    <svg viewBox="0 0 320 120" className="pointer-events-none mx-auto mt-10 w-[min(100%,340px)] select-none opacity-50" aria-hidden>
+    <svg
+      viewBox="0 0 20 240"
+      className="pointer-events-none absolute left-[37px] top-6 h-[240px] w-[18px] select-none opacity-60"
+      aria-hidden
+    >
       <path
-        d="M14 64 C 22 20, 30 104, 40 60 S 56 18, 66 62 S 82 106, 92 58 S 108 22, 118 64 S 134 100, 144 60 S 160 30, 170 62 S 184 90, 194 62"
+        d="M10 4 L16 12 L4 22 L16 32 L4 42 L16 52 L4 62 L16 72 L4 82 L16 92 L4 102 L16 112 L10 120"
         fill="none"
         stroke="#8B7FD6"
-        strokeWidth="2.2"
+        strokeWidth="1.8"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <g transform="translate(196 50) rotate(-4)">
-        <polygon points="0,12 18,5 18,19" fill="#E9C59A" />
-        <polygon points="0,12 6,9.7 6,14.3" fill="#2E2A4F" />
-        <rect x="18" y="5" width="96" height="14" rx="2" fill="#3E3A78" />
-        <rect x="18" y="5" width="96" height="4.5" rx="2" fill="#5A55A0" />
-        <rect x="108" y="5" width="8" height="14" rx="1.5" fill="#2E2A5A" />
-      </g>
+      {/* pencil, tip up, touching the end of the line */}
+      <polygon points="10,122 5,136 15,136" fill="#E9C59A" />
+      <polygon points="10,122 8.2,127 11.8,127" fill="#2E2A4F" />
+      <rect x="5" y="136" width="10" height="92" rx="1.5" fill="#3E3A78" />
+      <rect x="5" y="136" width="3.4" height="92" rx="1.5" fill="#5A55A0" />
+      <rect x="5" y="224" width="10" height="10" rx="1.5" fill="#2E2A5A" />
     </svg>
   );
 }

@@ -1,9 +1,9 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
+import ArrowBack from './ArrowBack';
 import { pick } from '@/lib/i18n-config';
 import { getG11Subject, g11SubjectHref } from '@/content/g11/subjects';
 import { getG11Lesson, type G11LessonQuiz } from '@/content/g11/lessons';
@@ -12,11 +12,6 @@ const S: Record<string, Record<string, string>> = {
   uz: { lesson: '-dars', back: 'Mavzularga qaytish', quiz: 'Oʻzingizni tekshiring', check: 'Tekshirish', right: 'Toʻgʻri!', wrong: 'Notoʻgʻri', correct: 'Toʻgʻri javob', retry: 'Qayta urinish', score: 'Natija' },
   ru: { lesson: '', back: 'Назад к темам', quiz: 'Проверь себя', check: 'Проверить', right: 'Верно!', wrong: 'Неверно', correct: 'Верный ответ', retry: 'Ещё раз', score: 'Результат' },
   en: { lesson: '', back: 'Back to topics', quiz: 'Check yourself', check: 'Check', right: 'Correct!', wrong: 'Not quite', correct: 'Correct answer', retry: 'Try again', score: 'Score' }
-};
-const LESSON_N: Record<string, (n: number) => string> = {
-  uz: (n) => `${n}-dars`,
-  ru: (n) => `Урок ${n}`,
-  en: (n) => `Lesson ${n}`
 };
 
 /** Grade 11 lesson reader (dummy Lorem Ipsum content) with an end-of-lesson
@@ -33,9 +28,9 @@ export default function G11LessonView({ slug, n }: { slug: string; n: number }) 
     <main className="min-h-screen pb-16">
       <BackBar backHref={backHref} showLang />
       <article className="max-w-2xl mx-auto px-4">
-        <BackLink href={backHref} label={t.back} className="mt-2" />
+        <ArrowBack href={backHref} label={t.back} className="mt-2" />
         <div className="mt-4 inline-block rounded-full px-3.5 py-1 text-sm font-extrabold text-white" style={{ background: s.color }}>
-          {pick(s.name, locale)} · {(LESSON_N[locale] ?? LESSON_N.uz)(n)}
+          {pick(s.name, locale)}
         </div>
         <h1 className="mt-3 font-black text-ink text-[clamp(26px,7vw,40px)] leading-tight">{pick(lesson.title, locale)}</h1>
         <div className="card mt-6 p-5 sm:p-6 space-y-5">
@@ -50,18 +45,10 @@ export default function G11LessonView({ slug, n }: { slug: string; n: number }) 
         {lesson.quiz.length > 0 && <LessonQuiz quiz={lesson.quiz} locale={locale} color={s.color} t={t} />}
 
         <div className="mt-10 flex justify-center">
-          <BackLink href={backHref} label={t.back} big />
+          <ArrowBack href={backHref} label={t.back} />
         </div>
       </article>
     </main>
-  );
-}
-
-function BackLink({ href, label, big, className = '' }: { href: string; label: string; big?: boolean; className?: string }) {
-  return (
-    <Link href={href} className={`btn-ghost ${big ? 'text-lg px-8 py-3.5' : 'text-sm px-4 py-2'} ${className}`}>
-      ← {label}
-    </Link>
   );
 }
 
