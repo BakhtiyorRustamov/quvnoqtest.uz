@@ -14,6 +14,7 @@ import ReviewList from './ReviewList';
 import ScoreRing from './ScoreRing';
 import ArrowBack from './ArrowBack';
 import QuestionSketchpad from './QuestionSketchpad';
+import { useTgScrollLock } from './useTgScrollLock';
 
 type Phase = 'quiz' | 'done';
 
@@ -69,6 +70,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
 
   const { play } = useSound();
   const saved = useRef(false);
+  const { scrollerRef, locked, scrollerClass, scrollToTop } = useTgScrollLock();
 
   // finish: remember the attempt + flag the lessons behind wrong answers
   const finish = useCallback(() => {
@@ -83,8 +85,8 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     );
     play('win');
     hapticNotify(score >= questions.length / 2 ? 'success' : 'warning');
-    window.scrollTo({ top: 0 });
-  }, [answers, questions, slug, play]);
+    scrollToTop(false);
+  }, [answers, questions, slug, play, scrollToTop]);
 
   useEffect(() => {
     if (phase !== 'quiz') return;
@@ -98,8 +100,8 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
 
   // jump to the top when the question changes so the prompt is in view
   useEffect(() => {
-    if (phase === 'quiz') window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [idx, phase]);
+    if (phase === 'quiz') scrollToTop(true);
+  }, [idx, phase, scrollToTop]);
 
   function setIdx(n: number) {
     setDir(n >= idx ? 1 : -1);
@@ -158,6 +160,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     const q = questions[idx];
     const low = secondsLeft <= 60;
     return (
+      <div ref={scrollerRef} className={scrollerClass} style={locked ? { paddingTop: 'var(--app-top)', WebkitOverflowScrolling: 'touch' } : undefined}>
       <main ref={pageRef} className="relative min-h-screen pb-24" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
         <BackBar backHref={backHref} showLang />
         <div className="max-w-2xl mx-auto px-4">
@@ -293,6 +296,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
 
         <QuestionSketchpad key={attempt} containerRef={pageRef} pageKey={idx} locale={locale} />
       </main>
+      </div>
     );
   }
 
@@ -302,6 +306,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
   const timedOut = secondsLeft <= 0;
 
   return (
+      <div ref={scrollerRef} className={scrollerClass} style={locked ? { paddingTop: 'var(--app-top)', WebkitOverflowScrolling: 'touch' } : undefined}>
     <main className="min-h-screen pb-16">
       <BackBar backHref={backHref} showLang />
       <div className="max-w-2xl mx-auto px-4 text-center">
@@ -334,6 +339,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
         </div>
       </div>
     </main>
+    </div>
   );
 }
 

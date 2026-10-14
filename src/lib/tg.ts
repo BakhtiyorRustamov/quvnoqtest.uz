@@ -188,12 +188,39 @@ export function tgDiagnostics(): TgDiag {
     iOS: String(isIOS()),
     Android: String(isAndroid()),
     hash: location.hash ? location.hash.slice(0, 60) + '…' : '—',
+    'TelegramWebviewProxy': typeof (window as any).TelegramWebviewProxy,
+    'webkit.messageHandlers': String(!!(window as any).webkit?.messageHandlers),
+    'WebView.isIframe': String((window as any).Telegram?.WebView?.isIframe ?? '—'),
+    'iframe (window≠parent)': String(window.parent !== window),
+    'javoblar (Telegram → app)': String(pingReplies),
+    host: location.host,
     'safeArea / content': `${JSON.stringify(w?.safeAreaInset ?? null)} / ${JSON.stringify(w?.contentSafeAreaInset ?? null)}`,
     UA: navigator.userAgent
   };
 }
 
+let pingReplies = 0;
+let pingBound = false;
+
 export const tgTest = {
+  /** call Telegram's native bridge directly, bypassing the SDK */
+  proxyHeavy: () => {
+    try {
+      (window as any).TelegramWebviewProxy?.postEvent('web_app_trigger_haptic_feedback', JSON.stringify({ type: 'impact', impact_style: 'heavy' }));
+    } catch {
+      /* ignore */
+    }
+  },
+  /** ask Telegram for the theme — if a reply comes back, app→Telegram messages work */
+  ping: () => {
+    const wv = (window as any).Telegram?.WebView;
+    if (!wv) return;
+    if (!pingBound) {
+      wv.onEvent?.('theme_changed', () => pingReplies++);
+      pingBound = true;
+    }
+    wv.postEvent?.('web_app_request_theme', false);
+  },
   light: () => buzz((h) => h.impactOccurred('light'), 20),
   heavy: () => buzz((h) => h.impactOccurred('heavy'), 60),
   success: () => buzz((h) => h.notificationOccurred('success'), [30, 60, 30]),

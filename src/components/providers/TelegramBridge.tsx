@@ -133,6 +133,16 @@ export default function TelegramBridge() {
           <button data-qt-haptic="1" className={btn} onClick={tgTest.error}>error</button>
           <button data-qt-haptic="1" className={btn} onClick={tgTest.iosTick}>iOS tick</button>
           <button data-qt-haptic="1" className={btn} onClick={tgTest.vibrate}>vibrate()</button>
+          <button data-qt-haptic="1" className={btn} onClick={tgTest.proxyHeavy}>proxy heavy</button>
+          <button
+            className={btn}
+            onClick={() => {
+              tgTest.ping();
+              setTimeout(() => setDiag(tgDiagnostics()), 800);
+            }}
+          >
+            ping
+          </button>
           <button className={btn} onClick={() => setDiag(tgDiagnostics())}>↻</button>
         </div>
       </div>
