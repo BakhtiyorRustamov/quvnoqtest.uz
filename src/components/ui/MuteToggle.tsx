@@ -3,8 +3,10 @@
 import { useTranslations } from 'next-intl';
 import { useSound } from '@/components/providers/SoundProvider';
 
-/** Small image sound toggle — pale by default, full colour on hover/press. */
-export default function MuteToggle({ className = '', imgClassName = '' }: { className?: string; imgClassName?: string }) {
+/** Small image sound toggle — pale by default, full colour on hover/press.
+ *  The sound PNG has ~35% soft/transparent edge, so it's scaled 1.5× by default to
+ *  render at the same visible size as the back button. */
+export default function MuteToggle({ className = '', imgClassName = 'scale-[1.5]' }: { className?: string; imgClassName?: string }) {
   const { muted, toggleMuted } = useSound();
   const t = useTranslations('common');
   return (
@@ -12,7 +14,7 @@ export default function MuteToggle({ className = '', imgClassName = '' }: { clas
       onClick={toggleMuted}
       aria-label={muted ? t('soundOff') : t('soundOn')}
       title={muted ? t('soundOff') : t('soundOn')}
-      className={className}
+      className={`mx-1.5 ${className}`}
     >
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img

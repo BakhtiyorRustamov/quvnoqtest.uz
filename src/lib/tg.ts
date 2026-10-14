@@ -88,34 +88,38 @@ export function pushTgBack(handler: () => void): () => void {
 
 let lastTap = 0;
 
-/** Light tap feedback: Telegram haptics inside Telegram, vibration on Android
- *  browsers, nothing elsewhere (iOS Safari has no vibration API). */
-export function tapFeedback() {
-  const now = Date.now();
-  if (now - lastTap < 40) return; // one buzz per tap, even if events bubble twice
-  lastTap = now;
-  if (inTelegram()) {
-    const w = tgApp();
-    if (w && tgVersionAtLeast(w, '6.1')) {
-      try {
-        w.HapticFeedback?.impactOccurred?.('light');
-      } catch {
-        /* ignore */
-      }
-    }
-    return;
-  }
-  if (typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent) && typeof navigator.vibrate === 'function') {
-    try {
-      navigator.vibrate(20);
-    } catch {
-      /* ignore */
-    }
+const isAndroid = () => typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent);
+const isIOS = () =>
+  typeof navigator !== 'undefined' &&
+  (/iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
+
+/**
+ * iOS has no Vibration API. Since iOS 18, toggling a native
+ * `<input type="checkbox" switch>` plays the system "tick" haptic, and it
+ * works when triggered from a user tap — so we toggle an invisible one.
+ * Older iOS versions simply do nothing.
+ */
+function iosTick() {
+  try {
+    const label = document.createElement('label');
+    label.setAttribute('aria-hidden', 'true');
+    label.dataset.qtHaptic = '1'; // ignored by the global tap listener
+    label.style.cssText = 'position:fixed;left:-9999px;top:0;opacity:0;pointer-events:none';
+    const input = document.createElement('input');
+    input.type = 'checkbox';
+    input.setAttribute('switch', '');
+    input.tabIndex = -1;
+    label.appendChild(input);
+    document.body.appendChild(label);
+    label.click();
+    label.remove();
+  } catch {
+    /* ignore */
   }
 }
 
 function androidVibrate(pattern: number | number[]) {
-  if (typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent) && typeof navigator.vibrate === 'function') {
+  if (isAndroid() && typeof navigator.vibrate === 'function') {
     try {
       navigator.vibrate(pattern);
     } catch {
@@ -124,37 +128,83 @@ function androidVibrate(pattern: number | number[]) {
   }
 }
 
-/** Result feedback: success / error / warning buzz (Telegram notification
- *  haptic inside Telegram, a short pattern on Android browsers). */
-export function hapticNotify(kind: 'success' | 'error' | 'warning') {
-  lastTap = Date.now(); // swallow the generic tap buzz from the same click
-  if (inTelegram()) {
-    const w = tgApp();
-    if (w && tgVersionAtLeast(w, '6.1')) {
-      try {
-        w.HapticFeedback?.notificationOccurred?.(kind);
-      } catch {
-        /* ignore */
-      }
-    }
-    return;
-  }
-  androidVibrate(kind === 'success' ? [30, 60, 30] : kind === 'error' ? [80, 50, 80] : 50);
+/** Telegram haptics object when usable (inside Telegram, Bot API 6.1+). */
+function tgHaptics(): any | null {
+  if (!inTelegram()) return null;
+  const w = tgApp();
+  return w && tgVersionAtLeast(w, '6.1') && w.HapticFeedback ? w.HapticFeedback : null;
 }
 
-/** Choosing an option (radio-like): Telegram selection tick / short buzz. */
+/** Run `tg` with Telegram's haptics, else fall back to the device. */
+function buzz(tg: (h: any) => void, android: number | number[], ios = 1) {
+  const h = tgHaptics();
+  if (h) {
+    try {
+      tg(h);
+      return;
+    } catch {
+      /* fall through to the device fallback */
+    }
+  }
+  if (isAndroid()) androidVibrate(android);
+  else if (isIOS()) for (let i = 0; i < ios; i++) setTimeout(iosTick, i * 90);
+}
+
+/** Light tap feedback for buttons and links. */
+export function tapFeedback() {
+  const now = Date.now();
+  if (now - lastTap < 60) return; // one buzz per tap (also stops the iOS tick re-triggering itself)
+  lastTap = now;
+  buzz((h) => h.impactOccurred('light'), 20);
+}
+
+/** Result feedback: success / error / warning. */
+export function hapticNotify(kind: 'success' | 'error' | 'warning') {
+  lastTap = Date.now();
+  buzz((h) => h.notificationOccurred(kind), kind === 'success' ? [30, 60, 30] : kind === 'error' ? [80, 50, 80] : 50, kind === 'success' ? 1 : 2);
+}
+
+/** Choosing an option (radio-like). */
 export function hapticSelect() {
   lastTap = Date.now();
-  if (inTelegram()) {
-    const w = tgApp();
-    if (w && tgVersionAtLeast(w, '6.1')) {
-      try {
-        w.HapticFeedback?.selectionChanged?.();
-      } catch {
-        /* ignore */
-      }
-    }
-    return;
-  }
-  androidVibrate(15);
+  buzz((h) => h.selectionChanged(), 15);
 }
+
+/* ------------------------------ diagnostics ------------------------------ */
+
+export type TgDiag = Record<string, string>;
+
+/** What the app currently knows about its Telegram / haptics environment. */
+export function tgDiagnostics(): TgDiag {
+  const w = (window as any).Telegram?.WebApp;
+  return {
+    'html.tg (Telegram aniqlandi)': String(inTelegram()),
+    'SDK yuklandi': String(!!w),
+    platform: String(w?.platform ?? '—'),
+    version: String(w?.version ?? '—'),
+    'HapticFeedback (6.1+)': String(!!tgHaptics()),
+    'isVerticalSwipesEnabled': String(w?.isVerticalSwipesEnabled ?? '—'),
+    'navigator.vibrate': String(typeof navigator.vibrate === 'function'),
+    iOS: String(isIOS()),
+    Android: String(isAndroid()),
+    hash: location.hash ? location.hash.slice(0, 60) + '…' : '—',
+    'safeArea / content': `${JSON.stringify(w?.safeAreaInset ?? null)} / ${JSON.stringify(w?.contentSafeAreaInset ?? null)}`,
+    UA: navigator.userAgent
+  };
+}
+
+export const tgTest = {
+  light: () => buzz((h) => h.impactOccurred('light'), 20),
+  heavy: () => buzz((h) => h.impactOccurred('heavy'), 60),
+  success: () => buzz((h) => h.notificationOccurred('success'), [30, 60, 30]),
+  error: () => buzz((h) => h.notificationOccurred('error'), [80, 50, 80], 2),
+  select: () => buzz((h) => h.selectionChanged(), 15),
+  iosTick: () => iosTick(),
+  vibrate: () => {
+    try {
+      navigator.vibrate?.(200);
+    } catch {
+      /* ignore */
+    }
+  }
+};

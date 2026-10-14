@@ -1,7 +1,6 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
@@ -12,6 +11,7 @@ import { useSound } from '@/components/providers/SoundProvider';
 import { hapticNotify, hapticSelect } from '@/lib/tg';
 import { addAttempt, addFlags } from '@/lib/g11Store';
 import ReviewList from './ReviewList';
+import ScoreRing from './ScoreRing';
 import ArrowBack from './ArrowBack';
 import QuestionSketchpad from './QuestionSketchpad';
 
@@ -60,7 +60,8 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
 
   const [phase, setPhase] = useState<Phase>('quiz');
   const [questions] = useState(() => buildG11Diagnostic(slug));
-  const [idx, setIdx] = useState(0);
+  const [idx, setIdxRaw] = useState(0);
+  const [dir, setDir] = useState(1); // slide direction for the question animation
   const [answers, setAnswers] = useState<(number | null)[]>(() => Array(count).fill(null));
   const [secondsLeft, setSecondsLeft] = useState(minutes * 60);
   const [attempt, setAttempt] = useState(0); // remounts the sketchpad (fresh drawings) on retry
@@ -100,6 +101,38 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     if (phase === 'quiz') window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [idx, phase]);
 
+  function setIdx(n: number) {
+    setDir(n >= idx ? 1 : -1);
+    setIdxRaw(n);
+  }
+  // swipe left / right between questions (cursor mode; pen mode blocks touches)
+  const swipe = useRef<{ x: number; y: number; t: number } | null>(null);
+  function onTouchStart(e: React.TouchEvent) {
+    // pen / eraser active → touches are drawing, never navigation
+    if (document.documentElement.classList.contains('sketch-lock')) {
+      swipe.current = null;
+      return;
+    }
+    const p = e.touches[0];
+    swipe.current = e.touches.length === 1 ? { x: p.clientX, y: p.clientY, t: Date.now() } : null;
+  }
+  function onTouchEnd(e: React.TouchEvent) {
+    const s0 = swipe.current;
+    swipe.current = null;
+    if (!s0) return;
+    const p = e.changedTouches[0];
+    const dx = p.clientX - s0.x;
+    const dy = p.clientY - s0.y;
+    if (Date.now() - s0.t > 700 || Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
+    if (dx < 0 && idx < count - 1) {
+      play('pop');
+      setIdx(idx + 1);
+    } else if (dx > 0 && idx > 0) {
+      play('pop');
+      setIdx(idx - 1);
+    }
+  }
+
   function choose(ci: number) {
     const next = [...answers];
     next[idx] = ci;
@@ -112,7 +145,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     saved.current = false;
     play('pop');
     setAnswers(Array(count).fill(null));
-    setIdx(0);
+    setIdxRaw(0);
     setSecondsLeft(minutes * 60);
     setAttempt((a) => a + 1);
     setPhase('quiz');
@@ -125,7 +158,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     const q = questions[idx];
     const low = secondsLeft <= 60;
     return (
-      <main ref={pageRef} className="relative min-h-screen pb-24">
+      <main ref={pageRef} className="relative min-h-screen pb-24" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
         <BackBar backHref={backHref} showLang />
         <div className="max-w-2xl mx-auto px-4">
           {/* timer + progress */}
@@ -144,9 +177,9 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
           <AnimatePresence mode="wait">
             <motion.div
               key={idx}
-              initial={{ opacity: 0, x: 40 }}
+              initial={{ opacity: 0, x: 48 * dir }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -40 }}
+              exit={{ opacity: 0, x: -48 * dir }}
               transition={{ duration: 0.22 }}
             >
               <div className="card p-5 mt-4">
@@ -207,19 +240,24 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
             )}
           </div>
 
-          {/* question dots — tap any to jump; answered ones are filled */}
-          <div className="mt-4 flex flex-wrap justify-center gap-1.5">
+          {/* question numbers — round buttons to jump straight to a question */}
+          <div className="mt-5 flex flex-wrap justify-center gap-2">
             {questions.map((_, qi) => (
               <button
                 key={qi}
-                onClick={() => setIdx(qi)}
+                onClick={() => {
+                  if (qi === idx) return;
+                  play('pop');
+                  setIdx(qi);
+                }}
                 aria-label={`${t.question} ${qi + 1}`}
-                className={`w-6 h-6 rounded-full text-[10px] font-black grid place-items-center transition-colors ${
+                aria-current={qi === idx ? 'step' : undefined}
+                className={`grid h-9 w-9 place-items-center rounded-full text-[13px] font-black tabular-nums transition-all active:scale-90 ${
                   qi === idx
-                    ? 'bg-brand-blue text-white'
+                    ? 'bg-brand-blue text-white shadow-[0_3px_0_#0f6a92] scale-110'
                     : answers[qi] !== null
-                      ? 'bg-brand-green/25 text-brand-green'
-                      : 'bg-ink/10 text-ink/50'
+                      ? 'bg-brand-green/20 text-[#5b8a1f] border-2 border-brand-green/60 shadow-[0_2px_0_rgba(141,198,63,0.45)]'
+                      : 'bg-white text-ink/60 border-2 border-ink/12 shadow-[0_2px_0_rgba(30,58,95,0.12)] hover:border-brand-blue/50'
                 }`}
               >
                 {qi + 1}
@@ -268,24 +306,28 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
       <BackBar backHref={backHref} showLang />
       <div className="max-w-2xl mx-auto px-4 text-center">
         {timedOut && <p className="font-black text-error mt-4">{t.timeUp}</p>}
-        <div className="inline-flex items-baseline gap-2 mt-6 px-8 py-4 rounded-3xl bg-white shadow-card border border-ink/10">
-          <span className="text-sm font-extrabold text-ink/50">{t.yourScore}</span>
-          <span className="text-4xl font-black text-brand-orange">
-            {score}/{count}
-          </span>
-        </div>
+        <ScoreRing score={score} total={count} label={t.yourScore} />
 
-        <div className="flex flex-wrap justify-center gap-3 mt-6">
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1.3, duration: 0.35 }}
+          className="flex flex-wrap justify-center gap-3 mt-6"
+        >
           <button onClick={retry} className="btn-primary text-lg px-8 py-4">
             🔄 {t.retry}
           </button>
-          <Link href={backHref} className="btn-ghost text-lg px-8 py-4">
-            🏠 {t.home}
-          </Link>
-        </div>
+        </motion.div>
 
-        <h2 className="font-black text-ink text-xl mt-10 mb-3 text-left">{t.review}</h2>
-        <ReviewList slug={slug} questions={questions} answers={answers} subjectName={subjectName} locale={locale} />
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.35 }}
+          className="font-black text-ink text-xl mt-10 mb-3 text-left"
+        >
+          {t.review}
+        </motion.h2>
+        <ReviewList slug={slug} questions={questions} answers={answers} subjectName={subjectName} locale={locale} revealDelay={1.4} />
 
         <div className="mt-8 flex justify-center">
           <ArrowBack href={backHref} label={t.home} />

@@ -9,7 +9,7 @@ type Msg = { role: 'user' | 'assistant'; content: string };
 const S: Record<string, Record<string, string>> = {
   uz: {
     title: 'AI yordamchi',
-    hint: 'Hali tushunarsiz joyi qoldimi? Shu savol haqida soʻrang.',
+    hint: 'Hali ham tushunarsiz boʻlsa shu yerda soʻrab javob olishingiz mumkin.',
     placeholder: 'Savolingizni yozing…',
     send: 'Yuborish',
     thinking: 'Oʻylayapman…',
@@ -19,7 +19,7 @@ const S: Record<string, Record<string, string>> = {
   },
   ru: {
     title: 'AI-помощник',
-    hint: 'Остались вопросы? Спросите об этом задании.',
+    hint: 'Если что-то всё ещё непонятно, спросите здесь и получите ответ.',
     placeholder: 'Напишите вопрос…',
     send: 'Отправить',
     thinking: 'Думаю…',
@@ -29,7 +29,7 @@ const S: Record<string, Record<string, string>> = {
   },
   en: {
     title: 'AI tutor',
-    hint: 'Still unclear? Ask about this question.',
+    hint: 'If something is still unclear, ask here and get an answer.',
     placeholder: 'Type your question…',
     send: 'Send',
     thinking: 'Thinking…',
@@ -78,11 +78,7 @@ export default function ReviewChat({ context, locale }: { context: string; local
 
   return (
     <div className="mt-3 rounded-2xl border border-brand-purple/20 bg-brand-purple/[0.04] p-3">
-      <div className="flex items-center gap-2">
-        <span className="grid h-7 w-7 place-items-center rounded-full bg-brand-purple text-xs font-black text-white">AI</span>
-        <span className="font-black text-ink">{t.title}</span>
-      </div>
-      <div ref={listRef} className="mt-2 max-h-72 space-y-2 overflow-y-auto">
+      <div ref={listRef} aria-label={t.title} className="max-h-72 space-y-2 overflow-y-auto">
         {msgs.length === 0 && <p className="text-[14px] font-semibold text-ink/55">{t.hint}</p>}
         {msgs.map((m, i) => (
           <div key={i} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>

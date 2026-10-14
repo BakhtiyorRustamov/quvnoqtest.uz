@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { useUser } from '@/components/providers/UserProvider';
@@ -56,6 +56,17 @@ export default function Dashboard({ forceGrade }: { forceGrade?: number } = {}) 
   }, [t]);
 
   const grade = forceGrade ?? user?.grade ?? 1;
+
+  // hidden: 5 quick taps on the logo open the Telegram / haptics test panel
+  const taps = useRef<number[]>([]);
+  function logoTap() {
+    const now = Date.now();
+    taps.current = [...taps.current.filter((t) => now - t < 3000), now];
+    if (taps.current.length >= 5) {
+      taps.current = [];
+      window.dispatchEvent(new Event('qt-tgdiag'));
+    }
+  }
   const gradeDef = getGrade(grade) ?? GRADES[0];
 
   return (
@@ -83,7 +94,7 @@ export default function Dashboard({ forceGrade }: { forceGrade?: number } = {}) 
       <header className="relative max-w-5xl mx-auto px-3 pt-4 h-14">
         <div className="pointer-events-none absolute inset-x-0 top-4 flex justify-center">
           {/* logo — a plain visual, not a link/button */}
-          <div className="select-none" aria-label="QuvnoqTest.uz">
+          <div className="pointer-events-auto select-none" aria-label="QuvnoqTest.uz" onClick={logoTap}>
             <AnimatedLogo compact />
           </div>
         </div>

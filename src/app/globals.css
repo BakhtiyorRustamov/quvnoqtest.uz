@@ -874,3 +874,24 @@ html.sketch-lock,
 html.sketch-lock body {
   overscroll-behavior: none;
 }
+
+/* grade 11 3D "Testni boshlash" button: soft pulsing glow (no size pulse, so it
+   never fights the press animation) */
+@keyframes press3dGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 16px color-mix(in srgb, var(--glow) 40%, transparent), 0 10px 22px rgba(30, 58, 95, 0.18);
+  }
+  50% {
+    box-shadow: 0 0 38px color-mix(in srgb, var(--glow) 70%, transparent), 0 10px 22px rgba(30, 58, 95, 0.18);
+  }
+}
+.press3d-glow {
+  animation: press3dGlow 2s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .press3d-glow {
+    animation: none;
+    box-shadow: 0 0 26px color-mix(in srgb, var(--glow) 55%, transparent);
+  }
+}

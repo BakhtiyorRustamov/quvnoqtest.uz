@@ -53,8 +53,7 @@ export default function BackBar({
         </div>
         <h1 className="max-w-[52vw] truncate text-center font-black text-ink text-[clamp(20px,5.5vw,30px)] leading-tight sm:max-w-md">{title}</h1>
         <div className="flex items-center justify-end gap-2">
-          {/* the sound PNG has ~25% transparent padding — scale it to match the back button */}
-          {showMute && <MuteToggle imgClassName="scale-[1.32]" />}
+          {showMute && <MuteToggle />}
           {showLang && <LangSwitcher imgClassName="h-10" />}
         </div>
       </div>

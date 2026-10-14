@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
+import PressButton3D from './PressButton3D';
 import { pick } from '@/lib/i18n-config';
 import { getG11Subject, g11ExamHref, g11ReviewsHref } from '@/content/g11/subjects';
 import { getFlags, useG11StoreVersion } from '@/lib/g11Store';
@@ -30,16 +31,10 @@ export default function G11SubjectView({ slug }: { slug: string }) {
     <main className="min-h-screen pb-16">
       <BackBar backHref="/dashboard/g11" showLang title={pick(s.name, locale)} />
       <div className="max-w-2xl mx-auto px-4">
-
         <div className="mt-8 flex justify-center">
-          <Link
-            href={g11ExamHref(slug)}
-            onClick={() => play('win')}
-            className="diag-btn rounded-full px-10 py-5 text-[clamp(22px,6vw,30px)] font-black text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/70"
-            style={{ ['--glow' as string]: s.color, background: `linear-gradient(180deg, ${s.color}, color-mix(in srgb, ${s.color} 78%, #000))` }}
-          >
+          <PressButton3D href={g11ExamHref(slug)} color={s.color} onClick={() => play('win')}>
             {pick(G11_DIAG_TITLE, locale)}
-          </Link>
+          </PressButton3D>
         </div>
 
         <div className="mt-12 mb-3 flex items-center justify-between gap-3">

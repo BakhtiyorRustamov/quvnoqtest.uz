@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
-import { inTelegram, tapFeedback, tgVersionAtLeast, whenTg } from '@/lib/tg';
+import { useEffect, useState } from 'react';
+import { inTelegram, tapFeedback, tgDiagnostics, tgTest, tgVersionAtLeast, whenTg, type TgDiag } from '@/lib/tg';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /** Stop Telegram's swipe-down-to-minimise/close: the SDK call (Bot API 7.7+)
@@ -86,6 +86,7 @@ export default function TelegramBridge() {
 
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
+      if ((e.target as Element | null)?.closest?.('[data-qt-haptic]')) return; // our own iOS haptic switch
       const el = (e.target as Element | null)?.closest?.(TAPPABLE) as HTMLElement | null;
       if (!el || (el as HTMLButtonElement).disabled || el.getAttribute('aria-disabled') === 'true') return;
       tapFeedback();
@@ -94,5 +95,47 @@ export default function TelegramBridge() {
     return () => document.removeEventListener('click', onClick, true);
   }, []);
 
-  return null;
+  // hidden diagnostics panel: tap the dashboard logo 5× (or open any page with ?tgtest=1)
+  const [diag, setDiag] = useState<TgDiag | null>(null);
+  useEffect(() => {
+    const open = () => setDiag(tgDiagnostics());
+    window.addEventListener('qt-tgdiag', open);
+    if (new URLSearchParams(window.location.search).has('tgtest')) setTimeout(open, 1500);
+    return () => window.removeEventListener('qt-tgdiag', open);
+  }, []);
+
+  if (!diag) return null;
+  const btn = 'rounded-xl bg-brand-blue px-3 py-2 text-sm font-black text-white active:scale-95';
+  return (
+    <div className="fixed inset-0 z-[100] overflow-y-auto bg-black/50 p-4" style={{ paddingTop: 'calc(var(--app-top) + 1rem)' }}>
+      <div className="mx-auto max-w-md rounded-2xl bg-white p-4 shadow-2xl">
+        <div className="flex items-center justify-between">
+          <b className="text-ink">Telegram / haptics test</b>
+          <button className="rounded-full bg-ink/10 px-3 py-1 font-black text-ink" onClick={() => setDiag(null)}>
+            ✕
+          </button>
+        </div>
+        <table className="mt-3 w-full text-left text-[12px]">
+          <tbody>
+            {Object.entries(diag).map(([k, v]) => (
+              <tr key={k} className="border-t border-ink/10 align-top">
+                <td className="py-1 pr-2 font-bold text-ink/60">{k}</td>
+                <td className="break-all py-1 font-mono text-ink">{v}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <button data-qt-haptic="1" className={btn} onClick={tgTest.light}>light</button>
+          <button data-qt-haptic="1" className={btn} onClick={tgTest.heavy}>heavy</button>
+          <button data-qt-haptic="1" className={btn} onClick={tgTest.select}>select</button>
+          <button data-qt-haptic="1" className={btn} onClick={tgTest.success}>success</button>
+          <button data-qt-haptic="1" className={btn} onClick={tgTest.error}>error</button>
+          <button data-qt-haptic="1" className={btn} onClick={tgTest.iosTick}>iOS tick</button>
+          <button data-qt-haptic="1" className={btn} onClick={tgTest.vibrate}>vibrate()</button>
+          <button className={btn} onClick={() => setDiag(tgDiagnostics())}>↻</button>
+        </div>
+      </div>
+    </div>
+  );
 }
