@@ -24,3 +24,4 @@ export function getG11Subject(slug: string): G11Subject | undefined {
 
 export const g11SubjectHref = (slug: string) => `/dashboard/g11-${slug}`;
 export const g11ExamHref = (slug: string) => `/exam/g11/${slug}`;
+export const g11ReviewsHref = (slug: string) => `/exam/g11/${slug}/tahlillar`;

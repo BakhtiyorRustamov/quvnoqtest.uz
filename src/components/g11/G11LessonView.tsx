@@ -1,8 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
+import { useSound } from '@/components/providers/SoundProvider';
+import { hapticNotify, hapticSelect } from '@/lib/tg';
+import { clearFlag } from '@/lib/g11Store';
 import ArrowBack from './ArrowBack';
 import { pick } from '@/lib/i18n-config';
 import { getG11Subject, g11SubjectHref } from '@/content/g11/subjects';
@@ -21,6 +24,10 @@ export default function G11LessonView({ slug, n }: { slug: string; n: number }) 
   const t = S[locale] ?? S.uz;
   const s = getG11Subject(slug);
   const lesson = getG11Lesson(n);
+  // opening the lesson counts as reviewing it: its "!" mark goes away
+  useEffect(() => {
+    clearFlag(slug, n);
+  }, [slug, n]);
   if (!s || !lesson) return null;
   const backHref = g11SubjectHref(slug);
 
@@ -51,6 +58,7 @@ export default function G11LessonView({ slug, n }: { slug: string; n: number }) 
 function LessonQuiz({ quiz, locale, color, t }: { quiz: G11LessonQuiz[]; locale: string; color: string; t: Record<string, string> }) {
   const [picked, setPicked] = useState<(number | null)[]>(() => quiz.map(() => null));
   const [checked, setChecked] = useState(false);
+  const { play } = useSound();
   const score = quiz.filter((q, i) => picked[i] === q.answerIndex).length;
   const allPicked = picked.every((p) => p !== null);
 
@@ -76,7 +84,11 @@ function LessonQuiz({ quiz, locale, color, t }: { quiz: G11LessonQuiz[]; locale:
                     <button
                       key={ci}
                       disabled={checked}
-                      onClick={() => setPicked((p) => p.map((v, i) => (i === qi ? ci : v)))}
+                      onClick={() => {
+                        play('click');
+                        hapticSelect();
+                        setPicked((p) => p.map((v, i) => (i === qi ? ci : v)));
+                      }}
                       className={`rounded-2xl border border-ink/10 bg-white px-4 py-3 text-left font-extrabold text-ink transition ${tone}`}
                     >
                       <span className="mr-1.5 font-black text-ink/50">{String.fromCharCode(65 + ci)})</span>
@@ -102,7 +114,14 @@ function LessonQuiz({ quiz, locale, color, t }: { quiz: G11LessonQuiz[]; locale:
       </ol>
       <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
         {!checked ? (
-          <button onClick={() => setChecked(true)} disabled={!allPicked} className="btn-primary px-10 py-3.5 disabled:opacity-50 disabled:cursor-not-allowed">
+          <button
+            onClick={() => {
+              setChecked(true);
+              const good = score === quiz.length;
+              play(good ? 'win' : score >= quiz.length / 2 ? 'correct' : 'wrong');
+              hapticNotify(good || score >= quiz.length / 2 ? 'success' : 'error');
+            }}
+            disabled={!allPicked} className="btn-primary px-10 py-3.5 disabled:opacity-50 disabled:cursor-not-allowed">
             ✓ {t.check}
           </button>
         ) : (
@@ -112,6 +131,7 @@ function LessonQuiz({ quiz, locale, color, t }: { quiz: G11LessonQuiz[]; locale:
             </span>
             <button
               onClick={() => {
+                play('pop');
                 setPicked(quiz.map(() => null));
                 setChecked(false);
               }}

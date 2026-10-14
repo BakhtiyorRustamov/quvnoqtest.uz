@@ -5,7 +5,7 @@ import type { L10n } from '@/lib/i18n-config';
  * first G11_FILLED_LESSONS have (Lorem Ipsum) content, the rest are titles only.
  */
 export const G11_LESSON_COUNT = 50;
-export const G11_FILLED_LESSONS = 1;
+export const G11_FILLED_LESSONS = 5;
 
 const TITLES = [
   'Lorem ipsum dolor sit amet',

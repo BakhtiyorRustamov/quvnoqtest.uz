@@ -66,6 +66,9 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   const [notices, setNotices] = useState<Notice[]>([]);
   const [loading, setLoading] = useState(true);
   const inflight = useRef<Promise<ClientUser | null> | null>(null);
+  // the first /api/me load — ensureUser waits for it so a returning user is
+  // never re-registered (that caused a grade-1 flash + extra refreshes)
+  const firstLoad = useRef<Promise<ClientUser | null> | null>(null);
 
   const refresh = useCallback(async () => {
     const { data } = await api<{ user: ClientUser | null; notices?: Notice[] }>('/api/me');
@@ -76,12 +79,14 @@ export function UserProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   useEffect(() => {
-    refresh();
+    if (!firstLoad.current) firstLoad.current = refresh();
   }, [refresh]);
 
   const ensureUser = useCallback(
     async (grade?: number, locale?: string) => {
       if (user) return user;
+      const existing = firstLoad.current ? await firstLoad.current : null;
+      if (existing) return existing;
       if (!inflight.current) {
         inflight.current = (async () => {
           const lc = locale ?? document.cookie.match(/qt_locale=(\w+)/)?.[1] ?? 'uz';

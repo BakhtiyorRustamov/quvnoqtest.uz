@@ -868,3 +868,9 @@ html.tg body {
 html.tg-legacy-swipe body {
   min-height: calc(100vh + 2px);
 }
+
+/* grade-11 pen/eraser mode: no scroll bounce / pull-to-refresh anywhere */
+html.sketch-lock,
+html.sketch-lock body {
+  overscroll-behavior: none;
+}

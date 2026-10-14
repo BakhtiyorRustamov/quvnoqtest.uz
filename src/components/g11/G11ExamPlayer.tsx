@@ -7,8 +7,11 @@ import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import { pick } from '@/lib/i18n-config';
 import { getG11Subject, g11SubjectHref } from '@/content/g11/subjects';
-import { buildG11Diagnostic, G11_DIAG_COUNT, G11_DIAG_MINUTES, type G11Question } from '@/content/g11/diagnostic';
-import ReviewChat from './ReviewChat';
+import { buildG11Diagnostic, G11_DIAG_COUNT, G11_DIAG_MINUTES } from '@/content/g11/diagnostic';
+import { useSound } from '@/components/providers/SoundProvider';
+import { hapticNotify, hapticSelect } from '@/lib/tg';
+import { addAttempt, addFlags } from '@/lib/g11Store';
+import ReviewList from './ReviewList';
 import ArrowBack from './ArrowBack';
 import QuestionSketchpad from './QuestionSketchpad';
 
@@ -45,7 +48,7 @@ function fmt(sec: number): string {
  * Grade-11 "Sinov testi" — same layout as the grade-1 Matematika mock
  * test (ExamPlayer), plus a ruled scratch notebook under each question and a
  * whole-page cursor / pen / eraser layer whose drawings are kept per question.
- * Dummy content: results are shown but not saved yet.
+ * Dummy content. Finished attempts + lessons to revisit are kept on the device.
  */
 export default function G11ExamPlayer({ slug }: { slug: string }) {
   const locale = useLocale();
@@ -61,10 +64,26 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
   const [answers, setAnswers] = useState<(number | null)[]>(() => Array(count).fill(null));
   const [secondsLeft, setSecondsLeft] = useState(minutes * 60);
   const [attempt, setAttempt] = useState(0); // remounts the sketchpad (fresh drawings) on retry
-  const [open, setOpen] = useState<number | null>(null); // expanded review item
   const pageRef = useRef<HTMLElement | null>(null);
 
-  const finish = useCallback(() => setPhase('done'), []);
+  const { play } = useSound();
+  const saved = useRef(false);
+
+  // finish: remember the attempt + flag the lessons behind wrong answers
+  const finish = useCallback(() => {
+    setPhase('done');
+    if (saved.current) return;
+    saved.current = true;
+    const score = questions.filter((q, i) => answers[i] === q.answerIndex).length;
+    addAttempt(slug, { at: Date.now(), score, total: questions.length, answers });
+    addFlags(
+      slug,
+      questions.filter((q, i) => answers[i] !== q.answerIndex).map((q) => q.lessonN)
+    );
+    play('win');
+    hapticNotify(score >= questions.length / 2 ? 'success' : 'warning');
+    window.scrollTo({ top: 0 });
+  }, [answers, questions, slug, play]);
 
   useEffect(() => {
     if (phase !== 'quiz') return;
@@ -85,14 +104,17 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     const next = [...answers];
     next[idx] = ci;
     setAnswers(next);
+    play('click');
+    hapticSelect();
   }
 
   function retry() {
+    saved.current = false;
+    play('pop');
     setAnswers(Array(count).fill(null));
     setIdx(0);
     setSecondsLeft(minutes * 60);
     setAttempt((a) => a + 1);
-    setOpen(null);
     setPhase('quiz');
   }
 
@@ -159,14 +181,23 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
           {/* back / forward navigation between questions */}
           <div className="mt-6 flex items-center justify-between gap-3">
             <button
-              onClick={() => setIdx(Math.max(0, idx - 1))}
+              onClick={() => {
+                play('pop');
+                setIdx(Math.max(0, idx - 1));
+              }}
               disabled={idx === 0}
               className="btn-ghost px-6 py-3 disabled:opacity-40 disabled:cursor-not-allowed"
             >
               ← {t.back}
             </button>
             {idx < count - 1 ? (
-              <button onClick={() => setIdx(idx + 1)} className="btn-primary px-8 py-3">
+              <button
+                onClick={() => {
+                  play('pop');
+                  setIdx(idx + 1);
+                }}
+                className="btn-primary px-8 py-3"
+              >
                 {t.next} →
               </button>
             ) : (
@@ -254,129 +285,13 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
         </div>
 
         <h2 className="font-black text-ink text-xl mt-10 mb-3 text-left">{t.review}</h2>
-        <ol className="space-y-2.5 text-left">
-          {questions.map((q, i) => (
-            <ReviewItem
-              key={q.id}
-              n={i + 1}
-              q={q}
-              chosen={answers[i]}
-              open={open === i}
-              onToggle={() => setOpen(open === i ? null : i)}
-              subjectName={subjectName}
-              locale={locale}
-              t={t}
-            />
-          ))}
-        </ol>
+        <ReviewList slug={slug} questions={questions} answers={answers} subjectName={subjectName} locale={locale} />
 
         <div className="mt-8 flex justify-center">
           <ArrowBack href={backHref} label={t.home} />
         </div>
       </div>
     </main>
-  );
-}
-
-/* ------------------------------ review item ------------------------------ */
-
-function ReviewItem({
-  n,
-  q,
-  chosen,
-  open,
-  onToggle,
-  subjectName,
-  locale,
-  t
-}: {
-  n: number;
-  q: G11Question;
-  chosen: number | null;
-  open: boolean;
-  onToggle: () => void;
-  subjectName: string;
-  locale: string;
-  t: Record<string, string>;
-}) {
-  const ok = chosen === q.answerIndex;
-  const letter = (i: number) => String.fromCharCode(65 + i);
-  // context the AI tutor gets with the student's first question
-  const context = [
-    `Fan: ${subjectName}. Savol ${n}: ${pick(q.prompt, locale)}`,
-    `Variantlar: ${q.choices.map((c, i) => `${letter(i)}) ${pick(c, locale)}`).join('; ')}`,
-    `Oʻquvchi javobi: ${chosen === null ? 'javob bermagan' : `${letter(chosen)}) ${pick(q.choices[chosen], locale)}`}`,
-    `Toʻgʻri javob: ${letter(q.answerIndex)}) ${pick(q.choices[q.answerIndex], locale)}`,
-    `Tushuntirish: ${pick(q.explanation, locale)}`
-  ].join('\n');
-
-  return (
-    <li className={`card overflow-hidden border-l-8 ${ok ? 'border-l-brand-green' : 'border-l-error'}`}>
-      <button onClick={onToggle} aria-expanded={open} className="flex w-full items-start gap-3 p-3.5 text-left">
-        <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center text-white font-black ${ok ? 'bg-brand-green' : 'bg-error'}`}>
-          {ok ? '✓' : '✗'}
-        </span>
-        <span className="min-w-0 flex-1">
-          <span className="block font-extrabold text-ink leading-snug whitespace-pre-line">
-            {n}. {pick(q.prompt, locale)}
-          </span>
-          <span className="block text-[14px] font-semibold mt-1 leading-snug">
-            <span className="text-ink/55">{t.yourAnswer}: </span>
-            <span className={ok ? 'text-brand-green' : 'text-error'}>
-              {chosen === null ? t.noAnswer : pick(q.choices[chosen], locale)}
-            </span>
-          </span>
-        </span>
-        <span className="shrink-0 self-center text-xs font-black text-brand-blue">
-          {open ? t.less : t.more}
-          <svg viewBox="0 0 24 24" className={`ml-0.5 inline h-4 w-4 transition-transform ${open ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </span>
-      </button>
-
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: 'auto', opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.22 }}
-            className="overflow-hidden"
-          >
-            <div className="border-t border-ink/10 px-3.5 pb-4 pt-3">
-              {/* every option, marked */}
-              <ul className="grid gap-1.5">
-                {q.choices.map((c, ci) => {
-                  const isAns = ci === q.answerIndex;
-                  const isMine = ci === chosen;
-                  return (
-                    <li
-                      key={ci}
-                      className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-[15px] font-bold ${
-                        isAns ? 'border-brand-green/50 bg-brand-green/10 text-ink' : isMine ? 'border-error/40 bg-error/10 text-ink' : 'border-ink/10 text-ink/60'
-                      }`}
-                    >
-                      <span className="font-black text-ink/45">{letter(ci)})</span>
-                      <span className="flex-1">{pick(c, locale)}</span>
-                      {isAns && <span className="text-xs font-black text-brand-green">{t.correct}</span>}
-                      {isMine && !isAns && <span className="text-xs font-black text-error">{t.yourAnswer}</span>}
-                    </li>
-                  );
-                })}
-              </ul>
-
-              <div className="mt-3 rounded-xl bg-brand-blue/[0.07] px-3.5 py-3">
-                <div className="text-xs font-black uppercase tracking-wide text-brand-blue">{t.explanation}</div>
-                <p className="mt-1 text-[15px] font-semibold leading-relaxed text-ink/80">{pick(q.explanation, locale)}</p>
-              </div>
-
-              <ReviewChat context={context} locale={locale} />
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </li>
   );
 }
 

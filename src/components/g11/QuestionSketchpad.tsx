@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState, type RefObject } from 'react';
+import { useSound } from '@/components/providers/SoundProvider';
 
 type Pt = { x: number; y: number };
 type Stroke = Pt[];
@@ -56,6 +57,7 @@ export default function QuestionSketchpad({
   const keyRef = useRef(pageKey);
   keyRef.current = pageKey;
   const [mode, setMode] = useState<SketchMode>('cursor');
+  const { play } = useSound();
   const modeRef = useRef(mode);
   modeRef.current = mode;
 
@@ -134,6 +136,33 @@ export default function QuestionSketchpad({
       window.removeEventListener('resize', resize);
     };
   }, [containerRef, resize]);
+
+  // Pen / eraser: nothing on the page may scroll or swipe. Inside Telegram a
+  // downward swipe while the page sits at scrollTop 0 drags the mini-app window
+  // (on clients where swipe-lock isn't honoured), so keep the page 1px off the
+  // top and cancel native touch handling on the canvas. Cursor mode is untouched.
+  const active0 = mode !== 'cursor';
+  useEffect(() => {
+    if (!active0) return;
+    const c = canvasRef.current;
+    const nudge = () => {
+      if (window.scrollY < 1) window.scrollTo(0, 1);
+    };
+    const block = (e: TouchEvent) => {
+      if (e.cancelable) e.preventDefault();
+    };
+    nudge();
+    c?.addEventListener('touchstart', block, { passive: false });
+    c?.addEventListener('touchmove', block, { passive: false });
+    window.addEventListener('scroll', nudge, { passive: true });
+    document.documentElement.classList.add('sketch-lock');
+    return () => {
+      c?.removeEventListener('touchstart', block);
+      c?.removeEventListener('touchmove', block);
+      window.removeEventListener('scroll', nudge);
+      document.documentElement.classList.remove('sketch-lock');
+    };
+  }, [active0]);
 
   // new question → show that question's own drawing
   useEffect(() => {
@@ -217,7 +246,10 @@ export default function QuestionSketchpad({
         {(['cursor', 'pen', 'eraser'] as SketchMode[]).map((m) => (
           <button
             key={m}
-            onClick={() => setMode(m)}
+            onClick={() => {
+              play('click');
+              setMode(m);
+            }}
             aria-pressed={mode === m}
             aria-label={t[m]}
             title={t[m]}

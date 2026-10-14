@@ -31,7 +31,7 @@ import { G11_SUBJECTS } from '@/content/g11/subjects';
 export default function Dashboard({ forceGrade }: { forceGrade?: number } = {}) {
   const t = useTranslations();
   const locale = useLocale();
-  const { user, ensureUser } = useUser();
+  const { user, loading, ensureUser } = useUser();
   const [profileOpen, setProfileOpen] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [progress, setProgress] = useState<ProgressRow[]>([]);
@@ -103,9 +103,16 @@ export default function Dashboard({ forceGrade }: { forceGrade?: number } = {}) 
         {t('dashboard.headline')}
       </h1>
 
-      {/* grade 11: compact diagnostic-test tiles (3×3, half-size) */}
-      {grade === 11 ? (
-        <section className="mx-auto mt-8 grid max-w-sm grid-cols-3 gap-2.5 px-3">
+      {/* until the account is loaded we don't know the grade — show neutral
+          placeholders instead of flashing the grade-1 subjects */}
+      {!forceGrade && loading && !user ? (
+        <section aria-hidden className="mx-auto mt-8 grid max-w-md grid-cols-3 gap-3 px-3">
+          {Array.from({ length: 9 }, (_, i) => (
+            <div key={i} className="h-[96px] animate-pulse rounded-2xl bg-ink/[0.06]" />
+          ))}
+        </section>
+      ) : grade === 11 ? (
+        <section className="mx-auto mt-8 grid max-w-md grid-cols-3 gap-3 px-3">
           {G11_SUBJECTS.map((s, i) => (
             <G11SubjectTile key={s.slug} s={s} locale={locale} index={i} />
           ))}
@@ -155,7 +162,9 @@ export default function Dashboard({ forceGrade }: { forceGrade?: number } = {}) 
       )}
 
       {/* progress stats & charts (real /api/progress data) */}
-      <DashboardStats progress={progress} grade={grade} subjects={gradeDef.subjects} name={user?.name ?? null} locale={locale} />
+      {(forceGrade || !loading || user) && (
+        <DashboardStats progress={progress} grade={grade} subjects={gradeDef.subjects} name={user?.name ?? null} locale={locale} />
+      )}
 
       {/* top students on the site — total learned lessons; links to full board */}
       <Leaderboard />

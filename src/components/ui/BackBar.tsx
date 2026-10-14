@@ -40,15 +40,33 @@ export default function BackBar({
     else router.push('/dashboard');
   }
 
+  if (title) {
+    // three columns so the title is truly centred whatever the side widths;
+    // back, sound and language graphics share one height (h-10).
+    return (
+      <div className="mx-auto grid w-full max-w-5xl grid-cols-[1fr_auto_1fr] items-center gap-2 px-3 pt-3">
+        <div className="flex justify-start">
+          <button onClick={back} aria-label={t('back')} title={t('back')} className="shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/buttons/goBackButton.png" alt="" className={IMG_BTN_CLASS} draggable={false} />
+          </button>
+        </div>
+        <h1 className="max-w-[52vw] truncate text-center font-black text-ink text-[clamp(20px,5.5vw,30px)] leading-tight sm:max-w-md">{title}</h1>
+        <div className="flex items-center justify-end gap-2">
+          {/* the sound PNG has ~25% transparent padding — scale it to match the back button */}
+          {showMute && <MuteToggle imgClassName="scale-[1.32]" />}
+          {showLang && <LangSwitcher imgClassName="h-10" />}
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className={`flex items-center justify-between gap-2 w-full max-w-5xl mx-auto px-3 pt-3 ${title ? '' : 'gap-y-2 flex-wrap'}`}>
+    <div className="flex items-center justify-between gap-2 gap-y-2 flex-wrap w-full max-w-5xl mx-auto px-3 pt-3">
       <button onClick={back} aria-label={t('back')} title={t('back')} className="shrink-0">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/buttons/goBackButton.png" alt="" className={IMG_BTN_CLASS} draggable={false} />
       </button>
-      {title && (
-        <h1 className="min-w-0 flex-1 truncate text-center font-black text-ink text-[clamp(20px,5.5vw,30px)] leading-tight">{title}</h1>
-      )}
       <div className="ml-auto flex shrink-0 items-center gap-2">
         {showMute && <MuteToggle />}
         {showLang && <LangSwitcher />}

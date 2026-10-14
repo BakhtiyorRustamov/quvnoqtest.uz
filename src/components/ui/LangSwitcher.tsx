@@ -20,7 +20,16 @@ const FLAG: Record<Locale, string> = {
  * it expands a popover with all three (UZ default). Choosing one sets the locale
  * cookie + user record and refreshes.
  */
-export default function LangSwitcher({ className = '', align = 'right' }: { className?: string; align?: 'left' | 'right' }) {
+export default function LangSwitcher({
+  className = '',
+  align = 'right',
+  imgClassName = 'h-9'
+}: {
+  className?: string;
+  align?: 'left' | 'right';
+  /** size of the current-language graphic (default h-9) */
+  imgClassName?: string;
+}) {
   const locale = (useLocale() as Locale) || 'uz';
   const router = useRouter();
   const { user } = useUser();
@@ -59,7 +68,7 @@ export default function LangSwitcher({ className = '', align = 'right' }: { clas
           src={FLAG[locale]}
           alt=""
           height={36}
-          className="h-9 w-auto rounded-lg shadow-card select-none transition duration-150 opacity-50 saturate-[0.25] hover:opacity-100 hover:saturate-100 active:opacity-100 active:saturate-100"
+          className={`${imgClassName} w-auto rounded-lg shadow-card select-none transition duration-150 opacity-50 saturate-[0.25] hover:opacity-100 hover:saturate-100 active:opacity-100 active:saturate-100`}
           draggable={false}
         />
       </button>

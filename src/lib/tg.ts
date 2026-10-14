@@ -107,9 +107,54 @@ export function tapFeedback() {
   }
   if (typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent) && typeof navigator.vibrate === 'function') {
     try {
-      navigator.vibrate(12);
+      navigator.vibrate(20);
     } catch {
       /* ignore */
     }
   }
+}
+
+function androidVibrate(pattern: number | number[]) {
+  if (typeof navigator !== 'undefined' && /Android/i.test(navigator.userAgent) && typeof navigator.vibrate === 'function') {
+    try {
+      navigator.vibrate(pattern);
+    } catch {
+      /* ignore */
+    }
+  }
+}
+
+/** Result feedback: success / error / warning buzz (Telegram notification
+ *  haptic inside Telegram, a short pattern on Android browsers). */
+export function hapticNotify(kind: 'success' | 'error' | 'warning') {
+  lastTap = Date.now(); // swallow the generic tap buzz from the same click
+  if (inTelegram()) {
+    const w = tgApp();
+    if (w && tgVersionAtLeast(w, '6.1')) {
+      try {
+        w.HapticFeedback?.notificationOccurred?.(kind);
+      } catch {
+        /* ignore */
+      }
+    }
+    return;
+  }
+  androidVibrate(kind === 'success' ? [30, 60, 30] : kind === 'error' ? [80, 50, 80] : 50);
+}
+
+/** Choosing an option (radio-like): Telegram selection tick / short buzz. */
+export function hapticSelect() {
+  lastTap = Date.now();
+  if (inTelegram()) {
+    const w = tgApp();
+    if (w && tgVersionAtLeast(w, '6.1')) {
+      try {
+        w.HapticFeedback?.selectionChanged?.();
+      } catch {
+        /* ignore */
+      }
+    }
+    return;
+  }
+  androidVibrate(15);
 }
