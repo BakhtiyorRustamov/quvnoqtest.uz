@@ -16,8 +16,14 @@ const geist = Geist({subsets:['latin'],variable:'--font-sans'});
  * Runs before paint: detects the Telegram Mini App (launch params in the URL
  * hash, or remembered for this tab), marks <html class="tg"> and only then
  * loads Telegram's SDK — regular web visitors never download it.
+ * Telegram iOS sometimes exposes its native bridge (webkit.messageHandlers.
+ * performAction) without the TelegramWebviewProxy object the SDK talks to;
+ * without it every SDK call (haptics, swipe lock, …) is silently dropped, so
+ * the proxy is recreated here before the SDK loads.
  */
 const TG_DETECT = `(function(){try{var d=document.documentElement,ss=null;try{ss=window.sessionStorage}catch(e){}
+var wk=window.webkit&&window.webkit.messageHandlers&&window.webkit.messageHandlers.performAction;
+if(!window.TelegramWebviewProxy&&wk){window.TelegramWebviewProxy={postEvent:function(n,v){wk.postMessage({eventName:n,eventData:v})}};window.__qtTgProxy=1}
 var inTg=/tgWebApp(Data|Platform|Version)=/.test(location.hash||'')||!!(ss&&ss.getItem('qt_tg')==='1')||!!window.TelegramWebviewProxy;
 if(!inTg)return;d.classList.add('tg');try{ss&&ss.setItem('qt_tg','1')}catch(e){}
 if(!(window.Telegram&&window.Telegram.WebApp)){var s=document.createElement('script');s.src='https://telegram.org/js/telegram-web-app.js';document.head.appendChild(s)}}catch(e){}})();`;

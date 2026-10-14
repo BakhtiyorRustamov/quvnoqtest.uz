@@ -63,6 +63,39 @@ export function useTgScrollLock() {
     };
   }, []);
 
+  // Touch guard on the scroll box (all tools, not just the pen): cancel the
+  // touch move when it would pull the box down past its top, and during
+  // sideways swipes (question navigation), so a slightly diagonal swipe can't
+  // tug the Telegram window. Ordinary up/down scrolling and taps are untouched.
+  useEffect(() => {
+    if (!locked) return;
+    const el = scrollerRef.current;
+    if (!el) return;
+    let x0 = 0;
+    let y0 = 0;
+    let axis: 'x' | 'y' | null = null;
+    const start = (e: TouchEvent) => {
+      if (e.touches.length !== 1) return;
+      x0 = e.touches[0].clientX;
+      y0 = e.touches[0].clientY;
+      axis = null;
+    };
+    const move = (e: TouchEvent) => {
+      if (!e.cancelable || e.touches.length !== 1) return;
+      const dx = e.touches[0].clientX - x0;
+      const dy = e.touches[0].clientY - y0;
+      if (!axis && Math.abs(dx) + Math.abs(dy) > 6) axis = Math.abs(dx) > Math.abs(dy) ? 'x' : 'y';
+      const pullingDownAtTop = dy > 0 && el.scrollTop <= 0;
+      if (axis === 'x' || pullingDownAtTop) e.preventDefault();
+    };
+    el.addEventListener('touchstart', start, { passive: true });
+    el.addEventListener('touchmove', move, { passive: false });
+    return () => {
+      el.removeEventListener('touchstart', start);
+      el.removeEventListener('touchmove', move);
+    };
+  }, [locked]);
+
   /** scroll the test back to its top (the box when locked, else the window) */
   const scrollToTop = useCallback(
     (smooth = true) => {
