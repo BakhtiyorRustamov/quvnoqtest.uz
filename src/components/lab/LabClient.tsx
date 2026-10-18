@@ -1,10 +1,10 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { LabPlan } from '@/lib/lab/plan';
+import { AZURE_VOICES, type LabPlan } from '@/lib/lab/plan';
 import Board, { OP_MS } from './Board';
 
-type Status = { groq: boolean; hf: boolean; uzTts: boolean; models: { id: string; provider: 'groq' | 'hf' }[] };
+type Status = { groq: boolean; hf: boolean; uzTts: boolean; azure: boolean; models: { id: string; provider: 'groq' | 'hf' }[] };
 type Result = {
   key: string;
   model: string;
@@ -18,14 +18,16 @@ type Result = {
   plan?: LabPlan | null;
   error?: string;
 };
-type Voice = 'browser' | 'mms' | 'none';
+type Voice = 'browser' | 'azure' | 'mms' | 'none';
 
 const TOPICS = [
   'Aylana, radius va diametr',
   'Pifagor teoremasi',
-  'Uchburchakning yuzi',
-  'Toʻgʻri burchakli uchburchakda sinus va kosinus',
-  'Vektorlarni qoʻshish (uchburchak qoidasi)'
+  'y = x² funksiyaning grafigi',
+  'Oddiy va murakkab foiz (bank omonati)',
+  'Amudaryo va Sirdaryo: Orol dengizi muammosi',
+  'Fotosintez qanday ishlaydi',
+  'Amir Temur davlatining tashkil topishi'
 ];
 const LANG_TAG: Record<string, string> = { uz: 'uz-UZ', ru: 'ru-RU', en: 'en-US' };
 const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
@@ -47,6 +49,7 @@ export default function LabClient() {
   const [voice, setVoice] = useState<Voice>('browser');
   const [voices, setVoices] = useState<SpeechSynthesisVoice[]>([]);
   const [voiceName, setVoiceName] = useState('');
+  const [azVoice, setAzVoice] = useState(AZURE_VOICES.uz[0]);
   const [speed, setSpeed] = useState(1);
   const [log, setLog] = useState<string[]>([]);
   const stopRef = useRef(false);
@@ -63,7 +66,8 @@ export default function LabClient() {
       .then((s: Status) => {
         setStatus(s);
         setModel(s.models[0] ? `${s.models[0].provider}|${s.models[0].id}` : '');
-        if (s.uzTts) setVoice('mms');
+        if (s.azure) setVoice('azure');
+        else if (s.uzTts) setVoice('mms');
       })
       .catch(() => setStatus(null));
     const load = () => setVoices(window.speechSynthesis?.getVoices() ?? []);
@@ -76,9 +80,11 @@ export default function LabClient() {
   useEffect(() => {
     if (!voices.length) return;
     const pre = lang === 'uz' ? ['uz', 'tr', 'ru'] : [lang];
-    const best = pre.map((p) => voices.find((v) => v.lang.toLowerCase().startsWith(p))).find(Boolean);
+    const of = (p: string) => voices.filter((v) => v.lang.toLowerCase().startsWith(p));
+    const best = pre.map((p) => of(p).find((v) => /natural/i.test(v.name)) ?? of(p)[0]).find(Boolean);
     setVoiceName(best?.name ?? '');
   }, [voices, lang]);
+  useEffect(() => setAzVoice((AZURE_VOICES[lang] ?? AZURE_VOICES.uz)[0]), [lang]);
 
   /* --------------------------- plan generation --------------------------- */
 
@@ -131,13 +137,13 @@ export default function LabClient() {
     setPlaying(false);
   }
 
-  /** Fetch MMS audio for a text (kept only in memory as a blob URL). */
-  async function mmsAudio(text: string): Promise<{ url: string; ms: number }> {
+  /** Fetch server-made audio (Azure or MMS) for a text; kept only in memory as a blob URL. */
+  async function serverAudio(kind: 'azure' | 'mms', text: string): Promise<{ url: string; ms: number }> {
     const t0 = Date.now();
-    const res = await fetch('/api/lab/tts', {
+    const res = await fetch(kind === 'azure' ? '/api/lab/tts-azure' : '/api/lab/tts', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ text, speed })
+      body: JSON.stringify({ text, speed, voice: azVoice })
     });
     if (!res.ok) throw new Error((await res.json().catch(() => ({}))).error ?? `HTTP ${res.status}`);
     const blob = await res.blob();
@@ -179,8 +185,8 @@ export default function LabClient() {
     // prefetch MMS audio one step ahead so there is no gap between steps
     const pending: (Promise<{ url: string; ms: number }> | null)[] = plan.steps.map(() => null);
     const get = (i: number) => {
-      if (voice !== 'mms' || i >= plan.steps.length) return null;
-      pending[i] ??= mmsAudio(plan.steps[i].say);
+      if ((voice !== 'mms' && voice !== 'azure') || i >= plan.steps.length) return null;
+      pending[i] ??= serverAudio(voice, plan.steps[i].say);
       return pending[i];
     };
     get(from);
@@ -188,17 +194,17 @@ export default function LabClient() {
       if (stopRef.current) break;
       const s = plan.steps[i];
       let speech: Promise<void>;
-      if (voice === 'mms') {
+      if (voice === 'mms' || voice === 'azure') {
         get(i + 1)?.catch(() => {});
         try {
           const a = await get(i)!;
           if (stopRef.current) break;
-          addLog(`step ${i + 1}: MMS audio ready in ${a.ms} ms`);
+          addLog(`step ${i + 1}: ${voice} audio ready in ${a.ms} ms`);
           setStep(i);
           setRunId((n) => n + 1);
           speech = playUrl(a.url).then(() => URL.revokeObjectURL(a.url));
         } catch (e) {
-          addLog(`step ${i + 1}: MMS failed — ${(e as Error).message}`);
+          addLog(`step ${i + 1}: ${voice} failed — ${(e as Error).message}`);
           setStep(i);
           setRunId((n) => n + 1);
           speech = sleep(2500);
@@ -221,15 +227,16 @@ export default function LabClient() {
       const t0 = Date.now();
       await speakBrowser(testText);
       addLog(`browser voice "${voiceName || 'default'}" finished after ${Date.now() - t0} ms`);
-    } else {
+    } else if (kind === 'azure' || kind === 'mms') {
+      const name = kind === 'azure' ? azVoice : 'MMS';
       try {
-        addLog('MMS: requesting…');
-        const a = await mmsAudio(testText);
-        addLog(`MMS: audio ready in ${a.ms} ms (free Space; first call after sleep can take ~1 min)`);
+        addLog(`${name}: requesting…`);
+        const a = await serverAudio(kind, testText);
+        addLog(`${name}: audio ready in ${a.ms} ms`);
         await playUrl(a.url);
         URL.revokeObjectURL(a.url);
       } catch (e) {
-        addLog(`MMS failed — ${(e as Error).message}`);
+        addLog(`${name} failed — ${(e as Error).message}`);
       }
     }
   }
@@ -244,8 +251,8 @@ export default function LabClient() {
       <div className="mx-auto max-w-5xl px-4 pt-6">
         <h1 className="text-3xl font-black text-ink">🧪 Board explainer lab</h1>
         <p className="mt-1 text-sm font-semibold text-ink/60">
-          Test page (admin only). Free tools only: Groq models write the lesson plan, the board draws it, and a browser voice or the free MMS
-          Uzbek voice reads it. Nothing is saved.
+          Test page (admin only). Free tools only: Groq models write the lesson plan, the board draws it, and a voice reads it (browser
+          voices, Microsoft neural voices on the free Azure tier, or MMS). Nothing is saved.
         </p>
 
         {/* status */}
@@ -254,7 +261,8 @@ export default function LabClient() {
             <>
               <span className="flex items-center gap-2"><Dot ok={status.groq} /> Groq key {status.groq ? '' : '(add GROQ_API_KEY)'}</span>
               <span className="flex items-center gap-2"><Dot ok={status.hf} /> Hugging Face token {status.hf ? '(router needs credits)' : ''}</span>
-              <span className="flex items-center gap-2"><Dot ok={status.uzTts} /> MMS Uzbek voice {status.uzTts ? '' : '(add UZ_TTS_URL)'}</span>
+              <span className="flex items-center gap-2"><Dot ok={status.azure} /> Microsoft voices {status.azure ? '' : '(add AZURE_SPEECH_KEY + AZURE_SPEECH_REGION)'}</span>
+              {status.uzTts && <span className="flex items-center gap-2"><Dot ok /> MMS Uzbek voice</span>}
               <span className="flex items-center gap-2"><Dot ok={voices.length > 0} /> Browser voices: {voices.length}</span>
             </>
           ) : (
@@ -337,6 +345,7 @@ export default function LabClient() {
             <h2 className="text-lg font-black text-ink">2 · Board {planFrom && <span className="text-sm font-bold text-ink/45">— {planFrom}</span>}</h2>
             <div className="flex flex-wrap items-center gap-2 text-sm font-bold">
               <select value={voice} onChange={(e) => setVoice(e.target.value as Voice)} className="rounded-lg border border-ink/15 bg-white px-2 py-1.5">
+                <option value="azure" disabled={!status?.azure}>Voice: Microsoft (Azure)</option>
                 <option value="browser">Voice: browser</option>
                 <option value="mms" disabled={!status?.uzTts}>Voice: MMS Uzbek (free Space)</option>
                 <option value="none">Voice: off</option>
@@ -348,6 +357,13 @@ export default function LabClient() {
               </label>
             </div>
           </div>
+          {voice === 'azure' && (
+            <select value={azVoice} onChange={(e) => setAzVoice(e.target.value)} className="mt-2 w-full rounded-lg border border-ink/15 bg-white px-2 py-1.5 text-sm font-semibold">
+              {Object.values(AZURE_VOICES).flat().map((v) => (
+                <option key={v} value={v}>{v}</option>
+              ))}
+            </select>
+          )}
           {voice === 'browser' && (
             <select value={voiceName} onChange={(e) => setVoiceName(e.target.value)} className="mt-2 w-full rounded-lg border border-ink/15 bg-white px-2 py-1.5 text-sm font-semibold">
               <option value="">(default voice)</option>
@@ -405,6 +421,9 @@ export default function LabClient() {
           <div className="mt-2 flex flex-wrap gap-2">
             <button className="btn-blue px-4 py-2 text-sm" onClick={() => testVoice('browser')}>
               🔊 Browser voice
+            </button>
+            <button className="btn-blue px-4 py-2 text-sm disabled:opacity-50" disabled={!status?.azure} onClick={() => testVoice('azure')}>
+              🔊 Microsoft voice
             </button>
             <button className="btn-blue px-4 py-2 text-sm disabled:opacity-50" disabled={!status?.uzTts} onClick={() => testVoice('mms')}>
               🔊 MMS Uzbek

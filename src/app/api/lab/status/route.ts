@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { GROQ_MODELS, HF_MODELS, groqKey, hfToken, labAllowed, uzTtsUrl } from '@/lib/lab/server';
+import { HF_MODELS, azureSpeech, groqKey, groqModels, hfToken, labAllowed, uzTtsUrl } from '@/lib/lab/server';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,8 +10,9 @@ export async function GET() {
     groq: !!groqKey(),
     hf: !!hfToken(),
     uzTts: !!uzTtsUrl(),
+    azure: !!azureSpeech(),
     models: [
-      ...GROQ_MODELS.map((m) => ({ id: m, provider: 'groq' as const })),
+      ...(await groqModels()).map((m) => ({ id: m, provider: 'groq' as const })),
       ...HF_MODELS.map((m) => ({ id: m, provider: 'hf' as const }))
     ]
   });

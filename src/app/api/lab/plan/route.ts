@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { GROQ_MODELS, HF_MODELS, groqKey, hfToken, labAllowed } from '@/lib/lab/server';
+import { HF_MODELS, groqKey, groqModels, hfToken, labAllowed } from '@/lib/lab/server';
 import { checkPlan, extractJson, planSystemPrompt, planUserPrompt } from '@/lib/lab/plan';
 
 export const dynamic = 'force-dynamic';
@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
   let url: string;
   let key: string | null;
   if (provider === 'groq') {
-    if (!(GROQ_MODELS as readonly string[]).includes(model)) return NextResponse.json({ error: 'unknown model' }, { status: 400 });
+    if (!(await groqModels()).includes(model)) return NextResponse.json({ error: 'unknown model' }, { status: 400 });
     url = 'https://api.groq.com/openai/v1/chat/completions';
     key = groqKey();
   } else {
