@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { AZURE_VOICES, type LabPlan } from '@/lib/lab/plan';
 import Board, { OP_MS } from './Board';
 
-type Status = { groq: boolean; hf: boolean; uzTts: boolean; azure: boolean; models: { id: string; provider: 'groq' | 'hf' }[] };
+type Status = { groq: boolean; hf: boolean; google: boolean; uzTts: boolean; azure: boolean; models: { id: string; provider: 'groq' | 'hf' | 'google' }[] };
 type Result = {
   key: string;
   model: string;
@@ -116,7 +116,7 @@ export default function LabClient() {
   async function compareAll() {
     if (!status) return;
     // Groq limits are per model, so models run in parallel; HF only if a token exists
-    const list = status.models.filter((m) => (m.provider === 'groq' ? status.groq : status.hf));
+    const list = status.models.filter((m) => (m.provider === 'groq' ? status.groq : m.provider === 'google' ? status.google : status.hf));
     await Promise.allSettled(list.map((m) => runOne(m.provider, m.id)));
   }
 
@@ -260,6 +260,7 @@ export default function LabClient() {
           {status ? (
             <>
               <span className="flex items-center gap-2"><Dot ok={status.groq} /> Groq key {status.groq ? '' : '(add GROQ_API_KEY)'}</span>
+              <span className="flex items-center gap-2"><Dot ok={status.google} /> Google key (free Gemma) {status.google ? '' : '(add GOOGLE_AI_API_KEY)'}</span>
               <span className="flex items-center gap-2"><Dot ok={status.hf} /> Hugging Face token {status.hf ? '(router needs credits)' : ''}</span>
               <span className="flex items-center gap-2"><Dot ok={status.azure} /> Microsoft voices {status.azure ? '' : '(add AZURE_SPEECH_KEY + AZURE_SPEECH_REGION)'}</span>
               {status.uzTts && <span className="flex items-center gap-2"><Dot ok /> MMS Uzbek voice</span>}
@@ -290,7 +291,7 @@ export default function LabClient() {
             <select value={model} onChange={(e) => setModel(e.target.value)} className="min-w-0 rounded-xl border border-ink/15 bg-white px-3 py-2 font-bold">
               {status?.models.map((m) => (
                 <option key={`${m.provider}|${m.id}`} value={`${m.provider}|${m.id}`}>
-                  {m.provider === 'groq' ? 'Groq' : 'HF'} · {m.id}
+                  {m.provider === 'groq' ? 'Groq' : m.provider === 'google' ? 'Google' : 'HF'} · {m.id}
                 </option>
               ))}
             </select>

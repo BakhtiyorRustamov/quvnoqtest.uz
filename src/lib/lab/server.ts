@@ -74,6 +74,38 @@ export async function groqModels(): Promise<string[]> {
 /** Hugging Face router models (only work if the HF account has inference credits). */
 export const HF_MODELS = ['google/gemma-3-27b-it', 'Qwen/Qwen2.5-72B-Instruct', 'meta-llama/Llama-3.3-70B-Instruct'] as const;
 
+/** Google AI Studio key (Gemma models are free there; no Gemini models are used). */
+export function googleKey(): string | null {
+  return process.env.GOOGLE_AI_API_KEY || process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || null;
+}
+
+export const GOOGLE_FALLBACK = ['gemma-3-27b-it', 'gemma-3-12b-it', 'gemma-3-4b-it'];
+let googleCache: { at: number; ids: string[] } | null = null;
+
+/** Gemma models available to this Google AI Studio key (cached for 10 minutes). Gemini models are skipped on purpose. */
+export async function googleModels(): Promise<string[]> {
+  const key = googleKey();
+  if (!key) return [];
+  if (googleCache && Date.now() - googleCache.at < 600_000) return googleCache.ids;
+  try {
+    const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=200', {
+      headers: { 'x-goog-api-key': key },
+      signal: AbortSignal.timeout(8000),
+      cache: 'no-store'
+    });
+    if (!res.ok) throw new Error(String(res.status));
+    const data = (await res.json()) as { models?: { name: string; supportedGenerationMethods?: string[] }[] };
+    const ids = (data.models ?? [])
+      .filter((m) => /gemma/i.test(m.name) && (m.supportedGenerationMethods ?? ['generateContent']).includes('generateContent'))
+      .map((m) => m.name.replace(/^models\//, ''))
+      .sort((a, b) => b.localeCompare(a, undefined, { numeric: true }));
+    googleCache = { at: Date.now(), ids: ids.length ? ids : GOOGLE_FALLBACK };
+  } catch {
+    googleCache = { at: Date.now() - 540_000, ids: GOOGLE_FALLBACK };
+  }
+  return googleCache.ids;
+}
+
 /** Azure AI Speech (free F0 tier: 0.5 M characters/month of neural voices). */
 export function azureSpeech(): { key: string; region: string } | null {
   const key = process.env.AZURE_SPEECH_KEY;

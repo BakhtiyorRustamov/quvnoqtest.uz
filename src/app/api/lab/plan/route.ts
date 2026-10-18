@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { HF_MODELS, groqKey, groqModels, hfToken, labAllowed } from '@/lib/lab/server';
+import { HF_MODELS, googleKey, googleModels, groqKey, groqModels, hfToken, labAllowed } from '@/lib/lab/server';
 import { checkPlan, extractJson, planSystemPrompt, planUserPrompt } from '@/lib/lab/plan';
 
 export const dynamic = 'force-dynamic';
@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
   const topic = String(body.topic ?? '').trim();
   const lang = ['uz', 'ru', 'en'].includes(body.lang) ? body.lang : 'uz';
   const model = String(body.model ?? '');
-  const provider = body.provider === 'hf' ? 'hf' : 'groq';
+  const provider = body.provider === 'hf' ? 'hf' : body.provider === 'google' ? 'google' : 'groq';
   if (!topic) return NextResponse.json({ error: 'empty topic' }, { status: 400 });
 
   let url: string;
@@ -24,6 +24,10 @@ export async function POST(req: NextRequest) {
     if (!(await groqModels()).includes(model)) return NextResponse.json({ error: 'unknown model' }, { status: 400 });
     url = 'https://api.groq.com/openai/v1/chat/completions';
     key = groqKey();
+  } else if (provider === 'google') {
+    if (!(await googleModels()).includes(model)) return NextResponse.json({ error: 'unknown model' }, { status: 400 });
+    url = 'https://generativelanguage.googleapis.com/v1beta/openai/chat/completions';
+    key = googleKey();
   } else {
     if (!(HF_MODELS as readonly string[]).includes(model)) return NextResponse.json({ error: 'unknown model' }, { status: 400 });
     url = 'https://router.huggingface.co/v1/chat/completions';
@@ -31,16 +35,21 @@ export async function POST(req: NextRequest) {
   }
   if (!key) return NextResponse.json({ error: `${provider} key not set` }, { status: 501 });
 
+  // Gemma on Google AI Studio has no system role and no JSON mode, so the
+  // instructions go into the user message and the reply is parsed leniently.
+  const isGemma = provider === 'google';
   const payload: Record<string, unknown> = {
     model,
-    messages: [
-      { role: 'system', content: planSystemPrompt(lang) },
-      { role: 'user', content: planUserPrompt(topic) }
-    ],
+    messages: isGemma
+      ? [{ role: 'user', content: `${planSystemPrompt(lang)}\n\n${planUserPrompt(topic)}` }]
+      : [
+          { role: 'system', content: planSystemPrompt(lang) },
+          { role: 'user', content: planUserPrompt(topic) }
+        ],
     temperature: 0.4,
-    max_tokens: 3000,
-    response_format: { type: 'json_object' }
+    max_tokens: 3000
   };
+  if (!isGemma) payload.response_format = { type: 'json_object' };
   if (model.startsWith('openai/gpt-oss')) payload.reasoning_effort = 'low';
 
   const t0 = Date.now();
