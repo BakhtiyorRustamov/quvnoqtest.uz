@@ -14,9 +14,9 @@ import React, { useMemo, useRef, useState, useEffect } from "react";
  *     its correct bin.
  */
 const STR = {
-  uz: { instr: "Avval rasmni, keyin uning qutisini bos!", done: "Barakalla! Hammasi joyida!", retry: "Boshqa quti — yana urin", next: "Yana" },
-  ru: { instr: "Сначала картинку, потом её ящик!", done: "Молодец! Всё на месте!", retry: "Другой ящик — попробуй ещё", next: "Ещё" },
-  en: { instr: "Tap a picture, then tap its box!", done: "Great! All sorted!", retry: "Wrong box — try again", next: "Again" },
+  uz: { instr: "Avval rasmni, keyin uning qutisini bos!", instrText: "Avval kartani, keyin uning qutisini bos!", done: "Barakalla! Hammasi joyida!", retry: "Boshqa quti — yana urin", next: "Yana" },
+  ru: { instr: "Сначала картинку, потом её ящик!", instrText: "Сначала карточку, потом её ящик!", done: "Молодец! Всё на месте!", retry: "Другой ящик — попробуй ещё", next: "Ещё" },
+  en: { instr: "Tap a picture, then tap its box!", instrText: "Tap a card, then tap its box!", done: "Great! All sorted!", retry: "Wrong box — try again", next: "Again" },
 };
 const BIN_COLORS = ["#46c06a", "#2f9fe0", "#f39a1f", "#d63384"];
 const L = (v, lang) => (v && typeof v === "object" ? v[lang] ?? v.uz ?? "" : v ?? "");
@@ -70,7 +70,7 @@ export default function SortBins({ items = [], bins = [], lang = "uz", embedded 
   return (
     <div style={S.wrap}>
       <style>{CSS}</style>
-      <p style={S.instr}>{t.instr}</p>
+      <p style={S.instr}>{items.some((i) => i.emoji) ? t.instr : t.instrText}</p>
 
       {/* tray */}
       <div style={S.tray}>
@@ -88,8 +88,8 @@ export default function SortBins({ items = [], bins = [], lang = "uz", embedded 
                 aria-pressed={on}
                 style={{ ...S.card, ...(on ? S.cardSel : {}) }}
               >
-                <span style={S.emoji} aria-hidden>{c.emoji}</span>
-                {cap && <span style={S.cap}>{cap}</span>}
+                {c.emoji && <span style={S.emoji} aria-hidden>{c.emoji}</span>}
+                {cap && <span style={c.emoji ? S.cap : S.capOnly}>{cap}</span>}
               </button>
             );
           })
@@ -112,7 +112,8 @@ export default function SortBins({ items = [], bins = [], lang = "uz", embedded 
               <span style={{ ...S.binTag, background: color }}>{L(b.label, lang)}</span>
               <span style={S.binGrid}>
                 {inside.map((c) => (
-                  <span key={c._id} style={S.chip} aria-hidden>{c.emoji}</span>
+                  // text-only cards (e.g. formulas) keep their text once placed
+                  <span key={c._id} style={c.emoji ? S.chip : S.chipText} aria-hidden>{c.emoji || L(c.label, lang)}</span>
                 ))}
               </span>
             </button>
@@ -140,6 +141,8 @@ const S = {
   card: { position: "relative", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 4, minWidth: 84, minHeight: 88, padding: "8px 10px", borderRadius: 18, border: "3px solid #d9e6c4", background: "#fff", cursor: "pointer", boxShadow: "0 4px 0 rgba(80,90,40,.10)", transition: "transform .1s, border-color .15s" },
   cardSel: { border: "3px solid #2f9fe0", background: "#eef7fd", boxShadow: "0 0 0 3px rgba(47,159,224,.22), 0 4px 0 rgba(47,159,224,.25)", transform: "translateY(-3px)" },
   emoji: { fontSize: 38, lineHeight: 1 },
+  capOnly: { fontSize: 19, fontWeight: 900, color: "#1f2937", padding: "6px 4px", whiteSpace: "nowrap" },
+  chipText: { fontSize: 13, fontWeight: 800, color: "#1f2937", background: "#fff", borderRadius: 8, padding: "2px 6px", whiteSpace: "nowrap" },
   cap: { fontSize: 12.5, fontWeight: 800, color: "#3c5a1e", textAlign: "center" },
   bins: { display: "grid", gap: 12, marginTop: 18 },
   bin: { position: "relative", cursor: "pointer", minHeight: 120, padding: "26px 8px 10px", borderRadius: 20, border: "3px dashed #ccc", background: "#fff", display: "flex", flexWrap: "wrap", alignContent: "flex-start", justifyContent: "center", gap: 6, transition: "transform .1s" },

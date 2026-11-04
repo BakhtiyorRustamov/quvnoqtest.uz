@@ -1,3 +1,4 @@
+import AppSidebar from '@/components/ui/AppSidebar';
 import type { Metadata, Viewport } from 'next';
 import { getLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
@@ -6,6 +7,7 @@ import { UserProvider } from '@/components/providers/UserProvider';
 import { SoundProvider } from '@/components/providers/SoundProvider';
 import NoticeBanner from '@/components/ui/NoticeBanner';
 import TelegramBridge from '@/components/providers/TelegramBridge';
+import { rootMetadata } from '@/lib/seo';
 import './globals.css';
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -28,11 +30,7 @@ var inTg=/tgWebApp(Data|Platform|Version)=/.test(location.hash||'')||!!(ss&&ss.g
 if(!inTg)return;d.classList.add('tg');try{ss&&ss.setItem('qt_tg','1')}catch(e){}
 if(!(window.Telegram&&window.Telegram.WebApp)){var s=document.createElement('script');s.src='https://telegram.org/js/telegram-web-app.js';document.head.appendChild(s)}}catch(e){}})();`;
 
-export const metadata: Metadata = {
-  title: 'QuvnoqTest.uz — Quvnoq darslar!',
-  description:
-    "O'zbekiston maktab o'quvchilari uchun qiziqarli test-darslar. 1–11-sinf, o'yin orqali o'rganamiz!"
-};
+export const metadata: Metadata = rootMetadata();
 
 export const viewport: Viewport = {
   themeColor: '#f39a1f',
@@ -63,6 +61,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
               <TelegramBridge />
               <NoticeBanner />
               {children}
+              <AppSidebar />
             </SoundProvider>
           </UserProvider>
         </NextIntlClientProvider>

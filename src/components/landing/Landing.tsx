@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { AnimatePresence, LayoutGroup, motion, useReducedMotion, useSpring } from 'framer-motion';
 import AnimatedLogo from './AnimatedLogo';
+import MoviyDaftarLogo from '@/components/brand/MoviyDaftarLogo';
 import LangSwitcher from '@/components/ui/LangSwitcher';
 import { GRADES, isUnlockedSubject, unlockedSubjectHref, type SubjectDef } from '@/content/taxonomy';
 import { pick } from '@/lib/i18n-config';
@@ -253,9 +254,10 @@ export default function Landing() {
                 href="/dashboard"
                 aria-label={t('landing.goToDashboard')}
                 title={t('landing.goToDashboard')}
-                className="order-2 block w-[150px] sm:order-1 sm:w-[180px]"
+                className="order-2 flex w-[170px] flex-col items-center sm:order-1 sm:w-[200px]"
               >
-                <AnimatedLogo onDark />
+                <MoviyDaftarLogo onDark size="sm" className="mb-2" />
+                <AnimatedLogo onDark className="w-[78%] opacity-90" />
               </Link>
               <div className="order-1 self-end sm:order-2 sm:self-auto">
                 <LangSwitcher />
@@ -471,7 +473,10 @@ export default function Landing() {
                 animate={{ y: phase === 'rise' ? -34 : 0, scale: phase === 'rise' ? 0.84 : 1 }}
                 transition={{ type: 'spring', stiffness: 90, damping: 16 }}
               >
-                <AnimatedLogo drawIn onDark />
+                <div className="mb-4 flex justify-center">
+                  <MoviyDaftarLogo onDark size="lg" stacked />
+                </div>
+                <AnimatedLogo drawIn onDark className="mx-auto w-[70%]" />
               </motion.div>
             </motion.div>
           )}

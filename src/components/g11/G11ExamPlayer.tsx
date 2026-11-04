@@ -6,7 +6,7 @@ import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import { pick } from '@/lib/i18n-config';
 import { getG11Subject, g11SubjectHref } from '@/content/g11/subjects';
-import { buildG11Diagnostic, G11_DIAG_COUNT, G11_DIAG_MINUTES } from '@/content/g11/diagnostic';
+import { buildG11Exam, certEstimate, g11ExamMinutes, g11Score, hasRealExam, isAnswered, questionPoints, G11_DIAG_COUNT, ESSAY_MAX, type G11Answer, type G11Question } from '@/content/g11/diagnostic';
 import { useSound } from '@/components/providers/SoundProvider';
 import { hapticNotify, hapticSelect } from '@/lib/tg';
 import { addAttempt, addFlags } from '@/lib/g11Store';
@@ -14,6 +14,7 @@ import ReviewList from './ReviewList';
 import ScoreRing from './ScoreRing';
 import ArrowBack from './ArrowBack';
 import QuestionSketchpad from './QuestionSketchpad';
+import ScratchNotebook from './ScratchNotebook';
 import { useTgScrollLock } from './useTgScrollLock';
 
 type Phase = 'quiz' | 'done';
@@ -23,21 +24,33 @@ const S: Record<string, Record<string, string>> = {
     start: 'Testni boshlash', minutes: 'daqiqa', questions: 'ta savol', question: 'Savol', of: '/',
     finish: 'Yakunlash', next: 'Keyingi', back: 'Orqaga', yourScore: 'Sizning natijangiz', timeUp: 'Vaqt tugadi!',
     review: 'Savollar tahlili', yourAnswer: 'Sizning javobingiz', correct: 'Toʻgʻri javob', noAnswer: 'Javob berilmadi',
-    retry: 'Qaytadan ishlash', home: 'Fan sahifasi', explanation: 'Tushuntirish', more: 'Batafsil', less: 'Yopish'
+    retry: 'Qaytadan ishlash', swipe: 'yoki suring', typeHere: 'Javobni yozing', estimate: 'Taxminiy milliy sertifikat bali', loading: 'Yangi variant tayyorlanmoqda…', home: 'Fan sahifasi', explanation: 'Tushuntirish', more: 'Batafsil', less: 'Yopish', essayHere: 'Inshoni shu yerga yozing…', words: 'soʻz', essayCheck: 'SI bilan tekshirish', essayChecking: 'SI tekshirmoqda…', essayScore: 'SI bahosi', essayNote: 'Baho sunʼiy intellekt (SI) tomonidan berildi — u xato qilishi mumkin.', essayErr: 'Tekshirib boʻlmadi. Keyinroq qayta urinib koʻring.', essayAuto: 'Test yakunlanganda insho avtomatik tekshiriladi.'
   },
   ru: {
     start: 'Начать тест', minutes: 'минут', questions: 'вопросов', question: 'Вопрос', of: 'из',
     finish: 'Завершить', next: 'Далее', back: 'Назад', yourScore: 'Ваш результат', timeUp: 'Время вышло!',
     review: 'Разбор вопросов', yourAnswer: 'Ваш ответ', correct: 'Верный ответ', noAnswer: 'Нет ответа',
-    retry: 'Пройти заново', home: 'Страница предмета', explanation: 'Объяснение', more: 'Подробнее', less: 'Свернуть'
+    retry: 'Пройти заново', swipe: 'или проведите пальцем', typeHere: 'Введите ответ', estimate: 'Примерный балл нац. сертификата', loading: 'Готовим новый вариант…', home: 'Страница предмета', explanation: 'Объяснение', more: 'Подробнее', less: 'Свернуть', essayHere: 'Напишите сочинение здесь…', words: 'слов', essayCheck: 'Проверить с ИИ', essayChecking: 'ИИ проверяет…', essayScore: 'Оценка ИИ', essayNote: 'Оценку выставил искусственный интеллект (ИИ) — возможны ошибки.', essayErr: 'Не удалось проверить. Попробуйте позже.', essayAuto: 'При завершении теста сочинение проверится автоматически.'
   },
   en: {
     start: 'Start the test', minutes: 'minutes', questions: 'questions', question: 'Question', of: 'of',
     finish: 'Finish', next: 'Next', back: 'Back', yourScore: 'Your score', timeUp: "Time's up!",
     review: 'Question review', yourAnswer: 'Your answer', correct: 'Correct answer', noAnswer: 'No answer',
-    retry: 'Try again', home: 'Subject page', explanation: 'Explanation', more: 'Details', less: 'Close'
+    retry: 'Try again', swipe: 'or swipe', typeHere: 'Type your answer', estimate: 'Estimated national certificate score', loading: 'Preparing a new variant…', home: 'Subject page', explanation: 'Explanation', more: 'Details', less: 'Close', essayHere: 'Write your essay here…', words: 'words', essayCheck: 'Check with AI', essayChecking: 'AI is checking…', essayScore: 'AI score', essayNote: 'Scored by artificial intelligence (AI) — it can make mistakes.', essayErr: 'Could not check. Please try again later.', essayAuto: 'The essay is checked automatically when you finish.'
   }
 };
+
+/** AI essay check → stored answer [text, score, result JSON], or null on failure */
+async function gradeEssay(q: G11Question, text: string): Promise<string[] | null> {
+  try {
+    const res = await fetch('/api/ai/essay', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ topic: q.prompt.uz, essay: text, lang: q.id.startsWith('g11-rus') ? 'ru' : q.id.startsWith('g11-qq') ? 'kaa' : 'uz' }) });
+    if (!res.ok) return null;
+    const { result } = await res.json();
+    return [text, String(result.score), JSON.stringify(result)];
+  } catch {
+    return null;
+  }
+}
 
 function fmt(sec: number): string {
   const m = Math.floor(sec / 60);
@@ -56,37 +69,61 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
   const t = S[locale] || S.uz;
   const subject = getG11Subject(slug);
   const backHref = g11SubjectHref(slug);
-  const count = G11_DIAG_COUNT;
-  const minutes = G11_DIAG_MINUTES;
+  const minutes = g11ExamMinutes(slug);
 
   const [phase, setPhase] = useState<Phase>('quiz');
-  const [questions] = useState(() => buildG11Diagnostic(slug));
+  // a fresh variant every attempt — built on the client (random, so not during server rendering)
+  const [questions, setQuestions] = useState<G11Question[]>([]);
+  const count = questions.length || G11_DIAG_COUNT;
   const [idx, setIdxRaw] = useState(0);
   const [dir, setDir] = useState(1); // slide direction for the question animation
-  const [answers, setAnswers] = useState<(number | null)[]>(() => Array(count).fill(null));
+  const [answers, setAnswers] = useState<G11Answer[]>(() => Array(G11_DIAG_COUNT).fill(null));
   const [secondsLeft, setSecondsLeft] = useState(minutes * 60);
   const [attempt, setAttempt] = useState(0); // remounts the sketchpad (fresh drawings) on retry
   const pageRef = useRef<HTMLElement | null>(null);
+  useEffect(() => {
+    const qs = buildG11Exam(slug);
+    setQuestions(qs);
+    setAnswers(Array(qs.length).fill(null));
+  }, [slug, attempt]);
 
+  const answersRef = useRef(answers);
+  answersRef.current = answers;
+  const [essayBusy, setEssayBusy] = useState(false);
+  const [essayErr, setEssayErr] = useState(false);
   const { play } = useSound();
   const saved = useRef(false);
   const { scrollerRef, locked, scrollerClass, scrollToTop } = useTgScrollLock();
 
   // finish: remember the attempt + flag the lessons behind wrong answers
-  const finish = useCallback(() => {
+  const finish = useCallback(async () => {
     setPhase('done');
     if (saved.current) return;
     saved.current = true;
-    const score = questions.filter((q, i) => answers[i] === q.answerIndex).length;
-    addAttempt(slug, { at: Date.now(), score, total: questions.length, answers });
+    let answers = answersRef.current;
+    // an essay written but not yet checked → let the AI score it before saving
+    const pending = questions.map((q, i) => (q.essay && Array.isArray(answers[i]) && (answers[i] as string[])[0]?.trim() && (answers[i] as string[])[1] === undefined ? i : -1)).filter((i) => i >= 0);
+    for (const i of pending) {
+      const r = await gradeEssay(questions[i], (answers[i] as string[])[0]);
+      if (r) answers = answers.map((a, k) => (k === i ? r : a));
+    }
+    if (pending.length) setAnswers(answers);
+    const { score, total } = g11Score(questions, answers);
+    addAttempt(slug, { at: Date.now(), score, total, answers, ...(hasRealExam(slug) ? { questions } : {}) });
     addFlags(
       slug,
-      questions.filter((q, i) => answers[i] !== q.answerIndex).map((q) => q.lessonN)
+      questions
+        .filter((q, i) => {
+          const p = questionPoints(q, answers[i] ?? null);
+          return p.got < p.max;
+        })
+        .map((q) => q.lessonN)
+        .filter((n) => n > 0)
     );
     play('win');
-    hapticNotify(score >= questions.length / 2 ? 'success' : 'warning');
+    hapticNotify(score >= total / 2 ? 'success' : 'warning');
     scrollToTop(false);
-  }, [answers, questions, slug, play, scrollToTop]);
+  }, [questions, slug, play, scrollToTop]);
 
   useEffect(() => {
     if (phase !== 'quiz') return;
@@ -135,6 +172,33 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
     }
   }
 
+  function typeEssay(v: string) {
+    const next = [...answers];
+    next[idx] = [v]; // editing clears an earlier AI score
+    setAnswers(next);
+  }
+  async function checkEssay() {
+    const cur = answers[idx];
+    const text = Array.isArray(cur) ? cur[0] : '';
+    if (!text?.trim() || essayBusy) return;
+    setEssayBusy(true);
+    setEssayErr(false);
+    const r = await gradeEssay(questions[idx], text);
+    setEssayBusy(false);
+    if (!r) return setEssayErr(true);
+    const next = [...answersRef.current];
+    next[idx] = r;
+    setAnswers(next);
+  }
+
+  function typePart(pi: number, v: string) {
+    const next = [...answers];
+    const cur = Array.isArray(next[idx]) ? [...(next[idx] as string[])] : ['', ''];
+    cur[pi] = v;
+    next[idx] = cur;
+    setAnswers(next);
+  }
+
   function choose(ci: number) {
     const next = [...answers];
     next[idx] = ci;
@@ -146,7 +210,6 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
   function retry() {
     saved.current = false;
     play('pop');
-    setAnswers(Array(count).fill(null));
     setIdxRaw(0);
     setSecondsLeft(minutes * 60);
     setAttempt((a) => a + 1);
@@ -158,6 +221,12 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
   /* --------------------------- QUIZ --------------------------- */
   if (phase === 'quiz') {
     const q = questions[idx];
+    if (!q)
+      return (
+        <main className="min-h-screen grid place-items-center">
+          <p className="font-black text-ink/50">{t.loading}</p>
+        </main>
+      );
     const low = secondsLeft <= 60;
     return (
       <div ref={scrollerRef} className={scrollerClass} style={locked ? { paddingTop: 'var(--app-top)', WebkitOverflowScrolling: 'touch' } : undefined}>
@@ -187,7 +256,63 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
             >
               <div className="card p-5 mt-4">
                 <p className="font-black text-ink text-xl leading-snug whitespace-pre-line">{pick(q.prompt, locale)}</p>
+                {q.figure && <div className="mt-3 flex justify-center" dangerouslySetInnerHTML={{ __html: q.figure }} />}
               </div>
+
+              {q.essay && (() => {
+                const cur = Array.isArray(answers[idx]) ? (answers[idx] as string[]) : [];
+                const text = cur[0] ?? '';
+                const words = text.trim() ? text.trim().split(/\s+/).length : 0;
+                const res = cur[2] ? (JSON.parse(cur[2]) as { score: number; mazmun: number; tuzilish: number; til: number; imlo: number; comment: string; errors: string[] }) : null;
+                return (
+                  <div className="mt-4 card p-4">
+                    <textarea
+                      value={text}
+                      onChange={(e) => typeEssay(e.target.value)}
+                      placeholder={t.essayHere}
+                      spellCheck={false}
+                      autoCorrect="off"
+                      autoCapitalize="off"
+                      rows={12}
+                      className="w-full rounded-xl border-2 border-ink/15 bg-white px-3 py-2 text-[17px] font-semibold leading-relaxed text-ink outline-none focus:border-brand-blue"
+                    />
+                    <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
+                      <span className="text-sm font-bold text-ink/55">{words} {t.words}</span>
+                      <button onClick={checkEssay} disabled={!words || essayBusy} className="btn-primary px-4 py-2 text-sm disabled:opacity-50">
+                        {essayBusy ? t.essayChecking : t.essayCheck}
+                      </button>
+                    </div>
+                    {essayErr && <p className="mt-2 text-sm font-bold text-error">{t.essayErr}</p>}
+                    {!res && !essayErr && <p className="mt-2 text-xs font-semibold text-ink/50">{t.essayAuto} {t.essayNote}</p>}
+                    {res && (
+                      <div className="mt-3 rounded-xl bg-brand-blue/[0.07] px-3.5 py-3">
+                        <div className="font-black text-brand-blue">{t.essayScore}: {res.score} / {ESSAY_MAX}</div>
+                        <div className="mt-1 text-sm font-bold text-ink/70">{q.id.startsWith('g11-rus') ? `Содержание ${res.mazmun} · Композиция ${res.tuzilish} · Речь ${res.til} · Грамотность ${res.imlo}` : `Mazmun ${res.mazmun} · Tuzilish ${res.tuzilish} · Til ${res.til} · Imlo ${res.imlo}`}</div>
+                        <p className="mt-1.5 text-[15px] font-semibold leading-relaxed text-ink/80">{res.comment}</p>
+                        {res.errors.length > 0 && <ul className="mt-1.5 list-disc pl-5 text-sm font-semibold text-ink/70">{res.errors.map((x, k) => <li key={k}>{x}</li>)}</ul>}
+                        <p className="mt-2 text-xs font-bold text-ink/45">ⓘ {t.essayNote}</p>
+                      </div>
+                    )}
+                  </div>
+                );
+              })()}
+
+              {q.parts && (
+                <div className="mt-4 grid gap-3">
+                  {q.parts.map((p, pi) => (
+                    <label key={pi} className="card block px-4 py-3">
+                      <span className="block font-extrabold text-ink leading-snug">{pick(p.prompt, locale)}</span>
+                      <input
+                        value={(Array.isArray(answers[idx]) ? (answers[idx] as string[])[pi] : '') ?? ''}
+                        onChange={(e) => typePart(pi, e.target.value)}
+                        inputMode={/^[−\-]?\d+([.,]\d+)?(\/\d+)?$/.test(p.answer) ? 'decimal' : 'text'}
+                        placeholder={t.typeHere}
+                        className="mt-2 w-full rounded-xl border-2 border-ink/15 bg-white px-3 py-2 text-lg font-black text-ink outline-none focus:border-brand-blue"
+                      />
+                    </label>
+                  ))}
+                </div>
+              )}
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
                 {q.choices.map((c, ci) => (
@@ -214,33 +339,39 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
             </motion.div>
           </AnimatePresence>
 
-          {/* back / forward navigation between questions */}
-          <div className="mt-6 flex items-center justify-between gap-3">
-            <button
-              onClick={() => {
-                play('pop');
-                setIdx(Math.max(0, idx - 1));
-              }}
-              disabled={idx === 0}
-              className="btn-ghost px-6 py-3 disabled:opacity-40 disabled:cursor-not-allowed"
-            >
-              ← {t.back}
-            </button>
-            {idx < count - 1 ? (
+          {/* back / forward navigation between questions — small buttons, each with a "yoki suring" hint */}
+          <div className="mt-5 flex items-start justify-between gap-3">
+            <div className="flex flex-col items-center gap-0.5">
               <button
                 onClick={() => {
                   play('pop');
-                  setIdx(idx + 1);
+                  setIdx(Math.max(0, idx - 1));
                 }}
-                className="btn-primary px-8 py-3"
+                disabled={idx === 0}
+                className="btn-ghost text-xs px-3 py-1.5 disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                {t.next} →
+                ← {t.back}
               </button>
-            ) : (
-              <button onClick={finish} className="btn-primary px-8 py-3">
-                ✓ {t.finish}
-              </button>
-            )}
+              <span className="text-[10px] font-bold text-ink/40">{t.swipe}</span>
+            </div>
+            <div className="flex flex-col items-center gap-0.5">
+              {idx < count - 1 ? (
+                <button
+                  onClick={() => {
+                    play('pop');
+                    setIdx(idx + 1);
+                  }}
+                  className="btn-primary text-xs px-3.5 py-1.5"
+                >
+                  {t.next} →
+                </button>
+              ) : (
+                <button onClick={finish} className="btn-primary text-xs px-3.5 py-1.5">
+                  ✓ {t.finish}
+                </button>
+              )}
+              {idx < count - 1 && <span className="text-[10px] font-bold text-ink/40">{t.swipe}</span>}
+            </div>
           </div>
 
           {/* question numbers — round buttons to jump straight to a question */}
@@ -258,7 +389,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
                 className={`grid h-9 w-9 place-items-center rounded-full text-[13px] font-black tabular-nums transition-all active:scale-90 ${
                   qi === idx
                     ? 'bg-brand-blue text-white shadow-[0_3px_0_#0f6a92] scale-110'
-                    : answers[qi] !== null
+                    : isAnswered(answers[qi] ?? null)
                       ? 'bg-brand-green/20 text-[#5b8a1f] border-2 border-brand-green/60 shadow-[0_2px_0_rgba(141,198,63,0.45)]'
                       : 'bg-white text-ink/60 border-2 border-ink/12 shadow-[0_2px_0_rgba(30,58,95,0.12)] hover:border-brand-blue/50'
                 }`}
@@ -275,23 +406,7 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
           </div>
 
           {/* scratch notebook (spiral + ruled lines) — draw on it with the pen */}
-          <section className="mt-8">
-            <div className="relative rounded-2xl border border-ink/10 shadow-card overflow-hidden">
-              <div
-                aria-hidden
-                className="absolute left-0 top-0 bottom-0 w-9 z-10"
-                style={{
-                  background:
-                    'radial-gradient(circle at 14px 17px, #fff 0 4px, #8E9AA6 4px 6.5px, transparent 6.5px), linear-gradient(#EDF1F4,#EDF1F4)',
-                  backgroundSize: '100% 34px, 100% 100%'
-                }}
-              />
-              <div className="notebook relative pl-[56px] pr-4 pt-[6px] min-h-[min(60vh,520px)]">
-                {/* doodle sits in the margin strip between the spiral and the red line */}
-                <PencilDoodle />
-              </div>
-            </div>
-          </section>
+          <ScratchNotebook />
         </div>
 
         <QuestionSketchpad key={attempt} containerRef={pageRef} pageKey={idx} locale={locale} />
@@ -301,8 +416,8 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
   }
 
   /* --------------------------- DONE --------------------------- */
-  const correctFlags = questions.map((q, i) => answers[i] === q.answerIndex);
-  const score = correctFlags.filter(Boolean).length;
+  const { score, total } = g11Score(questions, answers);
+  const est = hasRealExam(slug) ? certEstimate(score, total) : null;
   const timedOut = secondsLeft <= 0;
 
   return (
@@ -311,7 +426,13 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
       <BackBar backHref={backHref} showLang />
       <div className="max-w-2xl mx-auto px-4 text-center">
         {timedOut && <p className="font-black text-error mt-4">{t.timeUp}</p>}
-        <ScoreRing score={score} total={count} label={t.yourScore} />
+        <ScoreRing score={score} total={total} label={t.yourScore} />
+        {est && (
+          <p className="mt-2 text-[14px] font-bold text-ink/60">
+            {t.estimate}: <span className="font-black text-brand-orange">{String(est.ball).replace('.', ',')} / 75</span>
+            {est.level !== '—' && <span className="font-black text-ink/80"> ({est.level})</span>}
+          </p>
+        )}
 
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -340,31 +461,5 @@ export default function G11ExamPlayer({ slug }: { slug: string }) {
       </div>
     </main>
     </div>
-  );
-}
-
-/* Vertical zigzag + pencil in the notebook margin (between spiral and red line). */
-function PencilDoodle() {
-  return (
-    <svg
-      viewBox="0 0 20 240"
-      className="pointer-events-none absolute left-[37px] top-6 h-[240px] w-[18px] select-none opacity-60"
-      aria-hidden
-    >
-      <path
-        d="M10 4 L16 12 L4 22 L16 32 L4 42 L16 52 L4 62 L16 72 L4 82 L16 92 L4 102 L16 112 L10 120"
-        fill="none"
-        stroke="#8B7FD6"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      {/* pencil, tip up, touching the end of the line */}
-      <polygon points="10,122 5,136 15,136" fill="#E9C59A" />
-      <polygon points="10,122 8.2,127 11.8,127" fill="#2E2A4F" />
-      <rect x="5" y="136" width="10" height="92" rx="1.5" fill="#3E3A78" />
-      <rect x="5" y="136" width="3.4" height="92" rx="1.5" fill="#5A55A0" />
-      <rect x="5" y="224" width="10" height="10" rx="1.5" fill="#2E2A5A" />
-    </svg>
   );
 }

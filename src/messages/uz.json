@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "QuvnoqTest",
+    "appName": "MoviyDaftar",
     "back": "Orqaga",
     "toDashboard": "Bosh sahifa",
     "comingSoon": "🚧 Tez kunda…",
@@ -14,7 +14,7 @@
     "close": "Yopish",
     "soundOn": "Ovozni oʻchirish",
     "soundOff": "Ovozni yoqish",
-    "grade": "{n}-sinf",
+    "grade": "{n, select, 1 {Boshlangʻich sinf} 11 {Yuqori sinf} other {{n}-sinf}}",
     "underConstruction": "Tayyorlanmoqda"
   },
   "landing": {
@@ -27,7 +27,7 @@
     "goToDashboard": "Kabinetimga oʻtish",
     "moreSubjects": "Yana fanlar bor — pastga aylantir",
     "why": {
-      "title": "Nega QuvnoqTest?",
+      "title": "Nega MoviyDaftar?",
       "counterLabel": "quvnoq oʻquvchi biz bilan oʻrganmoqda",
       "f1t": "Oʻyin orqali oʻrganish",
       "f1b": "Har bir mavzu — qiziqarli oʻyin, animatsiya va test.",
@@ -64,7 +64,7 @@
       "product": "Mahsulot",
       "company": "Kompaniya",
       "contact": "Aloqa",
-      "rights": "© 2026 QuvnoqTest.uz · Barcha huquqlar himoyalangan.",
+      "rights": "© 2026 MoviyDaftar.uz · Barcha huquqlar himoyalangan.",
       "address": "Toshkent, Oʻzbekiston"
     },
     "discovery": {
@@ -79,13 +79,13 @@
       "a3t": "Hamyonbop",
       "a3b": "Saytdan foydalanish oyiga atigi 15 000 soʻm — bir oy davomida barcha materiallar ochiq.",
       "learnTitle": "Bilim olish aslida qiziqarli mashgʻulot!",
-      "learnBody": "QuvnoqTest.uz da biz yangi bilim olishni qiziqarli va muhim vazifa deb bilamiz. Ajdodlarimiz ilmni daromad yoki diplom uchun emas, qiziqish (astronomiya, sheʼriyat) yoki jamiyatga foyda (matematika, tibbiyot) uchun oʻrgangan — va yuqori choʻqqilarga erishgan. Biz ham shu qiziqishni uygʻotmoqchimiz.",
+      "learnBody": "MoviyDaftar.uz da biz yangi bilim olishni qiziqarli va muhim vazifa deb bilamiz. Ajdodlarimiz ilmni daromad yoki diplom uchun emas, qiziqish (astronomiya, sheʼriyat) yoki jamiyatga foyda (matematika, tibbiyot) uchun oʻrgangan — va yuqori choʻqqilarga erishgan. Biz ham shu qiziqishni uygʻotmoqchimiz.",
       "c1": "Qiziqarli va koʻrgazmali savollar",
       "c2": "Qayta-qayta mashgʻulot qilish uchun misollardagi sonlar oʻzgarib, istalgancha cheksiz mashq qilish mumkin",
       "c3": "Jumboq boʻlaklarini yigʻish va boshqa oʻyinli qismlar",
       "c4": "Savollar uchun Sunʼiy Intellekt yordamchi tayyor!",
       "devTitle": "Istalgan qurilmadan kiring",
-      "devBody": "Kompyuter, planshet yoki telefon brauzeriga QuvnoqTest.uz deb yozing va saytdan foydalaning.",
+      "devBody": "Kompyuter, planshet yoki telefon brauzeriga MoviyDaftar.uz deb yozing va saytdan foydalaning.",
       "faqTitle": "Savol-javoblar",
       "q1": "Testlar qaysi kitob va materiallardan olingan?",
       "fa1": "Testlar maktab darsliklariga mos ravishda zamonaviy texnologiyalar yordamida tuzilib, jamoamiz tomonidan tahrirlangan. Darsliklardagi mavzular soni bizning toʻplamlarimizdagi mavzular soniga teng.",
@@ -208,7 +208,7 @@
   },
   "profile": {
     "title": "Profil",
-    "idLabel": "Sening raqaming",
+    "idLabel": "Sizning hisob raqamingiz",
     "gradeLabel": "Sinf",
     "nameLabel": "Ism",
     "phoneLabel": "Telefon",
@@ -242,7 +242,7 @@
   },
   "checkout": {
     "title": "Toʻlov",
-    "product": "QuvnoqTest obunasi — 1 oy",
+    "product": "MoviyDaftar obunasi — 1 oy",
     "perMonth": "Oyiga",
     "sum": "soʻm",
     "inc1": "Barcha darslar, mavzular va testlar",
@@ -289,7 +289,7 @@
     "usage": "{m}/{mMax} xabar · {t}/{tMax} token",
     "limitTitle": "Bugungi limit tugadi",
     "limitBody": "Ertaga yana suhbatlashamiz! Boshqa darslar ishlayveradi 😊",
-    "notConfigured": "AI hozircha ulanmagan (API kalit kerak).",
+    "notConfigured": "SI hozircha ulanmagan (API kalit kerak).",
     "error": "Xatolik yuz berdi. Yana urinib koʻr.",
     "paidOnly": "SI yordamchi obuna bilan ishlaydi",
     "freeNote": "🎁 Bu — bepul sinov suhbating. Bemalol savol ber!",

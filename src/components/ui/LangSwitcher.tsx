@@ -53,7 +53,7 @@ export default function LangSwitcher({
   }
 
   return (
-    <div ref={ref} className={`relative ${className}`}>
+    <div ref={ref} className={`relative shrink-0 ${className}`}>
       {/* current language graphic — the button */}
       <button
         type="button"
@@ -68,7 +68,8 @@ export default function LangSwitcher({
           src={FLAG[locale]}
           alt=""
           height={36}
-          className={`${imgClassName} w-auto rounded-lg shadow-card select-none transition duration-150 opacity-50 saturate-[0.25] hover:opacity-100 hover:saturate-100 active:opacity-100 active:saturate-100`}
+          style={{ aspectRatio: '207 / 88' }}
+          className={`${imgClassName} w-auto max-w-none object-contain rounded-lg shadow-card select-none transition duration-150 opacity-50 saturate-[0.25] hover:opacity-100 hover:saturate-100 active:opacity-100 active:saturate-100`}
           draggable={false}
         />
       </button>
@@ -89,7 +90,7 @@ export default function LangSwitcher({
                 }`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={FLAG[l]} alt="" height={44} className="block h-11 w-auto rounded-lg" draggable={false} />
+                <img src={FLAG[l]} alt="" height={44} style={{ aspectRatio: '207 / 88' }} className="block h-11 w-auto max-w-none object-contain rounded-lg" draggable={false} />
               </button>
             </li>
           ))}

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useLocale } from 'next-intl';
 import AnimatedLogo from '@/components/landing/AnimatedLogo';
+import MoviyDaftarLogo from '@/components/brand/MoviyDaftarLogo';
 import BackBar from '@/components/ui/BackBar';
 import { api } from '@/lib/client';
 import { pick } from '@/lib/i18n-config';
@@ -218,8 +219,11 @@ export default function ParentDashboard() {
 
   return (
     <main className="min-h-screen pb-16">
-      <div className="flex justify-center pt-4">
-        <Link href="/" aria-label="QuvnoqTest.uz" className="block w-[140px]">
+      <div className="flex flex-col items-center gap-2 pt-4">
+        <Link href="/" aria-label="MoviyDaftar.uz" className="block">
+          <MoviyDaftarLogo />
+        </Link>
+        <Link href="/" aria-label="QuvnoqTest.uz" className="block w-[110px] opacity-80">
           <AnimatedLogo />
         </Link>
       </div>

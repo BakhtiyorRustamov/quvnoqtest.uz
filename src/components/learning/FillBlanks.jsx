@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 /**
  * FillBlanks — "matnni toʻldiring". A sentence (or proverb) has several blanks;
@@ -19,7 +19,8 @@ import React, { useMemo, useState } from "react";
 const STR = {
   uz: { instr: "Soʻzni tanlab, boʻsh joyga qoʻying", done: "Barakalla! 🎉", retry: "Bu soʻz bu yerga mos emas", next: "Yana" },
   ru: { instr: "Выбери слово и вставь в пропуск", done: "Молодец! 🎉", retry: "Это слово сюда не подходит", next: "Ещё" },
-  en: { instr: "Pick a word and drop it in the gap", done: "Great! 🎉", retry: "That word doesn't fit here", next: "Again" }
+  en: { instr: "Pick a word and drop it in the gap", done: "Great! 🎉", retry: "That word doesn't fit here", next: "Again" },
+  kaa: { instr: "Sózdi tańlap, bos orınǵa qoyıń", done: "Barakalla! 🎉", retry: "Bul sóz bul jerge sáykes emes", next: "Jáne" }
 };
 const DEMO = {
   segments: [
@@ -47,7 +48,9 @@ export default function FillBlanks({ segments, bank, clue, lang = "uz", embedded
   }
   const blanks = useMemo(() => segments.map((s, i) => ({ ...s, i })).filter((s) => s.blank != null), [segments]);
   const answers = blanks.map((b) => b.blank);
-  const words = useMemo(() => shuffle(bank && bank.length ? bank : answers), [bank]);
+  // shuffled after mount (a random order during server rendering breaks hydration)
+  const [words, setWords] = useState(bank && bank.length ? bank : answers);
+  useEffect(() => setWords(shuffle(bank && bank.length ? bank : answers)), [bank]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const [filled, setFilled] = useState({}); // {segIndex: word}
   const [usedWords, setUsedWords] = useState([]); // words removed from bank
@@ -138,9 +141,9 @@ const S = {
   instr: { textAlign: "center", margin: "0 0 12px", fontSize: 14, fontWeight: 700, color: "#9aa0a6" },
   sentence: { background: "linear-gradient(#fffdf6,#fbf4e4)", border: "2px solid #ecdcb8", borderRadius: 16, padding: "18px 18px", fontSize: 19, fontWeight: 700, lineHeight: 2.1, color: "#33302b", textAlign: "center", boxShadow: "0 10px 24px -18px rgba(90,60,20,.5)" },
   fixed: { margin: "0 3px" },
-  blank: { display: "inline-block", minWidth: 70, margin: "0 3px", padding: "2px 10px", borderRadius: 10, border: "2px dashed #c8b98f", background: "#fff", color: "#1f3a5f", fontFamily: "inherit", fontSize: 18, fontWeight: 800, cursor: "pointer", verticalAlign: "middle" },
+  blank: { display: "inline-block", minWidth: 70, margin: "0 3px", padding: "2px 10px", borderRadius: 10, borderWidth: 2, borderStyle: "dashed", borderColor: "#c8b98f", background: "#fff", color: "#1f3a5f", fontFamily: "inherit", fontSize: 18, fontWeight: 800, cursor: "pointer", verticalAlign: "middle" },
   blankReady: { borderColor: "#2f6fed", background: "#eef4ff", cursor: "pointer" },
-  blankOn: { border: "2px solid #46c06a", background: "#eefcf2", color: "#2f9e54", cursor: "default" },
+  blankOn: { borderWidth: 2, borderStyle: "solid", borderColor: "#46c06a", background: "#eefcf2", color: "#2f9e54", cursor: "default" },
   bank: { display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 10, marginTop: 16 },
   chip: { border: "2px solid #cfe0ff", background: "#f4f8ff", color: "#2f6fed", borderRadius: 999, padding: "9px 18px", fontFamily: "inherit", fontSize: 16.5, fontWeight: 800, cursor: "pointer", boxShadow: "0 4px 0 rgba(47,111,237,.15)" },
   chipOn: { border: "2px solid #2f6fed", background: "#2f6fed", color: "#fff", transform: "translateY(-1px)" },

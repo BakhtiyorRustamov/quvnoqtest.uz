@@ -1,0 +1,138 @@
+import type { BoardLesson } from './types';
+import { JH2 } from './tarix-104';
+
+/** Darslik: Jahon tarixi 11, 24-mavzu (109–112-betlar) — Isroil davlati va Falastin muammosi: Isroil iqtisodi, Madrid konferensiyasi, Oslo kelishuvlari, Falastin avtonomiyasi, BMTdagi maqom. */
+export const TARIX_124: BoardLesson = {
+  n: 124,
+  label: '24',
+  group: JH2,
+  title: 'Isroil davlati va Falastin muammosi',
+  section: 'Jahon tarixi, 24-mavzu',
+  steps: [
+    {
+      kind: 'hook',
+      clear: true,
+      say: "1947-yilda BMT Falastin hududida ikki davlat — yahudiylarning Isroil va arablarning Falastin davlatini tuzish haqida qaror qabul qildi. Isroil tuzildi, ammo arab aholisi bu rejani adolatsiz deb hisobladi va falastinliklarning oʻz davlati uchun kurashi boshlandi; unga Yosir Arofat boshchiligidagi Falastinni ozod qilish tashkiloti rahbarlik qildi. Isroil esa qisqa davrda rivojlangan davlatga aylandi: harbiy-sanoat majmui, elektronika, olmosga ishlov berish rivojlandi. 1990-yillarda sobiq SSSRdan 600 ming kishining koʻchib kelishi iqtisodiy yuksalishga yordam berdi; Isroil xoʻjaligi postindustrial modelga oʻtdi.",
+      easy: "1947 — BMTning ikki davlat haqidagi qarori; Isroil — rivojlangan davlat; 1990-yillar — 600 ming immigrant.",
+      draw: [
+        { t: 'title', text: 'Isroil iqtisodi' },
+        { t: 'list', x: 4, y: 18, items: ['harbiy-sanoat majmui', 'elektronika', 'olmosga ishlov berish', 'postindustrial model'] },
+        { t: 'text', x: 55, y: 24, text: '1990-yillar:', size: 's', color: 'blue' },
+        { t: 'text', x: 55, y: 32, text: '600 ming immigrant', size: 's', color: 'blue' }
+      ],
+      next: 'Tinchlik jarayoni'
+    },
+    {
+      kind: 'explain',
+      clear: true,
+      say: "Muammoni hal qilish imkoni 1990-yillarda paydo boʻldi. 1991-yil oktabrda Madridda Yaqin Sharq boʻyicha xalqaro konferensiya boʻlib, unda Falastin delegatsiyasi ham qatnashdi. Norvegiyaning Oslo shahridagi muzokaralardan soʻng 1993-yilda Isroil va FATX bir-birini tan oldi, Vashingtonda Falastin avtonomiyasini tuzish haqida kelishuv imzolandi: Gʻazo sektori va Iordan daryosining gʻarbiy sohilidagi hududlar falastinliklar boshqaruviga bosqichma-bosqich oʻtkazila boshlandi. Jarayon har ikki tomonda ham qarshilikka uchradi: 1995-yilda Isroil bosh vaziri Isxak Rabin oʻz yurtdoshi boʻlgan ekstremist tomonidan oʻldirildi. Arofatdan keyin Falastin avtonomiyasini Mahmud Abbos boshqarmoqda; 2012-yilda Falastin BMTda kuzatuvchi davlat maqomini oldi.",
+      easy: "1991 — Madrid; 1993 — Oslo, oʻzaro tan olish, avtonomiya; 1995 — Rabin oʻldirildi; 2012 — BMTda kuzatuvchi davlat.",
+      draw: [
+        { t: 'title', text: 'Tinchlik jarayoni' },
+        { t: 'table', x: 4, y: 18, rows: [['yil', 'voqea'], ['1991-yil oktabr', 'Madrid konferensiyasi'], ['1993', 'Oslo: oʻzaro tan olish'], ['1995', 'I. Rabin oʻldirildi'], ['2012', 'BMTda kuzatuvchi davlat']] }
+      ],
+      next: 'Endi oʻzim!'
+    }
+  ],
+  summary: [
+    '1947-yilgi BMT qarori ikki davlat tuzishni koʻzda tutgan; Isroil tuzilib rivojlangan davlatga aylandi, falastinliklar esa oʻz davlati uchun kurashni davom ettirmoqda.',
+    '1991-yilgi Madrid konferensiyasi va 1993-yilgi Oslo kelishuvlari natijasida Isroil va FATX bir-birini tan oldi, Falastin avtonomiyasi tuzila boshladi.',
+    'Tinchlik jarayoni ikki tomonda ham qarshilikka uchradi (1995 — I. Rabin oʻldirildi); 2012-yilda Falastin BMTda kuzatuvchi davlat maqomini oldi.'
+  ],
+  questions: [
+    {
+      id: 'j24q1',
+      prompt: 'Voqealarni xronologik tartibda joylashtiring.',
+      hint: 'BMT qarori — 1947.',
+      explanation: 'BMT qarori (1947) → Madrid konferensiyasi (1991) → Oslo kelishuvlari (1993) → Falastin BMTda kuzatuvchi davlat (2012).',
+      widget: { type: 'order_line', props: { items: [{ label: 'BMTning ikki davlat haqidagi qarori' }, { label: 'Madrid konferensiyasi' }, { label: 'Oslo kelishuvlari' }, { label: 'Falastin — BMTda kuzatuvchi davlat' }] } }
+    },
+    {
+      id: 'j24q2',
+      prompt: '1990-yillarda sobiq SSSRdan Isroilga necha ming kishi koʻchib kelgan?',
+      hint: 'Yarim milliondan koʻp.',
+      explanation: '600 ming kishi.',
+      widget: { type: 'number_answer', props: { answer: 600, unit: 'ming' } }
+    },
+    {
+      id: 'j24q3',
+      prompt: 'Isroil va FATX oʻrtasidagi muzokaralar qaysi shaharda boʻlib oʻtgan?',
+      hint: 'Norvegiya poytaxti.',
+      explanation: 'Osloda.',
+      widget: { type: 'mcq', props: { prompt: '', choices: ['Madrid', 'Oslo', 'Parij', 'Qohira'], answerIndex: 1 } }
+    },
+    {
+      id: 'j24q4',
+      prompt: 'Shaxsni u bilan bogʻliq fakt bilan juftlang.',
+      hint: 'Abbos — Arofatdan keyin.',
+      explanation: 'Y. Arofat — FATX yetakchisi; I. Rabin — 1995-yilda oʻldirilgan Isroil bosh vaziri; M. Abbos — Falastin avtonomiyasi raisi.',
+      widget: {
+        type: 'match_pairs',
+        props: {
+          pairs: [
+            { left: 'Yosir Arofat', right: 'FATX yetakchisi' },
+            { left: 'Isxak Rabin', right: '1995-yilda oʻldirilgan bosh vazir' },
+            { left: 'Mahmud Abbos', right: 'Falastin avtonomiyasi raisi' }
+          ]
+        }
+      }
+    },
+    {
+      id: 'j24q5',
+      prompt: 'Isroilda rivojlangan sohalarni tanlang.',
+      hint: 'Sanoat va texnologiya.',
+      explanation: 'Harbiy-sanoat majmui, elektronika, mashinasozlik, olmosga ishlov berish.',
+      widget: {
+        type: 'pick_many',
+        props: {
+          options: [
+            { label: 'elektronika', correct: true },
+            { label: 'olmosga ishlov berish', correct: true },
+            { label: 'harbiy-sanoat majmui', correct: true },
+            { label: 'koʻchmanchi chorvachilik' }
+          ]
+        }
+      }
+    },
+    {
+      id: 'j24q6',
+      prompt: '1993-yilgi kelishuvga koʻra qaysi hududlar falastinliklar boshqaruviga oʻtkazila boshlandi?',
+      hint: 'Ikki hudud.',
+      explanation: 'Gʻazo sektori va Iordan daryosining gʻarbiy sohili.',
+      widget: { type: 'mcq', props: { prompt: '', choices: ['Gʻazo sektori va Iordan daryosining gʻarbiy sohili', 'Sinay yarimoroli', 'Golan tepaliklari', 'Livan janubi'], answerIndex: 0 } }
+    },
+    {
+      id: 'j24q7',
+      prompt: 'Tushunchani taʼrifi bilan juftlang.',
+      hint: 'Repatriatsiya — vatanga qaytish.',
+      explanation: 'Repatriatsiya — vatanga qaytish; immigratsiya — boshqa mamlakatga koʻchib kelish; avtonomiya — oʻzini oʻzi boshqarish.',
+      widget: {
+        type: 'match_pairs',
+        props: {
+          pairs: [
+            { left: 'repatriatsiya', right: 'vatanga qaytish' },
+            { left: 'immigratsiya', right: 'boshqa mamlakatga koʻchib kelish' },
+            { left: 'avtonomiya', right: 'oʻzini oʻzi boshqarish' }
+          ]
+        }
+      }
+    },
+    {
+      id: 'j24q8',
+      prompt: 'Har bir gap toʻgʻrimi yoki notoʻgʻrimi?',
+      hint: '2012 — BMT.',
+      explanation: '2012-yilda Falastin BMTda kuzatuvchi davlat maqomini olgan; 1991-yilgi Madrid konferensiyasida Falastin delegatsiyasi qatnashgan.',
+      widget: {
+        type: 'statement_check',
+        props: {
+          statements: [
+            { text: '2012-yilda Falastin BMTda kuzatuvchi davlat maqomini olgan.', value: true },
+            { text: 'Madrid konferensiyasida Falastin delegatsiyasi ham qatnashgan.', value: true },
+            { text: 'Oslo kelishuvlari ikki tomonda ham hech qanday qarshilikka uchramagan.', value: false },
+            { text: 'Falastin muammosi 1993-yilda butunlay hal qilingan.', value: false }
+          ]
+        }
+      }
+    }
+  ]
+};

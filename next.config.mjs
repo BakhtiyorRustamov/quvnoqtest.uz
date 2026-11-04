@@ -18,7 +18,7 @@ const securityHeaders = [
   // Send only the origin as referrer to other sites
   { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
   // The app never needs these browser capabilities
-  { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), payment=()' },
+  { key: 'Permissions-Policy', value: 'camera=(), microphone=(self), geolocation=(), payment=()' },
   // Enforce HTTPS for 6 months (served over Vercel HTTPS; ignored on http://localhost)
   { key: 'Strict-Transport-Security', value: 'max-age=15552000; includeSubDomains' },
   // Cross-origin isolation for popups/embeds opened by other origins

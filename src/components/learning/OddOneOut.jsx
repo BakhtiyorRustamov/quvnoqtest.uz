@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 /**
  * OddOneOut — tap the single word that does NOT belong (Ona tili, grades 1–2).
@@ -18,6 +18,7 @@ const STR = {
   uz: { instr: "Ortiqcha soʻzni bos!", done: "Barakalla! Toping!", retry: "Bu mos keladi", next: "Yana" },
   ru: { instr: "Нажми лишнее слово!", done: "Молодец! Верно!", retry: "Это подходит", next: "Ещё" },
   en: { instr: "Tap the word that doesn't belong!", done: "Great! You found it!", retry: "That one fits", next: "Again" },
+  kaa: { instr: "Artıqsha sózdi basıń!", done: "Barakalla! Taptıńız!", retry: "Bul sáykes keledi", next: "Jáne" }
 };
 
 function shuffle(a) {
@@ -31,7 +32,9 @@ function shuffle(a) {
 
 export default function OddOneOut({ tiles = [], clue, emoji, lang = "uz", embedded = false, onAttempt, onCorrect, onNext }) {
   const t = STR[lang] || STR.uz;
-  const shown = useMemo(() => shuffle(tiles), [tiles]);
+  // shuffled after mount (a random order during server rendering breaks hydration)
+  const [shown, setShown] = useState(() => tiles.map((v, i) => ({ ...v, id: i })));
+  useEffect(() => setShown(shuffle(tiles)), [tiles]);
   const [solvedId, setSolvedId] = useState(null);
   const [shake, setShake] = useState(null);
   const solved = solvedId !== null;

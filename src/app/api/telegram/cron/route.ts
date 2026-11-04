@@ -20,7 +20,7 @@ const OLYMPIAD_AT = Date.UTC(2026, 6, 31, 19, 0, 0); // 1 Aug 2026, 00:00 Tashke
 
 const M = {
   uz: {
-    weekTitle: '📊 <b>Haftalik hisobot — QuvnoqTest</b>',
+    weekTitle: '📊 <b>Haftalik hisobot — MoviyDaftar</b>',
     child: (n: string, g: number) => `👦 <b>${n}</b> (${g}-sinf)`,
     weekLine: (week: number, total: number, all: number, avg: string) =>
       `Bu hafta: <b>${week}</b> ta dars · Jami: <b>${total}/${all}</b> · Oʻrtacha ball: <b>${avg}</b>`,
@@ -28,10 +28,10 @@ const M = {
     olympiad: (d: number) =>
       `🏆 <b>Quvnoq Olimpiada</b>ga <b>${d} kun</b> qoldi!\n1-avgust kuni barcha fanlar boʻyicha katta bellashuv boshlanadi. Farzandingiz tayyormi?`,
     payment: (n: string, d: number) =>
-      `💳 <b>Toʻlov eslatmasi:</b> ${n} uchun obuna muddati <b>${d} kun</b>dan keyin tugaydi. Uzaytirish: quvnoqtest.uz/upgrade`
+      `💳 <b>Toʻlov eslatmasi:</b> ${n} uchun obuna muddati <b>${d} kun</b>dan keyin tugaydi. Uzaytirish: moviydaftar.uz/upgrade`
   },
   ru: {
-    weekTitle: '📊 <b>Недельный отчёт — QuvnoqTest</b>',
+    weekTitle: '📊 <b>Недельный отчёт — MoviyDaftar</b>',
     child: (n: string, g: number) => `👦 <b>${n}</b> (${g} класс)`,
     weekLine: (week: number, total: number, all: number, avg: string) =>
       `За неделю: <b>${week}</b> уроков · Всего: <b>${total}/${all}</b> · Средний балл: <b>${avg}</b>`,
@@ -39,10 +39,10 @@ const M = {
     olympiad: (d: number) =>
       `🏆 До <b>Весёлой Олимпиады</b> осталось <b>${d} дн.</b>!\n1 августа начнётся большое состязание по всем предметам. Ваш ребёнок готов?`,
     payment: (n: string, d: number) =>
-      `💳 <b>Напоминание об оплате:</b> подписка для ${n} закончится через <b>${d} дн.</b> Продлить: quvnoqtest.uz/upgrade`
+      `💳 <b>Напоминание об оплате:</b> подписка для ${n} закончится через <b>${d} дн.</b> Продлить: moviydaftar.uz/upgrade`
   },
   en: {
-    weekTitle: '📊 <b>Weekly report — QuvnoqTest</b>',
+    weekTitle: '📊 <b>Weekly report — MoviyDaftar</b>',
     child: (n: string, g: number) => `👦 <b>${n}</b> (grade ${g})`,
     weekLine: (week: number, total: number, all: number, avg: string) =>
       `This week: <b>${week}</b> lessons · Total: <b>${total}/${all}</b> · Average score: <b>${avg}</b>`,
@@ -50,7 +50,7 @@ const M = {
     olympiad: (d: number) =>
       `🏆 <b>${d} day(s)</b> left until the <b>Quvnoq Olympiad</b>!\nThe big all-subject competition starts on August 1st. Is your child ready?`,
     payment: (n: string, d: number) =>
-      `💳 <b>Payment reminder:</b> the subscription for ${n} expires in <b>${d} day(s)</b>. Renew: quvnoqtest.uz/upgrade`
+      `💳 <b>Payment reminder:</b> the subscription for ${n} expires in <b>${d} day(s)</b>. Renew: moviydaftar.uz/upgrade`
   }
 };
 

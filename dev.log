@@ -1,0 +1,16 @@
+
+> quvnoqtest@1.0.0 dev
+> next dev
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.105:3000
+- Environments: .env
+✓ Ready in 9.4s
+○ Compiling proxy ...
+
+○ Compiling /lesson/g11/[subject]/[n] ...
+ GET /api/comments?page=g11/geografiya/1 200 in 64s (next.js: 59s, proxy.ts: 2.7s, application-code: 1761ms)
+ POST /api/comments 200 in 1450ms (next.js: 34ms, proxy.ts: 37ms, application-code: 1379ms)
+ DELETE /api/comments?id=1 200 in 1776ms (next.js: 18ms, proxy.ts: 30ms, application-code: 1728ms)
+ GET /api/comments?page=g11/geografiya/1 200 in 1480ms (next.js: 400ms, proxy.ts: 32ms, application-code: 1048ms)

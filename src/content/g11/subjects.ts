@@ -14,6 +14,8 @@ export const G11_SUBJECTS: G11Subject[] = [
   { slug: 'geografiya', name: { uz: 'Geografiya', ru: 'География', en: 'Geography' }, color: '#1FA7E0' },
   { slug: 'ozbek-tili', name: { uz: 'Oʻzbek tili', ru: 'Узбекский язык', en: 'Uzbek language' }, color: '#C2298A' },
   { slug: 'rus-tili', name: { uz: 'Rus tili', ru: 'Русский язык', en: 'Russian language' }, color: '#E14B4B' },
+  { slug: 'ingliz-tili', name: { uz: 'Ingliz tili', ru: 'Английский язык', en: 'English' }, color: '#2B6CB0' },
+  { slug: 'informatika', name: { uz: 'Informatika va AT', ru: 'Информатика и ИТ', en: 'Informatics & IT' }, color: '#0E7490' },
   { slug: 'qoraqalpoq-tili', name: { uz: 'Qoraqalpoq tili', ru: 'Каракалпакский язык', en: 'Karakalpak language' }, color: '#1E3A5F' },
   { slug: 'tarix', name: { uz: 'Tarix', ru: 'История', en: 'History' }, color: '#B7791F' }
 ];
@@ -23,5 +25,7 @@ export function getG11Subject(slug: string): G11Subject | undefined {
 }
 
 export const g11SubjectHref = (slug: string) => `/dashboard/g11-${slug}`;
+/** grade 10 shares the Informatika textbook with grade 11 (its first part) */
+export const g10InformatikaHref = '/dashboard/g10-informatika';
 export const g11ExamHref = (slug: string) => `/exam/g11/${slug}`;
 export const g11ReviewsHref = (slug: string) => `/exam/g11/${slug}/tahlillar`;

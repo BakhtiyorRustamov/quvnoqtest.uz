@@ -16,19 +16,19 @@ const BRAND = {
 /** Branded, trilingual magic-link email. `link` already carries the token. */
 function magicLinkHtml(link: string): string {
   // Site origin for the footer link (derived from the magic link itself).
-  let origin = 'https://quvnoqtest.uz';
+  let origin = 'https://moviydaftar.uz';
   try {
     origin = new URL(link).origin;
   } catch {
     /* keep default */
   }
 
-  // The mark is the real QuvnoqTest magnifier drawn as an INLINE SVG (the same
+  // The mark is the real MoviyDaftar magnifier drawn as an INLINE SVG (the same
   // vector the app uses in /public/logo-mark.svg) — no PNG, so nothing can 404 or
   // show a broken picture. If a mail client strips inline SVG, the coloured
   // wordmark beside it still carries the brand (never a wrong plain circle).
   const logoMark = `
-                  <svg width="42" height="42" viewBox="0 0 124 124" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QuvnoqTest">
+                  <svg width="42" height="42" viewBox="0 0 124 124" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="MoviyDaftar">
                     <path d="M 62 18 A 44 44 0 0 1 101.88 43.4" stroke="${BRAND.orange}" stroke-width="17" stroke-linecap="round" fill="none"/>
                     <path d="M 104.5 50.61 A 44 44 0 0 1 90.28 95.71" stroke="#C2298A" stroke-width="17" stroke-linecap="round" fill="none"/>
                     <path d="M 84 100.11 A 44 44 0 0 1 36.76 98.04" stroke="${BRAND.purple}" stroke-width="17" stroke-linecap="round" fill="none"/>
@@ -51,9 +51,9 @@ function magicLinkHtml(link: string): string {
 
   return `<!doctype html>
 <html lang="uz">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QuvnoqTest</title></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MoviyDaftar</title></head>
 <body style="margin:0;padding:0;background:${BRAND.bg};font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:${BRAND.ink};">
-  <span style="display:none;max-height:0;overflow:hidden;opacity:0;">QuvnoqTest hisobingizga kiring · Войдите в аккаунт · Sign in to your account</span>
+  <span style="display:none;max-height:0;overflow:hidden;opacity:0;">MoviyDaftar hisobingizga kiring · Войдите в аккаунт · Sign in to your account</span>
   <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${BRAND.bg};padding:24px 12px;">
     <tr><td align="center">
       <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background:#ffffff;border-radius:24px;overflow:hidden;box-shadow:0 6px 24px rgba(30,58,95,0.10);">
@@ -90,8 +90,8 @@ ${logoHtml}
         <!-- footer -->
         <tr><td style="padding:16px 28px 26px;text-align:center;">
           <p style="margin:0;font-size:12px;color:#9aa6b5;">
-            © QuvnoqTest.uz — O‘zbekiston maktab o‘quvchilari uchun qiziqarli test-darslar.<br>
-            <a href="${origin}" style="color:${BRAND.blue};text-decoration:none;">quvnoqtest.uz</a>
+            © MoviyDaftar.uz — O‘zbekiston maktab o‘quvchilari uchun qiziqarli test-darslar.<br>
+            <a href="${origin}" style="color:${BRAND.blue};text-decoration:none;">moviydaftar.uz</a>
           </p>
         </td></tr>
       </table>
@@ -107,7 +107,7 @@ ${logoHtml}
 
 function magicLinkText(link: string): string {
   return [
-    'QuvnoqTest.uz — kirish havolasi',
+    'MoviyDaftar.uz — kirish havolasi',
     '',
     'Hisobingizga kirish uchun havolani oching (30 daqiqa amal qiladi):',
     'Откройте ссылку, чтобы войти (действует 30 минут):',
@@ -128,9 +128,9 @@ export async function sendMagicLinkEmail(to: string, link: string): Promise<bool
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-      from: process.env.MAGIC_LINK_FROM || 'QuvnoqTest <login@quvnoqtest.uz>',
+      from: process.env.MAGIC_LINK_FROM || 'MoviyDaftar <login@moviydaftar.uz>',
       to: [to],
-      subject: 'QuvnoqTest — kirish havolasi / ссылка для входа / login link',
+      subject: 'MoviyDaftar — kirish havolasi / ссылка для входа / login link',
       html: magicLinkHtml(link),
       text: magicLinkText(link)
     })

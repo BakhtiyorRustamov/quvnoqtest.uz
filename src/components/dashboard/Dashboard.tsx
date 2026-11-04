@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { useUser } from '@/components/providers/UserProvider';
 import { getGrade, GRADES, isUnlockedSubject, unlockedSubjectHref, progressSubjectKey } from '@/content/taxonomy';
-import { pick } from '@/lib/i18n-config';
 import { G1_MATH_TOPICS, G1_ONA_TOPICS, G1_ALIFBE_TOPICS, G1_INGLIZ_LESSONS } from '@/content';
 import { G1_OQISH_LESSONS } from '@/content/g1-oqish/structure';
 import { G1_INFORMATIKA_TOPICS } from '@/content/g1-informatika/topics';
@@ -15,15 +14,9 @@ import { G1_TEX_TOPICS } from '@/content/g1-tex/topics';
 import { G1_TABIIY_TOPICS } from '@/content/g1-tabiiy/topics';
 import { api } from '@/lib/client';
 import type { ProgressRow } from '@/lib/store/types';
-import LangSwitcher from '@/components/ui/LangSwitcher';
 import AIMascotButton from '@/components/ui/AIMascotButton';
-import AnimatedLogo from '@/components/landing/AnimatedLogo';
-import ProfileDrawer from './ProfileDrawer';
+import MoviyDaftarLogo from '@/components/brand/MoviyDaftarLogo';
 import SubjectProgressCard from './SubjectProgressCard';
-import DashboardStats from './DashboardStats';
-import Leaderboard from './Leaderboard';
-import OlympiadSection from './OlympiadSection';
-import ContactButton from '@/components/ui/ContactButton';
 import G11SubjectTile from './G11SubjectTile';
 import { G11_SUBJECTS } from '@/content/g11/subjects';
 
@@ -32,7 +25,6 @@ export default function Dashboard({ forceGrade }: { forceGrade?: number } = {}) 
   const t = useTranslations();
   const locale = useLocale();
   const { user, loading, ensureUser } = useUser();
-  const [profileOpen, setProfileOpen] = useState(false);
   const [toast, setToast] = useState<string | null>(null);
   const [progress, setProgress] = useState<ProgressRow[]>([]);
 
@@ -71,35 +63,14 @@ export default function Dashboard({ forceGrade }: { forceGrade?: number } = {}) 
 
   return (
     <main className="min-h-screen pb-16">
-      {/* collapsed-sidebar frame: a thin hairline down the left edge (hidden while
-          the sidebar is open, when the drawer itself provides the edge) */}
-      {!profileOpen && <div aria-hidden className="fixed left-0 top-0 bottom-0 z-30 w-[3px] bg-ink/12" />}
-
-      {/* sidebar open/close handle — attached to the edge near the top; slides
-          to the drawer's right edge when open. ">" opens, "<" closes. */}
-      <button
-        onClick={() => setProfileOpen((o) => !o)}
-        aria-label={t('dashboard.profile')}
-        aria-expanded={profileOpen}
-        style={{ left: profileOpen ? 'min(370px, 93vw)' : 0, top: 'calc(var(--app-top) + 1.25rem)' }}
-        className="fixed z-[55] grid h-16 w-10 place-items-center rounded-r-2xl border-2 border-l-0 border-white/40 bg-brand-blue text-white shadow-lg shadow-brand-blue/40 transition-[left] duration-300 hover:bg-brand-blue/90 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40"
-      >
-        <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
-          {profileOpen ? <path d="M15 18l-6-6 6-6" /> : <path d="M9 6l6 6-6 6" />}
-        </svg>
-      </button>
-
       {/* top bar — logo TRULY centred (absolute), language pinned right so its
           width can never nudge the logo off-centre. */}
       <header className="relative max-w-5xl mx-auto px-3 pt-4 h-14">
         <div className="pointer-events-none absolute inset-x-0 top-4 flex justify-center">
           {/* logo — a plain visual, not a link/button */}
-          <div className="pointer-events-auto select-none" aria-label="QuvnoqTest.uz" onClick={logoTap}>
-            <AnimatedLogo compact />
+          <div className="pointer-events-auto select-none" aria-label="MoviyDaftar.uz" onClick={logoTap}>
+            <MoviyDaftarLogo size="sm" />
           </div>
-        </div>
-        <div className="absolute right-3 top-4">
-          <LangSwitcher />
         </div>
       </header>
 
@@ -172,47 +143,17 @@ export default function Dashboard({ forceGrade }: { forceGrade?: number } = {}) 
       </section>
       )}
 
-      {/* progress stats & charts (real /api/progress data) */}
-      {(forceGrade || !loading || user) && (
-        <DashboardStats progress={progress} grade={grade} subjects={gradeDef.subjects} name={user?.name ?? null} locale={locale} />
-      )}
-
-      {/* top students on the site — total learned lessons; links to full board */}
-      <Leaderboard />
-
-      {/* Quvnoq Olimpiada — big announcement + countdown (dummy, under results) */}
-      <OlympiadSection locale={locale} />
-
-      {/* parents' corner — a clear, prominent button */}
-      <div className="max-w-4xl mx-auto px-3 mt-8 flex justify-center">
-        <Link
-          href="/parent"
-          className="inline-flex items-center gap-2 rounded-full bg-brand-blue px-8 py-3.5 text-lg font-black text-white shadow-lg shadow-brand-blue/30 hover:-translate-y-0.5 active:translate-y-0 transition-transform focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-blue/40"
-        >
-          {pick(
-            { uz: 'Ota-onalar sahifasi', ru: 'Страница для родителей', en: 'Parents’ page' },
-            locale
-          )}
-        </Link>
-      </div>
-
-      {/* support contact */}
-      <div className="max-w-4xl mx-auto px-3 mt-4 flex justify-center">
-        <ContactButton />
-      </div>
-
       {/* brand logo (bottom) */}
       <footer className="mt-14 flex flex-col items-center gap-1.5 px-3 pb-4 text-center">
-        <Link href="/" aria-label="QuvnoqTest.uz" className="block w-[130px]">
-          <AnimatedLogo />
+        <Link href="/" aria-label="MoviyDaftar.uz" className="block opacity-80 hover:opacity-100">
+          <MoviyDaftarLogo size="sm" />
         </Link>
-        <span className="text-xs font-bold text-ink/40">© 2026 QuvnoqTest.uz</span>
+        <span className="text-[11px] font-bold text-ink/35">© 2026 MoviyDaftar.uz</span>
       </footer>
 
       {/* AI assistant entry = the book mascot (tap → AI tutor / Upgrade) */}
       <AIMascotButton />
 
-      <ProfileDrawer open={profileOpen} onClose={() => setProfileOpen(false)} />
     </main>
   );
 }

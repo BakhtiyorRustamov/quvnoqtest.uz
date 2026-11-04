@@ -3,7 +3,8 @@ import { getStore, isActive, isDisabled } from '@/lib/store';
 import { tashkentToday } from '@/lib/tashkent';
 import { clientIp } from '@/lib/rateLimit';
 import { rateLimitStrict } from '@/lib/rateLimitDb';
-import { AI_LIMITS, FREE_AI_KEY, aiConfigured, callAi, estimateTokens, systemPrompt, type AiTurn } from '@/lib/ai';
+import { searchLessons, lessonsForPrompt } from '@/lib/lessonSearch';
+import { AI_LIMITS, FREE_AI_KEY, aiConfigured, callAi, estimateTokens, systemPrompt, voicePrompt, type AiTurn } from '@/lib/ai';
 
 export async function GET() {
   const store = getStore();
@@ -60,7 +61,7 @@ export async function POST(req: NextRequest) {
   if (usage.messages >= AI_LIMITS.messages) {
     return NextResponse.json({ error: 'limit_messages', usage, limits: AI_LIMITS }, { status: 429 });
   }
-  const system = systemPrompt(user.grade, user.locale);
+  const system = systemPrompt(user.grade, user.locale) + lessonsForPrompt(searchLessons(message)) + (body.voice === true ? `\n${voicePrompt(user.locale)}` : '');
   const turns: AiTurn[] = [...history, { role: 'user', content: message }];
   const estIn = estimateTokens(system + turns.map((t) => t.content).join(' ')) + 30;
   const remaining = AI_LIMITS.tokens - usage.tokens;

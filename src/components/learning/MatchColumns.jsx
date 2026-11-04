@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 /**
  * MatchColumns — tap a card on the left, then its partner on the right. Each
@@ -15,6 +15,7 @@ const STR = {
   uz: { instr: "Chapdagini bos, keyin oʻngdagi mos juftini bos!", done: "Barakalla! Hammasi mos!", retry: "Mos kelmadi — yana urin", next: "Yana" },
   ru: { instr: "Нажми слева, потом пару справа!", done: "Молодец! Все пары верны!", retry: "Не подходит — ещё раз", next: "Ещё" },
   en: { instr: "Tap on the left, then its match on the right!", done: "Great! All matched!", retry: "Not a match — try again", next: "Again" },
+  kaa: { instr: "Shep tárepti basıń, soń oń tárepten onıń jubın basıń!", done: "Barakalla! Hámmesi sáykes!", retry: "Sáykes kelmedi — jáne urınıń", next: "Jáne" }
 };
 const COLORS = ["#46c06a", "#2f9fe0", "#f39a1f", "#d63384", "#7c5cff", "#e8553e"];
 const L = (v, lang) => (v && typeof v === "object" ? v[lang] ?? v.uz ?? "" : v ?? "");
@@ -41,7 +42,9 @@ function Face({ side, lang }) {
 export default function MatchColumns({ pairs = [], lang = "uz", embedded = false, onAttempt, onCorrect, onNext }) {
   const t = STR[lang] || STR.uz;
   const lefts = pairs.map((p, i) => ({ id: i, side: p.left }));
-  const rights = useMemo(() => shuffle(pairs.map((p, i) => ({ id: i, side: p.right }))), [pairs]);
+  // shuffled after mount: the server render keeps the given order (no hydration mismatch)
+  const [rights, setRights] = useState(() => pairs.map((p, i) => ({ id: i, side: p.right })));
+  useEffect(() => setRights(shuffle(pairs.map((p, i) => ({ id: i, side: p.right })))), [pairs]);
   const [sel, setSel] = useState(null);
   const [matched, setMatched] = useState({}); // id -> color
   const [badRight, setBadRight] = useState(null);
@@ -129,7 +132,7 @@ const S = {
   instr: { textAlign: "center", margin: "0 0 14px", fontSize: 14, fontWeight: 700, color: "#9aa0a6" },
   grid: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 },
   col: { display: "grid", gap: 10 },
-  card: { position: "relative", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, minHeight: 60, padding: "10px 8px", borderRadius: 16, border: "3px solid #d9e6c4", background: "#fff", cursor: "pointer", color: "#33302b", fontFamily: "inherit", boxShadow: "0 4px 0 rgba(80,90,40,.10)", transition: "transform .12s, border-color .15s" },
+  card: { position: "relative", display: "flex", alignItems: "center", justifyContent: "center", gap: 8, minHeight: 60, padding: "10px 8px", borderRadius: 16, borderWidth: 3, borderStyle: "solid", borderColor: "#d9e6c4", background: "#fff", cursor: "pointer", color: "#33302b", fontFamily: "inherit", boxShadow: "0 4px 0 rgba(80,90,40,.10)", transition: "transform .12s, border-color .15s" },
   sel: { borderColor: "#2f9fe0", boxShadow: "0 0 0 3px rgba(47,159,224,.25), 0 4px 0 rgba(47,159,224,.2)", transform: "translateY(-2px)" },
   locked: { cursor: "default", background: "#fbfdf7" },
   bad: { borderColor: "#e8553e", background: "#fdeceb" },

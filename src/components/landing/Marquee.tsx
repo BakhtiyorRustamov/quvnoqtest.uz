@@ -2,7 +2,7 @@
 
 import { useLocale } from 'next-intl';
 import { pick, type L10n } from '@/lib/i18n-config';
-import { GRADES, type SubjectDef } from '@/content/taxonomy';
+import { G11_SUBJECTS } from '@/content/g11/subjects';
 
 /* Task 5 — infinite subject pill strip. Two rows scrolling in opposite
    directions. Each row's items are duplicated so the -50% keyframe loops
@@ -10,12 +10,11 @@ import { GRADES, type SubjectDef } from '@/content/taxonomy';
 
 type Pill = { label: L10n; color: string };
 
-/* The pills mirror exactly the grade-1 subjects that are live in the app, so the
-   strip never advertises something a child cannot open. Split into two rows. */
-const GRADE1 = GRADES[0].subjects;
-const toPill = (s: SubjectDef): Pill => ({ label: s.name, color: s.color });
-const ROW1: Pill[] = GRADE1.slice(0, 6).map(toPill);
-const ROW2: Pill[] = GRADE1.slice(6).map(toPill);
+/* The pills show the senior-track (Yuqori sinf) subjects that are live in the app. Split into two rows. */
+const SENIOR = G11_SUBJECTS;
+const toPill = (s: { name: L10n; color: string }): Pill => ({ label: s.name, color: s.color });
+const ROW1: Pill[] = SENIOR.slice(0, Math.ceil(SENIOR.length / 2)).map(toPill);
+const ROW2: Pill[] = SENIOR.slice(Math.ceil(SENIOR.length / 2)).map(toPill);
 
 function Row({ items, dir }: { items: Pill[]; dir: 'left' | 'right' }) {
   const locale = useLocale();

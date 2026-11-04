@@ -17,6 +17,7 @@ const STRINGS = {
   uz: { choose: "Javobni tanla", correct: "Barakalla!", tryAgain: "Yana urinib ko'r", next: "Keyingisi" },
   ru: { choose: "Выбери ответ", correct: "Молодец!", tryAgain: "Попробуй ещё раз", next: "Дальше" },
   en: { choose: "Choose the answer", correct: "Well done!", tryAgain: "Try again", next: "Next" },
+  kaa: { choose: "Juwaptı tańlań", correct: "Barakalla!", tryAgain: "Jáne urınıp kóriń", next: "Keyingisi" }
 };
 
 const SAMPLE = { prompt: "2 + 2 = ?", choices: ["3", "4", "5"], answerIndex: 1 };

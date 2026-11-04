@@ -1,5 +1,5 @@
 import type { L10n } from '@/lib/i18n-config';
-import { getG11Subject, g11SubjectHref } from '@/content/g11/subjects';
+import { getG11Subject, g11SubjectHref, g10InformatikaHref } from '@/content/g11/subjects';
 
 export type SubjectDef = {
   /** stable slug, unique within a grade */
@@ -82,7 +82,7 @@ export const GRADES: GradeDef[] = [
   G(9, 4, ['ona-tili', 'adabiyot', 'rus-tili', 'algebra', 'geometriya', 'fizika', 'kimyo', 'biologiya', 'geografiya', 'ozbekiston-tarixi', 'jahon-tarixi', 'iqtisodiyot', 'informatika', 'tarbiya', 'chizmachilik', 'ingliz-tili']),
   G(10, 5, ['ona-tili-adabiyot', 'rus-tili', 'algebra-analiz', 'geometriya', 'fizika', 'kimyo', 'biologiya', 'geografiya', 'ozbekiston-tarixi', 'jahon-tarixi', 'davlat-huquq', 'tadbirkorlik', 'informatika', 'chbt', 'ingliz-tili']),
   // Grade 11 = diagnostic-test track (see src/content/g11/subjects.ts).
-  G(11, 5, ['biologiya', 'kimyo', 'matematika', 'fizika', 'geografiya', 'ozbek-tili', 'rus-tili', 'qoraqalpoq-tili', 'tarix'])
+  G(11, 5, ['biologiya', 'kimyo', 'matematika', 'fizika', 'geografiya', 'ozbek-tili', 'rus-tili', 'ingliz-tili', 'informatika', 'qoraqalpoq-tili', 'tarix'])
 ];
 
 export function getGrade(n: number): GradeDef | undefined {
@@ -96,6 +96,7 @@ export function getSubject(gradeNum: number, subjectKey: string): SubjectDef | u
 /** Interactive subjects in v1.0: grade-1 Matematika, Ona tili, Fikrlash, Oʻqish, Tabiiy fanlar. */
 export function isUnlockedSubject(gradeNum: number, subjectKey: string): boolean {
   if (gradeNum === 11) return !!getG11Subject(subjectKey);
+  if (gradeNum === 10) return subjectKey === 'informatika';
   return (
     gradeNum === 1 &&
     (subjectKey === 'matematika' ||
@@ -115,6 +116,7 @@ export function isUnlockedSubject(gradeNum: number, subjectKey: string): boolean
 /** Route to the built subject view for an unlocked subject (else null). */
 export function unlockedSubjectHref(gradeNum: number, subjectKey: string): string | null {
   if (gradeNum === 11) return getG11Subject(subjectKey) ? g11SubjectHref(subjectKey) : null;
+  if (gradeNum === 10) return subjectKey === 'informatika' ? g10InformatikaHref : null;
   if (gradeNum === 1 && subjectKey === 'alifbe') return '/dashboard/g1-alifbe';
   if (gradeNum === 1 && subjectKey === 'informatika') return '/dashboard/g1-informatika';
   if (gradeNum === 1 && subjectKey === 'tarbiya') return '/dashboard/g1-tarbiya';

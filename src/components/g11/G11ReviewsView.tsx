@@ -90,7 +90,7 @@ export default function G11ReviewsView({ slug }: { slug: string }) {
                       className="overflow-hidden"
                     >
                       <div className="border-t border-ink/10 bg-ink/[0.02] p-3">
-                        <ReviewList slug={slug} questions={questions} answers={a.answers} subjectName={subjectName} locale={locale} />
+                        <ReviewList slug={slug} questions={a.questions ?? questions} answers={a.answers} subjectName={subjectName} locale={locale} />
                       </div>
                     </motion.div>
                   )}

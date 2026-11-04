@@ -4,16 +4,40 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { pick } from '@/lib/i18n-config';
-import type { G11Question } from '@/content/g11/diagnostic';
-import { getG11Lesson, g11LessonHref } from '@/content/g11/lessons';
+import { partCorrect, questionPoints, type G11Answer, type G11Question } from '@/content/g11/diagnostic';
+import { getG11Lesson, g11LessonHref, g11LessonLabel } from '@/content/g11/lessons';
 import { useSound } from '@/components/providers/SoundProvider';
 import ReviewChat from './ReviewChat';
 
 const S: Record<string, Record<string, string>> = {
-  uz: { yourAnswer: 'Sizning javobingiz', correct: 'Toʻgʻri javob', noAnswer: 'Javob berilmadi', explanation: 'Izoh', more: 'Batafsil', less: 'Yopish', topic: 'Mavzu', open: 'Mavzuni ochish' },
-  ru: { yourAnswer: 'Ваш ответ', correct: 'Верный ответ', noAnswer: 'Нет ответа', explanation: 'Пояснение', more: 'Подробнее', less: 'Свернуть', topic: 'Тема', open: 'Открыть тему' },
-  en: { yourAnswer: 'Your answer', correct: 'Correct answer', noAnswer: 'No answer', explanation: 'Note', more: 'Details', less: 'Close', topic: 'Topic', open: 'Open the topic' }
+  uz: { ai: 'SI', aiNone: 'SI tekshiruvi oʻtkazilmadi.', aiNote: 'Baho sunʼiy intellekt (SI) tomonidan berildi — u xato qilishi mumkin.', yourAnswer: 'Sizning javobingiz', correct: 'Toʻgʻri javob', noAnswer: 'Javob berilmadi', explanation: 'Izoh', more: 'Batafsil', less: 'Yopish', topic: 'Mavzu', open: 'Mavzuni ochish' },
+  ru: { ai: 'ИИ', aiNone: 'Проверка ИИ не проводилась.', aiNote: 'Оценку выставил искусственный интеллект (ИИ) — возможны ошибки.', yourAnswer: 'Ваш ответ', correct: 'Верный ответ', noAnswer: 'Нет ответа', explanation: 'Пояснение', more: 'Подробнее', less: 'Свернуть', topic: 'Тема', open: 'Открыть тему' },
+  en: { ai: 'AI', aiNone: 'The AI check was not run.', aiNote: 'Scored by artificial intelligence (AI) — it can make mistakes.', yourAnswer: 'Your answer', correct: 'Correct answer', noAnswer: 'No answer', explanation: 'Note', more: 'Details', less: 'Close', topic: 'Topic', open: 'Open the topic' }
 };
+
+/** nearest scrolling ancestor (the page itself when none) */
+function scrollParent(el: HTMLElement): HTMLElement | null {
+  for (let p = el.parentElement; p; p = p.parentElement) {
+    const oy = getComputedStyle(p).overflowY;
+    if ((oy === 'auto' || oy === 'scroll') && p.scrollHeight > p.clientHeight) return p;
+  }
+  return null;
+}
+/** while cards above open/close (animated), keep the clicked card at the same spot on screen */
+function keepInPlace(el: HTMLElement) {
+  const top0 = el.getBoundingClientRect().top;
+  const sp = scrollParent(el);
+  const end = performance.now() + 450;
+  const step = () => {
+    const d = el.getBoundingClientRect().top - top0;
+    if (Math.abs(d) > 0.5) {
+      if (sp) sp.scrollTop += d;
+      else window.scrollBy(0, d);
+    }
+    if (performance.now() < end) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
 
 /** Expandable per-question review (used after a test and on the past-reviews page). */
 export default function ReviewList({
@@ -26,7 +50,7 @@ export default function ReviewList({
 }: {
   slug: string;
   questions: G11Question[];
-  answers: (number | null)[];
+  answers: G11Answer[];
   subjectName: string;
   locale: string;
   /** when set, the cards fade in one after another starting at this delay (s) */
@@ -45,8 +69,9 @@ export default function ReviewList({
           slug={slug}
           chosen={answers[i] ?? null}
           open={open === i}
-          onToggle={() => {
+          onToggle={(el) => {
             play('pop');
+            keepInPlace(el);
             setOpen(open === i ? null : i);
           }}
           subjectName={subjectName}
@@ -75,22 +100,42 @@ function ReviewItem({
   n: number;
   q: G11Question;
   slug: string;
-  chosen: number | null;
+  chosen: G11Answer;
   open: boolean;
-  onToggle: () => void;
+  onToggle: (el: HTMLElement) => void;
   subjectName: string;
   locale: string;
   t: Record<string, string>;
 }) {
-  const ok = chosen === q.answerIndex;
+  const pts = questionPoints(q, chosen);
+  const ok = q.essay ? pts.got >= pts.max * 0.6 : pts.got === pts.max;
+  const half = !ok && pts.got > 0;
   const letter = (i: number) => String.fromCharCode(65 + i);
-  const lesson = getG11Lesson(q.lessonN);
+  const typed = Array.isArray(chosen) ? chosen : [];
+  const pick1 = typeof chosen === 'number' ? chosen : null;
+  const essayRes = q.essay && typed[2] ? (JSON.parse(typed[2]) as { score: number; mazmun: number; tuzilish: number; til: number; imlo: number; comment: string; errors: string[] }) : null;
+  const answerText = q.essay
+    ? typed[0]?.trim()
+      ? `${typed[0].trim().slice(0, 90)}${typed[0].trim().length > 90 ? '…' : ''}${essayRes ? ` — ${essayRes.score}/${pts.max}` : ''}`
+      : null
+    : q.parts
+    ? !typed.some((x) => x?.trim())
+      ? null
+      : q.parts.map((p, i) => `${p.label}) ${typed[i]?.trim() || '—'}`).join('   ')
+    : pick1 === null
+      ? null
+      : pick(q.choices[pick1], locale);
+  const lesson = getG11Lesson(q.lessonN, slug);
   // context the AI tutor gets with the student's first question
   const context = [
     `Fan: ${subjectName}. Savol ${n}: ${pick(q.prompt, locale)}`,
-    `Variantlar: ${q.choices.map((c, i) => `${letter(i)}) ${pick(c, locale)}`).join('; ')}`,
-    `Oʻquvchi javobi: ${chosen === null ? 'javob bermagan' : `${letter(chosen)}) ${pick(q.choices[chosen], locale)}`}`,
-    `Toʻgʻri javob: ${letter(q.answerIndex)}) ${pick(q.choices[q.answerIndex], locale)}`,
+    q.parts
+      ? q.parts.map((p, i) => `${pick(p.prompt, locale)} Oʻquvchi javobi: ${typed[i]?.trim() || 'javob bermagan'}. Toʻgʻri javob: ${p.answer}.`).join('\n')
+      : [
+          `Variantlar: ${q.choices.map((c, i) => `${letter(i)}) ${pick(c, locale)}`).join('; ')}`,
+          `Oʻquvchi javobi: ${pick1 === null ? 'javob bermagan' : `${letter(pick1)}) ${pick(q.choices[pick1], locale)}`}`,
+          `Toʻgʻri javob: ${letter(q.answerIndex)}) ${pick(q.choices[q.answerIndex], locale)}`
+        ].join('\n'),
     `Tushuntirish: ${pick(q.explanation, locale)}`
   ].join('\n');
 
@@ -99,11 +144,12 @@ function ReviewItem({
       initial={delay === undefined ? false : { opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: delay ?? 0, duration: 0.3 }}
-      className={`card overflow-hidden border-l-8 ${ok ? 'border-l-brand-green' : 'border-l-error'}`}
+      className={`card overflow-hidden border-l-8 ${ok ? 'border-l-brand-green' : half ? '' : 'border-l-error'}`}
+      style={half ? { borderLeftColor: '#F5A524' } : undefined}
     >
-      <button onClick={onToggle} aria-expanded={open} aria-label={open ? t.less : t.more} className="flex w-full items-start gap-3 p-3.5 text-left">
-        <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center text-white font-black ${ok ? 'bg-brand-green' : 'bg-error'}`}>
-          {ok ? '✓' : '✗'}
+      <button onClick={(e) => onToggle(e.currentTarget.closest('li') as HTMLElement)} aria-expanded={open} aria-label={open ? t.less : t.more} className="flex w-full items-start gap-3 p-3.5 text-left">
+        <span className={`shrink-0 w-8 h-8 rounded-full grid place-items-center text-white font-black ${ok ? 'bg-brand-green' : half ? '' : 'bg-error'}`} style={half ? { background: '#F5A524' } : undefined}>
+          {ok ? '✓' : half ? '½' : '✗'}
         </span>
         <span className="min-w-0 flex-1">
           <span className="block font-extrabold text-ink leading-snug whitespace-pre-line">
@@ -112,7 +158,7 @@ function ReviewItem({
           <span className="block text-[14px] font-semibold mt-1 leading-snug">
             <span className="text-ink/55">{t.yourAnswer}: </span>
             <span className={ok ? 'text-brand-green' : 'text-error'}>
-              {chosen === null ? t.noAnswer : pick(q.choices[chosen], locale)}
+              {answerText === null ? t.noAnswer : answerText}
             </span>
           </span>
         </span>
@@ -137,10 +183,44 @@ function ReviewItem({
             className="overflow-hidden"
           >
             <div className="border-t border-ink/10 px-3.5 pb-4 pt-3">
+              {q.figure && <div className="mb-3 flex justify-center" dangerouslySetInnerHTML={{ __html: q.figure }} />}
+              {q.essay && typed[0]?.trim() && (
+                <div className="mb-3 rounded-xl border border-ink/10 px-3 py-2">
+                  <p className="whitespace-pre-line text-[15px] font-semibold leading-relaxed text-ink/80">{typed[0]}</p>
+                  {essayRes ? (
+                    <div className="mt-2 border-t border-ink/10 pt-2 text-[14px] font-bold text-ink/70">
+                      <div className="font-black text-brand-blue">{t.ai}: {essayRes.score} / {pts.max} · {q.id.startsWith('g11-rus') ? `Содержание ${essayRes.mazmun} · Композиция ${essayRes.tuzilish} · Речь ${essayRes.til} · Грамотность ${essayRes.imlo}` : `Mazmun ${essayRes.mazmun} · Tuzilish ${essayRes.tuzilish} · Til ${essayRes.til} · Imlo ${essayRes.imlo}`}</div>
+                      <p className="mt-1 font-semibold">{essayRes.comment}</p>
+                      {essayRes.errors.length > 0 && <ul className="mt-1 list-disc pl-5 font-semibold">{essayRes.errors.map((x, k) => <li key={k}>{x}</li>)}</ul>}
+                      <p className="mt-1.5 text-xs font-bold text-ink/45">ⓘ {t.aiNote}</p>
+                    </div>
+                  ) : (
+                    <p className="mt-2 text-[13px] font-bold text-error">{t.aiNone}</p>
+                  )}
+                </div>
+              )}
+              {q.parts && (
+                <ul className="grid gap-1.5">
+                  {q.parts.map((p, pi) => {
+                    const good = partCorrect(typed[pi], p.answer);
+                    return (
+                      <li key={pi} className={`rounded-xl border px-3 py-2 text-[15px] font-bold ${good ? 'border-brand-green/50 bg-brand-green/10' : 'border-error/40 bg-error/10'}`}>
+                        <span className="block text-ink/80">{pick(p.prompt, locale)}</span>
+                        <span className="mt-0.5 block text-[14px]">
+                          <span className="text-ink/55">{t.yourAnswer}: </span>
+                          <span className={good ? 'text-brand-green' : 'text-error'}>{typed[pi]?.trim() || t.noAnswer}</span>
+                          <span className="text-ink/55"> · {t.correct}: </span>
+                          <span className="font-black text-brand-green">{p.answer}</span>
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
               <ul className="grid gap-1.5">
                 {q.choices.map((c, ci) => {
                   const isAns = ci === q.answerIndex;
-                  const isMine = ci === chosen;
+                  const isMine = ci === pick1;
                   return (
                     <li
                       key={ci}
@@ -164,7 +244,7 @@ function ReviewItem({
                 {lesson && (
                   <div className="mt-2.5 flex items-center gap-2 border-t border-brand-blue/15 pt-2.5">
                     <span className="min-w-0 truncate text-[13px] font-bold text-ink/55">
-                      📖 {t.topic}: <span className="text-ink/80">{lesson.n}. {pick(lesson.title, locale)}</span>
+                      📖 {t.topic}: <span className="text-ink/80">{g11LessonLabel(lesson)}. {pick(lesson.title, locale)}</span>
                     </span>
                     <Link
                       href={g11LessonHref(slug, lesson.n)}

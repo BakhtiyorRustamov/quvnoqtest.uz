@@ -18,6 +18,7 @@ const STR = {
   uz: { instr: "Har bir gapni oʻqib, «Rost» yoki «Yolgʻon» ni tanla!", t: "Rost", f: "Yolgʻon", done: "Barakalla! Hammasi toʻgʻri!", retry: "Baʼzilari notoʻgʻri — qizil gaplarni tuzat", next: "Yana" },
   ru: { instr: "Прочитай каждое предложение и выбери «Верно» или «Неверно»!", t: "Верно", f: "Неверно", done: "Молодец! Всё верно!", retry: "Есть ошибки — исправь красные", next: "Ещё" },
   en: { instr: "Read each sentence, then choose 'True' or 'False'!", t: "True", f: "False", done: "Great! All correct!", retry: "Some are wrong — fix the red ones", next: "Again" },
+  kaa: { instr: "Hár gápti oqıp, «Durıs» yamasa «Nadurıs» tı tańlań!", t: "Durıs", f: "Nadurıs", done: "Barakalla! Hámmesi durıs!", retry: "Ayırımları nadurıs — qızılların dúzetiń", next: "Jáne" }
 };
 const L = (v, lang) => (v && typeof v === "object" ? v[lang] ?? v.uz ?? "" : v ?? "");
 
@@ -37,21 +38,20 @@ export default function StatementCheck({ scene, title, statements = [], trueLabe
 
   function choose(i, val) {
     if (solved) return;
-    setPicks((prev) => {
-      const next = prev.slice();
-      next[i] = { v: val };
-      const filled = next.every((p) => p !== null);
-      const ok = statements.every((s, k) => next[k] !== null && !!next[k].v === !!s.value);
-      if (filled && !scored) {
-        setScored(true);
-        if (typeof onAttempt === "function") onAttempt(ok, { picks: next.map((p) => p && p.v) });
-      }
-      if (filled && ok) {
-        setSolved(true);
-        if (typeof onCorrect === "function") onCorrect();
-      }
-      return next;
-    });
+    // callbacks run outside the state updater (they update the parent lesson)
+    const next = picks.slice();
+    next[i] = { v: val };
+    setPicks(next);
+    const filled = next.every((p) => p !== null);
+    const ok = statements.every((s, k) => next[k] !== null && !!next[k].v === !!s.value);
+    if (filled && !scored) {
+      setScored(true);
+      if (typeof onAttempt === "function") onAttempt(ok, { picks: next.map((p) => p && p.v) });
+    }
+    if (filled && ok) {
+      setSolved(true);
+      if (typeof onCorrect === "function") onCorrect();
+    }
   }
 
   function rowState(i) {

@@ -30,7 +30,7 @@ const TAPPABLE = 'button, a[href], [role="button"], [role="tab"], label, summary
 
 /**
  * App-wide glue for the Telegram Mini App + tap feedback:
- *  • inside Telegram: ready()/expand(), keeps --app-top/--app-bottom equal to
+ *  • inside Telegram: ready()/expand(), full screen on phones, keeps --app-top/--app-bottom equal to
  *    Telegram's safe-area + content-safe-area insets (so our top bar sits below
  *    Telegram's Close / ⋯ buttons in fullscreen), and disables swipe-to-close so
  *    drawing downward with the pen doesn't minimise the app;
@@ -48,12 +48,22 @@ export default function TelegramBridge() {
       } catch {
         /* ignore */
       }
+      // phones open in full screen (Bot API 8.0+); desktop clients stay windowed
+      try {
+        if ((w.platform === 'ios' || w.platform === 'android') && tgVersionAtLeast(w, '8.0') && !w.isFullscreen) w.requestFullscreen?.();
+      } catch {
+        /* ignore */
+      }
       lockSwipes(w);
       const root = document.documentElement;
       const apply = () => {
         const sa = w.safeAreaInset ?? {};
         const ca = w.contentSafeAreaInset ?? {};
         root.style.setProperty('--app-top', `${(Number(sa.top) || 0) + (Number(ca.top) || 0)}px`);
+        // the two parts separately: status bar, and the row with Telegram's buttons
+        root.style.setProperty('--tg-sa-top', `${Number(sa.top) || 0}px`);
+        root.style.setProperty('--tg-ca-top', `${Number(ca.top) || 0}px`);
+        root.classList.toggle('tg-fs', !!w.isFullscreen && (Number(ca.top) || 0) > 0);
         root.style.setProperty('--app-bottom', `${(Number(sa.bottom) || 0) + (Number(ca.bottom) || 0)}px`);
       };
       apply();

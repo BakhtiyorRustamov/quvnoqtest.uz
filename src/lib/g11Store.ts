@@ -13,13 +13,15 @@ export type G11Attempt = {
   at: number;
   score: number;
   total: number;
-  /** chosen option per question (null = unanswered) */
-  answers: (number | null)[];
+  /** chosen option per question (null = unanswered; typed part answers for open tasks) */
+  answers: (number | string[] | null)[];
+  /** the generated variant itself (tests that change every attempt) */
+  questions?: import('@/content/g11/diagnostic').G11Question[];
 };
 
 const HISTORY = (slug: string) => `qt_g11_hist_${slug}`;
 const FLAGS = (slug: string) => `qt_g11_flags_${slug}`;
-const MAX_ATTEMPTS = 30;
+const MAX_ATTEMPTS = 20;
 export const G11_STORE_EVENT = 'qt-g11-store';
 
 function read<T>(key: string, fallback: T): T {

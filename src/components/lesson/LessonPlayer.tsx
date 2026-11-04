@@ -9,7 +9,8 @@ import type { Lesson } from '@/content/types';
 import MuteToggle from '@/components/ui/MuteToggle';
 import LangSwitcher from '@/components/ui/LangSwitcher';
 import { IMG_BTN_CLASS } from '@/components/ui/BackBar';
-import AnimatedLogo from '@/components/landing/AnimatedLogo';
+import { useTgNativeBack } from '@/lib/tg';
+import MoviyDaftarLogo from '@/components/brand/MoviyDaftarLogo';
 import Recall from './Recall';
 import ItemShell from './ItemShell';
 import Completion from './Completion';
@@ -82,6 +83,8 @@ export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
   }
 
   const isItem = step >= 1 && step <= total;
+  // Telegram full screen: Telegram's own Back (top-left) replaces ours
+  const tgFs = useTgNativeBack(onBack);
 
   return (
     <main className="min-h-screen flex flex-col pb-8">
@@ -92,19 +95,21 @@ export default function LessonPlayer({ lesson }: { lesson: Lesson }) {
          desktop). */}
       <div className="grid grid-cols-[1fr_auto_1fr] items-start gap-2 w-full max-w-5xl mx-auto px-3 pt-3">
         <div className="justify-self-start">
-          <button onClick={onBack} aria-label={t('back')} title={t('back')}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/buttons/goBackButton.png" alt="" className={IMG_BTN_CLASS} draggable={false} />
-          </button>
+          {!tgFs && (
+            <button onClick={onBack} aria-label={t('back')} title={t('back')}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/buttons/goBackButton.png" alt="" className={IMG_BTN_CLASS} draggable={false} />
+            </button>
+          )}
         </div>
         <div className="justify-self-center">
           {step !== 0 && (
             <Link
               href="/"
-              aria-label="QuvnoqTest.uz"
+              aria-label="MoviyDaftar.uz"
               className="block w-fit rounded-2xl border-2 border-ink/15 bg-white/80 px-3 py-1 shadow-card transition duration-150 opacity-60 hover:opacity-100 focus-visible:opacity-100 hover:-translate-y-0.5"
             >
-              <AnimatedLogo compact />
+              <MoviyDaftarLogo size="sm" />
             </Link>
           )}
         </div>

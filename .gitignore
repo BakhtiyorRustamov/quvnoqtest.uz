@@ -23,3 +23,6 @@ language button images/
 # Windows folder metadata
 desktop.ini
 **/desktop.ini
+
+# recorded social videos
+/videos/

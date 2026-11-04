@@ -20,6 +20,7 @@ const STR = {
   uz: { instr: "Soʻzlarni tartibla va gap tuz!", done: "Barakalla! Toʻgʻri gap!", retry: "Avval boshqa soʻz keladi", next: "Yana" },
   ru: { instr: "Расставь слова и составь предложение!", done: "Молодец! Верное предложение!", retry: "Сначала идёт другое слово", next: "Ещё" },
   en: { instr: "Order the words to make a sentence!", done: "Great! Correct sentence!", retry: "A different word comes first", next: "Again" },
+  kaa: { instr: "Sózlerdi tártipke salıp, gáp dúziń!", done: "Barakalla! Gáp durıs!", retry: "Aldın basqa sóz keledi", next: "Jáne" }
 };
 
 function shuffle(a) {

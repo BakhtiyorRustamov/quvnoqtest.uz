@@ -92,6 +92,19 @@ import ComparePick from './ComparePick';
 // Ingliz tili (English) — listening dialogs & CLIL art widgets.
 import DialogListen from './DialogListen';
 import ColorMix from './ColorMix';
+// Grade 11 maths — typed numbers / expressions and graph reading.
+import NumberAnswer from './math/NumberAnswer';
+import ExpressionAnswer from './math/ExpressionAnswer';
+import GraphTap from './math/GraphTap';
+import GraphChoose from './math/GraphChoose';
+import StepOrder from './math/StepOrder';
+// Grade 11 languages — typed gap answers, tapping words in a sentence, punctuation.
+import TextAnswer from './lang/TextAnswer';
+import WordTap from './lang/WordTap';
+import MarkPlace from './lang/MarkPlace';
+import WordSort from './lang/WordSort';
+// Grade 10–11 Informatika
+import BitToggle from './cs/BitToggle';
 
 // Large interactive games — loaded client-only (AudioContext / fullscreen / window).
 const GrandPrixAddition = dynamic(() => import('./GrandPrixAddition'), { ssr: false });
@@ -194,7 +207,17 @@ export const WIDGETS: Record<string, ComponentType<any>> = {
   spot_difference: SpotDifference,
   dialog_listen: DialogListen,
   color_mix: ColorMix,
-  compare_pick: ComparePick
+  compare_pick: ComparePick,
+  number_answer: NumberAnswer,
+  expression_answer: ExpressionAnswer,
+  graph_tap: GraphTap,
+  graph_choose: GraphChoose,
+  step_order: StepOrder,
+  text_answer: TextAnswer,
+  word_tap: WordTap,
+  mark_place: MarkPlace,
+  word_sort: WordSort,
+  bit_toggle: BitToggle
 };
 
 /** Trilingual labels for menus / the /demo gallery. */
@@ -296,5 +319,10 @@ export const WIDGET_LABELS: Record<string, L10n> = {
   spot_difference: { uz: 'Rasmlardagi farqni top', ru: 'Найди различия картинок', en: 'Spot the differences' },
   dialog_listen: { uz: 'Suhbatni tinglash (inglizcha)', ru: 'Прослушай диалог (английский)', en: 'Listen to the dialog' },
   color_mix: { uz: 'Ranglarni aralashtirish', ru: 'Смешивание красок', en: 'Mix the colors' },
-  compare_pick: { uz: 'Taqqosla va tanla', ru: 'Сравни и выбери', en: 'Compare and pick' }
+  compare_pick: { uz: 'Taqqosla va tanla', ru: 'Сравни и выбери', en: 'Compare and pick' },
+  number_answer: { uz: 'Sonli javob yozish', ru: 'Введи число', en: 'Type a number' },
+  expression_answer: { uz: 'Ifoda yozish', ru: 'Введи выражение', en: 'Type an expression' },
+  graph_tap: { uz: 'Grafikda nuqtani bosish', ru: 'Нажми точку на графике', en: 'Tap the point on a graph' },
+  graph_choose: { uz: 'Mos grafikni tanlash', ru: 'Выбери график', en: 'Pick the graph' },
+  step_order: { uz: 'Qadamlarni tartiblash', ru: 'Расставь шаги по порядку', en: 'Put the steps in order' }
 };

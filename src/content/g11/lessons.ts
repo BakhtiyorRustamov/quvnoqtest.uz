@@ -1,4 +1,6 @@
 import type { L10n } from '@/lib/i18n-config';
+import { BOARD_LESSONS, getBoardLesson } from './board';
+import { INF_PLAN } from './board/inf-plan';
 
 /**
  * Grade 11 lessons — DUMMY placeholders. Every subject has 50 lessons; only the
@@ -23,12 +25,23 @@ const TITLES = [
 const same = (s: string): L10n => ({ uz: s, ru: s, en: s });
 
 export type G11Lesson = {
+  /** id used in the URL */
   n: number;
+  /** number shown to students (textbook topic numbers, e.g. "7–8"); defaults to n */
+  label?: string;
+  /** textbook part: "Algebra" / "Geometriya" headings (matematika); for a textbook shared by two grades (Informatika), the grade */
+  part?: 'algebra' | 'geometriya' | 10 | 11;
+  /** textbook volume (1 or 2) */
+  qism?: 1 | 2;
+  /** chapter group heading (fizika), replaces the qism/part heading */
+  group?: { kicker: string; title: string };
   title: L10n;
   /** paragraphs; empty = title-only placeholder */
   body: { heading?: L10n; text: L10n }[];
   /** short check-yourself quiz at the end of the lesson */
   quiz: G11LessonQuiz[];
+  /** a prepared board lesson exists for this subject + lesson (see ./board) */
+  board?: boolean;
 };
 
 export type G11LessonQuiz = { prompt: L10n; choices: L10n[]; answerIndex: number; explanation: L10n };
@@ -93,8 +106,29 @@ export const G11_LESSONS: G11Lesson[] = Array.from({ length: G11_LESSON_COUNT },
   quiz: i < G11_FILLED_LESSONS ? LOREM_QUIZ : []
 }));
 
-export function getG11Lesson(n: number): G11Lesson | undefined {
-  return G11_LESSONS.find((l) => l.n === n);
+/** The lesson list of one subject: prepared board lessons replace the placeholders. */
+export function g11LessonsFor(slug: string): G11Lesson[] {
+  const real = BOARD_LESSONS[slug] ?? [];
+  if (slug === 'informatika') {
+    // planned list of the two-grade textbook; written lessons become links
+    return INF_PLAN.map((p) => {
+      const b = real.find((r) => r.n === p.n);
+      return { n: p.n, label: b?.label, title: same(b?.title ?? p.title), body: [], quiz: [], board: !!b, part: p.part };
+    });
+  }
+  if (!real.length) return G11_LESSONS;
+  // prepared subjects: exactly the prepared lessons, in textbook order
+  return real.map((b) => ({ n: b.n, label: b.label, part: b.part, qism: b.qism ?? 1, group: b.group, title: same(b.title), body: [], quiz: [], board: true }));
 }
+
+export function getG11Lesson(n: number, slug?: string): G11Lesson | undefined {
+  return (slug ? g11LessonsFor(slug) : G11_LESSONS).find((l) => l.n === n);
+}
+
+/** The number students see for a lesson. */
+export const g11LessonLabel = (l: Pick<G11Lesson, 'n' | 'label'>) => l.label ?? String(l.n);
+
+export const hasG11Content = (l: G11Lesson) => l.body.length > 0 || !!l.board;
+export { getBoardLesson };
 
 export const g11LessonHref = (slug: string, n: number) => `/lesson/g11/${slug}/${n}`;

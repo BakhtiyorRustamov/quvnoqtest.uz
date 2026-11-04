@@ -74,37 +74,59 @@ export async function groqModels(): Promise<string[]> {
 /** Hugging Face router models (only work if the HF account has inference credits). */
 export const HF_MODELS = ['google/gemma-3-27b-it', 'Qwen/Qwen2.5-72B-Instruct', 'meta-llama/Llama-3.3-70B-Instruct'] as const;
 
-/** Google AI Studio key (Gemma models are free there; no Gemini models are used). */
+/** Any Hugging Face model id ("owner/name", optionally ":provider") may be tried from the lab. */
+export const isHfModelId = (id: string) => /^[\w.-]+\/[\w.-]+(:[\w.-]+)?$/.test(id) && id.length <= 120;
+
+/** Google AI Studio key (free Gemma text models and the free-tier Gemini voices). */
 export function googleKey(): string | null {
   return process.env.GOOGLE_AI_API_KEY || process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || null;
 }
 
-export const GOOGLE_FALLBACK = ['gemma-3-27b-it', 'gemma-3-12b-it', 'gemma-3-4b-it'];
-let googleCache: { at: number; ids: string[] } | null = null;
+export const GOOGLE_FALLBACK = ['gemma-4-31b-it', 'gemma-4-26b-a4b-it'];
+export const GOOGLE_TTS_FALLBACK = ['gemini-3.8-flash-tts', 'gemini-3.8-flash-lite-tts'];
+/** Gemini Flash models that can listen to audio (speech-to-text test); Flash-Lite first, it has the larger free quota. */
+export const GOOGLE_LISTEN_FALLBACK = ['gemini-flash-lite-latest', 'gemini-flash-latest'];
+let googleCache: { at: number; text: string[]; tts: string[]; listen: string[] } | null = null;
 
-/** Gemma models available to this Google AI Studio key (cached for 10 minutes). Gemini models are skipped on purpose. */
-export async function googleModels(): Promise<string[]> {
+/** Models this Google AI Studio key lists (cached 10 min): Gemma for text, *-tts for voice, Flash for listening. Other Gemini models are skipped on purpose. */
+async function googleList(): Promise<{ text: string[]; tts: string[]; listen: string[] }> {
   const key = googleKey();
-  if (!key) return [];
-  if (googleCache && Date.now() - googleCache.at < 600_000) return googleCache.ids;
+  if (!key) return { text: [], tts: [], listen: [] };
+  if (googleCache && Date.now() - googleCache.at < 600_000) return googleCache;
   try {
-    const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=200', {
-      headers: { 'x-goog-api-key': key },
-      signal: AbortSignal.timeout(8000),
-      cache: 'no-store'
-    });
-    if (!res.ok) throw new Error(String(res.status));
-    const data = (await res.json()) as { models?: { name: string; supportedGenerationMethods?: string[] }[] };
-    const ids = (data.models ?? [])
-      .filter((m) => /gemma/i.test(m.name) && (m.supportedGenerationMethods ?? ['generateContent']).includes('generateContent'))
-      .map((m) => m.name.replace(/^models\//, ''))
-      .sort((a, b) => b.localeCompare(a, undefined, { numeric: true }));
-    googleCache = { at: Date.now(), ids: ids.length ? ids : GOOGLE_FALLBACK };
+    const names: string[] = [];
+    let page = '';
+    for (let i = 0; i < 5; i++) {
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?pageSize=200${page ? `&pageToken=${page}` : ''}`, {
+        headers: { 'x-goog-api-key': key },
+        signal: AbortSignal.timeout(8000),
+        cache: 'no-store'
+      });
+      if (!res.ok) throw new Error(String(res.status));
+      const data = (await res.json()) as { models?: { name: string }[]; nextPageToken?: string };
+      names.push(...(data.models ?? []).map((m) => m.name.replace(/^models\//, '')));
+      if (!data.nextPageToken) break;
+      page = data.nextPageToken;
+    }
+    const byNewest = (a: string, b: string) => b.localeCompare(a, undefined, { numeric: true });
+    const text = names.filter((n) => /^gemma/i.test(n) && !/embed|nano/i.test(n)).sort(byNewest);
+    const tts = names.filter((n) => /tts/i.test(n)).sort(byNewest);
+    const flash = names.filter((n) => /^gemini-[\d.]+-flash(-lite)?$/i.test(n)).sort(byNewest);
+    const listen = [...flash.filter((n) => /lite/i.test(n)), ...flash.filter((n) => !/lite/i.test(n))];
+    googleCache = {
+      at: Date.now(),
+      text: text.length ? text : GOOGLE_FALLBACK,
+      tts: tts.length ? tts : GOOGLE_TTS_FALLBACK,
+      listen: listen.length ? listen : GOOGLE_LISTEN_FALLBACK
+    };
   } catch {
-    googleCache = { at: Date.now() - 540_000, ids: GOOGLE_FALLBACK };
+    googleCache = { at: Date.now() - 540_000, text: GOOGLE_FALLBACK, tts: GOOGLE_TTS_FALLBACK, listen: GOOGLE_LISTEN_FALLBACK };
   }
-  return googleCache.ids;
+  return googleCache;
 }
+export const googleModels = async () => (await googleList()).text;
+export const googleTtsModels = async () => (await googleList()).tts;
+export const googleListenModels = async () => (await googleList()).listen;
 
 /** Azure AI Speech (free F0 tier: 0.5 M characters/month of neural voices). */
 export function azureSpeech(): { key: string; region: string } | null {

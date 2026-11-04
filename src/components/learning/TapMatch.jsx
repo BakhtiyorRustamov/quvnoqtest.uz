@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 /**
  * TapMatch — tap every tile that matches a rule (Ona tili, grades 1–2).
@@ -19,6 +19,7 @@ const STR = {
   uz: { instr: "Mos keladiganlarini bos!", done: "Barakalla! Hammasini topding!", retry: "Bu mos emas", next: "Yana" },
   ru: { instr: "Нажми все подходящие!", done: "Молодец! Все найдены!", retry: "Это не подходит", next: "Ещё" },
   en: { instr: "Tap all that fit!", done: "Great! You found them all!", retry: "That one doesn't fit", next: "Again" },
+  kaa: { instr: "Sáykes keletuǵınlarınıń hámmesin basıń!", done: "Barakalla! Hámmesin taptıńız!", retry: "Bul sáykes emes", next: "Jáne" }
 };
 
 function shuffle(a) {
@@ -32,7 +33,9 @@ function shuffle(a) {
 
 export default function TapMatch({ tiles = [], lang = "uz", embedded = false, onAttempt, onCorrect, onNext }) {
   const t = STR[lang] || STR.uz;
-  const shown = useMemo(() => shuffle(tiles), [tiles]);
+  // shuffled after mount (a random order during server rendering breaks hydration)
+  const [shown, setShown] = useState(() => tiles.map((v, i) => ({ ...v, id: i })));
+  useEffect(() => setShown(shuffle(tiles)), [tiles]);
   const need = tiles.filter((x) => x.match).length;
   const [picked, setPicked] = useState([]); // ids of correctly picked tiles
   const [shake, setShake] = useState(null);

@@ -1,6 +1,9 @@
 import { redirect } from 'next/navigation';
 import { getStore } from '@/lib/store';
 import Landing from '@/components/landing/Landing';
+import { siteJsonLd, ldJson } from '@/lib/seo';
+
+const Ld = () => <script type="application/ld+json" dangerouslySetInnerHTML={ldJson(siteJsonLd())} />;
 
 export const dynamic = 'force-dynamic';
 
@@ -18,10 +21,10 @@ export default async function Home({
   // A returning visitor who deliberately opens the landing page from the
   // dashboard ("Ilk sahifa") passes ?home=1 and is NOT bounced back.
   const { home } = await searchParams;
-  if (home === '1') return <Landing />;
+  if (home === '1') return (<><Ld /><Landing /></>);
 
   const store = getStore();
   const user = await store.getCurrent();
   if (user) redirect('/dashboard');
-  return <Landing />;
+  return (<><Ld /><Landing /></>);
 }

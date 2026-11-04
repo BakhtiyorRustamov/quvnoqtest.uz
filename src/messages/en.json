@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "QuvnoqTest",
+    "appName": "MoviyDaftar",
     "back": "Back",
     "toDashboard": "Dashboard",
     "comingSoon": "🚧 Coming soon…",
@@ -14,7 +14,7 @@
     "close": "Close",
     "soundOn": "Mute sounds",
     "soundOff": "Unmute sounds",
-    "grade": "Grade {n}",
+    "grade": "{n, select, 1 {Primary} 11 {Senior} other {Grade {n}}}",
     "underConstruction": "Under construction"
   },
   "landing": {
@@ -27,7 +27,7 @@
     "goToDashboard": "Go to my dashboard",
     "moreSubjects": "Scroll for more subjects",
     "why": {
-      "title": "Why QuvnoqTest?",
+      "title": "Why MoviyDaftar?",
       "counterLabel": "happy learners study with us",
       "f1t": "Learning through play",
       "f1b": "Every topic is a fun game, animation and quiz.",
@@ -64,7 +64,7 @@
       "product": "Product",
       "company": "Company",
       "contact": "Contact",
-      "rights": "© 2026 QuvnoqTest.uz · All rights reserved.",
+      "rights": "© 2026 MoviyDaftar.uz · All rights reserved.",
       "address": "Tashkent, Uzbekistan"
     },
     "discovery": {
@@ -79,13 +79,13 @@
       "a3t": "Affordable",
       "a3b": "Using the site costs just 15,000 UZS a month — full access to every material for a whole month.",
       "learnTitle": "Learning is actually a joyful adventure!",
-      "learnBody": "At QuvnoqTest.uz we treat learning as something fascinating and important. Our ancestors studied not for income or diplomas, but out of curiosity (astronomy, poetry) or to serve society (mathematics, medicine) — and reached great heights. We want to spark that same curiosity.",
+      "learnBody": "At MoviyDaftar.uz we treat learning as something fascinating and important. Our ancestors studied not for income or diplomas, but out of curiosity (astronomy, poetry) or to serve society (mathematics, medicine) — and reached great heights. We want to spark that same curiosity.",
       "c1": "Engaging, visual questions",
       "c2": "The numbers in the examples change, so you can repeat and practise as much as you like — endless practice",
       "c3": "Collecting puzzle pieces and other game elements",
       "c4": "An AI helper is ready for your questions!",
       "devTitle": "Use it on any device",
-      "devBody": "Open a browser on your computer, tablet or phone, type QuvnoqTest.uz and start learning.",
+      "devBody": "Open a browser on your computer, tablet or phone, type MoviyDaftar.uz and start learning.",
       "faqTitle": "Questions & answers",
       "q1": "Which books and materials are the tests based on?",
       "fa1": "The tests are built from school textbooks using modern technology and edited by our team. The number of topics matches that of the textbooks.",
@@ -208,7 +208,7 @@
   },
   "profile": {
     "title": "Profile",
-    "idLabel": "Your ID",
+    "idLabel": "Your account number",
     "gradeLabel": "Grade",
     "nameLabel": "Name",
     "phoneLabel": "Phone",
@@ -242,7 +242,7 @@
   },
   "checkout": {
     "title": "Payment",
-    "product": "QuvnoqTest subscription — 1 month",
+    "product": "MoviyDaftar subscription — 1 month",
     "perMonth": "Per month",
     "sum": "UZS",
     "inc1": "All lessons, topics and quizzes",

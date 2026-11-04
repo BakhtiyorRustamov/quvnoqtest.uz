@@ -3,11 +3,14 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import { api } from '@/lib/client';
+import { MdMark } from '@/components/brand/MoviyDaftarLogo';
+import { BOARD_TEXT, BoardMessage, chatTurns, requestBoard, voiceHint, type ChatMsg } from './BoardExplainer';
+import MicButton from './MicButton';
+import { useUser } from '@/components/providers/UserProvider';
 
-type Msg = { role: 'user' | 'assistant'; content: string };
 type Usage = { messages: number; tokens: number };
 const LIMITS = { messages: 100, tokens: 100000 };
 
@@ -15,7 +18,15 @@ const LIMITS = { messages: 100, tokens: 100000 };
 export default function AiChat() {
   const t = useTranslations('ai');
   const tc = useTranslations('common');
-  const [msgs, setMsgs] = useState<Msg[]>([]);
+  const locale = useLocale();
+  const tb = BOARD_TEXT[locale] ?? BOARD_TEXT.uz;
+  const [msgs, setMsgs] = useState<ChatMsg[]>([]);
+  const { user } = useUser();
+  // the text in the box came from the microphone (the tutor reads it charitably)
+  const [voice, setVoice] = useState(false);
+  const [micStatus, setMicStatus] = useState<string | null>(null);
+  // after a board's follow-up question the box is for answering: one send button
+  const [replyMode, setReplyMode] = useState(false);
   const [input, setInput] = useState('');
   const [usage, setUsage] = useState<Usage>({ messages: 0, tokens: 0 });
   const [limits, setLimits] = useState(LIMITS);
@@ -38,22 +49,71 @@ export default function AiChat() {
     });
   }, []);
 
+  // a new board scrolls itself into view; everything else scrolls to the bottom
+  const last = msgs[msgs.length - 1];
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [msgs, busy]);
+    if (last?.role === 'board') return;
+    bottomRef.current?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }, [msgs.length, busy]); // eslint-disable-line react-hooks/exhaustive-deps
+  // site lessons that match each question, shown under the answer (both brief and detailed modes)
+  const [related, setRelated] = useState<{ after: number; items: { title: string; subject: string; label: string; href: string }[] }[]>([]);
+  const findLessons = (q: string, after: number) =>
+    api<{ lessons: { title: string; subject: string; label: string; href: string }[] }>(`/api/ai/lessons?q=${encodeURIComponent(q)}`).then(({ data }) => {
+      if (data?.lessons?.length) setRelated((r) => [...r, { after, items: data.lessons }]);
+    });
+  const hasBoard = msgs.some((m) => m.role === 'board');
+  const boardBusy = msgs.some((m) => m.role === 'board' && m.state === 'loading');
+
+  /** "Explain on the board": a short board lesson inside the chat; its follow-up question continues the chat. */
+  async function explain() {
+    const text = input.trim();
+    if (!text || busy || boardBusy || limitHit || !configured) return;
+    setError(null);
+    setInput('');
+    const spoken = voice;
+    setVoice(false);
+    const id = Date.now();
+    setMsgs((m) => [...m, { role: 'user', content: text }, { role: 'board', id, question: text, state: 'loading' }]);
+    void findLessons(text, msgs.length + 1);
+    const { ok, status, data } = await requestBoard(text, undefined, spoken);
+    const update = (patch: Partial<Extract<ChatMsg, { role: 'board' }>>) =>
+      setMsgs((m) => m.map((x) => (x.role === 'board' && x.id === id ? { ...x, ...patch } : x)));
+    if (ok && data?.lesson) {
+      update({ state: 'ready', lesson: data.lesson });
+      if (data.usage) {
+        setUsage(data.usage);
+        if (data.usage.messages >= limits.messages || data.usage.tokens >= limits.tokens - 60) setLimitHit(true);
+      }
+    } else {
+      update({ state: 'error', error: status === 429 ? tb.limit : status === 501 ? tb.off : tb.error });
+      if (status === 429) setLimitHit(true);
+    }
+  }
+
+  function boardDone(id: number) {
+    const b = msgs.find((m) => m.role === 'board' && m.id === id);
+    const q = b && b.role === 'board' ? b.lesson?.followUp : '';
+    if (q) {
+      setMsgs((m) => [...m, { role: 'assistant', content: q }]);
+      setReplyMode(true);
+    }
+  }
 
   async function send() {
     const text = input.trim();
     if (!text || busy || limitHit || !configured) return;
     setError(null);
     setInput('');
-    const history = msgs.slice(-4);
+    const history = chatTurns(msgs).slice(-4);
+    const spoken = voice;
+    setVoice(false);
     setMsgs((m) => [...m, { role: 'user', content: text }]);
     setBusy(true);
-    const { ok, status, data } = await api('/api/ai', { method: 'POST', json: { message: text, history } });
+    const { ok, status, data } = await api('/api/ai', { method: 'POST', json: { message: text, history, voice: spoken } });
     setBusy(false);
     if (ok && data?.reply) {
       setMsgs((m) => [...m, { role: 'assistant', content: data.reply }]);
+      void findLessons(text, msgs.length + 1);
       setUsage(data.usage);
       if (data.usage.messages >= limits.messages || data.usage.tokens >= limits.tokens - 60) setLimitHit(true);
     } else if (status === 429) {
@@ -89,13 +149,34 @@ export default function AiChat() {
         </div>
 
         {/* chat area */}
-        <div className="card flex-1 mt-3 p-3.5 overflow-y-auto min-h-[300px] max-h-[58vh]">
+        {/* with a board in the conversation the page scrolls instead of the box, so the board has room */}
+        <div className={`card flex-1 mt-3 p-3.5 min-h-[300px] ${hasBoard ? '' : 'overflow-y-auto max-h-[58vh]'}`}>
           <Bubble role="assistant">{t('greeting')}</Bubble>
-          {msgs.map((m, i) => (
-            <Bubble key={i} role={m.role}>
-              {m.content}
-            </Bubble>
-          ))}
+          {msgs.map((m, i) =>
+            m.role === 'board' ? (
+              <div key={m.id} className="my-3">
+                <BoardMessage msg={m} locale={locale} onDone={() => boardDone(m.id)} />
+              </div>
+            ) : (
+              <Bubble key={i} role={m.role}>
+                {m.content}
+              </Bubble>
+            )
+          )}
+          {related.length > 0 && (
+            <div className="my-3 space-y-2">
+              {related.slice(-1).map((r, k) => (
+                <div key={k} className="rounded-2xl border border-brand-blue/20 bg-brand-blue/[0.06] px-3.5 py-2.5">
+                  <div className="text-xs font-black uppercase tracking-wide text-brand-blue">📖 {tb.lessons}</div>
+                  {r.items.map((it) => (
+                    <a key={it.href} href={it.href} className="mt-1 block text-[15px] font-bold text-ink underline decoration-brand-blue/30 hover:decoration-brand-blue">
+                      {it.subject} · {it.label}. {it.title}
+                    </a>
+                  ))}
+                </div>
+              ))}
+            </div>
+          )}
           {busy && (
             <Bubble role="assistant">
               <span className="inline-flex gap-1 items-center">
@@ -109,13 +190,6 @@ export default function AiChat() {
           {error && <p className="text-center text-sm font-bold text-error mt-2">{error}</p>}
           <div ref={bottomRef} />
         </div>
-
-        {/* free-trial banner — shown while the one free session is still active */}
-        {freeTrial && configured && !limitHit && (
-          <div className="mt-3 rounded-2xl bg-brand-green/10 border border-brand-green/30 px-4 py-2.5 font-bold text-ink/70 text-sm">
-            {t('freeNote')}
-          </div>
-        )}
 
         {/* limit-reached / not-configured notices (FR-AI-7, NFR-6) */}
         {!configured && (
@@ -140,24 +214,73 @@ export default function AiChat() {
         )}
 
         {/* input */}
-        <div className="flex gap-2 mt-3">
+        <div className="flex flex-wrap justify-end gap-2 mt-3">
+          <MicButton
+            locale={locale}
+            hint={() => voiceHint(msgs, `QuvnoqTest. ${user?.grade ?? ''}-sinf maktab darsi.`)}
+            disabled={busy || limitHit || !configured}
+            onText={(text) => {
+              setInput((v) => (v.trim() ? `${v.trim()} ${text}` : text));
+              setVoice(true);
+            }}
+            onError={setError}
+            onStatus={setMicStatus}
+          />
           <input
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => {
+              setInput(e.target.value);
+              if (!e.target.value.trim()) setVoice(false);
+            }}
             onKeyDown={(e) => e.key === 'Enter' && send()}
-            placeholder={t('placeholder')}
-            disabled={busy || limitHit || !configured}
-            className="flex-1 rounded-full border-2 border-ink/15 bg-white px-5 py-3 font-semibold text-ink focus:border-brand-blue outline-none disabled:opacity-50"
+            placeholder={micStatus ?? (replyMode ? tb.reply : t('placeholder'))}
+            disabled={busy || limitHit || !configured || !!micStatus}
+            className="min-w-0 flex-[1_1_240px] rounded-full border-2 border-ink/15 bg-white px-5 py-3 font-semibold text-ink focus:border-brand-blue outline-none disabled:opacity-50"
           />
-          <button
-            onClick={send}
-            disabled={busy || limitHit || !configured || !input.trim()}
-            className="btn-primary px-6 disabled:opacity-40"
-            aria-label={t('send')}
-          >
-            ➤
-          </button>
+          {replyMode ? (
+            <>
+              <button
+                onClick={send}
+                disabled={busy || limitHit || !configured || !input.trim()}
+                aria-label={tb.send}
+                title={tb.send}
+                className="grid h-[46px] w-[46px] shrink-0 place-items-center rounded-full bg-brand-blue text-[22px] font-black text-white shadow-[0_3px_0_rgba(0,0,0,.15)] active:translate-y-px disabled:opacity-40"
+              >
+                ⌲
+              </button>
+            </>
+          ) : (
+          <>
+          <div className="flex w-36 flex-col items-center">
+            <button
+              onClick={explain}
+              disabled={busy || boardBusy || limitHit || !configured || !input.trim()}
+              className="w-full rounded-full border-2 border-brand-orange/50 bg-white px-4 py-2.5 font-black text-brand-orange shadow-[0_3px_0_rgba(0,0,0,.08)] active:translate-y-px disabled:opacity-40"
+            >
+              {tb.detailed}
+            </button>
+            <span className="mt-1 text-center text-[10.5px] font-bold leading-tight text-ink/50">{tb.detailedHint}</span>
+          </div>
+          <div className="flex w-36 flex-col items-center">
+            <button
+              onClick={send}
+              disabled={busy || limitHit || !configured || !input.trim()}
+              className="w-full rounded-full border-2 border-brand-blue bg-brand-blue px-4 py-2.5 font-black text-white shadow-[0_3px_0_rgba(0,0,0,.15)] active:translate-y-px disabled:opacity-40"
+            >
+              {tb.brief}
+            </button>
+            <span className="mt-1 text-center text-[10.5px] font-bold leading-tight text-ink/50">{tb.briefHint}</span>
+          </div>
+          </>
+          )}
         </div>
+        {replyMode && (
+          <div className="mt-2 flex justify-center">
+            <button onClick={() => setReplyMode(false)} className="rounded-full border border-ink/10 bg-white px-4 py-1.5 text-sm font-black text-ink/60 hover:text-ink">
+              {tb.newQuestion}
+            </button>
+          </div>
+        )}
       </div>
     </main>
   );
@@ -167,7 +290,7 @@ function Bubble({ role, children }: { role: 'user' | 'assistant'; children: Reac
   const isUser = role === 'user';
   return (
     <div className={`flex items-end gap-2 my-2 ${isUser ? 'justify-end' : ''}`}>
-      {!isUser && <img src="/logo-mark.svg" alt="" className="w-8 h-8 shrink-0" aria-hidden />}
+      {!isUser && <MdMark className="h-8 w-8 shrink-0" />}
       <div
         className={`max-w-[80%] px-4 py-2.5 rounded-2xl font-semibold leading-relaxed text-[15px] ${
           isUser ? 'bg-brand-blue text-white rounded-br-md' : 'bg-ink/5 text-ink rounded-bl-md'

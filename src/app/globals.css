@@ -855,9 +855,12 @@ html.lenis body {
 :root {
   --app-top: 0px;
   --app-bottom: 0px;
+  --tg-sa-top: 0px; /* status bar part of --app-top */
+  --tg-ca-top: 0px; /* Telegram's button row part of --app-top */
 }
 html.tg body {
   padding-top: var(--app-top);
+  padding-bottom: var(--app-bottom);
 }
 /* no rubber-band pull-down inside Telegram (it drags the mini-app window) */
 html.tg,

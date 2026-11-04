@@ -1,39 +1,112 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
+import LessonSocial from './LessonSocial';
+import QuestionSketchpad from './QuestionSketchpad';
+import ScratchNotebook from './ScratchNotebook';
 import { useSound } from '@/components/providers/SoundProvider';
 import { hapticNotify, hapticSelect } from '@/lib/tg';
 import { clearFlag } from '@/lib/g11Store';
 import ArrowBack from './ArrowBack';
 import { pick } from '@/lib/i18n-config';
-import { getG11Subject, g11SubjectHref } from '@/content/g11/subjects';
-import { getG11Lesson, type G11LessonQuiz } from '@/content/g11/lessons';
+import { getG11Subject, g11SubjectHref, g10InformatikaHref } from '@/content/g11/subjects';
+import { getBoardLesson, getG11Lesson, g11LessonLabel, type G11LessonQuiz } from '@/content/g11/lessons';
+import G11BoardPlayer from './G11BoardPlayer';
+import G11Practice from './G11Practice';
+import { lessonUi } from '@/content/g11/lessonUi';
 
 const S: Record<string, Record<string, string>> = {
-  uz: { lesson: '-dars', back: 'Mavzularga qaytish', quiz: 'Oʻzingizni tekshiring', check: 'Tekshirish', right: 'Toʻgʻri!', wrong: 'Notoʻgʻri', correct: 'Toʻgʻri javob', retry: 'Qayta urinish', score: 'Natija' },
-  ru: { lesson: '', back: 'Назад к темам', quiz: 'Проверь себя', check: 'Проверить', right: 'Верно!', wrong: 'Неверно', correct: 'Верный ответ', retry: 'Ещё раз', score: 'Результат' },
-  en: { lesson: '', back: 'Back to topics', quiz: 'Check yourself', check: 'Check', right: 'Correct!', wrong: 'Not quite', correct: 'Correct answer', retry: 'Try again', score: 'Score' }
+  uz: { lesson: '-dars', geo: 'Geometriya', practice: 'Masalalar', revisionNote: 'Bu dars — mavzular boʻyicha aralash mashqlar. Bilganlaringizni sinab koʻring!', back: 'Mavzularga qaytish', quiz: 'Oʻzingizni tekshiring', check: 'Tekshirish', right: 'Toʻgʻri!', wrong: 'Notoʻgʻri', correct: 'Toʻgʻri javob', retry: 'Qayta urinish', score: 'Natija' },
+  ru: { lesson: '', geo: 'Геометрия', practice: 'Задачи', revisionNote: 'Этот урок — смешанные задачи по темам. Проверьте себя!', back: 'Назад к темам', quiz: 'Проверь себя', check: 'Проверить', right: 'Верно!', wrong: 'Неверно', correct: 'Верный ответ', retry: 'Ещё раз', score: 'Результат' },
+  en: { lesson: '', geo: 'Geometry', practice: 'Practice', revisionNote: 'This lesson is mixed practice across the topics. Test yourself!', back: 'Back to topics', quiz: 'Check yourself', check: 'Check', right: 'Correct!', wrong: 'Not quite', correct: 'Correct answer', retry: 'Try again', score: 'Score' }
 };
 
 /** Grade 11 lesson reader (dummy Lorem Ipsum content) with an end-of-lesson
  *  quiz and a visible in-page back button (Telegram hides the top bar one). */
-export default function G11LessonView({ slug, n }: { slug: string; n: number }) {
+export default function G11LessonView({ slug, n, grade = 11 }: { slug: string; n: number; grade?: 10 | 11 }) {
   const locale = useLocale();
   const t = S[locale] ?? S.uz;
   const s = getG11Subject(slug);
-  const lesson = getG11Lesson(n);
+  const lesson = getG11Lesson(n, slug);
+  const board = getBoardLesson(slug, n);
+  // the practice questions open only after the lesson's final picture
+  const [quizOpen, setQuizOpen] = useState(false);
+  const quizRef = useRef<HTMLElement | null>(null);
+  const pageRef = useRef<HTMLElement | null>(null);
+  useEffect(() => {
+    if (quizOpen) quizRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [quizOpen]);
   // opening the lesson counts as reviewing it: its "!" mark goes away
   useEffect(() => {
     clearFlag(slug, n);
   }, [slug, n]);
   if (!s || !lesson) return null;
-  const backHref = g11SubjectHref(slug);
+  const backHref = grade === 10 && slug === 'informatika' ? g10InformatikaHref : g11SubjectHref(slug);
+
+  if (board) {
+    const lui = board.lang && board.lang !== 'uz' ? lessonUi(board.lang) : null;
+    const head = lui ? lui.lessonN(g11LessonLabel(board)) : `${board.part === 'geometriya' ? `${t.geo} · ` : ''}${g11LessonLabel(board)}${t.lesson}`;
+    const quizTitle = lui ? lui.quiz : t.quiz;
+    const backLabel = lui ? lui.backToTopics : t.back;
+    // revision lessons: the questions straight away, no board
+    if (board.revision || !board.steps.length) {
+      return (
+        <main ref={pageRef} className="relative min-h-screen pb-16">
+          <BackBar backHref={backHref} subtle title={pick(s.name, locale)} />
+          <article className="mx-auto max-w-3xl px-4">
+            <p className="mt-4 text-[12px] font-extrabold uppercase tracking-wide text-ink/40">{head}</p>
+            <h2 className="font-black leading-tight text-ink text-[clamp(22px,6vw,34px)]">{board.title}</h2>
+            <p className="mt-2 font-semibold text-ink/60">{board.lang === 'kaa' ? 'Bul sabaq — temalar boyınsha aralas shınıǵıwlar. Bilimińizdi sınap kóriń!' : t.revisionNote}</p>
+            <section className="mt-6">
+              <G11Practice questions={board.questions} color={s.color} locale={locale} lang={board.lang} />
+              <ScratchNotebook />
+            </section>
+            <LessonSocial page={`g11/${slug}/${n}`} title={board.title} />
+            <div className="mt-10 flex justify-center">
+              <ArrowBack href={backHref} label={backLabel} />
+            </div>
+          </article>
+          <QuestionSketchpad containerRef={pageRef} pageKey={`${slug}-${n}`} locale={locale} />
+      </main>
+      );
+    }
+    return (
+      <main ref={pageRef} className="relative min-h-screen pb-16">
+        <BackBar backHref={backHref} subtle title={pick(s.name, locale)} />
+        <article className="mx-auto max-w-3xl px-4">
+          <p className="mt-4 text-[12px] font-extrabold uppercase tracking-wide text-ink/40">{head}</p>
+          <h2 className="font-black leading-tight text-ink text-[clamp(22px,6vw,34px)]">{board.title}</h2>
+          <G11BoardPlayer
+            lesson={board}
+            slug={slug}
+            color={s.color}
+            onQuiz={() => {
+              if (quizOpen) quizRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              setQuizOpen(true);
+            }}
+          />
+          {quizOpen && (
+            <section ref={quizRef} className="mt-10 scroll-mt-4">
+              <h2 className="mb-3 text-2xl font-black text-ink">✍️ {quizTitle}</h2>
+              <G11Practice questions={board.questions} color={s.color} locale={locale} lang={board.lang} />
+              <ScratchNotebook />
+            </section>
+          )}
+          <LessonSocial page={`g11/${slug}/${n}`} title={board.title} />
+          <div className="mt-10 flex justify-center">
+            <ArrowBack href={backHref} label={backLabel} />
+          </div>
+        </article>
+        <QuestionSketchpad containerRef={pageRef} pageKey={`${slug}-${n}`} locale={locale} />
+      </main>
+    );
+  }
 
   return (
-    <main className="min-h-screen pb-16">
-      <BackBar backHref={backHref} showLang title={pick(s.name, locale)} />
+    <main ref={pageRef} className="relative min-h-screen pb-16">
+      <BackBar backHref={backHref} subtle title={pick(s.name, locale)} />
       <article className="max-w-2xl mx-auto px-4">
         <h2 className="mt-5 font-black text-ink text-[clamp(26px,7vw,40px)] leading-tight">{pick(lesson.title, locale)}</h2>
         <div className="card mt-6 p-5 sm:p-6 space-y-5">
@@ -46,11 +119,14 @@ export default function G11LessonView({ slug, n }: { slug: string; n: number }) 
         </div>
 
         {lesson.quiz.length > 0 && <LessonQuiz quiz={lesson.quiz} locale={locale} color={s.color} t={t} />}
+        {lesson.quiz.length > 0 && <ScratchNotebook />}
 
+        <LessonSocial page={`g11/${slug}/${n}`} title={pick(lesson.title, locale)} />
         <div className="mt-10 flex justify-center">
           <ArrowBack href={backHref} label={t.back} />
         </div>
       </article>
+      <QuestionSketchpad containerRef={pageRef} pageKey={`${slug}-${n}`} locale={locale} />
     </main>
   );
 }

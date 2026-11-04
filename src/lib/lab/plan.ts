@@ -14,7 +14,7 @@ export type LabSize = 's' | 'm' | 'l';
 export type DrawOp =
   // any subject
   | { t: 'title'; text: string }
-  | { t: 'text'; x: number; y: number; text: string; color?: LabColor; size?: LabSize }
+  | { t: 'text'; x: number; y: number; text: string; color?: LabColor; size?: LabSize; anchor?: 'start' | 'middle' }
   | { t: 'formula'; x: number; y: number; text: string }
   | { t: 'box'; id: string; x: number; y: number; w: number; h: number; text: string; color?: LabColor }
   | { t: 'arrow'; from: string; to: string; label?: string; color?: LabColor }
@@ -23,18 +23,23 @@ export type DrawOp =
   | { t: 'bars'; x: number; y: number; w: number; h: number; items: { label: string; value: number }[]; color?: LabColor }
   | { t: 'icon'; x: number; y: number; emoji: string; size?: LabSize }
   // geometry
-  | { t: 'point'; id: string; x: number; y: number; label?: string }
+  | { t: 'point'; id: string; x: number; y: number; label?: string; /** helper point: no dot drawn (e.g. an axis end) */ hide?: boolean }
   | { t: 'pointOn'; id: string; circle: string; angle: number; label?: string }
   | { t: 'circle'; id: string; center: string; r: number; color?: LabColor }
   | { t: 'line'; from: string; to: string; color?: LabColor; dashed?: boolean; label?: string; arrow?: boolean }
   | { t: 'polygon'; points: string[]; color?: LabColor; fill?: boolean }
+  /** ellipse (a circle seen at an angle, e.g. a cylinder base); dashedBack = upper half dashed */
+  | { t: 'ellipse'; cx: number; cy: number; rx: number; ry: number; color?: LabColor; dashedBack?: boolean }
   // graphs
   | { t: 'axes'; id: string; x: number; y: number; w: number; h: number; xmin: number; xmax: number; ymin: number; ymax: number; xlabel?: string; ylabel?: string }
-  | { t: 'curve'; axes: string; points: [number, number][]; color?: LabColor }
-  | { t: 'dot'; axes: string; x: number; y: number; id?: string; label?: string };
+  | { t: 'curve'; axes: string; points: [number, number][]; color?: LabColor; dashed?: boolean }
+  /** point on axes; open = hollow circle (a removed point / hole) */
+  | { t: 'dot'; axes: string; x: number; y: number; id?: string; label?: string; open?: boolean; color?: LabColor };
 
-export type LabStep = { say: string; draw: DrawOp[] };
-export type LabPlan = { title: string; steps: LabStep[] };
+/** clear = start a fresh board (new scene) before drawing this step */
+export type LabStep = { say: string; draw: DrawOp[]; clear?: boolean };
+export type LabPlan = { title: string; steps: LabStep[]; sources?: number[] };
+export type CheckProblem = { step: number; quote: string; problem: string; fix: string; severity: 'error' | 'warning' };
 
 export const LAB_LANG: Record<string, string> = {
   uz: 'Uzbek (Latin script, use the letters oʻ gʻ and the apostrophe ʼ correctly)',
@@ -49,13 +54,15 @@ export const AZURE_VOICES: Record<string, string[]> = {
   en: ['en-US-AvaMultilingualNeural', 'en-US-AndrewMultilingualNeural']
 };
 
-/** System prompt: the JSON format, which tools fit which subject, two worked examples. */
-export function planSystemPrompt(lang: string): string {
-  return `You are a friendly teacher who explains school topics on a whiteboard while talking.
-Reply with ONE JSON object only (no markdown, no comments, nothing after it), in this exact shape:
-{ "title": string, "steps": [ { "say": string, "draw": [ DrawOp, ... ] }, ... ] }
+/** Gemini prebuilt voices (Google AI Studio TTS). Achird is the default lesson voice. */
+export const GEMINI_VOICES = [
+  'Puck', 'Kore', 'Charon', 'Zephyr', 'Aoede', 'Leda', 'Orus', 'Fenrir', 'Callirrhoe', 'Autonoe', 'Enceladus', 'Iapetus', 'Umbriel', 'Algieba', 'Despina',
+  'Erinome', 'Algenib', 'Rasalgethi', 'Laomedeia', 'Achernar', 'Alnilam', 'Schedar', 'Gacrux', 'Pulcherrima', 'Achird', 'Zubenelgenubi', 'Vindemiatrix',
+  'Sadachbia', 'Sadaltager', 'Sulafat'
+];
 
-BOARD: 100 units wide, 70 tall; x grows right, y grows DOWN. Keep everything inside x 3..97, y 12..67 (the title uses the top).
+/** The board's drawing tools, as explained to the model (shared with the AI tutor's board). */
+export const BOARD_TOOLS_DOC = `BOARD: 100 units wide, 70 tall; x grows right, y grows DOWN. Keep everything inside x 3..97, y 12..67 (the title uses the top).
 Text needs about 2 units of width per character (size m), 1.6 (size s), 2.7 (size l). Lay things out so nothing overlaps.
 
 DrawOp — any subject:
@@ -67,7 +74,7 @@ DrawOp — any subject:
   {"t":"list","x":55,"y":24,"items":["…","…"]}                    bullet list, 2–5 short items, one per line (7 units apart)
   {"t":"table","x":10,"y":24,"rows":[["Year","Money"],["1","110"]]} small table, first row = header, ≤ 5 rows, ≤ 4 columns
   {"t":"bars","x":55,"y":22,"w":38,"h":30,"items":[{"label":"2024","value":12}]}   bar chart, 2–7 bars
-  {"t":"icon","x":80,"y":30,"emoji":"🌍","size":"l"}               one emoji picture (x,y = centre)
+  {"t":"icon","x":80,"y":30,"emoji":"🌍","size":"l"}               one common emoji (x,y = centre); it must show exactly the thing named
 DrawOp — geometry (only for geometry topics):
   {"t":"point","id":"A","x":20,"y":55,"label":"A"}                 a named point
   {"t":"line","from":"A","to":"B","color":"red","dashed":false,"label":"c","arrow":false}  segment between point ids
@@ -85,7 +92,15 @@ CHOOSE TOOLS THAT FIT THE SUBJECT:
 - Algebra, functions, physics graphs → axes + curve + dot, formula.
 - Finance, economics, statistics → table, bars, formula, box.
 - History, geography, biology, literature, languages → box + arrow (cause → effect, process, timeline), list, icon, text.
-Never draw shapes that are unrelated to the topic.
+Never draw shapes that are unrelated to the topic.`;
+
+/** System prompt: the JSON format, which tools fit which subject, two worked examples. */
+export function planSystemPrompt(lang: string): string {
+  return `You are a friendly teacher who explains school topics on a whiteboard while talking.
+Reply with ONE JSON object only (no markdown, no comments, nothing after it), in this exact shape:
+{ "title": string, "steps": [ { "say": string, "draw": [ DrawOp, ... ] }, ... ] }
+
+${BOARD_TOOLS_DOC}
 
 RULES:
 - 4 to 7 steps. Each "say" is 1–2 short, warm, simple sentences for a school student, spoken aloud.
@@ -110,8 +125,33 @@ Example 2 (geometry, English):
  {"say":"Try it: the base is eight and the height is five. What is the area?","draw":[{"t":"text","x":60,"y":50,"text":"a = 8, h = 5 → S = ?","color":"green","size":"m"}]}]}`;
 }
 
-export function planUserPrompt(topic: string): string {
-  return `Topic / question: ${topic.trim().slice(0, 300)}`;
+export function planUserPrompt(topic: string, excerpts?: string): string {
+  const t = `Topic / question: ${topic.trim().slice(0, 300)}`;
+  if (excerpts === undefined) return t;
+  if (!excerpts)
+    return `${t}
+
+TEXTBOOK MODE: the textbook has no passage about this topic. Make a 1-step plan whose "say" tells the student (in the lesson language) that this topic is not in the loaded textbook pages, and add "sources": [].`;
+  return `${t}
+
+TEXTBOOK MODE. Below are passages from the student's official textbook. Teach ONLY what these passages say:
+- use the textbook's definitions, notation, worked examples and numbers (you may simplify the wording for speaking);
+- do not add facts, formulas or examples that are not in the passages; if something needed is missing, say so in "say";
+- add a top-level field "sources": [page numbers you used], e.g. "sources": [9, 12].
+
+PASSAGES:
+${excerpts}`;
+}
+
+/** Emoji that Windows 10 and older phones draw as an empty box (Unicode 13+ blocks). */
+export function emojiTooNew(e: string): boolean {
+  for (const ch of e) {
+    const c = ch.codePointAt(0)!;
+    if (c >= 0x1fa70 && c <= 0x1faff) return true; // Symbols & Pictographs Extended-A (🪿 🫎 🪼 …)
+    if ([0x1f6d6, 0x1f6d7, 0x1f6dc, 0x1f6dd, 0x1f6de, 0x1f6df, 0x1f6f7, 0x1f6f8, 0x1f6f9, 0x1f6fa, 0x1f6fb, 0x1f6fc].includes(c)) return true;
+    if ([0x1f90c, 0x1f972, 0x1f977, 0x1f978, 0x1f9a3, 0x1f9a4, 0x1f9ab, 0x1f9ac, 0x1f9ad, 0x1f9cb, 0x1f979, 0x1f9cc, 0x1fae0].includes(c)) return true;
+  }
+  return false;
 }
 
 /* ------------------------------ validation ------------------------------ */
@@ -241,6 +281,7 @@ export function checkPlan(input: unknown): PlanCheck {
         case 'icon': {
           const emoji = str(op.emoji, 8);
           if (!emoji) return drop('no emoji');
+          if (emojiTooNew(emoji)) return drop(`emoji ${emoji} does not display on older devices`);
           draw.push({ t: 'icon', x: num(op.x, 4, 96, 50), y: num(op.y, 12, 66, 35), emoji, size: size(op.size) });
           break;
         }
@@ -324,5 +365,8 @@ export function checkPlan(input: unknown): PlanCheck {
     steps.push({ say, draw });
   });
 
-  return { plan: { title: str(obj.title, 80) || 'Mavzu', steps }, issues };
+  const sources = Array.isArray(obj.sources)
+    ? [...new Set(obj.sources.map(Number).filter((n) => Number.isInteger(n) && n > 0 && n < 1000))].slice(0, 12)
+    : undefined;
+  return { plan: { title: str(obj.title, 80) || 'Mavzu', steps, ...(sources && { sources }) }, issues };
 }

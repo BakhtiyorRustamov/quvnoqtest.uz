@@ -1,5 +1,7 @@
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
+
 /**
  * Telegram Mini App helpers (client only).
  *
@@ -236,3 +238,38 @@ export const tgTest = {
     }
   }
 };
+
+/* ------------------------------ Full screen ------------------------------ */
+
+/**
+ * True while the Mini App runs in Telegram's full-screen mode (TelegramBridge
+ * keeps `tg-fs` on <html>). Telegram then draws its own Back/Close button
+ * top-left and its ⋯ menu top-right, over our page.
+ */
+export function useTgFullscreen(): boolean {
+  const [fs, setFs] = useState(false);
+  useEffect(() => {
+    const el = document.documentElement;
+    const upd = () => setFs(el.classList.contains('tg-fs'));
+    upd();
+    const mo = new MutationObserver(upd);
+    mo.observe(el, { attributes: true, attributeFilter: ['class'] });
+    return () => mo.disconnect();
+  }, []);
+  return fs;
+}
+
+/**
+ * In Telegram full screen, use Telegram's own Back button (top-left) instead
+ * of ours. Returns true when our back button should be hidden.
+ */
+export function useTgNativeBack(handler: () => void): boolean {
+  const fs = useTgFullscreen();
+  const ref = useRef(handler);
+  ref.current = handler;
+  useEffect(() => {
+    if (!fs) return;
+    return pushTgBack(() => ref.current());
+  }, [fs]);
+  return fs;
+}
