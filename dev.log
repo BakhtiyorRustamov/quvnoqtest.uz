@@ -14,3 +14,404 @@
  POST /api/comments 200 in 1450ms (next.js: 34ms, proxy.ts: 37ms, application-code: 1379ms)
  DELETE /api/comments?id=1 200 in 1776ms (next.js: 18ms, proxy.ts: 30ms, application-code: 1728ms)
  GET /api/comments?page=g11/geografiya/1 200 in 1480ms (next.js: 400ms, proxy.ts: 32ms, application-code: 1048ms)
+ GET /dashboard 200 in 3.9min (next.js: 3.8min, application-code: 5.1s)
+○ Compiling /api/register ...
+ GET /lesson/g11/geografiya/1 200 in 3.4min (next.js: 3.3min, application-code: 2.4s)
+✓ Finished writing to filesystem cache in 14.1s
+ POST /api/register 200 in 11.5s (next.js: 10.0s, proxy.ts: 51ms, application-code: 1430ms)
+ GET /api/me 200 in 11.9s (next.js: 11.0s, proxy.ts: 39ms, application-code: 819ms)
+ GET /api/me 200 in 991ms (next.js: 50ms, proxy.ts: 18ms, application-code: 923ms)
+ GET /api/comments?page=g11%2Fgeografiya%2F1 200 in 1618ms (next.js: 103ms, proxy.ts: 109ms, application-code: 1405ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <LoadingBoundary name="1/" loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/lesson/g1..." tree={[...]} params={{subject:"g...", ...}} ...>
+              <SegmentViewNode type="page" pagePath="lesson/g11...">
+                <SegmentTrieNode>
+                <G11LessonPage>
+                  <script>
+                  <G11LessonView slug="geografiya" n={1} grade={11}>
+                    <main ref={{current:null}} className="relative m...">
+                      <BackBar>
+                      <article className="mx-auto ma...">
+                        <p>
+                        <h2>
+                        <G11BoardPlayer>
+                        <LessonSocial page="g11/geogra..." title="Geografiya...">
+                          <section className="mt-12">
+                            <div className="flex flex-...">
+                              <button>
+                              <a
++                               href={"https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A3000%2Flesson%2Fg11%2Fgeog..."}
+-                               href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 rounded-full bg-[#229ED9] px-4 py-2 font-bla..."
+                              >
++                               Telegram
+                            ...
+                        ...
+                      ...
+              ...
+            ...
+ 
+ GET /api/progress 200 in 46s (next.js: 44s, proxy.ts: 50ms, application-code: 1744ms)
+ GET /ai 200 in 38.7s (next.js: 36.4s, application-code: 2.3s)
+○ Compiling /api/ai/board ...
+ GET /api/me 200 in 1585ms (next.js: 81ms, proxy.ts: 455ms, application-code: 1049ms)
+ GET /api/ai 200 in 9.0s (next.js: 7.2s, proxy.ts: 457ms, application-code: 1260ms)
+{"evt":"ai_board","user":"QT-40350","date":"2026-11-05","model":"qwen/qwen3.8-27b","tokens":3075,"failed":["gemini 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"]}
+ POST /api/ai/board 200 in 17.4s (next.js: 5.6s, proxy.ts: 148ms, application-code: 11.7s)
+✓ Finished writing to filesystem cache in 12.6s
+ POST /api/ai/board/voice 200 in 11.1s (next.js: 829ms, proxy.ts: 17ms, application-code: 10.3s)
+✓ Finished filesystem cache database compaction in 15.0s
+✓ Finished filesystem cache database compaction in 18.5s
+ GET /ai 200 in 11.0s (next.js: 2.1s, application-code: 8.9s)
+ GET /dashboard 200 in 11.1s (next.js: 5.0s, application-code: 6.1s)
+ GET /ai 200 in 5.7s (next.js: 80ms, application-code: 5.6s)
+ GET /dashboard 200 in 5.7s (next.js: 217ms, application-code: 5.5s)
+ GET /ai 200 in 4.5s (next.js: 98ms, application-code: 4.5s)
+ GET /ai 200 in 4.6s (next.js: 328ms, application-code: 4.3s)
+ GET /ai 200 in 4.6s (next.js: 448ms, application-code: 4.1s)
+ GET /dashboard 200 in 4.6s (next.js: 880ms, application-code: 3.7s)
+ GET /dashboard 200 in 4.6s (next.js: 985ms, application-code: 3.6s)
+ GET /dashboard 200 in 4.6s (next.js: 1094ms, application-code: 3.5s)
+ GET /dashboard 200 in 4.6s (next.js: 1212ms, application-code: 3.4s)
+ GET /ai 200 in 1362ms (next.js: 230ms, application-code: 1132ms)
+ GET /dashboard 200 in 1323ms (next.js: 386ms, application-code: 937ms)
+ GET /ai 200 in 603ms (next.js: 101ms, application-code: 502ms)
+{"evt":"ai_board","user":"QT-40350","date":"2026-11-05","model":"openai/gpt-oss-120b","tokens":2187,"failed":["gemini-flash-latest 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n","gemini-flash-lite-latest 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"Request contains an invalid argument.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n","qwen/qwen3.8-27b: groq 429: {\"error\":{\"message\":\"Request too large for model `qwen/qwen3.8-27b` in organization `org_01kvmew8m2e8qtqnqgmsqnd9s1` service tier `on_demand` on output tokens per minute (OTPM): Limit 1000, Requested 1475. The request's expected output tokens exceed the enforced limit; reduce max_tokens (or the request's expected output) and try again. Need more tokens? Upgrade to Dev Tier today at https://console"]}
+ POST /api/ai/board 200 in 14.6s (next.js: 951ms, proxy.ts: 1128ms, application-code: 12.6s)
+{"evt":"ai_board","user":"QT-40350","date":"2026-11-05","model":"qwen/qwen3.8-27b","tokens":2633,"failed":["gemini-flash-latest 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n","gemini-flash-lite-latest 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"Request contains an invalid argument.\",\n    \"status\": \"INVALID_ARGUMENT\"\n  }\n}\n"]}
+ POST /api/ai/board 200 in 17.4s (next.js: 16ms, proxy.ts: 15ms, application-code: 17.3s)
+ GET /ai 200 in 6.2s (next.js: 3.5s, application-code: 2.8s)
+ GET /dashboard 200 in 1951ms (next.js: 572ms, application-code: 1379ms)
+{"evt":"ai_board","user":"QT-40350","date":"2026-11-05","model":"gemini-flash-lite-latest","tokens":2584,"failed":["gemini-flash-latest 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"]}
+ POST /api/ai/board 200 in 14.6s (next.js: 538ms, proxy.ts: 360ms, application-code: 13.7s)
+✓ Finished filesystem cache database compaction in 17.4s
+  Reload env: .env
+ GET /ai 200 in 7.5s (next.js: 2.1s, application-code: 5.4s)
+ GET /ai 200 in 6.0s (next.js: 4.3s, application-code: 1674ms)
+ GET /ai 200 in 1405ms (next.js: 54ms, application-code: 1351ms)
+ GET /ai 200 in 1482ms (next.js: 94ms, application-code: 1388ms)
+ GET /ai 200 in 1492ms (next.js: 250ms, application-code: 1242ms)
+ GET /ai 200 in 1505ms (next.js: 359ms, application-code: 1146ms)
+ GET /ai 200 in 1514ms (next.js: 466ms, application-code: 1047ms)
+ GET /ai 200 in 1520ms (next.js: 21ms, application-code: 1499ms)
+ GET /ai 200 in 1668ms (next.js: 37ms, application-code: 1631ms)
+ GET /ai 200 in 1517ms (next.js: 20ms, application-code: 1498ms)
+ GET /ai 200 in 1526ms (next.js: 142ms, application-code: 1384ms)
+ GET /ai 200 in 1551ms (next.js: 316ms, application-code: 1235ms)
+ GET /ai 200 in 1310ms (next.js: 351ms, application-code: 959ms)
+ GET /ai 200 in 1250ms (next.js: 43ms, application-code: 1207ms)
+ GET /ai 200 in 1644ms (next.js: 82ms, application-code: 1562ms)
+ GET /ai 200 in 1598ms (next.js: 53ms, application-code: 1545ms)
+ GET /ai 200 in 1588ms (next.js: 182ms, application-code: 1406ms)
+ GET /ai 200 in 1586ms (next.js: 330ms, application-code: 1257ms)
+ GET /ai 200 in 1300ms (next.js: 205ms, application-code: 1095ms)
+ GET /ai 200 in 1202ms (next.js: 50ms, application-code: 1152ms)
+ GET /ai 200 in 1490ms (next.js: 63ms, application-code: 1427ms)
+ GET /ai 200 in 1147ms (next.js: 32ms, application-code: 1115ms)
+ GET /ai 200 in 1163ms (next.js: 162ms, application-code: 1000ms)
+ GET /ai 200 in 1061ms (next.js: 48ms, application-code: 1013ms)
+ GET /ai 200 in 1046ms (next.js: 199ms, application-code: 847ms)
+ GET /ai 200 in 1275ms (next.js: 50ms, application-code: 1225ms)
+ GET /ai 200 in 1544ms (next.js: 85ms, application-code: 1459ms)
+ GET /ai 200 in 1298ms (next.js: 70ms, application-code: 1228ms)
+ GET /ai 200 in 1343ms (next.js: 218ms, application-code: 1125ms)
+ GET /ai 200 in 1155ms (next.js: 204ms, application-code: 951ms)
+ GET /ai 200 in 1146ms (next.js: 241ms, application-code: 905ms)
+ GET /ai 200 in 1381ms (next.js: 38ms, application-code: 1343ms)
+ GET /ai 200 in 1303ms (next.js: 39ms, application-code: 1264ms)
+ GET /ai 200 in 1146ms (next.js: 55ms, application-code: 1091ms)
+ GET /ai 200 in 1137ms (next.js: 175ms, application-code: 963ms)
+ GET /ai 200 in 1011ms (next.js: 205ms, application-code: 805ms)
+ GET /ai 200 in 860ms (next.js: 215ms, application-code: 644ms)
+ GET /ai 200 in 1467ms (next.js: 34ms, application-code: 1434ms)
+ GET /ai 200 in 1705ms (next.js: 39ms, application-code: 1667ms)
+ GET /ai 200 in 1717ms (next.js: 173ms, application-code: 1543ms)
+ GET /ai 200 in 1780ms (next.js: 447ms, application-code: 1334ms)
+ GET /ai 200 in 1809ms (next.js: 526ms, application-code: 1284ms)
+ GET /ai 200 in 1065ms (next.js: 80ms, application-code: 985ms)
+ GET /ai 200 in 821ms (next.js: 44ms, application-code: 777ms)
+ GET /ai 200 in 3.0s (next.js: 1048ms, application-code: 1949ms)
+ GET /ai 200 in 3.0s (next.js: 1378ms, application-code: 1589ms)
+ GET /ai 200 in 3.0s (next.js: 1575ms, application-code: 1433ms)
+ GET /ai 200 in 2.9s (next.js: 1861ms, application-code: 1053ms)
+ GET /ai 200 in 3.0s (next.js: 2.2s, application-code: 866ms)
+ GET /ai 200 in 3.0s (next.js: 2.3s, application-code: 724ms)
+ GET /ai 200 in 1350ms (next.js: 52ms, application-code: 1299ms)
+ GET /ai 200 in 1349ms (next.js: 182ms, application-code: 1167ms)
+ GET /ai 200 in 1351ms (next.js: 319ms, application-code: 1033ms)
+ GET /ai 200 in 1354ms (next.js: 511ms, application-code: 843ms)
+ GET /ai 200 in 1366ms (next.js: 671ms, application-code: 695ms)
+ GET /ai 200 in 1352ms (next.js: 818ms, application-code: 534ms)
+ GET /ai 200 in 690ms (next.js: 18ms, application-code: 673ms)
+ GET /ai 200 in 694ms (next.js: 87ms, application-code: 607ms)
+ GET /ai 200 in 697ms (next.js: 157ms, application-code: 540ms)
+ GET /ai 200 in 702ms (next.js: 267ms, application-code: 435ms)
+ GET /ai 200 in 705ms (next.js: 339ms, application-code: 366ms)
+ GET /ai 200 in 708ms (next.js: 408ms, application-code: 300ms)
+ GET /ai 200 in 948ms (next.js: 92ms, application-code: 856ms)
+ GET /ai 200 in 953ms (next.js: 18ms, application-code: 935ms)
+ GET /ai 200 in 965ms (next.js: 169ms, application-code: 797ms)
+ GET /ai 200 in 977ms (next.js: 275ms, application-code: 702ms)
+ GET /ai 200 in 989ms (next.js: 342ms, application-code: 648ms)
+ GET /ai 200 in 997ms (next.js: 410ms, application-code: 587ms)
+ GET /ai 200 in 1915ms (next.js: 64ms, application-code: 1851ms)
+ GET /ai 200 in 1918ms (next.js: 470ms, application-code: 1448ms)
+ GET /ai 200 in 1919ms (next.js: 622ms, application-code: 1298ms)
+ GET /ai 200 in 1921ms (next.js: 836ms, application-code: 1085ms)
+ GET /ai 200 in 1934ms (next.js: 1126ms, application-code: 808ms)
+ GET /ai 200 in 1945ms (next.js: 1267ms, application-code: 678ms)
+ GET /ai 200 in 1384ms (next.js: 36ms, application-code: 1348ms)
+ GET /ai 200 in 1392ms (next.js: 196ms, application-code: 1196ms)
+ GET /ai 200 in 1397ms (next.js: 344ms, application-code: 1053ms)
+ GET /ai 200 in 1397ms (next.js: 466ms, application-code: 931ms)
+ GET /ai 200 in 1403ms (next.js: 681ms, application-code: 722ms)
+ GET /ai 200 in 1409ms (next.js: 802ms, application-code: 608ms)
+ GET /ai 200 in 1397ms (next.js: 61ms, application-code: 1337ms)
+ GET /ai 200 in 1401ms (next.js: 215ms, application-code: 1186ms)
+ GET /ai 200 in 1413ms (next.js: 348ms, application-code: 1066ms)
+ GET /ai 200 in 1413ms (next.js: 471ms, application-code: 942ms)
+ GET /ai 200 in 1424ms (next.js: 670ms, application-code: 754ms)
+ GET /ai 200 in 1425ms (next.js: 802ms, application-code: 623ms)
+ GET /ai 200 in 1389ms (next.js: 38ms, application-code: 1351ms)
+ GET /ai 200 in 1396ms (next.js: 164ms, application-code: 1232ms)
+ GET /ai 200 in 1409ms (next.js: 293ms, application-code: 1116ms)
+ GET /ai 200 in 1435ms (next.js: 440ms, application-code: 995ms)
+ GET /ai 200 in 1440ms (next.js: 558ms, application-code: 882ms)
+ GET /ai 200 in 1454ms (next.js: 697ms, application-code: 757ms)
+ GET /ai 200 in 1532ms (next.js: 51ms, application-code: 1481ms)
+ GET /ai 200 in 1540ms (next.js: 231ms, application-code: 1309ms)
+ GET /ai 200 in 1626ms (next.js: 399ms, application-code: 1227ms)
+ GET /ai 200 in 1627ms (next.js: 511ms, application-code: 1117ms)
+ GET /ai 200 in 1611ms (next.js: 615ms, application-code: 995ms)
+ GET /ai 200 in 1651ms (next.js: 764ms, application-code: 887ms)
+ GET /ai 200 in 1604ms (next.js: 51ms, application-code: 1552ms)
+ GET /ai 200 in 1616ms (next.js: 219ms, application-code: 1396ms)
+ GET /ai 200 in 1619ms (next.js: 386ms, application-code: 1233ms)
+ GET /ai 200 in 1631ms (next.js: 610ms, application-code: 1021ms)
+ GET /ai 200 in 1632ms (next.js: 731ms, application-code: 901ms)
+ GET /ai 200 in 1638ms (next.js: 984ms, application-code: 653ms)
+ GET /ai 200 in 1390ms (next.js: 34ms, application-code: 1356ms)
+ GET /ai 200 in 1386ms (next.js: 164ms, application-code: 1222ms)
+ GET /ai 200 in 1413ms (next.js: 468ms, application-code: 945ms)
+ GET /ai 200 in 1418ms (next.js: 321ms, application-code: 1097ms)
+ GET /ai 200 in 1418ms (next.js: 617ms, application-code: 801ms)
+ GET /ai 200 in 1436ms (next.js: 889ms, application-code: 547ms)
+ GET /ai 200 in 1418ms (next.js: 46ms, application-code: 1371ms)
+ GET /ai 200 in 1427ms (next.js: 224ms, application-code: 1203ms)
+ GET /ai 200 in 1426ms (next.js: 352ms, application-code: 1074ms)
+ GET /ai 200 in 1437ms (next.js: 472ms, application-code: 965ms)
+ GET /ai 200 in 1437ms (next.js: 674ms, application-code: 764ms)
+ GET /ai 200 in 1451ms (next.js: 787ms, application-code: 664ms)
+ GET /ai 200 in 1551ms (next.js: 51ms, application-code: 1500ms)
+ GET /ai 200 in 1560ms (next.js: 262ms, application-code: 1298ms)
+ GET /ai 200 in 1556ms (next.js: 393ms, application-code: 1163ms)
+ GET /ai 200 in 1563ms (next.js: 607ms, application-code: 955ms)
+ GET /ai 200 in 1570ms (next.js: 749ms, application-code: 821ms)
+ GET /ai 200 in 1576ms (next.js: 879ms, application-code: 697ms)
+ GET /ai 200 in 1954ms (next.js: 44ms, application-code: 1910ms)
+ GET /ai 200 in 1967ms (next.js: 225ms, application-code: 1742ms)
+ GET /ai 200 in 1976ms (next.js: 495ms, application-code: 1481ms)
+ GET /ai 200 in 1979ms (next.js: 743ms, application-code: 1235ms)
+ GET /ai 200 in 2.0s (next.js: 955ms, application-code: 1048ms)
+ GET /ai 200 in 1079ms (next.js: 315ms, application-code: 764ms)
+ GET /ai 200 in 1721ms (next.js: 50ms, application-code: 1670ms)
+ GET /ai 200 in 1729ms (next.js: 579ms, application-code: 1150ms)
+ GET /ai 200 in 1740ms (next.js: 708ms, application-code: 1032ms)
+ GET /ai 200 in 1765ms (next.js: 834ms, application-code: 931ms)
+ GET /ai 200 in 1780ms (next.js: 1098ms, application-code: 682ms)
+ GET /ai 200 in 1825ms (next.js: 982ms, application-code: 843ms)
+ GET /ai 200 in 1413ms (next.js: 31ms, application-code: 1382ms)
+ GET /ai 200 in 1418ms (next.js: 184ms, application-code: 1234ms)
+ GET /ai 200 in 1440ms (next.js: 325ms, application-code: 1115ms)
+ GET /ai 200 in 1446ms (next.js: 442ms, application-code: 1004ms)
+ GET /ai 200 in 1452ms (next.js: 573ms, application-code: 879ms)
+ GET /ai 200 in 1477ms (next.js: 728ms, application-code: 749ms)
+ GET /ai 200 in 1443ms (next.js: 41ms, application-code: 1403ms)
+ GET /ai 200 in 1448ms (next.js: 202ms, application-code: 1246ms)
+ GET /ai 200 in 1464ms (next.js: 343ms, application-code: 1121ms)
+ GET /ai 200 in 1475ms (next.js: 477ms, application-code: 998ms)
+ GET /ai 200 in 1479ms (next.js: 597ms, application-code: 882ms)
+ GET /ai 200 in 1487ms (next.js: 735ms, application-code: 753ms)
+ GET /ai 200 in 1382ms (next.js: 24ms, application-code: 1357ms)
+ GET /ai 200 in 1387ms (next.js: 151ms, application-code: 1236ms)
+ GET /ai 200 in 1409ms (next.js: 323ms, application-code: 1087ms)
+ GET /ai 200 in 1401ms (next.js: 455ms, application-code: 946ms)
+ GET /ai 200 in 1410ms (next.js: 591ms, application-code: 818ms)
+ GET /ai 200 in 1412ms (next.js: 867ms, application-code: 545ms)
+ GET /ai 200 in 1284ms (next.js: 97ms, application-code: 1187ms)
+ GET /ai 200 in 1293ms (next.js: 278ms, application-code: 1015ms)
+ GET /ai 200 in 1413ms (next.js: 458ms, application-code: 955ms)
+ GET /ai 200 in 1467ms (next.js: 588ms, application-code: 879ms)
+ GET /ai 200 in 1473ms (next.js: 710ms, application-code: 764ms)
+✓ Compiled in 1433ms
+✓ Finished filesystem cache database compaction in 19.9s
+✓ Compiled in 31.3s
+ GET /ai 200 in 31.8s (next.js: 28.5s, application-code: 3.3s)
+ GET /ai 200 in 12.8s (next.js: 10.9s, application-code: 1930ms)
+ GET /ai 200 in 12.5s (next.js: 10.9s, application-code: 1579ms)
+ GET /ai 200 in 12.4s (next.js: 10.9s, application-code: 1411ms)
+ GET /ai 200 in 12.1s (next.js: 10.9s, application-code: 1232ms)
+ GET /ai 200 in 11.9s (next.js: 10.8s, application-code: 1076ms)
+  Reload env: .env
+ GET /ai 200 in 2.4s (next.js: 1180ms, application-code: 1217ms)
+ GET /ai 200 in 737ms (next.js: 56ms, application-code: 682ms)
+ POST /api/ai/board 200 in 5.5s (next.js: 186ms, proxy.ts: 144ms, application-code: 5.2s)
+ POST /api/ai/board/voice 200 in 6.4s (next.js: 316ms, proxy.ts: 13ms, application-code: 6.1s)
+ POST /api/ai/board/voice 200 in 5.5s (next.js: 14ms, proxy.ts: 15ms, application-code: 5.5s)
+ POST /api/ai/board/voice 200 in 6.2s (next.js: 9ms, proxy.ts: 11ms, application-code: 6.2s)
+ POST /api/ai/board/voice 200 in 6.6s (next.js: 10ms, proxy.ts: 13ms, application-code: 6.6s)
+○ Compiling /record ...
+ GET /record 200 in 6.5s (next.js: 5.6s, application-code: 933ms)
+ GET /api/me 200 in 310ms (next.js: 175ms, proxy.ts: 77ms, application-code: 58ms)
+✓ Finished writing to filesystem cache in 13.6s
+✓ Finished filesystem cache database compaction in 12.6s
+✓ Finished filesystem cache database compaction in 26.4s
+✓ Compiled in 3.1s
+ GET /ai 200 in 2.9s (next.js: 1728ms, application-code: 1130ms)
+✓ Compiled in 1534ms
+ GET /ai 200 in 4.1s (next.js: 3.0s, application-code: 1150ms)
+ POST /api/ai/board 200 in 10.0s (next.js: 1259ms, proxy.ts: 1677ms, application-code: 7.0s)
+ POST /api/ai/board/voice 200 in 6.7s (next.js: 133ms, proxy.ts: 33ms, application-code: 6.5s)
+ POST /api/ai/board/voice 200 in 5.8s (next.js: 11ms, proxy.ts: 20ms, application-code: 5.8s)
+ POST /api/ai/board/voice 200 in 6.6s (next.js: 10ms, proxy.ts: 14ms, application-code: 6.6s)
+ GET /record 200 in 3.1s (next.js: 1088ms, application-code: 1966ms)
+ GET /api/me 200 in 156ms (next.js: 112ms, proxy.ts: 17ms, application-code: 27ms)
+✓ Finished filesystem cache database compaction in 18.1s
+○ Compiling / ...
+ GET / 307 in 9.0s (next.js: 3.4s, application-code: 5.5s)
+ GET /dashboard 200 in 4.0s (next.js: 1011ms, application-code: 3.0s)
+ POST /api/register 200 in 2.2s (next.js: 1093ms, proxy.ts: 188ms, application-code: 929ms)
+ GET /api/me 200 in 2.3s (next.js: 17ms, proxy.ts: 29ms, application-code: 2.3s)
+ GET /api/progress 200 in 2.5s (next.js: 952ms, proxy.ts: 192ms, application-code: 1358ms)
+○ Compiling /profile ...
+ GET /profile 200 in 4.4s (next.js: 4.3s, application-code: 119ms)
+ GET /api/progress 200 in 1655ms (next.js: 324ms, proxy.ts: 31ms, application-code: 1300ms)
+ GET /api/progress 200 in 1713ms (next.js: 338ms, proxy.ts: 24ms, application-code: 1350ms)
+✓ Finished filesystem cache database compaction in 10.0s
+ GET /dashboard 200 in 89ms (next.js: 21ms, application-code: 69ms)
+ GET /api/progress 200 in 1464ms (next.js: 557ms, proxy.ts: 197ms, application-code: 709ms)
+ GET /api/progress 200 in 1720ms (next.js: 612ms, proxy.ts: 177ms, application-code: 930ms)
+✓ Compiled in 4.6s
+✓ Compiled in 3.4s
+✓ Compiled in 12.1s
+✓ Compiled in 5.2s
+ GET /dashboard 200 in 33.7s (next.js: 12.6s, application-code: 21.1s)
+ GET /ai 200 in 37.1s (next.js: 24.2s, application-code: 12.9s)
+ GET /dashboard 200 in 10.9s (next.js: 4.6s, application-code: 6.3s)
+ GET /dashboard 200 in 10.8s (next.js: 4.9s, application-code: 5.9s)
+ GET /ai 200 in 10.8s (next.js: 7.1s, application-code: 3.8s)
+ GET /ai 200 in 10.8s (next.js: 7.4s, application-code: 3.4s)
+ GET /ai 200 in 10.8s (next.js: 7.6s, application-code: 3.2s)
+ GET /ai 200 in 2.5s (next.js: 351ms, application-code: 2.2s)
+ GET /dashboard 200 in 2.5s (next.js: 86ms, application-code: 2.4s)
+ GET /dashboard 200 in 2.5s (next.js: 480ms, application-code: 2.1s)
+ GET /dashboard 200 in 1748ms (next.js: 144ms, application-code: 1604ms)
+ GET /ai 200 in 1641ms (next.js: 200ms, application-code: 1441ms)
+ GET /ai 200 in 1021ms (next.js: 80ms, application-code: 941ms)
+ GET /dashboard 200 in 1010ms (next.js: 489ms, application-code: 521ms)
+✓ Compiled in 1ms
+✓ Finished filesystem cache database compaction in 22.1s
+ GET /ai 200 in 14.0s (next.js: 3.8s, application-code: 10.2s)
+ GET /ai 200 in 23.8s (next.js: 308ms, application-code: 23.5s)
+ GET /ai 200 in 23.8s (next.js: 413ms, application-code: 23.4s)
+ GET /ai 200 in 23.8s (next.js: 1178ms, application-code: 22.6s)
+ GET /ai 200 in 23.8s (next.js: 498ms, application-code: 23.3s)
+ GET /dashboard 200 in 25.3s (next.js: 1239ms, application-code: 24.1s)
+ GET /dashboard 200 in 24.0s (next.js: 1414ms, application-code: 22.6s)
+ GET /dashboard 200 in 23.8s (next.js: 1560ms, application-code: 22.2s)
+ GET /dashboard 200 in 24.0s (next.js: 2.0s, application-code: 22.0s)
+ GET /dashboard 200 in 23.8s (next.js: 2.1s, application-code: 21.8s)
+ GET /dashboard 200 in 23.8s (next.js: 2.2s, application-code: 21.6s)
+ GET /dashboard 200 in 16.2s (next.js: 4.6s, application-code: 11.6s)
+ GET /dashboard 200 in 2.4s (next.js: 64ms, application-code: 2.3s)
+ GET /dashboard 200 in 2.2s (next.js: 100ms, application-code: 2.1s)
+ GET /dashboard 200 in 2.2s (next.js: 426ms, application-code: 1754ms)
+ GET /dashboard 200 in 2.1s (next.js: 843ms, application-code: 1298ms)
+ GET /dashboard 200 in 2.2s (next.js: 1030ms, application-code: 1128ms)
+ GET /dashboard 200 in 2.2s (next.js: 1183ms, application-code: 993ms)
+ GET /dashboard 200 in 6.1s (next.js: 475ms, application-code: 5.6s)
+ GET /dashboard 200 in 916ms (next.js: 456ms, application-code: 460ms)
+ POST /api/register 200 in 2.9s (next.js: 273ms, proxy.ts: 284ms, application-code: 2.4s)
+ GET /api/me 200 in 3.2s (next.js: 474ms, proxy.ts: 249ms, application-code: 2.4s)
+ GET /api/progress 200 in 3.7s (next.js: 2.2s, proxy.ts: 249ms, application-code: 1184ms)
+ GET /profile 200 in 2.6s (next.js: 1118ms, application-code: 1506ms)
+ POST /api/register 200 in 703ms (next.js: 237ms, proxy.ts: 65ms, application-code: 401ms)
+ GET /api/me 200 in 980ms (next.js: 38ms, proxy.ts: 78ms, application-code: 864ms)
+ GET /api/progress 200 in 1205ms (next.js: 183ms, proxy.ts: 70ms, application-code: 952ms)
+ GET /?home=1 200 in 4.0s (next.js: 3.1s, application-code: 952ms)
+ GET /api/me 200 in 1215ms (next.js: 17ms, proxy.ts: 38ms, application-code: 1160ms)
+ GET /profile 200 in 103ms (next.js: 20ms, application-code: 84ms)
+ GET /api/progress 200 in 1572ms (next.js: 291ms, proxy.ts: 17ms, application-code: 1265ms)
+ GET /api/progress 200 in 1559ms (next.js: 403ms, proxy.ts: 51ms, application-code: 1105ms)
+✓ Compiled in 3.6s
+ GET /?home=1 200 in 5.6s (next.js: 1146ms, application-code: 4.4s)
+ GET /?home=1 200 in 4.0s (next.js: 33ms, application-code: 4.0s)
+ GET /profile 200 in 4.1s (next.js: 994ms, application-code: 3.2s)
+ GET /?home=1 200 in 2.8s (next.js: 235ms, application-code: 2.6s)
+ GET /?home=1 200 in 2.8s (next.js: 44ms, application-code: 2.8s)
+ GET /?home=1 200 in 2.8s (next.js: 342ms, application-code: 2.5s)
+ GET /profile 200 in 3.0s (next.js: 139ms, application-code: 2.9s)
+ GET /?home=1 200 in 1161ms (next.js: 57ms, application-code: 1104ms)
+ GET /profile 200 in 1599ms (next.js: 60ms, application-code: 1538ms)
+ GET /profile 200 in 1598ms (next.js: 163ms, application-code: 1435ms)
+ GET /profile 200 in 1599ms (next.js: 247ms, application-code: 1352ms)
+ GET /profile 200 in 1508ms (next.js: 137ms, application-code: 1371ms)
+ GET /?home=1 200 in 1894ms (next.js: 32ms, application-code: 1862ms)
+ GET /?home=1 200 in 1776ms (next.js: 38ms, application-code: 1738ms)
+ GET /?home=1 200 in 1851ms (next.js: 139ms, application-code: 1712ms)
+ GET /?home=1 200 in 1858ms (next.js: 227ms, application-code: 1631ms)
+ GET /?home=1 200 in 1875ms (next.js: 323ms, application-code: 1552ms)
+ GET /profile 200 in 1973ms (next.js: 43ms, application-code: 1930ms)
+ GET /?home=1 200 in 1270ms (next.js: 40ms, application-code: 1230ms)
+ GET /profile 200 in 1459ms (next.js: 83ms, application-code: 1377ms)
+ GET /profile 200 in 1397ms (next.js: 49ms, application-code: 1348ms)
+ GET /profile 200 in 1397ms (next.js: 149ms, application-code: 1248ms)
+ GET /profile 200 in 1398ms (next.js: 255ms, application-code: 1143ms)
+ GET /profile 200 in 1209ms (next.js: 91ms, application-code: 1118ms)
+ GET /?home=1 200 in 1289ms (next.js: 23ms, application-code: 1266ms)
+ GET /?home=1 200 in 1160ms (next.js: 39ms, application-code: 1122ms)
+ GET /?home=1 200 in 954ms (next.js: 61ms, application-code: 893ms)
+ GET /?home=1 200 in 963ms (next.js: 183ms, application-code: 780ms)
+ GET /profile 200 in 654ms (next.js: 60ms, application-code: 594ms)
+ GET /profile 200 in 662ms (next.js: 166ms, application-code: 496ms)
+ GET /profile 200 in 398ms (next.js: 48ms, application-code: 350ms)
+ GET /profile 200 in 398ms (next.js: 148ms, application-code: 250ms)
+ GET /profile 200 in 1419ms (next.js: 16ms, application-code: 1403ms)
+ POST /api/register 200 in 2.3s (next.js: 328ms, proxy.ts: 467ms, application-code: 1504ms)
+ GET /api/progress 200 in 2.6s (next.js: 1110ms, proxy.ts: 459ms, application-code: 985ms)
+ GET /api/me 200 in 2.8s (next.js: 1305ms, proxy.ts: 457ms, application-code: 999ms)
+ GET /dashboard 200 in 1730ms (next.js: 1362ms, application-code: 368ms)
+ GET /api/progress 200 in 1096ms (next.js: 57ms, proxy.ts: 29ms, application-code: 1010ms)
+ GET /api/progress 200 in 1165ms (next.js: 33ms, proxy.ts: 73ms, application-code: 1058ms)
+✓ Compiled in 1854ms
+ GET /dashboard 200 in 1720ms (next.js: 1207ms, application-code: 513ms)
+ GET /profile 200 in 5.3s (next.js: 1349ms, application-code: 4.0s)
+ POST /api/register 200 in 3.0s (next.js: 436ms, proxy.ts: 377ms, application-code: 2.2s)
+ GET /api/me 200 in 3.2s (next.js: 596ms, proxy.ts: 377ms, application-code: 2.3s)
+ GET /api/progress 200 in 3.5s (next.js: 1468ms, proxy.ts: 379ms, application-code: 1633ms)
+ GET /profile 200 in 950ms (next.js: 23ms, application-code: 928ms)
+ POST /api/register 200 in 432ms (next.js: 12ms, proxy.ts: 15ms, application-code: 405ms)
+ GET /api/me 200 in 650ms (next.js: 15ms, proxy.ts: 13ms, application-code: 623ms)
+ GET /api/progress 200 in 945ms (next.js: 11ms, proxy.ts: 15ms, application-code: 919ms)
+ GET /profile 200 in 536ms (next.js: 29ms, application-code: 508ms)
+ POST /api/register 200 in 773ms (next.js: 24ms, proxy.ts: 15ms, application-code: 734ms)
+ GET /api/me 200 in 714ms (next.js: 51ms, proxy.ts: 26ms, application-code: 636ms)
+ GET /api/progress 200 in 996ms (next.js: 23ms, proxy.ts: 30ms, application-code: 944ms)

@@ -40,7 +40,7 @@ export default function G11ReviewsView({ slug }: { slug: string }) {
 
   return (
     <main className="min-h-screen pb-16">
-      <BackBar backHref={g11SubjectHref(slug)} showLang title={subjectName} />
+      <BackBar backHref="/profile" showLang title={subjectName} />
       <div className="max-w-2xl mx-auto px-4">
         <h2 className="mt-5 font-black text-ink text-2xl">🗓️ {t.title}</h2>
         <p className="mt-1 text-[13px] font-bold text-ink/40">{t.device}</p>

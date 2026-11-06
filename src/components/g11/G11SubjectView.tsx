@@ -5,7 +5,7 @@ import { useLocale } from 'next-intl';
 import BackBar from '@/components/ui/BackBar';
 import PressButton3D from './PressButton3D';
 import { pick } from '@/lib/i18n-config';
-import { getG11Subject, g11ExamHref, g11ReviewsHref } from '@/content/g11/subjects';
+import { getG11Subject, g11ExamHref } from '@/content/g11/subjects';
 import { getFlags, useG11StoreVersion } from '@/lib/g11Store';
 import { useSound } from '@/components/providers/SoundProvider';
 import { G11_DIAG_TITLE } from '@/content/g11/diagnostic';
@@ -70,17 +70,6 @@ export default function G11SubjectView({ slug, grade = 11 }: { slug: string; gra
           <h2 className="font-black text-ink/70 text-lg">📚 {LESSONS_TITLE[locale] ?? LESSONS_TITLE.uz}
             {BOOK_GRADE[slug] && <> ({BOOK_GRADE[slug][locale] ?? BOOK_GRADE[slug].uz})</>}
           </h2>
-          {grade === 11 && (
-          <Link
-            href={g11ReviewsHref(slug)}
-            onClick={() => play('pop')}
-            aria-label={HISTORY[locale] ?? HISTORY.uz}
-            title={HISTORY[locale] ?? HISTORY.uz}
-            className="grid h-11 w-11 place-items-center rounded-full bg-white text-2xl shadow-card border border-ink/10 transition-transform hover:-translate-y-0.5"
-          >
-            🗓️
-          </Link>
-          )}
         </div>
         {groupLessons(lessons).map((g, gi) => {
           const items = g.lessons.map((l) => {

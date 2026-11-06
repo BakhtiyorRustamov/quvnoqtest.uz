@@ -131,7 +131,35 @@ type SecResult = { kind: SectionKind; label: string; score: number | null; detai
 /* ------------------------------------------------------------------ voices */
 const GENDER: Record<Seg['v'], 'm' | 'f'> = { N: 'f', F: 'f', F2: 'f', M: 'm', M2: 'm' };
 const RATE: Record<Seg['v'], number> = { N: 0.95, F: 0.95, F2: 1.02, M: 0.93, M2: 1.0 };
-const toItems = (segs: Seg[]): SpeechItem[] => segs.map((s) => ({ text: s.t, accent: 'en-GB', gender: GENDER[s.v], rate: RATE[s.v] }));
+type RoleItem = SpeechItem & { role?: Seg['v'] };
+const toItems = (segs: Seg[]): RoleItem[] => segs.map((s) => ({ text: s.t, accent: 'en-GB', gender: GENDER[s.v], rate: RATE[s.v], role: s.v }));
+const FEMALE_RE = /female|zira|hazel|susan|libby|sonia|maisie|aria|jenny|michelle|samantha|karen|moira|tessa|victoria|serena|kate|fiona|emma|natasha|clara|catherine|google us english/i;
+const MALE_RE = /\bmale\b|david|george|ryan|guy|daniel|alex\b|fred|thomas|oliver|arthur|mark\b|james|william|eric|christopher/i;
+const genderOf = (v: SpeechSynthesisVoice): 'm' | 'f' | null => (/female/i.test(v.name) || FEMALE_RE.test(v.name) ? 'f' : MALE_RE.test(v.name) ? 'm' : null);
+/**
+ * Give every speaker of a recording its own voice: different device voices when there are
+ * enough (female/male, UK/US), otherwise the same voice with a clearly different pitch and speed.
+ */
+function castVoices(roles: Seg['v'][]): Map<Seg['v'], { voice: SpeechSynthesisVoice | null; pitch: number; rate: number }> {
+  const out = new Map<Seg['v'], { voice: SpeechSynthesisVoice | null; pitch: number; rate: number }>();
+  const all = typeof window !== 'undefined' && window.speechSynthesis ? window.speechSynthesis.getVoices().filter((v) => /^en/i.test(v.lang)) : [];
+  const pref = (v: SpeechSynthesisVoice) => (/en[-_]gb/i.test(v.lang) ? 0 : /en[-_]us/i.test(v.lang) ? 1 : 2) - (/natural|online|neural|google/i.test(v.name) ? 3 : 0);
+  const pool = [...all].sort((a, b) => pref(a) - pref(b));
+  const used = new Set<string>();
+  const PITCH: Record<Seg['v'], number> = { N: 1, F: 1.1, F2: 1.28, M: 0.9, M2: 0.74 };
+  for (const r of roles) {
+    if (out.has(r)) continue;
+    const g = GENDER[r];
+    const free = pool.filter((v) => !used.has(v.voiceURI));
+    const voice = free.find((v) => genderOf(v) === g) ?? free.find((v) => genderOf(v) === null) ?? pool.find((v) => genderOf(v) === g) ?? pool[0] ?? null;
+    const reused = !!voice && used.has(voice.voiceURI);
+    if (voice) used.add(voice.voiceURI);
+    // a voice of the wrong gender or a shared voice: lean harder on pitch so speakers still differ
+    const shift = reused || (voice && genderOf(voice) !== g) ? (g === 'f' ? 0.12 : -0.12) : 0;
+    out.set(r, { voice, pitch: Math.max(0.5, Math.min(1.6, PITCH[r] + shift)), rate: RATE[r] });
+  }
+  return out;
+}
 /** utterances must stay referenced, or Chrome garbage-collects them and never fires onend */
 const alive: SpeechSynthesisUtterance[] = [];
 /**
@@ -139,8 +167,10 @@ const alive: SpeechSynthesisUtterance[] = [];
  * lost onend events, Chrome's silent pause after ~15 s, and voices that never start —
  * every sentence has a watchdog, so the sequence always finishes.
  */
-function speakLines(items: SpeechItem[], opts: { onEnd?: () => void } = {}): () => void {
+function speakLines(items: RoleItem[], opts: { onEnd?: () => void } = {}): () => void {
   const synth = typeof window !== 'undefined' ? window.speechSynthesis : undefined;
+  const cast = castVoices(items.map((it) => it.role ?? 'N'));
+  let lastRole: Seg['v'] | undefined;
   const chunks = items.flatMap((it) =>
     it.text
       .split(/(?<=[.!?…])\s+(?=[A-Z"'(])/)
@@ -164,16 +194,21 @@ function speakLines(items: SpeechItem[], opts: { onEnd?: () => void } = {}): () 
     if (watchdog) clearTimeout(watchdog);
     if (i >= chunks.length) return finish();
     const c = chunks[i++];
+    // a short pause whenever the speaker changes, so a dialogue is easy to follow
+    const role = c.role ?? 'N';
+    const pause = lastRole !== undefined && lastRole !== role ? 550 : 120;
+    lastRole = role;
     if (!synth) {
       watchdog = setTimeout(next, 600 + words(c.text) * 330); // no speech: give reading time
       return;
     }
     const u = new SpeechSynthesisUtterance(c.text);
-    const voice = pickVoiceFor(c.accent, c.gender);
+    const who = cast.get(role);
+    const voice = who?.voice ?? pickVoiceFor(c.accent, c.gender);
     u.lang = voice?.lang ?? c.accent;
     if (voice) u.voice = voice;
-    u.rate = c.rate ?? 0.95;
-    u.pitch = c.gender === 'f' ? 1.1 : c.gender === 'm' ? 0.92 : 1;
+    u.rate = who?.rate ?? c.rate ?? 0.95;
+    u.pitch = who?.pitch ?? (c.gender === 'f' ? 1.1 : c.gender === 'm' ? 0.92 : 1);
     let moved = false;
     const go = () => {
       if (moved) return;
@@ -187,8 +222,8 @@ function speakLines(items: SpeechItem[], opts: { onEnd?: () => void } = {}): () 
     watchdog = setTimeout(() => {
       synth.cancel();
       go();
-    }, 4000 + words(c.text) * 700);
-    synth.speak(u);
+    }, 4000 + pause + words(c.text) * 700);
+    setTimeout(() => !stopped && synth.speak(u), pause);
   };
   // Chrome pauses long speech queues silently; nudge it
   const keep = setInterval(() => synth?.resume(), 4000);

@@ -12,6 +12,7 @@ import BackBar from '@/components/ui/BackBar';
 import ScratchNotebook from '@/components/g11/ScratchNotebook';
 import QuestionSketchpad from '@/components/g11/QuestionSketchpad';
 import MoviyDaftarLogo from '@/components/brand/MoviyDaftarLogo';
+import { G11_SUBJECTS, g11ReviewsHref } from '@/content/g11/subjects';
 import ContactButton from '@/components/ui/ContactButton';
 import DashboardStats from '@/components/dashboard/DashboardStats';
 import Leaderboard from '@/components/dashboard/Leaderboard';
@@ -106,6 +107,25 @@ export default function ProfilePage() {
         <Link href="/upgrade" className="btn-primary mt-4 w-full">{t('upgradeEntry')}</Link>
         <Link href="/?home=1" className="btn-ghost mt-4 w-full">{pick({ uz: 'Bosh sahifa', ru: 'Главная страница', en: 'Home page' }, locale)}</Link>
       </div>
+
+      {/* mock (Milliy sertifikat) test results per subject — moved here from the subject pages */}
+      {grade === 11 && (
+        <section className="mx-auto mt-8 max-w-md px-4">
+          <h2 className="text-center text-lg font-black text-ink">🗓️ {pick({ uz: 'Fanlar boʻyicha namunaviy (mock) test natijalarim', ru: 'Мои результаты пробных (mock) тестов по предметам', en: 'My mock test results by subject' }, locale)}</h2>
+          <div className="mt-3 grid grid-cols-2 gap-2">
+            {G11_SUBJECTS.map((s) => (
+              <Link
+                key={s.slug}
+                href={g11ReviewsHref(s.slug)}
+                className="rounded-2xl border border-ink/10 bg-white px-3 py-2.5 text-center text-[15px] font-black shadow-card transition-transform hover:-translate-y-0.5"
+                style={{ color: s.color }}
+              >
+                {pick(s.name, locale)}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* my progress (all of it), recommendations */}
       <DashboardStats progress={progress} grade={grade} subjects={gradeDef.subjects} name={user?.name ?? null} locale={locale} />

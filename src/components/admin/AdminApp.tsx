@@ -410,7 +410,8 @@ function UsersTab() {
               <tr className="text-left text-slate-500 border-b border-slate-200">
                 <Th>ID</Th>
                 <Th>Name</Th>
-                <Th>Contact</Th>
+                <Th>Phone</Th>
+                <Th>Email</Th>
                 <Th right>Gr.</Th>
                 <Th>Paid until</Th>
                 <Th right>Payments</Th>
@@ -430,7 +431,8 @@ function UsersTab() {
                         <span className="ml-1.5 text-xs text-amber-600 font-semibold">{u.strikes}⚑</span>
                       )}
                     </Td>
-                    <Td className="text-xs text-slate-500">{u.phone ?? u.email ?? '—'}</Td>
+                    <Td className="text-xs text-slate-500">{u.phone ?? '—'}</Td>
+                    <Td className="text-xs text-slate-500 break-all">{u.email ? <a href={`mailto:${u.email}`} className="hover:text-slate-900">{u.email}</a> : '—'}</Td>
                     <Td right>{u.grade}</Td>
                     <Td>
                       <span className={u.isPaid ? 'text-emerald-600 font-semibold' : 'text-slate-400'}>
@@ -450,7 +452,7 @@ function UsersTab() {
                   </tr>
                   {openId === u.id && (
                     <tr className="bg-slate-50 border-b border-slate-100">
-                      <td colSpan={8} className="px-3 py-3">
+                      <td colSpan={9} className="px-3 py-3">
                         <UserTools user={u} run={run} />
                       </td>
                     </tr>
